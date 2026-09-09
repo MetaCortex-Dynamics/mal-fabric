@@ -1,0 +1,21 @@
+{
+  "category": "positive",
+  "expected_verdict": "IF_THEN",
+  "input_digest": "169ce8c218d44e8aa728151c570c105c0912e3254e842a3fa7b6b0a989b24705",
+  "normalized_output_digest": "ad8a55b7cb107647bba7993329519e8a41eab98d24fec17b3786aa2e89d4c8ca",
+  "observations": {
+    "incoming_role_signature": {
+      "LEFT": 1,
+      "RIGHT": 1
+    },
+    "type_compat": [
+      true,
+      true
+    ]
+  },
+  "passed": true,
+  "reason_code": "ADMITTED",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "P04",
+  "verdict": "IF_THEN"
+}

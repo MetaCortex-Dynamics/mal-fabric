@@ -1,0 +1,12 @@
+{
+  "because": "both directed boundary dimensions MUST belong to triad_capability",
+  "category": "negative",
+  "expected_reason_code": "PLACEMENT_CAPABILITY_BOUNDARY",
+  "expected_verdict": "NO",
+  "input_digest": "48f572a84bdd12a38dd147a582e83ca7cdbaa8e2dd799a266bb0647dbe6c8d71",
+  "passed": true,
+  "reason_code": "PLACEMENT_CAPABILITY_BOUNDARY",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "N02",
+  "verdict": "NO"
+}

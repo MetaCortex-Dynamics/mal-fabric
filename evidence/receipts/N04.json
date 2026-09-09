@@ -1,0 +1,12 @@
+{
+  "because": "containment MUST be root-terminated",
+  "category": "negative",
+  "expected_reason_code": "CONTAINMENT_NOT_ROOT_TERMINATED",
+  "expected_verdict": "NO",
+  "input_digest": "c3e0392f8b02f731bc331d49e136b4df68f1a0c038ca7767a3c8c1cd31d8f1ba",
+  "passed": true,
+  "reason_code": "CONTAINMENT_NOT_ROOT_TERMINATED",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "N04",
+  "verdict": "NO"
+}

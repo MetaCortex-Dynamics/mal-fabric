@@ -1,0 +1,21 @@
+{
+  "category": "positive",
+  "expected_verdict": "IF_THEN",
+  "input_digest": "704fbe0cf5108123f62475ded2b275bb627ce09ba4c64c46c160adc978e85b9e",
+  "normalized_output_digest": "eaccd98e5fe46ef5a4c1117dcabcd928f716c5b9883723a84b92822dccb721d1",
+  "observations": {
+    "containment_path": [
+      "m3",
+      "m2",
+      "m1",
+      "t1",
+      "root"
+    ],
+    "recursive_normalization_equal": true
+  },
+  "passed": true,
+  "reason_code": "ADMITTED",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "P07",
+  "verdict": "IF_THEN"
+}

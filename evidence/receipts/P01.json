@@ -1,0 +1,15 @@
+{
+  "category": "positive",
+  "expected_verdict": "IF_THEN",
+  "input_digest": "30a7b042b570c29537c39906c6af9892cd9ef10dbde7a0f3472995c4ec5365ab",
+  "normalized_output_digest": "0ad9d5fc8dd82a1fc9800967e474b023bf6a5c4413c4498b018594bfbb693d5e",
+  "observations": {
+    "placement_exists": true,
+    "triad_membership": "□S"
+  },
+  "passed": true,
+  "reason_code": "ADMITTED",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "P01",
+  "verdict": "IF_THEN"
+}

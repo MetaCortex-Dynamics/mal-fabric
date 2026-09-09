@@ -1,0 +1,12 @@
+{
+  "because": "NOT-SAME connection tuples CANNOT share semantic route identity",
+  "category": "negative",
+  "expected_reason_code": "ROUTE_ID_COLLISION",
+  "expected_verdict": "NO",
+  "input_digest": "d816ad78c0acdfb11ae4e2a30100bd4ca246e0d258784505a165a2bb7aac6199",
+  "passed": true,
+  "reason_code": "ROUTE_ID_COLLISION",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "N11",
+  "verdict": "NO"
+}

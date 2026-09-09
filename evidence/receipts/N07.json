@@ -1,0 +1,12 @@
+{
+  "because": "route source MUST be RESULT/OUT",
+  "category": "negative",
+  "expected_reason_code": "PORT_DIRECTION_INCOMPATIBLE",
+  "expected_verdict": "NO",
+  "input_digest": "0a2a4a807adb6cd3a8b9fa815e7b293869c0e0580418847c2bde6395cf884a44",
+  "passed": true,
+  "reason_code": "PORT_DIRECTION_INCOMPATIBLE",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "N07",
+  "verdict": "NO"
+}

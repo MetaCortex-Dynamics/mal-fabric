@@ -1,0 +1,15 @@
+{
+  "category": "positive",
+  "expected_verdict": "IF_THEN",
+  "input_digest": "e2dbc8f27648cfd6593b230f66a86537277897f8038ef94b68395a216cb12f9d",
+  "normalized_output_digest": "f3a3039d6dbecd93e292c8c8c3c1dd42b03f2509dca14fffc24ff62d0bf18e61",
+  "observations": {
+    "normalized_equal": true,
+    "presentation_fields_in_canonical_state": false
+  },
+  "passed": true,
+  "reason_code": "ADMITTED",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "P06",
+  "verdict": "IF_THEN"
+}

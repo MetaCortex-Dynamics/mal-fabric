@@ -1,0 +1,19 @@
+{
+  "category": "positive",
+  "expected_verdict": "IF_THEN",
+  "input_digest": "1d9f75aff2a233f82f668a89de9b80962f05adf9725bc077a81398c85d3bd688",
+  "normalized_output_digest": "1d9f75aff2a233f82f668a89de9b80962f05adf9725bc077a81398c85d3bd688",
+  "observations": {
+    "containment_path": [
+      "m1",
+      "t1",
+      "root"
+    ],
+    "expected_depth": 3
+  },
+  "passed": true,
+  "reason_code": "ADMITTED",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "P03",
+  "verdict": "IF_THEN"
+}
