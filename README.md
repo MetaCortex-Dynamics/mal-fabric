@@ -1,5 +1,7 @@
 # MaL Fabric v0.1.0
 
+[![DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712)
+
 MaL Fabric defines deterministic canonical static semantics for a MaL-native
 software-FPGA fabric. This V3.1 defensive-publication snapshot contains the
 normative specification, the fixed 25-vector conformance corpus, a small
