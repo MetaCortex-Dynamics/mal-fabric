@@ -1,6 +1,6 @@
 # MaL Fabric v0.3.0
 
-[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22713736.svg)](https://doi.org/10.5281/zenodo.22713736) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712)
+[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22713736.svg)](https://doi.org/10.5281/zenodo.22713736) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -8,6 +8,15 @@ Version 0.3.0 preserves the sealed V3.1 and V3.2 substrates and adds the
 promoted V3.3 execution kernel: snapshot-isolated ticks, canonical input-frame
 assembly, four-state payload custody, quiescence classification, and
 host-order erasure over valid schedules.
+
+## Companion papers
+
+- [Canonical Geometric Programs: Confluent Dual-Surface Semantics for
+  Operator-Witness Fabrics](https://doi.org/10.5281/zenodo.22677712) establishes
+  the static program object.
+- [Programming with Geometry: Synchronous Spatial Execution and Host-Order
+  Erasure in Operator-Witness Fabrics](https://doi.org/10.5281/zenodo.22715312)
+  establishes the dynamic execution semantics.
 
 ## Conformance
 
@@ -108,6 +117,9 @@ software_version_doi:
 
 public_release_commit:
   dfe4f37dc9e90ea0141422c27f69d8d8a1c5d363
+
+paper_b_doi:
+  10.5281/zenodo.22715312
 ```
 
 The publication carrier descends from the existing public history and imports

@@ -58,6 +58,21 @@ zenodo_archive_size_bytes:
 
 zenodo_archive_md5:
   EA6F9B38EF02574253212B4091273853
+
+paper_b_doi:
+  10.5281/zenodo.22715312
+
+paper_b_concept_doi:
+  10.5281/zenodo.22715311
+
+paper_b_record:
+  https://zenodo.org/records/22715312
+
+paper_b_docx_sha256:
+  1A749C9F20B423222D7E51A9F617837F8B749DC7805E258150C520320E208E86
+
+paper_b_pdf_sha256:
+  02FE9D8DA9D06F011AEC96E72F3ED96694B7E1305558EE3D54EA1432108124B9
 ```
 
 ## Filtered import
