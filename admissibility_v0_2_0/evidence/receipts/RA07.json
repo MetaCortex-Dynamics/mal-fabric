@@ -1,0 +1,33 @@
+{
+  "actual": "0e56ee27fbff52349805823abc81ddfa5f3d3f52e67bb5b01796d4f68f2e56fc",
+  "candidate_digest": "0e56ee27fbff52349805823abc81ddfa5f3d3f52e67bb5b01796d4f68f2e56fc",
+  "class": "repair",
+  "crossing_class": "S->F",
+  "crossing_verdict": null,
+  "d_SV": null,
+  "d_SV_core": null,
+  "d_WV": null,
+  "d_joint": null,
+  "epsilon_S": null,
+  "epsilon_W": null,
+  "expected": "0e56ee27fbff52349805823abc81ddfa5f3d3f52e67bb5b01796d4f68f2e56fc",
+  "extended_drc_reason_code": null,
+  "extended_drc_result": null,
+  "input_digest": "9b4e54a20c1cd65729a011feee1508098ad6b97aeda5b4e5a655550bf1bb5095",
+  "lifecycle_after": null,
+  "lifecycle_before": null,
+  "observations": {
+    "ranked_count": 2
+  },
+  "parent_candidate_digest": null,
+  "pass": true,
+  "q32_scale": 4294967296,
+  "repair_kind": "STRUCTURAL_REPAIR_FIBER",
+  "repair_rule": null,
+  "required_capabilities": null,
+  "residual_ratio": null,
+  "spec_version": "0.2.0-candidate-r2",
+  "terminal_verdict": "0e56ee27fbff52349805823abc81ddfa5f3d3f52e67bb5b01796d4f68f2e56fc",
+  "v3_1_drc_result": "IF_THEN",
+  "vector_id": "RA07"
+}

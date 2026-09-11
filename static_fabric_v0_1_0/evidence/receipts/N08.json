@@ -1,0 +1,12 @@
+{
+  "because": "TYPE_COMPAT requires exact symbolic WITNESS_TYPE equality; WITNESS_TYPE(WHAT, RESULT)=identity/essence NOT-SAME WITNESS_TYPE(WHERE, INNER)=location/context",
+  "category": "negative",
+  "expected_reason_code": "PAYLOAD_TYPE_INCOMPATIBLE",
+  "expected_verdict": "NO",
+  "input_digest": "eaefbd75f7bdb8b8869c639eac226343eff6712c3c649c771537d89c858f26c1",
+  "passed": true,
+  "reason_code": "PAYLOAD_TYPE_INCOMPATIBLE",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "N08",
+  "verdict": "NO"
+}

@@ -1,0 +1,33 @@
+{
+  "actual": "PROMOTED",
+  "candidate_digest": null,
+  "class": "lifecycle",
+  "crossing_class": null,
+  "crossing_verdict": null,
+  "d_SV": null,
+  "d_SV_core": null,
+  "d_WV": null,
+  "d_joint": null,
+  "epsilon_S": null,
+  "epsilon_W": null,
+  "expected": "PROMOTED",
+  "extended_drc_reason_code": null,
+  "extended_drc_result": null,
+  "input_digest": "f8580c26fbc23297331da1edd7580a90fb71407410f3a05ce350ab74e95ca5aa",
+  "lifecycle_after": "PROMOTED",
+  "lifecycle_before": "SANDBOX",
+  "observations": {
+    "input_verdict": "IF_THEN"
+  },
+  "parent_candidate_digest": null,
+  "pass": true,
+  "q32_scale": 4294967296,
+  "repair_kind": null,
+  "repair_rule": null,
+  "required_capabilities": null,
+  "residual_ratio": null,
+  "spec_version": "0.2.0-candidate-r2",
+  "terminal_verdict": "PROMOTED",
+  "v3_1_drc_result": null,
+  "vector_id": "LA01"
+}

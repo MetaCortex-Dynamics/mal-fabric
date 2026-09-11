@@ -1,0 +1,12 @@
+{
+  "because": "actual role shape INNER[2], OUTER[0] NOT-SAME expected INNER[1], OUTER[1]",
+  "category": "negative",
+  "expected_reason_code": "JOIN_ROLE_SHAPE_VIOLATION",
+  "expected_verdict": "NO",
+  "input_digest": "6f2a9ab514668e7e2996172c49baf2474875d089a3e5b5c729ea2e7d996394c0",
+  "passed": true,
+  "reason_code": "JOIN_ROLE_SHAPE_VIOLATION",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "N06",
+  "verdict": "NO"
+}

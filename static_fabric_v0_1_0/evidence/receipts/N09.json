@@ -1,0 +1,12 @@
+{
+  "because": "every route endpoint MUST exist",
+  "category": "negative",
+  "expected_reason_code": "ROUTE_ENDPOINT_MISSING",
+  "expected_verdict": "NO",
+  "input_digest": "77751faed53f3b082790f3422a5b4fd1611d863a281c9e8c6484256bb22befec",
+  "passed": true,
+  "reason_code": "ROUTE_ENDPOINT_MISSING",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "N09",
+  "verdict": "NO"
+}

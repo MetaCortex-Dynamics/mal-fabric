@@ -1,0 +1,12 @@
+{
+  "because": "containment MUST be acyclic",
+  "category": "negative",
+  "expected_reason_code": "CONTAINMENT_CYCLE",
+  "expected_verdict": "NO",
+  "input_digest": "be9e094f28332581a9b198649e5dc1eeece4dfa7e985e21134e60d70f685820f",
+  "passed": true,
+  "reason_code": "CONTAINMENT_CYCLE",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "N03",
+  "verdict": "NO"
+}

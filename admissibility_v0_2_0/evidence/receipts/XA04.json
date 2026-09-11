@@ -1,0 +1,33 @@
+{
+  "actual": "IF_THEN",
+  "candidate_digest": "b349e62b64bb52b0e46583aaca872ec513158cab04fb940dbbe25af588e66238",
+  "class": "crossing",
+  "crossing_class": "F->S",
+  "crossing_verdict": "IF_THEN",
+  "d_SV": 1073741824,
+  "d_SV_core": 1073741824,
+  "d_WV": 1073741824,
+  "d_joint": 1073741824,
+  "epsilon_S": 2147483648,
+  "epsilon_W": 2147483648,
+  "expected": "IF_THEN",
+  "extended_drc_reason_code": null,
+  "extended_drc_result": "IF_THEN",
+  "input_digest": "21850366d587f54a02d9e4631d048582221ceed52b893e9a11c3f1b1541ca277",
+  "lifecycle_after": null,
+  "lifecycle_before": null,
+  "parent_candidate_digest": null,
+  "pass": true,
+  "q32_scale": 4294967296,
+  "repair_kind": null,
+  "repair_rule": null,
+  "required_capabilities": [
+    "F",
+    "S"
+  ],
+  "residual_ratio": 0,
+  "spec_version": "0.2.0-candidate-r2",
+  "terminal_verdict": "IF_THEN",
+  "v3_1_drc_result": "IF_THEN",
+  "vector_id": "XA04"
+}

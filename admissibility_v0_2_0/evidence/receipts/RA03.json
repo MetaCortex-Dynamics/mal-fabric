@@ -1,0 +1,36 @@
+{
+  "actual": "IF_THEN",
+  "candidate_digest": "0e56ee27fbff52349805823abc81ddfa5f3d3f52e67bb5b01796d4f68f2e56fc",
+  "class": "repair",
+  "crossing_class": "S->F",
+  "crossing_verdict": null,
+  "d_SV": null,
+  "d_SV_core": null,
+  "d_WV": null,
+  "d_joint": null,
+  "epsilon_S": null,
+  "epsilon_W": null,
+  "expected": "IF_THEN",
+  "extended_drc_reason_code": null,
+  "extended_drc_result": null,
+  "input_digest": "0c1a554d0a0a3c14293f0f4cd18424c2f6a8a06bcff314674af8524445b041f1",
+  "lifecycle_after": null,
+  "lifecycle_before": null,
+  "observations": {
+    "route_classes": [
+      "G->S",
+      "S->F"
+    ]
+  },
+  "parent_candidate_digest": "8fb04b609098bce37b39f2b3134935d35ffb3384b239f1ec6c9103b43d97c0f4",
+  "pass": true,
+  "q32_scale": 4294967296,
+  "repair_kind": "STRUCTURAL_REPAIR_FIBER",
+  "repair_rule": "SR-1",
+  "required_capabilities": null,
+  "residual_ratio": null,
+  "spec_version": "0.2.0-candidate-r2",
+  "terminal_verdict": "IF_THEN",
+  "v3_1_drc_result": "IF_THEN",
+  "vector_id": "RA03"
+}

@@ -1,0 +1,12 @@
+{
+  "because": "LEFT MUST belong to ROLE_SCHEMA(THIS)",
+  "category": "negative",
+  "expected_reason_code": "TARGET_ROLE_INVALID",
+  "expected_verdict": "NO",
+  "input_digest": "85f08084e448c80c480b729974b17fbfc625ebff2fb27f840c7f7a1667aa1258",
+  "passed": true,
+  "reason_code": "TARGET_ROLE_INVALID",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "N10",
+  "verdict": "NO"
+}

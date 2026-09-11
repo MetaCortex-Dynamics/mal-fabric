@@ -1,0 +1,16 @@
+{
+  "category": "confluence",
+  "expected_verdict": "SAME",
+  "input_digest": "63be400b5dba23f8c5bef174d417d52b9c5f703de38e6a4d5413fffb20818f6e",
+  "normalized_output_digest": "b34ee95d5850cba536ddea01005cdecb7b33c3d936f7c1fa86ce58401cfe39c1",
+  "observations": {
+    "canonical_edits_equal": true,
+    "text_drc": "IF_THEN",
+    "visual_drc": "IF_THEN"
+  },
+  "passed": true,
+  "reason_code": "NORMALIZED_CANONICAL_RESULTS_EQUAL",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "C04",
+  "verdict": "SAME"
+}

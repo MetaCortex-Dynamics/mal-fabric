@@ -1,0 +1,15 @@
+{
+  "category": "positive",
+  "expected_verdict": "IF_THEN",
+  "input_digest": "eaad106fca071cf5586c3515aedca7b86b3d7891191a4ebdce0060361f81a1f3",
+  "normalized_output_digest": "3c4633a483d997c93770a02f11490437395537c390922bf80886821fe463c3cc",
+  "observations": {
+    "host_enumeration_erased": true,
+    "member_count": 3
+  },
+  "passed": true,
+  "reason_code": "ADMITTED",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "P05",
+  "verdict": "IF_THEN"
+}

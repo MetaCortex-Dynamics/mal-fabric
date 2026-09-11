@@ -1,0 +1,33 @@
+{
+  "actual": "IF_THEN",
+  "candidate_digest": "eb5818b50d2ca08368ac202b1ae8fa38a2b6058e87794f60602077bfa3478e08",
+  "class": "positive",
+  "crossing_class": "S->G",
+  "crossing_verdict": "IF_THEN",
+  "d_SV": 1073741824,
+  "d_SV_core": 1073741824,
+  "d_WV": 1073741824,
+  "d_joint": 1073741824,
+  "epsilon_S": 2147483648,
+  "epsilon_W": 2147483648,
+  "expected": "IF_THEN",
+  "extended_drc_reason_code": null,
+  "extended_drc_result": "IF_THEN",
+  "input_digest": "6b825e5ee125629cccbdb1e3fbe638fbf4d62ac41f74583ebf1989cc8f5e4548",
+  "lifecycle_after": null,
+  "lifecycle_before": null,
+  "parent_candidate_digest": null,
+  "pass": true,
+  "q32_scale": 4294967296,
+  "repair_kind": null,
+  "repair_rule": null,
+  "required_capabilities": [
+    "S",
+    "G"
+  ],
+  "residual_ratio": 0,
+  "spec_version": "0.2.0-candidate-r2",
+  "terminal_verdict": "IF_THEN",
+  "v3_1_drc_result": "IF_THEN",
+  "vector_id": "PA05"
+}

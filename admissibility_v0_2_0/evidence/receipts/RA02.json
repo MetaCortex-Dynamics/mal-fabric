@@ -1,0 +1,33 @@
+{
+  "actual": "MAYBE",
+  "candidate_digest": "9c2023328248f967d2e38762504e0fec960ed2f1712e308c6bbf0f1386295ee8",
+  "class": "repair",
+  "crossing_class": "G->S",
+  "crossing_verdict": "MAYBE",
+  "d_SV": null,
+  "d_SV_core": null,
+  "d_WV": null,
+  "d_joint": null,
+  "epsilon_S": null,
+  "epsilon_W": null,
+  "expected": "MAYBE",
+  "extended_drc_reason_code": null,
+  "extended_drc_result": null,
+  "input_digest": "3c01fd7b19944f5633f8991063e0e09f6c5800b29f5954658c240e23add67034",
+  "lifecycle_after": null,
+  "lifecycle_before": null,
+  "parent_candidate_digest": "9c2023328248f967d2e38762504e0fec960ed2f1712e308c6bbf0f1386295ee8",
+  "pass": true,
+  "q32_scale": 4294967296,
+  "repair_kind": "EVIDENCE_REPAIR_FIBER",
+  "repair_rule": null,
+  "required_capabilities": [
+    "G",
+    "S"
+  ],
+  "residual_ratio": null,
+  "spec_version": "0.2.0-candidate-r2",
+  "terminal_verdict": "MAYBE",
+  "v3_1_drc_result": "IF_THEN",
+  "vector_id": "RA02"
+}

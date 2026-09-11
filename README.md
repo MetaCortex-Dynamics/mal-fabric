@@ -1,90 +1,106 @@
-# MaL Fabric v0.1.0
+# MaL Fabric v0.2.0
 
 [![DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712)
 
-MaL Fabric defines deterministic canonical static semantics for a MaL-native
-software-FPGA fabric. This V3.1 defensive-publication snapshot contains the
-normative specification, the fixed 25-vector conformance corpus, a small
-reference kernel, and deterministic execution evidence.
+MaL Fabric defines deterministic canonical static semantics and governed
+admission for a MaL-native software-FPGA fabric. Version 0.2.0 preserves the
+sealed V3.1 static kernel and adds the promoted V3.2 admission pipeline,
+directed TRIAD-crossing governance, pairwise placement metrics, repair fibers,
+extended DRC, lifecycle management, and deterministic admission evidence.
 
 ## Conformance
 
 ```text
-REFERENCE_STATIC_KERNEL := HOLDS
-CONFORMANCE             := 25/25
-positive                := 8/8
-negative                := 11/11
-confluence              := 6/6
+V3.1 static kernel
+  conformance          25/25
+  evidence determinism 26/26
+
+V3.2 admission kernel
+  positive             10/10
+  negative             22/22
+  quantitative          4/4
+  crossing              8/8
+  repair                8/8
+  lifecycle             8/8
+  confluence            2/2
+  total                 62/62
+  evidence determinism 63/63
 ```
 
-Run the conformance suite from the repository root:
+Run both suites from the repository root:
 
 ```text
-python -B reference/run_conformance.py --output evidence
+python -B static_fabric_v0_1_0/run_conformance.py --output static_fabric_v0_1_0/evidence
+python -B admissibility_v0_2_0/run_conformance.py --output admissibility_v0_2_0/evidence
 ```
 
-A successful replay exits zero, reports `25/25`, and regenerates the 26
-evidence JSON files byte-for-byte.
+Successful replay regenerates each evidence set byte-for-byte.
 
 ## Contents
 
-- [FABRIC_SPEC.md](FABRIC_SPEC.md) — normative static fabric specification.
-- [FABRIC_CONFORMANCE_VECTORS.md](FABRIC_CONFORMANCE_VECTORS.md) — normative
-  P01-P08, N01-N11, and C01-C06 corpus.
-- [reference/kernel.py](reference/kernel.py) — deterministic static reference
-  realization.
-- [reference/run_conformance.py](reference/run_conformance.py) — executable
-  conformance harness.
-- [evidence/queuegate-evidence-summary.json](evidence/queuegate-evidence-summary.json)
-  and [evidence/receipts](evidence/receipts) — execution evidence.
+- [FABRIC_SPEC.md](FABRIC_SPEC.md) and
+  [FABRIC_CONFORMANCE_VECTORS.md](FABRIC_CONFORMANCE_VECTORS.md) preserve the
+  published V3.1 normative surface.
+- [FABRIC_ADMISSION_PIPELINE_SPEC.md](FABRIC_ADMISSION_PIPELINE_SPEC.md) is the
+  V3.2 normative admission specification.
+- [static_fabric_v0_1_0](static_fabric_v0_1_0) is the exact V3.1 substrate
+  imported by the admission kernel.
+- [admissibility_v0_2_0](admissibility_v0_2_0) contains the promoted V3.2
+  implementation, proof, 62-vector runner, 63 evidence artifacts, and
+  promotion record.
+- [PUBLICATION_PROVENANCE.md](PUBLICATION_PROVENANCE.md) binds this filtered
+  public carrier to the upstream candidate and promotion commits.
+- [reference](reference) and [evidence](evidence) retain the original v0.1.0
+  publication layout for compatibility.
 
 ## Publication provenance
 
 ```text
-upstream_commit:
-  cb69ed7a38749a00084aa815a65e01bbfd88aee6
+public_base_commit:
+  1c1a495406be76ba6d00861fbe2c1044b557c686
 
-source_spec_sha256:
-  E328B574DE32635358AC488C4C5E20E80E86A845EB154401C8E1A7C0DD8D68F1
+upstream_candidate_commit:
+  ba8428607a5a0291a4a6c0eea275e6d76afbfb5e
 
-source_vector_corpus_sha256:
-  1A9E6E33BCCB0A39AC8626CBBF65C112D80B9A7D5C550A83F9700545C8C5161F
+upstream_promotion_commit:
+  a593b595f674746a532bcd3e2de52bdf1cef9e68
 
-upstream_kernel_sha256:
-  8B983301DAD795DD9C3F020970BAD76017EF648AC0C71E3FB6FDEF3D0E4347C0
+v3_2_spec_sha256:
+  DF253688DA9DED75D59793BC88C13F33365ECD6EE2D24F090E0DFED43AADDABC
 
-upstream_queuegate_evidence_summary_sha256:
-  16CE384323538A69627B1CFDCDDB677A3056AB5E9B3CD28E3F9B371DE82E04BB
+v3_2_queuegate_evidence_summary_sha256:
+  19EE5B395B44E016A24C259674A35EA055A6DF4D33D32657A223AFCD2CF05C8B
 
-conformance:
-  25/25
+v3_2_conformance:
+  62/62
 
-determinism:
-  26/26 byte-identical
+v3_2_determinism:
+  63/63 byte-identical
 ```
 
-The source-document hashes bind the authority inputs before publication
-line-ending normalization. Release-commit and publication-file identities are
-recorded by the tagged Git tree and GitHub release.
+The publication carrier descends from the existing public history and imports
+only the promoted software-FPGA subtrees. The upstream commit and artifact
+hashes provide the authority and content binding without exposing unrelated
+private repository history.
 
-## Established static result
+## Established result
 
-V3.1 establishes a canonical geometric program object, dual text/visual
-projection onto one edit model, operator-derived interfaces, coordinate-free
-semantic placement, static operator-coherent joins, derived TRIAD transitions,
-deterministic normalization, content-addressed routing, and independently
-reproducible 25/25 static conformance.
+V3.1 establishes canonical static fabric semantics: a geometric program
+object, dual text/visual projection, operator-derived interfaces,
+coordinate-free placement, operator-coherent joins, derived TRIAD transitions,
+deterministic normalization, and content-addressed routing.
 
-V3.1 establishes static fabric determinism. It does **not** establish
-`HOST_ORDER_ERASURE` for dynamic execution; that obligation belongs to the
-separate V3.3 execution specification.
+V3.2 establishes governed static admission over that fixed substrate:
+pairwise witness and structural tolerances, directed crossing laws,
+deterministic extended checks, proposal-only repair fibers, lifecycle
+transitions, and a scoped post-parse nonexpansiveness result.
 
 ## Scope boundary
 
-This snapshot excludes Aegis/Hyphasis integration, `d_joint`, repair fiber,
-runtime payload execution, synchronous fabric execution, `HOST_ORDER_ERASURE`
-implementation, quiescence, WHEN overlay, program-counter semantics, and any
-fetch/decode/execute loop.
+Version 0.2.0 establishes static fabric determinism and static admission. It
+does not establish synchronous payload execution, global quiescence,
+host-order erasure, a `WHEN` execution overlay, program-counter semantics, or
+a fetch/decode/execute loop. Those remain V3.3 work.
 
 Public disclosure may bear on prior art, but neither publication nor the
 Apache-2.0 license guarantees a particular patent outcome. Apache-2.0 governs

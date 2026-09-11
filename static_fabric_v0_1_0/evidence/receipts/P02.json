@@ -1,0 +1,18 @@
+{
+  "category": "positive",
+  "expected_verdict": "IF_THEN",
+  "input_digest": "c888d716194b3fa141b89f30cd93823eb8ff59745c43b8bdb8c1911958952bf5",
+  "normalized_output_digest": "030987ca2557d6858264752bc221773c0c76db992e6b9ffb2f4e7d0d54474ab9",
+  "observations": {
+    "claim_boundary": "STRUCTURAL_CAPABILITY_ONLY",
+    "directed_boundary": [
+      "□S",
+      "□F"
+    ]
+  },
+  "passed": true,
+  "reason_code": "ADMITTED",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "P02",
+  "verdict": "IF_THEN"
+}

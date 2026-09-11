@@ -1,0 +1,12 @@
+{
+  "because": "actual VALUE multiplicity = 2; expected EXACTLY_ONE",
+  "category": "negative",
+  "expected_reason_code": "JOIN_MULTIPLICITY_VIOLATION",
+  "expected_verdict": "NO",
+  "input_digest": "2af9f077e158f0228fbddcb17e4a23a3e1bc9d0a04ee044cc1c3541100b47e98",
+  "passed": true,
+  "reason_code": "JOIN_MULTIPLICITY_VIOLATION",
+  "spec_version": "0.1.0-candidate-r2",
+  "vector_id": "N05",
+  "verdict": "NO"
+}

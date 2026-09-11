@@ -1,0 +1,33 @@
+{
+  "actual": "REJECTED",
+  "candidate_digest": null,
+  "class": "lifecycle",
+  "crossing_class": null,
+  "crossing_verdict": null,
+  "d_SV": null,
+  "d_SV_core": null,
+  "d_WV": null,
+  "d_joint": null,
+  "epsilon_S": null,
+  "epsilon_W": null,
+  "expected": "REJECTED",
+  "extended_drc_reason_code": null,
+  "extended_drc_result": null,
+  "input_digest": "9dae580dbfc1cf29caaa8855e1dfa25363a6b91ac0d50a5c375bb70654bb81d4",
+  "lifecycle_after": "REJECTED",
+  "lifecycle_before": "SANDBOX",
+  "observations": {
+    "input_verdict": "NOT_SAME"
+  },
+  "parent_candidate_digest": null,
+  "pass": true,
+  "q32_scale": 4294967296,
+  "repair_kind": null,
+  "repair_rule": null,
+  "required_capabilities": null,
+  "residual_ratio": null,
+  "spec_version": "0.2.0-candidate-r2",
+  "terminal_verdict": "REJECTED",
+  "v3_1_drc_result": null,
+  "vector_id": "LA04"
+}

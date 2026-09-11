@@ -1,0 +1,126 @@
+{
+  "artifact_bindings": {
+    "admission_kernel_sha256": "89105692eee04580db1c98556b51d0644292b7fb7b42fa4f41ebd381cde256dc",
+    "conformance_runner_sha256": "bd56f24ca16485421931f8965909f8d54be3f29e3fed604dafb1d67a00780e47",
+    "proof_adm_3_nonexp_sha256": "2ea1f1453b5051a2e6b117ad784de3637245f4ccd802c6522bcee98591fb38b0",
+    "v3_1_import_manifest_sha256": "4e50fbfd1d0ea6eebf8a46da095d35ac8c6ac01d36c60c6d03dafc5c2d77b505"
+  },
+  "conformance": "62/62",
+  "counts": {
+    "confluence": {
+      "passed": 2,
+      "total": 2
+    },
+    "crossing": {
+      "passed": 8,
+      "total": 8
+    },
+    "lifecycle": {
+      "passed": 8,
+      "total": 8
+    },
+    "negative": {
+      "passed": 22,
+      "total": 22
+    },
+    "positive": {
+      "passed": 10,
+      "total": 10
+    },
+    "quantitative": {
+      "passed": 4,
+      "total": 4
+    },
+    "repair": {
+      "passed": 8,
+      "total": 8
+    }
+  },
+  "deterministic_encoding": {
+    "filesystem_order_dependency": false,
+    "process_order_dependency": false,
+    "random_uuids": false,
+    "timestamps": false,
+    "unordered_serialization": false
+  },
+  "evidence_artifact_count": 63,
+  "obligation": "O-SWFPGA-ADMISSIBILITY-1",
+  "promotion": "NOT_PERFORMED",
+  "proof_adm_3_nonexp": "PRESENT",
+  "queuegate": "Q-SWFPGA-ADMISSIBILITY-001",
+  "receipt_ids": [
+    "PA01",
+    "PA02",
+    "PA03",
+    "PA04",
+    "PA05",
+    "PA06",
+    "PA07",
+    "PA08",
+    "PA09",
+    "PA10",
+    "NA01",
+    "NA02",
+    "NA03",
+    "NA04",
+    "NA05",
+    "NA06",
+    "NA07",
+    "NA08",
+    "NA09",
+    "NA10",
+    "NA11",
+    "NA12",
+    "NA13",
+    "NA14",
+    "NA15",
+    "NA16",
+    "NA17",
+    "NA18",
+    "NA19",
+    "NA20",
+    "NA21",
+    "NA22",
+    "QA01",
+    "QA02",
+    "QA03",
+    "QA04",
+    "XA01",
+    "XA02",
+    "XA03",
+    "XA04",
+    "XA05",
+    "XA06",
+    "XA07",
+    "XA08",
+    "RA01",
+    "RA02",
+    "RA03",
+    "RA04",
+    "RA05",
+    "RA06",
+    "RA07",
+    "RA08",
+    "LA01",
+    "LA02",
+    "LA03",
+    "LA04",
+    "LA05",
+    "LA06",
+    "LA07",
+    "LA08",
+    "CA01",
+    "CA02"
+  ],
+  "reference_admission_kernel": "HOLDS",
+  "spec_sha256": "df253688da9ded75d59793bc88c13f33365ecd6ee2d24f090e0dfed43aaddabc",
+  "spec_version": "0.2.0-candidate-r2",
+  "total": 62,
+  "total_passed": 62,
+  "v3_1_import": "UNCHANGED",
+  "v3_1_import_identities": {
+    "kernel_sha256": "8b983301dad795dd9c3f020970bad76017ef648ac0c71e3fb6fdef3d0e4347c0",
+    "queuegate_evidence_summary_sha256": "16ce384323538a69627b1cfdcddb677a3056ab5e9b3cd28e3f9b371de82e04bb"
+  },
+  "v3_3_leakage": "NONE"
+}
