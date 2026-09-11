@@ -1,6 +1,6 @@
 # MaL Fabric v0.2.0
 
-[![DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712)
+[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22711890.svg)](https://doi.org/10.5281/zenodo.22711890) [![Concept DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22678127-blue)](https://doi.org/10.5281/zenodo.22678127) [![Paper DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712)
 
 MaL Fabric defines deterministic canonical static semantics and governed
 admission for a MaL-native software-FPGA fabric. Version 0.2.0 preserves the
@@ -59,6 +59,9 @@ Successful replay regenerates each evidence set byte-for-byte.
 public_base_commit:
   1c1a495406be76ba6d00861fbe2c1044b557c686
 
+public_release_commit:
+  7786721994a8fbad32da48ee20ad1eb538924d9a
+
 upstream_candidate_commit:
   ba8428607a5a0291a4a6c0eea275e6d76afbfb5e
 
@@ -76,6 +79,12 @@ v3_2_conformance:
 
 v3_2_determinism:
   63/63 byte-identical
+
+software_version_doi:
+  10.5281/zenodo.22711890
+
+software_concept_doi:
+  10.5281/zenodo.22678127
 ```
 
 The publication carrier descends from the existing public history and imports

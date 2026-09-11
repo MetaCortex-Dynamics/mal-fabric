@@ -11,6 +11,15 @@ public_repository:
 public_base_commit:
   1c1a495406be76ba6d00861fbe2c1044b557c686
 
+public_release_commit:
+  7786721994a8fbad32da48ee20ad1eb538924d9a
+
+public_release_tag:
+  v0.2.0
+
+github_release:
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.2.0
+
 upstream_repository:
   MetaCortex-Dynamics/mal_kernel_lab_foundation
 
@@ -25,6 +34,21 @@ queuegate:
 
 discharged_obligation:
   O-SWFPGA-ADMISSIBILITY-1
+
+software_version_doi:
+  10.5281/zenodo.22711890
+
+software_concept_doi:
+  10.5281/zenodo.22678127
+
+zenodo_record:
+  https://zenodo.org/records/22711890
+
+zenodo_archive_file:
+  MetaCortex-Dynamics/mal-fabric-v0.2.0.zip
+
+zenodo_archive_md5:
+  EDA05ED968CE241A628DDF93EB3E7701
 ```
 
 ## Filtered import
