@@ -1,0 +1,30 @@
+{
+  "active_cells": [],
+  "actual": "SLOT_CLEARED_RECEIPT_PERSISTS",
+  "blocked_reasons": [],
+  "cell_results_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "class": "payload",
+  "comparison_schedule_ids": [],
+  "details": {},
+  "expected": "SLOT_CLEARED_RECEIPT_PERSISTS",
+  "governance_results_digest": "703abcf070e7d1b63c1ecdb68f89b6599e87d139fb2ef4b07aedb92876184114",
+  "host_schedule_id": null,
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [
+    [
+      "source",
+      "DISCHARGED",
+      "EMPTY"
+    ]
+  ],
+  "pending_admission_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pending_buffer_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "program_digest": "5c3d96e7f681bc18ed9c8d289ff026478bda04ac309c889fe24ada7380204295",
+  "receipt_set_digest": "5c92d7faa6382a62703bfa4115657fb6e91dc713e36083f7a1d018834a0b2795",
+  "route_results_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "run_status": "HALTED",
+  "state_after_digest": "8bc5964c927463511d3e71dcb235c7a1f03d5ebb6b8d353f48e909b77b024a7c",
+  "state_before_digest": "29696a58d43d0d223d8617c60ba76a43185348088d6473133015894f4a55d1d6",
+  "vector_id": "P10"
+}

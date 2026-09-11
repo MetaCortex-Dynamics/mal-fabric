@@ -1,0 +1,32 @@
+{
+  "active_cells": [],
+  "actual": "BLOCKED",
+  "blocked_reasons": [
+    {
+      "details": [
+        "0ab87bf476778bd92f6f180d8f14537ae2fa5e93281c25b3f1d8e3fa07ae0cc7"
+      ],
+      "kind": "EGRESS_OPEN",
+      "subject_id": "source"
+    }
+  ],
+  "cell_results_digest": null,
+  "class": "quiescence",
+  "comparison_schedule_ids": [],
+  "details": {},
+  "expected": "BLOCKED",
+  "governance_results_digest": null,
+  "host_schedule_id": null,
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [],
+  "pending_admission_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pending_buffer_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "program_digest": "e991aa65ac2a7d54f6cada9bab4203b5920a3fd0e5c146e7e49453b9e65e0cb9",
+  "receipt_set_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "route_results_digest": null,
+  "run_status": "BLOCKED",
+  "state_after_digest": "d2d84939b8756b889987fcf366136d939145da40f529f4689d50d9222a940909",
+  "state_before_digest": "d2d84939b8756b889987fcf366136d939145da40f529f4689d50d9222a940909",
+  "vector_id": "Q06"
+}

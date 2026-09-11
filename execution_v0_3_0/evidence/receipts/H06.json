@@ -1,0 +1,33 @@
+{
+  "active_cells": [],
+  "actual": "SAME",
+  "blocked_reasons": [],
+  "cell_results_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "class": "host-order",
+  "comparison_schedule_ids": [
+    "obligation-reverse"
+  ],
+  "details": {
+    "canonical_evidence_A": "9ea2dfdc93d405efdeea771270025a2ebc3bbae99fe184a8997e3378b5c78c90",
+    "canonical_evidence_B": "9ea2dfdc93d405efdeea771270025a2ebc3bbae99fe184a8997e3378b5c78c90",
+    "run_status_A": "HALTED",
+    "run_status_B": "HALTED",
+    "state_digest_A": "2b1886d4a3fe714c6ff037289632c01eedfd55d3a9658c06f3296de9455461ca",
+    "state_digest_B": "2b1886d4a3fe714c6ff037289632c01eedfd55d3a9658c06f3296de9455461ca"
+  },
+  "expected": "SAME",
+  "governance_results_digest": "3a536a2d5bb89e6cd0d6e0b70a1a52bacd30979e4dbdeea74df8cdbd069a176e",
+  "host_schedule_id": "obligation-forward",
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [],
+  "pending_admission_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pending_buffer_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "program_digest": "0dd1912d8d51c391cd720b11483454fddf136c6613921bdae01d625c2069d65b",
+  "receipt_set_digest": "4b668afc65f3daaf2abff1129c93263ef890e07cd09553a8bb78e3027f762789",
+  "route_results_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "run_status": "HALTED",
+  "state_after_digest": "2b1886d4a3fe714c6ff037289632c01eedfd55d3a9658c06f3296de9455461ca",
+  "state_before_digest": "dfeaad3eb6be453b4ad18dfc03df1c17e1480ca30e3101c09c01387b2e6e8224",
+  "vector_id": "H06"
+}

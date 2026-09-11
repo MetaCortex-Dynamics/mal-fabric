@@ -1,0 +1,32 @@
+{
+  "active_cells": [],
+  "actual": "BLOCKED",
+  "blocked_reasons": [
+    {
+      "details": [
+        "unresolved-evidence"
+      ],
+      "kind": "PENDING_ADMISSION",
+      "subject_id": "runtime-maybe"
+    }
+  ],
+  "cell_results_digest": null,
+  "class": "end-to-end",
+  "comparison_schedule_ids": [],
+  "details": {},
+  "expected": "BLOCKED",
+  "governance_results_digest": null,
+  "host_schedule_id": null,
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [],
+  "pending_admission_digest": "85f4c48e1f8e430a275d623e326319028a82f5a844d2cbe012fdf1d087707db2",
+  "pending_buffer_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "program_digest": "6a4f45788541b1df8b7b24167f150cd8aeb9491d148698a2ee7e1a1d696534dd",
+  "receipt_set_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "route_results_digest": null,
+  "run_status": "BLOCKED",
+  "state_after_digest": "8090aea44ab40f7d040832d6c4efe12c760ca23b7a5b1da03562010042ea842e",
+  "state_before_digest": "8090aea44ab40f7d040832d6c4efe12c760ca23b7a5b1da03562010042ea842e",
+  "vector_id": "E06"
+}

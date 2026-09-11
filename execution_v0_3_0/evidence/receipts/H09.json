@@ -1,0 +1,131 @@
+{
+  "active_cells": [],
+  "actual": "SAME",
+  "blocked_reasons": [
+    {
+      "details": [],
+      "kind": "OUTSTANDING_OBLIGATION",
+      "subject_id": "obligation-a"
+    },
+    {
+      "details": [],
+      "kind": "OUTSTANDING_OBLIGATION",
+      "subject_id": "obligation-b"
+    },
+    {
+      "details": [
+        "RIGHT"
+      ],
+      "kind": "PARTIAL_INPUT",
+      "subject_id": "binary_target"
+    },
+    {
+      "details": [
+        "evidence-a"
+      ],
+      "kind": "PENDING_ADMISSION",
+      "subject_id": "candidate-a"
+    },
+    {
+      "details": [
+        "evidence-b"
+      ],
+      "kind": "PENDING_ADMISSION",
+      "subject_id": "candidate-b"
+    }
+  ],
+  "cell_results_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "class": "host-order",
+  "comparison_schedule_ids": [
+    "blocked-reasons-b"
+  ],
+  "details": {
+    "blocked_reasons_A": [
+      {
+        "details": [],
+        "kind": "OUTSTANDING_OBLIGATION",
+        "subject_id": "obligation-a"
+      },
+      {
+        "details": [],
+        "kind": "OUTSTANDING_OBLIGATION",
+        "subject_id": "obligation-b"
+      },
+      {
+        "details": [
+          "RIGHT"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "binary_target"
+      },
+      {
+        "details": [
+          "evidence-a"
+        ],
+        "kind": "PENDING_ADMISSION",
+        "subject_id": "candidate-a"
+      },
+      {
+        "details": [
+          "evidence-b"
+        ],
+        "kind": "PENDING_ADMISSION",
+        "subject_id": "candidate-b"
+      }
+    ],
+    "blocked_reasons_B": [
+      {
+        "details": [],
+        "kind": "OUTSTANDING_OBLIGATION",
+        "subject_id": "obligation-a"
+      },
+      {
+        "details": [],
+        "kind": "OUTSTANDING_OBLIGATION",
+        "subject_id": "obligation-b"
+      },
+      {
+        "details": [
+          "RIGHT"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "binary_target"
+      },
+      {
+        "details": [
+          "evidence-a"
+        ],
+        "kind": "PENDING_ADMISSION",
+        "subject_id": "candidate-a"
+      },
+      {
+        "details": [
+          "evidence-b"
+        ],
+        "kind": "PENDING_ADMISSION",
+        "subject_id": "candidate-b"
+      }
+    ],
+    "canonical_evidence_A": "b56720aaf67c464dbf7029972c2ba8420da9e31cdeeff96694049a3b592fa837",
+    "canonical_evidence_B": "b56720aaf67c464dbf7029972c2ba8420da9e31cdeeff96694049a3b592fa837",
+    "run_status_A": "BLOCKED",
+    "run_status_B": "BLOCKED",
+    "state_digest_A": "06e2cf07ab1d96e8f1e63b326fe628e253d932171293987ba4dfd6a96669f22c",
+    "state_digest_B": "06e2cf07ab1d96e8f1e63b326fe628e253d932171293987ba4dfd6a96669f22c"
+  },
+  "expected": "SAME",
+  "governance_results_digest": "fc31b04dda961d0d6ba9316db306dc22ed7c7e28aacf359615d1116117792cdb",
+  "host_schedule_id": "blocked-reasons-a",
+  "obligation_digest": "0d2d00b46586d28ea5ab59ff32aa0af374aeda77b5437ad821caf7ce9fb6af67",
+  "pass": true,
+  "payload_transitions": [],
+  "pending_admission_digest": "60eee698479b750c9b076e53cfbc0abca3b28eff5288959513994021ef13303a",
+  "pending_buffer_digest": "d135b4a24e3e8ca9ac3a2b5d5aab3b33480532058887e50c664844f351aae427",
+  "program_digest": "6a4f45788541b1df8b7b24167f150cd8aeb9491d148698a2ee7e1a1d696534dd",
+  "receipt_set_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "route_results_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "run_status": "BLOCKED",
+  "state_after_digest": "06e2cf07ab1d96e8f1e63b326fe628e253d932171293987ba4dfd6a96669f22c",
+  "state_before_digest": "06e2cf07ab1d96e8f1e63b326fe628e253d932171293987ba4dfd6a96669f22c",
+  "vector_id": "H09"
+}

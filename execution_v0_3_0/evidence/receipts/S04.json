@@ -1,0 +1,37 @@
+{
+  "active_cells": [
+    "source"
+  ],
+  "actual": "PROGRAM_UNCHANGED",
+  "blocked_reasons": [],
+  "cell_results_digest": "f9708f8ebb596d0bf2cdc56a9fe638d5afd62e0d0aaf974e4063c013091de4b1",
+  "class": "snapshot",
+  "comparison_schedule_ids": [],
+  "details": {},
+  "expected": "PROGRAM_UNCHANGED",
+  "governance_results_digest": "a0e81d7f744023b1865fdf7942fc4fe0a9780d5073da71bef2e703060126a424",
+  "host_schedule_id": null,
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [
+    [
+      "source",
+      "ADMITTED",
+      "COMPLETED"
+    ],
+    [
+      "target",
+      "EMPTY",
+      "ADMITTED"
+    ]
+  ],
+  "pending_admission_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pending_buffer_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "program_digest": "e991aa65ac2a7d54f6cada9bab4203b5920a3fd0e5c146e7e49453b9e65e0cb9",
+  "receipt_set_digest": "bd31d04665420771b452ac5c151e7d01af7e6e53e250d66892f713fc7b1fbc42",
+  "route_results_digest": "873021bedee29451b34f2f6081d24e62b898ea73b0939051544f1040a78a3122",
+  "run_status": "RUNNING",
+  "state_after_digest": "69c731677b032ba08da490c14a79f968c49c049c8d1affff67cd07b146a725f2",
+  "state_before_digest": "f496711ff5467cf5325de75903ddd7ddcb19ffdd559969f49cb4d6fc8f8e424e",
+  "vector_id": "S04"
+}

@@ -1,12 +1,13 @@
-# MaL Fabric v0.2.0
+# MaL Fabric v0.3.0
 
-[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22711890.svg)](https://doi.org/10.5281/zenodo.22711890) [![Concept DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22678127-blue)](https://doi.org/10.5281/zenodo.22678127) [![Paper DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712)
+[![DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712)
 
-MaL Fabric defines deterministic canonical static semantics and governed
-admission for a MaL-native software-FPGA fabric. Version 0.2.0 preserves the
-sealed V3.1 static kernel and adds the promoted V3.2 admission pipeline,
-directed TRIAD-crossing governance, pairwise placement metrics, repair fibers,
-extended DRC, lifecycle management, and deterministic admission evidence.
+MaL Fabric defines deterministic canonical static semantics, governed
+admission, and synchronous execution for a MaL-native software-FPGA fabric.
+Version 0.3.0 preserves the sealed V3.1 and V3.2 substrates and adds the
+promoted V3.3 execution kernel: snapshot-isolated ticks, canonical input-frame
+assembly, four-state payload custody, quiescence classification, and
+host-order erasure over valid schedules.
 
 ## Conformance
 
@@ -16,22 +17,27 @@ V3.1 static kernel
   evidence determinism 26/26
 
 V3.2 admission kernel
-  positive             10/10
-  negative             22/22
-  quantitative          4/4
-  crossing              8/8
-  repair                8/8
-  lifecycle             8/8
-  confluence            2/2
-  total                 62/62
+  conformance          62/62
   evidence determinism 63/63
+
+V3.3 execution kernel
+  snapshot             10/10
+  frame                12/12
+  payload              10/10
+  quiescence           12/12
+  host-order           12/12
+  negative              8/8
+  end-to-end            6/6
+  total                70/70
+  evidence determinism 71/71
 ```
 
-Run both suites from the repository root:
+Run all suites from the repository root:
 
 ```text
 python -B static_fabric_v0_1_0/run_conformance.py --output static_fabric_v0_1_0/evidence
 python -B admissibility_v0_2_0/run_conformance.py --output admissibility_v0_2_0/evidence
+python -B execution_v0_3_0/run_conformance.py --output execution_v0_3_0/evidence
 ```
 
 Successful replay regenerates each evidence set byte-for-byte.
@@ -40,78 +46,88 @@ Successful replay regenerates each evidence set byte-for-byte.
 
 - [FABRIC_SPEC.md](FABRIC_SPEC.md) and
   [FABRIC_CONFORMANCE_VECTORS.md](FABRIC_CONFORMANCE_VECTORS.md) preserve the
-  published V3.1 normative surface.
+  V3.1 normative surface.
 - [FABRIC_ADMISSION_PIPELINE_SPEC.md](FABRIC_ADMISSION_PIPELINE_SPEC.md) is the
-  V3.2 normative admission specification.
-- [static_fabric_v0_1_0](static_fabric_v0_1_0) is the exact V3.1 substrate
-  imported by the admission kernel.
+  V3.2 governed-admission specification.
+- [FABRIC_EXECUTION_SPEC.md](FABRIC_EXECUTION_SPEC.md) and
+  [FABRIC_EXECUTION_CONFORMANCE_VECTORS.md](FABRIC_EXECUTION_CONFORMANCE_VECTORS.md)
+  preserve the sealed V3.3 execution specification and 70-vector corpus.
+- [static_fabric_v0_1_0](static_fabric_v0_1_0) is the exact V3.1 substrate.
 - [admissibility_v0_2_0](admissibility_v0_2_0) contains the promoted V3.2
-  implementation, proof, 62-vector runner, 63 evidence artifacts, and
+  implementation, proof, evidence, and promotion record.
+- [execution_v0_3_0](execution_v0_3_0) contains the promoted V3.3 kernel,
+  host-order-erasure proof, 70-vector runner, 71 evidence artifacts, and
   promotion record.
 - [PUBLICATION_PROVENANCE.md](PUBLICATION_PROVENANCE.md) binds this filtered
   public carrier to the upstream candidate and promotion commits.
-- [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md) records conformance and deterministic
-  evidence replay from the published Zenodo ZIP.
+- [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md) records the latest completed replay
+  from a published Zenodo archive.
 - [reference](reference) and [evidence](evidence) retain the original v0.1.0
   publication layout for compatibility.
 
 ## Publication provenance
 
 ```text
-public_base_commit:
-  1c1a495406be76ba6d00861fbe2c1044b557c686
-
-public_release_commit:
-  7786721994a8fbad32da48ee20ad1eb538924d9a
+public_predecessor_commit:
+  754de07ce37cdafb2eff39c048182f479f4629d7
 
 upstream_candidate_commit:
-  ba8428607a5a0291a4a6c0eea275e6d76afbfb5e
+  d2802a99861301793ec035e9e674b3fcda9bf919
 
 upstream_promotion_commit:
-  a593b595f674746a532bcd3e2de52bdf1cef9e68
+  98289c348421943ab0e440d45ec1d7e7cbbbc2b2
 
-v3_2_spec_sha256:
-  DF253688DA9DED75D59793BC88C13F33365ECD6EE2D24F090E0DFED43AADDABC
+v3_3_spec_sha256:
+  5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0
 
-v3_2_queuegate_evidence_summary_sha256:
-  19EE5B395B44E016A24C259674A35EA055A6DF4D33D32657A223AFCD2CF05C8B
+v3_3_vector_corpus_sha256:
+  846DBF4BE822C6816E788D4BCCE98F34D815D1AB870E62BDC5DEA67636E9C055
 
-v3_2_conformance:
-  62/62
+v3_3_execution_kernel_sha256:
+  96C6F849F3AD64D6B9D8C2469A252E5A813354C1E2C0B7CD47FCDE7B518B4FE2
 
-v3_2_determinism:
-  63/63 byte-identical
+v3_3_queuegate_evidence_summary_sha256:
+  B7FD885ADA3E14845336E547D3A35C5A81418F82998221CE189B1FE100A78E0F
 
-software_version_doi:
-  10.5281/zenodo.22711890
+v3_3_conformance:
+  70/70
+
+v3_3_determinism:
+  71/71 byte-identical
 
 software_concept_doi:
   10.5281/zenodo.22678127
 ```
 
 The publication carrier descends from the existing public history and imports
-only the promoted software-FPGA subtrees. The upstream commit and artifact
-hashes provide the authority and content binding without exposing unrelated
+only the promoted software-FPGA subtrees. Upstream commit and artifact hashes
+bind the public bytes to their authority points without exposing unrelated
 private repository history.
 
 ## Established result
 
-V3.1 establishes canonical static fabric semantics: a geometric program
-object, dual text/visual projection, operator-derived interfaces,
-coordinate-free placement, operator-coherent joins, derived TRIAD transitions,
-deterministic normalization, and content-addressed routing.
+V3.1 establishes what the program is: a canonical geometric program object,
+dual text/visual projection, operator-derived interfaces, coordinate-free
+placement, operator-coherent joins, derived TRIAD transitions, deterministic
+normalization, and content-addressed routing.
 
-V3.2 establishes governed static admission over that fixed substrate:
-pairwise witness and structural tolerances, directed crossing laws,
-deterministic extended checks, proposal-only repair fibers, lifecycle
-transitions, and a scoped post-parse nonexpansiveness result.
+V3.2 establishes what may enter, cross, or be proposed for repair: pairwise
+witness and structural tolerances, directed crossing laws, deterministic
+extended checks, proposal-only repair fibers, and lifecycle transitions.
+
+V3.3 establishes how the fabric computes: immutable-program synchronous
+snapshots, exact frame readiness, durable payload custody, simultaneous
+commit, terminal versus blocked quiescence, and deterministic host-order
+erasure. Canonical state, run status, blocked reasons, and tick evidence are
+independent of valid within-stage host iteration order.
 
 ## Scope boundary
 
-Version 0.2.0 establishes static fabric determinism and static admission. It
-does not establish synchronous payload execution, global quiescence,
-host-order erasure, a `WHEN` execution overlay, program-counter semantics, or
-a fetch/decode/execute loop. Those remain V3.3 work.
+Version 0.3.0 establishes closed-run static-fabric execution determinism. It
+does not authorize self-modifying geometry or an external stimulus API, and it
+does not claim wall-clock equivalence, different-initial-state determinism,
+cross-implementation equality when evaluators differ, or scheduler
+independence outside `ValidHostSchedule`.
 
 Public disclosure may bear on prior art, but neither publication nor the
 Apache-2.0 license guarantees a particular patent outcome. Apache-2.0 governs

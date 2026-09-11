@@ -1,0 +1,141 @@
+{
+  "artifact_bindings": {
+    "conformance_runner_sha256": "a8141d1387ab2e0c7d6f033dbfa4b27f7c00de9b03f055cbc714891069f8b4ab",
+    "execution_kernel_sha256": "96c6f849f3ad64d6b9d8c2469a252e5a813354c1e2c0b7cd47fcde7b518b4fe2",
+    "import_manifest_sha256": "1436cc7db20459c7b3cfe0d3f1da171a485a48f89513bc6db49b4f049b041a5a",
+    "proof_exec_4_sha256": "f29f5ab4b554b875a3c10d2d901f062e98994e934c2a46740b093940d46c1629"
+  },
+  "conformance": "70/70",
+  "counts": {
+    "end-to-end": {
+      "passed": 6,
+      "total": 6
+    },
+    "frame": {
+      "passed": 12,
+      "total": 12
+    },
+    "host-order": {
+      "passed": 12,
+      "total": 12
+    },
+    "negative": {
+      "passed": 8,
+      "total": 8
+    },
+    "payload": {
+      "passed": 10,
+      "total": 10
+    },
+    "quiescence": {
+      "passed": 12,
+      "total": 12
+    },
+    "snapshot": {
+      "passed": 10,
+      "total": 10
+    }
+  },
+  "deterministic_encoding": {
+    "filesystem_order_dependency": false,
+    "process_order_dependency": false,
+    "random_uuids": false,
+    "timestamps": false,
+    "unordered_serialization": false
+  },
+  "evidence_artifact_count": 71,
+  "external_stimulus_api": "ABSENT",
+  "handoff_sha256": "7c2806e441785ce98b49476e84a311f8134bde76aedb39a6723826d73d94a36d",
+  "import_identities": {
+    "v3_1_kernel_sha256": "8b983301dad795dd9c3f020970bad76017ef648ac0c71e3fb6fdef3d0e4347c0",
+    "v3_1_summary_sha256": "16ce384323538a69627b1cfdcddb677a3056ab5e9b3cd28e3f9b371de82e04bb",
+    "v3_2_kernel_sha256": "89105692eee04580db1c98556b51d0644292b7fb7b42fa4f41ebd381cde256dc",
+    "v3_2_promotion_sha256": "12b1e6c73d74b4fdf2c6fa30c4b1af201fe8daacc2c2e3f94aacecc9cd93460a",
+    "v3_2_summary_sha256": "19ee5b395b44e016a24c259674a35ea055a6df4d33d32657a223afcd2cf05c8b"
+  },
+  "obligation": "O-SWFPGA-EXECUTION-1",
+  "promotion": "NOT_PERFORMED",
+  "proof_exec_4": "PRESENT",
+  "queuegate": "Q-SWFPGA-EXECUTION-001",
+  "receipt_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F10",
+    "F11",
+    "F12",
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q07",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q12",
+    "H01",
+    "H02",
+    "H03",
+    "H04",
+    "H05",
+    "H06",
+    "H07",
+    "H08",
+    "H09",
+    "H10",
+    "H11",
+    "H12",
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06"
+  ],
+  "reference_execution_kernel": "HOLDS",
+  "self_modifying_geometry": "FORBIDDEN",
+  "spec_sha256": "5bb1497aa3d791150f0416feda4e393695a9302b42030add0a7d22c08ccbeac0",
+  "spec_version": "0.3.0-candidate",
+  "total": 70,
+  "total_passed": 70,
+  "v3_1_import": "UNCHANGED",
+  "v3_2_import": "UNCHANGED",
+  "vector_corpus_sha256": "846dbf4be822c6816e788d4bcce98f34d815d1ab870e62bdc5dea67636e9c055"
+}

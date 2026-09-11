@@ -1,0 +1,26 @@
+{
+  "active_cells": [],
+  "actual": "REJECT",
+  "blocked_reasons": [],
+  "cell_results_digest": null,
+  "class": "negative",
+  "comparison_schedule_ids": [],
+  "details": {
+    "reason": "FORBIDDEN_PAYLOAD_TRANSITION:DISCHARGED->COMPLETED"
+  },
+  "expected": "REJECT",
+  "governance_results_digest": null,
+  "host_schedule_id": null,
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [],
+  "pending_admission_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pending_buffer_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "program_digest": "1d9f75aff2a233f82f668a89de9b80962f05adf9725bc077a81398c85d3bd688",
+  "receipt_set_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "route_results_digest": null,
+  "run_status": "RUNNING",
+  "state_after_digest": "9195f07c7bc201ccfadf1be81d77a8e14d7d6ac82647ba38c7b19cc9b131fe7c",
+  "state_before_digest": "9195f07c7bc201ccfadf1be81d77a8e14d7d6ac82647ba38c7b19cc9b131fe7c",
+  "vector_id": "N08"
+}

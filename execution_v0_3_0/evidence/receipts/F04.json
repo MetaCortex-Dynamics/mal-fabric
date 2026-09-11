@@ -1,0 +1,51 @@
+{
+  "active_cells": [],
+  "actual": "COMPLETE",
+  "blocked_reasons": [
+    {
+      "details": [
+        "RIGHT"
+      ],
+      "kind": "PARTIAL_INPUT",
+      "subject_id": "binary_target"
+    }
+  ],
+  "cell_results_digest": null,
+  "class": "frame",
+  "comparison_schedule_ids": [],
+  "details": {
+    "admitted_frame": {
+      "LEFT": [
+        {
+          "payload_type": "identity/essence",
+          "route_id": "0dd6dcf5ea74fc2c6aa04b9448da32cc7fe9f46a220927af1e336a24cd972b59",
+          "source_receipt": "left-receipt",
+          "value": "L"
+        }
+      ],
+      "RIGHT": [
+        {
+          "payload_type": "identity/essence",
+          "route_id": "23a12079c18f28ef8f3016fbdab620e7743e70fe9dd9820a7490fa0088702c7f",
+          "source_receipt": "right-receipt",
+          "value": "R"
+        }
+      ]
+    }
+  },
+  "expected": "COMPLETE",
+  "governance_results_digest": null,
+  "host_schedule_id": null,
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [],
+  "pending_admission_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pending_buffer_digest": "80cf14503482d3b698d9b078e92971dbb2f5db0b39516da2af9ab32c637da83e",
+  "program_digest": "6a4f45788541b1df8b7b24167f150cd8aeb9491d148698a2ee7e1a1d696534dd",
+  "receipt_set_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "route_results_digest": null,
+  "run_status": "BLOCKED",
+  "state_after_digest": "14b6ccef3f69726d21e5dabb5b6947a8ce1f10b41ed38b83c91de18969010bc1",
+  "state_before_digest": "14b6ccef3f69726d21e5dabb5b6947a8ce1f10b41ed38b83c91de18969010bc1",
+  "vector_id": "F04"
+}

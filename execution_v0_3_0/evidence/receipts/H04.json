@@ -1,0 +1,41 @@
+{
+  "active_cells": [],
+  "actual": "SAME",
+  "blocked_reasons": [],
+  "cell_results_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "class": "host-order",
+  "comparison_schedule_ids": [
+    "buffer-reverse"
+  ],
+  "details": {
+    "canonical_evidence_A": "b8931b8e982f5d8b30f9a501f72624fdd667b0713bf8f7cb125e563b62e83667",
+    "canonical_evidence_B": "b8931b8e982f5d8b30f9a501f72624fdd667b0713bf8f7cb125e563b62e83667",
+    "merge_digest_A": "6a480c72e18823af46792c291e29582ecf640cd4e91966c0ce3d1c3fb1fdeb48",
+    "merge_digest_B": "6a480c72e18823af46792c291e29582ecf640cd4e91966c0ce3d1c3fb1fdeb48",
+    "run_status_A": "RUNNING",
+    "run_status_B": "RUNNING",
+    "state_digest_A": "bdd4ba6384d9db85d48071b367ea3812d3e7f363c630da7c76c2900524696f52",
+    "state_digest_B": "bdd4ba6384d9db85d48071b367ea3812d3e7f363c630da7c76c2900524696f52"
+  },
+  "expected": "SAME",
+  "governance_results_digest": "df31fc1a39aa5838389cc37601bf0d1e1d7c1e852e11ca0e643a5f57810bf840",
+  "host_schedule_id": "buffer-forward",
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [
+    [
+      "binary_target",
+      "EMPTY",
+      "ADMITTED"
+    ]
+  ],
+  "pending_admission_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pending_buffer_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "program_digest": "6a4f45788541b1df8b7b24167f150cd8aeb9491d148698a2ee7e1a1d696534dd",
+  "receipt_set_digest": "688868f861cd5947d911e2e27bc1d6cc0be525f5562c1ceccc7b16cf851b0a55",
+  "route_results_digest": "e2d0b8e7c86dcabe7077c77cb414c9dfa0c7ffeed918d5c15d4cff6344c8806a",
+  "run_status": "RUNNING",
+  "state_after_digest": "bdd4ba6384d9db85d48071b367ea3812d3e7f363c630da7c76c2900524696f52",
+  "state_before_digest": "babfa5eda71ceccff5435394b5763330a11e96914187ebf138b0711e134e7f98",
+  "vector_id": "H04"
+}

@@ -1,0 +1,48 @@
+{
+  "active_cells": [
+    "source"
+  ],
+  "actual": "ATOMIC_HETEROGENEOUS_COMMIT",
+  "blocked_reasons": [],
+  "cell_results_digest": "f2975390bccca77df4a19d555f91290deb5e6d27cb9beca2f9fa4897daf4c482",
+  "class": "payload",
+  "comparison_schedule_ids": [],
+  "details": {
+    "phases": {
+      "extra": "EMPTY",
+      "source": "COMPLETED",
+      "target": "DISCHARGED"
+    }
+  },
+  "expected": "ATOMIC_HETEROGENEOUS_COMMIT",
+  "governance_results_digest": "703abcf070e7d1b63c1ecdb68f89b6599e87d139fb2ef4b07aedb92876184114",
+  "host_schedule_id": null,
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [
+    [
+      "extra",
+      "DISCHARGED",
+      "EMPTY"
+    ],
+    [
+      "source",
+      "ADMITTED",
+      "COMPLETED"
+    ],
+    [
+      "target",
+      "COMPLETED",
+      "DISCHARGED"
+    ]
+  ],
+  "pending_admission_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pending_buffer_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "program_digest": "d9ca730cc6156bfa9396ef9cc8bdd416dd2576bfea4ba4e86e718056c70e38c7",
+  "receipt_set_digest": "c94ceb2844d98d9fdf870fa7db42cc25a04f2319a49b9b536275547105c1006a",
+  "route_results_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "run_status": "RUNNING",
+  "state_after_digest": "611c0c31384252b6af06190db569eaa4df8fa1d6449ee56c549bfec4b579c8ee",
+  "state_before_digest": "05650aad4ec0d3e21c7da17f30ac8acb4e18c7ea9625d4b58a9cbbc209bbe05a",
+  "vector_id": "P09"
+}

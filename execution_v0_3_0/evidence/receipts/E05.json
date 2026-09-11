@@ -1,0 +1,32 @@
+{
+  "active_cells": [],
+  "actual": "BLOCKED",
+  "blocked_reasons": [
+    {
+      "details": [
+        "RIGHT"
+      ],
+      "kind": "PARTIAL_INPUT",
+      "subject_id": "binary_target"
+    }
+  ],
+  "cell_results_digest": null,
+  "class": "end-to-end",
+  "comparison_schedule_ids": [],
+  "details": {},
+  "expected": "BLOCKED",
+  "governance_results_digest": null,
+  "host_schedule_id": null,
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [],
+  "pending_admission_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pending_buffer_digest": "d135b4a24e3e8ca9ac3a2b5d5aab3b33480532058887e50c664844f351aae427",
+  "program_digest": "6a4f45788541b1df8b7b24167f150cd8aeb9491d148698a2ee7e1a1d696534dd",
+  "receipt_set_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "route_results_digest": null,
+  "run_status": "BLOCKED",
+  "state_after_digest": "babfa5eda71ceccff5435394b5763330a11e96914187ebf138b0711e134e7f98",
+  "state_before_digest": "babfa5eda71ceccff5435394b5763330a11e96914187ebf138b0711e134e7f98",
+  "vector_id": "E05"
+}

@@ -1,0 +1,66 @@
+{
+  "active_cells": [],
+  "actual": "CANONICAL_ORDER",
+  "blocked_reasons": [
+    {
+      "details": [],
+      "kind": "OUTSTANDING_OBLIGATION",
+      "subject_id": "obligation"
+    },
+    {
+      "details": [
+        "RIGHT"
+      ],
+      "kind": "PARTIAL_INPUT",
+      "subject_id": "binary_target"
+    },
+    {
+      "details": [
+        "evidence"
+      ],
+      "kind": "PENDING_ADMISSION",
+      "subject_id": "z-candidate"
+    }
+  ],
+  "cell_results_digest": null,
+  "class": "quiescence",
+  "comparison_schedule_ids": [],
+  "details": {
+    "blocked_reasons": [
+      {
+        "details": [],
+        "kind": "OUTSTANDING_OBLIGATION",
+        "subject_id": "obligation"
+      },
+      {
+        "details": [
+          "RIGHT"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "binary_target"
+      },
+      {
+        "details": [
+          "evidence"
+        ],
+        "kind": "PENDING_ADMISSION",
+        "subject_id": "z-candidate"
+      }
+    ]
+  },
+  "expected": "CANONICAL_ORDER",
+  "governance_results_digest": null,
+  "host_schedule_id": null,
+  "obligation_digest": "9457b175c3a6f6c0e97a671183bb432af96cf0de363735d04bc6839fc2698042",
+  "pass": true,
+  "payload_transitions": [],
+  "pending_admission_digest": "313874ab0d94a33a1a30e1c2085fda7890ebeb937633776965056c7d14f7524e",
+  "pending_buffer_digest": "d135b4a24e3e8ca9ac3a2b5d5aab3b33480532058887e50c664844f351aae427",
+  "program_digest": "6a4f45788541b1df8b7b24167f150cd8aeb9491d148698a2ee7e1a1d696534dd",
+  "receipt_set_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "route_results_digest": null,
+  "run_status": "BLOCKED",
+  "state_after_digest": "e2cedb1e737415fd108483ddae5cdef53d41f83afdfa2c210196c6182816a52a",
+  "state_before_digest": "e2cedb1e737415fd108483ddae5cdef53d41f83afdfa2c210196c6182816a52a",
+  "vector_id": "Q12"
+}

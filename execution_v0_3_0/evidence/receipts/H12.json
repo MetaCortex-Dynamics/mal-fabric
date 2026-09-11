@@ -1,0 +1,54 @@
+{
+  "active_cells": [],
+  "actual": "SAME_TRAJECTORY",
+  "blocked_reasons": [],
+  "cell_results_digest": null,
+  "class": "host-order",
+  "comparison_schedule_ids": [
+    "all-reverse"
+  ],
+  "details": {
+    "evidence_trajectory_A": [
+      "c62f1fd6fcfbe1a92854cbbd0b5b3df2263610ea801d1d89eda12bc086178075",
+      "a9e4b0a653d52f782a2656e1a3eba0291918e507cb03f07da2280f79dd0258d3",
+      "69988314f0b2c4c5a29a9ac58e6416a533f639d1cb1ec543c1fdf2eb3684283a",
+      "85c3e11e5cee8b6118be50ff0314a731b2d623731b58c7cfd408d87f31ff12c7"
+    ],
+    "evidence_trajectory_B": [
+      "c62f1fd6fcfbe1a92854cbbd0b5b3df2263610ea801d1d89eda12bc086178075",
+      "a9e4b0a653d52f782a2656e1a3eba0291918e507cb03f07da2280f79dd0258d3",
+      "69988314f0b2c4c5a29a9ac58e6416a533f639d1cb1ec543c1fdf2eb3684283a",
+      "85c3e11e5cee8b6118be50ff0314a731b2d623731b58c7cfd408d87f31ff12c7"
+    ],
+    "final_state_digest_A": "19b19b1a7171ac258da73a53969b2a44d6aec1d97c9575510078e6de42bc0452",
+    "final_state_digest_B": "19b19b1a7171ac258da73a53969b2a44d6aec1d97c9575510078e6de42bc0452",
+    "status_trajectory_A": [
+      "RUNNING",
+      "RUNNING",
+      "RUNNING",
+      "HALTED"
+    ],
+    "status_trajectory_B": [
+      "RUNNING",
+      "RUNNING",
+      "RUNNING",
+      "HALTED"
+    ],
+    "ticks": 4
+  },
+  "expected": "SAME_TRAJECTORY",
+  "governance_results_digest": null,
+  "host_schedule_id": "full-forward",
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [],
+  "pending_admission_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pending_buffer_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "program_digest": "e991aa65ac2a7d54f6cada9bab4203b5920a3fd0e5c146e7e49453b9e65e0cb9",
+  "receipt_set_digest": "9cf3cc9ff33c9a54b876fc40fc371a1440b175dad6f8552fb064abc459e65cbf",
+  "route_results_digest": null,
+  "run_status": "HALTED",
+  "state_after_digest": "19b19b1a7171ac258da73a53969b2a44d6aec1d97c9575510078e6de42bc0452",
+  "state_before_digest": "fbe25b040fc539133af2cefd59ae3da38c1e92cf16e0d3cc5ef3853de0423182",
+  "vector_id": "H12"
+}

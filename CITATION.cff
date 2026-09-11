@@ -1,21 +1,24 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it using this metadata."
-title: "MaL Fabric: Canonical Static Semantics and Governed Admission"
+title: "MaL Fabric: Canonical Static Semantics, Governed Admission, and Synchronous Execution"
 type: software
 authors:
   - family-names: "Generally"
     given-names: "Devon A."
     orcid: "https://orcid.org/0009-0004-8164-2159"
-doi: "10.5281/zenodo.22711890"
-version: 0.2.0
+doi: "10.5281/zenodo.22678127"
+version: 0.3.0
 date-released: 2026-09-11
 license: Apache-2.0
 repository-code: "https://github.com/MetaCortex-Dynamics/mal-fabric"
 url: "https://github.com/MetaCortex-Dynamics/mal-fabric"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.22678127"
-    description: "MaL Fabric software concept DOI"
+    value: "10.5281/zenodo.22678128"
+    description: "MaL Fabric v0.1.0 software DOI"
+  - type: doi
+    value: "10.5281/zenodo.22711890"
+    description: "MaL Fabric v0.2.0 software DOI"
   - type: doi
     value: "10.5281/zenodo.22677712"
     description: "Companion paper: Canonical Geometric Programs"

@@ -1,0 +1,32 @@
+{
+  "active_cells": [],
+  "actual": "BLOCKED",
+  "blocked_reasons": [
+    {
+      "details": [
+        "evidence"
+      ],
+      "kind": "PENDING_ADMISSION",
+      "subject_id": "candidate"
+    }
+  ],
+  "cell_results_digest": null,
+  "class": "quiescence",
+  "comparison_schedule_ids": [],
+  "details": {},
+  "expected": "BLOCKED",
+  "governance_results_digest": null,
+  "host_schedule_id": null,
+  "obligation_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "pass": true,
+  "payload_transitions": [],
+  "pending_admission_digest": "91d05e4650fd4e66726d7a7618f1c805cd698bc051ac5a20598b56b754caab4e",
+  "pending_buffer_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "program_digest": "e991aa65ac2a7d54f6cada9bab4203b5920a3fd0e5c146e7e49453b9e65e0cb9",
+  "receipt_set_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "route_results_digest": null,
+  "run_status": "BLOCKED",
+  "state_after_digest": "baee8ee702d1196040b66182ba9dc965814a226caf8aa641833d773346599705",
+  "state_before_digest": "baee8ee702d1196040b66182ba9dc965814a226caf8aa641833d773346599705",
+  "vector_id": "Q05"
+}

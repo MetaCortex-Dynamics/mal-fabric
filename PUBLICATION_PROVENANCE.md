@@ -1,62 +1,46 @@
-# MaL Fabric v0.2.0 Publication Provenance
+# MaL Fabric v0.3.0 Publication Provenance
 
-This public carrier is a filtered successor to the v0.1.0 publication. It
-preserves public Git history while binding the V3.2 contents to Devon's exact
+This public carrier is a filtered successor to the v0.2.0 publication. It
+preserves public Git history while binding the V3.3 contents to Devon's exact
 promoted authority point in the governance workspace.
 
 ```text
 public_repository:
   MetaCortex-Dynamics/mal-fabric
 
-public_base_commit:
-  1c1a495406be76ba6d00861fbe2c1044b557c686
+public_predecessor_commit:
+  754de07ce37cdafb2eff39c048182f479f4629d7
 
-public_release_commit:
-  7786721994a8fbad32da48ee20ad1eb538924d9a
-
-public_release_tag:
+public_predecessor_tag:
   v0.2.0
 
-github_release:
-  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.2.0
+public_predecessor_version_doi:
+  10.5281/zenodo.22711890
 
 upstream_repository:
   MetaCortex-Dynamics/mal_kernel_lab_foundation
 
 upstream_candidate_commit:
-  ba8428607a5a0291a4a6c0eea275e6d76afbfb5e
+  d2802a99861301793ec035e9e674b3fcda9bf919
 
 upstream_promotion_commit:
-  a593b595f674746a532bcd3e2de52bdf1cef9e68
+  98289c348421943ab0e440d45ec1d7e7cbbbc2b2
 
 queuegate:
-  Q-SWFPGA-ADMISSIBILITY-001
+  Q-SWFPGA-EXECUTION-001
 
 discharged_obligation:
-  O-SWFPGA-ADMISSIBILITY-1
-
-software_version_doi:
-  10.5281/zenodo.22711890
+  O-SWFPGA-EXECUTION-1
 
 software_concept_doi:
   10.5281/zenodo.22678127
-
-zenodo_record:
-  https://zenodo.org/records/22711890
-
-zenodo_archive_file:
-  MetaCortex-Dynamics/mal-fabric-v0.2.0.zip
-
-zenodo_archive_md5:
-  EDA05ED968CE241A628DDF93EB3E7701
 ```
 
 ## Filtered import
 
-The following promoted trees were materialized through a filtered copy and
-retained as sibling directories so the V3.2 kernel imports the exact sealed
-V3.1 implementation by identity. Each bound file was verified against its
-promoted SHA-256 identity before admission replay:
+The three promoted trees were materialized through a filtered copy and remain
+sibling directories so each successor imports its exact sealed predecessor by
+identity:
 
 ```text
 v3/software_fpga/static_fabric_v0_1_0
@@ -64,39 +48,52 @@ v3/software_fpga/static_fabric_v0_1_0
 
 v3/software_fpga/admissibility_v0_2_0
   -> admissibility_v0_2_0
+
+v3/software_fpga/execution_v0_3_0
+  -> execution_v0_3_0
 ```
 
-The normative V3.2 specification was copied byte-for-byte from its bound source
-document to `FABRIC_ADMISSION_PIPELINE_SPEC.md`.
+The normative V3.3 specification and conformance corpus were copied
+byte-for-byte from their bound source documents to
+`FABRIC_EXECUTION_SPEC.md` and
+`FABRIC_EXECUTION_CONFORMANCE_VECTORS.md`.
 
 ## Bound identities
 
 ```text
 normative_spec_sha256:
-  DF253688DA9DED75D59793BC88C13F33365ECD6EE2D24F090E0DFED43AADDABC
+  5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0
 
-admission_kernel_sha256:
-  89105692EEE04580DB1C98556B51D0644292B7FB7B42FA4F41EBD381CDE256DC
+vector_corpus_sha256:
+  846DBF4BE822C6816E788D4BCCE98F34D815D1AB870E62BDC5DEA67636E9C055
+
+implementation_handoff_sha256:
+  7C2806E441785CE98B49476E84A311F8134BDE76AEDB39A6723826D73D94A36D
+
+execution_kernel_sha256:
+  96C6F849F3AD64D6B9D8C2469A252E5A813354C1E2C0B7CD47FCDE7B518B4FE2
 
 conformance_runner_sha256:
-  BD56F24CA16485421931F8965909F8D54BE3F29E3FED604DAFB1D67A00780E47
+  A8141D1387AB2E0C7D6F033DBFA4B27F7C00DE9B03F055CBC714891069F8B4AB
 
-proof_adm_3_nonexp_sha256:
-  2EA1F1453B5051A2E6B117AD784DE3637245F4CCD802C6522BCEE98591FB38B0
+proof_exec_4_sha256:
+  F29F5AB4B554B875A3C10D2D901F062E98994E934C2A46740B093940D46C1629
 
-v3_1_import_manifest_sha256:
-  4E50FBFD1D0EA6EEBF8A46DA095D35AC8C6AC01D36C60C6D03DAFC5C2D77B505
+v3_import_manifest_sha256:
+  1436CC7DB20459C7B3CFE0D3F1DA171A485A48F89513BC6DB49B4F049B041A5A
 
 queuegate_evidence_summary_sha256:
-  19EE5B395B44E016A24C259674A35EA055A6DF4D33D32657A223AFCD2CF05C8B
+  B7FD885ADA3E14845336E547D3A35C5A81418F82998221CE189B1FE100A78E0F
 
 receipt_set_sha256:
-  D2F4626FCE5F9D57A9A6BDB6C9AD881419B778F09C0AA6DA3623C584474F68C2
+  79ABEA24FCED44A921543CC280ABBA8B14028DB08E87EE35BD26E545148D436A
 
 receipt_set_encoding:
   UTF-8 concatenation of sorted "filename<TAB>lowercase-file-sha256<LF>"
 ```
 
+The execution subtree includes the subsequent promotion record but preserves
+the immutable candidate implementation and evidence identities named there.
 No unrelated upstream tree or history is included. The public carrier records
 cryptographic provenance rather than Git ancestry to the private governance
 repository.
