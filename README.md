@@ -1,6 +1,6 @@
 # MaL Fabric v0.3.0
 
-[![DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712)
+[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22713736.svg)](https://doi.org/10.5281/zenodo.22713736) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -41,6 +41,11 @@ python -B execution_v0_3_0/run_conformance.py --output execution_v0_3_0/evidence
 ```
 
 Successful replay regenerates each evidence set byte-for-byte.
+
+The published Zenodo archive was independently downloaded and replayed on
+2026-09-11. All three suites passed, all 160 layer-specific evidence artifacts
+matched their archived counterparts and repeated runs byte-for-byte, and all
+186 published JSON artifacts parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 
 ## Contents
 
@@ -97,6 +102,12 @@ v3_3_determinism:
 
 software_concept_doi:
   10.5281/zenodo.22678127
+
+software_version_doi:
+  10.5281/zenodo.22713736
+
+public_release_commit:
+  dfe4f37dc9e90ea0141422c27f69d8d8a1c5d363
 ```
 
 The publication carrier descends from the existing public history and imports
