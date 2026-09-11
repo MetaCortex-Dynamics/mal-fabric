@@ -50,6 +50,8 @@ Successful replay regenerates each evidence set byte-for-byte.
   promotion record.
 - [PUBLICATION_PROVENANCE.md](PUBLICATION_PROVENANCE.md) binds this filtered
   public carrier to the upstream candidate and promotion commits.
+- [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md) records conformance and deterministic
+  evidence replay from the published Zenodo ZIP.
 - [reference](reference) and [evidence](evidence) retain the original v0.1.0
   publication layout for compatibility.
 
