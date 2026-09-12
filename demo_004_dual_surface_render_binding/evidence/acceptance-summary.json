@@ -1,0 +1,79 @@
+{
+  "carrier_render_decision_digest": "8ecfe5ce28d507735fdc2aed0d58b562a96151276d839ecdfe99dd8bc5b4257a",
+  "claims": {
+    "continuous_execution": "HOLDS",
+    "dual_surface_noninterference": "HOLDS",
+    "game_renderer_governance_structure": "NONE",
+    "presentation_derivation_closure": "HOLDS",
+    "projection_coherence": "HOLDS",
+    "renderer_nonauthority": "HOLDS",
+    "snapshot_coherence": "HOLDS",
+    "toggle_nonmutation": "HOLDS"
+  },
+  "conformance": "26/26",
+  "counts": {
+    "DC": {
+      "passed": 6,
+      "total": 6
+    },
+    "DG": {
+      "passed": 6,
+      "total": 6
+    },
+    "DP": {
+      "passed": 4,
+      "total": 4
+    },
+    "DR": {
+      "passed": 4,
+      "total": 4
+    },
+    "DT": {
+      "passed": 6,
+      "total": 6
+    }
+  },
+  "demo": "DEMO_004_DUAL_SURFACE_RENDER_BINDING",
+  "evidence_artifact_count": 27,
+  "evidence_replay": "27/27 BYTE_IDENTICAL",
+  "game_render_decision_digest": "e27e23a28537ac98698a5151d1609a01bcc4d950685b4b4cafd90046df190c5a",
+  "imports": {
+    "demo_003_acceptance_sha256": "F6BCFDCA7C58CB363ACAB9F03B349CD052EDE0819653E6B01B06A492EDAB6DFE",
+    "demo_003_kernel_sha256": "F711C6499E345C6B6952D8E8AA570B385D7F48A46F3E2189491E98653C4C1833",
+    "demo_003_promotion_sha256": "9F3DF4BB5F1B2F47C8A5DE4549B67C1769B64A30016D641AFFAAC2A9298E6510",
+    "mal_fabric_v0_6_0_doi": "10.5281/zenodo.22726846"
+  },
+  "optional_visual_r_and_d": {
+    "gaussian_assets": "NOT_REQUIRED",
+    "stellation": "NOT_RENDERED_WITHOUT_MU",
+    "three_six_nine_pipeline": "NON_NORMATIVE"
+  },
+  "passed": 26,
+  "promotion": "NOT_PERFORMED",
+  "regression_floor": {
+    "DEMO-001": "18/18 UNCHANGED",
+    "DEMO-002": "24/24 UNCHANGED",
+    "DEMO-003": "28/28 UNCHANGED",
+    "V3.1": "25/25 UNCHANGED",
+    "V3.2": "62/62 UNCHANGED",
+    "V3.3": "70/70 UNCHANGED",
+    "total_prior": "227/227"
+  },
+  "render_binding_digest": "d91723fca13d5a5c9a48e0735ccfb7dd5c43bb2df1a7d5663d89493a308fbede",
+  "render_snapshot_digest": "4382490e71a060f6fde27ff78ce76fd709925c1acca1358b7bf9f8f04c6a5166",
+  "renderer_api": {
+    "mutation_handles": [],
+    "project_carrier": [
+      "snapshot",
+      "presentation"
+    ],
+    "project_game": [
+      "snapshot",
+      "binding",
+      "presentation"
+    ]
+  },
+  "result": "HOLDS",
+  "spec_version": "v0.5",
+  "total": 26
+}

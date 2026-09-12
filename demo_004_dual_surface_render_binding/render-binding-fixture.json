@@ -1,0 +1,92 @@
+{
+  "animation_bindings": {
+    "APPROACH": "walk_forward",
+    "FLEE": "run_away",
+    "NO_ACTION": "idle",
+    "PATROL": "patrol_cycle"
+  },
+  "asset_bindings": {
+    "arena": "bounded_dark_arena",
+    "enemy_01": "enemy_mesh_01",
+    "enemy_02": "enemy_mesh_02",
+    "player": "player_mesh_01"
+  },
+  "carrier_debug_bindings": {
+    "enemy_01": [
+      "approach_gate",
+      "enemy_approach",
+      "enemy_flee",
+      "flee_gate"
+    ],
+    "enemy_02": [
+      "action_bus",
+      "patrol"
+    ],
+    "player": [
+      "health_low",
+      "player_near"
+    ]
+  },
+  "game_entity_bindings": {
+    "enemy_01": "enemy_character_primary",
+    "enemy_02": "enemy_character_echo",
+    "player": "player_character"
+  },
+  "gaussian_asset_bindings": {},
+  "presentation_derivations": [
+    {
+      "derivation_rule_id": "BLOCKED_TO_STALL_V1",
+      "presentation_feature_id": "blocked_stall",
+      "source_identity": "RenderSnapshot.run_status",
+      "source_kind": "COMMITTED_RUN_STATUS"
+    },
+    {
+      "derivation_rule_id": "CANONICAL_TOPOLOGY_V1",
+      "presentation_feature_id": "carrier_topology",
+      "source_identity": "FabricSpec",
+      "source_kind": "IMMUTABLE_DERIVED_STRUCTURE"
+    },
+    {
+      "derivation_rule_id": "MIRROR_ENEMY_OFFSET_V1",
+      "presentation_feature_id": "enemy_02_offset",
+      "source_identity": "enemy_01",
+      "source_kind": "IMMUTABLE_DERIVED_STRUCTURE"
+    },
+    {
+      "derivation_rule_id": "ACTION_TO_ANIMATION_V1",
+      "presentation_feature_id": "enemy_animation",
+      "source_identity": "ToyGameState.enemy_mode",
+      "source_kind": "COMMITTED_GAME_STATE"
+    },
+    {
+      "derivation_rule_id": "INTEGER_GRID_TO_ARENA_V1",
+      "presentation_feature_id": "entity_positions",
+      "source_identity": "ToyGameState",
+      "source_kind": "COMMITTED_GAME_STATE"
+    },
+    {
+      "derivation_rule_id": "PARTIAL_FRAME_V1",
+      "presentation_feature_id": "frame_readiness",
+      "source_identity": "FabricState.pending_input_buffers",
+      "source_kind": "COMMITTED_FABRIC_STATE"
+    },
+    {
+      "derivation_rule_id": "PHASE_BADGE_V1",
+      "presentation_feature_id": "payload_phase",
+      "source_identity": "FabricState.payload_states",
+      "source_kind": "COMMITTED_FABRIC_STATE"
+    },
+    {
+      "derivation_rule_id": "TRIAD_DOMINANCE_COUNT_V1",
+      "presentation_feature_id": "triad_ambient",
+      "source_identity": "FabricSpec.placements",
+      "source_kind": "IMMUTABLE_DERIVED_STRUCTURE"
+    }
+  ],
+  "render_binding_id": "d91723fca13d5a5c9a48e0735ccfb7dd5c43bb2df1a7d5663d89493a308fbede",
+  "semantic_class_bindings": {
+    "danger": "danger_amber",
+    "enemy": "enemy_crimson",
+    "friend": "friend_cyan"
+  }
+}

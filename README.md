@@ -1,6 +1,6 @@
-# MaL Fabric v0.6.0
+# MaL Fabric v0.7.0
 
-[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22726846.svg)](https://doi.org/10.5281/zenodo.22726846) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -25,6 +25,14 @@ explicit logical game loop. Each logical tick samples canonical input once,
 performs exactly one V3.3 fabric step, derives effects only from the committed
 successor, and applies a deterministic integer-grid game update. Render-frame
 cadence remains presentation-only.
+
+Version 0.7.0 adds DEMO-004: the same coherent committed running state is
+projected through two visual surfaces. GAME presents characters, movement, and
+behavior; CARRIER presents operator × witness cells, typed ports, directed
+routes, custody phases, pending frames, and TRIAD regions. Toggling surfaces is
+presentation-only and cannot modify semantic or runtime state.
+
+**That creature you were just fighting is this program.**
 
 ## Companion papers
 
@@ -85,7 +93,18 @@ DEMO-003 Game Loop Binding
   HTTP smoke              PASS
   one tick / one step     HOLDS
 
-TOTAL CONFORMANCE       227/227
+DEMO-004 Dual-Surface Render Binding
+  toggle/nonmutation       6/6
+  game projection          6/6
+  carrier projection       6/6
+  projection coherence     4/4
+  regression boundary      4/4
+  total                   26/26
+  evidence determinism    27/27
+  HTTP smoke               PASS
+  renderer authority       NONE
+
+TOTAL CONFORMANCE       253/253
 ```
 
 Run all suites from the repository root:
@@ -97,11 +116,12 @@ python -B execution_v0_3_0/run_conformance.py --output execution_v0_3_0/evidence
 python -B demo_001_visible_fabric/run_acceptance.py
 python -B demo_002_vibe_proposer/run_conformance.py --output demo_002_vibe_proposer/evidence
 python -B demo_003_game_loop_binding/run_conformance.py --output demo_003_game_loop_binding/evidence
-python -B demo_003_game_loop_binding/demo_server.py
+python -B demo_004_dual_surface_render_binding/run_conformance.py --output demo_004_dual_surface_render_binding/evidence
+python -B demo_004_dual_surface_render_binding/demo_server.py
 ```
 
-The DEMO-003 browser surface is served at
-[http://127.0.0.1:8767](http://127.0.0.1:8767).
+The DEMO-004 browser surface is served at
+[http://127.0.0.1:8768](http://127.0.0.1:8768).
 
 Successful replay regenerates each evidence set byte-for-byte.
 
@@ -137,6 +157,9 @@ JSON artifacts parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 - [demo_003_game_loop_binding](demo_003_game_loop_binding) contains the
   promoted fixed-run game adapter, integer-grid toy game, explicit logical
   tick boundary, browser surface, 28-vector runner, and 29 evidence artifacts.
+- [demo_004_dual_surface_render_binding](demo_004_dual_surface_render_binding)
+  contains the promoted coherent `RenderSnapshot`, read-only GAME and CARRIER
+  projections, browser surface, 26-vector runner, and 27 evidence artifacts.
 - [PUBLICATION_PROVENANCE.md](PUBLICATION_PROVENANCE.md) binds this filtered
   public carrier to the upstream candidate and promotion commits.
 - [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md) records the latest completed replay
@@ -148,55 +171,52 @@ JSON artifacts parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 
 ```text
 public_predecessor_commit:
-  1affb0176a82bd2410a464cf96d71564fefd2de6
+  091dfcae35c5c70d985f71608c401a3dfbba794e
 
 public_predecessor_version_doi:
-  10.5281/zenodo.22725249
+  10.5281/zenodo.22726846
 
 upstream_demo_implementation_commit:
-  f570b02c007c6bc0662b2d5d8a561c165c312a16
+  85d68a84ccc7e17932e6bdd1e660bb22c94ffa78
 
 upstream_demo_binding_commit:
-  f635343e5adaafe7135194da47fcca74316c7b0d
+  720507497b936d049391bde501c35c2d1fd4174d
 
 upstream_demo_promotion_commit:
-  48a67514b60c5e1f2e428e787c90c4f8884c695b
+  c023fb62ba229d023aca013783725d7f55111529
 
 demo_binding_record_sha256:
-  683C21B002F284B53C0CE75284A447BCF10427489B23A3CE2A19729C1D2B8AC7
+  5AEE391DCE001328228067124796DF77AAC828DDF2F5EFC7E6FF84BC985D57CA
 
 demo_promotion_record_sha256:
-  9F3DF4BB5F1B2F47C8A5DE4549B67C1769B64A30016D641AFFAAC2A9298E6510
+  0D4E15694E07BBF14758E217CBC05F85D7C3D6FCADFA55D4D80FFAF2C65400E6
 
 demo_acceptance_summary_sha256:
-  F6BCFDCA7C58CB363ACAB9F03B349CD052EDE0819653E6B01B06A492EDAB6DFE
+  50BB725920F17B5BA5565A8BC37F5E2A301B4BD8FE173F7C399AA5B2ECDDC275
 
 demo_evidence_manifest_sha256:
-  8DA6BD5937289112B89232927E741AA42E7075934ED8F339100C56E7D9693A11
-
-demo_replay_trace_sha256:
-  6C6AADAE282950B0D7CB2C067D70292DE264A528B2E70ECED03C2FF80939BA82
+  82E0DB39FF5B8C3C668E8AC80B14F3D8D7FC54EF7C3B1544664451EF6682A2C1
 
 demo_conformance:
-  28/28
+  26/26
 
 demo_evidence_replay:
-  29/29 byte-identical
+  27/27 byte-identical
 
 public_release_commit:
-  1c13c27c06562f532418d2b7c1295efb399aadc3
+  PENDING_RELEASE_CARRIER_COMMIT
 
 github_release:
-  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.6.0
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.7.0
 
 software_concept_doi:
   10.5281/zenodo.22678127
 
 software_predecessor_version_doi:
-  10.5281/zenodo.22725249
-
-software_v0_6_0_version_doi:
   10.5281/zenodo.22726846
+
+software_v0_7_0_version_doi:
+  PENDING_ZENODO_INGESTION
 
 paper_b_doi:
   10.5281/zenodo.22715312
@@ -241,9 +261,15 @@ V3.3 step executes, effects are derived only from the committed successor,
 and the integer-grid game update is deterministic for identical canonical
 logical input traces. Render callbacks do not advance semantic time.
 
+DEMO-004 establishes that GAME and CARRIER are distinct read-only projections
+of the same coherent committed `RenderSnapshot`. Presentation toggles preserve
+the program, runtime state, game state, run identity, and logical tick. Every
+semantic-looking cue has a declared committed or immutable source, and the
+renderer has no proposal, decision, promotion, or execution authority.
+
 ## Scope boundary
 
-Version 0.6.0 adds a bounded deterministic logical-game adapter. It does not
+Version 0.7.0 adds a bounded dual-surface presentation adapter. It does not
 authorize self-modifying geometry, hot-swapping a committed fabric into an
 active run, an unbounded external-stimulus API, a physics or network engine,
 or autonomous model authority. It does not claim wall-clock, multiplayer,

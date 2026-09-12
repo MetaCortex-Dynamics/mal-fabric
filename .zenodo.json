@@ -7,13 +7,15 @@
       "orcid": "0009-0004-8164-2159"
     }
   ],
-  "description": "DEMO-003 binds committed mal-fabric geometry to an explicit logical game loop. Each logical game tick samples canonical input once, performs exactly one V3.3 fabric step, derives effects only from the committed successor state, and applies a deterministic integer-grid game update. Identical logical input traces replay deterministically while render-frame cadence remains presentation-only. Includes 28/28 DEMO-003 conformance and 29/29 byte-identical evidence replay, with all earlier layers unchanged.",
+  "description": "DEMO-004 provides the first playable dual-surface visual proof for mal-fabric. One coherent committed RenderSnapshot is projected as a game with characters, movement, and behavior, and as executable carrier geometry with cells, typed ports, directed routes, custody phases, and TRIAD regions. Toggling changes presentation only and cannot mutate semantic or runtime state. Includes 26/26 DEMO-004 conformance, 27/27 byte-identical evidence replay, and an unchanged 227/227 predecessor regression floor.",
   "keywords": [
     "canonical geometric programming",
     "deterministic software",
     "natural-language programming",
     "human-in-the-loop governance",
     "game programming",
+    "dual-surface rendering",
+    "render noninterference",
     "deterministic replay",
     "logical tick",
     "program visualization",
@@ -25,7 +27,7 @@
   "license": "Apache-2.0",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.22725249",
+      "identifier": "10.5281/zenodo.22726846",
       "relation": "isNewVersionOf",
       "resource_type": "software"
     },
@@ -40,7 +42,7 @@
       "resource_type": "publication-preprint"
     }
   ],
-  "title": "mal-fabric v0.6.0: Game Loop Binding",
+  "title": "mal-fabric v0.7.0: Dual-Surface Render Binding",
   "upload_type": "software",
-  "version": "0.6.0"
+  "version": "0.7.0"
 }

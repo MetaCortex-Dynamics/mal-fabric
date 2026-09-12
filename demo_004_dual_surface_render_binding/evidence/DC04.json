@@ -1,0 +1,14 @@
+{
+  "details": {
+    "phase_bindings": {
+      "ADMITTED": "phase_admitted",
+      "COMPLETED": "phase_completed",
+      "DISCHARGED": "phase_discharged",
+      "EMPTY": "phase_empty"
+    }
+  },
+  "family": "DC",
+  "passed": true,
+  "title": "payload phases are visually distinct",
+  "vector_id": "DC04"
+}

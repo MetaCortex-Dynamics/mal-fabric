@@ -1,0 +1,28 @@
+{
+  "details": {
+    "partial_frame_visible": true,
+    "pending_buffers": [
+      {
+        "arrived_values": {
+          "CONDITION": [
+            {
+              "payload_type": "temporal/sequence",
+              "route_id": "blocked:condition",
+              "source_receipt": "blocked-condition-receipt",
+              "value": true
+            }
+          ]
+        },
+        "cell_id": "approach_gate",
+        "source_receipts": [
+          "blocked-condition-receipt"
+        ],
+        "tick_of_first_arrival": 0
+      }
+    ]
+  },
+  "family": "DC",
+  "passed": true,
+  "title": "pending buffer shows partial-frame state",
+  "vector_id": "DC05"
+}

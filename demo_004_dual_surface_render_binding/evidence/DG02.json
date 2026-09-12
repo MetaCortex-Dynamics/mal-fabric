@@ -1,0 +1,34 @@
+{
+  "details": {
+    "committed": {
+      "enemy_health": 100,
+      "enemy_mode": "PATROL",
+      "enemy_position": [
+        4,
+        0
+      ],
+      "player_position": [
+        0,
+        0
+      ]
+    },
+    "rendered_positions": {
+      "enemy_01": [
+        4,
+        0
+      ],
+      "enemy_02": [
+        4,
+        2
+      ],
+      "player": [
+        0,
+        0
+      ]
+    }
+  },
+  "family": "DG",
+  "passed": true,
+  "title": "committed game position produces rendered world position",
+  "vector_id": "DG02"
+}

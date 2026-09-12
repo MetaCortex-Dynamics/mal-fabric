@@ -4,6 +4,95 @@ This public carrier preserves public Git history while binding filtered
 publication contents to Devon's exact promoted authority points in the
 governance workspace.
 
+## v0.7.0 DEMO-004 carrier binding
+
+```text
+public_repository:
+  MetaCortex-Dynamics/mal-fabric
+
+public_predecessor_commit:
+  091dfcae35c5c70d985f71608c401a3dfbba794e
+
+public_predecessor_tag:
+  v0.6.0
+
+public_predecessor_version_doi:
+  10.5281/zenodo.22726846
+
+upstream_repository:
+  MetaCortex-Dynamics/mal_kernel_lab_foundation
+
+upstream_demo_implementation_commit:
+  85d68a84ccc7e17932e6bdd1e660bb22c94ffa78
+
+upstream_demo_binding_commit:
+  720507497b936d049391bde501c35c2d1fd4174d
+
+upstream_demo_promotion_commit:
+  c023fb62ba229d023aca013783725d7f55111529
+
+demo_binding_record_sha256:
+  5AEE391DCE001328228067124796DF77AAC828DDF2F5EFC7E6FF84BC985D57CA
+
+demo_promotion_record_sha256:
+  0D4E15694E07BBF14758E217CBC05F85D7C3D6FCADFA55D4D80FFAF2C65400E6
+
+demo_acceptance_summary_sha256:
+  50BB725920F17B5BA5565A8BC37F5E2A301B4BD8FE173F7C399AA5B2ECDDC275
+
+demo_evidence_manifest_sha256:
+  82E0DB39FF5B8C3C668E8AC80B14F3D8D7FC54EF7C3B1544664451EF6682A2C1
+
+demo_acceptance:
+  DT01-DT06 = 6/6
+  DG01-DG06 = 6/6
+  DC01-DC06 = 6/6
+  DP01-DP04 = 4/4
+  DR01-DR04 = 4/4
+  TOTAL = 26/26
+
+demo_evidence_replay:
+  27/27 BYTE_IDENTICAL
+
+prior_regression:
+  227/227
+
+demo_HTTP_smoke:
+  PASS
+
+DUAL_SURFACE_NONINTERFERENCE:
+  HOLDS
+
+RENDERER_NONAUTHORITY:
+  HOLDS
+
+software_concept_doi:
+  10.5281/zenodo.22678127
+
+public_release_tag:
+  v0.7.0
+
+public_release_commit:
+  PENDING_RELEASE_CARRIER_COMMIT
+
+github_release:
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.7.0
+
+software_version_doi:
+  PENDING_ZENODO_INGESTION
+
+paper_a_doi:
+  10.5281/zenodo.22677712
+
+paper_b_doi:
+  10.5281/zenodo.22715312
+```
+
+The public carrier imports the exact promoted DEMO-004 bytes while excluding
+unrelated private repository history. GAME and CARRIER remain non-authoritative
+projections of one coherent committed snapshot; surface toggles do not alter
+semantic or runtime state.
+
 ## v0.6.0 DEMO-003 carrier binding
 
 ```text

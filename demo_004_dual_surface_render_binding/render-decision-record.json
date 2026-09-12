@@ -1,0 +1,66 @@
+{
+  "carrier": {
+    "active_surface": "CARRIER",
+    "animation_bindings_used": [],
+    "binding_diagnostics": [],
+    "carrier_primitives_used": [
+      "cells",
+      "ports",
+      "directed_routes",
+      "triad_regions",
+      "payload_phases",
+      "pending_buffers",
+      "blocked_reasons"
+    ],
+    "carrier_zoom_level": "FABRIC",
+    "entity_bindings_used": [],
+    "game_run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+    "governance_cues_emitted": [
+      "FRAME_READINESS",
+      "PAYLOAD_PHASE"
+    ],
+    "logical_tick_index": 0,
+    "presentation_derivations_used": [
+      "carrier_topology",
+      "frame_readiness",
+      "payload_phase"
+    ],
+    "render_binding_digest": "d91723fca13d5a5c9a48e0735ccfb7dd5c43bb2df1a7d5663d89493a308fbede",
+    "render_snapshot_digest": "4382490e71a060f6fde27ff78ce76fd709925c1acca1358b7bf9f8f04c6a5166",
+    "semantic_digest_after": "fb56f56857a2c4aec86c2283d2921030a2881e8ae8063839252fd3653e6652ad",
+    "semantic_digest_before": "fb56f56857a2c4aec86c2283d2921030a2881e8ae8063839252fd3653e6652ad",
+    "source_unavailable_diagnostics": []
+  },
+  "carrier_digest": "8ecfe5ce28d507735fdc2aed0d58b562a96151276d839ecdfe99dd8bc5b4257a",
+  "game": {
+    "active_surface": "GAME",
+    "animation_bindings_used": [
+      "patrol_cycle",
+      "player_idle"
+    ],
+    "binding_diagnostics": [],
+    "carrier_primitives_used": [],
+    "carrier_zoom_level": "FABRIC",
+    "entity_bindings_used": [
+      "player",
+      "enemy_01",
+      "enemy_02"
+    ],
+    "game_run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+    "governance_cues_emitted": [],
+    "logical_tick_index": 0,
+    "presentation_derivations_used": [
+      "enemy_02_offset",
+      "enemy_animation",
+      "entity_positions",
+      "triad_ambient"
+    ],
+    "render_binding_digest": "d91723fca13d5a5c9a48e0735ccfb7dd5c43bb2df1a7d5663d89493a308fbede",
+    "render_snapshot_digest": "4382490e71a060f6fde27ff78ce76fd709925c1acca1358b7bf9f8f04c6a5166",
+    "semantic_digest_after": "fb56f56857a2c4aec86c2283d2921030a2881e8ae8063839252fd3653e6652ad",
+    "semantic_digest_before": "fb56f56857a2c4aec86c2283d2921030a2881e8ae8063839252fd3653e6652ad",
+    "source_unavailable_diagnostics": []
+  },
+  "game_digest": "e27e23a28537ac98698a5151d1609a01bcc4d950685b4b4cafd90046df190c5a",
+  "pixels": "NONCANONICAL_AND_EXCLUDED"
+}
