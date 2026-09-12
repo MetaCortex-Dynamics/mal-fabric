@@ -1,0 +1,86 @@
+{
+  "authority": {
+    "accept_is_submission_not_promotion": true,
+    "nl_proposer_direct_commit": "FORBIDDEN",
+    "pending_proposal_execution": "FORBIDDEN"
+  },
+  "claims": {
+    "committed_undo_requires_new_edit": true,
+    "g01_edit_closure": "CONNECT_ADDS_ROUTE",
+    "malformed_output_creates_no_candidate": true,
+    "modify_creates_successor_identity": true,
+    "presentation_invariance": true,
+    "promoted_candidate_text_split": true,
+    "proposal_history": true,
+    "reject_preserves_promoted_fabric": true
+  },
+  "conformance": "24/24",
+  "counts": {
+    "A": {
+      "passed": 5,
+      "total": 5
+    },
+    "D": {
+      "passed": 6,
+      "total": 6
+    },
+    "G": {
+      "passed": 5,
+      "total": 5
+    },
+    "N": {
+      "passed": 2,
+      "total": 2
+    },
+    "P": {
+      "passed": 6,
+      "total": 6
+    }
+  },
+  "demo": "DEMO_002_VIBE_PROPOSER",
+  "evidence_artifact_count": 25,
+  "holds": true,
+  "imports": {
+    "demo_001": "UNCHANGED",
+    "kernel_hashes": {
+      "v3_1": "8b983301dad795dd9c3f020970bad76017ef648ac0c71e3fb6fdef3d0e4347c0",
+      "v3_2": "89105692eee04580db1c98556b51d0644292b7fb7b42fa4f41ebd381cde256dc",
+      "v3_3": "96c6f849f3ad64d6b9d8c2469a252e5a813354c1e2c0b7cd47fcde7b518b4fe2"
+    },
+    "mal_fabric_doi": "10.5281/zenodo.22718622",
+    "mal_fabric_version": "v0.4.0",
+    "v3_1": "UNCHANGED",
+    "v3_2": "UNCHANGED",
+    "v3_3": "UNCHANGED"
+  },
+  "passed": 24,
+  "promotion": "NOT_PERFORMED",
+  "receipt_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "N01",
+    "N02"
+  ],
+  "spec_version": "v0.2+G01-EDIT-CLOSURE",
+  "total": 24
+}

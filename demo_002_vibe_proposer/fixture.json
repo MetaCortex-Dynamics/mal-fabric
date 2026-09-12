@@ -1,0 +1,33 @@
+{
+  "demo_id": "DEMO-002",
+  "name": "Vibe Proposer",
+  "default_intent": "Make the enemy flee when health is low.",
+  "supported_intents": [
+    "Make the enemy flee when health is low.",
+    "When the player is near, make the enemy approach.",
+    "Disconnect the patrol consequence.",
+    "Move the health-low branch into the functional region."
+  ],
+  "declared_equivalences": [
+    [
+      "Make the enemy flee when health is low.",
+      "When health is low… the enemy should flee!"
+    ]
+  ],
+  "demo_script": [
+    "Submit the default intent and compare PROMOTED with CANDIDATE.",
+    "Inspect the added route and its originating CONNECT edit.",
+    "Choose MODIFY and inspect the successor proposal genealogy.",
+    "Reset, propose again, and choose ACCEPT for admission.",
+    "Observe that ACCEPT alone leaves PROMOTED unchanged.",
+    "Run V3.1 plus V3.2 and observe the exact candidate commit.",
+    "Start V3.3 and tick only the committed fabric.",
+    "Reset, submit unsupported intent, and observe parser MAYBE with no candidate."
+  ],
+  "authority": {
+    "nl_proposer_direct_commit": "FORBIDDEN",
+    "accept": "SUBMISSION_ONLY",
+    "commit_requires": "V3.1 DRC + V3.2 authority",
+    "pending_proposal_execution": "FORBIDDEN"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "family": "G",
+  "observations": {
+    "moved": [
+      {
+        "cell_id": "health_low",
+        "from": {
+          "containment_path": [
+            "behavior",
+            "behavior_block",
+            "visible_fabric"
+          ],
+          "triad_position": {
+            "dimension": "□S",
+            "kind": "INTERIOR"
+          }
+        },
+        "to": {
+          "containment_path": [
+            "behavior",
+            "behavior_block",
+            "visible_fabric"
+          ],
+          "triad_position": {
+            "dimension": "□F",
+            "kind": "INTERIOR"
+          }
+        }
+      }
+    ],
+    "presentation_move": false,
+    "triad": [
+      {
+        "cell_id": "health_low",
+        "from": {
+          "dimension": "□S",
+          "kind": "INTERIOR"
+        },
+        "to": {
+          "dimension": "□F",
+          "kind": "INTERIOR"
+        }
+      }
+    ]
+  },
+  "passed": true,
+  "title": "MOVE is semantic LOCATION change, not x/y",
+  "vector_id": "G03"
+}

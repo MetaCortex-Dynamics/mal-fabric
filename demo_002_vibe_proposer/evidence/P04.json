@@ -1,0 +1,30 @@
+{
+  "family": "P",
+  "observations": {
+    "ast": {
+      "arguments": [
+        [
+          "action",
+          "enemy_approach"
+        ],
+        [
+          "condition",
+          "player_near"
+        ]
+      ],
+      "intent_kind": "APPROACH_WHEN_PLAYER_NEAR"
+    },
+    "edits": [
+      {
+        "kind": "CONNECT",
+        "source_cell": "enemy_approach",
+        "source_role": "RESULT",
+        "target_cell": "action_bus",
+        "target_role": "MEMBER"
+      }
+    ]
+  },
+  "passed": true,
+  "title": "ProposalAST lowers to canonical FabricEditAST",
+  "vector_id": "P04"
+}

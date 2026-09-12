@@ -1,6 +1,6 @@
-# MaL Fabric v0.4.0
+# MaL Fabric v0.5.0
 
-[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22718622.svg)](https://doi.org/10.5281/zenodo.22718622) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -14,6 +14,11 @@ canonical geometric programs are rendered and manipulated through confluent
 text and visual surfaces, governed before commitment, and synchronously
 executed with visible runtime custody. The deterministic natural-language
 surface proposes edits but has no authority to commit them.
+
+Version 0.5.0 adds DEMO-002: constrained natural-language intent produces a
+typed proposal, a candidate `FabricSpec`, and a visible geometric diff. The
+model proposes; user acceptance authorizes submission to the existing
+governed commit path. `ACCEPT` is neither promotion nor commit authority.
 
 ## Companion papers
 
@@ -51,6 +56,19 @@ DEMO-001 Visible Fabric
   acceptance replay    byte-identical
   HTTP smoke           PASS
   NL proposer authority NONE
+
+DEMO-002 Vibe Proposer
+  proposal construction  6/6
+  geometric diff         5/5
+  disposition            6/6
+  authority boundary     5/5
+  NL boundary            2/2
+  total                 24/24
+  evidence determinism  25/25
+  HTTP smoke             PASS
+  NL direct commit       FORBIDDEN
+
+TOTAL CONFORMANCE       199/199
 ```
 
 Run all suites from the repository root:
@@ -60,7 +78,12 @@ python -B static_fabric_v0_1_0/run_conformance.py --output static_fabric_v0_1_0/
 python -B admissibility_v0_2_0/run_conformance.py --output admissibility_v0_2_0/evidence
 python -B execution_v0_3_0/run_conformance.py --output execution_v0_3_0/evidence
 python -B demo_001_visible_fabric/run_acceptance.py
+python -B demo_002_vibe_proposer/run_conformance.py --output demo_002_vibe_proposer/evidence
+python -B demo_002_vibe_proposer/demo_server.py
 ```
+
+The DEMO-002 browser surface is served at
+[http://127.0.0.1:8766](http://127.0.0.1:8766).
 
 Successful replay regenerates each evidence set byte-for-byte.
 
@@ -70,6 +93,8 @@ layer-specific evidence artifacts matched their archived counterparts and
 repeated runs byte-for-byte; the DEMO-001 acceptance summary was also
 byte-identical, the archived HTTP flow passed, and all 189 published JSON
 artifacts parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
+The v0.5.0 archive replay will be recorded after Zenodo ingests the tagged
+carrier.
 
 ## Contents
 
@@ -90,6 +115,10 @@ artifacts parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 - [demo_001_visible_fabric](demo_001_visible_fabric) contains the promoted
   one-`FabricSpec` browser demo, deterministic proposer, governed edit adapter,
   V3.3 runtime overlay, scripted fixture, and D01-D18 acceptance evidence.
+- [demo_002_vibe_proposer](demo_002_vibe_proposer) contains the promoted
+  non-authoritative intent proposer, typed proposal and diff model, explicit
+  disposition lifecycle, browser surface, 24-vector runner, and 25 evidence
+  artifacts.
 - [PUBLICATION_PROVENANCE.md](PUBLICATION_PROVENANCE.md) binds this filtered
   public carrier to the upstream candidate and promotion commits.
 - [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md) records the latest completed replay
@@ -101,49 +130,46 @@ artifacts parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 
 ```text
 public_predecessor_commit:
-  7cdf70301fe99de361452d6a05bf80d7326e0b5a
+  b628886559ba0d89791c87c2ce7216b65462dcc7
+
+public_predecessor_version_doi:
+  10.5281/zenodo.22718622
 
 upstream_demo_implementation_commit:
-  5ba5909b612a2e9e96d5e4d8aecdb69ade23a665
+  8f0f078ba1514496eb0c5bbaca9064df3f3bf33f
 
 upstream_demo_binding_commit:
-  11e4bec034ad49c51272e3e3225cef54275241cd
+  b75635580f547512d7baf922c51ee53c81f208eb
 
 upstream_demo_promotion_commit:
-  147efeaf1a88fce33cdc0a74eab9f9ca347cb202
+  fb0e1c3ec6a8695c8fcc0de21a8b5ccbbae5b53f
+
+demo_binding_record_sha256:
+  74BCFD3185472F586C276A806D95D87F67643E70228520EBE121D2932BEA9EA9
 
 demo_promotion_record_sha256:
-  3E58D5F4A3F6B7BF0A9073955C99C4B9E117D3CFB336DC1979CC7743DC7A001F
+  391D81E6F0E07776DFFE56CF47565F8F927C9A762D7D49A0449ACE91C68DD8B9
 
 demo_acceptance_summary_sha256:
-  C634F5E58D6A27D8D53576B0FA62DAD30AF1D28C69A561A0B4797D4FED620E74
+  D598260003D7706E5F3CA99837A2A4D9A523C637C729233E0943C6378C68ADA2
 
-v3_3_spec_sha256:
-  5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0
+demo_evidence_manifest_sha256:
+  DBA7BC83DFF33217E757B3A587EDF5EB705B5A304454266BDF6661A17FDCC2EB
 
-v3_3_vector_corpus_sha256:
-  846DBF4BE822C6816E788D4BCCE98F34D815D1AB870E62BDC5DEA67636E9C055
+demo_conformance:
+  24/24
 
-v3_3_execution_kernel_sha256:
-  96C6F849F3AD64D6B9D8C2469A252E5A813354C1E2C0B7CD47FCDE7B518B4FE2
-
-v3_3_queuegate_evidence_summary_sha256:
-  B7FD885ADA3E14845336E547D3A35C5A81418F82998221CE189B1FE100A78E0F
-
-v3_3_conformance:
-  70/70
-
-v3_3_determinism:
-  71/71 byte-identical
+demo_evidence_replay:
+  25/25 byte-identical
 
 software_concept_doi:
   10.5281/zenodo.22678127
 
 software_predecessor_version_doi:
-  10.5281/zenodo.22713736
-
-software_v0_4_0_version_doi:
   10.5281/zenodo.22718622
+
+software_v0_5_0_version_doi:
+  PENDING_ZENODO_INGESTION
 
 paper_b_doi:
   10.5281/zenodo.22715312
@@ -177,14 +203,20 @@ the existing FabricEdit model, and that admitted geometry executes with a
 visible V3.3 custody wavefront. Presentation coordinates remain outside
 canonical identity and evidence digests.
 
+DEMO-002 establishes that constrained natural-language intent can propose new
+program geometry as a visible, typed diff without receiving authority over the
+promoted fabric. User acceptance authorizes submission only; V3.1 DRC and V3.2
+admission remain the commit path, and only committed geometry enters V3.3.
+
 ## Scope boundary
 
-Version 0.4.0 adds a bounded product demonstration. It does not authorize
-self-modifying geometry, an external stimulus API, a general-purpose NL
-compiler, or autonomous model authority. It does not claim wall-clock
-equivalence, different-initial-state determinism, multiplayer determinism,
-cross-implementation equality when evaluators differ, or scheduler
-independence outside `ValidHostSchedule`.
+Version 0.5.0 adds a bounded deterministic intent grammar and proposal
+lifecycle. It does not authorize self-modifying geometry, direct proposer
+commit, cell creation outside the V3.1 edit algebra, an external stimulus API,
+a general-purpose NL compiler, or autonomous model authority. It does not
+claim wall-clock equivalence, different-initial-state determinism, multiplayer
+determinism, cross-implementation equality when evaluators differ, or
+scheduler independence outside `ValidHostSchedule`.
 
 Public disclosure may bear on prior art, but neither publication nor the
 Apache-2.0 license guarantees a particular patent outcome. Apache-2.0 governs

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DEMO-002 · Vibe Proposer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">MAL FABRIC · DEMO-002</p>
+      <h1>Intent becomes visible geometry<br><span>before it becomes authority.</span></h1>
+    </div>
+    <div class="authority"><b>NL authority</b><strong>PROPOSER ONLY</strong><small>ACCEPT ≠ PROMOTE</small></div>
+  </header>
+
+  <main>
+    <section class="intent panel">
+      <label for="intent">Natural-language intent</label>
+      <textarea id="intent">Make the enemy flee when health is low.</textarea>
+      <div class="actions">
+        <button id="propose" class="primary">Propose geometry</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div id="event" class="event">READY</div>
+    </section>
+
+    <section class="status-strip">
+      <div><small>Proposal</small><strong id="proposal-status">NONE</strong></div>
+      <div><small>V3.1 preview</small><strong id="drc">—</strong></div>
+      <div><small>Promoted digest</small><code id="promoted-digest">—</code></div>
+      <div><small>Runtime</small><strong id="runtime">NOT STARTED</strong></div>
+    </section>
+
+    <section class="panel fabric-panel">
+      <div class="section-title">
+        <div><p class="eyebrow">GEOMETRIC DIFF</p><h2>Promoted + candidate overlay</h2></div>
+        <div class="legend"><span class="base-key">promoted</span><span class="add-key">added</span><span class="move-key">moved</span><span class="remove-key">removed</span></div>
+      </div>
+      <div id="fabric" class="fabric" aria-label="Geometric fabric overlay"></div>
+      <div id="diff-list" class="diff-list">No proposal is open.</div>
+    </section>
+
+    <section class="panel disposition">
+      <div>
+        <p class="eyebrow">USER DISPOSITION</p>
+        <h2>Choose what happens to the candidate</h2>
+        <p id="explanation">The proposer may describe a change, but it cannot commit one.</p>
+      </div>
+      <div class="actions wrap">
+        <button id="accept" class="primary">Accept for admission</button>
+        <button id="modify">Modify: move health_low → □F</button>
+        <button id="reject" class="danger">Reject</button>
+        <button id="submit" class="govern">Run V3.1 + V3.2</button>
+        <button id="start">Start V3.3</button>
+        <button id="tick">Tick</button>
+      </div>
+    </section>
+
+    <section class="text-grid">
+      <article class="panel"><p class="eyebrow">PROMOTED</p><h2>Canonical FabricSpec</h2><pre id="promoted-text"></pre></article>
+      <article class="panel candidate-text"><p class="eyebrow">CANDIDATE · PREVIEW ONLY</p><h2>Derived FabricSpec</h2><pre id="candidate-text">No candidate.</pre></article>
+    </section>
+
+    <section class="panel history-panel">
+      <p class="eyebrow">PROPOSAL GENEALOGY</p>
+      <h2>Session history</h2>
+      <div id="history" class="history">No proposals yet.</div>
+    </section>
+  </main>
+
+  <div id="error" class="error hidden" role="alert"></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -4,6 +4,84 @@ This public carrier preserves public Git history while binding filtered
 publication contents to Devon's exact promoted authority points in the
 governance workspace.
 
+## v0.5.0 DEMO-002 carrier binding
+
+```text
+public_repository:
+  MetaCortex-Dynamics/mal-fabric
+
+public_predecessor_commit:
+  b628886559ba0d89791c87c2ce7216b65462dcc7
+
+public_predecessor_tag:
+  v0.4.0
+
+public_predecessor_version_doi:
+  10.5281/zenodo.22718622
+
+upstream_repository:
+  MetaCortex-Dynamics/mal_kernel_lab_foundation
+
+upstream_demo_implementation_commit:
+  8f0f078ba1514496eb0c5bbaca9064df3f3bf33f
+
+upstream_demo_binding_commit:
+  b75635580f547512d7baf922c51ee53c81f208eb
+
+upstream_demo_promotion_commit:
+  fb0e1c3ec6a8695c8fcc0de21a8b5ccbbae5b53f
+
+demo_binding_record_sha256:
+  74BCFD3185472F586C276A806D95D87F67643E70228520EBE121D2932BEA9EA9
+
+demo_promotion_record_sha256:
+  391D81E6F0E07776DFFE56CF47565F8F927C9A762D7D49A0449ACE91C68DD8B9
+
+demo_acceptance_summary_sha256:
+  D598260003D7706E5F3CA99837A2A4D9A523C637C729233E0943C6378C68ADA2
+
+demo_evidence_manifest_sha256:
+  DBA7BC83DFF33217E757B3A587EDF5EB705B5A304454266BDF6661A17FDCC2EB
+
+demo_acceptance:
+  P01-P06 = 6/6
+  G01-G05 = 5/5
+  D01-D06 = 6/6
+  A01-A05 = 5/5
+  N01-N02 = 2/2
+  TOTAL = 24/24
+
+demo_evidence_replay:
+  25/25 BYTE_IDENTICAL
+
+demo_HTTP_smoke:
+  PASS
+
+NL_PROPOSER_DIRECT_COMMIT:
+  FORBIDDEN
+
+software_concept_doi:
+  10.5281/zenodo.22678127
+
+public_release_tag:
+  v0.5.0
+
+software_version_doi:
+  PENDING_ZENODO_INGESTION
+
+paper_a_doi:
+  10.5281/zenodo.22677712
+
+paper_b_doi:
+  10.5281/zenodo.22715312
+```
+
+The public tag identifies the filtered carrier commit. The upstream promotion
+SHA identifies the immutable private authority point. These repositories do
+not share Git ancestry, so unrelated private history remains outside the
+public carrier. User acceptance in DEMO-002 authorizes submission to the
+existing governed commit path; it is neither promotion nor commit authority.
+
 ## v0.4.0 DEMO-001 carrier binding
 
 ```text

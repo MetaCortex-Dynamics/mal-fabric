@@ -1,0 +1,17 @@
+{
+  "family": "G",
+  "observations": {
+    "g01_edit_closure": "CONNECT",
+    "origin": {
+      "kind": "CONNECT",
+      "source_cell": "enemy_approach",
+      "source_role": "RESULT",
+      "target_cell": "action_bus",
+      "target_role": "MEMBER"
+    },
+    "route_id": "fef9bbda8cd370ea0eb767d882a81ad5b536e0f5aac653b4f13c80efb18a6802"
+  },
+  "passed": true,
+  "title": "added route is visible and traced to CONNECT",
+  "vector_id": "G01"
+}
