@@ -1,90 +1,99 @@
-# MaL Fabric v0.7.0 Archive Replay
+# MaL Fabric v0.8.0 Archive Replay
 
 ```text
-record_id: MAL-FABRIC-V0.7.0-ZENODO-REPLAY-001
+record_id: MAL-FABRIC-V0.8.0-ZENODO-REPLAY-001
 verification_date: 2026-09-12
 result: HOLDS
 
 github_release:
-  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.7.0
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.8.0
 
 release_commit:
-  6560da66a538241539955fa5f8b6abad11d22598
+  cd226590ba0eaba06010361662bf9b2219dd43db
 
 upstream_promotion_commit:
-  c023fb62ba229d023aca013783725d7f55111529
+  8fecb46c0ca55279a5c843a15404709ed50fd9f3
 
 zenodo_record:
-  https://zenodo.org/records/22727508
+  https://zenodo.org/records/22728146
 
 software_version_doi:
-  10.5281/zenodo.22727508
+  10.5281/zenodo.22728146
 
 software_concept_doi:
   10.5281/zenodo.22678127
 
 archive_file:
-  MetaCortex-Dynamics/mal-fabric-v0.7.0.zip
+  MetaCortex-Dynamics/mal-fabric-v0.8.0.zip
 
 archive_size_bytes:
-  482927
+  1069845
 
 archive_md5:
-  013E1C4B3C56B5737C93985A5FC711E4
+  32F58CA46059624C34EA4AE8820B3303
 
 archive_sha256:
-  32E905DB6F7E952CC5C9983406E4C333BC6BADEE0391FE03AB16D60BCCEF3EF3
+  3ECF9FB2B0D870A1ACD6E2C2FC868767426882F2758FF22FD95B4C4B4EC5B5C2
 ```
 
-The archive was downloaded directly from Zenodo, extracted into a fresh
-directory, and executed without using the publication working tree. Every
-suite was run twice into independent output trees and compared against the
-evidence embedded in the archive.
+The archive was downloaded directly from Zenodo and extracted into a fresh
+directory outside the publication working tree. The complete predecessor
+regression and VIS-R&D-001 suite were executed from that extraction.
 
 ```text
-V3.1 run A/B:             25/25
-V3.1 evidence:            26/26 byte-identical
+V3.1:                    25/25
+V3.2:                    62/62
+V3.3:                    70/70
+DEMO-001:                18/18
+DEMO-002:                24/24
+DEMO-003:                28/28
+DEMO-004:                26/26
+VIS-R&D-001:             24/24
+--------------------------------
+total conformance:      277/277
 
-V3.2 run A/B:             62/62
-V3.2 evidence:            63/63 byte-identical
-
-V3.3 run A/B:             70/70
-V3.3 evidence:            71/71 byte-identical
-
-DEMO-001 run A/B:         18/18
-DEMO-001 evidence:         1/1 byte-identical
-
-DEMO-002 run A/B:         24/24
-DEMO-002 evidence:        25/25 byte-identical
-
-DEMO-003 run A/B:         28/28
-DEMO-003 evidence:        29/29 byte-identical
-
-DEMO-004 run A/B:         26/26
-DEMO-004 evidence:        27/27 byte-identical
-
-total conformance:       253/253
-total evidence:          242/242 byte-identical
-published JSON parse:    282/282
-DEMO-004 HTTP smoke:     PASS
+predecessor evidence:  242/242 byte-identical to v0.7.0 archive
+VIS-R&D-001 evidence:    25/25 replay A/B and archive byte-identical
+total evidence:         267/267 byte-identical
+published JSON parse:  313/313
+archive HTTP smoke:      PASS
+archive browser load:    PASS
 ```
 
-The established predecessor evidence (`215/215`) was reproduced under the
-Windows reference environment used for its prior archive closure. GitHub's
-archive contains the DEMO-004 JSON evidence with LF line endings; DEMO-004 was
-therefore additionally replayed under Ubuntu 24.04 / Python 3.12.3, where all
-`27/27` regenerated artifacts matched the archived bytes exactly. A Windows
-DEMO-004 replay produced identical semantic JSON and mutually byte-identical
-receipts with CRLF line endings; this platform newline normalization was the
-only archive-byte difference observed.
+The inherited 242 evidence artifacts were compared path-for-path and
+byte-for-byte with the sealed v0.7.0 Zenodo archive. VIS-R&D-001 generated two
+independent 25-artifact replays; both matched each other and the evidence in
+the v0.8.0 archive exactly.
 
-The archived HTTP flow passed state retrieval, GAME-to-CARRIER toggle, and one
-logical tick. The toggle preserved the committed semantic/run digests while
-changing presentation only. Both surfaces retained the same committed
-`RenderSnapshot` identity.
+The established platform-newline boundary remains explicit. DEMO-004's bound
+acceptance identity is Windows-native, while GitHub stores LF-normalized JSON
+in its archive. The archived predecessor suite was therefore materialized in
+its recorded Windows reference environment before VIS-R&D-001 import
+verification. The resulting DEMO-004 acceptance SHA-256 was the bound value:
 
-This receipt verifies the archived V3.1 static, V3.2 admission, V3.3
-execution, DEMO-001 visible-fabric, DEMO-002 vibe-proposer, DEMO-003 game-loop,
-and DEMO-004 dual-surface render-binding surfaces. It does not claim that
-framebuffer pixels, platform newline conventions, wall-clock timing, GPU
-ordering, multiplayer, network, or physics-engine behavior are canonical.
+```text
+50BB725920F17B5BA5565A8BC37F5E2A301B4BD8FE173F7C399AA5B2ECDDC275
+```
+
+VIS-R&D-001 writes canonical evidence with explicit LF endings, so its 25
+regenerated artifacts are byte-identical across the replay and archived
+surfaces.
+
+The archived fixture and kernel retained their promoted identities:
+
+```text
+Gaussian fixture size:    6144 bytes
+Gaussian fixture SHA-256: 6AEB775435810389BC47D15F02E3D545E09DED2760E8A15E76DE71D89D55D143
+Gaussian kernel SHA-256:  2C760D7BBFC0466DAC8021AEBC3D8704DC6A33D3776F9FFFB708491FF9FE07A9
+```
+
+The HTTP replay returned `200` for the application shell, committed state,
+render projection, asset descriptor, and 6,144-byte splat fixture. A fresh
+headless browser loaded the archived visual surface. The browser screenshot is
+diagnostic product evidence only and is not part of canonical identity.
+
+The semantic trace is identical for conventional, Gaussian, and fallback
+assets. Pixel identity is neither required nor claimed. This receipt does not
+add dynamic or deforming Gaussian actors, 4D temporal evolution, runtime
+Gaussian training, rendering-as-measurement, collision truth, navigation
+truth, or AI-perception truth.

@@ -1,6 +1,6 @@
 # MaL Fabric v0.8.0
 
-[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22728146.svg)](https://doi.org/10.5281/zenodo.22728146) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -147,12 +147,13 @@ The VIS-R&D-001 browser surface is served at
 
 Successful replay regenerates each evidence set byte-for-byte.
 
-The published v0.7.0 Zenodo archive was independently downloaded and replayed
-on 2026-09-12. All seven suites passed for 253/253 total conformance. All 242
-evidence artifacts matched repeated runs and their archived counterparts
-byte-for-byte in their recorded replay environments. The archived DEMO-004
-HTTP GAME/CARRIER/tick flow passed, and all 282 published JSON artifacts
-parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
+The published v0.8.0 Zenodo archive was independently downloaded and replayed
+on 2026-09-12. All eight suites passed for 277/277 total conformance. The 242
+predecessor evidence artifacts were byte-identical to the sealed v0.7.0
+archive, and all 25 VIS-R&D-001 artifacts matched independent replay and the
+v0.8.0 archive byte-for-byte. The archived HTTP/browser surface and 6,144-byte
+Gaussian fixture passed, and all 313 published JSON artifacts parsed. See
+[ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 
 ## Contents
 
@@ -231,7 +232,7 @@ demo_evidence_replay:
   25/25 byte-identical
 
 public_release_commit:
-  PENDING_RELEASE_CARRIER_COMMIT
+  cd226590ba0eaba06010361662bf9b2219dd43db
 
 github_release:
   https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.8.0
@@ -243,7 +244,7 @@ software_predecessor_version_doi:
   10.5281/zenodo.22727508
 
 software_v0_8_0_version_doi:
-  PENDING_ZENODO_INGESTION
+  10.5281/zenodo.22728146
 
 paper_b_doi:
   10.5281/zenodo.22715312
