@@ -1,6 +1,6 @@
 # MaL Fabric v0.4.0
 
-[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22718622.svg)](https://doi.org/10.5281/zenodo.22718622) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -64,12 +64,12 @@ python -B demo_001_visible_fabric/run_acceptance.py
 
 Successful replay regenerates each evidence set byte-for-byte.
 
-The published v0.3.0 Zenodo archive was independently downloaded and replayed
-on 2026-09-11. All three substrate suites passed, all 160 layer-specific
-evidence artifacts matched their archived counterparts and repeated runs
-byte-for-byte, and all 186 published JSON artifacts parsed. See
-[ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md). The v0.4.0 replay will be recorded after
-Zenodo ingests the tagged carrier.
+The published v0.4.0 Zenodo archive was independently downloaded and replayed
+on 2026-09-11. All three substrate suites and DEMO-001 passed. All 160
+layer-specific evidence artifacts matched their archived counterparts and
+repeated runs byte-for-byte; the DEMO-001 acceptance summary was also
+byte-identical, the archived HTTP flow passed, and all 189 published JSON
+artifacts parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 
 ## Contents
 
@@ -143,7 +143,7 @@ software_predecessor_version_doi:
   10.5281/zenodo.22713736
 
 software_v0_4_0_version_doi:
-  PENDING_ZENODO_INGESTION
+  10.5281/zenodo.22718622
 
 paper_b_doi:
   10.5281/zenodo.22715312
