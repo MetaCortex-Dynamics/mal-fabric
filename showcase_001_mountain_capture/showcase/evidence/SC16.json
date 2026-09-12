@@ -1,0 +1,15 @@
+{
+  "description": "overlay fields recorded canonically",
+  "details": {
+    "fields": [
+      "GameRunIdentity",
+      "RenderSnapshot_digest",
+      "active_surface",
+      "logical_tick_index",
+      "run_id",
+      "showcase_asset_sha256"
+    ]
+  },
+  "vector_id": "SC16",
+  "verdict": "PASS"
+}

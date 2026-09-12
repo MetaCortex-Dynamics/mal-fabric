@@ -1,0 +1,12 @@
+{
+  "description": "launch clip shows continuous execution",
+  "details": {
+    "continuous_event": {
+      "behavior": "APPROACH",
+      "event": "CONTROL_ADVANCE_DURING_CARRIER",
+      "tick": 4
+    }
+  },
+  "vector_id": "SC15",
+  "verdict": "PASS"
+}

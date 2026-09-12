@@ -1,0 +1,18 @@
+{
+  "description": "showcase artifacts do not alter imported runtime/state",
+  "details": {
+    "imported_scopes": [
+      "v3/software_fpga/fabric_v0_1_0",
+      "v3/software_fpga/fabric_v0_2_0_admission",
+      "v3/software_fpga/fabric_v0_3_0_execution",
+      "v3/software_fpga/demo_001_visible_fabric",
+      "v3/software_fpga/demo_002_vibe_proposer",
+      "v3/software_fpga/demo_003_game_loop_binding",
+      "v3/software_fpga/demo_004_dual_surface_render_binding",
+      "v3/software_fpga/vis_rd_001_gaussian_splat_render_primitive"
+    ],
+    "status": "UNCHANGED"
+  },
+  "vector_id": "SC18",
+  "verdict": "PASS"
+}

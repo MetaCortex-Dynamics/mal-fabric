@@ -1,0 +1,29 @@
+{
+  "description": "launch clip includes live toggle",
+  "details": {
+    "toggle_events": [
+      {
+        "event": "LIVE_TOGGLE",
+        "surface": "CARRIER",
+        "tick": 0
+      },
+      {
+        "event": "LIVE_TOGGLE",
+        "surface": "CARRIER",
+        "tick": 2
+      },
+      {
+        "event": "LIVE_TOGGLE",
+        "surface": "CARRIER",
+        "tick": 3
+      },
+      {
+        "event": "LIVE_TOGGLE",
+        "surface": "GAME",
+        "tick": 4
+      }
+    ]
+  },
+  "vector_id": "SC14",
+  "verdict": "PASS"
+}

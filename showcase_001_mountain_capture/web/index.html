@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>mal-fabric · Mountain Gaussian showcase</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {"imports":{
+      "three":"https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+      "three/webgpu":"https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.webgpu.js",
+      "three/tsl":"https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.tsl.js",
+      "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+    }}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="sigil">◇</span><div><b>mal-fabric</b><small>SHOWCASE-001 · GAUSSIAN MOUNTAIN</small></div></div>
+    <div class="status"><i></i><span id="run-status">INITIALIZING</span><span id="tick">TICK 0</span></div>
+  </header>
+  <main>
+    <section class="stage">
+      <div class="stage-head">
+        <div class="switch"><button id="game-tab" class="active">GAME</button><button id="carrier-tab">CARRIER</button></div>
+        <div class="headline"><span>THAT CREATURE YOU WERE JUST FIGHTING</span><strong>IS THIS PROGRAM</strong></div>
+        <div class="digest">SNAPSHOT <code id="snapshot-head">—</code></div>
+      </div>
+      <div id="game-view" class="surface active">
+        <div id="three-stage"></div>
+        <div class="view-label"><strong>GAME</strong><span>GAUSSIAN-SPLAT TERRAIN</span></div>
+        <div id="behavior" class="behavior">PATROL</div>
+        <div class="scene-caption">MOUNTAIN · MESH-DERIVED 3DGS · CC-BY-4.0</div>
+      </div>
+      <div id="carrier-view" class="surface">
+        <svg id="carrier-svg" viewBox="0 0 1200 680" aria-label="Executable carrier geometry"></svg>
+        <div class="view-label"><strong>CARRIER</strong><span>EXECUTABLE GEOMETRY</span></div>
+        <div class="triad-legend"><span class="g">□G ground</span><span class="s">□S structure</span><span class="f">□F flow</span></div>
+      </div>
+      <div class="proof-overlay">
+        <div><span>RUN</span><code id="proof-run">—</code></div>
+        <div><span>TICK</span><code id="proof-tick">0</code></div>
+        <div><span>SNAPSHOT</span><code id="proof-snapshot">—</code></div>
+        <div><span>GAME RUN</span><code id="proof-game-run">—</code></div>
+        <div><span>SURFACE</span><code id="proof-surface">GAME</code></div>
+        <div><span>ASSET</span><code id="proof-asset">ED0387C03566</code></div>
+      </div>
+    </section>
+    <aside>
+      <div class="panel hero"><span>STATIC 3DGS · 10K</span><b id="asset-status">LOADING</b><small id="backend">detecting renderer</small></div>
+      <div class="panel declaration"><b>SAME RUN.</b><b>SAME TICK.</b><b>SAME SNAPSHOT.</b><strong>TWO SURFACES.</strong></div>
+      <div class="panel controls">
+        <label>PROXIMITY <button id="near">PLAYER FAR</button></label>
+        <label>ENEMY HEALTH <input id="health" type="range" min="0" max="100" value="100"><output id="health-value">100</output></label>
+        <button id="advance" class="primary">ADVANCE LOGICAL TICK <span>→</span></button>
+      </div>
+      <div class="panel readout"><h2>Committed boundary</h2><dl><dt>surface</dt><dd id="surface">GAME</dd><dt>run</dt><dd id="run">—</dd><dt>fabric</dt><dd id="fabric">—</dd><dt>state</dt><dd id="state">—</dd><dt>asset</dt><dd>mountain_10k</dd><dt>splats</dt><dd>10,000</dd></dl></div>
+      <div class="panel phases"><h2>Payload custody</h2><div id="phases"></div></div>
+      <p class="law">GAUSSIAN := PRESENTATION<br>PIXELS := NONCANONICAL<br>RENDERER := NONAUTHORITY</p>
+    </aside>
+  </main>
+  <footer><span>mal-fabric v0.8.0 · immutable import</span><span>SHIP THE BEAUTY. THE STRUCTURE IS UNDERNEATH.</span></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

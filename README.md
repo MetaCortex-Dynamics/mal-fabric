@@ -1,6 +1,6 @@
-# MaL Fabric v0.8.0
+# MaL Fabric v0.9.0
 
-[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22728146.svg)](https://doi.org/10.5281/zenodo.22728146) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -42,6 +42,15 @@ substitution, splat sorting, view-dependent color, backend behavior, and
 fallback selection are presentation-only; pixels are noncanonical.
 
 **Ship the beauty. The structure is underneath.**
+
+Version 0.9.0 adds SHOWCASE-001: a mesh-derived, CC-BY-4.0 Gaussian mountain
+environment hosts governed enemy behavior. GAME presents the characters in
+terrain; CARRIER presents the running program as executable geometry. The
+paired proof views preserve the same run, logical tick, committed
+`RenderSnapshot`, and `GameRunIdentity`.
+
+**That creature you were just fighting is this program. Same run. Same tick.
+Same snapshot. Two surfaces.**
 
 ## Companion papers
 
@@ -124,7 +133,14 @@ VIS-R&D-001 Gaussian Splat Render Primitive
   HTTP/browser smoke       PASS
   renderer authority       NONE
 
-TOTAL CONFORMANCE       277/277
+SHOWCASE-001 Mountain Capture
+  acceptance              22/22
+  required stills           6/6
+  launch clip              44.0s
+  proof quartet            HOLDS
+  asset provenance         mesh-derived CC-BY-4.0
+
+TOTAL CONFORMANCE       299/299
 ```
 
 Run all suites from the repository root:
@@ -140,10 +156,15 @@ python -B demo_004_dual_surface_render_binding/run_conformance.py --output demo_
 python -B vis_rd_001_gaussian_splat_render_primitive/run_conformance.py
 python -B vis_rd_001_gaussian_splat_render_primitive/run_full_regression.py
 python -B vis_rd_001_gaussian_splat_render_primitive/demo_server.py
+python -B showcase_001_mountain_capture/run_acceptance.py
+python -B showcase_001_mountain_capture/showcase_server.py
 ```
 
 The VIS-R&D-001 browser surface is served at
 [http://127.0.0.1:8769](http://127.0.0.1:8769).
+
+The SHOWCASE-001 browser surface is served at
+[http://127.0.0.1:8770](http://127.0.0.1:8770).
 
 Successful replay regenerates each evidence set byte-for-byte.
 
@@ -188,6 +209,10 @@ Gaussian fixture passed, and all 313 published JSON artifacts parsed. See
   contains the promoted Gaussian presentation adapter, fixed-width local splat
   fixture, native Three.js browser path, fallback behavior, 24-vector runner,
   25 evidence artifacts, and noncanonical paired product captures.
+- [showcase_001_mountain_capture](showcase_001_mountain_capture) contains the
+  promoted Gaussian mountain showcase, 22-vector acceptance corpus, six
+  required stills, 44-second launch clip, proof records, and CC-BY-4.0
+  attribution package.
 - [PUBLICATION_PROVENANCE.md](PUBLICATION_PROVENANCE.md) binds this filtered
   public carrier to the upstream candidate and promotion commits.
 - [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md) records the latest completed replay
@@ -199,52 +224,58 @@ Gaussian fixture passed, and all 313 published JSON artifacts parsed. See
 
 ```text
 public_predecessor_commit:
-  783358a8b97784e4e39c64198fce19cde1049011
+  5e38d23a90623c19e608fcdb00db85ad37b378f8
 
 public_predecessor_version_doi:
-  10.5281/zenodo.22727508
+  10.5281/zenodo.22728146
 
 upstream_demo_implementation_commit:
-  965a3bc94ab6d4cfcc59bef27051fdcaa3ad8497
+  667d8513a4b9f72642d770055c42f6c8fcff6f7c
 
 upstream_demo_binding_commit:
-  568a23e22b25d2dfa77c57b0cd51516df9e44069
+  970f2b0ad954bb8370964dcbc05be4f1e3074bf7
 
 upstream_demo_promotion_commit:
-  8fecb46c0ca55279a5c843a15404709ed50fd9f3
+  14b70ababc5930f188545b6ba1fdb5c3c40ee93e
 
 demo_binding_record_sha256:
-  261E639D4E33EA9C5EEC60B736DF79C7939A9A29DECC993904574DCC98B9792C
+  4C97FC59C6963F5D018D270CE4850EDFD314143F2237EB430A6E9DEA13D15167
 
 demo_promotion_record_sha256:
-  C5B8F9F0F9B27C941A4AF337CA78026D1606CD8EE60D90812B90FDE22C28DC9B
+  D0C07E889D539C9CB1925FD4C2953FED43A227C87A46E44F16522B94CC7BBEC6
 
 demo_acceptance_summary_sha256:
-  EAB95C9B584D99B4DABF662141D12551C83104955D53DC7D491BFA75CF9E6004
+  CB1E97531861992135FB0D9FEA3258C725EE7771E86198D33328B102A6E7A588
 
-demo_evidence_manifest_sha256:
-  1D1DCC0ACEC624B655B5E8366C2C6ACA1EE46A27E5612F93A8AD1E913BE1637C
+capture_manifest_sha256:
+  D4F927C4268BFC528292ADFACE9C729E21AC0F3FCDAAFDA3AFD802EEC287E8A3
+
+mountain_asset_sha256:
+  ED0387C03566505342407DFF661D6F47181B6FEF6DF83013626EF3469024ED41
+
+launch_clip_sha256:
+  35E92C49EFF9F96930155375C24A2C963ABEECB724034F61D7824CDB7F18DDEE
 
 demo_conformance:
-  24/24
+  22/22
 
-demo_evidence_replay:
-  25/25 byte-identical
+proof_quartet:
+  HOLDS
 
 public_release_commit:
-  cd226590ba0eaba06010361662bf9b2219dd43db
+  PENDING_RELEASE_CARRIER_COMMIT
 
 github_release:
-  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.8.0
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.9.0
 
 software_concept_doi:
   10.5281/zenodo.22678127
 
 software_predecessor_version_doi:
-  10.5281/zenodo.22727508
-
-software_v0_8_0_version_doi:
   10.5281/zenodo.22728146
+
+software_v0_9_0_version_doi:
+  PENDING_ZENODO_INGESTION
 
 paper_b_doi:
   10.5281/zenodo.22715312
@@ -301,9 +332,16 @@ conventional GAME-view asset without changing `FabricSpec`, `FabricState`,
 canonical semantic trace. The renderer remains a read-only consumer of the
 committed snapshot, and fallback selection preserves semantics.
 
+SHOWCASE-001 establishes the public product-evidence surface: a Gaussian
+mountain environment and governed enemy behavior are shown through GAME and
+CARRIER while the proof quartet preserves one run, logical tick,
+`RenderSnapshot`, and `GameRunIdentity`. The mesh-derived asset and all pixels,
+stills, and video remain noncanonical presentation evidence.
+
 ## Scope boundary
 
-Version 0.8.0 adds a bounded static Gaussian presentation primitive. It does
+Version 0.9.0 adds a bounded visual showcase over the static Gaussian
+presentation primitive. It does
 not add dynamic or deforming Gaussian actors, 4D temporal Gaussian evolution,
 runtime Gaussian training, rendering-as-measurement, collision truth,
 navigation truth, or AI-perception truth. It does not

@@ -7,7 +7,7 @@
       "orcid": "0009-0004-8164-2159"
     }
   ],
-  "description": "VIS-R&D-001 integrates a static 3D Gaussian splat as a presentation primitive in the mal-fabric GAME view. The native Three.js WebGPURenderer, SPLATLoader, and GaussianSplat path can replace a conventional asset without changing the canonical geometric program, fabric execution, game-loop state, logical tick sequence, or game behavior. Gaussian rendering and fallback remain nonauthoritative; pixels are noncanonical. Includes 24/24 VIS-R&D-001 conformance, 25/25 byte-identical evidence replay, and an unchanged 253/253 predecessor regression floor.",
+  "description": "SHOWCASE-001 is the first visual showcase of the mal-fabric software FPGA. A mesh-derived CC-BY-4.0 Gaussian mountain environment hosts governed enemy behavior. GAME shows characters in terrain; CARRIER shows the same running program as executable geometry. The paired proof surfaces preserve the same run, logical tick, RenderSnapshot, and GameRunIdentity. Includes 22/22 SHOWCASE-001 acceptance and an unchanged 277/277 predecessor regression floor.",
   "keywords": [
     "canonical geometric programming",
     "deterministic software",
@@ -23,13 +23,15 @@
     "program visualization",
     "synchronous execution",
     "governed AI",
-    "software FPGA"
+    "software FPGA",
+    "visual showcase",
+    "Gaussian terrain"
   ],
   "language": "eng",
   "license": "Apache-2.0",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.22727508",
+      "identifier": "10.5281/zenodo.22728146",
       "relation": "isNewVersionOf",
       "resource_type": "software"
     },
@@ -44,7 +46,7 @@
       "resource_type": "publication-preprint"
     }
   ],
-  "title": "mal-fabric v0.8.0: Gaussian Splat Render Primitive",
+  "title": "mal-fabric v0.9.0: SHOWCASE-001 Mountain Capture",
   "upload_type": "software",
-  "version": "0.8.0"
+  "version": "0.9.0"
 }

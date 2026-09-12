@@ -1,0 +1,27 @@
+{
+  "description": "proof pair shows SAME run_id",
+  "details": {
+    "game_run_identity": [
+      "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff"
+    ],
+    "logical_tick_index": [
+      2,
+      2
+    ],
+    "render_snapshot_digest": [
+      "10c88778dc06f930ee3f458755908c34686a134d21c4e51afcb85326c397c6d1",
+      "10c88778dc06f930ee3f458755908c34686a134d21c4e51afcb85326c397c6d1"
+    ],
+    "run_id": [
+      "showcase-run-sha256-19f78c94d6b2e88e70cb5706f5a643a94094a18169e1bfb41ade9dfd5d088a73",
+      "showcase-run-sha256-19f78c94d6b2e88e70cb5706f5a643a94094a18169e1bfb41ade9dfd5d088a73"
+    ],
+    "surfaces": [
+      "GAME",
+      "CARRIER"
+    ]
+  },
+  "vector_id": "SC07",
+  "verdict": "PASS"
+}

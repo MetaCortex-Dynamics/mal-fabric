@@ -1,0 +1,689 @@
+{
+  "GameRunIdentity": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+  "browser_renderer_status": "NATIVE_GAUSSIAN_LOADED",
+  "capture_resolution": [
+    1440,
+    900
+  ],
+  "capture_sequence_duration_seconds": 44.717,
+  "capture_tool_authority": "NONE",
+  "clip_duration_seconds": 44.0,
+  "clip_frame_rate": 25,
+  "clip_ref": "clip-01-launch.mp4",
+  "clip_source_duration_seconds": 49.72,
+  "clip_source_trim_start_seconds": 0.0,
+  "events": [
+    {
+      "event": "CAPTURE_BEGIN",
+      "surface": "GAME",
+      "tick": 0
+    },
+    {
+      "event": "STILL",
+      "ref": "still-01-hero-game.png",
+      "surface": "GAME",
+      "tick": 0
+    },
+    {
+      "event": "LIVE_TOGGLE",
+      "surface": "CARRIER",
+      "tick": 0
+    },
+    {
+      "behavior": "APPROACH",
+      "event": "CONTROL_ADVANCE",
+      "tick": 2
+    },
+    {
+      "event": "LIVE_TOGGLE",
+      "surface": "CARRIER",
+      "tick": 2
+    },
+    {
+      "behavior": "APPROACH",
+      "event": "CONTROL_ADVANCE",
+      "tick": 3
+    },
+    {
+      "event": "LIVE_TOGGLE",
+      "surface": "CARRIER",
+      "tick": 3
+    },
+    {
+      "behavior": "APPROACH",
+      "event": "CONTROL_ADVANCE_DURING_CARRIER",
+      "tick": 4
+    },
+    {
+      "event": "LIVE_TOGGLE",
+      "surface": "GAME",
+      "tick": 4
+    }
+  ],
+  "final_logical_tick_index": 4,
+  "import": {
+    "doi": "10.5281/zenodo.22728146",
+    "public_commit": "5e38d23a90623c19e608fcdb00db85ad37b378f8",
+    "upstream_promotion_commit": "8fecb46c0ca55279a5c843a15404709ed50fd9f3"
+  },
+  "initial_semantic_projection": {
+    "snapshot": {
+      "blocked_reasons": [],
+      "commit_receipt_digest": "3ad22c565f609c26f34808dfae804fa36652610f92c14458569a6acd489e551a",
+      "committed_fabric_state": {
+        "outstanding_obligations": [],
+        "payload_states": {
+          "action_bus": {
+            "admission_receipt": null,
+            "completion_evidence": [],
+            "discharge_receipt": null,
+            "frame": null,
+            "phase": "EMPTY",
+            "result": null,
+            "result_ref": null
+          },
+          "approach_gate": {
+            "admission_receipt": null,
+            "completion_evidence": [],
+            "discharge_receipt": null,
+            "frame": null,
+            "phase": "EMPTY",
+            "result": null,
+            "result_ref": null
+          },
+          "enemy_approach": {
+            "admission_receipt": null,
+            "completion_evidence": [],
+            "discharge_receipt": null,
+            "frame": null,
+            "phase": "EMPTY",
+            "result": null,
+            "result_ref": null
+          },
+          "enemy_flee": {
+            "admission_receipt": null,
+            "completion_evidence": [],
+            "discharge_receipt": null,
+            "frame": null,
+            "phase": "EMPTY",
+            "result": null,
+            "result_ref": null
+          },
+          "flee_gate": {
+            "admission_receipt": null,
+            "completion_evidence": [],
+            "discharge_receipt": null,
+            "frame": null,
+            "phase": "EMPTY",
+            "result": null,
+            "result_ref": null
+          },
+          "health_low": {
+            "admission_receipt": null,
+            "completion_evidence": [],
+            "discharge_receipt": null,
+            "frame": null,
+            "phase": "EMPTY",
+            "result": null,
+            "result_ref": null
+          },
+          "patrol": {
+            "admission_receipt": null,
+            "completion_evidence": [],
+            "discharge_receipt": null,
+            "frame": null,
+            "phase": "EMPTY",
+            "result": null,
+            "result_ref": null
+          },
+          "player_near": {
+            "admission_receipt": null,
+            "completion_evidence": [],
+            "discharge_receipt": null,
+            "frame": null,
+            "phase": "EMPTY",
+            "result": null,
+            "result_ref": null
+          }
+        },
+        "pending_admissions": [],
+        "pending_input_buffers": [],
+        "receipts": [],
+        "route_states": {}
+      },
+      "committed_game_state": {
+        "enemy_health": 100,
+        "enemy_mode": "PATROL",
+        "enemy_position": [
+          4,
+          0
+        ],
+        "player_position": [
+          0,
+          0
+        ]
+      },
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "fabric_state_digest": "d93bc41eca5ebeb6f447c1b8b36cc7c93f52d76b2a5232e02d54d06d94430e29",
+      "game_run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "game_state_digest": "4cbe0cf9ee9de40dbc21ee991940ab1b2861ed3017255d85ce06510054025681",
+      "immutable_structure": {
+        "cells": [
+          {
+            "cell_id": "action_bus",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            },
+            "operator": "TOGETHER_ALONE",
+            "payload_slot_type": "temporal/sequence",
+            "ports": [
+              {
+                "direction": "IN",
+                "multiplicity": "MANY",
+                "payload_type": "temporal/sequence",
+                "role": "MEMBER"
+              },
+              {
+                "direction": "OUT",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "RESULT"
+              }
+            ],
+            "triad_capability": [
+              "□G",
+              "□S",
+              "□F"
+            ],
+            "witness": "WHEN"
+          },
+          {
+            "cell_id": "approach_gate",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            },
+            "operator": "IF_THEN",
+            "payload_slot_type": "temporal/sequence",
+            "ports": [
+              {
+                "direction": "IN",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "CONDITION"
+              },
+              {
+                "direction": "IN",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "CONSEQUENT"
+              },
+              {
+                "direction": "OUT",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "RESULT"
+              }
+            ],
+            "triad_capability": [
+              "□G",
+              "□S",
+              "□F"
+            ],
+            "witness": "WHEN"
+          },
+          {
+            "cell_id": "enemy_approach",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            },
+            "operator": "THIS",
+            "payload_slot_type": "temporal/sequence",
+            "ports": [
+              {
+                "direction": "IN",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "VALUE"
+              },
+              {
+                "direction": "OUT",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "RESULT"
+              }
+            ],
+            "triad_capability": [
+              "□G",
+              "□S",
+              "□F"
+            ],
+            "witness": "WHEN"
+          },
+          {
+            "cell_id": "enemy_flee",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            },
+            "operator": "THIS",
+            "payload_slot_type": "temporal/sequence",
+            "ports": [
+              {
+                "direction": "IN",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "VALUE"
+              },
+              {
+                "direction": "OUT",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "RESULT"
+              }
+            ],
+            "triad_capability": [
+              "□G",
+              "□S",
+              "□F"
+            ],
+            "witness": "WHEN"
+          },
+          {
+            "cell_id": "flee_gate",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            },
+            "operator": "IF_THEN",
+            "payload_slot_type": "temporal/sequence",
+            "ports": [
+              {
+                "direction": "IN",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "CONDITION"
+              },
+              {
+                "direction": "IN",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "CONSEQUENT"
+              },
+              {
+                "direction": "OUT",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "RESULT"
+              }
+            ],
+            "triad_capability": [
+              "□G",
+              "□S",
+              "□F"
+            ],
+            "witness": "WHEN"
+          },
+          {
+            "cell_id": "health_low",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            },
+            "operator": "THIS",
+            "payload_slot_type": "temporal/sequence",
+            "ports": [
+              {
+                "direction": "IN",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "VALUE"
+              },
+              {
+                "direction": "OUT",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "RESULT"
+              }
+            ],
+            "triad_capability": [
+              "□G",
+              "□S",
+              "□F"
+            ],
+            "witness": "WHEN"
+          },
+          {
+            "cell_id": "patrol",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            },
+            "operator": "THIS",
+            "payload_slot_type": "temporal/sequence",
+            "ports": [
+              {
+                "direction": "IN",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "VALUE"
+              },
+              {
+                "direction": "OUT",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "RESULT"
+              }
+            ],
+            "triad_capability": [
+              "□G",
+              "□S",
+              "□F"
+            ],
+            "witness": "WHEN"
+          },
+          {
+            "cell_id": "player_near",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            },
+            "operator": "THIS",
+            "payload_slot_type": "temporal/sequence",
+            "ports": [
+              {
+                "direction": "IN",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "VALUE"
+              },
+              {
+                "direction": "OUT",
+                "multiplicity": "EXACTLY_ONE",
+                "payload_type": "temporal/sequence",
+                "role": "RESULT"
+              }
+            ],
+            "triad_capability": [
+              "□G",
+              "□S",
+              "□F"
+            ],
+            "witness": "WHEN"
+          }
+        ],
+        "fabric_id": "visible_fabric",
+        "placements": [
+          {
+            "cell_id": "action_bus",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            }
+          },
+          {
+            "cell_id": "approach_gate",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            }
+          },
+          {
+            "cell_id": "enemy_approach",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            }
+          },
+          {
+            "cell_id": "enemy_flee",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            }
+          },
+          {
+            "cell_id": "flee_gate",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            }
+          },
+          {
+            "cell_id": "health_low",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            }
+          },
+          {
+            "cell_id": "patrol",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            }
+          },
+          {
+            "cell_id": "player_near",
+            "location": {
+              "containment_path": [
+                "behavior",
+                "behavior_block",
+                "visible_fabric"
+              ],
+              "triad_position": {
+                "dimension": "□S",
+                "kind": "INTERIOR"
+              }
+            }
+          }
+        ],
+        "routes": [
+          {
+            "route_id": "23dc3e597dddc5f2804c32a37ad21c9d97c618986c1ec2375885195ca5cd1d9b",
+            "source_cell": "approach_gate",
+            "source_role": "RESULT",
+            "target_cell": "enemy_approach",
+            "target_role": "VALUE"
+          },
+          {
+            "route_id": "3f2ad16b6468ea161f801470f8668c32969517127f454ce0b2d026566fd9136b",
+            "source_cell": "patrol",
+            "source_role": "RESULT",
+            "target_cell": "player_near",
+            "target_role": "VALUE"
+          },
+          {
+            "route_id": "40137354df1ee4a16f3cd980a787e2e52acf3ba9295e72690cc6520f7c227961",
+            "source_cell": "enemy_approach",
+            "source_role": "RESULT",
+            "target_cell": "approach_gate",
+            "target_role": "CONSEQUENT"
+          },
+          {
+            "route_id": "55492333416dfe0811be246143ac7499266629309d640302d19f516da5cb4687",
+            "source_cell": "player_near",
+            "source_role": "RESULT",
+            "target_cell": "approach_gate",
+            "target_role": "CONDITION"
+          },
+          {
+            "route_id": "6e57feadae64792452ed32a70332c790667a5d0bcf62294a6ad54ac651be5456",
+            "source_cell": "enemy_flee",
+            "source_role": "RESULT",
+            "target_cell": "action_bus",
+            "target_role": "MEMBER"
+          },
+          {
+            "route_id": "8f5780af9c326c1d998b1e99bd11e20af864606b996e370728313ce4cfa74b33",
+            "source_cell": "patrol",
+            "source_role": "RESULT",
+            "target_cell": "health_low",
+            "target_role": "VALUE"
+          },
+          {
+            "route_id": "cd609a05d397bbbd21c63323416be48410978a6da72543887cebe2eadea8d30c",
+            "source_cell": "patrol",
+            "source_role": "RESULT",
+            "target_cell": "action_bus",
+            "target_role": "MEMBER"
+          },
+          {
+            "route_id": "e3512b5348fa05f567b4f331e193eae860691a3ee85caf165cad860395f0c37d",
+            "source_cell": "health_low",
+            "source_role": "RESULT",
+            "target_cell": "flee_gate",
+            "target_role": "CONDITION"
+          },
+          {
+            "route_id": "f4978abc1e6e40498c2688938337a5a15d4fcbe5dc580f33384344254f65c1c0",
+            "source_cell": "enemy_flee",
+            "source_role": "RESULT",
+            "target_cell": "flee_gate",
+            "target_role": "CONSEQUENT"
+          },
+          {
+            "route_id": "f8197fcba946c7665f876ae1e6ddedf6838c7f5829f6d79dbce2fc354144756d",
+            "source_cell": "flee_gate",
+            "source_role": "RESULT",
+            "target_cell": "enemy_flee",
+            "target_role": "VALUE"
+          },
+          {
+            "route_id": "fcf531ff1a51d0eca1dce36b60ce0f7f19f0a69453a95c606e6aecebedaf04ff",
+            "source_cell": "action_bus",
+            "source_role": "RESULT",
+            "target_cell": "patrol",
+            "target_role": "VALUE"
+          },
+          {
+            "route_id": "fef9bbda8cd370ea0eb767d882a81ad5b536e0f5aac653b4f13c80efb18a6802",
+            "source_cell": "enemy_approach",
+            "source_role": "RESULT",
+            "target_cell": "action_bus",
+            "target_role": "MEMBER"
+          }
+        ]
+      },
+      "logical_tick_index": 0,
+      "run_status": "HALTED"
+    },
+    "snapshot_digest": "4382490e71a060f6fde27ff78ce76fd709925c1acca1358b7bf9f8f04c6a5166"
+  },
+  "operator_notes": "Product evidence only. Capture reads committed snapshots; UI controls exercise the imported demo runtime.",
+  "product_copy": {
+    "primary": "THAT CREATURE YOU WERE JUST FIGHTING / IS THIS PROGRAM",
+    "support": "Same run. Same tick. Same snapshot. Two surfaces."
+  },
+  "run_id": "showcase-run-sha256-19f78c94d6b2e88e70cb5706f5a643a94094a18169e1bfb41ade9dfd5d088a73",
+  "runtime_build_identity": "mal-fabric-v0.8.0:5e38d23a90623c19e608fcdb00db85ad37b378f8+showcase-spec:4768c2167f01cf041277b1bda7d3ded6b6c4509b760dc5c95bc4c272dbd3e901",
+  "semantic_controller": "imported mal-fabric v0.8.0 UI runtime",
+  "showcase_asset_sha256": "ED0387C03566505342407DFF661D6F47181B6FEF6DF83013626EF3469024ED41"
+}

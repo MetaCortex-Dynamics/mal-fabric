@@ -4,6 +4,114 @@ This public carrier preserves public Git history while binding filtered
 publication contents to Devon's exact promoted authority points in the
 governance workspace.
 
+## v0.9.0 SHOWCASE-001 carrier binding
+
+```text
+public_repository:
+  MetaCortex-Dynamics/mal-fabric
+
+public_predecessor_commit:
+  5e38d23a90623c19e608fcdb00db85ad37b378f8
+
+public_predecessor_tag:
+  v0.8.0
+
+public_predecessor_version_doi:
+  10.5281/zenodo.22728146
+
+upstream_repository:
+  MetaCortex-Dynamics/mal_kernel_lab_foundation
+
+upstream_implementation_commit:
+  667d8513a4b9f72642d770055c42f6c8fcff6f7c
+
+upstream_binding_commit:
+  970f2b0ad954bb8370964dcbc05be4f1e3074bf7
+
+upstream_promotion_commit:
+  14b70ababc5930f188545b6ba1fdb5c3c40ee93e
+
+binding_record_sha256:
+  4C97FC59C6963F5D018D270CE4850EDFD314143F2237EB430A6E9DEA13D15167
+
+promotion_record_sha256:
+  D0C07E889D539C9CB1925FD4C2953FED43A227C87A46E44F16522B94CC7BBEC6
+
+acceptance_summary_sha256:
+  CB1E97531861992135FB0D9FEA3258C725EE7771E86198D33328B102A6E7A588
+
+capture_manifest_sha256:
+  D4F927C4268BFC528292ADFACE9C729E21AC0F3FCDAAFDA3AFD802EEC287E8A3
+
+mountain_asset_sha256:
+  ED0387C03566505342407DFF661D6F47181B6FEF6DF83013626EF3469024ED41
+
+mountain_asset_size_bytes:
+  320000
+
+mountain_asset_splat_count:
+  10000
+
+launch_clip_sha256:
+  35E92C49EFF9F96930155375C24A2C963ABEECB724034F61D7824CDB7F18DDEE
+
+launch_clip_duration_seconds:
+  44.0
+
+acceptance:
+  SC01-SC22 = 22/22
+
+required_stills:
+  6/6
+
+proof_quartet:
+  SC07 SAME run_id = HOLDS
+  SC08 SAME logical_tick_index = HOLDS
+  SC09 SAME RenderSnapshot = HOLDS
+  SC10 SAME GameRunIdentity = HOLDS
+
+prior_conformance:
+  277/277 UNCHANGED
+
+prior_evidence:
+  267/267 UNCHANGED
+
+HTTP_browser_smoke:
+  PASS
+
+asset_provenance:
+  mesh-derived Gaussian terrain
+  CC-BY-4.0
+  NOT a photographic real-world capture
+
+public_release_tag:
+  v0.9.0
+
+public_release_commit:
+  PENDING_RELEASE_CARRIER_COMMIT
+
+github_release:
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.9.0
+
+software_concept_doi:
+  10.5281/zenodo.22678127
+
+software_version_doi:
+  PENDING_ZENODO_INGESTION
+
+paper_a_doi:
+  10.5281/zenodo.22677712
+
+paper_b_doi:
+  10.5281/zenodo.22715312
+```
+
+The public carrier imports the exact promoted SHOWCASE-001 bytes while
+excluding unrelated private repository history. The six stills and launch
+clip are noncanonical product evidence. The mesh-derived Gaussian asset is
+redistributed under CC-BY-4.0 with attribution; it is not presented as a
+photographic capture of a real mountain.
+
 ## v0.8.0 VIS-R&D-001 carrier binding
 
 ```text
