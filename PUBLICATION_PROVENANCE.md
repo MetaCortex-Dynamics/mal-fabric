@@ -1,8 +1,73 @@
-# MaL Fabric v0.3.0 Publication Provenance
+# MaL Fabric Publication Provenance
 
-This public carrier is a filtered successor to the v0.2.0 publication. It
-preserves public Git history while binding the V3.3 contents to Devon's exact
-promoted authority point in the governance workspace.
+This public carrier preserves public Git history while binding filtered
+publication contents to Devon's exact promoted authority points in the
+governance workspace.
+
+## v0.4.0 DEMO-001 carrier binding
+
+```text
+public_repository:
+  MetaCortex-Dynamics/mal-fabric
+
+public_predecessor_commit:
+  7cdf70301fe99de361452d6a05bf80d7326e0b5a
+
+public_predecessor_tag:
+  v0.3.0
+
+public_predecessor_version_doi:
+  10.5281/zenodo.22713736
+
+upstream_repository:
+  MetaCortex-Dynamics/mal_kernel_lab_foundation
+
+upstream_demo_implementation_commit:
+  5ba5909b612a2e9e96d5e4d8aecdb69ade23a665
+
+upstream_demo_binding_commit:
+  11e4bec034ad49c51272e3e3225cef54275241cd
+
+upstream_demo_promotion_commit:
+  147efeaf1a88fce33cdc0a74eab9f9ca347cb202
+
+demo_promotion_record_sha256:
+  3E58D5F4A3F6B7BF0A9073955C99C4B9E117D3CFB336DC1979CC7743DC7A001F
+
+demo_acceptance_summary_sha256:
+  C634F5E58D6A27D8D53576B0FA62DAD30AF1D28C69A561A0B4797D4FED620E74
+
+demo_acceptance:
+  D01-D18 = 18/18
+
+demo_acceptance_replay:
+  BYTE_IDENTICAL
+
+demo_HTTP_smoke:
+  PASS
+
+software_concept_doi:
+  10.5281/zenodo.22678127
+
+public_release_tag:
+  v0.4.0
+
+software_version_doi:
+  PENDING_ZENODO_INGESTION
+
+paper_a_doi:
+  10.5281/zenodo.22677712
+
+paper_b_doi:
+  10.5281/zenodo.22715312
+```
+
+The public tag will identify the filtered carrier commit. The upstream
+promotion SHA identifies the immutable private authority point. The two
+repositories intentionally do not share Git ancestry, preventing unrelated
+private history from entering the public carrier.
+
+## v0.3.0 execution carrier binding
 
 ```text
 public_repository:

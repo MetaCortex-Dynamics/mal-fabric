@@ -1,0 +1,39 @@
+{
+  "demo_id": "DEMO-001",
+  "name": "Visible Fabric",
+  "prompt": "Make the enemy approach when the player is near, but flee when health is low.",
+  "initial_behavior": [
+    "patrol"
+  ],
+  "proposed_edits": [
+    {
+      "kind": "CONNECT",
+      "source_cell": "enemy_approach",
+      "source_role": "RESULT",
+      "target_cell": "action_bus",
+      "target_role": "MEMBER"
+    },
+    {
+      "kind": "CONNECT",
+      "source_cell": "enemy_flee",
+      "source_role": "RESULT",
+      "target_cell": "action_bus",
+      "target_role": "MEMBER"
+    }
+  ],
+  "script": [
+    "Submit the natural-language prompt.",
+    "Inspect the highlighted candidate geometry and canonical text.",
+    "Accept the admitted candidate.",
+    "Start V3.3 and run the WHEN wavefront.",
+    "Select the enemy_flee to action_bus route and disconnect it.",
+    "Inspect the governed candidate, then accept it.",
+    "Run again and observe the changed visible behavior relation.",
+    "Load BLOCKED and HALTED fixtures to compare their exact statuses."
+  ],
+  "authority": {
+    "nl_layer": "PROPOSER_ONLY",
+    "commit_requires": "V3.1 DRC + V3.2 IF_THEN + explicit user acceptance",
+    "execution_requires": "no unresolved candidate"
+  }
+}

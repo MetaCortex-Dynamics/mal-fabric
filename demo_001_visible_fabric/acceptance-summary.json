@@ -1,0 +1,234 @@
+{
+  "demo": "DEMO-001_VISIBLE_FABRIC",
+  "holds": true,
+  "passed": 18,
+  "receipts": [
+    {
+      "observations": {
+        "authority": "PROPOSER_ONLY",
+        "candidate_state": "ADMITTED"
+      },
+      "passed": true,
+      "test_id": "D01",
+      "title": "NL proposal produces valid candidate FabricSpec"
+    },
+    {
+      "observations": {
+        "cell_id": "enemy_flee",
+        "kind": "PLACE",
+        "location": {
+          "containment_path": [
+            "behavior",
+            "behavior_block",
+            "visible_fabric"
+          ],
+          "triad_position": {
+            "dimension": "□F",
+            "kind": "INTERIOR"
+          }
+        }
+      },
+      "passed": true,
+      "test_id": "D02",
+      "title": "visual PLACE lowers to canonical PLACE"
+    },
+    {
+      "observations": {
+        "cell_id": "enemy_flee",
+        "from_location": {
+          "containment_path": [
+            "behavior",
+            "behavior_block",
+            "visible_fabric"
+          ],
+          "triad_position": {
+            "dimension": "□S",
+            "kind": "INTERIOR"
+          }
+        },
+        "kind": "MOVE",
+        "to_location": {
+          "containment_path": [
+            "behavior",
+            "behavior_block",
+            "visible_fabric"
+          ],
+          "triad_position": {
+            "dimension": "□F",
+            "kind": "INTERIOR"
+          }
+        }
+      },
+      "passed": true,
+      "test_id": "D03",
+      "title": "semantic drag lowers to canonical MOVE"
+    },
+    {
+      "observations": {
+        "digest": "4929b244d95e5ce1c568c0237c84b8a143406ee71f551bd4b0b9d9a0e31321ae",
+        "event": "PRESENTATION_ONLY_NO_OP"
+      },
+      "passed": true,
+      "test_id": "D04",
+      "title": "cosmetic drag is presentation-only"
+    },
+    {
+      "observations": {
+        "kind": "CONNECT",
+        "source_cell": "enemy_approach",
+        "source_role": "RESULT",
+        "target_cell": "action_bus",
+        "target_role": "MEMBER"
+      },
+      "passed": true,
+      "test_id": "D05",
+      "title": "visual CONNECT lowers to canonical CONNECT"
+    },
+    {
+      "observations": {
+        "kind": "DISCONNECT",
+        "route_id": "6e57feadae64792452ed32a70332c790667a5d0bcf62294a6ad54ac651be5456"
+      },
+      "passed": true,
+      "test_id": "D06",
+      "title": "visual DISCONNECT lowers to canonical DISCONNECT"
+    },
+    {
+      "observations": {
+        "digest": "435c3f3bba2d05ff6ec2bc29de1a7d069001832f0a20abd83873e9b6a01dc6c1",
+        "same_fabric": true
+      },
+      "passed": true,
+      "test_id": "D07",
+      "title": "text and visual edits converge"
+    },
+    {
+      "observations": {
+        "because": "TARGET_ROLE_INVALID: RESULT MUST belong to ROLE_SCHEMA(TOGETHER_ALONE)",
+        "disposition": "DRC_REJECTION",
+        "stage": "V3_1_DRC_GUARDED_NORMALIZE",
+        "terminal_verdict": "NO"
+      },
+      "passed": true,
+      "test_id": "D08",
+      "title": "invalid visual route shows V3.1 rejection"
+    },
+    {
+      "observations": {
+        "obligations": [
+          "FarkasCheck",
+          "equivalent_oracle_witness"
+        ],
+        "state": "MAYBE"
+      },
+      "passed": true,
+      "test_id": "D09",
+      "title": "V3.2 MAYBE remains visible and blocked"
+    },
+    {
+      "observations": {
+        "because": "required crossing capability is absent",
+        "candidate_digest": "6660f5381513e03c301b85a5c616745661d1065f61b965ca161c3bd2ad145a94",
+        "crossing_class": "S->F",
+        "disposition": "ADMISSION_REJECTION",
+        "evidence_obligations": [],
+        "lifecycle": "REJECTED",
+        "missing_capabilities": [
+          "F",
+          "S"
+        ],
+        "observable_digest": "4b4ee01dfc61059c9e5f2178608c610c22e8b84788cf92fe3b444df32dd51e00",
+        "stage": "TERMINAL_COMPOSITION",
+        "terminal_verdict": "NO"
+      },
+      "passed": true,
+      "test_id": "D10",
+      "title": "V3.2 NO is rejected with BECAUSE"
+    },
+    {
+      "observations": {
+        "status": "RUNNING",
+        "ticks": 1
+      },
+      "passed": true,
+      "test_id": "D11",
+      "title": "admitted fabric executes under V3.3"
+    },
+    {
+      "observations": {
+        "phases": [
+          "ADMITTED",
+          "COMPLETED",
+          "DISCHARGED",
+          "EMPTY"
+        ]
+      },
+      "passed": true,
+      "test_id": "D12",
+      "title": "runtime overlay displays every payload phase"
+    },
+    {
+      "observations": {
+        "reasons": [
+          {
+            "details": [
+              "CONSEQUENT"
+            ],
+            "kind": "PARTIAL_INPUT",
+            "subject_id": "approach_gate"
+          }
+        ],
+        "status": "BLOCKED"
+      },
+      "passed": true,
+      "test_id": "D13",
+      "title": "BLOCKED displays canonical reason"
+    },
+    {
+      "observations": {
+        "halted": "HALTED",
+        "not_blocked": true
+      },
+      "passed": true,
+      "test_id": "D14",
+      "title": "HALTED is distinguished from BLOCKED"
+    },
+    {
+      "observations": {
+        "changed": true
+      },
+      "passed": true,
+      "test_id": "D15",
+      "title": "visual edit updates text serialization"
+    },
+    {
+      "observations": {
+        "cell": "enemy_flee",
+        "region": "□F"
+      },
+      "passed": true,
+      "test_id": "D16",
+      "title": "text edit updates visual geometry"
+    },
+    {
+      "observations": {
+        "digest": "4929b244d95e5ce1c568c0237c84b8a143406ee71f551bd4b0b9d9a0e31321ae",
+        "same": true
+      },
+      "passed": true,
+      "test_id": "D17",
+      "title": "presentation x/y preserves canonical digest"
+    },
+    {
+      "observations": {
+        "left": "27dbb73217e50071b26e9b3d3b8ef0a9c5767c138dce5ee396c422a2ff9f28fa",
+        "right": "27dbb73217e50071b26e9b3d3b8ef0a9c5767c138dce5ee396c422a2ff9f28fa",
+        "same": true
+      },
+      "passed": true,
+      "test_id": "D18",
+      "title": "same initial state replays identically"
+    }
+  ],
+  "total": 18
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaL Visible Fabric — DEMO-001</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div>
+      <span class="eyebrow">METACORTEX DYNAMICS · DEMO-001</span>
+      <h1>Visible Fabric</h1>
+    </div>
+    <div class="identity">
+      <span id="digest">loading…</span>
+      <button id="reset" class="ghost">Reset</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="prompt-panel panel">
+      <div>
+        <span class="section-index">01 / INTENT</span>
+        <h2>Describe the behavior.</h2>
+        <p>The proposer may draw a candidate. Only governed admission can authorize it.</p>
+      </div>
+      <div class="prompt-row">
+        <textarea id="prompt" rows="2">Make the enemy approach when the player is near, but flee when health is low.</textarea>
+        <button id="propose" class="primary">Propose fabric <span>↗</span></button>
+      </div>
+      <div id="candidate-actions" class="candidate-actions hidden">
+        <div><span id="candidate-badge" class="badge">PROPOSED</span> <span id="candidate-copy"></span></div>
+        <div><button id="reject" class="ghost">Reject</button><button id="accept" class="primary">Accept admitted edit</button></div>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <article class="canvas-panel panel">
+        <div class="panel-head">
+          <div><span class="section-index">02 / GEOMETRY</span><h2>One program, made spatial.</h2></div>
+          <div class="legend"><i class="phase empty"></i> EMPTY <i class="phase admitted"></i> ADMITTED <i class="phase completed"></i> COMPLETED <i class="phase discharged"></i> DISCHARGED</div>
+        </div>
+        <div class="canvas-toolbar">
+          <span id="tool-help">Drag a cell across regions to propose MOVE. Click an output then an input to WIRE.</span>
+          <button id="disconnect" class="ghost" disabled>Disconnect selected route</button>
+        </div>
+        <div id="fabric-canvas" aria-label="Visible fabric canvas">
+          <svg id="routes" aria-hidden="true"></svg>
+          <div class="triad-region" data-region="□G"><b>□G</b><span>genealogy</span></div>
+          <div class="triad-region" data-region="□S"><b>□S</b><span>structure</span></div>
+          <div class="triad-region" data-region="□F"><b>□F</b><span>function</span></div>
+          <div id="cells"></div>
+        </div>
+        <div class="behavior-strip"><span>VISIBLE BEHAVIOR</span><strong id="behavior">—</strong></div>
+      </article>
+
+      <aside class="text-panel panel">
+        <div class="panel-head">
+          <div><span class="section-index">03 / CANONICAL</span><h2>The same FabricSpec.</h2></div>
+          <span id="drc-badge" class="badge">DRC</span>
+        </div>
+        <pre id="canonical"></pre>
+        <div class="edit-box">
+          <label for="text-edit">Canonical FabricEdit projection</label>
+          <textarea id="text-edit" rows="7">{
+  "kind": "MOVE",
+  "cell_id": "enemy_flee",
+  "from_location": {"triad_position":{"kind":"INTERIOR","dimension":"□S"},"containment_path":["behavior","behavior_block","visible_fabric"]},
+  "to_location": {"triad_position":{"kind":"INTERIOR","dimension":"□F"},"containment_path":["behavior","behavior_block","visible_fabric"]}
+}</textarea>
+          <button id="apply-text" class="ghost wide">Preview textual edit</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="status-panel panel">
+      <div><span class="section-index">04 / GOVERN + RUN</span><h2>Every transition leaves evidence.</h2></div>
+      <div class="runtime-controls">
+        <button id="start" class="ghost">Start V3.3</button>
+        <button id="tick" class="ghost">Tick once</button>
+        <button id="run" class="primary">Run wavefront</button>
+        <button id="blocked" class="ghost">Show BLOCKED</button>
+        <button id="halted" class="ghost">Show HALTED</button>
+      </div>
+      <div class="status-grid">
+        <div><span>EVENT</span><strong id="event">READY</strong></div>
+        <div><span>V3.1 DRC</span><strong id="drc">—</strong></div>
+        <div><span>V3.2 ADMISSION</span><strong id="admission">NO CANDIDATE</strong></div>
+        <div><span>V3.3 RUN STATUS</span><strong id="run-status">NOT STARTED</strong></div>
+      </div>
+      <pre id="evidence">No runtime evidence yet.</pre>
+    </section>
+  </main>
+
+  <footer><span>ONE FabricSpec · MANY SURFACES</span><span>NL layer: PROPOSER, NOT AUTHORITY</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
