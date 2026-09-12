@@ -1,6 +1,6 @@
 # MaL Fabric v0.5.0
 
-[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22725249.svg)](https://doi.org/10.5281/zenodo.22725249) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -87,14 +87,12 @@ The DEMO-002 browser surface is served at
 
 Successful replay regenerates each evidence set byte-for-byte.
 
-The published v0.4.0 Zenodo archive was independently downloaded and replayed
-on 2026-09-11. All three substrate suites and DEMO-001 passed. All 160
-layer-specific evidence artifacts matched their archived counterparts and
-repeated runs byte-for-byte; the DEMO-001 acceptance summary was also
-byte-identical, the archived HTTP flow passed, and all 189 published JSON
-artifacts parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
-The v0.5.0 archive replay will be recorded after Zenodo ingests the tagged
-carrier.
+The published v0.5.0 Zenodo archive was independently downloaded and replayed
+on 2026-09-12. All five suites passed for 199/199 total conformance. The 160
+substrate artifacts, one DEMO-001 receipt, and 25 DEMO-002 artifacts matched
+both repeated runs and their archived counterparts byte-for-byte. The archived
+HTTP flow passed on port 8766, and all 217 published JSON artifacts parsed. See
+[ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 
 ## Contents
 
@@ -162,6 +160,12 @@ demo_conformance:
 demo_evidence_replay:
   25/25 byte-identical
 
+public_release_commit:
+  742ffb4837b0a4055e8b142822c8bffc7c50a7f3
+
+github_release:
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.5.0
+
 software_concept_doi:
   10.5281/zenodo.22678127
 
@@ -169,7 +173,7 @@ software_predecessor_version_doi:
   10.5281/zenodo.22718622
 
 software_v0_5_0_version_doi:
-  PENDING_ZENODO_INGESTION
+  10.5281/zenodo.22725249
 
 paper_b_doi:
   10.5281/zenodo.22715312
