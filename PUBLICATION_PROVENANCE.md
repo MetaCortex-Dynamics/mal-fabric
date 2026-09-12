@@ -73,13 +73,28 @@ public_release_tag:
   v0.6.0
 
 public_release_commit:
-  PENDING_RELEASE_CARRIER_COMMIT
+  1c13c27c06562f532418d2b7c1295efb399aadc3
 
 github_release:
   https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.6.0
 
 software_version_doi:
-  PENDING_ZENODO_INGESTION
+  10.5281/zenodo.22726846
+
+zenodo_record:
+  https://zenodo.org/records/22726846
+
+zenodo_archive_file:
+  MetaCortex-Dynamics/mal-fabric-v0.6.0.zip
+
+zenodo_archive_size_bytes:
+  417520
+
+zenodo_archive_md5:
+  DDD4B2AB736B8D85E38F31A81B41BE6E
+
+zenodo_archive_sha256:
+  0E931986590E23A2226032077AEFE15BA147169EA16EF21141A886471698FBD7
 
 paper_a_doi:
   10.5281/zenodo.22677712

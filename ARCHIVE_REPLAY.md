@@ -1,39 +1,39 @@
-# MaL Fabric v0.5.0 Archive Replay
+# MaL Fabric v0.6.0 Archive Replay
 
 ```text
-record_id: MAL-FABRIC-V0.5.0-ZENODO-REPLAY-001
+record_id: MAL-FABRIC-V0.6.0-ZENODO-REPLAY-001
 verification_date: 2026-09-12
 result: HOLDS
 
 github_release:
-  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.5.0
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.6.0
 
 release_commit:
-  742ffb4837b0a4055e8b142822c8bffc7c50a7f3
+  1c13c27c06562f532418d2b7c1295efb399aadc3
 
 upstream_promotion_commit:
-  fb0e1c3ec6a8695c8fcc0de21a8b5ccbbae5b53f
+  48a67514b60c5e1f2e428e787c90c4f8884c695b
 
 zenodo_record:
-  https://zenodo.org/records/22725249
+  https://zenodo.org/records/22726846
 
 software_version_doi:
-  10.5281/zenodo.22725249
+  10.5281/zenodo.22726846
 
 software_concept_doi:
   10.5281/zenodo.22678127
 
 archive_file:
-  MetaCortex-Dynamics/mal-fabric-v0.5.0.zip
+  MetaCortex-Dynamics/mal-fabric-v0.6.0.zip
 
 archive_size_bytes:
-  353549
+  417520
 
 archive_md5:
-  4F0DEF00E659430D0934055FABCFC2F6
+  DDD4B2AB736B8D85E38F31A81B41BE6E
 
 archive_sha256:
-  B9962C35A66E8B49C8DAF54489638C3C9A51926376F8718403D7DBD6187BDD0E
+  0E931986590E23A2226032077AEFE15BA147169EA16EF21141A886471698FBD7
 ```
 
 The archive was downloaded from the Zenodo record, extracted into a fresh
@@ -66,29 +66,34 @@ DEMO-002 run A:          24/24
 DEMO-002 run B:          24/24
 DEMO-002 A/B evidence:   25/25 byte-identical
 DEMO-002 A/archive:      25/25 byte-identical
-DEMO-002 HTTP smoke:     PASS on 127.0.0.1:8766
 
-total conformance:      199/199
+DEMO-003 run A:          28/28
+DEMO-003 run B:          28/28
+DEMO-003 A/B evidence:   29/29 byte-identical
+DEMO-003 A/archive:      29/29 byte-identical
+DEMO-003 summary:        byte-identical
+DEMO-003 replay trace:   byte-identical
+DEMO-003 HTTP smoke:     PASS
+
+total conformance:      227/227
 substrate evidence:     160/160 byte-identical
 DEMO-001 evidence:        1/1 byte-identical
 DEMO-002 evidence:       25/25 byte-identical
-total evidence:         186/186 byte-identical
-published JSON parse:   217/217
+DEMO-003 evidence:       29/29 byte-identical
+total evidence:         215/215 byte-identical
+published JSON parse:   250/250
 ```
 
-The DEMO-002 archive preserved the normative P01-P06, G01-G05, D01-D06,
-A01-A05, and N01-N02 census. G01 remained closed over the imported edit
-algebra by tracing an added route to `CONNECT`; no cell-creation constructor
-was introduced.
+The DEMO-003 archive preserved the normative B01-B06, T01-T08, D01-D06,
+N01-N04, and U01-U04 census. Its twelve-tick replay trace was unchanged under
+the reversed valid host schedule and altered render cadence.
 
-The archived HTTP flow passed through state retrieval, deterministic intent
-proposal, visible geometric diff, explicit user acceptance for admission,
-governed commit, V3.3 start, and a runtime tick. `ACCEPT` remained submission
-authorization only. The proposer had no direct commit authority, and pending
-proposal execution remained forbidden.
+The archived HTTP flow passed through state retrieval, a presentation-only
+render callback, one logical tick with exactly one fabric step, a visible
+pending proposal that did not affect the active run, and canonical twelve-tick
+fixture replay.
 
 This receipt verifies the archived V3.1 static, V3.2 admission, V3.3
-execution, DEMO-001 visible-fabric, and DEMO-002 vibe-proposer surfaces. It
-does not claim arbitrary-language completeness, self-modifying geometry, cell
-creation outside V3.1, an external stimulus API, or scheduler independence
-outside `ValidHostSchedule`.
+execution, DEMO-001 visible-fabric, DEMO-002 vibe-proposer, and DEMO-003
+game-loop surfaces. It does not claim multiplayer, network, physics-engine,
+wall-clock, or arbitrary real-time input determinism.
