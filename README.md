@@ -1,6 +1,6 @@
-# MaL Fabric v0.5.0
+# MaL Fabric v0.6.0
 
-[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22725249.svg)](https://doi.org/10.5281/zenodo.22725249) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -19,6 +19,12 @@ Version 0.5.0 adds DEMO-002: constrained natural-language intent produces a
 typed proposal, a candidate `FabricSpec`, and a visible geometric diff. The
 model proposes; user acceptance authorizes submission to the existing
 governed commit path. `ACCEPT` is neither promotion nor commit authority.
+
+Version 0.6.0 adds DEMO-003: a committed geometric program participates in an
+explicit logical game loop. Each logical tick samples canonical input once,
+performs exactly one V3.3 fabric step, derives effects only from the committed
+successor, and applies a deterministic integer-grid game update. Render-frame
+cadence remains presentation-only.
 
 ## Companion papers
 
@@ -68,7 +74,18 @@ DEMO-002 Vibe Proposer
   HTTP smoke             PASS
   NL direct commit       FORBIDDEN
 
-TOTAL CONFORMANCE       199/199
+DEMO-003 Game Loop Binding
+  binding integrity       6/6
+  tick semantics          8/8
+  deterministic trace     6/6
+  negative/boundary       4/4
+  product surface         4/4
+  total                  28/28
+  evidence determinism   29/29
+  HTTP smoke              PASS
+  one tick / one step     HOLDS
+
+TOTAL CONFORMANCE       227/227
 ```
 
 Run all suites from the repository root:
@@ -79,11 +96,12 @@ python -B admissibility_v0_2_0/run_conformance.py --output admissibility_v0_2_0/
 python -B execution_v0_3_0/run_conformance.py --output execution_v0_3_0/evidence
 python -B demo_001_visible_fabric/run_acceptance.py
 python -B demo_002_vibe_proposer/run_conformance.py --output demo_002_vibe_proposer/evidence
-python -B demo_002_vibe_proposer/demo_server.py
+python -B demo_003_game_loop_binding/run_conformance.py --output demo_003_game_loop_binding/evidence
+python -B demo_003_game_loop_binding/demo_server.py
 ```
 
-The DEMO-002 browser surface is served at
-[http://127.0.0.1:8766](http://127.0.0.1:8766).
+The DEMO-003 browser surface is served at
+[http://127.0.0.1:8767](http://127.0.0.1:8767).
 
 Successful replay regenerates each evidence set byte-for-byte.
 
@@ -93,6 +111,8 @@ substrate artifacts, one DEMO-001 receipt, and 25 DEMO-002 artifacts matched
 both repeated runs and their archived counterparts byte-for-byte. The archived
 HTTP flow passed on port 8766, and all 217 published JSON artifacts parsed. See
 [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
+The v0.6.0 archive replay will be recorded after Zenodo ingests the tagged
+carrier.
 
 ## Contents
 
@@ -117,6 +137,9 @@ HTTP flow passed on port 8766, and all 217 published JSON artifacts parsed. See
   non-authoritative intent proposer, typed proposal and diff model, explicit
   disposition lifecycle, browser surface, 24-vector runner, and 25 evidence
   artifacts.
+- [demo_003_game_loop_binding](demo_003_game_loop_binding) contains the
+  promoted fixed-run game adapter, integer-grid toy game, explicit logical
+  tick boundary, browser surface, 28-vector runner, and 29 evidence artifacts.
 - [PUBLICATION_PROVENANCE.md](PUBLICATION_PROVENANCE.md) binds this filtered
   public carrier to the upstream candidate and promotion commits.
 - [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md) records the latest completed replay
@@ -128,52 +151,55 @@ HTTP flow passed on port 8766, and all 217 published JSON artifacts parsed. See
 
 ```text
 public_predecessor_commit:
-  b628886559ba0d89791c87c2ce7216b65462dcc7
+  1affb0176a82bd2410a464cf96d71564fefd2de6
 
 public_predecessor_version_doi:
-  10.5281/zenodo.22718622
+  10.5281/zenodo.22725249
 
 upstream_demo_implementation_commit:
-  8f0f078ba1514496eb0c5bbaca9064df3f3bf33f
+  f570b02c007c6bc0662b2d5d8a561c165c312a16
 
 upstream_demo_binding_commit:
-  b75635580f547512d7baf922c51ee53c81f208eb
+  f635343e5adaafe7135194da47fcca74316c7b0d
 
 upstream_demo_promotion_commit:
-  fb0e1c3ec6a8695c8fcc0de21a8b5ccbbae5b53f
+  48a67514b60c5e1f2e428e787c90c4f8884c695b
 
 demo_binding_record_sha256:
-  74BCFD3185472F586C276A806D95D87F67643E70228520EBE121D2932BEA9EA9
+  683C21B002F284B53C0CE75284A447BCF10427489B23A3CE2A19729C1D2B8AC7
 
 demo_promotion_record_sha256:
-  391D81E6F0E07776DFFE56CF47565F8F927C9A762D7D49A0449ACE91C68DD8B9
+  9F3DF4BB5F1B2F47C8A5DE4549B67C1769B64A30016D641AFFAAC2A9298E6510
 
 demo_acceptance_summary_sha256:
-  D598260003D7706E5F3CA99837A2A4D9A523C637C729233E0943C6378C68ADA2
+  F6BCFDCA7C58CB363ACAB9F03B349CD052EDE0819653E6B01B06A492EDAB6DFE
 
 demo_evidence_manifest_sha256:
-  DBA7BC83DFF33217E757B3A587EDF5EB705B5A304454266BDF6661A17FDCC2EB
+  8DA6BD5937289112B89232927E741AA42E7075934ED8F339100C56E7D9693A11
+
+demo_replay_trace_sha256:
+  6C6AADAE282950B0D7CB2C067D70292DE264A528B2E70ECED03C2FF80939BA82
 
 demo_conformance:
-  24/24
+  28/28
 
 demo_evidence_replay:
-  25/25 byte-identical
+  29/29 byte-identical
 
 public_release_commit:
-  742ffb4837b0a4055e8b142822c8bffc7c50a7f3
+  PENDING_RELEASE_CARRIER_COMMIT
 
 github_release:
-  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.5.0
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.6.0
 
 software_concept_doi:
   10.5281/zenodo.22678127
 
 software_predecessor_version_doi:
-  10.5281/zenodo.22718622
-
-software_v0_5_0_version_doi:
   10.5281/zenodo.22725249
+
+software_v0_6_0_version_doi:
+  PENDING_ZENODO_INGESTION
 
 paper_b_doi:
   10.5281/zenodo.22715312
@@ -212,14 +238,19 @@ program geometry as a visible, typed diff without receiving authority over the
 promoted fabric. User acceptance authorizes submission only; V3.1 DRC and V3.2
 admission remain the commit path, and only committed geometry enters V3.3.
 
+DEMO-003 establishes the explicit boundary between a logical game tick and a
+committed fabric step. Canonical observations are sampled once, exactly one
+V3.3 step executes, effects are derived only from the committed successor,
+and the integer-grid game update is deterministic for identical canonical
+logical input traces. Render callbacks do not advance semantic time.
+
 ## Scope boundary
 
-Version 0.5.0 adds a bounded deterministic intent grammar and proposal
-lifecycle. It does not authorize self-modifying geometry, direct proposer
-commit, cell creation outside the V3.1 edit algebra, an external stimulus API,
-a general-purpose NL compiler, or autonomous model authority. It does not
-claim wall-clock equivalence, different-initial-state determinism, multiplayer
-determinism, cross-implementation equality when evaluators differ, or
+Version 0.6.0 adds a bounded deterministic logical-game adapter. It does not
+authorize self-modifying geometry, hot-swapping a committed fabric into an
+active run, an unbounded external-stimulus API, a physics or network engine,
+or autonomous model authority. It does not claim wall-clock, multiplayer,
+network, physics-engine, or arbitrary real-time input determinism, or
 scheduler independence outside `ValidHostSchedule`.
 
 Public disclosure may bear on prior art, but neither publication nor the

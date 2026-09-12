@@ -1,0 +1,28 @@
+{
+  "category": "B",
+  "description": "egress bindings reference declared outputs only",
+  "details": {
+    "declared_outputs": [
+      {
+        "action": "FLEE",
+        "effect": "SET_ENEMY_ACTION",
+        "route_id": "6e57feadae64792452ed32a70332c790667a5d0bcf62294a6ad54ac651be5456",
+        "source_cell": "enemy_flee"
+      },
+      {
+        "action": "PATROL",
+        "effect": "SET_ENEMY_ACTION",
+        "route_id": "cd609a05d397bbbd21c63323416be48410978a6da72543887cebe2eadea8d30c",
+        "source_cell": "patrol"
+      },
+      {
+        "action": "APPROACH",
+        "effect": "SET_ENEMY_ACTION",
+        "route_id": "fef9bbda8cd370ea0eb767d882a81ad5b536e0f5aac653b4f13c80efb18a6802",
+        "source_cell": "enemy_approach"
+      }
+    ]
+  },
+  "status": "PASS",
+  "vector_id": "B03"
+}

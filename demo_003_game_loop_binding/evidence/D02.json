@@ -1,0 +1,22 @@
+{
+  "category": "D",
+  "description": "identical initial state and input trace yield identical game trajectory",
+  "details": {
+    "final_game": {
+      "enemy_health": 10,
+      "enemy_mode": "PATROL",
+      "enemy_position": [
+        6,
+        0
+      ],
+      "player_position": [
+        0,
+        0
+      ]
+    },
+    "game_trajectory_digest": "802ee115684e4cc9504e87baa71e1ad9a50dbe439c4c5f9e44c7a896ee1be532",
+    "ticks": 12
+  },
+  "status": "PASS",
+  "vector_id": "D02"
+}

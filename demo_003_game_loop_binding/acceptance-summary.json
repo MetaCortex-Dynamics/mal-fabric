@@ -1,0 +1,64 @@
+{
+  "active_run_fabric_digest_fixed": "HOLDS",
+  "claim_boundary": {
+    "multiplayer_determinism": false,
+    "network_determinism": false,
+    "physics_determinism": false,
+    "same_canonical_logical_tick_input_trace": true,
+    "wall_clock_determinism": false
+  },
+  "counts": {
+    "B": {
+      "passed": 6,
+      "total": 6
+    },
+    "D": {
+      "passed": 6,
+      "total": 6
+    },
+    "N": {
+      "passed": 4,
+      "total": 4
+    },
+    "T": {
+      "passed": 8,
+      "total": 8
+    },
+    "U": {
+      "passed": 4,
+      "total": 4
+    }
+  },
+  "demo": "DEMO_003_GAME_LOOP_BINDING",
+  "evidence_artifact_count": 29,
+  "final_fabric_state_digest": "d87285fedf6a66e22c9aa247e7b642c79b20913d04f93f93259b9b98ea162223",
+  "final_game_state_digest": "0661fb1eb58ba35d9bf0a950b7ff79919564ad3a1767f0a8929c6f907fbcead9",
+  "game_loop_trace_determinism": "HOLDS",
+  "imports": {
+    "demo_001_adapter_sha256": "D2C87C24701C1B940178506531687245A37E3254EBBF0C50F588C2F7FDBEBC87",
+    "demo_002_acceptance_sha256": "D598260003D7706E5F3CA99837A2A4D9A523C637C729233E0943C6378C68ADA2",
+    "demo_002_kernel_sha256": "FDA888C840F0F6B2D8F35704F9BDF51D5B9F25F6E3592F1A15161A4271B0A3E1",
+    "demo_002_promotion_sha256": "391D81E6F0E07776DFFE56CF47565F8F927C9A762D7D49A0449ACE91C68DD8B9",
+    "mal_fabric_v0_5_0_doi": "10.5281/zenodo.22725249",
+    "v3_1_kernel_sha256": "8B983301DAD795DD9C3F020970BAD76017EF648AC0C71E3FB6FDEF3D0E4347C0",
+    "v3_2_kernel_sha256": "89105692EEE04580DB1C98556B51D0644292B7FB7B42FA4F41EBD381CDE256DC",
+    "v3_3_kernel_sha256": "96C6F849F3AD64D6B9D8C2469A252E5A813354C1E2C0B7CD47FCDE7B518B4FE2"
+  },
+  "one_logical_tick_one_step_fabric": "HOLDS",
+  "passed": 28,
+  "pending_proposal_cannot_affect_run": "HOLDS",
+  "promotion": "NOT_PERFORMED",
+  "regression_floor": {
+    "DEMO-001": "18/18 UNCHANGED",
+    "DEMO-002": "24/24 UNCHANGED",
+    "V3.1": "25/25 UNCHANGED",
+    "V3.2": "62/62 UNCHANGED",
+    "V3.3": "70/70 UNCHANGED",
+    "total_prior": "199/199"
+  },
+  "render_frame_not_semantic": "HOLDS",
+  "result": "HOLDS",
+  "total": 28,
+  "trace_digest": "e99ceb576d458bd5ec2334a17d9bd35381d1482bfa242874d581070f9ecd82de",
+  "trace_ticks": 12
+}

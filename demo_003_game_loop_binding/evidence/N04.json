@@ -1,0 +1,15 @@
+{
+  "category": "N",
+  "description": "no network/physics/multiplayer determinism path or claim",
+  "details": {
+    "implemented_domain": "IDENTICAL_CANONICAL_LOGICAL_TICK_INPUT_TRACE",
+    "not_claimed": [
+      "NETWORK",
+      "PHYSICS",
+      "MULTIPLAYER",
+      "WALL_CLOCK"
+    ]
+  },
+  "status": "PASS",
+  "vector_id": "N04"
+}

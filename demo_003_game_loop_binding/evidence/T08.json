@@ -1,0 +1,16 @@
+{
+  "category": "T",
+  "description": "multi-tick fabric latency remains explicit",
+  "details": {
+    "hidden_microticks": 0,
+    "tick_0_effects": [],
+    "tick_1_effects": [
+      {
+        "action": "APPROACH",
+        "kind": "SET_ENEMY_ACTION"
+      }
+    ]
+  },
+  "status": "PASS",
+  "vector_id": "T08"
+}

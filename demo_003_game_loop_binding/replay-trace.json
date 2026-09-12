@@ -1,0 +1,252 @@
+{
+  "ordered_tick_receipts": [
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": null,
+      "effect_batch_digest": "882382f80886a3247bd70d794da0e586180ca910f886d9d7c67700478a2eeae8",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "d9e8019fa4da24fccb65cf32b07df613f390cbbc3493140108e107df5ae17a18",
+      "post_fabric_state_digest": "bebbc43d7edf179a3eb39e16935842c6560738be34a9993a986a8e2305c8b301",
+      "post_game_state_digest": "4cbe0cf9ee9de40dbc21ee991940ab1b2861ed3017255d85ce06510054025681",
+      "pre_fabric_state_digest": "d93bc41eca5ebeb6f447c1b8b36cc7c93f52d76b2a5232e02d54d06d94430e29",
+      "pre_game_state_digest": "4cbe0cf9ee9de40dbc21ee991940ab1b2861ed3017255d85ce06510054025681",
+      "prepared_fabric_state_digest": "f38dbcf577cff73caf998ebfcfc4323eae50a8d67b58f3906a40b94696766a89",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 0
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "enemy_approach"
+      },
+      "effect_batch_digest": "2c0c0661634c3208e2e26a08c86f6a9fcb5579673ad6b8d3b5493d7cb5b88eaf",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "96e3f306087e71dd3e7cfcb499a41ecfc46fb41aaeb613f992349f960234eb41",
+      "post_fabric_state_digest": "1df307661783b0c40110f6d6187a08d64ec2247853fc369e0aeeb69321eac734",
+      "post_game_state_digest": "8a50d308d348aa6120bcfdb312752f1d6561c407d8d5d87a66916c5d5f011a48",
+      "pre_fabric_state_digest": "bebbc43d7edf179a3eb39e16935842c6560738be34a9993a986a8e2305c8b301",
+      "pre_game_state_digest": "4cbe0cf9ee9de40dbc21ee991940ab1b2861ed3017255d85ce06510054025681",
+      "prepared_fabric_state_digest": "bebbc43d7edf179a3eb39e16935842c6560738be34a9993a986a8e2305c8b301",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 1
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "action_bus"
+      },
+      "effect_batch_digest": "7e39243517dea0b639d602580757533771f1dfcb40efbe2afe94fb299b3a58b5",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "93b99df619347ada49299cd24921ef39f24568af3858f06aee2d47715412e5b8",
+      "post_fabric_state_digest": "d17ef043e85c17da4f147f7da1a745bd7d442afa410be87f93049e1ecb5d2f3a",
+      "post_game_state_digest": "8a50d308d348aa6120bcfdb312752f1d6561c407d8d5d87a66916c5d5f011a48",
+      "pre_fabric_state_digest": "1df307661783b0c40110f6d6187a08d64ec2247853fc369e0aeeb69321eac734",
+      "pre_game_state_digest": "8a50d308d348aa6120bcfdb312752f1d6561c407d8d5d87a66916c5d5f011a48",
+      "prepared_fabric_state_digest": "1df307661783b0c40110f6d6187a08d64ec2247853fc369e0aeeb69321eac734",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 2
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "action_bus"
+      },
+      "effect_batch_digest": "753c03a5080706eedd844bbb5ecdfd967ca9f4a34485646eccceb7fa0a8c5a9b",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "dcbdbeca62be47a513b935428853f5a6fb038fbefd114b3e8c9db1fcaf568ac5",
+      "post_fabric_state_digest": "2882f3b29eb464c051874cc6a49247b7b6fa64ad4d585b9bb0947a581989d17e",
+      "post_game_state_digest": "8a50d308d348aa6120bcfdb312752f1d6561c407d8d5d87a66916c5d5f011a48",
+      "pre_fabric_state_digest": "d17ef043e85c17da4f147f7da1a745bd7d442afa410be87f93049e1ecb5d2f3a",
+      "pre_game_state_digest": "8a50d308d348aa6120bcfdb312752f1d6561c407d8d5d87a66916c5d5f011a48",
+      "prepared_fabric_state_digest": "9612cc2807ba18dec21292ccf8dbda12c23a9217f277694826087988b7ed3d22",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 3
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "enemy_approach"
+      },
+      "effect_batch_digest": "b04b70fff5e80b774b50dac9b8702d088d36ef96a1fee072dcb2a3294916e412",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "148525430345c9bb252c8ff90450b8ccfbd1a62ea8191f00fd7ffa32920678b2",
+      "post_fabric_state_digest": "b8a2b3427dc336073dc5e275f0c0b9324a40bb6f0a4b4258785e733b21868a44",
+      "post_game_state_digest": "8a50d308d348aa6120bcfdb312752f1d6561c407d8d5d87a66916c5d5f011a48",
+      "pre_fabric_state_digest": "2882f3b29eb464c051874cc6a49247b7b6fa64ad4d585b9bb0947a581989d17e",
+      "pre_game_state_digest": "8a50d308d348aa6120bcfdb312752f1d6561c407d8d5d87a66916c5d5f011a48",
+      "prepared_fabric_state_digest": "ccc9493e96755d808580336524b6192aa0a728a49dd83e48b38cd45fc6b87353",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 4
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "enemy_flee"
+      },
+      "effect_batch_digest": "7112973b64f74e627d697cce8ad02a759fe6fffb2ef50a44430f6ad60ca7e281",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "4572b85a1e2939b1c36378945460771a3adf6d72ce94742cc4194f4ded10f5c1",
+      "post_fabric_state_digest": "98e5b31d96b1fb54e68e7ca9a5e5bda9130ef59cb6d811acb282d11fc7f62908",
+      "post_game_state_digest": "eb528d95aa8897306d9dd49e0e1eb03b10c781146adf9fa414f13a1c8640a8c3",
+      "pre_fabric_state_digest": "b8a2b3427dc336073dc5e275f0c0b9324a40bb6f0a4b4258785e733b21868a44",
+      "pre_game_state_digest": "8a50d308d348aa6120bcfdb312752f1d6561c407d8d5d87a66916c5d5f011a48",
+      "prepared_fabric_state_digest": "b8a2b3427dc336073dc5e275f0c0b9324a40bb6f0a4b4258785e733b21868a44",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 5
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "action_bus"
+      },
+      "effect_batch_digest": "f928b12f516f96af94f71d16add067d4154a16773eb4d2c496240d0b9e2d2fdb",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "c1dc2d6d2461a9d06d1afd2ccf509417ad83e39514f1cab866e7ce8c2ca0790d",
+      "post_fabric_state_digest": "f03247fadf1378b90e0440bab7970719b3d0b04129b4a88464ddb04c8419e101",
+      "post_game_state_digest": "eb528d95aa8897306d9dd49e0e1eb03b10c781146adf9fa414f13a1c8640a8c3",
+      "pre_fabric_state_digest": "98e5b31d96b1fb54e68e7ca9a5e5bda9130ef59cb6d811acb282d11fc7f62908",
+      "pre_game_state_digest": "eb528d95aa8897306d9dd49e0e1eb03b10c781146adf9fa414f13a1c8640a8c3",
+      "prepared_fabric_state_digest": "18d2167acc48a50ac6f9476630ac15f32e957a96e7ea11f056391abd9dc3c58b",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 6
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "action_bus"
+      },
+      "effect_batch_digest": "030fe1a989a5ef324f5bd583fa2a72c162b5265638585acf97da3b7b961d1f91",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "5b505573415db7c8977fa1b57c5ff01d98a1692ef7fafac6151bfa21325e8cf7",
+      "post_fabric_state_digest": "02b58cea7164422b390dbb45d60826596294607f9a56472f312e7610171d37e8",
+      "post_game_state_digest": "eb528d95aa8897306d9dd49e0e1eb03b10c781146adf9fa414f13a1c8640a8c3",
+      "pre_fabric_state_digest": "f03247fadf1378b90e0440bab7970719b3d0b04129b4a88464ddb04c8419e101",
+      "pre_game_state_digest": "eb528d95aa8897306d9dd49e0e1eb03b10c781146adf9fa414f13a1c8640a8c3",
+      "prepared_fabric_state_digest": "277fd10b24ae7ba5aeb837346d7187d1f16862004e67cceb409636d3316c2d18",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 7
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "enemy_flee"
+      },
+      "effect_batch_digest": "d7ae4d0b96da6c4d27d6744fb1db0f11f219b9629ac6494dfbecc1db05f25224",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "729cfb4de2e19b714580cc5a955b339095ec86909b6f32b4d3bc785a8d56eaf0",
+      "post_fabric_state_digest": "3623c0967efc9da5254d08f46d883e0767742b761406f7925d4ee0548fff32bd",
+      "post_game_state_digest": "eb528d95aa8897306d9dd49e0e1eb03b10c781146adf9fa414f13a1c8640a8c3",
+      "pre_fabric_state_digest": "02b58cea7164422b390dbb45d60826596294607f9a56472f312e7610171d37e8",
+      "pre_game_state_digest": "eb528d95aa8897306d9dd49e0e1eb03b10c781146adf9fa414f13a1c8640a8c3",
+      "prepared_fabric_state_digest": "02b58cea7164422b390dbb45d60826596294607f9a56472f312e7610171d37e8",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 8
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "action_bus"
+      },
+      "effect_batch_digest": "2d740ecafaaf97972cc0df024f1822b763bd1ab93296649f39d519fd0621464d",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "cb930f4005e337b929f1c5ede8b262423682bee2601bcdec2eebf8608dca55dc",
+      "post_fabric_state_digest": "72e5df2eee9b0b8350facb04e1cd9f8bef758678d94a0b521bf5595833bcdcc6",
+      "post_game_state_digest": "0661fb1eb58ba35d9bf0a950b7ff79919564ad3a1767f0a8929c6f907fbcead9",
+      "pre_fabric_state_digest": "3623c0967efc9da5254d08f46d883e0767742b761406f7925d4ee0548fff32bd",
+      "pre_game_state_digest": "eb528d95aa8897306d9dd49e0e1eb03b10c781146adf9fa414f13a1c8640a8c3",
+      "prepared_fabric_state_digest": "f17add5a80b195773128e547ea97d9223bad419ee4e79b63e0806b5477345442",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 9
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "action_bus"
+      },
+      "effect_batch_digest": "c0f09dbc9e146d083d7695ffedaae20785b6af728f48d84e7fe8c440512c67ad",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "35baaab9e5fa1374f5efbfdc2b5dcefdcd9ba2f871067515e34fb91ac3970462",
+      "post_fabric_state_digest": "c983706b57a0473f9fdbd95f997f783ef7d2399404cb56bae61859d7f6b4f8d0",
+      "post_game_state_digest": "0661fb1eb58ba35d9bf0a950b7ff79919564ad3a1767f0a8929c6f907fbcead9",
+      "pre_fabric_state_digest": "72e5df2eee9b0b8350facb04e1cd9f8bef758678d94a0b521bf5595833bcdcc6",
+      "pre_game_state_digest": "0661fb1eb58ba35d9bf0a950b7ff79919564ad3a1767f0a8929c6f907fbcead9",
+      "prepared_fabric_state_digest": "72e5df2eee9b0b8350facb04e1cd9f8bef758678d94a0b521bf5595833bcdcc6",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 10
+    },
+    {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "action_bus"
+      },
+      "effect_batch_digest": "3400dc9c1360da44d420ade2fa27ba6acd88db8328eaa0709f4ebf881c2caf5d",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "cf7038d3c09b9fcbb06198c15851e90231d21e22c5976290395dc60c9b3cd91e",
+      "post_fabric_state_digest": "d87285fedf6a66e22c9aa247e7b642c79b20913d04f93f93259b9b98ea162223",
+      "post_game_state_digest": "0661fb1eb58ba35d9bf0a950b7ff79919564ad3a1767f0a8929c6f907fbcead9",
+      "pre_fabric_state_digest": "c983706b57a0473f9fdbd95f997f783ef7d2399404cb56bae61859d7f6b4f8d0",
+      "pre_game_state_digest": "0661fb1eb58ba35d9bf0a950b7ff79919564ad3a1767f0a8929c6f907fbcead9",
+      "prepared_fabric_state_digest": "c983706b57a0473f9fdbd95f997f783ef7d2399404cb56bae61859d7f6b4f8d0",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 11
+    }
+  ],
+  "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+  "trace_digest": "e99ceb576d458bd5ec2334a17d9bd35381d1482bfa242874d581070f9ecd82de"
+}

@@ -1,0 +1,65 @@
+{
+  "fixture_id": "DEMO-003-MULTI-TICK-REPLAY-001",
+  "initial_game_state": {
+    "enemy_health": 100,
+    "enemy_mode": "PATROL",
+    "enemy_position": [
+      4,
+      0
+    ],
+    "player_position": [
+      0,
+      0
+    ]
+  },
+  "observations": [
+    {
+      "health_low": false,
+      "player_near": true
+    },
+    {
+      "health_low": false,
+      "player_near": true
+    },
+    {
+      "health_low": false,
+      "player_near": true
+    },
+    {
+      "health_low": false,
+      "player_near": true
+    },
+    {
+      "health_low": true,
+      "player_near": false
+    },
+    {
+      "health_low": true,
+      "player_near": false
+    },
+    {
+      "health_low": true,
+      "player_near": false
+    },
+    {
+      "health_low": true,
+      "player_near": false
+    },
+    {
+      "health_low": false,
+      "player_near": false
+    },
+    {
+      "health_low": false,
+      "player_near": false
+    },
+    {
+      "health_low": false,
+      "player_near": false
+    },
+    {
+      "health_low": false,
+      "player_near": false
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "category": "T",
+  "description": "GAME_APPLY occurs after fabric commit",
+  "details": {
+    "after": {
+      "enemy_health": 100,
+      "enemy_mode": "APPROACH",
+      "enemy_position": [
+        3,
+        0
+      ],
+      "player_position": [
+        0,
+        0
+      ]
+    },
+    "before": {
+      "enemy_health": 100,
+      "enemy_mode": "PATROL",
+      "enemy_position": [
+        4,
+        0
+      ],
+      "player_position": [
+        0,
+        0
+      ]
+    },
+    "receipt": {
+      "binding_id": "98d45e5e2472bab9cfbcddeabd2d443664dd22ec2496f8b5bdadb1698e1c905f",
+      "blocked_reason": {
+        "details": [
+          "INVALID"
+        ],
+        "kind": "PARTIAL_INPUT",
+        "subject_id": "enemy_approach"
+      },
+      "effect_batch_digest": "2c0c0661634c3208e2e26a08c86f6a9fcb5579673ad6b8d3b5493d7cb5b88eaf",
+      "fabric_digest": "37fd08c41b6fdc5711a1a3ef3eb8560d93b661e5aa366bac5d2fcf5066f63ad1",
+      "game_tick_input_digest": "96e3f306087e71dd3e7cfcb499a41ecfc46fb41aaeb613f992349f960234eb41",
+      "post_fabric_state_digest": "1df307661783b0c40110f6d6187a08d64ec2247853fc369e0aeeb69321eac734",
+      "post_game_state_digest": "8a50d308d348aa6120bcfdb312752f1d6561c407d8d5d87a66916c5d5f011a48",
+      "pre_fabric_state_digest": "bebbc43d7edf179a3eb39e16935842c6560738be34a9993a986a8e2305c8b301",
+      "pre_game_state_digest": "4cbe0cf9ee9de40dbc21ee991940ab1b2861ed3017255d85ce06510054025681",
+      "prepared_fabric_state_digest": "bebbc43d7edf179a3eb39e16935842c6560738be34a9993a986a8e2305c8b301",
+      "run_id": "f0af2983f1587cc810ab188dd1169a036ed59e21bcedab9faf84a9f841b5d3ff",
+      "run_status": "RUNNING",
+      "tick_index": 1
+    }
+  },
+  "status": "PASS",
+  "vector_id": "T05"
+}

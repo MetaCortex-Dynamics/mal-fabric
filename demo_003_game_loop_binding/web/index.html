@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DEMO-003 · Game Loop Binding</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">MAL FABRIC · DEMO-003</p>
+      <h1>Geometry enters<br><span>the game loop.</span></h1>
+    </div>
+    <div class="authority"><small>Tick contract</small><strong>SAMPLE → STEP → APPLY</strong><small>exactly one V3.3 step</small></div>
+  </header>
+
+  <main>
+    <section id="game-panel" class="panel game-panel">
+      <div class="section-title">
+        <div><p class="eyebrow">TOY INTEGER GRID</p><h2>Bound game state</h2></div>
+        <div class="run-state"><span id="run-status">READY</span><code id="run-id">—</code></div>
+      </div>
+      <div class="game-grid" aria-label="Toy game grid"><div id="player" class="sprite player">P</div><div id="enemy" class="sprite enemy">E</div></div>
+      <div class="game-readout">
+        <div><small>Logical tick</small><strong id="logical-tick">0</strong></div>
+        <div><small>Enemy mode</small><strong id="enemy-mode">PATROL</strong></div>
+        <div><small>Enemy health</small><strong id="enemy-health-readout">100</strong></div>
+        <div><small>Last effects</small><strong id="last-effects">NONE</strong></div>
+      </div>
+      <div class="controls">
+        <label><input id="player-near" type="checkbox"> Player near</label>
+        <label>Enemy health <input id="enemy-health" type="range" min="0" max="100" value="100"><output id="staged-health">100</output></label>
+        <button id="stage-controls">Stage observation</button>
+        <button id="advance-tick" class="primary">Advance logical tick</button>
+        <button id="render-frame">Render frame</button>
+        <button id="replay">Replay fixture</button>
+        <button id="reset-run">Reset run</button>
+      </div>
+      <p id="game-event" class="event">GAME_RUN_READY</p>
+    </section>
+
+    <section class="status-strip">
+      <div><small>Samples this tick</small><strong id="sample-calls">0</strong></div>
+      <div><small>V3.3 steps this tick</small><strong id="step-calls">0</strong></div>
+      <div><small>Render callbacks</small><strong id="render-callbacks">0</strong></div>
+      <div><small>Fabric status</small><strong id="fabric-status">HALTED</strong></div>
+    </section>
+
+    <section class="panel fabric-panel">
+      <div class="section-title">
+        <div><p class="eyebrow">ACTIVE PROGRAM</p><h2>Fabric and committed runtime custody</h2></div>
+        <div class="legend"><span class="empty-key">EMPTY</span><span class="admitted-key">ADMITTED</span><span class="completed-key">COMPLETED</span><span class="discharged-key">DISCHARGED</span></div>
+      </div>
+      <div id="fabric" class="fabric" aria-label="Canonical geometric fabric"></div>
+      <div id="runtime-phases" class="phase-list"></div>
+    </section>
+
+    <section class="panel proposer-panel">
+      <div>
+        <p class="eyebrow">V0.5.0 PROPOSER · NO RUNTIME AUTHORITY</p>
+        <h2>Propose a geometric change during the active run</h2>
+        <p>Pending geometry remains visible but cannot affect the fixed run identity.</p>
+      </div>
+      <textarea id="intent">Disconnect the patrol consequence.</textarea>
+      <div class="actions">
+        <button id="propose">Propose</button>
+        <button id="accept">Accept for admission</button>
+        <button id="submit">Submit governed edit</button>
+        <button id="reject">Reject</button>
+      </div>
+      <div id="proposal-state">No candidate.</div>
+    </section>
+
+    <section class="text-grid">
+      <article class="panel"><p class="eyebrow">GAME TICK RECEIPT</p><pre id="tick-receipt">No tick yet.</pre></article>
+      <article class="panel"><p class="eyebrow">CANONICAL FABRICSPEC</p><pre id="fabric-text"></pre></article>
+    </section>
+  </main>
+
+  <div id="error" class="error hidden" role="alert"></div>
+  <script src="app.js"></script>
+</body>
+</html>

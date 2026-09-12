@@ -7,12 +7,15 @@
       "orcid": "0009-0004-8164-2159"
     }
   ],
-  "description": "DEMO-002 adds a governed vibe-proposer surface to mal-fabric. Natural-language intent produces a typed, visible geometric proposal and diff. The model has no direct commit authority: user acceptance authorizes submission to the existing V3.1 DRC and V3.2 admission path before committed geometry may execute under V3.3. Includes 24/24 conformance and 25/25 byte-identical evidence replay while preserving DEMO-001 and V3.1 through V3.3 unchanged.",
+  "description": "DEMO-003 binds committed mal-fabric geometry to an explicit logical game loop. Each logical game tick samples canonical input once, performs exactly one V3.3 fabric step, derives effects only from the committed successor state, and applies a deterministic integer-grid game update. Identical logical input traces replay deterministically while render-frame cadence remains presentation-only. Includes 28/28 DEMO-003 conformance and 29/29 byte-identical evidence replay, with all earlier layers unchanged.",
   "keywords": [
     "canonical geometric programming",
     "deterministic software",
     "natural-language programming",
     "human-in-the-loop governance",
+    "game programming",
+    "deterministic replay",
+    "logical tick",
     "program visualization",
     "synchronous execution",
     "governed AI",
@@ -22,7 +25,7 @@
   "license": "Apache-2.0",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.22718622",
+      "identifier": "10.5281/zenodo.22725249",
       "relation": "isNewVersionOf",
       "resource_type": "software"
     },
@@ -37,7 +40,7 @@
       "resource_type": "publication-preprint"
     }
   ],
-  "title": "mal-fabric v0.5.0: Vibe Proposer Demo",
+  "title": "mal-fabric v0.6.0: Game Loop Binding",
   "upload_type": "software",
-  "version": "0.5.0"
+  "version": "0.6.0"
 }

@@ -1,0 +1,16 @@
+{
+  "category": "B",
+  "description": "ingress bindings reference declared targets only",
+  "details": {
+    "cell_count": 8,
+    "declared_targets": [
+      "enemy_approach",
+      "enemy_flee",
+      "health_low",
+      "patrol",
+      "player_near"
+    ]
+  },
+  "status": "PASS",
+  "vector_id": "B02"
+}

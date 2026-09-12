@@ -1,0 +1,15 @@
+{
+  "category": "T",
+  "description": "egress reads committed successor state only",
+  "details": {
+    "committed_effects": [
+      {
+        "action": "APPROACH",
+        "kind": "SET_ENEMY_ACTION"
+      }
+    ],
+    "pre_commit_effects": []
+  },
+  "status": "PASS",
+  "vector_id": "T04"
+}

@@ -1,0 +1,19 @@
+{
+  "category": "D",
+  "description": "effect batch order independent of host traversal",
+  "details": {
+    "canonical_order": true,
+    "effects": [
+      {
+        "action": "APPROACH",
+        "kind": "SET_ENEMY_ACTION"
+      },
+      {
+        "action": "FLEE",
+        "kind": "SET_ENEMY_ACTION"
+      }
+    ]
+  },
+  "status": "PASS",
+  "vector_id": "D05"
+}

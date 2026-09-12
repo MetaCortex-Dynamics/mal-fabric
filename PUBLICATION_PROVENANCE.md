@@ -4,6 +4,96 @@ This public carrier preserves public Git history while binding filtered
 publication contents to Devon's exact promoted authority points in the
 governance workspace.
 
+## v0.6.0 DEMO-003 carrier binding
+
+```text
+public_repository:
+  MetaCortex-Dynamics/mal-fabric
+
+public_predecessor_commit:
+  1affb0176a82bd2410a464cf96d71564fefd2de6
+
+public_predecessor_tag:
+  v0.5.0
+
+public_predecessor_version_doi:
+  10.5281/zenodo.22725249
+
+upstream_repository:
+  MetaCortex-Dynamics/mal_kernel_lab_foundation
+
+upstream_demo_implementation_commit:
+  f570b02c007c6bc0662b2d5d8a561c165c312a16
+
+upstream_demo_binding_commit:
+  f635343e5adaafe7135194da47fcca74316c7b0d
+
+upstream_demo_promotion_commit:
+  48a67514b60c5e1f2e428e787c90c4f8884c695b
+
+demo_binding_record_sha256:
+  683C21B002F284B53C0CE75284A447BCF10427489B23A3CE2A19729C1D2B8AC7
+
+demo_promotion_record_sha256:
+  9F3DF4BB5F1B2F47C8A5DE4549B67C1769B64A30016D641AFFAAC2A9298E6510
+
+demo_acceptance_summary_sha256:
+  F6BCFDCA7C58CB363ACAB9F03B349CD052EDE0819653E6B01B06A492EDAB6DFE
+
+demo_evidence_manifest_sha256:
+  8DA6BD5937289112B89232927E741AA42E7075934ED8F339100C56E7D9693A11
+
+demo_replay_trace_sha256:
+  6C6AADAE282950B0D7CB2C067D70292DE264A528B2E70ECED03C2FF80939BA82
+
+demo_acceptance:
+  B01-B06 = 6/6
+  T01-T08 = 8/8
+  D01-D06 = 6/6
+  N01-N04 = 4/4
+  U01-U04 = 4/4
+  TOTAL = 28/28
+
+demo_evidence_replay:
+  29/29 BYTE_IDENTICAL
+
+demo_HTTP_smoke:
+  PASS
+
+ONE_LOGICAL_TICK_ONE_STEP_FABRIC:
+  HOLDS
+
+RENDER_FRAME_NOT_SEMANTIC:
+  HOLDS
+
+software_concept_doi:
+  10.5281/zenodo.22678127
+
+public_release_tag:
+  v0.6.0
+
+public_release_commit:
+  PENDING_RELEASE_CARRIER_COMMIT
+
+github_release:
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.6.0
+
+software_version_doi:
+  PENDING_ZENODO_INGESTION
+
+paper_a_doi:
+  10.5281/zenodo.22677712
+
+paper_b_doi:
+  10.5281/zenodo.22715312
+```
+
+The public carrier imports the exact promoted DEMO-003 bytes while excluding
+unrelated private repository history. The active run binds one committed
+fabric digest, one game binding, and fixed initial game/fabric state. Pending
+proposals cannot affect that run; committed geometry changes require a new
+`GameRunIdentity`.
+
 ## v0.5.0 DEMO-002 carrier binding
 
 ```text
