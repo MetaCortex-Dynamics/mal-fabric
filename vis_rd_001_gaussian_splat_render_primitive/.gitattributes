@@ -1,0 +1,12 @@
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.png binary
+*.splat binary
+
+# Preserve promoted Markdown hard-break whitespace without diff-check noise.
+SPEC-VIS-RD-001-GAUSSIAN-SPLAT-RENDER-PRIMITIVE_v0.3.md whitespace=-trailing-space
+CODEX_HANDOFF_VIS_RD_001_GAUSSIAN_SPLAT_RENDER_PRIMITIVE_v0.3.md whitespace=-trailing-space

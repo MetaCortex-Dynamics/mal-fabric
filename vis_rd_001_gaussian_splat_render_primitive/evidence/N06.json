@@ -1,0 +1,24 @@
+{
+  "canonical_evidence_version": "VIS-RD-001/v0.3",
+  "observed": {
+    "bounds": {
+      "maximum": [
+        0.8,
+        0.52,
+        0.8
+      ],
+      "minimum": [
+        -0.8,
+        -0.52,
+        -0.8
+      ]
+    },
+    "bounds_use": "PRESENTATION_INSPECTION_ONLY",
+    "pick": {
+      "asset": "splat-sha256-6aeb775435810389bc47d15f02e3d545e09ded2760e8a15e76de71d89d55d143",
+      "distance_milli": 410
+    }
+  },
+  "result": "PASS",
+  "vector_id": "N06"
+}

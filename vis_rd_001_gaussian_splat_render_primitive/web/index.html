@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>mal-fabric · Gaussian presentation primitive</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+        "three/webgpu": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.webgpu.js",
+        "three/tsl": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.tsl.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="sigil">◇</span><div><b>mal-fabric</b><small>VIS-R&amp;D-001 · Gaussian presentation primitive</small></div></div>
+    <div class="status"><i></i><span id="run-status">INITIALIZING</span><span id="tick">TICK 0</span></div>
+  </header>
+  <main>
+    <section class="stage">
+      <div class="stage-head">
+        <div class="switch" role="group" aria-label="Active render surface">
+          <button id="game-tab" class="active">GAME</button><button id="carrier-tab">CARRIER</button>
+        </div>
+        <div class="asset-switch" role="group" aria-label="Asset presentation">
+          <button id="conventional-tab">CONVENTIONAL</button><button id="gaussian-tab" class="active">GAUSSIAN</button>
+        </div>
+        <div class="digest">SNAPSHOT <code id="snapshot">—</code></div>
+      </div>
+      <div id="game-view" class="surface active">
+        <div id="three-stage"></div>
+        <div class="view-label"><strong>GAME</strong><span id="asset-label">GAUSSIAN ASSET</span></div>
+        <div id="behavior" class="behavior">PATROL</div>
+        <div class="arena-label">COMMITTED STATE → PRESENTATION TRANSFORM</div>
+      </div>
+      <div id="carrier-view" class="surface">
+        <svg id="carrier-svg" viewBox="0 0 1200 680" aria-label="Carrier structural projection"></svg>
+        <div class="view-label"><strong>CARRIER</strong><span>GAUSSIAN ≠ CARRIER GEOMETRY</span></div>
+        <div class="triad-legend"><span class="g">□G ground</span><span class="s">□S structure</span><span class="f">□F flow</span></div>
+      </div>
+    </section>
+    <aside>
+      <div class="panel hero">
+        <span>STATIC 3DGS</span>
+        <b id="load-state">LOADING</b>
+        <small id="backend">detecting renderer</small>
+      </div>
+      <div class="panel controls">
+        <label>PROXIMITY <button id="near">PLAYER FAR</button></label>
+        <label>ENEMY HEALTH <input id="health" type="range" min="0" max="100" value="100"><output id="health-value">100</output></label>
+        <button id="advance" class="primary">ADVANCE LOGICAL TICK <span>→</span></button>
+        <button id="blocked">LOAD BLOCKED STATE</button>
+      </div>
+      <div class="panel readout">
+        <h2>Committed boundary</h2>
+        <dl><dt>surface</dt><dd id="surface">GAME</dd><dt>run</dt><dd id="run">—</dd><dt>fabric</dt><dd id="fabric">—</dd><dt>state</dt><dd id="state">—</dd><dt>asset</dt><dd id="asset">—</dd><dt>decision</dt><dd id="decision">—</dd></dl>
+      </div>
+      <div class="panel phases"><h2>Payload custody</h2><div id="phases"></div></div>
+      <p class="law">GAUSSIAN := PRESENTATION<br>PIXELS := NONCANONICAL<br>RENDERER := NONAUTHORITY</p>
+    </aside>
+  </main>
+  <footer><span>mal-fabric v0.7.0 · immutable import</span><span>ASSET SUBSTITUTION ≠ SEMANTIC TRANSITION</span></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

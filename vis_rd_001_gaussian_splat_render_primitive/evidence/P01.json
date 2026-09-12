@@ -1,0 +1,30 @@
+{
+  "canonical_evidence_version": "VIS-RD-001/v0.3",
+  "observed": {
+    "canonical_decision_fields": [
+      "asset_content_sha256",
+      "diagnostics",
+      "fallback_used",
+      "game_run_id",
+      "load_disposition",
+      "logical_tick_index",
+      "presentation_transform_digest",
+      "render_binding_digest",
+      "render_snapshot_digest",
+      "renderer_backend",
+      "semantic_digest_after",
+      "semantic_digest_before",
+      "splat_asset_id"
+    ],
+    "telemetry_schema": [
+      "asset_byte_length",
+      "asset_load_duration_ms",
+      "frame_time_ms",
+      "renderer_backend",
+      "sort_update_count",
+      "telemetry_authority"
+    ]
+  },
+  "result": "PASS",
+  "vector_id": "P01"
+}

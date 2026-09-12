@@ -4,6 +4,117 @@ This public carrier preserves public Git history while binding filtered
 publication contents to Devon's exact promoted authority points in the
 governance workspace.
 
+## v0.8.0 VIS-R&D-001 carrier binding
+
+```text
+public_repository:
+  MetaCortex-Dynamics/mal-fabric
+
+public_predecessor_commit:
+  783358a8b97784e4e39c64198fce19cde1049011
+
+public_predecessor_tag:
+  v0.7.0
+
+public_predecessor_version_doi:
+  10.5281/zenodo.22727508
+
+upstream_repository:
+  MetaCortex-Dynamics/mal_kernel_lab_foundation
+
+upstream_implementation_commit:
+  965a3bc94ab6d4cfcc59bef27051fdcaa3ad8497
+
+upstream_binding_commit:
+  568a23e22b25d2dfa77c57b0cd51516df9e44069
+
+upstream_promotion_commit:
+  8fecb46c0ca55279a5c843a15404709ed50fd9f3
+
+binding_record_sha256:
+  261E639D4E33EA9C5EEC60B736DF79C7939A9A29DECC993904574DCC98B9792C
+
+promotion_record_sha256:
+  C5B8F9F0F9B27C941A4AF337CA78026D1606CD8EE60D90812B90FDE22C28DC9B
+
+acceptance_summary_sha256:
+  EAB95C9B584D99B4DABF662141D12551C83104955D53DC7D491BFA75CF9E6004
+
+evidence_manifest_sha256:
+  1D1DCC0ACEC624B655B5E8366C2C6ACA1EE46A27E5612F93A8AD1E913BE1637C
+
+gaussian_kernel_sha256:
+  2C760D7BBFC0466DAC8021AEBC3D8704DC6A33D3776F9FFFB708491FF9FE07A9
+
+gaussian_fixture_sha256:
+  6AEB775435810389BC47D15F02E3D545E09DED2760E8A15E76DE71D89D55D143
+
+gaussian_fixture_size_bytes:
+  6144
+
+acceptance:
+  A01-A06 = 6/6
+  R01-R06 = 6/6
+  N01-N06 = 6/6
+  F01-F04 = 4/4
+  P01-P02 = 2/2
+  TOTAL = 24/24
+
+evidence_replay:
+  25/25 BYTE_IDENTICAL
+
+prior_conformance:
+  253/253 UNCHANGED
+
+prior_evidence:
+  242/242 UNCHANGED
+
+HTTP_browser_smoke:
+  PASS
+
+GAUSSIAN_PRESENTATION_NONINTERFERENCE:
+  HOLDS
+
+ASSET_SUBSTITUTION_SEMANTIC_INVARIANCE:
+  HOLDS
+
+RENDERER_NONAUTHORITY:
+  HOLDS
+
+FALLBACK_SEMANTIC_INVARIANCE:
+  HOLDS
+
+PIXEL_NONCANONICAL:
+  HOLDS
+
+public_release_tag:
+  v0.8.0
+
+public_release_commit:
+  PENDING_RELEASE_CARRIER_COMMIT
+
+github_release:
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.8.0
+
+software_concept_doi:
+  10.5281/zenodo.22678127
+
+software_version_doi:
+  PENDING_ZENODO_INGESTION
+
+paper_a_doi:
+  10.5281/zenodo.22677712
+
+paper_b_doi:
+  10.5281/zenodo.22715312
+```
+
+The public carrier imports the exact promoted VIS-R&D-001 bytes while
+excluding unrelated private repository history. The Gaussian path and its
+fallback are presentation-only consumers of one committed snapshot; neither
+can alter canonical fabric, game-loop, or semantic trace state. Product
+captures are included as noncanonical evidence and do not bind promotion.
+
 ## v0.7.0 DEMO-004 carrier binding
 
 ```text

@@ -1,0 +1,24 @@
+{
+  "bounds": {
+    "maximum": [
+      0.8,
+      0.52,
+      0.8
+    ],
+    "minimum": [
+      -0.8,
+      -0.52,
+      -0.8
+    ]
+  },
+  "byte_length": 6144,
+  "content_sha256": "6AEB775435810389BC47D15F02E3D545E09DED2760E8A15E76DE71D89D55D143",
+  "declared_splat_count": 192,
+  "format": "SPLAT_FIXED_WIDTH_32",
+  "provenance": {
+    "generator": "generate_fixture.py",
+    "kind": "LOCAL_SYNTHETIC_CONFORMANCE_FIXTURE",
+    "redistribution": "Apache-2.0"
+  },
+  "splat_asset_id": "splat-sha256-6aeb775435810389bc47d15f02e3d545e09ded2760e8a15e76de71d89d55d143"
+}

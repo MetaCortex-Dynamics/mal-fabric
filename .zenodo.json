@@ -7,7 +7,7 @@
       "orcid": "0009-0004-8164-2159"
     }
   ],
-  "description": "DEMO-004 provides the first playable dual-surface visual proof for mal-fabric. One coherent committed RenderSnapshot is projected as a game with characters, movement, and behavior, and as executable carrier geometry with cells, typed ports, directed routes, custody phases, and TRIAD regions. Toggling changes presentation only and cannot mutate semantic or runtime state. Includes 26/26 DEMO-004 conformance, 27/27 byte-identical evidence replay, and an unchanged 227/227 predecessor regression floor.",
+  "description": "VIS-R&D-001 integrates a static 3D Gaussian splat as a presentation primitive in the mal-fabric GAME view. The native Three.js WebGPURenderer, SPLATLoader, and GaussianSplat path can replace a conventional asset without changing the canonical geometric program, fabric execution, game-loop state, logical tick sequence, or game behavior. Gaussian rendering and fallback remain nonauthoritative; pixels are noncanonical. Includes 24/24 VIS-R&D-001 conformance, 25/25 byte-identical evidence replay, and an unchanged 253/253 predecessor regression floor.",
   "keywords": [
     "canonical geometric programming",
     "deterministic software",
@@ -15,6 +15,8 @@
     "human-in-the-loop governance",
     "game programming",
     "dual-surface rendering",
+    "Gaussian splatting",
+    "3D Gaussian splats",
     "render noninterference",
     "deterministic replay",
     "logical tick",
@@ -27,7 +29,7 @@
   "license": "Apache-2.0",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.22726846",
+      "identifier": "10.5281/zenodo.22727508",
       "relation": "isNewVersionOf",
       "resource_type": "software"
     },
@@ -42,7 +44,7 @@
       "resource_type": "publication-preprint"
     }
   ],
-  "title": "mal-fabric v0.7.0: Dual-Surface Render Binding",
+  "title": "mal-fabric v0.8.0: Gaussian Splat Render Primitive",
   "upload_type": "software",
-  "version": "0.7.0"
+  "version": "0.8.0"
 }

@@ -1,6 +1,6 @@
-# MaL Fabric v0.7.0
+# MaL Fabric v0.8.0
 
-[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22727508.svg)](https://doi.org/10.5281/zenodo.22727508) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -33,6 +33,15 @@ routes, custody phases, pending frames, and TRIAD regions. Toggling surfaces is
 presentation-only and cannot modify semantic or runtime state.
 
 **That creature you were just fighting is this program.**
+
+Version 0.8.0 adds VIS-R&D-001: a static 3D Gaussian splat participates as a
+GAME-view presentation primitive through Three.js `WebGPURenderer`,
+`SPLATLoader`, and `GaussianSplat`. The conventional asset, Gaussian asset,
+and fallback asset produce the same canonical game/fabric trace. Asset
+substitution, splat sorting, view-dependent color, backend behavior, and
+fallback selection are presentation-only; pixels are noncanonical.
+
+**Ship the beauty. The structure is underneath.**
 
 ## Companion papers
 
@@ -104,7 +113,18 @@ DEMO-004 Dual-Surface Render Binding
   HTTP smoke               PASS
   renderer authority       NONE
 
-TOTAL CONFORMANCE       253/253
+VIS-R&D-001 Gaussian Splat Render Primitive
+  asset/binding integrity  6/6
+  render decision          6/6
+  noninterference          6/6
+  fallback/resource        4/4
+  product surface          2/2
+  total                   24/24
+  evidence determinism    25/25
+  HTTP/browser smoke       PASS
+  renderer authority       NONE
+
+TOTAL CONFORMANCE       277/277
 ```
 
 Run all suites from the repository root:
@@ -117,11 +137,13 @@ python -B demo_001_visible_fabric/run_acceptance.py
 python -B demo_002_vibe_proposer/run_conformance.py --output demo_002_vibe_proposer/evidence
 python -B demo_003_game_loop_binding/run_conformance.py --output demo_003_game_loop_binding/evidence
 python -B demo_004_dual_surface_render_binding/run_conformance.py --output demo_004_dual_surface_render_binding/evidence
-python -B demo_004_dual_surface_render_binding/demo_server.py
+python -B vis_rd_001_gaussian_splat_render_primitive/run_conformance.py
+python -B vis_rd_001_gaussian_splat_render_primitive/run_full_regression.py
+python -B vis_rd_001_gaussian_splat_render_primitive/demo_server.py
 ```
 
-The DEMO-004 browser surface is served at
-[http://127.0.0.1:8768](http://127.0.0.1:8768).
+The VIS-R&D-001 browser surface is served at
+[http://127.0.0.1:8769](http://127.0.0.1:8769).
 
 Successful replay regenerates each evidence set byte-for-byte.
 
@@ -161,6 +183,10 @@ parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 - [demo_004_dual_surface_render_binding](demo_004_dual_surface_render_binding)
   contains the promoted coherent `RenderSnapshot`, read-only GAME and CARRIER
   projections, browser surface, 26-vector runner, and 27 evidence artifacts.
+- [vis_rd_001_gaussian_splat_render_primitive](vis_rd_001_gaussian_splat_render_primitive)
+  contains the promoted Gaussian presentation adapter, fixed-width local splat
+  fixture, native Three.js browser path, fallback behavior, 24-vector runner,
+  25 evidence artifacts, and noncanonical paired product captures.
 - [PUBLICATION_PROVENANCE.md](PUBLICATION_PROVENANCE.md) binds this filtered
   public carrier to the upstream candidate and promotion commits.
 - [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md) records the latest completed replay
@@ -172,52 +198,52 @@ parsed. See [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 
 ```text
 public_predecessor_commit:
-  091dfcae35c5c70d985f71608c401a3dfbba794e
+  783358a8b97784e4e39c64198fce19cde1049011
 
 public_predecessor_version_doi:
-  10.5281/zenodo.22726846
+  10.5281/zenodo.22727508
 
 upstream_demo_implementation_commit:
-  85d68a84ccc7e17932e6bdd1e660bb22c94ffa78
+  965a3bc94ab6d4cfcc59bef27051fdcaa3ad8497
 
 upstream_demo_binding_commit:
-  720507497b936d049391bde501c35c2d1fd4174d
+  568a23e22b25d2dfa77c57b0cd51516df9e44069
 
 upstream_demo_promotion_commit:
-  c023fb62ba229d023aca013783725d7f55111529
+  8fecb46c0ca55279a5c843a15404709ed50fd9f3
 
 demo_binding_record_sha256:
-  5AEE391DCE001328228067124796DF77AAC828DDF2F5EFC7E6FF84BC985D57CA
+  261E639D4E33EA9C5EEC60B736DF79C7939A9A29DECC993904574DCC98B9792C
 
 demo_promotion_record_sha256:
-  0D4E15694E07BBF14758E217CBC05F85D7C3D6FCADFA55D4D80FFAF2C65400E6
+  C5B8F9F0F9B27C941A4AF337CA78026D1606CD8EE60D90812B90FDE22C28DC9B
 
 demo_acceptance_summary_sha256:
-  50BB725920F17B5BA5565A8BC37F5E2A301B4BD8FE173F7C399AA5B2ECDDC275
+  EAB95C9B584D99B4DABF662141D12551C83104955D53DC7D491BFA75CF9E6004
 
 demo_evidence_manifest_sha256:
-  82E0DB39FF5B8C3C668E8AC80B14F3D8D7FC54EF7C3B1544664451EF6682A2C1
+  1D1DCC0ACEC624B655B5E8366C2C6ACA1EE46A27E5612F93A8AD1E913BE1637C
 
 demo_conformance:
-  26/26
+  24/24
 
 demo_evidence_replay:
-  27/27 byte-identical
+  25/25 byte-identical
 
 public_release_commit:
-  6560da66a538241539955fa5f8b6abad11d22598
+  PENDING_RELEASE_CARRIER_COMMIT
 
 github_release:
-  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.7.0
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.8.0
 
 software_concept_doi:
   10.5281/zenodo.22678127
 
 software_predecessor_version_doi:
-  10.5281/zenodo.22726846
-
-software_v0_7_0_version_doi:
   10.5281/zenodo.22727508
+
+software_v0_8_0_version_doi:
+  PENDING_ZENODO_INGESTION
 
 paper_b_doi:
   10.5281/zenodo.22715312
@@ -268,9 +294,18 @@ the program, runtime state, game state, run identity, and logical tick. Every
 semantic-looking cue has a declared committed or immutable source, and the
 renderer has no proposal, decision, promotion, or execution authority.
 
+VIS-R&D-001 establishes that a static 3D Gaussian splat can replace a
+conventional GAME-view asset without changing `FabricSpec`, `FabricState`,
+`GameLoopState`, `EnemyAction`, logical tick, `GameRunIdentity`, or the
+canonical semantic trace. The renderer remains a read-only consumer of the
+committed snapshot, and fallback selection preserves semantics.
+
 ## Scope boundary
 
-Version 0.7.0 adds a bounded dual-surface presentation adapter. It does not
+Version 0.8.0 adds a bounded static Gaussian presentation primitive. It does
+not add dynamic or deforming Gaussian actors, 4D temporal Gaussian evolution,
+runtime Gaussian training, rendering-as-measurement, collision truth,
+navigation truth, or AI-perception truth. It does not
 authorize self-modifying geometry, hot-swapping a committed fabric into an
 active run, an unbounded external-stimulus API, a physics or network engine,
 or autonomous model authority. It does not claim wall-clock, multiplayer,

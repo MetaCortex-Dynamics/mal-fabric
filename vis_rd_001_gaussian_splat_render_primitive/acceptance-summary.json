@@ -1,0 +1,57 @@
+{
+  "claims": {
+    "asset_substitution_semantic_invariance": "HOLDS",
+    "fallback_semantic_invariance": "HOLDS",
+    "gaussian_presentation_noninterference": "HOLDS",
+    "pixel_noncanonical": "HOLDS",
+    "renderer_nonauthority": "HOLDS",
+    "splat_sort_nonsemantic": "HOLDS",
+    "view_dependent_color_nonsemantic": "HOLDS"
+  },
+  "conformance": "24/24",
+  "counts": {
+    "A": {
+      "passed": 6,
+      "total": 6
+    },
+    "F": {
+      "passed": 4,
+      "total": 4
+    },
+    "N": {
+      "passed": 6,
+      "total": 6
+    },
+    "P": {
+      "passed": 2,
+      "total": 2
+    },
+    "R": {
+      "passed": 6,
+      "total": 6
+    }
+  },
+  "evidence_artifact_count": 25,
+  "evidence_replay": "25/25 BYTE_IDENTICAL",
+  "imports": {
+    "demo_004_acceptance_sha256": "50BB725920F17B5BA5565A8BC37F5E2A301B4BD8FE173F7C399AA5B2ECDDC275",
+    "demo_004_kernel_sha256": "41D523C2AB2A2957A60C19031CC258BA7E98E9B836A242FBE5EE36320D8376E1",
+    "demo_004_promotion_sha256": "0D4E15694E07BBF14758E217CBC05F85D7C3D6FCADFA55D4D80FFAF2C65400E6",
+    "mal_fabric_v0_7_0_concept_doi": "10.5281/zenodo.22678127",
+    "mal_fabric_v0_7_0_doi": "10.5281/zenodo.22727508"
+  },
+  "prior_floor": {
+    "conformance": "253/253 UNCHANGED",
+    "evidence": "242/242 UNCHANGED"
+  },
+  "promotion": "NOT_PERFORMED",
+  "renderer": {
+    "addon": "three/addons/objects/GaussianSplat.js",
+    "loader": "three/addons/loaders/SPLATLoader.js",
+    "three_version": "0.186.0",
+    "webgpu_renderer": "REQUIRED_WITH_FORCE_WEBGL_SUPPORTED"
+  },
+  "result": "HOLDS",
+  "spec_version": "v0.3",
+  "total": 24
+}

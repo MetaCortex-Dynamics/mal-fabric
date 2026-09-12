@@ -1,0 +1,25 @@
+{
+  "canonical_evidence_version": "VIS-RD-001/v0.3",
+  "observed": {
+    "carrier_fields": [
+      "blocked_reasons",
+      "carrier_zoom_level",
+      "cells",
+      "diagnostics",
+      "logical_tick_index",
+      "obligations",
+      "pending_buffers",
+      "routes",
+      "snapshot_digest",
+      "triad_regions"
+    ],
+    "diagnostic": {
+      "asset_identity": "splat-sha256-6aeb775435810389bc47d15f02e3d545e09ded2760e8a15e76de71d89d55d143",
+      "binding_present": true,
+      "gaussian_geometry": "NOT_CARRIER_GEOMETRY",
+      "load_disposition": "LOADED"
+    }
+  },
+  "result": "PASS",
+  "vector_id": "R06"
+}
