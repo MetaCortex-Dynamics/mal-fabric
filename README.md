@@ -1,6 +1,6 @@
 # MaL Fabric v0.9.0
 
-[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22729949.svg)](https://doi.org/10.5281/zenodo.22729949) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -168,12 +168,13 @@ The SHOWCASE-001 browser surface is served at
 
 Successful replay regenerates each evidence set byte-for-byte.
 
-The published v0.8.0 Zenodo archive was independently downloaded and replayed
-on 2026-09-12. All eight suites passed for 277/277 total conformance. The 242
-predecessor evidence artifacts were byte-identical to the sealed v0.7.0
-archive, and all 25 VIS-R&D-001 artifacts matched independent replay and the
-v0.8.0 archive byte-for-byte. The archived HTTP/browser surface and 6,144-byte
-Gaussian fixture passed, and all 313 published JSON artifacts parsed. See
+The published v0.9.0 Zenodo archive was independently downloaded and replayed
+on 2026-09-12. All nine suites passed for 299/299 total conformance and
+acceptance. The 267 predecessor evidence artifacts remain unchanged, all 25
+VIS-R&D-001 artifacts matched independent replay and the archive byte-for-byte,
+and SHOWCASE-001 passed 22/22 with its proof quartet and bound media/asset
+hashes intact. The archived HTTP/browser surface loaded the native Gaussian
+asset, and all 341 published JSON artifacts parsed. See
 [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 
 ## Contents
@@ -263,7 +264,7 @@ proof_quartet:
   HOLDS
 
 public_release_commit:
-  PENDING_RELEASE_CARRIER_COMMIT
+  19eeb77109d22a1d4a5842879ddd61fb84240ba0
 
 github_release:
   https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.9.0
@@ -275,7 +276,7 @@ software_predecessor_version_doi:
   10.5281/zenodo.22728146
 
 software_v0_9_0_version_doi:
-  PENDING_ZENODO_INGESTION
+  10.5281/zenodo.22729949
 
 paper_b_doi:
   10.5281/zenodo.22715312
