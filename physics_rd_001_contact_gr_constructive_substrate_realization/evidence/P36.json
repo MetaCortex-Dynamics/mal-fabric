@@ -1,0 +1,24 @@
+{
+  "canonical_evidence_version": "PHYSICS-RD-001/v0.2.1",
+  "observed": {
+    "provenance_chain": {
+      "contact_corpus_manifest": "8F426447496C178B06499D66D641B938A6D9ACFAE9BD6B2D1660E20A3E3DF3AA",
+      "demo_trajectory": "B684E1D6965C5A00925300DC05251218F6C79064737277D379452E0B11F6C946",
+      "joint_realization_trace": "B684E1D6965C5A00925300DC05251218F6C79064737277D379452E0B11F6C946",
+      "resonance_sequence_terminal": {
+        "boundary_edge_set_digest": "CED5E7AB6859239AF5DB01D93ACFB6862BBA44B05CFD9A25D5260B085C50E61E",
+        "constructive_substrate_state_digest": "CBAD41ECBFD0C0D001881A3A3360502110BB116A8B3A9A440C611FFD7573EF50",
+        "contact_state_digest": "182B1B8B8B70F800CE9A39BDE1A8945EE7CFF5846A9D6C2285DFD161F63C4B3D",
+        "fixed_point_witness_digest": "E9DF6F716191044AFD73B78D0EF245E2164EB99837859500A1DB628579BA6041",
+        "orientation_assignment_digest": "66A90AB774F0EEA9C5B4002BB14A0AF336F6239AEA4AB79A00C9FAD094707003",
+        "physics_tick_index": 4,
+        "resonance_center_binding": 9,
+        "resonance_id": "resonance-entity-001",
+        "support_cell_set_digest": "4C660A2E7E98778F6ADE419DDDC13FCDA9B8FD387B70BA66A335FFE4722B2AF4"
+      },
+      "substrate_corpus_manifest": "3C79017375D847E07F9050F46E36954FEF6A68E0A3E6DBA9C8550B1377882F2D"
+    }
+  },
+  "result": "PASS",
+  "vector_id": "P36"
+}

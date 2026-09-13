@@ -4,6 +4,112 @@ This public carrier preserves public Git history while binding filtered
 publication contents to Devon's exact promoted authority points in the
 governance workspace.
 
+## v0.10.0 PHYSICS-R&D-001 carrier binding
+
+```text
+public_repository:
+  MetaCortex-Dynamics/mal-fabric
+
+public_predecessor_commit:
+  c567ab3a0e3a44e225b48861480e420d30e7de89
+
+public_predecessor_tag:
+  v0.9.0
+
+public_predecessor_version_doi:
+  10.5281/zenodo.22729949
+
+upstream_repository:
+  MetaCortex-Dynamics/mal_kernel_lab_foundation
+
+upstream_implementation_commit:
+  7486bb05d1f12a98d5d2d3b05dd480314b178272
+
+upstream_binding_commit:
+  0b5958440ec679c514be804f7ead3c1bb967bb28
+
+upstream_promotion_commit:
+  42d4a18394f0fb2a455e233c40a02d47386344eb
+
+binding_record_sha256:
+  C6739D90E547032D296B8D17CA35B2D40427CDCBC43BE901E4270A233E05FE31
+
+promotion_record_sha256:
+  B9B054D217D04FE8F78CC1001DBE37522C1AB8F5B432B565A7B0AA934D225AAA
+
+base_spec_sha256:
+  7483C3B6001710AF0397AE7AE506539D265AC05A9FDCE021877D02E71E0CCC1B
+
+amendment_sha256:
+  A41927D9111FD6FFDB08C752A1FF02E481CD56ACD35C18F554BFF21352E06F51
+
+corpus_manifest_sha256:
+  E4C5C9AE101F346B536CD91584D9DD39377587EA06453A8A377B7B3E88297704
+
+acceptance_summary_sha256:
+  08156C95169BEC75E405C6EC0573B2A3B9D17616EB7B7CC5CD376B83970A4F8E
+
+evidence_manifest_sha256:
+  2B9F9331DD09546DFAB68B05427B32CCB1E2F9CA934CC300B203473C2D153F06
+
+kernel_sha256:
+  8B579BC20B1D8C4ACE4B6C406BAE68B770D1A9D032A5664DA703143F507C4ED2
+
+acceptance:
+  P01-P36 = 36/36
+
+evidence_replay:
+  37/37 BYTE_IDENTICAL
+
+prior_conformance:
+  299/299 UNCHANGED
+
+prior_evidence:
+  267/267 BYTE_IDENTICAL
+
+common_fixed_point_census:
+  334
+
+carrier_quotient_census:
+  1296/1296
+
+O5_status:
+  WITNESSED
+  NOT DISCHARGED
+
+O5_claim_boundary:
+  one bounded content-addressed constructive realization exists
+  general unified-law theorem remains open
+
+public_release_tag:
+  v0.10.0
+
+public_release_commit:
+  PENDING_RELEASE_CARRIER_COMMIT
+
+github_release:
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.10.0
+
+software_concept_doi:
+  10.5281/zenodo.22678127
+
+software_version_doi:
+  PENDING_ZENODO_INGESTION
+
+paper_a_doi:
+  10.5281/zenodo.22677712
+
+paper_b_doi:
+  10.5281/zenodo.22715312
+```
+
+The public carrier imports the exact promoted PHYSICS-R&D-001 bytes while
+excluding unrelated private repository history. The authoritative mathematics
+generates the v3 realization; the historical v2 executable companion carries
+no authority over the theory or the v3 substrate. O5 is witnessed by one
+bounded constructive realization and is not claimed discharged as a general
+unified-law theorem.
+
 ## v0.9.0 SHOWCASE-001 carrier binding
 
 ```text

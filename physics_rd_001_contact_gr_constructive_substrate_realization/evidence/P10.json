@@ -1,0 +1,37 @@
+{
+  "canonical_evidence_version": "PHYSICS-RD-001/v0.2.1",
+  "observed": {
+    "carrier": {
+      "contact": {
+        "contact_state_digest": "A8E3CAC8D38D2C1D7E143E86E2D54DFE58C90EAD22D7735DA00E02A961DC0BAA",
+        "hamiltonian_digest": "4E753BCCC21DF150F75CD0898D43F68DF04D99649EFD8CCBA17003DB0157CCBE",
+        "lambda_deformation_digest": "A8A6827C51818490741E2E8D7ECC619509A468367518AD929F68B386D1421E78"
+      },
+      "joint_physics_state_digest": "DC7ECD4F7A085DF5BDED6FD87EDC99DFF6960AF7655277F36AB2EBE261D17BF3",
+      "physics_run_id": "physics-run-physics-rd-001",
+      "physics_tick_index": 2,
+      "renderer_authority": "NONE",
+      "substrate": {
+        "constructive_cell_id": 7,
+        "local_mismatch_energy": 0,
+        "orientation_class": 1,
+        "substrate_state_digest": "FB11582EA7BB1ACBD52E58F4E43A027CAFF63D935C3CEA3E26F1897A6A14AC2D"
+      },
+      "surface": "CARRIER"
+    },
+    "game": {
+      "entity": {
+        "entity_id": "resonance-entity-001",
+        "path_position_q32": 1073741824,
+        "presentation": "CREATURE_IN_GAUSSIAN_ENVIRONMENT"
+      },
+      "joint_physics_state_digest": "DC7ECD4F7A085DF5BDED6FD87EDC99DFF6960AF7655277F36AB2EBE261D17BF3",
+      "physics_run_id": "physics-run-physics-rd-001",
+      "physics_tick_index": 2,
+      "renderer_authority": "NONE",
+      "surface": "GAME"
+    }
+  },
+  "result": "PASS",
+  "vector_id": "P10"
+}

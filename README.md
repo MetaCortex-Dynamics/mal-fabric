@@ -1,6 +1,6 @@
-# MaL Fabric v0.9.0
+# MaL Fabric v0.10.0
 
-[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22729949.svg)](https://doi.org/10.5281/zenodo.22729949) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -51,6 +51,17 @@ paired proof views preserve the same run, logical tick, committed
 
 **That creature you were just fighting is this program. Same run. Same tick.
 Same snapshot. Two surfaces.**
+
+Version 0.10.0 adds PHYSICS-R&D-001: canonical Contact-GR evolution and
+canonical Constructive-Substrate dynamics commit together at one governed
+joint tick. The realized entity is a self-reproducing substrate resonance,
+not a point particle moving through a simulated medium. The committed joint
+trace is invariant under admitted host traversal order, while GAME and
+CARRIER project the same physical state.
+
+This release supplies one bounded, content-addressed constructive realization
+recovering the declared joint behavior. `O5` is therefore witnessed; the
+general unified-law obligation is not claimed discharged.
 
 ## Companion papers
 
@@ -140,7 +151,17 @@ SHOWCASE-001 Mountain Capture
   proof quartet            HOLDS
   asset provenance         mesh-derived CC-BY-4.0
 
-TOTAL CONFORMANCE       299/299
+PHYSICS-R&D-001 Contact-GR × Constructive Substrate
+  acceptance              36/36
+  evidence determinism    37/37
+  common fixed points        334
+  carrier quotient       1296/1296
+  joint tick identity       HOLDS
+  host-order erasure        HOLDS
+  O5                        WITNESSED, NOT DISCHARGED
+
+TOTAL CONFORMANCE       335/335
+TOTAL DETERMINISTIC EVIDENCE 304/304
 ```
 
 Run all suites from the repository root:
@@ -158,6 +179,8 @@ python -B vis_rd_001_gaussian_splat_render_primitive/run_full_regression.py
 python -B vis_rd_001_gaussian_splat_render_primitive/demo_server.py
 python -B showcase_001_mountain_capture/run_acceptance.py
 python -B showcase_001_mountain_capture/showcase_server.py
+python -B physics_rd_001_contact_gr_constructive_substrate_realization/run_prior_regression.py
+python -B physics_rd_001_contact_gr_constructive_substrate_realization/run_conformance.py
 ```
 
 The VIS-R&D-001 browser surface is served at
@@ -214,6 +237,11 @@ asset, and all 341 published JSON artifacts parsed. See
   promoted Gaussian mountain showcase, 22-vector acceptance corpus, six
   required stills, 44-second launch clip, proof records, and CC-BY-4.0
   attribution package.
+- [physics_rd_001_contact_gr_constructive_substrate_realization](physics_rd_001_contact_gr_constructive_substrate_realization)
+  contains the promoted Contact-GR × Constructive-Substrate reference
+  realization, bound mathematical corpus, proof, 36-vector corpus, 37
+  deterministic evidence artifacts, resonance witness, fixed-point census,
+  quotient convergence evidence, and O5 constructive witness.
 - [PUBLICATION_PROVENANCE.md](PUBLICATION_PROVENANCE.md) binds this filtered
   public carrier to the upstream candidate and promotion commits.
 - [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md) records the latest completed replay
@@ -225,58 +253,58 @@ asset, and all 341 published JSON artifacts parsed. See
 
 ```text
 public_predecessor_commit:
-  5e38d23a90623c19e608fcdb00db85ad37b378f8
+  c567ab3a0e3a44e225b48861480e420d30e7de89
 
 public_predecessor_version_doi:
-  10.5281/zenodo.22728146
+  10.5281/zenodo.22729949
 
-upstream_demo_implementation_commit:
-  667d8513a4b9f72642d770055c42f6c8fcff6f7c
+upstream_implementation_commit:
+  7486bb05d1f12a98d5d2d3b05dd480314b178272
 
-upstream_demo_binding_commit:
-  970f2b0ad954bb8370964dcbc05be4f1e3074bf7
+upstream_binding_commit:
+  0b5958440ec679c514be804f7ead3c1bb967bb28
 
-upstream_demo_promotion_commit:
-  14b70ababc5930f188545b6ba1fdb5c3c40ee93e
+upstream_promotion_commit:
+  42d4a18394f0fb2a455e233c40a02d47386344eb
 
-demo_binding_record_sha256:
-  4C97FC59C6963F5D018D270CE4850EDFD314143F2237EB430A6E9DEA13D15167
+binding_record_sha256:
+  C6739D90E547032D296B8D17CA35B2D40427CDCBC43BE901E4270A233E05FE31
 
-demo_promotion_record_sha256:
-  D0C07E889D539C9CB1925FD4C2953FED43A227C87A46E44F16522B94CC7BBEC6
+promotion_record_sha256:
+  B9B054D217D04FE8F78CC1001DBE37522C1AB8F5B432B565A7B0AA934D225AAA
 
-demo_acceptance_summary_sha256:
-  CB1E97531861992135FB0D9FEA3258C725EE7771E86198D33328B102A6E7A588
+acceptance_summary_sha256:
+  08156C95169BEC75E405C6EC0573B2A3B9D17616EB7B7CC5CD376B83970A4F8E
 
-capture_manifest_sha256:
-  D4F927C4268BFC528292ADFACE9C729E21AC0F3FCDAAFDA3AFD802EEC287E8A3
+evidence_manifest_sha256:
+  2B9F9331DD09546DFAB68B05427B32CCB1E2F9CA934CC300B203473C2D153F06
 
-mountain_asset_sha256:
-  ED0387C03566505342407DFF661D6F47181B6FEF6DF83013626EF3469024ED41
+kernel_sha256:
+  8B579BC20B1D8C4ACE4B6C406BAE68B770D1A9D032A5664DA703143F507C4ED2
 
-launch_clip_sha256:
-  35E92C49EFF9F96930155375C24A2C963ABEECB724034F61D7824CDB7F18DDEE
+physics_conformance:
+  36/36
 
-demo_conformance:
-  22/22
+physics_evidence_replay:
+  37/37 BYTE_IDENTICAL
 
-proof_quartet:
-  HOLDS
+O5:
+  WITNESSED, NOT DISCHARGED
 
 public_release_commit:
-  19eeb77109d22a1d4a5842879ddd61fb84240ba0
+  PENDING_RELEASE_CARRIER_COMMIT
 
 github_release:
-  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.9.0
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.10.0
 
 software_concept_doi:
   10.5281/zenodo.22678127
 
 software_predecessor_version_doi:
-  10.5281/zenodo.22728146
-
-software_v0_9_0_version_doi:
   10.5281/zenodo.22729949
+
+software_v0_10_0_version_doi:
+  PENDING_ZENODO_INGESTION
 
 paper_b_doi:
   10.5281/zenodo.22715312
@@ -339,18 +367,28 @@ CARRIER while the proof quartet preserves one run, logical tick,
 `RenderSnapshot`, and `GameRunIdentity`. The mesh-derived asset and all pixels,
 stills, and video remain noncanonical presentation evidence.
 
+PHYSICS-R&D-001 establishes one bounded realization in which canonical
+Contact-GR evolution and canonical Constructive-Substrate dynamics share one
+governed joint tick. The entity is a self-reproducing substrate resonance;
+the committed joint trace is invariant under admitted host traversal order;
+and GAME and CARRIER project the same physical state. This constructively
+witnesses O5 for the declared bounded realization without discharging the
+general unified-law obligation.
+
 ## Scope boundary
 
-Version 0.9.0 adds a bounded visual showcase over the static Gaussian
-presentation primitive. It does
-not add dynamic or deforming Gaussian actors, 4D temporal Gaussian evolution,
-runtime Gaussian training, rendering-as-measurement, collision truth,
-navigation truth, or AI-perception truth. It does not
-authorize self-modifying geometry, hot-swapping a committed fabric into an
-active run, an unbounded external-stimulus API, a physics or network engine,
-or autonomous model authority. It does not claim wall-clock, multiplayer,
-network, physics-engine, or arbitrary real-time input determinism, or
-scheduler independence outside `ValidHostSchedule`.
+Version 0.10.0 adds one bounded Contact-GR × Constructive-Substrate
+realization. It does not claim a universal unified-law theorem, Born
+statistics, entanglement, coarse-grain classical stability, multi-body
+gravity, collision systems, dynamic Gaussian actors, or scheduler
+independence outside the admitted host schedules. O5 remains witnessed and
+not discharged.
+
+The predecessor visual boundaries remain unchanged: Gaussian assets, pixels,
+camera state, and renderer behavior are presentation-only. The release does
+not authorize self-modifying geometry, hot-swapping a committed fabric into
+an active run, an unbounded external-stimulus API, a general-purpose physics
+or network engine, or autonomous model authority.
 
 Public disclosure may bear on prior art, but neither publication nor the
 Apache-2.0 license guarantees a particular patent outcome. Apache-2.0 governs

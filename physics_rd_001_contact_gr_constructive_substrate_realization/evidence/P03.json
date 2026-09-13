@@ -1,0 +1,48 @@
+{
+  "canonical_evidence_version": "PHYSICS-RD-001/v0.2.1",
+  "observed": {
+    "entries": [
+      {
+        "authoritative_sections": [
+          "sections 1-15",
+          "section 5.3 flat flex",
+          "sections 12-14 carrier quotient"
+        ],
+        "authority_role": "CS-BASE",
+        "filename": "The_Constructive_Substrate.docx",
+        "law_bindings": {
+          "axis_selection_rule": "section 12.1",
+          "quotient_lift": "section 12.2",
+          "quotient_projection": "section 12.2",
+          "tie_resolution": "section 12.3"
+        },
+        "sha256": "519C51D71DA5D89C85DB86EFDF25E55CE951252F37EEC16B67A2EAC74BD5CF6F",
+        "status": "BOUND"
+      },
+      {
+        "authoritative_sections": [
+          "section 16 resonance",
+          "co-individuation",
+          "O5 status"
+        ],
+        "authority_role": "CS-S16",
+        "filename": "Constructive_Substrate_S16_Addendum.docx",
+        "sha256": "6B68349165D02815F12F5B33F96AED8D377778D7676D6919B833E132E01DF740",
+        "status": "BOUND"
+      },
+      {
+        "authoritative_sections": [
+          "binary fixed-point census",
+          "icosidodecahedral co-individuation witness"
+        ],
+        "authority_role": "CS-BM",
+        "filename": "Binary_Majority_Fixed_Points_Icosidodecahedral_Face_Graph.docx",
+        "sha256": "D7E6F09B04D1A1274D25CCF46E2D49C75151FE77F24D0DA97A7B42B20D24825E",
+        "status": "BOUND"
+      }
+    ],
+    "substrate_corpus_digest": "3C79017375D847E07F9050F46E36954FEF6A68E0A3E6DBA9C8550B1377882F2D"
+  },
+  "result": "PASS",
+  "vector_id": "P03"
+}

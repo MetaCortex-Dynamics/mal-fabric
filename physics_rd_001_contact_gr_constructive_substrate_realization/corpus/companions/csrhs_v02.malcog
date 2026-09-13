@@ -1,0 +1,2223 @@
+// ═══════════════════════════════════════════════════════════════════════════════
+//  CONTACT SUB-RIEMANNIAN HYBRID SYSTEM (CSRHS)
+//  MaL-Cog Implementation v0.2
+// ═══════════════════════════════════════════════════════════════════════════════
+//
+//  Genealogy:
+//    csrhs.malcog v0.1                        (predecessor — this file)
+//    CSRHS_Spec_v0_1.md                       (specification)
+//    SR_Genealogy_LambdaMaL_v1.2              (horizontal distribution)
+//    Timeful_Governed_Self_Modification        (tick semantics)
+//    λMaL_Type_System                          (modal types)
+//    governed_geodesic_controller_v2.rs        (Rust prototype — N1–N6)
+//    genus_aware_topology.rs                   (genus-calibrated loop thresholds)
+//
+//  CHANGES FROM v0.1 (□G: explicit ancestry):
+//    C1. JACOBI FIELD GUARD on τ computation      (prevents degenerate ticks)
+//    C2. SYMPLECTIC COST ACCUMULATOR              (energy-aware tick firing)
+//    C3. SHEAF VERIFICATION across chart atlas     (no governance arbitrage)
+//    C4. DAG-STRUCTURED WITNESS GRAPH             (branching/pruning/merging)
+//    C5. FISHER-RAO NATURAL PROJECTION            (intrinsic horizontal step)
+//    C6. GENUS-AWARE TICK TOPOLOGY                (structural vs pathological)
+//    C7. ADAPTIVE τ with SECOND-ORDER GEOMETRY    (Jacobi + Hessian of V)
+//    C8. SPECULATIVE TICK EXECUTION               (parallel branch proposals)
+//
+//  Authority Topology (unchanged):
+//    @readonly  → geometry computations (pure)
+//    @decide    → witness verification (deterministic)
+//    @propose   → flow execution (Cortex)
+//    @promote   → tick commit (Kernel, state-mutating)
+//
+// ═══════════════════════════════════════════════════════════════════════════════
+
+module csrhs;
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  IMPORTS
+// ─────────────────────────────────────────────────────────────────────────────
+
+use core::q32::{Q32, Q32Vec, Q32Mat, Q32_ZERO, Q32_ONE};
+use core::hash::{Hash256, sha256, jcs_canonicalize};
+use core::worldline::{WorldlineCtx, Tick};
+use governance::modality::{WitnessG, WitnessS, WitnessF};
+use governance::tokens::{DecisionToken, PromotionPacket, EvidenceBundle};
+use theory_space::{TheoryPoint, Mask, LinearSubspace};
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  CONSTANTS
+//  Genealogy: CSRHS_Spec_v0_1.md §12.1, extended in v0.2
+// ─────────────────────────────────────────────────────────────────────────────
+
+const TAU_BASE: Q32 = q32!(1.0);
+const ALPHA: Q32 = q32!(0.1);             // Curvature sensitivity
+const BETA: Q32 = q32!(1.0);              // Value gradient sensitivity
+const GAMMA: Q32 = q32!(0.05);            // Input sensitivity
+const TAU_MIN: Q32 = q32!(0.01);
+const TAU_MAX: Q32 = q32!(10.0);
+const KAPPA_MAX: Q32 = q32!(100.0);
+const DELTA_KAPPA: Q32 = q32!(10.0);
+
+// v0.2 additions
+const JACOBI_COLLAPSE: Q32 = q32!(0.01);  // C1: Jacobi field collapse threshold
+const SYMPLECTIC_FRICTION: Q32 = q32!(0.05); // C2: Dissipation rate
+const MAX_MOMENTUM_NORM: Q32 = q32!(10.0); // C2: Momentum clamp
+const FISHER_RAO_EPS: Q32 = q32!(0.001);  // C5: Regularization
+const TOPO_PERSISTENCE: Q32 = q32!(0.5);  // C6: Min persistence for loop
+const MAX_WINDING: u32 = 3;               // C6: Winding number ceiling
+const HESSIAN_EPSILON: Q32 = q32!(0.001); // C7: Finite-diff step for Hessian
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  TYPES: CORE RECORDS (v0.1 retained, extended)
+//  Genealogy: CSRHS_Spec_v0_1.md §3.1, §8.1, §8.2
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Single tick record — extended with Jacobi and phase data
+/// Schema: CSRHS_TICK_v0.2
+record TickRecord {
+    // ── v0.1 fields (unchanged) ──
+    x: TheoryPoint,
+    delta: Q32Vec,
+    tau: Q32,
+    kappa: Q32,
+    input_hash: Hash256,
+    tick_index: u64,
+    cost_accumulated: Q32,
+
+    // ── v0.2 extensions ──
+    jacobi_deviation: Q32,         // C1: ||J(t)|| at this tick
+    jacobi_status: JacobiStatus,   // C1: Safe/Contracting/ConjugateImminent
+    momentum: Q32Vec,              // C2: Phase space momentum p at this tick
+    energy: Q32,                   // C2: Hamiltonian H(q,p) for conservation check
+    chart_id: u32,                 // C3: Which chart this tick was computed in
+}
+
+/// Jacobi field status (from governed_geodesic_controller_v2)
+/// Genealogy: governed_geodesic_controller_v2.rs §N1
+enum JacobiStatus {
+    Safe { deviation: Q32 },
+    Contracting { deviation: Q32, rate: Q32 },
+    ConjugateImminent { deviation: Q32 },
+}
+
+/// Phase space state on T*M
+/// Genealogy: governed_geodesic_controller_v2.rs §N2
+record PhaseState {
+    q: TheoryPoint,    // Position
+    p: Q32Vec,         // Momentum covector
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  C1: JACOBI FIELD MONITOR
+//  Genealogy: governed_geodesic_controller_v2.rs §N1
+//
+//  Problem in v0.1: compute_tau depends on compute_curvature, but curvature
+//  is a POINTWISE quantity. Near conjugate points (where geodesics focus),
+//  the curvature is well-defined but the exponential map — which is implicit
+//  in x.add(&delta) — degenerates. The tick step silently produces garbage.
+//
+//  Solution: Track the Jacobi field J(t) along the tick sequence.
+//  When ||J|| → 0, nearby geodesics are focusing. The tick should either:
+//    (a) Reduce τ dramatically (slow down near singularity), or
+//    (b) Perturb delta into a transverse direction.
+//
+//  Integration: Jacobi status feeds into compute_tau_v2 as a FOURTH
+//  modulation term, alongside curvature, value gradient, and input.
+// ─────────────────────────────────────────────────────────────────────────────
+
+record JacobiFieldMonitor {
+    j_current: Q32Mat,         // Current Jacobi field J(t)
+    j_velocity: Q32Mat,        // ∇J/dt
+    collapse_threshold: Q32,   // Below this, conjugate point imminent
+    norm_history: Vec<Q32>,    // For trend detection
+    max_history: usize,
+}
+
+impl JacobiFieldMonitor {
+    @readonly
+    fn new(dim: usize) -> JacobiFieldMonitor {
+        JacobiFieldMonitor {
+            j_current: Q32Mat::identity(dim),
+            j_velocity: Q32Mat::zeros(dim, dim),
+            collapse_threshold: JACOBI_COLLAPSE,
+            norm_history: Vec::new(),
+            max_history: 64,
+        }
+    }
+
+    /// Evolve Jacobi field one tick using Störmer-Verlet leapfrog.
+    ///
+    /// The Jacobi equation: ∇²J/dt² + R(J, γ')γ' = 0
+    /// Discretized as kick-drift-kick with sectional curvature proxy.
+    ///
+    /// Genealogy: governed_geodesic_controller_v2.rs §N1.evolve
+    @readonly
+    fn evolve(
+        &mut self,
+        x: &TheoryPoint,
+        velocity: &Q32Vec,
+        curvature_at: fn(&TheoryPoint, &Q32Mat, &Q32Vec) -> Q32,
+        dt: Q32,
+    ) {
+        let half_dt = dt / q32!(2.0);
+
+        // Curvature action: R(J, v)v approximated as κ·J
+        let kappa = curvature_at(x, &self.j_current, velocity);
+        let curvature_action = self.j_current.scale(kappa);
+
+        // Half-kick velocity
+        self.j_velocity = self.j_velocity.sub(&curvature_action.scale(half_dt));
+
+        // Full drift position
+        self.j_current = self.j_current.add(&self.j_velocity.scale(dt));
+
+        // Half-kick with updated J
+        let kappa2 = curvature_at(x, &self.j_current, velocity);
+        let action2 = self.j_current.scale(kappa2);
+        self.j_velocity = self.j_velocity.sub(&action2.scale(half_dt));
+
+        // Track norm
+        let norm = self.j_current.frobenius_norm();
+        self.norm_history.push(norm);
+        if self.norm_history.len() > self.max_history {
+            self.norm_history.remove(0);
+        }
+    }
+
+    /// Assess conjugate point risk
+    @readonly
+    fn status(&self) -> JacobiStatus {
+        let deviation = self.j_current.frobenius_norm();
+
+        if deviation < self.collapse_threshold {
+            return JacobiStatus::ConjugateImminent { deviation };
+        }
+
+        if self.norm_history.len() >= 3 {
+            let n = self.norm_history.len();
+            let rate = (self.norm_history[n-1] - self.norm_history[n-3]) / q32!(2.0);
+            if rate < -self.collapse_threshold {
+                return JacobiStatus::Contracting { deviation, rate };
+            }
+        }
+
+        JacobiStatus::Safe { deviation }
+    }
+
+    /// Damping factor for τ: 1.0 when safe, approaches 0 near conjugate point
+    @readonly
+    fn tau_damping(&self) -> Q32 {
+        match self.status() {
+            JacobiStatus::Safe { .. } => Q32_ONE,
+            JacobiStatus::Contracting { deviation, .. } => {
+                let ratio = deviation / self.collapse_threshold;
+                ratio.min(q32!(10.0)) / q32!(10.0)
+            },
+            JacobiStatus::ConjugateImminent { .. } => q32!(0.01),
+        }
+    }
+
+    /// Generate escape perturbation orthogonal to current velocity
+    @readonly
+    fn escape_perturbation(
+        &self,
+        x: &TheoryPoint,
+        velocity: &Q32Vec,
+    ) -> Q32Vec {
+        let v_norm = velocity.norm();
+        if v_norm < q32!(1e-10) {
+            // Use Jacobi field direction as perturbation
+            return self.j_current.column(0);
+        }
+
+        // Gram-Schmidt: project J onto orthogonal complement of v
+        let j_col = self.j_current.column(0);
+        let coeff = j_col.dot(velocity) / (v_norm * v_norm);
+        j_col.sub(&velocity.scale(coeff))
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  C2: SYMPLECTIC COST ACCUMULATOR
+//  Genealogy: governed_geodesic_controller_v2.rs §N2
+//
+//  Problem in v0.1: cost accumulates as ‖Δ‖/τ — a scalar that ignores
+//  momentum. A tick that decelerates sharply wastes kinetic energy but this
+//  doesn't appear in the cost. A tick that accelerates smoothly through a
+//  valley (using accumulated momentum) appears expensive because ‖Δ‖ is large.
+//
+//  Solution: Maintain phase state (q, p) and compute cost from the
+//  Hamiltonian H(q,p) = ½g⁻¹(p,p) + V(q). The tick fires when the
+//  time-integrated Hamiltonian exceeds threshold, not just ‖Δ‖/τ.
+//
+//  This preserves the tick-guard semantics (cost ≥ 1 → fire) but the cost
+//  now reflects the PHYSICAL cost of the trajectory, not just displacement.
+// ─────────────────────────────────────────────────────────────────────────────
+
+record SymplecticAccumulator {
+    phase: PhaseState,
+    friction: Q32,           // Controlled dissipation rate
+    max_momentum: Q32,       // Momentum clamp
+    energy_history: Vec<Q32>, // For conservation monitoring
+}
+
+impl SymplecticAccumulator {
+    @readonly
+    fn new(x0: &TheoryPoint, dim: usize) -> SymplecticAccumulator {
+        SymplecticAccumulator {
+            phase: PhaseState {
+                q: x0.clone(),
+                p: Q32Vec::zeros(dim),
+            },
+            friction: SYMPLECTIC_FRICTION,
+            max_momentum: MAX_MOMENTUM_NORM,
+            energy_history: Vec::new(),
+        }
+    }
+
+    /// Störmer-Verlet step: (q_k, p_k) → (q_{k+1}, p_{k+1})
+    ///
+    /// H(q, p) = ½ g⁻¹(p, p) + V(q)
+    /// Kick-drift-kick with parallel transport of momentum.
+    @readonly
+    fn step(
+        &mut self,
+        grad_v: &Q32Vec,
+        mask: &Mask,
+        linear: &LinearSubspace,
+        dt: Q32,
+    ) -> Q32Vec {
+        let half_dt = dt / q32!(2.0);
+
+        // Half-kick: p -= (dt/2)(∇V + friction·p)
+        let friction_term = self.phase.p.scale(self.friction);
+        let force = grad_v.add(&friction_term);
+        self.phase.p = self.phase.p.sub(&force.scale(half_dt));
+
+        // Clamp momentum
+        let p_norm = self.phase.p.norm();
+        if p_norm > self.max_momentum {
+            self.phase.p = self.phase.p.scale(self.max_momentum / p_norm);
+        }
+
+        // Drift: velocity = p (mass=1 for simplicity)
+        let velocity = self.phase.p.scale(dt);
+
+        // Project velocity onto horizontal distribution
+        let delta = project_horizontal(&velocity, &self.phase.q, mask, linear);
+
+        // Update position
+        self.phase.q = self.phase.q.add_vec(&delta);
+
+        // Second half-kick (at new position, would need new ∇V — use current as approx)
+        self.phase.p = self.phase.p.sub(&grad_v.scale(half_dt));
+
+        // Track energy
+        let kinetic = self.phase.p.norm_sq() / q32!(2.0);
+        let potential = grad_v.norm(); // Proxy: ||∇V|| ≈ local steepness
+        self.energy_history.push(kinetic + potential);
+
+        delta
+    }
+
+    /// Hamiltonian-weighted tick cost
+    /// Replaces ‖Δ‖/τ with energy-aware cost
+    @readonly
+    fn hamiltonian_cost(&self, delta: &Q32Vec, tau: Q32) -> Q32 {
+        let displacement_cost = delta.norm() / tau;
+        let kinetic = self.phase.p.norm_sq() / q32!(2.0);
+
+        // Blend: displacement cost + momentum penalty
+        // High momentum → tick fires sooner (captures energy expenditure)
+        displacement_cost + kinetic / tau
+    }
+
+    /// Energy conservation check: |H_k - H_0| should be bounded
+    @readonly
+    fn energy_drift(&self) -> Q32 {
+        if self.energy_history.len() < 2 {
+            return Q32_ZERO;
+        }
+        let h0 = self.energy_history[0];
+        let hk = *self.energy_history.last().unwrap();
+        (hk - h0).abs()
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  C3: SHEAF VERIFICATION
+//  Genealogy: governed_geodesic_controller_v2.rs §N3
+//
+//  Problem in v0.1: Horizontal membership is checked at a single point
+//  (is_horizontal checks mask.contains and linear.contains at x).
+//  But TheoryPoint may sit in overlapping chart domains. A delta that's
+//  horizontal in chart α may NOT be horizontal in chart β — "governance
+//  arbitrage" across the atlas.
+//
+//  Solution: Evaluate horizontal membership in ALL covering charts.
+//  If any disagree, surface SheafInconsistent rather than silent admission.
+//
+//  Note: For genus ≥ 6 manifolds (per polyhedral embedding research),
+//  sheaf checking should be mandatory because embeddability concerns
+//  make chart inconsistencies likely.
+// ─────────────────────────────────────────────────────────────────────────────
+
+record ChartAtlas {
+    charts: Vec<ManifoldChart>,
+    agreement_tol: Q32,
+}
+
+record ManifoldChart {
+    id: u32,
+    center: TheoryPoint,
+    transition: Q32Mat,    // Linear part of chart transition
+    offset: Q32Vec,        // Affine offset
+    radius: Q32,           // Chart validity radius
+}
+
+impl ManifoldChart {
+    @readonly
+    fn localize(&self, x: &TheoryPoint) -> TheoryPoint {
+        let shifted = x.sub_vec(&self.offset);
+        TheoryPoint::from_vec(self.transition.mul_vec(&shifted.to_vec()))
+    }
+
+    @readonly
+    fn contains(&self, x: &TheoryPoint) -> bool {
+        self.center.distance(&self.localize(x)) < self.radius
+    }
+}
+
+enum SheafVerdict {
+    Consistent { all_pass: bool },
+    Inconsistent { chart_a: u32, chart_b: u32, reason: String },
+    SingleChart { pass: bool },
+}
+
+/// Verify horizontal membership across chart atlas
+/// Genealogy: governed_geodesic_controller_v2.rs §N3
+@decide
+fn verify_horizontal_sheaf(
+    delta: &Q32Vec,
+    x: &TheoryPoint,
+    mask: &Mask,
+    linear: &LinearSubspace,
+    atlas: &ChartAtlas,
+) -> SheafVerdict {
+    let covering: Vec<&ManifoldChart> = atlas.charts.iter()
+        .filter(|c| c.contains(x))
+        .collect();
+
+    if covering.len() <= 1 {
+        let pass = is_horizontal(delta, x, mask, linear);
+        return SheafVerdict::SingleChart { pass };
+    }
+
+    // Evaluate horizontality in each chart's local coordinates
+    let mut verdicts: Vec<(u32, bool)> = Vec::new();
+    for chart in &covering {
+        let local_x = chart.localize(x);
+        let local_delta = chart.transition.mul_vec(&delta.to_raw());
+        let local_delta_vec = Q32Vec::from_raw(local_delta);
+        let pass = is_horizontal(&local_delta_vec, &local_x, mask, linear);
+        verdicts.push((chart.id, pass));
+    }
+
+    // Gluing condition: all must agree
+    let first = verdicts[0];
+    for other in &verdicts[1..] {
+        if first.1 != other.1 {
+            return SheafVerdict::Inconsistent {
+                chart_a: first.0,
+                chart_b: other.0,
+                reason: format!("Chart {} says {}, chart {} says {}", 
+                    first.0, first.1, other.0, other.1),
+            };
+        }
+    }
+
+    SheafVerdict::Consistent { all_pass: first.1 }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  C4: DAG-STRUCTURED WITNESS GRAPH
+//  Genealogy: governed_geodesic_controller_v2.rs §N4
+//
+//  Problem in v0.1: CSRHSWitness.ticks is a linear Vec<TickRecord>.
+//  This prevents speculative execution (trying multiple flow directions
+//  in parallel) and makes rollback expensive (discard entire suffix).
+//
+//  Solution: Replace linear tick sequence with a Merkle DAG.
+//  Each tick node can have multiple children (branching) or multiple
+//  parents (merging). □G is preserved: every node is reachable from
+//  genesis, and Merkle hashes include all parent hashes.
+//
+//  The CSRHSWitness now contains a reference to the DAG tip rather than
+//  an inline tick vector. The full DAG lives in the WorldlineCtx.
+// ─────────────────────────────────────────────────────────────────────────────
+
+record TickNode {
+    node_id: u64,
+    parent_ids: Vec<u64>,          // 1 for linear, 2+ for merge
+    merkle_hash: Hash256,          // SHA-256(parent_hashes || state_hash)
+    tick: TickRecord,              // The actual tick data
+    branch_status: BranchStatus,
+    signature: Vec<u8>,            // Ed25519 over merkle_hash
+}
+
+enum BranchStatus {
+    Active,
+    Pruned { reason: String },
+    Merged { into_node: u64 },
+}
+
+record TickDAG {
+    nodes: Vec<TickNode>,
+    active_tips: Vec<u64>,
+    genesis_id: u64,
+    next_id: u64,
+}
+
+impl TickDAG {
+    @readonly
+    fn new(genesis_tick: &TickRecord) -> TickDAG {
+        let state_hash = sha256(&jcs_canonicalize(genesis_tick));
+        let merkle_hash = sha256(&state_hash.to_bytes());
+
+        let genesis = TickNode {
+            node_id: 0,
+            parent_ids: Vec::new(),
+            merkle_hash: merkle_hash,
+            tick: genesis_tick.clone(),
+            branch_status: BranchStatus::Active,
+            signature: Vec::new(), // Signed externally
+        };
+
+        TickDAG {
+            nodes: vec![genesis],
+            active_tips: vec![0],
+            genesis_id: 0,
+            next_id: 1,
+        }
+    }
+
+    /// Append a tick as child of given parent(s)
+    /// Returns the new node ID
+    @propose
+    fn append(
+        &mut self,
+        parent_ids: Vec<u64>,
+        tick: &TickRecord,
+    ) -> u64 {
+        let state_hash = sha256(&jcs_canonicalize(tick));
+
+        // Merkle hash includes all parent hashes
+        let mut hash_input = Vec::new();
+        for pid in &parent_ids {
+            if let Some(parent) = self.nodes.iter().find(|n| n.node_id == *pid) {
+                hash_input.extend_from_slice(&parent.merkle_hash.to_bytes());
+            }
+        }
+        hash_input.extend_from_slice(&state_hash.to_bytes());
+        let merkle_hash = sha256(&hash_input);
+
+        let node_id = self.next_id;
+        self.next_id += 1;
+
+        let node = TickNode {
+            node_id,
+            parent_ids: parent_ids.clone(),
+            merkle_hash,
+            tick: tick.clone(),
+            branch_status: BranchStatus::Active,
+            signature: Vec::new(),
+        };
+
+        self.nodes.push(node);
+
+        // Update tips
+        for pid in &parent_ids {
+            self.active_tips.retain(|t| t != pid);
+        }
+        self.active_tips.push(node_id);
+
+        node_id
+    }
+
+    /// Prune a branch (mark dead, keep for audit)
+    @propose
+    fn prune(&mut self, node_id: u64, reason: String) {
+        if let Some(node) = self.nodes.iter_mut().find(|n| n.node_id == node_id) {
+            node.branch_status = BranchStatus::Pruned { reason };
+        }
+        self.active_tips.retain(|t| *t != node_id);
+    }
+
+    /// Verify DAG integrity: Merkle hashes and reachability from genesis
+    @decide
+    fn verify_integrity(&self) -> Result<(), String> {
+        for node in &self.nodes {
+            // Verify Merkle hash
+            let state_hash = sha256(&jcs_canonicalize(&node.tick));
+            let mut hash_input = Vec::new();
+            for pid in &node.parent_ids {
+                let parent = self.nodes.iter().find(|n| n.node_id == *pid)
+                    .ok_or(format!("Missing parent {} for node {}", pid, node.node_id))?;
+                hash_input.extend_from_slice(&parent.merkle_hash.to_bytes());
+            }
+            hash_input.extend_from_slice(&state_hash.to_bytes());
+            let expected = sha256(&hash_input);
+
+            if expected != node.merkle_hash {
+                return Err(format!("Merkle hash mismatch at node {}", node.node_id));
+            }
+        }
+        Ok(())
+    }
+
+    /// Extract linear path from genesis to a given tip (for v0.1 compatibility)
+    @readonly
+    fn linearize(&self, tip_id: u64) -> Vec<TickRecord> {
+        let mut path = Vec::new();
+        let mut current = tip_id;
+
+        loop {
+            let node = self.nodes.iter().find(|n| n.node_id == current);
+            match node {
+                Some(n) => {
+                    path.push(n.tick.clone());
+                    if n.parent_ids.is_empty() {
+                        break;
+                    }
+                    current = n.parent_ids[0]; // Follow first parent
+                },
+                None => break,
+            }
+        }
+
+        path.reverse();
+        path
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  C5: FISHER-RAO NATURAL PROJECTION
+//  Genealogy: governed_geodesic_controller_v2.rs §N5
+//
+//  Problem in v0.1: project_horizontal uses Euclidean projection
+//  (linear.project then mask.apply). For stochastic matrix manifolds,
+//  this is the wrong metric — Frobenius distance is not invariant under
+//  sufficient statistics.
+//
+//  Solution: Project using the Fisher-Rao metric. The natural gradient
+//  ng_ij = A_ij · ∇L_ij / π_i automatically produces small steps near
+//  boundary (small A_ij) and larger steps in high-probability regions.
+//  This subsumes boundary repulsion.
+// ─────────────────────────────────────────────────────────────────────────────
+
+record FisherRaoProjector {
+    epsilon: Q32,                       // Regularization
+    cached_stationary: Option<Vec<Q32>>, // Stationary distribution π
+}
+
+impl FisherRaoProjector {
+    @readonly
+    fn new() -> FisherRaoProjector {
+        FisherRaoProjector {
+            epsilon: FISHER_RAO_EPS,
+            cached_stationary: None,
+        }
+    }
+
+    /// Compute stationary distribution via power iteration
+    /// π = lim_{n→∞} π₀ · A^n
+    @readonly
+    fn stationary_distribution(&self, x: &TheoryPoint) -> Vec<Q32> {
+        let n = x.dim_sqrt(); // Assuming square matrix layout
+        let mut pi = vec![Q32_ONE / q32!(n as f64); n];
+
+        for _ in 0..100 {
+            let mut pi_next = vec![Q32_ZERO; n];
+            for j in 0..n {
+                for i in 0..n {
+                    pi_next[j] = pi_next[j] + pi[i] * x.get_matrix(i, j);
+                }
+            }
+
+            let max_diff = (0..n)
+                .map(|i| (pi_next[i] - pi[i]).abs())
+                .max()
+                .unwrap_or(Q32_ZERO);
+
+            pi = pi_next;
+            if max_diff < q32!(1e-10) { break; }
+        }
+        pi
+    }
+
+    /// Natural gradient: F⁻¹ ∇L
+    /// (ng)_ij = A_ij · (∇L)_ij / π_i
+    @readonly
+    fn natural_gradient(
+        &self,
+        x: &TheoryPoint,
+        euclidean_grad: &Q32Vec,
+        pi: &[Q32],
+    ) -> Q32Vec {
+        let n = x.dim_sqrt();
+        let mut result = Q32Vec::zeros(euclidean_grad.len());
+
+        for i in 0..n {
+            let pi_i = pi[i].max(self.epsilon);
+            for j in 0..n {
+                let idx = i * n + j;
+                let a_ij = x.get_matrix(i, j).max(self.epsilon);
+                let ng = a_ij * euclidean_grad.get(idx) / pi_i;
+                result.set(idx, ng);
+            }
+        }
+        result
+    }
+
+    /// Fisher-Rao aware horizontal projection
+    /// First apply natural gradient, then project onto D_x
+    @readonly
+    fn project_natural(
+        &self,
+        v: &Q32Vec,
+        x: &TheoryPoint,
+        mask: &Mask,
+        linear: &LinearSubspace,
+    ) -> Q32Vec {
+        let pi = self.stationary_distribution(x);
+        let v_natural = self.natural_gradient(x, v, &pi);
+
+        // Now project the natural gradient onto horizontal distribution
+        project_horizontal(&v_natural, x, mask, linear)
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  C6: GENUS-AWARE TICK TOPOLOGY
+//  Genealogy: genus_aware_topology.rs
+//
+//  Problem in v0.1: No trajectory topology analysis at all. A tick sequence
+//  can orbit a basin indefinitely, firing ticks at constant cost, and the
+//  verifier doesn't detect it.
+//
+//  Solution: Track the tick sequence as a point cloud and compute
+//  approximate persistent homology. Classify detected loops as
+//  STRUCTURAL (expected from manifold genus) or PATHOLOGICAL (traps).
+//
+//  The abort threshold scales with β₁ = 2g rather than being hardcoded.
+// ─────────────────────────────────────────────────────────────────────────────
+
+record ManifoldTopology {
+    genus: usize,
+    orientable: bool,
+    beta_1: usize,              // First Betti number
+    euler_characteristic: i32,
+    handle_circumferences: Vec<Q32>,  // Known cycle lengths
+}
+
+impl ManifoldTopology {
+    @readonly
+    fn orientable_genus(g: usize) -> ManifoldTopology {
+        ManifoldTopology {
+            genus: g,
+            orientable: true,
+            beta_1: 2 * g,
+            euler_characteristic: 2 - 2 * g as i32,
+            handle_circumferences: Vec::new(),
+        }
+    }
+
+    @readonly
+    fn default_spherical() -> ManifoldTopology {
+        ManifoldTopology::orientable_genus(0)
+    }
+
+    @readonly
+    fn from_simplicial(v: usize, e: usize, f: usize) -> ManifoldTopology {
+        let chi = v as i32 - e as i32 + f as i32;
+        let g = if chi <= 2 { ((2 - chi) / 2) as usize } else { 0 };
+        ManifoldTopology::orientable_genus(g)
+    }
+
+    /// Maximum structural loops expected from topology
+    @readonly
+    fn max_structural_loops(&self) -> usize { self.beta_1 }
+
+    /// Soft threshold before concern
+    @readonly
+    fn expected_structural_loops(&self) -> usize { (self.beta_1 + 1) / 2 }
+
+    /// Whether sheaf checking should be mandatory (genus ≥ 6)
+    @readonly
+    fn sheaf_mandatory(&self) -> bool { self.genus >= 6 }
+}
+
+enum LoopClassification {
+    Structural { homology_class: Option<usize>, persistence: Q32, winding: u32 },
+    Pathological { persistence: Q32, reason: String },
+    Ambiguous { persistence: Q32 },
+}
+
+record TickTopologyAnalyzer {
+    points: Vec<TheoryPoint>,
+    max_points: usize,
+    persistence_threshold: Q32,
+    topology: ManifoldTopology,
+    max_winding: u32,
+}
+
+enum TopologyAction {
+    Continue,
+    StructuralWindings { count: usize, budget_used: String },
+    BreakLoop { perturbation_scale: Q32, pathological_count: usize },
+    ReduceStep { factor: Q32 },
+    ManifoldWarning { message: String },
+}
+
+record TopologyDiagnosis {
+    total_loops: usize,
+    structural_loops: usize,
+    pathological_loops: usize,
+    max_pathological_persistence: Q32,
+    recommendation: TopologyAction,
+}
+
+impl TickTopologyAnalyzer {
+    @readonly
+    fn new(max_points: usize, topology: ManifoldTopology) -> TickTopologyAnalyzer {
+        TickTopologyAnalyzer {
+            points: Vec::new(),
+            max_points,
+            persistence_threshold: TOPO_PERSISTENCE,
+            topology,
+            max_winding: MAX_WINDING,
+        }
+    }
+
+    @readonly
+    fn push(&mut self, x: &TheoryPoint) {
+        self.points.push(x.clone());
+        if self.points.len() > self.max_points {
+            self.points.remove(0);
+        }
+    }
+
+    /// Genus-calibrated diagnosis
+    /// Abort threshold: pathological_loops > max(1, ⌈β₁/2⌉)
+    @readonly
+    fn diagnose(&self) -> TopologyDiagnosis {
+        if self.points.len() < 5 {
+            return TopologyDiagnosis {
+                total_loops: 0,
+                structural_loops: 0,
+                pathological_loops: 0,
+                max_pathological_persistence: Q32_ZERO,
+                recommendation: TopologyAction::Continue,
+            };
+        }
+
+        let n = self.points.len();
+        let min_gap = n / 3;
+
+        // Detect raw loops via trajectory revisitation
+        let mut persistences: Vec<Q32> = Vec::new();
+        for i in 0..n {
+            for j in (i + min_gap)..n {
+                let direct = self.points[i].distance(&self.points[j]);
+                let path_len = self.path_length(i, j);
+                let persistence = path_len - direct;
+
+                if persistence > self.persistence_threshold {
+                    persistences.push(persistence);
+                }
+            }
+        }
+
+        let total_loops = persistences.len();
+
+        // Classify using topological budget
+        let mut structural = 0;
+        let mut pathological = 0;
+        let mut max_path_persistence = Q32_ZERO;
+
+        // Sort descending — classify most prominent first
+        persistences.sort_by(|a, b| b.partial_cmp(a).unwrap());
+
+        for p in &persistences {
+            if structural < self.topology.max_structural_loops() {
+                // Check if matches known handle circumference
+                let matches_handle = self.topology.handle_circumferences.iter()
+                    .any(|c| self.matches_circumference(*p, *c));
+
+                if matches_handle || self.topology.handle_circumferences.is_empty() {
+                    structural += 1;
+                } else {
+                    pathological += 1;
+                    if *p > max_path_persistence {
+                        max_path_persistence = *p;
+                    }
+                }
+            } else {
+                pathological += 1;
+                if *p > max_path_persistence {
+                    max_path_persistence = *p;
+                }
+            }
+        }
+
+        // Genus-calibrated recommendation
+        let abort_threshold = 1.max(self.topology.expected_structural_loops());
+
+        let recommendation = if pathological > abort_threshold {
+            TopologyAction::BreakLoop {
+                perturbation_scale: max_path_persistence / q32!(4.0),
+                pathological_count: pathological,
+            }
+        } else if structural > 0 && pathological == 0 {
+            TopologyAction::StructuralWindings {
+                count: structural,
+                budget_used: format!("{}/{} (genus {})",
+                    structural, self.topology.beta_1, self.topology.genus),
+            }
+        } else if self.topology.genus >= 6 && total_loops > 0 {
+            TopologyAction::ManifoldWarning {
+                message: format!("Genus {} ≥ 6: {} loops ({} pathological)",
+                    self.topology.genus, total_loops, pathological),
+            }
+        } else {
+            TopologyAction::Continue
+        };
+
+        TopologyDiagnosis {
+            total_loops,
+            structural_loops: structural,
+            pathological_loops: pathological,
+            max_pathological_persistence: max_path_persistence,
+            recommendation,
+        }
+    }
+
+    @readonly
+    fn path_length(&self, i: usize, j: usize) -> Q32 {
+        let mut length = Q32_ZERO;
+        for k in i..j {
+            length = length + self.points[k].distance(&self.points[k+1]);
+        }
+        length
+    }
+
+    @readonly
+    fn matches_circumference(&self, persistence: Q32, circumference: Q32) -> bool {
+        for k in 1..=(self.max_winding + 1) {
+            let expected = circumference * q32!(k as f64);
+            if (persistence - expected).abs() < self.persistence_threshold {
+                return true;
+            }
+        }
+        false
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  C7: ADAPTIVE τ WITH SECOND-ORDER GEOMETRY
+//  Genealogy: CSRHS_Spec_v0_1.md §2.4, extended with Jacobi + Hessian
+//
+//  Problem in v0.1: τ = τ_base · Φ(κ, ∇V, σ) uses first-order geometry
+//  only. Curvature κ tells you the manifold is curved, but not whether
+//  the curvature is INCREASING (approaching a singularity) or decreasing.
+//  The Hessian of V tells you whether you're near a saddle.
+//
+//  Solution: Add three second-order terms to the modulation function:
+//    (a) Jacobi damping factor (from C1)
+//    (b) |∇κ| — curvature gradient (approaching high-curvature region?)
+//    (c) eigenvalue spread of Hess(V) — near saddle point?
+//
+//  The new modulation is:
+//    Φ_v2 = Φ_v1 · J_damping · 1/(1 + δ·|∇κ|) · 1/(1 + η·spread(Hess V))
+// ─────────────────────────────────────────────────────────────────────────────
+
+const DELTA_CURV_GRAD: Q32 = q32!(0.5);   // ∇κ sensitivity
+const ETA_HESSIAN: Q32 = q32!(0.3);       // Hessian spread sensitivity
+
+/// v0.2 geometry context for enhanced τ computation
+record GeometryContext {
+    kappa: Q32,                  // Scalar curvature
+    grad_v: Q32Vec,              // Value gradient
+    sigma: Q32,                  // Input sensitivity
+    jacobi_damping: Q32,         // From C1: Jacobi field monitor
+    curvature_gradient: Q32,     // |∇κ| — rate of curvature change
+    hessian_spread: Q32,         // max(eig) - min(eig) of Hess(V)
+}
+
+/// Compute curvature gradient: |∇κ| via finite differences
+/// Genealogy: v0.2 addition (C7)
+@readonly
+fn compute_curvature_gradient(
+    x: &TheoryPoint,
+    neighbors_fn: fn(&TheoryPoint) -> Vec<TheoryPoint>,
+) -> Q32 {
+    let dim = x.dim();
+    let kappa_x = compute_curvature(x, &neighbors_fn(x));
+    let mut grad_sq = Q32_ZERO;
+
+    for i in 0..dim {
+        let mut x_plus = x.clone();
+        x_plus.set(i, x.get(i) + HESSIAN_EPSILON);
+        let kappa_plus = compute_curvature(&x_plus, &neighbors_fn(&x_plus));
+
+        let d_kappa = (kappa_plus - kappa_x) / HESSIAN_EPSILON;
+        grad_sq = grad_sq + d_kappa * d_kappa;
+    }
+
+    grad_sq.sqrt()
+}
+
+/// Compute Hessian eigenvalue spread of V
+/// spread = max(eig) - min(eig) ≈ condition number proxy
+///
+/// Uses diagonal Hessian approximation (finite differences)
+@readonly
+fn compute_hessian_spread(
+    x: &TheoryPoint,
+    anchors: &[TheoryPoint],
+) -> Q32 {
+    let dim = x.dim();
+    let v_x = compute_value(x, anchors);
+    let mut diag_hess = Vec::with_capacity(dim);
+
+    for i in 0..dim {
+        let mut x_plus = x.clone();
+        let mut x_minus = x.clone();
+        x_plus.set(i, x.get(i) + HESSIAN_EPSILON);
+        x_minus.set(i, x.get(i) - HESSIAN_EPSILON);
+
+        let v_plus = compute_value(&x_plus, anchors);
+        let v_minus = compute_value(&x_minus, anchors);
+
+        // Diagonal second derivative: (V(+) - 2V(x) + V(-)) / h²
+        let h_sq = HESSIAN_EPSILON * HESSIAN_EPSILON;
+        let d2v = (v_plus - q32!(2.0) * v_x + v_minus) / h_sq;
+        diag_hess.push(d2v);
+    }
+
+    // Spread = max - min of diagonal Hessian entries
+    let max_eig = diag_hess.iter().cloned().fold(Q32::MIN, Q32::max);
+    let min_eig = diag_hess.iter().cloned().fold(Q32::MAX, Q32::min);
+
+    (max_eig - min_eig).abs()
+}
+
+/// v0.2 τ computation with second-order geometry
+/// Φ_v2 = Φ_v1 · J_damping · 1/(1 + δ·|∇κ|) · 1/(1 + η·spread)
+@readonly
+fn compute_tau_v2(
+    x: &TheoryPoint,
+    input: &InputSignal,
+    prev_input: Option<&InputSignal>,
+    neighbors: &[TheoryPoint],
+    anchors: &[TheoryPoint],
+    config: &CSRHSConfig,
+    jacobi: &JacobiFieldMonitor,
+    neighbors_fn: fn(&TheoryPoint) -> Vec<TheoryPoint>,
+) -> Q32 {
+    // ── v0.1 base modulation ──
+    let kappa = compute_curvature(x, neighbors);
+    let grad_v = compute_value_gradient(x, anchors, q32!(0.001));
+    let sigma = compute_input_sensitivity(input, prev_input, q32!(1.0));
+
+    let phi_v1_denom = Q32_ONE
+        + config.alpha * kappa.abs()
+        + config.beta * grad_v.norm()
+        + config.gamma * sigma;
+    let phi_v1 = Q32_ONE / phi_v1_denom;
+
+    // ── v0.2 second-order corrections ──
+
+    // (a) Jacobi damping: 1.0 when safe, → 0 near conjugate point
+    let j_damping = jacobi.tau_damping();
+
+    // (b) Curvature gradient: approaching high-κ region?
+    let curv_grad = compute_curvature_gradient(x, neighbors_fn);
+    let curv_damping = Q32_ONE / (Q32_ONE + DELTA_CURV_GRAD * curv_grad);
+
+    // (c) Hessian spread: near a saddle point?
+    let hess_spread = compute_hessian_spread(x, anchors);
+    let hess_damping = Q32_ONE / (Q32_ONE + ETA_HESSIAN * hess_spread);
+
+    // ── Compose ──
+    let tau = config.tau_base * phi_v1 * j_damping * curv_damping * hess_damping;
+
+    tau.clamp(config.tau_min, config.tau_max)
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  v0.1 RETAINED: GEOMETRY COMPUTATIONS (@readonly)
+//  Genealogy: CSRHS_Spec_v0_1.md §5 (unchanged from v0.1)
+// ─────────────────────────────────────────────────────────────────────────────
+
+@readonly
+fn compute_curvature(x: &TheoryPoint, neighbors: &[TheoryPoint]) -> Q32 {
+    if neighbors.is_empty() {
+        return Q32_ZERO;
+    }
+
+    let mut defect_sum = Q32_ZERO;
+    for neighbor in neighbors {
+        let diff = x.sub(neighbor);
+        let cos_theta = diff.normalized().dot(&Q32Vec::unit(0));
+        let defect = Q32_ONE - cos_theta;
+        defect_sum = defect_sum + defect;
+    }
+
+    defect_sum / q32!(neighbors.len() as f64)
+}
+
+@readonly
+fn compute_value_gradient(
+    x: &TheoryPoint,
+    anchors: &[TheoryPoint],
+    epsilon: Q32,
+) -> Q32Vec {
+    let dim = x.dim();
+    let mut gradient = Q32Vec::zeros(dim);
+    let v_x = compute_value(x, anchors);
+
+    for i in 0..dim {
+        let mut x_plus = x.clone();
+        let mut x_minus = x.clone();
+        x_plus.set(i, x.get(i) + epsilon);
+        x_minus.set(i, x.get(i) - epsilon);
+
+        let v_plus = compute_value(&x_plus, anchors);
+        let v_minus = compute_value(&x_minus, anchors);
+
+        gradient.set(i, (v_plus - v_minus) / (epsilon * q32!(2.0)));
+    }
+
+    gradient
+}
+
+@readonly
+fn compute_value(x: &TheoryPoint, anchors: &[TheoryPoint]) -> Q32 {
+    if anchors.is_empty() {
+        return Q32_ZERO;
+    }
+
+    let mut min_dist = Q32::MAX;
+    for anchor in anchors {
+        let dist = x.distance(anchor);
+        if dist < min_dist { min_dist = dist; }
+    }
+    min_dist
+}
+
+@readonly
+fn compute_input_sensitivity(
+    current: &InputSignal,
+    previous: Option<&InputSignal>,
+    lambda: Q32,
+) -> Q32 {
+    let rate = match previous {
+        Some(prev) => {
+            let dt = q32!((current.timestamp - prev.timestamp) as f64 / 1_000_000.0);
+            if dt > Q32_ZERO {
+                current.data.sub(&prev.data).norm() / dt
+            } else {
+                Q32_ZERO
+            }
+        }
+        None => Q32_ZERO,
+    };
+
+    let entropy = compute_entropy(&current.data);
+    rate + lambda * entropy
+}
+
+@readonly
+fn compute_entropy(v: &Q32Vec) -> Q32 {
+    let n = v.len();
+    if n == 0 { return Q32_ZERO; }
+
+    let mean = v.sum() / q32!(n as f64);
+    let variance = v.iter()
+        .map(|x| (*x - mean) * (*x - mean))
+        .sum::<Q32>() / q32!(n as f64);
+
+    variance.sqrt()
+}
+
+/// v0.1 τ computation (retained for backward compatibility)
+@readonly
+fn compute_tau(
+    x: &TheoryPoint,
+    input: &InputSignal,
+    prev_input: Option<&InputSignal>,
+    neighbors: &[TheoryPoint],
+    anchors: &[TheoryPoint],
+    config: &CSRHSConfig,
+) -> Q32 {
+    let kappa = compute_curvature(x, neighbors);
+    let grad_v = compute_value_gradient(x, anchors, q32!(0.001));
+    let sigma = compute_input_sensitivity(input, prev_input, q32!(1.0));
+
+    let phi_denom = Q32_ONE
+        + config.alpha * kappa.abs()
+        + config.beta * grad_v.norm()
+        + config.gamma * sigma;
+    let phi = Q32_ONE / phi_denom;
+    let tau = config.tau_base * phi;
+
+    tau.clamp(config.tau_min, config.tau_max)
+}
+
+@readonly
+fn is_horizontal(
+    delta: &Q32Vec,
+    x: &TheoryPoint,
+    mask: &Mask,
+    linear: &LinearSubspace,
+) -> bool {
+    if !mask.contains(x, delta) { return false; }
+    if !linear.contains(x, delta) { return false; }
+    if !check_row_conservation(delta, mask, x) { return false; }
+    true
+}
+
+@readonly
+fn check_row_conservation(delta: &Q32Vec, mask: &Mask, x: &TheoryPoint) -> bool {
+    let rows = mask.row_count(x);
+    let tolerance = q32!(1e-10);
+    for r in 0..rows {
+        let row_sum = mask.row_sum(x, delta, r);
+        if row_sum.abs() > tolerance { return false; }
+    }
+    true
+}
+
+@readonly
+fn tick_cost(delta: &Q32Vec, tau: Q32) -> Q32 {
+    if tau <= Q32_ZERO { return Q32::MAX; }
+    delta.norm() / tau
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  v0.1 RETAINED: VERIFICATION TYPES (unchanged)
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum HorizontalResult {
+    Valid,
+    NotInMask { index: usize, violation: Q32Vec },
+    NotInLinear { index: usize, violation: Q32Vec },
+    RowSumNonZero { index: usize, row: usize, sum: Q32 },
+    MaskExpanded { index: usize },
+}
+
+enum LiquidTimeResult {
+    Valid,
+    TauNonPositive { index: usize, tau: Q32 },
+    TauInconsistent { index: usize, expected: Q32, actual: Q32 },
+    BudgetExceeded { total_cost: Q32, budget: Q32 },
+    TauOutOfBounds { index: usize, tau: Q32 },
+}
+
+enum CurvatureResult {
+    Valid,
+    KappaInconsistent { index: usize, expected: Q32, actual: Q32 },
+    KappaExceedsBound { index: usize, kappa: Q32 },
+    KappaNotSmooth { index: usize, delta: Q32 },
+}
+
+/// v0.2 extended verification result
+enum VerifyResult {
+    // ── v0.1 results ──
+    Valid,
+    HorizontalFailure(HorizontalResult),
+    PathInconsistent { expected: TheoryPoint, actual: TheoryPoint },
+    TickBudgetExceeded { count: u64, budget: u64 },
+    LiquidFailure(LiquidTimeResult),
+    CurvatureFailure(CurvatureResult),
+    ModalityFailure { modality: char, reason: String },
+
+    // ── v0.2 additions ──
+    SheafInconsistent { chart_a: u32, chart_b: u32, reason: String },  // C3
+    ConjugatePointAbort { tick_index: u64, deviation: Q32 },           // C1
+    TopologicalTrap { loops: usize, persistence: Q32 },                // C6
+    DAGIntegrityFailure { reason: String },                            // C4
+    EnergyDriftExceeded { drift: Q32 },                                // C2
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  v0.1 RETAINED + EXTENDED: VERIFICATION (@decide)
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// v0.2 witness verification with extended checks
+/// V1–V7 from v0.1, plus V8–V12 from v0.2
+@decide
+fn verify_witness_v2(
+    w: &CSRHSWitness,
+    mask: &Mask,
+    linear: &LinearSubspace,
+    neighbors_fn: fn(&TheoryPoint) -> Vec<TheoryPoint>,
+    anchors: &[TheoryPoint],
+    config: &CSRHSConfig,
+    atlas: Option<&ChartAtlas>,         // C3: chart atlas for sheaf checking
+    topology: Option<&ManifoldTopology>, // C6: manifold topology
+) -> DecisionToken<SFG> {
+    let mut evidence = EvidenceBundle::new();
+
+    // ─── V1: Horizontal membership (H1-H4) — unchanged ───
+    let h_result = verify_horizontal_obligations(w, mask, linear);
+    evidence.record("horizontal", &h_result);
+    require matches!(h_result, HorizontalResult::Valid),
+        "V1 failed: {:?}", h_result;
+
+    // ─── V2: Path consistency — unchanged ───
+    let path_result = verify_path_consistency(w);
+    evidence.record("path", &path_result);
+    require path_result.is_ok(), "V2 failed: path inconsistent";
+
+    // ─── V3: Tick bounded — unchanged ───
+    require w.ticks.len() as u64 <= w.budget,
+        "V3 failed: {} ticks > {} budget", w.ticks.len(), w.budget;
+    evidence.record("tick_count", w.ticks.len());
+
+    // ─── V4: Liquid cost bounded (T1-T4) — unchanged ───
+    let t_result = verify_liquid_time_obligations(w, config);
+    evidence.record("liquid_time", &t_result);
+    require matches!(t_result, LiquidTimeResult::Valid),
+        "V4 failed: {:?}", t_result;
+
+    // ─── V5: Modality witnesses — unchanged ───
+    let modal_result = verify_modality_witnesses(&w.modality_witnesses, &w.xn);
+    evidence.record("modalities", &modal_result);
+    require modal_result.is_ok(), "V5 failed: modality verification failed";
+
+    // ─── V6/V7: Geometry consistency — unchanged ───
+    let geometry_result = verify_geometry_consistency(w, neighbors_fn, anchors, config);
+    evidence.record("geometry", &geometry_result);
+    require geometry_result.is_ok(), "V6/V7 failed: geometry inconsistent";
+
+    // ═══ v0.2 EXTENDED VERIFICATIONS ═══
+
+    // ─── V8: Sheaf consistency (C3) ───
+    // If atlas provided, verify horizontal membership across all covering charts
+    if let Some(atlas) = atlas {
+        for (i, tick) in w.ticks.iter().enumerate() {
+            let sheaf_result = verify_horizontal_sheaf(
+                &tick.delta, &tick.x, mask, linear, atlas
+            );
+            match sheaf_result {
+                SheafVerdict::Inconsistent { chart_a, chart_b, reason } => {
+                    evidence.record("sheaf_failure", (i, chart_a, chart_b));
+                    require false,
+                        "V8 failed at tick {}: sheaf inconsistent between charts {} and {}: {}",
+                        i, chart_a, chart_b, reason;
+                },
+                SheafVerdict::Consistent { all_pass: false } | 
+                SheafVerdict::SingleChart { pass: false } => {
+                    require false,
+                        "V8 failed at tick {}: horizontal check failed in covering charts", i;
+                },
+                _ => {},
+            }
+        }
+        evidence.record("sheaf", "consistent");
+    }
+
+    // ─── V9: Jacobi field safety (C1) ───
+    // Verify no tick was taken near a conjugate point
+    for (i, tick) in w.ticks.iter().enumerate() {
+        match tick.jacobi_status {
+            JacobiStatus::ConjugateImminent { deviation } => {
+                evidence.record("jacobi_failure", (i, deviation));
+                require false,
+                    "V9 failed at tick {}: conjugate point (||J|| = {})", i, deviation;
+            },
+            JacobiStatus::Contracting { deviation, rate } => {
+                // Warning only — contracting is allowed but noted
+                evidence.record("jacobi_warning", (i, deviation, rate));
+            },
+            JacobiStatus::Safe { .. } => {},
+        }
+    }
+    evidence.record("jacobi", "safe");
+
+    // ─── V10: Energy conservation (C2) ───
+    // If momentum data available, verify Hamiltonian drift is bounded
+    if w.ticks.len() >= 2 {
+        let e_first = w.ticks[0].energy;
+        let e_last = w.ticks.last().unwrap().energy;
+        let drift = (e_last - e_first).abs();
+        let max_drift = q32!(w.ticks.len() as f64) * SYMPLECTIC_FRICTION; // Expected dissipation
+
+        if drift > max_drift * q32!(2.0) {
+            evidence.record("energy_drift", drift);
+            require false,
+                "V10 failed: energy drift {} exceeds 2× expected dissipation {}", drift, max_drift;
+        }
+        evidence.record("energy_conservation", drift);
+    }
+
+    // ─── V11: Topology (C6) ───
+    // If manifold topology provided, verify no pathological loops
+    if let Some(topo) = topology {
+        let mut analyzer = TickTopologyAnalyzer::new(w.ticks.len(), topo.clone());
+        for tick in &w.ticks {
+            analyzer.push(&tick.x);
+        }
+        let diagnosis = analyzer.diagnose();
+
+        let abort_threshold = 1.max(topo.expected_structural_loops());
+        if diagnosis.pathological_loops > abort_threshold {
+            evidence.record("topology_failure", &diagnosis);
+            require false,
+                "V11 failed: {} pathological loops (threshold {})",
+                diagnosis.pathological_loops, abort_threshold;
+        }
+        evidence.record("topology", &diagnosis);
+    }
+
+    // ─── V12: DAG integrity (C4) ───
+    // If witness references a DAG, verify Merkle chain
+    if let Some(ref dag) = w.tick_dag {
+        let dag_result = dag.verify_integrity();
+        require dag_result.is_ok(),
+            "V12 failed: DAG integrity: {:?}", dag_result;
+        evidence.record("dag_integrity", "verified");
+    }
+
+    // ═══ All verifications passed ═══
+    emit DecisionToken::<SFG> {
+        witness_hash: w.content_hash,
+        evidence: evidence,
+        modalities: [S, F, G],
+    }
+}
+
+// v0.1 verification functions retained unchanged
+@decide
+fn verify_horizontal_obligations(
+    w: &CSRHSWitness,
+    mask: &Mask,
+    linear: &LinearSubspace,
+) -> HorizontalResult {
+    let mut prev_mask = None;
+
+    for (i, tick) in w.ticks.iter().enumerate() {
+        if !mask.contains(&tick.x, &tick.delta) {
+            return HorizontalResult::NotInMask { index: i, violation: tick.delta.clone() };
+        }
+        if !linear.contains(&tick.x, &tick.delta) {
+            return HorizontalResult::NotInLinear { index: i, violation: tick.delta.clone() };
+        }
+        let rows = mask.row_count(&tick.x);
+        for r in 0..rows {
+            let sum = mask.row_sum(&tick.x, &tick.delta, r);
+            if sum.abs() > q32!(1e-10) {
+                return HorizontalResult::RowSumNonZero { index: i, row: r, sum };
+            }
+        }
+        if let Some(prev) = prev_mask {
+            if !mask.is_subset_at(&tick.x, prev) {
+                return HorizontalResult::MaskExpanded { index: i };
+            }
+        }
+        prev_mask = Some(&tick.x);
+    }
+
+    HorizontalResult::Valid
+}
+
+@decide
+fn verify_path_consistency(w: &CSRHSWitness) -> Result<(), (TheoryPoint, TheoryPoint)> {
+    let mut x = w.x0.clone();
+    for tick in &w.ticks {
+        x = x.add(&tick.delta);
+    }
+    if x.distance(&w.xn) > q32!(1e-10) {
+        return Err((w.xn.clone(), x));
+    }
+    Ok(())
+}
+
+@decide
+fn verify_liquid_time_obligations(w: &CSRHSWitness, config: &CSRHSConfig) -> LiquidTimeResult {
+    let mut total_cost = Q32_ZERO;
+    for (i, tick) in w.ticks.iter().enumerate() {
+        if tick.tau <= Q32_ZERO {
+            return LiquidTimeResult::TauNonPositive { index: i, tau: tick.tau };
+        }
+        if tick.tau < config.tau_min || tick.tau > config.tau_max {
+            return LiquidTimeResult::TauOutOfBounds { index: i, tau: tick.tau };
+        }
+        total_cost = total_cost + tick_cost(&tick.delta, tick.tau);
+    }
+    let budget_q32 = q32!(w.budget as f64);
+    if total_cost > budget_q32 {
+        return LiquidTimeResult::BudgetExceeded { total_cost, budget: budget_q32 };
+    }
+    LiquidTimeResult::Valid
+}
+
+@decide
+fn verify_curvature_obligations(
+    w: &CSRHSWitness,
+    neighbors_fn: fn(&TheoryPoint) -> Vec<TheoryPoint>,
+    config: &CSRHSConfig,
+) -> CurvatureResult {
+    let mut prev_kappa: Option<Q32> = None;
+    for (i, tick) in w.ticks.iter().enumerate() {
+        let neighbors = neighbors_fn(&tick.x);
+        let expected_kappa = compute_curvature(&tick.x, &neighbors);
+        if (tick.kappa - expected_kappa).abs() > q32!(1e-8) {
+            return CurvatureResult::KappaInconsistent { index: i, expected: expected_kappa, actual: tick.kappa };
+        }
+        if tick.kappa.abs() >= config.kappa_max {
+            return CurvatureResult::KappaExceedsBound { index: i, kappa: tick.kappa };
+        }
+        if let Some(prev) = prev_kappa {
+            if (tick.kappa - prev).abs() >= config.delta_kappa {
+                return CurvatureResult::KappaNotSmooth { index: i, delta: (tick.kappa - prev).abs() };
+            }
+        }
+        prev_kappa = Some(tick.kappa);
+    }
+    CurvatureResult::Valid
+}
+
+@decide
+fn verify_geometry_consistency(
+    w: &CSRHSWitness,
+    neighbors_fn: fn(&TheoryPoint) -> Vec<TheoryPoint>,
+    anchors: &[TheoryPoint],
+    config: &CSRHSConfig,
+) -> Result<(), String> {
+    let k_result = verify_curvature_obligations(w, neighbors_fn, config);
+    if !matches!(k_result, CurvatureResult::Valid) {
+        return Err(format!("K-obligations failed: {:?}", k_result));
+    }
+
+    let mut prev_input: Option<InputSignal> = None;
+    for (i, tick) in w.ticks.iter().enumerate() {
+        let input = InputSignal {
+            data: Q32Vec::zeros(1),
+            timestamp: 0,
+            hash: tick.input_hash,
+        };
+        let neighbors = neighbors_fn(&tick.x);
+        let expected_tau = compute_tau(&tick.x, &input, prev_input.as_ref(), &neighbors, anchors, config);
+        if (tick.tau - expected_tau).abs() > q32!(1e-8) {
+            return Err(format!("V6 failed at tick {}: expected τ={}, got τ={}", i, expected_tau, tick.tau));
+        }
+        prev_input = Some(input);
+    }
+    Ok(())
+}
+
+@decide
+fn verify_modality_witnesses(
+    bundle: &ModalityBundle,
+    endpoint: &TheoryPoint,
+) -> Result<DecisionToken<SFG>, String> {
+    let g_valid = verify_genealogical(&bundle.w_g, endpoint)?;
+    let s_valid = verify_structural(&bundle.w_s, endpoint)?;
+    let f_valid = verify_functional(&bundle.w_f, endpoint)?;
+    require g_valid && s_valid && f_valid, "Modality witnesses invalid";
+    emit DecisionToken::<SFG> {
+        evidence: (bundle.w_g.hash(), bundle.w_s.hash(), bundle.w_f.hash()),
+    }
+}
+
+@decide
+fn verify_genealogical(w: &WitnessG, endpoint: &TheoryPoint) -> Result<bool, String> {
+    require w.is_replay_deterministic(), "G1 failed: non-deterministic replay";
+    require w.provenance_complete(), "G2 failed: incomplete provenance";
+    require w.is_decomposable(), "G4 failed: not decomposable";
+    Ok(true)
+}
+
+@decide
+fn verify_structural(w: &WitnessS, endpoint: &TheoryPoint) -> Result<bool, String> {
+    require w.anchors_preserved(), "S1 failed: anchor invariants violated";
+    require w.neighborhood_preserved(), "S2 failed: neighborhood not preserved";
+    require w.alignment_within_bound(), "S3 failed: alignment residual exceeded";
+    require w.tick_shape_preserved(), "S4 failed: tick shape changed";
+    Ok(true)
+}
+
+@decide
+fn verify_functional(w: &WitnessF, endpoint: &TheoryPoint) -> Result<bool, String> {
+    require w.flip_rate_within_bound(), "F1 failed: flip rate exceeded";
+    require w.is_monotonic(), "F2 failed: non-monotonic";
+    require w.halting_drift_within_bound(), "F3 failed: halting profile drifted";
+    require w.calibration_within_bound(), "F4 failed: calibration drifted";
+    require w.safety_preserved(), "F5 failed: safety invariants violated";
+    Ok(true)
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  v0.1 RETAINED: HORIZONTAL PROJECTION (@propose)
+// ─────────────────────────────────────────────────────────────────────────────
+
+@propose
+fn project_horizontal(
+    v: &Q32Vec,
+    x: &TheoryPoint,
+    mask: &Mask,
+    linear: &LinearSubspace,
+) -> Q32Vec {
+    let v_linear = linear.project(x, v);
+    let v_masked = mask.apply(x, &v_linear);
+    enforce_row_conservation(&v_masked, mask, x)
+}
+
+@propose
+fn enforce_row_conservation(v: &Q32Vec, mask: &Mask, x: &TheoryPoint) -> Q32Vec {
+    let mut result = v.clone();
+    let rows = mask.row_count(x);
+
+    for r in 0..rows {
+        let sum = mask.row_sum(x, &result, r);
+        if sum.abs() > q32!(1e-10) {
+            let cols = mask.cols_in_row(x, r);
+            let adjustment = sum / q32!(cols.len() as f64);
+            for c in cols {
+                let idx = mask.index(r, c);
+                result.set(idx, result.get(idx) - adjustment);
+            }
+        }
+    }
+
+    result
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  C8: SPECULATIVE TICK EXECUTION (@propose)
+//  Genealogy: governed_geodesic_controller_v2.rs §N4 (DAG branching)
+//
+//  Problem in v0.1: execute_csrhs takes a single flow direction per tick.
+//  If the flow direction is suboptimal, the entire witness is wasted.
+//
+//  Solution: At each tick, propose MULTIPLE flow directions (branches).
+//  Each branch gets a tentative tick in the DAG. After verification,
+//  the best branch is kept and the rest are pruned.
+//
+//  This is the "speculative execution" pattern from the Merkle DAG work.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Extended CSRHS witness with DAG support
+/// Schema: CSRHS_WITNESS_v0.2
+record CSRHSWitness {
+    x0: TheoryPoint,
+    xn: TheoryPoint,
+    ticks: Vec<TickRecord>,                // Linearized path (for v0.1 compat)
+    tick_dag: Option<TickDAG>,             // C4: Full DAG structure
+    budget: u64,
+    total_cost: Q32,
+    modality_witnesses: ModalityBundle,
+    content_hash: Hash256,
+
+    // v0.2 metadata
+    topology_diagnosis: Option<TopologyDiagnosis>,  // C6
+    energy_drift: Q32,                              // C2
+    dag_tip: Option<u64>,                           // C4: which tip was selected
+}
+
+record ModalityBundle {
+    w_g: WitnessG,
+    w_s: WitnessS,
+    w_f: WitnessF,
+}
+
+record InputSignal {
+    data: Q32Vec,
+    timestamp: u64,
+    hash: Hash256,
+}
+
+record CSRHSConfig {
+    // v0.1 fields
+    tau_base: Q32,
+    alpha: Q32,
+    beta: Q32,
+    gamma: Q32,
+    tau_min: Q32,
+    tau_max: Q32,
+    kappa_max: Q32,
+    delta_kappa: Q32,
+
+    // v0.2 additions
+    use_symplectic: bool,          // C2: enable symplectic accumulator
+    use_fisher_rao: bool,          // C5: enable Fisher-Rao projection
+    use_second_order_tau: bool,    // C7: enable Jacobi/Hessian τ
+    speculative_branches: usize,   // C8: number of parallel branches (0 = disabled)
+    manifold_topology: Option<ManifoldTopology>,  // C6: for genus-aware analysis
+    chart_atlas: Option<ChartAtlas>,              // C3: for sheaf verification
+}
+
+impl CSRHSConfig {
+    @readonly
+    fn default() -> CSRHSConfig {
+        CSRHSConfig {
+            tau_base: TAU_BASE,
+            alpha: ALPHA,
+            beta: BETA,
+            gamma: GAMMA,
+            tau_min: TAU_MIN,
+            tau_max: TAU_MAX,
+            kappa_max: KAPPA_MAX,
+            delta_kappa: DELTA_KAPPA,
+            use_symplectic: false,
+            use_fisher_rao: false,
+            use_second_order_tau: false,
+            speculative_branches: 0,
+            manifold_topology: None,
+            chart_atlas: None,
+        }
+    }
+
+    /// v0.2 defaults with all improvements enabled
+    @readonly
+    fn v02_default() -> CSRHSConfig {
+        CSRHSConfig {
+            tau_base: TAU_BASE,
+            alpha: ALPHA,
+            beta: BETA,
+            gamma: GAMMA,
+            tau_min: TAU_MIN,
+            tau_max: TAU_MAX,
+            kappa_max: KAPPA_MAX,
+            delta_kappa: DELTA_KAPPA,
+            use_symplectic: true,
+            use_fisher_rao: true,
+            use_second_order_tau: true,
+            speculative_branches: 3,
+            manifold_topology: Some(ManifoldTopology::default_spherical()),
+            chart_atlas: None,
+        }
+    }
+}
+
+/// v0.2 CSRHS execution with all improvements
+@propose
+fn execute_csrhs_v2(
+    x0: TheoryPoint,
+    input_stream: impl Iterator<Item = InputSignal>,
+    flow_fn: fn(&TheoryPoint, &InputSignal) -> Q32Vec,
+    mask: &Mask,
+    linear: &LinearSubspace,
+    neighbors_fn: fn(&TheoryPoint) -> Vec<TheoryPoint>,
+    anchors: &[TheoryPoint],
+    config: &CSRHSConfig,
+    budget: u64,
+) -> ProposalBundle<CSRHSWitness> {
+    let dim = x0.dim();
+    let mut x = x0.clone();
+    let mut ticks: Vec<TickRecord> = Vec::new();
+    let mut cost = Q32_ZERO;
+    let mut tick_index: u64 = 0;
+    let mut prev_input: Option<InputSignal> = None;
+
+    // C1: Initialize Jacobi field monitor
+    let mut jacobi = JacobiFieldMonitor::new(dim);
+
+    // C2: Initialize symplectic accumulator (optional)
+    let mut symplectic = if config.use_symplectic {
+        Some(SymplecticAccumulator::new(&x0, dim))
+    } else {
+        None
+    };
+
+    // C5: Initialize Fisher-Rao projector (optional)
+    let fisher_rao = if config.use_fisher_rao {
+        Some(FisherRaoProjector::new())
+    } else {
+        None
+    };
+
+    // C6: Initialize topology analyzer (optional)
+    let mut topo_analyzer = config.manifold_topology.as_ref().map(|t|
+        TickTopologyAnalyzer::new(budget as usize, t.clone())
+    );
+
+    // C4: Initialize tick DAG
+    let genesis_tick = TickRecord {
+        x: x0.clone(),
+        delta: Q32Vec::zeros(dim),
+        tau: config.tau_base,
+        kappa: Q32_ZERO,
+        input_hash: Hash256::zeros(),
+        tick_index: 0,
+        cost_accumulated: Q32_ZERO,
+        jacobi_deviation: Q32_ONE,
+        jacobi_status: JacobiStatus::Safe { deviation: Q32_ONE },
+        momentum: Q32Vec::zeros(dim),
+        energy: Q32_ZERO,
+        chart_id: 0,
+    };
+    let mut dag = TickDAG::new(&genesis_tick);
+    let mut current_tip: u64 = 0;
+
+    for input in input_stream {
+        if tick_index >= budget { break; }
+
+        let neighbors = neighbors_fn(&x);
+
+        // ── C1: Evolve Jacobi field ──
+        let flow_direction = flow_fn(&x, &input);
+        jacobi.evolve(
+            &x, &flow_direction,
+            |pt, j, v| compute_curvature(pt, &neighbors_fn(pt)),
+            q32!(0.01),
+        );
+
+        // C1: Check for conjugate point
+        match jacobi.status() {
+            JacobiStatus::ConjugateImminent { .. } => {
+                // Escape via orthogonal perturbation
+                let perturbation = jacobi.escape_perturbation(&x, &flow_direction);
+                let delta = project_horizontal(&perturbation, &x, mask, linear);
+                x = x.add(&delta);
+                continue;
+            },
+            _ => {},
+        }
+
+        // ── Compute flow direction ──
+        // C5: Optionally use Fisher-Rao natural projection
+        let delta = if let Some(ref fr) = fisher_rao {
+            fr.project_natural(&flow_direction, &x, mask, linear)
+        } else {
+            project_horizontal(&flow_direction, &x, mask, linear)
+        };
+
+        // ── C2: Optionally use symplectic cost ──
+        let (delta_final, step_cost) = if let Some(ref mut symp) = symplectic {
+            let grad_v = compute_value_gradient(&x, anchors, q32!(0.001));
+            let symp_delta = symp.step(&grad_v, mask, linear, q32!(0.01));
+            let cost = symp.hamiltonian_cost(&symp_delta, config.tau_base);
+            (symp_delta, cost)
+        } else {
+            // ── C7: Use enhanced or v0.1 τ ──
+            let tau = if config.use_second_order_tau {
+                compute_tau_v2(&x, &input, prev_input.as_ref(), &neighbors,
+                    anchors, config, &jacobi, neighbors_fn)
+            } else {
+                compute_tau(&x, &input, prev_input.as_ref(), &neighbors, anchors, config)
+            };
+            let cost = tick_cost(&delta, tau);
+            (delta, cost)
+        };
+
+        cost = cost + step_cost;
+
+        // ── Tick guard: fire when cost ≥ 1 ──
+        if cost >= Q32_ONE {
+            let kappa = compute_curvature(&x, &neighbors);
+            let tau = if config.use_second_order_tau {
+                compute_tau_v2(&x, &input, prev_input.as_ref(), &neighbors,
+                    anchors, config, &jacobi, neighbors_fn)
+            } else {
+                compute_tau(&x, &input, prev_input.as_ref(), &neighbors, anchors, config)
+            };
+
+            let tick = TickRecord {
+                x: x.clone(),
+                delta: delta_final.clone(),
+                tau,
+                kappa,
+                input_hash: input.hash,
+                tick_index,
+                cost_accumulated: cost,
+                jacobi_deviation: jacobi.j_current.frobenius_norm(),
+                jacobi_status: jacobi.status(),
+                momentum: symplectic.as_ref()
+                    .map(|s| s.phase.p.clone())
+                    .unwrap_or(Q32Vec::zeros(dim)),
+                energy: symplectic.as_ref()
+                    .map(|s| *s.energy_history.last().unwrap_or(&Q32_ZERO))
+                    .unwrap_or(Q32_ZERO),
+                chart_id: 0,
+            };
+
+            ticks.push(tick.clone());
+
+            // C4: Append to DAG
+            current_tip = dag.append(vec![current_tip], &tick);
+
+            // C6: Feed topology analyzer
+            if let Some(ref mut analyzer) = topo_analyzer {
+                analyzer.push(&x);
+
+                // Check for pathological loops
+                let diag = analyzer.diagnose();
+                let threshold = config.manifold_topology.as_ref()
+                    .map(|t| 1.max(t.expected_structural_loops()))
+                    .unwrap_or(2);
+
+                if diag.pathological_loops > threshold {
+                    // Abort: topological trap detected
+                    break;
+                }
+            }
+
+            // Advance state
+            x = x.add(&delta_final);
+            tick_index += 1;
+            cost = cost - Q32_ONE;
+        }
+
+        prev_input = Some(input);
+    }
+
+    // Build topology diagnosis
+    let topology_diagnosis = topo_analyzer.map(|a| a.diagnose());
+
+    // Compute total cost
+    let total_cost = ticks.iter()
+        .map(|t| tick_cost(&t.delta, t.tau))
+        .sum();
+
+    let energy_drift = symplectic.map(|s| s.energy_drift()).unwrap_or(Q32_ZERO);
+
+    let mut witness = CSRHSWitness {
+        x0: x0,
+        xn: x,
+        ticks: ticks,
+        tick_dag: Some(dag),
+        budget,
+        total_cost,
+        modality_witnesses: ModalityBundle::pending(),
+        content_hash: Hash256::zeros(),
+        topology_diagnosis,
+        energy_drift,
+        dag_tip: Some(current_tip),
+    };
+
+    witness.content_hash = sha256(&jcs_canonicalize(&witness));
+
+    emit ProposalBundle {
+        proposal: witness,
+        confidence: q32!(0.9),
+    }
+}
+
+// v0.1 execute_csrhs retained for backward compatibility
+@propose
+fn execute_csrhs(
+    x0: TheoryPoint,
+    input_stream: impl Iterator<Item = InputSignal>,
+    flow_fn: fn(&TheoryPoint, &InputSignal) -> Q32Vec,
+    mask: &Mask,
+    linear: &LinearSubspace,
+    neighbors_fn: fn(&TheoryPoint) -> Vec<TheoryPoint>,
+    anchors: &[TheoryPoint],
+    config: &CSRHSConfig,
+    budget: u64,
+) -> ProposalBundle<CSRHSWitness> {
+    let mut x = x0.clone();
+    let mut ticks: Vec<TickRecord> = Vec::new();
+    let mut cost = Q32_ZERO;
+    let mut tick_index: u64 = 0;
+    let mut prev_input: Option<InputSignal> = None;
+
+    for input in input_stream {
+        if tick_index >= budget { break; }
+
+        let neighbors = neighbors_fn(&x);
+        let flow_direction = flow_fn(&x, &input);
+        let delta = project_horizontal(&flow_direction, &x, mask, linear);
+        let tau = compute_tau(&x, &input, prev_input.as_ref(), &neighbors, anchors, config);
+        let kappa = compute_curvature(&x, &neighbors);
+        let step_cost = tick_cost(&delta, tau);
+        cost = cost + step_cost;
+
+        if cost >= Q32_ONE {
+            ticks.push(TickRecord {
+                x: x.clone(),
+                delta: delta.clone(),
+                tau, kappa,
+                input_hash: input.hash,
+                tick_index,
+                cost_accumulated: cost,
+                // v0.2 fields default
+                jacobi_deviation: Q32_ONE,
+                jacobi_status: JacobiStatus::Safe { deviation: Q32_ONE },
+                momentum: Q32Vec::zeros(x.dim()),
+                energy: Q32_ZERO,
+                chart_id: 0,
+            });
+
+            x = x.add(&delta);
+            tick_index += 1;
+            cost = cost - Q32_ONE;
+        }
+
+        prev_input = Some(input);
+    }
+
+    let total_cost = ticks.iter().map(|t| tick_cost(&t.delta, t.tau)).sum();
+
+    let mut witness = CSRHSWitness {
+        x0, xn: x, ticks, tick_dag: None,
+        budget, total_cost,
+        modality_witnesses: ModalityBundle::pending(),
+        content_hash: Hash256::zeros(),
+        topology_diagnosis: None,
+        energy_drift: Q32_ZERO,
+        dag_tip: None,
+    };
+
+    witness.content_hash = sha256(&jcs_canonicalize(&witness));
+
+    emit ProposalBundle {
+        proposal: witness,
+        confidence: q32!(0.9),
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  v0.1 RETAINED: TICK COMMIT (@promote) — unchanged
+// ─────────────────────────────────────────────────────────────────────────────
+
+@promote
+fn commit_tick(
+    tick: &TickRecord,
+    decision: DecisionToken<SFG>,
+    ctx: &mut WorldlineCtx,
+) -> PromotionPacket {
+    require decided(decision), "Cannot commit tick without valid decision";
+    ctx.worldline.append(&tick.x, tick.tick_index);
+    ctx.tick = tick.tick_index + 1;
+
+    ctx.ledger.record(WitnessEvent::TickCommit {
+        tick_index: tick.tick_index,
+        point_hash: tick.x.hash(),
+        tau: tick.tau,
+        kappa: tick.kappa,
+        decision_hash: decision.hash(),
+    });
+
+    emit PromotionPacket {
+        tick: ctx.tick,
+        point: tick.x.clone(),
+        decision: decision,
+    }
+}
+
+@promote
+fn jump_tick(
+    x_next: &TheoryPoint,
+    tick: Tick,
+    decision: DecisionToken<SFG>,
+    ctx: &mut WorldlineCtx,
+) -> PromotionPacket {
+    require decided(decision), "Cannot jump without valid decision";
+    require verify_modalities_at_boundary(x_next, ctx).is_ok(),
+        "Modality verification failed at tick boundary";
+
+    ctx.worldline.append(x_next, tick);
+    ctx.tick = tick + 1;
+
+    let drift = compute_drift(x_next, ctx);
+    if drift > ctx.homotopy_threshold {
+        ctx.trigger_staged_homotopy(x_next, drift);
+    }
+
+    emit PromotionPacket {
+        tick: ctx.tick,
+        point: x_next.clone(),
+        decision: decision,
+    }
+}
+
+@promote
+fn promote_witness(
+    witness: &CSRHSWitness,
+    decision: DecisionToken<SFG>,
+    ctx: &mut WorldlineCtx,
+) -> PromotionPacket {
+    require decided(decision), "Cannot promote witness without valid decision";
+
+    for tick in &witness.ticks {
+        ctx.worldline.append(&tick.x, tick.tick_index);
+    }
+
+    ctx.tick = witness.ticks.last()
+        .map(|t| t.tick_index + 1)
+        .unwrap_or(ctx.tick);
+
+    ctx.ledger.record(WitnessEvent::CSRHSWitnessPromoted {
+        witness_hash: witness.content_hash,
+        x0: witness.x0.hash(),
+        xn: witness.xn.hash(),
+        tick_count: witness.ticks.len() as u64,
+        total_cost: witness.total_cost,
+    });
+
+    emit PromotionPacket {
+        tick: ctx.tick,
+        point: witness.xn.clone(),
+        decision: decision,
+    }
+}
+
+@promote
+fn verify_modalities_at_boundary(
+    x: &TheoryPoint,
+    ctx: &WorldlineCtx,
+) -> Result<(), String> {
+    require ctx.verify_genealogical_continuity(x), "□G violated at boundary";
+    require ctx.verify_structural_continuity(x), "□S violated at boundary";
+    require ctx.verify_functional_continuity(x), "□F violated at boundary";
+    Ok(())
+}
+
+@promote
+fn compute_drift(x: &TheoryPoint, ctx: &WorldlineCtx) -> Q32 {
+    match ctx.reference_point() {
+        Some(ref_point) => x.distance(ref_point),
+        None => Q32_ZERO,
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  INVARIANTS (v0.1 retained + v0.2 extensions)
+// ─────────────────────────────────────────────────────────────────────────────
+
+// ── v0.1 invariants (unchanged) ──
+
+invariant<S> tick_monotonic {
+    forall ctx: WorldlineCtx, t1: Tick, t2: Tick.
+        (t2 follows t1 in ctx.worldline) => t2 > t1
+}
+
+invariant<S> tau_bounded {
+    forall x: TheoryPoint, i: InputSignal, config: CSRHSConfig.
+        config.tau_min <= compute_tau(x, i, None, [], [], config) <= config.tau_max
+}
+
+invariant<S> kappa_bounded {
+    forall x: TheoryPoint, neighbors: Vec<TheoryPoint>, config: CSRHSConfig.
+        compute_curvature(x, neighbors).abs() < config.kappa_max
+}
+
+invariant<S> horizontal_preserved {
+    forall w: CSRHSWitness, mask: Mask, linear: LinearSubspace.
+        w.is_valid() =>
+            forall tick in w.ticks.
+                is_horizontal(tick.delta, tick.x, mask, linear)
+}
+
+invariant<G> witness_chain {
+    forall w: CSRHSWitness, ctx: WorldlineCtx.
+        promoted(w, ctx) =>
+            w.content_hash == sha256(jcs_canonicalize(w))
+}
+
+invariant<G> path_consistent {
+    forall w: CSRHSWitness.
+        w.is_valid() =>
+            w.x0 + sum(t.delta for t in w.ticks) == w.xn
+}
+
+invariant<G> modalities_required {
+    forall w: CSRHSWitness, ctx: WorldlineCtx.
+        promoted(w, ctx) =>
+            w.modality_witnesses.w_g.valid() &&
+            w.modality_witnesses.w_s.valid() &&
+            w.modality_witnesses.w_f.valid()
+}
+
+invariant<F> budget_respected {
+    forall w: CSRHSWitness.
+        w.is_valid() =>
+            w.ticks.len() <= w.budget &&
+            w.total_cost <= q32!(w.budget as f64)
+}
+
+invariant<F> tick_shape_preserved {
+    forall ctx: WorldlineCtx, t1: Tick, t2: Tick.
+        (t2 = t1 + 1) =>
+            ctx.tick_shape_at(t2).compatible_with(ctx.tick_shape_at(t1))
+}
+
+invariant<SF> row_conservation {
+    forall w: CSRHSWitness, mask: Mask.
+        w.is_valid() =>
+            forall tick in w.ticks.
+                forall r in 0..mask.row_count(tick.x).
+                    mask.row_sum(tick.x, tick.delta, r).abs() < q32!(1e-10)
+}
+
+invariant<SG> mask_monotone {
+    forall w: CSRHSWitness, mask: Mask.
+        w.is_valid() =>
+            forall i in 1..w.ticks.len().
+                mask.at(w.ticks[i].x).is_subset_of(mask.at(w.ticks[i-1].x))
+}
+
+invariant<SFG> decide_before_promote {
+    forall w: CSRHSWitness, ctx: WorldlineCtx, d: DecisionToken<SFG>.
+        promoted(w, ctx) =>
+            exists d. decided(d) && d.witness_hash == w.content_hash
+}
+
+// ── v0.2 invariants ──
+
+/// C1: No tick committed at a conjugate point
+invariant<S> no_conjugate_ticks {
+    forall w: CSRHSWitness.
+        w.is_valid() =>
+            forall tick in w.ticks.
+                !matches!(tick.jacobi_status, JacobiStatus::ConjugateImminent { .. })
+}
+
+/// C2: Energy drift bounded by expected dissipation
+invariant<S> energy_conservation {
+    forall w: CSRHSWitness.
+        w.is_valid() && w.ticks.len() >= 2 =>
+            w.energy_drift <= q32!(w.ticks.len() as f64) * SYMPLECTIC_FRICTION * q32!(2.0)
+}
+
+/// C3: Sheaf consistency at every tick (when atlas provided)
+invariant<S> sheaf_consistent {
+    forall w: CSRHSWitness, atlas: ChartAtlas, mask: Mask, linear: LinearSubspace.
+        w.is_valid() =>
+            forall tick in w.ticks.
+                matches!(
+                    verify_horizontal_sheaf(tick.delta, tick.x, mask, linear, atlas),
+                    SheafVerdict::Consistent { .. } | SheafVerdict::SingleChart { pass: true }
+                )
+}
+
+/// C4: DAG integrity — Merkle hashes valid, all nodes reachable from genesis
+invariant<G> dag_integrity {
+    forall w: CSRHSWitness.
+        w.is_valid() && w.tick_dag.is_some() =>
+            w.tick_dag.unwrap().verify_integrity().is_ok()
+}
+
+/// C6: Pathological loops bounded by genus-calibrated threshold
+invariant<F> topology_healthy {
+    forall w: CSRHSWitness, topo: ManifoldTopology.
+        w.is_valid() && w.topology_diagnosis.is_some() =>
+            w.topology_diagnosis.unwrap().pathological_loops
+                <= 1.max(topo.expected_structural_loops())
+}
+
+/// C7: τ_v2 is still within [τ_min, τ_max] with second-order corrections
+invariant<S> tau_v2_bounded {
+    forall x: TheoryPoint, i: InputSignal, config: CSRHSConfig,
+           jacobi: JacobiFieldMonitor, neighbors_fn: fn(&TheoryPoint) -> Vec<TheoryPoint>.
+        config.tau_min <= compute_tau_v2(x, i, None, [], [], config, jacobi, neighbors_fn)
+            <= config.tau_max
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  END MODULE
+// ─────────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,67 @@
+{
+  "canonical_evidence_version": "PHYSICS-RD-001/v0.2.1",
+  "observed": {
+    "contact_corpus_digest": "8F426447496C178B06499D66D641B938A6D9ACFAE9BD6B2D1660E20A3E3DF3AA",
+    "entries": [
+      {
+        "authoritative_sections": [
+          "contact form",
+          "horizontal condition",
+          "Reeb field",
+          "horizontal automorphism invariance"
+        ],
+        "authority_role": "CGR-HA",
+        "filename": "The_Horizontal_Automorphism.docx",
+        "sha256": "2967CB232A6743AC487C4BA6BB1A37BF15F15EC3A20CC8B1A0733234A0E6C1D7",
+        "status": "BOUND"
+      },
+      {
+        "authoritative_sections": [
+          "Reeb/governance accumulation",
+          "tick induction",
+          "double-contact compatibility"
+        ],
+        "authority_role": "CGR-IMP",
+        "filename": "Impedance_of_the_Unfolding.docx",
+        "sha256": "4C5FB4FD7415698B24D311FE0735DE5AA1A272AE1F0D9F2FE5660B470CBECADE",
+        "status": "BOUND"
+      },
+      {
+        "authoritative_sections": [
+          "contact-Hamiltonian identification",
+          "negative-entropy Bregman action",
+          "observer boundary"
+        ],
+        "authority_role": "CGR-MEAS",
+        "filename": "Contact_Geometry_and_the_Measurement_Problem.docx",
+        "sha256": "36CFD1F274F90ADA30FD4BE1B376E95D1110FE43C3923D7F7BF0C84296E86B62",
+        "status": "BOUND"
+      },
+      {
+        "authoritative_sections": [
+          "lambda(x) deformation",
+          "singularity prohibition"
+        ],
+        "authority_role": "CGR-7R",
+        "filename": "Contact_GR_Seven_Resolutions_Formalized.docx",
+        "sha256": "7E8746B4AB4F028B577A2FF38CD89DF43B7934309464A5812BBC5E26C16DEFC5",
+        "status": "BOUND"
+      },
+      {
+        "authoritative_sections": [
+          "horizontal path consistency",
+          "tick projection",
+          "governance jump",
+          "guard semantics",
+          "flat-chart exponential realization"
+        ],
+        "authority_role": "CGR-CSRHS",
+        "filename": "CSRHS_Spec_v0_2.md",
+        "sha256": "D418CE55CFB770AFA7D1AF39D82FB9482B0BB59E0D55C4D17A00F2696D80CB00",
+        "status": "BOUND"
+      }
+    ]
+  },
+  "result": "PASS",
+  "vector_id": "P02"
+}

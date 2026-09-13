@@ -1,0 +1,92 @@
+{
+  "claims": {
+    "dual_admissibility": "HOLDS",
+    "flex_convergence_realization": "HOLDS",
+    "flex_monotonicity": "HOLDS",
+    "game_carrier_joint_coherence": "HOLDS",
+    "host_order_erasure": "HOLDS",
+    "joint_tick_identity": "HOLDS",
+    "physics_proof_quartet": "HOLDS",
+    "quotient_lift_realization": "HOLDS",
+    "theory_nonauthority": "HOLDS"
+  },
+  "conformance": "36/36",
+  "corpus": {
+    "amendment_sha256": "A41927D9111FD6FFDB08C752A1FF02E481CD56ACD35C18F554BFF21352E06F51",
+    "contact_corpus_digest": "8F426447496C178B06499D66D641B938A6D9ACFAE9BD6B2D1660E20A3E3DF3AA",
+    "corpus_manifest_sha256": "E4C5C9AE101F346B536CD91584D9DD39377587EA06453A8A377B7B3E88297704",
+    "promotion_record_sha256": "33B3947DF377F1319A5BC861B20028DD2B8CF5307C701A568814ABF5C7F0ACAF",
+    "spec_sha256": "7483C3B6001710AF0397AE7AE506539D265AC05A9FDCE021877D02E71E0CCC1B",
+    "substrate_corpus_digest": "3C79017375D847E07F9050F46E36954FEF6A68E0A3E6DBA9C8550B1377882F2D",
+    "v0_9_0": {
+      "concept_doi": "10.5281/zenodo.22678127",
+      "doi": "10.5281/zenodo.22729949",
+      "promotion_commit": "14b70ababc5930f188545b6ba1fdb5c3c40ee93e",
+      "release_carrier": "19eeb77109d22a1d4a5842879ddd61fb84240ba0"
+    }
+  },
+  "entity_kind": "RESONANCE",
+  "evidence_artifact_count": 37,
+  "evidence_replay": "37/37 BYTE_IDENTICAL",
+  "o5": {
+    "general_status": "INHERITED_OPEN",
+    "realization_status": "WITNESSED"
+  },
+  "prior_floor": {
+    "baseline": "mal-fabric v0.9.0",
+    "evidence": "267/267 BYTE_IDENTICAL",
+    "prior_conformance": "299/299 UNCHANGED",
+    "showcase_001": "22/22",
+    "suites": [
+      {
+        "conformance": "25/25",
+        "evidence": "26/26 BYTE_IDENTICAL",
+        "suite": "V3.1"
+      },
+      {
+        "conformance": "62/62",
+        "evidence": "63/63 BYTE_IDENTICAL",
+        "suite": "V3.2"
+      },
+      {
+        "conformance": "70/70",
+        "evidence": "71/71 BYTE_IDENTICAL",
+        "suite": "V3.3"
+      },
+      {
+        "conformance": "24/24",
+        "evidence": "25/25 BYTE_IDENTICAL",
+        "suite": "DEMO-002"
+      },
+      {
+        "conformance": "28/28",
+        "evidence": "29/29 BYTE_IDENTICAL",
+        "suite": "DEMO-003"
+      },
+      {
+        "conformance": "26/26",
+        "evidence": "27/27 BYTE_IDENTICAL",
+        "suite": "DEMO-004"
+      },
+      {
+        "conformance": "24/24",
+        "evidence": "25/25 BYTE_IDENTICAL",
+        "suite": "VIS-R&D-001"
+      },
+      {
+        "conformance": "18/18",
+        "evidence": "1/1 BYTE_IDENTICAL",
+        "suite": "DEMO-001"
+      },
+      {
+        "acceptance": "22/22",
+        "evidence_class": "PRODUCT_EVIDENCE",
+        "suite": "SHOWCASE-001"
+      }
+    ],
+    "version_doi": "10.5281/zenodo.22729949"
+  },
+  "promotion": "NOT_PERFORMED",
+  "result": "HOLDS",
+  "total": 36
+}

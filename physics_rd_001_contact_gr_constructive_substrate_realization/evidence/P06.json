@@ -1,0 +1,88 @@
+{
+  "canonical_evidence_version": "PHYSICS-RD-001/v0.2.1",
+  "observed": {
+    "digest": "DF77993CE10A99FFEC9300AA9F323095A3B47B2F87A350CB78643F09D0888AC8",
+    "state": {
+      "constructive_substrate_state": {
+        "carrier_vertex_state": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          3,
+          3,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          3,
+          3,
+          3,
+          0,
+          3
+        ],
+        "face_mismatch_energy": 10,
+        "flex_face_state": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "ground_state_status": "NON_GROUND",
+        "physics_tick_index": 0,
+        "quotient_energy": 30,
+        "quotient_state_digest": "EBB4E933984A7E037F739B7CA8EF156C94A7079C3CB6E7E94951950534C1B6E6",
+        "substrate_run_id": "substrate-run-physics-rd-001",
+        "substrate_spec_digest": "128DCA62E0F6B16EAD99498585F4DEE66EC9D353022600FA1ADC0023F52ADDAD"
+      },
+      "contact_physics_state": {
+        "admissibility_state": "ADMITTED",
+        "constructive_cell_id": 5,
+        "constructive_orientation_class": 1,
+        "contact_object_digest": "2DFE8EC9A011880B01251A8ED8D9A5C5D204B8223418889C3217F746324A1708",
+        "contact_state": {
+          "accumulated_cost_q32": 0,
+          "constructive_cell_id": 5,
+          "entropy_q32": 0,
+          "lambda_q32": 4630511616,
+          "path_position_q32": 0
+        },
+        "contact_substrate_binding_digest": "E9C0AE496BD50C167DEED550D7CDEB8CA071B238585301CCF901408CDE013A90",
+        "deformation_digest": "A8A6827C51818490741E2E8D7ECC619509A468367518AD929F68B386D1421E78",
+        "entity_id": "resonance-entity-001",
+        "hamiltonian_digest": "4E753BCCC21DF150F75CD0898D43F68DF04D99649EFD8CCBA17003DB0157CCBE",
+        "local_mismatch_energy": 2,
+        "physics_run_id": "physics-run-physics-rd-001",
+        "physics_tick_index": 0,
+        "substrate_state_digest": "84BFEDE3BF5F7AA34B29F154C1444572332E2DD3689FA096999F9B7FDBE36269"
+      },
+      "physics_tick_index": 0,
+      "resonance_entity_state": {
+        "boundary_edge_set_digest": "CED5E7AB6859239AF5DB01D93ACFB6862BBA44B05CFD9A25D5260B085C50E61E",
+        "constructive_substrate_state_digest": "84BFEDE3BF5F7AA34B29F154C1444572332E2DD3689FA096999F9B7FDBE36269",
+        "contact_state_digest": "98FA5376C9E75B47FFE3E9732BFE8BD5EFA72DF9368A0DC92D3DAE10E062E4B3",
+        "fixed_point_witness_digest": "E9DF6F716191044AFD73B78D0EF245E2164EB99837859500A1DB628579BA6041",
+        "orientation_assignment_digest": "66A90AB774F0EEA9C5B4002BB14A0AF336F6239AEA4AB79A00C9FAD094707003",
+        "physics_tick_index": 0,
+        "resonance_center_binding": 5,
+        "resonance_id": "resonance-entity-001",
+        "support_cell_set_digest": "4C660A2E7E98778F6ADE419DDDC13FCDA9B8FD387B70BA66A335FFE4722B2AF4"
+      }
+    }
+  },
+  "result": "PASS",
+  "vector_id": "P06"
+}
