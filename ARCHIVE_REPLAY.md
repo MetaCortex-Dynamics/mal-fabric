@@ -1,39 +1,39 @@
-# MaL Fabric v0.9.0 Archive Replay
+# MaL Fabric v0.10.0 Archive Replay
 
 ```text
-record_id: MAL-FABRIC-V0.9.0-ZENODO-REPLAY-001
+record_id: MAL-FABRIC-V0.10.0-ZENODO-REPLAY-001
 verification_date: 2026-09-12
 result: HOLDS
 
 github_release:
-  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.9.0
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.10.0
 
 release_commit:
-  19eeb77109d22a1d4a5842879ddd61fb84240ba0
+  7187cf0274dccba8a90e9fdcff49f07ae39e6d70
 
 upstream_promotion_commit:
-  14b70ababc5930f188545b6ba1fdb5c3c40ee93e
+  42d4a18394f0fb2a455e233c40a02d47386344eb
 
 zenodo_record:
-  https://zenodo.org/records/22729949
+  https://zenodo.org/records/22731115
 
 software_version_doi:
-  10.5281/zenodo.22729949
+  10.5281/zenodo.22731115
 
 software_concept_doi:
   10.5281/zenodo.22678127
 
 archive_file:
-  MetaCortex-Dynamics/mal-fabric-v0.9.0.zip
+  MetaCortex-Dynamics/mal-fabric-v0.10.0.zip
 
 archive_size_bytes:
-  6300239
+  6566910
 
 archive_md5:
-  C30781FD80A735876633A105C8FFD77B
+  3A1C5AC4B5FA514D57EC1FA863F30904
 
 archive_sha256:
-  D924CEB0D61D3ABC98BE14F237DB08BEC61E69BBB4733A47045CF14385BB7AC5
+  F93A1E493B96C1D64BD095E091C6443B93F458D949898A872F8C8F5A642B73BF
 ```
 
 The archive was downloaded directly from Zenodo and extracted into a fresh
@@ -49,64 +49,71 @@ DEMO-003:                28/28
 DEMO-004:                26/26
 VIS-R&D-001:             24/24
 SHOWCASE-001:            22/22
+PHYSICS-R&D-001:         36/36
 --------------------------------
-total:                  299/299
+total:                  335/335
 
-predecessor evidence:  267/267 unchanged
-VIS-R&D-001 evidence:    25/25 byte-identical replay/archive
-SHOWCASE proof quartet:   4/4 HOLDS
-SHOWCASE required stills: 6/6
-published JSON parse:   341/341
+predecessor evidence:  267/267 BYTE_IDENTICAL
+PHYSICS-R&D-001:         37/37 BYTE_IDENTICAL
+total evidence:         304/304 BYTE_IDENTICAL
+published JSON parse:   382/382
 archive HTTP smoke:       PASS
-archive browser load:     PASS
-native Gaussian asset:  LOADED
 ```
 
-The v0.8.0 predecessor trees are byte-identical at the Git-object layer between
-the v0.8.0 and v0.9.0 tags. The 25 VIS-R&D-001 evidence artifacts regenerated
-byte-for-byte and matched the archive.
-
-The established platform-newline boundary remains explicit. DEMO-004's bound
-acceptance identity is Windows-native, while GitHub stores LF-normalized JSON
-in its archive. Before VIS-R&D-001 verification, that one predecessor artifact
-was deterministically materialized with CRLF endings in the disposable replay
-workspace. Its resulting SHA-256 matched the bound Windows identity:
+The established platform-newline boundary remains explicit. GitHub stores the
+DEMO-004 JSON corpus with LF line endings, while its bound Windows evidence is
+CRLF-native. Before cumulative predecessor replay, the 27 DEMO-004 evidence
+artifacts and its root acceptance summary were deterministically materialized
+with CRLF endings in the disposable workspace. The root acceptance identity
+then matched its bound Windows SHA-256:
 
 ```text
 50BB725920F17B5BA5565A8BC37F5E2A301B4BD8FE173F7C399AA5B2ECDDC275
 ```
 
-SHOWCASE-001 retained its bound identities after replay:
+PHYSICS-R&D-001 retained its promoted identities after archive extraction and
+replay:
 
 ```text
-mountain asset SHA-256:
-  ED0387C03566505342407DFF661D6F47181B6FEF6DF83013626EF3469024ED41
+base spec SHA-256:
+  7483C3B6001710AF0397AE7AE506539D265AC05A9FDCE021877D02E71E0CCC1B
+
+amendment SHA-256:
+  A41927D9111FD6FFDB08C752A1FF02E481CD56ACD35C18F554BFF21352E06F51
+
+binding record SHA-256:
+  C6739D90E547032D296B8D17CA35B2D40427CDCBC43BE901E4270A233E05FE31
+
+promotion record SHA-256:
+  B9B054D217D04FE8F78CC1001DBE37522C1AB8F5B432B565A7B0AA934D225AAA
 
 acceptance summary SHA-256:
-  CB1E97531861992135FB0D9FEA3258C725EE7771E86198D33328B102A6E7A588
+  08156C95169BEC75E405C6EC0573B2A3B9D17616EB7B7CC5CD376B83970A4F8E
 
-capture manifest SHA-256:
-  D4F927C4268BFC528292ADFACE9C729E21AC0F3FCDAAFDA3AFD802EEC287E8A3
+evidence manifest SHA-256:
+  2B9F9331DD09546DFAB68B05427B32CCB1E2F9CA934CC300B203473C2D153F06
 
-proof records SHA-256:
-  7D7A24BDC4C5AE8042E3A6819C10D87075D05B2D52EA3F0D18289951EB6B268D
+corpus manifest SHA-256:
+  E4C5C9AE101F346B536CD91584D9DD39377587EA06453A8A377B7B3E88297704
 
-launch clip SHA-256:
-  35E92C49EFF9F96930155375C24A2C963ABEECB724034F61D7824CDB7F18DDEE
+reference kernel SHA-256:
+  8B579BC20B1D8C4ACE4B6C406BAE68B770D1A9D032A5664DA703143F507C4ED2
 
-required stills:
-  6/6
+common fixed-point census:
+  334
 
-proof quartet:
-  SC07 SAME run_id = HOLDS
-  SC08 SAME logical_tick_index = HOLDS
-  SC09 SAME RenderSnapshot = HOLDS
-  SC10 SAME GameRunIdentity = HOLDS
+carrier quotient census:
+  1296/1296
+
+O5:
+  WITNESSED
+  NOT DISCHARGED
 ```
 
-The archive browser returned HTTP 200, loaded `mountain_10k.splat` through the
-native Gaussian path, and rendered GAME successfully. The asset is
-mesh-derived Gaussian terrain distributed under CC-BY-4.0 with attribution;
-it is not a photographic capture of a real mountain. The asset, stills, clip,
-pixels, camera, and renderer remain noncanonical product evidence with no
-semantic, conformance, or execution authority.
+The archive demonstrates one bounded, content-addressed constructive
+realization in which canonical Contact-GR evolution and canonical
+Constructive-Substrate dynamics share one governed joint tick. It does not
+establish the general unified-law theorem. The authoritative mathematical
+corpus generates the v3 realization; the historical v2 executable companion
+is retained only as realization evidence and has no authority over the theory
+or v3 substrate.
