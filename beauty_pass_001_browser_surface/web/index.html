@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>mal-fabric · BEAUTY-PASS-001</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {"imports":{
+      "three":"https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+      "three/webgpu":"https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.webgpu.js",
+      "three/tsl":"https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.tsl.js",
+      "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+    }}
+  </script>
+</head>
+<body>
+  <main>
+    <section id="game-view" class="surface active"><div id="three-stage"></div></section>
+    <section id="carrier-view" class="surface">
+      <div class="carrier-head"><b>CARRIER</b><span id="carrier-id">—</span></div>
+      <svg id="carrier-svg" viewBox="0 0 1200 680" aria-label="Executable carrier geometry"></svg>
+      <div id="carrier-proof" class="carrier-proof"></div>
+    </section>
+    <div id="loading" class="loading">loading projection…</div>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
