@@ -58,7 +58,31 @@ software_concept_doi:
   10.5281/zenodo.22678127
 
 software_v0_11_0_version_doi:
-  PENDING_POST_DEPOSIT
+  10.5281/zenodo.22739341
+
+public_release_commit:
+  f53ebb2964904c761322ca308cdaba5b145efaea
+
+public_release_tag_object:
+  9afa4d9d8269d38b6d825bc9b85f1325f39f755d
+
+github_release:
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.11.0
+
+zenodo_record:
+  https://zenodo.org/records/22739341
+
+zenodo_archive_file:
+  MetaCortex-Dynamics/mal-fabric-v0.11.0.zip
+
+zenodo_archive_size_bytes:
+  8539764
+
+zenodo_archive_md5:
+  E06A0E0F6A6C43067ABA7D4C9EEB3514
+
+zenodo_archive_sha256:
+  6F17ADA61F3DF8AFAA6D63E46ECA62AEF742BF68F8C9B2C754F1AAE675A6C289
 ```
 
 The canonical v0.11.0 import is filtered from the exact promoted CGP-WORLD-001

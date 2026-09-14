@@ -1,119 +1,100 @@
-# MaL Fabric v0.10.0 Archive Replay
+# MaL Fabric v0.11.0 Archive Replay
 
 ```text
-record_id: MAL-FABRIC-V0.10.0-ZENODO-REPLAY-001
-verification_date: 2026-09-12
+record_id: MAL-FABRIC-V0.11.0-ZENODO-REPLAY-001
+verification_date: 2026-09-13
 result: HOLDS
 
 github_release:
-  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.10.0
+  https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.11.0
 
 release_commit:
-  7187cf0274dccba8a90e9fdcff49f07ae39e6d70
+  f53ebb2964904c761322ca308cdaba5b145efaea
 
-upstream_promotion_commit:
-  42d4a18394f0fb2a455e233c40a02d47386344eb
+release_tag_object:
+  9afa4d9d8269d38b6d825bc9b85f1325f39f755d
+
+upstream_cgp_world_promotion_commit:
+  dd5025176cf9902d6028d11b2929baf0b19c8112
 
 zenodo_record:
-  https://zenodo.org/records/22731115
+  https://zenodo.org/records/22739341
 
 software_version_doi:
-  10.5281/zenodo.22731115
+  10.5281/zenodo.22739341
 
 software_concept_doi:
   10.5281/zenodo.22678127
 
 archive_file:
-  MetaCortex-Dynamics/mal-fabric-v0.10.0.zip
+  MetaCortex-Dynamics/mal-fabric-v0.11.0.zip
 
 archive_size_bytes:
-  6566910
+  8539764
 
 archive_md5:
-  3A1C5AC4B5FA514D57EC1FA863F30904
+  E06A0E0F6A6C43067ABA7D4C9EEB3514
 
 archive_sha256:
-  F93A1E493B96C1D64BD095E091C6443B93F458D949898A872F8C8F5A642B73BF
+  6F17ADA61F3DF8AFAA6D63E46ECA62AEF742BF68F8C9B2C754F1AAE675A6C289
 ```
 
 The archive was downloaded directly from Zenodo and extracted into a fresh
-disposable replay workspace outside the publication working tree.
+disposable replay workspace outside the publication working tree. The
+inherited DEMO-004 Windows-native evidence was materialized exactly as stated
+in `ARCHIVE_REPLAY_PREFLIGHT_v0.11.0.md` before execution.
 
 ```text
-V3.1:                    25/25
-V3.2:                    62/62
-V3.3:                    70/70
-DEMO-001:                18/18
-DEMO-002:                24/24
-DEMO-003:                28/28
-DEMO-004:                26/26
-VIS-R&D-001:             24/24
-SHOWCASE-001:            22/22
-PHYSICS-R&D-001:         36/36
---------------------------------
-total:                  335/335
+v0.10.0 public floor:       335/335
+ASCII-GEN0 player agency:    16/16
+ASCII-ENV-001:               15/15
+CGP-WORLD-001:               44/44
+-----------------------------------
+total conformance:          410/410
 
-predecessor evidence:  267/267 BYTE_IDENTICAL
-PHYSICS-R&D-001:         37/37 BYTE_IDENTICAL
-total evidence:         304/304 BYTE_IDENTICAL
-published JSON parse:   382/382
-archive HTTP smoke:       PASS
+v0.10.0 evidence floor:     304/304 BYTE_IDENTICAL
+ASCII-GEN0 evidence:          17/17 BYTE_IDENTICAL
+ASCII-ENV-001 evidence:       16/16 BYTE_IDENTICAL
+CGP-WORLD-001 evidence:       45/45 BYTE_IDENTICAL
+-----------------------------------
+total evidence:             382/382 BYTE_IDENTICAL
+
+published JSON parse:       465/465
+product-stage files:          17/17 VERIFIED
 ```
 
-The established platform-newline boundary remains explicit. GitHub stores the
-DEMO-004 JSON corpus with LF line endings, while its bound Windows evidence is
-CRLF-native. Before cumulative predecessor replay, the 27 DEMO-004 evidence
-artifacts and its root acceptance summary were deterministically materialized
-with CRLF endings in the disposable workspace. The root acceptance identity
-then matched its bound Windows SHA-256:
+CGP-WORLD-001 retained its promoted identities and commitments after archive
+extraction and replay:
 
 ```text
-50BB725920F17B5BA5565A8BC37F5E2A301B4BD8FE173F7C399AA5B2ECDDC275
+spec SHA-256:
+  7F3F784F0BACED1F0D6521B78123DE9FCE88242466B19B73E47AD1B01B2B0788
+
+implementation commit:
+  307da4fc32c318ad7e5a8160ccfee1bee8496b2d
+
+binding commit:
+  f2154c8bd6d6cb1682b3d76b3f20a44109a87287
+
+promotion commit:
+  dd5025176cf9902d6028d11b2929baf0b19c8112
+
+numeric domain:
+  Q32.32
+
+measurement normalization:
+  EXP_NEG_Q32_TAYLOR18_LN2_REDUCTION_V1
+
+consistency predicate:
+  OUTCOME_DISTANCE_LE_ONE_V1
+
+presentation authority:
+  NONE
 ```
 
-PHYSICS-R&D-001 retained its promoted identities after archive extraction and
-replay:
+The separately imported browser beauty pass matched all 17 hashes in
+`PRODUCT_STAGE_MANIFEST.json`. It remains `PRODUCT_STAGE`, noncanonical,
+unpromoted, and excluded from both normative totals.
 
-```text
-base spec SHA-256:
-  7483C3B6001710AF0397AE7AE506539D265AC05A9FDCE021877D02E71E0CCC1B
-
-amendment SHA-256:
-  A41927D9111FD6FFDB08C752A1FF02E481CD56ACD35C18F554BFF21352E06F51
-
-binding record SHA-256:
-  C6739D90E547032D296B8D17CA35B2D40427CDCBC43BE901E4270A233E05FE31
-
-promotion record SHA-256:
-  B9B054D217D04FE8F78CC1001DBE37522C1AB8F5B432B565A7B0AA934D225AAA
-
-acceptance summary SHA-256:
-  08156C95169BEC75E405C6EC0573B2A3B9D17616EB7B7CC5CD376B83970A4F8E
-
-evidence manifest SHA-256:
-  2B9F9331DD09546DFAB68B05427B32CCB1E2F9CA934CC300B203473C2D153F06
-
-corpus manifest SHA-256:
-  E4C5C9AE101F346B536CD91584D9DD39377587EA06453A8A377B7B3E88297704
-
-reference kernel SHA-256:
-  8B579BC20B1D8C4ACE4B6C406BAE68B770D1A9D032A5664DA703143F507C4ED2
-
-common fixed-point census:
-  334
-
-carrier quotient census:
-  1296/1296
-
-O5:
-  WITNESSED
-  NOT DISCHARGED
-```
-
-The archive demonstrates one bounded, content-addressed constructive
-realization in which canonical Contact-GR evolution and canonical
-Constructive-Substrate dynamics share one governed joint tick. It does not
-establish the general unified-law theorem. The authoritative mathematical
-corpus generates the v3 realization; the historical v2 executable companion
-is retained only as realization evidence and has no authority over the theory
-or v3 substrate.
+O5 remains `WITNESSED, NOT DISCHARGED`: this release supplies one bounded
+constructive realization and does not claim the general unified-law theorem.
