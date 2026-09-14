@@ -1,6 +1,6 @@
 # MaL Fabric v0.10.0
 
-[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22731115.svg)](https://doi.org/10.5281/zenodo.22731115) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -191,13 +191,13 @@ The SHOWCASE-001 browser surface is served at
 
 Successful replay regenerates each evidence set byte-for-byte.
 
-The published v0.9.0 Zenodo archive was independently downloaded and replayed
-on 2026-09-12. All nine suites passed for 299/299 total conformance and
-acceptance. The 267 predecessor evidence artifacts remain unchanged, all 25
-VIS-R&D-001 artifacts matched independent replay and the archive byte-for-byte,
-and SHOWCASE-001 passed 22/22 with its proof quartet and bound media/asset
-hashes intact. The archived HTTP/browser surface loaded the native Gaussian
-asset, and all 341 published JSON artifacts parsed. See
+The published v0.10.0 Zenodo archive was independently downloaded and replayed
+on 2026-09-12. The predecessor floor passed 299/299 and PHYSICS-R&D-001 passed
+36/36, for 335/335 total conformance and acceptance. All 267 predecessor
+deterministic evidence artifacts and all 37 PHYSICS-R&D-001 artifacts matched
+independent replay byte-for-byte after the documented DEMO-004 Windows newline
+materialization. All 382 published JSON artifacts parsed, the bound physics
+and corpus identities were preserved, and archive HTTP smoke passed. See
 [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
 
 ## Contents
@@ -292,7 +292,7 @@ O5:
   WITNESSED, NOT DISCHARGED
 
 public_release_commit:
-  PENDING_RELEASE_CARRIER_COMMIT
+  7187cf0274dccba8a90e9fdcff49f07ae39e6d70
 
 github_release:
   https://github.com/MetaCortex-Dynamics/mal-fabric/releases/tag/v0.10.0
@@ -304,7 +304,10 @@ software_predecessor_version_doi:
   10.5281/zenodo.22729949
 
 software_v0_10_0_version_doi:
-  PENDING_ZENODO_INGESTION
+  10.5281/zenodo.22731115
+
+zenodo_archive_sha256:
+  F93A1E493B96C1D64BD095E091C6443B93F458D949898A872F8C8F5A642B73BF
 
 paper_b_doi:
   10.5281/zenodo.22715312
