@@ -1,6 +1,6 @@
-# MaL Fabric v0.10.0
+# MaL Fabric v0.11.0
 
-[![Release DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22731115.svg)](https://doi.org/10.5281/zenodo.22731115) [![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
+[![Concept DOI](https://zenodo.org/badge/1362150755.svg)](https://doi.org/10.5281/zenodo.22678127) [![Paper A DOI](https://img.shields.io/badge/Paper_A-10.5281%2Fzenodo.22677712-blue)](https://doi.org/10.5281/zenodo.22677712) [![Paper B DOI](https://img.shields.io/badge/Paper_B-10.5281%2Fzenodo.22715312-blue)](https://doi.org/10.5281/zenodo.22715312)
 
 MaL Fabric defines deterministic canonical static semantics, governed
 admission, and synchronous execution for a MaL-native software-FPGA fabric.
@@ -62,6 +62,13 @@ CARRIER project the same physical state.
 This release supplies one bounded, content-addressed constructive realization
 recovering the declared joint behavior. `O5` is therefore witnessed; the
 general unified-law obligation is not claimed discharged.
+
+Version 0.11.0 adds CGP-WORLD-001: a constitutive geometric-program world in
+which terrain, entities, observer-specific epistemic state, and governed rate
+are derived from the canonical operator-witness fabric. ASCII and browser
+surfaces remain nonauthoritative projections of the same committed world. The
+release also carries a sealed 17-file browser beauty pass as explicitly
+noncanonical, unpromoted `PRODUCT_STAGE` material.
 
 ## Companion papers
 
@@ -160,8 +167,25 @@ PHYSICS-R&D-001 Contact-GR × Constructive Substrate
   host-order erasure        HOLDS
   O5                        WITNESSED, NOT DISCHARGED
 
-TOTAL CONFORMANCE       335/335
-TOTAL DETERMINISTIC EVIDENCE 304/304
+ASCII-GEN0 Player Agency
+  acceptance              16/16
+  evidence determinism    17/17
+  ASCII authority          NONE
+
+ASCII-ENV-001 Walkable Perspective World
+  acceptance              15/15
+  evidence determinism    16/16
+  headless = attached      HOLDS
+
+CGP-WORLD-001 Constitutive Geometric Program World
+  acceptance              44/44
+  evidence determinism    45/45
+  predecessor regression 366/366
+  predecessor evidence   337/337
+  presentation authority  NONE
+
+TOTAL CONFORMANCE       410/410
+TOTAL DETERMINISTIC EVIDENCE 382/382
 ```
 
 Run all suites from the repository root:
@@ -181,6 +205,9 @@ python -B showcase_001_mountain_capture/run_acceptance.py
 python -B showcase_001_mountain_capture/showcase_server.py
 python -B physics_rd_001_contact_gr_constructive_substrate_realization/run_prior_regression.py
 python -B physics_rd_001_contact_gr_constructive_substrate_realization/run_conformance.py
+python -B game_input_agency_001/run_conformance.py
+python -B ascii_env_001_walkable_perspective_world/run_full_conformance.py
+python -B cgp_world_001_constitutive_world/run_conformance.py
 ```
 
 The VIS-R&D-001 browser surface is served at
@@ -199,6 +226,13 @@ independent replay byte-for-byte after the documented DEMO-004 Windows newline
 materialization. All 382 published JSON artifacts parsed, the bound physics
 and corpus identities were preserved, and archive HTTP smoke passed. See
 [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md).
+
+The v0.11.0 release carrier was replayed from its exact Git archive on
+2026-09-13. After the documented inherited DEMO-004 Windows-newline preflight,
+the predecessor floor passed 366/366 with 337/337 byte-identical evidence and
+CGP-WORLD-001 passed 44/44 with 45/45 byte-identical evidence, closing the
+410/410 and 382/382 release targets. See
+[ARCHIVE_REPLAY_PREFLIGHT_v0.11.0.md](ARCHIVE_REPLAY_PREFLIGHT_v0.11.0.md).
 
 ## Contents
 
@@ -242,6 +276,18 @@ and corpus identities were preserved, and archive HTTP smoke passed. See
   realization, bound mathematical corpus, proof, 36-vector corpus, 37
   deterministic evidence artifacts, resonance witness, fixed-point census,
   quotient convergence evidence, and O5 constructive witness.
+- [game_input_agency_001](game_input_agency_001) contains the promoted
+  kernel-owned player-action transition and 16-vector agency corpus.
+- [ascii_env_001_walkable_perspective_world](ascii_env_001_walkable_perspective_world)
+  contains the promoted walkable perspective-world projection and 15-vector
+  environment corpus.
+- [cgp_world_001_constitutive_world](cgp_world_001_constitutive_world) contains
+  the promoted constitutive-world realization, proof, 44-vector corpus, and 45
+  deterministic evidence artifacts.
+- [beauty_pass_001_browser_surface](beauty_pass_001_browser_surface) is the
+  separately sealed, noncanonical and unpromoted browser `PRODUCT_STAGE`.
+- [PRODUCT_STAGE_MANIFEST.json](PRODUCT_STAGE_MANIFEST.json) binds the exact 17
+  product-stage files without granting them semantic or evidence authority.
 - [PUBLICATION_PROVENANCE.md](PUBLICATION_PROVENANCE.md) binds this filtered
   public carrier to the upstream candidate and promotion commits.
 - [ARCHIVE_REPLAY.md](ARCHIVE_REPLAY.md) records the latest completed replay
@@ -250,6 +296,30 @@ and corpus identities were preserved, and archive HTTP smoke passed. See
   publication layout for compatibility.
 
 ## Publication provenance
+
+The v0.11.0 carrier imports the exact promoted CGP-WORLD lineage:
+
+```text
+upstream_cgp_world_implementation_commit:
+  307da4fc32c318ad7e5a8160ccfee1bee8496b2d
+
+upstream_cgp_world_binding_commit:
+  f2154c8bd6d6cb1682b3d76b3f20a44109a87287
+
+upstream_cgp_world_promotion_commit:
+  dd5025176cf9902d6028d11b2929baf0b19c8112
+
+product_stage_manifest_sha256:
+  56E1C83B8CD4F2D926ED8302ED3D870629BA7B096CDAD68598C155FCDE653153
+
+software_predecessor_version_doi:
+  10.5281/zenodo.22731115
+
+software_v0_11_0_version_doi:
+  PENDING_POST_DEPOSIT
+```
+
+The completed v0.10.0 publication binding remains:
 
 ```text
 public_predecessor_commit:
@@ -380,12 +450,12 @@ general unified-law obligation.
 
 ## Scope boundary
 
-Version 0.10.0 adds one bounded Contact-GR × Constructive-Substrate
-realization. It does not claim a universal unified-law theorem, Born
-statistics, entanglement, coarse-grain classical stability, multi-body
-gravity, collision systems, dynamic Gaussian actors, or scheduler
-independence outside the admitted host schedules. O5 remains witnessed and
-not discharged.
+Version 0.11.0 adds one bounded constitutive-world realization. It does not
+claim a universal unified-law theorem, Born statistics, entanglement,
+coarse-grain classical stability, production rendering quality, multiplayer
+determinism, self-modifying geometry, or scheduler independence outside the
+admitted host schedules. O5 remains witnessed and not discharged. The browser
+beauty pass remains noncanonical, unpromoted product-stage material.
 
 The predecessor visual boundaries remain unchanged: Gaussian assets, pixels,
 camera state, and renderer behavior are presentation-only. The release does
