@@ -1,5 +1,75 @@
 # MaL Fabric Publication Provenance
 
+## v0.11.0 CGP-WORLD-001 carrier binding
+
+```text
+public_repository:
+  MetaCortex-Dynamics/mal-fabric
+
+public_predecessor_tag:
+  v0.10.0
+
+upstream_repository:
+  MetaCortex-Dynamics/mal_kernel_lab_foundation
+
+upstream_cgp_world_promotion_commit:
+  dd5025176cf9902d6028d11b2929baf0b19c8112
+
+upstream_cgp_world_implementation_commit:
+  307da4fc32c318ad7e5a8160ccfee1bee8496b2d
+
+upstream_cgp_world_binding_commit:
+  f2154c8bd6d6cb1682b3d76b3f20a44109a87287
+
+upstream_cgp_world_promotion_record_sha256:
+  63DBC6BF0603E7BACDF551F1541FF7C56B9CEEFB1B042B184E80F2871631E13E
+
+ascii_gen0_promotion_commit:
+  210a4af0adde21c8ab5ff81d2f417619d1600d91
+
+ascii_env_001_promotion_commit:
+  f01e723c1808a43587bf72ef61d385290a6b45e5
+
+product_stage:
+  beauty_pass_001_browser_surface
+
+product_stage_status:
+  PRODUCT_STAGE
+  NOT_CANONICAL
+  NOT_PROMOTED
+
+product_stage_file_count:
+  17
+
+product_stage_manifest_sha256:
+  56E1C83B8CD4F2D926ED8302ED3D870629BA7B096CDAD68598C155FCDE653153
+
+expected_total_conformance:
+  410/410
+
+expected_total_deterministic_evidence:
+  382/382 BYTE_IDENTICAL
+
+O5:
+  WITNESSED
+  NOT DISCHARGED
+
+software_concept_doi:
+  10.5281/zenodo.22678127
+
+software_v0_11_0_version_doi:
+  PENDING_POST_DEPOSIT
+```
+
+The canonical v0.11.0 import is filtered from the exact promoted CGP-WORLD-001
+authority point. Product-stage browser files are a separately identified,
+noncanonical input and carry no normative evidence authority.
+
+The inherited Windows-native DEMO-004 newline boundary and the exact disposable
+archive-replay materialization required for byte identity are recorded in
+`ARCHIVE_REPLAY_PREFLIGHT_v0.11.0.md`.
+
+
 This public carrier preserves public Git history while binding filtered
 publication contents to Devon's exact promoted authority points in the
 governance workspace.

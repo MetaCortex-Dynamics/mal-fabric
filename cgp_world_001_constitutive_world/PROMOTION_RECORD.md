@@ -1,0 +1,138 @@
+# PROMOTION_RECORD_CGP_WORLD_001_IMPLEMENTATION_v0_3
+
+Status: PROMOTED
+
+## Authority chain
+
+```text
+SPEC_COMMIT:
+  1fff98bd542c92c1b04adde5e5990fd7a7be4ab8
+
+SPEC_PROMOTION_COMMIT:
+  99034064a8c733933192923c0704868ec701cd46
+
+IMPLEMENTATION_COMMIT:
+  307da4fc32c318ad7e5a8160ccfee1bee8496b2d
+
+BINDING_COMMIT:
+  f2154c8bd6d6cb1682b3d76b3f20a44109a87287
+
+BINDING_RECORD_SHA256:
+  81777415A6906AC4D6DDB4B26AFAD5A78B8585959D4BD7F92C54E8C47BE1931F
+```
+
+## Decision
+
+```text
+DECISION:
+  ALLOW
+
+CGP_WORLD_001_v0_3_IMPLEMENTATION:
+  PROMOTED
+```
+
+## Promotion basis
+
+```text
+CW01–CW44:
+  44/44 PASS
+
+EVIDENCE_REPLAY:
+  45/45 BYTE_IDENTICAL
+
+PRIOR_CONFORMANCE:
+  366/366 UNCHANGED
+
+PRIOR_EVIDENCE:
+  337/337 BYTE_IDENTICAL
+
+IMPLEMENTATION_ANCESTOR:
+  PASS
+
+BINDING_DELTA:
+  BINDING_RECORD.md ONLY
+
+BOUND_HASHES:
+  UNCHANGED
+
+SCOPED_TREE:
+  CLEAN
+
+PRESENTATION_AUTHORITY:
+  NONE
+
+BEAUTY_PASS_STAGE:
+  PRESERVED
+```
+
+## Architectural closure
+
+```text
+ONTIC_STATE:
+  SEPARATE
+
+EPISTEMIC_STATE:
+  SEPARATE
+
+PRESENTATION_STATE:
+  SEPARATE
+
+CGP_CONSTITUTIVE_PREDICATE:
+  HOLDS
+
+MEASUREMENT_REPLAY:
+  BOUND
+
+SHEAF_COMPATIBILITY:
+  BOUND
+
+CERTIFICATE_LIFT_GLUE_SEPARATION:
+  HOLDS
+
+RATE_GOVERNANCE:
+  BOUND
+
+HEADLESS_INVARIANCE:
+  HOLDS AT ONTIC TRACE LEVEL
+```
+
+## Scope
+
+This promotion closes the implementation lifecycle for CGP-WORLD-001 v0.3.
+
+It does NOT promote, merge, or alter the staged beauty-pass package.
+
+```text
+TECHNICAL_EVIDENCE:
+  CLOSED
+
+ARTIFACT_IDENTITY:
+  CLOSED
+
+BINDING:
+  CLOSED
+
+IMPLEMENTATION_PROMOTION:
+  CLOSED
+
+CGP_WORLD_001_v0_3:
+  PROMOTED
+```
+
+## Repository boundary
+
+This record was materialized outside the user's local repository.
+
+No repository promotion commit SHA is claimed here.
+
+A repository-side promotion commit, if created, SHOULD:
+
+```text
+PARENT:
+  f2154c8bd6d6cb1682b3d76b3f20a44109a87287
+
+DELTA:
+  PROMOTION_RECORD.md ONLY
+```
+
+and preserve all bound implementation and evidence hashes unchanged.

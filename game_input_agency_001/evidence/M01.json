@@ -1,0 +1,30 @@
+{
+  "description": "PlayerAction canonical encoding",
+  "details": {
+    "encodings": [
+      {
+        "player_action": "MOVE_N",
+        "tick": 7
+      },
+      {
+        "player_action": "MOVE_S",
+        "tick": 7
+      },
+      {
+        "player_action": "MOVE_E",
+        "tick": 7
+      },
+      {
+        "player_action": "MOVE_W",
+        "tick": 7
+      },
+      {
+        "player_action": "STAY",
+        "tick": 7
+      }
+    ],
+    "w_field": false
+  },
+  "status": "PASS",
+  "vector_id": "M01"
+}

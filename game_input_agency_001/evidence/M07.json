@@ -1,0 +1,26 @@
+{
+  "description": "arena violation blocks and retains prior position",
+  "details": {
+    "action": "MOVE_E",
+    "candidate": [
+      11,
+      0,
+      0
+    ],
+    "entity_id": "player",
+    "prior": [
+      10,
+      0,
+      0
+    ],
+    "reason": "ARENA_BOUNDS",
+    "status": "BLOCKED",
+    "successor": [
+      10,
+      0,
+      0
+    ]
+  },
+  "status": "PASS",
+  "vector_id": "M07"
+}

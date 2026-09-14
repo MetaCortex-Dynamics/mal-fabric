@@ -1,0 +1,38 @@
+{
+  "description": "enemy behavior reads resulting canonical player state",
+  "details": {
+    "far_first_observation": {
+      "health_low": false,
+      "player_near": false
+    },
+    "far_mode": "PATROL",
+    "near_first_observation": {
+      "health_low": false,
+      "player_near": true
+    },
+    "near_mode": "APPROACH",
+    "near_resonance_movement": {
+      "action": "APPROACH",
+      "candidate": [
+        2,
+        0,
+        0
+      ],
+      "entity_id": "resonance",
+      "prior": [
+        3,
+        0,
+        0
+      ],
+      "reason": "OBSTRUCTION",
+      "status": "BLOCKED",
+      "successor": [
+        3,
+        0,
+        0
+      ]
+    }
+  },
+  "status": "PASS",
+  "vector_id": "M09"
+}

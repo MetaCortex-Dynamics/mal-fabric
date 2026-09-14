@@ -1,0 +1,26 @@
+{
+  "description": "obstruction violation blocks and retains prior position",
+  "details": {
+    "action": "MOVE_E",
+    "candidate": [
+      2,
+      0,
+      0
+    ],
+    "entity_id": "player",
+    "prior": [
+      1,
+      0,
+      0
+    ],
+    "reason": "OBSTRUCTION",
+    "status": "BLOCKED",
+    "successor": [
+      1,
+      0,
+      0
+    ]
+  },
+  "status": "PASS",
+  "vector_id": "M08"
+}

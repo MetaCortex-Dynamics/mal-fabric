@@ -1,0 +1,61 @@
+{
+  "amendment": "AMENDMENT-GAME-INPUT-AGENCY-001",
+  "arena": {
+    "admissibility_scope": "ALL_ENTITY_MOVEMENT",
+    "arena_id": "5a742a3c2c8a08142fc3f5e6053605fba7339f8819e779a124687db2b72cd933",
+    "bounds": {
+      "x": [
+        -10,
+        10
+      ],
+      "y": [
+        -6,
+        6
+      ],
+      "z": [
+        -2,
+        2
+      ]
+    },
+    "gen0_movement_plane": {
+      "player_actions_preserve_z": true,
+      "z0": 0
+    },
+    "obstructions": [
+      [
+        2,
+        -1,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ]
+  },
+  "ascii_semantic_authority": "NONE",
+  "demo_003": "28/28 UNCHANGED",
+  "evidence_artifact_count": 17,
+  "imports": {
+    "demo_003_acceptance_sha256": "F6BCFDCA7C58CB363ACAB9F03B349CD052EDE0819653E6B01B06A492EDAB6DFE",
+    "demo_003_kernel_sha256": "F711C6499E345C6B6952D8E8AA570B385D7F48A46F3E2189491E98653C4C1833",
+    "demo_003_promotion_sha256": "9F3DF4BB5F1B2F47C8A5DE4549B67C1769B64A30016D641AFFAAC2A9298E6510"
+  },
+  "input_versions": {
+    "V0": "LEGACY_REPLAY_ONLY",
+    "V1": "ACTIVE_PLAYER_AGENCY"
+  },
+  "passed": 16,
+  "player_action_has_zero_w_authority": "HOLDS",
+  "player_position_authority": "KERNEL_ONLY",
+  "projector_attached_trace_equals_headless_trace": "HOLDS",
+  "promotion": "NOT_PERFORMED",
+  "result": "HOLDS",
+  "total": 16
+}

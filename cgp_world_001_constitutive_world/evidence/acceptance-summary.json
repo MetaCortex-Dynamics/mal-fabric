@@ -1,0 +1,15 @@
+{
+  "conformance": "44/44",
+  "consistency_predicate": "OUTCOME_DISTANCE_LE_ONE_V1",
+  "evidence_artifact_count": 45,
+  "evidence_replay": "45/45 BYTE_IDENTICAL",
+  "implementation_promotion": "NOT_PERFORMED",
+  "measurement_normalization": "EXP_NEG_Q32_TAYLOR18_LN2_REDUCTION_V1",
+  "numeric_domain": "Q32.32",
+  "prior_conformance": "366/366 UNCHANGED",
+  "prior_evidence": "337/337 BYTE_IDENTICAL",
+  "rate_governor_channel": "TAU_POLICY_ONLY",
+  "result": "HOLDS",
+  "spec_sha256": "7F3F784F0BACED1F0D6521B78123DE9FCE88242466B19B73E47AD1B01B2B0788",
+  "vector_census": 44
+}

@@ -1,0 +1,15 @@
+{
+  "description": "same state and action sequence produces byte-identical trace",
+  "details": {
+    "actions": [
+      "MOVE_N",
+      "MOVE_E",
+      "MOVE_S",
+      "STAY",
+      "MOVE_W"
+    ],
+    "trace_digest": "27c95e4ae0db28b6f751c75e70176fe38da41228f75d8b45a173a386dd7ffa34"
+  },
+  "status": "PASS",
+  "vector_id": "M11"
+}
