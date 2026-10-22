@@ -1,0 +1,25 @@
+{
+  "started": "2026-10-22T13:08:10.845Z",
+  "finished": "2026-10-22T13:08:10.903Z",
+  "command": {
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "D:\\Dev\\flag-world-first-tick-020\\prefill_guard_execute.mjs",
+      "--previous-map",
+      "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact\\source-map.json",
+      "--previous-image",
+      "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact\\image.bin",
+      "--previous-readback",
+      "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact\\readback.bin",
+      "--next-map",
+      "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact\\source-map.json",
+      "--next-image",
+      "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact\\image.bin"
+    ]
+  },
+  "exit": 1,
+  "signal": null,
+  "error": null,
+  "stdout": "",
+  "stderr": "file:///D:/Dev/flag-world-first-tick-020/prefill_guard_execute.mjs:66\r\n if(error||tc<1||tc>NT||fc<1||fc>NF||epochs<1)throw Error('checkpoint incomplete or failed');\r\n                                                    ^\r\n\r\nError: checkpoint incomplete or failed\r\n    at readState (file:///D:/Dev/flag-world-first-tick-020/prefill_guard_execute.mjs:66:53)\r\n    at file:///D:/Dev/flag-world-first-tick-020/prefill_guard_execute.mjs:111:18\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:345:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\r\n\r\nNode.js v22.20.0\r\n"
+}

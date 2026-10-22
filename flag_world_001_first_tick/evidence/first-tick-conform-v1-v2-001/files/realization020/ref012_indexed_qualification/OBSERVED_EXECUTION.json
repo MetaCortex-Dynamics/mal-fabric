@@ -1,0 +1,29 @@
+{
+  "scope": "DIRECT_ORIGINAL012_GPU_VS_INDEPENDENT_REF012_FULL_SETS; NOT_V1_V2_CONFORM; NO_RUNTIME_REFERENCE_IMPORT",
+  "execution": "EXECUTED_BY_PARENT_AGENT",
+  "observation": "INDEPENDENT_CPU_ONLY",
+  "status": "SAME",
+  "runtime_source": {
+    "path": "D:/Dev/flag-world-first-tick-020/law_application_resume_vector_pair_indexed.cu",
+    "sha256": "37B82A8C49719A31597A6999589D672DDADD8EF3172C0CEAE2E9A47CECE7C170"
+  },
+  "runtime_binary": {
+    "path": "D:/Dev/flag-world-first-tick-020/law_application_resume_vector_pair_indexed.exe",
+    "sha256": "E8EFD0B3713A531822853B906F490955EA5F7FD707AFCA5B88762889AB9E922C"
+  },
+  "source_sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F",
+  "image_sha256": "7509314A34D0607B62F83D1AA048802B1108E9CA58A342908CF3603217EB5399",
+  "source_map_sha256": "616A81F266115C37BDD3316A35F7BA068A79FEE978D7E27C114B55C1C2BFD4D1",
+  "readback_sha256": "ECED361A61D4D9FA514DE0E6E2EE3ECFFC975F2BFE4C68D960DEED2E3BE08D8B",
+  "preparation_record_sha256": "8C139598A2DE7DCEFC8011B542056F40B28145F7B85FDD8C712E5BA105B29104",
+  "comparison_record_sha256": "51C13350CCCA5B14DCBBEFD1D8842824809E79F8B4230BEF0E6871850908CBF6",
+  "reference_index_sha256": "1FA1397F50DF1869CA3F31A595E0A9DB0B33C4E0257912F18F9CEB228E03FD79",
+  "gpu": { "error": 0, "facts": 5282, "terms": 6170, "epochs": 14 },
+  "full_set_comparisons": 65,
+  "mismatches": [],
+  "counts": { "flags": 480, "triads": 80, "overlaps": 720, "sites": 42, "edges": 120, "junction_incidence_sets": 30, "junction_site_sets": 30 },
+  "old012_raw_or_proof_order_identity": "NOT_TESTED; NOT_CLAIMED",
+  "python_execution": "NOT_RUN",
+  "promoted_expectations": "UNCHANGED",
+  "note": "BUILD.json remains the byte-preserved CPU preparation record. This observation records the subsequently supplied GPU readback without rewriting that prior record."
+}

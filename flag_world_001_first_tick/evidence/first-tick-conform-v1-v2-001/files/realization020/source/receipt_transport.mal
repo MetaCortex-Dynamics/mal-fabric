@@ -1,0 +1,3 @@
+// Additive observation custody. Membership and completeness are checked in source.
+@readonly input RECEIPT_ROWS_COMPLETE := "complete_receipts:";
+law RECEIPT_ROWS_COMPLETE := IF THIS(RECEIPT_ROWS_COMPLETE,rows) THEN THIS(I20_RECEIPT_INVENTORY,rows);

@@ -1,0 +1,21 @@
+{
+  "scope": "ORDERED_V1_V2_CONFORM; V1_RETAINED_COMMITTED_OUTPUT; V2_NEW_EXECUTION",
+  "vectors": [
+    {
+      "id": "V1",
+      "input": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V1.input.json",
+      "expected": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V1.expected.json",
+      "input_sha256": "28093717ACC694FACC3B635701A22AFF37DDB09FB0447774BACC700647F262BE",
+      "expected_sha256": "69786966E9B5D66A2078D29C43E1F1511545786AB07BF562E37D91205085B588",
+      "run_dir": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage14\\image"
+    },
+    {
+      "id": "V2",
+      "input": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V2.input.json",
+      "expected": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V2.expected.json",
+      "input_sha256": "DC46E239B9D693AF25DC3D7005718060230D31AC9CA057F7ECCCF73968AA2C8E",
+      "expected_sha256": "BD0492B4CAC427432CC3251EB27FC997C0D5EFF2862ECBC10A89B9AC19F1AD0F",
+      "run_dir": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage14\\image"
+    }
+  ]
+}

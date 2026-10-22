@@ -1,0 +1,68 @@
+{
+  "scope": "Generic source execution; not CONFORM",
+  "vector": "V1",
+  "stage": 13,
+  "started_utc": "2026-10-22T16:15:39.662Z",
+  "ended_utc": "2026-10-22T16:16:19.788Z",
+  "bindings": {
+    "runner": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\execute_stage_008.mjs",
+      "size": 6098,
+      "sha256": "F554474B37C954CD6942AD43625945F1A6383B4232CA9B3F15CB8EC947ADC90F"
+    },
+    "runtime": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_full.exe",
+      "size": 515584,
+      "sha256": "8A739F97DC3A67DC440DE3BE5C079A7ED7FC0898D5DCFDB5AEFE6F9CE8AB2B08"
+    },
+    "source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_full.cu",
+      "size": 34285,
+      "sha256": "C09A06FC4B2F1D733C2A9F7FC247844E98B6EF4DB3C7EC5915C63A089D3D6169"
+    },
+    "guard": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_guard_execute.mjs",
+      "size": 10800,
+      "sha256": "CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C"
+    },
+    "qualification": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_full\\QUALIFICATION.json",
+      "size": 24623,
+      "sha256": "00E7AAB2A752830F01297D580905D9B3F717057159C4E7016A1C3558931F1A70"
+    },
+    "continuation_manifest": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\CONTINUATION_008_BINDINGS.json",
+      "size": 7326,
+      "sha256": "7C11042376B4F1E2509265773256E512EC37C824A7D9EEF3A14474D6584CE05E"
+    },
+    "previous_readback": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage12\\image\\readback.bin",
+      "size": 268435488,
+      "sha256": "935FE780DDBD2F725A00F88C495A275C72257678443A923EA63122F55D2E98C0"
+    },
+    "image": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage13\\image\\image.bin",
+      "size": 41992208,
+      "sha256": "1D9272DAFB30A8DE04E47E9B3DC486A39719B81FBD883FB50D23ABCED52FD83B"
+    },
+    "source_map": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage13\\image\\source-map.json",
+      "size": 226170347,
+      "sha256": "F2BA036755C216FAF90631A6DAE03D65DFB8C903E27DF428E85A54770921BBFC"
+    },
+    "world_source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage13\\image\\source.mal",
+      "size": 1776130,
+      "sha256": "12F4E768FCCB366A745B5504D7785B682D30686FF56AB40FBC3448DD8A8433BC"
+    }
+  },
+  "exit_code": 0,
+  "signal": null,
+  "error": null,
+  "output": "{\n  \"guard\": \"IF_THEN\",\n  \"previous_image_sha256\": \"047BB944ADD7FC8C77D4AF12EBF5CA22B7D09DD6063E63911F8954DEF3D4EC9E\",\n  \"next_image_sha256\": \"1D9272DAFB30A8DE04E47E9B3DC486A39719B81FBD883FB50D23ABCED52FD83B\",\n  \"checkpoint_sha256\": \"935FE780DDBD2F725A00F88C495A275C72257678443A923EA63122F55D2E98C0\",\n  \"retained_rules\": 758,\n  \"retained_facts\": 1943299,\n  \"retained_terms\": 2526388,\n  \"symbol_prefix\": \"SAME\",\n  \"logical_rule_prefix\": \"SAME\",\n  \"prior_seeds\": \"PRESERVED\",\n  \"checkpoint_proofs\": \"SAME\",\n  \"execution\": \"EXECUTED\",\n  \"qualification\": \"MAYBE\",\n  \"substrate_output\": \"gpu=NVIDIA GeForce RTX 3070 error=0 facts=1943310 terms=2526544 epochs=8372\",\n  \"runtime_sha256\": \"8A739F97DC3A67DC440DE3BE5C079A7ED7FC0898D5DCFDB5AEFE6F9CE8AB2B08\",\n  \"retained_proof_bytes\": \"SAME\",\n  \"resumed_sha256\": \"49C5CF0B0C67876DEE0B43CCB35A65D0102D1FAEF9D88885DD225307F3B040CD\",\n  \"facts\": 1943310,\n  \"terms\": 2526544,\n  \"epochs\": 8372,\n  \"scope\": \"PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM\",\n  \"guard_source_sha256\": \"CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C\"\n}\n",
+  "diagnostic_readback": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage13\\image\\readback.bin",
+    "size": 268435488,
+    "sha256": "49C5CF0B0C67876DEE0B43CCB35A65D0102D1FAEF9D88885DD225307F3B040CD"
+  }
+}

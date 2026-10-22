@@ -1,0 +1,21 @@
+{
+  "label": "this_clean",
+  "started_utc": "2026-10-22T03:37:02.652Z",
+  "ended_utc": "2026-10-22T03:37:07.008Z",
+  "command": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\prefill_small.exe",
+  "args": [
+    "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\this\\image.bin",
+    "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\execution\\this.clean.bin"
+  ],
+  "preflight": {
+    "name": "NVIDIA GeForce RTX 3070",
+    "free_MiB": 1958,
+    "used_MiB": 6060,
+    "minimum_free_MiB": 1536,
+    "scope": "pre-launch observation; not a measured per-context allocation"
+  },
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=6484 terms=7395 epochs=14\r\n",
+  "error": null
+}

@@ -1,0 +1,33 @@
+{
+  "guard": "IF_THEN",
+  "previous_image_sha256": "E4C8154AED75BBFF452DDAB836EB780084390669A6149679D7DB0DACD9467993",
+  "next_image_sha256": "D10209ACAAC159124EE08B2CA42D44745C42D42547A3D10FE2868954D899F4F4",
+  "checkpoint_sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E",
+  "retained_rules": 58,
+  "retained_facts": 5282,
+  "retained_terms": 6170,
+  "symbol_prefix": "SAME",
+  "logical_rule_prefix": "SAME",
+  "prior_seeds": "PRESERVED",
+  "checkpoint_proofs": "SAME",
+  "execution": "EXECUTED",
+  "qualification": "SAME",
+  "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=6484 terms=7395 epochs=18",
+  "runtime_sha256": "A4A0254258430BBE1754A4058552B126F7CE0D4D0371FB4489B160B0E6F51E28",
+  "retained_proof_bytes": "SAME",
+  "resumed_sha256": "62A4982980C9321574D1CDE33AB19483C26AFD73135F1B881ADA4B308C1E1E5F",
+  "facts": 6484,
+  "terms": 7395,
+  "epochs": 18,
+  "clean_sha256": "777D5123FD74972D9D8CDB060E46E4A6F6B940E5D1FF0D723AA23AA3A5B41F44",
+  "fact_difference": {
+    "missing": 0,
+    "extra": 0
+  },
+  "term_difference": {
+    "missing": 0,
+    "extra": 0
+  },
+  "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+  "guard_source_sha256": "B2C1B115F158915AF4DF9AA20CEA89CFB698076CB29BC6E2F9BDCC13B895FA38"
+}

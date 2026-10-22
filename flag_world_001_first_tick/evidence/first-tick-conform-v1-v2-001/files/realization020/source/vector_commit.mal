@@ -1,0 +1,154 @@
+// Exact frozen V1/V2 observation commit under FT v0.1.3 (2ECF2EEF...C1A01).
+// Source contacts: retained007 state_objects.mal, receipt_object.mal,
+// tick_record.mal, commit.mal; V3.3 sections2--8 simultaneous RETURN;
+// GPU_SELF_WITNESS 2CBBA4AD...BCE7 removes hardware append as a GPU tick gate.
+//
+// VD/VO supply a universally checked observer fixture, not a selected carrier
+// map. The shared canonical program, typed ingress and actual STEP_FABRIC
+// RETURN still run. Every returned comparison must match the source-derived
+// candidate field before the world successor can commit.
+//
+// No expected bytes, hardware closure, FABRIC_STEP_COMMIT_READY, host world law,
+// or current018 chain enters this constructor. Frozen input bytes stay intact.
+// The original genesis entry is preserved byte-for-byte and exactly one tick
+// entry is appended. Its schema is the frozen D2 observation encoding, with
+// the promoted receipt_reading substitution.
+
+// Exact returned successor and exact source-recomputed frozen predecessor.
+law VCOM_RETURN := IF GOES_WITH(I20_SNAPSHOT,p,h,snapshot), GOES_WITH(STEP_FABRIC_RETURN,p,snapshot,next), GOES_WITH(I20_SUCCESSOR_JSON,p,h,next,json), GOES_WITH(VO_FIXTURE_PARENT,basis,h,genesis), THIS(VO_DECISION,decision), THIS(VD_INITIAL_CHAIN_MATCH)
+ THEN GOES_WITH(VCOM_RETURN,p,h,next);
+
+// Expected comparison operands are the source-produced observer field. The
+// JTP contact is the same four NO/THIS readings already used by proposal;
+// here it checks, and never replaces, the committed canonical result.
+law VCOM_EXPECTED_READING := IF GOES_WITH(VO_PAIR,f,g), GOES_WITH(VO_FIELD,state,f,a), GOES_WITH(VO_FIELD,state,g,b), GOES_WITH(JTP_SAME_RESULT,MARKER(a),MARKER(b),word,reading)
+ THEN GOES_WITH(VCOM_EXPECTED_READING,state,f,g,reading);
+law VCOM_RESULT_ROW := IF GOES_WITH(VO_PAIR_SPAN,ONE,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),tail), GOES_WITH(VCOM_EXPECTED_READING,CANDIDATE,f,g,reading), GOES_WITH(I20_COMMITTED_AGREEMENT,p,h,next,f,g,reading)
+ THEN GOES_WITH(VCOM_RESULT_SPAN,p,h,next,ONE,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),tail);
+law VCOM_RESULT_DOUBLE := IF GOES_WITH(GSC_SPAN_DOUBLE,n,m), GOES_WITH(VCOM_RESULT_SPAN,p,h,next,n,a,b), GOES_WITH(VCOM_RESULT_SPAN,p,h,next,n,b,c)
+ THEN GOES_WITH(VCOM_RESULT_SPAN,p,h,next,m,a,c);
+law VCOM_ALL_RESULTS := IF THIS(VO_PAIR_SEQUENCE,ARRAY(rows)), GOES_WITH(VCOM_RESULT_SPAN,p,h,next,FIVE_TWELVE,rows,a), GOES_WITH(VCOM_RESULT_SPAN,p,h,next,ONE_TWENTY_EIGHT,a,b), GOES_WITH(VCOM_RESULT_SPAN,p,h,next,SIXTY_FOUR,b,c), GOES_WITH(VCOM_RESULT_SPAN,p,h,next,SIXTEEN,c,NIL), GOES_WITH(VCOM_RETURN,p,h,next)
+ THEN GOES_WITH(VCOM_ALL_RESULTS,p,h,next,ALL_COMPARISONS_SAME);
+law VCOM_RESULT_DIFFER_SAME := IF GOES_WITH(VCOM_EXPECTED_READING,CANDIDATE,f,g,SAME), GOES_WITH(I20_COMMITTED_AGREEMENT,p,h,next,f,g,NOT_SAME)
+ THEN GOES_WITH(VCOM_RESULT_DIFFER,p,h,next,f,g,NOT_SAME);
+law VCOM_RESULT_DIFFER_WALL := IF GOES_WITH(VCOM_EXPECTED_READING,CANDIDATE,f,g,NOT_SAME), GOES_WITH(I20_COMMITTED_AGREEMENT,p,h,next,f,g,SAME)
+ THEN GOES_WITH(VCOM_RESULT_DIFFER,p,h,next,f,g,NOT_SAME);
+
+// Receipt changes compare the prior field with actual returned results. The
+// NOT_SAME overlap remains a wall, not a failed frame or an admission refusal.
+law VCOM_UNCHANGED := IF GOES_WITH(VCOM_RETURN,p,h,next), GOES_WITH(VCOM_EXPECTED_READING,GENESIS,f,g,SAME), GOES_WITH(I20_COMMITTED_AGREEMENT,p,h,next,f,g,SAME)
+ THEN GOES_WITH(VCOM_CHANGE_PAIR,p,h,next,f,g,UNCHANGED);
+law VCOM_DISCHARGED := IF GOES_WITH(VCOM_RETURN,p,h,next), GOES_WITH(VCOM_EXPECTED_READING,GENESIS,f,g,NOT_SAME), GOES_WITH(I20_COMMITTED_AGREEMENT,p,h,next,f,g,SAME)
+ THEN GOES_WITH(VCOM_CHANGE_PAIR,p,h,next,f,g,DISCHARGED);
+law VCOM_OPENED := IF GOES_WITH(VCOM_RETURN,p,h,next), GOES_WITH(VCOM_EXPECTED_READING,GENESIS,f,g,SAME), GOES_WITH(I20_COMMITTED_AGREEMENT,p,h,next,f,g,NOT_SAME)
+ THEN GOES_WITH(VCOM_CHANGE_PAIR,p,h,next,f,g,OPENED);
+law VCOM_RETAINED := IF GOES_WITH(VCOM_RETURN,p,h,next), GOES_WITH(VCOM_EXPECTED_READING,GENESIS,f,g,NOT_SAME), GOES_WITH(I20_COMMITTED_AGREEMENT,p,h,next,f,g,NOT_SAME)
+ THEN GOES_WITH(VCOM_CHANGE_PAIR,p,h,next,f,g,RETAINED_WALL);
+law VCOM_RECEIPT_ROW_UNCHANGED := IF GOES_WITH(VO_PAIR_SPAN,ONE,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),tail), GOES_WITH(VCOM_CHANGE_PAIR,p,h,next,f,g,UNCHANGED)
+ THEN GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,ONE,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),tail,CHANGE_LISTS(NIL,NIL));
+law VCOM_RECEIPT_ROW_RETAINED := IF GOES_WITH(VO_PAIR_SPAN,ONE,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),tail), GOES_WITH(VCOM_CHANGE_PAIR,p,h,next,f,g,RETAINED_WALL)
+ THEN GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,ONE,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),tail,CHANGE_LISTS(NIL,NIL));
+law VCOM_RECEIPT_ROW_DISCHARGED := IF GOES_WITH(VO_PAIR_SPAN,ONE,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),tail), GOES_WITH(VCOM_CHANGE_PAIR,p,h,next,f,g,DISCHARGED)
+ THEN GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,ONE,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),tail,CHANGE_LISTS(CONS(ARRAY(CONS(f,CONS(g,NIL))),NIL),NIL));
+law VCOM_RECEIPT_ROW_OPENED := IF GOES_WITH(VO_PAIR_SPAN,ONE,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),tail), GOES_WITH(VCOM_CHANGE_PAIR,p,h,next,f,g,OPENED)
+ THEN GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,ONE,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),tail,CHANGE_LISTS(NIL,CONS(ARRAY(CONS(f,CONS(g,NIL))),NIL)));
+
+// Balanced ordered folds preserve sorted compact reference observation bytes.
+// The sequence has already discharged distinctness,720rows and full coverage
+// in VO_PAIR_SEQUENCE. No host supplies discharged/opened membership.
+law VCOM_JOIN_D := IF THIS(VCOM_JOIN_REQUEST,CHANGE_LISTS(a,b),CHANGE_LISTS(c,d))
+ THEN THIS(VCOM_APPEND_REQUEST,a,c);
+law VCOM_JOIN_O := IF THIS(VCOM_JOIN_REQUEST,CHANGE_LISTS(a,b),CHANGE_LISTS(c,d))
+ THEN THIS(VCOM_APPEND_REQUEST,b,d);
+law VCOM_APPEND_END := IF THIS(VCOM_APPEND_REQUEST,NIL,b)
+ THEN GOES_WITH(VCOM_APPEND,NIL,b,b);
+law VCOM_APPEND_TAIL := IF THIS(VCOM_APPEND_REQUEST,CONS(a,t),b)
+ THEN THIS(VCOM_APPEND_REQUEST,t,b);
+law VCOM_APPEND_HEAD := IF THIS(VCOM_APPEND_REQUEST,CONS(a,t),b), GOES_WITH(VCOM_APPEND,t,b,c)
+ THEN GOES_WITH(VCOM_APPEND,CONS(a,t),b,CONS(a,c));
+law VCOM_JOIN := IF THIS(VCOM_JOIN_REQUEST,CHANGE_LISTS(a,b),CHANGE_LISTS(c,d)), GOES_WITH(VCOM_APPEND,a,c,x), GOES_WITH(VCOM_APPEND,b,d,y)
+ THEN GOES_WITH(VCOM_JOIN,CHANGE_LISTS(a,b),CHANGE_LISTS(c,d),CHANGE_LISTS(x,y));
+law VCOM_RECEIPT_DOUBLE_REQUEST := IF GOES_WITH(GSC_SPAN_DOUBLE,n,m), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,n,a,b,x), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,n,b,c,y)
+ THEN THIS(VCOM_JOIN_REQUEST,x,y);
+law VCOM_RECEIPT_DOUBLE := IF GOES_WITH(GSC_SPAN_DOUBLE,n,m), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,n,a,b,x), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,n,b,c,y), GOES_WITH(VCOM_JOIN,x,y,z)
+ THEN GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,m,a,c,z);
+law VCOM_RECEIPT_PREFIX_REQUEST := IF THIS(VO_PAIR_SEQUENCE,ARRAY(rows)), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,FIVE_TWELVE,rows,a,x), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,ONE_TWENTY_EIGHT,a,b,y)
+ THEN THIS(VCOM_JOIN_REQUEST,x,y);
+law VCOM_RECEIPT_PREFIX := IF THIS(VO_PAIR_SEQUENCE,ARRAY(rows)), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,FIVE_TWELVE,rows,a,x), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,ONE_TWENTY_EIGHT,a,b,y), GOES_WITH(VCOM_JOIN,x,y,z)
+ THEN GOES_WITH(VCOM_RECEIPT_PREFIX,p,h,next,b,z);
+law VCOM_RECEIPT_SUFFIX_REQUEST := IF GOES_WITH(VCOM_RECEIPT_PREFIX,p,h,next,b,x), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,SIXTY_FOUR,b,c,y), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,SIXTEEN,c,NIL,z)
+ THEN THIS(VCOM_JOIN_REQUEST,y,z);
+law VCOM_RECEIPT_SUFFIX := IF GOES_WITH(VCOM_RECEIPT_PREFIX,p,h,next,b,x), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,SIXTY_FOUR,b,c,y), GOES_WITH(VCOM_RECEIPT_SPAN,p,h,next,SIXTEEN,c,NIL,z), GOES_WITH(VCOM_JOIN,y,z,s)
+ THEN GOES_WITH(VCOM_RECEIPT_PARTS,p,h,next,x,s);
+law VCOM_RECEIPT_FINAL_REQUEST := IF GOES_WITH(VCOM_RECEIPT_PARTS,p,h,next,x,y)
+ THEN THIS(VCOM_JOIN_REQUEST,x,y);
+law VCOM_RECEIPT_LISTS := IF GOES_WITH(VCOM_RECEIPT_PARTS,p,h,next,x,y), GOES_WITH(VCOM_JOIN,x,y,z), GOES_WITH(VCOM_ALL_RESULTS,p,h,next,ALL_COMPARISONS_SAME)
+ THEN GOES_WITH(VCOM_RECEIPT_LISTS,p,h,next,z);
+law VCOM_RECEIPT_OBJECT := IF GOES_WITH(VCOM_RECEIPT_LISTS,p,h,next,CHANGE_LISTS(d,o))
+ THEN GOES_WITH(VCOM_RECEIPT_OBJECT,p,h,next,OBJECT(CONS(MEMBER("discharged",ARRAY(d)),CONS(MEMBER("opened",ARRAY(o)),NIL))));
+law VCOM_RECEIPT_NO := IF GOES_WITH(VCOM_RECEIPT_LISTS,p,h,next,CHANGE_LISTS(NIL,NIL))
+ THEN GOES_WITH(VCOM_RECEIPT_READING,p,h,next,"NO");
+law VCOM_RECEIPT_D_THIS := IF GOES_WITH(VCOM_RECEIPT_LISTS,p,h,next,CHANGE_LISTS(CONS(pair,tail),opened))
+ THEN GOES_WITH(VCOM_RECEIPT_READING,p,h,next,"THIS");
+law VCOM_RECEIPT_O_THIS := IF GOES_WITH(VCOM_RECEIPT_LISTS,p,h,next,CHANGE_LISTS(discharged,CONS(pair,tail)))
+ THEN GOES_WITH(VCOM_RECEIPT_READING,p,h,next,"THIS");
+
+// Candidate observation serialization may precede runtime, exactly as the
+// retained state_objects.mal constructs a candidate body. Publication below
+// requires the universal VO fixture and every committed comparison. No body
+// or digest alone is a committed world.
+law VCOM_FIELD_END := IF THIS(VC_ROWS,NIL)
+ THEN GOES_WITH(VCOM_FIELD_SUFFIX,NIL,NIL);
+law VCOM_FIELD_HEAD := IF THIS(VC_ROWS,CONS(ARRAY(CONS(f,CONS(old,NIL))),tail)), GOES_WITH(VD_REFERENCE_CANDIDATE_FIELD,f,r), GOES_WITH(VC_READING,text,r), GOES_WITH(VCOM_FIELD_SUFFIX,tail,rest)
+ THEN GOES_WITH(VCOM_FIELD_SUFFIX,CONS(ARRAY(CONS(f,CONS(old,NIL))),tail),CONS(ARRAY(CONS(f,CONS(text,NIL))),rest));
+law VCOM_FIELD_OBJECT := IF THIS(VC_INPUT_FIELD,ARRAY(rows)), GOES_WITH(VCOM_FIELD_SUFFIX,rows,field), THIS(VO_OPERAND_FIXTURE_READY,FROZEN_VECTOR_OBSERVER), THIS(VD_INITIAL_CONTENT_MATCH)
+ THEN THIS(VCOM_FIELD_OBJECT,ARRAY(field));
+law VCOM_ENTITY_END := IF THIS(VD_E0_ROWS,NIL)
+ THEN GOES_WITH(VCOM_ENTITY_SUFFIX,NIL,NIL);
+law VCOM_ENTITY_HEAD := IF THIS(VD_E0_ROWS,CONS(MEMBER(name,old),tail)), GOES_WITH(VO_REFERENCE_ENTITY,name,f), GOES_WITH(VCOM_ENTITY_SUFFIX,tail,rest)
+ THEN GOES_WITH(VCOM_ENTITY_SUFFIX,CONS(MEMBER(name,old),tail),CONS(MEMBER(name,f),rest));
+law VCOM_ENTITY_OBJECT := IF THIS(VD_INPUT_E0,OBJECT(rows)), GOES_WITH(VCOM_ENTITY_SUFFIX,rows,entities), THIS(VO_DECISION,decision), THIS(VO_OPERAND_FIXTURE_READY,FROZEN_VECTOR_OBSERVER)
+ THEN THIS(VCOM_ENTITY_OBJECT,OBJECT(entities));
+law VCOM_STATE_BODY := IF THIS(VCOM_FIELD_OBJECT,field), THIS(VCOM_ENTITY_OBJECT,entities), GOES_WITH(VCOM_ALL_RESULTS,p,h,next,ALL_COMPARISONS_SAME), THIS(VO_DECISION,decision)
+ THEN GOES_WITH(VCOM_STATE_BODY,p,h,next,OBJECT(CONS(MEMBER("entities",entities),CONS(MEMBER("field",field),NIL))));
+
+// Generic SHA-256 responses are matched to their exact source subjects.
+law VCOM_STATE_HASH_REQUEST := IF GOES_WITH(VCOM_STATE_BODY,p,h,next,body)
+ THEN GOES_WITH(GPU_HASH_REQUEST,VECTOR_STATE,CONTEXT(p,h,next),body);
+law VCOM_RECEIPT_HASH_REQUEST := IF GOES_WITH(VCOM_RECEIPT_OBJECT,p,h,next,receipt)
+ THEN GOES_WITH(GPU_HASH_REQUEST,VECTOR_RECEIPT,CONTEXT(p,h,next),receipt);
+law VCOM_STATE_HASH := IF GOES_WITH(VCOM_STATE_BODY,p,h,next,body), GOES_WITH(GPU_HASH_RESPONSE,body,digest)
+ THEN GOES_WITH(VCOM_STATE_HASH,p,h,next,body,digest);
+law VCOM_RECEIPT_HASH := IF GOES_WITH(VCOM_RECEIPT_OBJECT,p,h,next,receipt), GOES_WITH(GPU_HASH_RESPONSE,receipt,digest)
+ THEN GOES_WITH(VCOM_RECEIPT_HASH,p,h,next,receipt,digest);
+law VCOM_DECISION_WHAT := IF THIS(VO_DECISION,DECISION(PROPOSAL(basis,entity,kind,target,lifts),selected)), THIS(VD_INPUT_LIFT,selected), GOES_WITH(VD_SELECTED_OBJECT,LIFT(f,g,k),reading)
+ THEN GOES_WITH(VCOM_DECISION_WHAT,DECISION(PROPOSAL(basis,entity,kind,target,lifts),selected),OBJECT(CONS(MEMBER("entity",entity),CONS(MEMBER("lift",selected),CONS(MEMBER("whence",f),NIL)))));
+law VCOM_TICK_RECORD := IF GOES_WITH(VCOM_DECISION_WHAT,decision,what), GOES_WITH(VCOM_STATE_HASH,p,h,next,body,stateHash), GOES_WITH(VCOM_RECEIPT_HASH,p,h,next,receipt,receiptHash), GOES_WITH(VCOM_RECEIPT_READING,p,h,next,reading), GOES_WITH(VO_FIXTURE_PARENT,basis,h,entry), GOES_WITH(VCOM_ALL_RESULTS,p,h,next,ALL_COMPARISONS_SAME)
+ THEN GOES_WITH(VCOM_TICK_RECORD,p,h,next,decision,OBJECT(CONS(MEMBER("kind","TICK"),CONS(MEMBER("prev",h),CONS(MEMBER("receipt_hash",receiptHash),CONS(MEMBER("receipt_reading",reading),CONS(MEMBER("state_hash",stateHash),CONS(MEMBER("what",what),NIL))))))));
+law VCOM_PROMOTION := IF GOES_WITH(VCOM_TICK_RECORD,p,h,next,decision,record), GOES_WITH(VCOM_STATE_BODY,p,h,next,body), GOES_WITH(VCOM_RECEIPT_OBJECT,p,h,next,receipt), GOES_WITH(VCOM_RETURN,p,h,next)
+ THEN GOES_WITH(VCOM_PROMOTION,p,h,next,PROMOTION(decision,body,receipt,record));
+law VCOM_SUCCESSOR_PROJECTION := IF GOES_WITH(VCOM_PROMOTION,p,h,next,promotion), GOES_WITH(VCOM_RETURN,p,h,next), GOES_WITH(VCOM_ALL_RESULTS,p,h,next,ALL_COMPARISONS_SAME), THIS(VD_INITIAL_CHAIN_MATCH)
+ THEN GOES_WITH(FABRIC_SUCCESSOR_PROJECTION,p,next,promotion);
+law VCOM_TICK_HASH_REQUEST := IF GOES_WITH(VCOM_PROMOTION,p,h,next,PROMOTION(decision,body,receipt,record)), GOES_WITH(FABRIC_SUCCESSOR_PROJECTION,p,next,PROMOTION(decision,body,receipt,record))
+ THEN GOES_WITH(GPU_HASH_REQUEST,VECTOR_TICK,CONTEXT(p,h,next),record);
+law VCOM_TICK_HASH := IF GOES_WITH(VCOM_PROMOTION,p,h,next,PROMOTION(decision,body,receipt,record)), GOES_WITH(GPU_HASH_RESPONSE,record,digest), GOES_WITH(FABRIC_SUCCESSOR_PROJECTION,p,next,PROMOTION(decision,body,receipt,record))
+ THEN GOES_WITH(VCOM_TICK_HASH,p,h,next,PROMOTION(decision,body,receipt,record),digest);
+
+// The previous link is rechecked at publication. The reference tick entry is
+// flat (kind,link,prev,...), NOT the actual018 record-wrapper encoding.
+law VCOM_TICK_ENTRY := IF GOES_WITH(VCOM_TICK_HASH,p,h,next,PROMOTION(decision,body,receipt,OBJECT(CONS(MEMBER("kind","TICK"),CONS(MEMBER("prev",h),tail)))),digest), GOES_WITH(VO_FIXTURE_PARENT,basis,h,entry), THIS(VD_INITIAL_CHAIN_MATCH)
+ THEN GOES_WITH(VCOM_TICK_ENTRY,p,h,next,OBJECT(CONS(MEMBER("kind","TICK"),CONS(MEMBER("link",digest),CONS(MEMBER("prev",h),tail)))));
+law VCOM_COMMIT := IF GOES_WITH(VCOM_PROMOTION,p,h,next,PROMOTION(decision,OBJECT(CONS(MEMBER("entities",entities),CONS(MEMBER("field",field),NIL))),receipt,record)), GOES_WITH(FABRIC_SUCCESSOR_PROJECTION,p,next,PROMOTION(decision,OBJECT(CONS(MEMBER("entities",entities),CONS(MEMBER("field",field),NIL))),receipt,record)), GOES_WITH(VO_FIXTURE_PARENT,basis,h,genesis), GOES_WITH(VCOM_TICK_ENTRY,p,h,next,tick), GOES_WITH(VCOM_RETURN,p,h,next), GOES_WITH(VCOM_ALL_RESULTS,p,h,next,ALL_COMPARISONS_SAME), THIS(VD_INITIAL_CHAIN_MATCH)
+ THEN THIS(COMMITTED_VECTOR_OUTPUT,OBJECT(CONS(MEMBER("receipt",receipt),CONS(MEMBER("state",OBJECT(CONS(MEMBER("chain",ARRAY(CONS(genesis,CONS(tick,NIL)))),CONS(MEMBER("entities",entities),CONS(MEMBER("field",field),NIL))))),NIL))));
+
+// Bounded diagnostics remain distinct from the frozen output bytes.
+@propose seed VCOM_DIAGNOSTIC_TEXT := {
+ GOES_WITH(VCOM_CHANGE_TEXT,UNCHANGED,"UNCHANGED"),
+ GOES_WITH(VCOM_CHANGE_TEXT,DISCHARGED,"DISCHARGED"),
+ GOES_WITH(VCOM_CHANGE_TEXT,OPENED,"OPENED"),
+ GOES_WITH(VCOM_CHANGE_TEXT,RETAINED_WALL,"RETAINED_WALL")
+};
+law VCOM_CHANGE_OBSERVATION := IF GOES_WITH(VCOM_CHANGE_PAIR,p,h,next,f,g,change), GOES_WITH(VCOM_CHANGE_TEXT,change,text), GOES_WITH(VCOM_ALL_RESULTS,p,h,next,ALL_COMPARISONS_SAME)
+ THEN THIS(OBSERVATION_ROW,VECTOR_RECEIPT,ARRAY(CONS(f,CONS(g,CONS(text,NIL)))));
+law VCOM_RETAINED_OBSERVATION := IF GOES_WITH(VCOM_CHANGE_PAIR,p,h,next,f,g,RETAINED_WALL), GOES_WITH(VCOM_ALL_RESULTS,p,h,next,ALL_COMPARISONS_SAME)
+ THEN THIS(OBSERVATION_ROW,VECTOR_RETAINED_WALLS,ARRAY(CONS(f,CONS(g,NIL))));

@@ -1,0 +1,50 @@
+// Isolated additive-stage execution. World law and expected bytes are not authored here.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
+const here=path.dirname(fileURLToPath(import.meta.url)),root=path.dirname(here);
+const [vector,stageText]=process.argv.slice(2),stage=Number(stageText);
+if(vector!=='V1'||!Number.isInteger(stage)||stage<2||stage>99)throw Error('ISOLATED_V1_ADDITIVE_STAGE_REQUIRED');
+const work=path.join(here,'vectors_repeat_008/V1'),dir=path.join(work,'stage'+String(stage).padStart(2,'0')),image=path.join(dir,'image');
+const prev=path.join(work,'stage'+String(stage-1).padStart(2,'0')),previous=path.join(prev,'image');
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
+const id=p=>{const b=fs.readFileSync(p);return {path:path.resolve(p),size:b.length,sha256:sha(b)};};
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const check=r=>{const n=id(r.path);if(n.sha256!==r.sha256||n.size!==(r.size??r.bytes))throw Error('CUSTODY_NOT_SAME '+r.path);};
+const put=(n,o)=>fs.writeFileSync(path.join(dir,n),JSON.stringify(o,null,2)+'\n',{flag:'wx'});
+const bindingsManifest=path.join(here,'CONTINUATION_008_BINDINGS.json');
+for(const b of read(bindingsManifest).members)check(b);
+const repeated=read(path.join(work,'stage01/REPEATABILITY.json'));
+if(repeated.comparison!=='SAME'||repeated.repeated.sha256!=='6C30E87F2DCA3325015D82F86482315134D93530D2A0C4517A76FC3D6DB09849')throw Error('REPEAT_SAME_REQUIRED');
+check(repeated.baseline);check(repeated.repeated);
+const build=read(path.join(dir,'BUILD.json')),prior=read(path.join(prev,'STATUS.json')),priorExecution=read(path.join(prev,'EXECUTION.json')),priorGuard=read(path.join(prev,'PREFILL_EXECUTION_GUARD.json'));
+if(build.vector!==vector||build.stage!==stage||prior.error!==0||priorExecution.exit_code!==0||priorExecution.error!==null||priorGuard.guard!=='IF_THEN'||priorGuard.resumed_sha256!==prior.readback_sha256||id(path.join(previous,'readback.bin')).sha256!==prior.readback_sha256)throw Error('PRIOR_AUDITED_CLOSURE_REQUIRED');
+for(const b of [build.source,build.image,build.source_map,...Object.values(build.inputs)])check(b);
+const exe=path.join(here,'iterative_collect_007/block_iterative_full.exe'),source=path.join(here,'iterative_collect_007/block_iterative_full.cu'),guard=path.join(root,'prefill_guard_execute.mjs');
+if(id(exe).sha256!=='8A739F97DC3A67DC440DE3BE5C079A7ED7FC0898D5DCFDB5AEFE6F9CE8AB2B08'||id(source).sha256!=='C09A06FC4B2F1D733C2A9F7FC247844E98B6EF4DB3C7EC5915C63A089D3D6169'||id(guard).sha256!=='CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C')throw Error('QUALIFIED_RUNTIME_NOT_SAME');
+const qpath=path.join(here,'qualification_iterative_full/QUALIFICATION.json'),q=read(qpath);
+if(q.qualification!=='SAME')throw Error('QUALIFICATION_REQUIRED');
+for(const b of Object.values(q.bindings))if(b?.path)check(b);
+const output=path.join(image,'readback.bin');
+if(fs.existsSync(output)||fs.existsSync(path.join(dir,'START.json')))throw Error('PRESERVE_EXISTING_EXECUTION');
+const argv=[guard,'--previous-map',path.join(previous,'source-map.json'),'--previous-image',path.join(previous,'image.bin'),'--previous-readback',path.join(previous,'readback.bin'),'--next-map',path.join(image,'source-map.json'),'--next-image',path.join(image,'image.bin'),'--run','--exe',exe,'--output',output,'--report',path.join(dir,'PREFILL_EXECUTION_GUARD.json')];
+const bindings={runner:id(fileURLToPath(import.meta.url)),runtime:id(exe),source:id(source),guard:id(guard),qualification:id(qpath),continuation_manifest:id(bindingsManifest),previous_readback:id(path.join(previous,'readback.bin')),image:id(path.join(image,'image.bin')),source_map:id(path.join(image,'source-map.json')),world_source:id(path.join(image,'source.mal'))};
+const started=new Date().toISOString();
+put('START.json',{scope:'GUARDED_ADDITIVE_V1_CONTINUATION; NOT_CONFORM',vector,stage,started_utc:started,bindings,arguments:argv,capacity:{facts:2097152,terms:4194304,prior_facts:prior.facts,prior_terms:prior.terms,remaining_facts:2097152-prior.facts},capacity_refusal:'NONZERO_ERROR_NONZERO_EXIT; NO_STATUS_HASH_OR_CONTINUATION_ON_REFUSAL'});
+console.log(JSON.stringify({action:'ADDITIVE_GPU_LAUNCH',vector,stage,capacity_remaining_facts:2097152-prior.facts,image:bindings.image.sha256}));
+try{
+ const r=spawnSync(process.execPath,['--max-old-space-size=8192',...argv],{cwd:root,windowsHide:true,encoding:'utf8',stdio:['ignore','pipe','inherit'],maxBuffer:32*1024*1024});
+ put('EXECUTION.json',{scope:'Generic source execution; not CONFORM',vector,stage,started_utc:started,ended_utc:new Date().toISOString(),bindings,exit_code:r.status,signal:r.signal,error:r.error?.message??null,output:r.stdout??'',diagnostic_readback:fs.existsSync(output)?id(output):null});
+ for(const b of Object.values(bindings))check(b);
+ for(const b of read(bindingsManifest).members)check(b);
+ if(r.error||r.status!==0)throw Error('ADDITIVE_EXECUTION_REFUSED '+(r.error?.message??r.status));
+ function cpu(tool,args){const result=spawnSync(process.execPath,['--max-old-space-size=8192',path.join(root,tool),...args],{cwd:root,windowsHide:true,encoding:'utf8',stdio:['ignore','pipe','inherit'],maxBuffer:32*1024*1024});if(result.error||result.status!==0)throw Error('OBSERVATION_REFUSED '+tool);return result.stdout;}
+ cpu('status.mjs',[image,path.join(dir,'STATUS.json')]);
+ const hashes=path.join(prev,'hash/responses.json');
+ cpu('hash_batch.mjs',[image,path.join(dir,'hash'),hashes]);
+ cpu('hash_delta.mjs',[path.join(dir,'hash/responses.json'),hashes,path.join(dir,'hash/delta.json')]);
+ const s=read(path.join(dir,'STATUS.json'));
+ console.log(JSON.stringify({action:'ADDITIVE_STAGE_COMPLETED',vector,stage,readback:s.readback_sha256,error:s.error,facts:s.facts,terms:s.terms,epochs:s.epochs,capacity_remaining_facts:2097152-s.facts,conform:'NOT_RUN'}));
+}catch(e){put('STOP.json',{utc:new Date().toISOString(),reason:e.message,continuation:'WITHHELD',conform:'NOT_RUN'});throw e;}

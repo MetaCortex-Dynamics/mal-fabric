@@ -1,0 +1,256 @@
+{
+  "scope": "CPU_ONLY_GENERIC_RETAINED_PROOF_QUALIFICATION_PREPARATION; NOT_CONFORM; NO_WORLD_LAW; GPU_NOT_RUN",
+  "capacities": {
+    "NP": 65536,
+    "NS": 2048,
+    "NR": 1024,
+    "NT": 32768,
+    "NF": 16384,
+    "stack": 8192
+  },
+  "runtimeTransform": {
+    "parent": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\law_application_resume_vector_disjoint.cu",
+      "bytes": 22417,
+      "sha256": "3BC29A3542A5032F657D7C185E234764DD299D67EEE75C36E03E5DBCAAE8BE4C"
+    },
+    "child": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\prefill_small.cu",
+      "bytes": 22405,
+      "sha256": "E828C73CB72D4AAD20BBB8BBF685CA44F6599E8F351F07773C3C886C91AE1B9C"
+    },
+    "changes": [
+      {
+        "from": "constexpr int NP=1048576, NS=2048, NR=1024, NT=4194304, NF=2097152;",
+        "to": "constexpr int NP=65536, NS=2048, NR=1024, NT=32768, NF=16384;"
+      },
+      {
+        "from": "cudaDeviceSetLimit(cudaLimitStackSize,65536)",
+        "to": "cudaDeviceSetLimit(cudaLimitStackSize,8192)"
+      },
+      {
+        "from": "static_assert((2ull*PAIR_BUCKETS+1ull*NF*PAIR_SLOTS)*sizeof(int)==232ull*1024*1024);",
+        "to": "static_assert((2ull*PAIR_BUCKETS+1ull*NF*PAIR_SLOTS)*sizeof(int)==10223616ull);"
+      }
+    ],
+    "all_other_bytes": "SAME"
+  },
+  "original_carrier_guard": {
+    "guard": "IF_THEN",
+    "previous_image_sha256": "7509314A34D0607B62F83D1AA048802B1108E9CA58A342908CF3603217EB5399",
+    "next_image_sha256": "7509314A34D0607B62F83D1AA048802B1108E9CA58A342908CF3603217EB5399",
+    "checkpoint_sha256": "ECED361A61D4D9FA514DE0E6E2EE3ECFFC975F2BFE4C68D960DEED2E3BE08D8B",
+    "retained_rules": 58,
+    "retained_facts": 5282,
+    "retained_terms": 6170,
+    "symbol_prefix": "SAME",
+    "logical_rule_prefix": "SAME",
+    "prior_seeds": "PRESERVED",
+    "checkpoint_proofs": "SAME",
+    "execution": "NOT_RUN",
+    "qualification": "MAYBE"
+  },
+  "carrierImage": {
+    "from": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\gpu\\image.bin",
+      "bytes": 41992208,
+      "sha256": "7509314A34D0607B62F83D1AA048802B1108E9CA58A342908CF3603217EB5399"
+    },
+    "to": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\carrier\\image.bin",
+      "bytes": 2670608,
+      "sha256": "E4C8154AED75BBFF452DDAB836EB780084390669A6149679D7DB0DACD9467993"
+    },
+    "source_sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F",
+    "patterns": 306,
+    "seeds": 91,
+    "rules": 58,
+    "used_bytes": "SAME"
+  },
+  "carrierState": {
+    "from": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\gpu\\readback.bin",
+      "bytes": 268435488,
+      "sha256": "ECED361A61D4D9FA514DE0E6E2EE3ECFFC975F2BFE4C68D960DEED2E3BE08D8B"
+    },
+    "to": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\carrier\\readback.bin",
+      "bytes": 2097184,
+      "sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E"
+    },
+    "from_capacity": {
+      "NT": 4194304,
+      "NF": 2097152
+    },
+    "to_capacity": {
+      "NT": 32768,
+      "NF": 16384
+    },
+    "terms": 6170,
+    "facts": 5282,
+    "epochs": 14,
+    "header_counts": "SAME",
+    "used_term_fact_rule_rank_support_bytes": "SAME",
+    "symbol_rule_remap": "NONE",
+    "derived_facts_reseeded": 0
+  },
+  "cases": [
+    {
+      "reading": "THIS",
+      "source": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\this.mal",
+        "bytes": 13851,
+        "sha256": "1F750E0065C94206E46F1938F694CF24942AFD5E179A3CF3CCE367B192AA6C71"
+      },
+      "input": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\this.input.json",
+        "bytes": 18,
+        "sha256": "18C5035F10975D1770656ED935ED4607C6841C9F700A610CD8A699B2E3CCAE5B"
+      },
+      "image": {
+        "from": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\this_lowered\\image.bin",
+          "bytes": 41992208,
+          "sha256": "4EB54B2B984055BC1024F128BFC5C22250A204B7EE9397407629D25704F0A9E6"
+        },
+        "to": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\this\\image.bin",
+          "bytes": 2670608,
+          "sha256": "D10209ACAAC159124EE08B2CA42D44745C42D42547A3D10FE2868954D899F4F4"
+        },
+        "source_sha256": "1F750E0065C94206E46F1938F694CF24942AFD5E179A3CF3CCE367B192AA6C71",
+        "patterns": 338,
+        "seeds": 92,
+        "rules": 62,
+        "used_bytes": "SAME"
+      },
+      "lowerer_stdout": {
+        "source_sha256": "1F750E0065C94206E46F1938F694CF24942AFD5E179A3CF3CCE367B192AA6C71",
+        "image_sha256": "4EB54B2B984055BC1024F128BFC5C22250A204B7EE9397407629D25704F0A9E6",
+        "patterns": 338,
+        "seeds": 92,
+        "rules": 62
+      },
+      "proof_guard": {
+        "guard": "IF_THEN",
+        "previous_image_sha256": "E4C8154AED75BBFF452DDAB836EB780084390669A6149679D7DB0DACD9467993",
+        "next_image_sha256": "D10209ACAAC159124EE08B2CA42D44745C42D42547A3D10FE2868954D899F4F4",
+        "checkpoint_sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E",
+        "retained_rules": 58,
+        "retained_facts": 5282,
+        "retained_terms": 6170,
+        "symbol_prefix": "SAME",
+        "logical_rule_prefix": "SAME",
+        "prior_seeds": "PRESERVED",
+        "checkpoint_proofs": "SAME",
+        "execution": "NOT_RUN",
+        "qualification": "MAYBE",
+        "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+        "guard_source_sha256": "EE8908CBEFBA00835BB662E587259F003002B81777A987FC2E174F045B1AF08B"
+      }
+    },
+    {
+      "reading": "NO",
+      "source": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\no.mal",
+        "bytes": 13851,
+        "sha256": "1F750E0065C94206E46F1938F694CF24942AFD5E179A3CF3CCE367B192AA6C71"
+      },
+      "input": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\no.input.json",
+        "bytes": 16,
+        "sha256": "5615EE6CE6E6E7E17F091C44A1BC695DC4EFA20F094C08FE5EABE603E8F2182F"
+      },
+      "image": {
+        "from": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\no_lowered\\image.bin",
+          "bytes": 41992208,
+          "sha256": "91FEF169F27716A8471C28953A7BDDE2B2A46D0EC017D793710D7C8C32BE1BA9"
+        },
+        "to": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\no\\image.bin",
+          "bytes": 2670608,
+          "sha256": "488F61F877F564BFE383EFCDC79EF01AEE447088314520615381C16AC7F7E50D"
+        },
+        "source_sha256": "1F750E0065C94206E46F1938F694CF24942AFD5E179A3CF3CCE367B192AA6C71",
+        "patterns": 338,
+        "seeds": 92,
+        "rules": 62,
+        "used_bytes": "SAME"
+      },
+      "lowerer_stdout": {
+        "source_sha256": "1F750E0065C94206E46F1938F694CF24942AFD5E179A3CF3CCE367B192AA6C71",
+        "image_sha256": "91FEF169F27716A8471C28953A7BDDE2B2A46D0EC017D793710D7C8C32BE1BA9",
+        "patterns": 338,
+        "seeds": 92,
+        "rules": 62
+      },
+      "proof_guard": {
+        "guard": "IF_THEN",
+        "previous_image_sha256": "E4C8154AED75BBFF452DDAB836EB780084390669A6149679D7DB0DACD9467993",
+        "next_image_sha256": "488F61F877F564BFE383EFCDC79EF01AEE447088314520615381C16AC7F7E50D",
+        "checkpoint_sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E",
+        "retained_rules": 58,
+        "retained_facts": 5282,
+        "retained_terms": 6170,
+        "symbol_prefix": "SAME",
+        "logical_rule_prefix": "SAME",
+        "prior_seeds": "PRESERVED",
+        "checkpoint_proofs": "SAME",
+        "execution": "NOT_RUN",
+        "qualification": "MAYBE",
+        "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+        "guard_source_sha256": "EE8908CBEFBA00835BB662E587259F003002B81777A987FC2E174F045B1AF08B"
+      }
+    }
+  ],
+  "source_members": {
+    "carrier": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\gpu\\source.mal",
+      "bytes": 13197,
+      "sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F"
+    },
+    "fixture": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\continuation.mal",
+      "bytes": 653,
+      "sha256": "8AD9737890A36F2D117311B3AA147FF3E3A70569D89306FE533FBF47944F5F00"
+    },
+    "separator_hex": "0A"
+  },
+  "static_device_allocations": {
+    "image": 2670608,
+    "state": 2097168,
+    "index": 12619776,
+    "total": 17387552,
+    "progress_mapped_bytes": 32,
+    "stack_bytes_per_thread": 8192,
+    "stack_context_driver_allocations": "SEPARATE; must measure before launch; no sub-1GiB assertion"
+  },
+  "tools": {
+    "prepare": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\prepare.mjs",
+      "bytes": 5660,
+      "sha256": "F768ED1A9D6242FA48513FE6FAF3972AF3F9A742D8FD040957CD72B883800B1E"
+    },
+    "pack": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\pack.mjs",
+      "bytes": 4039,
+      "sha256": "DC321DDD54550C16FC067F4D9BECE934759A534BA97010E8BD70217EEA47BCD0"
+    },
+    "guard": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_guard.mjs",
+      "bytes": 10316,
+      "sha256": "EE8908CBEFBA00835BB662E587259F003002B81777A987FC2E174F045B1AF08B"
+    },
+    "lowerer": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\lower_compact_large.mjs",
+      "bytes": 8365,
+      "sha256": "1B76FFEB4938C87BF90FF54942EBB7A32DF89C0FCA942663BA15311ACB61FCDB"
+    },
+    "build": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\build.cmd",
+      "bytes": 416,
+      "sha256": "E415DABA7290D041FBE650A2DBADE170657BFC233A02CD685020E2A0F982E610"
+    }
+  }
+}

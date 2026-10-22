@@ -1,0 +1,5051 @@
+{
+  "source_sha256": "BE1E4948CEADE240BAAA1AFAA37DFF2D0EA01810A1F188EC6F9A1F402ED91A97",
+  "image_sha256": "FE34A07948DB72507CFD7D28278E63DCABEA478FDB949B4C28CBFA2A0B41D75A",
+  "readback_sha256": "3659EE92F2B10D7FA0CFC07E531BCCB26902F183E016F479C5ABB0ED8D6FF384",
+  "selector": "VO_PAIRS",
+  "ordering": "full-row JSON UTF-8",
+  "output_sha256": "F0384727237F3B6A8C08B7A157DF90473CD98823650910F875DC9CD49577030D",
+  "projector_sha256": "ADE7F443075299449860EA35B01D52DD1C354F55F2DDF23916E9C2A647D1F6CD",
+  "rows": [
+    {
+      "fact": 73704,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73135
+      ]
+    },
+    {
+      "fact": 38047,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        37296
+      ]
+    },
+    {
+      "fact": 38045,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        37294
+      ]
+    },
+    {
+      "fact": 68830,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68046
+      ]
+    },
+    {
+      "fact": 38044,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        37293
+      ]
+    },
+    {
+      "fact": 73702,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73133
+      ]
+    },
+    {
+      "fact": 38046,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        37295
+      ]
+    },
+    {
+      "fact": 39610,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38821
+      ]
+    },
+    {
+      "fact": 68823,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68039
+      ]
+    },
+    {
+      "fact": 39609,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38820
+      ]
+    },
+    {
+      "fact": 68840,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68056
+      ]
+    },
+    {
+      "fact": 34838,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        34026
+      ]
+    },
+    {
+      "fact": 68817,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68033
+      ]
+    },
+    {
+      "fact": 34837,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        34025
+      ]
+    },
+    {
+      "fact": 68838,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68054
+      ]
+    },
+    {
+      "fact": 34834,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        34022
+      ]
+    },
+    {
+      "fact": 68826,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68042
+      ]
+    },
+    {
+      "fact": 34833,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        34021
+      ]
+    },
+    {
+      "fact": 48591,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47487
+      ]
+    },
+    {
+      "fact": 64721,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62864
+      ]
+    },
+    {
+      "fact": 64720,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62863
+      ]
+    },
+    {
+      "fact": 48589,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47485
+      ]
+    },
+    {
+      "fact": 64713,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62856
+      ]
+    },
+    {
+      "fact": 64712,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62855
+      ]
+    },
+    {
+      "fact": 73699,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73130
+      ]
+    },
+    {
+      "fact": 52975,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        51340
+      ]
+    },
+    {
+      "fact": 38043,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        37292
+      ]
+    },
+    {
+      "fact": 68829,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68045
+      ]
+    },
+    {
+      "fact": 38042,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        37291
+      ]
+    },
+    {
+      "fact": 73697,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73128
+      ]
+    },
+    {
+      "fact": 57517,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        56060
+      ]
+    },
+    {
+      "fact": 39608,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38819
+      ]
+    },
+    {
+      "fact": 68828,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68044
+      ]
+    },
+    {
+      "fact": 39607,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38818
+      ]
+    },
+    {
+      "fact": 71517,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70696
+      ]
+    },
+    {
+      "fact": 47492,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        46416
+      ]
+    },
+    {
+      "fact": 69638,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68780
+      ]
+    },
+    {
+      "fact": 47491,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        46415
+      ]
+    },
+    {
+      "fact": 71515,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70694
+      ]
+    },
+    {
+      "fact": 51348,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49695
+      ]
+    },
+    {
+      "fact": 69636,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68778
+      ]
+    },
+    {
+      "fact": 51347,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49694
+      ]
+    },
+    {
+      "fact": 48592,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47488
+      ]
+    },
+    {
+      "fact": 64719,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62862
+      ]
+    },
+    {
+      "fact": 64718,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62861
+      ]
+    },
+    {
+      "fact": 67226,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65950
+      ]
+    },
+    {
+      "fact": 65960,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64659
+      ]
+    },
+    {
+      "fact": 65959,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64658
+      ]
+    },
+    {
+      "fact": 73703,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73134
+      ]
+    },
+    {
+      "fact": 40334,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        39595
+      ]
+    },
+    {
+      "fact": 64745,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62888
+      ]
+    },
+    {
+      "fact": 73700,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73131
+      ]
+    },
+    {
+      "fact": 43542,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        42699
+      ]
+    },
+    {
+      "fact": 64743,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62886
+      ]
+    },
+    {
+      "fact": 72365,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71481
+      ]
+    },
+    {
+      "fact": 34836,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        34024
+      ]
+    },
+    {
+      "fact": 73152,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72326
+      ]
+    },
+    {
+      "fact": 34835,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        34023
+      ]
+    },
+    {
+      "fact": 72363,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71479
+      ]
+    },
+    {
+      "fact": 47490,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        46414
+      ]
+    },
+    {
+      "fact": 72352,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71468
+      ]
+    },
+    {
+      "fact": 47489,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        46413
+      ]
+    },
+    {
+      "fact": 47497,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        46421
+      ]
+    },
+    {
+      "fact": 64717,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62860
+      ]
+    },
+    {
+      "fact": 64716,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62859
+      ]
+    },
+    {
+      "fact": 62905,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61145
+      ]
+    },
+    {
+      "fact": 68796,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68012
+      ]
+    },
+    {
+      "fact": 68795,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68011
+      ]
+    },
+    {
+      "fact": 73701,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73132
+      ]
+    },
+    {
+      "fact": 41968,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41114
+      ]
+    },
+    {
+      "fact": 64744,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62887
+      ]
+    },
+    {
+      "fact": 73695,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73126
+      ]
+    },
+    {
+      "fact": 67220,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65944
+      ]
+    },
+    {
+      "fact": 41964,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41110
+      ]
+    },
+    {
+      "fact": 68827,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68043
+      ]
+    },
+    {
+      "fact": 41963,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41109
+      ]
+    },
+    {
+      "fact": 73154,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72328
+      ]
+    },
+    {
+      "fact": 34832,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        34020
+      ]
+    },
+    {
+      "fact": 73151,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72325
+      ]
+    },
+    {
+      "fact": 34831,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        34019
+      ]
+    },
+    {
+      "fact": 74091,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73650
+      ]
+    },
+    {
+      "fact": 61153,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59374
+      ]
+    },
+    {
+      "fact": 74083,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73642
+      ]
+    },
+    {
+      "fact": 61152,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59373
+      ]
+    },
+    {
+      "fact": 42707,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41960
+      ]
+    },
+    {
+      "fact": 64705,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62848
+      ]
+    },
+    {
+      "fact": 64704,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62847
+      ]
+    },
+    {
+      "fact": 72368,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71484
+      ]
+    },
+    {
+      "fact": 70700,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69591
+      ]
+    },
+    {
+      "fact": 70699,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69590
+      ]
+    },
+    {
+      "fact": 73698,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73129
+      ]
+    },
+    {
+      "fact": 46422,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        45407
+      ]
+    },
+    {
+      "fact": 64742,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62885
+      ]
+    },
+    {
+      "fact": 73696,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73127
+      ]
+    },
+    {
+      "fact": 57515,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        56058
+      ]
+    },
+    {
+      "fact": 64741,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62884
+      ]
+    },
+    {
+      "fact": 75149,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74788
+      ]
+    },
+    {
+      "fact": 51346,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49693
+      ]
+    },
+    {
+      "fact": 75138,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74777
+      ]
+    },
+    {
+      "fact": 51345,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49692
+      ]
+    },
+    {
+      "fact": 75147,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74786
+      ]
+    },
+    {
+      "fact": 61151,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59372
+      ]
+    },
+    {
+      "fact": 75137,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74776
+      ]
+    },
+    {
+      "fact": 61150,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59371
+      ]
+    },
+    {
+      "fact": 44460,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43541
+      ]
+    },
+    {
+      "fact": 64715,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62858
+      ]
+    },
+    {
+      "fact": 64714,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62857
+      ]
+    },
+    {
+      "fact": 72366,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71482
+      ]
+    },
+    {
+      "fact": 74073,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73632
+      ]
+    },
+    {
+      "fact": 74072,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73631
+      ]
+    },
+    {
+      "fact": 73694,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73125
+      ]
+    },
+    {
+      "fact": 42704,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41957
+      ]
+    },
+    {
+      "fact": 39606,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38817
+      ]
+    },
+    {
+      "fact": 68816,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68032
+      ]
+    },
+    {
+      "fact": 39605,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38816
+      ]
+    },
+    {
+      "fact": 73691,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73122
+      ]
+    },
+    {
+      "fact": 42703,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41956
+      ]
+    },
+    {
+      "fact": 41962,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41108
+      ]
+    },
+    {
+      "fact": 68824,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68040
+      ]
+    },
+    {
+      "fact": 41961,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41107
+      ]
+    },
+    {
+      "fact": 69646,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68788
+      ]
+    },
+    {
+      "fact": 39604,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38815
+      ]
+    },
+    {
+      "fact": 68822,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68038
+      ]
+    },
+    {
+      "fact": 39603,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38814
+      ]
+    },
+    {
+      "fact": 69644,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68786
+      ]
+    },
+    {
+      "fact": 39600,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38811
+      ]
+    },
+    {
+      "fact": 68820,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68036
+      ]
+    },
+    {
+      "fact": 39599,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38810
+      ]
+    },
+    {
+      "fact": 52977,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        51342
+      ]
+    },
+    {
+      "fact": 64707,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62850
+      ]
+    },
+    {
+      "fact": 64706,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62849
+      ]
+    },
+    {
+      "fact": 52976,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        51341
+      ]
+    },
+    {
+      "fact": 64697,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62840
+      ]
+    },
+    {
+      "fact": 64696,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62839
+      ]
+    },
+    {
+      "fact": 68839,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68055
+      ]
+    },
+    {
+      "fact": 40335,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        39596
+      ]
+    },
+    {
+      "fact": 64740,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62883
+      ]
+    },
+    {
+      "fact": 72364,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71480
+      ]
+    },
+    {
+      "fact": 70717,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69608
+      ]
+    },
+    {
+      "fact": 73693,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73124
+      ]
+    },
+    {
+      "fact": 41966,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41112
+      ]
+    },
+    {
+      "fact": 64737,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62880
+      ]
+    },
+    {
+      "fact": 72361,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71477
+      ]
+    },
+    {
+      "fact": 39602,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38813
+      ]
+    },
+    {
+      "fact": 72354,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71470
+      ]
+    },
+    {
+      "fact": 39601,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38812
+      ]
+    },
+    {
+      "fact": 38822,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38041
+      ]
+    },
+    {
+      "fact": 64695,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62838
+      ]
+    },
+    {
+      "fact": 64694,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62837
+      ]
+    },
+    {
+      "fact": 38049,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        37298
+      ]
+    },
+    {
+      "fact": 69618,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68760
+      ]
+    },
+    {
+      "fact": 69617,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68759
+      ]
+    },
+    {
+      "fact": 68837,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68053
+      ]
+    },
+    {
+      "fact": 41969,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41115
+      ]
+    },
+    {
+      "fact": 64739,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62882
+      ]
+    },
+    {
+      "fact": 73153,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72327
+      ]
+    },
+    {
+      "fact": 71498,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70677
+      ]
+    },
+    {
+      "fact": 73690,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73121
+      ]
+    },
+    {
+      "fact": 65985,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64684
+      ]
+    },
+    {
+      "fact": 45409,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        44445
+      ]
+    },
+    {
+      "fact": 68825,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68041
+      ]
+    },
+    {
+      "fact": 45408,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        44444
+      ]
+    },
+    {
+      "fact": 74089,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73648
+      ]
+    },
+    {
+      "fact": 59393,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        57508
+      ]
+    },
+    {
+      "fact": 73150,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72324
+      ]
+    },
+    {
+      "fact": 59392,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        57507
+      ]
+    },
+    {
+      "fact": 38048,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        37297
+      ]
+    },
+    {
+      "fact": 64711,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62854
+      ]
+    },
+    {
+      "fact": 64710,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62853
+      ]
+    },
+    {
+      "fact": 59397,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        57512
+      ]
+    },
+    {
+      "fact": 69624,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68766
+      ]
+    },
+    {
+      "fact": 69623,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68765
+      ]
+    },
+    {
+      "fact": 73692,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73123
+      ]
+    },
+    {
+      "fact": 44458,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43539
+      ]
+    },
+    {
+      "fact": 64738,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62881
+      ]
+    },
+    {
+      "fact": 73689,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73120
+      ]
+    },
+    {
+      "fact": 56072,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54564
+      ]
+    },
+    {
+      "fact": 64736,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62879
+      ]
+    },
+    {
+      "fact": 73684,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73115
+      ]
+    },
+    {
+      "fact": 39598,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38809
+      ]
+    },
+    {
+      "fact": 73678,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73109
+      ]
+    },
+    {
+      "fact": 39597,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        38808
+      ]
+    },
+    {
+      "fact": 73682,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73113
+      ]
+    },
+    {
+      "fact": 59391,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        57506
+      ]
+    },
+    {
+      "fact": 74456,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74053
+      ]
+    },
+    {
+      "fact": 59390,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        57505
+      ]
+    },
+    {
+      "fact": 48588,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47484
+      ]
+    },
+    {
+      "fact": 64709,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62852
+      ]
+    },
+    {
+      "fact": 64708,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62851
+      ]
+    },
+    {
+      "fact": 71519,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70698
+      ]
+    },
+    {
+      "fact": 70708,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69599
+      ]
+    },
+    {
+      "fact": 70707,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69598
+      ]
+    },
+    {
+      "fact": 74099,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73658
+      ]
+    },
+    {
+      "fact": 48585,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47481
+      ]
+    },
+    {
+      "fact": 44457,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43538
+      ]
+    },
+    {
+      "fact": 68821,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68037
+      ]
+    },
+    {
+      "fact": 44456,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43537
+      ]
+    },
+    {
+      "fact": 74096,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73655
+      ]
+    },
+    {
+      "fact": 48584,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47480
+      ]
+    },
+    {
+      "fact": 47494,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        46418
+      ]
+    },
+    {
+      "fact": 68818,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68034
+      ]
+    },
+    {
+      "fact": 47493,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        46417
+      ]
+    },
+    {
+      "fact": 70725,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69616
+      ]
+    },
+    {
+      "fact": 44455,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43536
+      ]
+    },
+    {
+      "fact": 68815,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68031
+      ]
+    },
+    {
+      "fact": 44454,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43535
+      ]
+    },
+    {
+      "fact": 70723,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69614
+      ]
+    },
+    {
+      "fact": 44451,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43532
+      ]
+    },
+    {
+      "fact": 68813,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68029
+      ]
+    },
+    {
+      "fact": 44450,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43531
+      ]
+    },
+    {
+      "fact": 62909,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61149
+      ]
+    },
+    {
+      "fact": 64687,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62830
+      ]
+    },
+    {
+      "fact": 64686,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62829
+      ]
+    },
+    {
+      "fact": 62907,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61147
+      ]
+    },
+    {
+      "fact": 65952,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64651
+      ]
+    },
+    {
+      "fact": 65951,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64650
+      ]
+    },
+    {
+      "fact": 69645,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68787
+      ]
+    },
+    {
+      "fact": 41967,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41113
+      ]
+    },
+    {
+      "fact": 65982,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64681
+      ]
+    },
+    {
+      "fact": 72360,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71476
+      ]
+    },
+    {
+      "fact": 70715,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69606
+      ]
+    },
+    {
+      "fact": 74098,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73657
+      ]
+    },
+    {
+      "fact": 47495,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        46419
+      ]
+    },
+    {
+      "fact": 65979,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64678
+      ]
+    },
+    {
+      "fact": 72359,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71475
+      ]
+    },
+    {
+      "fact": 44453,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43534
+      ]
+    },
+    {
+      "fact": 72353,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71469
+      ]
+    },
+    {
+      "fact": 44452,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43533
+      ]
+    },
+    {
+      "fact": 43543,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        42700
+      ]
+    },
+    {
+      "fact": 64703,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62846
+      ]
+    },
+    {
+      "fact": 64702,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62845
+      ]
+    },
+    {
+      "fact": 42706,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41959
+      ]
+    },
+    {
+      "fact": 68802,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68018
+      ]
+    },
+    {
+      "fact": 68801,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68017
+      ]
+    },
+    {
+      "fact": 69643,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68785
+      ]
+    },
+    {
+      "fact": 44459,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43540
+      ]
+    },
+    {
+      "fact": 65981,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64680
+      ]
+    },
+    {
+      "fact": 73683,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73114
+      ]
+    },
+    {
+      "fact": 72350,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71466
+      ]
+    },
+    {
+      "fact": 74095,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73654
+      ]
+    },
+    {
+      "fact": 68832,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68048
+      ]
+    },
+    {
+      "fact": 52972,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        51337
+      ]
+    },
+    {
+      "fact": 68819,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68035
+      ]
+    },
+    {
+      "fact": 52971,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        51336
+      ]
+    },
+    {
+      "fact": 74468,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74065
+      ]
+    },
+    {
+      "fact": 64729,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62872
+      ]
+    },
+    {
+      "fact": 73677,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73108
+      ]
+    },
+    {
+      "fact": 64728,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62871
+      ]
+    },
+    {
+      "fact": 42705,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41958
+      ]
+    },
+    {
+      "fact": 64701,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62844
+      ]
+    },
+    {
+      "fact": 64700,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62843
+      ]
+    },
+    {
+      "fact": 64746,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62889
+      ]
+    },
+    {
+      "fact": 70706,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69597
+      ]
+    },
+    {
+      "fact": 70705,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69596
+      ]
+    },
+    {
+      "fact": 74097,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73656
+      ]
+    },
+    {
+      "fact": 51352,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49699
+      ]
+    },
+    {
+      "fact": 65980,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64679
+      ]
+    },
+    {
+      "fact": 74094,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73653
+      ]
+    },
+    {
+      "fact": 61161,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59382
+      ]
+    },
+    {
+      "fact": 65978,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64677
+      ]
+    },
+    {
+      "fact": 74462,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74059
+      ]
+    },
+    {
+      "fact": 44449,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43530
+      ]
+    },
+    {
+      "fact": 74454,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74051
+      ]
+    },
+    {
+      "fact": 44448,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        43529
+      ]
+    },
+    {
+      "fact": 74460,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74057
+      ]
+    },
+    {
+      "fact": 64727,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62870
+      ]
+    },
+    {
+      "fact": 74453,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74050
+      ]
+    },
+    {
+      "fact": 64726,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62869
+      ]
+    },
+    {
+      "fact": 57520,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        56063
+      ]
+    },
+    {
+      "fact": 64699,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62842
+      ]
+    },
+    {
+      "fact": 64698,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62841
+      ]
+    },
+    {
+      "fact": 73688,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73119
+      ]
+    },
+    {
+      "fact": 72340,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71456
+      ]
+    },
+    {
+      "fact": 72339,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71455
+      ]
+    },
+    {
+      "fact": 74474,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74071
+      ]
+    },
+    {
+      "fact": 56075,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54567
+      ]
+    },
+    {
+      "fact": 42702,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41955
+      ]
+    },
+    {
+      "fact": 68814,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68030
+      ]
+    },
+    {
+      "fact": 42701,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41954
+      ]
+    },
+    {
+      "fact": 74471,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74068
+      ]
+    },
+    {
+      "fact": 56074,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54566
+      ]
+    },
+    {
+      "fact": 56067,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54559
+      ]
+    },
+    {
+      "fact": 70718,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69609
+      ]
+    },
+    {
+      "fact": 56066,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54558
+      ]
+    },
+    {
+      "fact": 71513,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70692
+      ]
+    },
+    {
+      "fact": 49710,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48578
+      ]
+    },
+    {
+      "fact": 69637,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68779
+      ]
+    },
+    {
+      "fact": 49709,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48577
+      ]
+    },
+    {
+      "fact": 71511,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70690
+      ]
+    },
+    {
+      "fact": 49706,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48574
+      ]
+    },
+    {
+      "fact": 71503,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70682
+      ]
+    },
+    {
+      "fact": 49705,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48573
+      ]
+    },
+    {
+      "fact": 69650,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68792
+      ]
+    },
+    {
+      "fact": 64693,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62836
+      ]
+    },
+    {
+      "fact": 64692,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62835
+      ]
+    },
+    {
+      "fact": 69648,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68790
+      ]
+    },
+    {
+      "fact": 65958,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64657
+      ]
+    },
+    {
+      "fact": 65957,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64656
+      ]
+    },
+    {
+      "fact": 70724,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69615
+      ]
+    },
+    {
+      "fact": 47496,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        46420
+      ]
+    },
+    {
+      "fact": 67217,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65941
+      ]
+    },
+    {
+      "fact": 72358,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71474
+      ]
+    },
+    {
+      "fact": 70714,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69605
+      ]
+    },
+    {
+      "fact": 74473,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74070
+      ]
+    },
+    {
+      "fact": 45410,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        44446
+      ]
+    },
+    {
+      "fact": 67214,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65938
+      ]
+    },
+    {
+      "fact": 72357,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71473
+      ]
+    },
+    {
+      "fact": 49708,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48576
+      ]
+    },
+    {
+      "fact": 72351,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71467
+      ]
+    },
+    {
+      "fact": 49707,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48575
+      ]
+    },
+    {
+      "fact": 49713,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48581
+      ]
+    },
+    {
+      "fact": 64691,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62834
+      ]
+    },
+    {
+      "fact": 64690,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62833
+      ]
+    },
+    {
+      "fact": 48587,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47483
+      ]
+    },
+    {
+      "fact": 68800,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68016
+      ]
+    },
+    {
+      "fact": 68799,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68015
+      ]
+    },
+    {
+      "fact": 70722,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69613
+      ]
+    },
+    {
+      "fact": 51353,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49700
+      ]
+    },
+    {
+      "fact": 67216,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65940
+      ]
+    },
+    {
+      "fact": 74461,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74058
+      ]
+    },
+    {
+      "fact": 73675,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73106
+      ]
+    },
+    {
+      "fact": 74470,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74067
+      ]
+    },
+    {
+      "fact": 69640,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68782
+      ]
+    },
+    {
+      "fact": 62900,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61140
+      ]
+    },
+    {
+      "fact": 70719,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69610
+      ]
+    },
+    {
+      "fact": 62899,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61139
+      ]
+    },
+    {
+      "fact": 75155,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74794
+      ]
+    },
+    {
+      "fact": 65968,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64667
+      ]
+    },
+    {
+      "fact": 74451,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74048
+      ]
+    },
+    {
+      "fact": 65967,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64666
+      ]
+    },
+    {
+      "fact": 48586,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47482
+      ]
+    },
+    {
+      "fact": 64689,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62832
+      ]
+    },
+    {
+      "fact": 64688,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62831
+      ]
+    },
+    {
+      "fact": 65986,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64685
+      ]
+    },
+    {
+      "fact": 72334,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71450
+      ]
+    },
+    {
+      "fact": 72333,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71449
+      ]
+    },
+    {
+      "fact": 74472,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74069
+      ]
+    },
+    {
+      "fact": 61165,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59386
+      ]
+    },
+    {
+      "fact": 67215,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65939
+      ]
+    },
+    {
+      "fact": 74469,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74066
+      ]
+    },
+    {
+      "fact": 67218,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65942
+      ]
+    },
+    {
+      "fact": 67213,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65937
+      ]
+    },
+    {
+      "fact": 74811,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74435
+      ]
+    },
+    {
+      "fact": 49704,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48572
+      ]
+    },
+    {
+      "fact": 75139,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74778
+      ]
+    },
+    {
+      "fact": 49703,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48571
+      ]
+    },
+    {
+      "fact": 74809,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74433
+      ]
+    },
+    {
+      "fact": 65966,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64665
+      ]
+    },
+    {
+      "fact": 74805,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74429
+      ]
+    },
+    {
+      "fact": 65965,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64664
+      ]
+    },
+    {
+      "fact": 67222,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65946
+      ]
+    },
+    {
+      "fact": 67206,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65930
+      ]
+    },
+    {
+      "fact": 67205,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65929
+      ]
+    },
+    {
+      "fact": 74093,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73652
+      ]
+    },
+    {
+      "fact": 73139,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72313
+      ]
+    },
+    {
+      "fact": 73138,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72312
+      ]
+    },
+    {
+      "fact": 71516,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70695
+      ]
+    },
+    {
+      "fact": 40333,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        39594
+      ]
+    },
+    {
+      "fact": 68083,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67200
+      ]
+    },
+    {
+      "fact": 72362,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71478
+      ]
+    },
+    {
+      "fact": 70716,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69607
+      ]
+    },
+    {
+      "fact": 71512,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70691
+      ]
+    },
+    {
+      "fact": 45411,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        44447
+      ]
+    },
+    {
+      "fact": 68081,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67198
+      ]
+    },
+    {
+      "fact": 72356,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71472
+      ]
+    },
+    {
+      "fact": 70713,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69604
+      ]
+    },
+    {
+      "fact": 57519,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        56062
+      ]
+    },
+    {
+      "fact": 65954,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64653
+      ]
+    },
+    {
+      "fact": 65953,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64652
+      ]
+    },
+    {
+      "fact": 57518,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        56061
+      ]
+    },
+    {
+      "fact": 68798,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68014
+      ]
+    },
+    {
+      "fact": 68797,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68013
+      ]
+    },
+    {
+      "fact": 71510,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70689
+      ]
+    },
+    {
+      "fact": 61164,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59385
+      ]
+    },
+    {
+      "fact": 68080,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67197
+      ]
+    },
+    {
+      "fact": 74810,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74434
+      ]
+    },
+    {
+      "fact": 74081,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73640
+      ]
+    },
+    {
+      "fact": 74814,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74438
+      ]
+    },
+    {
+      "fact": 71505,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70684
+      ]
+    },
+    {
+      "fact": 67208,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65932
+      ]
+    },
+    {
+      "fact": 69635,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68777
+      ]
+    },
+    {
+      "fact": 67207,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65931
+      ]
+    },
+    {
+      "fact": 75492,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75121
+      ]
+    },
+    {
+      "fact": 68074,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67191
+      ]
+    },
+    {
+      "fact": 74803,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74427
+      ]
+    },
+    {
+      "fact": 68073,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67190
+      ]
+    },
+    {
+      "fact": 56076,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54568
+      ]
+    },
+    {
+      "fact": 68058,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67175
+      ]
+    },
+    {
+      "fact": 68057,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67174
+      ]
+    },
+    {
+      "fact": 68086,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67203
+      ]
+    },
+    {
+      "fact": 73660,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73091
+      ]
+    },
+    {
+      "fact": 73659,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73090
+      ]
+    },
+    {
+      "fact": 71514,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70693
+      ]
+    },
+    {
+      "fact": 41965,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        41111
+      ]
+    },
+    {
+      "fact": 68082,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67199
+      ]
+    },
+    {
+      "fact": 75148,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74787
+      ]
+    },
+    {
+      "fact": 74449,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74046
+      ]
+    },
+    {
+      "fact": 74815,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74439
+      ]
+    },
+    {
+      "fact": 69633,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68775
+      ]
+    },
+    {
+      "fact": 69632,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68774
+      ]
+    },
+    {
+      "fact": 75145,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74784
+      ]
+    },
+    {
+      "fact": 68072,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67189
+      ]
+    },
+    {
+      "fact": 75844,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75487
+      ]
+    },
+    {
+      "fact": 68071,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67188
+      ]
+    },
+    {
+      "fact": 61168,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59389
+      ]
+    },
+    {
+      "fact": 65956,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64655
+      ]
+    },
+    {
+      "fact": 65955,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64654
+      ]
+    },
+    {
+      "fact": 68087,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67204
+      ]
+    },
+    {
+      "fact": 73666,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73097
+      ]
+    },
+    {
+      "fact": 73665,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73096
+      ]
+    },
+    {
+      "fact": 75504,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75133
+      ]
+    },
+    {
+      "fact": 68085,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67202
+      ]
+    },
+    {
+      "fact": 49702,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48570
+      ]
+    },
+    {
+      "fact": 71502,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70681
+      ]
+    },
+    {
+      "fact": 49701,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48569
+      ]
+    },
+    {
+      "fact": 75502,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75131
+      ]
+    },
+    {
+      "fact": 68084,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67201
+      ]
+    },
+    {
+      "fact": 56065,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54557
+      ]
+    },
+    {
+      "fact": 71500,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70679
+      ]
+    },
+    {
+      "fact": 56064,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54556
+      ]
+    },
+    {
+      "fact": 74087,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73646
+      ]
+    },
+    {
+      "fact": 62898,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61138
+      ]
+    },
+    {
+      "fact": 73149,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72323
+      ]
+    },
+    {
+      "fact": 62897,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61137
+      ]
+    },
+    {
+      "fact": 74085,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73644
+      ]
+    },
+    {
+      "fact": 62894,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61134
+      ]
+    },
+    {
+      "fact": 74082,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73641
+      ]
+    },
+    {
+      "fact": 62893,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61133
+      ]
+    },
+    {
+      "fact": 74813,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74437
+      ]
+    },
+    {
+      "fact": 68066,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67183
+      ]
+    },
+    {
+      "fact": 68065,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67182
+      ]
+    },
+    {
+      "fact": 75159,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74798
+      ]
+    },
+    {
+      "fact": 69622,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68764
+      ]
+    },
+    {
+      "fact": 69621,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68763
+      ]
+    },
+    {
+      "fact": 75503,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75132
+      ]
+    },
+    {
+      "fact": 56071,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54563
+      ]
+    },
+    {
+      "fact": 69631,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68773
+      ]
+    },
+    {
+      "fact": 75499,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75128
+      ]
+    },
+    {
+      "fact": 68831,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68047
+      ]
+    },
+    {
+      "fact": 51344,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49691
+      ]
+    },
+    {
+      "fact": 72355,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71471
+      ]
+    },
+    {
+      "fact": 51343,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49690
+      ]
+    },
+    {
+      "fact": 73680,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73111
+      ]
+    },
+    {
+      "fact": 62896,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61136
+      ]
+    },
+    {
+      "fact": 74455,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74052
+      ]
+    },
+    {
+      "fact": 62895,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61135
+      ]
+    },
+    {
+      "fact": 74466,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74063
+      ]
+    },
+    {
+      "fact": 64725,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62868
+      ]
+    },
+    {
+      "fact": 73676,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73107
+      ]
+    },
+    {
+      "fact": 64724,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62867
+      ]
+    },
+    {
+      "fact": 61166,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59387
+      ]
+    },
+    {
+      "fact": 68060,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67177
+      ]
+    },
+    {
+      "fact": 68059,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67176
+      ]
+    },
+    {
+      "fact": 75157,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74796
+      ]
+    },
+    {
+      "fact": 70702,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69593
+      ]
+    },
+    {
+      "fact": 70701,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69592
+      ]
+    },
+    {
+      "fact": 75500,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75129
+      ]
+    },
+    {
+      "fact": 61160,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59381
+      ]
+    },
+    {
+      "fact": 69629,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68771
+      ]
+    },
+    {
+      "fact": 75498,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75127
+      ]
+    },
+    {
+      "fact": 69639,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68781
+      ]
+    },
+    {
+      "fact": 61155,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59376
+      ]
+    },
+    {
+      "fact": 71501,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70680
+      ]
+    },
+    {
+      "fact": 61154,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59375
+      ]
+    },
+    {
+      "fact": 74458,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74055
+      ]
+    },
+    {
+      "fact": 64723,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62866
+      ]
+    },
+    {
+      "fact": 74452,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74049
+      ]
+    },
+    {
+      "fact": 64722,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62865
+      ]
+    },
+    {
+      "fact": 75153,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74792
+      ]
+    },
+    {
+      "fact": 65964,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64663
+      ]
+    },
+    {
+      "fact": 74450,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74047
+      ]
+    },
+    {
+      "fact": 65963,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64662
+      ]
+    },
+    {
+      "fact": 64747,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62890
+      ]
+    },
+    {
+      "fact": 68794,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68010
+      ]
+    },
+    {
+      "fact": 68793,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68009
+      ]
+    },
+    {
+      "fact": 75494,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75123
+      ]
+    },
+    {
+      "fact": 73137,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72311
+      ]
+    },
+    {
+      "fact": 73136,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72310
+      ]
+    },
+    {
+      "fact": 75497,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75126
+      ]
+    },
+    {
+      "fact": 65983,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64682
+      ]
+    },
+    {
+      "fact": 69628,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68770
+      ]
+    },
+    {
+      "fact": 75495,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75124
+      ]
+    },
+    {
+      "fact": 71504,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70683
+      ]
+    },
+    {
+      "fact": 65970,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64669
+      ]
+    },
+    {
+      "fact": 71499,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70678
+      ]
+    },
+    {
+      "fact": 65969,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64668
+      ]
+    },
+    {
+      "fact": 74807,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74431
+      ]
+    },
+    {
+      "fact": 65962,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64661
+      ]
+    },
+    {
+      "fact": 74804,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74428
+      ]
+    },
+    {
+      "fact": 65961,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64660
+      ]
+    },
+    {
+      "fact": 75490,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75119
+      ]
+    },
+    {
+      "fact": 68070,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67187
+      ]
+    },
+    {
+      "fact": 74802,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74426
+      ]
+    },
+    {
+      "fact": 68069,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67186
+      ]
+    },
+    {
+      "fact": 67224,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65948
+      ]
+    },
+    {
+      "fact": 68064,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67181
+      ]
+    },
+    {
+      "fact": 68063,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67180
+      ]
+    },
+    {
+      "fact": 76188,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75840
+      ]
+    },
+    {
+      "fact": 73145,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72319
+      ]
+    },
+    {
+      "fact": 73144,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72318
+      ]
+    },
+    {
+      "fact": 75501,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75130
+      ]
+    },
+    {
+      "fact": 61162,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59383
+      ]
+    },
+    {
+      "fact": 69630,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68772
+      ]
+    },
+    {
+      "fact": 75496,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75125
+      ]
+    },
+    {
+      "fact": 68811,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68027
+      ]
+    },
+    {
+      "fact": 69627,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68769
+      ]
+    },
+    {
+      "fact": 75143,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74782
+      ]
+    },
+    {
+      "fact": 62892,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61132
+      ]
+    },
+    {
+      "fact": 75136,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74775
+      ]
+    },
+    {
+      "fact": 62891,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61131
+      ]
+    },
+    {
+      "fact": 75141,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74780
+      ]
+    },
+    {
+      "fact": 68068,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67185
+      ]
+    },
+    {
+      "fact": 75843,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75486
+      ]
+    },
+    {
+      "fact": 68067,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67184
+      ]
+    },
+    {
+      "fact": 75151,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74790
+      ]
+    },
+    {
+      "fact": 68062,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67179
+      ]
+    },
+    {
+      "fact": 68061,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67178
+      ]
+    },
+    {
+      "fact": 76190,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75842
+      ]
+    },
+    {
+      "fact": 73664,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73095
+      ]
+    },
+    {
+      "fact": 73663,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73094
+      ]
+    },
+    {
+      "fact": 74088,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73647
+      ]
+    },
+    {
+      "fact": 51351,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49698
+      ]
+    },
+    {
+      "fact": 71496,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70675
+      ]
+    },
+    {
+      "fact": 73681,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73112
+      ]
+    },
+    {
+      "fact": 72349,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71465
+      ]
+    },
+    {
+      "fact": 74086,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73645
+      ]
+    },
+    {
+      "fact": 54571,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        52970
+      ]
+    },
+    {
+      "fact": 71495,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70674
+      ]
+    },
+    {
+      "fact": 73679,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73110
+      ]
+    },
+    {
+      "fact": 72347,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71463
+      ]
+    },
+    {
+      "fact": 68834,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68050
+      ]
+    },
+    {
+      "fact": 69620,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68762
+      ]
+    },
+    {
+      "fact": 69619,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68761
+      ]
+    },
+    {
+      "fact": 70721,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69612
+      ]
+    },
+    {
+      "fact": 72332,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71448
+      ]
+    },
+    {
+      "fact": 72331,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71447
+      ]
+    },
+    {
+      "fact": 74090,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73649
+      ]
+    },
+    {
+      "fact": 48583,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47479
+      ]
+    },
+    {
+      "fact": 71497,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70676
+      ]
+    },
+    {
+      "fact": 75146,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74785
+      ]
+    },
+    {
+      "fact": 74448,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74045
+      ]
+    },
+    {
+      "fact": 74084,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73643
+      ]
+    },
+    {
+      "fact": 61163,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59384
+      ]
+    },
+    {
+      "fact": 71494,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70673
+      ]
+    },
+    {
+      "fact": 75142,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74781
+      ]
+    },
+    {
+      "fact": 74446,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74043
+      ]
+    },
+    {
+      "fact": 68836,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68052
+      ]
+    },
+    {
+      "fact": 71486,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70665
+      ]
+    },
+    {
+      "fact": 71485,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70664
+      ]
+    },
+    {
+      "fact": 68835,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68051
+      ]
+    },
+    {
+      "fact": 73662,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73093
+      ]
+    },
+    {
+      "fact": 73661,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73092
+      ]
+    },
+    {
+      "fact": 74467,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74064
+      ]
+    },
+    {
+      "fact": 57516,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        56059
+      ]
+    },
+    {
+      "fact": 72348,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71464
+      ]
+    },
+    {
+      "fact": 74459,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74056
+      ]
+    },
+    {
+      "fact": 73674,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73105
+      ]
+    },
+    {
+      "fact": 74465,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74062
+      ]
+    },
+    {
+      "fact": 56073,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54565
+      ]
+    },
+    {
+      "fact": 72346,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71462
+      ]
+    },
+    {
+      "fact": 74457,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74054
+      ]
+    },
+    {
+      "fact": 73672,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73103
+      ]
+    },
+    {
+      "fact": 71507,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70686
+      ]
+    },
+    {
+      "fact": 70704,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69595
+      ]
+    },
+    {
+      "fact": 70703,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69594
+      ]
+    },
+    {
+      "fact": 73156,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72330
+      ]
+    },
+    {
+      "fact": 72338,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71454
+      ]
+    },
+    {
+      "fact": 72337,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71453
+      ]
+    },
+    {
+      "fact": 75154,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74793
+      ]
+    },
+    {
+      "fact": 67219,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65943
+      ]
+    },
+    {
+      "fact": 73673,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73104
+      ]
+    },
+    {
+      "fact": 74808,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74432
+      ]
+    },
+    {
+      "fact": 74080,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73639
+      ]
+    },
+    {
+      "fact": 75152,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74791
+      ]
+    },
+    {
+      "fact": 65984,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64683
+      ]
+    },
+    {
+      "fact": 73671,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73102
+      ]
+    },
+    {
+      "fact": 74806,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74430
+      ]
+    },
+    {
+      "fact": 74077,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73636
+      ]
+    },
+    {
+      "fact": 69642,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68784
+      ]
+    },
+    {
+      "fact": 72336,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71452
+      ]
+    },
+    {
+      "fact": 72335,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71451
+      ]
+    },
+    {
+      "fact": 71509,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70688
+      ]
+    },
+    {
+      "fact": 73143,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72317
+      ]
+    },
+    {
+      "fact": 73142,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72316
+      ]
+    },
+    {
+      "fact": 75491,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75120
+      ]
+    },
+    {
+      "fact": 69634,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68776
+      ]
+    },
+    {
+      "fact": 74079,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73638
+      ]
+    },
+    {
+      "fact": 75144,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74783
+      ]
+    },
+    {
+      "fact": 74447,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74044
+      ]
+    },
+    {
+      "fact": 75489,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75118
+      ]
+    },
+    {
+      "fact": 68812,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68028
+      ]
+    },
+    {
+      "fact": 74078,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73637
+      ]
+    },
+    {
+      "fact": 75140,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74779
+      ]
+    },
+    {
+      "fact": 74445,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74042
+      ]
+    },
+    {
+      "fact": 73686,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73117
+      ]
+    },
+    {
+      "fact": 73141,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72315
+      ]
+    },
+    {
+      "fact": 73140,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72314
+      ]
+    },
+    {
+      "fact": 74464,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74061
+      ]
+    },
+    {
+      "fact": 74441,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74038
+      ]
+    },
+    {
+      "fact": 74440,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74037
+      ]
+    },
+    {
+      "fact": 48590,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47486
+      ]
+    },
+    {
+      "fact": 61159,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59380
+      ]
+    },
+    {
+      "fact": 64735,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62878
+      ]
+    },
+    {
+      "fact": 49711,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48579
+      ]
+    },
+    {
+      "fact": 62903,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61143
+      ]
+    },
+    {
+      "fact": 59396,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        57511
+      ]
+    },
+    {
+      "fact": 52973,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        51338
+      ]
+    },
+    {
+      "fact": 56068,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54560
+      ]
+    },
+    {
+      "fact": 65974,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64673
+      ]
+    },
+    {
+      "fact": 48582,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        47478
+      ]
+    },
+    {
+      "fact": 51349,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49696
+      ]
+    },
+    {
+      "fact": 65976,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64675
+      ]
+    },
+    {
+      "fact": 61158,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59379
+      ]
+    },
+    {
+      "fact": 54569,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        52968
+      ]
+    },
+    {
+      "fact": 67211,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65935
+      ]
+    },
+    {
+      "fact": 64732,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62875
+      ]
+    },
+    {
+      "fact": 57513,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        56056
+      ]
+    },
+    {
+      "fact": 49712,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        48580
+      ]
+    },
+    {
+      "fact": 62904,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61144
+      ]
+    },
+    {
+      "fact": 52974,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        51339
+      ]
+    },
+    {
+      "fact": 56069,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54561
+      ]
+    },
+    {
+      "fact": 64733,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62876
+      ]
+    },
+    {
+      "fact": 65975,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64674
+      ]
+    },
+    {
+      "fact": 62908,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61148
+      ]
+    },
+    {
+      "fact": 67210,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65934
+      ]
+    },
+    {
+      "fact": 68076,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67193
+      ]
+    },
+    {
+      "fact": 51350,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        49697
+      ]
+    },
+    {
+      "fact": 54570,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        52969
+      ]
+    },
+    {
+      "fact": 67212,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65936
+      ]
+    },
+    {
+      "fact": 57514,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        56057
+      ]
+    },
+    {
+      "fact": 62906,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61146
+      ]
+    },
+    {
+      "fact": 68077,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67194
+      ]
+    },
+    {
+      "fact": 68805,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68021
+      ]
+    },
+    {
+      "fact": 69649,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68791
+      ]
+    },
+    {
+      "fact": 65977,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64676
+      ]
+    },
+    {
+      "fact": 68806,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68022
+      ]
+    },
+    {
+      "fact": 56070,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        54562
+      ]
+    },
+    {
+      "fact": 59394,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        57509
+      ]
+    },
+    {
+      "fact": 69625,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68767
+      ]
+    },
+    {
+      "fact": 67221,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65945
+      ]
+    },
+    {
+      "fact": 67225,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65949
+      ]
+    },
+    {
+      "fact": 68079,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67196
+      ]
+    },
+    {
+      "fact": 64734,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62877
+      ]
+    },
+    {
+      "fact": 69647,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68789
+      ]
+    },
+    {
+      "fact": 68807,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68023
+      ]
+    },
+    {
+      "fact": 69626,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68768
+      ]
+    },
+    {
+      "fact": 61156,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59377
+      ]
+    },
+    {
+      "fact": 64730,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62873
+      ]
+    },
+    {
+      "fact": 70709,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69600
+      ]
+    },
+    {
+      "fact": 61167,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59388
+      ]
+    },
+    {
+      "fact": 74812,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74436
+      ]
+    },
+    {
+      "fact": 68808,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68024
+      ]
+    },
+    {
+      "fact": 68078,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67195
+      ]
+    },
+    {
+      "fact": 62901,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61141
+      ]
+    },
+    {
+      "fact": 70711,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69602
+      ]
+    },
+    {
+      "fact": 65971,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64670
+      ]
+    },
+    {
+      "fact": 71489,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70668
+      ]
+    },
+    {
+      "fact": 67223,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65947
+      ]
+    },
+    {
+      "fact": 68809,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68025
+      ]
+    },
+    {
+      "fact": 75150,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74789
+      ]
+    },
+    {
+      "fact": 64731,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        62874
+      ]
+    },
+    {
+      "fact": 71491,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70670
+      ]
+    },
+    {
+      "fact": 70710,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69601
+      ]
+    },
+    {
+      "fact": 67209,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        65933
+      ]
+    },
+    {
+      "fact": 72342,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71458
+      ]
+    },
+    {
+      "fact": 59395,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        57510
+      ]
+    },
+    {
+      "fact": 68810,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68026
+      ]
+    },
+    {
+      "fact": 62902,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        61142
+      ]
+    },
+    {
+      "fact": 71492,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70671
+      ]
+    },
+    {
+      "fact": 65972,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64671
+      ]
+    },
+    {
+      "fact": 72367,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71483
+      ]
+    },
+    {
+      "fact": 72343,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71459
+      ]
+    },
+    {
+      "fact": 73146,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72320
+      ]
+    },
+    {
+      "fact": 61157,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        59378
+      ]
+    },
+    {
+      "fact": 71493,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70672
+      ]
+    },
+    {
+      "fact": 75158,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74797
+      ]
+    },
+    {
+      "fact": 72345,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71461
+      ]
+    },
+    {
+      "fact": 73668,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73099
+      ]
+    },
+    {
+      "fact": 68833,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68049
+      ]
+    },
+    {
+      "fact": 68803,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68019
+      ]
+    },
+    {
+      "fact": 71518,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70697
+      ]
+    },
+    {
+      "fact": 70712,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69603
+      ]
+    },
+    {
+      "fact": 73669,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73100
+      ]
+    },
+    {
+      "fact": 65973,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        64672
+      ]
+    },
+    {
+      "fact": 71490,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70669
+      ]
+    },
+    {
+      "fact": 75156,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74795
+      ]
+    },
+    {
+      "fact": 74076,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73635
+      ]
+    },
+    {
+      "fact": 73147,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72321
+      ]
+    },
+    {
+      "fact": 70720,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        69611
+      ]
+    },
+    {
+      "fact": 71506,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70685
+      ]
+    },
+    {
+      "fact": 73687,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73118
+      ]
+    },
+    {
+      "fact": 73148,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72322
+      ]
+    },
+    {
+      "fact": 72344,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71460
+      ]
+    },
+    {
+      "fact": 68804,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68020
+      ]
+    },
+    {
+      "fact": 73667,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73098
+      ]
+    },
+    {
+      "fact": 75493,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75122
+      ]
+    },
+    {
+      "fact": 74074,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73633
+      ]
+    },
+    {
+      "fact": 74442,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74039
+      ]
+    },
+    {
+      "fact": 73155,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        72329
+      ]
+    },
+    {
+      "fact": 69641,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        68783
+      ]
+    },
+    {
+      "fact": 74092,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73651
+      ]
+    },
+    {
+      "fact": 74443,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74040
+      ]
+    },
+    {
+      "fact": 74075,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73634
+      ]
+    },
+    {
+      "fact": 71487,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70666
+      ]
+    },
+    {
+      "fact": 74799,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74423
+      ]
+    },
+    {
+      "fact": 76187,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75839
+      ]
+    },
+    {
+      "fact": 73670,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73101
+      ]
+    },
+    {
+      "fact": 74444,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74041
+      ]
+    },
+    {
+      "fact": 71508,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70687
+      ]
+    },
+    {
+      "fact": 73685,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        73116
+      ]
+    },
+    {
+      "fact": 72341,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        71457
+      ]
+    },
+    {
+      "fact": 74800,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74424
+      ]
+    },
+    {
+      "fact": 75134,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74773
+      ]
+    },
+    {
+      "fact": 68075,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        67192
+      ]
+    },
+    {
+      "fact": 75135,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74774
+      ]
+    },
+    {
+      "fact": 76189,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75841
+      ]
+    },
+    {
+      "fact": 74801,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74425
+      ]
+    },
+    {
+      "fact": 75488,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        75117
+      ]
+    },
+    {
+      "fact": 71488,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        70667
+      ]
+    },
+    {
+      "fact": 74463,
+      "origin": "VO_PAIR_OBSERVATION",
+      "support": [
+        74060
+      ]
+    }
+  ]
+}

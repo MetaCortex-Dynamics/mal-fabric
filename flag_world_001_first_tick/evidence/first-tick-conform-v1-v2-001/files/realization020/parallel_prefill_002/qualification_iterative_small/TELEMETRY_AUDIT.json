@@ -1,0 +1,208 @@
+{
+  "scope": "TELEMETRY_VS_RETAINED_READBACK_AUDIT; NOT_CONFORM",
+  "qualification": "SAME",
+  "mode": "small",
+  "qualification_record": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\QUALIFICATION.json",
+    "bytes": 23425,
+    "sha256": "DCB21670B9BA656AFBEA4A75EDAABB3AB73F3892E455C30AB54F2C1BBAFD83FB"
+  },
+  "auditor": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\audit_iterative_telemetry.mjs",
+    "bytes": 4298,
+    "sha256": "D24561DED87BF3794961080105D004565E4752FD8B683B26DD344664729FD3EA"
+  },
+  "comparisons": [
+    {
+      "readback": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\carrier.clean.bin",
+        "bytes": 2097184,
+        "sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E"
+      },
+      "epochs": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\carrier.clean.bin.epochs.jsonl",
+        "bytes": 16382,
+        "sha256": "4082F065EBE03EE6C1ABA7519C84F1F570D5557C22AE6B4B7E75BCB9D8E2A9DE"
+      },
+      "progress": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\carrier.clean.bin.progress.jsonl",
+        "bytes": 391,
+        "sha256": "D527EB5DB58B238EC53C004E7B2AF3DFF0AEE729A8FEB25A116ABF99AEFF989C"
+      },
+      "boundaries": 15,
+      "every_boundary_fact_prefix": "SAME",
+      "final": "SAME",
+      "progress_samples": 2
+    },
+    {
+      "readback": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\carrier.closed.bin",
+        "bytes": 2097184,
+        "sha256": "311C3A01D909BE72043D57ADA00187BE4029EB1ECEEF66A86CE4224686D15CFA"
+      },
+      "epochs": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\carrier.closed.bin.epochs.jsonl",
+        "bytes": 2926,
+        "sha256": "99B76337EE7AC88AFB17C09F4A9CC489BA833ECC500D6FEA1151291D76FD25A3"
+      },
+      "progress": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\carrier.closed.bin.progress.jsonl",
+        "bytes": 394,
+        "sha256": "B820781CD64D2E99E7B5745B96B0F74EF40762649E09FDAC9EB63E9BD084FD10"
+      },
+      "boundaries": 2,
+      "every_boundary_fact_prefix": "SAME",
+      "final": "SAME",
+      "progress_samples": 2
+    },
+    {
+      "readback": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_antecedent.parallel.bin",
+        "bytes": 2097184,
+        "sha256": "B87173C8678600081186DDBB8F79958D944A32265539C4650AA82648E7778D26"
+      },
+      "epochs": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_antecedent.parallel.bin.epochs.jsonl",
+        "bytes": 507,
+        "sha256": "41EEC39D2CA9995D85FC9C1F866E6BAA1D2102B41A70AD7ACED0E96307DCB046"
+      },
+      "progress": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_antecedent.parallel.bin.progress.jsonl",
+        "bytes": 381,
+        "sha256": "C47BA942BC9F6BB31354D40F8F21066E2F1295A042DC4445335259EDC4AD699D"
+      },
+      "boundaries": 2,
+      "every_boundary_fact_prefix": "SAME",
+      "final": "SAME",
+      "progress_samples": 2
+    },
+    {
+      "readback": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_consequent.parallel.bin",
+        "bytes": 2097184,
+        "sha256": "A8428E271B3ACD70C6570424A171BA7855C567B5B5BCB9A89C25D53DA4D7637B"
+      },
+      "epochs": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_consequent.parallel.bin.epochs.jsonl",
+        "bytes": 346,
+        "sha256": "A44A40DE80A5C4CACE50505A813800D99D0C555C7EFD6567257C0F261C69D930"
+      },
+      "progress": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_consequent.parallel.bin.progress.jsonl",
+        "bytes": 379,
+        "sha256": "112D5206C43344CF05E7852D306D8DDC77144A265923A5EFE8FE356868C48F96"
+      },
+      "boundaries": 2,
+      "every_boundary_fact_prefix": "SAME",
+      "final": "SAME",
+      "progress_samples": 2
+    },
+    {
+      "readback": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\no.clean.bin",
+        "bytes": 2097184,
+        "sha256": "D8A01CA0E643193ACE19AD327FE0ABF49A88351D4A9371ADBA192A69EDAE9935"
+      },
+      "epochs": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\no.clean.bin.epochs.jsonl",
+        "bytes": 18720,
+        "sha256": "3C6F1FEC3DC6F25199F81B0AED383A65F5CB4EFAD12DA20F080D4B7A04C1B27F"
+      },
+      "progress": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\no.clean.bin.progress.jsonl",
+        "bytes": 392,
+        "sha256": "6F00DF3A7E003170204FDC471115F2D5A06747217CD751D4A6F36CB475865BBE"
+      },
+      "boundaries": 15,
+      "every_boundary_fact_prefix": "SAME",
+      "final": "SAME",
+      "progress_samples": 2
+    },
+    {
+      "readback": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\no.prefilled.bin",
+        "bytes": 2097184,
+        "sha256": "148458EDE1D2BCA1CEE2F630B331E8EAA17B7868260BD5E28FE79683D05F49A2"
+      },
+      "epochs": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\no.prefilled.bin.epochs.jsonl",
+        "bytes": 8095,
+        "sha256": "CADA4A69EDFDBB2CCFEBF28B1F69970F95DA7EC4B37095FF67D57F2C256A6E5A"
+      },
+      "progress": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\no.prefilled.bin.progress.jsonl",
+        "bytes": 395,
+        "sha256": "DF4DF68826C6AA26221043877B8DC2156FAC3CEF0F0223555F4A579D421C97AD"
+      },
+      "boundaries": 5,
+      "every_boundary_fact_prefix": "SAME",
+      "final": "SAME",
+      "progress_samples": 2
+    },
+    {
+      "readback": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\overflow.parallel.bin",
+        "bytes": 2097184,
+        "sha256": "025E9F238E00986AF14A031CA926DA303E6FBD3B987774C8D7CEF8F35C510965"
+      },
+      "epochs": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\overflow.parallel.bin.epochs.jsonl",
+        "bytes": 1228,
+        "sha256": "57EE4D77F18348D5ED61A6781335509A365437A43A71308DBB558CEF1728A89B"
+      },
+      "progress": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\overflow.parallel.bin.progress.jsonl",
+        "bytes": 390,
+        "sha256": "5FB9A0FF41508B6C5470A89B48EA7B4CF034D52704F0013B4E28F15A2DF64E61"
+      },
+      "boundaries": 4,
+      "every_boundary_fact_prefix": "SAME",
+      "final": "SAME",
+      "progress_samples": 2
+    },
+    {
+      "readback": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\this.clean.bin",
+        "bytes": 2097184,
+        "sha256": "777D5123FD74972D9D8CDB060E46E4A6F6B940E5D1FF0D723AA23AA3A5B41F44"
+      },
+      "epochs": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\this.clean.bin.epochs.jsonl",
+        "bytes": 18720,
+        "sha256": "FAD6C1799F97A24E2172BBED54EF2D0BAF81178BF2743AE3FC26AEF64DDD4E90"
+      },
+      "progress": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\this.clean.bin.progress.jsonl",
+        "bytes": 392,
+        "sha256": "A3B257585F6CF1982054FFEB047E13859683FBE12D0DD21159C4988F4E69FEBE"
+      },
+      "boundaries": 15,
+      "every_boundary_fact_prefix": "SAME",
+      "final": "SAME",
+      "progress_samples": 2
+    },
+    {
+      "readback": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\this.prefilled.bin",
+        "bytes": 2097184,
+        "sha256": "62A4982980C9321574D1CDE33AB19483C26AFD73135F1B881ADA4B308C1E1E5F"
+      },
+      "epochs": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\this.prefilled.bin.epochs.jsonl",
+        "bytes": 8095,
+        "sha256": "B26ADDDA3A6692A1050957081B7664772F964CDE19395B562DA8CD0045642A0D"
+      },
+      "progress": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\this.prefilled.bin.progress.jsonl",
+        "bytes": 395,
+        "sha256": "C2CAC33477661DDEDA202E738CBBD9DDE6877389778CA20AA86642D06D4FCDDE"
+      },
+      "boundaries": 5,
+      "every_boundary_fact_prefix": "SAME",
+      "final": "SAME",
+      "progress_samples": 2
+    }
+  ],
+  "totalProgress": 18,
+  "progressWithRule": 9
+}

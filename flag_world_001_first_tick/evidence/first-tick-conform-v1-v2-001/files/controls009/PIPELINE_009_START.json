@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-22T17:19:49.690Z",
+  "bindings": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\v2_continuation_009\\V2_009_BINDINGS.json",
+    "size": 13504,
+    "sha256": "D2760B2DEBD6783F4BE7B9CEF9DDC7B0FE85A73B897DFD6DA08525FF7A085A7F"
+  },
+  "runner": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\v2_continuation_009\\pipeline_v2_009.mjs",
+    "size": 11105,
+    "sha256": "8683D34F83EA7472F3C93A26032DCABA55DD31EC66342548EF3F20BD1B46A204"
+  },
+  "vector": "V2",
+  "starting_state": "SEALED_CARRIER_ONLY",
+  "prefilled_facts": 5282,
+  "vector_dependent_facts": "DERIVE_FRESH",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 3070",
+    "free_MiB": 7191
+  },
+  "after": "AUDITED_STAGE01 -> SOURCE_DIRECTED_ADDITIVE_STAGES -> COMMITTED_VECTOR_OUTPUT -> ORDERED_V1_V2_CONFORM",
+  "V1": "RETAINED_SAME_NO_GPU_RERUN",
+  "failure": "STOP_AND_KEEP_ALL_EVIDENCE; NO_FALLBACK_OR_EXPECTATION_ADJUSTMENT"
+}

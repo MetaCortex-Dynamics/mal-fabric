@@ -1,0 +1,23 @@
+{
+  "scope": "EXACT_HISTORICAL_BYTES_RECOVERED_BY_REVERSAL_AND_BOUND_SHA256; NO_SOURCE_OR_EVIDENCE_REPLACEMENT",
+  "parent": {
+    "path": "D:/Dev/flag-world-first-tick-020/vector_tool_checks/vector_build.before_extra_inputs.mjs",
+    "bytes": 7843,
+    "sha256": "10C036B4739998BE848AB4C769A0DF4FEF223D21E73EE5548854560B4EA5F972"
+  },
+  "removals": [
+    ",'--append-source'",
+    "// Additive source bytes remain separately hash-bound in this stage's custody.\n",
+    "// Nothing in the retained source or its imports is replaced or reinterpreted.\n",
+    "if(options['append-source'])members.push(path.resolve(options['append-source']));\n"
+  ],
+  "output": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\first_tick_commit_001\\recovered\\vector_build.70EA9F0F.mjs",
+    "bytes": 7585,
+    "sha256": "70EA9F0FBBACC4B8161BEB91D288EA4EB608B9665FC5D55C1156BA8A94B4FF63"
+  },
+  "historical_binding": "D:/Dev/flag-world-first-tick-020/vectors/V1/stage00/BUILD.json $.orchestrator",
+  "current_original": "D:/Dev/flag-world-first-tick-020/vector_build.mjs",
+  "originals": "UNCHANGED",
+  "execution": "HISTORICAL_TOOL_NOT_EXECUTED"
+}

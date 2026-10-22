@@ -1,0 +1,14 @@
+{
+  "scope": "Compute-attempt custody only; not CONFORM or a semantic verdict",
+  "vector": "V1",
+  "stage": 1,
+  "process_id": 95664,
+  "started_local": "2026-10-21T21:01:28-04:00",
+  "ended_local": "2026-10-21T21:22:02-04:00",
+  "binary_sha256": "214729E799A5AE09B6BBC9670DDAD77110EAEEE776A795EB78EDFB85FF4B2C31",
+  "source_and_image": "Unchanged BUILD.json bindings",
+  "readback": "NOT_PRODUCED",
+  "reason": "Serial pivot scanned unrelated facts; attempt ended before indexed-runtime qualification and an identical-image restart",
+  "expected_bytes": "NOT_READ_BY_RUNTIME",
+  "result": "No result claimed; all input and prior evidence preserved"
+}

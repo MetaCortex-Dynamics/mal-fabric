@@ -1,0 +1,8 @@
+// Generic retained-proof regression fixture only. NOT_CONFORM; no world law.
+// The readonly transport is the only new root. Every per-flag/per-pair result
+// retains its carrier derivation and this input in its support chain.
+@readonly input PQ_INPUT := "qualification:/reading";
+law PQ_INPUT_THIS := IF THIS(PQ_INPUT,"THIS") THEN THIS(PQ_READING,THIS);
+law PQ_INPUT_NO := IF THIS(PQ_INPUT,"NO") THEN THIS(PQ_READING,NO);
+law PQ_FLAG := IF THIS(FLAG,f), THIS(PQ_READING,r) THEN GOES_WITH(PQ_FLAG_READING,f,r);
+law PQ_PAIR := IF GOES_WITH(PAIR,f,g), GOES_WITH(PQ_FLAG_READING,f,r), GOES_WITH(PQ_FLAG_READING,g,r) THEN GOES_WITH(PQ_PAIR_READING,f,g,r);

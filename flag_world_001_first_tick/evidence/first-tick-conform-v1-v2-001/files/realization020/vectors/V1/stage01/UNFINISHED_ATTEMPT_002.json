@@ -1,0 +1,14 @@
+{
+  "scope": "Compute-attempt custody only; not CONFORM or a semantic verdict",
+  "vector": "V1",
+  "stage": 1,
+  "process_id": 49724,
+  "started_local": "2026-10-21T21:28:21-04:00",
+  "ended_local": "2026-10-21T21:46:41-04:00",
+  "binary_sha256": "7DCBD43648DBD19D02152E9CB13EC7392EC9FF74CFBC8143856D2C703DABDA2C",
+  "source_and_image": "Unchanged BUILD.json bindings",
+  "readback": "NOT_PRODUCED",
+  "reason": "Predicate-index pivot still traversed historical bucket entries after the current delta. Replaced only after a separately bound current-delta index passes retained GPU qualification.",
+  "expected_bytes": "NOT_READ_BY_RUNTIME",
+  "result": "No result claimed; all input and prior evidence preserved"
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "EXACT_ORIGINAL012_SOURCE_REPACK_ONLY; NO_ADDED_LAW; GPU_NOT_RUN; PYTHON_NOT_RUN",
+  "original": {
+    "source": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\gpu\\source.mal",
+      "bytes": 13197,
+      "sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F"
+    },
+    "source_map": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\gpu\\source-map.json",
+      "bytes": 127616,
+      "sha256": "49F3C4B48F355703BD6959A82995F41ADA517FFBBF7283C217044E5151ABE14A"
+    },
+    "image": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\gpu\\image.bin",
+      "bytes": 350224,
+      "sha256": "FE38B7D093D10BB403EB99BF50E713FC6BB6859AA21BA86CAD2DF8A5CBBC13F7"
+    }
+  },
+  "source": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\source.mal",
+    "bytes": 13197,
+    "sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F"
+  },
+  "source_map": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\gpu\\source-map.json",
+    "bytes": 168255,
+    "sha256": "616A81F266115C37BDD3316A35F7BA068A79FEE978D7E27C114B55C1C2BFD4D1"
+  },
+  "image": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\gpu\\image.bin",
+    "bytes": 41992208,
+    "sha256": "7509314A34D0607B62F83D1AA048802B1108E9CA58A342908CF3603217EB5399"
+  },
+  "inputs": [],
+  "lowerer": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\lower_compact_large.mjs",
+    "bytes": 8365,
+    "sha256": "1B76FFEB4938C87BF90FF54942EBB7A32DF89C0FCA942663BA15311ACB61FCDB"
+  },
+  "orchestrator": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\prepare_ref012_qualification.mjs",
+    "bytes": 2657,
+    "sha256": "88110E563CB1054E4818D7F15B0FB074B61A1D91D94618201C8ED0F86D53B6D7"
+  },
+  "source_bytes": "SAME",
+  "added_laws": 0,
+  "bounds": {
+    "patterns": 306,
+    "seeds": 91,
+    "rules": 58
+  },
+  "execution": "NOT_RUN"
+}

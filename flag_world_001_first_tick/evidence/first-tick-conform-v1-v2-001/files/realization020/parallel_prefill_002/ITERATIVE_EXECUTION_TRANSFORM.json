@@ -1,0 +1,66 @@
+{
+  "scope": "ISOLATED_RUNTIME_AND_OUTPUT_PATHS; SOURCE_IMAGE_PREFILL_UNCHANGED",
+  "records": [
+    {
+      "parent": "run_v1.mjs",
+      "parent_sha256": "3B7BB0423D48FD47ED1B17FC7D541F6EB41184D26E445EB9BAAAA95CD93B14F3",
+      "output": "run_iterative_v1.mjs",
+      "sha256": "33342F8E68264B5C0EC4BB897C2AFDB5CA54642336E0CC2465020FDBAA0E12CE",
+      "changes": [
+        {
+          "from": "path.join(here,'vectors/V1/stage01')",
+          "to": "path.join(here,'vectors_iterative/V1/stage01')",
+          "count": 1
+        },
+        {
+          "from": "qualification_full/",
+          "to": "qualification_iterative_full/",
+          "count": 2
+        },
+        {
+          "from": "'block_telemetry_full.exe'",
+          "to": "'iterative_collect_007/block_iterative_full.exe'",
+          "count": 1
+        },
+        {
+          "from": "'block_telemetry_full.cu'",
+          "to": "'iterative_collect_007/block_iterative_full.cu'",
+          "count": 1
+        },
+        {
+          "from": "PARALLEL_V1_STAGE01; NOT_CONFORM",
+          "to": "ITERATIVE_PARALLEL_V1_STAGE01; BOUNDED_QUALIFICATION_SAME; NOT_CONFORM",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "parent": "observe_live.mjs",
+      "parent_sha256": "0C3AA6F703745B76D21234191307CCC7E8037D9567CB8098449F2554D92B09B8",
+      "output": "observe_iterative_live.mjs",
+      "sha256": "1E2A7FF8A5B2F47B4F65B10F558D55A0F70FE76775E031EBC6D17CAC40BFE873",
+      "changes": [
+        {
+          "from": "path.join(here,'vectors/V1/stage01')",
+          "to": "path.join(here,'vectors_iterative/V1/stage01')",
+          "count": 1
+        },
+        {
+          "from": "qualification_full/",
+          "to": "qualification_iterative_full/",
+          "count": 2
+        },
+        {
+          "from": "RUN_RECORD_PARALLEL_PREFILL_002.json",
+          "to": "RUN_RECORD_ITERATIVE_PREFILL_007.json",
+          "count": 1
+        },
+        {
+          "from": "PARALLEL_MATCHER_QUALIFIED_AND_V1_LAUNCHED; LIVE_OBSERVATION_NOT_READBACK",
+          "to": "BOUNDED_QUALIFICATION_SAME; ITERATIVE_V1_LAUNCHED; LIVE_OBSERVATION_NOT_READBACK",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

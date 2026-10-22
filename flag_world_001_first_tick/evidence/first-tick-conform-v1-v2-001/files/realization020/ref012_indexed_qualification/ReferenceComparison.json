@@ -1,0 +1,873 @@
+{
+  "scope": "DIRECT_ORIGINAL012_GPU_VS_INDEPENDENT_REF012_FULL_SETS; NOT_V1_V2_CONFORM; NO_RUNTIME_IMPORT",
+  "reference": {
+    "index": {
+      "path": "D:\\Dev\\flag-world-first-tick-020/reference_ref012/ref012_index.json",
+      "bytes": 42558,
+      "sha256": "1FA1397F50DF1869CA3F31A595E0A9DB0B33C4E0257912F18F9CEB228E03FD79"
+    },
+    "definition": {
+      "path": "D:\\Dev\\flag-world-first-tick-020/reference_ref012/ref012.py",
+      "bytes": 3388,
+      "sha256": "8E350EDC5AE8EB364229E1E786943299FC9B92AADB174A924E64FB7A19A07BBF"
+    },
+    "readme": {
+      "path": "D:\\Dev\\flag-world-first-tick-020/reference_ref012/README_REF012.md",
+      "bytes": 1386,
+      "sha256": "7D6765A3F5FDA463530A3594E48EA89E8AD48493BA006235A1B9CF210B11A782"
+    },
+    "python_execution": "NOT_RUN"
+  },
+  "encoding": "Reference digits stay identifier strings. J/HW suffixes remove only transport zero padding. Incidence is decoded from source WORLD_JUNCTION_SITE/WORLD_DOMAIN_SITE facts; no positional map.",
+  "observer": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_compare_direct.mjs",
+    "bytes": 9189,
+    "sha256": "7B3608D37648D87CF89E200FBD167EAE4C479A854B2B84BA6EC3AD2AF30BF9EB"
+  },
+  "preserved_observer": {
+    "path": "D:\\Dev\\flag-world-first-tick-020/ref012_compare.mjs",
+    "bytes": 11546,
+    "sha256": "21850B3AE53044C26EBC5435734D336751E53B079DAAC0B3930E2FCB7C9AFF26"
+  },
+  "readback_decoder": {
+    "path": "D:\\Dev\\flag-world-first-tick-020/readback.mjs",
+    "bytes": 2790,
+    "sha256": "4612D0189AD00B89522C8CD9F472E39EB1574991F5FB4241FF3CD85F415E32D3"
+  },
+  "observed_runs": [
+    {
+      "dir": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\gpu",
+      "readback": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\gpu/readback.bin",
+        "bytes": 268435488,
+        "sha256": "ECED361A61D4D9FA514DE0E6E2EE3ECFFC975F2BFE4C68D960DEED2E3BE08D8B"
+      },
+      "source_map": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\gpu/source-map.json",
+        "bytes": 168255,
+        "sha256": "616A81F266115C37BDD3316A35F7BA068A79FEE978D7E27C114B55C1C2BFD4D1"
+      },
+      "source": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\gpu/source.mal",
+        "bytes": 13197,
+        "sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F"
+      },
+      "facts": 5282,
+      "terms": 6170,
+      "epochs": 14,
+      "source_site_identity_rows": 42,
+      "flags": 480,
+      "triads": 80,
+      "overlaps": 720,
+      "DG_SUPPORT_TRIAD_rows": 0,
+      "DG_CONTRIBUTION_rows": 0,
+      "SF_COMPARATOR_rows": 0,
+      "per_junction": [
+        {
+          "junction": "0",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "1",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "2",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "3",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "4",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "5",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "6",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "7",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "8",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "9",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "10",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "11",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "12",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "13",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "14",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "15",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "16",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "17",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "18",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "19",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "20",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "21",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "22",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "23",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "24",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "25",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "26",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "27",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "28",
+          "incidence": "SAME",
+          "site": "SAME"
+        },
+        {
+          "junction": "29",
+          "incidence": "SAME",
+          "site": "SAME"
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "direct_original012/flags",
+      "expected_count": 480,
+      "actual_count": 480,
+      "expected_sha256": "69A2BC5822468B7DE9EE986334F7F41AEAEA08D4A228324558A19ECBB0B4F691",
+      "actual_sha256": "69A2BC5822468B7DE9EE986334F7F41AEAEA08D4A228324558A19ECBB0B4F691",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/triads",
+      "expected_count": 80,
+      "actual_count": 80,
+      "expected_sha256": "07ADACD174111E271CF9856AEE3089121C5380A488EE8DB109A39AB319998040",
+      "actual_sha256": "07ADACD174111E271CF9856AEE3089121C5380A488EE8DB109A39AB319998040",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/overlaps",
+      "expected_count": 720,
+      "actual_count": 720,
+      "expected_sha256": "BCCEB37EF0EDBEC30BDCD581ABEC01B755179C96D2421CFC4F61B294034FE1FF",
+      "actual_sha256": "BCCEB37EF0EDBEC30BDCD581ABEC01B755179C96D2421CFC4F61B294034FE1FF",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/sites",
+      "expected_count": 42,
+      "actual_count": 42,
+      "expected_sha256": "670899C11DB839E1B961718F4755646867EFE737C6886E9D456BE847465B3EA1",
+      "actual_sha256": "670899C11DB839E1B961718F4755646867EFE737C6886E9D456BE847465B3EA1",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/edges",
+      "expected_count": 120,
+      "actual_count": 120,
+      "expected_sha256": "DAFBD1C9D2F998D32E4EB17349A6E864D03E574C1D59A4A823C3B81EAC08CD43",
+      "actual_sha256": "DAFBD1C9D2F998D32E4EB17349A6E864D03E574C1D59A4A823C3B81EAC08CD43",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(0)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "BF32CD5499A9B522F5C9D1E2D6ED80F1127C35D4468A2368B09400824381A3B8",
+      "actual_sha256": "BF32CD5499A9B522F5C9D1E2D6ED80F1127C35D4468A2368B09400824381A3B8",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(0)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "F3AC4F235DF20996B6224FD4A76E6836293E33D6501A245102D51BB87608541B",
+      "actual_sha256": "F3AC4F235DF20996B6224FD4A76E6836293E33D6501A245102D51BB87608541B",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(1)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "CA3DDABC64DA83C2FCA752FFC16E45A3690D5FBF1407A96C8599C4AD011A48FC",
+      "actual_sha256": "CA3DDABC64DA83C2FCA752FFC16E45A3690D5FBF1407A96C8599C4AD011A48FC",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(1)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "D1BC786FCAA95BF60294D3A8BC96D540AF370962ED3B7892E4D254F4D87277AA",
+      "actual_sha256": "D1BC786FCAA95BF60294D3A8BC96D540AF370962ED3B7892E4D254F4D87277AA",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(2)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "6B6A8A68AC9E9CEFAD694816B8A362EC48DF8E1AE8529DDD2CA7D43B7E5ABF2E",
+      "actual_sha256": "6B6A8A68AC9E9CEFAD694816B8A362EC48DF8E1AE8529DDD2CA7D43B7E5ABF2E",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(2)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "DBE4BC14154063BBFB2F567327628410A72CB948C7A76D4BC8F5651BBCD88D27",
+      "actual_sha256": "DBE4BC14154063BBFB2F567327628410A72CB948C7A76D4BC8F5651BBCD88D27",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(3)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "77BE48CAD243EB78117B4A4472CB2909967BB6A8B2812B3C35D374448D9CD443",
+      "actual_sha256": "77BE48CAD243EB78117B4A4472CB2909967BB6A8B2812B3C35D374448D9CD443",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(3)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "FA1A0C0D3F9E9DA2D31D4FC34725B7FE29FBE0BA6F8903B9461D38DD5FB48F66",
+      "actual_sha256": "FA1A0C0D3F9E9DA2D31D4FC34725B7FE29FBE0BA6F8903B9461D38DD5FB48F66",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(4)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "3C8040E629C8218D1AF583B8F050987CEC398D505D88A391B5FA0673DE0D7758",
+      "actual_sha256": "3C8040E629C8218D1AF583B8F050987CEC398D505D88A391B5FA0673DE0D7758",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(4)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "8B0CB794828CC9E14E5CC0D4D7A7FF3BCEBAFD102937C4E97AE7E634729ED9FA",
+      "actual_sha256": "8B0CB794828CC9E14E5CC0D4D7A7FF3BCEBAFD102937C4E97AE7E634729ED9FA",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(5)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "C5E3E2278B44D09A9762A0B30006E788A89EF85912D1B425B0963372FC72E65A",
+      "actual_sha256": "C5E3E2278B44D09A9762A0B30006E788A89EF85912D1B425B0963372FC72E65A",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(5)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "8E9958C64A86658604D198045DB0EFE8FFDB83CC4B266E79735EF678A490A313",
+      "actual_sha256": "8E9958C64A86658604D198045DB0EFE8FFDB83CC4B266E79735EF678A490A313",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(6)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "FD87D1C3969BC93724DA27439C131ED75AD8A2A561750C51C04DD125BD2A19C7",
+      "actual_sha256": "FD87D1C3969BC93724DA27439C131ED75AD8A2A561750C51C04DD125BD2A19C7",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(6)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "1AD300C02776462532481B9167B271048253B60D1A94737A6BA532C44DAFA5DD",
+      "actual_sha256": "1AD300C02776462532481B9167B271048253B60D1A94737A6BA532C44DAFA5DD",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(7)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "CB2FEB8890CD21E51F4D1D78407552A0818EA129377E7B5B52427B1873FDAAF1",
+      "actual_sha256": "CB2FEB8890CD21E51F4D1D78407552A0818EA129377E7B5B52427B1873FDAAF1",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(7)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "0350AF1FB161B3EAF4BA4A32BDB315E9BF8959229F3E59F047A27FC097B1ADC3",
+      "actual_sha256": "0350AF1FB161B3EAF4BA4A32BDB315E9BF8959229F3E59F047A27FC097B1ADC3",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(8)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "15BEB83BF7F542FA0AF3B9404ECF24967A82C94470E8E4898F55C3EECA5B024C",
+      "actual_sha256": "15BEB83BF7F542FA0AF3B9404ECF24967A82C94470E8E4898F55C3EECA5B024C",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(8)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "79672E09CC2B3127D56FAE2C050524ADBFBBE9D17051D3E888E96B74B16F7FF8",
+      "actual_sha256": "79672E09CC2B3127D56FAE2C050524ADBFBBE9D17051D3E888E96B74B16F7FF8",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(9)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "505BEAAADE9681EB9A4C57482838631A0B49C2BD9CD1FC7EB0C891BF4F609A54",
+      "actual_sha256": "505BEAAADE9681EB9A4C57482838631A0B49C2BD9CD1FC7EB0C891BF4F609A54",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(9)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "6C067EEFBE3061921F30509AE23000EC46F2006E953F8CEA55F1C1CD22CE2E63",
+      "actual_sha256": "6C067EEFBE3061921F30509AE23000EC46F2006E953F8CEA55F1C1CD22CE2E63",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(10)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "387509FC0F104E3A0AE723D01DB64B2BFFCDE7CEF62CD0E7DADF59A7F1CBF5B0",
+      "actual_sha256": "387509FC0F104E3A0AE723D01DB64B2BFFCDE7CEF62CD0E7DADF59A7F1CBF5B0",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(10)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "AF515B0F0DF6BECD2655F80E6DEA17584D6A916A424539DDBB00B81807B52FE1",
+      "actual_sha256": "AF515B0F0DF6BECD2655F80E6DEA17584D6A916A424539DDBB00B81807B52FE1",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(11)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "97871C7F17CF188405E986DD72A34840EABC85A594948E6E46893CF8CA91D6AC",
+      "actual_sha256": "97871C7F17CF188405E986DD72A34840EABC85A594948E6E46893CF8CA91D6AC",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(11)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "E049497A652C401C7FFFE2852DB829CD630E86D14C8EC64DECD76231F30E25A1",
+      "actual_sha256": "E049497A652C401C7FFFE2852DB829CD630E86D14C8EC64DECD76231F30E25A1",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(12)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "36563CE1BFF1C1FF9964E1C2C5D90E44E0A6A7CFFD57B34B285773909D478C34",
+      "actual_sha256": "36563CE1BFF1C1FF9964E1C2C5D90E44E0A6A7CFFD57B34B285773909D478C34",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(12)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "BD59537EDA8AFABB2AAE5637B826D1214FA06FBDDFEB3DE61D4C66B32EDA927D",
+      "actual_sha256": "BD59537EDA8AFABB2AAE5637B826D1214FA06FBDDFEB3DE61D4C66B32EDA927D",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(13)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "136AA94999823900CC01BA6DDB441305847AB38960BC799E7371C1E348D04BC6",
+      "actual_sha256": "136AA94999823900CC01BA6DDB441305847AB38960BC799E7371C1E348D04BC6",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(13)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "4239E598B5309AD59421C4845789B92089D554F9F014BB9019B58A6E2C3BA870",
+      "actual_sha256": "4239E598B5309AD59421C4845789B92089D554F9F014BB9019B58A6E2C3BA870",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(14)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "C8ADD6B736B0623FD58A3DAE676C1BD0231F28A771808E1FEF28CFDF04AE5DF7",
+      "actual_sha256": "C8ADD6B736B0623FD58A3DAE676C1BD0231F28A771808E1FEF28CFDF04AE5DF7",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(14)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "DE0DAEB602638F96CF78AA048F52215F47BDDB1854B37445C019F2B84AE40518",
+      "actual_sha256": "DE0DAEB602638F96CF78AA048F52215F47BDDB1854B37445C019F2B84AE40518",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(15)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "0F71F63474D6F72853D6BD6E6288A1AC6564433AB59B8E86D62E539218700D9B",
+      "actual_sha256": "0F71F63474D6F72853D6BD6E6288A1AC6564433AB59B8E86D62E539218700D9B",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(15)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "75DCB67924A1C897F30A3DFEF744C4000EDDC50D9F58D75E6CDED8FC0458A6A6",
+      "actual_sha256": "75DCB67924A1C897F30A3DFEF744C4000EDDC50D9F58D75E6CDED8FC0458A6A6",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(16)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "1310B2CF61D0E322C5452281012CEFA4F4B10FDCD9E18FDEC44186B2FDDF0ABD",
+      "actual_sha256": "1310B2CF61D0E322C5452281012CEFA4F4B10FDCD9E18FDEC44186B2FDDF0ABD",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(16)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "47CC04A16C52FC3BB762144A489094E429B83B20610A5E19B699BC448FB74CA8",
+      "actual_sha256": "47CC04A16C52FC3BB762144A489094E429B83B20610A5E19B699BC448FB74CA8",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(17)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "8D08760E7C448DBFADDE988237D46E9137B7ACD53FDC2F718D36C099974301C1",
+      "actual_sha256": "8D08760E7C448DBFADDE988237D46E9137B7ACD53FDC2F718D36C099974301C1",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(17)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "902A61F8A936A442A7531F86A8096B5C88AFA5D6DB0FD535B266BEE1452FF977",
+      "actual_sha256": "902A61F8A936A442A7531F86A8096B5C88AFA5D6DB0FD535B266BEE1452FF977",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(18)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "0F0780868C0F535562E870E56D8AE7BF36DE91E64390CA62E013149BE1403170",
+      "actual_sha256": "0F0780868C0F535562E870E56D8AE7BF36DE91E64390CA62E013149BE1403170",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(18)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "B48925109A921F8E2A05A0FBEB2C45B8F4A278A8645F13A60F954D7DCB5CE113",
+      "actual_sha256": "B48925109A921F8E2A05A0FBEB2C45B8F4A278A8645F13A60F954D7DCB5CE113",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(19)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "43F0C3AF9894C80DFF43F146CB5CE0C421C1524A714F5D0234CCDB36A161B738",
+      "actual_sha256": "43F0C3AF9894C80DFF43F146CB5CE0C421C1524A714F5D0234CCDB36A161B738",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(19)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "A1B5E58A35F7B366D558EEB69F77253BA1084F579DE6FEDE791C25EAE7921547",
+      "actual_sha256": "A1B5E58A35F7B366D558EEB69F77253BA1084F579DE6FEDE791C25EAE7921547",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(20)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "C7810E83CD979E1CB3C1672D59B0B1639BD596A2C60084443CFAE5BBC3FD32C2",
+      "actual_sha256": "C7810E83CD979E1CB3C1672D59B0B1639BD596A2C60084443CFAE5BBC3FD32C2",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(20)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "15BC14FB02130A6817C2839FA799E1EBF71DA588347156A5D47FEAE34DB5396E",
+      "actual_sha256": "15BC14FB02130A6817C2839FA799E1EBF71DA588347156A5D47FEAE34DB5396E",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(21)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "F2F424A1A15B2963727EF952C5A99FB40B711F8DA12A31BD3EC201F73F0D18A3",
+      "actual_sha256": "F2F424A1A15B2963727EF952C5A99FB40B711F8DA12A31BD3EC201F73F0D18A3",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(21)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "E0F7EF1DACC9FF3FB15CC491DCAA307C30957E2DEE92AF4BF82634B97A94A9B0",
+      "actual_sha256": "E0F7EF1DACC9FF3FB15CC491DCAA307C30957E2DEE92AF4BF82634B97A94A9B0",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(22)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "1E90383C1BE51904A9D872B1EFB1FEA097319403E086E12DBA6922273C1F59F4",
+      "actual_sha256": "1E90383C1BE51904A9D872B1EFB1FEA097319403E086E12DBA6922273C1F59F4",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(22)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "E35291744D28535087FA303DC8622DB0582F8FA2DC856839C9124E01772351F1",
+      "actual_sha256": "E35291744D28535087FA303DC8622DB0582F8FA2DC856839C9124E01772351F1",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(23)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "9659AE9058E606E19F881BBE80D23CE36CC1DD6F98861603EC3B4287A7721BBE",
+      "actual_sha256": "9659AE9058E606E19F881BBE80D23CE36CC1DD6F98861603EC3B4287A7721BBE",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(23)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "1376DF3D06F69C98B86DAA5CCD883610C940EDAF8881FCA7C4322722A54D2CEF",
+      "actual_sha256": "1376DF3D06F69C98B86DAA5CCD883610C940EDAF8881FCA7C4322722A54D2CEF",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(24)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "091AEF3740EBB9670A3CE53720B549AC09CAC81A99467F20D73C632BFB3D4740",
+      "actual_sha256": "091AEF3740EBB9670A3CE53720B549AC09CAC81A99467F20D73C632BFB3D4740",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(24)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "E424091E3DEF41D70A459F73AEA6DE55BC9ABECC4DD84E945ADB7773041BC364",
+      "actual_sha256": "E424091E3DEF41D70A459F73AEA6DE55BC9ABECC4DD84E945ADB7773041BC364",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(25)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "433003D792F3BCC16EF9158BE81CFDB2D84258E0645DDD58F5099D059FC37A5E",
+      "actual_sha256": "433003D792F3BCC16EF9158BE81CFDB2D84258E0645DDD58F5099D059FC37A5E",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(25)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "E682B2838B4E9EC153EB59577B6E889E5F0373BA3FD3F7549CF25065CD9DD100",
+      "actual_sha256": "E682B2838B4E9EC153EB59577B6E889E5F0373BA3FD3F7549CF25065CD9DD100",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(26)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "DC4FF543C5B97D43BC7E73139BD8E75BEEFC000EBDAD53177F3A741CAD2F68A7",
+      "actual_sha256": "DC4FF543C5B97D43BC7E73139BD8E75BEEFC000EBDAD53177F3A741CAD2F68A7",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(26)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "89CB2BDE3529E768EBD51165DAAB3ED02C5B419F0D39AD29DB1DBA6CE388A76D",
+      "actual_sha256": "89CB2BDE3529E768EBD51165DAAB3ED02C5B419F0D39AD29DB1DBA6CE388A76D",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(27)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "E0239EA14E6C34953ECA9B7D78888D00E3EA6832DBABFC62D67FA3E059EC9A4F",
+      "actual_sha256": "E0239EA14E6C34953ECA9B7D78888D00E3EA6832DBABFC62D67FA3E059EC9A4F",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(27)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "23661A4CCE697D76ABEAA64A915C2B85526645CFAC76B2305BED2D8CB0EC88D7",
+      "actual_sha256": "23661A4CCE697D76ABEAA64A915C2B85526645CFAC76B2305BED2D8CB0EC88D7",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(28)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "D0F7818FC3BCE196014E7FCD46C1282E2C81B53FA0AB6003DA7B06335D2F85C1",
+      "actual_sha256": "D0F7818FC3BCE196014E7FCD46C1282E2C81B53FA0AB6003DA7B06335D2F85C1",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(28)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "BBBD4CEB9C590B49E338313763AAB29319F2BAB62DF62471868B102494816557",
+      "actual_sha256": "BBBD4CEB9C590B49E338313763AAB29319F2BAB62DF62471868B102494816557",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/incidence/J(29)",
+      "expected_count": 36,
+      "actual_count": 36,
+      "expected_sha256": "EE9423A92F15FD34DC7F6B071B7E10ED9E235A0F2377BA4B38D5577A9C848114",
+      "actual_sha256": "EE9423A92F15FD34DC7F6B071B7E10ED9E235A0F2377BA4B38D5577A9C848114",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    },
+    {
+      "name": "direct_original012/site/J(29)",
+      "expected_count": 12,
+      "actual_count": 12,
+      "expected_sha256": "80F4689E0C400FBDC2C48E919D51033B90FA2BB70C21148E960B1BEDFE92394E",
+      "actual_sha256": "80F4689E0C400FBDC2C48E919D51033B90FA2BB70C21148E960B1BEDFE92394E",
+      "missing": [],
+      "extra": [],
+      "status": "SAME"
+    }
+  ],
+  "status": "SAME",
+  "application_conformance": "NOT_RUN"
+}

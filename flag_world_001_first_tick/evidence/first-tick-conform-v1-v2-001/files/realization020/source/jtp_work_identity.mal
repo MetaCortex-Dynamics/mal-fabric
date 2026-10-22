@@ -1,0 +1,236 @@
+// Source-correlated work and CHILD identity for the actual I20_EVALUATE law.
+// FT v0.1.3 2ECF2EEF...C1A01:140--143,191--198 preserves D2 work identity
+// and successor/lift/receipt support through authority/geometry/persistence.
+// 086 CONTACT 5A843B08...A73D670 sections2--4: complete finite work domain,
+// actual source binding, complete domain, CHILD, external derivation witness.
+// 096 CONTACT
+// AA1B7589978102D6B1519BD1BF01F427D774A66E797AAA7634E57DEAD14A6576.
+// 096 section3 preserves governing identity and source-incidence coordinates.
+// FCSV1/CHILD: FOLD_RELATION_SEMANTICS sections4,7; serialization law
+// FC70684B72B8DA6DD964EC55CEB9C297CBC0017A978E5622863DDAD49E26C9E2.
+// No 101 runtime/schema is imported. No board receipt is a world-step gate.
+//
+// Produced now: the complete admitted-frame work domain, exact operands,
+// frame/admission/type/placement, execution support and positive PURE fields.
+// Source work is NOT a program, CellId, InputValue or RuntimeReceipt identity.
+//
+// The generic owed law occurrence is materialized, NOT a W010 fixture record.
+// Its parent is the complete prepared immutable FabricState snapshot; its
+// rule is sealed from the actual source locator using the retained RULES
+// recipe; its binding preserves every variable of I20_EVALUATE. The law has
+// one consequent and no static profile parameters. No retired D/S/K/R gate.
+// InputValue references resolve to their full canonical objects, not to a
+// receipt alias. Program, CellId and admission references retain their types.
+// Descriptor materialization is distinct from the actual execution support.
+// Applied to an already executed trace, it is retrospective construction and
+// audit; it does not claim to have preceded or authorized that past execution.
+//
+// Generic FCSV primitive: encode ONLY the source-produced typed descriptor;
+// SHA256("FOLD/V1/"+domain+NUL+u64le(payload_size)+FCSV1(payload)).
+// Request JW_FCSV_HASH_REQUEST(kind,key,domain_text,descriptor_JSON).
+// Response JW_FCSV_HASH_RESPONSE(domain_text,descriptor_JSON,digest_text).
+// A response is neither admission nor discharge. SOURCE is separate raw-file
+// custody: no SOURCE payload is sent to the FCSV descriptor hash contact.
+
+@readonly input JW_SOURCE_CUSTODY := "jw_sources:";
+@readonly input JW_HASH_CUSTODY := "jw_hashes:";
+law JW_HASH_ROWS := IF THIS(JW_HASH_CUSTODY,ARRAY(rows)) THEN THIS(JW_HASH_ROWS,rows);
+law JW_HASH_TAIL := IF THIS(JW_HASH_ROWS,CONS(row,tail)) THEN THIS(JW_HASH_ROWS,tail);
+law JW_HASH_RESPONSE := IF THIS(JW_HASH_ROWS,CONS(ARRAY(CONS(domain,CONS(descriptor,CONS(digest,NIL)))),tail))
+ THEN GOES_WITH(JW_FCSV_HASH_RESPONSE,domain,descriptor,digest);
+@propose seed JW_SOURCE_PROFILE := {
+ THIS(JW_SOURCE_LAW_NAME,"I20_EVALUATE"),
+ THIS(JW_SOURCE_FILE_SHA256,"1711AFA95ED0FC5F09F5AD97B6841D57020EFDC2E7A9DB50472912CF21979E3C"),
+ THIS(JW_NO_STATIC_PARAMETERS,OBJECT(CONS(MEMBER("type","map"),CONS(MEMBER("entries",ARRAY(NIL)),NIL))))
+};
+
+// Complete work domain: inherited canonical inventory, not successful outputs.
+law JW_DOMAIN := IF GOES_WITH(I20_RUN,p,h,cells), GOES_WITH(I20_SNAPSHOT,p,h,snapshot), GOES_WITH(SF_PROGRAM_DRC,p,IF_THEN,proof)
+ THEN GOES_WITH(JW_WORK_DOMAIN,p,h,cells,SNAPSHOT(snapshot),proof);
+law JW_MEMBER := IF GOES_WITH(I20_CELL,p,h,c,id), GOES_WITH(I20_SNAPSHOT,p,h,snapshot), GOES_WITH(P20_CELL,c,id,definition,location), GOES_WITH(P20_SOURCE_OCCURRENCE,c,f,g)
+ THEN GOES_WITH(JW_WORK_MEMBER,p,h,c,CELL_CUSTODY(id,definition,location),TYPE(SAME_NOT_SAME,WHAT),OVERLAP(f,g));
+law JW_INPUTS := IF GOES_WITH(JW_WORK_MEMBER,p,h,c,CELL_CUSTODY(id,definition,location),type,overlap), GOES_WITH(I20_INPUT_VALUE,p,h,c,LEFT,a,left), GOES_WITH(I20_INPUT_VALUE,p,h,c,RIGHT,b,right), GOES_WITH(I20_PREPARED_PAYLOAD,p,h,c,ADMITTED(FRAME(LEFT(CONS(left,NIL)),RIGHT(CONS(right,NIL))),admission))
+ THEN GOES_WITH(JW_WORK_INPUTS,p,h,c,INPUTS(LEFT(a,left),RIGHT(b,right)),ADMISSION(admission));
+law JW_SOURCE_FRAME := IF GOES_WITH(JW_WORK_MEMBER,p,h,c,CELL_CUSTODY(id,definition,location),type,overlap), GOES_WITH(JW_WORK_INPUTS,p,h,c,inputs,admission), GOES_WITH(I20_FRAME,p,h,c,frame,json)
+ THEN GOES_WITH(JW_SOURCE_WORK,p,h,c,SOURCE_WORK(TYPE_AND_SEATING(type,overlap,definition,location),inputs,FRAME_CUSTODY(frame,json,admission),CONSEQUENT(I20_CELL_RESULT,p,h,c)));
+law JW_DOMAIN_END := IF GOES_WITH(I20_CELL_TAIL,p,h,NIL)
+ THEN GOES_WITH(JW_DOMAIN_COVERED,p,h,NIL);
+law JW_DOMAIN_HEAD := IF GOES_WITH(I20_CELL_TAIL,p,h,CONS(c,tail)), GOES_WITH(JW_SOURCE_WORK,p,h,c,work), GOES_WITH(JW_DOMAIN_COVERED,p,h,tail)
+ THEN GOES_WITH(JW_DOMAIN_COVERED,p,h,CONS(c,tail));
+law JW_COMPLETE_DOMAIN := IF GOES_WITH(JW_WORK_DOMAIN,p,h,cells,snapshot,proof), GOES_WITH(JW_DOMAIN_COVERED,p,h,cells)
+ THEN GOES_WITH(JW_COMPLETE_WORK_DOMAIN,p,h,cells,snapshot,proof);
+
+// Actual and vector contexts are distinct; no displacement is invented for
+// the agreement-only actual world step. These are support, not identity aliases.
+law JW_ACTUAL_SCOPE := IF GOES_WITH(C20_RETURN,p,h,next), GOES_WITH(C20_PAIR_OBJECT,p,h,pair), GOES_WITH(C20_RECEIPT_OBJECT,p,h,receipt), GOES_WITH(P20_SOURCE_SNAPSHOT,h,parent), GOES_WITH(I20_SUCCESSOR_JSON,p,h,next,successor)
+ THEN GOES_WITH(JW_WORLD_SUPPORT,p,h,ACTUAL_AGREEMENT_ONLY,PREDECESSOR(h,parent),SUCCESSOR(next,successor),WORLD(pair,receipt));
+law JW_VECTOR_SCOPE := IF GOES_WITH(VCOM_RETURN,p,h,next), GOES_WITH(VCOM_STATE_BODY,p,h,next,state), GOES_WITH(VCOM_RECEIPT_OBJECT,p,h,next,receipt), THIS(VO_DECISION,DECISION(PROPOSAL(basis,entity,kind,target,lifts),selected)), GOES_WITH(VO_FIXTURE_PARENT,basis,h,parent), GOES_WITH(I20_SUCCESSOR_JSON,p,h,next,successor)
+ THEN GOES_WITH(JW_WORLD_SUPPORT,p,h,D2_SELECTED_DISPLACEMENT,PREDECESSOR(h,parent),SUCCESSOR(next,successor),WORLD(state,receipt,DECISION(PROPOSAL(basis,entity,kind,target,lifts),selected)));
+law JW_EXECUTION_SUPPORT := IF GOES_WITH(JW_SOURCE_WORK,p,h,c,work), GOES_WITH(I20_CELL_RESULT,p,h,c,RESULT(reading)), GOES_WITH(I20_RUNTIME_RECEIPT,p,h,c,CELL_EVALUATED,evaluation,er), GOES_WITH(I20_RUNTIME_RECEIPT,p,h,c,PAYLOAD_TRANSITION,transition,tr)
+ THEN GOES_WITH(JW_EXECUTED_WORK,p,h,c,work,RESULT(reading),RUNTIME_SUPPORT(evaluation,er,transition,tr));
+law JW_COMPLETE_SUPPORT := IF GOES_WITH(JW_EXECUTED_WORK,p,h,c,work,result,runtime), GOES_WITH(JW_WORLD_SUPPORT,p,h,scope,parent,successor,world)
+ THEN GOES_WITH(JW_WORK_SUPPORT,p,h,c,SUPPORT(work,result,runtime,scope,parent,successor,world));
+
+// Typed positive PURE fields: unchanged SAME/WHAT QG contact. Exact source:
+// retained junction_evaluation.mal BAB00F25...0D036:10--21; hardware
+// qg_operator_core.sv FCD0190C...6050A and motif table25AF8374....
+// Reading encodings below are transport NO/THIS, not identifier arithmetic.
+@propose seed JW_QG_READING_ENCODING := {
+ GOES_WITH(JW_MARKER_WORD,NO,U32(B0,B0,B0,B0)),
+ GOES_WITH(JW_MARKER_WORD,THIS,U32(B0,B0,B0,B1)),
+ GOES_WITH(JW_RESULT_WORD,SAME,U32(B0,B0,B0,B1)),
+ GOES_WITH(JW_RESULT_WORD,NOT_SAME,U32(B0,B0,B0,B0))
+};
+law JW_PURE_MOTIF := IF GOES_WITH(JW_SOURCE_WORK,p,h,c,work) THEN GOES_WITH(JO_SOURCE_FIELD,WORK(p,h,c),MOTIF_ID,U16(B0,B49));
+law JW_PURE_OPCODE := IF GOES_WITH(JW_SOURCE_WORK,p,h,c,work) THEN GOES_WITH(JO_SOURCE_FIELD,WORK(p,h,c),OPCODE,U8(B2));
+law JW_PURE_WITNESS := IF GOES_WITH(JW_SOURCE_WORK,p,h,c,work) THEN GOES_WITH(JO_SOURCE_FIELD,WORK(p,h,c),WITNESS_ID,U8(B0));
+law JW_PURE_VERTEX := IF GOES_WITH(JW_SOURCE_WORK,p,h,c,work) THEN GOES_WITH(JO_SOURCE_FIELD,WORK(p,h,c),VERTEX_ID,U8(B17));
+law JW_PURE_CAPABILITY := IF GOES_WITH(JW_SOURCE_WORK,p,h,c,work), GOES_WITH(P20_CAPABILITY,SAME_NOT_SAME,G), GOES_WITH(P20_CAPABILITY,SAME_NOT_SAME,S)
+ THEN GOES_WITH(JO_SOURCE_FIELD,WORK(p,h,c),CAPABILITY,U8(B5));
+law JW_PURE_OPERAND_A := IF GOES_WITH(JW_WORK_INPUTS,p,h,c,INPUTS(LEFT(a,left),RIGHT(b,right)),admission), GOES_WITH(JW_MARKER_WORD,a,word)
+ THEN GOES_WITH(JO_SOURCE_FIELD,WORK(p,h,c),OPERAND_A,word);
+law JW_PURE_OPERAND_B := IF GOES_WITH(JW_WORK_INPUTS,p,h,c,INPUTS(LEFT(a,left),RIGHT(b,right)),admission), GOES_WITH(JW_MARKER_WORD,b,word)
+ THEN GOES_WITH(JO_SOURCE_FIELD,WORK(p,h,c),OPERAND_B,word);
+// Authority9.3 carries result-absent obligation bytes. The evaluated result
+// belongs to geometry's suffix, not back-filled into the original obligation.
+law JW_PURE_RESULT_ABSENT := IF GOES_WITH(JW_SOURCE_WORK,p,h,c,work)
+ THEN GOES_WITH(JO_SOURCE_FIELD,WORK(p,h,c),RESULT_BITS,U32(B0,B0,B0,B0));
+law JW_PURE_GEOMETRY_RESULT := IF GOES_WITH(JW_EXECUTED_WORK,p,h,c,work,RESULT(reading),runtime), GOES_WITH(JW_RESULT_WORD,reading,word)
+ THEN GOES_WITH(JO_SOURCE_FIELD,WORK(p,h,c),GEOMETRY_RESULT_BITS,word);
+
+// Source locator custody is mechanical: exact whole-file ordinary SHA,
+// H(SOURCE,whole bytes), UTF8 clause start/length, ordinary clause SHA.
+// The row producer reads bytes only; the family and profile are source-owned.
+// SourceSpanV1 and RULES recipe: W010_IDENTITY_CLARIFICATION_V2 sections1--2;
+// W040_RULE_IDENTITY_CONTACT_V1:5--21; 116L13 authorizes successor sealing.
+law JW_LOCATOR_ROWS := IF THIS(JW_SOURCE_CUSTODY,ARRAY(rows)) THEN THIS(JW_LOCATOR_ROWS,rows);
+law JW_LOCATOR_TAIL := IF THIS(JW_LOCATOR_ROWS,CONS(row,tail)) THEN THIS(JW_LOCATOR_ROWS,tail);
+law JW_LOCATOR := IF THIS(JW_LOCATOR_ROWS,CONS(ARRAY(CONS(name,CONS(filehash,CONS(source,CONS(start,CONS(length,CONS(slice,NIL))))))),tail)), THIS(JW_SOURCE_LAW_NAME,name), THIS(JW_SOURCE_FILE_SHA256,filehash)
+ THEN GOES_WITH(JW_LOCATOR,name,source,start,length,CUSTODY(filehash,slice));
+law JW_LOCATOR_REFERENCE := IF GOES_WITH(JW_LOCATOR,name,source,start,length,custody)
+ THEN THIS(JW_REFERENCE_REQUEST,source);
+law JW_LOCATOR_START := IF GOES_WITH(JW_LOCATOR,name,source,start,length,custody)
+ THEN THIS(JW_UNSIGNED_REQUEST,start);
+law JW_LOCATOR_LENGTH := IF GOES_WITH(JW_LOCATOR,name,source,start,length,custody)
+ THEN THIS(JW_UNSIGNED_REQUEST,length);
+law JW_LOCATOR_NAME := IF GOES_WITH(JW_LOCATOR,name,source,start,length,custody)
+ THEN THIS(JW_TEXT_REQUEST,name);
+law JW_REFERENCE_VALUE := IF THIS(JW_REFERENCE_REQUEST,value)
+ THEN GOES_WITH(JW_REFERENCE_VALUE,value,OBJECT(CONS(MEMBER("type","ref"),CONS(MEMBER("value",value),NIL))));
+law JW_TEXT_VALUE := IF THIS(JW_TEXT_REQUEST,value)
+ THEN GOES_WITH(JW_TEXT_VALUE,value,OBJECT(CONS(MEMBER("type","text"),CONS(MEMBER("value",value),NIL))));
+law JW_UNSIGNED_VALUE := IF THIS(JW_UNSIGNED_REQUEST,value)
+ THEN GOES_WITH(JW_UNSIGNED_VALUE,value,OBJECT(CONS(MEMBER("type","u64"),CONS(MEMBER("value",value),NIL))));
+law JW_SOURCE_SPAN := IF GOES_WITH(JW_LOCATOR,name,source,start,length,custody), GOES_WITH(JW_REFERENCE_VALUE,source,sr), GOES_WITH(JW_UNSIGNED_VALUE,start,st), GOES_WITH(JW_UNSIGNED_VALUE,length,ln)
+ THEN GOES_WITH(JW_SOURCE_SPAN,name,OBJECT(CONS(MEMBER("type","record"),CONS(MEMBER("schema","SourceSpanV1"),CONS(MEMBER("fields",OBJECT(CONS(MEMBER("source_identity",sr),CONS(MEMBER("start",st),CONS(MEMBER("length",ln),NIL))))),NIL)))),SOURCE_CUSTODY(source,start,length,custody));
+law JW_RULE_DESCRIPTOR := IF GOES_WITH(JW_SOURCE_SPAN,name,span,custody), GOES_WITH(JW_TEXT_VALUE,name,family), THIS(JW_NO_STATIC_PARAMETERS,parameters)
+ THEN GOES_WITH(JW_RULE_DESCRIPTOR,OBJECT(CONS(MEMBER("type","seq"),CONS(MEMBER("items",ARRAY(CONS(OBJECT(CONS(MEMBER("type","set"),CONS(MEMBER("items",ARRAY(CONS(span,NIL))),NIL))),CONS(family,CONS(parameters,NIL))))),NIL))),custody);
+law JW_RULE_HASH_REQUEST := IF GOES_WITH(JW_RULE_DESCRIPTOR,descriptor,custody)
+ THEN GOES_WITH(JW_FCSV_HASH_REQUEST,SOURCE_LAW,I20_EVALUATE,"RULES",descriptor);
+law JW_RULE_REFERENCE := IF GOES_WITH(JW_RULE_DESCRIPTOR,descriptor,custody), GOES_WITH(JW_FCSV_HASH_RESPONSE,"RULES",descriptor,digest)
+ THEN GOES_WITH(JW_RULE_REFERENCE,digest,descriptor,custody);
+law JW_RULE_REFERENCE_ENCODING := IF GOES_WITH(JW_RULE_REFERENCE,digest,descriptor,custody)
+ THEN THIS(JW_REFERENCE_REQUEST,digest);
+
+// Parent = the actual complete prepared snapshot, NOT the worldline-link
+// name. Canonical payload/state encoding: execution_kernel.py:206--234,
+// 345--379, and snapshot digest: EVALUATE:504. All empty auxiliaries below
+// are read from I20_INITIAL_AUX and the exact typed snapshot, never defaulted.
+law JW_ADMITTED_JSON := IF GOES_WITH(I20_PREPARED_PAYLOAD,p,h,c,ADMITTED(frame,admission)), GOES_WITH(I20_FRAME,p,h,c,frame,json)
+ THEN GOES_WITH(JW_ADMITTED_JSON,p,h,c,OBJECT(CONS(MEMBER("admission_receipt",admission),CONS(MEMBER("completion_evidence",ARRAY(NIL)),CONS(MEMBER("discharge_receipt",JSON_NULL),CONS(MEMBER("frame",json),CONS(MEMBER("phase","ADMITTED"),CONS(MEMBER("result",JSON_NULL),CONS(MEMBER("result_ref",JSON_NULL),NIL)))))))));
+law JW_PARENT_END := IF GOES_WITH(I20_CELL_TAIL,p,h,NIL)
+ THEN GOES_WITH(JW_PARENT_SUFFIX,p,h,NIL,NIL);
+law JW_PARENT_HEAD := IF GOES_WITH(I20_CELL_TAIL,p,h,CONS(c,tail)), GOES_WITH(I20_CELL,p,h,c,id), GOES_WITH(JW_ADMITTED_JSON,p,h,c,json), GOES_WITH(JW_PARENT_SUFFIX,p,h,tail,rows)
+ THEN GOES_WITH(JW_PARENT_SUFFIX,p,h,CONS(c,tail),CONS(MEMBER(id,json),rows));
+law JW_PARENT_OBJECT := IF GOES_WITH(JW_COMPLETE_WORK_DOMAIN,p,h,cells,SNAPSHOT(FABRIC_STATE(payloads,NIL,NIL,NIL,NIL,NIL)),proof), GOES_WITH(JW_PARENT_SUFFIX,p,h,cells,rows), GOES_WITH(I20_INITIAL_AUX,p,h,AUX(NIL,NIL,NIL,NIL,NIL))
+ THEN GOES_WITH(JW_PARENT_OBJECT,p,h,OBJECT(CONS(MEMBER("outstanding_obligations",ARRAY(NIL)),CONS(MEMBER("payload_states",OBJECT(rows)),CONS(MEMBER("pending_admissions",ARRAY(NIL)),CONS(MEMBER("pending_input_buffers",ARRAY(NIL)),CONS(MEMBER("receipts",ARRAY(NIL)),CONS(MEMBER("route_states",OBJECT(NIL)),NIL))))))));
+law JW_PARENT_HASH_REQUEST := IF GOES_WITH(JW_PARENT_OBJECT,p,h,json)
+ THEN GOES_WITH(GPU_HASH_REQUEST,JTP_WORK_PARENT,CONTEXT(p,h),json);
+law JW_PARENT_REFERENCE := IF GOES_WITH(JW_PARENT_OBJECT,p,h,json), GOES_WITH(GPU_HASH_RESPONSE,json,digest)
+ THEN GOES_WITH(JW_PARENT_REFERENCE,p,h,digest,json);
+law JW_PARENT_REFERENCE_ENCODING := IF GOES_WITH(JW_PARENT_REFERENCE,p,h,digest,json)
+ THEN THIS(JW_REFERENCE_REQUEST,digest);
+
+// References to exact InputValue objects. Their source_receipt remains an
+// independent field in those objects; it is not reused as the value identity.
+law JW_INPUT_REFERENCE_REQUEST := IF GOES_WITH(JW_SOURCE_WORK,p,h,c,work), GOES_WITH(I20_INPUT_JSON,p,h,c,role,json)
+ THEN GOES_WITH(GPU_HASH_REQUEST,JTP_INPUT_VALUE,CONTEXT(p,h,c,role),json);
+law JW_INPUT_REFERENCE := IF GOES_WITH(JW_SOURCE_WORK,p,h,c,work), GOES_WITH(I20_INPUT_JSON,p,h,c,role,json), GOES_WITH(GPU_HASH_RESPONSE,json,digest), GOES_WITH(I20_INPUT_VALUE,p,h,c,role,reading,value)
+ THEN GOES_WITH(JW_INPUT_REFERENCE,p,h,c,role,value,REFERENCE(digest,json));
+law JW_INPUT_REFERENCE_ENCODING := IF GOES_WITH(JW_INPUT_REFERENCE,p,h,c,role,value,REFERENCE(digest,json))
+ THEN THIS(JW_REFERENCE_REQUEST,digest);
+law JW_PROGRAM_REFERENCE_ENCODING := IF GOES_WITH(JW_COMPLETE_WORK_DOMAIN,p,h,cells,snapshot,proof)
+ THEN THIS(JW_REFERENCE_REQUEST,p);
+law JW_PREDECESSOR_REFERENCE_ENCODING := IF GOES_WITH(JW_COMPLETE_WORK_DOMAIN,p,h,cells,snapshot,proof)
+ THEN THIS(JW_REFERENCE_REQUEST,h);
+law JW_CELL_REFERENCE_ENCODING := IF GOES_WITH(JW_WORK_MEMBER,p,h,c,CELL_CUSTODY(id,definition,location),type,overlap)
+ THEN THIS(JW_REFERENCE_REQUEST,id);
+law JW_ADMISSION_REFERENCE_ENCODING := IF GOES_WITH(JW_WORK_INPUTS,p,h,c,inputs,ADMISSION(admission))
+ THEN THIS(JW_REFERENCE_REQUEST,admission);
+
+// The r binding is read from the actual I20_COMPARE antecedent, not from
+// a purported successful execution or expected output. All four readings stay.
+law JW_LITERAL_BINDING := IF GOES_WITH(JW_WORK_INPUTS,p,h,c,INPUTS(LEFT(a,left),RIGHT(b,right)),ADMISSION(admission)), GOES_WITH(I20_COMPARE,a,b,r), GOES_WITH(I20_READING_TEXT,a,at), GOES_WITH(I20_READING_TEXT,b,bt), GOES_WITH(I20_RESULT_TEXT,r,rt)
+ THEN GOES_WITH(JW_LITERAL_BINDING,p,h,c,INPUTS(left,right,admission),READINGS(a,b,r),TEXTS(at,bt,rt));
+law JW_LITERAL_A := IF GOES_WITH(JW_LITERAL_BINDING,p,h,c,inputs,readings,TEXTS(a,b,r)) THEN THIS(JW_TEXT_REQUEST,a);
+law JW_LITERAL_B := IF GOES_WITH(JW_LITERAL_BINDING,p,h,c,inputs,readings,TEXTS(a,b,r)) THEN THIS(JW_TEXT_REQUEST,b);
+law JW_LITERAL_R := IF GOES_WITH(JW_LITERAL_BINDING,p,h,c,inputs,readings,TEXTS(a,b,r)) THEN THIS(JW_TEXT_REQUEST,r);
+law JW_LITERAL_VALUES := IF GOES_WITH(JW_LITERAL_BINDING,p,h,c,inputs,readings,TEXTS(a,b,r)), GOES_WITH(JW_TEXT_VALUE,a,av), GOES_WITH(JW_TEXT_VALUE,b,bv), GOES_WITH(JW_TEXT_VALUE,r,rv)
+ THEN GOES_WITH(JW_LITERAL_VALUES,p,h,c,inputs,readings,VALUES(av,bv,rv));
+law JW_INPUT_BINDING := IF GOES_WITH(JW_LITERAL_BINDING,p,h,c,INPUTS(left,right,admission),readings,texts), GOES_WITH(JW_INPUT_REFERENCE,p,h,c,LEFT,left,REFERENCE(l,lj)), GOES_WITH(JW_INPUT_REFERENCE,p,h,c,RIGHT,right,REFERENCE(r,rj)), GOES_WITH(JW_REFERENCE_VALUE,l,lv), GOES_WITH(JW_REFERENCE_VALUE,r,rv), GOES_WITH(JW_REFERENCE_VALUE,admission,av)
+ THEN GOES_WITH(JW_INPUT_BINDING,p,h,c,INPUTS(left,right,admission),REFERENCES(lv,rv,av));
+law JW_CONTEXT_BINDING := IF GOES_WITH(JW_PARENT_REFERENCE,p,h,parent,json), GOES_WITH(I20_CELL,p,h,c,id), GOES_WITH(JW_REFERENCE_VALUE,p,pv), GOES_WITH(JW_REFERENCE_VALUE,h,hv), GOES_WITH(JW_REFERENCE_VALUE,id,cv), GOES_WITH(JW_REFERENCE_VALUE,parent,sv)
+ THEN GOES_WITH(JW_CONTEXT_BINDING,p,h,c,parent,REFERENCES(pv,hv,cv,sv));
+// Every variable of I20_EVALUATE, with no extra success field or host ordinal.
+law JW_BINDING_MAP := IF GOES_WITH(JW_CONTEXT_BINDING,p,h,c,parent,REFERENCES(pv,hv,cv,sv)), GOES_WITH(JW_INPUT_BINDING,p,h,c,inputs,REFERENCES(lv,rv,ad)), GOES_WITH(JW_LITERAL_VALUES,p,h,c,inputs,readings,VALUES(av,bv,result))
+ THEN GOES_WITH(JW_BINDING_MAP,p,h,c,parent,OBJECT(CONS(MEMBER("type","map"),CONS(MEMBER("entries",ARRAY(CONS(ARRAY(CONS("a",CONS(av,NIL))),CONS(ARRAY(CONS("admission",CONS(ad,NIL))),CONS(ARRAY(CONS("b",CONS(bv,NIL))),CONS(ARRAY(CONS("c",CONS(cv,NIL))),CONS(ARRAY(CONS("h",CONS(hv,NIL))),CONS(ARRAY(CONS("left",CONS(lv,NIL))),CONS(ARRAY(CONS("p",CONS(pv,NIL))),CONS(ARRAY(CONS("r",CONS(result,NIL))),CONS(ARRAY(CONS("right",CONS(rv,NIL))),CONS(ARRAY(CONS("snapshot",CONS(sv,NIL))),NIL)))))))))))),NIL))),SOURCE_PREMISES(inputs,readings));
+law JW_CHILD_PREIMAGE := IF GOES_WITH(JW_BINDING_MAP,p,h,c,parent,binding,premises), GOES_WITH(JW_RULE_REFERENCE,rule,rules,source), GOES_WITH(JW_REFERENCE_VALUE,parent,pr), GOES_WITH(JW_REFERENCE_VALUE,rule,rr), GOES_WITH(JW_SOURCE_WORK,p,h,c,work)
+ THEN GOES_WITH(JW_CHILD_PREIMAGE,p,h,c,OBJECT(CONS(MEMBER("type","seq"),CONS(MEMBER("items",ARRAY(CONS(pr,CONS(rr,CONS(binding,CONS(OBJECT(CONS(MEMBER("type","u64"),CONS(MEMBER("value","0"),NIL))),NIL)))))),NIL))),DERIVATION(parent,rule,binding,premises,work,SOURCE(rules,source)));
+law JW_CHILD_HASH_REQUEST := IF GOES_WITH(JW_CHILD_PREIMAGE,p,h,c,descriptor,derivation)
+ THEN GOES_WITH(JW_FCSV_HASH_REQUEST,OBLIGATION_MATERIALIZATION,WORK(p,h,c),"CHILD",descriptor);
+law JW_OBLIGATION_ID_CANDIDATE := IF GOES_WITH(JW_CHILD_PREIMAGE,p,h,c,descriptor,derivation), GOES_WITH(JW_FCSV_HASH_RESPONSE,"CHILD",descriptor,digest)
+ THEN GOES_WITH(JW_OBLIGATION_ID_CANDIDATE,p,h,c,digest,descriptor,derivation);
+
+// Seal the complete materialized set, not a selected-success subset, before
+// exposing a work identity to the PURE projection. Hash custody is not discharge.
+law JW_ID_END := IF GOES_WITH(I20_CELL_TAIL,p,h,NIL)
+ THEN GOES_WITH(JW_ID_SUFFIX,p,h,NIL,NIL);
+law JW_ID_HEAD := IF GOES_WITH(I20_CELL_TAIL,p,h,CONS(c,tail)), GOES_WITH(JW_OBLIGATION_ID_CANDIDATE,p,h,c,digest,descriptor,derivation), GOES_WITH(JW_ID_SUFFIX,p,h,tail,ids)
+ THEN GOES_WITH(JW_ID_SUFFIX,p,h,CONS(c,tail),CONS(MATERIALIZED(c,digest,descriptor,derivation),ids));
+law JW_MATERIALIZED_SET := IF GOES_WITH(JW_COMPLETE_WORK_DOMAIN,p,h,cells,snapshot,proof), GOES_WITH(JW_ID_SUFFIX,p,h,cells,ids)
+ THEN GOES_WITH(JW_MATERIALIZED_SET,p,h,ids,snapshot,proof);
+law JW_ID := IF GOES_WITH(JW_MATERIALIZED_SET,p,h,ids,snapshot,proof), GOES_WITH(JW_OBLIGATION_ID_CANDIDATE,p,h,c,digest,descriptor,derivation)
+ THEN GOES_WITH(JW_WORK_ID,p,h,c,digest,derivation);
+
+// Generic digest-octet decoding. Hex character order is byte encoding only;
+// neither occurrence selection nor identifier magnitude participates.
+@propose seed JW_HEX_ENCODING := {
+ GOES_WITH(JW_HEX_NIBBLE,B48,NIBBLE(NO,NO,NO,NO)), GOES_WITH(JW_HEX_NIBBLE,B49,NIBBLE(NO,NO,NO,THIS)),
+ GOES_WITH(JW_HEX_NIBBLE,B50,NIBBLE(NO,NO,THIS,NO)), GOES_WITH(JW_HEX_NIBBLE,B51,NIBBLE(NO,NO,THIS,THIS)),
+ GOES_WITH(JW_HEX_NIBBLE,B52,NIBBLE(NO,THIS,NO,NO)), GOES_WITH(JW_HEX_NIBBLE,B53,NIBBLE(NO,THIS,NO,THIS)),
+ GOES_WITH(JW_HEX_NIBBLE,B54,NIBBLE(NO,THIS,THIS,NO)), GOES_WITH(JW_HEX_NIBBLE,B55,NIBBLE(NO,THIS,THIS,THIS)),
+ GOES_WITH(JW_HEX_NIBBLE,B56,NIBBLE(THIS,NO,NO,NO)), GOES_WITH(JW_HEX_NIBBLE,B57,NIBBLE(THIS,NO,NO,THIS)),
+ GOES_WITH(JW_HEX_NIBBLE,B65,NIBBLE(THIS,NO,THIS,NO)), GOES_WITH(JW_HEX_NIBBLE,B66,NIBBLE(THIS,NO,THIS,THIS)),
+ GOES_WITH(JW_HEX_NIBBLE,B67,NIBBLE(THIS,THIS,NO,NO)), GOES_WITH(JW_HEX_NIBBLE,B68,NIBBLE(THIS,THIS,NO,THIS)),
+ GOES_WITH(JW_HEX_NIBBLE,B69,NIBBLE(THIS,THIS,THIS,NO)), GOES_WITH(JW_HEX_NIBBLE,B70,NIBBLE(THIS,THIS,THIS,THIS)),
+ GOES_WITH(JW_HEX_NIBBLE,B97,NIBBLE(THIS,NO,THIS,NO)), GOES_WITH(JW_HEX_NIBBLE,B98,NIBBLE(THIS,NO,THIS,THIS)),
+ GOES_WITH(JW_HEX_NIBBLE,B99,NIBBLE(THIS,THIS,NO,NO)), GOES_WITH(JW_HEX_NIBBLE,B100,NIBBLE(THIS,THIS,NO,THIS)),
+ GOES_WITH(JW_HEX_NIBBLE,B101,NIBBLE(THIS,THIS,THIS,NO)), GOES_WITH(JW_HEX_NIBBLE,B102,NIBBLE(THIS,THIS,THIS,THIS))
+};
+law JW_HEX_REQUEST := IF GOES_WITH(JW_WORK_ID,p,h,c,TEXT(bytes),derivation) THEN THIS(JW_HEX_TAIL,bytes);
+law JW_HEX_TAIL := IF THIS(JW_HEX_TAIL,CONS(a,CONS(b,tail))) THEN THIS(JW_HEX_TAIL,tail);
+law JW_HEX_BYTE := IF THIS(JW_HEX_TAIL,CONS(a,CONS(b,tail))), GOES_WITH(JW_HEX_NIBBLE,a,NIBBLE(a0,a1,a2,a3)), GOES_WITH(JW_HEX_NIBBLE,b,NIBBLE(b0,b1,b2,b3)), GOES_WITH(JO_BYTE_BITS,byte,BITS(a0,a1,a2,a3,b0,b1,b2,b3))
+ THEN GOES_WITH(JW_HEX_BYTE,CONS(a,CONS(b,tail)),tail,byte);
+law JW_HEX_WORD := IF GOES_WITH(JW_HEX_BYTE,start,a,v0), GOES_WITH(JW_HEX_BYTE,a,b,v1), GOES_WITH(JW_HEX_BYTE,b,c,v2), GOES_WITH(JW_HEX_BYTE,c,end,v3)
+ THEN GOES_WITH(JW_HEX_WORD,start,end,U32(v0,v1,v2,v3));
+law JW_HEX_HALF := IF GOES_WITH(JW_HEX_WORD,start,a,v0), GOES_WITH(JW_HEX_WORD,a,b,v1), GOES_WITH(JW_HEX_WORD,b,c,v2), GOES_WITH(JW_HEX_WORD,c,end,v3)
+ THEN GOES_WITH(JW_HEX_HALF,start,end,U128(v0,v1,v2,v3));
+law JW_HEX_DIGEST := IF GOES_WITH(JW_WORK_ID,p,h,c,TEXT(bytes),derivation), GOES_WITH(JW_HEX_HALF,bytes,tail,a), GOES_WITH(JW_HEX_HALF,tail,NIL,b)
+ THEN GOES_WITH(JW_WORK_ID_BYTES,p,h,c,TEXT(bytes),U256(a,b),derivation);
+law JW_PURE_WORK_ID := IF GOES_WITH(JW_WORK_ID_BYTES,p,h,c,digest,word,derivation)
+ THEN GOES_WITH(JO_SOURCE_FIELD,WORK(p,h,c),OBLIGATION_ID,word);
+
+// These observations name produced support only. No COMMITTED, IF_THEN,
+// hardware append receipt, or O_exec discharge is manufactured here.
+law JW_MEMBER_OBSERVATION := IF GOES_WITH(JW_SOURCE_WORK,p,h,c,work), GOES_WITH(I20_CELL,p,h,c,id)
+ THEN THIS(OBSERVATION_ROW,JTP_WORK_OCCURRENCE,ARRAY(CONS(p,CONS(h,CONS(id,NIL)))));

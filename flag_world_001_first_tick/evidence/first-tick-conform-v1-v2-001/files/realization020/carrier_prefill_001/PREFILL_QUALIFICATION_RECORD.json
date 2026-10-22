@@ -1,0 +1,28 @@
+{
+  "scope": "EXECUTED_GENERIC_PREFILL_QUALIFICATION; CUSTODY_ONLY; NO_PROMOTION; NOT_V1_V2_CONFORM",
+  "status": "QUALIFIED_SAME",
+  "prefill_manifest": {
+    "path": "D:/Dev/flag-world-first-tick-020/carrier_prefill_001/PREFILL_MANIFEST.json",
+    "sha256": "D40F88D9CA521EDF95A4FC347A309D8B23F5605F47EC164F91BB2CAD80DF4AD7"
+  },
+  "prefill_readback_sha256": "ECED361A61D4D9FA514DE0E6E2EE3ECFFC975F2BFE4C68D960DEED2E3BE08D8B",
+  "qualification": {
+    "path": "D:/Dev/flag-world-first-tick-020/prefill_qualification_001/execution/QUALIFICATION.json",
+    "sha256": "8C784B4A8BA6020BDCC40E4399761CD54EB03F09BA1889318ECEA17894C4BDE9",
+    "device": "NVIDIA GeForce RTX 3070",
+    "runtime_sha256": "58B3A1A4387E73F2D238B749614B5C51B29F460D5C1AD02FEC61F2949B44D5B0",
+    "runtime_scope": "Bounded capacity/stack clone; every matcher function unchanged from the qualified production source. Reversible transform bound in PREPARATION.json.",
+    "comparison": "Full structural fact and term sets, with every proof independently checked. Retained carrier proof bytes unchanged. Clean and prefilled internal ordering/epoch headers are not claimed byte-identical."
+  },
+  "carrier": {"facts": 5282, "terms": 6170, "source_seeds": 91, "derived_facts": 5191, "retained_epochs": 14},
+  "cases": [
+    {"input": "THIS", "facts": 6484, "terms": 7395, "flag_results": 480, "pair_results": 720, "new_result_seeds": 0, "clean_epochs": 14, "prefilled_additional_epochs": 4, "prefilled_cumulative_epochs": 18, "closure": "SAME", "retained_proof_bytes": "SAME", "own_input_ancestry": "SAME", "opposite_reading_results": 0},
+    {"input": "NO", "facts": 6484, "terms": 7395, "flag_results": 480, "pair_results": 720, "new_result_seeds": 0, "clean_epochs": 14, "prefilled_additional_epochs": 4, "prefilled_cumulative_epochs": 18, "closure": "SAME", "retained_proof_bytes": "SAME", "own_input_ancestry": "SAME", "opposite_reading_results": 0}
+  ],
+  "source_split_boundary": "The012 carrier checkpoint alone is reusable as carrier-only prefill. Completed correspondence contexts retain vector field/kappa and checked current-field ancestry and remain derived in this package. No120-context reduction is claimed.",
+  "production_import": "Existing resume_guard_vector.mjs accepts the exact full-capacity checkpoint against both retained V1 and V2 stage01 images, preserving all58 carrier rules and91 source seeds. Recheck all bindings and prefix proofs before launch. No remap or derived-fact reseeding is needed.",
+  "production_execution": "NOT_RUN_FROM_PREFILL; active unprefilled V1 was left untouched; V2 remains behind ordered V1 CONFORM",
+  "promoted_inputs_and_expectations": "UNCHANGED",
+  "reference_bundle": "COMPARISON_EVIDENCE_ONLY; NOT_RUNTIME_INPUT",
+  "repository_actions": "NONE"
+}

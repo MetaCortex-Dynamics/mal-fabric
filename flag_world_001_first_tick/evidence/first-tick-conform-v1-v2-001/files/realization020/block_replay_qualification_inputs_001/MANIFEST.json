@@ -1,0 +1,99 @@
+{
+  "scope": "GENERIC_MATCHER_REGRESSION_INPUTS_ONLY; CPU_LOWERED; GPU_NOT_RUN; NOT_WORLD_SOURCE; NOT_CONFORM",
+  "reference_runtime": "law_application_resume_vector_disjoint.exe",
+  "candidate_runtime": "law_application_resume_vector_block_replay.exe",
+  "cases": [
+    {
+      "name": "overflow",
+      "construction": "Two anchor pivots; 300 item facts; 300 complete applications per anchor exceeds the 256-record replay cap. Later ECHO and duplicate proof rules test retained order.",
+      "structural_expectation": "Serial overflow fallback before each overflowing candidate's outputs commit; compare full raw reference/candidate bytes."
+    },
+    {
+      "name": "deep_antecedent",
+      "construction": "Closed deep seed is seated iteratively; open antecedent depth34 exceeds32; prior BEFORE rule provides retained support.",
+      "structural_expectation": "Unchanged serial matching refusal error2, preserving prior proof state; compare raw bytes even though process exit is nonzero."
+    },
+    {
+      "name": "deep_consequent",
+      "construction": "Two pivot candidates; first consequence interns NEW(A) before depth refusal. Later candidate was eligible for read-only enumeration.",
+      "structural_expectation": "Same error2 and same partial term/fact custody; NEW(B) and later consequences must not be committed. Compare raw bytes."
+    }
+  ],
+  "files": [
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_antecedent.mal",
+      "bytes": 836,
+      "sha256": "FEF79E511B936A3D7353F8D722F280A6E0A3B07D00FF73DEE765442FD3EF22E9"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_consequent.mal",
+      "bytes": 609,
+      "sha256": "464B172F2A0459B64BB0465198E4791F5242E5B31EF105FA6904BE3207DA3EB5"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\overflow.mal",
+      "bytes": 5826,
+      "sha256": "D91902FF07EDCB8B651A28DD6C8926A66FD212C8B4F964598AA0625B92623C84"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_antecedent\\image.bin",
+      "bytes": 41992208,
+      "sha256": "58658377C06C233922F740D4B7420AE7719888B87B2FD9C1634307B64A967F62"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_antecedent\\source-map.json",
+      "bytes": 15754,
+      "sha256": "C2CFFA3E139C946B144405DE7163C54913AB869E83639519DDA663BC266B6FA7"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_antecedent\\source-occurrence-custody.json",
+      "bytes": 13531,
+      "sha256": "C874E97880C79E04C30CFF120203D26525B45301E2E50855FE80F94A69E45985"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_antecedent\\source.mal",
+      "bytes": 836,
+      "sha256": "FEF79E511B936A3D7353F8D722F280A6E0A3B07D00FF73DEE765442FD3EF22E9"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_consequent\\image.bin",
+      "bytes": 41992208,
+      "sha256": "31D1E8F7DC3B860D79845CAEA911CC2AFA297B80ED8DDFD99BDB4F6202B9F9CD"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_consequent\\source-map.json",
+      "bytes": 9453,
+      "sha256": "7E18C7FF2D9A9D62D23C776AEA41971D15246D67B8F5B252B1C894E38CF82AA1"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_consequent\\source-occurrence-custody.json",
+      "bytes": 8221,
+      "sha256": "C62627AD02A0A4E1F6B48CB6F459B7A712FB8F9A8DC00D45B2A668472FE0B70C"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_consequent\\source.mal",
+      "bytes": 609,
+      "sha256": "464B172F2A0459B64BB0465198E4791F5242E5B31EF105FA6904BE3207DA3EB5"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\overflow\\image.bin",
+      "bytes": 41992208,
+      "sha256": "CBA8E556C042C9420A0FA01FA38E0CCB2EDDA0E98E7E4D1D0773B41A6CDD27DC"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\overflow\\source-map.json",
+      "bytes": 139351,
+      "sha256": "9A649B3CDDF981456BACAC64F43ECC298CE3B98DDE2A55E259899DE6DE891418"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\overflow\\source-occurrence-custody.json",
+      "bytes": 133282,
+      "sha256": "F86D8AAC6743B451CA8B135280996A822BD26A0BE7E3BCB573408B974859DA45"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\overflow\\source.mal",
+      "bytes": 5826,
+      "sha256": "D91902FF07EDCB8B651A28DD6C8926A66FD212C8B4F964598AA0625B92623C84"
+    }
+  ]
+}

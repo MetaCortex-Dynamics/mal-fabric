@@ -1,0 +1,25 @@
+{
+  "kind": "CPU_DFS_STORAGE_ORACLE",
+  "verdict": "SAME",
+  "cases": 13528,
+  "overflow_cases": 423,
+  "modes": [
+    "ARGUMENT",
+    "PAIR",
+    "PREDICATE",
+    "SINGLE"
+  ],
+  "antecedents_max": 8,
+  "bindings_max": 16,
+  "capacities": [
+    0,
+    1,
+    4,
+    256
+  ],
+  "world_execution": "NOT_RUN",
+  "gpu_execution": "NOT_RUN",
+  "conform": "NOT_RUN",
+  "collector_sha256": "013708C2D53085FF1113B8BE943B5DC601D8080658F06B878181DEB271B752C7",
+  "test_sha256": "48F6D3B51053F41AC88635478F98BCD1D1F3224388BF22011BE3EE88BFCD3010"
+}

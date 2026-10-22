@@ -1,0 +1,159 @@
+{
+  "kind": "GENERIC_CAPACITY_REFUSAL_PREPARATION",
+  "authority": "EXECUTE_SCOPED_DIAGNOSTIC; NO_PROMOTION",
+  "bound": {
+    "runtime": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_small.exe",
+      "bytes": 509952,
+      "sha256": "A4A0254258430BBE1754A4058552B126F7CE0D4D0371FB4489B160B0E6F51E28"
+    },
+    "small_source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_small.cu",
+      "bytes": 34274,
+      "sha256": "CEC65C99FDF63CA20CF214F56140200EDD78F7D74EAC902943FE437705072CE9"
+    },
+    "full_source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_full.cu",
+      "bytes": 34285,
+      "sha256": "C09A06FC4B2F1D733C2A9F7FC247844E98B6EF4DB3C7EC5915C63A089D3D6169"
+    },
+    "transform": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\SOURCE_TRANSFORM.json",
+      "bytes": 10032,
+      "sha256": "A4EAB21308FF702FA55CB6B3981C3F1AFDF855BB19C51533EAA9BD96953224E7"
+    },
+    "retained_qualification": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\QUALIFICATION.json",
+      "bytes": 23425,
+      "sha256": "DCB21670B9BA656AFBEA4A75EDAABB3AB73F3892E455C30AB54F2C1BBAFD83FB"
+    },
+    "capacity_only_source_equivalence": "SAME",
+    "small_capacity": {
+      "NP": 65536,
+      "NS": 2048,
+      "NR": 1024,
+      "NT": 32768,
+      "NF": 16384
+    },
+    "full_capacity": {
+      "NP": 1048576,
+      "NS": 2048,
+      "NR": 1024,
+      "NT": 4194304,
+      "NF": 2097152
+    },
+    "lowerer": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\lower_compact_large.mjs",
+      "bytes": 8365,
+      "sha256": "1B76FFEB4938C87BF90FF54942EBB7A32DF89C0FCA942663BA15311ACB61FCDB"
+    },
+    "guard": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_guard_execute.mjs",
+      "bytes": 10800,
+      "sha256": "CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C"
+    },
+    "status": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\status.mjs",
+      "bytes": 954,
+      "sha256": "EBBC77477CBF3F131245D18B99CCBD22CA0207524856F6EC445DB0501D53E0A7"
+    },
+    "readback": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\readback.mjs",
+      "bytes": 2790,
+      "sha256": "4612D0189AD00B89522C8CD9F472E39EB1574991F5FB4241FF3CD85F415E32D3"
+    },
+    "orchestrator": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\qualify.mjs",
+      "bytes": 11491,
+      "sha256": "E7178E736F838275F337798920A3A830F29C7B708C3212A4591E33164CC71D3B"
+    }
+  },
+  "cases": [
+    {
+      "name": "fact",
+      "source": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact.mal",
+        "bytes": 2474,
+        "sha256": "FE877C20D80A961950E9C684B57DD863F8D1D0D89FA5A2D826CE9B4D5D71E9D3"
+      },
+      "lowering": {
+        "started": "2026-10-22T13:07:52.782Z",
+        "finished": "2026-10-22T13:07:53.857Z",
+        "command": {
+          "executable": "C:\\Program Files\\nodejs\\node.exe",
+          "args": [
+            "D:\\Dev\\flag-world-first-tick-020\\lower_compact_large.mjs",
+            "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact.mal",
+            "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact_large"
+          ]
+        },
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "{\"source_sha256\":\"FE877C20D80A961950E9C684B57DD863F8D1D0D89FA5A2D826CE9B4D5D71E9D3\",\"image_sha256\":\"E6E25704F9DF4D18623B080AD9A8FFED989958DFC73C67E93E264E1D9A9FEFE3\",\"patterns\":263,\"seeds\":128,\"rules\":1}\n",
+        "stderr": ""
+      },
+      "repack": {
+        "from": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact_large\\image.bin",
+          "bytes": 41992208,
+          "sha256": "E6E25704F9DF4D18623B080AD9A8FFED989958DFC73C67E93E264E1D9A9FEFE3"
+        },
+        "to": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact\\image.bin",
+          "bytes": 2670608,
+          "sha256": "150A8EA757E98EF2BC5E5FCE95E1D9012A0EA63089B2DC757B69619B213A90D8"
+        },
+        "source_sha256": "FE877C20D80A961950E9C684B57DD863F8D1D0D89FA5A2D826CE9B4D5D71E9D3",
+        "patterns": 263,
+        "seeds": 128,
+        "rules": 1,
+        "used_bytes": "SAME"
+      }
+    },
+    {
+      "name": "term",
+      "source": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\term.mal",
+        "bytes": 2508,
+        "sha256": "BB532C458C53BB2082C66E5E9EFB0CCFA4FEEEF61FC0ED5DFD0365863D2ECFD5"
+      },
+      "lowering": {
+        "started": "2026-10-22T13:07:54.144Z",
+        "finished": "2026-10-22T13:07:55.481Z",
+        "command": {
+          "executable": "C:\\Program Files\\nodejs\\node.exe",
+          "args": [
+            "D:\\Dev\\flag-world-first-tick-020\\lower_compact_large.mjs",
+            "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\term.mal",
+            "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\term_large"
+          ]
+        },
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "{\"source_sha256\":\"BB532C458C53BB2082C66E5E9EFB0CCFA4FEEEF61FC0ED5DFD0365863D2ECFD5\",\"image_sha256\":\"B7F3CFED036B56DCD65D75AF79F347E89D2FCCF7FE53371A7B052AE89C6248F5\",\"patterns\":265,\"seeds\":128,\"rules\":1}\n",
+        "stderr": ""
+      },
+      "repack": {
+        "from": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\term_large\\image.bin",
+          "bytes": 41992208,
+          "sha256": "B7F3CFED036B56DCD65D75AF79F347E89D2FCCF7FE53371A7B052AE89C6248F5"
+        },
+        "to": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\term\\image.bin",
+          "bytes": 2670608,
+          "sha256": "B946276015F16EE466515CA9959320174B2EDCFDF64CF0B0266438F97B1D059C"
+        },
+        "source_sha256": "BB532C458C53BB2082C66E5E9EFB0CCFA4FEEEF61FC0ED5DFD0365863D2ECFD5",
+        "patterns": 265,
+        "seeds": 128,
+        "rules": 1,
+        "used_bytes": "SAME"
+      }
+    }
+  ],
+  "production_mutation": "NONE",
+  "next": "Two isolated small-runtime launches only"
+}

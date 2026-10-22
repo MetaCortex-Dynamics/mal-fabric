@@ -1,0 +1,84 @@
+// Actual agreement-only continuation of the committed 018 genesis pair.
+// GPU_SELF_WITNESS 2CBBA4AD...BCE7: the GPU appends ONE (field,witness,receipt)
+// link with predecessor custody. S_F 276EBD71...A1983108 APPLY3: STEP_FABRIC
+// -> RETURN -> link two. V3.3 section2 returns the simultaneous successor.
+// This is NOT a D2 selected displacement and claims no V1/V2 conformance.
+// Those frozen inputs and their source-produced selected lifts remain separate.
+//
+// The comparator-only program has no field-writing effect. Its source operands
+// are the committed snapshot. This module does not assume its results: every
+// one of the complete 720 returned readings must match that snapshot witness.
+// Only then is the unchanged field/witness projection admitted. The receipt
+// has no discharged/opened pairs; retained walls remain in the witness.
+// A differing result produces an explicit NOT_SAME and no projection/commit.
+// No hardware-lane closure token or invented readiness witness is consumed.
+
+// Bind the exact existing singleton chain and its source-verified link, not a
+// host assertion of a predecessor hash or a replay of the Ground predecessor.
+law C20_GENESIS := IF THIS(COMMITTED_GENESIS,OBJECT(CONS(MEMBER("chain",ARRAY(CONS(entry,NIL))),CONS(MEMBER("field",field),CONS(MEMBER("receipt",receipt),CONS(MEMBER("witness",witness),NIL)))))), GOES_WITH(GSC_CHAIN_ENTRY,record,entry), GOES_WITH(GSC_LINK_HASH,record,h)
+ THEN GOES_WITH(C20_GENESIS,h,entry,field,witness);
+law C20_RETURN := IF GOES_WITH(I20_SNAPSHOT,p,h,snapshot), GOES_WITH(STEP_FABRIC_RETURN,p,snapshot,successor), GOES_WITH(I20_SUCCESSOR_JSON,p,h,successor,json), GOES_WITH(C20_GENESIS,h,entry,field,witness)
+ THEN GOES_WITH(C20_RETURN,p,h,successor);
+
+// The retained source-checked witness sequence is a complete, distinct overlap
+// enumeration. Encoding order chooses no value or world locus. Span doubling
+// certifies all rows without another linear 720-epoch accumulation.
+law C20_RESULT_ROW := IF GOES_WITH(GSC_ROW_SPAN,CURRENT_WITNESS,ONE,CONS(ARRAY(CONS(a,CONS(b,CONS(text,NIL)))),tail),tail), GOES_WITH(FLAG_JSON,f,a), GOES_WITH(FLAG_JSON,g,b), GOES_WITH(I20_AGREEMENT,p,h,f,g,r), GOES_WITH(I20_RESULT_TEXT,r,text)
+ THEN GOES_WITH(C20_SAME_SPAN,p,h,ONE,CONS(ARRAY(CONS(a,CONS(b,CONS(text,NIL)))),tail),tail);
+law C20_DOUBLE := IF GOES_WITH(GSC_SPAN_DOUBLE,n,m), GOES_WITH(C20_SAME_SPAN,p,h,n,a,b), GOES_WITH(C20_SAME_SPAN,p,h,n,b,c)
+ THEN GOES_WITH(C20_SAME_SPAN,p,h,m,a,c);
+law C20_ALL_RESULTS := IF GOES_WITH(C20_GENESIS,h,entry,field,ARRAY(rows)), GOES_WITH(GSC_COMPLETE,CURRENT_WITNESS,ARRAY(rows)), GOES_WITH(C20_SAME_SPAN,p,h,FIVE_TWELVE,rows,a), GOES_WITH(C20_SAME_SPAN,p,h,ONE_TWENTY_EIGHT,a,b), GOES_WITH(C20_SAME_SPAN,p,h,SIXTY_FOUR,b,c), GOES_WITH(C20_SAME_SPAN,p,h,SIXTEEN,c,NIL)
+ THEN GOES_WITH(C20_ALL_RESULTS,p,h,field,ARRAY(rows));
+law C20_RESULT_DIFFER_SAME := IF GOES_WITH(CURRENT_GLUING,f,g,SAME), GOES_WITH(I20_AGREEMENT,p,h,f,g,NOT_SAME)
+ THEN GOES_WITH(C20_RESULT_DIFFER,p,h,f,g,NOT_SAME);
+law C20_RESULT_DIFFER_WALL := IF GOES_WITH(CURRENT_GLUING,f,g,NOT_SAME), GOES_WITH(I20_AGREEMENT,p,h,f,g,SAME)
+ THEN GOES_WITH(C20_RESULT_DIFFER,p,h,f,g,NOT_SAME);
+
+// Per-pair receipt diagnostics are downstream of the actual returned state.
+// Both unchanged agreements and retained walls are positive produced witnesses.
+law C20_UNCHANGED := IF GOES_WITH(C20_RETURN,p,h,successor), GOES_WITH(CURRENT_GLUING,f,g,SAME), GOES_WITH(I20_AGREEMENT,p,h,f,g,SAME)
+ THEN GOES_WITH(C20_RECEIPT_PAIR,p,h,f,g,"UNCHANGED");
+law C20_RETAINED := IF GOES_WITH(C20_RETURN,p,h,successor), GOES_WITH(CURRENT_GLUING,f,g,NOT_SAME), GOES_WITH(I20_AGREEMENT,p,h,f,g,NOT_SAME)
+ THEN GOES_WITH(C20_RECEIPT_PAIR,p,h,f,g,"RETAINED");
+law C20_RECEIPT_ROW := IF GOES_WITH(C20_RECEIPT_PAIR,p,h,f,g,r), GOES_WITH(FLAG_JSON,f,a), GOES_WITH(FLAG_JSON,g,b)
+ THEN THIS(OBSERVATION_ROW,STEP_RECEIPT,ARRAY(CONS(a,CONS(b,CONS(r,NIL)))));
+law C20_RETAINED_ROW := IF GOES_WITH(C20_RECEIPT_PAIR,p,h,f,g,"RETAINED"), GOES_WITH(FLAG_JSON,f,a), GOES_WITH(FLAG_JSON,g,b)
+ THEN THIS(OBSERVATION_ROW,STEP_RETAINED_WALLS,ARRAY(CONS(a,CONS(b,NIL))));
+
+// The field is unchanged by this agreement-only program; its returned witness
+// is certified above, not substituted for an unrun evaluator. This is the
+// realization's output projection of this precise STEP_FABRIC return.
+law C20_PROJECTION := IF GOES_WITH(C20_RETURN,p,h,successor), GOES_WITH(C20_ALL_RESULTS,p,h,field,witness), GOES_WITH(GSC_COMPLETE,CURRENT_FIELD,field), GOES_WITH(SF_PROGRAM,p,cells,NIL), THIS(P20_NO_INTERNAL_ROUTES,p)
+ THEN GOES_WITH(FABRIC_SUCCESSOR_PROJECTION,p,successor,PAIR(field,witness));
+law C20_PAIR_OBJECT := IF GOES_WITH(C20_RETURN,p,h,successor), GOES_WITH(FABRIC_SUCCESSOR_PROJECTION,p,successor,PAIR(field,witness))
+ THEN GOES_WITH(C20_PAIR_OBJECT,p,h,OBJECT(CONS(MEMBER("field",field),CONS(MEMBER("witness",witness),NIL))));
+law C20_RECEIPT_OBJECT := IF GOES_WITH(C20_RETURN,p,h,successor), GOES_WITH(FABRIC_SUCCESSOR_PROJECTION,p,successor,PAIR(field,witness))
+ THEN GOES_WITH(C20_RECEIPT_OBJECT,p,h,OBJECT(CONS(MEMBER("discharged",ARRAY(NIL)),CONS(MEMBER("opened",ARRAY(NIL)),NIL))));
+law C20_RECEIPT_READING := IF GOES_WITH(C20_RECEIPT_OBJECT,p,h,OBJECT(CONS(MEMBER("discharged",ARRAY(NIL)),CONS(MEMBER("opened",ARRAY(NIL)),NIL))))
+ THEN GOES_WITH(C20_RECEIPT_READING,p,h,"NO");
+
+// SHA-256 is a generic primitive. The response binds the whole source-produced
+// subject; a response label or a matching hash alone supplies no world fact.
+law C20_PAIR_HASH_REQUEST := IF GOES_WITH(C20_PAIR_OBJECT,p,h,subject)
+ THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_PAIR,CONTEXT(p,h),subject);
+law C20_RECEIPT_HASH_REQUEST := IF GOES_WITH(C20_RECEIPT_OBJECT,p,h,subject)
+ THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_RECEIPT,CONTEXT(p,h),subject);
+law C20_PAIR_HASH := IF GOES_WITH(C20_PAIR_OBJECT,p,h,subject), GOES_WITH(GPU_HASH_RESPONSE,subject,digest)
+ THEN GOES_WITH(C20_PAIR_HASH,p,h,subject,digest);
+law C20_RECEIPT_HASH := IF GOES_WITH(C20_RECEIPT_OBJECT,p,h,subject), GOES_WITH(GPU_HASH_RESPONSE,subject,digest)
+ THEN GOES_WITH(C20_RECEIPT_HASH,p,h,subject,digest);
+law C20_RECORD_PARTS := IF GOES_WITH(C20_PAIR_HASH,p,h,OBJECT(CONS(MEMBER("field",field),CONS(MEMBER("witness",witness),NIL))),pairhash), GOES_WITH(C20_RECEIPT_HASH,p,h,receipt,receipthash), GOES_WITH(C20_RECEIPT_READING,p,h,reading)
+ THEN GOES_WITH(C20_RECORD_PARTS,p,h,PARTS(field,witness,receipt,pairhash,receipthash,reading));
+law C20_TICK_RECORD := IF GOES_WITH(C20_RECORD_PARTS,p,h,PARTS(field,witness,receipt,pairhash,receipthash,reading))
+ THEN GOES_WITH(C20_TICK_RECORD,p,h,OBJECT(CONS(MEMBER("fabric_program",p),CONS(MEMBER("field",field),CONS(MEMBER("kind","TICK"),CONS(MEMBER("pair_hash",pairhash),CONS(MEMBER("prev",h),CONS(MEMBER("receipt",receipt),CONS(MEMBER("receipt_hash",receipthash),CONS(MEMBER("receipt_reading",reading),CONS(MEMBER("witness",witness),NIL)))))))))));
+law C20_TICK_HASH_REQUEST := IF GOES_WITH(C20_TICK_RECORD,p,h,subject)
+ THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_TICK,CONTEXT(p,h),subject);
+law C20_TICK_HASH := IF GOES_WITH(C20_TICK_RECORD,p,h,subject), GOES_WITH(GPU_HASH_RESPONSE,subject,digest)
+ THEN GOES_WITH(C20_TICK_HASH,p,h,subject,digest);
+law C20_TICK_ENTRY := IF GOES_WITH(C20_TICK_HASH,p,h,record,digest)
+ THEN GOES_WITH(C20_TICK_ENTRY,p,h,OBJECT(CONS(MEMBER("link",digest),CONS(MEMBER("record",record),NIL))));
+
+// Publish once all source-checked subjects, exact predecessor custody and the
+// completed simultaneous return meet. ONE new link, prior entry byte-preserved.
+law C20_COMMIT := IF GOES_WITH(C20_RETURN,p,h,successor), GOES_WITH(FABRIC_SUCCESSOR_PROJECTION,p,successor,PAIR(field,witness)), GOES_WITH(C20_GENESIS,h,genesis,field,priorwitness), GOES_WITH(C20_RECORD_PARTS,p,h,PARTS(field,witness,receipt,pairhash,receipthash,reading)), GOES_WITH(C20_TICK_ENTRY,p,h,tick)
+ THEN THIS(COMMITTED_WORLD,OBJECT(CONS(MEMBER("chain",ARRAY(CONS(genesis,CONS(tick,NIL)))),CONS(MEMBER("field",field),CONS(MEMBER("receipt",receipt),CONS(MEMBER("witness",witness),NIL))))));

@@ -1,0 +1,22 @@
+{
+  "label": "deep_antecedent_serial",
+  "command": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\prefill_small.exe",
+  "args": [
+    "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\deep_antecedent\\image.bin",
+    "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_antecedent.serial.bin"
+  ],
+  "preflight": {
+    "name": "NVIDIA GeForce RTX 3070",
+    "free_MiB": 1946,
+    "used_MiB": 6072,
+    "minimum_free_MiB": 1024,
+    "scope": "pre-launch observation; not measured allocation"
+  },
+  "started_utc": "2026-10-22T04:40:15.538Z",
+  "ended_utc": "2026-10-22T04:40:15.794Z",
+  "exit_code": 2,
+  "signal": null,
+  "error": null,
+  "stdout": "gpu=NVIDIA GeForce RTX 3070 error=2 facts=3 terms=42 epochs=1\r\n",
+  "stderr": ""
+}

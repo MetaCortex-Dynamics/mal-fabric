@@ -1,0 +1,483 @@
+{
+  "scope": "Observed progress and source-domain bounds only; not a closure witness or CONFORM",
+  "recorded_utc": "2026-10-22T03:00:57Z",
+  "vector": "V1",
+  "stage": 1,
+  "source_sha256": "BE1E4948CEADE240BAAA1AFAA37DFF2D0EA01810A1F188EC6F9A1F402ED91A97",
+  "image_sha256": "233D0009179E1B79DB0A8B170CDE81E08364DC76855A808C6BBAF0B729F057C1",
+  "runtime_source_sha256": "3BC29A3542A5032F657D7C185E234764DD299D67EEE75C36E03E5DBCAAE8BE4C",
+  "runtime_binary_sha256": "70305626E38C8ABCC330439D00CF68A6DF22CB869FE8AFC7A5E89BCB8094D1C4",
+  "source_of_samples": "Published stderr snapshots from active process190608, unified execution session55982. Not readback bytes.",
+  "publication_semantics": "Epoch-entry snapshot; repeated samples while an epoch runs do not mean zero new facts. Where epochs are skipped, delta/epochs is an interval mean, not an observed individual-epoch delta.",
+  "samples": [
+    {
+      "epoch": 209,
+      "facts": 135942
+    },
+    {
+      "epoch": 210,
+      "facts": 148469
+    },
+    {
+      "epoch": 211,
+      "facts": 162404
+    },
+    {
+      "epoch": 212,
+      "facts": 178280
+    },
+    {
+      "epoch": 213,
+      "facts": 196836
+    },
+    {
+      "epoch": 214,
+      "facts": 215797
+    },
+    {
+      "epoch": 215,
+      "facts": 231303
+    },
+    {
+      "epoch": 216,
+      "facts": 243555
+    },
+    {
+      "epoch": 217,
+      "facts": 250288
+    },
+    {
+      "epoch": 219,
+      "facts": 252884
+    },
+    {
+      "epoch": 255,
+      "facts": 266942
+    },
+    {
+      "epoch": 293,
+      "facts": 276176
+    },
+    {
+      "epoch": 331,
+      "facts": 285410
+    },
+    {
+      "epoch": 368,
+      "facts": 294401
+    },
+    {
+      "epoch": 404,
+      "facts": 303149
+    },
+    {
+      "epoch": 440,
+      "facts": 311897
+    },
+    {
+      "epoch": 477,
+      "facts": 320888
+    },
+    {
+      "epoch": 513,
+      "facts": 329605
+    },
+    {
+      "epoch": 550,
+      "facts": 338559
+    },
+    {
+      "epoch": 585,
+      "facts": 348643
+    },
+    {
+      "epoch": 614,
+      "facts": 357808
+    },
+    {
+      "epoch": 635,
+      "facts": 381650
+    },
+    {
+      "epoch": 672,
+      "facts": 391640
+    },
+    {
+      "epoch": 696,
+      "facts": 408774
+    },
+    {
+      "epoch": 697,
+      "facts": 434870
+    },
+    {
+      "epoch": 698,
+      "facts": 460295
+    },
+    {
+      "epoch": 699,
+      "facts": 486316
+    },
+    {
+      "epoch": 701,
+      "facts": 516538
+    },
+    {
+      "epoch": 722,
+      "facts": 579726
+    },
+    {
+      "epoch": 723,
+      "facts": 666279
+    },
+    {
+      "epoch": 725,
+      "facts": 783471
+    },
+    {
+      "epoch": 726,
+      "facts": 798585
+    },
+    {
+      "epoch": 727,
+      "facts": 802049
+    }
+  ],
+  "deltas": [
+    {
+      "from_epoch": 209,
+      "to_epoch": 210,
+      "added_facts": 12527,
+      "epochs": 1,
+      "mean_added_per_epoch": 12527
+    },
+    {
+      "from_epoch": 210,
+      "to_epoch": 211,
+      "added_facts": 13935,
+      "epochs": 1,
+      "mean_added_per_epoch": 13935
+    },
+    {
+      "from_epoch": 211,
+      "to_epoch": 212,
+      "added_facts": 15876,
+      "epochs": 1,
+      "mean_added_per_epoch": 15876
+    },
+    {
+      "from_epoch": 212,
+      "to_epoch": 213,
+      "added_facts": 18556,
+      "epochs": 1,
+      "mean_added_per_epoch": 18556
+    },
+    {
+      "from_epoch": 213,
+      "to_epoch": 214,
+      "added_facts": 18961,
+      "epochs": 1,
+      "mean_added_per_epoch": 18961
+    },
+    {
+      "from_epoch": 214,
+      "to_epoch": 215,
+      "added_facts": 15506,
+      "epochs": 1,
+      "mean_added_per_epoch": 15506
+    },
+    {
+      "from_epoch": 215,
+      "to_epoch": 216,
+      "added_facts": 12252,
+      "epochs": 1,
+      "mean_added_per_epoch": 12252
+    },
+    {
+      "from_epoch": 216,
+      "to_epoch": 217,
+      "added_facts": 6733,
+      "epochs": 1,
+      "mean_added_per_epoch": 6733
+    },
+    {
+      "from_epoch": 217,
+      "to_epoch": 219,
+      "added_facts": 2596,
+      "epochs": 2,
+      "mean_added_per_epoch": 1298
+    },
+    {
+      "from_epoch": 219,
+      "to_epoch": 255,
+      "added_facts": 14058,
+      "epochs": 36,
+      "mean_added_per_epoch": 390.5
+    },
+    {
+      "from_epoch": 255,
+      "to_epoch": 293,
+      "added_facts": 9234,
+      "epochs": 38,
+      "mean_added_per_epoch": 243
+    },
+    {
+      "from_epoch": 293,
+      "to_epoch": 331,
+      "added_facts": 9234,
+      "epochs": 38,
+      "mean_added_per_epoch": 243
+    },
+    {
+      "from_epoch": 331,
+      "to_epoch": 368,
+      "added_facts": 8991,
+      "epochs": 37,
+      "mean_added_per_epoch": 243
+    },
+    {
+      "from_epoch": 368,
+      "to_epoch": 404,
+      "added_facts": 8748,
+      "epochs": 36,
+      "mean_added_per_epoch": 243
+    },
+    {
+      "from_epoch": 404,
+      "to_epoch": 440,
+      "added_facts": 8748,
+      "epochs": 36,
+      "mean_added_per_epoch": 243
+    },
+    {
+      "from_epoch": 440,
+      "to_epoch": 477,
+      "added_facts": 8991,
+      "epochs": 37,
+      "mean_added_per_epoch": 243
+    },
+    {
+      "from_epoch": 477,
+      "to_epoch": 513,
+      "added_facts": 8717,
+      "epochs": 36,
+      "mean_added_per_epoch": 242.13888888888889
+    },
+    {
+      "from_epoch": 513,
+      "to_epoch": 550,
+      "added_facts": 8954,
+      "epochs": 37,
+      "mean_added_per_epoch": 242
+    },
+    {
+      "from_epoch": 550,
+      "to_epoch": 585,
+      "added_facts": 10084,
+      "epochs": 35,
+      "mean_added_per_epoch": 288.1142857142857
+    },
+    {
+      "from_epoch": 585,
+      "to_epoch": 614,
+      "added_facts": 9165,
+      "epochs": 29,
+      "mean_added_per_epoch": 316.0344827586207
+    },
+    {
+      "from_epoch": 614,
+      "to_epoch": 635,
+      "added_facts": 23842,
+      "epochs": 21,
+      "mean_added_per_epoch": 1135.3333333333333
+    },
+    {
+      "from_epoch": 635,
+      "to_epoch": 672,
+      "added_facts": 9990,
+      "epochs": 37,
+      "mean_added_per_epoch": 270
+    },
+    {
+      "from_epoch": 672,
+      "to_epoch": 696,
+      "added_facts": 17134,
+      "epochs": 24,
+      "mean_added_per_epoch": 713.9166666666666
+    },
+    {
+      "from_epoch": 696,
+      "to_epoch": 697,
+      "added_facts": 26096,
+      "epochs": 1,
+      "mean_added_per_epoch": 26096
+    },
+    {
+      "from_epoch": 697,
+      "to_epoch": 698,
+      "added_facts": 25425,
+      "epochs": 1,
+      "mean_added_per_epoch": 25425
+    },
+    {
+      "from_epoch": 698,
+      "to_epoch": 699,
+      "added_facts": 26021,
+      "epochs": 1,
+      "mean_added_per_epoch": 26021
+    },
+    {
+      "from_epoch": 699,
+      "to_epoch": 701,
+      "added_facts": 30222,
+      "epochs": 2,
+      "mean_added_per_epoch": 15111
+    },
+    {
+      "from_epoch": 701,
+      "to_epoch": 722,
+      "added_facts": 63188,
+      "epochs": 21,
+      "mean_added_per_epoch": 3008.9523809523807
+    },
+    {
+      "from_epoch": 722,
+      "to_epoch": 723,
+      "added_facts": 86553,
+      "epochs": 1,
+      "mean_added_per_epoch": 86553
+    },
+    {
+      "from_epoch": 723,
+      "to_epoch": 725,
+      "added_facts": 117192,
+      "epochs": 2,
+      "mean_added_per_epoch": 58596
+    },
+    {
+      "from_epoch": 725,
+      "to_epoch": 726,
+      "added_facts": 15114,
+      "epochs": 1,
+      "mean_added_per_epoch": 15114
+    },
+    {
+      "from_epoch": 726,
+      "to_epoch": 727,
+      "added_facts": 3464,
+      "epochs": 1,
+      "mean_added_per_epoch": 3464
+    }
+  ],
+  "last_published": {
+    "epoch": 727,
+    "facts": 802049,
+    "terms": 826262,
+    "error": 0
+  },
+  "source_domain_assumptions": {
+    "correspondences": 120,
+    "entities": 1,
+    "target_kind": "site",
+    "offered_lifts_per_context": 2,
+    "flags": 480,
+    "unordered_overlaps": 720,
+    "readings": "single-valued markers and gluing"
+  },
+  "major_predicate_bounds": [
+    {
+      "predicate": "VC_ASSIGN_SITE",
+      "max_facts": 5040,
+      "source": "source/vector_correspondence.mal:454"
+    },
+    {
+      "predicate": "VC_ASSIGN_EDGE",
+      "max_facts": 14400,
+      "source": "source/vector_correspondence.mal:458"
+    },
+    {
+      "predicate": "VC_ASSIGN_TRIAD",
+      "max_facts": 9600,
+      "source": "source/vector_correspondence.mal:462"
+    },
+    {
+      "predicate": "VC_ASSIGN_FLAG",
+      "max_facts": 57600,
+      "source": "source/vector_correspondence.mal:474"
+    },
+    {
+      "predicate": "VC_MOVE_COMMUTATION",
+      "max_facts": 57600,
+      "source": "source/vector_correspondence.mal:503"
+    },
+    {
+      "predicate": "VC_FLAG_COVER_SUFFIX",
+      "max_facts": 115440,
+      "source": "source/vector_correspondence.mal:515"
+    },
+    {
+      "predicate": "VC_FLAG_MAP",
+      "max_facts": 57600,
+      "source": "source/vector_correspondence.mal:539"
+    },
+    {
+      "predicate": "VC_VECTOR_FIELD",
+      "max_facts": 57600,
+      "source": "source/vector_correspondence.mal:541"
+    },
+    {
+      "predicate": "VD_GENESIS_FIELD",
+      "max_facts": 57600,
+      "source": "source/vector_displacement.mal:103"
+    },
+    {
+      "predicate": "VD_CANDIDATE_FIELD",
+      "max_facts": 57600,
+      "source": "source/vector_displacement.mal:212"
+    },
+    {
+      "predicate": "VD_FIELD_CHECK_SUFFIX",
+      "max_facts": 57720,
+      "source": "source/vector_displacement.mal:311"
+    },
+    {
+      "predicate": "VD_FIELD_SNAPSHOT",
+      "max_facts": 115200,
+      "source": "source/vector_displacement.mal:317"
+    },
+    {
+      "predicate": "VD_OFFERED_FIELD",
+      "max_facts": 115200,
+      "source": "source/vector_displacement.mal:232"
+    },
+    {
+      "predicate": "VD_GENESIS_GLUING",
+      "max_facts": 86400,
+      "source": "source/vector_displacement.mal:242"
+    },
+    {
+      "predicate": "VD_OFFERED_GLUING",
+      "max_facts": 172800,
+      "source": "source/vector_displacement.mal:244"
+    },
+    {
+      "predicate": "VD_OFFERED_CHANGE",
+      "max_facts": 172800,
+      "source": "source/vector_displacement.mal:246"
+    },
+    {
+      "predicate": "VD_OFFERED_COUNT_SUFFIX",
+      "max_facts": 173040,
+      "source": "source/vector_displacement.mal:258"
+    }
+  ],
+  "major_predicate_subtotal": 1383240,
+  "total_closure_bound": "NOT_ESTABLISHED; helpers, other predicates and inherited facts excluded from subtotal",
+  "allocated_fact_capacity": 2097152,
+  "capacity_claim": "Resource cap only, not a proof that the full closure fits",
+  "route_by_flag_explanation": "NOT_SUPPORTED: active proof image has no ROUTE producer",
+  "finite_suffix_witness": "Every VD_OFFERED_COUNT_SUFFIX extension consumes one position in fixed720-row CURRENT_WITNESS; maximum721 suffixes per context/lift includingNIL.",
+  "readback": "NOT_EMITTED_AT_THIS_OBSERVATION",
+  "conform": "NOT_RUN",
+  "active_execution": "CONTINUING_UNCHANGED"
+}

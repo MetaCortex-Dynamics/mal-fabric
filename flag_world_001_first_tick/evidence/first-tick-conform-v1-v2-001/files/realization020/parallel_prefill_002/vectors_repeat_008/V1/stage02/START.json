@@ -1,0 +1,86 @@
+{
+  "scope": "GUARDED_ADDITIVE_V1_CONTINUATION; NOT_CONFORM",
+  "vector": "V1",
+  "stage": 2,
+  "started_utc": "2026-10-22T15:53:35.202Z",
+  "bindings": {
+    "runner": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\execute_stage_008.mjs",
+      "size": 6098,
+      "sha256": "F554474B37C954CD6942AD43625945F1A6383B4232CA9B3F15CB8EC947ADC90F"
+    },
+    "runtime": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_full.exe",
+      "size": 515584,
+      "sha256": "8A739F97DC3A67DC440DE3BE5C079A7ED7FC0898D5DCFDB5AEFE6F9CE8AB2B08"
+    },
+    "source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_full.cu",
+      "size": 34285,
+      "sha256": "C09A06FC4B2F1D733C2A9F7FC247844E98B6EF4DB3C7EC5915C63A089D3D6169"
+    },
+    "guard": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_guard_execute.mjs",
+      "size": 10800,
+      "sha256": "CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C"
+    },
+    "qualification": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_full\\QUALIFICATION.json",
+      "size": 24623,
+      "sha256": "00E7AAB2A752830F01297D580905D9B3F717057159C4E7016A1C3558931F1A70"
+    },
+    "continuation_manifest": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\CONTINUATION_008_BINDINGS.json",
+      "size": 7326,
+      "sha256": "7C11042376B4F1E2509265773256E512EC37C824A7D9EEF3A14474D6584CE05E"
+    },
+    "previous_readback": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage01\\image\\readback.bin",
+      "size": 268435488,
+      "sha256": "6C30E87F2DCA3325015D82F86482315134D93530D2A0C4517A76FC3D6DB09849"
+    },
+    "image": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\image\\image.bin",
+      "size": 41992208,
+      "sha256": "7FCE652A7376266AE4BC54BD6083962901B50D18CE43476D1FBA35A4D2F6FCD8"
+    },
+    "source_map": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\image\\source-map.json",
+      "size": 6774307,
+      "sha256": "658274545FA45FA69C6591103998F34B82599C9F4B156FD5C8E17C442D061FA6"
+    },
+    "world_source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\image\\source.mal",
+      "size": 144575,
+      "sha256": "128F362D6C3D62193344B8BFEF86BFCD22DF36E5F55CB1FD3302ED5A70CD0601"
+    }
+  },
+  "arguments": [
+    "D:\\Dev\\flag-world-first-tick-020\\prefill_guard_execute.mjs",
+    "--previous-map",
+    "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage01\\image\\source-map.json",
+    "--previous-image",
+    "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage01\\image\\image.bin",
+    "--previous-readback",
+    "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage01\\image\\readback.bin",
+    "--next-map",
+    "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\image\\source-map.json",
+    "--next-image",
+    "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\image\\image.bin",
+    "--run",
+    "--exe",
+    "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_full.exe",
+    "--output",
+    "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\image\\readback.bin",
+    "--report",
+    "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\PREFILL_EXECUTION_GUARD.json"
+  ],
+  "capacity": {
+    "facts": 2097152,
+    "terms": 4194304,
+    "prior_facts": 1811928,
+    "prior_terms": 1839458,
+    "remaining_facts": 285224
+  },
+  "capacity_refusal": "NONZERO_ERROR_NONZERO_EXIT; NO_STATUS_HASH_OR_CONTINUATION_ON_REFUSAL"
+}

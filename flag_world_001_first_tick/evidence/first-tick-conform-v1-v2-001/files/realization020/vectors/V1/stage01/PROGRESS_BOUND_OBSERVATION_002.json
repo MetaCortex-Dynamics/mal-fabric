@@ -1,0 +1,42 @@
+{
+  "scope": "Supplemental source-domain audit and progress observation only; not a closure witness or CONFORM",
+  "recorded_utc": "2026-10-22T03:16:10Z",
+  "previous_observation": {
+    "path": "PROGRESS_BOUND_OBSERVATION_001.json",
+    "sha256": "D39241F5D60CD65AACE840D8E1DDB4583B8251F7297EFCE083D7FE64998BBA8A"
+  },
+  "source_sha256": "BE1E4948CEADE240BAAA1AFAA37DFF2D0EA01810A1F188EC6F9A1F402ED91A97",
+  "runtime_binary_sha256": "70305626E38C8ABCC330439D00CF68A6DF22CB869FE8AFC7A5E89BCB8094D1C4",
+  "last_published_sample": {
+    "session": 55982,
+    "process": 190608,
+    "elapsed_seconds": 2654,
+    "publication_sequence": 2908,
+    "epoch": 727,
+    "facts": 802049,
+    "terms": 826262,
+    "error": 0
+  },
+  "publication_scope": "Counts are the last published epoch boundary, not a live intra-epoch count. Repeated samples do not establish zero additions within the running epoch.",
+  "latest_observed_boundary_deltas": [
+    {"from_epoch": 722, "to_epoch": 723, "added_facts": 86553},
+    {"from_epoch": 723, "to_epoch": 725, "added_facts": 117192, "epochs": 2},
+    {"from_epoch": 725, "to_epoch": 726, "added_facts": 15114},
+    {"from_epoch": 726, "to_epoch": 727, "added_facts": 3464}
+  ],
+  "additional_relation_audit": {
+    "source": "source/vector_displacement.mal:22-67",
+    "finding": "VD_DIFFER recursive requests descend existing operand subterms. Returned distinctions require the already requested operand pair. No unbounded constructor cycle was found in these clauses.",
+    "scope": "This is a subterm-descent witness for these clauses, not a proof for every rule in the image. Typed cardinality estimates remain separate from a complete closure bound."
+  },
+  "retained_major_predicate_subtotal_bound": 1383240,
+  "total_closure_bound": "NOT_ESTABLISHED",
+  "allocated_fact_capacity": 2097152,
+  "capacity_claim": "Resource cap only; sufficient capacity for full closure is not yet established",
+  "delta_interpretation": "A shrinking delta does not by itself prove closure. A positive flat delta over finite observations does not prove nontermination: source suffix traversals consume bounded input rows.",
+  "readback": "NOT_EMITTED_AT_THIS_OBSERVATION",
+  "conform": "NOT_RUN",
+  "active_execution": "CONTINUING_UNCHANGED",
+  "runtime_changes": "NONE",
+  "promoted_byte_changes": "NONE"
+}

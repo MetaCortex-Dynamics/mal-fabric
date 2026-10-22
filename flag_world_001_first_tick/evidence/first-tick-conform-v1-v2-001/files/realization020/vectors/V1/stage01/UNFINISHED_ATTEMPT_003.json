@@ -1,0 +1,14 @@
+{
+  "scope": "Compute-attempt custody only; not CONFORM or a semantic verdict",
+  "vector": "V1",
+  "stage": 1,
+  "process_id": 62228,
+  "started_local": "2026-10-21T21:50:43-04:00",
+  "ended_local": "2026-10-21T22:05:15-04:00",
+  "binary_sha256": "ACD7913A4D211E6B9EEB850EB0943E88510781CE2C4DAD880DD6723F24730CA8",
+  "source_and_image": "Unchanged BUILD.json bindings",
+  "readback": "NOT_PRODUCED",
+  "reason": "No readback was emitted. Preserve this unfinished attempt while qualifying exact-term lookup and result-external progress counters to diagnose the generic closure without another opaque run.",
+  "expected_bytes": "NOT_READ_BY_RUNTIME",
+  "result": "No result claimed; all input and prior evidence preserved"
+}

@@ -1,0 +1,633 @@
+{
+  "source": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\deep_consequent.mal",
+  "source_sha256": "464B172F2A0459B64BB0465198E4791F5242E5B31EF105FA6904BE3207DA3EB5",
+  "lowerer_sha256": "1B76FFEB4938C87BF90FF54942EBB7A32DF89C0FCA942663BA15311ACB61FCDB",
+  "image_sha256": "31D1E8F7DC3B860D79845CAEA911CC2AFA297B80ED8DDFD99BDB4F6202B9F9CD",
+  "input": null,
+  "inputs": [],
+  "imports": [],
+  "symbols": [
+    "ITEM",
+    "A",
+    "THIS",
+    "B",
+    "RESULT",
+    "NEW",
+    "NEST",
+    "GOES_WITH",
+    "AFTER"
+  ],
+  "patterns": [
+    {
+      "sym": 0,
+      "children": [],
+      "offset": 264
+    },
+    {
+      "sym": 1,
+      "children": [],
+      "offset": 269
+    },
+    {
+      "sym": 2,
+      "children": [
+        0,
+        1
+      ],
+      "offset": 259
+    },
+    {
+      "sym": 3,
+      "children": [],
+      "offset": 283
+    },
+    {
+      "sym": 2,
+      "children": [
+        0,
+        3
+      ],
+      "offset": 273
+    },
+    {
+      "sym": -1,
+      "children": [],
+      "offset": 324
+    },
+    {
+      "sym": 2,
+      "children": [
+        0,
+        5
+      ],
+      "offset": 314
+    },
+    {
+      "sym": 4,
+      "children": [],
+      "offset": 343
+    },
+    {
+      "sym": 5,
+      "children": [
+        5
+      ],
+      "offset": 350
+    },
+    {
+      "sym": 6,
+      "children": [
+        5
+      ],
+      "offset": 517
+    },
+    {
+      "sym": 6,
+      "children": [
+        9
+      ],
+      "offset": 512
+    },
+    {
+      "sym": 6,
+      "children": [
+        10
+      ],
+      "offset": 507
+    },
+    {
+      "sym": 6,
+      "children": [
+        11
+      ],
+      "offset": 502
+    },
+    {
+      "sym": 6,
+      "children": [
+        12
+      ],
+      "offset": 497
+    },
+    {
+      "sym": 6,
+      "children": [
+        13
+      ],
+      "offset": 492
+    },
+    {
+      "sym": 6,
+      "children": [
+        14
+      ],
+      "offset": 487
+    },
+    {
+      "sym": 6,
+      "children": [
+        15
+      ],
+      "offset": 482
+    },
+    {
+      "sym": 6,
+      "children": [
+        16
+      ],
+      "offset": 477
+    },
+    {
+      "sym": 6,
+      "children": [
+        17
+      ],
+      "offset": 472
+    },
+    {
+      "sym": 6,
+      "children": [
+        18
+      ],
+      "offset": 467
+    },
+    {
+      "sym": 6,
+      "children": [
+        19
+      ],
+      "offset": 462
+    },
+    {
+      "sym": 6,
+      "children": [
+        20
+      ],
+      "offset": 457
+    },
+    {
+      "sym": 6,
+      "children": [
+        21
+      ],
+      "offset": 452
+    },
+    {
+      "sym": 6,
+      "children": [
+        22
+      ],
+      "offset": 447
+    },
+    {
+      "sym": 6,
+      "children": [
+        23
+      ],
+      "offset": 442
+    },
+    {
+      "sym": 6,
+      "children": [
+        24
+      ],
+      "offset": 437
+    },
+    {
+      "sym": 6,
+      "children": [
+        25
+      ],
+      "offset": 432
+    },
+    {
+      "sym": 6,
+      "children": [
+        26
+      ],
+      "offset": 427
+    },
+    {
+      "sym": 6,
+      "children": [
+        27
+      ],
+      "offset": 422
+    },
+    {
+      "sym": 6,
+      "children": [
+        28
+      ],
+      "offset": 417
+    },
+    {
+      "sym": 6,
+      "children": [
+        29
+      ],
+      "offset": 412
+    },
+    {
+      "sym": 6,
+      "children": [
+        30
+      ],
+      "offset": 407
+    },
+    {
+      "sym": 6,
+      "children": [
+        31
+      ],
+      "offset": 402
+    },
+    {
+      "sym": 6,
+      "children": [
+        32
+      ],
+      "offset": 397
+    },
+    {
+      "sym": 6,
+      "children": [
+        33
+      ],
+      "offset": 392
+    },
+    {
+      "sym": 6,
+      "children": [
+        34
+      ],
+      "offset": 387
+    },
+    {
+      "sym": 6,
+      "children": [
+        35
+      ],
+      "offset": 382
+    },
+    {
+      "sym": 6,
+      "children": [
+        36
+      ],
+      "offset": 377
+    },
+    {
+      "sym": 6,
+      "children": [
+        37
+      ],
+      "offset": 372
+    },
+    {
+      "sym": 6,
+      "children": [
+        38
+      ],
+      "offset": 367
+    },
+    {
+      "sym": 6,
+      "children": [
+        39
+      ],
+      "offset": 362
+    },
+    {
+      "sym": 6,
+      "children": [
+        40
+      ],
+      "offset": 357
+    },
+    {
+      "sym": 7,
+      "children": [
+        7,
+        8,
+        41
+      ],
+      "offset": 333
+    },
+    {
+      "sym": 8,
+      "children": [],
+      "offset": 598
+    },
+    {
+      "sym": 2,
+      "children": [
+        43,
+        5
+      ],
+      "offset": 593
+    }
+  ],
+  "occurrence_encoding": {
+    "kind": "count-by-pattern-and-source-offset",
+    "total": 53,
+    "sequence_sha256": "A8C687D8EF3AB483B4A934DE45E2E41DBEE10BCFC19869C5B9FD491B4957A01A",
+    "rows": [
+      {
+        "pattern": 0,
+        "offset": 264,
+        "count": 1
+      },
+      {
+        "pattern": 1,
+        "offset": 269,
+        "count": 1
+      },
+      {
+        "pattern": 2,
+        "offset": 259,
+        "count": 1
+      },
+      {
+        "pattern": 0,
+        "offset": 278,
+        "count": 1
+      },
+      {
+        "pattern": 3,
+        "offset": 283,
+        "count": 1
+      },
+      {
+        "pattern": 4,
+        "offset": 273,
+        "count": 1
+      },
+      {
+        "pattern": 0,
+        "offset": 319,
+        "count": 1
+      },
+      {
+        "pattern": 5,
+        "offset": 324,
+        "count": 1
+      },
+      {
+        "pattern": 6,
+        "offset": 314,
+        "count": 1
+      },
+      {
+        "pattern": 7,
+        "offset": 343,
+        "count": 1
+      },
+      {
+        "pattern": 5,
+        "offset": 354,
+        "count": 1
+      },
+      {
+        "pattern": 8,
+        "offset": 350,
+        "count": 1
+      },
+      {
+        "pattern": 5,
+        "offset": 522,
+        "count": 1
+      },
+      {
+        "pattern": 9,
+        "offset": 517,
+        "count": 1
+      },
+      {
+        "pattern": 10,
+        "offset": 512,
+        "count": 1
+      },
+      {
+        "pattern": 11,
+        "offset": 507,
+        "count": 1
+      },
+      {
+        "pattern": 12,
+        "offset": 502,
+        "count": 1
+      },
+      {
+        "pattern": 13,
+        "offset": 497,
+        "count": 1
+      },
+      {
+        "pattern": 14,
+        "offset": 492,
+        "count": 1
+      },
+      {
+        "pattern": 15,
+        "offset": 487,
+        "count": 1
+      },
+      {
+        "pattern": 16,
+        "offset": 482,
+        "count": 1
+      },
+      {
+        "pattern": 17,
+        "offset": 477,
+        "count": 1
+      },
+      {
+        "pattern": 18,
+        "offset": 472,
+        "count": 1
+      },
+      {
+        "pattern": 19,
+        "offset": 467,
+        "count": 1
+      },
+      {
+        "pattern": 20,
+        "offset": 462,
+        "count": 1
+      },
+      {
+        "pattern": 21,
+        "offset": 457,
+        "count": 1
+      },
+      {
+        "pattern": 22,
+        "offset": 452,
+        "count": 1
+      },
+      {
+        "pattern": 23,
+        "offset": 447,
+        "count": 1
+      },
+      {
+        "pattern": 24,
+        "offset": 442,
+        "count": 1
+      },
+      {
+        "pattern": 25,
+        "offset": 437,
+        "count": 1
+      },
+      {
+        "pattern": 26,
+        "offset": 432,
+        "count": 1
+      },
+      {
+        "pattern": 27,
+        "offset": 427,
+        "count": 1
+      },
+      {
+        "pattern": 28,
+        "offset": 422,
+        "count": 1
+      },
+      {
+        "pattern": 29,
+        "offset": 417,
+        "count": 1
+      },
+      {
+        "pattern": 30,
+        "offset": 412,
+        "count": 1
+      },
+      {
+        "pattern": 31,
+        "offset": 407,
+        "count": 1
+      },
+      {
+        "pattern": 32,
+        "offset": 402,
+        "count": 1
+      },
+      {
+        "pattern": 33,
+        "offset": 397,
+        "count": 1
+      },
+      {
+        "pattern": 34,
+        "offset": 392,
+        "count": 1
+      },
+      {
+        "pattern": 35,
+        "offset": 387,
+        "count": 1
+      },
+      {
+        "pattern": 36,
+        "offset": 382,
+        "count": 1
+      },
+      {
+        "pattern": 37,
+        "offset": 377,
+        "count": 1
+      },
+      {
+        "pattern": 38,
+        "offset": 372,
+        "count": 1
+      },
+      {
+        "pattern": 39,
+        "offset": 367,
+        "count": 1
+      },
+      {
+        "pattern": 40,
+        "offset": 362,
+        "count": 1
+      },
+      {
+        "pattern": 41,
+        "offset": 357,
+        "count": 1
+      },
+      {
+        "pattern": 42,
+        "offset": 333,
+        "count": 1
+      },
+      {
+        "pattern": 0,
+        "offset": 580,
+        "count": 1
+      },
+      {
+        "pattern": 5,
+        "offset": 585,
+        "count": 1
+      },
+      {
+        "pattern": 6,
+        "offset": 575,
+        "count": 1
+      },
+      {
+        "pattern": 43,
+        "offset": 598,
+        "count": 1
+      },
+      {
+        "pattern": 5,
+        "offset": 604,
+        "count": 1
+      },
+      {
+        "pattern": 44,
+        "offset": 593,
+        "count": 1
+      }
+    ]
+  },
+  "seeds": [
+    2,
+    4
+  ],
+  "rules": [
+    {
+      "name": "RESULT_REFUSAL",
+      "ants": [
+        6
+      ],
+      "result": 42,
+      "vars": [
+        "x"
+      ],
+      "start": 289,
+      "end": 558
+    },
+    {
+      "name": "AFTER",
+      "ants": [
+        6
+      ],
+      "result": 44,
+      "vars": [
+        "x"
+      ],
+      "start": 559,
+      "end": 607
+    }
+  ]
+}

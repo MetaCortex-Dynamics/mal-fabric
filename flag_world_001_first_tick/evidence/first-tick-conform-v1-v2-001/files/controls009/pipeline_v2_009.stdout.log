@@ -1,0 +1,262 @@
+{"action":"V2_PREPARED_IMAGE_COPIED","image":{"path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage01\\image\\image.bin","size":41992208,"sha256":"FE34A07948DB72507CFD7D28278E63DCABEA478FDB949B4C28CBFA2A0B41D75A"},"source":{"path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage01\\source.mal","size":144143,"sha256":"BE1E4948CEADE240BAAA1AFAA37DFF2D0EA01810A1F188EC6F9A1F402ED91A97"},"V1":"UNTOUCHED"}
+{"action":"PLAN_BEFORE_LAUNCH","script":{"path":"C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\v2_continuation_009\\execute_stage_009.mjs","size":10670,"sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D"},"arguments":["V2","1"],"scope":"Generic execution/custody only; source laws unchanged"}
+{"action":"CARRIER_PREFILL_GPU_LAUNCH","vector":"V2","stage":1,"capacity_remaining_facts":2091870,"image":"FE34A07948DB72507CFD7D28278E63DCABEA478FDB949B4C28CBFA2A0B41D75A"}
+{"action":"CARRIER_PREFILL_STAGE_COMPLETED","vector":"V2","stage":1,"readback":"3659EE92F2B10D7FA0CFC07E531BCCB26902F183E016F479C5ABB0ED8D6FF384","error":0,"facts":1375510,"terms":1402781,"epochs":1507,"capacity_remaining_facts":721642,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","script":{"path":"C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\v2_continuation_009\\continue_vector_009.mjs","size":12387,"sha256":"0AD50ABC1EB0BED50A2DD720BE53EA684F4CC5C0E750C257E98AC71F63DAAE92"},"arguments":["V2","--start-stage","1"],"scope":"Generic execution/custody only; source laws unchanged"}
+{"scope":"GENERIC_ADDITIVE_CONTINUATION_ONLY","vector":"V2","start_stage":1,"other_vectors":"NOT_RUN","conform":"NOT_RUN","expected_output_inputs":"NONE","admission":"source laws only"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":1,"next_stage":2,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage01\\hash\\delta.json","rows":1},{"kind":"OBSERVE_AND_IMPORT_SOURCE_PAIRS","rows":720,"sort":"full-row JSON UTF-8"}],"then":["vector_build.mjs additive stage 2","execute_stage_009.mjs V2 2"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"observe_rows.mjs","tool_sha256":"ADE7F443075299449860EA35B01D52DD1C354F55F2DDF23916E9C2A647D1F6CD","arguments":["D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage01\\image","VO_PAIRS","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage01\\continuation_observations\\observer_pairs.json","--sort=full-row"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"selector":"VO_PAIRS","rows":720,"sha256":"F0384727237F3B6A8C08B7A157DF90473CD98823650910F875DC9CD49577030D"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","2","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage01\\hash\\delta.json","--observer-pairs","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage01\\continuation_observations\\observer_pairs.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"128F362D6C3D62193344B8BFEF86BFCD22DF36E5F55CB1FD3302ED5A70CD0601","image_sha256":"8337130C833691504207E36E7E5F022AC6EF7D153D502634511A771223D4D1CC","patterns":16956,"seeds":467,"rules":567}
+{"vector":"V2","stage":2,"source_sha256":"128F362D6C3D62193344B8BFEF86BFCD22DF36E5F55CB1FD3302ED5A70CD0601","image_sha256":"8337130C833691504207E36E7E5F022AC6EF7D153D502634511A771223D4D1CC","rules":567,"patterns":16956,"seeds":467,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","2"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":2,"capacity_remaining_facts":721642,"image":"8337130C833691504207E36E7E5F022AC6EF7D153D502634511A771223D4D1CC"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":2,"readback":"043B06A7EA75B8D478BA8C0A715A4096C14D4B1955F0E4AF72EC959D4845C183","error":0,"facts":1393410,"terms":1421415,"epochs":2713,"capacity_remaining_facts":703742,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":2,"next_stage":3,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage02\\hash\\delta.json","rows":1}],"then":["vector_build.mjs additive stage 3","execute_stage_009.mjs V2 3"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","3","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage02\\hash\\delta.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"E5DD8DB39E6093F1DE423E5C11EA4DFAE5AF8CF3E776DFED08F17045E827D7B9","image_sha256":"16523C546C810EA756DFB3777B68E4307287BA6BC846A725C622D060719F1259","patterns":16968,"seeds":468,"rules":568}
+{"vector":"V2","stage":3,"source_sha256":"E5DD8DB39E6093F1DE423E5C11EA4DFAE5AF8CF3E776DFED08F17045E827D7B9","image_sha256":"16523C546C810EA756DFB3777B68E4307287BA6BC846A725C622D060719F1259","rules":568,"patterns":16968,"seeds":468,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","3"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":3,"capacity_remaining_facts":703742,"image":"16523C546C810EA756DFB3777B68E4307287BA6BC846A725C622D060719F1259"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":3,"readback":"1F6DD1AD24BB5C825091BF59CA08E74E2643781BA1217D01E3178A578147D74D","error":0,"facts":1396464,"terms":1425914,"epochs":2749,"capacity_remaining_facts":700688,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":3,"next_stage":4,"actions":[{"kind":"EXPORT_SELECTOR_BOUND_PROGRAM_INVENTORY_AND_APPEND_SHARED_RUNTIME","rows":720,"selectors":{"occurrences":"VO_COMPARATOR","flags":"VO_FLAG_JSON"}},{"kind":"APPEND_RETAINED_SOURCE_FOLD_ACCELERATION"}],"then":["vector_build.mjs additive stage 4","execute_stage_009.mjs V2 4"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"export_inventory.mjs","tool_sha256":"F62C294BC611CABE4A516A509F03D326E09EF23B9596C90C5B5A9D730C3B2601","arguments":["D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage03\\image","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage03\\continuation_observations\\program_inventory","--occurrences=VO_COMPARATOR","--flags=VO_FLAG_JSON"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"rows":720,"inventory_sha256":"2094EED2337F16511668550870C4F1911D97AB6600CFA2DAED47CB78F4BE3489","hash_response_sha256":"65B9E3C285F48CF8A35E2D2BE57DE6D64FCB0D546969424B5FC27BA6801A7B8E"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","4","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--runtime","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage03\\continuation_observations\\program_inventory","--accelerate"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"408809CE39C00A3CB093B1A5CD3F430863066CB592AA51E4BD5BDE5202F24167","image_sha256":"A26DC3332DCC866FE943937C41257014FA76D8153657279AAD83FF11E2159293","patterns":68453,"seeds":1253,"rules":750}
+{"vector":"V2","stage":4,"source_sha256":"408809CE39C00A3CB093B1A5CD3F430863066CB592AA51E4BD5BDE5202F24167","image_sha256":"A26DC3332DCC866FE943937C41257014FA76D8153657279AAD83FF11E2159293","rules":750,"patterns":68453,"seeds":1253,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","4"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":4,"capacity_remaining_facts":700688,"image":"A26DC3332DCC866FE943937C41257014FA76D8153657279AAD83FF11E2159293"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":4,"readback":"2E6C435F20E81AA6672F086839A42CB6C666FE2E8F0F804141BF14E6C4F55AC0","error":0,"facts":1419435,"terms":1528504,"epochs":5639,"capacity_remaining_facts":677717,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":4,"next_stage":5,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage04\\hash\\delta.json","rows":1}],"then":["vector_build.mjs additive stage 5","execute_stage_009.mjs V2 5"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","5","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage04\\hash\\delta.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"0FD7C51C07F4E77B31A44EBFE9402110DA8CEC0652D3A8A8B945EA466F07D9ED","image_sha256":"1E4B1A6192B68C1C3D54A0AD649205CB2E38266C5F5B49562921E9E5CB75630F","patterns":91593,"seeds":1254,"rules":751}
+{"vector":"V2","stage":5,"source_sha256":"0FD7C51C07F4E77B31A44EBFE9402110DA8CEC0652D3A8A8B945EA466F07D9ED","image_sha256":"1E4B1A6192B68C1C3D54A0AD649205CB2E38266C5F5B49562921E9E5CB75630F","rules":751,"patterns":91593,"seeds":1254,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","5"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":5,"capacity_remaining_facts":677717,"image":"1E4B1A6192B68C1C3D54A0AD649205CB2E38266C5F5B49562921E9E5CB75630F"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":5,"readback":"DC6350334640B1EB462D12C4075E5E40C1786F7AECB9BEF3CB673B1CF7D238F1","error":0,"facts":1425931,"terms":1541761,"epochs":6012,"capacity_remaining_facts":671221,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":5,"next_stage":6,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage05\\hash\\delta.json","rows":1}],"then":["vector_build.mjs additive stage 6","execute_stage_009.mjs V2 6"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","6","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage05\\hash\\delta.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"EB388F1429241EE33B2F5799C0DB2DB735CF17D58298FB011F7AF3A803086C66","image_sha256":"8AFF8AB8C79C2C4E53FA430CB929EBCA4AA772CB15EB5D6E95273F21A2FB5775","patterns":96909,"seeds":1255,"rules":752}
+{"vector":"V2","stage":6,"source_sha256":"EB388F1429241EE33B2F5799C0DB2DB735CF17D58298FB011F7AF3A803086C66","image_sha256":"8AFF8AB8C79C2C4E53FA430CB929EBCA4AA772CB15EB5D6E95273F21A2FB5775","rules":752,"patterns":96909,"seeds":1255,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","6"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":6,"capacity_remaining_facts":671221,"image":"8AFF8AB8C79C2C4E53FA430CB929EBCA4AA772CB15EB5D6E95273F21A2FB5775"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":6,"readback":"670ECDB8529988911CC983A9EBC610972D1CCF3AF33B53D3F2C49CFE1129E79F","error":0,"facts":1428817,"terms":1553361,"epochs":6018,"capacity_remaining_facts":668335,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":6,"next_stage":7,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage06\\hash\\delta.json","rows":1441}],"then":["vector_build.mjs additive stage 7","execute_stage_009.mjs V2 7"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","7","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage06\\hash\\delta.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"88FD7DE6B8D98382E0FD16CE86786582CBE79AA29F25E33A0BF7F0F8576CEC37","image_sha256":"480B51C910561051C0555F17528B8126DD0D98C8AA63E3722EABE401BDF4B3EB","patterns":200528,"seeds":1256,"rules":753}
+{"vector":"V2","stage":7,"source_sha256":"88FD7DE6B8D98382E0FD16CE86786582CBE79AA29F25E33A0BF7F0F8576CEC37","image_sha256":"480B51C910561051C0555F17528B8126DD0D98C8AA63E3722EABE401BDF4B3EB","rules":753,"patterns":200528,"seeds":1256,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","7"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":7,"capacity_remaining_facts":668335,"image":"480B51C910561051C0555F17528B8126DD0D98C8AA63E3722EABE401BDF4B3EB"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":7,"readback":"201BF021CC489EDDFD9BCDE64F4D5BC42F15ED9AF09F273D2E1E153CE370A57D","error":0,"facts":1436021,"terms":1661776,"epochs":6207,"capacity_remaining_facts":661131,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":7,"next_stage":8,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage07\\hash\\delta.json","rows":1440}],"then":["vector_build.mjs additive stage 8","execute_stage_009.mjs V2 8"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","8","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage07\\hash\\delta.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"DC1332A115C5A3C95B31985C1C3A2606EE26BCF71B5482728E4B2C03281F7DA2","image_sha256":"109D45F1E76130D77F47E3D0AAC3C478AE090A28871A4A768B27CBE86B135041","patterns":302553,"seeds":1257,"rules":754}
+{"vector":"V2","stage":8,"source_sha256":"DC1332A115C5A3C95B31985C1C3A2606EE26BCF71B5482728E4B2C03281F7DA2","image_sha256":"109D45F1E76130D77F47E3D0AAC3C478AE090A28871A4A768B27CBE86B135041","rules":754,"patterns":302553,"seeds":1257,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","8"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":8,"capacity_remaining_facts":661131,"image":"109D45F1E76130D77F47E3D0AAC3C478AE090A28871A4A768B27CBE86B135041"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":8,"readback":"2AD645F1B641DFD0E3067958B4606870F6D6463069EE9DA9FE58C87B0BCD8278","error":0,"facts":1443942,"terms":1791636,"epochs":6398,"capacity_remaining_facts":653210,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":8,"next_stage":9,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage08\\hash\\delta.json","rows":720}],"then":["vector_build.mjs additive stage 9","execute_stage_009.mjs V2 9"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","9","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage08\\hash\\delta.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"B9F3CA5D7EDA87633271796935ACB2D50EAB2190284A3CD290BF47AF073F0FC4","image_sha256":"96B90436C264F4C7FE880458660F94191A9EEAD0D18AB1B189C08F28161EE703","patterns":370770,"seeds":1258,"rules":755}
+{"vector":"V2","stage":9,"source_sha256":"B9F3CA5D7EDA87633271796935ACB2D50EAB2190284A3CD290BF47AF073F0FC4","image_sha256":"96B90436C264F4C7FE880458660F94191A9EEAD0D18AB1B189C08F28161EE703","rules":755,"patterns":370770,"seeds":1258,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","9"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":9,"capacity_remaining_facts":653210,"image":"96B90436C264F4C7FE880458660F94191A9EEAD0D18AB1B189C08F28161EE703"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":9,"readback":"187F9D2754E32F6EA5EDEE74AFE2C22938D31A93C416D5070F5EFDBB36B7D68B","error":0,"facts":1454030,"terms":1863949,"epochs":7220,"capacity_remaining_facts":643122,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":9,"next_stage":10,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage09\\hash\\delta.json","rows":721}],"then":["vector_build.mjs additive stage 10","execute_stage_009.mjs V2 10"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","10","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage09\\hash\\delta.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"8130FB3955D1C28EA005817AA0FAA642D5ACCAF2410A3CB642843F8B9596A00D","image_sha256":"FAB42F28C8F95595ED61A7C6F1EC5C4E41D920895A3336E972F29190F9A5E545","patterns":420747,"seeds":1259,"rules":756}
+{"vector":"V2","stage":10,"source_sha256":"8130FB3955D1C28EA005817AA0FAA642D5ACCAF2410A3CB642843F8B9596A00D","image_sha256":"FAB42F28C8F95595ED61A7C6F1EC5C4E41D920895A3336E972F29190F9A5E545","rules":756,"patterns":420747,"seeds":1259,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","10"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":10,"capacity_remaining_facts":643122,"image":"FAB42F28C8F95595ED61A7C6F1EC5C4E41D920895A3336E972F29190F9A5E545"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":10,"readback":"A81B70CC9F58B5399AEA220FE6F256B83E2FE382541D090664C8250574E4DA33","error":0,"facts":1458353,"terms":1920401,"epochs":7318,"capacity_remaining_facts":638799,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":10,"next_stage":11,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage10\\hash\\delta.json","rows":1440}],"then":["vector_build.mjs additive stage 11","execute_stage_009.mjs V2 11"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","11","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage10\\hash\\delta.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"185B7211D7EF0FB52E072F12F352675C0AB6242EEA8DA6B40A6ECF04F5D694CD","image_sha256":"C48586428647C4DD87E219CAC856F0870F899B5671D95F3AFEADD535EF1515DA","patterns":520410,"seeds":1260,"rules":757}
+{"vector":"V2","stage":11,"source_sha256":"185B7211D7EF0FB52E072F12F352675C0AB6242EEA8DA6B40A6ECF04F5D694CD","image_sha256":"C48586428647C4DD87E219CAC856F0870F899B5671D95F3AFEADD535EF1515DA","rules":757,"patterns":520410,"seeds":1260,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","11"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":11,"capacity_remaining_facts":638799,"image":"C48586428647C4DD87E219CAC856F0870F899B5671D95F3AFEADD535EF1515DA"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":11,"readback":"39F2715F27CFB1173EBC0E23518ED553AAF87F38A13F04DF927A497338116605","error":0,"facts":1472462,"terms":2047136,"epochs":7787,"capacity_remaining_facts":624690,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":11,"next_stage":12,"actions":[{"kind":"OBSERVE_AND_IMPORT_SOURCE_RUNTIME_RECEIPTS","rows":1440,"sort":"first-column JSON string"}],"then":["vector_build.mjs additive stage 12","execute_stage_009.mjs V2 12"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"observe_rows.mjs","tool_sha256":"ADE7F443075299449860EA35B01D52DD1C354F55F2DDF23916E9C2A647D1F6CD","arguments":["D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage11\\image","I20_RECEIPTS","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage11\\continuation_observations\\runtime_receipts.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"selector":"I20_RECEIPTS","rows":1440,"sha256":"BBC51337C9049936AFA28B5C3D6B994B39C785550FD27AAD755B884E3E4760ED"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","12","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--receipts","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage11\\continuation_observations\\runtime_receipts.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"96F33CD76A9B2A5E3317617DB229891D749FA49EE5AE206F59097FC11E67F8B3","image_sha256":"A00C5EB949DA997FC5771DF1F518A53EBEB916F0D579B7ED317B4CFA73AAD068","patterns":535538,"seeds":1261,"rules":758}
+{"vector":"V2","stage":12,"source_sha256":"96F33CD76A9B2A5E3317617DB229891D749FA49EE5AE206F59097FC11E67F8B3","image_sha256":"A00C5EB949DA997FC5771DF1F518A53EBEB916F0D579B7ED317B4CFA73AAD068","rules":758,"patterns":535538,"seeds":1261,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","12"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":12,"capacity_remaining_facts":624690,"image":"A00C5EB949DA997FC5771DF1F518A53EBEB916F0D579B7ED317B4CFA73AAD068"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":12,"readback":"CF72D116A0FEC282C0360E1C3063E671F60BB2B5DB42D87BD007291CD4650B66","error":0,"facts":1506884,"terms":2089717,"epochs":8361,"capacity_remaining_facts":590268,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":12,"next_stage":13,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage12\\hash\\delta.json","rows":2}],"then":["vector_build.mjs additive stage 13","execute_stage_009.mjs V2 13"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","13","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage12\\hash\\delta.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"12F4E768FCCB366A745B5504D7785B682D30686FF56AB40FBC3448DD8A8433BC","image_sha256":"6DF2614769CCE46B2806765398A248C6C192065F8071D69D9E49E165E7446744","patterns":536111,"seeds":1262,"rules":759}
+{"vector":"V2","stage":13,"source_sha256":"12F4E768FCCB366A745B5504D7785B682D30686FF56AB40FBC3448DD8A8433BC","image_sha256":"6DF2614769CCE46B2806765398A248C6C192065F8071D69D9E49E165E7446744","rules":759,"patterns":536111,"seeds":1262,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","13"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":13,"capacity_remaining_facts":590268,"image":"6DF2614769CCE46B2806765398A248C6C192065F8071D69D9E49E165E7446744"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":13,"readback":"AE20A13F5F02929FCDF1C7C9DAF109D7D0FF92B2BEAAC53105F7E87F2E084E5B","error":0,"facts":1506895,"terms":2089874,"epochs":8370,"capacity_remaining_facts":590257,"conform":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","vector":"V2","completed_stage":13,"next_stage":14,"actions":[{"kind":"IMPORT_NEW_SOURCE_REQUESTED_HASH_DELTA","path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage13\\hash\\delta.json","rows":1}],"then":["vector_build.mjs additive stage 14","execute_stage_009.mjs V2 14"],"count_scope":"bounded observation extent only; .mal determines admission and commit"}
+{"action":"LAUNCH","tool":"vector_build.mjs","tool_sha256":"FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497","arguments":["V2","--stage","14","--out","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2","--hash-response","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage13\\hash\\delta.json"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"source_sha256":"3D4F086BB6F14A4FA21B90CC877E6AB3BF704CBA08E89647FFFFC727B1410C28","image_sha256":"1E788B995C1F55300A0D435DB6976CF79741325A344E7A96989539F4A7ACB802","patterns":536199,"seeds":1263,"rules":760}
+{"vector":"V2","stage":14,"source_sha256":"3D4F086BB6F14A4FA21B90CC877E6AB3BF704CBA08E89647FFFFC727B1410C28","image_sha256":"1E788B995C1F55300A0D435DB6976CF79741325A344E7A96989539F4A7ACB802","rules":760,"patterns":536199,"seeds":1263,"max_variables":16,"max_antecedents":8,"execution":"NOT_RUN"}
+{"action":"LAUNCH","tool":"execute_stage_009.mjs","tool_sha256":"D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D","arguments":["V2","14"],"scope":"CPU observation/lowering or explicitly listed generic GPU continuation; no CONFORM"}
+{"action":"ADDITIVE_GPU_LAUNCH","vector":"V2","stage":14,"capacity_remaining_facts":590257,"image":"1E788B995C1F55300A0D435DB6976CF79741325A344E7A96989539F4A7ACB802"}
+{"action":"ADDITIVE_STAGE_COMPLETED","vector":"V2","stage":14,"readback":"2E621111C4A085CE8990D4D615AB20163550518021254A08998A7D0E55441244","error":0,"facts":1506901,"terms":2089963,"epochs":8376,"capacity_remaining_facts":590251,"conform":"NOT_RUN"}
+{"status":"SOURCE_COMMITTED","vector":"V2","stage":14,"readback":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage14\\image\\readback.bin","readback_sha256":"2E621111C4A085CE8990D4D615AB20163550518021254A08998A7D0E55441244","count":1,"conform":"NOT_RUN","other_vectors":"NOT_RUN"}
+{"action":"PLAN_BEFORE_LAUNCH","script":{"path":"D:\\Dev\\flag-world-first-tick-020\\compare_vectors.mjs","size":7049,"sha256":"E488BEE18140AE9ECFDEB6266463EAAA6C403A5E15874760E1FEE19095E3C0D4"},"arguments":["D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\CONFORM_MANIFEST.json","D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\conform"],"scope":"Generic execution/custody only; source laws unchanged"}
+{
+  "scope": "Ordered V1/V2 byte conformance only; no GPU execution or runtime input construction",
+  "manifest_sha256": "23CD2C61095F69B707307ADD944E2CA473316F0D90FDDFC8FA32C798DEFF86E5",
+  "observer_sha256": "E488BEE18140AE9ECFDEB6266463EAAA6C403A5E15874760E1FEE19095E3C0D4",
+  "vectors": [
+    {
+      "id": "V1",
+      "input": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V1.input.json",
+        "bytes": 32842,
+        "sha256": "28093717ACC694FACC3B635701A22AFF37DDB09FB0447774BACC700647F262BE"
+      },
+      "expected": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V1.expected.json",
+        "bytes": 33563,
+        "sha256": "69786966E9B5D66A2078D29C43E1F1511545786AB07BF562E37D91205085B588"
+      },
+      "execution": "EXECUTED",
+      "comparison": "SAME",
+      "run_dir": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage14\\image",
+      "source_sha256": "3D4F086BB6F14A4FA21B90CC877E6AB3BF704CBA08E89647FFFFC727B1410C28",
+      "image_sha256": "65669C2A804DCB526C13CB8627E1E8E804FC53B764480C9ADD8A38F633BE2EB3",
+      "readback_sha256": "6D53361888B08DC56FEAB2D66032C0D633EDF51EEE03F1107D9F263DDFC6D0C3",
+      "source_map_sha256": "09C7640DBA30758ACD3767D7465AF75ED619A5E066682EB9DF93977F2810CEF5",
+      "actual": {
+        "file": "V1.actual.json",
+        "bytes": 33563,
+        "sha256": "69786966E9B5D66A2078D29C43E1F1511545786AB07BF562E37D91205085B588"
+      },
+      "source_output": {
+        "fact": 1943315,
+        "rule": "VCOM_COMMIT",
+        "return_fact": 1935595,
+        "return_rule": "VCOM_RETURN",
+        "complete_results": [
+          {
+            "fact": 1935596,
+            "rule": "VCOM_ALL_RESULTS"
+          }
+        ],
+        "committed_comparisons": 720,
+        "runtime_receipts": 1440
+      },
+      "expected_runtime_input": "NOT_PRESENT_IN_BOUND_INPUTS",
+      "diagnostics": [
+        {
+          "name": "retained predecessor entries",
+          "reading": "SAME"
+        },
+        {
+          "name": "link 0 hashes full record",
+          "reading": "SAME"
+        },
+        {
+          "name": "link 1 hashes full record",
+          "reading": "SAME"
+        },
+        {
+          "name": "predecessor 1",
+          "reading": "SAME"
+        },
+        {
+          "name": "receipt hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "successor state hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "genesis state hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "receipt reading",
+          "reading": "SAME"
+        }
+      ]
+    },
+    {
+      "id": "V2",
+      "input": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V2.input.json",
+        "bytes": 32847,
+        "sha256": "DC46E239B9D693AF25DC3D7005718060230D31AC9CA057F7ECCCF73968AA2C8E"
+      },
+      "expected": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V2.expected.json",
+        "bytes": 33548,
+        "sha256": "BD0492B4CAC427432CC3251EB27FC997C0D5EFF2862ECBC10A89B9AC19F1AD0F"
+      },
+      "execution": "EXECUTED",
+      "comparison": "SAME",
+      "run_dir": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage14\\image",
+      "source_sha256": "3D4F086BB6F14A4FA21B90CC877E6AB3BF704CBA08E89647FFFFC727B1410C28",
+      "image_sha256": "1E788B995C1F55300A0D435DB6976CF79741325A344E7A96989539F4A7ACB802",
+      "readback_sha256": "2E621111C4A085CE8990D4D615AB20163550518021254A08998A7D0E55441244",
+      "source_map_sha256": "7C96CD07EA0BAC8B7B7428380760F9D09769857DBB2038BF2213CF717E7D58FF",
+      "actual": {
+        "file": "V2.actual.json",
+        "bytes": 33548,
+        "sha256": "BD0492B4CAC427432CC3251EB27FC997C0D5EFF2862ECBC10A89B9AC19F1AD0F"
+      },
+      "source_output": {
+        "fact": 1506900,
+        "rule": "VCOM_COMMIT",
+        "return_fact": 1499178,
+        "return_rule": "VCOM_RETURN",
+        "complete_results": [
+          {
+            "fact": 1499179,
+            "rule": "VCOM_ALL_RESULTS"
+          }
+        ],
+        "committed_comparisons": 720,
+        "runtime_receipts": 1440
+      },
+      "expected_runtime_input": "NOT_PRESENT_IN_BOUND_INPUTS",
+      "diagnostics": [
+        {
+          "name": "retained predecessor entries",
+          "reading": "SAME"
+        },
+        {
+          "name": "link 0 hashes full record",
+          "reading": "SAME"
+        },
+        {
+          "name": "link 1 hashes full record",
+          "reading": "SAME"
+        },
+        {
+          "name": "predecessor 1",
+          "reading": "SAME"
+        },
+        {
+          "name": "receipt hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "successor state hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "genesis state hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "receipt reading",
+          "reading": "SAME"
+        }
+      ]
+    }
+  ],
+  "verdict": "IF_THEN"
+}
+{"action":"V1_V2_CONFORM_IF_THEN","record":{"path":"D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\RUN_RECORD_V1_V2_CONFORM_009.json","size":6748,"sha256":"6089FDC4E2B8673BBEA80925AC80BD0BB787857932723564DDA7F9D2499A8F99"}}

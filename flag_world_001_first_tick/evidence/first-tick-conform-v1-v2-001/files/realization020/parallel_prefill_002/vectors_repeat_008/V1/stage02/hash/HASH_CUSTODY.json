@@ -1,0 +1,27 @@
+{
+  "scope": "Generic source-requested sorted-key compact JSON SHA-256; no source law, placement, evaluation, admission or commit is supplied",
+  "source_sha256": "128F362D6C3D62193344B8BFEF86BFCD22DF36E5F55CB1FD3302ED5A70CD0601",
+  "image_sha256": "7FCE652A7376266AE4BC54BD6083962901B50D18CE43476D1FBA35A4D2F6FCD8",
+  "readback_sha256": "A62DE25DC7BBB02BBEB2B5DADC6330191A8C6EFEF4BF586965EAA29EE5A485F6",
+  "primitive_sha256": "3944850130E400D18839E906A31D602B4787686C9AC6B21633E3A1D0F157084D",
+  "previous": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage01\\hash\\responses.json",
+  "responses_sha256": "89D5B3FF6B83EAF71A92FE0D73B033FA26AFE001DC99DF64B928B558D9ED29A2",
+  "requests": [
+    {
+      "fact": 666278,
+      "rule": "VD_INITIAL_BODY_REQUEST",
+      "kind": "VD_INITIAL_BODY",
+      "key": "REFERENCE",
+      "subject_sha256": "7C1234EE557C1055B8D3A1433E38CBF874CF13ED197F103C07EA0CF4968028CF",
+      "digest": "7c1234ee557c1055b8d3a1433e38cbf874cf13ed197f103c07ea0cf4968028cf"
+    },
+    {
+      "fact": 1812062,
+      "rule": "VD_GENESIS_LINK_REQUEST",
+      "kind": "VD_GENESIS_LINK",
+      "key": "REFERENCE",
+      "subject_sha256": "ABC6919E79568371233902F3D220A2035D8EB14570E8FF33BC1C16CD9E0C5DF5",
+      "digest": "abc6919e79568371233902f3d220a2035d8eb14570e8ff33bc1c16cd9e0c5df5"
+    }
+  ]
+}

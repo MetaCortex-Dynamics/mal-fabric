@@ -1,0 +1,8 @@
+// Generic ordered consequence refusal regression; no world or CONFORM claim.
+// Both pivot candidates may be enumerated. Only the first can instantiate:
+// NEW(A) precedes depth refusal; NEW(B) and later facts must not be committed.
+@propose seed INPUT := { THIS(ITEM,A), THIS(ITEM,B) };
+law RESULT_REFUSAL := IF THIS(ITEM,x)
+ THEN GOES_WITH(RESULT,NEW(x),NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(x))))))))))))))))))))))))))))))))));
+law AFTER := IF THIS(ITEM,x) THEN THIS(AFTER,x);
+

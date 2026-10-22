@@ -1,0 +1,464 @@
+{
+  "source_sha256": "464B172F2A0459B64BB0465198E4791F5242E5B31EF105FA6904BE3207DA3EB5",
+  "producer_sha256": "187C741EACD6285166B4D359D0921A012A3ACDBE8C3FEB5AAAC62198FC82EA3B",
+  "scope": "SOURCE_CUSTODY_ONLY_NOT_FABRIC_CONTAINMENT",
+  "offset_unit": "UTF8_BYTES",
+  "entries": [
+    {
+      "kind": "source",
+      "start": 0,
+      "end": 609,
+      "parent": null
+    },
+    {
+      "kind": "seed",
+      "start": 234,
+      "end": 288,
+      "parent": 0,
+      "name": "INPUT",
+      "authority": "propose"
+    },
+    {
+      "kind": "term",
+      "start": 259,
+      "end": 271,
+      "parent": 1,
+      "spelling": "THIS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 264,
+      "end": 268,
+      "parent": 2,
+      "spelling": "ITEM",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 269,
+      "end": 270,
+      "parent": 2,
+      "spelling": "A",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 273,
+      "end": 285,
+      "parent": 1,
+      "spelling": "THIS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 278,
+      "end": 282,
+      "parent": 5,
+      "spelling": "ITEM",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 283,
+      "end": 284,
+      "parent": 5,
+      "spelling": "B",
+      "position": 1
+    },
+    {
+      "kind": "law",
+      "start": 289,
+      "end": 558,
+      "parent": 0,
+      "name": "RESULT_REFUSAL"
+    },
+    {
+      "kind": "term",
+      "start": 314,
+      "end": 326,
+      "parent": 8,
+      "spelling": "THIS",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 319,
+      "end": 323,
+      "parent": 9,
+      "spelling": "ITEM",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 324,
+      "end": 325,
+      "parent": 9,
+      "spelling": "x",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 333,
+      "end": 557,
+      "parent": 8,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 343,
+      "end": 349,
+      "parent": 12,
+      "spelling": "RESULT",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 350,
+      "end": 356,
+      "parent": 12,
+      "spelling": "NEW",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 354,
+      "end": 355,
+      "parent": 14,
+      "spelling": "x",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 357,
+      "end": 556,
+      "parent": 12,
+      "spelling": "NEST",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 362,
+      "end": 555,
+      "parent": 16,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 367,
+      "end": 554,
+      "parent": 17,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 372,
+      "end": 553,
+      "parent": 18,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 377,
+      "end": 552,
+      "parent": 19,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 382,
+      "end": 551,
+      "parent": 20,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 387,
+      "end": 550,
+      "parent": 21,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 392,
+      "end": 549,
+      "parent": 22,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 397,
+      "end": 548,
+      "parent": 23,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 402,
+      "end": 547,
+      "parent": 24,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 407,
+      "end": 546,
+      "parent": 25,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 412,
+      "end": 545,
+      "parent": 26,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 417,
+      "end": 544,
+      "parent": 27,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 422,
+      "end": 543,
+      "parent": 28,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 427,
+      "end": 542,
+      "parent": 29,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 432,
+      "end": 541,
+      "parent": 30,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 437,
+      "end": 540,
+      "parent": 31,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 442,
+      "end": 539,
+      "parent": 32,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 447,
+      "end": 538,
+      "parent": 33,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 452,
+      "end": 537,
+      "parent": 34,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 457,
+      "end": 536,
+      "parent": 35,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 462,
+      "end": 535,
+      "parent": 36,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 467,
+      "end": 534,
+      "parent": 37,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 472,
+      "end": 533,
+      "parent": 38,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 477,
+      "end": 532,
+      "parent": 39,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 482,
+      "end": 531,
+      "parent": 40,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 487,
+      "end": 530,
+      "parent": 41,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 492,
+      "end": 529,
+      "parent": 42,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 497,
+      "end": 528,
+      "parent": 43,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 502,
+      "end": 527,
+      "parent": 44,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 507,
+      "end": 526,
+      "parent": 45,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 512,
+      "end": 525,
+      "parent": 46,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 517,
+      "end": 524,
+      "parent": 47,
+      "spelling": "NEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 522,
+      "end": 523,
+      "parent": 48,
+      "spelling": "x",
+      "position": 0
+    },
+    {
+      "kind": "law",
+      "start": 559,
+      "end": 607,
+      "parent": 0,
+      "name": "AFTER"
+    },
+    {
+      "kind": "term",
+      "start": 575,
+      "end": 587,
+      "parent": 50,
+      "spelling": "THIS",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 580,
+      "end": 584,
+      "parent": 51,
+      "spelling": "ITEM",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 585,
+      "end": 586,
+      "parent": 51,
+      "spelling": "x",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 593,
+      "end": 606,
+      "parent": 50,
+      "spelling": "THIS",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 598,
+      "end": 603,
+      "parent": 54,
+      "spelling": "AFTER",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 604,
+      "end": 605,
+      "parent": 54,
+      "spelling": "x",
+      "position": 1
+    }
+  ]
+}

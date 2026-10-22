@@ -1,0 +1,15 @@
+{
+  "scope": "Compute-attempt custody only; not CONFORM or a semantic verdict",
+  "vector": "V1",
+  "stage": 1,
+  "process_id": 66532,
+  "started_local": "2026-10-21T22:17:26-04:00",
+  "ended_local": "2026-10-21T22:21:48-04:00",
+  "binary_sha256": "77EB1764812B0C09829BC59324E31B28A370A051CE68DECA0AF81D61145A3D87",
+  "source_and_image": "Unchanged BUILD.json bindings",
+  "readback": "NOT_PRODUCED",
+  "observed_progress": {"last_published_epoch":206,"facts":108515,"terms":131446,"substrate_error":0,"elapsed_seconds_at_last_publication":251,"scope":"Progress scratch only; no readback or closure result"},
+  "reason": "Preserved unfinished attempt before sequential compound-argument-index qualification. Source proof, source image, expected bytes and result contract are unchanged.",
+  "expected_bytes": "NOT_READ_BY_RUNTIME",
+  "result": "No result claimed; all input and prior evidence preserved"
+}

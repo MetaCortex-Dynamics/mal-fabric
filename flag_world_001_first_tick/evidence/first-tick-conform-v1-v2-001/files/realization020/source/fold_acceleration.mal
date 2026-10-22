@@ -1,0 +1,43 @@
+// Additive accelerations of ingress_step.mal 61DF9020...E872F5.
+// Every conclusion equals repeated applications of the retained one-row rule.
+// Block size is execution grouping only: it supplies no row, order, placement,
+// admission, hash, receipt, or collection boundary. Original rules remain.
+
+// Four applications of I20_CELLS_TAIL. Intermediate tails remain derivable.
+law I20A_CELL_TAIL_FOUR := IF GOES_WITH(I20_CELL_TAIL,p,s,CONS(a,CONS(b,CONS(c,CONS(d,tail)))))
+ THEN GOES_WITH(I20_CELL_TAIL,p,s,tail);
+
+// Four I20_BINDING_ROW_APPEND applications; the exact same row witnesses and
+// existing terminal suffix are required. Output order remains a,b,c,d,rest.
+law I20A_BINDING_FOUR := IF GOES_WITH(I20_CELL_TAIL,p,s,CONS(a,CONS(b,CONS(c,CONS(d,tail))))), GOES_WITH(I20_BINDING_ROW,p,s,a,ar), GOES_WITH(I20_BINDING_ROW,p,s,b,br), GOES_WITH(I20_BINDING_ROW,p,s,c,cr), GOES_WITH(I20_BINDING_ROW,p,s,d,dr), GOES_WITH(I20_BINDING_SUFFIX,p,s,tail,rows)
+ THEN GOES_WITH(I20_BINDING_SUFFIX,p,s,CONS(a,CONS(b,CONS(c,CONS(d,tail)))),CONS(ar,CONS(br,CONS(cr,CONS(dr,rows)))));
+
+// Two I20_PREPARED_ROW applications. Neither INPUT_VALUE nor admission is
+// produced here; both prepared payloads must already have their source proof.
+law I20A_PREPARED_TWO := IF GOES_WITH(I20_CELL_TAIL,p,s,CONS(a,CONS(b,tail))), GOES_WITH(I20_CELL,p,s,a,ai), GOES_WITH(I20_CELL,p,s,b,bi), GOES_WITH(I20_PREPARED_PAYLOAD,p,s,a,ap), GOES_WITH(I20_PREPARED_PAYLOAD,p,s,b,bp), GOES_WITH(I20_PREPARED_SUFFIX,p,s,tail,rows)
+ THEN GOES_WITH(I20_PREPARED_SUFFIX,p,s,CONS(a,CONS(b,tail)),CONS(CELL_STATE(ai,ap),CONS(CELL_STATE(bi,bp),rows)));
+
+// This helper packages exactly the four row witnesses of I20_NEXT_ROW. It is
+// needed to keep the two-row shortcut within eight antecedents. It carries no
+// collection boundary and cannot publish a return without the existing suffix.
+law I20A_NEXT_ROW_WITNESSES := IF GOES_WITH(I20_CELL,p,s,c,id), GOES_WITH(I20_NEXT_PAYLOAD,p,s,c,after), GOES_WITH(I20_RUNTIME_RECEIPT,p,s,c,CELL_EVALUATED,eid,e), GOES_WITH(I20_RUNTIME_RECEIPT,p,s,c,PAYLOAD_TRANSITION,tid,t)
+ THEN GOES_WITH(I20A_NEXT_ROW,p,s,c,STEP_ROW(CELL_STATE(id,after),e,t));
+// Two I20_NEXT_ROW applications. Receipt order is exactly e_a,t_a,e_b,t_b.
+law I20A_NEXT_TWO := IF GOES_WITH(I20_CELL_TAIL,p,s,CONS(a,CONS(b,tail))), GOES_WITH(I20A_NEXT_ROW,p,s,a,STEP_ROW(CELL_STATE(ai,ap),ae,at)), GOES_WITH(I20A_NEXT_ROW,p,s,b,STEP_ROW(CELL_STATE(bi,bp),be,bt)), GOES_WITH(I20_NEXT_SUFFIX,p,s,tail,rows,receipts)
+ THEN GOES_WITH(I20_NEXT_SUFFIX,p,s,CONS(a,CONS(b,tail)),CONS(CELL_STATE(ai,ap),CONS(CELL_STATE(bi,bp),rows)),CONS(ae,CONS(at,CONS(be,CONS(bt,receipts)))));
+
+// Two I20_PAYLOAD_JSON_ROW applications. The same checked cell identities and
+// source-produced completed objects appear in the same canonical observation.
+law I20A_PAYLOAD_JSON_TWO := IF GOES_WITH(I20_CELL_TAIL,p,s,CONS(a,CONS(b,tail))), GOES_WITH(I20_CELL,p,s,a,ai), GOES_WITH(I20_CELL,p,s,b,bi), GOES_WITH(I20_COMPLETED_JSON,p,s,a,aj), GOES_WITH(I20_COMPLETED_JSON,p,s,b,bj), GOES_WITH(I20_PAYLOAD_JSON_SUFFIX,p,s,tail,rows)
+ THEN GOES_WITH(I20_PAYLOAD_JSON_SUFFIX,p,s,CONS(a,CONS(b,tail)),CONS(MEMBER(ai,aj),CONS(MEMBER(bi,bj),rows)));
+
+// Four I20_RECEIPT_JSON_ROW applications. This is only JSON projection;
+// I20_RECEIPT_COMPLETE still separately requires membership, strict receipt-ID
+// order, and all 1440 rows before I20_SUCCESSOR_JSON can be emitted.
+law I20A_RECEIPT_JSON_FOUR := IF THIS(I20_RECEIPT_ROWS,CONS(ARRAY(CONS(ai,CONS(aj,NIL))),CONS(ARRAY(CONS(bi,CONS(bj,NIL))),CONS(ARRAY(CONS(ci,CONS(cj,NIL))),CONS(ARRAY(CONS(di,CONS(dj,NIL))),tail))))), GOES_WITH(I20_RECEIPT_JSON_SUFFIX,tail,rows)
+ THEN GOES_WITH(I20_RECEIPT_JSON_SUFFIX,CONS(ARRAY(CONS(ai,CONS(aj,NIL))),CONS(ARRAY(CONS(bi,CONS(bj,NIL))),CONS(ARRAY(CONS(ci,CONS(cj,NIL))),CONS(ARRAY(CONS(di,CONS(dj,NIL))),tail)))),CONS(aj,CONS(bj,CONS(cj,CONS(dj,rows)))));
+
+// Four HASH_BATCH_TAIL applications complement the retained eight-row block;
+// no response tuple or hash assertion is manufactured by this traversal.
+law I20A_HASH_BATCH_FOUR := IF THIS(HASH_BATCH_ROWS,CONS(a,CONS(b,CONS(c,CONS(d,tail)))))
+ THEN THIS(HASH_BATCH_ROWS,tail);

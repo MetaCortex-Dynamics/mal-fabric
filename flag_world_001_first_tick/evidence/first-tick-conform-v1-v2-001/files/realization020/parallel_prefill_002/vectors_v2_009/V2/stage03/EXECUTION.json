@@ -1,0 +1,109 @@
+{
+  "scope": "Generic source execution; not CONFORM",
+  "vector": "V2",
+  "stage": 3,
+  "mode": "AUDITED_V2_ADDITIVE_CONTINUATION",
+  "started_utc": "2026-10-22T18:16:15.656Z",
+  "ended_utc": "2026-10-22T18:16:38.853Z",
+  "bindings": {
+    "runner": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\v2_continuation_009\\execute_stage_009.mjs",
+      "size": 10670,
+      "sha256": "D58DE2589524133202EF2375B8B28222F8853F519CC30C35F8D5DA441CB33C8D"
+    },
+    "runtime": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_full.exe",
+      "size": 515584,
+      "sha256": "8A739F97DC3A67DC440DE3BE5C079A7ED7FC0898D5DCFDB5AEFE6F9CE8AB2B08"
+    },
+    "source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_full.cu",
+      "size": 34285,
+      "sha256": "C09A06FC4B2F1D733C2A9F7FC247844E98B6EF4DB3C7EC5915C63A089D3D6169"
+    },
+    "guard": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_guard_execute.mjs",
+      "size": 10800,
+      "sha256": "CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C"
+    },
+    "qualification": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_full\\QUALIFICATION.json",
+      "size": 24623,
+      "sha256": "00E7AAB2A752830F01297D580905D9B3F717057159C4E7016A1C3558931F1A70"
+    },
+    "capacity_qualification": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\QUALIFICATION.json",
+      "size": 8614,
+      "sha256": "0BAD5646C5D071F11886A42EBF5A7341FF44EBFEB921C3BE5B227DD1F9D06938"
+    },
+    "continuation_manifest": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\v2_continuation_009\\V2_009_BINDINGS.json",
+      "size": 13504,
+      "sha256": "D2760B2DEBD6783F4BE7B9CEF9DDC7B0FE85A73B897DFD6DA08525FF7A085A7F"
+    },
+    "previous_execution": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage02\\EXECUTION.json",
+      "size": 6363,
+      "sha256": "361DCB816F7A2D533D326743508F5639C2BBF6F963DDAB70790661885046DD0D"
+    },
+    "previous_status": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage02\\STATUS.json",
+      "size": 22863,
+      "sha256": "A39E171A476ACA184F01EF707E142E4B4BBC3039BA1D25BDC7B140A980E2AD85"
+    },
+    "previous_guard": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage02\\PREFILL_EXECUTION_GUARD.json",
+      "size": 1111,
+      "sha256": "4F418BC1A492B7ED7F17D6ED6D0C846A1EAC4E97038A72D78D262ED5547663B9"
+    },
+    "previous_hash_custody": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage02\\hash\\HASH_CUSTODY.json",
+      "size": 1352,
+      "sha256": "61BC67E98F0F3E0F68F82210520B023B7DEB7820DA18BDCC18A41A61CD1167F2"
+    },
+    "previous_map": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage02\\image\\source-map.json",
+      "size": 6775065,
+      "sha256": "0E9F141048F90AEB99C60CBF93224CCE456CC2C4C1BFFE7933FA413D014F9B08"
+    },
+    "previous_image": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage02\\image\\image.bin",
+      "size": 41992208,
+      "sha256": "8337130C833691504207E36E7E5F022AC6EF7D153D502634511A771223D4D1CC"
+    },
+    "previous_readback": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage02\\image\\readback.bin",
+      "size": 268435488,
+      "sha256": "043B06A7EA75B8D478BA8C0A715A4096C14D4B1955F0E4AF72EC959D4845C183"
+    },
+    "previous_hashes": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage02\\hash\\responses.json",
+      "size": 32466,
+      "sha256": "89D5B3FF6B83EAF71A92FE0D73B033FA26AFE001DC99DF64B928B558D9ED29A2"
+    },
+    "image": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage03\\image\\image.bin",
+      "size": 41992208,
+      "sha256": "16523C546C810EA756DFB3777B68E4307287BA6BC846A725C622D060719F1259"
+    },
+    "source_map": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage03\\image\\source-map.json",
+      "size": 6803184,
+      "sha256": "85B070EB0B447D3735FA1416994E5D8078F0F4696DBE26EDC4218FB0E695DDF7"
+    },
+    "world_source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage03\\image\\source.mal",
+      "size": 144792,
+      "sha256": "E5DD8DB39E6093F1DE423E5C11EA4DFAE5AF8CF3E776DFED08F17045E827D7B9"
+    }
+  },
+  "exit_code": 0,
+  "signal": null,
+  "error": null,
+  "output": "{\n  \"guard\": \"IF_THEN\",\n  \"previous_image_sha256\": \"8337130C833691504207E36E7E5F022AC6EF7D153D502634511A771223D4D1CC\",\n  \"next_image_sha256\": \"16523C546C810EA756DFB3777B68E4307287BA6BC846A725C622D060719F1259\",\n  \"checkpoint_sha256\": \"043B06A7EA75B8D478BA8C0A715A4096C14D4B1955F0E4AF72EC959D4845C183\",\n  \"retained_rules\": 567,\n  \"retained_facts\": 1393410,\n  \"retained_terms\": 1421415,\n  \"symbol_prefix\": \"SAME\",\n  \"logical_rule_prefix\": \"SAME\",\n  \"prior_seeds\": \"PRESERVED\",\n  \"checkpoint_proofs\": \"SAME\",\n  \"execution\": \"EXECUTED\",\n  \"qualification\": \"MAYBE\",\n  \"substrate_output\": \"gpu=NVIDIA GeForce RTX 3070 error=0 facts=1396464 terms=1425914 epochs=2749\",\n  \"runtime_sha256\": \"8A739F97DC3A67DC440DE3BE5C079A7ED7FC0898D5DCFDB5AEFE6F9CE8AB2B08\",\n  \"retained_proof_bytes\": \"SAME\",\n  \"resumed_sha256\": \"1F6DD1AD24BB5C825091BF59CA08E74E2643781BA1217D01E3178A578147D74D\",\n  \"facts\": 1396464,\n  \"terms\": 1425914,\n  \"epochs\": 2749,\n  \"scope\": \"PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM\",\n  \"guard_source_sha256\": \"CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C\"\n}\n",
+  "diagnostic_readback": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage03\\image\\readback.bin",
+    "size": 268435488,
+    "sha256": "1F6DD1AD24BB5C825091BF59CA08E74E2643781BA1217D01E3178A578147D74D"
+  }
+}

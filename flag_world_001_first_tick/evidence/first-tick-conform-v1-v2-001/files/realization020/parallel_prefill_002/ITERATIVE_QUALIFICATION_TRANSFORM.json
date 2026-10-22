@@ -1,0 +1,41 @@
+{
+  "scope": "PATH_ONLY_SPECIALIZATION; QUALIFICATION_CHECKS_UNCHANGED",
+  "records": [
+    {
+      "parent": "qualify.mjs",
+      "parent_sha256": "99950350B93511520551D033D45346F72A7F8F1013E8234D20CC324CD2FBF250",
+      "output": "qualify_iterative.mjs",
+      "sha256": "E0C5386C902017FA3A64F636D94A95C29BB69FDF08EE15A08959CCDE80EB6B17",
+      "changes": [
+        {
+          "from": "'qualification_'+mode",
+          "to": "'qualification_iterative_'+mode",
+          "count": 1
+        },
+        {
+          "from": "'qualification_small",
+          "to": "'qualification_iterative_small",
+          "count": 3
+        },
+        {
+          "from": "'block_telemetry_'+mode",
+          "to": "'iterative_collect_007/block_iterative_'+mode",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "parent": "audit_telemetry.mjs",
+      "parent_sha256": "EE9A8825974484BB2BBEE6A75D6248C4E46B3DFC82D2F9143DF3C86961A4195E",
+      "output": "audit_iterative_telemetry.mjs",
+      "sha256": "D24561DED87BF3794961080105D004565E4752FD8B683B26DD344664729FD3EA",
+      "changes": [
+        {
+          "from": "'qualification_'+mode",
+          "to": "'qualification_iterative_'+mode",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

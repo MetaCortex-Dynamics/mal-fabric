@@ -1,0 +1,647 @@
+{
+  "scope": "GENERIC_MATCHER_AND_PREFILL_QUALIFICATION; NOT_V1_V2_CONFORM",
+  "qualification": "SAME",
+  "mode": "small",
+  "bindings": {
+    "runner": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualify_iterative.mjs",
+      "bytes": 11136,
+      "sha256": "E0C5386C902017FA3A64F636D94A95C29BB69FDF08EE15A08959CCDE80EB6B17"
+    },
+    "exe": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_small.exe",
+      "bytes": 509952,
+      "sha256": "A4A0254258430BBE1754A4058552B126F7CE0D4D0371FB4489B160B0E6F51E28"
+    },
+    "source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_small.cu",
+      "bytes": 34274,
+      "sha256": "CEC65C99FDF63CA20CF214F56140200EDD78F7D74EAC902943FE437705072CE9"
+    },
+    "telemetry": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\telemetry.inc",
+      "bytes": 7783,
+      "sha256": "E7033E77BB0F27343AF16277536D7441D26775A2475745BF890B5C7F59ECE81D"
+    },
+    "guard": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_guard.mjs",
+      "bytes": 10815,
+      "sha256": "B2C1B115F158915AF4DF9AA20CEA89CFB698076CB29BC6E2F9BDCC13B895FA38"
+    },
+    "serial": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\prefill_small.exe",
+      "bytes": 412672,
+      "sha256": "58B3A1A4387E73F2D238B749614B5C51B29F460D5C1AD02FEC61F2949B44D5B0"
+    },
+    "seal": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\carrier_prefill_001\\PREFILL_MANIFEST.json",
+      "bytes": 6359,
+      "sha256": "D40F88D9CA521EDF95A4FC347A309D8B23F5605F47EC164F91BB2CAD80DF4AD7"
+    },
+    "prior_qualification": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\execution\\QUALIFICATION.json",
+      "bytes": 12460,
+      "sha256": "8C784B4A8BA6020BDCC40E4399761CD54EB03F09BA1889318ECEA17894C4BDE9"
+    },
+    "preparation": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\PREPARATION.json",
+      "bytes": 9951,
+      "sha256": "EDA7A8E7CEE76F33A1786CB3D47FBED67B4521B8435155520E07D6E16787A892"
+    },
+    "case_preparation": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\PREPARATION.json",
+      "bytes": 4030,
+      "sha256": "9F9CCF75F911E9085F057A99C4289EF8A20410789E52955C7EAE6C80AFCC7DE5"
+    },
+    "regression_manifest": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\block_replay_qualification_inputs_001\\MANIFEST.json",
+      "bytes": 4965,
+      "sha256": "572345C3AC16313CD5E4F7259B7870C45D3D14D91656DE5085B3FFE16E43DE0B"
+    },
+    "input_0_source.mal": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\carrier\\source.mal",
+      "bytes": 13197,
+      "sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F"
+    },
+    "input_0_source-map.json": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\carrier\\source-map.json",
+      "bytes": 168783,
+      "sha256": "090C59424F0842812BE051111BBF316E246F3633A0CC92BE69A736C93EBF7EEA"
+    },
+    "input_0_image.bin": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\carrier\\image.bin",
+      "bytes": 2670608,
+      "sha256": "E4C8154AED75BBFF452DDAB836EB780084390669A6149679D7DB0DACD9467993"
+    },
+    "input_1_source.mal": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\this\\source.mal",
+      "bytes": 13851,
+      "sha256": "1F750E0065C94206E46F1938F694CF24942AFD5E179A3CF3CCE367B192AA6C71"
+    },
+    "input_1_source-map.json": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\this\\source-map.json",
+      "bytes": 178934,
+      "sha256": "A8F93E68A02DBA3FEC39484BFDD86C365E9A18EAA787AD4A81BF96DB4255B06D"
+    },
+    "input_1_image.bin": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\this\\image.bin",
+      "bytes": 2670608,
+      "sha256": "D10209ACAAC159124EE08B2CA42D44745C42D42547A3D10FE2868954D899F4F4"
+    },
+    "input_2_source.mal": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\no\\source.mal",
+      "bytes": 13851,
+      "sha256": "1F750E0065C94206E46F1938F694CF24942AFD5E179A3CF3CCE367B192AA6C71"
+    },
+    "input_2_source-map.json": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\no\\source-map.json",
+      "bytes": 178588,
+      "sha256": "272084CAD1EAAF2BCA5D0817116D0D001478C20A05849E7EFA8A11B9F5CE2B6D"
+    },
+    "input_2_image.bin": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\no\\image.bin",
+      "bytes": 2670608,
+      "sha256": "488F61F877F564BFE383EFCDC79EF01AEE447088314520615381C16AC7F7E50D"
+    },
+    "input_3_source.mal": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\overflow\\source.mal",
+      "bytes": 5826,
+      "sha256": "D91902FF07EDCB8B651A28DD6C8926A66FD212C8B4F964598AA0625B92623C84"
+    },
+    "input_3_source-map.json": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\overflow\\source-map.json",
+      "bytes": 139879,
+      "sha256": "1C8CAB4D946AC64AF60E82719CC6B47E6993230E1B75E185F3F09ACDCB493A6B"
+    },
+    "input_3_image.bin": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\overflow\\image.bin",
+      "bytes": 2670608,
+      "sha256": "EE551D62C6B296E121D480FFAF9FEC3A253BCD73176FD3B0D5138835FF109C96"
+    },
+    "input_4_source.mal": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\deep_antecedent\\source.mal",
+      "bytes": 836,
+      "sha256": "FEF79E511B936A3D7353F8D722F280A6E0A3B07D00FF73DEE765442FD3EF22E9"
+    },
+    "input_4_source-map.json": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\deep_antecedent\\source-map.json",
+      "bytes": 16282,
+      "sha256": "D306C9B8CC84E9DD36F9DB595890BAAB6DFCF572BDCD4A65D4F2D9BE6BCF9B86"
+    },
+    "input_4_image.bin": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\deep_antecedent\\image.bin",
+      "bytes": 2670608,
+      "sha256": "AD34C3A9671983B289FD82CD68878FBEE23426B04397305F950E796F0C5961E6"
+    },
+    "input_5_source.mal": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\deep_consequent\\source.mal",
+      "bytes": 609,
+      "sha256": "464B172F2A0459B64BB0465198E4791F5242E5B31EF105FA6904BE3207DA3EB5"
+    },
+    "input_5_source-map.json": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\deep_consequent\\source-map.json",
+      "bytes": 9981,
+      "sha256": "A7A50FD3C73A4F22F99A1A300C649D577BC7C9894041C07AA50781B226D68476"
+    },
+    "input_5_image.bin": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\cases\\deep_consequent\\image.bin",
+      "bytes": 2670608,
+      "sha256": "FEDDF9A365EB8BACF552754B26815AD3AC15D09008B0A62E8D7E864A3B7FFD58"
+    },
+    "carrier_checkpoint": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\carrier\\readback.bin",
+      "bytes": 2097184,
+      "sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E"
+    }
+  },
+  "carrier": {
+    "observed": {
+      "identity": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\carrier.clean.bin",
+        "bytes": 2097184,
+        "sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E"
+      },
+      "error": 0,
+      "terms": 6170,
+      "facts": 5282,
+      "epochs": 14,
+      "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+      "used_facts": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39",
+      "counts": {
+        "BASE_EDGE": 30,
+        "HARDWARE_EDGE": 30,
+        "HARDWARE_FACE": 20,
+        "DOMAIN_NEXT": 11,
+        "BASE_TRIAD": 20,
+        "DOMAIN_ORDER": 66,
+        "REFINED_PARENT": 80,
+        "REFINED_TRIAD": 80,
+        "SITE": 42,
+        "SITE_ORDER": 861,
+        "WORLD_DOMAIN_SITE": 12,
+        "WORLD_JUNCTION_SITE": 30,
+        "TRIAD": 80,
+        "EDGE_IN_TRIAD": 240,
+        "GAMMA": 480,
+        "EDGE_OPPOSITE": 240,
+        "PAIR": 720,
+        "WORLD_TRIAD_FACE": 80,
+        "EDGE": 120,
+        "FLAG": 480,
+        "DELTA": 480,
+        "ADJACENT_TRIADS": 120,
+        "TAU": 480,
+        "WORLD_FLAG_FACE": 480
+      },
+      "readings": {},
+      "seeded": {}
+    },
+    "reference": {
+      "identity": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\carrier\\readback.bin",
+        "bytes": 2097184,
+        "sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E"
+      },
+      "error": 0,
+      "terms": 6170,
+      "facts": 5282,
+      "epochs": 14,
+      "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+      "used_facts": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39",
+      "counts": {
+        "BASE_EDGE": 30,
+        "HARDWARE_EDGE": 30,
+        "HARDWARE_FACE": 20,
+        "DOMAIN_NEXT": 11,
+        "BASE_TRIAD": 20,
+        "DOMAIN_ORDER": 66,
+        "REFINED_PARENT": 80,
+        "REFINED_TRIAD": 80,
+        "SITE": 42,
+        "SITE_ORDER": 861,
+        "WORLD_DOMAIN_SITE": 12,
+        "WORLD_JUNCTION_SITE": 30,
+        "TRIAD": 80,
+        "EDGE_IN_TRIAD": 240,
+        "GAMMA": 480,
+        "EDGE_OPPOSITE": 240,
+        "PAIR": 720,
+        "WORLD_TRIAD_FACE": 80,
+        "EDGE": 120,
+        "FLAG": 480,
+        "DELTA": 480,
+        "ADJACENT_TRIADS": 120,
+        "TAU": 480,
+        "WORLD_FLAG_FACE": 480
+      },
+      "readings": {},
+      "seeded": {}
+    },
+    "ordered_bytes": "SAME"
+  },
+  "cases": [
+    {
+      "reading": "THIS",
+      "clean": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\this.clean.bin",
+          "bytes": 2097184,
+          "sha256": "777D5123FD74972D9D8CDB060E46E4A6F6B940E5D1FF0D723AA23AA3A5B41F44"
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 14,
+        "used_terms": "AC13EB2FB7DCC768DA47828611CCA68E0CDF51C72FC20777D0348F3C3156EF00",
+        "used_facts": "B0EEE24B665A4F6AA500AFB0FC3221620E650C79E8E323D8887881B20CF1753B",
+        "counts": {
+          "BASE_EDGE": 30,
+          "HARDWARE_EDGE": 30,
+          "HARDWARE_FACE": 20,
+          "DOMAIN_NEXT": 11,
+          "PQ_INPUT": 1,
+          "BASE_TRIAD": 20,
+          "DOMAIN_ORDER": 66,
+          "REFINED_PARENT": 80,
+          "PQ_READING": 1,
+          "REFINED_TRIAD": 80,
+          "SITE": 42,
+          "SITE_ORDER": 861,
+          "WORLD_DOMAIN_SITE": 12,
+          "WORLD_JUNCTION_SITE": 30,
+          "TRIAD": 80,
+          "EDGE_IN_TRIAD": 240,
+          "GAMMA": 480,
+          "EDGE_OPPOSITE": 240,
+          "PAIR": 720,
+          "WORLD_TRIAD_FACE": 80,
+          "EDGE": 120,
+          "FLAG": 480,
+          "DELTA": 480,
+          "ADJACENT_TRIADS": 120,
+          "TAU": 480,
+          "WORLD_FLAG_FACE": 480,
+          "PQ_FLAG_READING": 480,
+          "PQ_PAIR_READING": 720
+        },
+        "readings": {
+          "PQ_FLAG_READING": {
+            "THIS": 480
+          },
+          "PQ_PAIR_READING": {
+            "THIS": 720
+          }
+        },
+        "seeded": {}
+      },
+      "prefilled": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\this.prefilled.bin",
+          "bytes": 2097184,
+          "sha256": "62A4982980C9321574D1CDE33AB19483C26AFD73135F1B881ADA4B308C1E1E5F"
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 18,
+        "used_terms": "0AAB8BC3C374A2504D2409E1AF5D9FEC67ECAEBCBA75B23715FE378540DD9802",
+        "used_facts": "69378EC69D8720DF9212BE6E92EDC405AF3FE0DCE258EF5377255D29A4CFB4E7",
+        "counts": {
+          "BASE_EDGE": 30,
+          "HARDWARE_EDGE": 30,
+          "HARDWARE_FACE": 20,
+          "DOMAIN_NEXT": 11,
+          "BASE_TRIAD": 20,
+          "DOMAIN_ORDER": 66,
+          "REFINED_PARENT": 80,
+          "REFINED_TRIAD": 80,
+          "SITE": 42,
+          "SITE_ORDER": 861,
+          "WORLD_DOMAIN_SITE": 12,
+          "WORLD_JUNCTION_SITE": 30,
+          "TRIAD": 80,
+          "EDGE_IN_TRIAD": 240,
+          "GAMMA": 480,
+          "EDGE_OPPOSITE": 240,
+          "PAIR": 720,
+          "WORLD_TRIAD_FACE": 80,
+          "EDGE": 120,
+          "FLAG": 480,
+          "DELTA": 480,
+          "ADJACENT_TRIADS": 120,
+          "TAU": 480,
+          "WORLD_FLAG_FACE": 480,
+          "PQ_INPUT": 1,
+          "PQ_READING": 1,
+          "PQ_FLAG_READING": 480,
+          "PQ_PAIR_READING": 720
+        },
+        "readings": {
+          "PQ_FLAG_READING": {
+            "THIS": 480
+          },
+          "PQ_PAIR_READING": {
+            "THIS": 720
+          }
+        },
+        "seeded": {}
+      },
+      "reference_serial_clean": "SAME",
+      "reference_serial_prefilled": "SAME",
+      "full_fact_term_sets": "SAME",
+      "retained_proofs": "SAME",
+      "own_input_readings": "DERIVED",
+      "guard": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\this.guard.json",
+        "bytes": 1295,
+        "sha256": "7A775A3D89A5A387A422D014D7094759BBD8CB6276A12CC8801C60BB1AB8508C"
+      }
+    },
+    {
+      "reading": "NO",
+      "clean": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\no.clean.bin",
+          "bytes": 2097184,
+          "sha256": "D8A01CA0E643193ACE19AD327FE0ABF49A88351D4A9371ADBA192A69EDAE9935"
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 14,
+        "used_terms": "3B5BCA1C594051E515295DBE51BB382A0D5368EC1337CCA7DC5DC63D007D644C",
+        "used_facts": "6181CD3D4FF69EED5D7D4016AC1D4C62B5C9BC7225BD6C45551DD169300FAF19",
+        "counts": {
+          "BASE_EDGE": 30,
+          "HARDWARE_EDGE": 30,
+          "HARDWARE_FACE": 20,
+          "DOMAIN_NEXT": 11,
+          "PQ_INPUT": 1,
+          "BASE_TRIAD": 20,
+          "DOMAIN_ORDER": 66,
+          "REFINED_PARENT": 80,
+          "PQ_READING": 1,
+          "REFINED_TRIAD": 80,
+          "SITE": 42,
+          "SITE_ORDER": 861,
+          "WORLD_DOMAIN_SITE": 12,
+          "WORLD_JUNCTION_SITE": 30,
+          "TRIAD": 80,
+          "EDGE_IN_TRIAD": 240,
+          "GAMMA": 480,
+          "EDGE_OPPOSITE": 240,
+          "PAIR": 720,
+          "WORLD_TRIAD_FACE": 80,
+          "EDGE": 120,
+          "FLAG": 480,
+          "DELTA": 480,
+          "ADJACENT_TRIADS": 120,
+          "TAU": 480,
+          "WORLD_FLAG_FACE": 480,
+          "PQ_FLAG_READING": 480,
+          "PQ_PAIR_READING": 720
+        },
+        "readings": {
+          "PQ_FLAG_READING": {
+            "NO": 480
+          },
+          "PQ_PAIR_READING": {
+            "NO": 720
+          }
+        },
+        "seeded": {}
+      },
+      "prefilled": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\no.prefilled.bin",
+          "bytes": 2097184,
+          "sha256": "148458EDE1D2BCA1CEE2F630B331E8EAA17B7868260BD5E28FE79683D05F49A2"
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 18,
+        "used_terms": "C319C86C42AFF0EE791E28175D60BBF9CEF3EA81A6950CF6EA14E302D1CFE701",
+        "used_facts": "8371217FB0DC4CF3511D54AC8A793462EB2091ED6F5E6841C74C6A4CB7C44BA5",
+        "counts": {
+          "BASE_EDGE": 30,
+          "HARDWARE_EDGE": 30,
+          "HARDWARE_FACE": 20,
+          "DOMAIN_NEXT": 11,
+          "BASE_TRIAD": 20,
+          "DOMAIN_ORDER": 66,
+          "REFINED_PARENT": 80,
+          "REFINED_TRIAD": 80,
+          "SITE": 42,
+          "SITE_ORDER": 861,
+          "WORLD_DOMAIN_SITE": 12,
+          "WORLD_JUNCTION_SITE": 30,
+          "TRIAD": 80,
+          "EDGE_IN_TRIAD": 240,
+          "GAMMA": 480,
+          "EDGE_OPPOSITE": 240,
+          "PAIR": 720,
+          "WORLD_TRIAD_FACE": 80,
+          "EDGE": 120,
+          "FLAG": 480,
+          "DELTA": 480,
+          "ADJACENT_TRIADS": 120,
+          "TAU": 480,
+          "WORLD_FLAG_FACE": 480,
+          "PQ_INPUT": 1,
+          "PQ_READING": 1,
+          "PQ_FLAG_READING": 480,
+          "PQ_PAIR_READING": 720
+        },
+        "readings": {
+          "PQ_FLAG_READING": {
+            "NO": 480
+          },
+          "PQ_PAIR_READING": {
+            "NO": 720
+          }
+        },
+        "seeded": {}
+      },
+      "reference_serial_clean": "SAME",
+      "reference_serial_prefilled": "SAME",
+      "full_fact_term_sets": "SAME",
+      "retained_proofs": "SAME",
+      "own_input_readings": "DERIVED",
+      "guard": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\no.guard.json",
+        "bytes": 1295,
+        "sha256": "7237555E0B82D851CEFEC01BF9652BEDC81BBD3C2F9AECF525B07769B96C1E4F"
+      }
+    }
+  ],
+  "closed_checkpoint": {
+    "guard": "IF_THEN",
+    "previous_image_sha256": "E4C8154AED75BBFF452DDAB836EB780084390669A6149679D7DB0DACD9467993",
+    "next_image_sha256": "E4C8154AED75BBFF452DDAB836EB780084390669A6149679D7DB0DACD9467993",
+    "checkpoint_sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E",
+    "retained_rules": 58,
+    "retained_facts": 5282,
+    "retained_terms": 6170,
+    "symbol_prefix": "SAME",
+    "logical_rule_prefix": "SAME",
+    "prior_seeds": "PRESERVED",
+    "checkpoint_proofs": "SAME",
+    "execution": "EXECUTED",
+    "qualification": "SAME",
+    "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=5282 terms=6170 epochs=15",
+    "runtime_sha256": "A4A0254258430BBE1754A4058552B126F7CE0D4D0371FB4489B160B0E6F51E28",
+    "retained_proof_bytes": "SAME",
+    "resumed_sha256": "311C3A01D909BE72043D57ADA00187BE4029EB1ECEEF66A86CE4224686D15CFA",
+    "facts": 5282,
+    "terms": 6170,
+    "epochs": 15,
+    "clean_sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E",
+    "fact_difference": {
+      "missing": 0,
+      "extra": 0
+    },
+    "term_difference": {
+      "missing": 0,
+      "extra": 0
+    },
+    "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+    "guard_source_sha256": "B2C1B115F158915AF4DF9AA20CEA89CFB698076CB29BC6E2F9BDCC13B895FA38"
+  },
+  "regression": [
+    {
+      "name": "overflow",
+      "serial": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\overflow.serial.bin",
+          "bytes": 2097184,
+          "sha256": "025E9F238E00986AF14A031CA926DA303E6FBD3B987774C8D7CEF8F35C510965"
+        },
+        "error": 0,
+        "terms": 1808,
+        "facts": 1502,
+        "epochs": 3,
+        "used_terms": "8F15B8CB02485D39B3FC0D95C16E97E8AB3E227FBAAC076CAF51D156AE079711",
+        "used_facts": "C49F8F9EA1A4F16476B18C999232B67EDFD5637A24C770015C976CEB963EDD73",
+        "counts": {
+          "ANCHOR": 2,
+          "ITEM": 300,
+          "OUTPUT": 600,
+          "ECHO": 600
+        },
+        "readings": {},
+        "seeded": {}
+      },
+      "parallel": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\overflow.parallel.bin",
+          "bytes": 2097184,
+          "sha256": "025E9F238E00986AF14A031CA926DA303E6FBD3B987774C8D7CEF8F35C510965"
+        },
+        "error": 0,
+        "terms": 1808,
+        "facts": 1502,
+        "epochs": 3,
+        "used_terms": "8F15B8CB02485D39B3FC0D95C16E97E8AB3E227FBAAC076CAF51D156AE079711",
+        "used_facts": "C49F8F9EA1A4F16476B18C999232B67EDFD5637A24C770015C976CEB963EDD73",
+        "counts": {
+          "ANCHOR": 2,
+          "ITEM": 300,
+          "OUTPUT": 600,
+          "ECHO": 600
+        },
+        "readings": {},
+        "seeded": {}
+      },
+      "used_terms_facts_supports_refusal": "SAME"
+    },
+    {
+      "name": "deep_antecedent",
+      "serial": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_antecedent.serial.bin",
+          "bytes": 2097184,
+          "sha256": "B87173C8678600081186DDBB8F79958D944A32265539C4650AA82648E7778D26"
+        },
+        "error": 2,
+        "terms": 42,
+        "facts": 3,
+        "epochs": 1,
+        "used_terms": "0B2C98880492B511E5ADE4C8EA3802B0C3E57759CEC9431CD1BEB69A9F0EB7CC",
+        "used_facts": "157C140877831D0BE9EC645634F0F55B93E34FB1276E2672FF4779F9EF7556E0",
+        "counts": {
+          "GUARD": 1,
+          "DEEP": 1,
+          "BEFORE": 1
+        },
+        "readings": {},
+        "seeded": {}
+      },
+      "parallel": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_antecedent.parallel.bin",
+          "bytes": 2097184,
+          "sha256": "B87173C8678600081186DDBB8F79958D944A32265539C4650AA82648E7778D26"
+        },
+        "error": 2,
+        "terms": 42,
+        "facts": 3,
+        "epochs": 1,
+        "used_terms": "0B2C98880492B511E5ADE4C8EA3802B0C3E57759CEC9431CD1BEB69A9F0EB7CC",
+        "used_facts": "157C140877831D0BE9EC645634F0F55B93E34FB1276E2672FF4779F9EF7556E0",
+        "counts": {
+          "GUARD": 1,
+          "DEEP": 1,
+          "BEFORE": 1
+        },
+        "readings": {},
+        "seeded": {}
+      },
+      "used_terms_facts_supports_refusal": "SAME"
+    },
+    {
+      "name": "deep_consequent",
+      "serial": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_consequent.serial.bin",
+          "bytes": 2097184,
+          "sha256": "A8428E271B3ACD70C6570424A171BA7855C567B5B5BCB9A89C25D53DA4D7637B"
+        },
+        "error": 2,
+        "terms": 8,
+        "facts": 2,
+        "epochs": 1,
+        "used_terms": "2EDA81764F51F0986455AA70B522F2B9350A8CFB47B33F7693BEC39548CBB182",
+        "used_facts": "57B07CF50787BFED7EC88684E557D0BB77BB9FD46A2CA91093CFC17993037E45",
+        "counts": {
+          "ITEM": 2
+        },
+        "readings": {},
+        "seeded": {}
+      },
+      "parallel": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_small\\deep_consequent.parallel.bin",
+          "bytes": 2097184,
+          "sha256": "A8428E271B3ACD70C6570424A171BA7855C567B5B5BCB9A89C25D53DA4D7637B"
+        },
+        "error": 2,
+        "terms": 8,
+        "facts": 2,
+        "epochs": 1,
+        "used_terms": "2EDA81764F51F0986455AA70B522F2B9350A8CFB47B33F7693BEC39548CBB182",
+        "used_facts": "57B07CF50787BFED7EC88684E557D0BB77BB9FD46A2CA91093CFC17993037E45",
+        "counts": {
+          "ITEM": 2
+        },
+        "readings": {},
+        "seeded": {}
+      },
+      "used_terms_facts_supports_refusal": "SAME"
+    }
+  ],
+  "telemetry": "SEPARATE_AUDIT_REQUIRED_BEFORE_PRODUCTION",
+  "active_serial_V1": "NOT_STOPPED_OR_CHANGED",
+  "source_laws": "UNCHANGED",
+  "repository_action": "NONE"
+}

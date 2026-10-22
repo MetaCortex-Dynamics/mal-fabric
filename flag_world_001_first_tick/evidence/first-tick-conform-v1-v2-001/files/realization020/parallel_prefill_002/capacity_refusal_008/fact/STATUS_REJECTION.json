@@ -1,0 +1,17 @@
+{
+  "started": "2026-10-22T13:08:10.904Z",
+  "finished": "2026-10-22T13:08:10.944Z",
+  "command": {
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "D:\\Dev\\flag-world-first-tick-020\\status.mjs",
+      "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact",
+      "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\capacity_refusal_008\\fact\\STATUS_MUST_NOT_EXIST.json"
+    ]
+  },
+  "exit": 1,
+  "signal": null,
+  "error": null,
+  "stdout": "",
+  "stderr": "file:///D:/Dev/flag-world-first-tick-020/readback.mjs:9\r\n  if(error)throw Error('GPU error '+error);\r\n                 ^\r\n\r\nError: GPU error 4\r\n    at openReadback (file:///D:/Dev/flag-world-first-tick-020/readback.mjs:9:18)\r\n    at file:///D:/Dev/flag-world-first-tick-020/status.mjs:4:41\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:345:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\r\n\r\nNode.js v22.20.0\r\n"
+}

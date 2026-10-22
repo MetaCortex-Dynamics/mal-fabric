@@ -1,0 +1,388 @@
+{
+  "scope": "GENERIC_PREFILL_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+  "qualification": "SAME",
+  "bindings": {
+    "runner": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\qualify_carrier_prefill.mjs",
+      "bytes": 7547,
+      "sha256": "6D5136D4A1AF638C70669404704C979AC379089761DFA8C0D829717E3973FA26"
+    },
+    "exe": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\prefill_small.exe",
+      "bytes": 412672,
+      "sha256": "58B3A1A4387E73F2D238B749614B5C51B29F460D5C1AD02FEC61F2949B44D5B0"
+    },
+    "guard": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_guard_execute.mjs",
+      "bytes": 10800,
+      "sha256": "CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C"
+    },
+    "manifest": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\carrier_prefill_001\\PREFILL_MANIFEST.json",
+      "bytes": 6359,
+      "sha256": "D40F88D9CA521EDF95A4FC347A309D8B23F5605F47EC164F91BB2CAD80DF4AD7"
+    },
+    "preparation": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\PREPARATION.json",
+      "bytes": 9951,
+      "sha256": "EDA7A8E7CEE76F33A1786CB3D47FBED67B4521B8435155520E07D6E16787A892"
+    }
+  },
+  "carrier": {
+    "original": {
+      "identity": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\carrier\\readback.bin",
+        "bytes": 2097184,
+        "sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E"
+      },
+      "error": 0,
+      "terms": 6170,
+      "facts": 5282,
+      "epochs": 14,
+      "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+      "used_facts": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39",
+      "counts": {
+        "BASE_EDGE": 30,
+        "HARDWARE_EDGE": 30,
+        "HARDWARE_FACE": 20,
+        "DOMAIN_NEXT": 11,
+        "BASE_TRIAD": 20,
+        "DOMAIN_ORDER": 66,
+        "REFINED_PARENT": 80,
+        "REFINED_TRIAD": 80,
+        "SITE": 42,
+        "SITE_ORDER": 861,
+        "WORLD_DOMAIN_SITE": 12,
+        "WORLD_JUNCTION_SITE": 30,
+        "TRIAD": 80,
+        "EDGE_IN_TRIAD": 240,
+        "GAMMA": 480,
+        "EDGE_OPPOSITE": 240,
+        "PAIR": 720,
+        "WORLD_TRIAD_FACE": 80,
+        "EDGE": 120,
+        "FLAG": 480,
+        "DELTA": 480,
+        "ADJACENT_TRIADS": 120,
+        "TAU": 480,
+        "WORLD_FLAG_FACE": 480
+      },
+      "readings": {},
+      "seeded_results": 0
+    },
+    "clean": {
+      "identity": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\execution\\carrier.clean.bin",
+        "bytes": 2097184,
+        "sha256": "E1EF11CC7ABC9C3EB0E342540418AC200E28F9058AB54A8D63C6E6047F33A66E"
+      },
+      "error": 0,
+      "terms": 6170,
+      "facts": 5282,
+      "epochs": 14,
+      "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+      "used_facts": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39",
+      "counts": {
+        "BASE_EDGE": 30,
+        "HARDWARE_EDGE": 30,
+        "HARDWARE_FACE": 20,
+        "DOMAIN_NEXT": 11,
+        "BASE_TRIAD": 20,
+        "DOMAIN_ORDER": 66,
+        "REFINED_PARENT": 80,
+        "REFINED_TRIAD": 80,
+        "SITE": 42,
+        "SITE_ORDER": 861,
+        "WORLD_DOMAIN_SITE": 12,
+        "WORLD_JUNCTION_SITE": 30,
+        "TRIAD": 80,
+        "EDGE_IN_TRIAD": 240,
+        "GAMMA": 480,
+        "EDGE_OPPOSITE": 240,
+        "PAIR": 720,
+        "WORLD_TRIAD_FACE": 80,
+        "EDGE": 120,
+        "FLAG": 480,
+        "DELTA": 480,
+        "ADJACENT_TRIADS": 120,
+        "TAU": 480,
+        "WORLD_FLAG_FACE": 480
+      },
+      "readings": {},
+      "seeded_results": 0
+    },
+    "used_terms": "SAME",
+    "used_facts_and_proofs": "SAME"
+  },
+  "cases": [
+    {
+      "reading": "THIS",
+      "clean": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\execution\\this.clean.bin",
+          "bytes": 2097184,
+          "sha256": "777D5123FD74972D9D8CDB060E46E4A6F6B940E5D1FF0D723AA23AA3A5B41F44"
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 14,
+        "used_terms": "AC13EB2FB7DCC768DA47828611CCA68E0CDF51C72FC20777D0348F3C3156EF00",
+        "used_facts": "B0EEE24B665A4F6AA500AFB0FC3221620E650C79E8E323D8887881B20CF1753B",
+        "counts": {
+          "BASE_EDGE": 30,
+          "HARDWARE_EDGE": 30,
+          "HARDWARE_FACE": 20,
+          "DOMAIN_NEXT": 11,
+          "PQ_INPUT": 1,
+          "BASE_TRIAD": 20,
+          "DOMAIN_ORDER": 66,
+          "REFINED_PARENT": 80,
+          "PQ_READING": 1,
+          "REFINED_TRIAD": 80,
+          "SITE": 42,
+          "SITE_ORDER": 861,
+          "WORLD_DOMAIN_SITE": 12,
+          "WORLD_JUNCTION_SITE": 30,
+          "TRIAD": 80,
+          "EDGE_IN_TRIAD": 240,
+          "GAMMA": 480,
+          "EDGE_OPPOSITE": 240,
+          "PAIR": 720,
+          "WORLD_TRIAD_FACE": 80,
+          "EDGE": 120,
+          "FLAG": 480,
+          "DELTA": 480,
+          "ADJACENT_TRIADS": 120,
+          "TAU": 480,
+          "WORLD_FLAG_FACE": 480,
+          "PQ_FLAG_READING": 480,
+          "PQ_PAIR_READING": 720
+        },
+        "readings": {
+          "PQ_FLAG_READING": {
+            "THIS": 480
+          },
+          "PQ_PAIR_READING": {
+            "THIS": 720
+          }
+        },
+        "seeded_results": 0
+      },
+      "prefilled": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\execution\\this.prefilled.bin",
+          "bytes": 2097184,
+          "sha256": "62A4982980C9321574D1CDE33AB19483C26AFD73135F1B881ADA4B308C1E1E5F"
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 18,
+        "used_terms": "0AAB8BC3C374A2504D2409E1AF5D9FEC67ECAEBCBA75B23715FE378540DD9802",
+        "used_facts": "69378EC69D8720DF9212BE6E92EDC405AF3FE0DCE258EF5377255D29A4CFB4E7",
+        "counts": {
+          "BASE_EDGE": 30,
+          "HARDWARE_EDGE": 30,
+          "HARDWARE_FACE": 20,
+          "DOMAIN_NEXT": 11,
+          "BASE_TRIAD": 20,
+          "DOMAIN_ORDER": 66,
+          "REFINED_PARENT": 80,
+          "REFINED_TRIAD": 80,
+          "SITE": 42,
+          "SITE_ORDER": 861,
+          "WORLD_DOMAIN_SITE": 12,
+          "WORLD_JUNCTION_SITE": 30,
+          "TRIAD": 80,
+          "EDGE_IN_TRIAD": 240,
+          "GAMMA": 480,
+          "EDGE_OPPOSITE": 240,
+          "PAIR": 720,
+          "WORLD_TRIAD_FACE": 80,
+          "EDGE": 120,
+          "FLAG": 480,
+          "DELTA": 480,
+          "ADJACENT_TRIADS": 120,
+          "TAU": 480,
+          "WORLD_FLAG_FACE": 480,
+          "PQ_INPUT": 1,
+          "PQ_READING": 1,
+          "PQ_FLAG_READING": 480,
+          "PQ_PAIR_READING": 720
+        },
+        "readings": {
+          "PQ_FLAG_READING": {
+            "THIS": 480
+          },
+          "PQ_PAIR_READING": {
+            "THIS": 720
+          }
+        },
+        "seeded_results": 0
+      },
+      "guard": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\execution\\this.guard.json",
+        "bytes": 1295,
+        "sha256": "CFB5F2D5CEF72D56D649F31D84F9C178F5222B701850BB80E3CB331E53D81BC0"
+      },
+      "closure": "SAME",
+      "retained_proof_bytes": "SAME",
+      "reading_results": "DERIVED_ONLY"
+    },
+    {
+      "reading": "NO",
+      "clean": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\execution\\no.clean.bin",
+          "bytes": 2097184,
+          "sha256": "D8A01CA0E643193ACE19AD327FE0ABF49A88351D4A9371ADBA192A69EDAE9935"
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 14,
+        "used_terms": "3B5BCA1C594051E515295DBE51BB382A0D5368EC1337CCA7DC5DC63D007D644C",
+        "used_facts": "6181CD3D4FF69EED5D7D4016AC1D4C62B5C9BC7225BD6C45551DD169300FAF19",
+        "counts": {
+          "BASE_EDGE": 30,
+          "HARDWARE_EDGE": 30,
+          "HARDWARE_FACE": 20,
+          "DOMAIN_NEXT": 11,
+          "PQ_INPUT": 1,
+          "BASE_TRIAD": 20,
+          "DOMAIN_ORDER": 66,
+          "REFINED_PARENT": 80,
+          "PQ_READING": 1,
+          "REFINED_TRIAD": 80,
+          "SITE": 42,
+          "SITE_ORDER": 861,
+          "WORLD_DOMAIN_SITE": 12,
+          "WORLD_JUNCTION_SITE": 30,
+          "TRIAD": 80,
+          "EDGE_IN_TRIAD": 240,
+          "GAMMA": 480,
+          "EDGE_OPPOSITE": 240,
+          "PAIR": 720,
+          "WORLD_TRIAD_FACE": 80,
+          "EDGE": 120,
+          "FLAG": 480,
+          "DELTA": 480,
+          "ADJACENT_TRIADS": 120,
+          "TAU": 480,
+          "WORLD_FLAG_FACE": 480,
+          "PQ_FLAG_READING": 480,
+          "PQ_PAIR_READING": 720
+        },
+        "readings": {
+          "PQ_FLAG_READING": {
+            "NO": 480
+          },
+          "PQ_PAIR_READING": {
+            "NO": 720
+          }
+        },
+        "seeded_results": 0
+      },
+      "prefilled": {
+        "identity": {
+          "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\execution\\no.prefilled.bin",
+          "bytes": 2097184,
+          "sha256": "148458EDE1D2BCA1CEE2F630B331E8EAA17B7868260BD5E28FE79683D05F49A2"
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 18,
+        "used_terms": "C319C86C42AFF0EE791E28175D60BBF9CEF3EA81A6950CF6EA14E302D1CFE701",
+        "used_facts": "8371217FB0DC4CF3511D54AC8A793462EB2091ED6F5E6841C74C6A4CB7C44BA5",
+        "counts": {
+          "BASE_EDGE": 30,
+          "HARDWARE_EDGE": 30,
+          "HARDWARE_FACE": 20,
+          "DOMAIN_NEXT": 11,
+          "BASE_TRIAD": 20,
+          "DOMAIN_ORDER": 66,
+          "REFINED_PARENT": 80,
+          "REFINED_TRIAD": 80,
+          "SITE": 42,
+          "SITE_ORDER": 861,
+          "WORLD_DOMAIN_SITE": 12,
+          "WORLD_JUNCTION_SITE": 30,
+          "TRIAD": 80,
+          "EDGE_IN_TRIAD": 240,
+          "GAMMA": 480,
+          "EDGE_OPPOSITE": 240,
+          "PAIR": 720,
+          "WORLD_TRIAD_FACE": 80,
+          "EDGE": 120,
+          "FLAG": 480,
+          "DELTA": 480,
+          "ADJACENT_TRIADS": 120,
+          "TAU": 480,
+          "WORLD_FLAG_FACE": 480,
+          "PQ_INPUT": 1,
+          "PQ_READING": 1,
+          "PQ_FLAG_READING": 480,
+          "PQ_PAIR_READING": 720
+        },
+        "readings": {
+          "PQ_FLAG_READING": {
+            "NO": 480
+          },
+          "PQ_PAIR_READING": {
+            "NO": 720
+          }
+        },
+        "seeded_results": 0
+      },
+      "guard": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\execution\\no.guard.json",
+        "bytes": 1295,
+        "sha256": "D133447A2BBFC3D9D40D54B7880CDD81F78B531B4B62B7D09FEF8BB2F2E47A2F"
+      },
+      "closure": "SAME",
+      "retained_proof_bytes": "SAME",
+      "reading_results": "DERIVED_ONLY"
+    }
+  ],
+  "qualification_runtime": {
+    "parent": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\law_application_resume_vector_disjoint.cu",
+      "bytes": 22417,
+      "sha256": "3BC29A3542A5032F657D7C185E234764DD299D67EEE75C36E03E5DBCAAE8BE4C"
+    },
+    "child": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_qualification_001\\prefill_small.cu",
+      "bytes": 22405,
+      "sha256": "E828C73CB72D4AAD20BBB8BBF685CA44F6599E8F351F07773C3C886C91AE1B9C"
+    },
+    "changes": [
+      {
+        "from": "constexpr int NP=1048576, NS=2048, NR=1024, NT=4194304, NF=2097152;",
+        "to": "constexpr int NP=65536, NS=2048, NR=1024, NT=32768, NF=16384;"
+      },
+      {
+        "from": "cudaDeviceSetLimit(cudaLimitStackSize,65536)",
+        "to": "cudaDeviceSetLimit(cudaLimitStackSize,8192)"
+      },
+      {
+        "from": "static_assert((2ull*PAIR_BUCKETS+1ull*NF*PAIR_SLOTS)*sizeof(int)==232ull*1024*1024);",
+        "to": "static_assert((2ull*PAIR_BUCKETS+1ull*NF*PAIR_SLOTS)*sizeof(int)==10223616ull);"
+      }
+    ],
+    "all_other_bytes": "SAME"
+  },
+  "static_device_buffers": {
+    "image": 2670608,
+    "state": 2097168,
+    "index": 12619776,
+    "total": 17387552,
+    "progress_mapped_bytes": 32,
+    "stack_bytes_per_thread": 8192,
+    "stack_context_driver_allocations": "SEPARATE; must measure before launch; no sub-1GiB assertion"
+  },
+  "active_V1": "NOT_STOPPED_OR_CHANGED",
+  "production_use": "NOT_EXECUTED; ordered V1/V2 remains separate",
+  "seal_scope": "CUSTODY_ONLY; NO_PROMOTION_OR_REPOSITORY_COMMIT"
+}

@@ -1,0 +1,2862 @@
+{
+  "scope": "BOUNDED_QUALIFICATION_SAME; ITERATIVE_V1_LAUNCHED; LIVE_OBSERVATION_NOT_READBACK",
+  "observed_utc": "2026-10-22T04:43:49.805Z",
+  "qualification": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_full\\QUALIFICATION.json",
+    "bytes": 24623,
+    "sha256": "00E7AAB2A752830F01297D580905D9B3F717057159C4E7016A1C3558931F1A70"
+  },
+  "telemetry_audit": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\qualification_iterative_full\\TELEMETRY_AUDIT.json",
+    "bytes": 9246,
+    "sha256": "DA21331D2B2B816E60AE99FAE3CD8D0C4C79557B8D2091C69EDD7C84EB770101"
+  },
+  "start": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_iterative\\V1\\stage01\\START.json",
+    "bytes": 6677,
+    "sha256": "A29738697DFDD55D938AD3C40B3A819A8E3F97E0E6F811B47B23615E31BECC41"
+  },
+  "runtime": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\iterative_collect_007\\block_iterative_full.exe",
+    "bytes": 515584,
+    "sha256": "8A739F97DC3A67DC440DE3BE5C079A7ED7FC0898D5DCFDB5AEFE6F9CE8AB2B08"
+  },
+  "world_source": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_iterative\\V1\\stage01\\image\\source.mal",
+    "bytes": 144143,
+    "sha256": "BE1E4948CEADE240BAAA1AFAA37DFF2D0EA01810A1F188EC6F9A1F402ED91A97"
+  },
+  "program_image": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_iterative\\V1\\stage01\\image\\image.bin",
+    "bytes": 41992208,
+    "sha256": "233D0009179E1B79DB0A8B170CDE81E08364DC76855A808C6BBAF0B729F057C1"
+  },
+  "prefill": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\carrier_prefill_001\\PREFILL_MANIFEST.json",
+    "bytes": 6359,
+    "sha256": "D40F88D9CA521EDF95A4FC347A309D8B23F5605F47EC164F91BB2CAD80DF4AD7"
+  },
+  "progress": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_iterative\\V1\\stage01\\image\\readback.bin.progress.jsonl",
+    "observed_complete_bytes": 22870,
+    "last_line_sha256": "223F0D0F3E68BEC110C7E173B21726C11A46C99E6D4A42B377613363E91A0266",
+    "record": {
+      "kind": "progress",
+      "sample": "latest",
+      "elapsed_ms": 123083,
+      "sequence": 1448626,
+      "epoch": 227,
+      "facts": 215796,
+      "terms": 239391,
+      "error": 0,
+      "phase": 3,
+      "rule": 330,
+      "pivot": 2,
+      "chunk": 129,
+      "candidates": 32,
+      "serial_candidate": -1
+    }
+  },
+  "progress_decoded": {
+    "phase": "COUNT_PASS",
+    "rule": "VC_HARDWARE_COVER_HEAD"
+  },
+  "last_completed_epoch": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_iterative\\V1\\stage01\\image\\readback.bin.epochs.jsonl",
+    "observed_complete_bytes": 2080237,
+    "last_line_sha256": "7C91733CD3111A576049A1C78ABC111C1ABD512CE7E0B29DAF9585079A9DFD5F",
+    "record": {
+      "kind": "epoch",
+      "boundary_index": 212,
+      "epoch": 226,
+      "facts": 196836,
+      "terms": 220291,
+      "error": 0,
+      "key_count": 198,
+      "overflow_facts": 0,
+      "counts": [
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 0,
+          "count": 30
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 4,
+          "count": 30
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 45,
+          "count": 20
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 66,
+          "count": 11
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 67,
+          "count": 20
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 72,
+          "count": 66
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 86,
+          "count": 80
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 70,
+          "count": 80
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 71,
+          "count": 42
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 73,
+          "count": 861
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 84,
+          "count": 12
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 85,
+          "count": 30
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 74,
+          "count": 80
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 75,
+          "count": 240
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 79,
+          "count": 480
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 80,
+          "count": 240
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 83,
+          "count": 720
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 87,
+          "count": 80
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 76,
+          "count": 120
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 77,
+          "count": 480
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 78,
+          "count": 480
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 81,
+          "count": 120
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 82,
+          "count": 480
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 88,
+          "count": 480
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 89,
+          "count": 12
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 123,
+          "count": 30
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 128,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 130,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 131,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 132,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 133,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 134,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 135,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 136,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 137,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 138,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 139,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 140,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 141,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 142,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 147,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 153,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 154,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 165,
+          "count": 2
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 166,
+          "count": 2
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 178,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 179,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 201,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 204,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 207,
+          "count": 2
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 208,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 214,
+          "count": 9
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 245,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 257,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 293,
+          "count": 3
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 300,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 304,
+          "count": 2
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 308,
+          "count": 2
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 327,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 328,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 329,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 330,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 331,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 332,
+          "count": 2
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 333,
+          "count": 256
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 615,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 616,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 617,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 618,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 619,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 620,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 621,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 672,
+          "count": 9
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 702,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 742,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 660,
+          "count": 4
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 106,
+          "count": 42
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 109,
+          "count": 161
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 117,
+          "count": 480
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 155,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 164,
+          "count": 1722
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 205,
+          "count": 1202
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 243,
+          "count": 8
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 258,
+          "count": 212
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 309,
+          "count": 720
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 535,
+          "count": 481
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 559,
+          "count": 120
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 564,
+          "count": 65
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 591,
+          "count": 2
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 624,
+          "count": 2
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 638,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 728,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 743,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 157,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 170,
+          "count": 720
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 244,
+          "count": 4
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 312,
+          "count": 720
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 536,
+          "count": 480
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 560,
+          "count": 120
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 158,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 537,
+          "count": 480
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 586,
+          "count": 3818
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 626,
+          "count": 2
+        },
+        {
+          "root_symbol": 3,
+          "arity": 6,
+          "tag_symbol": 159,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 538,
+          "count": 42
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 539,
+          "count": 120
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 540,
+          "count": 80
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 160,
+          "count": 12
+        },
+        {
+          "root_symbol": 3,
+          "arity": 6,
+          "tag_symbol": 161,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 543,
+          "count": 167
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 546,
+          "count": 4373
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 554,
+          "count": 240
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 555,
+          "count": 240
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 580,
+          "count": 240
+        },
+        {
+          "root_symbol": 3,
+          "arity": 6,
+          "tag_symbol": 162,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 544,
+          "count": 14
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 581,
+          "count": 240
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 111,
+          "count": 161
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 163,
+          "count": 480
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 169,
+          "count": 720
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 545,
+          "count": 182
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 172,
+          "count": 12
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 173,
+          "count": 720
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 177,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 113,
+          "count": 120
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 115,
+          "count": 80
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 116,
+          "count": 480
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 120,
+          "count": 3120
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 547,
+          "count": 4206
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 209,
+          "count": 1680
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 210,
+          "count": 2479
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 211,
+          "count": 1961
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 549,
+          "count": 1722
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 212,
+          "count": 10005
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 582,
+          "count": 1440
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 609,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 720,
+          "count": 6247
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 226,
+          "count": 720
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 227,
+          "count": 6187
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 721,
+          "count": 1192
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 229,
+          "count": 125
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 722,
+          "count": 39
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 230,
+          "count": 207
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 231,
+          "count": 207
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 232,
+          "count": 125
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 723,
+          "count": 13
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 724,
+          "count": 513
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 640,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 725,
+          "count": 2964
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 726,
+          "count": 720
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 541,
+          "count": 12
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 542,
+          "count": 12
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 548,
+          "count": 132
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 583,
+          "count": 480
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 625,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 550,
+          "count": 204
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 622,
+          "count": 1872
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 627,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 628,
+          "count": 480
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 629,
+          "count": 959
+        },
+        {
+          "root_symbol": 69,
+          "arity": 1,
+          "tag_symbol": 632,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 551,
+          "count": 204
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 225,
+          "count": 146
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 630,
+          "count": 138
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 733,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 552,
+          "count": 30
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 623,
+          "count": 1857
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 553,
+          "count": 60
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 556,
+          "count": 120
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 557,
+          "count": 120
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 558,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 5,
+          "tag_symbol": 561,
+          "count": 120
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 563,
+          "count": 1440
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 567,
+          "count": 1560
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 568,
+          "count": 6144
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 569,
+          "count": 6144
+        },
+        {
+          "root_symbol": 69,
+          "arity": 1,
+          "tag_symbol": 587,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 224,
+          "count": 2
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 240,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 233,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 3,
+          "tag_symbol": 238,
+          "count": 2
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 247,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 234,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 235,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 236,
+          "count": 1
+        },
+        {
+          "root_symbol": 69,
+          "arity": 2,
+          "tag_symbol": 237,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 248,
+          "count": 1
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 571,
+          "count": 120
+        },
+        {
+          "root_symbol": 3,
+          "arity": 3,
+          "tag_symbol": 572,
+          "count": 1550
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 575,
+          "count": 600
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 588,
+          "count": 340
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 573,
+          "count": 1430
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 574,
+          "count": 6920
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 576,
+          "count": 4750
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 577,
+          "count": 11850
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 578,
+          "count": 7640
+        },
+        {
+          "root_symbol": 3,
+          "arity": 4,
+          "tag_symbol": 579,
+          "count": 39360
+        },
+        {
+          "root_symbol": 3,
+          "arity": 6,
+          "tag_symbol": 584,
+          "count": 28200
+        }
+      ]
+    }
+  },
+  "predicate_counts": [
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 0,
+      "count": 30,
+      "root": "GOES_WITH",
+      "tag": "BASE_EDGE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 4,
+      "count": 30,
+      "root": "GOES_WITH",
+      "tag": "HARDWARE_EDGE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 45,
+      "count": 20,
+      "root": "GOES_WITH",
+      "tag": "HARDWARE_FACE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 66,
+      "count": 11,
+      "root": "GOES_WITH",
+      "tag": "DOMAIN_NEXT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 67,
+      "count": 20,
+      "root": "THIS",
+      "tag": "BASE_TRIAD"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 72,
+      "count": 66,
+      "root": "GOES_WITH",
+      "tag": "DOMAIN_ORDER"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 86,
+      "count": 80,
+      "root": "GOES_WITH",
+      "tag": "REFINED_PARENT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 70,
+      "count": 80,
+      "root": "THIS",
+      "tag": "REFINED_TRIAD"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 71,
+      "count": 42,
+      "root": "THIS",
+      "tag": "SITE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 73,
+      "count": 861,
+      "root": "GOES_WITH",
+      "tag": "SITE_ORDER"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 84,
+      "count": 12,
+      "root": "GOES_WITH",
+      "tag": "WORLD_DOMAIN_SITE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 85,
+      "count": 30,
+      "root": "GOES_WITH",
+      "tag": "WORLD_JUNCTION_SITE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 74,
+      "count": 80,
+      "root": "THIS",
+      "tag": "TRIAD"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 75,
+      "count": 240,
+      "root": "GOES_WITH",
+      "tag": "EDGE_IN_TRIAD"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 79,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "GAMMA"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 80,
+      "count": 240,
+      "root": "GOES_WITH",
+      "tag": "EDGE_OPPOSITE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 83,
+      "count": 720,
+      "root": "GOES_WITH",
+      "tag": "PAIR"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 87,
+      "count": 80,
+      "root": "GOES_WITH",
+      "tag": "WORLD_TRIAD_FACE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 76,
+      "count": 120,
+      "root": "THIS",
+      "tag": "EDGE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 77,
+      "count": 480,
+      "root": "THIS",
+      "tag": "FLAG"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 78,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "DELTA"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 81,
+      "count": 120,
+      "root": "GOES_WITH",
+      "tag": "ADJACENT_TRIADS"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 82,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "TAU"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 88,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "WORLD_FLAG_FACE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 89,
+      "count": 12,
+      "root": "GOES_WITH",
+      "tag": "DOMAIN_TEXT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 123,
+      "count": 30,
+      "root": "GOES_WITH",
+      "tag": "HEADER_JUNCTION"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 128,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_DIGEST"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 130,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_SIZE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 131,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_MAGIC"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 132,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_VERSION"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 133,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_KIND"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 134,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_PHASE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 135,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_HEADER_BYTES"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 136,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_PAYLOAD_BYTES"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 137,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_CRC"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 138,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_COMPUTED_CRC"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 139,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_MACHINE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 140,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_TRANSITION"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 141,
+      "count": 1,
+      "root": "THIS",
+      "tag": "FRAME_JUNCTION"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 142,
+      "count": 1,
+      "root": "THIS",
+      "tag": "CAPTURE_RESPONSE_DIGEST"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 147,
+      "count": 1,
+      "root": "THIS",
+      "tag": "CAPTURE_FIRST_TRANSITION"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 153,
+      "count": 1,
+      "root": "THIS",
+      "tag": "CAPTURE_TERMINAL"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 154,
+      "count": 1,
+      "root": "THIS",
+      "tag": "RECORDED_CLOSURE_TERMINAL"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 165,
+      "count": 2,
+      "root": "GOES_WITH",
+      "tag": "MARKER_TEXT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 166,
+      "count": 2,
+      "root": "GOES_WITH",
+      "tag": "AGREEMENT_TEXT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 178,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GSC_FIELD_INPUT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 179,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GSC_WITNESS_INPUT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 201,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GSC_HASH_INPUT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 204,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GSC_LINK_INPUT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 207,
+      "count": 2,
+      "root": "THIS",
+      "tag": "GSC_FIELD_KIND"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 208,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GSC_PAIR_KIND"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 214,
+      "count": 9,
+      "root": "GOES_WITH",
+      "tag": "GSC_SPAN_DOUBLE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 245,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GSC_EXPECTED_PREDECESSOR_HASH"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 257,
+      "count": 1,
+      "root": "THIS",
+      "tag": "DG_FIELD_INPUT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 293,
+      "count": 3,
+      "root": "GOES_WITH",
+      "tag": "SF_RANK_ROLE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 300,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "SF_AGREEMENT_TYPE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 304,
+      "count": 2,
+      "root": "GOES_WITH",
+      "tag": "SF_PORT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 308,
+      "count": 2,
+      "root": "GOES_WITH",
+      "tag": "SF_CAPABILITY"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 327,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VC_INPUT_FIELD"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 328,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VC_INPUT_KAPPA"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 329,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VC_HW_DOMAINS"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 330,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VC_HW_EDGES"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 331,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VC_HW_FACES"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 332,
+      "count": 2,
+      "root": "GOES_WITH",
+      "tag": "VC_READING"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 333,
+      "count": 256,
+      "root": "GOES_WITH",
+      "tag": "VC_BYTE_BITS"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 615,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VD_INPUT_E0"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 616,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VD_INPUT_ENTITY"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 617,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VD_INPUT_KIND"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 618,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VD_INPUT_TARGET"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 619,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VD_INPUT_LIFT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 620,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VD_INPUT_ENTITIES"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 621,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VD_INPUT_CHAIN"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 672,
+      "count": 9,
+      "root": "GOES_WITH",
+      "tag": "VD_DIGIT_SUCCESSOR"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 702,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VO_PAIR_INVENTORY"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 742,
+      "count": 1,
+      "root": "THIS",
+      "tag": "HASH_BATCH_RESPONSES"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 660,
+      "count": 4,
+      "root": "GOES_WITH",
+      "tag": "JTP_SAME_RESULT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 106,
+      "count": 42,
+      "root": "GOES_WITH",
+      "tag": "SITE_TEXT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 109,
+      "count": 161,
+      "root": "THIS",
+      "tag": "BYTE_JOIN"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 117,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "ARCHIVED_PREDECESSOR_FIELD"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 155,
+      "count": 1,
+      "root": "THIS",
+      "tag": "PERSISTENCE_REPLY_GRAMMAR"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 164,
+      "count": 1722,
+      "root": "GOES_WITH",
+      "tag": "DISTINCT_SITE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 205,
+      "count": 1202,
+      "root": "GOES_WITH",
+      "tag": "GSC_ROWS"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 243,
+      "count": 8,
+      "root": "THIS",
+      "tag": "GSC_HASH_ROWS"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 258,
+      "count": 212,
+      "root": "THIS",
+      "tag": "DG_ROWS"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 309,
+      "count": 720,
+      "root": "GOES_WITH",
+      "tag": "SF_COMPARATOR"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 535,
+      "count": 481,
+      "root": "THIS",
+      "tag": "VC_ROWS"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 559,
+      "count": 120,
+      "root": "GOES_WITH",
+      "tag": "VC_HW_FACE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 564,
+      "count": 65,
+      "root": "GOES_WITH",
+      "tag": "VC_INVENTORY"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 591,
+      "count": 2,
+      "root": "GOES_WITH",
+      "tag": "VC_FLAG_ROOT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 624,
+      "count": 2,
+      "root": "THIS",
+      "tag": "VD_E0_ROWS"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 638,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "VD_SELECTED_OBJECT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 728,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VO_PAIR_ROWS"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 743,
+      "count": 1,
+      "root": "THIS",
+      "tag": "HASH_BATCH_ROWS"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 157,
+      "count": 1,
+      "root": "THIS",
+      "tag": "ARCHIVED_FRAME_CUSTODY"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 170,
+      "count": 720,
+      "root": "GOES_WITH",
+      "tag": "PREDECESSOR_GLUING"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 244,
+      "count": 4,
+      "root": "GOES_WITH",
+      "tag": "GSC_HASH_RESPONSE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 312,
+      "count": 720,
+      "root": "GOES_WITH",
+      "tag": "SF_OCCURRENCE_SEATING"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 536,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_FLAG"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 560,
+      "count": 120,
+      "root": "GOES_WITH",
+      "tag": "VC_HW_OPPOSITE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 158,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "ARCHIVED_JTP_LOCUS"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 537,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_FLAG_PARTS"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 586,
+      "count": 3818,
+      "root": "GOES_WITH",
+      "tag": "VC_REFERENCE_LENGTH"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 626,
+      "count": 2,
+      "root": "THIS",
+      "tag": "VD_E0_COMPLETE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 6,
+      "tag_symbol": 159,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "ARCHIVED_JTP_SITE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 538,
+      "count": 42,
+      "root": "THIS",
+      "tag": "VC_REF_SITE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 539,
+      "count": 120,
+      "root": "THIS",
+      "tag": "VC_REF_EDGE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 540,
+      "count": 80,
+      "root": "THIS",
+      "tag": "VC_REF_TRIAD"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 160,
+      "count": 12,
+      "root": "GOES_WITH",
+      "tag": "ARCHIVED_LOCUS_FLAG_SUPPORT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 6,
+      "tag_symbol": 161,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "ARCHIVED_PHYSICAL_CLOSED_LOCUS"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 543,
+      "count": 167,
+      "root": "THIS",
+      "tag": "VC_BYTES"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 546,
+      "count": 4373,
+      "root": "THIS",
+      "tag": "VC_TEXT_REQUEST"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 554,
+      "count": 240,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_EDGE_MEMBER"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 555,
+      "count": 240,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_TRIAD_MEMBER"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 580,
+      "count": 240,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_EDGE_OTHER"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 6,
+      "tag_symbol": 162,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "GENESIS_EVENT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 544,
+      "count": 14,
+      "root": "THIS",
+      "tag": "VC_BYTE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 581,
+      "count": 240,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_EDGE_OPPOSITE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 111,
+      "count": 161,
+      "root": "GOES_WITH",
+      "tag": "BYTE_JOINED"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 163,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "CURRENT_FIELD"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 169,
+      "count": 720,
+      "root": "GOES_WITH",
+      "tag": "CURRENT_GLUING"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 545,
+      "count": 182,
+      "root": "GOES_WITH",
+      "tag": "VC_BYTE_DIFFER"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 172,
+      "count": 12,
+      "root": "GOES_WITH",
+      "tag": "CURRENT_WALL"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 173,
+      "count": 720,
+      "root": "GOES_WITH",
+      "tag": "GENESIS_RECEIPT_PAIR"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 177,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GENESIS_RECEIPT_READING"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 113,
+      "count": 120,
+      "root": "GOES_WITH",
+      "tag": "EDGE_JSON"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 115,
+      "count": 80,
+      "root": "GOES_WITH",
+      "tag": "TRIAD_JSON"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 116,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "FLAG_JSON"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 120,
+      "count": 3120,
+      "root": "THIS",
+      "tag": "OBSERVATION_ROW"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 547,
+      "count": 4206,
+      "root": "GOES_WITH",
+      "tag": "VC_TEXT_DIFFER"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 209,
+      "count": 1680,
+      "root": "GOES_WITH",
+      "tag": "GSC_ROW_KEY"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 210,
+      "count": 2479,
+      "root": "THIS",
+      "tag": "GSC_ORDER_REQUEST"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 211,
+      "count": 1961,
+      "root": "GOES_WITH",
+      "tag": "GSC_ORDERED"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 549,
+      "count": 1722,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_SITE_DISTINCT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 212,
+      "count": 10005,
+      "root": "GOES_WITH",
+      "tag": "GSC_ROW_SPAN"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 582,
+      "count": 1440,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_MOVE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 609,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VC_FAMILY_SUFFIX"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 720,
+      "count": 6247,
+      "root": "THIS",
+      "tag": "VO_ORDER_REQUEST"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 226,
+      "count": 720,
+      "root": "GOES_WITH",
+      "tag": "GSC_CHANGE_ROW"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 227,
+      "count": 6187,
+      "root": "GOES_WITH",
+      "tag": "GSC_CHANGE_SPAN"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 721,
+      "count": 1192,
+      "root": "THIS",
+      "tag": "VO_TEXT_REQUEST"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 229,
+      "count": 125,
+      "root": "THIS",
+      "tag": "GSC_JOIN_REQUEST"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 722,
+      "count": 39,
+      "root": "THIS",
+      "tag": "VO_BYTE_REQUEST"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 230,
+      "count": 207,
+      "root": "THIS",
+      "tag": "GSC_APPEND_REQUEST"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 231,
+      "count": 207,
+      "root": "GOES_WITH",
+      "tag": "GSC_APPEND"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 232,
+      "count": 125,
+      "root": "GOES_WITH",
+      "tag": "GSC_JOIN"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 723,
+      "count": 13,
+      "root": "GOES_WITH",
+      "tag": "VO_BYTE_LESS"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 724,
+      "count": 513,
+      "root": "GOES_WITH",
+      "tag": "VO_TEXT_LESS"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 640,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "VD_REFERENCE_TARGET"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 725,
+      "count": 2964,
+      "root": "GOES_WITH",
+      "tag": "VO_ORDERED"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 726,
+      "count": 720,
+      "root": "GOES_WITH",
+      "tag": "VO_PAIR"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 541,
+      "count": 12,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_DOMAIN_SITE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 542,
+      "count": 12,
+      "root": "THIS",
+      "tag": "VC_REF_DOMAIN"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 548,
+      "count": 132,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_DISTINCT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 583,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_MOVES"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 625,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "VD_REFERENCE_ENTITY"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 550,
+      "count": 204,
+      "root": "THIS",
+      "tag": "VC_JOIN_REQUEST"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 622,
+      "count": 1872,
+      "root": "THIS",
+      "tag": "VD_DIFFER_REQUEST"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 627,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VD_REFERENCE_GENESIS_INPUTS"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 628,
+      "count": 480,
+      "root": "GOES_WITH",
+      "tag": "VD_REFERENCE_GENESIS_FIELD"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 629,
+      "count": 959,
+      "root": "THIS",
+      "tag": "VD_EMPTY_SCAN"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 1,
+      "tag_symbol": 632,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VD_INITIAL_ENTITIES_MATCH"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 551,
+      "count": 204,
+      "root": "GOES_WITH",
+      "tag": "VC_JOINED"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 225,
+      "count": 146,
+      "root": "GOES_WITH",
+      "tag": "GSC_GROUND_SEQUENCE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 630,
+      "count": 138,
+      "root": "THIS",
+      "tag": "VD_INITIAL_SUFFIX"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 733,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VO_PAIR_COVER_SUFFIX"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 552,
+      "count": 30,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_MIDPOINT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 623,
+      "count": 1857,
+      "root": "GOES_WITH",
+      "tag": "VD_DIFFER"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 553,
+      "count": 60,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_CORRIDOR"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 556,
+      "count": 120,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_BASE_FACE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 557,
+      "count": 120,
+      "root": "GOES_WITH",
+      "tag": "VC_REF_OPPOSITE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 558,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "VC_REFERENCE_ANCHOR"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 5,
+      "tag_symbol": 561,
+      "count": 120,
+      "root": "GOES_WITH",
+      "tag": "VC_HW_ANCHOR"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 563,
+      "count": 1440,
+      "root": "GOES_WITH",
+      "tag": "VC_DOMAIN_CANDIDATE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 567,
+      "count": 1560,
+      "root": "GOES_WITH",
+      "tag": "VC_ASSIGN"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 568,
+      "count": 6144,
+      "root": "THIS",
+      "tag": "VC_NOT_MEMBER_REQUEST"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 569,
+      "count": 6144,
+      "root": "GOES_WITH",
+      "tag": "VC_NOT_MEMBER"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 1,
+      "tag_symbol": 587,
+      "count": 1,
+      "root": "THIS",
+      "tag": "VC_REFERENCE_FULL_LENGTH"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 224,
+      "count": 2,
+      "root": "GOES_WITH",
+      "tag": "GSC_COMPLETE"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 240,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GSC_PAIR_OBJECT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 233,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "GSC_CHANGE_PREFIX"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 3,
+      "tag_symbol": 238,
+      "count": 2,
+      "root": "THIS",
+      "tag": "HASH_JSON_REQUEST"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 247,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "GSC_PAIR_HASH"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 234,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "GSC_CHANGE_PARTS"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 235,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GSC_CHANGE_LISTS"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 236,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GSC_RECEIPT_OBJECT"
+    },
+    {
+      "root_symbol": 69,
+      "arity": 2,
+      "tag_symbol": 237,
+      "count": 1,
+      "root": "THIS",
+      "tag": "GSC_RECEIPT_READING"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 248,
+      "count": 1,
+      "root": "GOES_WITH",
+      "tag": "GSC_RECEIPT_HASH"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 571,
+      "count": 120,
+      "root": "GOES_WITH",
+      "tag": "VC_ASSIGNMENT"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 3,
+      "tag_symbol": 572,
+      "count": 1550,
+      "root": "GOES_WITH",
+      "tag": "VC_BINDING_ROWS"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 575,
+      "count": 600,
+      "root": "GOES_WITH",
+      "tag": "VC_COVER_SUFFIX"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 588,
+      "count": 340,
+      "root": "GOES_WITH",
+      "tag": "VC_FLAG_COVER_SUFFIX"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 573,
+      "count": 1430,
+      "root": "GOES_WITH",
+      "tag": "VC_ASSIGN_DOMAIN"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 574,
+      "count": 6920,
+      "root": "GOES_WITH",
+      "tag": "VC_COVER"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 576,
+      "count": 4750,
+      "root": "GOES_WITH",
+      "tag": "VC_ASSIGN_SITE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 577,
+      "count": 11850,
+      "root": "GOES_WITH",
+      "tag": "VC_ASSIGN_EDGE"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 578,
+      "count": 7640,
+      "root": "GOES_WITH",
+      "tag": "VC_ASSIGN_TRIAD"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 4,
+      "tag_symbol": 579,
+      "count": 39360,
+      "root": "GOES_WITH",
+      "tag": "VC_ASSIGN_FLAG"
+    },
+    {
+      "root_symbol": 3,
+      "arity": 6,
+      "tag_symbol": 584,
+      "count": 28200,
+      "root": "GOES_WITH",
+      "tag": "VC_MOVE_COMMUTATION"
+    }
+  ],
+  "serial_run": "LEFT_RUNNING_UNCHANGED; SERIAL_PREDICATE_COUNTS_NOT_EXPOSED",
+  "parallel_readback": "NOT_EMITTED",
+  "conform": "NOT_RUN",
+  "pairwise_production_closure_comparison": "NOT_RUN",
+  "source_laws": "UNCHANGED",
+  "promoted_inputs_expectations": "UNCHANGED",
+  "repository_action": "NONE"
+}

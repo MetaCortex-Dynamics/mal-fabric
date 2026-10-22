@@ -1,0 +1,3 @@
+// Additive generic hash custody; prior source/input seeds remain present.
+@readonly input HASH_STAGE_07 := "hb07:";
+law HASH_STAGE_07 := IF THIS(HASH_STAGE_07,ARRAY(rows)) THEN THIS(HASH_BATCH_ROWS,rows);

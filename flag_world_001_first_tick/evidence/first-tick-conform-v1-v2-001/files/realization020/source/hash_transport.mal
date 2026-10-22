@@ -1,0 +1,6 @@
+// Generic source-bound SHA responses. A response alone discharges no world law.
+@readonly input HASH_BATCH_RESPONSES := "hash_batch:";
+law HASH_BATCH_BEGIN := IF THIS(HASH_BATCH_RESPONSES,ARRAY(rows)) THEN THIS(HASH_BATCH_ROWS,rows);
+law HASH_BATCH_TAIL := IF THIS(HASH_BATCH_ROWS,CONS(row,tail)) THEN THIS(HASH_BATCH_ROWS,tail);
+law HASH_BATCH_BLOCK := IF THIS(HASH_BATCH_ROWS,CONS(a,CONS(b,CONS(c,CONS(d,CONS(e,CONS(f,CONS(g,CONS(h,tail))))))))) THEN THIS(HASH_BATCH_ROWS,tail);
+law HASH_BATCH_RESPONSE := IF THIS(HASH_BATCH_ROWS,CONS(ARRAY(CONS(subject,CONS(digest,NIL))),tail)) THEN GOES_WITH(GPU_HASH_RESPONSE,subject,digest);
