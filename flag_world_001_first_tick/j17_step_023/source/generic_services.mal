@@ -1,0 +1,7 @@
+// Generic source-requested hash/sort response transport, not world decisions.
+law J23_SERVICE_TAIL := IF THIS(J23_SERVICE_ROWS,CONS(row,tail))
+ THEN THIS(J23_SERVICE_ROWS,tail);
+law J23_SERVICE_HASH := IF THIS(J23_SERVICE_ROWS,CONS(ARRAY(CONS("HASH",CONS(subject,CONS(digest,NIL)))),tail))
+ THEN GOES_WITH(GPU_HASH_RESPONSE,subject,digest);
+law J23_SERVICE_SORT := IF THIS(J23_SERVICE_ROWS,CONS(ARRAY(CONS("SORT",CONS(subject,CONS(key,CONS(result,NIL))))),tail))
+ THEN GOES_WITH(GPU_SORT_RESPONSE,subject,key,result);

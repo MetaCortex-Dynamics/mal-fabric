@@ -1,0 +1,177 @@
+{
+  "scope": "GENERIC_RUNTIME_CAPACITY_QUALIFICATION_INPUTS",
+  "archive_manifest": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\CUSTODY_MANIFEST.json",
+    "bytes": 917815,
+    "sha256": "D3B4603F7E466A7BC1779DC8F37CFB23528B44B46382D4E3A90C0CEE6C3AE051"
+  },
+  "qualified_baseline": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\realization020\\parallel_prefill_002\\qualification_iterative_full\\QUALIFICATION.json",
+    "bytes": 24623,
+    "sha256": "00E7AAB2A752830F01297D580905D9B3F717057159C4E7016A1C3558931F1A70"
+  },
+  "runtime": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+    "bytes": 521216,
+    "sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06"
+  },
+  "source": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.cu",
+    "bytes": 38563,
+    "sha256": "F055FFCE4AA8F536CE9BC7AEA7B1235887371D2855C9312F420FB5FEFB1D5ECE"
+  },
+  "guard": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\prefill_guard_runtime.mjs",
+    "bytes": 11686,
+    "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+  },
+  "telemetry": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\telemetry.inc",
+    "bytes": 7783,
+    "sha256": "E7033E77BB0F27343AF16277536D7441D26775A2475745BF890B5C7F59ECE81D"
+  },
+  "driver": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualify_runtime.mjs",
+    "bytes": 11597,
+    "sha256": "DD0EC4E1DE377F4FF26E8CE9500137A9AA81127A3A84DF6AC670B3D3B32CE8DD"
+  },
+  "materialized": [
+    {
+      "logical": "realization020/carrier_prefill_001/source.mal",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\source.mal",
+      "bytes": 13197,
+      "sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F"
+    },
+    {
+      "logical": "realization020/carrier_prefill_001/source-map.json",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\source-map.json",
+      "bytes": 168255,
+      "sha256": "616A81F266115C37BDD3316A35F7BA068A79FEE978D7E27C114B55C1C2BFD4D1"
+    },
+    {
+      "logical": "realization020/carrier_prefill_001/image.bin",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\image.bin",
+      "bytes": 41992208,
+      "sha256": "7509314A34D0607B62F83D1AA048802B1108E9CA58A342908CF3603217EB5399"
+    },
+    {
+      "logical": "realization020/prefill_qualification_001/this_lowered/source.mal",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\this\\source.mal",
+      "bytes": 13851,
+      "sha256": "1F750E0065C94206E46F1938F694CF24942AFD5E179A3CF3CCE367B192AA6C71"
+    },
+    {
+      "logical": "realization020/prefill_qualification_001/this_lowered/source-map.json",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\this\\source-map.json",
+      "bytes": 178406,
+      "sha256": "B687CEF183812B8EED2C49CF4AF4862D6D3058A56564A18BBCA1278AA054441A"
+    },
+    {
+      "logical": "realization020/prefill_qualification_001/this_lowered/image.bin",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\this\\image.bin",
+      "bytes": 41992208,
+      "sha256": "4EB54B2B984055BC1024F128BFC5C22250A204B7EE9397407629D25704F0A9E6"
+    },
+    {
+      "logical": "realization020/prefill_qualification_001/no_lowered/source.mal",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\no\\source.mal",
+      "bytes": 13851,
+      "sha256": "1F750E0065C94206E46F1938F694CF24942AFD5E179A3CF3CCE367B192AA6C71"
+    },
+    {
+      "logical": "realization020/prefill_qualification_001/no_lowered/source-map.json",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\no\\source-map.json",
+      "bytes": 178060,
+      "sha256": "AC6635FF354B6F36AF35687B713F7FE4963B87BD05535925EBAA5465719CEA4F"
+    },
+    {
+      "logical": "realization020/prefill_qualification_001/no_lowered/image.bin",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\no\\image.bin",
+      "bytes": 41992208,
+      "sha256": "91FEF169F27716A8471C28953A7BDDE2B2A46D0EC017D793710D7C8C32BE1BA9"
+    },
+    {
+      "logical": "realization020/block_replay_qualification_inputs_001/overflow/source.mal",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\overflow\\source.mal",
+      "bytes": 5826,
+      "sha256": "D91902FF07EDCB8B651A28DD6C8926A66FD212C8B4F964598AA0625B92623C84"
+    },
+    {
+      "logical": "realization020/block_replay_qualification_inputs_001/overflow/source-map.json",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\overflow\\source-map.json",
+      "bytes": 139351,
+      "sha256": "9A649B3CDDF981456BACAC64F43ECC298CE3B98DDE2A55E259899DE6DE891418"
+    },
+    {
+      "logical": "realization020/block_replay_qualification_inputs_001/overflow/image.bin",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\overflow\\image.bin",
+      "bytes": 41992208,
+      "sha256": "CBA8E556C042C9420A0FA01FA38E0CCB2EDDA0E98E7E4D1D0773B41A6CDD27DC"
+    },
+    {
+      "logical": "realization020/block_replay_qualification_inputs_001/deep_antecedent/source.mal",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\deep_antecedent\\source.mal",
+      "bytes": 836,
+      "sha256": "FEF79E511B936A3D7353F8D722F280A6E0A3B07D00FF73DEE765442FD3EF22E9"
+    },
+    {
+      "logical": "realization020/block_replay_qualification_inputs_001/deep_antecedent/source-map.json",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\deep_antecedent\\source-map.json",
+      "bytes": 15754,
+      "sha256": "C2CFFA3E139C946B144405DE7163C54913AB869E83639519DDA663BC266B6FA7"
+    },
+    {
+      "logical": "realization020/block_replay_qualification_inputs_001/deep_antecedent/image.bin",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\deep_antecedent\\image.bin",
+      "bytes": 41992208,
+      "sha256": "58658377C06C233922F740D4B7420AE7719888B87B2FD9C1634307B64A967F62"
+    },
+    {
+      "logical": "realization020/block_replay_qualification_inputs_001/deep_consequent/source.mal",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\deep_consequent\\source.mal",
+      "bytes": 609,
+      "sha256": "464B172F2A0459B64BB0465198E4791F5242E5B31EF105FA6904BE3207DA3EB5"
+    },
+    {
+      "logical": "realization020/block_replay_qualification_inputs_001/deep_consequent/source-map.json",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\deep_consequent\\source-map.json",
+      "bytes": 9453,
+      "sha256": "7E18C7FF2D9A9D62D23C776AEA41971D15246D67B8F5B252B1C894E38CF82AA1"
+    },
+    {
+      "logical": "realization020/block_replay_qualification_inputs_001/deep_consequent/image.bin",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\deep_consequent\\image.bin",
+      "bytes": 41992208,
+      "sha256": "31D1E8F7DC3B860D79845CAEA911CC2AFA297B80ED8DDFD99BDB4F6202B9F9CD"
+    },
+    {
+      "logical": "realization020/carrier_prefill_001/readback.bin",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\readback.bin",
+      "bytes": 268435488,
+      "sha256": "ECED361A61D4D9FA514DE0E6E2EE3ECFFC975F2BFE4C68D960DEED2E3BE08D8B"
+    }
+  ],
+  "j17_baseline": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\source.mal",
+      "bytes": 54988,
+      "sha256": "2B408B8B0621457FBFB2640C575D1F3D6AC8967FA3A5F4457E3AC136D686F446"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\source-map.json",
+      "bytes": 3829576,
+      "sha256": "AF60CF482E5D20F6B25C40808210707E08A501710CB1BAC984F4008D0856C97A"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\image.bin",
+      "bytes": 41992208,
+      "sha256": "9FF4383DF8A4E462042A8BE9E669AF31AF771C1FCA7A115CD5A9CD3521B6EAD2"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\readback.bin",
+      "bytes": 268435488,
+      "sha256": "159567EEB9DB979FE75B3C69DA7749DDA3D7B4AD714F87A5FF1A73242F12A7D4"
+    }
+  ],
+  "gpu_execution": "NOT_RUN"
+}

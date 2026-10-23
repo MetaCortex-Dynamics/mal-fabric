@@ -1,0 +1,155 @@
+// TASK_CODEX_J17_SECOND_STEP_023: bounded, source-owned V3.3 execution.
+// V3.3 5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0.
+// Immutable snapshot -> evaluate -> propagate -> govern -> simultaneous return.
+// execution_v0_3_0/execution_kernel.py:711-728: complete arrivals to a
+// non-EMPTY snapshot target stay in its PartialInputBuffer. They are NOT a
+// second same-tick evaluation, pending admission, or a FabricEdit.
+// This branch accepts the source-selected complete program only. All eighteen
+// payloads begin ADMITTED from g1, and the explicit ingress auxiliary state
+// must have no prior routes, pending admissions, buffers, obligations, receipts.
+// The comparator remains a sink. A completed payload is not discharged here.
+// Field fixed point is NOT fabric-state fixed point: payloads and custody move.
+// Hashes and canonical JSON are generic observation primitives, not world law.
+
+@propose seed S23_RUNTIME_CONTRACT := {
+ GOES_WITH(S23_READING_JSON,NO,"NO"),
+ GOES_WITH(S23_READING_JSON,THIS,"THIS"),
+ GOES_WITH(S23_READING_JSON,SAME,"SAME"),
+ GOES_WITH(S23_READING_JSON,NOT_SAME,"NOT_SAME"),
+ GOES_WITH(S23_COMPARE,NO,NO,SAME),
+ GOES_WITH(S23_COMPARE,THIS,THIS,SAME),
+ GOES_WITH(S23_COMPARE,NO,THIS,NOT_SAME),
+ GOES_WITH(S23_COMPARE,THIS,NO,NOT_SAME),
+ GOES_WITH(S23_ROLE_JSON,LEFT,"LEFT"),
+ GOES_WITH(S23_ROLE_JSON,RIGHT,"RIGHT"),
+ THIS(S23_AUTHORITY_JSON,OBJECT(CONS(MEMBER("decisions",ARRAY(NIL)),CONS(MEMBER("imported_v3_2_kernel_sha256","89105692eee04580db1c98556b51d0644292b7fb7b42fa4f41ebd381cde256dc"),NIL))))
+};
+
+// All stages are under the complete-program eight-condition DRC witness.
+law S23_OPEN := IF GOES_WITH(J23_PROGRAM,p,cells,routes), GOES_WITH(J23_PROGRAM_DRC,p,IF_THEN,proof), GOES_WITH(J23_SNAPSHOT_AUX,p,GENESIS,AUX(NIL,NIL,NIL,NIL,NIL),stamp), THIS(COMMITTED_GENESIS,g1)
+ THEN GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1);
+law S23_AUTHORITY_REQUEST := IF THIS(S23_AUTHORITY_JSON,j)
+ THEN GOES_WITH(GPU_HASH_REQUEST,S23_AUTHORITY,S23_AUTHORITY,j);
+law S23_AUTHORITY_BOUND := IF THIS(S23_AUTHORITY_JSON,j), GOES_WITH(GPU_HASH_RESPONSE,j,h)
+ THEN THIS(S23_AUTHORITY_DIGEST,h);
+
+// Source-bound snapshot frames. The InputValue source_receipt is g1's link;
+// no value produced by this tick can satisfy a snapshot-frame antecedent.
+law S23_MARKER_SNAPSHOT_VALUE := IF GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1), GOES_WITH(J23_MARKER_MEMBER,p,m,f), GOES_WITH(SF_SNAPSHOT_FIELD,GENESIS,f,r), GOES_WITH(S23_READING_JSON,r,j), GOES_WITH(J23_CELL_ID,m,id), GOES_WITH(GSC_LINK_HASH,record,h)
+ THEN GOES_WITH(S23_INPUT_REQUEST,SNAPSHOT_MARKER(p,m),id,j,h);
+law S23_INPUT_JSON := IF GOES_WITH(S23_INPUT_REQUEST,key,route,value,receipt)
+ THEN GOES_WITH(S23_INPUT_JSON,key,OBJECT(CONS(MEMBER("payload_type","identity/essence"),CONS(MEMBER("route_id",route),CONS(MEMBER("source_receipt",receipt),CONS(MEMBER("value",value),NIL))))));
+law S23_MARKER_SNAPSHOT_FRAME := IF GOES_WITH(J23_MARKER_MEMBER,p,m,f), GOES_WITH(S23_INPUT_JSON,SNAPSHOT_MARKER(p,m),value), GOES_WITH(SF_SNAPSHOT_FIELD,GENESIS,f,r)
+ THEN GOES_WITH(S23_SNAPSHOT_FRAME,p,m,OBJECT(CONS(MEMBER("VALUE",ARRAY(CONS(value,NIL))),NIL)),r);
+law S23_COMPARATOR_LEFT_VALUE := IF GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1), GOES_WITH(J23_JOIN,p,c,l,lr,r,rr), GOES_WITH(J23_COMPARATOR_MEMBER,p,c,f,g), GOES_WITH(SF_SNAPSHOT_FIELD,GENESIS,f,v), GOES_WITH(S23_READING_JSON,v,j), GOES_WITH(GSC_LINK_HASH,record,h)
+ THEN GOES_WITH(S23_INPUT_REQUEST,SNAPSHOT_LEFT(p,c),lr,j,h);
+law S23_COMPARATOR_RIGHT_VALUE := IF GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1), GOES_WITH(J23_JOIN,p,c,l,lr,r,rr), GOES_WITH(J23_COMPARATOR_MEMBER,p,c,f,g), GOES_WITH(SF_SNAPSHOT_FIELD,GENESIS,g,v), GOES_WITH(S23_READING_JSON,v,j), GOES_WITH(GSC_LINK_HASH,record,h)
+ THEN GOES_WITH(S23_INPUT_REQUEST,SNAPSHOT_RIGHT(p,c),rr,j,h);
+law S23_COMPARATOR_READING := IF GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1), GOES_WITH(J23_COMPARATOR_MEMBER,p,c,f,g), GOES_WITH(SF_SNAPSHOT_FIELD,GENESIS,f,a), GOES_WITH(SF_SNAPSHOT_FIELD,GENESIS,g,b), GOES_WITH(S23_COMPARE,a,b,r)
+ THEN GOES_WITH(S23_COMPARATOR_READING,p,c,f,g,r);
+law S23_COMPARATOR_SNAPSHOT_FRAME := IF GOES_WITH(S23_COMPARATOR_READING,p,c,f,g,r), GOES_WITH(S23_INPUT_JSON,SNAPSHOT_LEFT(p,c),left), GOES_WITH(S23_INPUT_JSON,SNAPSHOT_RIGHT(p,c),right)
+ THEN GOES_WITH(S23_SNAPSHOT_FRAME,p,c,OBJECT(CONS(MEMBER("LEFT",ARRAY(CONS(left,NIL))),CONS(MEMBER("RIGHT",ARRAY(CONS(right,NIL))),NIL))),r);
+
+// Source-owned evaluation specializes the declared THIS and SAME readings;
+// evaluation remains a pure function of the immutable snapshot.
+law S23_EVALUATE := IF GOES_WITH(S23_SNAPSHOT_FRAME,p,c,frame,r), GOES_WITH(S23_READING_JSON,r,j), GOES_WITH(J23_CELL_ID,c,id)
+ THEN GOES_WITH(S23_EVALUATION,p,c,frame,r,j,EVALUATION(p,c));
+law S23_EVALUATION_RECEIPT := IF GOES_WITH(S23_EVALUATION,p,c,frame,r,j,key), GOES_WITH(J23_CELL_ID,c,id)
+ THEN GOES_WITH(S23_RECEIPT_PAYLOAD,key,"CELL_EVALUATED",id,j);
+law S23_TRANSITION_RECEIPT := IF GOES_WITH(S23_EVALUATION,p,c,frame,r,j,key), GOES_WITH(J23_CELL_ID,c,id)
+ THEN GOES_WITH(S23_RECEIPT_PAYLOAD,TRANSITION(p,c),"PAYLOAD_TRANSITION",id,ARRAY(CONS("ADMITTED",CONS("COMPLETED",NIL))));
+
+// Runtime receipt identity follows reference :338-341 exactly: first hash the
+// payload, then hash (kind, subject identity, payload hash). Generic responses
+// are accepted only against the exact source-produced request JSON.
+law S23_RECEIPT_PAYLOAD_HASH := IF GOES_WITH(S23_RECEIPT_PAYLOAD,key,kind,subject,j)
+ THEN GOES_WITH(GPU_HASH_REQUEST,S23_RECEIPT_PAYLOAD,key,j);
+law S23_RECEIPT_ID_REQUEST := IF GOES_WITH(S23_RECEIPT_PAYLOAD,key,kind,subject,j), GOES_WITH(GPU_HASH_RESPONSE,j,h)
+ THEN GOES_WITH(S23_RECEIPT_ID_REQUEST,key,kind,subject,h,ARRAY(CONS(kind,CONS(subject,CONS(h,NIL)))));
+law S23_RECEIPT_ID_HASH := IF GOES_WITH(S23_RECEIPT_ID_REQUEST,key,kind,subject,h,j)
+ THEN GOES_WITH(GPU_HASH_REQUEST,S23_RECEIPT_ID,key,j);
+law S23_RECEIPT_BOUND := IF GOES_WITH(S23_RECEIPT_ID_REQUEST,key,kind,subject,payload,j), GOES_WITH(GPU_HASH_RESPONSE,j,id)
+ THEN GOES_WITH(S23_RECEIPT,key,id,OBJECT(CONS(MEMBER("kind",kind),CONS(MEMBER("payload_digest",payload),CONS(MEMBER("receipt_id",id),CONS(MEMBER("subject_id",subject),NIL))))));
+
+// PROPAGATE in the same step; arrivals never feed S23_SNAPSHOT_FRAME.
+law S23_PROPAGATE := IF GOES_WITH(J23_ROUTE,p,r,m,RESULT,c,role), GOES_WITH(S23_EVALUATION,p,m,frame,reading,j,key), GOES_WITH(S23_RECEIPT,key,receipt,evidence)
+ THEN GOES_WITH(S23_INPUT_REQUEST,ARRIVAL(p,r),r,j,receipt);
+law S23_ROUTE_ARRIVAL := IF GOES_WITH(J23_ROUTE,p,r,m,RESULT,c,role), GOES_WITH(S23_INPUT_JSON,ARRIVAL(p,r),value)
+ THEN GOES_WITH(S23_ROUTE_ARRIVAL,p,r,m,c,role,value);
+
+// RUNTIME GOVERNANCE. Same-region routes use the imported default authority
+// with no edit request and no additional governance decision. The exact
+// default authority identity is hash-bound above, reference :541-545.
+law S23_ROUTE_AUTHORITY := IF GOES_WITH(S23_ROUTE_ARRIVAL,p,r,m,c,role,value), GOES_WITH(J22_ROUTE_REGION,m,RESULT,c,role,SAME_REGION(S)), THIS(S23_AUTHORITY_DIGEST,authority), GOES_WITH(J23_PROGRAM_DRC,p,IF_THEN,proof)
+ THEN GOES_WITH(S23_ROUTE_AUTHORITY,p,r,ADMIT,authority);
+law S23_ROUTE_RECEIPT := IF GOES_WITH(S23_ROUTE_ARRIVAL,p,r,m,c,role,value), GOES_WITH(S23_ROUTE_AUTHORITY,p,r,ADMIT,authority), GOES_WITH(J23_CELL_ID,c,id), GOES_WITH(S23_ROLE_JSON,role,jrole)
+ THEN GOES_WITH(S23_RECEIPT_PAYLOAD,EGRESS(p,r),"ADMITTED_TO_TARGET",r,ARRAY(CONS(r,CONS(id,CONS(jrole,CONS(value,CONS(authority,NIL)))))));
+law S23_ROUTE_DISPOSITION := IF GOES_WITH(S23_ROUTE_ARRIVAL,p,r,m,c,role,value), GOES_WITH(S23_RECEIPT,EGRESS(p,r),receipt,evidence), GOES_WITH(J23_CELL_ID,c,id)
+ THEN GOES_WITH(S23_ROUTE_DISPOSITION,p,r,m,c,OBJECT(CONS(MEMBER("candidate_ref",JSON_NULL),CONS(MEMBER("kind","ADMITTED_TO_TARGET"),CONS(MEMBER("reason",JSON_NULL),CONS(MEMBER("receipt_id",receipt),CONS(MEMBER("route_id",r),CONS(MEMBER("target_cell",id),NIL))))))));
+
+// A complete LEFT/RIGHT assembly is retained as input custody because the
+// target is ADMITTED in the snapshot. This is not a rejected or partial frame.
+law S23_BUSY_COMPLETE_BUFFER := IF GOES_WITH(J23_JOIN,p,c,l,lr,r,rr), GOES_WITH(S23_ROUTE_ARRIVAL,p,lr,l,c,LEFT,left), GOES_WITH(S23_ROUTE_ARRIVAL,p,rr,r,c,RIGHT,right), GOES_WITH(S23_ROUTE_DISPOSITION,p,lr,l,c,ld), GOES_WITH(S23_ROUTE_DISPOSITION,p,rr,r,c,rd), GOES_WITH(S23_SNAPSHOT_FRAME,p,c,old,reading)
+ THEN GOES_WITH(S23_BUSY_BUFFER_FRAME,p,c,OBJECT(CONS(MEMBER("LEFT",ARRAY(CONS(left,NIL))),CONS(MEMBER("RIGHT",ARRAY(CONS(right,NIL))),NIL))),l,r);
+law S23_BUSY_BUFFER_RECEIPTS := IF GOES_WITH(S23_BUSY_BUFFER_FRAME,p,c,frame,l,r), GOES_WITH(S23_RECEIPT,EVALUATION(p,l),lh,le), GOES_WITH(S23_RECEIPT,EVALUATION(p,r),rh,re)
+ THEN GOES_WITH(S23_BUFFER_RECEIPTS,p,c,ARRAY(CONS(lh,CONS(rh,NIL))));
+law S23_BUSY_BUFFER_SORT := IF GOES_WITH(S23_BUFFER_RECEIPTS,p,c,rs)
+ THEN GOES_WITH(GPU_SORT_REQUEST,S23_BUFFER_RECEIPTS,BUFFER(p,c),rs,"");
+law S23_BUSY_BUFFER_JSON := IF GOES_WITH(S23_BUSY_BUFFER_FRAME,p,c,frame,l,r), GOES_WITH(J23_CELL_ID,c,id), GOES_WITH(S23_BUFFER_RECEIPTS,p,c,rs), GOES_WITH(GPU_SORT_RESPONSE,rs,"",sorted), GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1)
+ THEN GOES_WITH(S23_BUFFER_JSON,p,c,OBJECT(CONS(MEMBER("arrived_values",frame),CONS(MEMBER("cell_id",id),CONS(MEMBER("source_receipts",sorted),CONS(MEMBER("tick_of_first_arrival",stamp),NIL))))));
+
+// Simultaneous payload transition. Each selected marker has exactly its one
+// retained route; complete DRC is required before this bounded branch opens.
+law S23_MARKER_COMPLETION := IF GOES_WITH(J23_MARKER_MEMBER,p,m,f), GOES_WITH(S23_EVALUATION,p,m,frame,reading,result,key), GOES_WITH(J23_ROUTE,p,r,m,RESULT,c,role), GOES_WITH(S23_ROUTE_DISPOSITION,p,r,m,c,d)
+ THEN GOES_WITH(S23_NEXT_PAYLOAD,p,m,frame,result,ARRAY(CONS(d,NIL)));
+law S23_COMPARATOR_COMPLETION := IF GOES_WITH(J23_COMPARATOR_MEMBER,p,c,f,g), GOES_WITH(S23_EVALUATION,p,c,frame,reading,result,key), GOES_WITH(S23_BUFFER_JSON,p,c,buffer)
+ THEN GOES_WITH(S23_NEXT_PAYLOAD,p,c,frame,result,ARRAY(NIL));
+law S23_NEXT_PAYLOAD_JSON := IF GOES_WITH(S23_NEXT_PAYLOAD,p,c,frame,result,evidence)
+ THEN GOES_WITH(S23_NEXT_PAYLOAD_JSON,p,c,OBJECT(CONS(MEMBER("admission_receipt",JSON_NULL),CONS(MEMBER("completion_evidence",evidence),CONS(MEMBER("discharge_receipt",JSON_NULL),CONS(MEMBER("frame",frame),CONS(MEMBER("phase","COMPLETED"),CONS(MEMBER("result",result),CONS(MEMBER("result_ref",JSON_NULL),NIL)))))))));
+
+// Full-inventory folds: no missing row can silently disappear. Inventory order
+// is custody/observation order and never selects a flag, role, or route.
+law S23_CELL_TAIL := IF GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1)
+ THEN GOES_WITH(S23_CELL_TAIL,p,cells);
+law S23_CELL_TAIL_NEXT := IF GOES_WITH(S23_CELL_TAIL,p,CONS(c,t))
+ THEN GOES_WITH(S23_CELL_TAIL,p,t);
+law S23_CELL_SUFFIX_END := IF GOES_WITH(S23_CELL_TAIL,p,NIL)
+ THEN GOES_WITH(S23_CELL_SUFFIX,p,NIL,NIL,NIL);
+law S23_CELL_SUFFIX := IF GOES_WITH(S23_CELL_TAIL,p,CONS(c,t)), GOES_WITH(J23_CELL_ID,c,id), GOES_WITH(S23_NEXT_PAYLOAD_JSON,p,c,j), GOES_WITH(S23_RECEIPT,EVALUATION(p,c),eh,e), GOES_WITH(S23_RECEIPT,TRANSITION(p,c),th,transition), GOES_WITH(S23_CELL_SUFFIX,p,t,rows,receipts)
+ THEN GOES_WITH(S23_CELL_SUFFIX,p,CONS(c,t),CONS(MEMBER(id,j),rows),CONS(e,CONS(transition,receipts)));
+law S23_ROUTE_TAIL := IF GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1)
+ THEN GOES_WITH(S23_ROUTE_TAIL,p,routes);
+law S23_ROUTE_TAIL_NEXT := IF GOES_WITH(S23_ROUTE_TAIL,p,CONS(r,t))
+ THEN GOES_WITH(S23_ROUTE_TAIL,p,t);
+law S23_ROUTE_SUFFIX_END := IF GOES_WITH(S23_ROUTE_TAIL,p,NIL)
+ THEN GOES_WITH(S23_ROUTE_SUFFIX,p,NIL,NIL,NIL);
+law S23_ROUTE_SUFFIX := IF GOES_WITH(S23_ROUTE_TAIL,p,CONS(ROUTE(r,m,RESULT,c,role),t)), GOES_WITH(S23_ROUTE_DISPOSITION,p,r,m,c,j), GOES_WITH(S23_RECEIPT,EGRESS(p,r),h,e), GOES_WITH(S23_ROUTE_SUFFIX,p,t,rows,receipts)
+ THEN GOES_WITH(S23_ROUTE_SUFFIX,p,CONS(ROUTE(r,m,RESULT,c,role),t),CONS(MEMBER(r,j),rows),CONS(e,receipts));
+law S23_BUFFER_TAIL := IF GOES_WITH(J23_COMPARATOR_LIST,p,cs), GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1)
+ THEN GOES_WITH(S23_BUFFER_TAIL,p,cs);
+law S23_BUFFER_TAIL_NEXT := IF GOES_WITH(S23_BUFFER_TAIL,p,CONS(c,t))
+ THEN GOES_WITH(S23_BUFFER_TAIL,p,t);
+law S23_BUFFER_SUFFIX_END := IF GOES_WITH(S23_BUFFER_TAIL,p,NIL)
+ THEN GOES_WITH(S23_BUFFER_SUFFIX,p,NIL,NIL);
+law S23_BUFFER_SUFFIX := IF GOES_WITH(S23_BUFFER_TAIL,p,CONS(c,t)), GOES_WITH(S23_BUFFER_JSON,p,c,j), GOES_WITH(S23_BUFFER_SUFFIX,p,t,rows)
+ THEN GOES_WITH(S23_BUFFER_SUFFIX,p,CONS(c,t),CONS(j,rows));
+law S23_RECEIPT_APPEND_REQUEST := IF GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1), GOES_WITH(S23_CELL_SUFFIX,p,cells,ps,cr), GOES_WITH(S23_ROUTE_SUFFIX,p,routes,rs,rr)
+ THEN GOES_WITH(S23_APPEND_REQUEST,cr,rr);
+law S23_APPEND_TAIL := IF GOES_WITH(S23_APPEND_REQUEST,CONS(a,t),b)
+ THEN GOES_WITH(S23_APPEND_REQUEST,t,b);
+law S23_APPEND_END := IF GOES_WITH(S23_APPEND_REQUEST,NIL,b)
+ THEN GOES_WITH(S23_APPEND,NIL,b,b);
+law S23_APPEND_ROW := IF GOES_WITH(S23_APPEND_REQUEST,CONS(a,t),b), GOES_WITH(S23_APPEND,t,b,j)
+ THEN GOES_WITH(S23_APPEND,CONS(a,t),b,CONS(a,j));
+law S23_STATE_PARTS := IF GOES_WITH(S23_OPEN,p,cells,routes,stamp,g1), GOES_WITH(S23_CELL_SUFFIX,p,cells,ps,cr), GOES_WITH(S23_ROUTE_SUFFIX,p,routes,rs,rr), GOES_WITH(J23_COMPARATOR_LIST,p,cs), GOES_WITH(S23_BUFFER_SUFFIX,p,cs,bs), GOES_WITH(S23_APPEND,cr,rr,receipts)
+ THEN GOES_WITH(S23_STATE_PARTS,p,ps,rs,bs,receipts);
+law S23_FINAL_RECEIPT_SORT := IF GOES_WITH(S23_STATE_PARTS,p,ps,rs,bs,receipts)
+ THEN GOES_WITH(GPU_SORT_REQUEST,S23_RECEIPTS,p,ARRAY(receipts),"receipt_id");
+law S23_FINAL_BUFFER_SORT := IF GOES_WITH(S23_STATE_PARTS,p,ps,rs,bs,receipts)
+ THEN GOES_WITH(GPU_SORT_REQUEST,S23_BUFFERS,p,ARRAY(bs),"cell_id");
+law S23_STATE_JSON := IF GOES_WITH(S23_STATE_PARTS,p,ps,rs,bs,receipts), GOES_WITH(GPU_SORT_RESPONSE,ARRAY(receipts),"receipt_id",sorted_receipts), GOES_WITH(GPU_SORT_RESPONSE,ARRAY(bs),"cell_id",sorted_buffers)
+ THEN GOES_WITH(S23_STATE_JSON,p,OBJECT(CONS(MEMBER("outstanding_obligations",ARRAY(NIL)),CONS(MEMBER("payload_states",OBJECT(ps)),CONS(MEMBER("pending_admissions",ARRAY(NIL)),CONS(MEMBER("pending_input_buffers",sorted_buffers),CONS(MEMBER("receipts",sorted_receipts),CONS(MEMBER("route_states",OBJECT(rs)),NIL))))))));
+law S23_RETURN := IF GOES_WITH(S23_STATE_JSON,p,j), GOES_WITH(J23_PROGRAM,p,cells,routes)
+ THEN GOES_WITH(STEP_FABRIC_RETURN,p,GENESIS,FABRIC_STATE(j));
+law S23_SUCCESSOR_JSON := IF GOES_WITH(STEP_FABRIC_RETURN,p,GENESIS,FABRIC_STATE(j))
+ THEN GOES_WITH(S23_SUCCESSOR_JSON,p,GENESIS,FABRIC_STATE(j),j);

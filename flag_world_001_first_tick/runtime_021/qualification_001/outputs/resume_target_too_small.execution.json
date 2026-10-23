@@ -1,0 +1,20 @@
+{
+  "label": "resume_target_too_small",
+  "executable": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+  "args": [
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\image.bin",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\resume_target_too_small.bin",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\readback.bin",
+    "58",
+    "--fact-capacity",
+    "5281"
+  ],
+  "started_utc": "2026-10-22T22:56:13.998Z",
+  "ended_utc": "2026-10-22T22:56:14.090Z",
+  "exit": 1,
+  "error": null,
+  "signal": null,
+  "stdout": "",
+  "stderr": "checkpoint bounds or target fact capacity\r\n",
+  "memory": null
+}

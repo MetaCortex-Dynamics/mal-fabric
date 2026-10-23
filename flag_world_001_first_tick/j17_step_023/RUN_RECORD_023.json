@@ -1,0 +1,3397 @@
+{
+  "record": "TASK_CODEX_J17_SECOND_STEP_023",
+  "date": "2026-10-22",
+  "authority": "Devon EXECUTE; 116 L06 uniformly applied; no promotion",
+  "branch": "review/flag-world-j17-second-step-021",
+  "head_unchanged": "60340c61f1a29321a0b414b4d079b55a1bfd9fd6",
+  "verdict": "FIXED_POINT",
+  "scope": "WORLD_FIELD; not fabric quiescence and not a second V1/V2 CONFORM",
+  "contracts": {
+    "L06": "[MUST] **L06:** Materialized cells have existing `CellDef` fields, with derived payload type and explicit source-bound capability evidence. Containment and location must come from the governing fabric/decomposition, not a default region, host allocator or node ordinal. Missing placement evidence withholds the candidate; this is not a request for Devon to pick a location. DRC checks all eight imported conditions.",
+    "L06_line": 51,
+    "static": {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\gpu_carrier_001\\flag_world_engine_v3_fold_bootstrap_001\\candidate_successors\\W040_SURFACE_FABRIC_LOWERING_116\\parents\\STATIC_FABRIC_SPEC.md",
+      "bytes": 21733,
+      "sha256": "E328B574DE32635358AC488C4C5E20E80E86A845EB154401C8E1A7C0DD8D68F1"
+    },
+    "static_reference_definition_only": {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\gpu_carrier_001\\flag_world_engine_v3_fold_bootstrap_001\\candidate_successors\\W040_SURFACE_FABRIC_LOWERING_116\\parents\\static_reference_kernel.py",
+      "bytes": 30841,
+      "sha256": "8B983301DAD795DD9C3F020970BAD76017EF648AC0C71E3FB6FDEF3D0E4347C0"
+    },
+    "execution_spec_sha256": "5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0"
+  },
+  "program": {
+    "comparators": 6,
+    "markers": 12,
+    "routes": 12,
+    "identity": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529",
+    "artifact": {
+      "path": "outputs/program.json",
+      "bytes": 51262,
+      "sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529"
+    },
+    "selection": "Exact six complete joins from022; no alternate subset",
+    "DRC": [
+      {
+        "condition": "I",
+        "verdict": "IF_THEN",
+        "fact": 99229,
+        "rule": "J23_DRC_I",
+        "support": [
+          99228
+        ]
+      },
+      {
+        "condition": "II",
+        "verdict": "IF_THEN",
+        "fact": 99230,
+        "rule": "J23_DRC_II",
+        "support": [
+          99228
+        ]
+      },
+      {
+        "condition": "III",
+        "verdict": "IF_THEN",
+        "fact": 99231,
+        "rule": "J23_DRC_III",
+        "support": [
+          99228
+        ]
+      },
+      {
+        "condition": "IV",
+        "verdict": "IF_THEN",
+        "fact": 99232,
+        "rule": "J23_DRC_IV",
+        "support": [
+          99228
+        ]
+      },
+      {
+        "condition": "V",
+        "verdict": "IF_THEN",
+        "fact": 99233,
+        "rule": "J23_DRC_V",
+        "support": [
+          99228
+        ]
+      },
+      {
+        "condition": "VI",
+        "verdict": "IF_THEN",
+        "fact": 99234,
+        "rule": "J23_DRC_VI",
+        "support": [
+          99228
+        ]
+      },
+      {
+        "condition": "VII",
+        "verdict": "IF_THEN",
+        "fact": 99235,
+        "rule": "J23_DRC_VII",
+        "support": [
+          99228
+        ]
+      },
+      {
+        "condition": "VIII",
+        "verdict": "IF_THEN",
+        "fact": 99236,
+        "rule": "J23_DRC_VIII",
+        "support": [
+          99228
+        ]
+      }
+    ],
+    "DRC_iii_per_face": [
+      {
+        "face": "W_14",
+        "verdict": "IF_THEN",
+        "fact": 99356,
+        "rule": "J23_TOUCHED_FACE_CHECK",
+        "support": [
+          99300
+        ]
+      },
+      {
+        "face": "W_18",
+        "verdict": "IF_THEN",
+        "fact": 99357,
+        "rule": "J23_TOUCHED_FACE_CHECK",
+        "support": [
+          99302
+        ]
+      },
+      {
+        "face": "W_03",
+        "verdict": "IF_THEN",
+        "fact": 99358,
+        "rule": "J23_TOUCHED_FACE_CHECK",
+        "support": [
+          99304
+        ]
+      },
+      {
+        "face": "W_10",
+        "verdict": "IF_THEN",
+        "fact": 99359,
+        "rule": "J23_TOUCHED_FACE_CHECK",
+        "support": [
+          99306
+        ]
+      },
+      {
+        "face": "W_12",
+        "verdict": "IF_THEN",
+        "fact": 99360,
+        "rule": "J23_TOUCHED_FACE_CHECK",
+        "support": [
+          99308
+        ]
+      },
+      {
+        "face": "W_13",
+        "verdict": "IF_THEN",
+        "fact": 99361,
+        "rule": "J23_TOUCHED_FACE_CHECK",
+        "support": [
+          99310
+        ]
+      }
+    ],
+    "DRC_iv_per_route": [
+      {
+        "route_id": "352bf2bcb5fd9eff5d1b783e8effd85d0a6ceed67762ae373fc2317eb3c82a33",
+        "verdict": "IF_THEN",
+        "fact": 99324,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99281,
+          94447
+        ]
+      },
+      {
+        "route_id": "80d60c64993c14d670467f370bbc619ce660863d1526143e3ea99274221f4508",
+        "verdict": "IF_THEN",
+        "fact": 99325,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99282,
+          94507
+        ]
+      },
+      {
+        "route_id": "334d7a19ca6011cfcdbbfd691407592324996ee08359ca5ab01a9ec266cc656d",
+        "verdict": "IF_THEN",
+        "fact": 99326,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99283,
+          94567
+        ]
+      },
+      {
+        "route_id": "3f0b0c082db98dc2eb52bb818c6c3c13ba824ed773c637b3b331ba0a07c012f4",
+        "verdict": "IF_THEN",
+        "fact": 99327,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99284,
+          94626
+        ]
+      },
+      {
+        "route_id": "d9ace26e1e21c3d37fa47561a3c8533852027d4b3b1cec43d9330421c082bbea",
+        "verdict": "IF_THEN",
+        "fact": 99328,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99285,
+          94685
+        ]
+      },
+      {
+        "route_id": "e274da89ea9dc8ad8700e1f32c9904502dece7a7e1c88fcaf44ca78a1071ed17",
+        "verdict": "IF_THEN",
+        "fact": 99329,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99286,
+          94742
+        ]
+      },
+      {
+        "route_id": "d4e9b8f1ea13f173abc10879284f151a1eb14cb4e432d8318900dcd4ea7c4f86",
+        "verdict": "IF_THEN",
+        "fact": 99330,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99287,
+          94799
+        ]
+      },
+      {
+        "route_id": "9602eb3fec683e2b76605afd41310e34259e3207941d8ec7f1f5a95ae9118682",
+        "verdict": "IF_THEN",
+        "fact": 99331,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99288,
+          94849
+        ]
+      },
+      {
+        "route_id": "feca074c42706ea876cc1fd118e1fbe86cf7ef384c9f34f2006b9115c9f240a6",
+        "verdict": "IF_THEN",
+        "fact": 99332,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99289,
+          94897
+        ]
+      },
+      {
+        "route_id": "3870e5ef30256da82a1d480dd69f5f6da67357823ed51dda11f3947fa247068d",
+        "verdict": "IF_THEN",
+        "fact": 99333,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99290,
+          94944
+        ]
+      },
+      {
+        "route_id": "7c90970caab7e8d259653c02953c70365b86fe29a06cd80542bb195d1f60fdb4",
+        "verdict": "IF_THEN",
+        "fact": 99334,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99291,
+          94988
+        ]
+      },
+      {
+        "route_id": "430a436762aa46b79cf8ae6e1a7622e38e3e7a0724bab4b00fe6aba4b6bdb15b",
+        "verdict": "IF_THEN",
+        "fact": 99335,
+        "rule": "J23_ROUTE_ENDPOINT_CHECK",
+        "support": [
+          99292,
+          95032
+        ]
+      }
+    ],
+    "comparison_readings": [
+      {
+        "cell": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10)))))",
+        "flag_pair": [
+          [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "C:HW_09|HW_10"
+            ]
+          ],
+          [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_09|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "C:HW_09|HW_10"
+            ]
+          ]
+        ],
+        "snapshot_readings": [
+          "NO",
+          "NO"
+        ],
+        "reading": "SAME",
+        "fact": 99389,
+        "rule": "S23_COMPARATOR_READING",
+        "support": [
+          99362,
+          99275,
+          48303,
+          48335,
+          99244
+        ]
+      },
+      {
+        "cell": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11)))))",
+        "flag_pair": [
+          [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "C:HW_09|HW_11"
+            ]
+          ],
+          [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_09|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "C:HW_09|HW_11"
+            ]
+          ]
+        ],
+        "snapshot_readings": [
+          "NO",
+          "NO"
+        ],
+        "reading": "SAME",
+        "fact": 99390,
+        "rule": "S23_COMPARATOR_READING",
+        "support": [
+          99362,
+          99276,
+          48497,
+          48538,
+          99244
+        ]
+      },
+      {
+        "cell": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_00|HW_04",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ]
+          ],
+          [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ]
+          ]
+        ],
+        "snapshot_readings": [
+          "NO",
+          "NO"
+        ],
+        "reading": "SAME",
+        "fact": 99391,
+        "rule": "S23_COMPARATOR_READING",
+        "support": [
+          99362,
+          99277,
+          48423,
+          48456,
+          99244
+        ]
+      },
+      {
+        "cell": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_03|HW_04",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ]
+          ],
+          [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ]
+          ]
+        ],
+        "snapshot_readings": [
+          "NO",
+          "NO"
+        ],
+        "reading": "SAME",
+        "fact": 99392,
+        "rule": "S23_COMPARATOR_READING",
+        "support": [
+          99362,
+          99278,
+          48420,
+          48453,
+          99244
+        ]
+      },
+      {
+        "cell": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ]
+          ],
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ]
+          ]
+        ],
+        "snapshot_readings": [
+          "THIS",
+          "THIS"
+        ],
+        "reading": "SAME",
+        "fact": 99393,
+        "rule": "S23_COMPARATOR_READING",
+        "support": [
+          99362,
+          99279,
+          48290,
+          48287,
+          99245
+        ]
+      },
+      {
+        "cell": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ]
+          ],
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ]
+          ]
+        ],
+        "snapshot_readings": [
+          "THIS",
+          "THIS"
+        ],
+        "reading": "SAME",
+        "fact": 99394,
+        "rule": "S23_COMPARATOR_READING",
+        "support": [
+          99362,
+          99280,
+          48291,
+          48288,
+          99245
+        ]
+      }
+    ],
+    "withheld_comparators": 24,
+    "withheld_routes": 24,
+    "withheld_by_flag_pair": [
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),THIS(HW_05)))))",
+        "flag_pair": [
+          [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "C:HW_09|HW_10"
+            ]
+          ],
+          [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "D:HW_05"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_05|HW_09",
+          [
+            "C:HW_05|HW_09",
+            "C:HW_05|HW_10"
+          ],
+          [
+            "C:HW_05|HW_09",
+            "C:HW_05|HW_10",
+            "C:HW_09|HW_10"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),THIS(HW_05)))),D))",
+        "fact": 92255,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91351,
+          91529
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10)))))",
+        "flag_pair": [
+          [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "C:HW_09|HW_10"
+            ]
+          ],
+          [
+            "C:HW_05|HW_10",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "C:HW_09|HW_10"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_05|HW_09",
+          [
+            "C:HW_05|HW_09",
+            "C:HW_05|HW_10"
+          ],
+          [
+            "C:HW_05|HW_09",
+            "C:HW_05|HW_10",
+            "C:HW_09|HW_10"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10)))),C))",
+        "fact": 92256,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91352,
+          91530
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10),THIS(HW_09)))))",
+        "flag_pair": [
+          [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_09|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "C:HW_09|HW_10"
+            ]
+          ],
+          [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_09|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_09|HW_10",
+              "D:HW_09"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_05|HW_09",
+          [
+            "C:HW_05|HW_09",
+            "C:HW_09|HW_10"
+          ],
+          [
+            "C:HW_05|HW_09",
+            "C:HW_05|HW_10",
+            "C:HW_09|HW_10"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10),THIS(HW_09)))),D))",
+        "fact": 92257,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91354,
+          91531
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))),TOGETHER_ALONE(TOGETHER_ALONE(HW_09,HW_10),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10)))))",
+        "flag_pair": [
+          [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_09|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "C:HW_09|HW_10"
+            ]
+          ],
+          [
+            "C:HW_09|HW_10",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_09|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "C:HW_09|HW_10"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_05|HW_09",
+          [
+            "C:HW_05|HW_09",
+            "C:HW_09|HW_10"
+          ],
+          [
+            "C:HW_05|HW_09",
+            "C:HW_05|HW_10",
+            "C:HW_09|HW_10"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_09,HW_10),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10)))),C))",
+        "fact": 92258,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91355,
+          91532
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),THIS(HW_08)))))",
+        "flag_pair": [
+          [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "C:HW_09|HW_11"
+            ]
+          ],
+          [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "D:HW_08"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_08|HW_09",
+          [
+            "C:HW_08|HW_09",
+            "C:HW_08|HW_11"
+          ],
+          [
+            "C:HW_08|HW_09",
+            "C:HW_08|HW_11",
+            "C:HW_09|HW_11"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),THIS(HW_08)))),D))",
+        "fact": 92259,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91357,
+          91533
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11)))))",
+        "flag_pair": [
+          [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "C:HW_09|HW_11"
+            ]
+          ],
+          [
+            "C:HW_08|HW_11",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "C:HW_09|HW_11"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_08|HW_09",
+          [
+            "C:HW_08|HW_09",
+            "C:HW_08|HW_11"
+          ],
+          [
+            "C:HW_08|HW_09",
+            "C:HW_08|HW_11",
+            "C:HW_09|HW_11"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11)))),C))",
+        "fact": 92260,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91358,
+          91534
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11),THIS(HW_09)))))",
+        "flag_pair": [
+          [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_09|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "C:HW_09|HW_11"
+            ]
+          ],
+          [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_09|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_09|HW_11",
+              "D:HW_09"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_08|HW_09",
+          [
+            "C:HW_08|HW_09",
+            "C:HW_09|HW_11"
+          ],
+          [
+            "C:HW_08|HW_09",
+            "C:HW_08|HW_11",
+            "C:HW_09|HW_11"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11),THIS(HW_09)))),D))",
+        "fact": 92261,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91360,
+          91535
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))),TOGETHER_ALONE(TOGETHER_ALONE(HW_09,HW_11),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11)))))",
+        "flag_pair": [
+          [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_09|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "C:HW_09|HW_11"
+            ]
+          ],
+          [
+            "C:HW_09|HW_11",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_09|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "C:HW_09|HW_11"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_08|HW_09",
+          [
+            "C:HW_08|HW_09",
+            "C:HW_09|HW_11"
+          ],
+          [
+            "C:HW_08|HW_09",
+            "C:HW_08|HW_11",
+            "C:HW_09|HW_11"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_09,HW_11),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11)))),C))",
+        "fact": 92262,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91361,
+          91536
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05),THIS(HW_04)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_00|HW_04",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ]
+          ],
+          [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_00|HW_04",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_04|HW_05",
+              "D:HW_04"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_05",
+          [
+            "C:HW_00|HW_04",
+            "C:HW_04|HW_05"
+          ],
+          [
+            "C:HW_00|HW_04",
+            "C:HW_00|HW_05",
+            "C:HW_04|HW_05"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05),THIS(HW_04)))),D))",
+        "fact": 92263,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91363,
+          91537
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05),THIS(HW_05)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ]
+          ],
+          [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05",
+              "D:HW_05"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_05",
+          [
+            "C:HW_00|HW_05",
+            "C:HW_04|HW_05"
+          ],
+          [
+            "C:HW_00|HW_04",
+            "C:HW_00|HW_05",
+            "C:HW_04|HW_05"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05),THIS(HW_05)))),D))",
+        "fact": 92264,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91366,
+          91538
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08),THIS(HW_04)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_03|HW_04",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ]
+          ],
+          [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_03|HW_04",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_04|HW_08",
+              "D:HW_04"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_08",
+          [
+            "C:HW_03|HW_04",
+            "C:HW_04|HW_08"
+          ],
+          [
+            "C:HW_03|HW_04",
+            "C:HW_03|HW_08",
+            "C:HW_04|HW_08"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08),THIS(HW_04)))),D))",
+        "fact": 92265,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91369,
+          91539
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08),THIS(HW_08)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ]
+          ],
+          [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08",
+              "D:HW_08"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_08",
+          [
+            "C:HW_03|HW_08",
+            "C:HW_04|HW_08"
+          ],
+          [
+            "C:HW_03|HW_04",
+            "C:HW_03|HW_08",
+            "C:HW_04|HW_08"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08),THIS(HW_08)))),D))",
+        "fact": 92266,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91372,
+          91540
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09),THIS(HW_09)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ]
+          ],
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ],
+            [
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09",
+              "D:HW_09"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09"
+          ],
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09),THIS(HW_09)))),D))",
+        "fact": 92267,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91375,
+          91541
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ]
+          ],
+          [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09"
+          ],
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)))),C))",
+        "fact": 92268,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91376,
+          91542
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),THIS(HW_04)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ]
+          ],
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "D:HW_04"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09"
+          ],
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),THIS(HW_04)))),D))",
+        "fact": 92269,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91378,
+          91543
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09),THIS(HW_09)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ]
+          ],
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ],
+            [
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09",
+              "D:HW_09"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09"
+          ],
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09),THIS(HW_09)))),D))",
+        "fact": 92270,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91381,
+          91544
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ]
+          ],
+          [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09"
+          ],
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)))),C))",
+        "fact": 92271,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91382,
+          91545
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),THIS(HW_04)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ]
+          ],
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "D:HW_04"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09"
+          ],
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "LEFT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(ONE),RIGHT(NO_ROUTE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),THIS(HW_04)))),D))",
+        "fact": 92272,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91384,
+          91546
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)))))",
+        "flag_pair": [
+          [
+            "C:HW_00|HW_04",
+            [
+              "C:HW_00|HW_04",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ]
+          ],
+          [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_00|HW_04",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_05",
+          [
+            "C:HW_00|HW_04",
+            "C:HW_04|HW_05"
+          ],
+          [
+            "C:HW_00|HW_04",
+            "C:HW_00|HW_05",
+            "C:HW_04|HW_05"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "RIGHT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(NO_ROUTE),RIGHT(ONE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)))),C))",
+        "fact": 92273,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91365,
+          91547
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)))))",
+        "flag_pair": [
+          [
+            "C:HW_00|HW_05",
+            [
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ]
+          ],
+          [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_05",
+          [
+            "C:HW_00|HW_05",
+            "C:HW_04|HW_05"
+          ],
+          [
+            "C:HW_00|HW_04",
+            "C:HW_00|HW_05",
+            "C:HW_04|HW_05"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "RIGHT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(NO_ROUTE),RIGHT(ONE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)))),C))",
+        "fact": 92274,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91367,
+          91548
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)))))",
+        "flag_pair": [
+          [
+            "C:HW_03|HW_04",
+            [
+              "C:HW_03|HW_04",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ]
+          ],
+          [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_03|HW_04",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_08",
+          [
+            "C:HW_03|HW_04",
+            "C:HW_04|HW_08"
+          ],
+          [
+            "C:HW_03|HW_04",
+            "C:HW_03|HW_08",
+            "C:HW_04|HW_08"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "RIGHT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(NO_ROUTE),RIGHT(ONE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)))),C))",
+        "fact": 92275,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91371,
+          91549
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)))))",
+        "flag_pair": [
+          [
+            "C:HW_03|HW_08",
+            [
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ]
+          ],
+          [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_08",
+          [
+            "C:HW_03|HW_08",
+            "C:HW_04|HW_08"
+          ],
+          [
+            "C:HW_03|HW_04",
+            "C:HW_03|HW_08",
+            "C:HW_04|HW_08"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "RIGHT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(NO_ROUTE),RIGHT(ONE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)))),C))",
+        "fact": 92276,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91373,
+          91550
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ]
+          ],
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09"
+          ],
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "RIGHT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(NO_ROUTE),RIGHT(ONE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)))),C))",
+        "fact": 92277,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91380,
+          91551
+        ]
+      },
+      {
+        "disposition": "WITHHELD_THIS_TICK_NOT_DELETED",
+        "comparator": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)))))",
+        "flag_pair": [
+          [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ]
+          ],
+          [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ]
+          ]
+        ],
+        "source_flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09"
+          ],
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09"
+          ]
+        ],
+        "source_role": "RESULT",
+        "target_role": "RIGHT",
+        "source_cell": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))))",
+        "reason": "JOIN_ROLE_SHAPE_VIOLATION(LEFT(NO_ROUTE),RIGHT(ONE),WITHHELD_SOURCE(SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)))),C))",
+        "fact": 92278,
+        "rule": "J23_WITHHOLD_ROUTE",
+        "support": [
+          91386,
+          91552
+        ]
+      }
+    ]
+  },
+  "execution": {
+    "device": "NVIDIA GeForce RTX 3070",
+    "error": 0,
+    "source_sha256": "490C4F72655A93929A3DE1663D93BA575797FB1465B6E7F989A9D728EA44B916",
+    "image_sha256": "B9DB54D6CFB4F3931E5D96552694C291786D6C65CE70B7DC2430FED0DD768731",
+    "readback_sha256": "E22E39F4E04140FB59142BA969FB94FA601BB62EEF7E292590CC95A8BE9D5AD7",
+    "facts": 133418,
+    "terms": 166336,
+    "epochs": 2611,
+    "payloads_evaluated": 18,
+    "route_dispositions": 12,
+    "return": "STEP_FABRIC_RETURN(program,GENESIS,FABRIC_STATE)",
+    "successor": {
+      "path": "outputs/fabric.successor.json",
+      "bytes": 62837,
+      "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47"
+    },
+    "complete_busy_target_buffers": 6,
+    "receipts": 48,
+    "buffers_scope": "Complete LEFT/RIGHT frames retained BECAUSE target was ADMITTED in snapshot; no same-tick re-evaluation",
+    "no_host_world_law": "GPU .mal defines membership/DRC/evaluation/propagation/governance/commit/readout. Host provides byte assembly, term-identity encoding, mandated route SHA256, source-requested JSON hashing/sorting, and observation only."
+  },
+  "commit": {
+    "object": {
+      "path": "outputs/committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    "chain_links": 2,
+    "prior_link": "1ce68e601743bebaa458d727db920e40eaf4a7ccb0f1603087085de9fb7d8163",
+    "link_2": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+    "field_comparison": "SAME",
+    "receipt": {
+      "discharged": [],
+      "opened": []
+    },
+    "receipt_reading": "NO",
+    "retained_walls": 12,
+    "SAME_overlaps": 708,
+    "wall_overlaps": 12
+  },
+  "informational_tick_3": {
+    "readout_operand_pair": "g1, committed successor; not Ground0,g1",
+    "junctions": [
+      {
+        "junction": "J_00",
+        "site": "C:HW_00|HW_01",
+        "d_G": 0,
+        "fact": 133134,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133104
+        ]
+      },
+      {
+        "junction": "J_01",
+        "site": "C:HW_00|HW_02",
+        "d_G": 0,
+        "fact": 133135,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133105
+        ]
+      },
+      {
+        "junction": "J_05",
+        "site": "C:HW_01|HW_02",
+        "d_G": 0,
+        "fact": 133136,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133106
+        ]
+      },
+      {
+        "junction": "J_04",
+        "site": "C:HW_00|HW_05",
+        "d_G": 0,
+        "fact": 133137,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133107
+        ]
+      },
+      {
+        "junction": "J_06",
+        "site": "C:HW_01|HW_05",
+        "d_G": 0,
+        "fact": 133138,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133108
+        ]
+      },
+      {
+        "junction": "J_02",
+        "site": "C:HW_00|HW_03",
+        "d_G": 0,
+        "fact": 133139,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133109
+        ]
+      },
+      {
+        "junction": "J_09",
+        "site": "C:HW_02|HW_03",
+        "d_G": 0,
+        "fact": 133140,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133110
+        ]
+      },
+      {
+        "junction": "J_03",
+        "site": "C:HW_00|HW_04",
+        "d_G": 0,
+        "fact": 133141,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133111
+        ]
+      },
+      {
+        "junction": "J_12",
+        "site": "C:HW_03|HW_04",
+        "d_G": 0,
+        "fact": 133142,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133112
+        ]
+      },
+      {
+        "junction": "J_15",
+        "site": "C:HW_04|HW_05",
+        "d_G": 0,
+        "fact": 133143,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133113
+        ]
+      },
+      {
+        "junction": "J_07",
+        "site": "C:HW_01|HW_06",
+        "d_G": 0,
+        "fact": 133144,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133114
+        ]
+      },
+      {
+        "junction": "J_10",
+        "site": "C:HW_02|HW_06",
+        "d_G": 0,
+        "fact": 133145,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133115
+        ]
+      },
+      {
+        "junction": "J_08",
+        "site": "C:HW_01|HW_10",
+        "d_G": 0,
+        "fact": 133146,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133116
+        ]
+      },
+      {
+        "junction": "J_19",
+        "site": "C:HW_05|HW_10",
+        "d_G": 0,
+        "fact": 133147,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133117
+        ]
+      },
+      {
+        "junction": "J_21",
+        "site": "C:HW_06|HW_10",
+        "d_G": 0,
+        "fact": 133148,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133118
+        ]
+      },
+      {
+        "junction": "J_11",
+        "site": "C:HW_02|HW_07",
+        "d_G": 0,
+        "fact": 133149,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133119
+        ]
+      },
+      {
+        "junction": "J_13",
+        "site": "C:HW_03|HW_07",
+        "d_G": 0,
+        "fact": 133150,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133120
+        ]
+      },
+      {
+        "junction": "J_20",
+        "site": "C:HW_06|HW_07",
+        "d_G": 0,
+        "fact": 133151,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133121
+        ]
+      },
+      {
+        "junction": "J_14",
+        "site": "C:HW_03|HW_08",
+        "d_G": 0,
+        "fact": 133152,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133122
+        ]
+      },
+      {
+        "junction": "J_16",
+        "site": "C:HW_04|HW_08",
+        "d_G": 0,
+        "fact": 133153,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133123
+        ]
+      },
+      {
+        "junction": "J_23",
+        "site": "C:HW_07|HW_08",
+        "d_G": 0,
+        "fact": 133154,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133124
+        ]
+      },
+      {
+        "junction": "J_17",
+        "site": "C:HW_04|HW_09",
+        "d_G": 0,
+        "fact": 133155,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133125
+        ]
+      },
+      {
+        "junction": "J_18",
+        "site": "C:HW_05|HW_09",
+        "d_G": 0,
+        "fact": 133156,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133126
+        ]
+      },
+      {
+        "junction": "J_25",
+        "site": "C:HW_08|HW_09",
+        "d_G": 0,
+        "fact": 133157,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133127
+        ]
+      },
+      {
+        "junction": "J_27",
+        "site": "C:HW_09|HW_10",
+        "d_G": 0,
+        "fact": 133158,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133128
+        ]
+      },
+      {
+        "junction": "J_22",
+        "site": "C:HW_06|HW_11",
+        "d_G": 0,
+        "fact": 133159,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133129
+        ]
+      },
+      {
+        "junction": "J_24",
+        "site": "C:HW_07|HW_11",
+        "d_G": 0,
+        "fact": 133160,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133130
+        ]
+      },
+      {
+        "junction": "J_29",
+        "site": "C:HW_10|HW_11",
+        "d_G": 0,
+        "fact": 133161,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133131
+        ]
+      },
+      {
+        "junction": "J_26",
+        "site": "C:HW_08|HW_11",
+        "d_G": 0,
+        "fact": 133162,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133132
+        ]
+      },
+      {
+        "junction": "J_28",
+        "site": "C:HW_09|HW_11",
+        "d_G": 0,
+        "fact": 133163,
+        "rule": "D23_ACC_DONE",
+        "support": [
+          133133
+        ]
+      }
+    ],
+    "faces": [
+      {
+        "face": "W_04",
+        "junctions": [
+          "J_00",
+          "J_04",
+          "J_06"
+        ],
+        "sites": [
+          "C:HW_00|HW_01",
+          "C:HW_00|HW_05",
+          "C:HW_01|HW_05"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133165,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48237,
+          133134,
+          133137,
+          133138
+        ]
+      },
+      {
+        "face": "W_00",
+        "junctions": [
+          "J_00",
+          "J_01",
+          "J_05"
+        ],
+        "sites": [
+          "C:HW_00|HW_01",
+          "C:HW_00|HW_02",
+          "C:HW_01|HW_02"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133166,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48249,
+          133134,
+          133135,
+          133136
+        ]
+      },
+      {
+        "face": "W_01",
+        "junctions": [
+          "J_01",
+          "J_02",
+          "J_09"
+        ],
+        "sites": [
+          "C:HW_00|HW_02",
+          "C:HW_00|HW_03",
+          "C:HW_02|HW_03"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133167,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48250,
+          133135,
+          133139,
+          133140
+        ]
+      },
+      {
+        "face": "W_05",
+        "junctions": [
+          "J_05",
+          "J_07",
+          "J_10"
+        ],
+        "sites": [
+          "C:HW_01|HW_02",
+          "C:HW_01|HW_06",
+          "C:HW_02|HW_06"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133168,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48238,
+          133136,
+          133144,
+          133145
+        ]
+      },
+      {
+        "face": "W_07",
+        "junctions": [
+          "J_06",
+          "J_08",
+          "J_19"
+        ],
+        "sites": [
+          "C:HW_01|HW_05",
+          "C:HW_01|HW_10",
+          "C:HW_05|HW_10"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133169,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48235,
+          133138,
+          133146,
+          133147
+        ]
+      },
+      {
+        "face": "W_02",
+        "junctions": [
+          "J_02",
+          "J_03",
+          "J_12"
+        ],
+        "sites": [
+          "C:HW_00|HW_03",
+          "C:HW_00|HW_04",
+          "C:HW_03|HW_04"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133170,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48251,
+          133139,
+          133141,
+          133142
+        ]
+      },
+      {
+        "face": "W_08",
+        "junctions": [
+          "J_09",
+          "J_11",
+          "J_13"
+        ],
+        "sites": [
+          "C:HW_02|HW_03",
+          "C:HW_02|HW_07",
+          "C:HW_03|HW_07"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133171,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48239,
+          133140,
+          133149,
+          133150
+        ]
+      },
+      {
+        "face": "W_03",
+        "junctions": [
+          "J_03",
+          "J_04",
+          "J_15"
+        ],
+        "sites": [
+          "C:HW_00|HW_04",
+          "C:HW_00|HW_05",
+          "C:HW_04|HW_05"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133172,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48243,
+          133141,
+          133137,
+          133143
+        ]
+      },
+      {
+        "face": "W_10",
+        "junctions": [
+          "J_12",
+          "J_14",
+          "J_16"
+        ],
+        "sites": [
+          "C:HW_03|HW_04",
+          "C:HW_03|HW_08",
+          "C:HW_04|HW_08"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133173,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48240,
+          133142,
+          133152,
+          133153
+        ]
+      },
+      {
+        "face": "W_12",
+        "junctions": [
+          "J_15",
+          "J_17",
+          "J_18"
+        ],
+        "sites": [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133174,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48241,
+          133143,
+          133155,
+          133156
+        ]
+      },
+      {
+        "face": "W_06",
+        "junctions": [
+          "J_07",
+          "J_08",
+          "J_21"
+        ],
+        "sites": [
+          "C:HW_01|HW_06",
+          "C:HW_01|HW_10",
+          "C:HW_06|HW_10"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133175,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48236,
+          133144,
+          133146,
+          133148
+        ]
+      },
+      {
+        "face": "W_09",
+        "junctions": [
+          "J_10",
+          "J_11",
+          "J_20"
+        ],
+        "sites": [
+          "C:HW_02|HW_06",
+          "C:HW_02|HW_07",
+          "C:HW_06|HW_07"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133176,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48244,
+          133145,
+          133149,
+          133151
+        ]
+      },
+      {
+        "face": "W_16",
+        "junctions": [
+          "J_21",
+          "J_22",
+          "J_29"
+        ],
+        "sites": [
+          "C:HW_06|HW_10",
+          "C:HW_06|HW_11",
+          "C:HW_10|HW_11"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133177,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48248,
+          133148,
+          133159,
+          133161
+        ]
+      },
+      {
+        "face": "W_11",
+        "junctions": [
+          "J_13",
+          "J_14",
+          "J_23"
+        ],
+        "sites": [
+          "C:HW_03|HW_07",
+          "C:HW_03|HW_08",
+          "C:HW_07|HW_08"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133178,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48245,
+          133150,
+          133152,
+          133154
+        ]
+      },
+      {
+        "face": "W_15",
+        "junctions": [
+          "J_20",
+          "J_22",
+          "J_24"
+        ],
+        "sites": [
+          "C:HW_06|HW_07",
+          "C:HW_06|HW_11",
+          "C:HW_07|HW_11"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133179,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48242,
+          133151,
+          133159,
+          133160
+        ]
+      },
+      {
+        "face": "W_13",
+        "junctions": [
+          "J_16",
+          "J_17",
+          "J_25"
+        ],
+        "sites": [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133180,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48246,
+          133153,
+          133155,
+          133157
+        ]
+      },
+      {
+        "face": "W_17",
+        "junctions": [
+          "J_23",
+          "J_24",
+          "J_26"
+        ],
+        "sites": [
+          "C:HW_07|HW_08",
+          "C:HW_07|HW_11",
+          "C:HW_08|HW_11"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133181,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48252,
+          133154,
+          133160,
+          133162
+        ]
+      },
+      {
+        "face": "W_14",
+        "junctions": [
+          "J_18",
+          "J_19",
+          "J_27"
+        ],
+        "sites": [
+          "C:HW_05|HW_09",
+          "C:HW_05|HW_10",
+          "C:HW_09|HW_10"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133182,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48247,
+          133156,
+          133147,
+          133158
+        ]
+      },
+      {
+        "face": "W_18",
+        "junctions": [
+          "J_25",
+          "J_26",
+          "J_28"
+        ],
+        "sites": [
+          "C:HW_08|HW_09",
+          "C:HW_08|HW_11",
+          "C:HW_09|HW_11"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133183,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48253,
+          133157,
+          133162,
+          133163
+        ]
+      },
+      {
+        "face": "W_19",
+        "junctions": [
+          "J_27",
+          "J_28",
+          "J_29"
+        ],
+        "sites": [
+          "C:HW_09|HW_10",
+          "C:HW_09|HW_11",
+          "C:HW_10|HW_11"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "fact": 133184,
+        "rule": "D23_FACE_DISTANCES",
+        "support": [
+          48254,
+          133158,
+          133163,
+          133161
+        ]
+      }
+    ],
+    "ties_broken": 0,
+    "face_minimum_ties": 20,
+    "own_rank_ties": 60,
+    "not_a_stop": "No prior admitted-cell rank carried into tick3; all own ranks now tied, informational only"
+  },
+  "next_motion": "The restricted THIS/SAME program does not write flag readings. Further world-field motion requires an exogenous JTP event; internal fabric custody is not HALTED by this statement.",
+  "independent_observation": {
+    "scope": "READ_ONLY_INDEPENDENT_OBSERVATION_CHECK; NOT_RUNTIME; NO_OUTPUT_FILES_WRITTEN",
+    "verdict": "SAME",
+    "source_sha256": "490C4F72655A93929A3DE1663D93BA575797FB1465B6E7F989A9D728EA44B916",
+    "readback_sha256": "E22E39F4E04140FB59142BA969FB94FA601BB62EEF7E292590CC95A8BE9D5AD7",
+    "audit_sha256": "AAFB7DA9A9910AE84B54DB398CBA26353FAFAED1D52622697032F1E13BAD7FEE",
+    "prior_object_sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+    "committed_object_sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+    "canonical_committed_object_sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+    "genesis_link": "1ce68e601743bebaa458d727db920e40eaf4a7ccb0f1603087085de9fb7d8163",
+    "tick_link": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+    "pair_hash": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+    "receipt_hash": "4f362604c02e223faa5a620c15b5c2e3fd2f2fd49df92bd8e186b3b8700687b2",
+    "receipt_reading": "NO",
+    "runtime_state_sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+    "field_edits": 0,
+    "receiptCounts": {
+      "UNCHANGED": 708,
+      "RETAINED": 12
+    },
+    "comparison_count": 3134,
+    "faceReadout": [
+      {
+        "face": "W_04",
+        "junctions": [
+          "C:HW_00|HW_01",
+          "C:HW_00|HW_05",
+          "C:HW_01|HW_05"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_00",
+        "junctions": [
+          "C:HW_00|HW_01",
+          "C:HW_00|HW_02",
+          "C:HW_01|HW_02"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_01",
+        "junctions": [
+          "C:HW_00|HW_02",
+          "C:HW_00|HW_03",
+          "C:HW_02|HW_03"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_05",
+        "junctions": [
+          "C:HW_01|HW_02",
+          "C:HW_01|HW_06",
+          "C:HW_02|HW_06"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_07",
+        "junctions": [
+          "C:HW_01|HW_05",
+          "C:HW_01|HW_10",
+          "C:HW_05|HW_10"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_02",
+        "junctions": [
+          "C:HW_00|HW_03",
+          "C:HW_00|HW_04",
+          "C:HW_03|HW_04"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_08",
+        "junctions": [
+          "C:HW_02|HW_03",
+          "C:HW_02|HW_07",
+          "C:HW_03|HW_07"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_03",
+        "junctions": [
+          "C:HW_00|HW_04",
+          "C:HW_00|HW_05",
+          "C:HW_04|HW_05"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_10",
+        "junctions": [
+          "C:HW_03|HW_04",
+          "C:HW_03|HW_08",
+          "C:HW_04|HW_08"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_12",
+        "junctions": [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_06",
+        "junctions": [
+          "C:HW_01|HW_06",
+          "C:HW_01|HW_10",
+          "C:HW_06|HW_10"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_09",
+        "junctions": [
+          "C:HW_02|HW_06",
+          "C:HW_02|HW_07",
+          "C:HW_06|HW_07"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_16",
+        "junctions": [
+          "C:HW_06|HW_10",
+          "C:HW_06|HW_11",
+          "C:HW_10|HW_11"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_11",
+        "junctions": [
+          "C:HW_03|HW_07",
+          "C:HW_03|HW_08",
+          "C:HW_07|HW_08"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_15",
+        "junctions": [
+          "C:HW_06|HW_07",
+          "C:HW_06|HW_11",
+          "C:HW_07|HW_11"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_13",
+        "junctions": [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_17",
+        "junctions": [
+          "C:HW_07|HW_08",
+          "C:HW_07|HW_11",
+          "C:HW_08|HW_11"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_14",
+        "junctions": [
+          "C:HW_05|HW_09",
+          "C:HW_05|HW_10",
+          "C:HW_09|HW_10"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_18",
+        "junctions": [
+          "C:HW_08|HW_09",
+          "C:HW_08|HW_11",
+          "C:HW_09|HW_11"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      },
+      {
+        "face": "W_19",
+        "junctions": [
+          "C:HW_09|HW_10",
+          "C:HW_09|HW_11",
+          "C:HW_10|HW_11"
+        ],
+        "d_G": [
+          0,
+          0,
+          0
+        ],
+        "G": "MAYBE"
+      }
+    ],
+    "fabric_custody": {
+      "payloads": 18,
+      "route_states": 12,
+      "pending_input_buffers": 6,
+      "pending_admissions": 0,
+      "outstanding_obligations": 0,
+      "receipts": 48
+    },
+    "branch": "FIXED_POINT_WORLD_FIELD_ONLY; RUNTIME_CUSTODY_CHANGED"
+  },
+  "frozen_evidence": {
+    "manifest_sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+    "count": 901,
+    "comparison": "SAME"
+  },
+  "stages": [
+    {
+      "stage": "stage00",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "581021D30EBB25DE6A5D79EB6593A6FA6A6FAC65F7061B7837439AFB98367C7F",
+      "next_image_sha256": "C227E6E33C341C4B79FDC93509A731A1EF562FDFB34E55B4A39D4216E3C9C4A2",
+      "checkpoint_sha256": "47BE6D935D0B5EFF30D3304FCA3FA0A9A866607F4896A589060C3A8458107B1B",
+      "retained_rules": 260,
+      "retained_facts": 91523,
+      "retained_terms": 110404,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=92291 terms=111219 epochs=1141",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "DF8B896B54B0487136368FC706B147818341122E31A4ED63FF5FB05C9516C506",
+      "facts": 92291,
+      "terms": 111219,
+      "epochs": 1141,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    },
+    {
+      "stage": "stage02",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "C227E6E33C341C4B79FDC93509A731A1EF562FDFB34E55B4A39D4216E3C9C4A2",
+      "next_image_sha256": "7DA7DA39F52EEF298888894C9F964B6B7093634F4CF04F14EDFE7101D5E8338D",
+      "checkpoint_sha256": "DF8B896B54B0487136368FC706B147818341122E31A4ED63FF5FB05C9516C506",
+      "retained_rules": 270,
+      "retained_facts": 92291,
+      "retained_terms": 111219,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=99239 terms=125277 epochs=1867",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "7A605143AEFECAD081B0E4DB31A2B860F9812B58F38AECEAEB2E7C6696DB6418",
+      "facts": 99239,
+      "terms": 125277,
+      "epochs": 1867,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    },
+    {
+      "stage": "stage04",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "7DA7DA39F52EEF298888894C9F964B6B7093634F4CF04F14EDFE7101D5E8338D",
+      "next_image_sha256": "1A63F9023AB035A5E9E0E8B8A92AB6B63E0F77A5BADF78F82338C404279F6CE0",
+      "checkpoint_sha256": "7A605143AEFECAD081B0E4DB31A2B860F9812B58F38AECEAEB2E7C6696DB6418",
+      "retained_rules": 344,
+      "retained_facts": 99239,
+      "retained_terms": 125277,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=99625 terms=126546 epochs=1911",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "C46E76F377B1887C002A331BF57E8ED01A2D46CB51D581898EC4B765409B8E53",
+      "facts": 99625,
+      "terms": 126546,
+      "epochs": 1911,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    },
+    {
+      "stage": "stage05",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "1A63F9023AB035A5E9E0E8B8A92AB6B63E0F77A5BADF78F82338C404279F6CE0",
+      "next_image_sha256": "C0C514ADA6E89DC79BCE8111DBBC34D5FC41D49EDE1DA1DC67F636B9D4D791A1",
+      "checkpoint_sha256": "C46E76F377B1887C002A331BF57E8ED01A2D46CB51D581898EC4B765409B8E53",
+      "retained_rules": 491,
+      "retained_facts": 99625,
+      "retained_terms": 126546,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=99709 terms=127084 epochs=1920",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "437D67BE8F41A813CED91758BBB235E7763616B5F9CD1723A2B1CDA5FD7386ED",
+      "facts": 99709,
+      "terms": 127084,
+      "epochs": 1920,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    },
+    {
+      "stage": "stage06",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "C0C514ADA6E89DC79BCE8111DBBC34D5FC41D49EDE1DA1DC67F636B9D4D791A1",
+      "next_image_sha256": "C18236F01E069C24423397612F689539282A75EF58E366816B50CF28BD1422E8",
+      "checkpoint_sha256": "437D67BE8F41A813CED91758BBB235E7763616B5F9CD1723A2B1CDA5FD7386ED",
+      "retained_rules": 492,
+      "retained_facts": 99709,
+      "retained_terms": 127084,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=99890 terms=130108 epochs=1959",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "FAE18FE3B59A139E596848E26845E1AE909BD923CBEB39E440328B4964D84C56",
+      "facts": 99890,
+      "terms": 130108,
+      "epochs": 1959,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    },
+    {
+      "stage": "stage07",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "C18236F01E069C24423397612F689539282A75EF58E366816B50CF28BD1422E8",
+      "next_image_sha256": "54C2E4FF1C9895DA6A8BEFF8E0E1B68D77DAC5923BF6E7D701165FB4BF0C51AA",
+      "checkpoint_sha256": "FAE18FE3B59A139E596848E26845E1AE909BD923CBEB39E440328B4964D84C56",
+      "retained_rules": 493,
+      "retained_facts": 99890,
+      "retained_terms": 130108,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=99939 terms=131020 epochs=1975",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "9C3852ACE96DF9462703105398B45769FDCB2D6A27953D420EE1ED384F838BBC",
+      "facts": 99939,
+      "terms": 131020,
+      "epochs": 1975,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    },
+    {
+      "stage": "stage08",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "54C2E4FF1C9895DA6A8BEFF8E0E1B68D77DAC5923BF6E7D701165FB4BF0C51AA",
+      "next_image_sha256": "0AE084C0F4DFD1B4708AC9F5E261B8D322DF107D2AA0DB2A039EA25451374A7E",
+      "checkpoint_sha256": "9C3852ACE96DF9462703105398B45769FDCB2D6A27953D420EE1ED384F838BBC",
+      "retained_rules": 494,
+      "retained_facts": 99939,
+      "retained_terms": 131020,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=100054 terms=132406 epochs=2002",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "CBDCD6FE68F58B3083E4C44D4A00A4D242D60A2E2C588FC3E5B33E02A703E69C",
+      "facts": 100054,
+      "terms": 132406,
+      "epochs": 2002,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    },
+    {
+      "stage": "stage09",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "0AE084C0F4DFD1B4708AC9F5E261B8D322DF107D2AA0DB2A039EA25451374A7E",
+      "next_image_sha256": "0A046861BDC2EBCFF786A21967DB3E15D1F788E86F8B238B8ED4A20FB9607A75",
+      "checkpoint_sha256": "CBDCD6FE68F58B3083E4C44D4A00A4D242D60A2E2C588FC3E5B33E02A703E69C",
+      "retained_rules": 495,
+      "retained_facts": 100054,
+      "retained_terms": 132406,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=100174 terms=132716 epochs=2093",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "52DEE55C35DC3158E0543865910C8EEDBF67AAFBEA0F3120D68CCEB0DB21DB05",
+      "facts": 100174,
+      "terms": 132716,
+      "epochs": 2093,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    },
+    {
+      "stage": "stage10",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "0A046861BDC2EBCFF786A21967DB3E15D1F788E86F8B238B8ED4A20FB9607A75",
+      "next_image_sha256": "840C178758A64ABD8866841F4A315048C4678113394A8DB12E63711D79EA9DE1",
+      "checkpoint_sha256": "52DEE55C35DC3158E0543865910C8EEDBF67AAFBEA0F3120D68CCEB0DB21DB05",
+      "retained_rules": 496,
+      "retained_facts": 100174,
+      "retained_terms": 132716,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=102842 terms=135500 epochs=2105",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "BCEBC26C160B73AEFC70F12716B14A9BD2CAD19F796A831D220F890ABDF3C0FC",
+      "facts": 102842,
+      "terms": 135500,
+      "epochs": 2105,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    },
+    {
+      "stage": "stage11",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "840C178758A64ABD8866841F4A315048C4678113394A8DB12E63711D79EA9DE1",
+      "next_image_sha256": "61E3871426120DFD373816DDA8617AE85679029D6E92131AF7B5FCF4BF3D23C7",
+      "checkpoint_sha256": "BCEBC26C160B73AEFC70F12716B14A9BD2CAD19F796A831D220F890ABDF3C0FC",
+      "retained_rules": 497,
+      "retained_facts": 102842,
+      "retained_terms": 135500,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=102855 terms=135672 epochs=2114",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "DFF97D542DB03094DCDFF0C59CF5EE5EF8379A8F1970FC3F0F926109D249DEF6",
+      "facts": 102855,
+      "terms": 135672,
+      "epochs": 2114,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    },
+    {
+      "stage": "stage12",
+      "guard": "IF_THEN",
+      "previous_image_sha256": "61E3871426120DFD373816DDA8617AE85679029D6E92131AF7B5FCF4BF3D23C7",
+      "next_image_sha256": "B9DB54D6CFB4F3931E5D96552694C291786D6C65CE70B7DC2430FED0DD768731",
+      "checkpoint_sha256": "DFF97D542DB03094DCDFF0C59CF5EE5EF8379A8F1970FC3F0F926109D249DEF6",
+      "retained_rules": 498,
+      "retained_facts": 102855,
+      "retained_terms": 135672,
+      "symbol_prefix": "SAME",
+      "logical_rule_prefix": "SAME",
+      "prior_seeds": "PRESERVED",
+      "checkpoint_proofs": "SAME",
+      "execution": "EXECUTED",
+      "qualification": "MAYBE",
+      "substrate_output": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=133418 terms=166336 epochs=2611",
+      "runtime_sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "retained_proof_bytes": "SAME",
+      "resumed_sha256": "E22E39F4E04140FB59142BA969FB94FA601BB62EEF7E292590CC95A8BE9D5AD7",
+      "facts": 133418,
+      "terms": 166336,
+      "epochs": 2611,
+      "scope": "PREFILL_CUSTODY_AND_GENERIC_CLOSURE_QUALIFICATION_ONLY; NOT_V1_V2_CONFORM",
+      "target_fact_capacity": 262144,
+      "guard_source_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+    }
+  ],
+  "implementation_repairs": {
+    "stage01": "Lowering refused two nine-antecedent draft laws before GPU execution; source split within existing resource bounds. Failed source retained.",
+    "stage03": "Lowering refused newline-terminated empty JSON before GPU execution; compact transport formatting applied. Failed source retained.",
+    "inventory_r1": "Unexecuted uppercase route-hash draft retained; executed inventory_r2 follows imported lowercase ABI."
+  },
+  "custody": {
+    "tracked_diff": "",
+    "staged_diff": "",
+    "repository_commit": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED",
+    "promotion": "NOT_PERFORMED",
+    "board_actions": "NOT_PERFORMED"
+  },
+  "source_files": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\source\\selection.mal",
+      "bytes": 1577,
+      "sha256": "D924C4BE647D1D6DE6F2725991C5EED4042893AB06332E8C51FEF737CA3C31DC"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\source\\program.mal",
+      "bytes": 19211,
+      "sha256": "6FEA9C9B2FE462FC9E794C7E12F43DDDBAEE8A12BA947AB25DE60153FDE27B55"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\source\\runtime_step.mal",
+      "bytes": 14539,
+      "sha256": "46F7260047664C7D31F54A74BAD2BB7356D72271AB8A1D7A2F57D8353B8A714D"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\source\\commit_readout.mal",
+      "bytes": 17650,
+      "sha256": "23B480274497D854E6E6CE8ED9DE887F443E40D3FDBA2033B3A8EB892023AEE7"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\source\\generic_services.mal",
+      "bytes": 519,
+      "sha256": "A48D61D7DA6C4FB0E8D407691A2FAE52659E1C8567B221B51390C61F1D29B73A"
+    }
+  ],
+  "tools": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\inventory.mjs",
+      "bytes": 2862,
+      "sha256": "742C6F88582F4653B1C6AD010F05EDA7F27ECE0A4FE7D4F07A108B15053103C1"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\services.mjs",
+      "bytes": 2955,
+      "sha256": "7A53E3919998881027293C9A0C0915C82FCC117CE6853A9000D741F88DBF3EA4"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\build.mjs",
+      "bytes": 3169,
+      "sha256": "F1C2FC019D2DABC228DB3730508C610B7AE6DACE422116C3D7CE20846BA7D90B"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\run.mjs",
+      "bytes": 1010,
+      "sha256": "7D7D8ED5EA7C77A28FDD2C97A5844D003FA75E2C2ACA81ABCD03EAA2E25ED8FA"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\advance.mjs",
+      "bytes": 1652,
+      "sha256": "780057D75A2BD4F9FFFEE38ADD85C5CEAFFAD2F0FC7D4C5405F553C57C00A76E"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\observe.mjs",
+      "bytes": 11321,
+      "sha256": "11F34BAB78BBD55781C9107CAE7A0AA259212515F8F8D03B62F16E83A089C4B1"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\audit_committed.mjs",
+      "bytes": 8809,
+      "sha256": "AAFB7DA9A9910AE84B54DB398CBA26353FAFAED1D52622697032F1E13BAD7FEE"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "outputs/program.json",
+      "bytes": 51262,
+      "sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529"
+    },
+    {
+      "path": "outputs/fabric.successor.json",
+      "bytes": 62837,
+      "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47"
+    },
+    {
+      "path": "outputs/committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "outputs/receipt_pairs.json",
+      "bytes": 425702,
+      "sha256": "A9F7D1A84B65891E29D7552E182AA8BA77FF10029493BF8888CE5933E8F5C60B"
+    },
+    {
+      "path": "outputs/independent_audit.json",
+      "bytes": 5806,
+      "sha256": "9B56C9B933943B4FFE7640D7ADA9FC569AA8DB9A721C242188BA3276D645DA34"
+    }
+  ],
+  "runtime_read_only_review": {
+    "verdict": "SAME",
+    "comparisons": 423,
+    "scope": "Independent observer; not runtime input",
+    "readback_sha256": "E22E39F4E04140FB59142BA969FB94FA601BB62EEF7E292590CC95A8BE9D5AD7",
+    "runtime_sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+    "clauses": "execution_kernel.py:143-175,338-341,525-534,541-545,642-649,711-728,908-946",
+    "findings": [
+      "18 COMPLETED payloads;12 ADMITTED_TO_TARGET;6 complete busy-target buffers",
+      "48 receipts:18 evaluations,18 transitions,12 route admissions; all two-level hashes recomputed SAME",
+      "Snapshot inputs cite g1 link; propagated inputs cite marker evaluation receipt; no current-tick arrival feeds evaluation",
+      "All six comparator readings SAME; all frame values identity/essence"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "scope": "ADD_ONLY_SOURCE_BYTE_ASSEMBLY; GPU_NOT_RUN",
+  "previous": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\stage00",
+  "inputs": {
+    "frame": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\review014\\jtp_locus_017\\inputs\\frame.json",
+      "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "bytes": 461
+    },
+    "capture": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\review014\\jtp_locus_017\\inputs\\capture.json",
+      "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "bytes": 1931
+    },
+    "field": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\review014\\gpu_self_witness_018\\current.field.json",
+      "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "bytes": 48025
+    },
+    "witness": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\review014\\gpu_self_witness_018\\current.witness.json",
+      "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "bytes": 140449
+    },
+    "hashes": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\review014\\gpu_self_witness_018\\hashes0\\responses.json",
+      "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "bytes": 239144
+    },
+    "links": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\review014\\gpu_self_witness_018\\hashes1\\responses.json",
+      "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "bytes": 430443
+    }
+  },
+  "members": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\stage00\\source.mal",
+      "sha256": "A390FA3ABC89F03EC47206BD6B46EAB1D4B0AC800F9C1FD0FB2306489B47290D",
+      "bytes": 62338
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\inventory_r2\\inventory.mal",
+      "sha256": "9EC82E08734D7A30216C804E2F4B89D658E1FE8D2212E3A23CEC6E37D7E075D6",
+      "bytes": 49190
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\source\\program.mal",
+      "sha256": "6FEA9C9B2FE462FC9E794C7E12F43DDDBAEE8A12BA947AB25DE60153FDE27B55",
+      "bytes": 19211
+    }
+  ],
+  "source": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\stage02\\source.mal",
+    "sha256": "BFD8A8B8AD05B4ACEA97B876DF545E28F8F74D885B6054424A8F5B2E9F41F7C1",
+    "bytes": 130742
+  },
+  "image": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\stage02\\image.bin",
+    "sha256": "7DA7DA39F52EEF298888894C9F964B6B7093634F4CF04F14EDFE7101D5E8338D",
+    "bytes": 41992208
+  },
+  "source_map": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\stage02\\source-map.json",
+    "sha256": "BCE36D4F58B22B9D308E5D317AE0D2153D7BD0A74A87129B52B73ECAE4BDFADD",
+    "bytes": 6671215
+  },
+  "lowerer": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+    "sha256": "05CE980CBC68707070837001819A90DF532A730569BA1112367C07BC017BD45B",
+    "bytes": 8265
+  }
+}

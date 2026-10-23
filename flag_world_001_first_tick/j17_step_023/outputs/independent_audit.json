@@ -1,0 +1,313 @@
+{
+  "scope": "READ_ONLY_INDEPENDENT_OBSERVATION_CHECK; NOT_RUNTIME; NO_OUTPUT_FILES_WRITTEN",
+  "verdict": "SAME",
+  "source_sha256": "490C4F72655A93929A3DE1663D93BA575797FB1465B6E7F989A9D728EA44B916",
+  "readback_sha256": "E22E39F4E04140FB59142BA969FB94FA601BB62EEF7E292590CC95A8BE9D5AD7",
+  "audit_sha256": "AAFB7DA9A9910AE84B54DB398CBA26353FAFAED1D52622697032F1E13BAD7FEE",
+  "prior_object_sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+  "committed_object_sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+  "canonical_committed_object_sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+  "genesis_link": "1ce68e601743bebaa458d727db920e40eaf4a7ccb0f1603087085de9fb7d8163",
+  "tick_link": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+  "pair_hash": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+  "receipt_hash": "4f362604c02e223faa5a620c15b5c2e3fd2f2fd49df92bd8e186b3b8700687b2",
+  "receipt_reading": "NO",
+  "runtime_state_sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+  "field_edits": 0,
+  "receiptCounts": {
+    "UNCHANGED": 708,
+    "RETAINED": 12
+  },
+  "comparison_count": 3134,
+  "faceReadout": [
+    {
+      "face": "W_04",
+      "junctions": [
+        "C:HW_00|HW_01",
+        "C:HW_00|HW_05",
+        "C:HW_01|HW_05"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_00",
+      "junctions": [
+        "C:HW_00|HW_01",
+        "C:HW_00|HW_02",
+        "C:HW_01|HW_02"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_01",
+      "junctions": [
+        "C:HW_00|HW_02",
+        "C:HW_00|HW_03",
+        "C:HW_02|HW_03"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_05",
+      "junctions": [
+        "C:HW_01|HW_02",
+        "C:HW_01|HW_06",
+        "C:HW_02|HW_06"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_07",
+      "junctions": [
+        "C:HW_01|HW_05",
+        "C:HW_01|HW_10",
+        "C:HW_05|HW_10"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_02",
+      "junctions": [
+        "C:HW_00|HW_03",
+        "C:HW_00|HW_04",
+        "C:HW_03|HW_04"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_08",
+      "junctions": [
+        "C:HW_02|HW_03",
+        "C:HW_02|HW_07",
+        "C:HW_03|HW_07"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_03",
+      "junctions": [
+        "C:HW_00|HW_04",
+        "C:HW_00|HW_05",
+        "C:HW_04|HW_05"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_10",
+      "junctions": [
+        "C:HW_03|HW_04",
+        "C:HW_03|HW_08",
+        "C:HW_04|HW_08"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_12",
+      "junctions": [
+        "C:HW_04|HW_05",
+        "C:HW_04|HW_09",
+        "C:HW_05|HW_09"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_06",
+      "junctions": [
+        "C:HW_01|HW_06",
+        "C:HW_01|HW_10",
+        "C:HW_06|HW_10"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_09",
+      "junctions": [
+        "C:HW_02|HW_06",
+        "C:HW_02|HW_07",
+        "C:HW_06|HW_07"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_16",
+      "junctions": [
+        "C:HW_06|HW_10",
+        "C:HW_06|HW_11",
+        "C:HW_10|HW_11"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_11",
+      "junctions": [
+        "C:HW_03|HW_07",
+        "C:HW_03|HW_08",
+        "C:HW_07|HW_08"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_15",
+      "junctions": [
+        "C:HW_06|HW_07",
+        "C:HW_06|HW_11",
+        "C:HW_07|HW_11"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_13",
+      "junctions": [
+        "C:HW_04|HW_08",
+        "C:HW_04|HW_09",
+        "C:HW_08|HW_09"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_17",
+      "junctions": [
+        "C:HW_07|HW_08",
+        "C:HW_07|HW_11",
+        "C:HW_08|HW_11"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_14",
+      "junctions": [
+        "C:HW_05|HW_09",
+        "C:HW_05|HW_10",
+        "C:HW_09|HW_10"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_18",
+      "junctions": [
+        "C:HW_08|HW_09",
+        "C:HW_08|HW_11",
+        "C:HW_09|HW_11"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    },
+    {
+      "face": "W_19",
+      "junctions": [
+        "C:HW_09|HW_10",
+        "C:HW_09|HW_11",
+        "C:HW_10|HW_11"
+      ],
+      "d_G": [
+        0,
+        0,
+        0
+      ],
+      "G": "MAYBE"
+    }
+  ],
+  "fabric_custody": {
+    "payloads": 18,
+    "route_states": 12,
+    "pending_input_buffers": 6,
+    "pending_admissions": 0,
+    "outstanding_obligations": 0,
+    "receipts": 48
+  },
+  "branch": "FIXED_POINT_WORLD_FIELD_ONLY; RUNTIME_CUSTODY_CHANGED"
+}

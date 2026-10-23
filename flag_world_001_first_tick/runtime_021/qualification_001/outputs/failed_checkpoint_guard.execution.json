@@ -1,0 +1,27 @@
+{
+  "label": "failed_checkpoint_guard",
+  "executable": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\prefill_guard_runtime.mjs",
+    "--previous-map",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\source-map.json",
+    "--previous-image",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\image.bin",
+    "--previous-readback",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\fact_boundary_5281.bin",
+    "--next-map",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\source-map.json",
+    "--next-image",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\image.bin",
+    "--fact-capacity",
+    "16384"
+  ],
+  "started_utc": "2026-10-22T22:56:12.602Z",
+  "ended_utc": "2026-10-22T22:56:12.839Z",
+  "exit": 1,
+  "error": null,
+  "signal": null,
+  "stdout": "",
+  "stderr": "file:///C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/runtime_021/prefill_guard_runtime.mjs:68\r\n if(error||tc<1||tc>NT||fc<1||fc>NF||epochs<1)throw Error('checkpoint incomplete or failed');\r\n                                                    ^\r\n\r\nError: checkpoint incomplete or failed\r\n    at readState (file:///C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/runtime_021/prefill_guard_runtime.mjs:68:53)\r\n    at file:///C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/runtime_021/prefill_guard_runtime.mjs:113:18\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:345:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\r\n\r\nNode.js v22.20.0\r\n",
+  "memory": null
+}

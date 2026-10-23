@@ -1,0 +1,10 @@
+// Generic matcher refusal regression only; not a world or CONFORM vector.
+// Closed seed terms are seated iteratively. Open antecedent depth exceeds32;
+// unchanged serial matching must report2, preserving the BEFORE support.
+@propose seed INPUT := {
+ THIS(GUARD,A), THIS(DEEP,NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(A))))))))))))))))))))))))))))))))))
+};
+law BEFORE := IF THIS(GUARD,x) THEN THIS(BEFORE,x);
+law DEEP_MATCH := IF THIS(DEEP,NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(NEST(x)))))))))))))))))))))))))))))))))) THEN THIS(SEEN,x);
+law AFTER := IF THIS(GUARD,x) THEN THIS(AFTER,x);
+

@@ -1,0 +1,14 @@
+{
+  "label": "j17_default",
+  "exe": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+  "args": [
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\image.bin",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_002\\j17_default.bin"
+  ],
+  "started_utc": "2026-10-22T22:59:34.418Z",
+  "ended_utc": "2026-10-22T22:59:50.680Z",
+  "exit": 0,
+  "error": null,
+  "stdout": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=86507 terms=105262 epochs=1131\r\n",
+  "stderr": "memory allocated_device_bytes=685216096 fact_capacity=2097152 term_capacity=4194304 mapped_telemetry_bytes=33837216 stack_requested_per_thread=8192 stack_actual_per_thread=8192 free_before_bytes=7458521088 free_after_bytes=6261047296 resident_stack_upper_estimate=578813952\r\nprogress elapsed_s=1 sequence=76692 epoch=27 facts=18961 terms=31725 error=0 phase=3 rule=238 pivot=0 chunk=0 candidates=0 serial_candidate=-1\r\nprogress elapsed_s=2 sequence=131416 epoch=45 facts=25383 terms=38904 error=0 phase=4 rule=111 pivot=1 chunk=0 candidates=29 serial_candidate=-1\r\nprogress elapsed_s=3 sequence=169508 epoch=58 facts=29228 terms=43030 error=0 phase=5 rule=121 pivot=0 chunk=0 candidates=32 serial_candidate=-1\r\nprogress elapsed_s=4 sequence=198236 epoch=68 facts=31799 terms=45831 error=0 phase=4 rule=110 pivot=1 chunk=0 candidates=18 serial_candidate=-1\r\nprogress elapsed_s=5 sequence=227432 epoch=78 facts=34308 terms=48589 error=0 phase=3 rule=116 pivot=3 chunk=2 candidates=32 serial_candidate=-1\r\nprogress elapsed_s=6 sequence=261158 epoch=90 facts=36751 terms=51294 error=0 phase=3 rule=117 pivot=3 chunk=2 candidates=26 serial_candidate=-1\r\nprogress elapsed_s=7 publication=IN_PROGRESS\r\nprogress elapsed_s=8 sequence=502524 epoch=201 facts=40387 terms=55094 error=0 phase=3 rule=119 pivot=3 chunk=0 candidates=1 serial_candidate=-1\r\nprogress elapsed_s=9 publication=IN_PROGRESS\r\nprogress elapsed_s=10 publication=IN_PROGRESS\r\nprogress elapsed_s=11 sequence=1340064 epoch=604 facts=44207 terms=58914 error=0 phase=3 rule=116 pivot=4 chunk=1 candidates=32 serial_candidate=-1\r\nprogress elapsed_s=12 sequence=1410310 epoch=633 facts=66042 terms=81741 error=0 phase=1 rule=-1 pivot=-1 chunk=-1 candidates=0 serial_candidate=-1\r\nprogress elapsed_s=13 publication=IN_PROGRESS\r\nprogress elapsed_s=14 sequence=2158120 epoch=997 facts=77922 terms=93632 error=0 phase=3 rule=176 pivot=0 chunk=0 candidates=30 serial_candidate=-1\r\n"
+}

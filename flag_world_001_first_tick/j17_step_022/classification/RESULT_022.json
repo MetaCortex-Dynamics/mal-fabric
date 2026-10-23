@@ -1,0 +1,203 @@
+{
+  "record": "TASK_CODEX_J17_SECOND_STEP_022",
+  "GPU": {
+    "device": "NVIDIA GeForce RTX 3070",
+    "error": 0,
+    "facts": 91523,
+    "terms": 110404,
+    "epochs": 1137,
+    "readback_sha256": "47BE6D935D0B5EFF30D3304FCA3FA0A9A866607F4896A589060C3A8458107B1B"
+  },
+  "classes": {
+    "A": 12,
+    "B": 0,
+    "C": 108,
+    "D": 360
+  },
+  "counts": {
+    "J22_CLASS": 480,
+    "J22_LOCATION_EVIDENCE": 12,
+    "J22_CELL_ADMITTED": 732,
+    "J22_ROUTE": 36,
+    "J22_DRC_III_CELL": 1452,
+    "J22_DRC_III_FACE": 6,
+    "J22_DRC_IV": 36,
+    "J22_ROUTE_REGION": 36,
+    "J22_ROUTE_PORT_TYPE": 36,
+    "J22_TARGET_ROLE_STATUS": 1440,
+    "J22_JOIN_CHECK": 30,
+    "J22_JOIN_UNCONNECTED": 690,
+    "J22_PROGRAM_REFUSAL": 24
+  },
+  "per_face_placement_capability": [
+    {
+      "face": "W_12",
+      "verdict": "IF_THEN",
+      "fact_id": 89165
+    },
+    {
+      "face": "W_13",
+      "verdict": "IF_THEN",
+      "fact_id": 89166
+    },
+    {
+      "face": "W_14",
+      "verdict": "IF_THEN",
+      "fact_id": 91387
+    },
+    {
+      "face": "W_18",
+      "verdict": "IF_THEN",
+      "fact_id": 91388
+    },
+    {
+      "face": "W_03",
+      "verdict": "IF_THEN",
+      "fact_id": 91389
+    },
+    {
+      "face": "W_10",
+      "verdict": "IF_THEN",
+      "fact_id": 91390
+    }
+  ],
+  "static_joins": {
+    "IF_THEN": 6,
+    "NOT_SAME": 24
+  },
+  "withheld_counterparts": {
+    "D": 12,
+    "C": 12
+  },
+  "observation_comparison": {
+    "expected": {
+      "A": 12,
+      "B": 0,
+      "C": 108,
+      "D": 360,
+      "routes": 36,
+      "joins_complete": 6,
+      "joins_not_same": 24
+    },
+    "observed": {
+      "A": 12,
+      "B": 0,
+      "C": 108,
+      "D": 360,
+      "routes": 36,
+      "joins_complete": 6,
+      "joins_not_same": 24
+    },
+    "comparison": "SAME",
+    "origin": "Independent observation of retained021, not promoted vector expectation; never supplied to image"
+  },
+  "handoff_estimate": {
+    "A": 4,
+    "C": 108,
+    "D": 360,
+    "B": "8 or in C",
+    "comparison": "NOT_SAME",
+    "scope": "estimate only; no promoted expectation altered; eight additional unique own maxima are rank S"
+  },
+  "predecessor": {
+    "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+    "comparison": "SAME",
+    "chain_links": 1
+  },
+  "scope": {
+    "classification": "EXECUTED",
+    "induced_source_routes": "EXECUTED; exact endpoint-membership filter",
+    "DRC_III": "EXECUTED per admitted occurrence-face and each of six touched CCC faces",
+    "DRC_IV": "EXECUTED on all36 source routes",
+    "DRC_VIII": "EXECUTED necessary static role-shape condition:24 NOT_SAME",
+    "full_canonical_program_admission": "NOT_CLAIMED; necessary static condition fails",
+    "STEP_FABRIC": "NOT_RUN; static refusal before runtime",
+    "link_2": "NOT_PRODUCED",
+    "successor_readout": "NOT_RUN; no successor manufactured"
+  },
+  "contract": {
+    "L06_sha256": "FFF676FC92D57CB564A2045754939794CE4CB0BE71DA286E5B709A623E3F9513",
+    "static_spec_sha256": "E328B574DE32635358AC488C4C5E20E80E86A845EB154401C8E1A7C0DD8D68F1",
+    "static_reference_sha256": "8B983301DAD795DD9C3F020970BAD76017EF648AC0C71E3FB6FDEF3D0E4347C0",
+    "clause": "DRC before runtime; actual incoming role signature MUST conform_to ROLE_SCHEMA; incoherent joins rejected statically"
+  },
+  "verdict": "NOT_SAME",
+  "boundary": "24 comparator targets have LEFT without RIGHT or RIGHT without LEFT in the requested induced static route list. This is not class-C re-stopping or a temporal arrival tie.",
+  "artifacts": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_CLASS.json",
+      "bytes": 178551,
+      "sha256": "E1E857A6E86777FC0F043C9C8ED42690889415A3C413C8E5288D3984C27C0BAB"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_LOCATION_EVIDENCE.json",
+      "bytes": 7899,
+      "sha256": "19CBB76AA617ABCD57863E098BD12DD93BE4EBFA14CF6359289F91BA7B15B8E2"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_CELL_ADMITTED.json",
+      "bytes": 750171,
+      "sha256": "853FD7C134ECB7FE01340552EBDDB38786CC6548702512E465A1DD495EC71FC7"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_ROUTE.json",
+      "bytes": 31575,
+      "sha256": "C9C1C68E0FB0CB5501CE14E7C57852DC0F3C03318F3A6AC22F9258F37AE0BB62"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_DRC_III_CELL.json",
+      "bytes": 1542477,
+      "sha256": "525F286091AE5F4E16113901A643A389AAEF47BFFDA40E32D8DBE30D4273BA4E"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_DRC_III_FACE.json",
+      "bytes": 969,
+      "sha256": "12B3F099E0DF183C0B4B7C1F6A692FF6D81E74D7D60EB99E86879ED40E634A27"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_DRC_IV.json",
+      "bytes": 33087,
+      "sha256": "F85FBEE6E01C03104CAA37816DC9A53FAA45034F1A82E6FB5B0031F7CB29AED5"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_ROUTE_REGION.json",
+      "bytes": 32799,
+      "sha256": "285FD9C90F98E096BB98B4A8768F29003DB1DFF33FAE0F8A0106D73355B401B0"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_ROUTE_PORT_TYPE.json",
+      "bytes": 32871,
+      "sha256": "40B9A8FA774D10B6831317CF03766383AFFA15A785215A8A04CCEC9A0DB6BBDA"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_TARGET_ROLE_STATUS.json",
+      "bytes": 1200243,
+      "sha256": "362790386A0CE58C9D77F31B8F6B1968D04E1C0F4CAC95CE0B737F78D417B99C"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_JOIN_CHECK.json",
+      "bytes": 26469,
+      "sha256": "52AB6D32FEA2769424BF4B167159E1BB88EE21428605A9A78C0A4307A8A8EF18"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_JOIN_UNCONNECTED.json",
+      "bytes": 420345,
+      "sha256": "7C45D8A7D04C729BC7B861CB8215BE6F295B392DC806EF9629865EF9152E6B07"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\J22_PROGRAM_REFUSAL.json",
+      "bytes": 22587,
+      "sha256": "295E3990DD806205A3D36ECD13DD238FF2664CADC74DB2BEDD019347709DD500"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\admitted_source_routes.json",
+      "bytes": 32691,
+      "sha256": "DB7D3B38D7668292FB8F311C05C245D4AA84DF252189604FAA9637CC6CF95580"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_022\\classification\\join_shape_failures.json",
+      "bytes": 42801,
+      "sha256": "BFCD1E5E33F869DEC7AF29999407E4DF157B079D73B29C4B6B7148FA8EC9D4C6"
+    }
+  ]
+}

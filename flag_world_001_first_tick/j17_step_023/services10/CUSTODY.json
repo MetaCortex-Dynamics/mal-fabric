@@ -1,0 +1,23 @@
+{
+  "scope": "SOURCE_REQUESTED_GENERIC_HASH_AND_CANONICAL_ORDER_ONLY",
+  "readback_sha256": "52DEE55C35DC3158E0543865910C8EEDBF67AAFBEA0F3120D68CCEB0DB21DB05",
+  "primitive_sha256": "7A53E3919998881027293C9A0C0915C82FCC117CE6853A9000D741F88DBF3EA4",
+  "responses_sha256": "10ABB07AE20055F9CBE839DAD0C8900AB4BA384921B1B8BD159D6C7AABE37F3E",
+  "transport_sha256": "10A992C3FBB669D714A4F9EC1C94FF38537FC5AE0215F5A676C59196FA0E46B2",
+  "requests": [
+    {
+      "fact": 100172,
+      "rule": "S23_FINAL_RECEIPT_SORT",
+      "operation": "SORT_UTF8",
+      "field": "receipt_id",
+      "rows": 48
+    },
+    {
+      "fact": 100173,
+      "rule": "S23_FINAL_BUFFER_SORT",
+      "operation": "SORT_UTF8",
+      "field": "cell_id",
+      "rows": 6
+    }
+  ]
+}

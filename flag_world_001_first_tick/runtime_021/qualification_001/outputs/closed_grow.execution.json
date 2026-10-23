@@ -1,0 +1,41 @@
+{
+  "label": "closed_grow",
+  "executable": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\prefill_guard_runtime.mjs",
+    "--previous-map",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\source-map.json",
+    "--previous-image",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\image.bin",
+    "--previous-readback",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\carrier_16384.bin",
+    "--next-map",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\source-map.json",
+    "--next-image",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\inputs\\carrier\\image.bin",
+    "--fact-capacity",
+    "4194304",
+    "--run",
+    "--exe",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+    "--output",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\closed_grow.bin",
+    "--compare",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\carrier_4194304.bin",
+    "--report",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\closed_grow.guard.json",
+    "--timeout-ms",
+    "120000"
+  ],
+  "started_utc": "2026-10-22T22:56:19.436Z",
+  "ended_utc": "2026-10-22T22:56:20.355Z",
+  "exit": 1,
+  "error": null,
+  "signal": null,
+  "stdout": "",
+  "stderr": "memory allocated_device_bytes=1104646496 fact_capacity=4194304 term_capacity=4194304 mapped_telemetry_bytes=33837216 stack_requested_per_thread=8192 stack_actual_per_thread=8192 free_before_bytes=7458521088 free_after_bytes=5841616896 resident_stack_upper_estimate=578813952\r\noutput custody\r\nfile:///C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/runtime_021/prefill_guard_runtime.mjs:123\r\n if(result.error||result.status!==0)throw Error('continuation failed: '+(result.error?.message??result.stderr??result.stdout));\r\n                                          ^\r\n\r\nError: continuation failed: \r\n    at file:///C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/runtime_021/prefill_guard_runtime.mjs:123:43\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:345:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\r\n\r\nNode.js v22.20.0\r\n",
+  "memory": {
+    "device": "NVIDIA GeForce RTX 3070",
+    "free_MiB": 7083
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "record": "J17_SECOND_STEP_ENDPOINT_PREFLIGHT_021",
+  "authority": "EXECUTE under promoted bindings; no new promotion",
+  "GPU": {
+    "device": "NVIDIA GeForce RTX 3070",
+    "error": 0,
+    "facts": 86507,
+    "terms": 105262,
+    "epochs": 1131,
+    "readback_sha256": "159567EEB9DB979FE75B3C69DA7749DDA3D7B4AD714F87A5FF1A73242F12A7D4"
+  },
+  "source_sha256": "2B408B8B0621457FBFB2640C575D1F3D6AC8967FA3A5F4457E3AC136D686F446",
+  "counts": {
+    "FLAG": 480,
+    "PAIR": 720,
+    "COMMITTED_GENESIS": 1,
+    "SF_COMPARATOR": 720,
+    "SF_OCCURRENCE_ADMITTED": 720,
+    "SF_FACE_ROLE": 6,
+    "SF_PLACEMENT_PENDING": 54,
+    "J21_MARKER": 480,
+    "J21_COORDINATE": 480,
+    "J21_CELL_MEMBER": 1200,
+    "J21_ROUTE_CONTACT": 1440,
+    "J21_ENDPOINT_MEMBERSHIP": 1440,
+    "J21_CCC_MARKER": 120,
+    "J21_CCC_OWN_ROLE": 12,
+    "J21_CCC_OWN_TIE": 108,
+    "J21_ROUTE_OWN_TIE": 324,
+    "J21_CCD_MARKER": 360,
+    "STEP_FABRIC_RETURN": 0,
+    "COMMITTED_WORLD": 0
+  },
+  "checks": [
+    {
+      "predicate": "FLAG",
+      "expected": 480,
+      "observed": 480,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "PAIR",
+      "expected": 720,
+      "observed": 720,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "COMMITTED_GENESIS",
+      "expected": 1,
+      "observed": 1,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "SF_COMPARATOR",
+      "expected": 720,
+      "observed": 720,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "SF_OCCURRENCE_ADMITTED",
+      "expected": 720,
+      "observed": 720,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "SF_FACE_ROLE",
+      "expected": 6,
+      "observed": 6,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "SF_PLACEMENT_PENDING",
+      "expected": 54,
+      "observed": 54,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "J21_MARKER",
+      "expected": 480,
+      "observed": 480,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "J21_COORDINATE",
+      "expected": 480,
+      "observed": 480,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "J21_CELL_MEMBER",
+      "expected": 1200,
+      "observed": 1200,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "J21_ROUTE_CONTACT",
+      "expected": 1440,
+      "observed": 1440,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "J21_ENDPOINT_MEMBERSHIP",
+      "expected": 1440,
+      "observed": 1440,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "J21_CCC_MARKER",
+      "expected": 120,
+      "observed": 120,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "J21_CCC_OWN_ROLE",
+      "expected": 12,
+      "observed": 12,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "J21_CCC_OWN_TIE",
+      "expected": 108,
+      "observed": 108,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "J21_ROUTE_OWN_TIE",
+      "expected": 324,
+      "observed": 324,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "J21_CCD_MARKER",
+      "expected": 360,
+      "observed": 360,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "STEP_FABRIC_RETURN",
+      "expected": 0,
+      "observed": 0,
+      "comparison": "SAME"
+    },
+    {
+      "predicate": "COMMITTED_WORLD",
+      "expected": 0,
+      "observed": 0,
+      "comparison": "SAME"
+    }
+  ],
+  "predecessor": {
+    "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+    "bytes": 382131,
+    "chain_links": 1,
+    "comparison": "SAME"
+  },
+  "scope": {
+    "endpoint_membership": "1440 structural source-route endpoint witnesses; not full canonical-program DRC",
+    "marker_identity": "SOURCE_MARKER(GENESIS,flag), retained structural identity, not a new canonical CellId recipe",
+    "placement": "No flag-to-modal-BOUNDARY mapping or type-seat J6 substitution",
+    "CCC": "Own triad must equal the full DG_FACE triangle",
+    "CCD": "360 occurrences are outside the CCC readout; not declared NO or PENDING from absence"
+  },
+  "stop": {
+    "type": "EXPLICIT_OWN_RANK_TIES",
+    "CCC_tied_markers": 108,
+    "affected_source_routes": 324,
+    "examples": [
+      {
+        "fact_id": 82866,
+        "term": "GOES_WITH(J21_CCC_OWN_TIE,SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)))),W_12,J_15,MAYBE)",
+        "rule": "J21_CCC_OWN_TIE",
+        "support": [
+          66572,
+          82134
+        ]
+      },
+      {
+        "fact_id": 82867,
+        "term": "GOES_WITH(J21_CCC_OWN_TIE,SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)))),W_12,J_15,MAYBE)",
+        "rule": "J21_CCC_OWN_TIE",
+        "support": [
+          66584,
+          82134
+        ]
+      },
+      {
+        "fact_id": 82870,
+        "term": "GOES_WITH(J21_CCC_OWN_TIE,SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)))),W_13,J_16,MAYBE)",
+        "rule": "J21_CCC_OWN_TIE",
+        "support": [
+          66577,
+          82136
+        ]
+      },
+      {
+        "fact_id": 82871,
+        "term": "GOES_WITH(J21_CCC_OWN_TIE,SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)))),W_13,J_16,MAYBE)",
+        "rule": "J21_CCC_OWN_TIE",
+        "support": [
+          66589,
+          82136
+        ]
+      }
+    ],
+    "continuation": "Not run: canonical program admission / emitted-route STEP_FABRIC / successor / link 2",
+    "runtime_refusal_witness": "NOT_CLAIMED: preflight contains no full-program admission or STEP_FABRIC producers",
+    "rule": "116 L06 withholds a candidate lacking placement; promoted S/F C3 forbids tie-breaking. Source endpoint membership remains witnessed."
+  },
+  "stages": {
+    "endpoint_incidence": "EXECUTED",
+    "modal_admission": "NOT_RUN",
+    "propagation": "NOT_RUN",
+    "runtime_governance": "NOT_RUN",
+    "simultaneous_commit": "NOT_RUN",
+    "link_2": "NOT_PRODUCED"
+  },
+  "V1_V2": "Promoted CONFORM preserved; not rerun or extended by this preflight",
+  "evidence": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\SF_FACE_ROLE.json",
+      "bytes": 981,
+      "sha256": "B1A1E5F5E3D85B977AFF7167F95EA646876081F637BB3D082250C27B0B578FFB"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\SF_PLACEMENT_PENDING.json",
+      "bytes": 11289,
+      "sha256": "F086E5D2D862F78CE2DA1EC4D3BD0EDDBD8C3AEB917AAE4C4637F48746F7D65A"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\J21_MARKER.json",
+      "bytes": 272187,
+      "sha256": "B70848CCB21B5A06B1B9F6AA7B000B00431153E637AD0DEE39ED50A13530C0F5"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\J21_COORDINATE.json",
+      "bytes": 270723,
+      "sha256": "FBBC118FF81164E04E950501D379618D4D9A01CD5A93077B03B45FD67E33A243"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\J21_CELL_MEMBER.json",
+      "bytes": 593944,
+      "sha256": "AEC6EDDD76004D74BA322DC7BF9EFD2CE5DA9445A4DE7A914978410447F78872"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\J21_ROUTE_CONTACT.json",
+      "bytes": 1189805,
+      "sha256": "0F90E97A9E41F017DF4C779FA25E6A7CAFE7643804B063413E3DFB0ADE9B891F"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\J21_ENDPOINT_MEMBERSHIP.json",
+      "bytes": 1207443,
+      "sha256": "EC615585EAD7E40625E689A9BFE3F1C32DABFDF4EE27E0A035F423059E7FD089"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\J21_CCC_MARKER.json",
+      "bytes": 49323,
+      "sha256": "3605C459BDAA4AA1137974EE371459E75B745DFD19374A9F4F8671EC22AB1524"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\J21_CCC_OWN_ROLE.json",
+      "bytes": 4863,
+      "sha256": "6EA581F48E61E32EA00E190A55BBF6521D33904786E106B32452A552D7641435"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\J21_CCC_OWN_TIE.json",
+      "bytes": 43959,
+      "sha256": "629B13912DA7F0ECCD27591600C89021A44CBDE257691DAB96276C755447F285"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\J21_ROUTE_OWN_TIE.json",
+      "bytes": 290307,
+      "sha256": "9755A02A5D5B4306F083D08D4C6AC903A691E6A7BBB9494299FDE08E1797CA9E"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\J21_CCD_MARKER.json",
+      "bytes": 130683,
+      "sha256": "1D8B3709103719799602B38753DFD95433F656AB740E8FED0B19509B0625752F"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\source_route_identities.json",
+      "bytes": 1211763,
+      "sha256": "5FD38FFBF464202A0736076DCC342C22CE78E8555C28770CF92AA449AAEE78FF"
+    }
+  ]
+}
