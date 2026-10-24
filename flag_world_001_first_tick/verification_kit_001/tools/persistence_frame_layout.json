@@ -1,0 +1,12 @@
+{
+  "source": "runtime/common/jtp_v1.h:59-89, SHA256 D1D745FE64F9422DD802E3E3A31EDD5BE81BE49505E02697F163F82D78AAF9CB",
+  "fields": {
+    "magic": [[0,4]], "version": [[4,1]], "kind": [[5,1]], "phase": [[6,1]],
+    "header_bytes": [[8,2]], "payload_bytes": [[10,2]],
+    "machine_id": [[12,8]], "transition_id": [[20,8]],
+    "junction_signature": [[28,1],[30,4]], "opcode": [[29,1]],
+    "predecessor_kind": [[38,1]], "predecessor_crc32": [[40,4]],
+    "predecessor_frame_bytes": [[44,2]], "crc32": [[128,4]]
+  },
+  "crc32_ieee": {"frame_crc32": [[0,128]]}
+}

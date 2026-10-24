@@ -1,0 +1,446 @@
+{
+  "schema": "NVIDIA_REPLAY_CONTRACT_V1",
+  "scope": "GENESIS_ONLY; not frozen V1/V2 or J17 link 2",
+  "event_sha256": "4472CFC5B73C1BA745D3129E7111C0FA394C7C6CEE42D1E6E7E9691E5FF7228B",
+  "stages": [
+    {
+      "id": "genesis_gpu",
+      "image_sha256": "508B81EE1762EF2E6F6D8484EC4E41A7C19FF08E411F52840B0192734A1E9D6D",
+      "readback_sha256": "7504B659E75ADF886E47FB9CCF1C6489A83E6C1D281F94FDAAD9E05B05CA4A23"
+    },
+    {
+      "id": "commit0_gpu",
+      "image_sha256": "2710A000C4303DD57021FF0FE62BB03E4108C632FE4E7B0827FEDB3C851AAF24",
+      "readback_sha256": "DC89E90E75C32E6C7AED52AEDBF2A33A85A5F281DA8880B63A2F97FFF8BD19CA"
+    },
+    {
+      "id": "commit1_gpu",
+      "image_sha256": "BC6805990329B5875B5AA62CF6341DA4CBCD35094538835D1B33E7CBFC8F532D",
+      "readback_sha256": "9F355D2551EDE8728F96E3E5E3F300F216A7FE824390D88E8E40294316C01F49"
+    },
+    {
+      "id": "commit2_gpu",
+      "image_sha256": "FF8285BB3BB3934F3BC5FFB7604186EF0414E6B63B6F844E3DD3C0C714D64207",
+      "readback_sha256": "A96CDB93CE443EEB1923D24FE9B34C91BC7ACEA149700C7B284030F704B142CF"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "expected/genesis/Ground0.field.json",
+      "bytes": 48001,
+      "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3",
+      "origin": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/ground_predecessor_015/GROUND_0_012.field.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "inputs/frame.json",
+      "bytes": 461,
+      "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\frame.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/current.field.json",
+      "bytes": 48025,
+      "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.field.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/current.witness.json",
+      "bytes": 140449,
+      "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.witness.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/current.receipt.json",
+      "bytes": 143965,
+      "sha256": "31422A88A25BFEB4A3FD149A180F3F3E5AD5B141548C0FD453BA40FAF5081243",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.receipt.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/committed.genesis.json",
+      "bytes": 382131,
+      "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\committed.genesis.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/hashes0.json",
+      "bytes": 239144,
+      "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes0\\responses.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/hashes1.json",
+      "bytes": 430443,
+      "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes1\\responses.json",
+      "role": "comparison-only"
+    }
+  ],
+  "files": [
+    {
+      "path": "contracts/genesis/RUN_RECORD_018.json",
+      "bytes": 47830,
+      "sha256": "66E9573678D0F8F08A71E5146193BF9780C38E7F526E6C77F2709CC8D6AE1B12",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\RUN_RECORD_018.json",
+      "role": "receipt"
+    },
+    {
+      "path": "contracts/governance/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "bytes": 3273,
+      "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7",
+      "origin": "C:/Users/devon/Desktop/MaL/MaLv3/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "role": "governing-identity"
+    },
+    {
+      "path": "contracts/governance/RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+      "bytes": 3207,
+      "sha256": "C1BA60101C95E76C3D2F090B00E3B679A6B58851B8A235829214D2B6249BD072",
+      "origin": "C:/Users/devon/Desktop/MaL/Markdowns/RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+      "role": "governing-identity"
+    },
+    {
+      "path": "contracts/governance/DECISION_RECORD_FLAG_WORLD_D_G_001.mal",
+      "bytes": 2812,
+      "sha256": "3419D528150A8616AF0DCF0446FC59FAD0FF83F1C872C93A0BC8CC70BF0A8718",
+      "origin": "C:/Users/devon/Desktop/MaL/MaLv3/DECISION_RECORD_FLAG_WORLD_D_G_001.mal",
+      "role": "governing-identity"
+    },
+    {
+      "path": "contracts/governance/SPEC_WITNESS_FACE_G_READOUT_001_v0.1.0_PROPOSED.mal",
+      "bytes": 17262,
+      "sha256": "057C30E280CC17A4D3AA6079A3B6E203DEA3FE306BD8557A67F3CEC615C05355",
+      "origin": "C:/Users/devon/Desktop/MaL/MaLv3/SPEC_WITNESS_FACE_G_READOUT_001_v0.1.0_PROPOSED.mal",
+      "role": "governing-identity"
+    },
+    {
+      "path": "contracts/governance/SPEC_FLAG_WORLD_FIRST_TICK_001_v0.1.3_PROPOSED.mal",
+      "bytes": 33554,
+      "sha256": "2ECF2EEF9A8901DA9C802922BEBE1F74C367D7A74E5B773528504B73854C1A01",
+      "origin": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/flag_world_first_tick_001_v013/SPEC_FLAG_WORLD_FIRST_TICK_001_v0.1.3_PROPOSED.mal",
+      "role": "governing-identity"
+    },
+    {
+      "path": "inputs/captured-frame.bin",
+      "bytes": 132,
+      "sha256": "4472CFC5B73C1BA745D3129E7111C0FA394C7C6CEE42D1E6E7E9691E5FF7228B",
+      "origin": "C:/Users/devon/Documents/Codex/2026-10-19/https-github-com-metacortex-dynamics-ships/work/Ships-Computer/v3/junction_transaction_protocol/evidence/QG-JTP-K0C-FIRST16-CAPTURE-021/execution/capture-corrective-002/capture/com6-postboot.bin",
+      "role": "frozen-input"
+    },
+    {
+      "path": "expected/genesis/Ground0.field.json",
+      "bytes": 48001,
+      "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3",
+      "origin": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/ground_predecessor_015/GROUND_0_012.field.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "inputs/frame.json",
+      "bytes": 461,
+      "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\frame.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "inputs/capture.json",
+      "bytes": 1931,
+      "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\capture.json",
+      "role": "frozen-input"
+    },
+    {
+      "path": "tools/persistence_frame_layout.json",
+      "bytes": 560,
+      "sha256": "D6AAE85CAD9923301E2000DFFF143B2A6596AE040920351C205CA5813CBD2225",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\persistence_frame_layout.json",
+      "role": "definition"
+    },
+    {
+      "path": "tools/transport_slices.mjs",
+      "bytes": 2123,
+      "sha256": "D21F21D3BCE74013455085AB05052AAA1C133056C5E3488E53467A52CE4E1F96",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\transport_slices.mjs",
+      "role": "definition"
+    },
+    {
+      "path": "expected/genesis/current.field.json",
+      "bytes": 48025,
+      "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.field.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/current.witness.json",
+      "bytes": 140449,
+      "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.witness.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/current.receipt.json",
+      "bytes": 143965,
+      "sha256": "31422A88A25BFEB4A3FD149A180F3F3E5AD5B141548C0FD453BA40FAF5081243",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.receipt.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/committed.genesis.json",
+      "bytes": 382131,
+      "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\committed.genesis.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/hashes0.json",
+      "bytes": 239144,
+      "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes0\\responses.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "expected/genesis/hashes1.json",
+      "bytes": 430443,
+      "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes1\\responses.json",
+      "role": "comparison-only"
+    },
+    {
+      "path": "inputs/empty-object.json",
+      "bytes": 2,
+      "sha256": "44136FA355B3678A1146AD16F7E8649E94FB4FC21FE77E8310C060F61CAAFF8A",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\empty.compact.json",
+      "role": "frozen-input"
+    },
+    {
+      "path": "sources/genesis_run.mal",
+      "bytes": 24699,
+      "sha256": "E68FA6960E4538D264E756445659F57344C571FAC2F7B00D6BE365EB42919004",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\genesis_run.mal",
+      "role": "definition"
+    },
+    {
+      "path": "sources/commit_run_v2.mal",
+      "bytes": 37826,
+      "sha256": "8D3BDC41EAC835ACB5F66659B1B7829520D27B4C8B882AD2194B168C87D10772",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\commit_run_v2.mal",
+      "role": "definition"
+    },
+    {
+      "path": "sources/commit_run_v3.mal",
+      "bytes": 38683,
+      "sha256": "89E9952F34BF6E44888150EDB5705133D91B204326C55904B090D03A3305A6EB",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\commit_run_v3.mal",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/gpu_self_witness_018/lower_capacity_16384.mjs",
+      "bytes": 7669,
+      "sha256": "D198BFEEA0F5D7C3DED23425B4C6083381FC069055EA898031F5C019CB88F731",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\lower_capacity_16384.mjs",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/gpu_self_witness_018/law_application_capacity_16384.cu",
+      "bytes": 10434,
+      "sha256": "8C3EFA01844FB924399CEE1B4562B1A28EDACB0F4C616D3B096A17F731F3335F",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\law_application_capacity_16384.cu",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/hardware_carrier_012/source_occurrence_custody.mjs",
+      "bytes": 2713,
+      "sha256": "187C741EACD6285166B4D359D0921A012A3ACDBE8C3FEB5AAAC62198FC82EA3B",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\source_occurrence_custody.mjs",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/original/lower.mjs",
+      "bytes": 7623,
+      "sha256": "C8B5BB8FCB803017DE6A6EA809984034F754F9BFC691618326A176B5AD7AB3B4",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_realization_001\\lower.mjs",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/original/law_application.cu",
+      "bytes": 10433,
+      "sha256": "551004E6A85AD5589E09880E9C1BEB02C8530D4A15AF9548C8139CF99C7AF8F4",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_realization_001\\law_application.cu",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/original/extract_json_value.mjs",
+      "bytes": 3160,
+      "sha256": "283BA4B67C92016E15CA1C702306BFA4DD9380E1536F4ADC8B1F80C94B094033",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_realization_001\\extract_json_value.mjs",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/original/hash_requested_values.mjs",
+      "bytes": 2879,
+      "sha256": "125C8F6C30B7519BECE3E00C9CB0E022913E07B396DE7CC58746B69F81EF9647",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_realization_001\\hash_requested_values.mjs",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/original/source_occurrence_custody.mjs",
+      "bytes": 2713,
+      "sha256": "187C741EACD6285166B4D359D0921A012A3ACDBE8C3FEB5AAAC62198FC82EA3B",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_realization_001\\source_occurrence_custody.mjs",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/hash/gpu_sha256.cu",
+      "bytes": 1821,
+      "sha256": "9817D8C1B8371795E5725592FD95C4B88F0F86E879569B3A00DA2714CDAF5912",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_realization_001\\substrate\\hash\\gpu_sha256.cu",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/hash/sha256.c",
+      "bytes": 4171,
+      "sha256": "4C665218D51124D7870C64243ADE7B22917257392C82D07B44C3C533C5CDA28F",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_realization_001\\substrate\\hash\\sha256.c",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/hash/sha256.h",
+      "bytes": 158,
+      "sha256": "D187FF475BEC7AC47773D04523335E6D9C1F5B88D1632F399A00F38278341D35",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_realization_001\\substrate\\hash\\sha256.h",
+      "role": "definition"
+    },
+    {
+      "path": "vendor/original/extract_json_rows.mjs",
+      "bytes": 3992,
+      "sha256": "103585AFF6087DAFD39D94EB107EE0C2295C06C47EE0CD00FD6D5D400A25609C",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\ground_predecessor_015\\extract_json_rows.mjs",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/E68FA6960E4538D264E756445659F57344C571FAC2F7B00D6BE365EB42919004.mal",
+      "bytes": 24699,
+      "sha256": "E68FA6960E4538D264E756445659F57344C571FAC2F7B00D6BE365EB42919004",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\genesis_run.mal",
+      "role": "definition"
+    },
+    {
+      "path": "contracts/assembly/E68FA6960E4538D264E756445659F57344C571FAC2F7B00D6BE365EB42919004.json",
+      "bytes": 613,
+      "sha256": "977C176384082DDBF58DCBF62181F078ACDA8E52E9EF9B526A6BD4606EE0F481",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\genesis_run.mal.custody.json",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/ECB21A3A4BF0D6AEF9B55319FCC8F8CB11A6886B3ACC6414A296A647320E426C.mal",
+      "bytes": 20905,
+      "sha256": "ECB21A3A4BF0D6AEF9B55319FCC8F8CB11A6886B3ACC6414A296A647320E426C",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\run2.mal",
+      "role": "definition"
+    },
+    {
+      "path": "contracts/assembly/ECB21A3A4BF0D6AEF9B55319FCC8F8CB11A6886B3ACC6414A296A647320E426C.json",
+      "bytes": 611,
+      "sha256": "5B999E231008C4BECAD3F89D5F2B38B85A9F3C4D9284434204F1D6E018E1D901",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\run2.mal.custody.json",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/EEC08D3E709C6657D37FABC296BD749529F4F562EAD026A34B057792E729B1F1.mal",
+      "bytes": 15928,
+      "sha256": "EEC08D3E709C6657D37FABC296BD749529F4F562EAD026A34B057792E729B1F1",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\ground_predecessor_015\\run.mal",
+      "role": "definition"
+    },
+    {
+      "path": "contracts/assembly/EEC08D3E709C6657D37FABC296BD749529F4F562EAD026A34B057792E729B1F1.json",
+      "bytes": 875,
+      "sha256": "797C216F646616C39AD1E50AA6668F06B792C3D817217D36A186EA09989B2DD8",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\ground_predecessor_015\\run.mal.custody.json",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F.mal",
+      "bytes": 13197,
+      "sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\source.mal",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/694675C05DB1D8F3C1388C8AC271388B56CC8BC2B8E41671FADA22E8D2DB0EF4.mal",
+      "bytes": 2048,
+      "sha256": "694675C05DB1D8F3C1388C8AC271388B56CC8BC2B8E41671FADA22E8D2DB0EF4",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\source\\observations.mal",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/EABF0FEC620BFD0EBB55FE0F7CBC1AA393F933FBA03AFEEB7749FC69AD6ED0A7.mal",
+      "bytes": 680,
+      "sha256": "EABF0FEC620BFD0EBB55FE0F7CBC1AA393F933FBA03AFEEB7749FC69AD6ED0A7",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\ground_predecessor_015\\ground.mal",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/7C243C610471E5158E3AC7B1C9F4EB18CD20CE7E59DB602F3809CA3B0F5B8CED.mal",
+      "bytes": 4975,
+      "sha256": "7C243C610471E5158E3AC7B1C9F4EB18CD20CE7E59DB602F3809CA3B0F5B8CED",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\header_locus.mal",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/F0773557E1E940722137BAA022E2AF98F6750B962334961B3F1D9F0CCE68CF80.mal",
+      "bytes": 3792,
+      "sha256": "F0773557E1E940722137BAA022E2AF98F6750B962334961B3F1D9F0CCE68CF80",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\source\\genesis.mal",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/8D3BDC41EAC835ACB5F66659B1B7829520D27B4C8B882AD2194B168C87D10772.mal",
+      "bytes": 37826,
+      "sha256": "8D3BDC41EAC835ACB5F66659B1B7829520D27B4C8B882AD2194B168C87D10772",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\commit_run_v2.mal",
+      "role": "definition"
+    },
+    {
+      "path": "contracts/assembly/8D3BDC41EAC835ACB5F66659B1B7829520D27B4C8B882AD2194B168C87D10772.json",
+      "bytes": 627,
+      "sha256": "D9BA02BC930608B912E65BB2BBB906765368BF3F318D140215DF1BFCA584F451",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\commit_run_v2.mal.custody.json",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/E1CA26A69BEA76E482B79E9E1E3A5B52F15E14E6EB0C3C9A13237C21D9FE7C3A.mal",
+      "bytes": 13125,
+      "sha256": "E1CA26A69BEA76E482B79E9E1E3A5B52F15E14E6EB0C3C9A13237C21D9FE7C3A",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\commit_run_v2.mal",
+      "byte_offset": 24700,
+      "historical_path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\source\\commit.mal",
+      "role": "recovered-bound-assembly-member"
+    },
+    {
+      "path": "sources/constituents/89E9952F34BF6E44888150EDB5705133D91B204326C55904B090D03A3305A6EB.mal",
+      "bytes": 38683,
+      "sha256": "89E9952F34BF6E44888150EDB5705133D91B204326C55904B090D03A3305A6EB",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\commit_run_v3.mal",
+      "role": "definition"
+    },
+    {
+      "path": "contracts/assembly/89E9952F34BF6E44888150EDB5705133D91B204326C55904B090D03A3305A6EB.json",
+      "bytes": 627,
+      "sha256": "CE7F631516504B2AE9269CDFD7C24F1AD37850B0EE86F63C972ADF7123AEA3F6",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\commit_run_v3.mal.custody.json",
+      "role": "definition"
+    },
+    {
+      "path": "sources/constituents/59948853D407D1A9ED958F258A8AB3292DDBA12FFA4C72B21358FC88C0ADCD22.mal",
+      "bytes": 13982,
+      "sha256": "59948853D407D1A9ED958F258A8AB3292DDBA12FFA4C72B21358FC88C0ADCD22",
+      "origin": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\source\\commit.mal",
+      "role": "definition"
+    }
+  ]
+}

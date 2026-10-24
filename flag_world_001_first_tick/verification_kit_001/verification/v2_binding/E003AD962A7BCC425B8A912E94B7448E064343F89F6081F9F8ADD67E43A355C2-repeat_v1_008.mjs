@@ -1,0 +1,57 @@
+// Custody-only exact replay. No source law, expected bytes, or runtime is changed.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
+const here=path.dirname(fileURLToPath(import.meta.url)),root=path.dirname(here);
+const baseline=path.join(here,'vectors_iterative/V1/stage01');
+const work=path.join(here,'vectors_repeat_008/V1'),dir=path.join(work,'stage01'),image=path.join(dir,'image');
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
+const id=p=>{const b=fs.readFileSync(p);return {path:path.resolve(p),size:b.length,sha256:sha(b)};};
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const check=r=>{const n=id(r.path);if(n.sha256!==r.sha256||n.size!==(r.size??r.bytes))throw Error('CUSTODY_NOT_SAME '+r.path);};
+const write=(p,b)=>fs.writeFileSync(p,b,{flag:'wx'});
+const put=(n,o)=>write(path.join(dir,n),JSON.stringify(o,null,2)+'\n');
+const expected='6C30E87F2DCA3325015D82F86482315134D93530D2A0C4517A76FC3D6DB09849';
+const first=id(path.join(baseline,'image/readback.bin'));
+if(first.sha256!==expected)throw Error('BASELINE_READBACK_NOT_SAME');
+const old=read(path.join(baseline,'BUILD.json')),priorStart=read(path.join(baseline,'START.json'));
+const qPath=path.join(here,'qualification_iterative_full/QUALIFICATION.json'),q=read(qPath);
+const qa=path.join(here,'qualification_iterative_full/TELEMETRY_AUDIT.json');
+if(q.qualification!=='SAME'||read(qa).qualification!=='SAME'||read(qa).qualification_record.sha256!==id(qPath).sha256)throw Error('QUALIFICATION_NOT_SAME');
+for(const key of ['exe','source','telemetry'])check(q.bindings[key]);
+for(const r of Object.values(priorStart.bindings))check(r);
+for(const r of [old.source,old.image,old.source_map,...Object.values(old.inputs)])check(r);
+const exe=path.join(here,'iterative_collect_007/block_iterative_full.exe');
+const guard=path.join(root,'prefill_guard_execute.mjs');
+if(id(exe).sha256!=='8A739F97DC3A67DC440DE3BE5C079A7ED7FC0898D5DCFDB5AEFE6F9CE8AB2B08'||id(guard).sha256!=='CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C')throw Error('RUNTIME_OR_GUARD_NOT_SAME');
+const sealPath=path.join(root,'carrier_prefill_001/PREFILL_MANIFEST.json'),seal=read(sealPath);
+if(id(sealPath).sha256!=='D40F88D9CA521EDF95A4FC347A309D8B23F5605F47EC164F91BB2CAD80DF4AD7')throw Error('PREFILL_NOT_SAME');
+for(const r of Object.values(seal.members))check(r);
+if(old.vector!=='V1'||old.stage!==1||old.image.sha256!=='233D0009179E1B79DB0A8B170CDE81E08364DC76855A808C6BBAF0B729F057C1'||old.source.sha256!=='BE1E4948CEADE240BAAA1AFAA37DFF2D0EA01810A1F188EC6F9A1F402ED91A97')throw Error('IMAGE_NOT_SAME');
+if(fs.existsSync(work))throw Error('PRESERVE_REPEAT_LINEAGE');
+fs.mkdirSync(image,{recursive:true});
+for(const f of ['source.mal','source-map.json','image.bin'])write(path.join(image,f),fs.readFileSync(path.join(baseline,'image',f)));
+write(path.join(dir,'source.mal'),fs.readFileSync(old.source.path));
+put('BUILD.json',{...old,source:id(path.join(dir,'source.mal')),image:id(path.join(image,'image.bin')),source_map:id(path.join(image,'source-map.json')),execution_fork:{original_build:id(path.join(baseline,'BUILD.json')),source_image_map:'BYTE_EXACT_COPY',starting_state:'SAME_SEALED_CARRIER_CHECKPOINT'}});
+const bindings={runner:id(fileURLToPath(import.meta.url)),runtime:id(exe),runtime_source:id(q.bindings.source.path),guard:id(guard),qualification:id(qPath),telemetry_audit:id(qa),prefill:id(sealPath),checkpoint:id(seal.members['readback.bin'].path),baseline:first,image:id(path.join(image,'image.bin')),source_map:id(path.join(image,'source-map.json')),world_source:id(path.join(image,'source.mal'))};
+const argv=[guard,'--previous-map',seal.members['source-map.json'].path,'--previous-image',seal.members['image.bin'].path,'--previous-readback',seal.members['readback.bin'].path,'--next-map',path.join(image,'source-map.json'),'--next-image',path.join(image,'image.bin'),'--run','--exe',exe,'--output',path.join(image,'readback.bin'),'--report',path.join(dir,'PREFILL_EXECUTION_GUARD.json')];
+const start={scope:'EXACT_PARALLEL_V1_REPEAT; NOT_CONFORM',started_utc:new Date().toISOString(),bindings,arguments:argv,expected_raw_readback_sha256:expected,continuation:'WITHHELD_UNTIL_BYTE_IDENTICAL',other_vectors:'NOT_RUN'};
+put('START.json',start);console.log(JSON.stringify({action:'EXACT_V1_REPEAT_LAUNCH',record:path.join(dir,'START.json'),image:bindings.image.sha256,checkpoint:bindings.checkpoint.sha256,runtime:bindings.runtime.sha256,expected}));
+try{
+ const r=spawnSync(process.execPath,['--max-old-space-size=8192',...argv],{cwd:root,windowsHide:true,encoding:'utf8',stdio:['ignore','pipe','inherit'],maxBuffer:32*1024*1024});
+ const output=path.join(image,'readback.bin');
+ put('EXECUTION.json',{scope:start.scope,vector:'V1',stage:1,started_utc:start.started_utc,ended_utc:new Date().toISOString(),bindings,exit_code:r.status,signal:r.signal,error:r.error?.message??null,output:r.stdout??'',diagnostic_readback:fs.existsSync(output)?id(output):null});
+ for(const b of Object.values(bindings))check(b);
+ if(r.error||r.status!==0)throw Error('REPEAT_EXECUTION_REFUSED '+(r.error?.message??r.status));
+ const actual=id(output),comparison=actual.sha256===expected&&actual.size===first.size?'SAME':'NOT_SAME';
+ put('REPEATABILITY.json',{scope:'EXACT_PARALLEL_IMAGE_AND_PREFILL; RAW_BYTE_IDENTITY',comparison,baseline:first,repeated:actual,bindings,world_conform:'NOT_RUN'});
+ if(comparison!=='SAME')throw Error('REPEAT_READBACK_NOT_SAME');
+ function cpu(tool,args){const result=spawnSync(process.execPath,['--max-old-space-size=8192',path.join(root,tool),...args],{cwd:root,windowsHide:true,encoding:'utf8',stdio:['ignore','pipe','inherit'],maxBuffer:32*1024*1024});if(result.error||result.status!==0)throw Error('OBSERVATION_REFUSED '+tool);return result.stdout;}
+ cpu('status.mjs',[image,path.join(dir,'STATUS.json')]);
+ const empty=path.join(root,'hash_empty/responses.json');
+ cpu('hash_batch.mjs',[image,path.join(dir,'hash'),empty]);
+ cpu('hash_delta.mjs',[path.join(dir,'hash/responses.json'),empty,path.join(dir,'hash/delta.json')]);
+ console.log(JSON.stringify({action:'REPEAT_SAME',readback:actual,continuation:'ADMISSIBLE_TO_START; NOT_CONFORM'}));
+}catch(e){put('STOP.json',{utc:new Date().toISOString(),reason:e.message,conform:'NOT_RUN',continuation:'WITHHELD'});throw e;}

@@ -1,0 +1,10 @@
+// Devon, 2026-10-21: x_t := Ground_0(012), every flag NO; current unbound.
+// Parent flags come only from retained 012 hardware incidence.
+// This is the archived predecessor operand, not event capture or genesis commit.
+// No kappa, E0, selected face, fixture or current-field declaration is imported.
+law GROUND_PREDECESSOR_FIELD := IF THIS(FLAG,f)
+ THEN GOES_WITH(ARCHIVED_PREDECESSOR_FIELD,GROUND_0_012,f,NO);
+
+// Observation encoding only. FLAG_JSON is the retained 012 source encoding.
+law GROUND_PREDECESSOR_ROW := IF GOES_WITH(ARCHIVED_PREDECESSOR_FIELD,GROUND_0_012,f,NO), GOES_WITH(FLAG_JSON,f,j)
+ THEN THIS(OBSERVATION_ROW,GROUND_0_012,ARRAY(CONS(j,CONS("NO",NIL))));

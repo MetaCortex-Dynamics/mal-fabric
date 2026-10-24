@@ -1,0 +1,44 @@
+{
+  "scope": "SCOPED_ORCHESTRATION_ONLY; NO_WORLD_LAW_OR_RUNTIME_CHANGE",
+  "parent": "D:/Dev/flag-world-first-tick-020/parallel_prefill_002/continue_vector_008.mjs",
+  "parent_sha256": "8682A0629DE45400A9404E36A4659E90AC14B7D31E3568755F8F194B2B63DC1B",
+  "new_path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/v2_continuation_009/continue_vector_009.mjs",
+  "transforms": [
+    {
+      "from": "//   node continue_vector.mjs V1 --start-stage 1",
+      "to": "//   node continue_vector_009.mjs V2 --start-stage 1"
+    },
+    {
+      "from": "const isolated=path.dirname(fileURLToPath(import.meta.url));\nconst root=path.dirname(isolated);",
+      "to": "const controls=path.dirname(fileURLToPath(import.meta.url));\nconst isolated='D:/Dev/flag-world-first-tick-020/parallel_prefill_002';\nconst root=path.dirname(isolated);"
+    },
+    {
+      "from": "if(vector!=='V1'||!Number.isInteger(start)||start<1||start>99)throw Error('isolated V1 and completed start stage required');",
+      "to": "if(vector!=='V2'||!Number.isInteger(start)||start<1||start>99)throw Error('isolated V2 and completed start stage required');"
+    },
+    {
+      "from": "const work=path.join(isolated,'vectors_repeat_008',vector);",
+      "to": "const work=path.join(isolated,'vectors_v2_009',vector);"
+    },
+    {
+      "from": "read(path.join(isolated,'CONTINUATION_008_BINDINGS.json'))",
+      "to": "read(path.join(controls,'V2_009_BINDINGS.json'))"
+    },
+    {
+      "from": "const file=script==='execute_stage_008.mjs'?path.join(isolated,script):path.join(root,script);",
+      "to": "const file=script==='execute_stage_009.mjs'?path.join(controls,script):path.join(root,script);"
+    },
+    {
+      "from": "const repeated=read(path.join(stagePath(1),'REPEATABILITY.json'));\nif(repeated.comparison!=='SAME'||repeated.repeated.sha256!=='6C30E87F2DCA3325015D82F86482315134D93530D2A0C4517A76FC3D6DB09849')throw Error('exact V1 repeat SAME required');\ncustody(repeated.baseline);custody(repeated.repeated);",
+      "to": "// V1 discharged matcher repeatability. This V2 lineage uses its own audited stage01,\n// not V1's closure or an invented V2 repeatability requirement.\nconst initial=inspect(1);\nif(initial.build.image.sha256!=='FE34A07948DB72507CFD7D28278E63DCABEA478FDB949B4C28CBFA2A0B41D75A'||initial.build.inputs.vector.sha256!=='DC46E239B9D693AF25DC3D7005718060230D31AC9CA057F7ECCCF73968AA2C8E')throw Error('BOUND_V2_STAGE01_REQUIRED');"
+    },
+    {
+      "from": "'execute_stage_008.mjs '+vector+' '+next",
+      "to": "'execute_stage_009.mjs '+vector+' '+next"
+    },
+    {
+      "from": "await run('execute_stage_008.mjs',[vector,String(next)]);",
+      "to": "await run('execute_stage_009.mjs',[vector,String(next)]);"
+    }
+  ]
+}

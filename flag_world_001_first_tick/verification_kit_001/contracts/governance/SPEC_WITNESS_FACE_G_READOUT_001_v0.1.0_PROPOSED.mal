@@ -1,0 +1,240 @@
+// SPEC-WITNESS-FACE-G-READOUT-001
+// STATUS:    PROPOSED. No promotion, activation or execution on the flag world is claimed.
+// AUTHORITY: Claude PROPOSE; Devon Generally DECIDE / PROMOTE; Codex EXECUTE (REALIZE, CONFORM).
+// VERSION:   0.1.0
+// DATE:      2026-10-21
+// METHOD:    SPEC-MAL-SPECIFICATION-SYSTEM-002 v0.3.1
+// METHOD_SHA256: E2DBE9971A78BAE2AE76D9C77DED7742C7524BA59A3FD9D3349CB133C3D79FEA (bytes as held in this session)
+// TARGET:    ONE readout law: for ONE witness face (CCC triad) of the flag world, derive its
+//            TRIAD G vertex from the §6.1 readout operands and the promoted genealogical metric
+//            d_G, with NO face selection, NO direction, NO identifier order, NO Z6 decoder.
+//            S and F are ranked; their binding to tangent lengths 2 and 3 is O_next (DECIDE).
+// DISCHARGES Codex BLOCKED 2026-10-21 15:16 / 15:27: "the next derivation must produce the
+//            readout's distance and tangency relations, rather than interpret adjacency counts."
+//
+// CONTACTS used by the individual readings below:
+// GE  := Governed_Evolution_Admissibility_Dynamics.docx,
+//        SHA256 D2F4645450F3503463956B10F03D3FBF68EBAA815C7D8C9BFB5550133F4219E2.
+//        GE:120-121 (text extraction line numbers): K_GSF ∝ exp(−β[d_G(x,xₜ)+ηV(x)])·1{x∈R}·1{V≤V(xₜ)};
+//        "genealogical distance (minimal edit to lineage)". d_G is measured FROM the archived predecessor xₜ.
+// FORM := The Formulation of Admissibility Dynamics (Feb 2026), cited as GE [1]; definition of d_G.
+//        Not held in this session: its exact edit metric is O_exec, named below.
+// CS  := The_Constructive_Substrate.docx §6.1 (Codex read, 2026-10-21 15:16): projection is a readout
+//        of (cell, neighbours, archived predecessor state).
+// GRL := Governed_Reaction_Lattice.docx, SHA256 83B5E5F0AD3EF5762777787071C1FB78617AB1952900459B01F4666EE46A5A4B.
+//        GRL:113-119 dependent pair; :136-140 elementary rearrangement; :310-317 refinement_record.
+// INC := Perfect_Square_Incircle_Law.docx, SHA256 807624D257661370A8AD688D7B4B242E5703E16028CAF59586AB564BC5ABEB98
+//        (Codex-hashed; Zenodo 20946692). §4 unit primitive right triangle ⇒ 3-4-5; §6 tangency
+//        quadrilateral is a square iff the vertex is the right angle; tangent lengths s−a, s−b, s−c.
+// PA  := Papers A/B, SHA256 96C5B4FB3706F2C73987B05BCA45E14902AB31CD18D890F393D306CC48898846.
+//        PA:25 P primitive; :61 LOCATION; :62 boundary capability; :78(iii).
+// FAB := FABRIC_SPEC_v0.1.0-candidate-r2.md, SHA256 E328B574DE32635358AC488C4C5E20E80E86A845EB154401C8E1A7C0DD8D68F1
+//        (Codex-hashed). :44 membership derived from placement; :55 TriadDimension := G|S|F; :399.
+// GEO := flag-world geometry.json, SHA256 26A8627176262C7493568AB1DF4C2FB216A0809F445C17DFF37ABA6D0BD03460.
+//        80 triads = 20 CCC + 60 CCD; 480 flags = 120 + 360; every CCC edge is the C–C base of ONE CCD.
+// FT  := SPEC-FLAG-WORLD-FIRST-TICK-001 v0.1.1 PROPOSED,
+//        SHA256 73429D78A8430AF060197D7022A5FB16549F03EEB5851C4164229E65E92AFFEE. :54, :55, :71.
+// HW  := motif_junction_table_v1.h, SHA256 25AF837405F450986FBD24A425D2197BD5E5D9D4BF952F74BE43CFB992B10F64
+//        (30 junctions, 12 domains, 20 faces; seating stabilizer {id}).
+// OCC := route_contact_014/occurrences.mal:15 (Codex read): reads two snapshot markers, emits SAME/NOT_SAME.
+// EIS := lattice lemma, this session and Codex (15:27), independently: norm-9 and norm-16 Eisenstein
+//        vectors meet only at 0°, 60°, 120°, 180°; NO ProjectionShell(m,n) refinement carries 3-4-5.
+
+domain WITNESS_FACE_G_READOUT on face_11;
+
+@propose seed WITNESS_FACE_G_READOUT_WALK := {
+
+  // THIS
+  WHAT(THIS),              // ONE witness face: a CCC triad, its three junction vertices v1,v2,v3, and the
+                           // archived predecessor state xₜ of the readout. Contact GEO; CS §6.1.
+  HOW(THIS),               // Identity of a face := its three corridor names (GEO). Identity of xₜ := the
+                           // archived predecessor of the tick (GRL:113-119; FT:54). NO identifier order enters.
+  FOR_WHAT(THIS),          // The face reads its own G from its own operands. It witnesses itself. Contact Devon 12:15.
+
+  // SAME_NOT_SAME
+  WHAT(SAME_NOT_SAME),     // d_G(vᵢ, xₜ) = 0 is SAME; > 0 is NOT_SAME. The occurrence today emits this bit (OCC).
+                           // This specification requires the distance, of which the bit is the collapse.
+  HOW(SAME_NOT_SAME),      // Compare exact vector output bytes (FT:55); d_G between two readings is the
+                           // minimal edit between those bytes per FORM. The bytes are already in hand.
+  FOR_WHAT(SAME_NOT_SAME), // Three distances per face, NOT_SAME one bit per overlap; a tie among the three
+                           // is a reading, not an error (see MAYBE).
+
+  // NO
+  WHAT(NO),                // NO adjacency count is a distance: every neighbour is one step from every vertex,
+                           // so adjacency cannot distinguish tangent length 1 from 2 or 3. Contact Codex 15:27.
+  HOW(NO),                 // NO face selection, NO boot face, NO direction ("down"), NO identifier byte order,
+                           // NO Z6-to-vertex decoder. Each was withdrawn in this session with its witness.
+  FOR_WHAT(NO),            // NO ProjectionShell(m,n) refinement realizes the 3-4-5 face (EIS). The metric is
+                           // in the readout, not in the kernel lattice.
+
+  // IF_THEN
+  WHAT(IF_THEN),           // IF the minimum of {d_G(v1,xₜ), d_G(v2,xₜ), d_G(v3,xₜ)} is attained at ONE vertex
+                           // THEN G(face) := that vertex.
+  HOW(IF_THEN),            // IF the three distances are pairwise NOT_SAME THEN rank the other two: rank 2 the
+                           // nearer, rank 3 the farther. S,F := a binding of ranks 2,3 (O_next, DECIDE).
+  FOR_WHAT(IF_THEN),       // IF G(face) is read for a face THEN triad_position(cell at vertex v in that face)
+                           // := the ▽ role of v in that face, and membership follows (FAB:44; PA:61).
+
+  // BECAUSE
+  WHAT(BECAUSE),           // G is the vertex nearest xₜ BECAUSE the governance kernel's cost is d_G measured
+                           // from xₜ (GE:120-121): "bears on the level beneath" = minimal d_G to the predecessor.
+  HOW(BECAUSE),            // xₜ is the incenter BECAUSE the kernel measures every candidate from xₜ, and the
+                           // incircle is the locus equidistant (r) from the three sides (INC §6).
+  FOR_WHAT(BECAUSE),       // why_F: the tangency quadrilateral at G is a square BECAUSE both tangent lengths at
+                           // G equal r (INC §6); r = 1 BECAUSE the readout's unit is one edit (GE: minimal edit).
+
+  // INSIDE_OUTSIDE
+  WHAT(INSIDE_OUTSIDE),    // INSIDE: the four §6.1 operands and d_G. OUTSIDE: any renderer, any Euclidean
+                           // embedding, any lattice coordinate. Contact CS §6.1; EIS.
+  HOW(INSIDE_OUTSIDE),     // Vectors below are INSIDE these bytes: exact input, exact expected output.
+  FOR_WHAT(INSIDE_OUTSIDE),// Obligations not discharged INSIDE are named in O_exec / O_next; none unnamed.
+
+  // NEAR_FAR
+  WHAT(NEAR_FAR),          // NEAR := small d_G to xₜ. G is the NEAREST vertex of its face to the predecessor.
+  HOW(NEAR_FAR),           // Tangent length at vᵢ := d_G along the side from vᵢ to the side's point nearest xₜ.
+                           // Ordering vertices by tangent length = ordering by nearness to xₜ (INC §6).
+  FOR_WHAT(NEAR_FAR),      // The three tangent lengths of the unit primitive right face are 1, 2, 3 (INC §4):
+                           // all NOT_SAME; G, rank 2 and rank 3 are all read.
+
+  // CAN_CANNOT
+  WHAT(CAN_CANNOT),        // A face CAN yield G only when its minimum d_G is unique; it CANNOT when it ties.
+  HOW(CAN_CANNOT),         // At Ground₀ (uniform state) every d_G = 0: every face ties, NO face yields G.
+                           // Contact FINDING_BOOT_GROUNDS_IN_ONE_TICK; NOTE_GENESIS_IS_NOT_A_SELECTION.
+  FOR_WHAT(CAN_CANNOT),    // G values come from the recorded readings (the event); the LAW is fixed before it.
+                           // P is fixed at g₁ (Paper B). No placement is read ahead of the record.
+
+  // MAYBE
+  WHAT(MAYBE),             // Tied minimum ⇒ G_verdict MAYBE. Unique minimum but a tie among the other two ⇒
+                           // G_verdict IF_THEN, S_F_verdict MAYBE. Reported as two columns, never collapsed.
+  HOW(MAYBE),              // The exact edit metric of FORM is not held in these bytes: d_G values supplied to
+                           // the vectors are given, not computed; computing them from FT bytes is O_exec.
+  FOR_WHAT(MAYBE),         // A G reported without its three distances in the run record is MAYBE.
+
+  // MUST_LET
+  WHAT(MUST_LET),          // MUST: G := unique argmin d_G. LET: which of ranks 2,3 is S (DECIDE, O_next).
+  HOW(MUST_LET),           // MUST: emit the three distances. LET: the realization language and the edit
+                           // algorithm's implementation, provided it is FORM's metric.
+  FOR_WHAT(MUST_LET),      // The implementer adds NO tie-break. A tie is MAYBE and is reported as such.
+
+  // TOGETHER_ALONE
+  WHAT(TOGETHER_ALONE),    // PROPOSE (this file), DECIDE/PROMOTE (Devon), EXECUTE (Codex): held ALONE.
+  HOW(TOGETHER_ALONE),     // The three distances of a face are read TOGETHER from ONE xₜ; a vertex is never
+                           // read ALONE against a different predecessor.
+  FOR_WHAT(TOGETHER_ALONE),// A cell at junction J takes its ▽ role from EACH incident face separately
+                           // (Junction("5") counterexample): J17's role in {4,5,9} and in {4,8,9} are two reads.
+
+  // MORE_LESS
+  WHAT(MORE_LESS),         // MORE distance = farther from the predecessor = LESS genealogical standing in the face.
+  HOW(MORE_LESS),          // Ranks 1 < 2 < 3 by increasing d_G. Nothing else is ordered.
+  FOR_WHAT(MORE_LESS),     // r is the LEAST distance from xₜ to any side; r = 1 is the unit face (INC §4).
+
+  // GOES_WITH
+  WHAT(GOES_WITH),         // vertex GOES_WITH THIS cell; the two tangency points GOES_WITH the two neighbours
+                           // along the face's edges at that cell; the incenter GOES_WITH xₜ. Four for four (CS §6.1).
+  HOW(GOES_WITH),          // Run record: spec id + sha256, realization sha256, per face the three distances,
+                           // G, ranks, G_verdict, S_F_verdict; per vector executed or not, SAME or NOT_SAME.
+  FOR_WHAT(GOES_WITH),     // Hypotenuse GOES_WITH the edge opposite G (the 5-side; the domain edge, GRL/rectification);
+                           // its midpoint GOES_WITH child G (GROUNDING_RULE_IS_RECTIFICATION).
+
+  // MANY_ONE
+  WHAT(MANY_ONE),          // MANY faces (20 CCC), ONE law. MANY cells at a junction, ONE role per (cell, face).
+  HOW(MANY_ONE),           // ONE predecessor xₜ per tick serves EVERY face's readout.
+  FOR_WHAT(MANY_ONE),      // 20 G reads, 0 choices.
+
+  // EVERY_SOME
+  WHAT(EVERY_SOME),        // CHECK_FORM := meet of W1..W8 (002).
+  HOW(EVERY_SOME),         // EVERY CCC face is read; SOME may return MAYBE; the first-tick placement is
+                           // forced IFF EVERY face returns G_verdict IF_THEN.
+  FOR_WHAT(EVERY_SOME),    // CONFORM verdict, first that applies: NOT_SAME identity; NO SOME executed vector
+                           // NOT_SAME; MAYBE SOME vector not executed; IF_THEN EVERY vector SAME.
+
+  // carrier atoms
+  THIS, SAME_NOT_SAME, NO, IF_THEN, BECAUSE, INSIDE_OUTSIDE, NEAR_FAR,
+  CAN_CANNOT, MAYBE, MUST_LET, TOGETHER_ALONE, MORE_LESS, GOES_WITH,
+  MANY_ONE, EVERY_SOME
+};
+
+law R1_WHERE :=
+  IF WHAT(o)
+  THEN WHERE(o);
+
+law R1_WHICH :=
+  IF WHAT(o)
+  THEN WHICH(o);
+
+law R1_WHEN :=
+  IF HOW(o)
+  THEN WHEN(o);
+
+law R2_WHENCE :=
+  IF WHERE(o), WHICH(o), WHEN(o), FOR_WHAT(o), FOR_WHAT(BECAUSE)
+  THEN WHENCE(o);
+
+// ---------------------------------------------------------------
+// EXPECTED TERMINAL
+//   Structural: seed cells 45; derived 60 = WHERE 15 + WHICH 15 + WHEN 15 + WHENCE 15.
+//   Total 105 witness cells plus the 15 carrier atoms. PENDING seed/derived cells: {}.
+//   This structural terminal is NOT the flag-world execution terminal.
+//   O_exec, each PENDING:
+//     O_D_G_FROM_BYTES: compute d_G(vᵢ, xₜ) from the exact FT:55 vector output bytes per FORM's
+//       edit metric; emit the three distances per CCC face (replaces the OCC bit for this purpose).
+//     O_PREDECESSOR_OPERAND: bind xₜ for the first tick to the archived predecessor state of the
+//       readout (CS §6.1; GRL:113-119), not to a fixture.
+//     O_FACE_READ_20: run the law on EVERY CCC face of the flag world; record G, ranks, verdicts.
+//     O_J17_ROLE: read J17's ▽ role in {4,5,9} and {4,8,9}; check against capability {G,S}
+//       (never rank 3 if rank 3 is F).
+//   O_next = { O_S_F_BINDING (DECIDE: which of ranks 2,3 is S), O_FLEX_MOTIF_CORRESPONDENCE,
+//              O_CCD_FACES (G := D by type, GEO; not re-read here), O_STEP_FABRIC_FIVE_STAGES }.
+// ---------------------------------------------------------------
+
+// ---------------------------------------------------------------
+// VECTORS. Encoding: UTF-8, sorted-key compact JSON, separators comma/colon, no BOM,
+// no terminal newline. Expected bytes frozen before any candidate. Digests uppercase.
+// V2–V7 exercise the law on supplied distances / sides; they do not compute d_G from bytes (O_exec).
+//
+// V1  CHECK_FORM(this file)
+//     expected IF_THEN; W8 execution NOT_RUN in this proposal.
+//
+// V2  G_READOUT(V2.input.json)
+//     input  {"d_G":{"a":2,"b":3,"c":4},"face":"CCC"}
+//     sha256 9CCD145864BF91492E0AEE36BAC2544B14B9255A73C55F9A93F37D7D6FD252DE; 40 bytes
+//     expected {"G":"a","G_verdict":"IF_THEN","S_F_verdict":"IF_THEN","ranks":{"a":1,"b":2,"c":3}}
+//     expected_sha256 388E5EC4AE260D2AC67DFBAD5E50826BE4E21A8E235651A71192AD4D7A33FE99; 83 bytes
+//     origin: the unit face's vertex-to-incenter edit distances 1+1, 2+1, 3+1.
+//
+// V3  G_READOUT(V3.input.json)   — Ground₀: uniform readings
+//     input  {"d_G":{"a":0,"b":0,"c":0},"face":"CCC"}
+//     sha256 88BF34E04F6A44C5DCE376FB2A45E27C3200E011C5F1E53B9574FD212C8E8267; 40 bytes
+//     expected {"G":null,"G_verdict":"MAYBE","S_F_verdict":"MAYBE","ranks":null}
+//     expected_sha256 1F997C4155C55E51F77FDA903F0F5C4466C6F9F13AE2C375A8E4C189FE9842D7; 65 bytes
+//
+// V4  INCIRCLE_READOUT(V4.input.json)   — the unit primitive right face (INC §4, §6)
+//     input  {"sides":[3,4,5]}
+//     sha256 CD5587E78C52BCF72804627CEE40E6E4ECEA37B0B519A8F90E4630178DD21752; 17 bytes
+//     expected {"G":"opp_c","G_verdict":"IF_THEN","S_F_verdict":"IF_THEN","area":6.0,"r":1.0,"ranks":{"opp_a":3,"opp_b":2,"opp_c":1},"right_angle_at":"opp_c","s":6.0,"tangent":{"opp_a":3.0,"opp_b":2.0,"opp_c":1.0},"unit_inradius":true}
+//     expected_sha256 C80A292F458319CDEB5B78C420A425B7118FB2276345C2858F44EEDB6636C007; 220 bytes
+//     reading: G is the vertex opposite the 5-side; tangent lengths 1,2,3; r = 1; area = s = 6.
+//
+// V5  INCIRCLE_READOUT(V5.input.json)   — isoceles: G unique, S/F tie
+//     input  {"sides":[5,5,6]}
+//     sha256 F713FDB6867495274853736712859CF52D038D028AB01FFE409E1F336485D2C0; 17 bytes
+//     expected {"G":"opp_c","G_verdict":"IF_THEN","S_F_verdict":"MAYBE","area":12.0,"r":1.5,"ranks":null,"right_angle_at":null,"s":8.0,"tangent":{"opp_a":3.0,"opp_b":3.0,"opp_c":2.0},"unit_inradius":false}
+//     expected_sha256 FF171A28F33DC8984CF83E38F1AAEA5DA2612DCDC78A18840E25E189D5D1344D; 190 bytes
+//     reading: a unique G does not require a right angle; S and F do require three NOT_SAME lengths.
+//
+// V6  INCIRCLE_READOUT(V6.input.json)   — primitive right, not unit (INC: area 4π)
+//     input  {"sides":[5,12,13]}
+//     sha256 9C72CA93B8F1B01249232A60BDD565CA814D925D3DAF2E52CBBA079C60ED7E5C; 19 bytes
+//     expected {"G":"opp_c","G_verdict":"IF_THEN","S_F_verdict":"IF_THEN","area":30.0,"r":2.0,"ranks":{"opp_a":3,"opp_b":2,"opp_c":1},"right_angle_at":"opp_c","s":15.0,"tangent":{"opp_a":10.0,"opp_b":3.0,"opp_c":2.0},"unit_inradius":false}
+//     expected_sha256 9588D58C4676434321117CE575F27597E410400352EE17F3D5AF86A7315A443F; 224 bytes
+//     reading: r = n(m−n) = 2; the unit face (r = 1) is 3-4-5 alone (INC §4).
+//
+// V7  INCIRCLE_READOUT(V7.input.json)   — equilateral: the Euclidean icosahedral face
+//     input  {"sides":[1,1,1]}
+//     sha256 0C30A5970C72B614E2C4CA1D641E668E3A5875FB545B2D9773E7301FE7930898; 17 bytes
+//     expected {"G":null,"G_verdict":"MAYBE","S_F_verdict":"MAYBE","area":0.4330127018922193,"r":0.28867513459481287,"ranks":null,"right_angle_at":null,"s":1.5,"tangent":{"opp_a":0.5,"opp_b":0.5,"opp_c":0.5},"unit_inradius":false}
+//     expected_sha256 31E56B37DB773BFE3EB59EC28782494BB19FEE27CAFA4BE2AC9683FE6C8BD791; 215 bytes
+//     reading: the equilateral face yields NO G. This is why ▽ needed a rule from outside until now.
+//
+// Reference realization of V2–V7: gread/vectors.py (authoring support; not a runtime, not independent).
+// ---------------------------------------------------------------

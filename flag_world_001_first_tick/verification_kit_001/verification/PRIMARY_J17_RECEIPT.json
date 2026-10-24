@@ -1,0 +1,3646 @@
+{
+  "schema": "FOLLOWON_REPLAY_RECEIPT_V1",
+  "target": "j17",
+  "scope": "J17_LINK_2_TWELVE_ROUTES; not tick-3 admission",
+  "contract_sha256": "1EF8D4623D92365FC9038DC42B774BA6BC73ADD7C31B2E659A01EC4070F74361",
+  "runner": {
+    "sha256": "5596527E5F3943FEB7C3E90D1A982FD272D0F59960BF27BBD11C469FC80923F5",
+    "bytes": 10286
+  },
+  "started": "2026-10-23T04:30:55.966Z",
+  "commands": [
+    {
+      "label": "nvcc-version",
+      "exe": "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/bin/nvcc.exe",
+      "args": [
+        "--version"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "device",
+      "exe": "nvidia-smi",
+      "args": [
+        "--query-gpu=name,uuid,driver_version,memory.total",
+        "--format=csv,noheader"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "build",
+      "exe": "C:\\WINDOWS\\system32\\cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\build.cmd"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_021-preflight",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_021-preflight.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_021-preflight",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_021-preflight",
+      "exe": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_021-preflight\\image.bin",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_021-preflight\\readback.bin",
+        "--fact-capacity",
+        "2097152"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_022-classification",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_022-classification.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_022-classification",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_022-classification",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_021-preflight\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_021-preflight\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_021-preflight\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_022-classification\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_022-classification\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_022-classification\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_022-classification\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "2097152"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage00",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage00.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage00",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage00",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_022-classification\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_022-classification\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_022-classification\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage00\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage00\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage00\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage00\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "inventory",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\j17_inventory.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage00",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\inventory"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage02",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage02.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage02",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage02",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage00\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage00\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage00\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage02\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage02\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage02\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage02\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "service-svc02",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\j17_services.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage02",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc02",
+        "svc02"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage04",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage04.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage04",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json",
+        "svc02=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc02\\responses.json",
+        "hash_batch=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\inputs\\empty-array.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage04",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage02\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage02\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage02\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage04\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage04\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage04\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage04\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "service-svc05",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\j17_services.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage04",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc05",
+        "svc05"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage05",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage05.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage05",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json",
+        "svc02=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc02\\responses.json",
+        "hash_batch=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\inputs\\empty-array.json",
+        "svc05=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc05\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage05",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage04\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage04\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage04\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage05\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage05\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage05\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage05\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "service-svc06",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\j17_services.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage05",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc06",
+        "svc06"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage06",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage06.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage06",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json",
+        "svc02=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc02\\responses.json",
+        "hash_batch=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\inputs\\empty-array.json",
+        "svc05=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc05\\responses.json",
+        "svc06=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc06\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage06",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage05\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage05\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage05\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage06\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage06\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage06\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage06\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "service-svc07",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\j17_services.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage06",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc07",
+        "svc07"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage07",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage07.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage07",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json",
+        "svc02=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc02\\responses.json",
+        "hash_batch=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\inputs\\empty-array.json",
+        "svc05=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc05\\responses.json",
+        "svc06=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc06\\responses.json",
+        "svc07=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc07\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage07",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage06\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage06\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage06\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage07\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage07\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage07\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage07\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "service-svc08",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\j17_services.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage07",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc08",
+        "svc08"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage08",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage08.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage08",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json",
+        "svc02=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc02\\responses.json",
+        "hash_batch=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\inputs\\empty-array.json",
+        "svc05=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc05\\responses.json",
+        "svc06=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc06\\responses.json",
+        "svc07=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc07\\responses.json",
+        "svc08=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc08\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage08",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage07\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage07\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage07\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage08\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage08\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage08\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage08\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "service-svc09",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\j17_services.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage08",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc09",
+        "svc09"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage09",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage09.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage09",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json",
+        "svc02=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc02\\responses.json",
+        "hash_batch=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\inputs\\empty-array.json",
+        "svc05=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc05\\responses.json",
+        "svc06=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc06\\responses.json",
+        "svc07=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc07\\responses.json",
+        "svc08=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc08\\responses.json",
+        "svc09=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc09\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage09",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage08\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage08\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage08\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage09\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage09\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage09\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage09\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "service-svc10",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\j17_services.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage09",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc10",
+        "svc10"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage10",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage10.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage10",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json",
+        "svc02=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc02\\responses.json",
+        "hash_batch=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\inputs\\empty-array.json",
+        "svc05=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc05\\responses.json",
+        "svc06=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc06\\responses.json",
+        "svc07=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc07\\responses.json",
+        "svc08=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc08\\responses.json",
+        "svc09=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc09\\responses.json",
+        "svc10=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc10\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage10",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage09\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage09\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage09\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage10\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage10\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage10\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage10\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "service-svc11",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\j17_services.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage10",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc11",
+        "svc11"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage11",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage11.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage11",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json",
+        "svc02=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc02\\responses.json",
+        "hash_batch=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\inputs\\empty-array.json",
+        "svc05=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc05\\responses.json",
+        "svc06=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc06\\responses.json",
+        "svc07=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc07\\responses.json",
+        "svc08=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc08\\responses.json",
+        "svc09=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc09\\responses.json",
+        "svc10=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc10\\responses.json",
+        "svc11=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc11\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage11",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage10\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage10\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage10\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage11\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage11\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage11\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage11\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "service-svc12",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\j17_services.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage11",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc12",
+        "svc12"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "lower-j17_step_023-stage12",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\sources\\j17\\j17_step_023-stage12.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage12",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_genesis_trial_001\\hashes1\\responses.json",
+        "svc02=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc02\\responses.json",
+        "hash_batch=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\inputs\\empty-array.json",
+        "svc05=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc05\\responses.json",
+        "svc06=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc06\\responses.json",
+        "svc07=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc07\\responses.json",
+        "svc08=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc08\\responses.json",
+        "svc09=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc09\\responses.json",
+        "svc10=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc10\\responses.json",
+        "svc11=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc11\\responses.json",
+        "svc12=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\svc12\\responses.json"
+      ],
+      "exit": 0,
+      "error": null
+    },
+    {
+      "label": "gpu-j17_step_023-stage12",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\verification_kit_001\\followon\\tools\\prefill_guard_runtime.mjs",
+        "--previous-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage11\\source-map.json",
+        "--previous-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage11\\image.bin",
+        "--previous-readback",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage11\\readback.bin",
+        "--next-map",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage12\\source-map.json",
+        "--next-image",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage12\\image.bin",
+        "--exe",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\evaluator.exe",
+        "--output",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage12\\readback.bin",
+        "--report",
+        "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\public_kit_j17_trial_003\\j17_step_023-stage12\\CONTINUATION_CUSTODY.json",
+        "--run",
+        "--fact-capacity",
+        "262144"
+      ],
+      "exit": 0,
+      "error": null
+    }
+  ],
+  "comparisons": [
+    {
+      "label": "followon/sources/V1/stage01.mal",
+      "actual": {
+        "sha256": "BE1E4948CEADE240BAAA1AFAA37DFF2D0EA01810A1F188EC6F9A1F402ED91A97",
+        "bytes": 144143
+      },
+      "expected_sha256": "BE1E4948CEADE240BAAA1AFAA37DFF2D0EA01810A1F188EC6F9A1F402ED91A97",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage01.json",
+      "actual": {
+        "sha256": "6ED03EA0F83BCB9956F5776C53D6AC99BE3502393B438E4BA73F62BAE2462854",
+        "bytes": 4950
+      },
+      "expected_sha256": "6ED03EA0F83BCB9956F5776C53D6AC99BE3502393B438E4BA73F62BAE2462854",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage02.mal",
+      "actual": {
+        "sha256": "128F362D6C3D62193344B8BFEF86BFCD22DF36E5F55CB1FD3302ED5A70CD0601",
+        "bytes": 144575
+      },
+      "expected_sha256": "128F362D6C3D62193344B8BFEF86BFCD22DF36E5F55CB1FD3302ED5A70CD0601",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage02.json",
+      "actual": {
+        "sha256": "012A9853D0FA59E1FA43A3C975E97FFE4309A9D4B032BE464531A54B63E29B07",
+        "bytes": 4994
+      },
+      "expected_sha256": "012A9853D0FA59E1FA43A3C975E97FFE4309A9D4B032BE464531A54B63E29B07",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage03.mal",
+      "actual": {
+        "sha256": "E5DD8DB39E6093F1DE423E5C11EA4DFAE5AF8CF3E776DFED08F17045E827D7B9",
+        "bytes": 144792
+      },
+      "expected_sha256": "E5DD8DB39E6093F1DE423E5C11EA4DFAE5AF8CF3E776DFED08F17045E827D7B9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage03.json",
+      "actual": {
+        "sha256": "CA0B19118AACD5CF5DBE132F0A14FB7FC01E4BB564544DFFD991E151A3CFB92F",
+        "bytes": 5242
+      },
+      "expected_sha256": "CA0B19118AACD5CF5DBE132F0A14FB7FC01E4BB564544DFFD991E151A3CFB92F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage04.mal",
+      "actual": {
+        "sha256": "408809CE39C00A3CB093B1A5CD3F430863066CB592AA51E4BD5BDE5202F24167",
+        "bytes": 1774166
+      },
+      "expected_sha256": "408809CE39C00A3CB093B1A5CD3F430863066CB592AA51E4BD5BDE5202F24167",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage04.json",
+      "actual": {
+        "sha256": "D2F2201D30A092668E85BD14027BE811C34336BF3508B9BE8549E87E32E7580C",
+        "bytes": 7050
+      },
+      "expected_sha256": "D2F2201D30A092668E85BD14027BE811C34336BF3508B9BE8549E87E32E7580C",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage05.mal",
+      "actual": {
+        "sha256": "0FD7C51C07F4E77B31A44EBFE9402110DA8CEC0652D3A8A8B945EA466F07D9ED",
+        "bytes": 1774383
+      },
+      "expected_sha256": "0FD7C51C07F4E77B31A44EBFE9402110DA8CEC0652D3A8A8B945EA466F07D9ED",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage05.json",
+      "actual": {
+        "sha256": "BFA0015C5E9BCC73B4280C5012E6070D4B9A57A359F5D4A0130AA4EA9A952A8A",
+        "bytes": 6026
+      },
+      "expected_sha256": "BFA0015C5E9BCC73B4280C5012E6070D4B9A57A359F5D4A0130AA4EA9A952A8A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage06.mal",
+      "actual": {
+        "sha256": "EB388F1429241EE33B2F5799C0DB2DB735CF17D58298FB011F7AF3A803086C66",
+        "bytes": 1774600
+      },
+      "expected_sha256": "EB388F1429241EE33B2F5799C0DB2DB735CF17D58298FB011F7AF3A803086C66",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage06.json",
+      "actual": {
+        "sha256": "AE30E71D37B29557ADB6B44109A3CDDDFEA869EFA14921DC71DF2FD4F14B4B72",
+        "bytes": 6277
+      },
+      "expected_sha256": "AE30E71D37B29557ADB6B44109A3CDDDFEA869EFA14921DC71DF2FD4F14B4B72",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage07.mal",
+      "actual": {
+        "sha256": "88FD7DE6B8D98382E0FD16CE86786582CBE79AA29F25E33A0BF7F0F8576CEC37",
+        "bytes": 1774817
+      },
+      "expected_sha256": "88FD7DE6B8D98382E0FD16CE86786582CBE79AA29F25E33A0BF7F0F8576CEC37",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage07.json",
+      "actual": {
+        "sha256": "901C6E63A2A884085B893C955C6C9227C806C17258C966AD8E4FEEC14F6CAB32",
+        "bytes": 6529
+      },
+      "expected_sha256": "901C6E63A2A884085B893C955C6C9227C806C17258C966AD8E4FEEC14F6CAB32",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage08.mal",
+      "actual": {
+        "sha256": "DC1332A115C5A3C95B31985C1C3A2606EE26BCF71B5482728E4B2C03281F7DA2",
+        "bytes": 1775034
+      },
+      "expected_sha256": "DC1332A115C5A3C95B31985C1C3A2606EE26BCF71B5482728E4B2C03281F7DA2",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage08.json",
+      "actual": {
+        "sha256": "9FD56B993B1C43EF079876E205E853909070AA37E69F0F7611487EEACFB9FB29",
+        "bytes": 6781
+      },
+      "expected_sha256": "9FD56B993B1C43EF079876E205E853909070AA37E69F0F7611487EEACFB9FB29",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage09.mal",
+      "actual": {
+        "sha256": "B9F3CA5D7EDA87633271796935ACB2D50EAB2190284A3CD290BF47AF073F0FC4",
+        "bytes": 1775251
+      },
+      "expected_sha256": "B9F3CA5D7EDA87633271796935ACB2D50EAB2190284A3CD290BF47AF073F0FC4",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage09.json",
+      "actual": {
+        "sha256": "E614F91A60B236837DC963161BD2E75D54DF657A53DF7E8A192F79D410234191",
+        "bytes": 7032
+      },
+      "expected_sha256": "E614F91A60B236837DC963161BD2E75D54DF657A53DF7E8A192F79D410234191",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage10.mal",
+      "actual": {
+        "sha256": "8130FB3955D1C28EA005817AA0FAA642D5ACCAF2410A3CB642843F8B9596A00D",
+        "bytes": 1775468
+      },
+      "expected_sha256": "8130FB3955D1C28EA005817AA0FAA642D5ACCAF2410A3CB642843F8B9596A00D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage10.json",
+      "actual": {
+        "sha256": "DC998C639876658C032C94EF4B4AACF596C35679844B1FF0331DCB2E00A9EAE3",
+        "bytes": 7284
+      },
+      "expected_sha256": "DC998C639876658C032C94EF4B4AACF596C35679844B1FF0331DCB2E00A9EAE3",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage11.mal",
+      "actual": {
+        "sha256": "185B7211D7EF0FB52E072F12F352675C0AB6242EEA8DA6B40A6ECF04F5D694CD",
+        "bytes": 1775685
+      },
+      "expected_sha256": "185B7211D7EF0FB52E072F12F352675C0AB6242EEA8DA6B40A6ECF04F5D694CD",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage11.json",
+      "actual": {
+        "sha256": "DD73CB43C696EEA710482242FBF04B65F31543A49B6324FC036A5CFF7EBB7C96",
+        "bytes": 7535
+      },
+      "expected_sha256": "DD73CB43C696EEA710482242FBF04B65F31543A49B6324FC036A5CFF7EBB7C96",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage12.mal",
+      "actual": {
+        "sha256": "96F33CD76A9B2A5E3317617DB229891D749FA49EE5AE206F59097FC11E67F8B3",
+        "bytes": 1775913
+      },
+      "expected_sha256": "96F33CD76A9B2A5E3317617DB229891D749FA49EE5AE206F59097FC11E67F8B3",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage12.json",
+      "actual": {
+        "sha256": "8B3CB7DF233A1965E2B9CB8EC848696B9BEA9948AF29F107B712A3E64E584E8F",
+        "bytes": 7818
+      },
+      "expected_sha256": "8B3CB7DF233A1965E2B9CB8EC848696B9BEA9948AF29F107B712A3E64E584E8F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage13.mal",
+      "actual": {
+        "sha256": "12F4E768FCCB366A745B5504D7785B682D30686FF56AB40FBC3448DD8A8433BC",
+        "bytes": 1776130
+      },
+      "expected_sha256": "12F4E768FCCB366A745B5504D7785B682D30686FF56AB40FBC3448DD8A8433BC",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage13.json",
+      "actual": {
+        "sha256": "C49BBC9E4F0EA8F3E6AFB18E0FA90BF77170F00F69EDCEC008F3A00672A76C32",
+        "bytes": 8068
+      },
+      "expected_sha256": "C49BBC9E4F0EA8F3E6AFB18E0FA90BF77170F00F69EDCEC008F3A00672A76C32",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V1/stage14.mal",
+      "actual": {
+        "sha256": "3D4F086BB6F14A4FA21B90CC877E6AB3BF704CBA08E89647FFFFC727B1410C28",
+        "bytes": 1776347
+      },
+      "expected_sha256": "3D4F086BB6F14A4FA21B90CC877E6AB3BF704CBA08E89647FFFFC727B1410C28",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V1/stage14.json",
+      "actual": {
+        "sha256": "23DA190F81468F9028ED4AC20D5F303EBD6825C008D5BB12057F81E6302BF139",
+        "bytes": 8316
+      },
+      "expected_sha256": "23DA190F81468F9028ED4AC20D5F303EBD6825C008D5BB12057F81E6302BF139",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/inputs/V1.input.json",
+      "actual": {
+        "sha256": "28093717ACC694FACC3B635701A22AFF37DDB09FB0447774BACC700647F262BE",
+        "bytes": 32842
+      },
+      "expected_sha256": "28093717ACC694FACC3B635701A22AFF37DDB09FB0447774BACC700647F262BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/expected/V1.expected.json",
+      "actual": {
+        "sha256": "69786966E9B5D66A2078D29C43E1F1511545786AB07BF562E37D91205085B588",
+        "bytes": 33563
+      },
+      "expected_sha256": "69786966E9B5D66A2078D29C43E1F1511545786AB07BF562E37D91205085B588",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage01.mal",
+      "actual": {
+        "sha256": "BE1E4948CEADE240BAAA1AFAA37DFF2D0EA01810A1F188EC6F9A1F402ED91A97",
+        "bytes": 144143
+      },
+      "expected_sha256": "BE1E4948CEADE240BAAA1AFAA37DFF2D0EA01810A1F188EC6F9A1F402ED91A97",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage01.json",
+      "actual": {
+        "sha256": "40AAA7172F263F7D96CE4B08F5A5E5C9FCC0FA759E62456F1E79572F5CC92160",
+        "bytes": 4928
+      },
+      "expected_sha256": "40AAA7172F263F7D96CE4B08F5A5E5C9FCC0FA759E62456F1E79572F5CC92160",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage02.mal",
+      "actual": {
+        "sha256": "128F362D6C3D62193344B8BFEF86BFCD22DF36E5F55CB1FD3302ED5A70CD0601",
+        "bytes": 144575
+      },
+      "expected_sha256": "128F362D6C3D62193344B8BFEF86BFCD22DF36E5F55CB1FD3302ED5A70CD0601",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage02.json",
+      "actual": {
+        "sha256": "0D9F643BD8BFA39BDFB0F052A3895193ADEB070FDEAAE29730A3A24AF477747F",
+        "bytes": 4962
+      },
+      "expected_sha256": "0D9F643BD8BFA39BDFB0F052A3895193ADEB070FDEAAE29730A3A24AF477747F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage03.mal",
+      "actual": {
+        "sha256": "E5DD8DB39E6093F1DE423E5C11EA4DFAE5AF8CF3E776DFED08F17045E827D7B9",
+        "bytes": 144792
+      },
+      "expected_sha256": "E5DD8DB39E6093F1DE423E5C11EA4DFAE5AF8CF3E776DFED08F17045E827D7B9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage03.json",
+      "actual": {
+        "sha256": "C91AE6A5E5A14E847F27995303BEC225B94D853E5879E9C4B81C2471F15102E5",
+        "bytes": 5206
+      },
+      "expected_sha256": "C91AE6A5E5A14E847F27995303BEC225B94D853E5879E9C4B81C2471F15102E5",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage04.mal",
+      "actual": {
+        "sha256": "408809CE39C00A3CB093B1A5CD3F430863066CB592AA51E4BD5BDE5202F24167",
+        "bytes": 1774166
+      },
+      "expected_sha256": "408809CE39C00A3CB093B1A5CD3F430863066CB592AA51E4BD5BDE5202F24167",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage04.json",
+      "actual": {
+        "sha256": "39DCDD46D6F2601F586FAC3BD725AF07BF5F1C6B10437A2C26037855EDE1824D",
+        "bytes": 7006
+      },
+      "expected_sha256": "39DCDD46D6F2601F586FAC3BD725AF07BF5F1C6B10437A2C26037855EDE1824D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage05.mal",
+      "actual": {
+        "sha256": "0FD7C51C07F4E77B31A44EBFE9402110DA8CEC0652D3A8A8B945EA466F07D9ED",
+        "bytes": 1774383
+      },
+      "expected_sha256": "0FD7C51C07F4E77B31A44EBFE9402110DA8CEC0652D3A8A8B945EA466F07D9ED",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage05.json",
+      "actual": {
+        "sha256": "357552FD1E41256010E90183D507E631EEBDFD49110FCAC184B8B7B8B2B25AD5",
+        "bytes": 5982
+      },
+      "expected_sha256": "357552FD1E41256010E90183D507E631EEBDFD49110FCAC184B8B7B8B2B25AD5",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage06.mal",
+      "actual": {
+        "sha256": "EB388F1429241EE33B2F5799C0DB2DB735CF17D58298FB011F7AF3A803086C66",
+        "bytes": 1774600
+      },
+      "expected_sha256": "EB388F1429241EE33B2F5799C0DB2DB735CF17D58298FB011F7AF3A803086C66",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage06.json",
+      "actual": {
+        "sha256": "A8D97882E4C2493979E0214194E33FC7B46948B5F8C0841B3019C40FB0B074DB",
+        "bytes": 6229
+      },
+      "expected_sha256": "A8D97882E4C2493979E0214194E33FC7B46948B5F8C0841B3019C40FB0B074DB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage07.mal",
+      "actual": {
+        "sha256": "88FD7DE6B8D98382E0FD16CE86786582CBE79AA29F25E33A0BF7F0F8576CEC37",
+        "bytes": 1774817
+      },
+      "expected_sha256": "88FD7DE6B8D98382E0FD16CE86786582CBE79AA29F25E33A0BF7F0F8576CEC37",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage07.json",
+      "actual": {
+        "sha256": "E8189B6821F1FEF140EAAF4ACA365DB5507A2577434E3AB8E6F3B7897D3E51AB",
+        "bytes": 6477
+      },
+      "expected_sha256": "E8189B6821F1FEF140EAAF4ACA365DB5507A2577434E3AB8E6F3B7897D3E51AB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage08.mal",
+      "actual": {
+        "sha256": "DC1332A115C5A3C95B31985C1C3A2606EE26BCF71B5482728E4B2C03281F7DA2",
+        "bytes": 1775034
+      },
+      "expected_sha256": "DC1332A115C5A3C95B31985C1C3A2606EE26BCF71B5482728E4B2C03281F7DA2",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage08.json",
+      "actual": {
+        "sha256": "BA410A181B02BD2FCF15BE3E91FDDC18B99DA74C7ADFD6DA41D9BD92B8F879B8",
+        "bytes": 6725
+      },
+      "expected_sha256": "BA410A181B02BD2FCF15BE3E91FDDC18B99DA74C7ADFD6DA41D9BD92B8F879B8",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage09.mal",
+      "actual": {
+        "sha256": "B9F3CA5D7EDA87633271796935ACB2D50EAB2190284A3CD290BF47AF073F0FC4",
+        "bytes": 1775251
+      },
+      "expected_sha256": "B9F3CA5D7EDA87633271796935ACB2D50EAB2190284A3CD290BF47AF073F0FC4",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage09.json",
+      "actual": {
+        "sha256": "8E12BC8C536876D1B0F9C6FE86DAE69F36592FC1CE0B5EFF03BD02A0CE4B5306",
+        "bytes": 6972
+      },
+      "expected_sha256": "8E12BC8C536876D1B0F9C6FE86DAE69F36592FC1CE0B5EFF03BD02A0CE4B5306",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage10.mal",
+      "actual": {
+        "sha256": "8130FB3955D1C28EA005817AA0FAA642D5ACCAF2410A3CB642843F8B9596A00D",
+        "bytes": 1775468
+      },
+      "expected_sha256": "8130FB3955D1C28EA005817AA0FAA642D5ACCAF2410A3CB642843F8B9596A00D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage10.json",
+      "actual": {
+        "sha256": "8F7C75A28A63FC48C78C75D6732DDAD8765EAD9EA2C13CE19D4A40385A0C953D",
+        "bytes": 7220
+      },
+      "expected_sha256": "8F7C75A28A63FC48C78C75D6732DDAD8765EAD9EA2C13CE19D4A40385A0C953D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage11.mal",
+      "actual": {
+        "sha256": "185B7211D7EF0FB52E072F12F352675C0AB6242EEA8DA6B40A6ECF04F5D694CD",
+        "bytes": 1775685
+      },
+      "expected_sha256": "185B7211D7EF0FB52E072F12F352675C0AB6242EEA8DA6B40A6ECF04F5D694CD",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage11.json",
+      "actual": {
+        "sha256": "4AE43544937A496D2BFB7F208EE38EFE72FFEBA5135838F1D0EE21D1EB96D3DD",
+        "bytes": 7467
+      },
+      "expected_sha256": "4AE43544937A496D2BFB7F208EE38EFE72FFEBA5135838F1D0EE21D1EB96D3DD",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage12.mal",
+      "actual": {
+        "sha256": "96F33CD76A9B2A5E3317617DB229891D749FA49EE5AE206F59097FC11E67F8B3",
+        "bytes": 1775913
+      },
+      "expected_sha256": "96F33CD76A9B2A5E3317617DB229891D749FA49EE5AE206F59097FC11E67F8B3",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage12.json",
+      "actual": {
+        "sha256": "CB38488341E8123864C9E6D380541D4ED8CB21E040A36DA695FA301A4A60B007",
+        "bytes": 7746
+      },
+      "expected_sha256": "CB38488341E8123864C9E6D380541D4ED8CB21E040A36DA695FA301A4A60B007",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage13.mal",
+      "actual": {
+        "sha256": "12F4E768FCCB366A745B5504D7785B682D30686FF56AB40FBC3448DD8A8433BC",
+        "bytes": 1776130
+      },
+      "expected_sha256": "12F4E768FCCB366A745B5504D7785B682D30686FF56AB40FBC3448DD8A8433BC",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage13.json",
+      "actual": {
+        "sha256": "63BD468D9C033FCC17C4008A4E3054A34CDDFB107EFD30C7A782BD50564FAF89",
+        "bytes": 7992
+      },
+      "expected_sha256": "63BD468D9C033FCC17C4008A4E3054A34CDDFB107EFD30C7A782BD50564FAF89",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/V2/stage14.mal",
+      "actual": {
+        "sha256": "3D4F086BB6F14A4FA21B90CC877E6AB3BF704CBA08E89647FFFFC727B1410C28",
+        "bytes": 1776347
+      },
+      "expected_sha256": "3D4F086BB6F14A4FA21B90CC877E6AB3BF704CBA08E89647FFFFC727B1410C28",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/V2/stage14.json",
+      "actual": {
+        "sha256": "F0AB879244A530EA7389E57903FD99150E8525F0328DEF0531076E36FF95E3A9",
+        "bytes": 8236
+      },
+      "expected_sha256": "F0AB879244A530EA7389E57903FD99150E8525F0328DEF0531076E36FF95E3A9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/inputs/V2.input.json",
+      "actual": {
+        "sha256": "DC46E239B9D693AF25DC3D7005718060230D31AC9CA057F7ECCCF73968AA2C8E",
+        "bytes": 32847
+      },
+      "expected_sha256": "DC46E239B9D693AF25DC3D7005718060230D31AC9CA057F7ECCCF73968AA2C8E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/expected/V2.expected.json",
+      "actual": {
+        "sha256": "BD0492B4CAC427432CC3251EB27FC997C0D5EFF2862ECBC10A89B9AC19F1AD0F",
+        "bytes": 33548
+      },
+      "expected_sha256": "BD0492B4CAC427432CC3251EB27FC997C0D5EFF2862ECBC10A89B9AC19F1AD0F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/carrier.mal",
+      "actual": {
+        "sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F",
+        "bytes": 13197
+      },
+      "expected_sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/PREFILL_MANIFEST.json",
+      "actual": {
+        "sha256": "D40F88D9CA521EDF95A4FC347A309D8B23F5605F47EC164F91BB2CAD80DF4AD7",
+        "bytes": 6359
+      },
+      "expected_sha256": "D40F88D9CA521EDF95A4FC347A309D8B23F5605F47EC164F91BB2CAD80DF4AD7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/vector.cu",
+      "actual": {
+        "sha256": "C09A06FC4B2F1D733C2A9F7FC247844E98B6EF4DB3C7EC5915C63A089D3D6169",
+        "bytes": 34285
+      },
+      "expected_sha256": "C09A06FC4B2F1D733C2A9F7FC247844E98B6EF4DB3C7EC5915C63A089D3D6169",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/readback.mjs",
+      "actual": {
+        "sha256": "4612D0189AD00B89522C8CD9F472E39EB1574991F5FB4241FF3CD85F415E32D3",
+        "bytes": 2790
+      },
+      "expected_sha256": "4612D0189AD00B89522C8CD9F472E39EB1574991F5FB4241FF3CD85F415E32D3",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/hash_batch.mjs",
+      "actual": {
+        "sha256": "3944850130E400D18839E906A31D602B4787686C9AC6B21633E3A1D0F157084D",
+        "bytes": 1962
+      },
+      "expected_sha256": "3944850130E400D18839E906A31D602B4787686C9AC6B21633E3A1D0F157084D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/hash_delta.mjs",
+      "actual": {
+        "sha256": "683C047508517BB817EED53094DAE6FA1B1A247ACCAE6FF9FF9C62562E494C73",
+        "bytes": 1116
+      },
+      "expected_sha256": "683C047508517BB817EED53094DAE6FA1B1A247ACCAE6FF9FF9C62562E494C73",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/observe_rows.mjs",
+      "actual": {
+        "sha256": "ADE7F443075299449860EA35B01D52DD1C354F55F2DDF23916E9C2A647D1F6CD",
+        "bytes": 1338
+      },
+      "expected_sha256": "ADE7F443075299449860EA35B01D52DD1C354F55F2DDF23916E9C2A647D1F6CD",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/export_inventory.mjs",
+      "actual": {
+        "sha256": "F62C294BC611CABE4A516A509F03D326E09EF23B9596C90C5B5A9D730C3B2601",
+        "bytes": 2738
+      },
+      "expected_sha256": "F62C294BC611CABE4A516A509F03D326E09EF23B9596C90C5B5A9D730C3B2601",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_execute.mjs",
+      "actual": {
+        "sha256": "CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C",
+        "bytes": 10800
+      },
+      "expected_sha256": "CAF7A0735EBC9ACC238295F6386541EDAB7CB0F5C165AB1DBA358FFA730D7D4C",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/compare_vectors.mjs",
+      "actual": {
+        "sha256": "E488BEE18140AE9ECFDEB6266463EAAA6C403A5E15874760E1FEE19095E3C0D4",
+        "bytes": 7049
+      },
+      "expected_sha256": "E488BEE18140AE9ECFDEB6266463EAAA6C403A5E15874760E1FEE19095E3C0D4",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/source_occurrence_custody.mjs",
+      "actual": {
+        "sha256": "187C741EACD6285166B4D359D0921A012A3ACDBE8C3FEB5AAAC62198FC82EA3B",
+        "bytes": 2713
+      },
+      "expected_sha256": "187C741EACD6285166B4D359D0921A012A3ACDBE8C3FEB5AAAC62198FC82EA3B",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/inputs/empty-array.json",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_021-preflight.mal",
+      "actual": {
+        "sha256": "2B408B8B0621457FBFB2640C575D1F3D6AC8967FA3A5F4457E3AC136D686F446",
+        "bytes": 54988
+      },
+      "expected_sha256": "2B408B8B0621457FBFB2640C575D1F3D6AC8967FA3A5F4457E3AC136D686F446",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_022-classification.mal",
+      "actual": {
+        "sha256": "2F118A2FBE98B53EEE8F63DF0BAC723C846562C0442319F61238E66DC72720C1",
+        "bytes": 60239
+      },
+      "expected_sha256": "2F118A2FBE98B53EEE8F63DF0BAC723C846562C0442319F61238E66DC72720C1",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage00.mal",
+      "actual": {
+        "sha256": "A390FA3ABC89F03EC47206BD6B46EAB1D4B0AC800F9C1FD0FB2306489B47290D",
+        "bytes": 62338
+      },
+      "expected_sha256": "A390FA3ABC89F03EC47206BD6B46EAB1D4B0AC800F9C1FD0FB2306489B47290D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage02.mal",
+      "actual": {
+        "sha256": "BFD8A8B8AD05B4ACEA97B876DF545E28F8F74D885B6054424A8F5B2E9F41F7C1",
+        "bytes": 130742
+      },
+      "expected_sha256": "BFD8A8B8AD05B4ACEA97B876DF545E28F8F74D885B6054424A8F5B2E9F41F7C1",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage04.mal",
+      "actual": {
+        "sha256": "7C95AFEC7FB5ADCB842E9F3E0410CA68D80647A0D9CF1390CEA6E598C724E3A2",
+        "bytes": 163077
+      },
+      "expected_sha256": "7C95AFEC7FB5ADCB842E9F3E0410CA68D80647A0D9CF1390CEA6E598C724E3A2",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage05.mal",
+      "actual": {
+        "sha256": "9415E06B3FFF80CD116334309D25B5D03A3BAC3E84641399B6C5184A11FC7A8D",
+        "bytes": 163221
+      },
+      "expected_sha256": "9415E06B3FFF80CD116334309D25B5D03A3BAC3E84641399B6C5184A11FC7A8D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage06.mal",
+      "actual": {
+        "sha256": "FA51B91C70C4AB5ACE560E6A1FD13544EBB0E5652EB327AEE1D84FFCE12977EA",
+        "bytes": 163365
+      },
+      "expected_sha256": "FA51B91C70C4AB5ACE560E6A1FD13544EBB0E5652EB327AEE1D84FFCE12977EA",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage07.mal",
+      "actual": {
+        "sha256": "D02B7BC9513762FE7D37133ED49A58655A54857E06A386F459D6C98454D3725E",
+        "bytes": 163509
+      },
+      "expected_sha256": "D02B7BC9513762FE7D37133ED49A58655A54857E06A386F459D6C98454D3725E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage08.mal",
+      "actual": {
+        "sha256": "8D60D9906AB8520C29DFBAD6BD81662B1456AB3BBED71568453234AD3C6F796F",
+        "bytes": 163653
+      },
+      "expected_sha256": "8D60D9906AB8520C29DFBAD6BD81662B1456AB3BBED71568453234AD3C6F796F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage09.mal",
+      "actual": {
+        "sha256": "3B720E5F932D27620D2AC467319CB68864D096ED1537100FEDD994D59B1D4D80",
+        "bytes": 163797
+      },
+      "expected_sha256": "3B720E5F932D27620D2AC467319CB68864D096ED1537100FEDD994D59B1D4D80",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage10.mal",
+      "actual": {
+        "sha256": "ABD0184B8D81D456C73C75F64355DBA37915A3149F22879C51E6A3D763472FAC",
+        "bytes": 163941
+      },
+      "expected_sha256": "ABD0184B8D81D456C73C75F64355DBA37915A3149F22879C51E6A3D763472FAC",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage11.mal",
+      "actual": {
+        "sha256": "B9CE1410F6818EB3A50A646A0BFBC2E92B9EF26D9988FBE657B2240009214D54",
+        "bytes": 164085
+      },
+      "expected_sha256": "B9CE1410F6818EB3A50A646A0BFBC2E92B9EF26D9988FBE657B2240009214D54",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage12.mal",
+      "actual": {
+        "sha256": "490C4F72655A93929A3DE1663D93BA575797FB1465B6E7F989A9D728EA44B916",
+        "bytes": 164229
+      },
+      "expected_sha256": "490C4F72655A93929A3DE1663D93BA575797FB1465B6E7F989A9D728EA44B916",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17.cu",
+      "actual": {
+        "sha256": "F055FFCE4AA8F536CE9BC7AEA7B1235887371D2855C9312F420FB5FEFB1D5ECE",
+        "bytes": 38563
+      },
+      "expected_sha256": "F055FFCE4AA8F536CE9BC7AEA7B1235887371D2855C9312F420FB5FEFB1D5ECE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_inventory.mjs",
+      "actual": {
+        "sha256": "6E6DF0595A070052D235311119C256A151384F9134976C543213364995684108",
+        "bytes": 2802
+      },
+      "expected_sha256": "6E6DF0595A070052D235311119C256A151384F9134976C543213364995684108",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_services.mjs",
+      "actual": {
+        "sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+        "bytes": 2895
+      },
+      "expected_sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/j17-inventory.mal",
+      "actual": {
+        "sha256": "9EC82E08734D7A30216C804E2F4B89D658E1FE8D2212E3A23CEC6E37D7E075D6",
+        "bytes": 49190
+      },
+      "expected_sha256": "9EC82E08734D7A30216C804E2F4B89D658E1FE8D2212E3A23CEC6E37D7E075D6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/RUN_RECORD_023.json",
+      "actual": {
+        "sha256": "6A07ACE68BD15DA5F084269FA7FDD57021EC89B30EAE44ED4BF9F9B697B79B0D",
+        "bytes": 111818
+      },
+      "expected_sha256": "6A07ACE68BD15DA5F084269FA7FDD57021EC89B30EAE44ED4BF9F9B697B79B0D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/expected/j17/program.json",
+      "actual": {
+        "sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529",
+        "bytes": 51262
+      },
+      "expected_sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/expected/j17/fabric.successor.json",
+      "actual": {
+        "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+        "bytes": 62837
+      },
+      "expected_sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/expected/j17/committed.world.json",
+      "actual": {
+        "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+        "bytes": 568805
+      },
+      "expected_sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/expected/j17/receipt_pairs.json",
+      "actual": {
+        "sha256": "A9F7D1A84B65891E29D7552E182AA8BA77FF10029493BF8888CE5933E8F5C60B",
+        "bytes": 425702
+      },
+      "expected_sha256": "A9F7D1A84B65891E29D7552E182AA8BA77FF10029493BF8888CE5933E8F5C60B",
+      "comparison": "SAME"
+    },
+    {
+      "label": "telemetry include; exact runtime_021 and vector include",
+      "actual": {
+        "sha256": "E7033E77BB0F27343AF16277536D7441D26775A2475745BF890B5C7F59ECE81D",
+        "bytes": 7783
+      },
+      "expected_sha256": "E7033E77BB0F27343AF16277536D7441D26775A2475745BF890B5C7F59ECE81D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "genesis runner",
+      "actual": {
+        "sha256": "B2B67AC4AA308EF87F6D73F2A2C0CF09848D6620D1A01217A2B6B605B8D84A57",
+        "bytes": 9842
+      },
+      "expected_sha256": "B2B67AC4AA308EF87F6D73F2A2C0CF09848D6620D1A01217A2B6B605B8D84A57",
+      "comparison": "SAME"
+    },
+    {
+      "label": "committed predecessor",
+      "actual": {
+        "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+        "bytes": 382131
+      },
+      "expected_sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/inputs/empty-array.json",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17.cu",
+      "actual": {
+        "sha256": "F055FFCE4AA8F536CE9BC7AEA7B1235887371D2855C9312F420FB5FEFB1D5ECE",
+        "bytes": 38563
+      },
+      "expected_sha256": "F055FFCE4AA8F536CE9BC7AEA7B1235887371D2855C9312F420FB5FEFB1D5ECE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_021-preflight input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_021-preflight input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_021-preflight input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_021-preflight input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_021-preflight input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_021-preflight input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_021-preflight.mal",
+      "actual": {
+        "sha256": "2B408B8B0621457FBFB2640C575D1F3D6AC8967FA3A5F4457E3AC136D686F446",
+        "bytes": 54988
+      },
+      "expected_sha256": "2B408B8B0621457FBFB2640C575D1F3D6AC8967FA3A5F4457E3AC136D686F446",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_021-preflight image",
+      "actual": {
+        "sha256": "9FF4383DF8A4E462042A8BE9E669AF31AF771C1FCA7A115CD5A9CD3521B6EAD2",
+        "bytes": 41992208
+      },
+      "expected_sha256": "9FF4383DF8A4E462042A8BE9E669AF31AF771C1FCA7A115CD5A9CD3521B6EAD2",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_021-preflight full readback",
+      "actual": {
+        "sha256": "159567EEB9DB979FE75B3C69DA7749DDA3D7B4AD714F87A5FF1A73242F12A7D4",
+        "bytes": 268435488
+      },
+      "expected_sha256": "159567EEB9DB979FE75B3C69DA7749DDA3D7B4AD714F87A5FF1A73242F12A7D4",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_022-classification input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_022-classification input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_022-classification input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_022-classification input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_022-classification input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_022-classification input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_022-classification.mal",
+      "actual": {
+        "sha256": "2F118A2FBE98B53EEE8F63DF0BAC723C846562C0442319F61238E66DC72720C1",
+        "bytes": 60239
+      },
+      "expected_sha256": "2F118A2FBE98B53EEE8F63DF0BAC723C846562C0442319F61238E66DC72720C1",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_022-classification image",
+      "actual": {
+        "sha256": "581021D30EBB25DE6A5D79EB6593A6FA6A6FAC65F7061B7837439AFB98367C7F",
+        "bytes": 41992208
+      },
+      "expected_sha256": "581021D30EBB25DE6A5D79EB6593A6FA6A6FAC65F7061B7837439AFB98367C7F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_022-classification full readback",
+      "actual": {
+        "sha256": "47BE6D935D0B5EFF30D3304FCA3FA0A9A866607F4896A589060C3A8458107B1B",
+        "bytes": 268435488
+      },
+      "expected_sha256": "47BE6D935D0B5EFF30D3304FCA3FA0A9A866607F4896A589060C3A8458107B1B",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage00 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage00 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage00 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage00 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage00 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage00 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage00.mal",
+      "actual": {
+        "sha256": "A390FA3ABC89F03EC47206BD6B46EAB1D4B0AC800F9C1FD0FB2306489B47290D",
+        "bytes": 62338
+      },
+      "expected_sha256": "A390FA3ABC89F03EC47206BD6B46EAB1D4B0AC800F9C1FD0FB2306489B47290D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage00 image",
+      "actual": {
+        "sha256": "C227E6E33C341C4B79FDC93509A731A1EF562FDFB34E55B4A39D4216E3C9C4A2",
+        "bytes": 41992208
+      },
+      "expected_sha256": "C227E6E33C341C4B79FDC93509A731A1EF562FDFB34E55B4A39D4216E3C9C4A2",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage00 full readback",
+      "actual": {
+        "sha256": "DF8B896B54B0487136368FC706B147818341122E31A4ED63FF5FB05C9516C506",
+        "bytes": 180355104
+      },
+      "expected_sha256": "DF8B896B54B0487136368FC706B147818341122E31A4ED63FF5FB05C9516C506",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_inventory.mjs",
+      "actual": {
+        "sha256": "6E6DF0595A070052D235311119C256A151384F9134976C543213364995684108",
+        "bytes": 2802
+      },
+      "expected_sha256": "6E6DF0595A070052D235311119C256A151384F9134976C543213364995684108",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/contracts/j17-inventory.mal",
+      "actual": {
+        "sha256": "9EC82E08734D7A30216C804E2F4B89D658E1FE8D2212E3A23CEC6E37D7E075D6",
+        "bytes": 49190
+      },
+      "expected_sha256": "9EC82E08734D7A30216C804E2F4B89D658E1FE8D2212E3A23CEC6E37D7E075D6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "source-generated inventory",
+      "actual": {
+        "sha256": "9EC82E08734D7A30216C804E2F4B89D658E1FE8D2212E3A23CEC6E37D7E075D6",
+        "bytes": 49190
+      },
+      "expected_sha256": "9EC82E08734D7A30216C804E2F4B89D658E1FE8D2212E3A23CEC6E37D7E075D6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage02 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage02 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage02 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage02 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage02 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage02 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage02.mal",
+      "actual": {
+        "sha256": "BFD8A8B8AD05B4ACEA97B876DF545E28F8F74D885B6054424A8F5B2E9F41F7C1",
+        "bytes": 130742
+      },
+      "expected_sha256": "BFD8A8B8AD05B4ACEA97B876DF545E28F8F74D885B6054424A8F5B2E9F41F7C1",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage02 image",
+      "actual": {
+        "sha256": "7DA7DA39F52EEF298888894C9F964B6B7093634F4CF04F14EDFE7101D5E8338D",
+        "bytes": 41992208
+      },
+      "expected_sha256": "7DA7DA39F52EEF298888894C9F964B6B7093634F4CF04F14EDFE7101D5E8338D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage02 full readback",
+      "actual": {
+        "sha256": "7A605143AEFECAD081B0E4DB31A2B860F9812B58F38AECEAEB2E7C6696DB6418",
+        "bytes": 180355104
+      },
+      "expected_sha256": "7A605143AEFECAD081B0E4DB31A2B860F9812B58F38AECEAEB2E7C6696DB6418",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_services.mjs",
+      "actual": {
+        "sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+        "bytes": 2895
+      },
+      "expected_sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage04 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage04 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage04 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage04 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage04 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage04 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage04 input svc02",
+      "actual": {
+        "sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+        "bytes": 51340
+      },
+      "expected_sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage04 input hash_batch",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage04.mal",
+      "actual": {
+        "sha256": "7C95AFEC7FB5ADCB842E9F3E0410CA68D80647A0D9CF1390CEA6E598C724E3A2",
+        "bytes": 163077
+      },
+      "expected_sha256": "7C95AFEC7FB5ADCB842E9F3E0410CA68D80647A0D9CF1390CEA6E598C724E3A2",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage04 image",
+      "actual": {
+        "sha256": "1A63F9023AB035A5E9E0E8B8A92AB6B63E0F77A5BADF78F82338C404279F6CE0",
+        "bytes": 41992208
+      },
+      "expected_sha256": "1A63F9023AB035A5E9E0E8B8A92AB6B63E0F77A5BADF78F82338C404279F6CE0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage04 full readback",
+      "actual": {
+        "sha256": "C46E76F377B1887C002A331BF57E8ED01A2D46CB51D581898EC4B765409B8E53",
+        "bytes": 180355104
+      },
+      "expected_sha256": "C46E76F377B1887C002A331BF57E8ED01A2D46CB51D581898EC4B765409B8E53",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_services.mjs",
+      "actual": {
+        "sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+        "bytes": 2895
+      },
+      "expected_sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 input svc02",
+      "actual": {
+        "sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+        "bytes": 51340
+      },
+      "expected_sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 input hash_batch",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 input svc05",
+      "actual": {
+        "sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+        "bytes": 539
+      },
+      "expected_sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage05.mal",
+      "actual": {
+        "sha256": "9415E06B3FFF80CD116334309D25B5D03A3BAC3E84641399B6C5184A11FC7A8D",
+        "bytes": 163221
+      },
+      "expected_sha256": "9415E06B3FFF80CD116334309D25B5D03A3BAC3E84641399B6C5184A11FC7A8D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 image",
+      "actual": {
+        "sha256": "C0C514ADA6E89DC79BCE8111DBBC34D5FC41D49EDE1DA1DC67F636B9D4D791A1",
+        "bytes": 41992208
+      },
+      "expected_sha256": "C0C514ADA6E89DC79BCE8111DBBC34D5FC41D49EDE1DA1DC67F636B9D4D791A1",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage05 full readback",
+      "actual": {
+        "sha256": "437D67BE8F41A813CED91758BBB235E7763616B5F9CD1723A2B1CDA5FD7386ED",
+        "bytes": 180355104
+      },
+      "expected_sha256": "437D67BE8F41A813CED91758BBB235E7763616B5F9CD1723A2B1CDA5FD7386ED",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_services.mjs",
+      "actual": {
+        "sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+        "bytes": 2895
+      },
+      "expected_sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 input svc02",
+      "actual": {
+        "sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+        "bytes": 51340
+      },
+      "expected_sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 input hash_batch",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 input svc05",
+      "actual": {
+        "sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+        "bytes": 539
+      },
+      "expected_sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 input svc06",
+      "actual": {
+        "sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+        "bytes": 17449
+      },
+      "expected_sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage06.mal",
+      "actual": {
+        "sha256": "FA51B91C70C4AB5ACE560E6A1FD13544EBB0E5652EB327AEE1D84FFCE12977EA",
+        "bytes": 163365
+      },
+      "expected_sha256": "FA51B91C70C4AB5ACE560E6A1FD13544EBB0E5652EB327AEE1D84FFCE12977EA",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 image",
+      "actual": {
+        "sha256": "C18236F01E069C24423397612F689539282A75EF58E366816B50CF28BD1422E8",
+        "bytes": 41992208
+      },
+      "expected_sha256": "C18236F01E069C24423397612F689539282A75EF58E366816B50CF28BD1422E8",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage06 full readback",
+      "actual": {
+        "sha256": "FAE18FE3B59A139E596848E26845E1AE909BD923CBEB39E440328B4964D84C56",
+        "bytes": 180355104
+      },
+      "expected_sha256": "FAE18FE3B59A139E596848E26845E1AE909BD923CBEB39E440328B4964D84C56",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_services.mjs",
+      "actual": {
+        "sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+        "bytes": 2895
+      },
+      "expected_sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input svc02",
+      "actual": {
+        "sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+        "bytes": 51340
+      },
+      "expected_sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input hash_batch",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input svc05",
+      "actual": {
+        "sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+        "bytes": 539
+      },
+      "expected_sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input svc06",
+      "actual": {
+        "sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+        "bytes": 17449
+      },
+      "expected_sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 input svc07",
+      "actual": {
+        "sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+        "bytes": 10935
+      },
+      "expected_sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage07.mal",
+      "actual": {
+        "sha256": "D02B7BC9513762FE7D37133ED49A58655A54857E06A386F459D6C98454D3725E",
+        "bytes": 163509
+      },
+      "expected_sha256": "D02B7BC9513762FE7D37133ED49A58655A54857E06A386F459D6C98454D3725E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 image",
+      "actual": {
+        "sha256": "54C2E4FF1C9895DA6A8BEFF8E0E1B68D77DAC5923BF6E7D701165FB4BF0C51AA",
+        "bytes": 41992208
+      },
+      "expected_sha256": "54C2E4FF1C9895DA6A8BEFF8E0E1B68D77DAC5923BF6E7D701165FB4BF0C51AA",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage07 full readback",
+      "actual": {
+        "sha256": "9C3852ACE96DF9462703105398B45769FDCB2D6A27953D420EE1ED384F838BBC",
+        "bytes": 180355104
+      },
+      "expected_sha256": "9C3852ACE96DF9462703105398B45769FDCB2D6A27953D420EE1ED384F838BBC",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_services.mjs",
+      "actual": {
+        "sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+        "bytes": 2895
+      },
+      "expected_sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input svc02",
+      "actual": {
+        "sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+        "bytes": 51340
+      },
+      "expected_sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input hash_batch",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input svc05",
+      "actual": {
+        "sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+        "bytes": 539
+      },
+      "expected_sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input svc06",
+      "actual": {
+        "sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+        "bytes": 17449
+      },
+      "expected_sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input svc07",
+      "actual": {
+        "sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+        "bytes": 10935
+      },
+      "expected_sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 input svc08",
+      "actual": {
+        "sha256": "642CCF91629ADEE9FC02D74DC564795856D4EB3232CBB8BA7512809EC7124CC7",
+        "bytes": 2797
+      },
+      "expected_sha256": "642CCF91629ADEE9FC02D74DC564795856D4EB3232CBB8BA7512809EC7124CC7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage08.mal",
+      "actual": {
+        "sha256": "8D60D9906AB8520C29DFBAD6BD81662B1456AB3BBED71568453234AD3C6F796F",
+        "bytes": 163653
+      },
+      "expected_sha256": "8D60D9906AB8520C29DFBAD6BD81662B1456AB3BBED71568453234AD3C6F796F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 image",
+      "actual": {
+        "sha256": "0AE084C0F4DFD1B4708AC9F5E261B8D322DF107D2AA0DB2A039EA25451374A7E",
+        "bytes": 41992208
+      },
+      "expected_sha256": "0AE084C0F4DFD1B4708AC9F5E261B8D322DF107D2AA0DB2A039EA25451374A7E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage08 full readback",
+      "actual": {
+        "sha256": "CBDCD6FE68F58B3083E4C44D4A00A4D242D60A2E2C588FC3E5B33E02A703E69C",
+        "bytes": 180355104
+      },
+      "expected_sha256": "CBDCD6FE68F58B3083E4C44D4A00A4D242D60A2E2C588FC3E5B33E02A703E69C",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_services.mjs",
+      "actual": {
+        "sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+        "bytes": 2895
+      },
+      "expected_sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input svc02",
+      "actual": {
+        "sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+        "bytes": 51340
+      },
+      "expected_sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input hash_batch",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input svc05",
+      "actual": {
+        "sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+        "bytes": 539
+      },
+      "expected_sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input svc06",
+      "actual": {
+        "sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+        "bytes": 17449
+      },
+      "expected_sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input svc07",
+      "actual": {
+        "sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+        "bytes": 10935
+      },
+      "expected_sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input svc08",
+      "actual": {
+        "sha256": "642CCF91629ADEE9FC02D74DC564795856D4EB3232CBB8BA7512809EC7124CC7",
+        "bytes": 2797
+      },
+      "expected_sha256": "642CCF91629ADEE9FC02D74DC564795856D4EB3232CBB8BA7512809EC7124CC7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 input svc09",
+      "actual": {
+        "sha256": "5EDF2861229D541514D3EB9836ECB7A4E3709F3FBB521F2A7BACDE99A3EDE5FB",
+        "bytes": 1705
+      },
+      "expected_sha256": "5EDF2861229D541514D3EB9836ECB7A4E3709F3FBB521F2A7BACDE99A3EDE5FB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage09.mal",
+      "actual": {
+        "sha256": "3B720E5F932D27620D2AC467319CB68864D096ED1537100FEDD994D59B1D4D80",
+        "bytes": 163797
+      },
+      "expected_sha256": "3B720E5F932D27620D2AC467319CB68864D096ED1537100FEDD994D59B1D4D80",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 image",
+      "actual": {
+        "sha256": "0A046861BDC2EBCFF786A21967DB3E15D1F788E86F8B238B8ED4A20FB9607A75",
+        "bytes": 41992208
+      },
+      "expected_sha256": "0A046861BDC2EBCFF786A21967DB3E15D1F788E86F8B238B8ED4A20FB9607A75",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage09 full readback",
+      "actual": {
+        "sha256": "52DEE55C35DC3158E0543865910C8EEDBF67AAFBEA0F3120D68CCEB0DB21DB05",
+        "bytes": 180355104
+      },
+      "expected_sha256": "52DEE55C35DC3158E0543865910C8EEDBF67AAFBEA0F3120D68CCEB0DB21DB05",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_services.mjs",
+      "actual": {
+        "sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+        "bytes": 2895
+      },
+      "expected_sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input svc02",
+      "actual": {
+        "sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+        "bytes": 51340
+      },
+      "expected_sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input hash_batch",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input svc05",
+      "actual": {
+        "sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+        "bytes": 539
+      },
+      "expected_sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input svc06",
+      "actual": {
+        "sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+        "bytes": 17449
+      },
+      "expected_sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input svc07",
+      "actual": {
+        "sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+        "bytes": 10935
+      },
+      "expected_sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input svc08",
+      "actual": {
+        "sha256": "642CCF91629ADEE9FC02D74DC564795856D4EB3232CBB8BA7512809EC7124CC7",
+        "bytes": 2797
+      },
+      "expected_sha256": "642CCF91629ADEE9FC02D74DC564795856D4EB3232CBB8BA7512809EC7124CC7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input svc09",
+      "actual": {
+        "sha256": "5EDF2861229D541514D3EB9836ECB7A4E3709F3FBB521F2A7BACDE99A3EDE5FB",
+        "bytes": 1705
+      },
+      "expected_sha256": "5EDF2861229D541514D3EB9836ECB7A4E3709F3FBB521F2A7BACDE99A3EDE5FB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 input svc10",
+      "actual": {
+        "sha256": "10ABB07AE20055F9CBE839DAD0C8900AB4BA384921B1B8BD159D6C7AABE37F3E",
+        "bytes": 58074
+      },
+      "expected_sha256": "10ABB07AE20055F9CBE839DAD0C8900AB4BA384921B1B8BD159D6C7AABE37F3E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage10.mal",
+      "actual": {
+        "sha256": "ABD0184B8D81D456C73C75F64355DBA37915A3149F22879C51E6A3D763472FAC",
+        "bytes": 163941
+      },
+      "expected_sha256": "ABD0184B8D81D456C73C75F64355DBA37915A3149F22879C51E6A3D763472FAC",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 image",
+      "actual": {
+        "sha256": "840C178758A64ABD8866841F4A315048C4678113394A8DB12E63711D79EA9DE1",
+        "bytes": 41992208
+      },
+      "expected_sha256": "840C178758A64ABD8866841F4A315048C4678113394A8DB12E63711D79EA9DE1",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage10 full readback",
+      "actual": {
+        "sha256": "BCEBC26C160B73AEFC70F12716B14A9BD2CAD19F796A831D220F890ABDF3C0FC",
+        "bytes": 180355104
+      },
+      "expected_sha256": "BCEBC26C160B73AEFC70F12716B14A9BD2CAD19F796A831D220F890ABDF3C0FC",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_services.mjs",
+      "actual": {
+        "sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+        "bytes": 2895
+      },
+      "expected_sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input svc02",
+      "actual": {
+        "sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+        "bytes": 51340
+      },
+      "expected_sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input hash_batch",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input svc05",
+      "actual": {
+        "sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+        "bytes": 539
+      },
+      "expected_sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input svc06",
+      "actual": {
+        "sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+        "bytes": 17449
+      },
+      "expected_sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input svc07",
+      "actual": {
+        "sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+        "bytes": 10935
+      },
+      "expected_sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input svc08",
+      "actual": {
+        "sha256": "642CCF91629ADEE9FC02D74DC564795856D4EB3232CBB8BA7512809EC7124CC7",
+        "bytes": 2797
+      },
+      "expected_sha256": "642CCF91629ADEE9FC02D74DC564795856D4EB3232CBB8BA7512809EC7124CC7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input svc09",
+      "actual": {
+        "sha256": "5EDF2861229D541514D3EB9836ECB7A4E3709F3FBB521F2A7BACDE99A3EDE5FB",
+        "bytes": 1705
+      },
+      "expected_sha256": "5EDF2861229D541514D3EB9836ECB7A4E3709F3FBB521F2A7BACDE99A3EDE5FB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input svc10",
+      "actual": {
+        "sha256": "10ABB07AE20055F9CBE839DAD0C8900AB4BA384921B1B8BD159D6C7AABE37F3E",
+        "bytes": 58074
+      },
+      "expected_sha256": "10ABB07AE20055F9CBE839DAD0C8900AB4BA384921B1B8BD159D6C7AABE37F3E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 input svc11",
+      "actual": {
+        "sha256": "3E32D380A5341990D97416256AD44CCC12B7E4E740F9DE74E015CE106E34DA46",
+        "bytes": 251593
+      },
+      "expected_sha256": "3E32D380A5341990D97416256AD44CCC12B7E4E740F9DE74E015CE106E34DA46",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage11.mal",
+      "actual": {
+        "sha256": "B9CE1410F6818EB3A50A646A0BFBC2E92B9EF26D9988FBE657B2240009214D54",
+        "bytes": 164085
+      },
+      "expected_sha256": "B9CE1410F6818EB3A50A646A0BFBC2E92B9EF26D9988FBE657B2240009214D54",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 image",
+      "actual": {
+        "sha256": "61E3871426120DFD373816DDA8617AE85679029D6E92131AF7B5FCF4BF3D23C7",
+        "bytes": 41992208
+      },
+      "expected_sha256": "61E3871426120DFD373816DDA8617AE85679029D6E92131AF7B5FCF4BF3D23C7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage11 full readback",
+      "actual": {
+        "sha256": "DFF97D542DB03094DCDFF0C59CF5EE5EF8379A8F1970FC3F0F926109D249DEF6",
+        "bytes": 180355104
+      },
+      "expected_sha256": "DFF97D542DB03094DCDFF0C59CF5EE5EF8379A8F1970FC3F0F926109D249DEF6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/j17_services.mjs",
+      "actual": {
+        "sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+        "bytes": 2895
+      },
+      "expected_sha256": "BAEF06090C567A56D7B565E7D762A7A1D0F4FA0A3F7EF5B76DCF73DC716F141E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input frame",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected_sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input capture",
+      "actual": {
+        "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+        "bytes": 1931
+      },
+      "expected_sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input field",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected_sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input witness",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected_sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input hashes",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected_sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input links",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected_sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input svc02",
+      "actual": {
+        "sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+        "bytes": 51340
+      },
+      "expected_sha256": "C61A53D4BBBA51480958912D37638F1536E3E48C8577420A4DAE7B88F45030F7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input hash_batch",
+      "actual": {
+        "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+        "bytes": 2
+      },
+      "expected_sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input svc05",
+      "actual": {
+        "sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+        "bytes": 539
+      },
+      "expected_sha256": "E90F31E871DE9D33AB106DE9E0E698904E72DEDDE96CC82708B9C6F9B2D3E5EB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input svc06",
+      "actual": {
+        "sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+        "bytes": 17449
+      },
+      "expected_sha256": "6A2354262735DE2D37DF416D762EB182A340EEB292955CE0C3855B2E7AAADF68",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input svc07",
+      "actual": {
+        "sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+        "bytes": 10935
+      },
+      "expected_sha256": "BA63C54C4794C6C0E7F1184187760CC56DE1244C99CDA5A0B3ED98173A9B64A6",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input svc08",
+      "actual": {
+        "sha256": "642CCF91629ADEE9FC02D74DC564795856D4EB3232CBB8BA7512809EC7124CC7",
+        "bytes": 2797
+      },
+      "expected_sha256": "642CCF91629ADEE9FC02D74DC564795856D4EB3232CBB8BA7512809EC7124CC7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input svc09",
+      "actual": {
+        "sha256": "5EDF2861229D541514D3EB9836ECB7A4E3709F3FBB521F2A7BACDE99A3EDE5FB",
+        "bytes": 1705
+      },
+      "expected_sha256": "5EDF2861229D541514D3EB9836ECB7A4E3709F3FBB521F2A7BACDE99A3EDE5FB",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input svc10",
+      "actual": {
+        "sha256": "10ABB07AE20055F9CBE839DAD0C8900AB4BA384921B1B8BD159D6C7AABE37F3E",
+        "bytes": 58074
+      },
+      "expected_sha256": "10ABB07AE20055F9CBE839DAD0C8900AB4BA384921B1B8BD159D6C7AABE37F3E",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input svc11",
+      "actual": {
+        "sha256": "3E32D380A5341990D97416256AD44CCC12B7E4E740F9DE74E015CE106E34DA46",
+        "bytes": 251593
+      },
+      "expected_sha256": "3E32D380A5341990D97416256AD44CCC12B7E4E740F9DE74E015CE106E34DA46",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 input svc12",
+      "actual": {
+        "sha256": "BDA58BC4C5E293F201B83EC048564C70E39C19EF38C6F924F5A97A288CBC21C4",
+        "bytes": 188969
+      },
+      "expected_sha256": "BDA58BC4C5E293F201B83EC048564C70E39C19EF38C6F924F5A97A288CBC21C4",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/sources/j17/j17_step_023-stage12.mal",
+      "actual": {
+        "sha256": "490C4F72655A93929A3DE1663D93BA575797FB1465B6E7F989A9D728EA44B916",
+        "bytes": 164229
+      },
+      "expected_sha256": "490C4F72655A93929A3DE1663D93BA575797FB1465B6E7F989A9D728EA44B916",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/lower.mjs",
+      "actual": {
+        "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+        "bytes": 8181
+      },
+      "expected_sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 image",
+      "actual": {
+        "sha256": "B9DB54D6CFB4F3931E5D96552694C291786D6C65CE70B7DC2430FED0DD768731",
+        "bytes": 41992208
+      },
+      "expected_sha256": "B9DB54D6CFB4F3931E5D96552694C291786D6C65CE70B7DC2430FED0DD768731",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/tools/prefill_guard_runtime.mjs",
+      "actual": {
+        "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+        "bytes": 11686
+      },
+      "expected_sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70",
+      "comparison": "SAME"
+    },
+    {
+      "label": "j17_step_023-stage12 full readback",
+      "actual": {
+        "sha256": "E22E39F4E04140FB59142BA969FB94FA601BB62EEF7E292590CC95A8BE9D5AD7",
+        "bytes": 180355104
+      },
+      "expected_sha256": "E22E39F4E04140FB59142BA969FB94FA601BB62EEF7E292590CC95A8BE9D5AD7",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/expected/j17/program.json",
+      "actual": {
+        "sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529",
+        "bytes": 51262
+      },
+      "expected_sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529",
+      "comparison": "SAME"
+    },
+    {
+      "label": "complete program.json",
+      "actual": {
+        "sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529",
+        "bytes": 51262
+      },
+      "expected_sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/expected/j17/fabric.successor.json",
+      "actual": {
+        "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+        "bytes": 62837
+      },
+      "expected_sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+      "comparison": "SAME"
+    },
+    {
+      "label": "complete fabric.successor.json",
+      "actual": {
+        "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+        "bytes": 62837
+      },
+      "expected_sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+      "comparison": "SAME"
+    },
+    {
+      "label": "followon/expected/j17/committed.world.json",
+      "actual": {
+        "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+        "bytes": 568805
+      },
+      "expected_sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+      "comparison": "SAME"
+    },
+    {
+      "label": "complete committed.world.json",
+      "actual": {
+        "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+        "bytes": 568805
+      },
+      "expected_sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+      "comparison": "SAME"
+    }
+  ],
+  "execution": "EXECUTED",
+  "verdict": "IF_THEN",
+  "predecessor_replay": {
+    "sha256": "BDC284C1F43621EA69A6098AB4A0B7F9FA6095770A3439E9A19CBE2E5CF95212",
+    "bytes": 26820
+  },
+  "binary": {
+    "sha256": "D09B6A84803B97D8E511082B4DC18473AD59522491B6D3C193140D861119D481",
+    "bytes": 521216
+  },
+  "ended": "2026-10-23T04:32:39.372Z"
+}

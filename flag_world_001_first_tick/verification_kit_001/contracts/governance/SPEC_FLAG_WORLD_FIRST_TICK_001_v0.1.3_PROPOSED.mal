@@ -1,0 +1,409 @@
+// SPEC-FLAG-WORLD-FIRST-TICK-001
+// STATUS: PROPOSED. No promotion, activation or first-tick execution is claimed.
+// AUTHORITY: Codex PROPOSE; Devon Generally DECIDE / PROMOTE.
+// VERSION: 0.1.3
+// DATE: 2026-10-20
+// SUPERSEDES: v0.1.2 PROPOSED, SHA256 B199D0EAA6E075DF173012F77D1D8ABB755410340687DECB13A3624BFBFCFD11.
+// DELTA: seven STATIC evidence bindings only; no promotion or vector acceptance.
+// METHOD: SPEC-MAL-SPECIFICATION-SYSTEM-002 v0.3.1.
+// METHOD_SHA256: 110D3C5EEA6F14592FEF4C480E1CABE41B6AF830901A75860FEF21BB0CC15EFE
+// METHOD_PROMOTION_RECEIPT_SHA256: 16ACC1C93A9F40A399279CF8E877AFA4A398137C2EDCCA81DD130AA607F36B4E
+// TARGET: ONE flag-world first tick: D2 genesis, one supplied governed selection,
+// successor and committed readback, realized from v3 source on the GPU substrate.
+// The four laws close this specification's walk, not the runtime world step.
+// W8 admits this source; it does not execute its readings or discharge O_exec.
+//
+// CONTACTS used by the individual readings below:
+// D2 := D2/tick.py, SHA256 535535DA2474B13B9B2D6C6FC9508C25D43FF2B406066540D76FF5E2AA19C7DA.
+// D2 README := D2/README.md, SHA256 545D755A14373E2632E87BBBAC56A6DED1DF38B63591580BC56FF76178DABE0A.
+// D2 incidence := D2/flag_rederive.py, SHA256 A17272D377554B163E41D348E78B1BB1E35784A5CD43369E4E15722A3EB16838.
+// Archive := D2_tick_m2.zip, SHA256 A41A5C65762683030C937E5EC64E1C90E633FEBF957F1D915F03A221BF89BB8E.
+// D2 remains the reference definition, not a Python runtime dependency of this realization.
+// 096 := W040_INCIDENCE_COORDINATES_CONTACT_096/CONTACT.md sections 1-3,
+// SHA256 AA1B7589978102D6B1519BD1BF01F427D774A66E797AAA7634E57DEAD14A6576.
+// 116 := W040_SURFACE_FABRIC_LOWERING_116/SPEC.md L01-L14,
+// SHA256 FFF676FC92D57CB564A2045754939794CE4CB0BE71DA286E5B709A623E3F9513.
+// 117 := W040_SURFACE_FABRIC_LOWERING_117/AMENDMENT.md W01-W07,
+// SHA256 1621C8ED130701DC6197FCB730247E2F60A002BBE5714518848B04C098171B7A.
+// 117 takes precedence over conflicting 116 language. Retired implementations are not dependencies.
+// CANON := hardware/JTP custody commit bfa2eacf62b30ee93a430954c39f7558268d3e41,
+// and Ships-Computer commit 130f85239f684c3054c3096acb035324dbe19b5c.
+// JTP := Ships-Computer/v3/junction_transaction_protocol/specs/
+// SPEC-JUNCTION-TRANSITION-PROTOCOL-001_v0.1.0.md:14-50.
+// PURE := Ships-Computer/v3/shipcomp_junction_protocol/packet_corpus/queuegate/v0.2.0/
+// SPEC-QUEUEGATE-JTP-PURE-GATE-JUNCTION-001_v0.2.0.md sections 5,7,9.2-9.7,11.
+// PURE SHA256 514F42BDED4319362DB5CC7E5B3DB536C3FC1B8CE430345693014FF6A124829A.
+// RTL := Ships-Computer/v3/shipcomp_junction_protocol/rtl/
+// jtp_pure_gate_dual_obligation_machine_004/qg_jtp_engine.sv:467-476.
+// Persistence := Ships-Computer/v3/junction_transaction_protocol/runtime/
+// k0c-jtp-governed-v1/k0_journal.c; MAIN-BANK-018 repair at mal_kernel_lab_repo
+// ee3dd6379316d224ff8df4985c6fcbd60cf09a92, source SHA256
+// F27B50C54D9611A8BB33181D67BFB0AD2DB22A96DF1D01136C4BFE722EE2CF64.
+// Host repair witness SHA256 5555EA3B2ECC6C8D1DADB9AABA250F660722445E612EDEB17089337DA4934F1C.
+// Its AVR board receipt remains O_next, not a first-tick gate.
+// EMIT := promoted SPEC-V3-GPU-EMIT-001 v0.1.5, SHA256
+// 5344E38F99B1AFB66B2A6FD2978CD9FD7B18C0CAE04EC4E7A284363CF6A434ED.
+// EMIT V1/V2 discharge is retained; arbitrary world lowering is not inferred from it.
+
+domain FLAG_WORLD_FIRST_TICK on face_11;
+
+@propose seed FLAG_WORLD_FIRST_TICK_WALK := {
+  WHAT(THIS),              // ONE D2 world is the complete m=2 field, entity positions and genealogy. Contact D2:2-5,37,47-53.
+  HOW(THIS),               // Genesis records the supplied kappa; every one of 480 flags reads NO except E0 positions reading THIS. Contact D2:47-53; README.
+  FOR_WHAT(THIS),          // Readback exposes the constituted successor, not a source check or a sandbox closure. Contact D2:105-108; JTP:14-22.
+
+  WHAT(SAME_NOT_SAME),     // Agreement is equality of readings on each incidence overlap; agreement identity is NOT-SAME world identity. Contact D2:36-38,95-103.
+  HOW(SAME_NOT_SAME),      // Compare exact vector output bytes; compare state, receipt and chain contents, not only wall counts. Contact D2:36-38,95-103; 002 HOW(INSIDE_OUTSIDE).
+  FOR_WHAT(SAME_NOT_SAME), // A retained wall can have exchanged endpoint readings; it remains in the wall set even with no local receipt entry. Contact D2:38,96-101; V1/V2 below.
+
+  WHAT(NO),                // NO is the determined empty marker reading after genesis; it is not an absent input or UNREAD. Contact D2:9,47-53.
+  HOW(NO),                 // A supplied selection outside the offered lifts, stale basis, wrong stage or wrong predecessor cannot commit. Contact D2:82-89,105-107; JTP:50.
+  FOR_WHAT(NO),            // No world law is supplied by fixture answers, host scheduling or application-specific substrate code. Contact 116 L01/L02/L11/L14; CANON; Devon's first-tick target.
+
+  WHAT(IF_THEN),           // A first tick follows genesis -> PROPOSE -> supplied DECIDE -> PROMOTE -> EXECUTE, with their authorities distinct. Contact D2:47-108.
+  HOW(IF_THEN),            // Only the promoted successor extending the current chain can become the next world state. Contact D2:105-108; JTP:40; PURE section 11.
+  FOR_WHAT(IF_THEN),       // Commit is witnessed by the resulting state and one chain extension, not by a closure candidate alone. Contact D2:108; JTP:14-22,40.
+
+  WHAT(BECAUSE),           // Each successor reading is grounded in the initial field and the selected offered lift; the receipt compares those two fields. Contact D2:87-103; 117 W02/W03.
+  HOW(BECAUSE),            // Bind source, operands, result and the constituted states at ordered W-coordinates; naming their hashes does not supply their contents. Contact 116 L01/L02/L11; 117 W01-W04.
+  FOR_WHAT(BECAUSE),       // BECAUSE field, selected lift and receipt are present in D2's promotion, retain their support through lowering and transaction construction. Contact D2:94-103; 116 L11/L12; 117 W02.
+
+  WHAT(INSIDE_OUTSIDE),    // INSIDE is the bounded first tick and readback; later ticks, re-entry and physical board operations are OUTSIDE. Contact D2:47-108; current authoring scope.
+  HOW(INSIDE_OUTSIDE),     // All 480 flags and all 720 delta/gamma/tau overlaps contribute; no replacement by the 105-cell witness basis. Contact D2:25-38; 096 sections 1-3.
+  FOR_WHAT(INSIDE_OUTSIDE), // The two complete vector inputs and expectations are bound inside these bytes; undischarged work is named in the terminal. Contact 002 W6/W7.
+
+  WHAT(NEAR_FAR),          // Adjacency is the incidence of delta, gamma and tau, not label distance or allocator order. Contact D2:28-35; 096 section 1; 117 W01.
+  HOW(NEAR_FAR),           // Delta changes site within edge/triad; gamma changes edge at site/triad; tau changes triad at site/edge. Contact D2:31-34.
+  FOR_WHAT(NEAR_FAR),      // Only overlaps incident to changed flags can change agreement; unchanged disagreement remains a wall. Contact D2:38,90-98.
+
+  WHAT(CAN_CANNOT),        // PROPOSE supplies every completing lift with its gluing reading and selects none. Contact D2:61-80.
+  HOW(CAN_CANNOT),         // The supplied selected lift must be one offered for the bound entity, kind, target and basis; no implementer tie-break. Contact D2:80-85; vectors supply the choice.
+  FOR_WHAT(CAN_CANNOT),    // CAN reuse discharged EMIT profile/evaluator behavior; CANNOT infer world evaluation or commit from that discharge. Contact EMIT B1/V1/V2; 116 L02/L14.
+
+  WHAT(MAYBE),             // Source-to-cell operands, D2-to-JTP construction and connected GPU commit remain PENDING implementation obligations, not invented readings. Contact 116 L02/L14; PURE section 9; terminal.
+  HOW(MAYBE),              // Keep reading verdict, PENDING/REALIZED obligation status and TIG disposition separate; an incomplete frame supplies no default reading. Contact 002 HOW(MAYBE); 116 L09; PURE:188-190,353-355.
+  FOR_WHAT(MAYBE),         // W8 may discharge form admission while every world-execution obligation remains PENDING. Contact 002 W8 and CONFORM; this proposal's terminal.
+
+  WHAT(MUST_LET),          // MUST preserve D2's selected transition and hardware-governed transaction behavior; LET no unbound world semantics. Contact D2:87-108; CANON; 116 L02.
+  HOW(MUST_LET),           // Substrate provides generic primitives only; source-derived cells and operands carry world law. Contact 116 L01-L09; 096 section 2; CANON.
+  FOR_WHAT(MUST_LET),      // A gap returns to the spec's named obligations, never an implementer's supplied payload value. Contact 002 FOR_WHAT(NO), HOW(MUST_LET); 116 L14.
+
+  WHAT(TOGETHER_ALONE),    // The successor, selected lift and receipt belong to ONE promotion while retaining distinct contents and identities. Contact D2:94-103.
+  HOW(TOGETHER_ALONE),     // Authority, geometric reading and persistence contributions compose the transaction; candidate, append and committed result remain distinct. Contact JTP:14-40; CANON.
+  FOR_WHAT(TOGETHER_ALONE), // The GPU tick uses the hardware definitions without requiring board reconnection; host evidence is not an AVR receipt. Contact CANON; MAIN-BANK-018 host repair; Devon's scope.
+
+  WHAT(MORE_LESS),         // m=2 has 42 sites, 120 edges, 80 small triads and 480 flags; the walk basis has 105 cells. Contact D2 README; 002 MANY_ONE.
+  HOW(MORE_LESS),          // Both adjacent single-marker vectors have three walls before and after: two discharge, two open, one retained. Contact D2:31-38,96-98; exact local derivation below.
+  FOR_WHAT(MORE_LESS),     // Equal wall counts do not imply equal state; exact readback distinguishes the two selected successors. Contact D2:99-103; V1/V2.
+
+  WHAT(GOES_WITH),         // Generated operands belong to their source occurrence, governing relation and realized incidence, not a type-product tuple. Contact 096 section 2; 116 L01/L08/L11.
+  HOW(GOES_WITH),          // A cell's operator/witness identity binds its motif; translate witness names, not raw indices, across JTP and EMIT. Contact PURE motif registry; EMIT B1; witness correspondence below.
+  FOR_WHAT(GOES_WITH),     // Source identity, fabric identity, obligation identity and world identity remain distinct with correspondence evidence. Contact 116 L11; 117 W01/W06; D2:36,100-102.
+
+  WHAT(MANY_ONE),          // One first-tick operation consumes one initial world and one explicit governed selection; its internal work may contain many obligations. Contact D2:82-108; PURE sections 5/7.
+  HOW(MANY_ONE),           // Derive pending work from satisfied law antecedents over realized content, retaining all distinct owed consequences. Contact 096 sections 2-3; PURE:337-359.
+  FOR_WHAT(MANY_ONE),      // One D2 chain extension is the world-level outcome, not one append for every overlap or every internal cell. Contact D2:100-108; JTP:14-22,40.
+
+  WHAT(EVERY_SOME),        // EVERY vector binds a complete initial state, exact selected lift and complete expected successor with receipt. Contact 002 W7; D2:47-108; V1/V2.
+  HOW(EVERY_SOME),         // W1-W7 check these bytes; W8 uses the qualified native checker; CONFORM later runs V1 and V2 on the realization. Contact 002 W1-W8 and CONFORM.
+  FOR_WHAT(EVERY_SOME),    // A form discharge never upgrades unexecuted vectors; ONE CONFORM verdict follows the prescribed identity/NO/MAYBE/IF_THEN order. Contact 002 FOR_WHAT(EVERY_SOME).
+
+  THIS, SAME_NOT_SAME, NO, IF_THEN, BECAUSE, INSIDE_OUTSIDE, NEAR_FAR,
+  CAN_CANNOT, MAYBE, MUST_LET, TOGETHER_ALONE, MORE_LESS, GOES_WITH,
+  MANY_ONE, EVERY_SOME
+};
+
+law R1_WHERE :=
+  IF WHAT(o)
+  THEN WHERE(o);
+
+law R1_WHICH :=
+  IF WHAT(o)
+  THEN WHICH(o);
+
+law R1_WHEN :=
+  IF HOW(o)
+  THEN WHEN(o);
+
+law R2_WHENCE :=
+  IF WHERE(o), WHICH(o), WHEN(o), FOR_WHAT(o), FOR_WHAT(BECAUSE)
+  THEN WHENCE(o);
+
+// EXPECTED TERMINAL
+// Structural: seed cells 45; derived 60 = WHERE 15 + WHICH 15 + WHEN 15 + WHENCE 15.
+// Total 105 witness cells plus the 15 carrier atoms. PENDING seed/derived cells: {}.
+// This structural terminal is NOT the world-execution terminal.
+// Current O_exec, each PENDING:
+// O_SOURCE_DERIVED_LOWERING: realize the readings as v3 source-derived cells, typed
+// operands/results, incidence, witness correspondence and complete source support;
+// includes native m=2 constitution, genesis, completing-lift production and selection.
+// O_JTP_OBLIGATION_CONSTRUCTION: derive the D2 work and its obligation identities,
+// authority, geometry and persistence projections from that lowering; preserve all
+// successor/lift/receipt support. Neither the old A5 witness nor the 24-vector caller
+// supplies this D2 realization. No arbitrary ID or payload substitution is admitted.
+// O_GPU_STEP_EXECUTION: execute that source-derived genesis and selected step via
+// the generic GPU substrate with connected inputs, provenance and exact readback.
+// O_COMMIT: apply the admitted successor and one chain extension, with authority,
+// predecessor and persistence checks; do not report a candidate as committed.
+// O_VECTOR_CONFORMANCE: execute V1 and V2 against the named realization, compare the
+// exact expected bytes, and record per-vector execution/SAME or NOT_SAME and ONE verdict.
+//
+// O_EXEC GOVERNING BINDINGS -- definitions reused, not transferred GPU discharge.
+// All MF paths below resolve at MetaCortex-Dynamics/mal-fabric commit
+// 7a8c4e5fda88557dd49b41eeecae147e7778e464. Aliases denote exact file bytes.
+// MF_STATIC = FABRIC_SPEC.md
+// SHA256 EDC7261AC14082575E8AF8F5856288BF58FE1CC5CCD27F055804D830B201FF82.
+// MF_STATIC_VECTORS = FABRIC_CONFORMANCE_VECTORS.md
+// SHA256 2043126789A01BC9725A9E6A829E095D986431E6099AF2A6C2EE94E089C2B232.
+// MF_EXEC = FABRIC_EXECUTION_SPEC.md
+// SHA256 5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0.
+// MF_EXEC_VECTORS = FABRIC_EXECUTION_CONFORMANCE_VECTORS.md
+// SHA256 846DBF4BE822C6816E788D4BCCE98F34D815D1AB870E62BDC5DEA67636E9C055.
+// MF_GAME = demo_003_game_loop_binding/SPEC-DEMO-003-GAME-LOOP-BINDING.md
+// SHA256 FED38C3B57092838D25DEC5FA323A3827FB28A360251ECCD1CB991D976480557.
+// MF_GAME contains its vector definitions in section 20.
+// MF_GAME_BINDING = demo_003_game_loop_binding/BINDING_RECORD.md
+// SHA256 683C21B002F284B53C0CE75284A447BCF10427489B23A3CE2A19729C1D2B8AC7.
+// Promotion records at that commit:
+// execution_v0_3_0/PROMOTION_RECORD.md: Q-SWFPGA-EXECUTION-001-PROMOTION-001,
+// Devon 2026-09-11, 70/70 conformance, 71/71 byte-identical evidence.
+// demo_003_game_loop_binding/PROMOTION_RECORD.md:
+// DEMO-003-GAME-LOOP-BINDING-PROMOTION-001, Devon 2026-09-12, 28/28, 29/29.
+// Static custody qualification: the current MF_STATIC/MF_STATIC_VECTORS bytes
+// are not equated to the differently hashed original static evidence inputs.
+// The promoted V3.3 import binds the static kernel and evidence separately.
+// Neither historical candidate headers nor this qualification reopen promotion.
+// Later ruling record: D2/PROMOTION_RECORD_A1-A10.md, Devon 2026-09-24,
+// SHA256 27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805.
+// Its A1-A10/B1-B3/D2, C1-C5 and D1 are read together, not selectively.
+// 116/117/096 and CANON retain the exact identities bound in CONTACTS above.
+//
+// O_SOURCE_DERIVED_LOWERING bindings:
+// MF_STATIC sections 3-8,10,12-13: cells, roles, typing, containment, routes,
+// canonical object and DRC; MF_EXEC sections 6-9: concrete frame consumption.
+// Bounded by 116 L01-L06/L08-L12, 117 W01-W04 and 096 sections 1-3:
+// source-derived generated work, no type-product domain or host placement.
+// A1-A10/B1-B3/D2 determine world incidence, genesis and completing lifts.
+// C1-C5/D1 exclude retired geometry; CANON governs concrete hardware contacts.
+// The 105-cell basis is NOT-SAME the 480-flag carrier. Physical containment
+// checks do not define W. Proposal/basis checking remains D2:55-89, not V3.2.
+//
+// O_JTP_OBLIGATION_CONSTRUCTION bindings:
+// MF_EXEC sections 5-11,17 and MF_GAME section 9: legal ingress, routed roles,
+// partial-input custody, durable egress and named outstanding obligations.
+// 096 sections 2-3 supplies generated work; 116 L05/L09/L11/L12 and 117 W02-W03
+// preserve typed support and causal readings. A4/A6/A7/D2 preserve negative
+// evidence, distinct state/receipt identity and governed selection. B1-B3 fix
+// the world context; C1-C5/D1 exclude retired inputs. CANON/PURE/JTP supplies
+// obligation bytes, projections and persistence, not a fabric address alone.
+//
+// O_GPU_STEP_EXECUTION bindings:
+// MF_EXEC sections 2-4,10-12,19-22 and MF_GAME sections 8-11,17:
+// immutable snapshot, evaluation, propagation, governance, simultaneous commit,
+// one logical tick boundary, and BLOCKED distinct from HALTED.
+// 116 L09/L14, 117 W01-W04 and 096 require source-owned law and support.
+// A1-A10/B1-B3/D2 supplies the world step; C1-C5/D1 excludes old physics.
+// CANON governs operator/JTP behavior. Python reference code is not runtime.
+// Lowering fixpoint epochs are not automatically STEP_FABRIC ticks.
+//
+// O_COMMIT bindings:
+// MF_EXEC sections 2,10-12,19-21 and MF_GAME sections 10-13:
+// successor constructed simultaneously; effects read committed successor only.
+// A6/A7/D2 requires receipt NOT-SAME persistence and one governed chain extension;
+// B1-B3 binds genesis. 116 L09/L11, 117 W02-W03 and 096 preserve support and W.
+// C1-C5/D1 excludes retired update laws. CANON and MAIN-BANK-018 supplies the
+// concrete persistence contact; AVR re-witness remains O_next, not a GPU gate.
+//
+// O_VECTOR_CONFORMANCE bindings:
+// MF_EXEC sections 20-25 and MF_GAME sections 15-22 supplies reference contracts
+// and evidence separation. 116 L11/L14, 117 W01-W04 and 096 bounds identity,
+// causal support and generated coverage. A1-A10/B1-B3/D2 and CANON governs
+// V1/V2 content; C1-C5/D1 excludes retired expectations. CONFORM remains V1/V2
+// only until Devon accepts additional IDs from PROPOSED_ACCEPTANCE below.
+//
+// EXCLUDED (named, not silently imported):
+// V3.2 fabric-edit admission, including LA01-LA08 and CA01-CA02, is excluded
+// from D2 lift selection. No metric threshold becomes an A4 gate admission rule.
+// DEMO-003 toy-game content (Boolean observations, enemy actions, integer-grid
+// GAME_APPLY) is excluded. Its committed-successor boundary alone is reused.
+// Contact-GR and summed-flex world laws are excluded by C1-C5/D1.
+// Historical Python realizations supply definition/genealogy and evidence only.
+//
+// PROPOSED_ACCEPTANCE -- not CONFORM, no acceptance or execution claimed.
+// ID prefixes: STATIC = imported V3.1 evidence bound below; EXEC = MF_EXEC_VECTORS;
+// GAME = MF_GAME section 20. Each row names one original vector, not a new fixture.
+// STATIC binding correction (all paths at the MF commit stated above):
+// execution_v0_3_0/V3_IMPORT_MANIFEST.md
+// SHA256 1436CC7DB20459C7B3CFE0D3F1DA171A485A48F89513BC6DB49B4F049B041A5A
+// is bound by execution_v0_3_0/PROMOTION_RECORD.md. Its section 2 binds:
+// reference/kernel.py
+// SHA256 8B983301DAD795DD9C3F020970BAD76017EF648AC0C71E3FB6FDEF3D0E4347C0;
+// evidence/queuegate-evidence-summary.json
+// SHA256 16CE384323538A69627B1CFDCDDB677A3056AB5E9B3CD28E3F9B371DE82E04BB.
+// Both blobs match those imported identities. The summary's receipt_ids includes
+// each of the seven STATIC IDs. Exact receipt bytes at the pinned commit follow:
+// STATIC/P04 = evidence/receipts/P04.json
+// SHA256 7854275F6C26284A3955EB48AEB49556CD063AAB5AC5842ECAB354AE945CBF25.
+// STATIC/N05 = evidence/receipts/N05.json
+// SHA256 475DC5548F7DA25BBD3A682295420CE701FAD90CD4A3634033BF35F766ACA5A9.
+// STATIC/N06 = evidence/receipts/N06.json
+// SHA256 0D87B0203F8EBF72A824F9B10241A2FA3150DFE39803F1F02E012C2ADF5F9B91.
+// STATIC/N08 = evidence/receipts/N08.json
+// SHA256 D1843D9023A1DA62FB04A9FA5DF2CD51C02B4C7234AF962F5EE07E70F6E5FFBA.
+// STATIC/N09 = evidence/receipts/N09.json
+// SHA256 C0D6F39132FEB18E76FF870C900C9B28C006227277AB215C84F0FBDBF8D1EA9E.
+// STATIC/N10 = evidence/receipts/N10.json
+// SHA256 7CD8373F71B019E7D97412FF631E2A13A4F96B6CABECC09A89F0B89409DA1E37.
+// STATIC/C01 = evidence/receipts/C01.json
+// SHA256 64ECC6F2C43508BD6CBF03D45EE89BF51D00CC14E573316F240B6B8A0D17B27E.
+// The summary binds receipt IDs, not individual receipt hashes; the hashes above
+// bind the inspected receipts at the pinned commit, not an invented older manifest.
+// Their contents supply the seven stated contracts and recorded observations.
+// UNRESOLVED_ORIGINAL_DOCUMENT_BYTES: summary source_bindings names
+// FABRIC_SPEC_v0.1.0-candidate-r2.md
+// SHA256 E328B574DE32635358AC488C4C5E20E80E86A845EB154401C8E1A7C0DD8D68F1
+// and FABRIC_CONFORMANCE_VECTORS_v0.1.0-r2-final.md
+// SHA256 1A9E6E33BCCB0A39AC8626CBBF65C112D80B9A7D5C550A83F9700545C8C5161F.
+// Those original document bytes are not recovered in this binding. Current root
+// MF_STATIC/MF_STATIC_VECTORS bytes do not substitute for them. STATIC acceptance
+// candidates cite imported evidence, not promotion of those current documents.
+// No complete executable fixture is claimed from a receipt's input_digest alone.
+// REQUIRED_GPU_CONFORMANCE means proposed required classification, not current
+// authority. Devon must accept the qualified ID before it enters CONFORM.
+// REFERENCE_EVIDENCE_ONLY carries the original bounded receipt, no GPU credit.
+// An accepted ID retains its source contract; no toy content or changed expected
+// value is imported by shorthand. This table does not supply new vector bytes.
+// IDs not listed are not proposed additions. Existing V1/V2 remain unchanged.
+//
+// ID | Contract | One-first-tick applicability | Proposed class
+// STATIC/P04 | role-typed binary join | selected-step agreement consumes two roles | REQUIRED_GPU_CONFORMANCE
+// STATIC/N05 | EXACTLY_ONE overconnection | duplicate arrival must not produce a tick result | REQUIRED_GPU_CONFORMANCE
+// STATIC/N06 | binary role shape | two arrivals in one role cannot replace the other | REQUIRED_GPU_CONFORMANCE
+// STATIC/N08 | witness payload compatibility | typed tick frames cannot silently cast witnesses | REQUIRED_GPU_CONFORMANCE
+// STATIC/N09 | route endpoint identity | first-tick routes must resolve to their declared cells | REQUIRED_GPU_CONFORMANCE
+// STATIC/N10 | declared input role | first-tick routing cannot invent a role | REQUIRED_GPU_CONFORMANCE
+// STATIC/C01 | text/visual PLACE confluence | visual editing is outside the supplied first tick | REFERENCE_EVIDENCE_ONLY
+// EXEC/S01 | common immutable snapshot | all active cells of this step read the same predecessor | REQUIRED_GPU_CONFORMANCE
+// EXEC/S02 | peer-result isolation | same-step intermediate results cannot leak into evaluation | REQUIRED_GPU_CONFORMANCE
+// EXEC/S03 | downstream visibility at t+1 | one step must not collapse a route boundary | REQUIRED_GPU_CONFORMANCE
+// EXEC/S04 | immutable program | executing the selected tick cannot edit its fabric | REQUIRED_GPU_CONFORMANCE
+// EXEC/S05 | deterministic evaluation | repeated same tick inputs must preserve cell results | REQUIRED_GPU_CONFORMANCE
+// EXEC/S08 | atomic successor visibility | no partial first-tick state may become observable | REQUIRED_GPU_CONFORMANCE
+// EXEC/S09 | one synchronous route boundary | first-tick realization must expose its actual step boundary | REQUIRED_GPU_CONFORMANCE
+// EXEC/S10 | V3.2-bound runtime authority, no FabricEdit payload | records a distinct admission scope, not D2 selection | REFERENCE_EVIDENCE_ONLY
+// EXEC/F02 | complete binary frame | selected overlap evaluation consumes both routed readings | REQUIRED_GPU_CONFORMANCE
+// EXEC/F03 | missing binary role remains incomplete | missing tick input supplies no default reading | REQUIRED_GPU_CONFORMANCE
+// EXEC/F04 | staggered arrival then completion | multi-step arrival trajectory exceeds this one tick | REFERENCE_EVIDENCE_ONLY
+// EXEC/F09 | over-arrival refusal | this tick cannot evaluate an overconnected frame | REQUIRED_GPU_CONFORMANCE
+// EXEC/F10 | type-mismatch refusal | this tick cannot evaluate an ill-typed frame | REQUIRED_GPU_CONFORMANCE
+// EXEC/F11 | partial custody, no timeout/default | incomplete input must survive the inspected step | REQUIRED_GPU_CONFORMANCE
+// EXEC/F12 | static DRC plus complete frame shape | first-tick evaluation requires the declared role shape | REQUIRED_GPU_CONFORMANCE
+// EXEC/P01 | EMPTY to ADMITTED | actual ingress must establish custody before evaluation | REQUIRED_GPU_CONFORMANCE
+// EXEC/P02 | evaluation/propagation to next COMPLETED snapshot | distinguishes computation from committed custody | REQUIRED_GPU_CONFORMANCE
+// EXEC/P09 | atomic mixed-phase commit | all participating first-tick slots commit together | REQUIRED_GPU_CONFORMANCE
+// EXEC/P10 | release with retained receipt | later slot-release lifecycle is not this world's first commit | REFERENCE_EVIDENCE_ONLY
+// EXEC/Q04 | partial input without progress is BLOCKED | first-tick diagnostic must not claim completion | REQUIRED_GPU_CONFORMANCE
+// EXEC/Q07 | pending custody prevents HALTED despite empty obligations | first-tick status must inspect more than O | REQUIRED_GPU_CONFORMANCE
+// EXEC/Q08 | fixed point with unresolved custody is BLOCKED | GPU fixpoint alone cannot authorize commit | REQUIRED_GPU_CONFORMANCE
+// EXEC/Q11 | HALTED fixed point under CLOSED_RUN | closed-run continuation is beyond one externally supplied tick | REFERENCE_EVIDENCE_ONLY
+// EXEC/Q12 | canonical BlockedReason order | first-tick diagnostics cannot depend on enumeration order | REQUIRED_GPU_CONFORMANCE
+// EXEC/H07 | commit-construction order erasure | one successor cannot depend on host construction order | REQUIRED_GPU_CONFORMANCE
+// EXEC/H10 | two permitted schedules, same successor | one-step schedule variation must preserve results | REQUIRED_GPU_CONFORMANCE
+// EXEC/H12 | per-tick schedule changes preserve trajectory | a multi-tick trajectory is outside this spec | REFERENCE_EVIDENCE_ONLY
+// EXEC/N01 | no EMPTY to COMPLETED shortcut | ingress cannot bypass admission during the first tick | REQUIRED_GPU_CONFORMANCE
+// EXEC/N03 | no ADMITTED to DISCHARGED shortcut | evaluation and durable disposition cannot be skipped | REQUIRED_GPU_CONFORMANCE
+// EXEC/E02 | staggered binary chain to HALTED | full multi-step custody chain is reference evidence | REFERENCE_EVIDENCE_ONLY
+// EXEC/E04 | cross-region V3.2 runtime authority | its fabric-edit authority is not D2's gate selection | REFERENCE_EVIDENCE_ONLY
+// GAME/B01 | exact committed fabric target | tick bindings must name the fabric actually executed | REQUIRED_GPU_CONFORMANCE
+// GAME/B02 | declared ingress targets | kappa/E0/selection enter only through bound input contacts | REQUIRED_GPU_CONFORMANCE
+// GAME/B03 | declared egress outputs | world effects must read bound outputs only | REQUIRED_GPU_CONFORMANCE
+// GAME/B06 | mismatched fabric identity refused | wrong-fabric input cannot authorize this first tick | REQUIRED_GPU_CONFORMANCE
+// GAME/T01 | sample once at tick boundary | supplied first-tick input is fixed for the step | REQUIRED_GPU_CONFORMANCE
+// GAME/T02 | exactly one STEP_FABRIC | no hidden settle loop may stand in for the logical tick | REQUIRED_GPU_CONFORMANCE
+// GAME/T03 | no mid-tick resampling | selected lift and basis cannot change during execution | REQUIRED_GPU_CONFORMANCE
+// GAME/T04 | egress from committed successor | uncommitted candidate output cannot become world effect | REQUIRED_GPU_CONFORMANCE
+// GAME/T05 | game update after fabric commit | D2 visible state must not precede committed fabric output | REQUIRED_GPU_CONFORMANCE
+// GAME/T08 | explicit multi-tick latency | later propagation is outside the first-tick vector scope | REFERENCE_EVIDENCE_ONLY
+// GAME/D06 | clean-process trace replay | the original multi-tick toy trace is reference only | REFERENCE_EVIDENCE_ONLY
+// GAME/N01 | pending proposal cannot affect active run | unselected/unpromoted alternatives cannot alter commit | REQUIRED_GPU_CONFORMANCE
+// GAME/N03 | BLOCKED creates no default action | unresolved first-tick work cannot invent a displacement | REQUIRED_GPU_CONFORMANCE
+// GAME/U01 | game/fabric/runtime UI together | presentation is outside first-tick execution | REFERENCE_EVIDENCE_ONLY
+//
+// Expected completed execution terminal: O_exec = {} only after those witnesses.
+// O_next = { O_AVR_REPAIR_BOARD_RECEIPT, O_LATER_TICKS_AND_REENTRY,
+//            O_R1_R3_GATE_READING_SELECTION, O_INDEPENDENT_BUILDER_COMPARISON }.
+// O_AVR_REPAIR_BOARD_RECEIPT: PENDING, host-witnessed repair retained; not a GPU tick gate.
+// O_LATER_TICKS_AND_REENTRY: PENDING, outside this one-tick scope.
+// O_R1_R3_GATE_READING_SELECTION: PENDING by record; no reading chosen here;
+// D2 NO/THIS marker-field agreement remains the bounded input.
+// O_INDEPENDENT_BUILDER_COMPARISON: PENDING; this authoring/checking pass is not independent.
+// W8 results and spec SHA256 belong to the external run record, not a self-hash.
+
+// VECTORS -- exact byte-observable first-tick readbacks, not GPU memory layouts.
+// Common reading: D2's reference encoding is UTF-8 sorted-key compact JSON,
+// separators comma/colon, no BOM, no terminal newline. Array order is retained.
+// D2's embedded digest strings are lowercase; the binding hashes below are uppercase.
+// This is reference observation encoding, not a new production CANONICAL_BYTES law.
+// Output projection: {"receipt": receipt, "state": state_body_with_chain}.
+// state_body_with_chain contains D2 state_body's field/entities and the actual chain.
+// field is the complete 480-entry sorted flag/reading list, never a sparse substitute.
+// receipt_reading is THIS when discharged or opened has content; NO when both have none.
+// These are pre-numeric carrier readings, not truth values; the complete receipt remains.
+// Genealogy RECEIPT_READING_001: Devon's instruction replaces D2 tick.py:100-103
+// receipt_empty with receipt_reading. D2 is reproduced except this field and its
+// downstream tick-link/output digests. No other state or receipt content changes.
+// The input carries kappa, E0, complete genesis initial_state, entity, kind, target,
+// and exact selected_lift. initial_state must be the genesis produced from kappa/E0.
+// The supplied lift is a choice input, not a host ordering rule or a fabricated token.
+// The runtime stages establish its membership, basis and authorization before commit.
+// Derivation contact: D2:47-53,61-108. Expected bytes are frozen before any candidate.
+// No expected-output file may supply the candidate's world state.
+//
+// Exact local names for the hand derivation (each tuple is [site,edge,triad]):
+// t  = ["C:N|U0","C:N|U1","D:N"]
+// t4 = ["C:N|U0","C:N|U4","D:N"]
+// t2 = ["C:N|U1","C:N|U2","D:N"]
+// ea = ["C:N|U0","D:N"]; eb = ["C:N|U1","D:N"];
+// ec = ["C:N|U0","C:N|U1"].
+// f=["D:N",ea,t]; g=["C:N|U0",ea,t]; h=["D:N",eb,t]; j=["D:N",ea,t4].
+// gGamma=["C:N|U0",ec,t]; gTau=["C:N|U0",ea,t4].
+// hDelta=["C:N|U1",eb,t]; hTau=["D:N",eb,t2].
+// Initial kappa=f, E0={"e1":f}; f reads THIS, the other 479 flags read NO.
+// Each pair and the pair list use D2's lexicographic incidence ordering.
+// V1: delta(f)=g. Discharged {(f,h),(f,j)}; opened {(g,gGamma),(g,gTau)}.
+// The pair (f,g) remains a wall: THIS/NO becomes NO/THIS.
+// V2: gamma(f)=h. Discharged {(f,g),(f,j)}; opened {(h,hDelta),(h,hTau)}.
+// The pair (f,h) remains a wall. All other unchanged overlaps retain their reading.
+// For either vector the selected lift has from=f, via=f, to=g or h, and reading
+// {"discharged":2,"opened":2,"walls_after":3}. The two receipts are distinct.
+// Genesis record follows D2:52-53; tick record follows D2:100-103 except
+// RECEIPT_READING_001 above, with ONE new link.
+// Mechanical expansion/hashing of this hand-derived data is retained in
+// author_vectors.mjs; it is authoring support, not a runtime or independent builder.
+
+// V1 FIRST_TICK(V1.input.json)
+//    argument_1 V1.input.json sha256 28093717ACC694FACC3B635701A22AFF37DDB09FB0447774BACC700647F262BE
+//    input_bytes 32842; kind site; target "C:N|U0"; selected_lift f -> g via f.
+//    expected_sha256 69786966E9B5D66A2078D29C43E1F1511545786AB07BF562E37D91205085B588
+//    expected_bytes_count 33563; expected_file V1.expected.json.
+//    origin D2 definitions plus hand-derived adjacent-site receipt; no candidate output.
+//    execution NOT_RUN.
+
+// V2 FIRST_TICK(V2.input.json)
+//    argument_1 V2.input.json sha256 DC46E239B9D693AF25DC3D7005718060230D31AC9CA057F7ECCCF73968AA2C8E
+//    input_bytes 32847; kind edge; target eb; selected_lift f -> h via f.
+//    expected_sha256 BD0492B4CAC427432CC3251EB27FC997C0D5EFF2862ECBC10A89B9AC19F1AD0F
+//    expected_bytes_count 33548; expected_file V2.expected.json.
+//    origin D2 definitions plus hand-derived adjacent-edge receipt; no candidate output.
+//    execution NOT_RUN.
+
+// Witness correspondence, content of HOW(GOES_WITH), not an additional law:
+// JTP order WHAT,WHERE,WHICH,WHEN,FOR_WHAT,HOW,WHENCE maps by name to EMIT
+// WHAT,HOW,FOR_WHAT,WHERE,WHICH,WHEN,WHENCE via [0,3,4,5,2,1,6].
+// motif = 7*family+witness in the named JTP order; EMIT cell = 7*op+witness
+// in its own named order. No raw-index equality or 480-flag/105-cell equality.
+// The pure-gate section 9.2 object is NOT the legacy MALCFU24 ObligationV1 core.
+// Its layout is supplied; D2-specific source-to-payload realization remains O_exec.
+// Existing EMIT CONFORM IF_THEN is retained only for its V1/V2 canonical profile.
+// Genealogy: historical 8E69D9C5 checker prefix discrepancy stays OPEN_NOT_SAME,
+// not a W8 gate. No inherited form or hardware discharge is reopened here.

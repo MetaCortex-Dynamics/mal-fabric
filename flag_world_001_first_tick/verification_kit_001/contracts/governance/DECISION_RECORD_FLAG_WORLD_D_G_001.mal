@@ -1,0 +1,41 @@
+DECISION_RECORD_FLAG_WORLD_D_G_001
+STATUS     := PROPOSED for DECIDE (Claude drafts; Devon decides; Codex applies)
+DATE       := 2026-10-21
+GOVERNS    := O_D_G_FROM_BYTES of SPEC-WITNESS-FACE-G-READOUT-001 v0.1.0 (PROMOTED,
+              sha256 057C30E280CC17A4D3AA6079A3B6E203DEA3FE306BD8557A67F3CEC615C05355)
+SOURCE     := Formulation_v2_Paper.docx, sha256 CE7B93050FBF6768E4EA89C2AC1E2822E19DB30E3625118946E59BA137A748A5
+              Def 2.1: d_G is a "domain-appropriate metric" (md:41).
+              Thm 4.3 uses d_G unspecified (md:91ff). Worldline instance: "edit mass on worldline" (md:184).
+              FORM therefore LETS the domain fix the metric. This record fixes it for the flag world.
+CODEX      := FORM_D_G_SOURCE_BINDING_001.md (witness_face_g_readout_001), 2026-10-21 15:55.
+
+BINDS
+  DOMAIN            := the flag world: a state is the complete 480-entry sorted field of (flag, reading)
+                       (SPEC-FLAG-WORLD-FIRST-TICK-001 v0.1.1 :166).
+  EDIT              := ONE flag entry whose reading in the current snapshot is NOT_SAME its reading in
+                       the archived predecessor field x_t. BECAUSE within one tick only readings change;
+                       carriers are neither created nor destroyed (GRL :136-140). An edit is the only
+                       unit the worldline can carry (FORM md:184 "edit mass on worldline").
+  d_G(S, x_t)       := the number of EDITs between field S and field x_t.           (edit mass; whole field)
+  d_G(v, x_t)       := the number of EDITs among the flag entries incident to junction v.
+                       Incidence := the flags whose site, edge or triad contains v (geometry.json; FT :179-187).
+  UNIT              := ONE edit. r = 1 is one edit (the unit face).
+  PRE_NUMERIC       := d_G is a count of NOT_SAME readings; no weights, no costs, no byte arithmetic
+                       beyond equality of exact reading bytes (FT :55).
+
+NOT_SAME (recorded, Codex 15:55)
+  OCC (occurrences.mal :15) compares TWO flags within ONE snapshot and emits SAME/NOT_SAME.
+  d_G compares ONE flag's reading ACROSS two snapshots (current vs archived).
+  d_G does not collapse to OCC. They are two readings on the same bytes. Both are kept.
+
+APPLY (Codex, on DECIDE)
+  1. Bind x_t := the committed predecessor field (O_PREDECESSOR_OPERAND).
+  2. For every CCC face and each of its three junctions v: emit d_G(v, x_t) (O_D_G_FROM_BYTES).
+  3. Run the promoted law: G := unique argmin; ties MAYBE; ranks when three NOT_SAME (O_FACE_READ_20).
+  4. Report J17's rank in {4,5,9} and {4,8,9}; check capability {G,S} (O_J17_ROLE).
+
+NOT PERMITTED
+  Weighting edits. Substituting OCC counts for d_G. Tie-breaking. Any per-face choice.
+
+OPEN (report, do not block)
+  O_S_F_BINDING (which of ranks 2, 3 is S). O_FLEX_MOTIF_CORRESPONDENCE.

@@ -1,0 +1,120 @@
+{
+  "scope": "CPU_ONLY; image prepared, GPU_NOT_RUN; source proof is not CONFORM",
+  "vector": "V1",
+  "stage": 3,
+  "runtime": false,
+  "accelerated": false,
+  "source": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage03\\source.mal",
+    "sha256": "E5DD8DB39E6093F1DE423E5C11EA4DFAE5AF8CF3E776DFED08F17045E827D7B9",
+    "size": 144792
+  },
+  "inputs": {
+    "frame": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\frame.json",
+      "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+      "size": 461
+    },
+    "capture": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\capture.json",
+      "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+      "size": 1931
+    },
+    "field": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.field.json",
+      "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+      "size": 48025
+    },
+    "witness": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.witness.json",
+      "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+      "size": 140449
+    },
+    "hashes": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes0\\responses.json",
+      "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+      "size": 239144
+    },
+    "links": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes1\\responses.json",
+      "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+      "size": 430443
+    },
+    "vector": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V1.input.json",
+      "sha256": "28093717ACC694FACC3B635701A22AFF37DDB09FB0447774BACC700647F262BE",
+      "size": 32842
+    },
+    "observer_pairs": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\hash_empty\\responses.json",
+      "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "size": 2
+    },
+    "hash_batch": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\hash_empty\\responses.json",
+      "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+      "size": 2
+    },
+    "vh02": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage01\\hash\\delta.json",
+      "sha256": "DF8C07D3EAF87EF733406DF8666256AD1D726DCFF64BBDF7C9918F5EAF79E809",
+      "size": 32193
+    },
+    "vp02": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage01\\continuation_observations\\observer_pairs.json",
+      "sha256": "F0384727237F3B6A8C08B7A157DF90473CD98823650910F875DC9CD49577030D",
+      "size": 87481
+    },
+    "vh03": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\hash\\delta.json",
+      "sha256": "189312B1293690B068651B571EFBD5DC9DE9BFDA17F47E3F7F1B60EB2A59FBD5",
+      "size": 274
+    }
+  },
+  "members": [
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\source.mal",
+      "sha256": "128F362D6C3D62193344B8BFEF86BFCD22DF36E5F55CB1FD3302ED5A70CD0601",
+      "size": 144575
+    }
+  ],
+  "orchestrator": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\vector_build.mjs",
+    "sha256": "FCB74032DB8ABC97ACC18A3F4FDC0C9DF5FE5435CF4497345AE4F57ED4655497",
+    "size": 8598
+  },
+  "lowerer": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\lower_compact_large.mjs",
+    "sha256": "1B76FFEB4938C87BF90FF54942EBB7A32DF89C0FCA942663BA15311ACB61FCDB",
+    "size": 8365
+  },
+  "image": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage03\\image\\image.bin",
+    "sha256": "3916B07D0989C58215F641FABB2F13B880863C5DC0A20A0EE42A20CF1E6BE144",
+    "size": 41992208
+  },
+  "source_map": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage03\\image\\source-map.json",
+    "sha256": "D0656C4FFF9EA2F51C5D1EB5893160D2E8F06DF4678D8FE32A2EAC75BB81C1A1",
+    "size": 6802434
+  },
+  "bounds": {
+    "rules": 568,
+    "patterns": 16968,
+    "seeds": 468,
+    "max_variables": 16,
+    "max_antecedents": 8
+  },
+  "previous": {
+    "source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\source.mal",
+      "sha256": "128F362D6C3D62193344B8BFEF86BFCD22DF36E5F55CB1FD3302ED5A70CD0601",
+      "size": 144575
+    },
+    "image": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage02\\image\\image.bin",
+      "sha256": "7FCE652A7376266AE4BC54BD6083962901B50D18CE43476D1FBA35A4D2F6FCD8",
+      "size": 41992208
+    }
+  }
+}

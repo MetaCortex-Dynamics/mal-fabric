@@ -1,0 +1,156 @@
+{
+  "scope": "Ordered V1/V2 byte conformance only; no GPU execution or runtime input construction",
+  "manifest_sha256": "23CD2C61095F69B707307ADD944E2CA473316F0D90FDDFC8FA32C798DEFF86E5",
+  "observer_sha256": "E488BEE18140AE9ECFDEB6266463EAAA6C403A5E15874760E1FEE19095E3C0D4",
+  "vectors": [
+    {
+      "id": "V1",
+      "input": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V1.input.json",
+        "bytes": 32842,
+        "sha256": "28093717ACC694FACC3B635701A22AFF37DDB09FB0447774BACC700647F262BE"
+      },
+      "expected": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V1.expected.json",
+        "bytes": 33563,
+        "sha256": "69786966E9B5D66A2078D29C43E1F1511545786AB07BF562E37D91205085B588"
+      },
+      "execution": "EXECUTED",
+      "comparison": "SAME",
+      "run_dir": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_repeat_008\\V1\\stage14\\image",
+      "source_sha256": "3D4F086BB6F14A4FA21B90CC877E6AB3BF704CBA08E89647FFFFC727B1410C28",
+      "image_sha256": "65669C2A804DCB526C13CB8627E1E8E804FC53B764480C9ADD8A38F633BE2EB3",
+      "readback_sha256": "6D53361888B08DC56FEAB2D66032C0D633EDF51EEE03F1107D9F263DDFC6D0C3",
+      "source_map_sha256": "09C7640DBA30758ACD3767D7465AF75ED619A5E066682EB9DF93977F2810CEF5",
+      "actual": {
+        "file": "V1.actual.json",
+        "bytes": 33563,
+        "sha256": "69786966E9B5D66A2078D29C43E1F1511545786AB07BF562E37D91205085B588"
+      },
+      "source_output": {
+        "fact": 1943315,
+        "rule": "VCOM_COMMIT",
+        "return_fact": 1935595,
+        "return_rule": "VCOM_RETURN",
+        "complete_results": [
+          {
+            "fact": 1935596,
+            "rule": "VCOM_ALL_RESULTS"
+          }
+        ],
+        "committed_comparisons": 720,
+        "runtime_receipts": 1440
+      },
+      "expected_runtime_input": "NOT_PRESENT_IN_BOUND_INPUTS",
+      "diagnostics": [
+        {
+          "name": "retained predecessor entries",
+          "reading": "SAME"
+        },
+        {
+          "name": "link 0 hashes full record",
+          "reading": "SAME"
+        },
+        {
+          "name": "link 1 hashes full record",
+          "reading": "SAME"
+        },
+        {
+          "name": "predecessor 1",
+          "reading": "SAME"
+        },
+        {
+          "name": "receipt hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "successor state hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "genesis state hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "receipt reading",
+          "reading": "SAME"
+        }
+      ]
+    },
+    {
+      "id": "V2",
+      "input": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V2.input.json",
+        "bytes": 32847,
+        "sha256": "DC46E239B9D693AF25DC3D7005718060230D31AC9CA057F7ECCCF73968AA2C8E"
+      },
+      "expected": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\flag_world_first_tick_001_v013\\V2.expected.json",
+        "bytes": 33548,
+        "sha256": "BD0492B4CAC427432CC3251EB27FC997C0D5EFF2862ECBC10A89B9AC19F1AD0F"
+      },
+      "execution": "EXECUTED",
+      "comparison": "SAME",
+      "run_dir": "D:\\Dev\\flag-world-first-tick-020\\parallel_prefill_002\\vectors_v2_009\\V2\\stage14\\image",
+      "source_sha256": "3D4F086BB6F14A4FA21B90CC877E6AB3BF704CBA08E89647FFFFC727B1410C28",
+      "image_sha256": "1E788B995C1F55300A0D435DB6976CF79741325A344E7A96989539F4A7ACB802",
+      "readback_sha256": "2E621111C4A085CE8990D4D615AB20163550518021254A08998A7D0E55441244",
+      "source_map_sha256": "7C96CD07EA0BAC8B7B7428380760F9D09769857DBB2038BF2213CF717E7D58FF",
+      "actual": {
+        "file": "V2.actual.json",
+        "bytes": 33548,
+        "sha256": "BD0492B4CAC427432CC3251EB27FC997C0D5EFF2862ECBC10A89B9AC19F1AD0F"
+      },
+      "source_output": {
+        "fact": 1506900,
+        "rule": "VCOM_COMMIT",
+        "return_fact": 1499178,
+        "return_rule": "VCOM_RETURN",
+        "complete_results": [
+          {
+            "fact": 1499179,
+            "rule": "VCOM_ALL_RESULTS"
+          }
+        ],
+        "committed_comparisons": 720,
+        "runtime_receipts": 1440
+      },
+      "expected_runtime_input": "NOT_PRESENT_IN_BOUND_INPUTS",
+      "diagnostics": [
+        {
+          "name": "retained predecessor entries",
+          "reading": "SAME"
+        },
+        {
+          "name": "link 0 hashes full record",
+          "reading": "SAME"
+        },
+        {
+          "name": "link 1 hashes full record",
+          "reading": "SAME"
+        },
+        {
+          "name": "predecessor 1",
+          "reading": "SAME"
+        },
+        {
+          "name": "receipt hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "successor state hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "genesis state hash",
+          "reading": "SAME"
+        },
+        {
+          "name": "receipt reading",
+          "reading": "SAME"
+        }
+      ]
+    }
+  ],
+  "verdict": "IF_THEN"
+}

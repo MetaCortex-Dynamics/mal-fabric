@@ -1,0 +1,602 @@
+{
+  "schema": "PUBLIC_REPLAY_RECEIPT_V1",
+  "target": "genesis",
+  "started": "2026-10-23T04:26:18.781Z",
+  "contract_sha256": "05737EE72CE36790AC01C96DF7F316A54282317E345E446315F8AA8EA5BBAB67",
+  "runner": {
+    "sha256": "B2B67AC4AA308EF87F6D73F2A2C0CF09848D6620D1A01217A2B6B605B8D84A57",
+    "bytes": 9842
+  },
+  "host": {
+    "platform": "win32",
+    "arch": "x64",
+    "release": "10.0.26200",
+    "node": "v22.20.0",
+    "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\r\nCopyright (c) 2005-2026 NVIDIA Corporation\r\nBuilt on Thu_Mar_19_22:28:55_Pacific_Daylight_Time_2026\r\nCuda compilation tools, release 13.2, V13.2.78\r\nBuild cuda_13.2.r13.2/compiler.37668154_0\r\n",
+    "device": "NVIDIA GeForce RTX 3070, GPU-ae8cdd6b-4a26-f2a9-bf2a-c3d4f7bcd86c, 596.36, 8192 MiB"
+  },
+  "commands": [
+    {
+      "label": "negative-missing",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\tools\\transport_slices.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\absent-frame.bin",
+        "4472CFC5B73C1BA745D3129E7111C0FA394C7C6CEE42D1E6E7E9691E5FF7228B",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\tools\\persistence_frame_layout.json",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\negative-missing.json"
+      ],
+      "started": "2026-10-23T04:26:18.798Z",
+      "ended": "2026-10-23T04:26:18.850Z",
+      "exit": 1,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "negative-altered",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\tools\\transport_slices.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\altered-frame.bin",
+        "4472CFC5B73C1BA745D3129E7111C0FA394C7C6CEE42D1E6E7E9691E5FF7228B",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\tools\\persistence_frame_layout.json",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\negative-altered.json"
+      ],
+      "started": "2026-10-23T04:26:18.852Z",
+      "ended": "2026-10-23T04:26:18.902Z",
+      "exit": 1,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "negative-displaced",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\tools\\transport_slices.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "4472CFC5B73C1BA745D3129E7111C0FA394C7C6CEE42D1E6E7E9691E5FF7228B",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\tools\\persistence_frame_layout.json",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\negative-displaced.json"
+      ],
+      "started": "2026-10-23T04:26:18.903Z",
+      "ended": "2026-10-23T04:26:18.949Z",
+      "exit": 1,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "nvcc-version",
+      "exe": "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/bin/nvcc.exe",
+      "args": [
+        "--version"
+      ],
+      "started": "2026-10-23T04:26:18.951Z",
+      "ended": "2026-10-23T04:26:18.972Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "device",
+      "exe": "nvidia-smi",
+      "args": [
+        "--query-gpu=name,uuid,driver_version,memory.total",
+        "--format=csv,noheader"
+      ],
+      "started": "2026-10-23T04:26:18.973Z",
+      "ended": "2026-10-23T04:26:19.027Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "build-narrow",
+      "exe": "C:\\WINDOWS\\system32\\cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\build-narrow.cmd"
+      ],
+      "started": "2026-10-23T04:26:19.030Z",
+      "ended": "2026-10-23T04:26:22.872Z",
+      "exit": 0,
+      "signal": null,
+      "error": null,
+      "binary": {
+        "sha256": "A2DE13B96734E2B943A7BC157109A635BCFB5B556B848048CC69FAC339FAD10F",
+        "bytes": 369664
+      },
+      "source": {
+        "sha256": "551004E6A85AD5589E09880E9C1BEB02C8530D4A15AF9548C8139CF99C7AF8F4",
+        "bytes": 10433
+      }
+    },
+    {
+      "label": "build-wide",
+      "exe": "C:\\WINDOWS\\system32\\cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\build-wide.cmd"
+      ],
+      "started": "2026-10-23T04:26:22.874Z",
+      "ended": "2026-10-23T04:26:26.103Z",
+      "exit": 0,
+      "signal": null,
+      "error": null,
+      "binary": {
+        "sha256": "CAAB0363668CF43923E63D3C750AA916BDA4BCA04058352F1D8C67D000E786DE",
+        "bytes": 369664
+      },
+      "source": {
+        "sha256": "8C3EFA01844FB924399CEE1B4562B1A28EDACB0F4C616D3B096A17F731F3335F",
+        "bytes": 10434
+      }
+    },
+    {
+      "label": "build-hash",
+      "exe": "C:\\WINDOWS\\system32\\cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\build-hash.cmd"
+      ],
+      "started": "2026-10-23T04:26:26.106Z",
+      "ended": "2026-10-23T04:26:29.405Z",
+      "exit": 0,
+      "signal": null,
+      "error": null,
+      "binary": {
+        "sha256": "39120562CA9A5A1FFD4896110A7D803207B6C8F8D1649AC43098892E6DB875CB",
+        "bytes": 368640
+      },
+      "source": {
+        "sha256": "9817D8C1B8371795E5725592FD95C4B88F0F86E879569B3A00DA2714CDAF5912",
+        "bytes": 1821
+      }
+    },
+    {
+      "label": "frame",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\tools\\transport_slices.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\inputs\\captured-frame.bin",
+        "4472CFC5B73C1BA745D3129E7111C0FA394C7C6CEE42D1E6E7E9691E5FF7228B",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\tools\\persistence_frame_layout.json",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\frame.json"
+      ],
+      "started": "2026-10-23T04:26:29.406Z",
+      "ended": "2026-10-23T04:26:29.458Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "lower-genesis_gpu",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\original\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\sources\\genesis_run.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\genesis_gpu",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json"
+      ],
+      "started": "2026-10-23T04:26:29.460Z",
+      "ended": "2026-10-23T04:26:29.533Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "gpu-genesis_gpu",
+      "exe": "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\narrow.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\genesis_gpu\\image.bin",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\genesis_gpu\\readback.bin"
+      ],
+      "started": "2026-10-23T04:26:29.535Z",
+      "ended": "2026-10-23T04:26:33.682Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "observe-CURRENT_FIELD",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\original\\extract_json_rows.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\genesis_gpu",
+        "THIS",
+        "OBSERVATION_ROW",
+        "CURRENT_FIELD",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\current.field.json"
+      ],
+      "started": "2026-10-23T04:26:33.694Z",
+      "ended": "2026-10-23T04:26:33.789Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "observe-CURRENT_WITNESS",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\original\\extract_json_rows.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\genesis_gpu",
+        "THIS",
+        "OBSERVATION_ROW",
+        "CURRENT_WITNESS",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\current.witness.json"
+      ],
+      "started": "2026-10-23T04:26:33.791Z",
+      "ended": "2026-10-23T04:26:33.908Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "observe-CURRENT_RECEIPT",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\original\\extract_json_rows.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\genesis_gpu",
+        "THIS",
+        "OBSERVATION_ROW",
+        "CURRENT_RECEIPT",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\current.receipt.json"
+      ],
+      "started": "2026-10-23T04:26:33.911Z",
+      "ended": "2026-10-23T04:26:34.030Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "observe-GROUND_0_012",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\original\\extract_json_rows.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\genesis_gpu",
+        "THIS",
+        "OBSERVATION_ROW",
+        "GROUND_0_012",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\Ground0.field.json"
+      ],
+      "started": "2026-10-23T04:26:34.033Z",
+      "ended": "2026-10-23T04:26:34.122Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "lower-commit0_gpu",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\original\\lower.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\sources\\commit_run_v2.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit0_gpu",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\current.witness.json",
+        "ground=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\Ground0.field.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\inputs\\empty-object.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\inputs\\empty-object.json"
+      ],
+      "started": "2026-10-23T04:26:34.125Z",
+      "ended": "2026-10-23T04:26:34.423Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "gpu-commit0_gpu",
+      "exe": "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\narrow.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit0_gpu\\image.bin",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit0_gpu\\readback.bin"
+      ],
+      "started": "2026-10-23T04:26:34.425Z",
+      "ended": "2026-10-23T04:27:42.969Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "hashes0",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\original\\hash_requested_values.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit0_gpu",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\hashes0",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\hash.exe"
+      ],
+      "started": "2026-10-23T04:27:42.981Z",
+      "ended": "2026-10-23T04:27:44.076Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "lower-commit1_gpu",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\gpu_self_witness_018\\lower_capacity_16384.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\sources\\commit_run_v3.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit1_gpu",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\inputs\\empty-object.json"
+      ],
+      "started": "2026-10-23T04:27:44.080Z",
+      "ended": "2026-10-23T04:27:44.547Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "gpu-commit1_gpu",
+      "exe": "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\wide.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit1_gpu\\image.bin",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit1_gpu\\readback.bin"
+      ],
+      "started": "2026-10-23T04:27:44.550Z",
+      "ended": "2026-10-23T04:28:49.478Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "hashes1",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\original\\hash_requested_values.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit1_gpu",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\hashes1",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\hash.exe"
+      ],
+      "started": "2026-10-23T04:28:49.490Z",
+      "ended": "2026-10-23T04:28:51.144Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "lower-commit2_gpu",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\gpu_self_witness_018\\lower_capacity_16384.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\sources\\commit_run_v3.mal",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit2_gpu",
+        "-",
+        "frame=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\frame.json",
+        "capture=C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\inputs\\capture.json",
+        "field=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\current.field.json",
+        "witness=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\current.witness.json",
+        "hashes=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\hashes0\\responses.json",
+        "links=C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\hashes1\\responses.json"
+      ],
+      "started": "2026-10-23T04:28:51.147Z",
+      "ended": "2026-10-23T04:28:51.944Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "gpu-commit2_gpu",
+      "exe": "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\wide.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit2_gpu\\image.bin",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit2_gpu\\readback.bin"
+      ],
+      "started": "2026-10-23T04:28:51.945Z",
+      "ended": "2026-10-23T04:29:57.353Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "label": "committed",
+      "exe": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\devon\\Documents\\Codex\\sb003\\flag_world_001_first_tick\\verification_kit_001\\vendor\\original\\extract_json_value.mjs",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\commit2_gpu",
+        "THIS",
+        "COMMITTED_GENESIS",
+        "C:\\Users\\devon\\Documents\\Codex\\sb003-genesis-replay-001\\committed.genesis.json"
+      ],
+      "started": "2026-10-23T04:29:57.365Z",
+      "ended": "2026-10-23T04:29:57.848Z",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    }
+  ],
+  "comparisons": [
+    {
+      "label": "captured-frame-to-header",
+      "actual": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "expected": {
+        "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+        "bytes": 461
+      },
+      "comparison": "SAME"
+    },
+    {
+      "label": "genesis_gpu image",
+      "sha256": "508B81EE1762EF2E6F6D8484EC4E41A7C19FF08E411F52840B0192734A1E9D6D",
+      "bytes": 350224,
+      "expected_sha256": "508B81EE1762EF2E6F6D8484EC4E41A7C19FF08E411F52840B0192734A1E9D6D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "genesis_gpu complete readback",
+      "sha256": "7504B659E75ADF886E47FB9CCF1C6489A83E6C1D281F94FDAAD9E05B05CA4A23",
+      "bytes": 16777248,
+      "expected_sha256": "7504B659E75ADF886E47FB9CCF1C6489A83E6C1D281F94FDAAD9E05B05CA4A23",
+      "comparison": "SAME"
+    },
+    {
+      "label": "CURRENT_FIELD",
+      "actual": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "expected": {
+        "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+        "bytes": 48025
+      },
+      "comparison": "SAME"
+    },
+    {
+      "label": "CURRENT_WITNESS",
+      "actual": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "expected": {
+        "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+        "bytes": 140449
+      },
+      "comparison": "SAME"
+    },
+    {
+      "label": "CURRENT_RECEIPT",
+      "actual": {
+        "sha256": "31422A88A25BFEB4A3FD149A180F3F3E5AD5B141548C0FD453BA40FAF5081243",
+        "bytes": 143965
+      },
+      "expected": {
+        "sha256": "31422A88A25BFEB4A3FD149A180F3F3E5AD5B141548C0FD453BA40FAF5081243",
+        "bytes": 143965
+      },
+      "comparison": "SAME"
+    },
+    {
+      "label": "GROUND_0_012",
+      "actual": {
+        "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3",
+        "bytes": 48001
+      },
+      "expected": {
+        "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3",
+        "bytes": 48001
+      },
+      "comparison": "SAME"
+    },
+    {
+      "label": "commit0_gpu image",
+      "sha256": "2710A000C4303DD57021FF0FE62BB03E4108C632FE4E7B0827FEDB3C851AAF24",
+      "bytes": 350224,
+      "expected_sha256": "2710A000C4303DD57021FF0FE62BB03E4108C632FE4E7B0827FEDB3C851AAF24",
+      "comparison": "SAME"
+    },
+    {
+      "label": "commit0_gpu complete readback",
+      "sha256": "DC89E90E75C32E6C7AED52AEDBF2A33A85A5F281DA8880B63A2F97FFF8BD19CA",
+      "bytes": 16777248,
+      "expected_sha256": "DC89E90E75C32E6C7AED52AEDBF2A33A85A5F281DA8880B63A2F97FFF8BD19CA",
+      "comparison": "SAME"
+    },
+    {
+      "label": "first hash responses",
+      "actual": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "expected": {
+        "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+        "bytes": 239144
+      },
+      "comparison": "SAME"
+    },
+    {
+      "label": "commit1_gpu image",
+      "sha256": "BC6805990329B5875B5AA62CF6341DA4CBCD35094538835D1B33E7CBFC8F532D",
+      "bytes": 677904,
+      "expected_sha256": "BC6805990329B5875B5AA62CF6341DA4CBCD35094538835D1B33E7CBFC8F532D",
+      "comparison": "SAME"
+    },
+    {
+      "label": "commit1_gpu complete readback",
+      "sha256": "9F355D2551EDE8728F96E3E5E3F300F216A7FE824390D88E8E40294316C01F49",
+      "bytes": 16777248,
+      "expected_sha256": "9F355D2551EDE8728F96E3E5E3F300F216A7FE824390D88E8E40294316C01F49",
+      "comparison": "SAME"
+    },
+    {
+      "label": "chain hash responses",
+      "actual": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "expected": {
+        "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+        "bytes": 430443
+      },
+      "comparison": "SAME"
+    },
+    {
+      "label": "commit2_gpu image",
+      "sha256": "FF8285BB3BB3934F3BC5FFB7604186EF0414E6B63B6F844E3DD3C0C714D64207",
+      "bytes": 677904,
+      "expected_sha256": "FF8285BB3BB3934F3BC5FFB7604186EF0414E6B63B6F844E3DD3C0C714D64207",
+      "comparison": "SAME"
+    },
+    {
+      "label": "commit2_gpu complete readback",
+      "sha256": "A96CDB93CE443EEB1923D24FE9B34C91BC7ACEA149700C7B284030F704B142CF",
+      "bytes": 16777248,
+      "expected_sha256": "A96CDB93CE443EEB1923D24FE9B34C91BC7ACEA149700C7B284030F704B142CF",
+      "comparison": "SAME"
+    },
+    {
+      "label": "complete committed genesis",
+      "actual": {
+        "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+        "bytes": 382131
+      },
+      "expected": {
+        "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+        "bytes": 382131
+      },
+      "comparison": "SAME"
+    }
+  ],
+  "negative_controls": [
+    {
+      "id": "missing",
+      "scope": "Frozen capture identity/transport only; not a world-law negative",
+      "expected": "REFUSED_NO_FRAME",
+      "verdict": "IF_THEN"
+    },
+    {
+      "id": "altered",
+      "scope": "Frozen capture identity/transport only; not a world-law negative",
+      "expected": "REFUSED_NO_FRAME",
+      "verdict": "IF_THEN"
+    },
+    {
+      "id": "displaced",
+      "scope": "Frozen capture identity/transport only; not a world-law negative",
+      "expected": "REFUSED_NO_FRAME",
+      "verdict": "IF_THEN"
+    }
+  ],
+  "execution": "EXECUTED",
+  "verdict": "IF_THEN",
+  "independent_builder": "NOT_ESTABLISHED",
+  "other_backends": "NOT_RUN",
+  "custody": "SAME",
+  "ended": "2026-10-23T04:29:57.851Z"
+}

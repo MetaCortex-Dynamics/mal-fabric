@@ -1,0 +1,16 @@
+// Exact retained SAME operand contact, not a new world law or runtime verdict.
+// Source: C:/Users/devon/Documents/Codex/2026-10-04/new-chat/
+// flag_world_first_tick_realization_001/source/junction_evaluation.mal:13--16.
+// SHA256 BAB00F25F89627D84A56C5BB8FF08DC2093D6E73E68895D654AFB86586C0D036.
+// That source transcribes Ships-Computer 130f85239f684c3054c3096acb035324dbe19b5c:
+// qg_operator_core.sv FCD0190C471836949B8E88161CF1EFFA6024D957A0577B6B7DCABF45B816050A.
+// The four bindings are copied byte-for-byte as clauses. Proposal readings and
+// the independent check of actual shared STEP results consume this contact.
+// No frame admission, authority, persistence, current field, hash, receipt or
+// commit is supplied. NOT_SAME is a completed overlap reading, including walls.
+@propose seed VC_RETAINED_SAME_CONTACT := {
+ GOES_WITH(JTP_SAME_RESULT,MARKER(NO),MARKER(NO),U32(B0,B0,B0,B1),SAME),
+ GOES_WITH(JTP_SAME_RESULT,MARKER(THIS),MARKER(THIS),U32(B0,B0,B0,B1),SAME),
+ GOES_WITH(JTP_SAME_RESULT,MARKER(NO),MARKER(THIS),U32(B0,B0,B0,B0),NOT_SAME),
+ GOES_WITH(JTP_SAME_RESULT,MARKER(THIS),MARKER(NO),U32(B0,B0,B0,B0),NOT_SAME)
+};

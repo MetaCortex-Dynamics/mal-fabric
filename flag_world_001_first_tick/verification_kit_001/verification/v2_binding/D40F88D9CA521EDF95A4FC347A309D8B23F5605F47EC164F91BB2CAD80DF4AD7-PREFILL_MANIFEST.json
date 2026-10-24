@@ -1,0 +1,179 @@
+{
+  "scope": "CUSTODY_SEAL_OF_REUSABLE_DERIVED_CARRIER_CHECKPOINT; NO_PROMOTION; NOT_CONFORM",
+  "seal_version": 1,
+  "members": {
+    "source.mal": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\carrier_prefill_001\\source.mal",
+      "bytes": 13197,
+      "sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F"
+    },
+    "source-map.json": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\carrier_prefill_001\\source-map.json",
+      "bytes": 168255,
+      "sha256": "616A81F266115C37BDD3316A35F7BA068A79FEE978D7E27C114B55C1C2BFD4D1"
+    },
+    "image.bin": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\carrier_prefill_001\\image.bin",
+      "bytes": 41992208,
+      "sha256": "7509314A34D0607B62F83D1AA048802B1108E9CA58A342908CF3603217EB5399"
+    },
+    "readback.bin": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\carrier_prefill_001\\readback.bin",
+      "bytes": 268435488,
+      "sha256": "ECED361A61D4D9FA514DE0E6E2EE3ECFFC975F2BFE4C68D960DEED2E3BE08D8B"
+    },
+    "source-occurrence-custody.json": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\carrier_prefill_001\\source-occurrence-custody.json",
+      "bytes": 221001,
+      "sha256": "47BCB22CBD67576D8BB93C021A6448D6952DDA5468FEB1B2E5DDBDC4A03C7872"
+    },
+    "V1_IMPORT_GUARD.json": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\carrier_prefill_001\\V1_IMPORT_GUARD.json",
+      "bytes": 734,
+      "sha256": "552E50B20D916DED2D2AB18C0474E6B7A708F7AC8C9F276DE03256FE22FE8847"
+    },
+    "V2_IMPORT_GUARD.json": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\carrier_prefill_001\\V2_IMPORT_GUARD.json",
+      "bytes": 734,
+      "sha256": "F9E1BE80912B20AFA8AD66A12F355D1A4F2544CBF8BB19B17C3F20693094FB91"
+    }
+  },
+  "execution_input": "program image plus this proof-carrying starting state; the target program-image bytes need not change",
+  "facts": 5282,
+  "terms": 6170,
+  "source_seed_facts": 91,
+  "derived_facts": 5191,
+  "retained_rules": 58,
+  "epochs": 14,
+  "inventory": {
+    "BASE_EDGE": 30,
+    "HARDWARE_EDGE": 30,
+    "HARDWARE_FACE": 20,
+    "DOMAIN_NEXT": 11,
+    "BASE_TRIAD": 20,
+    "DOMAIN_ORDER": 66,
+    "REFINED_PARENT": 80,
+    "REFINED_TRIAD": 80,
+    "SITE": 42,
+    "SITE_ORDER": 861,
+    "WORLD_DOMAIN_SITE": 12,
+    "WORLD_JUNCTION_SITE": 30,
+    "TRIAD": 80,
+    "EDGE_IN_TRIAD": 240,
+    "GAMMA": 480,
+    "EDGE_OPPOSITE": 240,
+    "PAIR": 720,
+    "WORLD_TRIAD_FACE": 80,
+    "EDGE": 120,
+    "FLAG": 480,
+    "DELTA": 480,
+    "ADJACENT_TRIADS": 120,
+    "TAU": 480,
+    "WORLD_FLAG_FACE": 480
+  },
+  "rule_use": {
+    "BASE_FROM_HARDWARE": 20,
+    "ORDER_BASE": 11,
+    "PARENT_A": 20,
+    "PARENT_B": 20,
+    "PARENT_C": 20,
+    "PARENT_CENTRE": 20,
+    "REFINE_A": 20,
+    "REFINE_B": 20,
+    "REFINE_C": 20,
+    "REFINE_CENTRE": 20,
+    "ORDER_TRANSITIVE": 55,
+    "SITE_A": 31,
+    "SITE_B": 10,
+    "SITE_C": 1,
+    "ORDER_DOMAINS": 66,
+    "ORDER_MIDPOINT_DOMAIN": 360,
+    "ORDER_MIDPOINT_FIRST": 403,
+    "ORDER_MIDPOINT_SECOND": 32,
+    "DOMAIN_SITE": 12,
+    "JUNCTION_SITE": 30,
+    "TRIAD_ABC": 20,
+    "TRIAD_CAB": 60,
+    "EDGE_AB": 80,
+    "EDGE_AC": 80,
+    "EDGE_BC": 80,
+    "GAMMA_A": 80,
+    "GAMMA_B": 80,
+    "GAMMA_C": 80,
+    "OPPOSITE_AB": 80,
+    "OPPOSITE_AC": 80,
+    "OPPOSITE_BC": 80,
+    "PAIR_GAMMA_A": 80,
+    "PAIR_GAMMA_B": 80,
+    "PAIR_GAMMA_C": 80,
+    "FACE_PARENT_ABC": 20,
+    "FACE_PARENT_CAB": 60,
+    "EDGE": 120,
+    "FLAG_FIRST": 240,
+    "FLAG_SECOND": 240,
+    "DELTA_FIRST": 240,
+    "GAMMA_REVERSE": 240,
+    "ADJACENT_TRIADS": 120,
+    "PAIR_DELTA": 240,
+    "DELTA_SECOND": 240,
+    "TAU_FIRST": 120,
+    "TAU_SECOND": 120,
+    "PAIR_TAU_FIRST": 120,
+    "PAIR_TAU_SECOND": 120,
+    "FLAG_FACE": 480,
+    "TAU_REVERSE": 240
+  },
+  "derived_fact_treatment": "Original rule, support, rank and term identities retained. Derived facts are not rewritten as authority seeds.",
+  "imported_inputs": [],
+  "excluded": [
+    "independent reference index",
+    "vector readings and correspondence contexts",
+    "current/genesis field",
+    "placement",
+    "JTP",
+    "committed world output",
+    "expected vector bytes"
+  ],
+  "split": {
+    "carrier_only": "Exact012 prefix: incidence, refinement, moves, overlap pairs and source-bound structural order/parent relations.",
+    "carrier_only_not_in_checkpoint": "Hardware observation encoding after the012 prefix remains derived.",
+    "correspondence": "Retains vector field/kappa and checked current-field ancestry; not part of the carrier-only prefill.",
+    "vector_dependent": "Offered/candidate fields, gluing, changes, counts, suffix checks, runtime and commit remain derived."
+  },
+  "used_term_bytes_sha256": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+  "used_fact_bytes_sha256": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39",
+  "evidence_only": {
+    "original_execution": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\EXECUTION.json",
+      "bytes": 1075,
+      "sha256": "E43C9E2CA1394FE6EA5437315C48A5F0675A0661ACC989C5A29B42CACAD99B2C"
+    },
+    "observed_execution": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\OBSERVED_EXECUTION.json",
+      "bytes": 1855,
+      "sha256": "55EF2800DE5AC8C57015E950A589D6A689662778D44C35B67C2D24830DAD0F81"
+    },
+    "independent_full_set_comparison": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\ReferenceComparison.json",
+      "bytes": 29546,
+      "sha256": "51C13350CCCA5B14DCBBEFD1D8842824809E79F8B4230BEF0E6871850908CBF6"
+    },
+    "disjoint_replay": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\ref012_indexed_qualification\\gpu\\readback.disjoint.bin",
+      "bytes": 268435488,
+      "sha256": "ECED361A61D4D9FA514DE0E6E2EE3ECFFC975F2BFE4C68D960DEED2E3BE08D8B"
+    }
+  },
+  "guard": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\prefill_guard.mjs",
+    "bytes": 10316,
+    "sha256": "EE8908CBEFBA00835BB662E587259F003002B81777A987FC2E174F045B1AF08B"
+  },
+  "packager": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\seal_carrier_prefill.mjs",
+    "bytes": 5692,
+    "sha256": "0245C787226DF611B4F21CD27C1D9DBAC453CCB5912BDB397705130D1726227D"
+  },
+  "qualification": "PENDING_SEPARATE_CACHED_VS_CLEAN_GPU_QUALIFICATION",
+  "repository_action": "NONE"
+}

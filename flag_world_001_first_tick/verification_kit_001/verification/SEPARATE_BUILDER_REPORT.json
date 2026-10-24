@@ -1,0 +1,47 @@
+{
+  "schema": "SEPARATE_BUILDER_REPORT_001",
+  "builder": "/root/verification_kit_separate_builder",
+  "verdict": "IF_THEN",
+  "scope": "Separate agent reproduction of the same implementation on the same installed NVIDIA hardware/toolchain; not a separately implemented backend or separate physical machine",
+  "public_base_commit": "3b703f6a2cd5227c497de2a02bfb693c9fe4d829",
+  "checkout_form": "Clean git archive export of flag_world_001_first_tick plus exact uncommitted candidate-kit overlay; kit is not yet a committed public checkout",
+  "archive": "C:/Users/devon/Documents/Codex/sb003-public.zip",
+  "archive_sha256": "4C239CAE062389F3F2D40508D61C987B73AA6449A247952117568821D3DA537D",
+  "working_directory": "C:/Users/devon/Documents/Codex/sb003",
+  "overlay_file_count_at_verification": 152,
+  "overlay_hash_mismatches_at_verification": 0,
+  "runner_sha256": "B2B67AC4AA308EF87F6D73F2A2C0CF09848D6620D1A01217A2B6B605B8D84A57",
+  "contract_sha256": "05737EE72CE36790AC01C96DF7F316A54282317E345E446315F8AA8EA5BBAB67",
+  "readme_sha256": "17628B1303BD19185E835FF549A46B92425DB0E63F888BFAD9D12C9D6E7E414E",
+  "command": "node flag_world_001_first_tick/verification_kit_001/replay.mjs --target genesis --output ../sb003-genesis-replay-001",
+  "exit_code": 0,
+  "started_utc": "2026-10-23T04:26:18Z",
+  "ended_utc": "2026-10-23T04:29:57Z",
+  "environment": {
+    "node": "v22.20.0",
+    "node_path": "C:/Program Files/nodejs/node.exe",
+    "windows": "10.0.26200",
+    "cuda": "13.2 V13.2.78",
+    "visual_studio_build_tools": "2022 Developer Command Prompt v17.14.25 x64",
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_uuid": "GPU-ae8cdd6b-4a26-f2a9-bf2a-c3d4f7bcd86c",
+    "driver": "596.36",
+    "memory": "8192 MiB"
+  },
+  "result": {
+    "execution": "EXECUTED",
+    "comparisons": "16 SAME: four image hashes, four complete readback hashes, frame bytes, Ground0 bytes, field bytes, witness bytes, receipt bytes, both complete hash-response files, complete committed genesis bytes",
+    "transport_negative_controls": "missing, altered, displaced: IF_THEN; each refused without frame output",
+    "committed_genesis_bytes": 382131,
+    "committed_genesis_sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+    "replay_receipt_sha256": "6CF2D973061A0973593A3CF2590549A847A68CE8360A753A9D26823ACD29EEBF"
+  },
+  "dependency_inspection": "Replay and helper imports/includes resolve inside kit or installed Node/NVIDIA/MSVC toolchain. Historical private origins are manifest data, not runtime file arguments. No private corpus/realization paths were opened by this builder; no primary runtime outputs were reused.",
+  "preserved_setup_failures": [
+    "verification_kit_separate_builder_001: full clone checkout hit Windows filename limit",
+    "sb001: longpaths full clone encountered missing promised blobs in unrelated public showcase/visualization paths",
+    "sb002: sparse checkout also reported missing unrelated object; git archive subtree export subsequently completed"
+  ],
+  "mutations": "Only isolated checkout/export/overlay and fresh replay/report outputs; no kit edits, original repository edits, commits, pushes, board operations, Python execution or cleanup deletion",
+  "limits": "Genesis only. No V1/V2, J17, AMD, Apple Silicon or WGSL execution qualification is established by this run. Replay receipt retains its generic independent_builder NOT_ESTABLISHED field; this separate report records the builder identity and scope without rewriting that receipt."
+}

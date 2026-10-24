@@ -1,0 +1,1389 @@
+{
+  "id": "RUN_RECORD_018_GPU_SELF_WITNESS_AND_G_READOUT",
+  "date": "2026-10-21",
+  "authority": "EXECUTE under Devon's promoted bindings and direct run-through instruction. No DECIDE or PROMOTE performed.",
+  "branch": "review/flag-world-route-contact-014",
+  "repository_head": "39A650DEBC11D684CBBE638473DD3A0A50C1DC46",
+  "scope": "Captured event -> GPU genesis field + complete overlap witness + one committed chain link over Ground_0 -> source-derived d_G -> all 20 CCC face readouts. Stop at the promoted J17 minimum-tie boundary.",
+  "outcome": "Genesis COMMITTED; metric and 20-face readout EXECUTED. Both J17 faces have G_verdict MAYBE. No placement or tick successor fabricated.",
+  "governing_bindings": [
+    {
+      "path": "C:/Users/devon/Desktop/MaL/MaLv3/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7"
+    },
+    {
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+      "sha256": "C1BA60101C95E76C3D2F090B00E3B679A6B58851B8A235829214D2B6249BD072"
+    },
+    {
+      "path": "C:/Users/devon/Desktop/MaL/MaLv3/DECISION_RECORD_FLAG_WORLD_D_G_001.mal",
+      "sha256": "3419D528150A8616AF0DCF0446FC59FAD0FF83F1C872C93A0BC8CC70BF0A8718"
+    },
+    {
+      "path": "C:/Users/devon/Desktop/MaL/MaLv3/SPEC_WITNESS_FACE_G_READOUT_001_v0.1.0_PROPOSED.mal",
+      "sha256": "057C30E280CC17A4D3AA6079A3B6E203DEA3FE306BD8557A67F3CEC615C05355"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/flag_world_first_tick_001_v013/SPEC_FLAG_WORLD_FIRST_TICK_001_v0.1.3_PROPOSED.mal",
+      "sha256": "2ECF2EEF9A8901DA9C802922BEBE1F74C367D7A74E5B773528504B73854C1A01"
+    }
+  ],
+  "bindings_check": "SAME; promoted bytes and V1/V2 retained unchanged. PROPOSED filename/header is not reopened: promotion is carried by receipt.",
+  "inputs": {
+    "event": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-19/https-github-com-metacortex-dynamics-ships/work/Ships-Computer/v3/junction_transaction_protocol/evidence/QG-JTP-K0C-FIRST16-CAPTURE-021/execution/capture-corrective-002/capture/com6-postboot.bin",
+      "sha256": "4472CFC5B73C1BA745D3129E7111C0FA394C7C6CEE42D1E6E7E9691E5FF7228B"
+    },
+    "predecessor": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/ground_predecessor_015/GROUND_0_012.field.json",
+      "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3"
+    },
+    "locus": "Junction(\"17\"), corridor Domain(\"4\")--Domain(\"9\"). Header locus, not payload indexing, not a selected face.",
+    "upstream_source": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/jtp_locus_017/run2.mal",
+      "sha256": "ECB21A3A4BF0D6AEF9B55319FCC8F8CB11A6886B3ACC6414A296A647320E426C"
+    },
+    "hardware_incidence_source": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/source/incidence.mal",
+      "sha256": "8F53851F3ACB76B2672EECEA5595B313040C8FAC961469E029D8C5DE5BF19F3C"
+    },
+    "hardware_connection_source": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/source/junction_identity.mal",
+      "sha256": "E4CF9C4D9F3CE2B231DE67C7FFD45B82DE79FFD9DD403F7BAFD097D8939B3ACD"
+    },
+    "hardware_header_binding": "25AF837405F450986FBD24A425D2197BD5E5D9D4BF952F74BE43CFB992B10F64",
+    "QG003_incidence_binding": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB"
+  },
+  "realization": {
+    "source_files": [
+      {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/source/genesis.mal",
+        "bytes": 3792,
+        "sha256": "F0773557E1E940722137BAA022E2AF98F6750B962334961B3F1D9F0CCE68CF80"
+      },
+      {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/source/commit.mal",
+        "bytes": 13982,
+        "sha256": "59948853D407D1A9ED958F258A8AB3292DDBA12FFA4C72B21358FC88C0ADCD22"
+      },
+      {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/source/readout_gate.mal",
+        "bytes": 252,
+        "sha256": "E3FCC097C15023289EADABD767BE5DD4BD980BA875A54B4DFC6EAC9B5BBFA14F"
+      },
+      {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/source/readout.mal",
+        "bytes": 9250,
+        "sha256": "3F30F13CD64BB217A05D376403991D0256F75AD3F3E341894F2A7AE83D265CE2"
+      },
+      {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/genesis_run.mal",
+        "bytes": 24699,
+        "sha256": "E68FA6960E4538D264E756445659F57344C571FAC2F7B00D6BE365EB42919004"
+      },
+      {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/commit_run_v3.mal",
+        "bytes": 38683,
+        "sha256": "89E9952F34BF6E44888150EDB5705133D91B204326C55904B090D03A3305A6EB"
+      },
+      {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/readout_run.mal",
+        "bytes": 48188,
+        "sha256": "F583941F53F1EA795727B95C08D2CC486E4F7BFB28D6D799E04D1C0A223DC9AF"
+      },
+      {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/law_application_capacity_16384.cu",
+        "bytes": 10434,
+        "sha256": "8C3EFA01844FB924399CEE1B4562B1A28EDACB0F4C616D3B096A17F731F3335F"
+      },
+      {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/law_application_capacity_16384.exe",
+        "bytes": 519168,
+        "sha256": "5F3830BE80C70D687F4D4060BF4CB69BAEED8B856D7EFADF8EDFA912CD68858A"
+      },
+      {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/lower_capacity_16384.mjs",
+        "bytes": 7669,
+        "sha256": "D198BFEEA0F5D7C3DED23425B4C6083381FC069055EA898031F5C019CB88F731"
+      }
+    ],
+    "application_law": "All event-to-field, gluing, receipt, complete-pair assembly, commit prerequisites, publication, edit counting and face verdicts are .mal consequences executed on the RTX 3070.",
+    "host_scope": "Generic parsing/lowering, custody, exact observation serialization and generic GPU-hash dispatch. No host admission, choice, edit verdict, rank, face selection or commit producer.",
+    "CUDA_scope": "Generic pattern matching, forward chaining, term custody and SHA-256. No application rules.",
+    "generic_hash_dispatcher": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/flag_world_first_tick_realization_001/hash_requested_values.mjs",
+      "sha256": "125C8F6C30B7519BECE3E00C9CB0E022913E07B396DE7CC58746B69F81EF9647"
+    },
+    "GPU_SHA_binary": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/flag_world_first_tick_realization_001/substrate/hash/gpu_sha256.exe",
+      "sha256": "AF8A01E40A9CC2A8A6823166006EBA41A7D0F2A40DD1B403814E16C36BD11A4C"
+    },
+    "capacity_change": {
+      "reason": "Complete hash subjects exceeded the retained 8192-pattern image limit.",
+      "change": "Additive evaluator/lowerer copies widen NP only from 8192 to 16384. CUDA has no other change. Lowerer changes matching capacity bounds plus relative custody-helper path.",
+      "retained_original": "Original evaluator and lowerer preserved.",
+      "qualification": "SAME complete 16777248-byte genesis readback under old/new evaluator; original replay also SAME.",
+      "qualification_sha256": "7504B659E75ADF886E47FB9CCF1C6489A83E6C1D281F94FDAAD9E05B05CA4A23",
+      "compile": "nvcc -std=c++17 -arch=sm_86 -O2 -o law_application_capacity_16384.exe law_application_capacity_16384.cu",
+      "earlier_attempts": "Initial redundant receipt import exceeded 8192 patterns before GPU execution. Receipt is now built by source filtering complete witness-pair enumeration. Redundant predecessor import was replaced by source reconstruction followed by exact B263... GPU-hash binding. Preserved commit_run.mal/commit_run_v2.mal record those attempts; no promoted expectations changed."
+    }
+  },
+  "GPU": "NVIDIA GeForce RTX 3070",
+  "execution_stages": [
+    {
+      "stage": "genesis_gpu",
+      "source_sha256": "E68FA6960E4538D264E756445659F57344C571FAC2F7B00D6BE365EB42919004",
+      "image": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/genesis_gpu/image.bin",
+        "bytes": 350224,
+        "sha256": "508B81EE1762EF2E6F6D8484EC4E41A7C19FF08E411F52840B0192734A1E9D6D"
+      },
+      "readback": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/genesis_gpu/readback.bin",
+        "bytes": 16777248,
+        "sha256": "7504B659E75ADF886E47FB9CCF1C6489A83E6C1D281F94FDAAD9E05B05CA4A23"
+      },
+      "source_map": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/genesis_gpu/source-map.json",
+        "bytes": 386136,
+        "sha256": "CDBA20AB74F6B693D12E8F6E4C0F2F1B0DA434F5060855340EB4D51B216F5D87"
+      },
+      "error": 0,
+      "terms": 22045,
+      "facts": 13662,
+      "epochs": 20,
+      "patterns": 1164,
+      "rules": 94,
+      "inputs": [
+        {
+          "alias": "frame",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\frame.json",
+          "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+          "size": 461
+        },
+        {
+          "alias": "capture",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\capture.json",
+          "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+          "size": 1931
+        }
+      ]
+    },
+    {
+      "stage": "capacity_qualification",
+      "source_sha256": "E68FA6960E4538D264E756445659F57344C571FAC2F7B00D6BE365EB42919004",
+      "image": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/capacity_qualification/image.bin",
+        "bytes": 677904,
+        "sha256": "5E447C1259A21E94AD97DC510C59EC7A6BDC11704C29D655DF7892DAE4E9DB73"
+      },
+      "readback": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/capacity_qualification/readback.bin",
+        "bytes": 16777248,
+        "sha256": "7504B659E75ADF886E47FB9CCF1C6489A83E6C1D281F94FDAAD9E05B05CA4A23"
+      },
+      "source_map": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/capacity_qualification/source-map.json",
+        "bytes": 386136,
+        "sha256": "9DA206E9669815B4FBDB3C566D157F84E7059B40C210DDD4DB929929921FC265"
+      },
+      "error": 0,
+      "terms": 22045,
+      "facts": 13662,
+      "epochs": 20,
+      "patterns": 1164,
+      "rules": 94,
+      "inputs": [
+        {
+          "alias": "frame",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\frame.json",
+          "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+          "size": 461
+        },
+        {
+          "alias": "capture",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\capture.json",
+          "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+          "size": 1931
+        }
+      ]
+    },
+    {
+      "stage": "commit0_gpu",
+      "source_sha256": "8D3BDC41EAC835ACB5F66659B1B7829520D27B4C8B882AD2194B168C87D10772",
+      "image": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/commit0_gpu/image.bin",
+        "bytes": 350224,
+        "sha256": "2710A000C4303DD57021FF0FE62BB03E4108C632FE4E7B0827FEDB3C851AAF24"
+      },
+      "readback": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/commit0_gpu/readback.bin",
+        "bytes": 16777248,
+        "sha256": "DC89E90E75C32E6C7AED52AEDBF2A33A85A5F281DA8880B63A2F97FFF8BD19CA"
+      },
+      "source_map": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/commit0_gpu/source-map.json",
+        "bytes": 25087075,
+        "sha256": "B8CF2ECAF8DE1F712A3FFF9CB2FC144B2204273D6FC2D7B955D8C168FF9F3A24"
+      },
+      "error": 0,
+      "terms": 55784,
+      "facts": 42890,
+      "epochs": 118,
+      "patterns": 8080,
+      "rules": 158,
+      "inputs": [
+        {
+          "alias": "frame",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\frame.json",
+          "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+          "size": 461
+        },
+        {
+          "alias": "capture",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\capture.json",
+          "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+          "size": 1931
+        },
+        {
+          "alias": "field",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.field.json",
+          "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+          "size": 48025
+        },
+        {
+          "alias": "witness",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.witness.json",
+          "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+          "size": 140449
+        },
+        {
+          "alias": "ground",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\predecessor.field.json",
+          "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3",
+          "size": 48001
+        },
+        {
+          "alias": "hashes",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\empty.compact.json",
+          "sha256": "44136FA355B3678A1146AD16F7E8649E94FB4FC21FE77E8310C060F61CAAFF8A",
+          "size": 2
+        },
+        {
+          "alias": "links",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\empty.compact.json",
+          "sha256": "44136FA355B3678A1146AD16F7E8649E94FB4FC21FE77E8310C060F61CAAFF8A",
+          "size": 2
+        }
+      ]
+    },
+    {
+      "stage": "commit1_gpu",
+      "source_sha256": "89E9952F34BF6E44888150EDB5705133D91B204326C55904B090D03A3305A6EB",
+      "image": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/commit1_gpu/image.bin",
+        "bytes": 677904,
+        "sha256": "BC6805990329B5875B5AA62CF6341DA4CBCD35094538835D1B33E7CBFC8F532D"
+      },
+      "readback": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/commit1_gpu/readback.bin",
+        "bytes": 16777248,
+        "sha256": "9F355D2551EDE8728F96E3E5E3F300F216A7FE824390D88E8E40294316C01F49"
+      },
+      "source_map": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/commit1_gpu/source-map.json",
+        "bytes": 44417350,
+        "sha256": "806AF225D13F460F588FA15DF7556EF282AC411FEC8AF2FD0DBF8953C80815D0"
+      },
+      "error": 0,
+      "terms": 56444,
+      "facts": 43383,
+      "epochs": 627,
+      "patterns": 8301,
+      "rules": 161,
+      "inputs": [
+        {
+          "alias": "frame",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\frame.json",
+          "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+          "size": 461
+        },
+        {
+          "alias": "capture",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\capture.json",
+          "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+          "size": 1931
+        },
+        {
+          "alias": "field",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.field.json",
+          "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+          "size": 48025
+        },
+        {
+          "alias": "witness",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.witness.json",
+          "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+          "size": 140449
+        },
+        {
+          "alias": "hashes",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes0\\responses.json",
+          "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+          "size": 239144
+        },
+        {
+          "alias": "links",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\empty.compact.json",
+          "sha256": "44136FA355B3678A1146AD16F7E8649E94FB4FC21FE77E8310C060F61CAAFF8A",
+          "size": 2
+        }
+      ]
+    },
+    {
+      "stage": "commit2_gpu",
+      "source_sha256": "89E9952F34BF6E44888150EDB5705133D91B204326C55904B090D03A3305A6EB",
+      "image": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/commit2_gpu/image.bin",
+        "bytes": 677904,
+        "sha256": "FF8285BB3BB3934F3BC5FFB7604186EF0414E6B63B6F844E3DD3C0C714D64207"
+      },
+      "readback": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/commit2_gpu/readback.bin",
+        "bytes": 16777248,
+        "sha256": "A96CDB93CE443EEB1923D24FE9B34C91BC7ACEA149700C7B284030F704B142CF"
+      },
+      "source_map": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/commit2_gpu/source-map.json",
+        "bytes": 87868164,
+        "sha256": "8F75A94209D15A2D22736E014A96D1731404A5B7E768D1AB6286E4A36D11BD73"
+      },
+      "error": 0,
+      "terms": 56538,
+      "facts": 43391,
+      "epochs": 629,
+      "patterns": 8390,
+      "rules": 161,
+      "inputs": [
+        {
+          "alias": "frame",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\frame.json",
+          "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+          "size": 461
+        },
+        {
+          "alias": "capture",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\capture.json",
+          "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+          "size": 1931
+        },
+        {
+          "alias": "field",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.field.json",
+          "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+          "size": 48025
+        },
+        {
+          "alias": "witness",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.witness.json",
+          "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+          "size": 140449
+        },
+        {
+          "alias": "hashes",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes0\\responses.json",
+          "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+          "size": 239144
+        },
+        {
+          "alias": "links",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes1\\responses.json",
+          "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+          "size": 430443
+        }
+      ]
+    },
+    {
+      "stage": "readout_gpu",
+      "source_sha256": "F583941F53F1EA795727B95C08D2CC486E4F7BFB28D6D799E04D1C0A223DC9AF",
+      "image": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/readout_gpu/image.bin",
+        "bytes": 677904,
+        "sha256": "6185A7D06C0BBA03117B53CCB64343CB446B68D657CEB383973A6B26588362E7"
+      },
+      "readback": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/readout_gpu/readback.bin",
+        "bytes": 16777248,
+        "sha256": "9FFF2EEB421B32DDC97D046ABC6BC963176C0CFF850A82BF0B91E322D8F5977A"
+      },
+      "source_map": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/readout_gpu/source-map.json",
+        "bytes": 92788264,
+        "sha256": "65383EA400F9707D4F691B0B9599F72D9D24302169A2F27757272FB8A90361B3"
+      },
+      "error": 0,
+      "terms": 89780,
+      "facts": 76380,
+      "epochs": 1131,
+      "patterns": 8620,
+      "rules": 211,
+      "inputs": [
+        {
+          "alias": "frame",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\frame.json",
+          "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE",
+          "size": 461
+        },
+        {
+          "alias": "capture",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\jtp_locus_017\\inputs\\capture.json",
+          "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F",
+          "size": 1931
+        },
+        {
+          "alias": "field",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.field.json",
+          "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A",
+          "size": 48025
+        },
+        {
+          "alias": "witness",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\current.witness.json",
+          "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9",
+          "size": 140449
+        },
+        {
+          "alias": "hashes",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes0\\responses.json",
+          "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0",
+          "size": 239144
+        },
+        {
+          "alias": "links",
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\hashes1\\responses.json",
+          "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6",
+          "size": 430443
+        }
+      ]
+    }
+  ],
+  "reproducibility": {
+    "working_directory": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat",
+    "lower_command": "node review_flag_world_002/gpu_self_witness_018/lower_capacity_16384.mjs <source.mal> <stage-directory> - <alias=path inputs listed for that stage>",
+    "execute_command": "review_flag_world_002/gpu_self_witness_018/law_application_capacity_16384.exe <stage-directory>/image.bin <stage-directory>/readback.bin",
+    "hash_command": "node flag_world_first_tick_realization_001/hash_requested_values.mjs <stage-directory> <hash-directory> flag_world_first_tick_realization_001/substrate/hash/gpu_sha256.exe",
+    "initial_evaluator": "genesis_gpu and commit0_gpu used retained law_application_v011.exe; capacity_qualification, commit1_gpu, commit2_gpu and readout_gpu used capacity_16384.",
+    "order": [
+      "genesis_gpu",
+      "hash requests from commit0_gpu -> hashes0",
+      "commit1_gpu -> hashes1 including GENESIS_LINK",
+      "commit2_gpu publication",
+      "readout_gpu: publication precedes cross-snapshot comparisons by source support"
+    ],
+    "note": "The readout run reconstitutes the SAME single genesis record to establish its commit dependency; it does not append a second worldline link."
+  },
+  "genesis": {
+    "execution": "EXECUTED",
+    "application_verdict": "IF_THEN under promoted GPU self-witness binding",
+    "field": {
+      "flags": 480,
+      "THIS": 12,
+      "NO": 468
+    },
+    "overlaps": {
+      "total": 720,
+      "SAME": 708,
+      "NOT_SAME": 12,
+      "delta": {
+        "SAME": 228,
+        "NOT_SAME": 12
+      },
+      "gamma": {
+        "SAME": 240,
+        "NOT_SAME": 0
+      },
+      "tau": {
+        "SAME": 240,
+        "NOT_SAME": 0
+      }
+    },
+    "receipt": {
+      "discharged": 0,
+      "opened": 12,
+      "retained": 0,
+      "unchanged": 708,
+      "receipt_reading": "THIS"
+    },
+    "receipt_scope": "FT receipt serializes discharged/opened. Retained walls remain in the full witness; zero retained in this genesis transition.",
+    "pair_sha256": "E3CB79631EE00239DA1F97B5AE7A9C65CD2CD138C915C093185D3BF90E4C6CC9",
+    "receipt_sha256": "8C9C9A100CCFCB2980B31CE243BBDABE18D14D05F8292F25FB22B3E83EBF2825",
+    "chain_entries": 1,
+    "link_sha256": "1CE68E601743BEBAA458D727DB920E40EAF4A7CCB0F1603087085DE9FB7D8163",
+    "predecessor_sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3",
+    "committed_observation_sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+    "commit2_fact": {
+      "id": 43390,
+      "rule": "GSC_COMMIT",
+      "rank": 628,
+      "support": [
+        43389,
+        43385,
+        43386,
+        43388
+      ]
+    },
+    "absence_of_premature_commit": "commit0 and commit1 each contain no COMMITTED_GENESIS fact; commit2 contains exactly one.",
+    "hardware_lane": "No Tang/VF2 append inferred or performed. That lane's O_next is unchanged.",
+    "distinction": "Genesis commit is discharged here. This is not the later selected-displacement tick commit or V1/V2 conformance."
+  },
+  "readout": {
+    "execution": "EXECUTED_AFTER_GENESIS_COMMIT",
+    "metric": "One EDIT per flag whose exact reading differs across committed current and archived Ground. Incident support is site OR edge OR triad containing the junction, counted once.",
+    "union_reduction": "In each flag, site belongs to edge and edge belongs to triad; the union is triad containment. No additive multiplicity.",
+    "whole_field_edits": 12,
+    "readout_gate": [
+      {
+        "id": 43872,
+        "term": null,
+        "term_id": 57103,
+        "origin": "GSC_COMMIT",
+        "rank": 628,
+        "support": [
+          43871,
+          43867,
+          43868,
+          43870
+        ]
+      },
+      {
+        "id": 43873,
+        "term": "THIS(READOUT_CURRENT_ADMITTED)",
+        "term_id": 7890,
+        "origin": "READOUT_AFTER_GENESIS_COMMIT",
+        "rank": 629,
+        "support": [
+          43872
+        ]
+      }
+    ],
+    "pair_comparisons": 480,
+    "gate_audit": "Every DG_PAIR consequence includes READOUT_CURRENT_ADMITTED fact43873 (rank629), whose sole support is COMMITTED_GENESIS fact43872 (rank628). Cross-snapshot comparison ranks are at least630.",
+    "unary_encoding": "Each distance list contains one THIS per EDIT. edit_counts below are observation cardinalities, not identifier magnitudes.",
+    "junction_distances": [
+      {
+        "site": "C:HW_00|HW_01",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_00|HW_02",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_00|HW_03",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_00|HW_04",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_00|HW_05",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_01|HW_02",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_01|HW_05",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_01|HW_06",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_01|HW_10",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_02|HW_03",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_02|HW_06",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_02|HW_07",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_03|HW_04",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_03|HW_07",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_03|HW_08",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_04|HW_05",
+        "edit_count": 4
+      },
+      {
+        "site": "C:HW_04|HW_08",
+        "edit_count": 4
+      },
+      {
+        "site": "C:HW_04|HW_09",
+        "edit_count": 12
+      },
+      {
+        "site": "C:HW_05|HW_09",
+        "edit_count": 4
+      },
+      {
+        "site": "C:HW_05|HW_10",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_06|HW_07",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_06|HW_10",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_06|HW_11",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_07|HW_08",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_07|HW_11",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_08|HW_09",
+        "edit_count": 4
+      },
+      {
+        "site": "C:HW_08|HW_11",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_09|HW_10",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_09|HW_11",
+        "edit_count": 0
+      },
+      {
+        "site": "C:HW_10|HW_11",
+        "edit_count": 0
+      }
+    ],
+    "faces": [
+      {
+        "face": [
+          "C:HW_00|HW_01",
+          "C:HW_00|HW_02",
+          "C:HW_01|HW_02"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_00|HW_01",
+          "C:HW_00|HW_05",
+          "C:HW_01|HW_05"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_00|HW_02",
+          "C:HW_00|HW_03",
+          "C:HW_02|HW_03"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_00|HW_03",
+          "C:HW_00|HW_04",
+          "C:HW_03|HW_04"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_00|HW_04",
+          "C:HW_00|HW_05",
+          "C:HW_04|HW_05"
+        ],
+        "distances": [
+          [],
+          [],
+          [
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS"
+          ]
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "face": [
+          "C:HW_01|HW_02",
+          "C:HW_01|HW_06",
+          "C:HW_02|HW_06"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_01|HW_05",
+          "C:HW_01|HW_10",
+          "C:HW_05|HW_10"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_01|HW_06",
+          "C:HW_01|HW_10",
+          "C:HW_06|HW_10"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_02|HW_03",
+          "C:HW_02|HW_07",
+          "C:HW_03|HW_07"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_02|HW_06",
+          "C:HW_02|HW_07",
+          "C:HW_06|HW_07"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_03|HW_04",
+          "C:HW_03|HW_08",
+          "C:HW_04|HW_08"
+        ],
+        "distances": [
+          [],
+          [],
+          [
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS"
+          ]
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "face": [
+          "C:HW_03|HW_07",
+          "C:HW_03|HW_08",
+          "C:HW_07|HW_08"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        "distances": [
+          [
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS"
+          ],
+          [
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS"
+          ],
+          [
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS"
+          ]
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          4,
+          12,
+          4
+        ]
+      },
+      {
+        "face": [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        "distances": [
+          [
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS"
+          ],
+          [
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS"
+          ],
+          [
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS"
+          ]
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          4,
+          12,
+          4
+        ]
+      },
+      {
+        "face": [
+          "C:HW_05|HW_09",
+          "C:HW_05|HW_10",
+          "C:HW_09|HW_10"
+        ],
+        "distances": [
+          [
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS"
+          ],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_06|HW_07",
+          "C:HW_06|HW_11",
+          "C:HW_07|HW_11"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_06|HW_10",
+          "C:HW_06|HW_11",
+          "C:HW_10|HW_11"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_07|HW_08",
+          "C:HW_07|HW_11",
+          "C:HW_08|HW_11"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_08|HW_09",
+          "C:HW_08|HW_11",
+          "C:HW_09|HW_11"
+        ],
+        "distances": [
+          [
+            "THIS",
+            "THIS",
+            "THIS",
+            "THIS"
+          ],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "face": [
+          "C:HW_09|HW_10",
+          "C:HW_09|HW_11",
+          "C:HW_10|HW_11"
+        ],
+        "distances": [
+          [],
+          [],
+          []
+        ],
+        "G": null,
+        "G_verdict": "MAYBE",
+        "ranks": null,
+        "S_F_verdict": "MAYBE",
+        "edit_counts": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "summary": {
+      "CCC_faces": 20,
+      "unique_G": 0,
+      "G_MAYBE": 20,
+      "all_zero_triples": 14,
+      "zero_zero_four_permutations": 4,
+      "four_twelve_four": 2
+    },
+    "J17": [
+      {
+        "face": "W12",
+        "domains": [
+          "Domain(\"4\")",
+          "Domain(\"5\")",
+          "Domain(\"9\")"
+        ],
+        "junctions": [
+          "Junction(\"15\")",
+          "Junction(\"17\")",
+          "Junction(\"18\")"
+        ],
+        "edit_counts": [
+          4,
+          12,
+          4
+        ],
+        "minimum_junctions": [
+          "Junction(\"15\")",
+          "Junction(\"18\")"
+        ],
+        "G_verdict": "MAYBE",
+        "J17_role": "MAYBE",
+        "ranks": "NOT_PRODUCED",
+        "S_F_verdict": "MAYBE"
+      },
+      {
+        "face": "W13",
+        "domains": [
+          "Domain(\"4\")",
+          "Domain(\"8\")",
+          "Domain(\"9\")"
+        ],
+        "junctions": [
+          "Junction(\"16\")",
+          "Junction(\"17\")",
+          "Junction(\"25\")"
+        ],
+        "edit_counts": [
+          4,
+          12,
+          4
+        ],
+        "minimum_junctions": [
+          "Junction(\"16\")",
+          "Junction(\"25\")"
+        ],
+        "G_verdict": "MAYBE",
+        "J17_role": "MAYBE",
+        "ranks": "NOT_PRODUCED",
+        "S_F_verdict": "MAYBE"
+      }
+    ],
+    "capability_check": "{G,S} retained. No role or triad_position supplied BECAUSE neither incident face has a unique G. No capability NOT_SAME inferred from an unproduced role.",
+    "S_F_scope": "S_F_verdict denotes distinct remaining ranks where produced; it never assigns S or F. O_S_F_BINDING remains unchanged."
+  },
+  "independent_checks": [
+    {
+      "object": "genesis raw derivation and replay",
+      "result": "SAME",
+      "scope": "All 154 seeds and 13508 derived facts matched source patterns; all27765 supports precede consequences; field, witness and pair enumeration match independently."
+    },
+    {
+      "object": "capacity extension",
+      "result": "SAME",
+      "scope": "Only generic capacity/import-path changes; complete old/new genesis readback byte-identical."
+    },
+    {
+      "object": "commit2",
+      "result": "SAME",
+      "scope": "All171 seeds and43220 derived facts matched source patterns/shared bindings/supports. One committed pair, exact raw observation bytes, all chain hashes recomputed."
+    },
+    {
+      "object": "d_G and all20faces",
+      "result": "SAME",
+      "scope": "Independent direct current/Ground comparison using explicit site/edge/triad union matches all30 distances and all20 GPU face outputs; gate ancestry checked."
+    }
+  ],
+  "stop": {
+    "type": "PROMOTED_MAYBE_TIE_ON_J17_FACE",
+    "rule_source": "SPEC-WITNESS-FACE-G-READOUT-001 WHAT(CAN_CANNOT), WHAT(MAYBE), FOR_WHAT(MUST_LET); DECISION_RECORD_GPU_SELF_WITNESS_001 APPLY3.",
+    "because": "Both J17 incident faces have two minima at four edits; the promoted unique-argmin law produces MAYBE and forbids a tie-break.",
+    "placement": "NOT_RUN",
+    "STEP_FABRIC": "NOT_RUN",
+    "selected_tick_commit": "NOT_RUN",
+    "no_replacement": "No fixture, face choice, alternate metric, payload index, S/F binding or modified expected bytes supplied."
+  },
+  "CONFORM": {
+    "subject": "SPEC-FLAG-WORLD-FIRST-TICK-001 v0.1.3; V1/V2 only",
+    "vectors": [
+      {
+        "id": "V1",
+        "execution": "NOT_RUN",
+        "comparison": "NOT_RUN",
+        "input_sha256": "28093717ACC694FACC3B635701A22AFF37DDB09FB0447774BACC700647F262BE",
+        "expected_sha256": "69786966E9B5D66A2078D29C43E1F1511545786AB07BF562E37D91205085B588"
+      },
+      {
+        "id": "V2",
+        "execution": "NOT_RUN",
+        "comparison": "NOT_RUN",
+        "input_sha256": "DC46E239B9D693AF25DC3D7005718060230D31AC9CA057F7ECCCF73968AA2C8E",
+        "expected_sha256": "BD0492B4CAC427432CC3251EB27FC997C0D5EFF2862ECBC10A89B9AC19F1AD0F"
+      }
+    ],
+    "verdict": "MAYBE",
+    "because": "Promoted identity bindings are SAME; no executed V1/V2 NOT_SAME exists; both vectors remain unexecuted at the authorized earlier tie stop.",
+    "frozen_bytes": "All four input/expected file hashes rechecked SAME; untouched."
+  },
+  "obligations": {
+    "DISCHARGED": [
+      "O_GENESIS_CAPTURE on game-world lane",
+      "GPU genesis pair commit over Ground_0",
+      "O_PREDECESSOR_OPERAND",
+      "O_D_G_FROM_BYTES for all30junctions",
+      "O_FACE_READ_20: all20results emitted"
+    ],
+    "MAYBE": [
+      "O_J17_ROLE: both incident-face minima tie",
+      "triad_position and canonical admission",
+      "selected-step STEP_FABRIC and successor commit",
+      "O_VECTOR_CONFORMANCE V1/V2"
+    ],
+    "O_next_unchanged": [
+      "O_S_F_BINDING",
+      "O_FLEX_MOTIF_CORRESPONDENCE",
+      "hardware-lane JTP append"
+    ]
+  },
+  "outputs": [
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/current.field.json",
+      "bytes": 48025,
+      "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/current.witness.json",
+      "bytes": 140449,
+      "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/current.receipt.json",
+      "bytes": 143965,
+      "sha256": "31422A88A25BFEB4A3FD149A180F3F3E5AD5B141548C0FD453BA40FAF5081243"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/predecessor.field.json",
+      "bytes": 48001,
+      "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/committed.genesis.json",
+      "bytes": 382131,
+      "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/d_G.junctions.json",
+      "bytes": 822,
+      "sha256": "50FBEA253E47697A09EE361AC90EE729D835E2A3C80CAF690CB534C85BE76393"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/face_readout.json",
+      "bytes": 3303,
+      "sha256": "E0943CC8343EFD3E2C415B6D6D272645A9EECC17D5FFD0BBC2425B08E869B35C"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/hashes0/responses.json",
+      "bytes": 239144,
+      "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/hashes1/responses.json",
+      "bytes": 430443,
+      "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/hashes1/GENESIS_LINK.json",
+      "bytes": 191197,
+      "sha256": "1CE68E601743BEBAA458D727DB920E40EAF4A7CCB0F1603087085DE9FB7D8163"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/hashes1/GENESIS_PAIR.json",
+      "bytes": 188495,
+      "sha256": "E3CB79631EE00239DA1F97B5AE7A9C65CD2CD138C915C093185D3BF90E4C6CC9"
+    },
+    {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/hashes1/GENESIS_RECEIPT.json",
+      "bytes": 2332,
+      "sha256": "8C9C9A100CCFCB2980B31CE243BBDABE18D14D05F8292F25FB22B3E83EBF2825"
+    }
+  ],
+  "preservation": {
+    "source_changes": "Only new gpu_self_witness_018 files created during this realization. Existing dirty work and frozen evidence retained.",
+    "repository_actions": "No staging, repository commit, push or seal.",
+    "board_actions": "None.",
+    "prior_records": "Original017 and earlier source comments preserved as genealogy; the promoted GPU self-witness decision governs018."
+  },
+  "final": "MOVED GPU genesis committed and d_G/20-face readout executed. BLOCKED at the specified J17 minimum ties; no new choice requested."
+}
