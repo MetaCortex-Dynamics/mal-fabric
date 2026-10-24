@@ -1,0 +1,197 @@
+{
+  "record": "J17_WORLD_FOLD_EFFECT_OPERAND_BINDINGS_V1",
+  "specification": "E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E",
+  "verdict": "IF_THEN",
+  "terminal": "BOUND",
+  "operands": {
+    "element_basis": [
+      {
+        "id": "element_basis_receipt",
+        "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/constructed_universe_genesis_001/evidence/u01-execution-001/fold-receipt.bin",
+        "bytes": 100,
+        "sha256": "563F99BAC7E7DAE40317BAF7622D9B874FCB0DB792D823F528A71BAF8E653D93"
+      },
+      {
+        "id": "fold_execution_manifest",
+        "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/constructed_universe_genesis_001/evidence/U01_EXECUTION_MANIFEST.json",
+        "bytes": 3548,
+        "sha256": "626F2F08BA498B2619FFA259A169438D759DD342D1A151F2AFDE21E1CC841238"
+      },
+      {
+        "id": "carrier",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/parents/qg003-carrier.mcbf",
+        "bytes": 12048,
+        "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB"
+      },
+      {
+        "id": "A9_B3_promotion",
+        "path": "C:/Users/devon/Desktop/MaL/Markdowns/PROMOTION_RECORD_A1-A10.md",
+        "bytes": 5665,
+        "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805"
+      }
+    ],
+    "junction_ports": [
+      {
+        "id": "motif",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/parents/motif_junction_table_v1.h",
+        "bytes": 2859,
+        "sha256": "25AF837405F450986FBD24A425D2197BD5E5D9D4BF952F74BE43CFB992B10F64"
+      },
+      {
+        "id": "marker_ports",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_021/source/marker_incidence.mal",
+        "bytes": 3625,
+        "sha256": "10CDE160E3FC6A3A74A57E63465FE93FB2CA4010F75F44A601DCFB762411A1E1"
+      },
+      {
+        "id": "g2_program_source",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/source/program.mal",
+        "bytes": 19211,
+        "sha256": "6FEA9C9B2FE462FC9E794C7E12F43DDDBAEE8A12BA947AB25DE60153FDE27B55"
+      },
+      {
+        "id": "g2_program",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/program.json",
+        "bytes": 51262,
+        "sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529"
+      }
+    ],
+    "grl_configuration": [
+      {
+        "id": "carrier",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/parents/qg003-carrier.mcbf",
+        "bytes": 12048,
+        "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB"
+      },
+      {
+        "id": "A9_B3_promotion",
+        "path": "C:/Users/devon/Desktop/MaL/Markdowns/PROMOTION_RECORD_A1-A10.md",
+        "bytes": 5665,
+        "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805"
+      },
+      {
+        "id": "g2",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/committed.world.json",
+        "bytes": 568805,
+        "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+      },
+      {
+        "id": "g2_runtime_state",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/fabric.successor.json",
+        "bytes": 62837,
+        "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47"
+      }
+    ],
+    "admissibility": [
+      {
+        "id": "gpu_self_witness",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/governance/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+        "bytes": 3273,
+        "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7"
+      },
+      {
+        "id": "gpu_self_witness_promotion",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/governance/RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+        "bytes": 3207,
+        "sha256": "C1BA60101C95E76C3D2F090B00E3B679A6B58851B8A235829214D2B6249BD072"
+      },
+      {
+        "id": "run018",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/genesis/RUN_RECORD_018.json",
+        "bytes": 47830,
+        "sha256": "66E9573678D0F8F08A71E5146193BF9780C38E7F526E6C77F2709CC8D6AE1B12"
+      },
+      {
+        "id": "run023",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/RUN_RECORD_023.json",
+        "bytes": 111818,
+        "sha256": "6A07ACE68BD15DA5F084269FA7FDD57021EC89B30EAE44ED4BF9F9B697B79B0D"
+      },
+      {
+        "id": "g2_drc_readback",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/stage02/readback.bin",
+        "bytes": 180355104,
+        "sha256": "7A605143AEFECAD081B0E4DB31A2B860F9812B58F38AECEAEB2E7C6696DB6418"
+      },
+      {
+        "id": "g2_drc_source_map",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/stage02/source-map.json",
+        "bytes": 6671215,
+        "sha256": "BCE36D4F58B22B9D308E5D317AE0D2153D7BD0A74A87129B52B73ECAE4BDFADD"
+      }
+    ],
+    "k_id_min": [
+      {
+        "id": "frozen_manifest",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+        "bytes": 539738,
+        "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560"
+      },
+      {
+        "id": "carrier",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/parents/qg003-carrier.mcbf",
+        "bytes": 12048,
+        "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB"
+      },
+      {
+        "id": "ground0",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/expected/genesis/Ground0.field.json",
+        "bytes": 48001,
+        "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3"
+      },
+      {
+        "id": "g1",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/expected/genesis/committed.genesis.json",
+        "bytes": 382131,
+        "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C"
+      },
+      {
+        "id": "g2",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/committed.world.json",
+        "bytes": 568805,
+        "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+      },
+      {
+        "id": "gpu_self_witness",
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/governance/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+        "bytes": 3273,
+        "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7"
+      }
+    ]
+  },
+  "predecessor_chain": {
+    "ground0": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3",
+    "g1": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+    "g2": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+    "links": [
+      {
+        "link": "1ce68e601743bebaa458d727db920e40eaf4a7ccb0f1603087085de9fb7d8163",
+        "prev": "b263644e59a696999c02dfd25386a5abefdb2d0fc4317a0fe2cccd90502ebad3"
+      },
+      {
+        "link": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+        "prev": "1ce68e601743bebaa458d727db920e40eaf4a7ccb0f1603087085de9fb7d8163"
+      }
+    ],
+    "required_link3_prev": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386"
+  },
+  "bound_sha256": "A5CB53C1CF6D39100DD1BCB1BC04A8E02CCCA8527914E2C9618C8F6971F5AA85",
+  "identity_comparison": "SAME",
+  "frozen_custody": {
+    "manifest": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+      "bytes": 539738,
+      "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560"
+    },
+    "files": 901,
+    "bytes": 1069571560,
+    "comparison": "SAME"
+  },
+  "scope": [
+    "Evidence packages bound by existing file identities; no basis inferred from flags",
+    "Existing admission and DRC carried, not rerun",
+    "k_id_min names the preserved-custody contact in the promoted spec; no new kernel extraction or future-transition preservation claimed",
+    "This is actual-file custody, not execution of V2 placeholder binding on a runtime",
+    "Canonical key order is serialization only; no successor selection or geometric orientation is derived from it"
+  ]
+}

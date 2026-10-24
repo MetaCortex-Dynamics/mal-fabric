@@ -1,0 +1,79 @@
+{
+  "record": "J17_WORLD_FOLD_EFFECT_VECTOR_BYTE_CUSTODY_V1",
+  "specification": "E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E",
+  "authoring_support": {
+    "path": "C:/Users/devon/Desktop/MaL/Python code/vectors.py",
+    "bytes": 2882,
+    "sha256": "F5212A09A4FC7BA613C68B7E20255E25FDE527170D41BB77DC6F78164F95A3D9"
+  },
+  "python_execution": "NO",
+  "payloads": 14,
+  "comparison": "SAME",
+  "vector_conformance": "NOT_RUN",
+  "scope": "Checks frozen embedded bytes and encoding only. No bind/terminal classifier or world fold was executed. Spec lines192-193 delimit this scope.",
+  "vectors": [
+    {
+      "vector": "V2",
+      "input_sha256": "578A35E40FCEB640B70924F23EF541A1120F4EE6CD63E126302D694D58A80BCD",
+      "input_bytes": 217,
+      "expected_sha256": "FB95FBAEC45BA16F3D570CC8A284BB7151A48823DEED68E6827E4822026E4C22",
+      "expected_bytes": 115,
+      "byte_custody": "SAME",
+      "execution": "NOT_RUN"
+    },
+    {
+      "vector": "V3",
+      "input_sha256": "C48000BE6A965F3F4ABFA20716FAF4E586BB2C81F1E859A77210050D9B9BB272",
+      "input_bytes": 192,
+      "expected_sha256": "61256BC1824431973A70C0637445074E3D1B35B6DAF2E14EC803807B520B8A43",
+      "expected_bytes": 66,
+      "byte_custody": "SAME",
+      "execution": "NOT_RUN"
+    },
+    {
+      "vector": "V4",
+      "input_sha256": "D41AF5A5FFA2C43222D9C37E959B4D69A678CAC1576B101CB7F720BDDE1E3A1B",
+      "input_bytes": 209,
+      "expected_sha256": "4A72430862F65495486D345F06C8C0636B458C356D546489C3CDA352D4075A32",
+      "expected_bytes": 40,
+      "byte_custody": "SAME",
+      "execution": "NOT_RUN"
+    },
+    {
+      "vector": "V5",
+      "input_sha256": "80EBA783420DE86F703E5333720353671F64499E550098531FC21B1EA64EDD73",
+      "input_bytes": 219,
+      "expected_sha256": "B58D3BA637AD754F06E39946C2798DE7800B5E0FF25704DD59AEF1790B69BDE3",
+      "expected_bytes": 39,
+      "byte_custody": "SAME",
+      "execution": "NOT_RUN"
+    },
+    {
+      "vector": "V6",
+      "input_sha256": "C5195367DB18BEF9082013452514ED188614A7B00E55BBB8512E7872AD2C51C5",
+      "input_bytes": 209,
+      "expected_sha256": "EFB9C0DB795C174C99A29BDB4A79B6FB45F3E728BF9807CDB8BB23BB0256CCA5",
+      "expected_bytes": 52,
+      "byte_custody": "SAME",
+      "execution": "NOT_RUN"
+    },
+    {
+      "vector": "V7",
+      "input_sha256": "FE09672F6FD0E41BD874393A62A0DED96BFA7D979C493B25BC548AC91738ABFC",
+      "input_bytes": 209,
+      "expected_sha256": "6BF8D9562D824556A56F101E4B4DFACEC72A149E56C64FBA809379CB7FBBA6CC",
+      "expected_bytes": 58,
+      "byte_custody": "SAME",
+      "execution": "NOT_RUN"
+    },
+    {
+      "vector": "V8",
+      "input_sha256": "69B6A723B003BD9C22E19F8CF98B0109021EACA21693B3A77589B384C6AB5CB0",
+      "input_bytes": 89,
+      "expected_sha256": "C3F071A5BAC5FAF1EFC8C2FA19BAE5CFEA12C336BEFFE011D05BBB73E43F0A0A",
+      "expected_bytes": 77,
+      "byte_custody": "SAME",
+      "execution": "NOT_RUN"
+    }
+  ]
+}

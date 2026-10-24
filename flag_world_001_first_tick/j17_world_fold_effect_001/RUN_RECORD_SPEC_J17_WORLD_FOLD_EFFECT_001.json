@@ -1,0 +1,373 @@
+{
+  "record": "RUN_RECORD_SPEC_J17_WORLD_FOLD_EFFECT_001",
+  "date": "2026-10-23",
+  "authority": {
+    "specification": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_world_fold_effect_001/SPEC_J17_WORLD_FOLD_EFFECT_001_v0.1.0_PROPOSED.mal",
+      "bytes": 19195,
+      "sha256": "E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E"
+    },
+    "promotion": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_world_fold_effect_001/RECEIPT_PROMOTE_SPEC_J17_WORLD_FOLD_EFFECT_001_v0.1.0.md",
+      "bytes": 2634,
+      "sha256": "E674B00C04B0B8119BFFD4596A756467B8054C9A6CF6741E3B2869365B7ECD9A"
+    },
+    "act": "EXECUTE_UNDER_DEVON_PROMOTION",
+    "assistant_promotion": "NO"
+  },
+  "context": {
+    "handoff": {
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/HANDOFF_FLAG_WORLD_FIRST_TICK_2026-10-21.md",
+      "bytes": 13204,
+      "sha256": "A9090321B24C4E004B3617E59787DE154A623EEDD644CE60CBCF3CF06C4149FB"
+    },
+    "prior_stop": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/fold_realization_j17_link_3_001/RUN_RECORD_FOLD_REALIZATION_J17_LINK_3_001.json",
+      "bytes": 15139,
+      "sha256": "C6F83D545E599DE465C174D2980619EBB401288087BE7DFD504EE9B37FE1F54D"
+    }
+  },
+  "repository": {
+    "remote": "https://github.com/MetaCortex-Dynamics/mal-fabric.git",
+    "branch": "review/fold-realization-j17-link-3-001",
+    "head_before_seal": "3b703f6a2cd5227c497de2a02bfb693c9fe4d829",
+    "seal_authority": "receipt line44; local only",
+    "push": "NO"
+  },
+  "obligations": [
+    {
+      "id": "O_LAW_TEXT",
+      "verdict": "IF_THEN",
+      "evidence": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_world_fold_effect_001/LAW_TEXT_BINDINGS.json",
+        "bytes": 17516,
+        "sha256": "7D7301551D2F76341DB05AC37512055268041D3C302765A6A53270009E0EA2C4"
+      }
+    },
+    {
+      "id": "O_OPERAND_BIND",
+      "verdict": "IF_THEN",
+      "evidence": {
+        "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_world_fold_effect_001/OPERAND_BINDINGS.json",
+        "bytes": 9669,
+        "sha256": "1DC95F6B75EF9FB95E7CB092F5A0BC8CF2C8DEAE3F4AFCF86BCAD6180A6E4BF9"
+      },
+      "scope": "Five evidence packages and predecessor chain; not future target admission"
+    },
+    {
+      "id": "O_FOLD_REALIZE",
+      "verdict": "MAYBE",
+      "terminal": "UNSUPPLIED",
+      "missing": "J17_WORLD_FOLD_EFFECT"
+    },
+    {
+      "id": "O_REENTRY",
+      "verdict": "MAYBE",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "O_QUALIFY",
+      "verdict": "MAYBE",
+      "execution": "NOT_RUN"
+    }
+  ],
+  "terminal": {
+    "name": "UNSUPPLIED",
+    "missing": "J17_WORLD_FOLD_EFFECT",
+    "verdict": "MAYBE",
+    "stop_authority": "promoted spec lines75-77,182-187; receipt lines40-42",
+    "operand": "g2 field, incidence, intrinsic ports, runtime state, predecessor genealogy",
+    "absent_operation": "Source-owned derivation of successor active relations and their flag readings from the bound current realization; neither target effects nor a no-op fold result are supplied by inspected LAW/SRC/RXN",
+    "new_spec_contacts": [
+      {
+        "lines": [
+          72,
+          77
+        ],
+        "reading": "Requires relation/fiber derivation and conditional return; names absent operation"
+      },
+      {
+        "lines": [
+          95,
+          98
+        ],
+        "reading": "Requires coupling/enough-for-fold to be read; does not supply a J17 readout producing successor effects"
+      },
+      {
+        "lines": [
+          101,
+          102
+        ],
+        "reading": "Explicitly excludes repeating THIS/SAME as a HELD witness"
+      },
+      {
+        "lines": [
+          154,
+          168
+        ],
+        "reading": "Explicit laws derive witness coordinates of the specification walk, not the world successor"
+      },
+      {
+        "lines": [
+          182,
+          185
+        ],
+        "reading": "Names the realization obligation and its stop; re-entry/qualification follow it"
+      },
+      {
+        "lines": [
+          192,
+          193
+        ],
+        "reading": "V2-V8 do not realize the fold or read LAW text"
+      }
+    ],
+    "existing_contacts": [
+      {
+        "input": "aggregate_spec",
+        "lines": [
+          338,
+          355
+        ],
+        "reading": "Reaction/conservation constraints"
+      },
+      {
+        "input": "aggregate_spec",
+        "lines": [
+          681,
+          708
+        ],
+        "reading": "Required relation/fiber inputs and outputs; no J17 incidence-to-effect transformation"
+      },
+      {
+        "input": "fold_source",
+        "lines": [
+          97,
+          115
+        ],
+        "reading": "F2 returns geometric basis; F3 retains its realization"
+      },
+      {
+        "input": "fold_source",
+        "lines": [
+          189,
+          215
+        ],
+        "reading": "Re-entry and terminal ElementBasis return"
+      },
+      {
+        "input": "reaction_contract",
+        "lines": [
+          5,
+          28
+        ],
+        "reading": "Consumes supplied target and transition evidence"
+      },
+      {
+        "input": "world_tick_consumer",
+        "lines": [
+          4,
+          24
+        ],
+        "reading": "Consumes proposal.target_candidate"
+      },
+      {
+        "input": "g2_commit_source",
+        "lines": [
+          27,
+          62
+        ],
+        "reading": "NO_FLAG_WRITE belongs to the existing THIS/SAME program, not an unrealized fold"
+      }
+    ],
+    "boundary": "This terminal names the operation absent on the inspected source path. It does not revoke J17 admission, assert a corpus-wide absence, or decide that another law is required."
+  },
+  "source_inputs": {
+    "aggregate_spec": {
+      "path": "C:/Users/devon/Desktop/MaL/SPECS/SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001_v0.1.0.md",
+      "bytes": 30926,
+      "sha256": "8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C"
+    },
+    "aggregate_promotion": {
+      "path": "C:/Users/devon/Desktop/MaL/JSON/PROMOTION_RECORD_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001.json",
+      "bytes": 2144,
+      "sha256": "EC445D2BF151A6AF009EB94DA36AF92186DF58E295541C956F164476038C7F00"
+    },
+    "fold_source": {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/constructed_universe_genesis_001/SELF_UNFOLDING_ELEMENT_BASIS_V1.mal",
+      "bytes": 9363,
+      "sha256": "FF0319B178854AA98CACC0C9699FEEA646489A2C9418139282E874338C994FB1"
+    },
+    "fold_execution_manifest": {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/constructed_universe_genesis_001/evidence/U01_EXECUTION_MANIFEST.json",
+      "bytes": 3548,
+      "sha256": "626F2F08BA498B2619FFA259A169438D759DD342D1A151F2AFDE21E1CC841238"
+    },
+    "reaction_contract": {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/geometric_reading_001/GROUND_REACTION_FIBER_V1.mal",
+      "bytes": 2839,
+      "sha256": "1E1E82E3E5C237C8AF5F36BA8F79886F26B5298DEFEBE1F40A212CDBE34E8A6B"
+    },
+    "world_tick_consumer": {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/geometric_reading_001/GROUND_WORLD_TICK_V1.mal",
+      "bytes": 1048,
+      "sha256": "5359246AC39D0645E869D7C726AB6E4D3011EDA36187D060177118C23BF7F6BB"
+    },
+    "fabric_execution_spec": {
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/FABRIC_EXECUTION_SPEC_v0.3.0-candidate.md",
+      "bytes": 11257,
+      "sha256": "5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0"
+    },
+    "carrier": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/parents/qg003-carrier.mcbf",
+      "bytes": 12048,
+      "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB"
+    },
+    "A9_B3_promotion": {
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "bytes": 5665,
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805"
+    },
+    "ground0": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/expected/genesis/Ground0.field.json",
+      "bytes": 48001,
+      "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3"
+    },
+    "run018": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/genesis/RUN_RECORD_018.json",
+      "bytes": 47830,
+      "sha256": "66E9573678D0F8F08A71E5146193BF9780C38E7F526E6C77F2709CC8D6AE1B12"
+    },
+    "g1": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/expected/genesis/committed.genesis.json",
+      "bytes": 382131,
+      "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C"
+    },
+    "gpu_self_witness": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/governance/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "bytes": 3273,
+      "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7"
+    },
+    "gpu_self_witness_promotion": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/governance/RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+      "bytes": 3207,
+      "sha256": "C1BA60101C95E76C3D2F090B00E3B679A6B58851B8A235829214D2B6249BD072"
+    },
+    "run023": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/RUN_RECORD_023.json",
+      "bytes": 111818,
+      "sha256": "6A07ACE68BD15DA5F084269FA7FDD57021EC89B30EAE44ED4BF9F9B697B79B0D"
+    },
+    "g2": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    "g2_program": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/program.json",
+      "bytes": 51262,
+      "sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529"
+    },
+    "g2_runtime_state": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/fabric.successor.json",
+      "bytes": 62837,
+      "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47"
+    },
+    "g2_program_source": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/source/program.mal",
+      "bytes": 19211,
+      "sha256": "6FEA9C9B2FE462FC9E794C7E12F43DDDBAEE8A12BA947AB25DE60153FDE27B55"
+    },
+    "g2_runtime_source": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/source/runtime_step.mal",
+      "bytes": 14539,
+      "sha256": "46F7260047664C7D31F54A74BAD2BB7356D72271AB8A1D7A2F57D8353B8A714D"
+    },
+    "g2_commit_source": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/source/commit_readout.mal",
+      "bytes": 17650,
+      "sha256": "23B480274497D854E6E6CE8ED9DE887F443E40D3FDBA2033B3A8EB892023AEE7"
+    },
+    "g2_drc_readback": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/stage02/readback.bin",
+      "bytes": 180355104,
+      "sha256": "7A605143AEFECAD081B0E4DB31A2B860F9812B58F38AECEAEB2E7C6696DB6418"
+    },
+    "g2_commit_readback": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/stage12/readback.bin",
+      "bytes": 180355104,
+      "sha256": "E22E39F4E04140FB59142BA969FB94FA601BB62EEF7E292590CC95A8BE9D5AD7"
+    },
+    "g2_drc_source_map": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/stage02/source-map.json",
+      "bytes": 6671215,
+      "sha256": "BCE36D4F58B22B9D308E5D317AE0D2153D7BD0A74A87129B52B73ECAE4BDFADD"
+    },
+    "frozen_manifest": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+      "bytes": 539738,
+      "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560"
+    },
+    "element_basis_receipt": {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/constructed_universe_genesis_001/evidence/u01-execution-001/fold-receipt.bin",
+      "bytes": 100,
+      "sha256": "563F99BAC7E7DAE40317BAF7622D9B874FCB0DB792D823F528A71BAF8E653D93"
+    },
+    "motif": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/parents/motif_junction_table_v1.h",
+      "bytes": 2859,
+      "sha256": "25AF837405F450986FBD24A425D2197BD5E5D9D4BF952F74BE43CFB992B10F64"
+    },
+    "marker_ports": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_021/source/marker_incidence.mal",
+      "bytes": 3625,
+      "sha256": "10CDE160E3FC6A3A74A57E63465FE93FB2CA4010F75F44A601DCFB762411A1E1"
+    }
+  },
+  "qualification": {
+    "frozen_vector_byte_custody": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_world_fold_effect_001/VECTOR_BYTE_CUSTODY.json",
+      "bytes": 2942,
+      "sha256": "3F1F5A648320B0921648E8E7D0E3677B5E5578425C34394234F72333CC7D6F84"
+    },
+    "V1_CHECK_FORM": "NOT_RUN",
+    "V2_V8_execution": "NOT_RUN",
+    "CONFORM": "MAYBE",
+    "GPU": "NOT_RUN",
+    "gpu_invocations": 0,
+    "replay": "NOT_RUN",
+    "new_program_DRC": "NOT_RUN",
+    "inherited_DRC": "I-VIII IF_THEN retained from RUN_RECORD_023; not a new-program result"
+  },
+  "successor": {
+    "status": "NOT_PRODUCED",
+    "required_prev": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+    "state_hash": null,
+    "receipt": null,
+    "receipt_reading": null,
+    "link3": "NOT_COMMITTED",
+    "d_G": null
+  },
+  "implementation": {
+    "new_world_fold_mal_files": [],
+    "custody_utility": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_world_fold_effect_001/bind_custody.mjs",
+      "bytes": 12290,
+      "sha256": "51C95D3D500F05A6B4CBDF5125699142FB96F84C83DD8DA87D79FC79D14ADF4F"
+    },
+    "utility_scope": "File reading, hashing, byte copying and audit-record assembly only; not engine/runtime execution",
+    "python": "READ_AND_HASH_ONLY"
+  },
+  "preservation": {
+    "frozen_files": 901,
+    "frozen_comparison": "SAME",
+    "source_g2": "UNCHANGED",
+    "digital_ground_constructor": "NOT_READ_OR_RUN",
+    "hand": "NOT_SELECTED",
+    "A3_menu": "NOT_USED",
+    "board": "NO",
+    "original_spec_and_receipt": "UNCHANGED",
+    "prior_stop_record": "UNCHANGED"
+  },
+  "result_scope": "One source-preflight run record under the newly promoted spec; no GPU fold result or world commit claimed"
+}

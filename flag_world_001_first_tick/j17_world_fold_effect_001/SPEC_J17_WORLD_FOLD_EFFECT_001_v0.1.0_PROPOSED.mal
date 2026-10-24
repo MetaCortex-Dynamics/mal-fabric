@@ -1,0 +1,240 @@
+// SPEC-J17-WORLD-FOLD-EFFECT-001
+// STATUS:    PROPOSED. No promotion, activation or execution on the flag world is claimed.
+// AUTHORITY: Claude PROPOSE; Devon Generally DECIDE / PROMOTE; Codex EXECUTE (IMPLEMENT in mal-fabric, REALIZE, CONFORM).
+// VERSION:   0.1.0
+// DATE:      2026-10-23
+// METHOD:    SPEC-MAL-SPECIFICATION-SYSTEM-002 v0.3.1
+// METHOD_SHA256: E2DBE9971A78BAE2AE76D9C77DED7742C7524BA59A3FD9D3349CB133C3D79FEA (bytes as held in this session)
+// TARGET:    REALIZE the promoted post-genesis fold on the J17 world: the unsupplied operation named by
+//            RUN_RECORD_FOLD_REALIZATION_J17_LINK_3_001 (C6F83D54…1F54D):
+//              (g₂ field, incidence, intrinsic ports, runtime state, genealogy)
+//                → successor active relations and flag readings under the fold.
+//            This spec REALIZES existing law (§14, §24.4). It adds NO law, re-admits NOTHING, selects NOTHING.
+//            ONE admissible path := the fold applied to the current moment. Hydrogen is base shape: the first fold's
+//            product is the invariant the recursion preserves (CARI §8; FPP T7).
+// TERMINAL CONDITION (named): T_FOLD_EFFECT, exactly one of
+//            MOVED                      IF_THEN   successor committed; state NOT_SAME g₂; multiset preserved; re-entry SAME
+//            HELD                       IF_THEN   successor committed; state SAME g₂ under the realized fold (FABEX §18: not HALT)
+//            REENTRY_NOT_SAME           NOT_SAME  successor.prev ≠ link 2's link
+//            MULTISET_NOT_PRESERVED     NOT_SAME  successor's carrier multiset ≠ 1D+1I (GRL §4: a fold is horizontal)
+//            UNSUPPLIED(name)           MAYBE     an operation the law does not supply; named exactly; nothing filled
+//
+// CONTACTS used by the individual readings below:
+// LAW   := SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001 v0.1.0, SHA256 8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C.
+//          §3 :64–65 ElementBasis is the terminal output of one recursive fold; §6–7 G_parts,n+1 = G_whole,n+1;
+//          §9 :216–225 basis TYPES vs instances; §11 :261 M : E → Nat; §14 transition constraints Universe_w → admitted
+//          reaction → Universe_w+1; §24.1 :591 producer; §24.2 :629; §24.4 :681 consumer (basis, ports, GRL, admissibility,
+//          K_id_min → relation set, reaction fiber). Promotion EC445D2B…8C7F00 (2026-09-22). CLAUSE TEXT of §14 and §24.4
+//          is cited by line from Codex's reads; hash-binding the quoted text is O_exec (O_LAW_TEXT).
+// SRC   := SELF_UNFOLDING_ELEMENT_BASIS_V1.mal FF0319B1…994FB1 :189–198 re-entry pattern (successor + genealogy into the
+//          same fold); :97/:203 body produces ElementBasis ONLY (the operation on a world state is what this spec realizes).
+// RXN   := GROUND_REACTION_FIBER_V1.mal 1E1E82E3…E8A6B :5 — source/target verdicts, preserved multiset, directional witness.
+//          Consumes admitted configurations; does not re-admit.
+// TICK  := GROUND_WORLD_TICK_V1 :5 reads proposal.target_candidate. FABEX := FABRIC_EXECUTION_SPEC.md 5BB1497A…EAC0 §2 RETURN
+//          (program, state_{t+1}); §17 BlockedReason; §18 FIXED_POINT_NONSUFFICIENCY.
+// STATE := g₂ committed.world.json (RUN_RECORD_023 6A07ACE6…79B0D; g₂ E44759E5…7DD059); chain Ground₀ B263644E… → g₁
+//          (RUN_RECORD_018 66E95736…) → g₂. Admission := DECISION_RECORD_GPU_SELF_WITNESS_001 2CBBA4AD… + eight-condition DRC
+//          (run 023); runtime_step.mal:29 (program DRC AND committed genesis) satisfied. Custody: 901 frozen files SAME.
+// CARR  := carrier 82E388FD…15BDB, derivation RECTIFICATION_OF_DODECAHEDRAL_ICOSAHEDRAL_DUAL_PAIR; (2,0) by A9/B3;
+//          ElementBasis types F3 563F99BA…3D93; M = 1D+1I an atom (GRL §9; platonic_stoichiometry.jsx AAF00A72…, replayed SAME).
+// HAND  := the seating (stabilizer {id}; RECORD_SEATING_STABILIZER_WITNESS_001 19F8E159…). No digital-shell field
+//          (orientation_proper, RIGHT_HANDED) is read, required or filled. QG-003 pairs are UNORDERED by contract (90D31BC3…).
+// FOLD  := First_Person_Physics §6 Fold Accounting (MANY → ONE + carriers + δ; q₁,q₂,q₃); T2 FOLD→RADIATE→PROPAGATE one
+//          transition; T6 MUST fold / LET shed; T7 prior folds. CARI §7–8 FOLDₙ; Fₙ₊₁ = UNFOLDING_□G(Fₙ); FOLD = INVARIANT.
+// TR    := TRACE_FOLD_PRODUCT_PROJECTION_RECORD_001_2026-10-23.md CA1FBB79…0105 (the day's bindings; cite, do not re-derive).
+
+domain J17_WORLD_FOLD_EFFECT on face_11;
+
+@propose seed J17_WORLD_FOLD_EFFECT_WALK := {
+
+  // THIS
+  WHAT(THIS),              // ONE operation: FOLD applied to the J17 world at its second recorded moment g₂, with its
+                           // predecessor chain, yielding the successor's active relations and flag readings. Contact TR, LAW §14.
+  HOW(THIS),               // Identity of the moment := g₂'s state_hash and link 2's link (D2 record shape). Identity of the
+                           // successor := its state_hash; its prev := link 2's link. NO identifier order enters.
+  FOR_WHAT(THIS),          // The world folds itself. It witnesses itself (GPU self-witness). No outside selects.
+
+  // SAME_NOT_SAME
+  WHAT(SAME_NOT_SAME),     // successor.state SAME g₂ → HELD; NOT_SAME → MOVED. Compared as exact bytes / hashes.
+  HOW(SAME_NOT_SAME),      // successor.prev vs link 2's link: SAME required (REENTRY). successor carrier multiset vs 1D+1I:
+                           // SAME required (a fold is horizontal, GRL §4). Field change is the ONLY permitted NOT_SAME.
+  FOR_WHAT(SAME_NOT_SAME), // HELD is a result, NOT a halt (FABEX §18). SAME field with a committed link is a witnessed moment.
+
+  // NO
+  WHAT(NO),                // NO new law. NO re-admission of g₂ (promoted). NO ten-class Ground constructor on the hardware
+                           // world. NO candidate menu, NO join-as-choice, NO scalar selection (C2 RETIRED). NO A3 entity-lift
+                           // standing in for the universe's tick.
+  HOW(NO),                 // NO digital-shell field read or filled (orientation_proper, RIGHT_HANDED). NO serialization order
+                           // read as geometry (pre-numeric; QG-003 pairs unordered by contract).
+  FOR_WHAT(NO),            // NO operation the law does not supply is written by hand: it is NAMED → UNSUPPLIED(name).
+
+  // IF_THEN
+  WHAT(IF_THEN),           // IF the five §24.4 operands are bound (ElementBasis, junction ports, GRL configuration with its
+                           // promoted admission, admissibility, K_id_min) THEN the relation set and reaction fiber over g₂ are
+                           // DERIVED (LAW §24.4), not supplied.
+  HOW(IF_THEN),            // IF the fiber yields the successor under §14's transition constraints THEN successor :=
+                           // FOLD(g₂, genealogy); RETURN (program, state_{t+1}) (FABEX §2); re-enter per SRC :189–198.
+  FOR_WHAT(IF_THEN),       // IF a step needs an operation absent from LAW/SRC/RXN THEN T_FOLD_EFFECT := UNSUPPLIED(name).
+
+  // BECAUSE
+  WHAT(BECAUSE),           // The path is ONE BECAUSE the recursion is G_parts,n+1 = G_whole,n+1 (LAW §§6–7): the next moment is
+                           // the fold of this one; there is no set of futures to choose among.
+  HOW(BECAUSE),            // The operands are already bound BECAUSE today's trace read each from the hardware world (TR):
+                           // basis by construction, ports as wired, configuration with promoted admission, custody unchanged.
+  FOR_WHAT(BECAUSE),       // why_F: the operation is realized, not derived, BECAUSE §14 and §24.4 already state it; what was
+                           // missing (RUN_RECORD_FOLD_REALIZATION) is the J17 realization of a stated law, not the law.
+
+  // INSIDE_OUTSIDE
+  WHAT(INSIDE_OUTSIDE),    // INSIDE: FOLD. Boundary: RADIATE (shed δ). OUTSIDE: PROPAGATE (FPP T2). One transition; each
+                           // reading scoped to its witness by authority separation.
+  HOW(INSIDE_OUTSIDE),     // INSIDE this spec: realization of §14/§24.4 on g₂ and the named terminal. OUTSIDE: physical-element
+                           // correspondence (LAW's own MAYBE); the H⁺+e⁻→H+γ reading (FOLD) as locator.
+  FOR_WHAT(INSIDE_OUTSIDE),// Nothing OUTSIDE is imported INSIDE as evidence.
+
+  // NEAR_FAR
+  WHAT(NEAR_FAR),          // NEAR := degree of coupling (FPP §4). It is READ by the realization, never inferred from THIS
+                           // counts or from zero inter-snapshot edits (correction 10-23 11:43).
+  HOW(NEAR_FAR),           // The NEAREST moment to g₂ is its fold. Lifecycle re-entry (FPP T3/T7) is FAR and is not this step.
+  FOR_WHAT(NEAR_FAR),      // MUST fold WHERE NEAR is enough-for-fold (T6): enough-for-fold is read from the operands, not set.
+
+  // CAN_CANNOT
+  WHAT(CAN_CANNOT),        // The world CAN take link 3 iff the fold's operation on g₂ is realized; it CANNOT by repeating the
+                           // THIS/SAME read-only program (that would not witness HELD under FOLD; RUN_RECORD_FOLD_REALIZATION).
+  HOW(CAN_CANNOT),         // A step CANNOT observe current-tick results (FABEX §3); re-entry is across the commit only.
+  FOR_WHAT(CAN_CANNOT),    // A withheld candidate CANNOT be read as a wall or a reaction (L06; CARRIER_BINDING §5b).
+
+  // MAYBE
+  WHAT(MAYBE),             // UNSUPPLIED(name) is MAYBE: the operation exists in law or it does not; the realization reports
+                           // which, by name, and fills nothing.
+  HOW(MAYBE),              // Clause TEXT of §14/§24.4 is cited by line, not yet hash-bound in this session (O_LAW_TEXT).
+  FOR_WHAT(MAYBE),         // Whether a nonidentity reaction exists over g₂ is MAYBE until the fiber is derived. Both answers
+                           // are results.
+
+  // MUST_LET
+  WHAT(MUST_LET),          // MUST: fold where NEAR is enough. LET: shed what the fold does not absorb (FPP T6).
+  HOW(MUST_LET),           // MUST: emit T_FOLD_EFFECT with every cited identity; MUST replay byte-identical twice (fold manifest
+                           // 626F2F08… practice). LET: realization language within mal-fabric (.mal law application; no Python
+                           // in the engine path) and storage.
+  FOR_WHAT(MUST_LET),      // The implementer adds NO selection, NO tie-break, NO orientation.
+
+  // TOGETHER_ALONE
+  WHAT(TOGETHER_ALONE),    // PROPOSE (this file), DECIDE/PROMOTE (Devon), EXECUTE (Codex): held ALONE.
+  HOW(TOGETHER_ALONE),     // The five operands are consumed TOGETHER by §24.4; none is read ALONE as the transition.
+  FOR_WHAT(TOGETHER_ALONE),// g₂ and its successor are read TOGETHER through ONE link; FOLD/RADIATE/PROPAGATE are TOGETHER.
+
+  // MORE_LESS
+  WHAT(MORE_LESS),         // The MANY's separation-content is MORE than the ONE's: δ > 0 (FPP Step 3).
+  HOW(MORE_LESS),          // MOVED reports d_G(g₂, g₃) per junction (3419D528…) and which faces' ties break; HELD reports 0.
+  FOR_WHAT(MORE_LESS),     // Nothing else is ordered.
+
+  // GOES_WITH
+  WHAT(GOES_WITH),         // basis GOES_WITH 1D+1I @ (2,0); ports GOES_WITH the wired junctions; configuration GOES_WITH its
+                           // promoted admission; custody GOES_WITH K_id_min (LAW §24.4 operands, TR).
+  HOW(GOES_WITH),          // Run record: spec id + sha256; LAW/SRC/RXN sha256; operand hashes; implementation files + sha256;
+                           // successor state_hash, prev, receipt, receipt_reading; T_FOLD_EFFECT; replay SAME/NOT_SAME.
+  FOR_WHAT(GOES_WITH),     // successor.prev GOES_WITH link 2's link (D2).
+
+  // MANY_ONE
+  WHAT(MANY_ONE),          // MANY → ONE is the fold. MANY flags, ONE field. MANY operands, ONE operation.
+  HOW(MANY_ONE),           // ONE realization serves EVERY later step (re-entry).
+  FOR_WHAT(MANY_ONE),      // ONE named terminal, five values.
+
+  // EVERY_SOME
+  WHAT(EVERY_SOME),        // CHECK_FORM := meet of W1..W8 (002).
+  HOW(EVERY_SOME),         // EVERY cited contact carries an identity hash or is named MAYBE; SOME are O_exec.
+  FOR_WHAT(EVERY_SOME),    // CONFORM verdict, first that applies: NOT_SAME identity; NO SOME executed vector NOT_SAME;
+                           // MAYBE SOME vector not executed; IF_THEN EVERY vector SAME.
+
+  // carrier atoms
+  THIS, SAME_NOT_SAME, NO, IF_THEN, BECAUSE, INSIDE_OUTSIDE, NEAR_FAR,
+  CAN_CANNOT, MAYBE, MUST_LET, TOGETHER_ALONE, MORE_LESS, GOES_WITH,
+  MANY_ONE, EVERY_SOME
+};
+
+law R1_WHERE :=
+  IF WHAT(o)
+  THEN WHERE(o);
+
+law R1_WHICH :=
+  IF WHAT(o)
+  THEN WHICH(o);
+
+law R1_WHEN :=
+  IF HOW(o)
+  THEN WHEN(o);
+
+law R2_WHENCE :=
+  IF WHERE(o), WHICH(o), WHEN(o), FOR_WHAT(o), FOR_WHAT(BECAUSE)
+  THEN WHENCE(o);
+
+// ---------------------------------------------------------------
+// EXPECTED TERMINAL
+//   Structural: seed cells 45; derived 60 = WHERE 15 + WHICH 15 + WHEN 15 + WHENCE 15.
+//   Total 105 witness cells plus the 15 carrier atoms. PENDING seed/derived cells: {}.
+//   This structural terminal is NOT the execution terminal.
+//
+//   EXECUTION TERMINAL (named): T_FOLD_EFFECT ∈ { MOVED, HELD, REENTRY_NOT_SAME, MULTISET_NOT_PRESERVED, UNSUPPLIED(name) }.
+//     Read on ONE realization of the fold on g₂ with its chain, committed as link 3 (or stopped at a named absence).
+//
+//   O_exec, each PENDING:
+//     O_LAW_TEXT: hash-bind the quoted clause text of LAW §14 and §24.4 (:591, :681) and SRC :97, :189–198, :203.
+//     O_OPERAND_BIND: bind the five operands by hash (V2); report any missing (V3).
+//     O_FOLD_REALIZE: implement, in mal-fabric, the operation (g₂ field, incidence, ports, runtime state, genealogy) →
+//       successor relations and readings under §14/§24.4. Where an operation is absent from LAW/SRC/RXN: STOP, name it.
+//     O_REENTRY: successor.prev = link 2's link; RETURN (program, state_{t+1}); carry genealogy per SRC :189–198.
+//     O_QUALIFY: RTX 3070; replay twice byte-identical; DRC (i)–(viii) on the realized program; commit link 3; ONE run record.
+//   O_next = { physical-element correspondence (LAW's own MAYBE); H⁺+e⁻→H+γ ↔ J17 (TR M7 narrowed); tick 4 re-entry }.
+//   STOPS (CADENCE): NOT_SAME against promoted bytes; a face where a cell's OWN rank is MAYBE; UNSUPPLIED(name). Nothing else.
+// ---------------------------------------------------------------
+
+// ---------------------------------------------------------------
+// VECTORS. Encoding: UTF-8, sorted-key compact JSON, separators comma/colon, no BOM, no terminal newline.
+// Expected bytes frozen before any candidate. Digests uppercase. V2–V8 exercise operand binding and the named terminal on
+// supplied identities; they do not realize the fold (O_FOLD_REALIZE) or read LAW text (O_LAW_TEXT).
+//
+// V1  CHECK_FORM(this file)                       expected IF_THEN; W8 NOT_RUN in this proposal.
+//
+// V2  OPERAND_BIND(V2.input.json) — five operands + chain → BOUND
+//     input  {"operands":{"admissibility":"2CBBA4AD+DRC023","element_basis":"563F99BA","grl_configuration":"82E388FD","junction_ports":"QG003_PORTS","k_id_min":"CUSTODY_901"},"predecessor_chain":["B263644E","66E95736","E44759E5"]}
+//     sha256 578A35E40FCEB640B70924F23EF541A1120F4EE6CD63E126302D694D58A80BCD; 217 bytes
+//     expected {"bound":"B34812E4D789611F9325BE2916FFEE76418A9573FF36AEF65A4156E924B5E2DC","terminal":"BOUND","verdict":"IF_THEN"}
+//     expected_sha256 FB95FBAEC45BA16F3D570CC8A284BB7151A48823DEED68E6827E4822026E4C22; 115 bytes
+//
+// V3  OPERAND_BIND(V3.input.json) — k_id_min absent → UNSUPPLIED, named, nothing filled
+//     input  {"operands":{"admissibility":"2CBBA4AD+DRC023","element_basis":"563F99BA","grl_configuration":"82E388FD","junction_ports":"QG003_PORTS"},"predecessor_chain":["B263644E","66E95736","E44759E5"]}
+//     sha256 C48000BE6A965F3F4ABFA20716FAF4E586BB2C81F1E859A77210050D9B9BB272; 192 bytes
+//     expected {"missing":["k_id_min"],"terminal":"UNSUPPLIED","verdict":"MAYBE"}
+//     expected_sha256 61256BC1824431973A70C0637445074E3D1B35B6DAF2E14EC803807B520B8A43; 66 bytes
+//
+// V4  T_FOLD_EFFECT(V4.input.json) — field changed, re-entry SAME, multiset preserved → MOVED
+//     input  {"g2_multiset":{"C":0,"D":1,"I":1,"O":0,"T":0},"g2_state_hash":"E44759E57DD059","link2_link":"LINK2","successor_multiset":{"C":0,"D":1,"I":1,"O":0,"T":0},"successor_prev":"LINK2","successor_state_hash":"F00D"}
+//     sha256 D41AF5A5FFA2C43222D9C37E959B4D69A678CAC1576B101CB7F720BDDE1E3A1B; 209 bytes
+//     expected {"terminal":"MOVED","verdict":"IF_THEN"}
+//     expected_sha256 4A72430862F65495486D345F06C8C0636B458C356D546489C3CDA352D4075A32; 40 bytes
+//
+// V5  T_FOLD_EFFECT(V5.input.json) — field SAME g₂ under the fold → HELD (not HALT)
+//     input  {"g2_multiset":{"C":0,"D":1,"I":1,"O":0,"T":0},"g2_state_hash":"E44759E57DD059","link2_link":"LINK2","successor_multiset":{"C":0,"D":1,"I":1,"O":0,"T":0},"successor_prev":"LINK2","successor_state_hash":"E44759E57DD059"}
+//     sha256 80EBA783420DE86F703E5333720353671F64499E550098531FC21B1EA64EDD73; 219 bytes
+//     expected {"terminal":"HELD","verdict":"IF_THEN"}
+//     expected_sha256 B58D3BA637AD754F06E39946C2798DE7800B5E0FF25704DD59AEF1790B69BDE3; 39 bytes
+//
+// V6  T_FOLD_EFFECT(V6.input.json) — successor.prev ≠ link 2 → REENTRY_NOT_SAME
+//     input  {"g2_multiset":{"C":0,"D":1,"I":1,"O":0,"T":0},"g2_state_hash":"E44759E57DD059","link2_link":"LINK2","successor_multiset":{"C":0,"D":1,"I":1,"O":0,"T":0},"successor_prev":"OTHER","successor_state_hash":"F00D"}
+//     sha256 C5195367DB18BEF9082013452514ED188614A7B00E55BBB8512E7872AD2C51C5; 209 bytes
+//     expected {"terminal":"REENTRY_NOT_SAME","verdict":"NOT_SAME"}
+//     expected_sha256 EFB9C0DB795C174C99A29BDB4A79B6FB45F3E728BF9807CDB8BB23BB0256CCA5; 52 bytes
+//
+// V7  T_FOLD_EFFECT(V7.input.json) — a tetrahedron appears → MULTISET_NOT_PRESERVED (a fold is horizontal; GRL §7 vertical needs K)
+//     input  {"g2_multiset":{"C":0,"D":1,"I":1,"O":0,"T":0},"g2_state_hash":"E44759E57DD059","link2_link":"LINK2","successor_multiset":{"C":0,"D":1,"I":1,"O":0,"T":1},"successor_prev":"LINK2","successor_state_hash":"F00D"}
+//     sha256 FE09672F6FD0E41BD874393A62A0DED96BFA7D979C493B25BC548AC91738ABFC; 209 bytes
+//     expected {"terminal":"MULTISET_NOT_PRESERVED","verdict":"NOT_SAME"}
+//     expected_sha256 6BF8D9562D824556A56F101E4B4DFACEC72A149E56C64FBA809379CB7FBBA6CC; 58 bytes
+//
+// V8  T_FOLD_EFFECT(V8.input.json) — the operation is absent → UNSUPPLIED(J17_WORLD_FOLD_EFFECT) (today's actual result)
+//     input  {"g2_state_hash":"E44759E57DD059","link2_link":"LINK2","missing":"J17_WORLD_FOLD_EFFECT"}
+//     sha256 69B6A723B003BD9C22E19F8CF98B0109021EACA21693B3A77589B384C6AB5CB0; 89 bytes
+//     expected {"missing":"J17_WORLD_FOLD_EFFECT","terminal":"UNSUPPLIED","verdict":"MAYBE"}
+//     expected_sha256 C3F071A5BAC5FAF1EFC8C2FA19BAE5CFEA12C336BEFFE011D05BBB73E43F0A0A; 77 bytes
+//
+// Reference realization of V2–V8: jfe/vectors.py (authoring support; not a runtime, not independent).
+// ---------------------------------------------------------------

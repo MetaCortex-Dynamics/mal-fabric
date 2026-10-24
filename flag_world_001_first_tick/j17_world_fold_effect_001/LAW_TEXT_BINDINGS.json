@@ -1,0 +1,215 @@
+{
+  "record": "J17_WORLD_FOLD_EFFECT_LAW_TEXT_BINDINGS_V1",
+  "specification": "E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E",
+  "verdict": "IF_THEN",
+  "scope": "Identity-bound text reading only; no new successor operation inferred",
+  "quote_encoding": "UTF-8; original logical lines joined by LF; no terminal newline in quoted digest; source whole-file identity retained",
+  "sources": {
+    "aggregate_spec": {
+      "path": "C:/Users/devon/Desktop/MaL/SPECS/SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001_v0.1.0.md",
+      "bytes": 30926,
+      "sha256": "8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C"
+    },
+    "aggregate_promotion": {
+      "path": "C:/Users/devon/Desktop/MaL/JSON/PROMOTION_RECORD_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001.json",
+      "bytes": 2144,
+      "sha256": "EC445D2BF151A6AF009EB94DA36AF92186DF58E295541C956F164476038C7F00"
+    },
+    "fold_source": {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/constructed_universe_genesis_001/SELF_UNFOLDING_ELEMENT_BASIS_V1.mal",
+      "bytes": 9363,
+      "sha256": "FF0319B178854AA98CACC0C9699FEEA646489A2C9418139282E874338C994FB1"
+    },
+    "fold_execution_manifest": {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/constructed_universe_genesis_001/evidence/U01_EXECUTION_MANIFEST.json",
+      "bytes": 3548,
+      "sha256": "626F2F08BA498B2619FFA259A169438D759DD342D1A151F2AFDE21E1CC841238"
+    },
+    "reaction_contract": {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/geometric_reading_001/GROUND_REACTION_FIBER_V1.mal",
+      "bytes": 2839,
+      "sha256": "1E1E82E3E5C237C8AF5F36BA8F79886F26B5298DEFEBE1F40A212CDBE34E8A6B"
+    },
+    "world_tick_consumer": {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/geometric_reading_001/GROUND_WORLD_TICK_V1.mal",
+      "bytes": 1048,
+      "sha256": "5359246AC39D0645E869D7C726AB6E4D3011EDA36187D060177118C23BF7F6BB"
+    },
+    "fabric_execution_spec": {
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/FABRIC_EXECUTION_SPEC_v0.3.0-candidate.md",
+      "bytes": 11257,
+      "sha256": "5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0"
+    },
+    "carrier": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/parents/qg003-carrier.mcbf",
+      "bytes": 12048,
+      "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB"
+    },
+    "A9_B3_promotion": {
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "bytes": 5665,
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805"
+    },
+    "ground0": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/expected/genesis/Ground0.field.json",
+      "bytes": 48001,
+      "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3"
+    },
+    "run018": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/genesis/RUN_RECORD_018.json",
+      "bytes": 47830,
+      "sha256": "66E9573678D0F8F08A71E5146193BF9780C38E7F526E6C77F2709CC8D6AE1B12"
+    },
+    "g1": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/expected/genesis/committed.genesis.json",
+      "bytes": 382131,
+      "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C"
+    },
+    "gpu_self_witness": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/governance/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "bytes": 3273,
+      "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7"
+    },
+    "gpu_self_witness_promotion": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/governance/RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+      "bytes": 3207,
+      "sha256": "C1BA60101C95E76C3D2F090B00E3B679A6B58851B8A235829214D2B6249BD072"
+    },
+    "run023": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/RUN_RECORD_023.json",
+      "bytes": 111818,
+      "sha256": "6A07ACE68BD15DA5F084269FA7FDD57021EC89B30EAE44ED4BF9F9B697B79B0D"
+    },
+    "g2": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    "g2_program": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/program.json",
+      "bytes": 51262,
+      "sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529"
+    },
+    "g2_runtime_state": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/fabric.successor.json",
+      "bytes": 62837,
+      "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47"
+    },
+    "g2_program_source": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/source/program.mal",
+      "bytes": 19211,
+      "sha256": "6FEA9C9B2FE462FC9E794C7E12F43DDDBAEE8A12BA947AB25DE60153FDE27B55"
+    },
+    "g2_runtime_source": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/source/runtime_step.mal",
+      "bytes": 14539,
+      "sha256": "46F7260047664C7D31F54A74BAD2BB7356D72271AB8A1D7A2F57D8353B8A714D"
+    },
+    "g2_commit_source": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/source/commit_readout.mal",
+      "bytes": 17650,
+      "sha256": "23B480274497D854E6E6CE8ED9DE887F443E40D3FDBA2033B3A8EB892023AEE7"
+    },
+    "g2_drc_readback": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/stage02/readback.bin",
+      "bytes": 180355104,
+      "sha256": "7A605143AEFECAD081B0E4DB31A2B860F9812B58F38AECEAEB2E7C6696DB6418"
+    },
+    "g2_commit_readback": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/stage12/readback.bin",
+      "bytes": 180355104,
+      "sha256": "E22E39F4E04140FB59142BA969FB94FA601BB62EEF7E292590CC95A8BE9D5AD7"
+    },
+    "g2_drc_source_map": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/stage02/source-map.json",
+      "bytes": 6671215,
+      "sha256": "BCE36D4F58B22B9D308E5D317AE0D2153D7BD0A74A87129B52B73ECAE4BDFADD"
+    },
+    "frozen_manifest": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+      "bytes": 539738,
+      "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560"
+    },
+    "element_basis_receipt": {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/constructed_universe_genesis_001/evidence/u01-execution-001/fold-receipt.bin",
+      "bytes": 100,
+      "sha256": "563F99BAC7E7DAE40317BAF7622D9B874FCB0DB792D823F528A71BAF8E653D93"
+    },
+    "motif": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/parents/motif_junction_table_v1.h",
+      "bytes": 2859,
+      "sha256": "25AF837405F450986FBD24A425D2197BD5E5D9D4BF952F74BE43CFB992B10F64"
+    },
+    "marker_ports": {
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_021/source/marker_incidence.mal",
+      "bytes": 3625,
+      "sha256": "10CDE160E3FC6A3A74A57E63465FE93FB2CA4010F75F44A601DCFB762411A1E1"
+    }
+  },
+  "quotes": [
+    {
+      "input": "aggregate_spec",
+      "source_sha256": "8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C",
+      "first_line": 332,
+      "last_line": 357,
+      "text": "## 14 Reaction and Time\n\nThe fold genealogy is:\n\n    triangle -> cell -> carrier -> ElementBasis\n\nPost-element Universe time is the unfolding of admitted configuration genealogy:\n\n    Universe_w\n      -> admitted reaction\n      -> Universe_w+1\n\nHorizontal reaction:\n\n    rearranges active relations\n    preserves the exact element multiset\n    preserves K_id_min\n\nVertical reaction:\n\n    changes a governed multiset relation\n    preserves K_id_min\n    supplies a specific governed vertical witness\n    admits the target configuration\n\nNo vertical edge is created merely because a transformation is geometrically imaginable.",
+      "quoted_utf8_sha256": "03096C9DED21F18503B27C035FEEA4C4FC4840D5B181C7844644E882D7A26EF5"
+    },
+    {
+      "input": "aggregate_spec",
+      "source_sha256": "8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C",
+      "first_line": 591,
+      "last_line": 617,
+      "text": "### 24.1 SELF_UNFOLDING_ELEMENT_BASIS_V1\n\nPurpose:\n\n    execute one unary fold recursively\n    terminate only at intrinsic elemental closure\n    produce the complete finite ElementBasis\n\nInputs:\n\n    triangle genesis realization\n    constitutive fold law\n    carrier grammar\n    elemental-closure predicate\n\nOutputs:\n\n    ElementBasis\n    FoldGenealogyReceiptV1\n    ElementalClosureReceiptV1\n\nForbidden:\n\n    scale-specific fold functions\n    element names as constructors\n    host-selected stopping depth\n    incomplete basis reported as complete",
+      "quoted_utf8_sha256": "40D68745B9D1EAB7F9DF8D98A4F51B36BA5311E8DAD3D0707DDA35F8F49547C8"
+    },
+    {
+      "input": "aggregate_spec",
+      "source_sha256": "8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C",
+      "first_line": 681,
+      "last_line": 708,
+      "text": "### 24.4 JUNCTION_REACTION_ALGEBRA_V1\n\nPurpose:\n\n    derive admissible relations from shape\n    materialize horizontal reactions in the fiber\n    type every proposed vertical reaction through K_id_min\n\nInputs:\n\n    ElementBasis\n    intrinsic junction ports\n    Governed Reaction Lattice\n    admissibility predicate\n    K_id_min preservation law\n\nOutputs:\n\n    JunctionRelationSetV1\n    HorizontalReactionFiberV1\n    governed vertical-reaction candidates only when witnessed\n\nForbidden:\n\n    recipe-table reactions\n    automatic vertical edges\n    fallback joins or meets\n    host-authored compatibility",
+      "quoted_utf8_sha256": "F6A193CADE23AC11A583680D7F62DC998159CEB50EEA1CF277AA414DB187B36E"
+    },
+    {
+      "input": "fold_source",
+      "source_sha256": "FF0319B178854AA98CACC0C9699FEEA646489A2C9418139282E874338C994FB1",
+      "first_line": 97,
+      "last_line": 115,
+      "text": "      \"F2_CARRIER\" -> NO IN TOGETHER {\n        kind: \"FOLD_REALIZATION_V1\"\n        realization_kind: \"F3_ELEMENT_POLYHEDRA_BASIS\"\n        structural_whole: carrier_grammar.geometric_element_types\n        genealogy_verdict: carrier_grammar.element_basis_genealogy_verdict\n        structure_verdict: carrier_grammar.element_basis_structure_verdict\n        fold_identity: \"SELF_UNFOLDING_FOLD_V1\"\n        parent_realization_digest: current.realization_digest\n        realization_digest: TOGETHER {\n          law: \"SELF_UNFOLDING_FOLD_V1\"\n          parent: current.realization_digest\n          realization: \"F3_ELEMENT_POLYHEDRA_BASIS\"\n          geometric_types: carrier_grammar.geometric_element_types\n        }.sha256\n      }\n      \"F3_ELEMENT_POLYHEDRA_BASIS\" -> NO IN current\n      _ -> NO IN fold_obligation_v1.call(\"NOT_SAME\", \"REALIZATION_KIND\", current)\n    }\n    NO IN successor",
+      "quoted_utf8_sha256": "A02CA8F0B779E179420072335E32195F83B1BB572F9051634E7865E1B183957A"
+    },
+    {
+      "input": "fold_source",
+      "source_sha256": "FF0319B178854AA98CACC0C9699FEEA646489A2C9418139282E874338C994FB1",
+      "first_line": 181,
+      "last_line": 228,
+      "text": "  CAN readonly IN self_unfolding_fold_v1(\n    current: Atom,\n    carrier_grammar: Atom,\n    genealogy: Atom\n  ) -> Atom {\n    SAME current.realization_kind {\n      \"F3_ELEMENT_POLYHEDRA_BASIS\" -> NONE\n      _ -> {\n        THIS successor = fold_internal_realization_v1.call(current, carrier_grammar)\n        THIS successor_genealogy = TOGETHER {\n          realizations: genealogy.realizations + [successor]\n          transitions: genealogy.transitions + [TOGETHER {\n            source: current.realization_digest\n            target: successor.realization_digest\n          }]\n        }\n        NO IN self_unfolding_fold_v1.call(\n          successor, carrier_grammar, successor_genealogy\n        )\n      }\n    }\n\n    THIS closure = elemental_closure_v1.call(current, carrier_grammar)\n    SAME closure.verdict { \"IF_THEN\" -> NONE _ -> NO IN fold_obligation_v1.call(\n      closure.verdict, closure.first_failure_locus, closure\n    ) }\n    NO IN TOGETHER {\n      kind: \"SELF_UNFOLDING_ELEMENT_BASIS_RESULT_V1\"\n      verdict: \"IF_THEN\"\n      invocation_count: 1\n      internal_unfolding_count: genealogy.transitions.count\n      fold_arity: 1\n      fold_identity: \"SELF_UNFOLDING_FOLD_V1\"\n      realizations: genealogy.realizations\n      element_basis: current.structural_whole\n      fold_genealogy_receipt: TOGETHER {\n        kind: \"FOLD_GENEALOGY_RECEIPT_V1\"\n        verdict: \"IF_THEN\"\n        fold_identity: \"SELF_UNFOLDING_FOLD_V1\"\n        invocation_count: 1\n        transitions: genealogy.transitions\n      }\n      elemental_closure_receipt: closure\n      physical_element_correspondence: \"MAYBE\"\n      host_selected_stopping_depth: 0\n      scale_specific_fold_functions: 0\n      element_name_constructors: 0\n    }",
+      "quoted_utf8_sha256": "2C7745D8833D4140F60B34C232B7310A3F0147D3487DF824099CC9B9BDCDA315"
+    },
+    {
+      "input": "reaction_contract",
+      "source_sha256": "1E1E82E3E5C237C8AF5F36BA8F79886F26B5298DEFEBE1F40A212CDBE34E8A6B",
+      "first_line": 5,
+      "last_line": 28,
+      "text": "  CAN readonly IN admit_horizontal_cover_v1(source: Atom, target: Atom, proposal: Atom) -> Atom {\n    SAME source.verdict { \"IF_THEN\" -> NONE _ -> NO IN source }\n    SAME target.verdict { \"IF_THEN\" -> NONE _ -> NO IN target }\n    SAME source.arrangement.multiset { target.arrangement.multiset -> NONE _ -> NO IN TOGETHER {\n      kind: \"HORIZONTAL_COVER_V1\" verdict: \"NOT_SAME\"\n      first_failure_locus: \"MULTISET_CHANGED\"\n    } }\n    SAME proposal.vertical_conversion { false -> NONE _ -> NO IN TOGETHER {\n      kind: \"HORIZONTAL_COVER_V1\" verdict: \"NOT_SAME\"\n      first_failure_locus: \"VERTICAL_PROPOSAL_AT_HORIZONTAL_BOUNDARY\"\n    } }\n    SAME proposal.complete_directional_witness {\n      true -> NONE\n      _ -> NO IN TOGETHER {\n        kind: \"HORIZONTAL_COVER_V1\" verdict: \"MAYBE\"\n        first_failure_locus: \"ANTISYMMETRIC_DIRECTIONAL_INVARIANT\"\n      }\n    }\n    NO IN TOGETHER {\n      kind: \"HORIZONTAL_COVER_V1\" verdict: \"IF_THEN\"\n      source: source.world_identity target: target.world_identity\n      multiset: source.arrangement.multiset\n      genealogy: proposal.genealogy\n    }",
+      "quoted_utf8_sha256": "E6878267EB9D111A8CE216AB83565D197FCDAE8EDD933A41C654A68A67358ECE"
+    },
+    {
+      "input": "fabric_execution_spec",
+      "source_sha256": "5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0",
+      "first_line": 66,
+      "last_line": 106,
+      "text": "STEP_FABRIC(Σ_t):\n\n  program := Σ_t.program\n  snapshot := immutable(Σ_t.state)\n\n  1. SNAPSHOT\n\n  2. EVALUATE\n     active_t :=\n       { c | payload_state(c,snapshot) = ADMITTED(frame,_) }\n\n     cell_results_t :=\n       { c ↦ evaluate(c, program, snapshot)\n         FOR EVERY c ∈ active_t }\n\n  3. PROPAGATE\n     route_results_t :=\n       { r ↦ propagate(r, program, snapshot, cell_results_t)\n         FOR EVERY r ∈ program.routes }\n\n     canonicalize route results by route identity\n\n  4. RUNTIME GOVERNANCE\n     governance_results_t :=\n       govern_runtime(\n         program,\n         snapshot,\n         route_results_t,\n         imported_V3_2_authority\n       )\n\n  5. SIMULTANEOUS COMMIT\n     state_{t+1} :=\n       simultaneous_commit(\n         snapshot,\n         cell_results_t,\n         route_results_t,\n         governance_results_t\n       )\n\n  RETURN (program, state_{t+1})",
+      "quoted_utf8_sha256": "AF83C2FE44E39308BC74D669FC280F3712EAB0D549BFDD8FEDB8274C9ADFF579"
+    },
+    {
+      "input": "fabric_execution_spec",
+      "source_sha256": "5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0",
+      "first_line": 373,
+      "last_line": 376,
+      "text": "  HALT(Σ) → STEP_FABRIC(Σ)=Σ\n\nFIXED_POINT_NONSUFFICIENCY:\n  STEP_FABRIC(Σ)=Σ ⇏ HALT(Σ)",
+      "quoted_utf8_sha256": "5D802F81846C234F540A14E769195628CC7E6FA55984E5161C85BF9B3F8D19B9"
+    }
+  ]
+}
