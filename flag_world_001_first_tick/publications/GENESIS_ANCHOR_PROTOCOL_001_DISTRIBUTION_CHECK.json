@@ -1,0 +1,250 @@
+{
+  "schema": "GAP_ARCHIVED_ADAPTER_QUALIFICATION_V1",
+  "profile": "JTP_ARCHIVED_J17_001",
+  "obligation": "O_API_REALIZATION",
+  "scope": "Archived receipt reuse; source lowering and observation re-executed; no GPU execution or new commit",
+  "sources": [
+    {
+      "path": "api_boundary.mjs",
+      "bytes": 8182,
+      "sha256": "8A1BE652F0C2D104B2653E969971BE2D2403871DA85307476396EAFCEAE960F7"
+    },
+    {
+      "path": "archived_adapters.mjs",
+      "bytes": 13806,
+      "sha256": "9114A86E6F40004CF2B75AF050832358FDCD487D3F670B675FF51BE24D06067A"
+    },
+    {
+      "path": "test_archived_adapters.mjs",
+      "bytes": 6654,
+      "sha256": "2593F270F7672AE690EE6ABF3A344D2EEFDAF96BAC85666B0D974D1277DC566F"
+    }
+  ],
+  "provenance": [
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\frame.json",
+      "path": "archive/frame.json",
+      "bytes": 461,
+      "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\Ground0.field.json",
+      "path": "archive/Ground0.field.json",
+      "bytes": 48001,
+      "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\current.field.json",
+      "path": "archive/current.field.json",
+      "bytes": 48025,
+      "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\current.witness.json",
+      "path": "archive/current.witness.json",
+      "bytes": 140449,
+      "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\current.receipt.json",
+      "path": "archive/current.receipt.json",
+      "bytes": 143965,
+      "sha256": "31422A88A25BFEB4A3FD149A180F3F3E5AD5B141548C0FD453BA40FAF5081243"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\committed.genesis.json",
+      "path": "archive/committed.genesis.json",
+      "bytes": 382131,
+      "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\hashes0\\responses.json",
+      "path": "archive/hashes0/responses.json",
+      "bytes": 239144,
+      "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\hashes1\\responses.json",
+      "path": "archive/hashes1/responses.json",
+      "bytes": 430443,
+      "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\genesis_gpu\\image.bin",
+      "path": "archive/genesis_gpu/image.bin",
+      "bytes": 350224,
+      "sha256": "508B81EE1762EF2E6F6D8484EC4E41A7C19FF08E411F52840B0192734A1E9D6D"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\genesis_gpu\\readback.bin",
+      "path": "archive/genesis_gpu/readback.bin",
+      "bytes": 16777248,
+      "sha256": "7504B659E75ADF886E47FB9CCF1C6489A83E6C1D281F94FDAAD9E05B05CA4A23"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\commit0_gpu\\image.bin",
+      "path": "archive/commit0_gpu/image.bin",
+      "bytes": 350224,
+      "sha256": "2710A000C4303DD57021FF0FE62BB03E4108C632FE4E7B0827FEDB3C851AAF24"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\commit0_gpu\\readback.bin",
+      "path": "archive/commit0_gpu/readback.bin",
+      "bytes": 16777248,
+      "sha256": "DC89E90E75C32E6C7AED52AEDBF2A33A85A5F281DA8880B63A2F97FFF8BD19CA"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\commit1_gpu\\image.bin",
+      "path": "archive/commit1_gpu/image.bin",
+      "bytes": 677904,
+      "sha256": "BC6805990329B5875B5AA62CF6341DA4CBCD35094538835D1B33E7CBFC8F532D"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\commit1_gpu\\readback.bin",
+      "path": "archive/commit1_gpu/readback.bin",
+      "bytes": 16777248,
+      "sha256": "9F355D2551EDE8728F96E3E5E3F300F216A7FE824390D88E8E40294316C01F49"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\commit2_gpu\\image.bin",
+      "path": "archive/commit2_gpu/image.bin",
+      "bytes": 677904,
+      "sha256": "FF8285BB3BB3934F3BC5FFB7604186EF0414E6B63B6F844E3DD3C0C714D64207"
+    },
+    {
+      "source": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_release_extracted_001\\recorded_genesis\\commit2_gpu\\readback.bin",
+      "path": "archive/commit2_gpu/readback.bin",
+      "bytes": 16777248,
+      "sha256": "A96CDB93CE443EEB1923D24FE9B34C91BC7ACEA149700C7B284030F704B142CF"
+    }
+  ],
+  "tests": [
+    {
+      "operation": "captureArchived",
+      "reading": "IF_THEN",
+      "reason": null,
+      "evidence_count": 1
+    },
+    {
+      "operation": "validateArchived",
+      "reading": "IF_THEN",
+      "reason": null,
+      "evidence_count": 25
+    },
+    {
+      "operation": "locate",
+      "reading": "IF_THEN",
+      "reason": null,
+      "evidence_count": 25
+    },
+    {
+      "operation": "seedInitial",
+      "reading": "IF_THEN",
+      "reason": null,
+      "evidence_count": 25
+    },
+    {
+      "operation": "commitInitial",
+      "reading": "IF_THEN",
+      "reason": null,
+      "evidence_count": 25
+    },
+    {
+      "operation": "verifyInitial",
+      "reading": "IF_THEN",
+      "reason": null,
+      "evidence_count": 25
+    },
+    {
+      "operation": "captureArchived",
+      "reading": "MAYBE",
+      "reason": "MISSING_CAPTURE",
+      "evidence_count": 1
+    },
+    {
+      "operation": "captureArchived",
+      "reading": "NOT-SAME",
+      "reason": "BLOB_BINDING_MISMATCH",
+      "evidence_count": 1
+    },
+    {
+      "operation": "captureArchived",
+      "reading": "NOT-SAME",
+      "reason": "BLOB_BINDING_MISMATCH",
+      "evidence_count": 1
+    },
+    {
+      "operation": "captureArchived",
+      "reading": "NOT-SAME",
+      "reason": "BLOB_BINDING_MISMATCH",
+      "evidence_count": 1
+    },
+    {
+      "operation": "captureArchived",
+      "reading": "MAYBE",
+      "reason": "MISSING_SOURCE_EVIDENCE",
+      "evidence_count": 1
+    },
+    {
+      "operation": "seedInitial",
+      "reading": "NO",
+      "reason": "NON_GROUND_PREDECESSOR",
+      "evidence_count": 1
+    },
+    {
+      "operation": "applyLaterEvent",
+      "reading": "NO",
+      "reason": "UNSUPPORTED_OPERATION",
+      "evidence_count": 1
+    },
+    {
+      "operation": "locate",
+      "reading": "NOT-SAME",
+      "reason": "VALIDATION_frame",
+      "evidence_count": 1
+    },
+    {
+      "operation": "seedInitial",
+      "reading": "NOT-SAME",
+      "reason": "SOURCE_LOCUS",
+      "evidence_count": 25
+    },
+    {
+      "operation": "commitInitial",
+      "reading": "NOT-SAME",
+      "reason": "SEED_witness",
+      "evidence_count": 25
+    },
+    {
+      "operation": "verifyInitial",
+      "reading": "NOT-SAME",
+      "reason": "EXECUTION_RECEIPT",
+      "evidence_count": 25
+    },
+    {
+      "operation": "captureArchived",
+      "reading": "NOT-SAME",
+      "reason": "ARCHIVED_EVENT_BINDING",
+      "evidence_count": 1
+    },
+    {
+      "operation": "verifyInitial",
+      "reading": "NOT-SAME",
+      "reason": "BLOB_BINDING_MISMATCH",
+      "evidence_count": 1
+    }
+  ],
+  "verdict": "IF_THEN",
+  "gpu_execution": "NOT_RUN",
+  "original_receipt_sha256": "BDC284C1F43621EA69A6098AB4A0B7F9FA6095770A3439E9A19CBE2E5CF95212",
+  "vectors": {
+    "GAP-JTP-01": "NEWLY_EXECUTED_API_INTEGRATION_WITH_INHERITED_GPU_EVIDENCE",
+    "GAP-JTP-02": "NEWLY_EXECUTED",
+    "GAP-JTP-03": "NEWLY_EXECUTED",
+    "GAP-JTP-04": "NEWLY_EXECUTED",
+    "GAP-JTP-05": "NEWLY_EXECUTED",
+    "GAP-JTP-06": "NEWLY_EXECUTED",
+    "GAP-JTP-07": "NEWLY_EXECUTED",
+    "GAP-JTP-08": "NEWLY_EXECUTED"
+  }
+}

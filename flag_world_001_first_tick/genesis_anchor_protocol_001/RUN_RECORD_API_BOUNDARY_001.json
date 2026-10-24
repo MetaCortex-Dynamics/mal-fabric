@@ -1,0 +1,238 @@
+{
+  "schema": "GAP_API_BOUNDARY_TEST_RECORD_V1",
+  "obligation": "O_API_REALIZATION",
+  "review_items": [
+    1,
+    2,
+    3
+  ],
+  "scope": "Boundary behavior only; synthetic handlers are not source/executor conformance or a new genesis",
+  "node": "v22.20.0",
+  "platform": "win32",
+  "release": "10.0.26200",
+  "sources": [
+    {
+      "file": "api_boundary.mjs",
+      "sha256": "BB436C8D6629346E5A34EEBC135791DA7E95E60732675CEB452FA408F24E5821"
+    },
+    {
+      "file": "test_api_boundary.mjs",
+      "sha256": "E6BF413CE5C0614CA00118ACA39C8B5A450C9735294A1FD28A33BFA13B330C43"
+    }
+  ],
+  "preserved_bindings": 21,
+  "comparison": "SAME",
+  "tests": [
+    {
+      "id": "context-and-success-captureArchived",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "context-and-success-validateArchived",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "context-and-success-locate",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "context-and-success-seedInitial",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "context-and-success-commitInitial",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "context-and-success-verifyInitial",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "unsupported-profile-no-dispatch",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "later-event-not-dispatched",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "missing-request-retains-diagnostic",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "extra-request-field",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "missing-context",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "relative-root",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "missing-root",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "path-refusal-../outside/outside.bin",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "path-refusal-..\\outside\\outside.bin",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "path-refusal-C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\gap_api_boundary_tests_002\\outside\\outside.bin",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "path-refusal-input.bin:stream",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "path-refusal-sub/../input.bin",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "junction-escape",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "missing-blob",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "altered-blob-binding",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "blob-schema",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "missing-adapter",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "handler-failure-retention-captureArchived",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "handler-failure-retention-validateArchived",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "handler-failure-retention-locate",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "handler-failure-retention-seedInitial",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "handler-failure-retention-commitInitial",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "handler-failure-retention-verifyInitial",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "explicit-handler-refusal",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "missing-witness",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "nonserializable-result",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "evidence-overlap-no-input-write",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "evidence-unavailable-retains-inline",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    },
+    {
+      "id": "evidence-write-failure-withholds-candidate",
+      "execution": "NEWLY_EXECUTED",
+      "reading": "IF_THEN",
+      "scope": "API_BOUNDARY_ONLY"
+    }
+  ],
+  "verdict": "IF_THEN"
+}

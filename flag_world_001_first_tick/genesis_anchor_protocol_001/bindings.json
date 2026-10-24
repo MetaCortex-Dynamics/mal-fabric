@@ -1,0 +1,155 @@
+{
+  "status": "PROPOSED",
+  "profile": "JTP_ARCHIVED_J17_001",
+  "release_commit": "e244924d1f79600015c40260ecc505884aea29f0",
+  "kit_zip_sha256": "701279395704DAA51AA4C0909F90B1C19959558943AA93096E850C5AC89114B8",
+  "bindings": [
+    {
+      "path": "sources/genesis_run.mal",
+      "bytes": 24699,
+      "sha256": "E68FA6960E4538D264E756445659F57344C571FAC2F7B00D6BE365EB42919004",
+      "lines": [
+        [
+          181,
+          184
+        ],
+        [
+          231,
+          236
+        ],
+        [
+          239,
+          376
+        ]
+      ]
+    },
+    {
+      "path": "sources/commit_run_v3.mal",
+      "bytes": 38683,
+      "sha256": "89E9952F34BF6E44888150EDB5705133D91B204326C55904B090D03A3305A6EB",
+      "lines": [
+        [
+          444,
+          537
+        ]
+      ]
+    },
+    {
+      "path": "tools/transport_slices.mjs",
+      "bytes": 2123,
+      "sha256": "D21F21D3BCE74013455085AB05052AAA1C133056C5E3488E53467A52CE4E1F96",
+      "lines": [
+        [
+          1,
+          29
+        ]
+      ]
+    },
+    {
+      "path": "tools/persistence_frame_layout.json",
+      "bytes": 560,
+      "sha256": "D6AAE85CAD9923301E2000DFFF143B2A6596AE040920351C205CA5813CBD2225",
+      "lines": [
+        [
+          1,
+          16
+        ]
+      ]
+    },
+    {
+      "path": "replay.mjs",
+      "bytes": 9842,
+      "sha256": "B2B67AC4AA308EF87F6D73F2A2C0CF09848D6620D1A01217A2B6B605B8D84A57",
+      "lines": [
+        [
+          33,
+          46
+        ],
+        [
+          67,
+          94
+        ]
+      ]
+    },
+    {
+      "path": "GENESIS_CONTRACT.json",
+      "bytes": 22456,
+      "sha256": "05737EE72CE36790AC01C96DF7F316A54282317E345E446315F8AA8EA5BBAB67"
+    },
+    {
+      "path": "inputs/captured-frame.bin",
+      "bytes": 132,
+      "sha256": "4472CFC5B73C1BA745D3129E7111C0FA394C7C6CEE42D1E6E7E9691E5FF7228B"
+    },
+    {
+      "path": "inputs/capture.json",
+      "bytes": 1931,
+      "sha256": "0ECF5C15B3CCBD9F97EE9B6D414D7A1042043725063602806348CBCE3B91BB5F"
+    },
+    {
+      "path": "inputs/frame.json",
+      "bytes": 461,
+      "sha256": "0AE12CCB5D32D13FB9D9607039049BD57F0D50BA8C551991E56A02AB7FAD56BE"
+    },
+    {
+      "path": "contracts/governance/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "bytes": 3273,
+      "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7"
+    },
+    {
+      "path": "contracts/governance/RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+      "bytes": 3207,
+      "sha256": "C1BA60101C95E76C3D2F090B00E3B679A6B58851B8A235829214D2B6249BD072"
+    },
+    {
+      "path": "verification/PRIMARY_GENESIS_RECEIPT.json",
+      "bytes": 26820,
+      "sha256": "BDC284C1F43621EA69A6098AB4A0B7F9FA6095770A3439E9A19CBE2E5CF95212"
+    },
+    {
+      "path": "verification/SEPARATE_GENESIS_RECEIPT.json",
+      "bytes": 24046,
+      "sha256": "6CF2D973061A0973593A3CF2590549A847A68CE8360A753A9D26823ACD29EEBF"
+    },
+    {
+      "path": "verification/REPRODUCTION.md",
+      "bytes": 3555,
+      "sha256": "E2776C382406E34DE320343C0A7C057BD2245809C6635ABAE04419519D1AA788"
+    },
+    {
+      "path": "expected/genesis/Ground0.field.json",
+      "bytes": 48001,
+      "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3"
+    },
+    {
+      "path": "expected/genesis/current.field.json",
+      "bytes": 48025,
+      "sha256": "1B69800444F0A83B09976F8EDF7411865D4721B12423B343BE69C31B4856AA0A"
+    },
+    {
+      "path": "expected/genesis/current.witness.json",
+      "bytes": 140449,
+      "sha256": "4861769871804EF03EF02F4EDFE368BBC79F43871F35D85209043BEE0BFE87E9"
+    },
+    {
+      "path": "expected/genesis/current.receipt.json",
+      "bytes": 143965,
+      "sha256": "31422A88A25BFEB4A3FD149A180F3F3E5AD5B141548C0FD453BA40FAF5081243"
+    },
+    {
+      "path": "expected/genesis/committed.genesis.json",
+      "bytes": 382131,
+      "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C"
+    },
+    {
+      "path": "expected/genesis/hashes0.json",
+      "bytes": 239144,
+      "sha256": "427405C27C18E3635C05C4F7EC9FD14436CE42B409A15F798F16EB98C9B69DD0"
+    },
+    {
+      "path": "expected/genesis/hashes1.json",
+      "bytes": 430443,
+      "sha256": "D28FBCA97878DB77193712408B6A37CA2BD751A7DDB61DA79365EDD695D86FC6"
+    }
+  ]
+}
