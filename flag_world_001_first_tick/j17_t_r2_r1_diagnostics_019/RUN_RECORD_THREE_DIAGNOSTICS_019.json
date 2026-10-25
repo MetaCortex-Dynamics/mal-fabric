@@ -1,0 +1,148 @@
+{
+  "schema": "J17ThreeDiagnosticsRunRecord019",
+  "verdict": "IF_THEN",
+  "scope": "T, R2, R1 isolated native GPU diagnostics requested in this thread; not a live J17 transition, law promotion, or physical correspondence.",
+  "request": {
+    "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/REQUEST.json",
+    "bytes": 1210,
+    "sha256": "A3151B0B878FCF4B5C6C0D8C8709BACF0B9A8DDBE77BFA16511B2809298BCFD5"
+  },
+  "records": [
+    {
+      "subject": "T",
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\RUN_RECORD_T.json",
+      "bytes": 39982,
+      "sha256": "01886C677970FC586BBE084C74A92F6227FADA9100EC0E6520A4F3310B384ECC"
+    },
+    {
+      "subject": "R2",
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\finish_001\\RUN_RECORD_R2_019.json",
+      "bytes": 12175,
+      "sha256": "2E1736651A889D225DA12E1F9613AFF9581F94F709413FDCE92962DE22599336"
+    },
+    {
+      "subject": "R2_custody",
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\FINAL_BINDING.json",
+      "bytes": 5566,
+      "sha256": "AD8595FADFD6B24E8071821DD39F0948B8ED50AC5C80796B261FEB49703B5E4F"
+    },
+    {
+      "subject": "R1",
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\RUN_RECORD_R1.json",
+      "bytes": 230385,
+      "sha256": "8D00AEF6B6BF61050CA4951098F3691F83BF75CE54CC56832B91C80868A50004"
+    },
+    {
+      "subject": "R1_custody",
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\FINAL_BINDING_R1.json",
+      "bytes": 748406,
+      "sha256": "29BFAB2FC2A5B0F0DDCFA71C27BC6A8FA27274441B34C5E195B99F1B2AD393C5"
+    }
+  ],
+  "diagnostics": {
+    "T": {
+      "verdict": "IF_THEN",
+      "refinement": "one additional (2,0) to (4,0) refinement",
+      "sites": 162,
+      "edges": 480,
+      "triads": 320,
+      "flags": 1920,
+      "overlaps": 2880,
+      "site_degrees": {
+        "degree5": 12,
+        "degree6": 150
+      },
+      "replay": "BYTE_SAME",
+      "reversed_enumeration": "DECODED_CLOSURE_SAME",
+      "duplicate_parent_control": "DECODED_CLOSURE_SAME",
+      "missing_parent_control": "WITHHOLDS_COMPLETE_REFINEMENT; 316 triads, 1896 flags, 2838 overlaps"
+    },
+    "R2": {
+      "verdict": "IF_THEN",
+      "scope": "all 12 direct SITE/delta out-and-back diagnostic branches",
+      "branches": 12,
+      "new_diagnostic_links": 24,
+      "endpoint_field_and_witness": "SAME_G2",
+      "composite_receipt": {
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12
+      },
+      "history": "OUT and BACK links are distinct; histories are not identified by endpoint equality",
+      "replay": "BYTE_SAME",
+      "negative_controls": [
+        "unoffered identity move withheld",
+        "wrong predecessor withheld"
+      ],
+      "shell_operation_correspondence": "NOT_ESTABLISHED_BY_THIS_DIAGNOSTIC"
+    },
+    "R1": {
+      "verdict": "IF_THEN",
+      "scope": "all 120 adjacent-site-union fields; fixed 1924 incidence-fibre assignments per input",
+      "inputs": 120,
+      "offers_per_input": 1924,
+      "receipt_cases": 230880,
+      "batches": 30,
+      "complete_cases_per_input": 1924,
+      "strict_count_per_input": 0,
+      "exact_native_receipt_comparison": "SAME",
+      "qualification_scope": "g2 qualification: one strict member; byte-identical replay; reversed closure SAME; missing-leaf and missing-root controls withhold completion",
+      "runtime_error": 0,
+      "peak_facts": 2489090,
+      "peak_terms": 2520034,
+      "fact_capacity": 4194304,
+      "term_capacity": 4194304,
+      "final_binding_artifacts": 621,
+      "final_binding_second_byte_pass": "SAME",
+      "all_input_sweep_replay": "NOT_CLAIMED; qualification replay scope is explicit"
+    }
+  },
+  "verification": {
+    "artifact_custody": {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/ARTIFACT_CUSTODY_AUDIT.json",
+      "bytes": 2082,
+      "sha256": "E7F1CE511D5900DF39A86253C8687E93A2264A03FB9FB682EC079081236186B9"
+    },
+    "checked_paths": 742,
+    "recursive_task_json": 185,
+    "mismatches": [],
+    "custody_before": {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/CUSTODY_BEFORE.json",
+      "bytes": 973,
+      "sha256": "CDDADECE6F319ACFD1CD0C15247D7FE236DC5993A815418131FC50705A6CFC0D"
+    },
+    "custody_after": {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/CUSTODY_AFTER.json",
+      "bytes": 5196,
+      "sha256": "8BF79B60E76C7C7B1DFF99C497D94CCF6EB2DC711746F72EFA110E1E66376E92"
+    },
+    "frozen_files": 901,
+    "frozen_comparison": "SAME",
+    "live_world_file": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    "live_pair_hash": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+    "live_chain_head": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+    "live_links": 2,
+    "live_world_comparison": "SAME",
+    "repository_head": "67f16aaa212a747012a6eec1a192517c66a64717",
+    "tracked_repository_state": "SAME",
+    "sandbox_note": "The first read-only Git check was denied sandbox access to D:. The same custody checker completed with read-only repository access; no native rerun or Git mutation followed from that denial."
+  },
+  "custody_distinctions": {
+    "prior_candidate": "CUSTODY_AFTER.checker_result.pair_after names the retained prior J17-to-NO candidate, not a live successor.",
+    "R2": "The 24 new links belong only to isolated diagnostic copies.",
+    "live_J17": "No link appended by this task."
+  },
+  "actions": {
+    "world_write": "NOT_PERFORMED",
+    "board_action": "NOT_PERFORMED",
+    "law_promotion": "NOT_PERFORMED",
+    "repository_commit": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED",
+    "frozen_evidence_edit": "NOT_PERFORMED",
+    "python_realization": "NOT_PERFORMED"
+  }
+}

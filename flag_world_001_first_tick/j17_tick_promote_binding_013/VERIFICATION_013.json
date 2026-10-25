@@ -1,0 +1,69 @@
+{
+  "record": "VERIFICATION_J17_TICK_PROMOTE_BINDING_013",
+  "scope": "Custody checks of existing GPU observations and pre-EXECUTE binding; not a new GPU run or native authority admission",
+  "independent_read_only_review": {
+    "verdict": "SAME",
+    "scope": "Separate agent reviewed sources and created records, then reran the same read-only checker; NOT an independent GPU realization",
+    "comparisons_reproduced": 55,
+    "frozen_files_reproduced": 901,
+    "projection": "MAYBE; no positions or grants supplied",
+    "record_sha256": "2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4"
+  },
+  "result": {
+    "verdict": "SAME",
+    "evidence_sha256": "171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4",
+    "observer_sha256": "09D620DC73331BB6E7D2EC56A6A9C8DA81DBBB008D6D5853A2DB4113E5829E32",
+    "comparisons": 55,
+    "negative_checks": 8,
+    "frozen": {
+      "manifest_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+      "manifest_sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+      "files": 901,
+      "verdict": "SAME"
+    },
+    "pair_before": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+    "pair_after": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+    "receipt_hash": "a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd",
+    "member_hash": "19EBB89436905DB26E25BDB0039043C870C9282FA0E3CDEFECFBB749340DBDE9",
+    "sections": "NOT_RUN",
+    "world_commit": "NOT_RUN",
+    "link_count": 2
+  },
+  "artifacts": [
+    {
+      "name": "BINDING_EVIDENCE.json",
+      "bytes": 18662,
+      "sha256": "171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4"
+    },
+    {
+      "name": "PROJECTION_READOUT_013.json",
+      "bytes": 6209,
+      "sha256": "A5D7973533252DF91A0553D66B6E5FD9BA5852BB1347A4E4EAEA23D5B95DE7AA"
+    },
+    {
+      "name": "RECORD_J17_TICK_PROMOTE_BINDING_013.mal",
+      "bytes": 3717,
+      "sha256": "2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4"
+    },
+    {
+      "name": "verify_binding.mjs",
+      "bytes": 10960,
+      "sha256": "09D620DC73331BB6E7D2EC56A6A9C8DA81DBBB008D6D5853A2DB4113E5829E32"
+    }
+  ],
+  "repository": {
+    "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001",
+    "head": "67f16aaa212a747012a6eec1a192517c66a64717",
+    "branch": "review/fold-realization-j17-link-3-001",
+    "commit": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED"
+  },
+  "obligations": {
+    "tick_binding": "RECORDED",
+    "O_PROJECTION_LAW": "MAYBE_IN_INSPECTED_CONTACTS",
+    "shared_private_partition": "MAYBE_IN_INSPECTED_CONTACTS",
+    "local_sections": "NOT_RUN",
+    "GlobalSection": "NOT_RUN",
+    "link_3": "NOT_WRITTEN"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "scope": "INVOCATION_ARGUMENT_SLOT_REPAIR_ONLY; RETAINED_NATIVE_EFFECT_AND_REPLAY",
+  "inputs": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\NATIVE_RESULTS.json",
+      "bytes": 30909598,
+      "sha256": "514DBB6AA2E5BBFD6CB64D3C8FB8802000FA39A3684668F63DBED81EA7A4C618"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\observations.json",
+      "bytes": 4555189,
+      "sha256": "FF37C4C92AA2FAB02B0BB9C54C180C9F640AA102D4CAC51DF6630D0C7EF5778C"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\commit.mal",
+      "bytes": 4487,
+      "sha256": "A7CFC8A93C2997802067A566A0FFE034A1FC79A6EF057804897657677A164B19"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\native\\readback.bin",
+      "bytes": 218103840,
+      "sha256": "11F04DCFDF0948F5A5B36F749FD72D0279CD241A69BEEC1F30F0BE88A352F54D"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\native_replay\\readback.bin",
+      "bytes": 218103840,
+      "sha256": "11F04DCFDF0948F5A5B36F749FD72D0279CD241A69BEEC1F30F0BE88A352F54D"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\commit_0_lower.execution.json",
+      "bytes": 1911,
+      "sha256": "6E5F0EE099AD5A129E281A4144355593CA726FAF02C683CAA3D562E114853C26"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\finish.mjs",
+      "bytes": 8371,
+      "sha256": "96349518E9A877A0B7C3206F72CC4249D5F76DF89E026BFBB965062EB524F4F1"
+    }
+  ],
+  "previous_failure": "observations alias occupied positional inputJSON slot",
+  "repair": "explicit positional inputJSON followed by named observations and hashes aliases",
+  "effect_rerun": "NO",
+  "source_change": "NONE"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "R1SchedulingPauseRelease019",
+  "verdict": "IF_THEN",
+  "completed_before_pause": "BATCH_001.json",
+  "retained_stop": "STOP_sweep.json",
+  "retained_stop_reason": "PRESERVE_STAGE batch_002",
+  "reservation_ownership": "SCHEDULING_PAUSE_RESERVATION.json",
+  "removed": "The exact verified-empty batch_002 scheduling reservation directory only",
+  "method": "PowerShell Remove-Item -LiteralPath without recursion after path, ownership, empty directory and completed record checks",
+  "gpu_interruption": "NOT_PERFORMED",
+  "diagnostic_artifact_removal": "NOT_PERFORMED",
+  "world_write": "NOT_PERFORMED"
+}

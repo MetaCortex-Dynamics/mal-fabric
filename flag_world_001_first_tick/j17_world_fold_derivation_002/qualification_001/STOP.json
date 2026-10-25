@@ -1,0 +1,65 @@
+{
+  "scope": "RUNTIME_FRAGMENT_ONLY",
+  "reason": "CUSTODY_NOT_SAME C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualify.mjs",
+  "events": 6,
+  "observations": [
+    {
+      "directory": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_001\\stage0",
+      "readback": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_001\\stage0\\readback.bin",
+        "bytes": 180355104,
+        "sha256": "4A5D3C4617FE137ED142072127C6C168D57C23969F06424ECFE042354A00DA86"
+      },
+      "image": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_001\\stage0\\image.bin",
+        "bytes": 41992208,
+        "sha256": "1B6A15CCD4021CF714F1E6CE1314D14C10946EC6312DACA4BCC8C0BBAB630A29"
+      },
+      "error": 0,
+      "facts": 29888,
+      "terms": 42553,
+      "epochs": 317,
+      "counts": {
+        "RR_EGRESS_CLOSED": 18,
+        "RR_BUFFER_RETAINED": 6,
+        "RR_NEXT_PAYLOAD": 0,
+        "RR_RUNTIME_CANDIDATE": 0,
+        "RR_COMPLETE": 0,
+        "RR_RUNTIME_UNIQUE": 0,
+        "RR_EXCLUDED": 90,
+        "RR_UNSUPPORTED": 0
+      },
+      "candidates": []
+    },
+    {
+      "directory": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_001\\stage1",
+      "readback": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_001\\stage1\\readback.bin",
+        "bytes": 180355104,
+        "sha256": "8EEB091DFD1898DE1304384DB56B9ACD51E360BC8436FB40938437021A67F452"
+      },
+      "image": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_001\\stage1\\image.bin",
+        "bytes": 41992208,
+        "sha256": "7C363462D24292BAB87F280C88AB4FC52098835D9EA3B7EEEB9C91A8B87DA097"
+      },
+      "error": 0,
+      "facts": 29988,
+      "terms": 42811,
+      "epochs": 318,
+      "counts": {
+        "RR_EGRESS_CLOSED": 18,
+        "RR_BUFFER_RETAINED": 6,
+        "RR_NEXT_PAYLOAD": 0,
+        "RR_RUNTIME_CANDIDATE": 0,
+        "RR_COMPLETE": 0,
+        "RR_RUNTIME_UNIQUE": 0,
+        "RR_EXCLUDED": 90,
+        "RR_UNSUPPORTED": 0
+      },
+      "candidates": []
+    }
+  ],
+  "world_successor": "NOT_PRODUCED",
+  "link_3": "NOT_COMMITTED"
+}

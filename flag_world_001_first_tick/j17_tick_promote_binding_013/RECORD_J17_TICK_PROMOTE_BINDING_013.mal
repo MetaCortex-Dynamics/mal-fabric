@@ -1,0 +1,77 @@
+RECORD_J17_TICK_PROMOTE_BINDING_013
+VERSION := 0.1.0
+STATUS := RECORDED_PRE_EXECUTE_TICK_BINDING
+DATE := 2026-10-24
+AUTHORITY := Devon's current request: write the tick-level PROMOTE binding.
+LAW_CONTACT := A7; ENGINE v0.2.0 :419-426.
+SCOPE := Record of determined bytes before EXECUTE.
+         NOT a promotion of law; NOT an admitted GlobalSection; NOT a committed successor.
+         This record is not compiled executable source and supplies no authored projection seeds.
+
+SOURCE
+  FILE := ../j17_step_023/outputs/committed.world.json
+  SHA256 := E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059
+  SUBJECT := (field, witness)
+  PAIR_HASH := e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9
+WHENCE
+  PREDECESSOR_LINK := 173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386
+  KEEP_ONE_RUN := 2AD351F73AF9C7046C6883E0EF1C29180F272DAF9EDE5047630E242743F9A053
+  KEEP_TWO_RUN := 35334015AC81697383480FAE210DE3CC1AF06FEBD75079761E280BCF948EE518
+  MEMBER_SOURCE := 3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147
+  MEMBER_POINTER := /cases/275
+  MEMBER_CANONICAL_SHA256 := 19EBB89436905DB26E25BDB0039043C870C9282FA0E3CDEFECFBB749340DBDE9
+  MEMBER_CASE_FACT := 8296
+  STRICT_SUPPORT := [{"fact":3535068,"origin":"SC_STRICT","support":[3533939,2013,3534047,3296316]}]
+  COVERAGE_SUPPORT := [{"fact":3533939,"origin":"SC_COMPLETE","support":[2013,3532600]}]
+PRIOR_HEAD := 173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386
+
+ENACTMENT
+  KIND := SECTION_READING
+  FIBRE_KIND := SITE
+  SITE := C:HW_04|HW_09
+  READING := NO
+  A3_LIFT := NO
+  MEMBER := The referenced case; not a newly selected or authored member.
+  ENUMERATED_SCOPE := 484 keep-one plus 1440 keep-two; three separate controls excluded.
+  STRICT_MEMBERS_IN_ENUMERATED_SCOPE := ONE
+
+RECEIPT
+  EXACT_PAIRS := BINDING_EVIDENCE.json /binding/receipt
+  HASH := a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd
+  DISCHARGED := 12
+  OPENED := 0
+  RETAINED := 0
+  READING := THIS
+  READING_CONTACT := RECEIPT_READING_001 in first-tick v0.1.3 :350-354,
+                     2ECF2EEF9A8901DA9C802922BEBE1F74C367D7A74E5B773528504B73854C1A01
+  BECAUSE := The discharged list has content; this is not the SC_STRICT verdict.
+
+SUCCESSOR_IDENTITY
+  SUBJECT := (field, witness)
+  PAIR_HASH := 37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5
+  FIELD_HASH := b263644e59a696999c02dfd25386a5abefdb2d0fc4317a0fe2cccd90502ebad3
+  WITNESS_HASH := be4ec32289e6f4c6ef50817203c89061d664735f7166cbb37c55f6d1a1e4afa3
+  FIELD_ENTRIES := 480
+  WITNESS_ENTRIES := 720
+  SOURCE := Existing GPU member's flag/reading and overlap/after columns.
+  ORDER := Existing g2 field and witness array order.
+  ENCODING := UTF-8 sorted-object-key compact JSON, as the committed world pair.
+  NOT_SAME := LocalSection CANONICAL_BYTES; runtime state; whole-world file; D2 (field, entities).
+  STATUS := Identity bound before EXECUTE. No new field operation executed by this record.
+
+CUSTODY
+  EVIDENCE := BINDING_EVIDENCE.json
+  CHECKER := verify_binding.mjs; read-only observer, NOT engine work.
+  FROZEN := 901 SAME against manifest F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560
+  PRIOR_WORLD := Unchanged; two committed links.
+  RUNTIME_SUCCESSOR := NOT_WRITTEN
+  LINK_3 := NOT_WRITTEN
+  REPOSITORY_COMMIT := NOT_PERFORMED
+
+AUTHORITY_SECTION
+  PROJECTION_LAW := MAYBE in inspected contacts; see PROJECTION_READOUT_013.json.
+  SHARED_PRIVATE_PARTITION := MAYBE in inspected contacts.
+  LOCAL_SECTIONS := NOT_RUN
+  GLOBAL_SECTION := NOT_RUN
+  EXECUTE := NOT_RUN
+  BECAUSE := A recorded member, receipt, and successor identity do not assign topology positions or authority grants.

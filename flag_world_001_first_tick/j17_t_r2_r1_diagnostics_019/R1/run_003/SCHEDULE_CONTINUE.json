@@ -1,0 +1,2584 @@
+{
+  "verdict": "IF_THEN",
+  "mode": "continue",
+  "benchmark": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\SCHEDULE_BENCHMARK.json",
+    "bytes": 11030,
+    "sha256": "4E7422A495BEAE73491552E171F047694533A765E5234FF3D01041831985390C"
+  },
+  "eligible_contexts": 1,
+  "cohorts": [
+    {
+      "indices": [
+        4
+      ],
+      "started": "2026-10-25T14:37:10.133Z",
+      "ended": "2026-10-25T14:41:33.583Z",
+      "resources": {
+        "observed": "2026-10-25T14:37:10.133Z",
+        "host_free_bytes": 16586387456,
+        "gpu_free_bytes": 7271874560,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6935, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_004.execution.json",
+          "bytes": 2102,
+          "sha256": "5557D674A740864A9A34EC514D5C33617847D13A17AE47B30880B04EA2AC0C73"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 4,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_004.json",
+            "bytes": 6637,
+            "sha256": "151BB1269817C00990C05BD1CDE61951645758F19AAF59752851318AAF492926"
+          },
+          "native": {
+            "batch": 4,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_004.gpu.execution.json",
+              "bytes": 31124,
+              "sha256": "434D3F61FA23F1CBF58C935649B1DAF6EFF44F23C583D139B52BD176B68917D4"
+            },
+            "started": "2026-10-25T14:37:29.762Z",
+            "ended": "2026-10-25T14:41:05.545Z",
+            "start_ms": 1792939049762,
+            "end_ms": 1792939265545,
+            "duration_ms": 215783
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_04\",CONS(\"C:HW_00|HW_05\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_04\",CONS(\"C:HW_03|HW_04\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_04\",CONS(\"C:HW_04|HW_05\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_04\",CONS(\"D:HW_00\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_004.OBSERVATIONS.json",
+            "bytes": 266504676,
+            "sha256": "1685A52D2FE8DE9B7575B222B549BFCF8FB9795CCF5DE79848BFDD17ADA0BB87"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_004\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "299B1AFAF52A3ABEED2F3A5B4D4178AD949B2091A99B52B1543452628704B227"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        5
+      ],
+      "started": "2026-10-25T14:41:34.984Z",
+      "ended": "2026-10-25T14:46:02.628Z",
+      "resources": {
+        "observed": "2026-10-25T14:41:34.984Z",
+        "host_free_bytes": 16917757952,
+        "gpu_free_bytes": 7244611584,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6909, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_005.execution.json",
+          "bytes": 2102,
+          "sha256": "089D62A128CD411A1AA360E28CBF308465C0BF47A034E1854F35D3F021662CEC"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 5,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_005.json",
+            "bytes": 6613,
+            "sha256": "3F6A9FA6A56F7E0B6313A5955D2F353C363E55B716865E9EA1EA08D9476964C2"
+          },
+          "native": {
+            "batch": 5,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_005.gpu.execution.json",
+              "bytes": 32094,
+              "sha256": "0F5994D4E9A01693B218E8F092AE2F80647AB7FC724B7437F252B377909AEF9A"
+            },
+            "started": "2026-10-25T14:41:54.938Z",
+            "ended": "2026-10-25T14:45:35.445Z",
+            "start_ms": 1792939314938,
+            "end_ms": 1792939535445,
+            "duration_ms": 220507
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_04\",CONS(\"D:HW_04\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_05\",CONS(\"C:HW_01|HW_05\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_05\",CONS(\"C:HW_04|HW_05\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_05\",CONS(\"D:HW_00\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_005.OBSERVATIONS.json",
+            "bytes": 261118734,
+            "sha256": "876AF17671CC385160110337D420AF4ADD879DD5CFFA116210DBFFAF0E2F29F5"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_005\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "81A045EBAFB0F04D0A4BF45A6753F9E1899517593D526C84194CD4AA8DF253F7"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        6
+      ],
+      "started": "2026-10-25T14:46:04.019Z",
+      "ended": "2026-10-25T14:50:44.088Z",
+      "resources": {
+        "observed": "2026-10-25T14:46:04.019Z",
+        "host_free_bytes": 13008269312,
+        "gpu_free_bytes": 7264534528,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6928, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_006.execution.json",
+          "bytes": 2102,
+          "sha256": "ED57CAD239544E8D8D6601C6E9F8E23608C3940E389FD6EE118342226506CED5"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 6,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_006.json",
+            "bytes": 6613,
+            "sha256": "F5AABE5402A2E6377CB0541503DE53CCA2128B1B402384C46FB01863AD1C9954"
+          },
+          "native": {
+            "batch": 6,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_006.gpu.execution.json",
+              "bytes": 33756,
+              "sha256": "D091F3D16268E6BC3C83709C12CD08B53887CC0B00AE098869AD8DABBC0A828B"
+            },
+            "started": "2026-10-25T14:46:23.655Z",
+            "ended": "2026-10-25T14:50:17.195Z",
+            "start_ms": 1792939583655,
+            "end_ms": 1792939817195,
+            "duration_ms": 233540
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_05\",CONS(\"D:HW_05\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_02\",CONS(\"C:HW_01|HW_06\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_02\",CONS(\"C:HW_02|HW_06\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_02\",CONS(\"D:HW_01\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_006.OBSERVATIONS.json",
+            "bytes": 261131017,
+            "sha256": "AAEB7A31EBFE50081E8FFA9DCF865E3E6E8B16AFEB28C93CAB2ADA46C1AB8419"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_006\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "3B232B800D82DDADC1799E13120D4A585A546069994334342CFCD518FD8B86E6"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        7
+      ],
+      "started": "2026-10-25T14:50:45.465Z",
+      "ended": "2026-10-25T14:55:23.505Z",
+      "resources": {
+        "observed": "2026-10-25T14:50:45.464Z",
+        "host_free_bytes": 12353949696,
+        "gpu_free_bytes": 7283408896,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6946, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_007.execution.json",
+          "bytes": 2103,
+          "sha256": "AB1DE08C09DEE6520EEAEC359632BE82C235954B9AE3BA2F196FE7E30C25EEF0"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 7,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_007.json",
+            "bytes": 6613,
+            "sha256": "C30F588EF2633ADBB072398B2CD1605C44B0466205D78A60D4053415BEE0AC22"
+          },
+          "native": {
+            "batch": 7,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_007.gpu.execution.json",
+              "bytes": 33607,
+              "sha256": "90797DD375DCD84ACA609ADDE13ECDC2AB7BAF72139121386256AE398C722D8C"
+            },
+            "started": "2026-10-25T14:51:04.931Z",
+            "ended": "2026-10-25T14:54:55.576Z",
+            "start_ms": 1792939864931,
+            "end_ms": 1792940095576,
+            "duration_ms": 230645
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_02\",CONS(\"D:HW_02\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_05\",CONS(\"C:HW_01|HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_05\",CONS(\"C:HW_05|HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_05\",CONS(\"D:HW_01\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_007.OBSERVATIONS.json",
+            "bytes": 261133672,
+            "sha256": "DD4D9965EB317D341149D61C19FF5444D7F02B1A11ABC72C86C50BAE2769CEAE"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_007\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "0DE49DB2E915B9855BDCF21F843CF4AA9EAAF0A60C3342565AF74472953A6B30"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        8
+      ],
+      "started": "2026-10-25T14:55:24.921Z",
+      "ended": "2026-10-25T15:00:26.237Z",
+      "resources": {
+        "observed": "2026-10-25T14:55:24.920Z",
+        "host_free_bytes": 11631960064,
+        "gpu_free_bytes": 7241465856,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6906, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_008.execution.json",
+          "bytes": 2102,
+          "sha256": "769E8F4479EAFB56B49A70331E2EE847F53135C08739A323FBE1A4A2CC1939EA"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 8,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_008.json",
+            "bytes": 6637,
+            "sha256": "0982444B9BDC4E8EFD1CD9B25334672CC162A90F3C9A115A7584EC228A0A8748"
+          },
+          "native": {
+            "batch": 8,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_008.gpu.execution.json",
+              "bytes": 35866,
+              "sha256": "D5B8040BCE1B6D57F35677876AF5DC460355AA8B01DECF6E83CD731D34C80B26"
+            },
+            "started": "2026-10-25T14:55:45.188Z",
+            "ended": "2026-10-25T14:59:57.858Z",
+            "start_ms": 1792940145188,
+            "end_ms": 1792940397858,
+            "duration_ms": 252670
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_05\",CONS(\"D:HW_05\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_06\",CONS(\"C:HW_01|HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_06\",CONS(\"C:HW_02|HW_06\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_06\",CONS(\"C:HW_06|HW_10\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_008.OBSERVATIONS.json",
+            "bytes": 266522333,
+            "sha256": "F92CEE41282F094011FFD2553BD32EF558CF07A24FA517414092AD4A9E94F1C0"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_008\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "24F82317D9A868E754DFD01F44EEB0C7A5F24222C2164E8CED19912F7685C1C2"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        9
+      ],
+      "started": "2026-10-25T15:00:27.620Z",
+      "ended": "2026-10-25T15:05:02.930Z",
+      "resources": {
+        "observed": "2026-10-25T15:00:27.620Z",
+        "host_free_bytes": 11963002880,
+        "gpu_free_bytes": 7178551296,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6846, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_009.execution.json",
+          "bytes": 2103,
+          "sha256": "B22208742D1EEAE37BDBBFBEA4936888CD2670F24D7DEEF0874C988F10024510"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 9,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_009.json",
+            "bytes": 6613,
+            "sha256": "31D557F8B11A863EBF4FCF9EE118EC8EE0E44CDA461A4738FC16DE7E5988B8CE"
+          },
+          "native": {
+            "batch": 9,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_009.gpu.execution.json",
+              "bytes": 32972,
+              "sha256": "6760E820956AFE483574167A9AB0BDA7B6B599216A205A49C27ED073530E7070"
+            },
+            "started": "2026-10-25T15:00:47.818Z",
+            "ended": "2026-10-25T15:04:35.818Z",
+            "start_ms": 1792940447818,
+            "end_ms": 1792940675818,
+            "duration_ms": 228000
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_06\",CONS(\"D:HW_01\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_06\",CONS(\"D:HW_06\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_10\",CONS(\"C:HW_05|HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_10\",CONS(\"C:HW_06|HW_10\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_009.OBSERVATIONS.json",
+            "bytes": 261127890,
+            "sha256": "EB91CE1E895E01E3617C4976D8FA06ACBB59E1E63650284240B96204C1FADF6F"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_009\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "20563101AE391583131B6D29F84C3DA8FB2F461918D147F894C9D1F7AE6C3928"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        10
+      ],
+      "started": "2026-10-25T15:05:04.299Z",
+      "ended": "2026-10-25T15:09:56.619Z",
+      "resources": {
+        "observed": "2026-10-25T15:05:04.299Z",
+        "host_free_bytes": 12215476224,
+        "gpu_free_bytes": 7256145920,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6920, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_010.execution.json",
+          "bytes": 2104,
+          "sha256": "74B417EEE86C2D744DBB4A4FD8CB15CF2A7EB4C31250A5A0CB465761170D313C"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 10,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_010.json",
+            "bytes": 6614,
+            "sha256": "0F5D4793C1C7D32144513E63DD9AB6DBE36DE01C66BCF1045B2FC45775E65BE5"
+          },
+          "native": {
+            "batch": 10,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_010.gpu.execution.json",
+              "bytes": 34895,
+              "sha256": "B79FEF8C71A7E2D1148D23BB28316C4C3C58BD2AE8C9ED2E2E6F89A8C6EF525E"
+            },
+            "started": "2026-10-25T15:05:24.102Z",
+            "ended": "2026-10-25T15:09:28.808Z",
+            "start_ms": 1792940724102,
+            "end_ms": 1792940968808,
+            "duration_ms": 244706
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_10\",CONS(\"D:HW_01\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_01|HW_10\",CONS(\"D:HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_03\",CONS(\"C:HW_02|HW_07\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_03\",CONS(\"C:HW_03|HW_07\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_010.OBSERVATIONS.json",
+            "bytes": 261135495,
+            "sha256": "BB91BEEDA4E2CE7CEB2A9E73EB526F534A753DA6FDEABF49F4417C3E773B5489"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_010\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "61669AAA304CD86B029C5313BACDA22D92F73C7FA9636D7DB40DF0BA5DE75D7B"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        11
+      ],
+      "started": "2026-10-25T15:09:57.997Z",
+      "ended": "2026-10-25T15:14:27.783Z",
+      "resources": {
+        "observed": "2026-10-25T15:09:57.997Z",
+        "host_free_bytes": 12155727872,
+        "gpu_free_bytes": 7254048768,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6918, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_011.execution.json",
+          "bytes": 2104,
+          "sha256": "C40DC9A628AD4476CC85C070F07B1C8C5B1AE6C404CC8AE93D9F784EF78F9DBD"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 11,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_011.json",
+            "bytes": 6614,
+            "sha256": "3FA0696F1CD3B08537FF3B45EA60A87FF2FEA9AC4A69686764AE6892D8B43BDD"
+          },
+          "native": {
+            "batch": 11,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_011.gpu.execution.json",
+              "bytes": 31812,
+              "sha256": "E8ECDA70F75395FB3225257D687F1BF0EA8DDC2B494A4C173F05AA5BE8CBBAEF"
+            },
+            "started": "2026-10-25T15:10:17.878Z",
+            "ended": "2026-10-25T15:14:00.653Z",
+            "start_ms": 1792941017878,
+            "end_ms": 1792941240653,
+            "duration_ms": 222775
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_03\",CONS(\"D:HW_02\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_03\",CONS(\"D:HW_03\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_06\",CONS(\"C:HW_02|HW_07\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_06\",CONS(\"C:HW_06|HW_07\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_011.OBSERVATIONS.json",
+            "bytes": 261141859,
+            "sha256": "504E30A0C6DB7DFC11CCEB8D041D910AB5BFD565E32E5909DA8C92B2636324DD"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_011\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "07F8342EF41B18677BF9BEDF57CAB9097F5870C4B92300A98DDD31C1BB4D1CED"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        12
+      ],
+      "started": "2026-10-25T15:14:29.165Z",
+      "ended": "2026-10-25T15:18:48.566Z",
+      "resources": {
+        "observed": "2026-10-25T15:14:29.165Z",
+        "host_free_bytes": 12376694784,
+        "gpu_free_bytes": 7247757312,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6912, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_012.execution.json",
+          "bytes": 2103,
+          "sha256": "C572D03062E01F4D33B8F12BE9F52E861043ECA07CCD3B552A6039D0244F9367"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 12,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_012.json",
+            "bytes": 6614,
+            "sha256": "2E8A459EC5975D1804F7C18E312A1BBE62BB6BEF9DED1B60CEEE921417941C56"
+          },
+          "native": {
+            "batch": 12,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_012.gpu.execution.json",
+              "bytes": 30021,
+              "sha256": "114C7532187F312350B4482FAC6E9D18CE1C0A7CC46B7CBB7EAA7EB3DBAA0994"
+            },
+            "started": "2026-10-25T15:14:48.824Z",
+            "ended": "2026-10-25T15:18:21.732Z",
+            "start_ms": 1792941288824,
+            "end_ms": 1792941501732,
+            "duration_ms": 212908
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_06\",CONS(\"D:HW_02\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_06\",CONS(\"D:HW_06\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_07\",CONS(\"C:HW_03|HW_07\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_07\",CONS(\"C:HW_06|HW_07\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_012.OBSERVATIONS.json",
+            "bytes": 261133262,
+            "sha256": "4472BFC5BD1FDC09604897663AE923D1B80C0C54FF40D6AD8CCA3321C222E45F"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_012\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "3ED861518C12448D76CC1127337D0476E0FB1FAC7347AAEA5983FBD6234855C8"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        13
+      ],
+      "started": "2026-10-25T15:18:49.947Z",
+      "ended": "2026-10-25T15:23:25.007Z",
+      "resources": {
+        "observed": "2026-10-25T15:18:49.947Z",
+        "host_free_bytes": 14018686976,
+        "gpu_free_bytes": 7247757312,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6912, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_013.execution.json",
+          "bytes": 2103,
+          "sha256": "345842ED381537D8A7DDA6C92FEFBA5346F098D4B49D67568952EB30A286087A"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 13,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_013.json",
+            "bytes": 6614,
+            "sha256": "C080C0BB4A58C4D23A83A278A8C14076B1BF0B39EE6B20EE2EB19139C9A87050"
+          },
+          "native": {
+            "batch": 13,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_013.gpu.execution.json",
+              "bytes": 32289,
+              "sha256": "C8AE30DFB21727D2224EC3AC2C1B56E13F9B3E61B705C71082CFCE394F319582"
+            },
+            "started": "2026-10-25T15:19:09.627Z",
+            "ended": "2026-10-25T15:22:57.365Z",
+            "start_ms": 1792941549627,
+            "end_ms": 1792941777365,
+            "duration_ms": 227738
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_07\",CONS(\"D:HW_02\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_02|HW_07\",CONS(\"D:HW_07\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_04\",CONS(\"C:HW_03|HW_08\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_04\",CONS(\"C:HW_04|HW_08\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_013.OBSERVATIONS.json",
+            "bytes": 261137051,
+            "sha256": "706C1BB3E1AEA0BD6DBCE51059ACD7DA523CD53A2E222FB7505DEF4F3615A6A5"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_013\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "F578C5764D19768F0AE93EF95A8C57520D63D22C872487AC14245C595AF3A5FA"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        14
+      ],
+      "started": "2026-10-25T15:23:26.367Z",
+      "ended": "2026-10-25T15:27:47.099Z",
+      "resources": {
+        "observed": "2026-10-25T15:23:26.367Z",
+        "host_free_bytes": 15248916480,
+        "gpu_free_bytes": 7247757312,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6912, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_014.execution.json",
+          "bytes": 2104,
+          "sha256": "632C7775421E653EE2E807ED7A96D22D112B7726D537ABDA0107DD04263020C3"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 14,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_014.json",
+            "bytes": 6614,
+            "sha256": "8583E1163CA7D5954CE385D1CE13FB221BA13CF0D16AA282A1067137DEB985CB"
+          },
+          "native": {
+            "batch": 14,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_014.gpu.execution.json",
+              "bytes": 30374,
+              "sha256": "7A9544571D381AC7E37E1D41F894B7A65B9FCB588DF96CBBF53A1D19D80DFF04"
+            },
+            "started": "2026-10-25T15:23:45.817Z",
+            "ended": "2026-10-25T15:27:20.316Z",
+            "start_ms": 1792941825817,
+            "end_ms": 1792942040316,
+            "duration_ms": 214499
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_04\",CONS(\"D:HW_03\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_04\",CONS(\"D:HW_04\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_07\",CONS(\"C:HW_03|HW_08\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_07\",CONS(\"C:HW_07|HW_08\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_014.OBSERVATIONS.json",
+            "bytes": 261141669,
+            "sha256": "0B641DE30B8777777C5F58C9D9DF9AF42163DF7DAF692A7C0302380552ADBB0D"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_014\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "59F64C40E0E58F7735CF9ECD479834651BDF85FC8664EF2A5C02EAE6312D8D99"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        15
+      ],
+      "started": "2026-10-25T15:27:48.501Z",
+      "ended": "2026-10-25T15:32:08.342Z",
+      "resources": {
+        "observed": "2026-10-25T15:27:48.501Z",
+        "host_free_bytes": 15664181248,
+        "gpu_free_bytes": 7247757312,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6912, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_015.execution.json",
+          "bytes": 2104,
+          "sha256": "7F41F9F2DE7F3BDB680207FD7DE3309FFFC77ABD6F148BAA59EDCF258B746D8E"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 15,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_015.json",
+            "bytes": 6614,
+            "sha256": "AAB279E5F5D02BB9361F326D98EEE4243BB44B64960D6171A1520F219645C000"
+          },
+          "native": {
+            "batch": 15,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_015.gpu.execution.json",
+              "bytes": 30327,
+              "sha256": "E845DFF77A17E6A47BB565B9AF2067AF86DCA2CA0F4E28993AE770A6D10237FA"
+            },
+            "started": "2026-10-25T15:28:08.098Z",
+            "ended": "2026-10-25T15:31:40.955Z",
+            "start_ms": 1792942088098,
+            "end_ms": 1792942300955,
+            "duration_ms": 212857
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_07\",CONS(\"D:HW_03\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_07\",CONS(\"D:HW_07\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_08\",CONS(\"C:HW_04|HW_08\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_08\",CONS(\"C:HW_07|HW_08\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_015.OBSERVATIONS.json",
+            "bytes": 261132946,
+            "sha256": "694D55EE3347945BF26559635547C03AC6A0EE9054151A86B3BA267492DA6CBA"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_015\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "D3A77A3C44AD51D5F2D37E18753CF677589D7CFCDF14ED5C5581D4880D8E44BB"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        16
+      ],
+      "started": "2026-10-25T15:32:09.727Z",
+      "ended": "2026-10-25T15:36:44.992Z",
+      "resources": {
+        "observed": "2026-10-25T15:32:09.727Z",
+        "host_free_bytes": 15946203136,
+        "gpu_free_bytes": 7247757312,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6912, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_016.execution.json",
+          "bytes": 2104,
+          "sha256": "E8F20C724A89A83C79D56CC083AF1E51B8F6F1837DF818B433A1B3458436762D"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 16,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_016.json",
+            "bytes": 6614,
+            "sha256": "81EF751FE83C6F5A005E3CDAED66D03295BEE996D7681FF32C634D2047291237"
+          },
+          "native": {
+            "batch": 16,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_016.gpu.execution.json",
+              "bytes": 32459,
+              "sha256": "C655F8187B2F3425F154EB0BB32F7F7088D0A24FE9608588C25C4FEB69A196DB"
+            },
+            "started": "2026-10-25T15:32:29.143Z",
+            "ended": "2026-10-25T15:36:17.367Z",
+            "start_ms": 1792942349143,
+            "end_ms": 1792942577367,
+            "duration_ms": 228224
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_08\",CONS(\"D:HW_03\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_03|HW_08\",CONS(\"D:HW_08\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_05\",CONS(\"C:HW_04|HW_09\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_05\",CONS(\"C:HW_05|HW_09\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_016.OBSERVATIONS.json",
+            "bytes": 261136856,
+            "sha256": "7AEDC3FE10EE7DF8D90099A7A45BA44054CE49AFCF8D4E4BEA3D4B4548C67330"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_016\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "185E94029305DA4854146E6D11920E5692A1562789C2938DC83230176584B341"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        17
+      ],
+      "started": "2026-10-25T15:36:46.452Z",
+      "ended": "2026-10-25T15:41:07.740Z",
+      "resources": {
+        "observed": "2026-10-25T15:36:46.452Z",
+        "host_free_bytes": 15796355072,
+        "gpu_free_bytes": 7251951616,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6916, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_017.execution.json",
+          "bytes": 2103,
+          "sha256": "4FDF00DB2EAA5A6D223637C427F0601298810FCF344072EA50EF0C36C8108DAA"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 17,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_017.json",
+            "bytes": 6614,
+            "sha256": "BFB294F95EE1B8C40FEB4C4C5444713062F8D4E9E3809FE0AD7417459BC0D9D0"
+          },
+          "native": {
+            "batch": 17,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_017.gpu.execution.json",
+              "bytes": 30526,
+              "sha256": "16F5EB1D2BA5DCC1D4CBB6FF6569CDE25B5C8D004E74B7092A36A1574E59EC68"
+            },
+            "started": "2026-10-25T15:37:05.712Z",
+            "ended": "2026-10-25T15:40:40.009Z",
+            "start_ms": 1792942625712,
+            "end_ms": 1792942840009,
+            "duration_ms": 214297
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_05\",CONS(\"D:HW_04\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_05\",CONS(\"D:HW_05\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_08\",CONS(\"C:HW_04|HW_09\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_08\",CONS(\"C:HW_08|HW_09\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_017.OBSERVATIONS.json",
+            "bytes": 261141606,
+            "sha256": "11D39C0ECDE659BA06DCCAD057F64543424E9B2B6FEF8680D9668FD99F244F6B"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_017\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "E377A71F1E3B736493C44F51856A24FC02710C45953A79C604477D66AF12067F"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        18
+      ],
+      "started": "2026-10-25T15:41:09.111Z",
+      "ended": "2026-10-25T15:45:28.548Z",
+      "resources": {
+        "observed": "2026-10-25T15:41:09.110Z",
+        "host_free_bytes": 15762173952,
+        "gpu_free_bytes": 7251951616,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6916, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_018.execution.json",
+          "bytes": 2104,
+          "sha256": "9F0AEC35CE722AAC4090CE54DFAA6A1B97909AECF42530E7E4451D3D794AF5AE"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 18,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_018.json",
+            "bytes": 6614,
+            "sha256": "B85BB7BA5336EDC240282CCE44DEFCDE212A625ADAF195166DB3803CBB0656D8"
+          },
+          "native": {
+            "batch": 18,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_018.gpu.execution.json",
+              "bytes": 30326,
+              "sha256": "652CC4036B32B556A0F464399B1186EAA6AA3A432BC658E8EE708D7742A54383"
+            },
+            "started": "2026-10-25T15:41:28.560Z",
+            "ended": "2026-10-25T15:45:01.671Z",
+            "start_ms": 1792942888560,
+            "end_ms": 1792943101671,
+            "duration_ms": 213111
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_08\",CONS(\"D:HW_04\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_08\",CONS(\"D:HW_08\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_09\",CONS(\"C:HW_05|HW_09\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_09\",CONS(\"C:HW_08|HW_09\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_018.OBSERVATIONS.json",
+            "bytes": 261132780,
+            "sha256": "C2B42C421C6CF48072C0F5E1D9C6A54039FEFECC1FC2D1CCAC2D43C2C16A7FC2"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_018\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "E1C794A638970DF1AB68E440600C4335C0FAFE450FC1F491990DBAA722AFFD4F"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        19
+      ],
+      "started": "2026-10-25T15:45:29.923Z",
+      "ended": "2026-10-25T15:49:53.523Z",
+      "resources": {
+        "observed": "2026-10-25T15:45:29.923Z",
+        "host_free_bytes": 15791742976,
+        "gpu_free_bytes": 7251951616,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6916, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_019.execution.json",
+          "bytes": 2103,
+          "sha256": "34CCB6181908C2CE395808821DDF15BCF331A09CA77366389CC1ADAC1A3EE77B"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 19,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_019.json",
+            "bytes": 6614,
+            "sha256": "7A49E707420514E16B32F09EB888768015F1483FFFB194FDB74A10E271BFEDEC"
+          },
+          "native": {
+            "batch": 19,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_019.gpu.execution.json",
+              "bytes": 30465,
+              "sha256": "5FBC5D0C312F44867D1FBFC816486A77EF69733C1F63CBC3A131AD600B5ECB87"
+            },
+            "started": "2026-10-25T15:45:49.644Z",
+            "ended": "2026-10-25T15:49:26.022Z",
+            "start_ms": 1792943149644,
+            "end_ms": 1792943366022,
+            "duration_ms": 216378
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_09\",CONS(\"D:HW_04\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_09\",CONS(\"D:HW_09\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_05|HW_09\",CONS(\"C:HW_05|HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_05|HW_09\",CONS(\"C:HW_09|HW_10\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_019.OBSERVATIONS.json",
+            "bytes": 261120856,
+            "sha256": "D47C541A9616996F448D46A1666BCC200E9C2DB76B382C45EECBD648EE888CB1"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_019\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "45D01A546FCC1B3D46086AFA4C1CF47BACC05D730F240FDC6F01850C1C86C5B9"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        20
+      ],
+      "started": "2026-10-25T15:49:54.918Z",
+      "ended": "2026-10-25T15:53:51.898Z",
+      "resources": {
+        "observed": "2026-10-25T15:49:54.918Z",
+        "host_free_bytes": 15685734400,
+        "gpu_free_bytes": 7247757312,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6912, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_020.execution.json",
+          "bytes": 2104,
+          "sha256": "2446F5EA0625A0224D7FCECE213705E5237127FDB66542A544AFB81FE1897FFF"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 20,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_020.json",
+            "bytes": 6590,
+            "sha256": "D252AA6B37737D15A8E0C04DEAFF8E02F2119906FD9ED234015BFA5F046EE62B"
+          },
+          "native": {
+            "batch": 20,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_020.gpu.execution.json",
+              "bytes": 26899,
+              "sha256": "841A2001794B0CF7BBEE9EEDB58345379F2F2B1B39B2F039E5A58A2F3CE87EBA"
+            },
+            "started": "2026-10-25T15:50:14.370Z",
+            "ended": "2026-10-25T15:53:24.849Z",
+            "start_ms": 1792943414370,
+            "end_ms": 1792943604849,
+            "duration_ms": 190479
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_05|HW_09\",CONS(\"D:HW_05\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_05|HW_09\",CONS(\"D:HW_09\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_05|HW_10\",CONS(\"C:HW_09|HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_05|HW_10\",CONS(\"D:HW_05\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_020.OBSERVATIONS.json",
+            "bytes": 255751472,
+            "sha256": "26599607C9551D680F0E06EB9C4407B0D41D74F42553CAD1C9BB4AD3C73D4B45"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_020\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "A58E95D24F0828B3CF6FB5868A9945009A2D80D3C23158AC7C280FB04BDC3489"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        21
+      ],
+      "started": "2026-10-25T15:53:53.282Z",
+      "ended": "2026-10-25T15:58:22.676Z",
+      "resources": {
+        "observed": "2026-10-25T15:53:53.282Z",
+        "host_free_bytes": 15890780160,
+        "gpu_free_bytes": 7247757312,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6912, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_021.execution.json",
+          "bytes": 2104,
+          "sha256": "84033E54143B53B18ABAD7664489CE605E03F8F8C3C66FCA4F100D31278A9543"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 21,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_021.json",
+            "bytes": 6614,
+            "sha256": "E81B914886BE9CD60D7A731AD0759B1E957CEA3DC7AA785ED2FF9C7CC8A173A4"
+          },
+          "native": {
+            "batch": 21,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_021.gpu.execution.json",
+              "bytes": 31392,
+              "sha256": "67B9C52B1AD53FAAA02E29AC7C929F4DBF31943EACB684F650436484739076C2"
+            },
+            "started": "2026-10-25T15:54:12.659Z",
+            "ended": "2026-10-25T15:57:54.645Z",
+            "start_ms": 1792943652659,
+            "end_ms": 1792943874645,
+            "duration_ms": 221986
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_05|HW_10\",CONS(\"D:HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_07\",CONS(\"C:HW_06|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_07\",CONS(\"C:HW_07|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_07\",CONS(\"D:HW_06\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_021.OBSERVATIONS.json",
+            "bytes": 261132415,
+            "sha256": "37DA7075F8012C6568B0131B3E51804E59965B6B9060468E97DFCE53557FE29A"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_021\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "2DDAA3B7E07FBBDDEE27CE6FE4CB098F1322CA4D0BCCBE713B50C99C27020A53"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        22
+      ],
+      "started": "2026-10-25T15:58:24.069Z",
+      "ended": "2026-10-25T16:02:51.814Z",
+      "resources": {
+        "observed": "2026-10-25T15:58:24.069Z",
+        "host_free_bytes": 15621660672,
+        "gpu_free_bytes": 7253000192,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6917, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_022.execution.json",
+          "bytes": 2103,
+          "sha256": "1E86BBCAC636AAFE8F341FC32A023A95C15E218B02318794F8140DDE1B948E56"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 22,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_022.json",
+            "bytes": 6614,
+            "sha256": "0E339632BBDAB819AED45F5739754F1413FD8E2858D0B041063679277D245D22"
+          },
+          "native": {
+            "batch": 22,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_022.gpu.execution.json",
+              "bytes": 31717,
+              "sha256": "13AA3994F444C4D2ABCEFFE33D7F2E650818EC2A7D9015C546E6DD28CBFDEE60"
+            },
+            "started": "2026-10-25T15:58:44.008Z",
+            "ended": "2026-10-25T16:02:25.011Z",
+            "start_ms": 1792943924008,
+            "end_ms": 1792944145011,
+            "duration_ms": 221003
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_07\",CONS(\"D:HW_07\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_10\",CONS(\"C:HW_06|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_10\",CONS(\"C:HW_10|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_10\",CONS(\"D:HW_06\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_022.OBSERVATIONS.json",
+            "bytes": 261134494,
+            "sha256": "3C15DF6F3C00CAA1E02F97D03A41F5568BC863BB9570F3268CE2357C883AEE25"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_022\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "8EFA550125E1F98639CA3B05B5DB93C84CEA698B13FC0656F584DCC9D9C3B920"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        23
+      ],
+      "started": "2026-10-25T16:02:53.184Z",
+      "ended": "2026-10-25T16:07:07.248Z",
+      "resources": {
+        "observed": "2026-10-25T16:02:53.183Z",
+        "host_free_bytes": 15821688832,
+        "gpu_free_bytes": 7273971712,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6937, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_023.execution.json",
+          "bytes": 2103,
+          "sha256": "6583EC6AF628F0676919DE9D88C9489D47EC25EE0E50A106D9CFD913464648D2"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 23,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_023.json",
+            "bytes": 6614,
+            "sha256": "E6B27047C6CE08050EC428FEF88DA16BADBBCD87245EC0EEB6F6AD8024DCA7CE"
+          },
+          "native": {
+            "batch": 23,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_023.gpu.execution.json",
+              "bytes": 29557,
+              "sha256": "CED144C70B5FC8362BDCD76AA1B5D301A585D9B62AF6FD04F8EC814DC2032F1F"
+            },
+            "started": "2026-10-25T16:03:12.535Z",
+            "ended": "2026-10-25T16:06:40.155Z",
+            "start_ms": 1792944192535,
+            "end_ms": 1792944400155,
+            "duration_ms": 207620
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_10\",CONS(\"D:HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_11\",CONS(\"C:HW_07|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_11\",CONS(\"C:HW_10|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_11\",CONS(\"D:HW_06\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_023.OBSERVATIONS.json",
+            "bytes": 261121461,
+            "sha256": "9A5B7339A29E48039880D00CD9F7400A85C7DAF0C017A4C576298B4CD5802DE0"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_023\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "B2DCC485BC2EF132E65E5FA4322C518580E80DA06826862ED95E6CA62F1144D4"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        24
+      ],
+      "started": "2026-10-25T16:07:08.623Z",
+      "ended": "2026-10-25T16:11:21.742Z",
+      "resources": {
+        "observed": "2026-10-25T16:07:08.623Z",
+        "host_free_bytes": 15976906752,
+        "gpu_free_bytes": 7279214592,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6942, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_024.execution.json",
+          "bytes": 2104,
+          "sha256": "750680917812C6FECFBF6EC99CC595A8EFA86D721A24EAA16D848987327D1651"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 24,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_024.json",
+            "bytes": 6614,
+            "sha256": "8C5D8F5B82E7C8E06E61BD37732809EBB36979A8E24D98B85109D01761204C7D"
+          },
+          "native": {
+            "batch": 24,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_024.gpu.execution.json",
+              "bytes": 29302,
+              "sha256": "142DE2682E1D8CBA04D7F999DF88B57ABEBC7C57C9BD3C83398C30C98A67CC8D"
+            },
+            "started": "2026-10-25T16:07:28.190Z",
+            "ended": "2026-10-25T16:10:54.443Z",
+            "start_ms": 1792944448190,
+            "end_ms": 1792944654443,
+            "duration_ms": 206253
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_06|HW_11\",CONS(\"D:HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_07|HW_08\",CONS(\"C:HW_07|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_07|HW_08\",CONS(\"C:HW_08|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_07|HW_08\",CONS(\"D:HW_07\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_024.OBSERVATIONS.json",
+            "bytes": 261130905,
+            "sha256": "10676DA6B655E3A8E5BF84A7E47CACBD96B735CCE969ED7A15BD2E69EFEC0D8B"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_024\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "DD0738365B51691D56E620A6D930F0C2D5F096ED0F2F1E82261B52E7516FFF8C"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        25
+      ],
+      "started": "2026-10-25T16:11:23.128Z",
+      "ended": "2026-10-25T16:15:26.360Z",
+      "resources": {
+        "observed": "2026-10-25T16:11:23.128Z",
+        "host_free_bytes": 16033759232,
+        "gpu_free_bytes": 7290748928,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6953, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_025.execution.json",
+          "bytes": 2104,
+          "sha256": "895F52BF7AB9F7C49DED16D5CBFB51A801B4412790E342CA7C59F866D2D287F5"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 25,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_025.json",
+            "bytes": 6590,
+            "sha256": "5CBFA2E6B358649F6B343F47B1F7DC2BB2C4510910E353B83088873CF5084536"
+          },
+          "native": {
+            "batch": 25,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_025.gpu.execution.json",
+              "bytes": 27967,
+              "sha256": "47F8EF19A140A8B26AC59746D8CB802180134B5A3B168601881E806F2C930737"
+            },
+            "started": "2026-10-25T16:11:42.382Z",
+            "ended": "2026-10-25T16:14:59.622Z",
+            "start_ms": 1792944702382,
+            "end_ms": 1792944899622,
+            "duration_ms": 197240
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_07|HW_08\",CONS(\"D:HW_08\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_07|HW_11\",CONS(\"C:HW_08|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_07|HW_11\",CONS(\"D:HW_07\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_07|HW_11\",CONS(\"D:HW_11\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_025.OBSERVATIONS.json",
+            "bytes": 255733120,
+            "sha256": "54A2FA98C1834D950394EC65DF54C956E7956B4998299EC664A6EE2E9D172073"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_025\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "CDECB49FCA72AF23B3C5FC1E3D034007FFCB40E97F6053F7BB0567B061331A7F"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        26
+      ],
+      "started": "2026-10-25T16:15:27.744Z",
+      "ended": "2026-10-25T16:19:30.859Z",
+      "resources": {
+        "observed": "2026-10-25T16:15:27.744Z",
+        "host_free_bytes": 15987277824,
+        "gpu_free_bytes": 7279214592,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6942, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_026.execution.json",
+          "bytes": 2104,
+          "sha256": "D73E81A540C86114B227E04C1D705DC7374DED73F1A45F02FA8DD5CA7F19DF7A"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 26,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_026.json",
+            "bytes": 6614,
+            "sha256": "A00B537C9BC5F44F9B4CE60AED08FEC6209212117F221AEFDFF4122741724A5D"
+          },
+          "native": {
+            "batch": 26,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_026.gpu.execution.json",
+              "bytes": 27808,
+              "sha256": "A18B5E08027A2A381BDE10CB895C49828503A6C841A7DBB55A3B075803899DD3"
+            },
+            "started": "2026-10-25T16:15:47.407Z",
+            "ended": "2026-10-25T16:19:03.425Z",
+            "start_ms": 1792944947407,
+            "end_ms": 1792945143425,
+            "duration_ms": 196018
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_08|HW_09\",CONS(\"C:HW_08|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_08|HW_09\",CONS(\"C:HW_09|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_08|HW_09\",CONS(\"D:HW_08\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_08|HW_09\",CONS(\"D:HW_09\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_026.OBSERVATIONS.json",
+            "bytes": 261137055,
+            "sha256": "73BAD6D4DCFEBD50300D7B3CC24DEBB42CAA9F75C37A07135E25EF9A169DB807"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_026\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "4FA27BE767F96B5A13590D102D377D17A1AC60F643D44F43FF6C10A0A11D185D"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        27
+      ],
+      "started": "2026-10-25T16:19:32.243Z",
+      "ended": "2026-10-25T16:23:41.698Z",
+      "resources": {
+        "observed": "2026-10-25T16:19:32.243Z",
+        "host_free_bytes": 15780900864,
+        "gpu_free_bytes": 7279214592,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6942, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_027.execution.json",
+          "bytes": 2103,
+          "sha256": "45CAFE97FC8FA1968D300C7E2F79D9877F187449DDA6DF1F76B6342BFD15740F"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 27,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_027.json",
+            "bytes": 6614,
+            "sha256": "A57284DBB113087AD3B633F398EA3B74BF219D63A82D53BB8B9D7DBDA5106CEA"
+          },
+          "native": {
+            "batch": 27,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_027.gpu.execution.json",
+              "bytes": 28839,
+              "sha256": "33377EC6EC13C7CC6D661CFDF255EB78939B671D0C056817A55A56CC701C168B"
+            },
+            "started": "2026-10-25T16:19:51.907Z",
+            "ended": "2026-10-25T16:23:15.068Z",
+            "start_ms": 1792945191907,
+            "end_ms": 1792945395068,
+            "duration_ms": 203161
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_08|HW_11\",CONS(\"C:HW_09|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_08|HW_11\",CONS(\"D:HW_08\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_08|HW_11\",CONS(\"D:HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_09|HW_10\",CONS(\"C:HW_09|HW_11\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_027.OBSERVATIONS.json",
+            "bytes": 261124553,
+            "sha256": "F0D7E4CBB008F147CB330A41F1101404924EA14D34A124AEC702BBC9EB3A554A"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_027\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "61D7421326AF0FE88317490BC8B5A0B76FA4F2BA46680079B5AE474489520F67"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        28
+      ],
+      "started": "2026-10-25T16:23:43.066Z",
+      "ended": "2026-10-25T16:27:43.580Z",
+      "resources": {
+        "observed": "2026-10-25T16:23:43.066Z",
+        "host_free_bytes": 15794147328,
+        "gpu_free_bytes": 7279214592,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6942, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_028.execution.json",
+          "bytes": 2104,
+          "sha256": "2F679B923B7B38E9FA4B7347C747AB700AB3241830E54550978E3634EF3EBEE0"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 28,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_028.json",
+            "bytes": 6614,
+            "sha256": "C781441ACA3D39DD21F6B4D3E7D3AD35D850AD0C1C3402DCD2244CDD62EC3039"
+          },
+          "native": {
+            "batch": 28,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_028.gpu.execution.json",
+              "bytes": 27259,
+              "sha256": "54B3EC44B7F6E74A99F6FA0916748B70B4CEF8B482208C147718E83224129FC7"
+            },
+            "started": "2026-10-25T16:24:02.666Z",
+            "ended": "2026-10-25T16:27:16.614Z",
+            "start_ms": 1792945442666,
+            "end_ms": 1792945636614,
+            "duration_ms": 193948
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_09|HW_10\",CONS(\"C:HW_10|HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_09|HW_10\",CONS(\"D:HW_09\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_09|HW_10\",CONS(\"D:HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_09|HW_11\",CONS(\"C:HW_10|HW_11\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_028.OBSERVATIONS.json",
+            "bytes": 261123800,
+            "sha256": "6A319028140D365C2A0F6A66B9405877E70C8D59978B54B6D86648474FEBE97E"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_028\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "F97276898E503A7C0E9FCB6514E4809140299D3E3913F0F303B310BD75887943"
+          }
+        }
+      ]
+    },
+    {
+      "indices": [
+        29
+      ],
+      "started": "2026-10-25T16:27:44.957Z",
+      "ended": "2026-10-25T16:31:42.442Z",
+      "resources": {
+        "observed": "2026-10-25T16:27:44.957Z",
+        "host_free_bytes": 15976353792,
+        "gpu_free_bytes": 7291797504,
+        "gpu_total_bytes": 8589934592,
+        "memory": {
+          "command": "nvidia-smi",
+          "args": [
+            "-i",
+            "0",
+            "--query-gpu=index,memory.free,memory.total",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "0, 6954, 8192\r\n",
+          "stderr": ""
+        },
+        "reported_gpu_processes": {
+          "command": "nvidia-smi",
+          "args": [
+            "--query-compute-apps=pid,process_name,used_memory",
+            "--format=csv,noheader,nounits"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+          "stderr": ""
+        },
+        "qualified_runtime_processes": {
+          "command": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+          ],
+          "status": 0,
+          "error": null,
+          "stdout": "",
+          "stderr": ""
+        },
+        "qualified_runtime_count": 0,
+        "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+      },
+      "children": [
+        {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_029.execution.json",
+          "bytes": 2104,
+          "sha256": "039B4C4E1894BAB7BBB1C344A6AF141C8D2E499B9A821E742202BC145A930992"
+        }
+      ],
+      "batches": [
+        {
+          "batch": 29,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_029.json",
+            "bytes": 6566,
+            "sha256": "6FF3BCE1011088439BB5BBC1E1A6F3DB6A2AB670C3C73BA4D810D23C79847BA3"
+          },
+          "native": {
+            "batch": 29,
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_029.gpu.execution.json",
+              "bytes": 27275,
+              "sha256": "C5842F1A615735ABB539A8C036B22EE4E826DDCD2E8A6C0AC69E04DAE8258217"
+            },
+            "started": "2026-10-25T16:28:04.588Z",
+            "ended": "2026-10-25T16:31:16.320Z",
+            "start_ms": 1792945684588,
+            "end_ms": 1792945876320,
+            "duration_ms": 191732
+          },
+          "inputs": [
+            "TWO_SITES(ARRAY(CONS(\"C:HW_09|HW_11\",CONS(\"D:HW_09\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_09|HW_11\",CONS(\"D:HW_11\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_10|HW_11\",CONS(\"D:HW_10\",NIL))))",
+            "TWO_SITES(ARRAY(CONS(\"C:HW_10|HW_11\",CONS(\"D:HW_11\",NIL))))"
+          ],
+          "observations": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_029.OBSERVATIONS.json",
+            "bytes": 250376374,
+            "sha256": "D199E90D17A89C8F7DD96499CAE523DA072072C7063898C092BB3887BD79DC1D"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_029\\stage\\readback.bin",
+            "bytes": 369098784,
+            "sha256": "F76660B7C51D25B96FB22DAA87CB7DCE6FFB64F238F97CC31A1C07091B3781BF"
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "Remaining original batches004..029 only; each idle cohort uses at most the measured eligible context count and may fall back to one for memory reservations.",
+  "ended": "2026-10-25T16:31:43.317Z",
+  "events": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\SCHEDULE_CONTINUE.events.jsonl",
+    "bytes": 95501,
+    "sha256": "5C5B8E89FBBFF480285C6EBED5EFF2288432F82DB3698BFCE9F9200B26F18CE6"
+  },
+  "coordinator": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_schedule.mjs",
+    "bytes": 14552,
+    "sha256": "F0AB0626BFCB35FAE89C1BF5EF2A298AB1B9FB86C21EB68E0BA48F8C8823DFEB"
+  },
+  "executor": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_batch.mjs",
+    "bytes": 19842,
+    "sha256": "14E6B7B682D038000D82BC4BA2EBF627161680D600AA077AFDE5631D8AE92B11"
+  },
+  "execution_schedule": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\SCHEDULING_BINDING.json",
+    "bytes": 16971,
+    "sha256": "76FE1E1CA68F1AA6AF7CEDA0568C54E4D8BCD71E6E63654E917582A71D3E6C48"
+  },
+  "worldline": "UNCHANGED",
+  "promotion": "NOT_PERFORMED"
+}

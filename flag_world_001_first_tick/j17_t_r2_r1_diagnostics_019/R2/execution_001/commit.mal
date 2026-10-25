@@ -1,0 +1,36 @@
+@propose seed R2_RECORD_CUSTODY := { GOES_WITH(R2_PHASE,"OUT",OUT), GOES_WITH(R2_PHASE,"BACK",BACK), THIS(R2_G2_HEAD,"173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386"), GOES_WITH(R2_DIAGNOSTIC_PROGRAM,"82ce1cc65010f9293941af34cadcb6855f59324451ee37c893ad2673147dc1b6") };
+// Diagnostic pair subjects only, using C23's record wrapper and hash service.
+// Rows entering R2_OBSERVED are generic observations of the complete GPU output
+// (480 unique flags, 720 unique overlaps), with readback proof IDs in custody.
+// This does not infer D2 entities, fabric admission, or a live-world promotion.
+// R2_BINDINGS is pinned to the native effect readback before this stage runs.
+@readonly input R2_OBSERVATIONS := "observations:";
+@readonly input R2_HASHES := "hashes:";
+law R2_OBSERVATION_ROWS := IF THIS(R2_OBSERVATIONS,ARRAY(rows)) THEN THIS(R2_OBSERVATION_ROWS,rows);
+law R2_OBSERVATION_TAIL := IF THIS(R2_OBSERVATION_ROWS,CONS(row,tail)) THEN THIS(R2_OBSERVATION_ROWS,tail);
+law R2_OBSERVATION_ROW := IF THIS(R2_OBSERVATION_ROWS,CONS(ARRAY(CONS(c,CONS(step,CONS(field,CONS(witness,CONS(receipt,CONS(reading,CONS(lift,NIL)))))))),tail)), GOES_WITH(R2_PHASE,step,s)
+ THEN GOES_WITH(R2_OBSERVED,c,s,field,witness,receipt,reading);
+law R2_OBSERVATION_LIFT := IF THIS(R2_OBSERVATION_ROWS,CONS(ARRAY(CONS(c,CONS(step,CONS(field,CONS(witness,CONS(receipt,CONS(reading,CONS(lift,NIL)))))))),tail)), GOES_WITH(R2_PHASE,step,s)
+ THEN GOES_WITH(R2_TEST_LIFT,c,s,lift);
+law R2_HASH_ROWS := IF THIS(R2_HASHES,ARRAY(rows)) THEN THIS(R2_HASH_ROWS,rows);
+law R2_HASH_TAIL := IF THIS(R2_HASH_ROWS,CONS(row,tail)) THEN THIS(R2_HASH_ROWS,tail);
+law R2_HASH_ROW := IF THIS(R2_HASH_ROWS,CONS(ARRAY(CONS(subject,CONS(digest,NIL))),tail)) THEN GOES_WITH(GPU_HASH_RESPONSE,subject,digest);
+law R2_ORIGIN_BIND := IF GOES_WITH(R2_OBSERVED,c,s,field,witness,receipt,reading), THIS(R2_G2_HEAD,head) THEN GOES_WITH(R2_ORIGIN,c,head);
+law R2_PAIR := IF GOES_WITH(R2_OBSERVED,c,s,field,witness,receipt,reading)
+ THEN GOES_WITH(R2_PAIR,c,s,OBJECT(CONS(MEMBER("field",field),CONS(MEMBER("witness",witness),NIL))));
+law R2_PAIR_REQUEST := IF GOES_WITH(R2_PAIR,c,s,pair) THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_PAIR,CONTEXT(c,s),pair);
+law R2_RECEIPT_REQUEST := IF GOES_WITH(R2_OBSERVED,c,s,field,witness,receipt,reading) THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_RECEIPT,CONTEXT(c,s),receipt);
+law R2_HASH_PAIR := IF GOES_WITH(R2_PAIR,c,s,pair), GOES_WITH(GPU_HASH_RESPONSE,pair,digest) THEN GOES_WITH(R2_PAIR_HASH,c,s,digest);
+law R2_HASH_RECEIPT := IF GOES_WITH(R2_OBSERVED,c,s,field,witness,receipt,reading), GOES_WITH(GPU_HASH_RESPONSE,receipt,digest) THEN GOES_WITH(R2_RECEIPT_HASH,c,s,digest);
+law R2_OUT_PREV := IF GOES_WITH(R2_ORIGIN,c,head) THEN GOES_WITH(R2_EXPECTED_PREV,c,OUT,head);
+law R2_BACK_PREV := IF GOES_WITH(R2_TICK_HASH,c,OUT,record,digest) THEN GOES_WITH(R2_EXPECTED_PREV,c,BACK,digest);
+law R2_TICK_RECORD := IF GOES_WITH(R2_OBSERVED,c,s,field,witness,receipt,reading), GOES_WITH(R2_PAIR_HASH,c,s,pairhash), GOES_WITH(R2_RECEIPT_HASH,c,s,receipthash), GOES_WITH(R2_EXPECTED_PREV,c,s,prev), GOES_WITH(R2_DIAGNOSTIC_PROGRAM,p), GOES_WITH(R2_TEST_LIFT,c,s,lift)
+ THEN GOES_WITH(R2_TICK_RECORD,c,s,OBJECT(CONS(MEMBER("fabric_program",p),CONS(MEMBER("field",field),CONS(MEMBER("kind","TICK"),CONS(MEMBER("pair_hash",pairhash),CONS(MEMBER("prev",prev),CONS(MEMBER("receipt",receipt),CONS(MEMBER("receipt_hash",receipthash),CONS(MEMBER("receipt_reading",reading),CONS(MEMBER("witness",witness),NIL)))))))))));
+law R2_TICK_REQUEST := IF GOES_WITH(R2_TICK_RECORD,c,s,record) THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_TICK,CONTEXT(c,s),record);
+law R2_TICK_HASH := IF GOES_WITH(R2_TICK_RECORD,c,s,record), GOES_WITH(GPU_HASH_RESPONSE,record,digest) THEN GOES_WITH(R2_TICK_HASH,c,s,record,digest);
+law R2_TICK_ENTRY := IF GOES_WITH(R2_TICK_HASH,c,s,record,digest) THEN GOES_WITH(R2_TICK_ENTRY,c,s,OBJECT(CONS(MEMBER("link",digest),CONS(MEMBER("record",record),NIL))));
+law R2_DIAGNOSTIC_CHAIN := IF GOES_WITH(R2_ORIGIN,c,head), GOES_WITH(R2_TICK_ENTRY,c,OUT,a), GOES_WITH(R2_TICK_ENTRY,c,BACK,b)
+ THEN GOES_WITH(R2_DIAGNOSTIC_CHAIN,c,head,ARRAY(CONS(a,CONS(b,NIL))));
+// A request to append BACK directly to g2 must fail the predecessor join.
+law R2_WRONG_PREV_REQUEST := IF GOES_WITH(R2_ORIGIN,c,head) THEN GOES_WITH(R2_WRONG_PREV_REQUEST,c,BACK,head);
+law R2_WRONG_PREV_ACCEPTED := IF GOES_WITH(R2_WRONG_PREV_REQUEST,c,s,head), GOES_WITH(R2_EXPECTED_PREV,c,s,head) THEN THIS(R2_WRONG_PREV_ACCEPTED,c);

@@ -1,0 +1,114 @@
+{
+  "schema": "R2DiagnosticFinalBinding019",
+  "scope": "Custody only; isolated diagnostic pair chains, not a live J17 commit or D2 entity inventory",
+  "verdict": "IF_THEN",
+  "native_replay": "SAME",
+  "branches": 12,
+  "new_diagnostic_links": 24,
+  "diagnostic_case_basis": "All source-derived direct SITE/delta lifts from each g2 THIS flag to NO; no representative selected",
+  "per_branch": {
+    "out": {
+      "discharged": 0,
+      "opened": 4,
+      "retained": 12,
+      "receipt_reading": "THIS"
+    },
+    "back": {
+      "discharged": 4,
+      "opened": 0,
+      "retained": 12,
+      "receipt_reading": "THIS"
+    },
+    "endpoint": {
+      "field": "SAME",
+      "witness": "SAME",
+      "discharged": 0,
+      "opened": 0,
+      "retained": 12,
+      "receipt_reading": "NO"
+    }
+  },
+  "controls": {
+    "unoffered_alias_inverse": "12 requested, 0 accepted",
+    "wrong_predecessor": "12 requested, 0 accepted"
+  },
+  "recovery": "First commit lower invocation omitted the positional inputJSON slot. Failure retained; additive finish.mjs fixed the invocation only, no native effect rerun or .mal change.",
+  "live_world": "UNCHANGED E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059; live link 173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+  "bindings": [
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/execution_001/PREFLIGHT.json",
+      "bytes": 1348,
+      "sha256": "F6FF5F7987F0CABCB14817824B35BAFDA3D81B1B6DA990EDA28A8A2245467388"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/execution_001/BINDINGS.json",
+      "bytes": 1266616,
+      "sha256": "36A2BF46AF0B9190EC7985F586F43A6B90560BE6FE7566398D483D09DF47365F"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/run.mjs",
+      "bytes": 17265,
+      "sha256": "87BC055CA6BCD23CCC19E66EF24CF1FDB63419924B7D2E609438AB2D1EA8094A"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/finish.mjs",
+      "bytes": 8371,
+      "sha256": "96349518E9A877A0B7C3206F72CC4249D5F76DF89E026BFBB965062EB524F4F1"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/source/roundtrip.mal",
+      "bytes": 4710,
+      "sha256": "9D1FDC4007A8AB504B042E8EC917D1E65476E56167CCF91A3C0BC550600CC218"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/source/commit.mal",
+      "bytes": 4198,
+      "sha256": "DD5A2DF400CBD1219FC4330EB22AEC94A8DA2E888968468183849BB67448E982"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/source/lower.mjs",
+      "bytes": 8181,
+      "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/source/source_occurrence_custody.mjs",
+      "bytes": 2713,
+      "sha256": "187C741EACD6285166B4D359D0921A012A3ACDBE8C3FEB5AAAC62198FC82EA3B"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/execution_001/finish_001/RUN_RECORD_R2_019.json",
+      "bytes": 12175,
+      "sha256": "2E1736651A889D225DA12E1F9613AFF9581F94F709413FDCE92962DE22599336"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/execution_001/finish_001/RECOVERY_CUSTODY.json",
+      "bytes": 2391,
+      "sha256": "A37E8B5A54B39E99589058655AB7D767EB1700CD8A6BE0E90F5FB018C92F999F"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/execution_001/native/readback.bin",
+      "bytes": 218103840,
+      "sha256": "11F04DCFDF0948F5A5B36F749FD72D0279CD241A69BEEC1F30F0BE88A352F54D"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/execution_001/native_replay/readback.bin",
+      "bytes": 218103840,
+      "sha256": "11F04DCFDF0948F5A5B36F749FD72D0279CD241A69BEEC1F30F0BE88A352F54D"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/execution_001/finish_001/commit_3/readback.bin",
+      "bytes": 180355104,
+      "sha256": "7655DD362D1B0EED4F4A76C76CD891F921C128B3FD4C61907BAE33443B9518B2"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/execution_001/finish_001/diagnostic.chains.json",
+      "bytes": 4558813,
+      "sha256": "B3594C92C3AD22B0AF59B9D215A4534DCC8326E182557BD0739E1F4D600296B3"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/execution_001/commit_0_lower.execution.json",
+      "bytes": 1911,
+      "sha256": "6E5F0EE099AD5A129E281A4144355593CA726FAF02C683CAA3D562E114853C26"
+    }
+  ]
+}

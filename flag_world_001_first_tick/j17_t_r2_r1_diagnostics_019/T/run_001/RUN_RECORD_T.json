@@ -1,0 +1,965 @@
+{
+  "schema": "TRefinementDiagnostic019",
+  "verdict": "IF_THEN",
+  "scope": "ONE_ADDITIONAL_NATIVE_REFINEMENT_OF_BOUND_CARRIER_012_2_0; NO_CHIRAL_OR_AUTHORITY_GENERALIZATION",
+  "inputs": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\source\\incidence.mal",
+      "bytes": 7678,
+      "sha256": "8F53851F3ACB76B2672EECEA5595B313040C8FAC961469E029D8C5DE5BF19F3C"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\source\\moves.mal",
+      "bytes": 3356,
+      "sha256": "F91894FF1B28F12CCB64468482794FAE540814E0EA6703797543CE8AF3F7E888"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\source\\junction_identity.mal",
+      "bytes": 12149,
+      "sha256": "E4CF9C4D9F3CE2B231DE67C7FFD45B82DE79FFD9DD403F7BAFD097D8939B3ACD"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\gpu\\source.mal",
+      "bytes": 13197,
+      "sha256": "A5729729A8636C16DA1AC84476C6B32E5CD443BE506BE7068CCB53FB57792A8F"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\gpu\\source-map.json",
+      "bytes": 127616,
+      "sha256": "49F3C4B48F355703BD6959A82995F41ADA517FFBBF7283C217044E5151ABE14A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\gpu\\readback.bin",
+      "bytes": 16777248,
+      "sha256": "8FF8E9B0EBBDD18445F0E294A3B8B501A2385D5A137C8B00CB6AA090A14205E7"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\gpu\\image.bin",
+      "bytes": 350224,
+      "sha256": "FE38B7D093D10BB403EB99BF50E713FC6BB6859AA21BA86CAD2DF8A5CBBC13F7"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\parents\\qg003-carrier.mcbf",
+      "bytes": 12048,
+      "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\parents\\motif_junction_table_v1.h",
+      "bytes": 2859,
+      "sha256": "25AF837405F450986FBD24A425D2197BD5E5D9D4BF952F74BE43CFB992B10F64"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+      "bytes": 8265,
+      "sha256": "05CE980CBC68707070837001819A90DF532A730569BA1112367C07BC017BD45B"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\source_occurrence_custody.mjs",
+      "bytes": 2713,
+      "sha256": "187C741EACD6285166B4D359D0921A012A3ACDBE8C3FEB5AAAC62198FC82EA3B"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\hardware_carrier_012\\source_occurrence_custody.mjs",
+      "bytes": 2713,
+      "sha256": "187C741EACD6285166B4D359D0921A012A3ACDBE8C3FEB5AAAC62198FC82EA3B"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+      "bytes": 521216,
+      "sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_002\\QUALIFICATION.json",
+      "bytes": 28485,
+      "sha256": "D2F42E635BF8095CE5BA3208B030D8F7F26E0A96074F78597833F1CE7D6E41F5"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\realization020\\readback.mjs",
+      "bytes": 2790,
+      "sha256": "4612D0189AD00B89522C8CD9F472E39EB1574991F5FB4241FF3CD85F415E32D3"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_runs_021_023_seal\\FROZEN_REHOME_MANIFEST_001.json",
+      "bytes": 539738,
+      "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\source\\incidence_reused.mal",
+      "bytes": 3655,
+      "sha256": "2970889E111349F42AAEDE24A2496627D0B1C1DE10B3B9AE90836F044F2A4ACF"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\source\\moves_reused.mal",
+      "bytes": 3356,
+      "sha256": "F91894FF1B28F12CCB64468482794FAE540814E0EA6703797543CE8AF3F7E888"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\source\\custody.mal",
+      "bytes": 3652,
+      "sha256": "ED268914ABEDBC8952D9E8E94A070F59E2BA6E96AFD14E22498E92E154C2ADD6"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run.mjs",
+      "bytes": 19243,
+      "sha256": "B976DA493C030916AE4F4AB2E9F7F742E86500FEE15BD2D0C00B44F4186474AB"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\REQUEST.json",
+      "bytes": 1210,
+      "sha256": "A3151B0B878FCF4B5C6C0D8C8709BACF0B9A8DDBE77BFA16511B2809298BCFD5"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\INPUTS.json",
+      "bytes": 6236,
+      "sha256": "9A3A1C690DFE0CFA96047D380D4E260E6DE1CA626CDAB31B1C430F4419C52DB8"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\INPUT_CUSTODY.json",
+      "bytes": 682878,
+      "sha256": "3E50A6E83363EEC475F826CEF752CE034A7A0595B5980C96063960CF7AC90141"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\PARENT_PROOFS.json",
+      "bytes": 346150,
+      "sha256": "1666CAC1771F1B53151458D132697FFE1EAA301A1DB7A76B44743FD5F12F39C4"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\EXPECTATIONS.json",
+      "bytes": 1051,
+      "sha256": "B3998552EF742D6A9B81A2BEC50C937022FD4EA5463EF8E511C5FF52EAC723D1"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal\\input.mal",
+      "bytes": 313601,
+      "sha256": "AFD86E9D316376DCB157CD418F30453B8C9AECEC2C374952C9E64CC96B9607C4"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal_lower.execution.json",
+      "bytes": 866,
+      "sha256": "26F7EF5DEAFABD710442176B0E809A0A4227B97DC62D6030419569716B207ACD"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal\\stage\\source.mal",
+      "bytes": 313601,
+      "sha256": "AFD86E9D316376DCB157CD418F30453B8C9AECEC2C374952C9E64CC96B9607C4"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal\\stage\\source-map.json",
+      "bytes": 1357855,
+      "sha256": "437B2DE0D2E8A4056096D90138775B62C493693C14F1F0EC6D47E333BE2804A7"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal\\stage\\source-occurrence-custody.json",
+      "bytes": 2239494,
+      "sha256": "80720DD5DE80EB09191AC0AD2FDF3C65D1A502156C93445491D26E246C0118E2"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal\\stage\\image.bin",
+      "bytes": 41992208,
+      "sha256": "5E9FFFE331C6B209C47A784C89735039F0A1408927D0D6C20868B3ABE5E58DC8"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal_device.execution.json",
+      "bytes": 286,
+      "sha256": "B648B0049C7D14F686F15161D30AC5332D3948B9134701218CE2E009D4A8C26C"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal_gpu.execution.json",
+      "bytes": 1603,
+      "sha256": "40867A940EBE874E3EBE2D8A80A5A1305DFDF18131E42CC6FC1796580F283E5A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal\\stage\\readback.bin",
+      "bytes": 170917920,
+      "sha256": "5D697DB893C5AD473FBF347C3DC0E00D737B3E168B1C8F9D85A0BB5A59928500"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal\\stage\\readback.bin.progress.jsonl",
+      "bytes": 1200,
+      "sha256": "58C3EA396B29F2D00BFACD90994833D523C4508A9B57B4957B5F9895C5197495"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal\\stage\\readback.bin.epochs.jsonl",
+      "bytes": 10474,
+      "sha256": "A55A70B7980837700932F55FF2D11E94904E068D6C3F2EC74DF5613B0FEAB624"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal.CLOSURE.txt",
+      "bytes": 13728681,
+      "sha256": "C6CC99B8A09A94806E8362ECC05A7C887C3AC821EF9A3D26E48BA24EDA756997"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal.PROOFS.json",
+      "bytes": 1212995,
+      "sha256": "FD102132966C2C3ED1BFB73E7DD2A05B2637BEAB738326E2E615D5634683B9F0"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal.OBSERVATION.json",
+      "bytes": 1899,
+      "sha256": "5EA4F3820E2D87B4A7FCB870053489092AC8837593990A3AADEB7E78BBA58D3E"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\replay\\source-map.json",
+      "bytes": 1357855,
+      "sha256": "437B2DE0D2E8A4056096D90138775B62C493693C14F1F0EC6D47E333BE2804A7"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\replay_device.execution.json",
+      "bytes": 286,
+      "sha256": "49042A7B98221B1BF0EFEF6BFD92202F81F2ADEC90001F86982957E1021DFB46"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\replay_gpu.execution.json",
+      "bytes": 1451,
+      "sha256": "6F12EFCB2C21A9B54A77B2E4891877BF2A6ECD1079389EFFAE98043FC0F95BB2"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\replay\\readback.bin",
+      "bytes": 170917920,
+      "sha256": "5D697DB893C5AD473FBF347C3DC0E00D737B3E168B1C8F9D85A0BB5A59928500"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\replay\\readback.bin.progress.jsonl",
+      "bytes": 1001,
+      "sha256": "EE0792C027C07112CEED228C45EB3AB3865C6590F97D44C36C613F0EB2F85B90"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\replay\\readback.bin.epochs.jsonl",
+      "bytes": 10474,
+      "sha256": "A55A70B7980837700932F55FF2D11E94904E068D6C3F2EC74DF5613B0FEAB624"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\replay.CLOSURE.txt",
+      "bytes": 13728681,
+      "sha256": "C6CC99B8A09A94806E8362ECC05A7C887C3AC821EF9A3D26E48BA24EDA756997"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\replay.PROOFS.json",
+      "bytes": 1212981,
+      "sha256": "D22BC6E6D26C7E4214EF3BA0D6DF7F3D9C8E59FCDB076EB7D062B9DA523A3A9B"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\replay.OBSERVATION.json",
+      "bytes": 1892,
+      "sha256": "31D354A0B9A9F3D42A17E8BC81198CCB0431AAEDE8A566F8DEA0EDC03C4EE428"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed\\input.mal",
+      "bytes": 313601,
+      "sha256": "36376954C1C4A148D05692812F472999A1EB59A38C0DDD8FA8BFABD05A4AF5D7"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed_lower.execution.json",
+      "bytes": 870,
+      "sha256": "9480FE69B43DBFEB55CDE25CD9CF950E37245CB2D07861E2E1A5C30FCD51476C"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed\\stage\\source.mal",
+      "bytes": 313601,
+      "sha256": "36376954C1C4A148D05692812F472999A1EB59A38C0DDD8FA8BFABD05A4AF5D7"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed\\stage\\source-map.json",
+      "bytes": 1357605,
+      "sha256": "3AADD035F4CE01C6DB7EBB2D5603655BB9A943A65AE13C73DE0C20B58D807BE9"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed\\stage\\source-occurrence-custody.json",
+      "bytes": 2239229,
+      "sha256": "78360D0DFEF996DDEE1A74A790C213F61FE103C88E5B8C93C095EDF5DC5BA46E"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed\\stage\\image.bin",
+      "bytes": 41992208,
+      "sha256": "74904082C9724681564C5317B3B6A3E8542566D1A206A8C100E215AD5BAC4900"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed_device.execution.json",
+      "bytes": 286,
+      "sha256": "6F2F2F60B4EE84FF523A785CEC9F5E31FADC611DD837158EA2E40AABD010EEFC"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed_gpu.execution.json",
+      "bytes": 1462,
+      "sha256": "25DA9DD1557F8E72B7F5FA3347FCACEEEFEB9F36105ED5CD2B1236CD82C84020"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed\\stage\\readback.bin",
+      "bytes": 170917920,
+      "sha256": "72F440C6E9B949BB72FB164600487A431D54BA2879A5352F7612C21FFA7FB85A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed\\stage\\readback.bin.progress.jsonl",
+      "bytes": 1001,
+      "sha256": "F86EEE98DFDEA8153976761E094A7C45A0A5593303906228003C0613D67C531E"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed\\stage\\readback.bin.epochs.jsonl",
+      "bytes": 10474,
+      "sha256": "B55ED841BF4A8019ACF395F0DBDF5FB52311436B6513023838E5BA26C1E4E9E0"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed.CLOSURE.txt",
+      "bytes": 13728681,
+      "sha256": "C6CC99B8A09A94806E8362ECC05A7C887C3AC821EF9A3D26E48BA24EDA756997"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed.PROOFS.json",
+      "bytes": 1213145,
+      "sha256": "EE421C8089DDF95E76BB5AED936E765703C6A1D64C1E54DE9378D353D4AA113A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed.OBSERVATION.json",
+      "bytes": 1903,
+      "sha256": "23FD46FDD50EC8D0ACBD8A2312386695E31B0CFDB8CB0785C720DCF5D6DD9260"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate\\input.mal",
+      "bytes": 313941,
+      "sha256": "A3F32ADE3B4D38D76AA583F893E66B12F1D741BE5018BE09C46AA637C2FC9092"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate_lower.execution.json",
+      "bytes": 872,
+      "sha256": "169E5B61B4F321ED734F13621E9C399D06A386BB3EC1BA3DCE5439A19D930BDF"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate\\stage\\source.mal",
+      "bytes": 313941,
+      "sha256": "A3F32ADE3B4D38D76AA583F893E66B12F1D741BE5018BE09C46AA637C2FC9092"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate\\stage\\source-map.json",
+      "bytes": 1359243,
+      "sha256": "37F825F9E4550CCE90A21AB6A1FCAF52B84E0004E33B3E73E36E8C0529B754C7"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate\\stage\\source-occurrence-custody.json",
+      "bytes": 2242115,
+      "sha256": "2B6A21A938F5413C9121C6A2F3B450EA6F06F3150581DA9E023C753090C89007"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate\\stage\\image.bin",
+      "bytes": 41992208,
+      "sha256": "0388BF5F3301E25B5EF5878E17467828F6B499D59FF0E30BC4EC0DC2E2B2D295"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate_device.execution.json",
+      "bytes": 286,
+      "sha256": "93D2868D03674CA43F05D068D7FD8DB9835DF664B31B777B817214303711F344"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate_gpu.execution.json",
+      "bytes": 1609,
+      "sha256": "0A54ED8526AF19F96B3709CE3362BD6C92E9654581DD8803C63FF1758A4221F1"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate\\stage\\readback.bin",
+      "bytes": 170917920,
+      "sha256": "5D697DB893C5AD473FBF347C3DC0E00D737B3E168B1C8F9D85A0BB5A59928500"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate\\stage\\readback.bin.progress.jsonl",
+      "bytes": 1200,
+      "sha256": "46E8B54CE58BD05E9A62D9284A54F9133BD48FEFB9B0452F176FBEF44055965F"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate\\stage\\readback.bin.epochs.jsonl",
+      "bytes": 10474,
+      "sha256": "A55A70B7980837700932F55FF2D11E94904E068D6C3F2EC74DF5613B0FEAB624"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate.CLOSURE.txt",
+      "bytes": 13728681,
+      "sha256": "C6CC99B8A09A94806E8362ECC05A7C887C3AC821EF9A3D26E48BA24EDA756997"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate.PROOFS.json",
+      "bytes": 1213001,
+      "sha256": "14099290CABE784DF84B84F7E8ACA16EA101BC5A28AF7B0FEBA36474B05E778A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate.OBSERVATION.json",
+      "bytes": 1905,
+      "sha256": "0A3DCA9F92F09ED4AF650FD63682C3E9C9141762B930A92B785920D5749337A0"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing\\input.mal",
+      "bytes": 313261,
+      "sha256": "7AB59AB8B230BEE19C9B4D0F75E6B42BAC5F90F09369BD5F35CBD0985ADAB122"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing_lower.execution.json",
+      "bytes": 868,
+      "sha256": "34696E16A436ED4DB5E93EBB7E8ECE14E1464CF1D68B4F7922079FA518F5EF5E"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing\\stage\\source.mal",
+      "bytes": 313261,
+      "sha256": "7AB59AB8B230BEE19C9B4D0F75E6B42BAC5F90F09369BD5F35CBD0985ADAB122"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing\\stage\\source-map.json",
+      "bytes": 1356348,
+      "sha256": "4AD18FA0A460ECD4A204CF6CA9940F4EF0EDFB1133AF161845D09CE71D6A2243"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing\\stage\\source-occurrence-custody.json",
+      "bytes": 2236866,
+      "sha256": "43E6B17EF4555FCDBCDC9F6FCA5BCD82E6EBD7D53D44F40137FEE64CDD481F24"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing\\stage\\image.bin",
+      "bytes": 41992208,
+      "sha256": "1883916D9B62802E5FB5DB1DF942EE11462C026A6E775AD24232D1058A9CD6AD"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing_device.execution.json",
+      "bytes": 286,
+      "sha256": "463B898D1D563FED07CEA0EE1C6F2E2EC9E64CEFAAD946E2DA459BF4B20E8553"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing_gpu.execution.json",
+      "bytes": 1361,
+      "sha256": "483279F871B6117A176894CC11D9D8AD200695598B558ECB18FFC50B57EA30FE"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing\\stage\\readback.bin",
+      "bytes": 170917920,
+      "sha256": "65A1BC5F17651311B792FBB2DA2DDC06D8C41A8DCBC64087B6A5A2FBB3542ECE"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing\\stage\\readback.bin.progress.jsonl",
+      "bytes": 800,
+      "sha256": "CC15A5DE9DBE942B0D0281755D3E9DC298AD62070034A59A913D17D8F0CD0DC9"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing\\stage\\readback.bin.epochs.jsonl",
+      "bytes": 10474,
+      "sha256": "6EADB0B85C5C15A2612E33FFD6F797C8799E9CBF0BF8E20D5799017B2E3B70B3"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing.CLOSURE.txt",
+      "bytes": 13554017,
+      "sha256": "21848D25334A2356DBC191B5C4C1759DE514F8319721B51F691C0FBABA0659BE"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing.PROOFS.json",
+      "bytes": 1198361,
+      "sha256": "C2989D3E2FC3E6DF1BB5463A2B0AB37BD277DE8D40AA77A24EBBAFBF1F9FF3A6"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing.OBSERVATION.json",
+      "bytes": 1920,
+      "sha256": "479FC318F976D1732CB287BA95C90EDDFB1B0D9C2ACB8F48639ED414B0621211"
+    }
+  ],
+  "native_sources": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\source\\incidence_reused.mal",
+      "bytes": 3655,
+      "sha256": "2970889E111349F42AAEDE24A2496627D0B1C1DE10B3B9AE90836F044F2A4ACF"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\source\\moves_reused.mal",
+      "bytes": 3356,
+      "sha256": "F91894FF1B28F12CCB64468482794FAE540814E0EA6703797543CE8AF3F7E888"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\source\\custody.mal",
+      "bytes": 3652,
+      "sha256": "ED268914ABEDBC8952D9E8E94A070F59E2BA6E96AFD14E22498E92E154C2ADD6"
+    }
+  ],
+  "runs": [
+    {
+      "verdict": "IF_THEN",
+      "scope": "ONE_REFINEMENT_OF_BOUND_012_2_0_TO_4_0_NOT_CHIRAL_GENERALIZATION",
+      "label": "normal",
+      "counts": {
+        "BASE_TRIAD": 80,
+        "REFINED_TRIAD": 320,
+        "SITE": 162,
+        "EDGE": 480,
+        "TRIAD": 320,
+        "FLAG": 1920,
+        "PAIR": 2880,
+        "DELTA": 1920,
+        "GAMMA": 1920,
+        "TAU": 1920,
+        "T_CHILD_PARENT": 320,
+        "T_CHILD_FACE": 320,
+        "T_FLAG_PARENT": 1920,
+        "T_FLAG_FACE": 1920,
+        "T_DOMAIN": 12
+      },
+      "degree_histogram": {
+        "5": 12,
+        "6": 150
+      },
+      "edge_triad_histogram": {
+        "2": 480
+      },
+      "overlap_degree": {
+        "3": 1920
+      },
+      "immediate_parent_count": 320,
+      "hardware_face_triads": {
+        "W_00": 16,
+        "W_01": 16,
+        "W_02": 16,
+        "W_17": 16,
+        "W_18": 16,
+        "W_19": 16,
+        "W_04": 16,
+        "W_05": 16,
+        "W_08": 16,
+        "W_10": 16,
+        "W_12": 16,
+        "W_15": 16,
+        "W_03": 16,
+        "W_09": 16,
+        "W_11": 16,
+        "W_13": 16,
+        "W_14": 16,
+        "W_16": 16,
+        "W_07": 16,
+        "W_06": 16
+      },
+      "hardware_face_flags": {
+        "W_00": 96,
+        "W_01": 96,
+        "W_02": 96,
+        "W_17": 96,
+        "W_18": 96,
+        "W_19": 96,
+        "W_04": 96,
+        "W_05": 96,
+        "W_08": 96,
+        "W_10": 96,
+        "W_12": 96,
+        "W_15": 96,
+        "W_03": 96,
+        "W_09": 96,
+        "W_11": 96,
+        "W_13": 96,
+        "W_14": 96,
+        "W_16": 96,
+        "W_07": 96,
+        "W_06": 96
+      },
+      "facts": 34069,
+      "terms": 37379,
+      "epochs": 10,
+      "error": 0,
+      "assertions": 117103,
+      "closure_sha256": "C6CC99B8A09A94806E8362ECC05A7C887C3AC821EF9A3D26E48BA24EDA756997",
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal\\stage\\readback.bin",
+        "bytes": 170917920,
+        "sha256": "5D697DB893C5AD473FBF347C3DC0E00D737B3E168B1C8F9D85A0BB5A59928500"
+      },
+      "world_effect": "NONE",
+      "admission": "NOT_RUN",
+      "kappa_selection": "NONE"
+    },
+    {
+      "verdict": "IF_THEN",
+      "scope": "ONE_REFINEMENT_OF_BOUND_012_2_0_TO_4_0_NOT_CHIRAL_GENERALIZATION",
+      "label": "replay",
+      "counts": {
+        "BASE_TRIAD": 80,
+        "REFINED_TRIAD": 320,
+        "SITE": 162,
+        "EDGE": 480,
+        "TRIAD": 320,
+        "FLAG": 1920,
+        "PAIR": 2880,
+        "DELTA": 1920,
+        "GAMMA": 1920,
+        "TAU": 1920,
+        "T_CHILD_PARENT": 320,
+        "T_CHILD_FACE": 320,
+        "T_FLAG_PARENT": 1920,
+        "T_FLAG_FACE": 1920,
+        "T_DOMAIN": 12
+      },
+      "degree_histogram": {
+        "5": 12,
+        "6": 150
+      },
+      "edge_triad_histogram": {
+        "2": 480
+      },
+      "overlap_degree": {
+        "3": 1920
+      },
+      "immediate_parent_count": 320,
+      "hardware_face_triads": {
+        "W_00": 16,
+        "W_01": 16,
+        "W_02": 16,
+        "W_17": 16,
+        "W_18": 16,
+        "W_19": 16,
+        "W_04": 16,
+        "W_05": 16,
+        "W_08": 16,
+        "W_10": 16,
+        "W_12": 16,
+        "W_15": 16,
+        "W_03": 16,
+        "W_09": 16,
+        "W_11": 16,
+        "W_13": 16,
+        "W_14": 16,
+        "W_16": 16,
+        "W_07": 16,
+        "W_06": 16
+      },
+      "hardware_face_flags": {
+        "W_00": 96,
+        "W_01": 96,
+        "W_02": 96,
+        "W_17": 96,
+        "W_18": 96,
+        "W_19": 96,
+        "W_04": 96,
+        "W_05": 96,
+        "W_08": 96,
+        "W_10": 96,
+        "W_12": 96,
+        "W_15": 96,
+        "W_03": 96,
+        "W_09": 96,
+        "W_11": 96,
+        "W_13": 96,
+        "W_14": 96,
+        "W_16": 96,
+        "W_07": 96,
+        "W_06": 96
+      },
+      "facts": 34069,
+      "terms": 37379,
+      "epochs": 10,
+      "error": 0,
+      "assertions": 117103,
+      "closure_sha256": "C6CC99B8A09A94806E8362ECC05A7C887C3AC821EF9A3D26E48BA24EDA756997",
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\replay\\readback.bin",
+        "bytes": 170917920,
+        "sha256": "5D697DB893C5AD473FBF347C3DC0E00D737B3E168B1C8F9D85A0BB5A59928500"
+      },
+      "world_effect": "NONE",
+      "admission": "NOT_RUN",
+      "kappa_selection": "NONE"
+    },
+    {
+      "verdict": "IF_THEN",
+      "scope": "ONE_REFINEMENT_OF_BOUND_012_2_0_TO_4_0_NOT_CHIRAL_GENERALIZATION",
+      "label": "reversed",
+      "counts": {
+        "BASE_TRIAD": 80,
+        "REFINED_TRIAD": 320,
+        "SITE": 162,
+        "EDGE": 480,
+        "TRIAD": 320,
+        "FLAG": 1920,
+        "PAIR": 2880,
+        "DELTA": 1920,
+        "GAMMA": 1920,
+        "TAU": 1920,
+        "T_CHILD_PARENT": 320,
+        "T_CHILD_FACE": 320,
+        "T_FLAG_PARENT": 1920,
+        "T_FLAG_FACE": 1920,
+        "T_DOMAIN": 12
+      },
+      "degree_histogram": {
+        "5": 12,
+        "6": 150
+      },
+      "edge_triad_histogram": {
+        "2": 480
+      },
+      "overlap_degree": {
+        "3": 1920
+      },
+      "immediate_parent_count": 320,
+      "hardware_face_triads": {
+        "W_07": 16,
+        "W_06": 16,
+        "W_15": 16,
+        "W_12": 16,
+        "W_10": 16,
+        "W_08": 16,
+        "W_05": 16,
+        "W_04": 16,
+        "W_16": 16,
+        "W_14": 16,
+        "W_13": 16,
+        "W_11": 16,
+        "W_09": 16,
+        "W_03": 16,
+        "W_19": 16,
+        "W_18": 16,
+        "W_17": 16,
+        "W_02": 16,
+        "W_01": 16,
+        "W_00": 16
+      },
+      "hardware_face_flags": {
+        "W_07": 96,
+        "W_06": 96,
+        "W_15": 96,
+        "W_12": 96,
+        "W_10": 96,
+        "W_08": 96,
+        "W_05": 96,
+        "W_04": 96,
+        "W_16": 96,
+        "W_14": 96,
+        "W_13": 96,
+        "W_11": 96,
+        "W_09": 96,
+        "W_03": 96,
+        "W_19": 96,
+        "W_18": 96,
+        "W_17": 96,
+        "W_02": 96,
+        "W_01": 96,
+        "W_00": 96
+      },
+      "facts": 34069,
+      "terms": 37379,
+      "epochs": 10,
+      "error": 0,
+      "assertions": 117103,
+      "closure_sha256": "C6CC99B8A09A94806E8362ECC05A7C887C3AC821EF9A3D26E48BA24EDA756997",
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\reversed\\stage\\readback.bin",
+        "bytes": 170917920,
+        "sha256": "72F440C6E9B949BB72FB164600487A431D54BA2879A5352F7612C21FFA7FB85A"
+      },
+      "world_effect": "NONE",
+      "admission": "NOT_RUN",
+      "kappa_selection": "NONE"
+    },
+    {
+      "verdict": "IF_THEN",
+      "scope": "ONE_REFINEMENT_OF_BOUND_012_2_0_TO_4_0_NOT_CHIRAL_GENERALIZATION",
+      "label": "duplicate",
+      "counts": {
+        "BASE_TRIAD": 80,
+        "REFINED_TRIAD": 320,
+        "SITE": 162,
+        "EDGE": 480,
+        "TRIAD": 320,
+        "FLAG": 1920,
+        "PAIR": 2880,
+        "DELTA": 1920,
+        "GAMMA": 1920,
+        "TAU": 1920,
+        "T_CHILD_PARENT": 320,
+        "T_CHILD_FACE": 320,
+        "T_FLAG_PARENT": 1920,
+        "T_FLAG_FACE": 1920,
+        "T_DOMAIN": 12
+      },
+      "degree_histogram": {
+        "5": 12,
+        "6": 150
+      },
+      "edge_triad_histogram": {
+        "2": 480
+      },
+      "overlap_degree": {
+        "3": 1920
+      },
+      "immediate_parent_count": 320,
+      "hardware_face_triads": {
+        "W_00": 16,
+        "W_01": 16,
+        "W_02": 16,
+        "W_17": 16,
+        "W_18": 16,
+        "W_19": 16,
+        "W_04": 16,
+        "W_05": 16,
+        "W_08": 16,
+        "W_10": 16,
+        "W_12": 16,
+        "W_15": 16,
+        "W_03": 16,
+        "W_09": 16,
+        "W_11": 16,
+        "W_13": 16,
+        "W_14": 16,
+        "W_16": 16,
+        "W_07": 16,
+        "W_06": 16
+      },
+      "hardware_face_flags": {
+        "W_00": 96,
+        "W_01": 96,
+        "W_02": 96,
+        "W_17": 96,
+        "W_18": 96,
+        "W_19": 96,
+        "W_04": 96,
+        "W_05": 96,
+        "W_08": 96,
+        "W_10": 96,
+        "W_12": 96,
+        "W_15": 96,
+        "W_03": 96,
+        "W_09": 96,
+        "W_11": 96,
+        "W_13": 96,
+        "W_14": 96,
+        "W_16": 96,
+        "W_07": 96,
+        "W_06": 96
+      },
+      "facts": 34069,
+      "terms": 37379,
+      "epochs": 10,
+      "error": 0,
+      "assertions": 117103,
+      "closure_sha256": "C6CC99B8A09A94806E8362ECC05A7C887C3AC821EF9A3D26E48BA24EDA756997",
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate\\stage\\readback.bin",
+        "bytes": 170917920,
+        "sha256": "5D697DB893C5AD473FBF347C3DC0E00D737B3E168B1C8F9D85A0BB5A59928500"
+      },
+      "world_effect": "NONE",
+      "admission": "NOT_RUN",
+      "kappa_selection": "NONE"
+    },
+    {
+      "verdict": "IF_THEN",
+      "scope": "MISSING_PARENT_CONTROL_NOT_COMPLETE_REFINEMENT",
+      "label": "missing",
+      "counts": {
+        "BASE_TRIAD": 79,
+        "REFINED_TRIAD": 316,
+        "SITE": 162,
+        "EDGE": 477,
+        "TRIAD": 316,
+        "FLAG": 1896,
+        "PAIR": 2838,
+        "DELTA": 1896,
+        "GAMMA": 1896,
+        "TAU": 1884,
+        "T_CHILD_PARENT": 316,
+        "T_CHILD_FACE": 316,
+        "T_FLAG_PARENT": 1896,
+        "T_FLAG_FACE": 1896,
+        "T_DOMAIN": 12
+      },
+      "degree_histogram": {
+        "4": 3,
+        "5": 12,
+        "6": 147
+      },
+      "edge_triad_histogram": {
+        "1": 6,
+        "2": 471
+      },
+      "overlap_degree": {
+        "2": 12,
+        "3": 1884
+      },
+      "immediate_parent_count": 316,
+      "hardware_face_triads": {
+        "W_01": 16,
+        "W_02": 16,
+        "W_17": 16,
+        "W_18": 16,
+        "W_19": 16,
+        "W_00": 12,
+        "W_04": 16,
+        "W_05": 16,
+        "W_08": 16,
+        "W_10": 16,
+        "W_12": 16,
+        "W_15": 16,
+        "W_03": 16,
+        "W_09": 16,
+        "W_11": 16,
+        "W_13": 16,
+        "W_14": 16,
+        "W_16": 16,
+        "W_07": 16,
+        "W_06": 16
+      },
+      "hardware_face_flags": {
+        "W_01": 96,
+        "W_02": 96,
+        "W_17": 96,
+        "W_18": 96,
+        "W_19": 96,
+        "W_00": 72,
+        "W_04": 96,
+        "W_05": 96,
+        "W_08": 96,
+        "W_10": 96,
+        "W_12": 96,
+        "W_15": 96,
+        "W_03": 96,
+        "W_09": 96,
+        "W_11": 96,
+        "W_13": 96,
+        "W_14": 96,
+        "W_16": 96,
+        "W_07": 96,
+        "W_06": 96
+      },
+      "facts": 33813,
+      "terms": 37089,
+      "epochs": 10,
+      "error": 0,
+      "assertions": 116154,
+      "closure_sha256": "21848D25334A2356DBC191B5C4C1759DE514F8319721B51F691C0FBABA0659BE",
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\missing\\stage\\readback.bin",
+        "bytes": 170917920,
+        "sha256": "65A1BC5F17651311B792FBB2DA2DDC06D8C41A8DCBC64087B6A5A2FBB3542ECE"
+      },
+      "world_effect": "NONE",
+      "admission": "NOT_RUN",
+      "kappa_selection": "NONE"
+    }
+  ],
+  "replay": "SAME_RAW_READBACK",
+  "reversed": "SAME_FULL_DECODED_CLOSURE",
+  "duplicate": "SAME_FULL_DECODED_CLOSURE",
+  "parent_custody": "EXACT_012_NATIVE_TERMS_AND_RETAINED_PROOF_CLOSURE",
+  "world_before": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+    "bytes": 568805,
+    "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+  },
+  "world_after": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+    "bytes": 568805,
+    "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+  },
+  "frozen_manifest": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_runs_021_023_seal\\FROZEN_REHOME_MANIFEST_001.json",
+    "bytes": 539738,
+    "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560"
+  },
+  "frozen_901_audit": "ROOT_OWNS_AUDIT_NOT_REPEATED_HERE",
+  "admission": "NOT_RUN",
+  "kappa_selection": "NONE",
+  "world_link_3": "NOT_WRITTEN",
+  "repository_commit": "NOT_PERFORMED"
+}

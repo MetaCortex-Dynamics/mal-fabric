@@ -1,0 +1,179 @@
+{
+  "record": "J17_WORLD_FOLD_BINDING_003",
+  "date": "2026-10-23",
+  "scope": "Additive source and operand binding; no promotion, GPU execution, world commit, or amendment of an earlier record.",
+  "repository": "mal-fabric",
+  "branch": "review/fold-realization-j17-link-3-001",
+  "head": "67f16aaa212a747012a6eec1a192517c66a64717",
+  "sources": [
+    {
+      "id": "PAPER_B",
+      "path": "C:/Users/devon/Desktop/MaL/Geometric_Programs_Papers_A_and_B.docx",
+      "sha256": "96C5B4FB3706F2C73987B05BCA45E14902AB31CD18D890F393D306CC48898846",
+      "contact": "Paper B sections 2-7: fixed program, dynamic payload and route state, snapshot evaluation, payload lifecycle, egress custody, BLOCKED versus HALT. Section references refer to the document, not Pandoc-generated line numbers."
+    },
+    {
+      "id": "FABEX",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/FABRIC_EXECUTION_SPEC_v0.3.0-candidate.md",
+      "sha256": "5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0",
+      "contact": "Snapshot execution and payload custody; supplied operator evaluation meaning is retained."
+    },
+    {
+      "id": "FLAGS_ARE_CELLS",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/NOTE_FLAGS_ARE_CELLS_LOCATED_BY_INCIDENCE_2026-10-21.md",
+      "sha256": "ADA9CE39206DFF9718044685C0C7C997F477D54B9F97D8ADC6E561977D1BD40D",
+      "contact": "Lines 5-8: flag-cell identity and occurrence location. Devon's quoted principle is retained. The note's conditional placement proposal is not silently promoted."
+    },
+    {
+      "id": "ENGINE_020",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0.md",
+      "sha256": "B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C",
+      "contact": "Lines 347-374: state fields and mutability; 386-449: declared move, governed input, proposed lift, promotion and execution; 455-464: agreement and wall receipts; 595-597: F05-F07; 617-626: T01-T10."
+    },
+    {
+      "id": "ENGINE_PROMOTION",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0_PROMOTION_RECORD.md",
+      "sha256": "7E074857D17D622D6402BDBC58A3E0D75684D9D06CD23C22EB30090D4D32CA3A",
+      "contact": "Binds ENGINE_020; no renewed promotion gate."
+    },
+    {
+      "id": "ALL_FIFTEEN_GATES",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/Coupled Geometry Invariant Model — Dual Machine × ProjectionShell.md",
+      "sha256": "60F08FA1AE20243E11704F011B11A1CF2352CE83F798D6122D1AF878B8A9F9D9",
+      "contact": "Line 120: local section is a gate at every flag; all fifteen operators are gates. Line 122: governed input and gate enactment. Mixed-authority locator; not an assertion that all fifteen gates executed in run 023."
+    },
+    {
+      "id": "SECTION_057",
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/flag_world_engine_v3_fold_bootstrap_001/candidate_successors/FABRIC_SECTION_CORRESPONDENCE_057/REPORT.md",
+      "sha256": "83C5F0C8127F5CF5BF2A9D45DA048AAEFE3073196289FCC1B2171E29EC6124FB",
+      "contact": "Lines 21-28 and 40-45 distinguish the section projection, result, and affected-field update. Line 53 resolves the earlier Tang search with the supplied V3.3 contract; no renewed Tang gate."
+    },
+    {
+      "id": "D2_060",
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/flag_world_engine_v3_fold_bootstrap_001/candidate_successors/D2_FIELD_CONFORMANCE_060/REPORT.md",
+      "sha256": "69F5F57D28EE025D350E00D9E5B2982588997866A48009F640BF8376E9741915",
+      "contact": "Determined D2 marker genesis and tick producers resolve the historical UNREAD issue. Lines 18-39 and 67 are not a new admission or reading-law gate."
+    },
+    {
+      "id": "D2_NATIVE_FIELD_PRODUCER",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/evidence/first-tick-conform-v1-v2-001/files/realization020/source/vector_displacement.mal",
+      "sha256": "22192EBAEE1248B35B722C97924B0FF6DF577CCD024F0A9B9F75C9A6ECFB3F8F",
+      "contact": "Lines 8-16 bind frozen entity/target/lift operands; lines 199-221 write source NO, target THIS and retain other readings. Already exercised by promoted frozen-vector conformance; no replay or re-admission required for this source binding."
+    },
+    {
+      "id": "J17_RUNTIME_023",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/source/runtime_step.mal",
+      "sha256": "46F7260047664C7D31F54A74BAD2BB7356D72271AB8A1D7A2F57D8353B8A714D",
+      "contact": "Lines 38-56 read marker/comparator inputs from the snapshot field; lines 103-108 construct COMPLETED payloads."
+    },
+    {
+      "id": "J17_WORLD_PROJECTION_023",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/source/commit_readout.mal",
+      "sha256": "23B480274497D854E6E6CE8ED9DE887F443E40D3FDBA2033B3A8EB892023AEE7",
+      "contact": "Lines 27-36 derive NO_FLAG_WRITE for the admitted THIS/SAME program; lines 57-62 explicitly project the runtime return to the retained field/witness; lines 85-106 bind the runtime hash and serialize the world TICK. This is an inspected source projection, not a claim that a flag and its cell are separate entities."
+    },
+    {
+      "id": "J17_RUN_023",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/RUN_RECORD_023.json",
+      "sha256": "6A07ACE68BD15DA5F084269FA7FDD57021EC89B30EAE44ED4BF9F9B697B79B0D",
+      "contact": "Promoted-admission lineage and link 2 evidence retained; not routed through a digital-shell admission constructor."
+    },
+    {
+      "id": "G2_WORLD",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/committed.world.json",
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+      "contact": "Committed link 2 world; 480 flag rows, 12 THIS and 468 NO."
+    },
+    {
+      "id": "G2_RUNTIME",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_step_023/outputs/fabric.successor.json",
+      "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+      "contact": "18 COMPLETED payloads and six retained input buffers."
+    },
+    {
+      "id": "RUNTIME_REENTRY_002",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_world_fold_derivation_002/source/runtime_reentry.mal",
+      "sha256": "609716E78664E5295C886BEF7C1678E65177D2EBD813B337D7CC3C7F0FD10584",
+      "contact": "Lines 142-150 transfer prior results to result_ref and DISCHARGED custody; lines 178-198 bind the bounded runtime successor and its uniqueness scope."
+    },
+    {
+      "id": "QUALIFIED_RUNTIME_002",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_world_fold_derivation_002/qualification_002/uncommitted.runtime.json",
+      "sha256": "55F9E49A428BA9662DE5DDBD59F65E1DBDFA5B4B7C6CCC549EDEC1952308A966",
+      "contact": "18 DISCHARGED payloads, retained result references and six retained input buffers; uncommitted runtime successor, not a renamed committed.world.json."
+    },
+    {
+      "id": "DERIVATION_002_RECORD",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_world_fold_derivation_002/RUN_RECORD_FOLD_DERIVATION_002.json",
+      "sha256": "4E95C072645B1E318437CECA3C3F5F92E0E7D7F362B827D8F8FADB1A45DF134A",
+      "contact": "102 exclusions, replay and reversed enumeration; runtime uniqueness witnessed. Whole-fold uniqueness remains scoped separately in the unchanged record."
+    },
+    {
+      "id": "TANG_C232080A",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-19/https-github-com-metacortex-dynamics-ships/work/Ships-Computer/v3/junction_transaction_protocol/evidence/QG-JTP-TANG-PERSISTENCE-RX-DRAIN-012/pre-execution/artifacts/qg-jtp-tang-persistence-rx-drain-012.fs",
+      "sha256": "C232080AA842069554989B6FB62F49F979EFE444B1CD45F9467F768BA87385F7",
+      "contact": "Located canonical hardware image; read and hashed only."
+    },
+    {
+      "id": "TANG_859C81A4",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-19/https-github-com-metacortex-dynamics-ships/work/Ships-Computer/v3/junction_transaction_protocol/evidence/QG-JTP-TANG-AUTHORITY-POSTMORTEM-019/pre-execution/artifacts/qg-jtp-tang-authority-postmortem-019.fs",
+      "sha256": "859C81A473EE0669D45A38D77EF2D014347D9270F7CE14026CDED3D9D5C56DE3",
+      "contact": "Located canonical hardware image; read and hashed only. No new captured event required by this source-binding pass."
+    }
+  ],
+  "occurrence_audit": {
+    "flag_rows": 480,
+    "flag_readings": { "THIS": 12, "NO": 468 },
+    "admitted_program_marker_occurrences": 12,
+    "marker_readings": { "THIS": 4, "NO": 8 },
+    "admitted_program_comparator_occurrences": 6,
+    "comparator_readings": { "SAME": 6 },
+    "routes": 12,
+    "runtime_payloads_before": { "COMPLETED": 18 },
+    "runtime_payloads_after": { "DISCHARGED": 18 },
+    "retained_result_refs": 18,
+    "retained_complete_input_buffers": 6,
+    "receipts_before": 48,
+    "receipts_after": 66,
+    "qualification_scope": "The 18 payload transitions are a witnessed state change. They are not 480 newly evaluated gate enactments."
+  },
+  "findings": [
+    {
+      "id": "PAYLOAD_ADVANCE",
+      "verdict": "IF_THEN",
+      "statement": "Derivation 002 advances cell state under the payload lifecycle, with result custody retained. It must not be described as nothing happening BECAUSE the payload and receipt bytes change."
+    },
+    {
+      "id": "FIELD_UPDATE_LOCATED",
+      "verdict": "IF_THEN",
+      "statement": "A native flag-changing producer is already located and exercised. Its D2 instance consumes source/target/lift operands and writes their flag readings; no corpus-wide absence of a field operation is inferred."
+    },
+    {
+      "id": "SAME_CELL_TYPED_STATE",
+      "verdict": "IF_THEN",
+      "statement": "The flag marker and its located cell are not separate entities. The inspected representation nevertheless distinguishes payload phase, result or result_ref, input buffers and the section reading. The identity principle alone does not replace these typed source projections."
+    },
+    {
+      "id": "OLD_UNREAD_OR_TANG_GATE",
+      "verdict": "NO",
+      "statement": "Reopening historical UNREAD or demanding another Tang proof in this pass is excluded BECAUSE the inspected later records already resolve those earlier contacts."
+    },
+    {
+      "id": "PAYLOAD_ADVANCE_EQUALS_REQUESTED_WORLD_FOLD",
+      "verdict": "MAYBE",
+      "statement": "The inspected bytes do not yet witness that derivation 002's payload successor, together with a source-bound complete section projection, discharges the requested J17 world-fold effect. This names an operand/projection equivalence, not an absent law, a new admission obligation, or a required external event.",
+      "exact_contact": "RUNTIME_REENTRY_002 successor -> complete J17 section/world successor under the promoted world-fold contract; retain result custody, predecessor link 2 and the existing flag-cell identities without importing D2 entity-lift operands or silently dropping state coordinates."
+    }
+  ],
+  "custody": {
+    "earlier_records": "Retained byte-for-byte; identities listed above are checked independently after writing this additive record.",
+    "admission": "J17 promoted admission retained; no digital-shell admission, orientation or handedness gate.",
+    "link_3": "NOT_COMMITTED",
+    "gpu_run_this_pass": "NOT_RUN",
+    "board_action": "NONE",
+    "git_commit_or_push": "NONE",
+    "promotion": "NONE",
+    "new_law": "NONE",
+    "frozen_sources": "Read only"
+  }
+}

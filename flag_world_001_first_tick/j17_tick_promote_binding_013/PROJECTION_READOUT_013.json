@@ -1,0 +1,124 @@
+{
+  "record": "PROJECTION_READOUT_013",
+  "scope": "Bounded read of the named projection contracts; no re-admission, law promotion, authored Walk, grant or witness assignment.",
+  "binding_written": "RECORD_J17_TICK_PROMOTE_BINDING_013.mal",
+  "projection_law": {
+    "verdict": "MAYBE",
+    "obligation": "O_PROJECTION_LAW",
+    "required_output": "Source-bound mapping from participant record fields to operator × witness positions, with payload subject and topology-derived shared/private restrictions.",
+    "located": [
+      {
+        "contact": "d2_reference",
+        "lines": "36-37,95-103",
+        "supplies": "Reference record fields and JSON digest encoding. D2 subject is field/entities, not this world's field/witness.",
+        "does_not_supply": "Assignment to operator × witness positions."
+      },
+      {
+        "contact": "receipt_reading_001",
+        "lines": "350-354",
+        "supplies": "Receipt reading THIS when discharged or opened has content; NO otherwise.",
+        "does_not_supply": "Projection of source, member, exclusions, receipt, or prior head into topology positions."
+      },
+      {
+        "contact": "located_ordinal_v010",
+        "lines": "14-22,26-37",
+        "supplies": "Tier-order successor chain. Local named file is v0.1.0.",
+        "does_not_supply": "Field-to-position projection; v0.1.1 bytes not bound in this read."
+      },
+      {
+        "contact": "abi_receipt_v034",
+        "lines": "17-20,44-46",
+        "supplies": "Witness-selector names; explicitly distinguishes v0.1.0/v0.1.1 tier ordinals from funct3 encoding.",
+        "does_not_supply": "Participant record-field extraction or operator assignment."
+      },
+      {
+        "contact": "junction_spec_v03",
+        "lines": "417-442",
+        "supplies": "Required topology fields and projection function signature; :426 requires typing derived from topology.",
+        "does_not_supply": "J17 instance of projection_typing, overlap_specification, shared_witness_space, or participant locales."
+      }
+    ],
+    "boundary": "These are source/target shapes and a requirement on provenance, not a located mapping between them. No implementation of that mapping was filled.",
+    "partition": {
+      "verdict": "MAYBE",
+      "source": "junction_spec_v03:426; sheaf:93-131",
+      "necessary_condition": "Both present payload hashes agree at each supplied shared ordinal.",
+      "not_forced": "Which object occupies that ordinal; which positions are shared or private; which operator is represented.",
+      "representation_witness": "Hash equality admits identical member hashes or identical receipt hashes at a supplied position. The equality operation alone distinguishes neither assignment. These are demonstrations of the representation's scope, not proposed topology seeds."
+    }
+  },
+  "findings": [
+    {
+      "obligation": "O_ABSENCE_NOT_WALL",
+      "source": "sheaf:109-116",
+      "observation": "One-sided absence returns the same non-agreement outcome as unequal hashes; both absent takes the compatible branch.",
+      "disposition": "RECORDED; original unchanged; no claim of admitted J17 sections."
+    },
+    {
+      "obligation": "FIRST_MATCH_ORDINAL_LOOKUP",
+      "source": "sheaf:122-131",
+      "observation": "First matching witness_type wins; WitnessProjection contains no separate operator key.",
+      "disposition": "Do not encode fifteen operator projections as duplicate witness ordinals or substitute a whole-Walk hash."
+    },
+    {
+      "obligation": "AUTHORITY_SOURCE_SCOPE",
+      "source": "junction_spec_v03:750-788,1327-1332",
+      "observation": "Effect is licensed by admitted GlobalSection. Source's own status is PROPOSED, REVIEW OPEN, DECIDE NOT YET, PROMOTE FORBIDDEN, IMPLEMENTATION BLOCKED.",
+      "disposition": "Current write authorization applied; no new promotion inferred from cited draft or attachment. A7 and J17 admission not reopened."
+    }
+  ],
+  "remaining_native_operands": [
+    "Topology-derived field-to-(operator,witness) mapping",
+    "Shared restriction and private projection positions",
+    "Participant locale/grant binding required by authority section"
+  ],
+  "trace_custody": {
+    "reported_revision": "208BDA248CC824BB7B4C8E987E43E01786159285668928812221EB8AEFDE311C",
+    "local_file_sha256": "42FE11493503786CF3FC1299361FBDBE11DC2B13FBA177FD2F83CCDC6C23D235",
+    "disposition": "Distinct revisions retained; latest request used as instruction, not represented as locally hash-bound trace bytes."
+  },
+  "execution": {
+    "local_sections": "NOT_RUN",
+    "global_section": "NOT_RUN",
+    "link_3": "NOT_WRITTEN",
+    "worldline_links": 2
+  },
+  "contacts": [
+    {
+      "name": "receipt_reading_001",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/verification_kit_001/contracts/governance/SPEC_FLAG_WORLD_FIRST_TICK_001_v0.1.3_PROPOSED.mal",
+      "bytes": 33554,
+      "sha256": "2ECF2EEF9A8901DA9C802922BEBE1F74C367D7A74E5B773528504B73854C1A01"
+    },
+    {
+      "name": "d2_reference",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/flag_world_first_tick_001/D2/tick.py",
+      "bytes": 6483,
+      "sha256": "535535DA2474B13B9B2D6C6FC9508C25D43FF2B406066540D76FF5E2AA19C7DA"
+    },
+    {
+      "name": "sheaf",
+      "path": "C:/Users/devon/Desktop/MaL/MaLv3/sheaf.mal",
+      "bytes": 8914,
+      "sha256": "E4C25D91259A3C3E68414923552681B6C887A79F64260B957352D97485B9AE75"
+    },
+    {
+      "name": "junction_spec_v03",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/SPEC-JUNCTION-001-GOVERNED-COREALIZATION-PROTOCOL_v0.3.md",
+      "bytes": 30020,
+      "sha256": "9A82BC60519DBA3793C66ED51A31501C953D4B2016F5F96D02710C6BEEB6BAB3"
+    },
+    {
+      "name": "located_ordinal_v010",
+      "path": "C:/Users/devon/Desktop/MaL/MaLv3/WITNESS_ORDINAL_001.mal",
+      "bytes": 1517,
+      "sha256": "186BA7F3AD4C1CD344197B6BF195FA234F52FC6DC2DB171378F5B510BA8845EA"
+    },
+    {
+      "name": "abi_receipt_v034",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/RECEIPT_PROMOTE_SPEC-PHASE2-CFU-ABI-001_v0.3.4.md",
+      "bytes": 2187,
+      "sha256": "9406E760E7EA118245E69C4D6D0425E2761C517DE2B2EB5386CBAF52ADFFDE9D"
+    }
+  ]
+}

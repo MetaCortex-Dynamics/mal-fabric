@@ -1,0 +1,10 @@
+{
+  "schema": "R1SchedulingPauseReservation019",
+  "owner": "R1 diagnostic task",
+  "directory": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R1/run_003/batch_002",
+  "before_creation": "ABSENT",
+  "reservation": "EMPTY_DIRECTORY_ONLY",
+  "scope": "The frozen sequential driver stops at PRESERVE_STAGE batch_002 only after batch_001 completes and is recorded. No active GPU process is interrupted.",
+  "release_obligation": "Verify this exact resolved path, this ownership record, completed BATCH_001, STOP_sweep at batch_002, and an empty directory before nonrecursive removal.",
+  "authority": "Parent authorization of scheduling-only benchmark; no native input, law, offer, receipt or world mutation"
+}

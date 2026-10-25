@@ -1,0 +1,204 @@
+{
+  "verdict": "IF_THEN",
+  "mode": "benchmark",
+  "cohort": {
+    "indices": [
+      2,
+      3
+    ],
+    "started": "2026-10-25T14:26:30.005Z",
+    "ended": "2026-10-25T14:36:43.447Z",
+    "resources": {
+      "observed": "2026-10-25T14:26:30.005Z",
+      "host_free_bytes": 15505723392,
+      "gpu_free_bytes": 7263485952,
+      "gpu_total_bytes": 8589934592,
+      "memory": {
+        "command": "nvidia-smi",
+        "args": [
+          "-i",
+          "0",
+          "--query-gpu=index,memory.free,memory.total",
+          "--format=csv,noheader,nounits"
+        ],
+        "status": 0,
+        "error": null,
+        "stdout": "0, 6927, 8192\r\n",
+        "stderr": ""
+      },
+      "reported_gpu_processes": {
+        "command": "nvidia-smi",
+        "args": [
+          "--query-compute-apps=pid,process_name,used_memory",
+          "--format=csv,noheader,nounits"
+        ],
+        "status": 0,
+        "error": null,
+        "stdout": "2140, [Insufficient Permissions], [N/A]\r\n11440, C:\\Windows\\System32\\ShellHost.exe, [N/A]\r\n11368, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\r\n11428, C:\\Windows\\explorer.exe, [N/A]\r\n16416, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\r\n16548, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\r\n19000, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n18056, C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe, [N/A]\r\n20764, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\r\n5508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\r\n23888, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe, [N/A]\r\n24716, C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe, [N/A]\r\n21688, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\r\n28268, C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe, [N/A]\r\n163208, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\r\n117452, C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\r\n71000, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n167156, C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe, [N/A]\r\n18736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\r\n133108, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\r\n",
+        "stderr": ""
+      },
+      "qualified_runtime_processes": {
+        "command": "powershell.exe",
+        "args": [
+          "-NoProfile",
+          "-NonInteractive",
+          "-Command",
+          "@(Get-Process -Name block_iterative_runtime -ErrorAction SilentlyContinue | Select-Object Id,ProcessName) | ConvertTo-Json -Compress"
+        ],
+        "status": 0,
+        "error": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "qualified_runtime_count": 0,
+      "scope": "Free-memory reservation and absence of the named qualified runtime before each idle cohort; WDDM process listing is observational and does not assert exclusive CUDA ownership."
+    },
+    "children": [
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_002.execution.json",
+        "bytes": 2103,
+        "sha256": "A4C7CDF41DB6C3E824A8381D5E5CB04CA8C8CDC6C12B78F3396BE874ACA2140F"
+      },
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_batch_003.execution.json",
+        "bytes": 2102,
+        "sha256": "3519C296000477565EB15B58331B361212E0B02DF6956DAD6B3823EA5E93A547"
+      }
+    ],
+    "batches": [
+      {
+        "batch": 2,
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_002.json",
+          "bytes": 6613,
+          "sha256": "F7F11403E7131CC653F02CE7A2BC90EE07E53AD39A0F9EB0863EAEF3739E5E5B"
+        },
+        "native": {
+          "batch": 2,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_002.gpu.execution.json",
+            "bytes": 80231,
+            "sha256": "5A69DA5C184F6843A99D1CFE3B63A4ADFB68F69F39D9C16F9CF1D142311C654F"
+          },
+          "started": "2026-10-25T14:26:56.095Z",
+          "ended": "2026-10-25T14:36:15.199Z",
+          "start_ms": 1792938416095,
+          "end_ms": 1792938975199,
+          "duration_ms": 559104
+        },
+        "inputs": [
+          "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_02\",CONS(\"C:HW_02|HW_03\",NIL))))",
+          "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_02\",CONS(\"D:HW_00\",NIL))))",
+          "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_02\",CONS(\"D:HW_02\",NIL))))",
+          "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_03\",CONS(\"C:HW_00|HW_04\",NIL))))"
+        ],
+        "observations": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_002.OBSERVATIONS.json",
+          "bytes": 261119650,
+          "sha256": "E59EC8DD375C2C0BF8C66A5F6E2454C2803A2E252F29819E7BEB694176DC0696"
+        },
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_002\\stage\\readback.bin",
+          "bytes": 369098784,
+          "sha256": "66C382EF99ECCCBCE0976EEE7D13790CE30427BBCD86B4690DC2B1E2544A3C08"
+        }
+      },
+      {
+        "batch": 3,
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\BATCH_003.json",
+          "bytes": 6613,
+          "sha256": "37C9E46F652963D40CF09A856164E54EE17631887BC851A161DDE05D0453C7E2"
+        },
+        "native": {
+          "batch": 3,
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_003.gpu.execution.json",
+            "bytes": 78839,
+            "sha256": "D6910EC2D55424F7421C2F75DB335493BD505A4FC7DD93A128822363641605EC"
+          },
+          "started": "2026-10-25T14:26:56.753Z",
+          "ended": "2026-10-25T14:36:04.863Z",
+          "start_ms": 1792938416753,
+          "end_ms": 1792938964863,
+          "duration_ms": 548110
+        },
+        "inputs": [
+          "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_03\",CONS(\"C:HW_02|HW_03\",NIL))))",
+          "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_03\",CONS(\"C:HW_03|HW_04\",NIL))))",
+          "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_03\",CONS(\"D:HW_00\",NIL))))",
+          "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_03\",CONS(\"D:HW_03\",NIL))))"
+        ],
+        "observations": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_003.OBSERVATIONS.json",
+          "bytes": 261109753,
+          "sha256": "88436E48099E39B83E8F9DDE7DAA9240E56ACA3E4D50C39550E6FF9C1860F3D2"
+        },
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_003\\stage\\readback.bin",
+          "bytes": 369098784,
+          "sha256": "E0E92E48D303EB474883A57D85CE61727B8F7CDE67843EA78E7F5AC4B5581AC8"
+        }
+      }
+    ]
+  },
+  "baseline_native": [
+    {
+      "batch": 0,
+      "record": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_000.gpu.execution.json",
+        "bytes": 32216,
+        "sha256": "8DF4B53E7A383C3EBEB1D6EE2F9B5212DC1B41C9D61C1530CA64FD67FE23DF76"
+      },
+      "started": "2026-10-25T14:10:15.740Z",
+      "ended": "2026-10-25T14:14:00.701Z",
+      "start_ms": 1792937415740,
+      "end_ms": 1792937640701,
+      "duration_ms": 224961
+    },
+    {
+      "batch": 1,
+      "record": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_001.gpu.execution.json",
+        "bytes": 32042,
+        "sha256": "4A2DBD19B4EDD6861D20A10DDFA29071DA5F5F74C896359384B09B966AC6E1FC"
+      },
+      "started": "2026-10-25T14:15:15.592Z",
+      "ended": "2026-10-25T14:18:57.346Z",
+      "start_ms": 1792937715592,
+      "end_ms": 1792937937346,
+      "duration_ms": 221754
+    }
+  ],
+  "baseline_sequential_native_ms": 446715,
+  "benchmark_native_envelope_ms": 559104,
+  "benchmark_native_duration_sum_ms": 1107214,
+  "native_overlap_ms": 548110,
+  "baseline_to_envelope_ratio": 0.7989837311126373,
+  "eligible_contexts": 1,
+  "comparison": "NOT-SAME",
+  "scope": "Observed scheduling-only comparison of batches002/003 envelope with sequential batches000/001; cohorts differ. No native input or semantic result is changed.",
+  "ended": "2026-10-25T14:36:44.288Z",
+  "events": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\SCHEDULE_BENCHMARK.events.jsonl",
+    "bytes": 4239,
+    "sha256": "7C34E95AE233C6B2864AE7984482F055F319DAC029E25142A0C117BC026478C9"
+  },
+  "coordinator": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_schedule.mjs",
+    "bytes": 14552,
+    "sha256": "F0AB0626BFCB35FAE89C1BF5EF2A298AB1B9FB86C21EB68E0BA48F8C8823DFEB"
+  },
+  "executor": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_batch.mjs",
+    "bytes": 19842,
+    "sha256": "14E6B7B682D038000D82BC4BA2EBF627161680D600AA077AFDE5631D8AE92B11"
+  },
+  "execution_schedule": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\SCHEDULING_BINDING.json",
+    "bytes": 16971,
+    "sha256": "76FE1E1CA68F1AA6AF7CEDA0568C54E4D8BCD71E6E63654E917582A71D3E6C48"
+  },
+  "worldline": "UNCHANGED",
+  "promotion": "NOT_PERFORMED"
+}

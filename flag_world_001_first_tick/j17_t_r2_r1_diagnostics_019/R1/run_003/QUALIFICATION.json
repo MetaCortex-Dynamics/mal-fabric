@@ -1,0 +1,93 @@
+{
+  "verdict": "IF_THEN",
+  "scope": "Sparse native R1 evaluator on exactly1924 retained g2 cases; transport incompleteness controls",
+  "originalFactSet": {
+    "comparison": "SAME",
+    "closure_format": "structural-Merkle-fact-set-v1",
+    "closure_sha256": "7EE642AC65936BB7E9B709184FFDC61D2980C5F0E8BE669362855BE1EFB8A416",
+    "excluded_only": "KD_LIST_PARTS_019",
+    "helper_count": 23791,
+    "original_observation": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_001\\qualification.OBSERVATIONS.json",
+      "bytes": 47317431,
+      "sha256": "95FF7468ACA8C111645E6FFF5C2223EE930BAE5BE7920AD177EF43DAA3E2620D"
+    },
+    "original_readback": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_001\\qualification\\stage\\readback.bin",
+      "bytes": 369098784,
+      "sha256": "92E6F084B886D21503182CD0A2A65890ABAA05572C6BC6330976BCCF77A9CCCE"
+    },
+    "scope": "Entire original native predicate fact set including inputs and intermediate facts; only the sole new helper predicate is excluded, with its complete native ancestry checked"
+  },
+  "retained": {
+    "verdict": "IF_THEN",
+    "cases": 1924,
+    "comparisons": 7696,
+    "scope": "SAME exact D/O/retained and strict for all 1924 retained g2 diagnostic offers"
+  },
+  "independent": {
+    "observer_only": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1_INDEPENDENT_OBSERVATION.json",
+      "bytes": 808400,
+      "sha256": "D3F47E53B283C688546E4EBE50FF514C716AC3A8851282DA7C859A5AB526EBEA"
+    },
+    "checks": [
+      {
+        "input": "G2",
+        "cases": 1924,
+        "receipt_rows_sha256": "A8F74F4FCA60EB052021C7D1E236AA20DB4661A979FC71E1913007E5533A1E5A",
+        "strict_count": 1,
+        "comparison": "SAME"
+      }
+    ]
+  },
+  "replay": "SAME",
+  "reversal": "SAME",
+  "closure_sha256": "80642965D77C2834455D7D0A4F34813836D902198D46FA06806B36E8FECCAA1A",
+  "negative": [
+    {
+      "label": "missing_leaf",
+      "case": "[\"SITE\",\"C:HW_04|HW_09\",\"NO\"]",
+      "reading": "MAYBE",
+      "complete": 0,
+      "strict": 0,
+      "observations": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\missing_leaf.OBSERVATIONS.json",
+        "bytes": 47317897,
+        "sha256": "3C93D2DD6FF0AA33D9179D4822BB4FF2550C4A691B0B0014EC198B3271F0EB29"
+      }
+    },
+    {
+      "label": "missing_root",
+      "case": "[\"SITE\",\"C:HW_04|HW_09\",\"NO\"]",
+      "reading": "MAYBE",
+      "complete": 0,
+      "strict": 0,
+      "observations": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\missing_root.OBSERVATIONS.json",
+        "bytes": 47317897,
+        "sha256": "E0FA038B5D3B82C0BA6BC1B5ADAB2866FF99791CFD94B32E1587452D00EAFB95"
+      }
+    }
+  ],
+  "source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\source\\r1_optimized.mal",
+    "bytes": 12451,
+    "sha256": "E8567527605453C6332BF5BC19D84A5EFF4DBA5B017F2819547B04AFE58392A9"
+  },
+  "index_source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\source\\list_parts_index.mal",
+    "bytes": 757,
+    "sha256": "1B5C14F9D25606279E2401E743D0EE4030B3E4582499D0F28805989E720D7AB9"
+  },
+  "observer": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\observe_indexed.mjs",
+    "bytes": 26870,
+    "sha256": "0243EB1461B8BB9110A9F2871E952E4905EC018C9DE077EEEC442B4FAEEC680E"
+  },
+  "readback": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\qualification\\stage\\readback.bin",
+    "bytes": 369098784,
+    "sha256": "B3BC1389B26F4DC1515C88AF9543742A7CCB3C52991392D2C6243BA5266BCD72"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "verdict": "IF_THEN",
+  "batch": 17,
+  "inputs": [
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_05\",CONS(\"D:HW_04\",NIL))))",
+      "edge": [
+        "C:HW_04|HW_05",
+        "D:HW_04"
+      ]
+    },
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_05\",CONS(\"D:HW_05\",NIL))))",
+      "edge": [
+        "C:HW_04|HW_05",
+        "D:HW_05"
+      ]
+    },
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_08\",CONS(\"C:HW_04|HW_09\",NIL))))",
+      "edge": [
+        "C:HW_04|HW_08",
+        "C:HW_04|HW_09"
+      ]
+    },
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_08\",CONS(\"C:HW_08|HW_09\",NIL))))",
+      "edge": [
+        "C:HW_04|HW_08",
+        "C:HW_08|HW_09"
+      ]
+    }
+  ],
+  "summary": {
+    "verdict": "IF_THEN",
+    "scope": "BOUNDED_R1_DIAGNOSTIC_OBSERVATION; NOT_PROMOTED_OFFER_EXHAUSTION_OR_WORLD_EXECUTE",
+    "facts": 2428276,
+    "terms": 2459220,
+    "epochs": 96,
+    "error": 0,
+    "fact_capacity": 4194304,
+    "source_facts": 2018,
+    "readback": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_017\\stage\\readback.bin",
+      "bytes": 369098784,
+      "sha256": "E377A71F1E3B736493C44F51856A24FC02710C45953A79C604477D66AF12067F"
+    },
+    "source_map": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_017\\stage\\source-map.json",
+      "sha256": "4DB312AD781DFEB425DE7E6357B8BBE062C1C83DE198CC6F1BE259A12E31E032"
+    },
+    "closure_sha256": "7B782F9DDC782A7C3B62E45F35C87FCB700EC8F38DC8EFD71140EA41BD56FE0B",
+    "closure_format": "structural-Merkle-fact-set-v1",
+    "projected_original_closure_sha256": "CE2146BD1C611137C156669B51D3A9368FBEA89F9AC692205C9CFC88597E2B69",
+    "projected_original_fact_count": 2352624,
+    "projection": {
+      "excluded_predicate": "KD_LIST_PARTS_019",
+      "excluded_fact_count": 75652,
+      "format": "structural-Merkle-fact-set-v1",
+      "scope": "ONLY_NATIVE_VALIDATED_HELPER_FACTS_EXCLUDED; ALL_ORIGINAL_FACTS_RETAINED"
+    },
+    "indexed_helper": {
+      "tag": "KD_LIST_PARTS_019",
+      "helper_count": 75652,
+      "cons_cons_request_count": 75652,
+      "producer": "KD_LIST_PARTS_019",
+      "native_producer_and_exact_parts": "SAME",
+      "request_support_bijection": "SAME"
+    },
+    "inventory_counts": {
+      "R1_INPUT": 120,
+      "R1_CASE": 1924,
+      "R1_MEMBER": 5760,
+      "R1_FLAG": 480,
+      "R1_OVERLAP": 720,
+      "R1_INCIDENT": 1440
+    },
+    "trials": [
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_05\",CONS(\"D:HW_04\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 18
+      },
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_05\",CONS(\"D:HW_05\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 18
+      },
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_08\",CONS(\"C:HW_04|HW_09\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 20
+      },
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_08\",CONS(\"C:HW_08|HW_09\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 20
+      }
+    ],
+    "partial_controls": [],
+    "observer": {
+      "elapsed_ms": 20040,
+      "max_rss_kib": 2321484,
+      "heap_used": 174927520,
+      "scope": "Full native coverage checked; intermediate rows retained in readback, exact receipts and terminal proofs exported"
+    }
+  },
+  "independent": {
+    "observer_only": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1_INDEPENDENT_OBSERVATION.json",
+      "bytes": 808400,
+      "sha256": "D3F47E53B283C688546E4EBE50FF514C716AC3A8851282DA7C859A5AB526EBEA"
+    },
+    "checks": [
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_05\",CONS(\"D:HW_04\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "428047F0D07875F99B45A0D2E15E6176A0853FA88FC34EE72E382D8B7F5E69BB",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_05\",CONS(\"D:HW_05\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "ECF798B442220B4F8A24BA2CD890A5904EB5D33B6C8CD8EB2F0B8BFD73B79B55",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_08\",CONS(\"C:HW_04|HW_09\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "CA0E2B8AB084F807C70115B4E93F3A91F500FE72E5C0D048D15A4CDA70085BE5",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_04|HW_08\",CONS(\"C:HW_08|HW_09\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "321D4FC4B062732D0E4778C6844EA2C8F9C4DF75C320BCA789FF5C0270CAE619",
+        "strict_count": 0,
+        "comparison": "SAME"
+      }
+    ]
+  },
+  "readback": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_017\\stage\\readback.bin",
+    "bytes": 369098784,
+    "sha256": "E377A71F1E3B736493C44F51856A24FC02710C45953A79C604477D66AF12067F"
+  },
+  "observations": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_017.OBSERVATIONS.json",
+    "bytes": 261141606,
+    "sha256": "11D39C0ECDE659BA06DCCAD057F64543424E9B2B6FEF8680D9668FD99F244F6B"
+  },
+  "executor": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_batch.mjs",
+    "bytes": 19842,
+    "sha256": "14E6B7B682D038000D82BC4BA2EBF627161680D600AA077AFDE5631D8AE92B11"
+  },
+  "execution_schedule": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\SCHEDULING_BINDING.json",
+    "bytes": 16971,
+    "sha256": "76FE1E1CA68F1AA6AF7CEDA0568C54E4D8BCD71E6E63654E917582A71D3E6C48"
+  }
+}

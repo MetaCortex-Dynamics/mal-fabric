@@ -1,0 +1,7 @@
+// Additive native index extension of diagnostic008:60-61 only.
+// The sole producer unpacks an already derived CONS/CONS LIST_REQUEST.
+// No index fact is an input. The old requests, distinctions and heads remain.
+// Projection omits ONLY KD_LIST_PARTS_019 when comparing the old full fact set.
+law KD_LIST_PARTS_019 := IF GOES_WITH(KD_LIST_REQUEST,CONS(a,x),CONS(b,y)) THEN GOES_WITH(KD_LIST_PARTS_019,CONS(a,x),CONS(b,y),a,x,b,y);
+law KD_LIST_HEAD_DIFF := IF GOES_WITH(KD_LIST_PARTS_019,CONS(a,x),CONS(b,y),a,x,b,y), GOES_WITH(KD_DIFF,a,b) THEN GOES_WITH(KD_LIST_DIFF,CONS(a,x),CONS(b,y));
+law KD_LIST_TAIL_DIFF := IF GOES_WITH(KD_LIST_PARTS_019,CONS(a,x),CONS(b,y),a,x,b,y), GOES_WITH(KD_LIST_DIFF,x,y) THEN GOES_WITH(KD_LIST_DIFF,CONS(a,x),CONS(b,y));

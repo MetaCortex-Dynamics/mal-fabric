@@ -1,0 +1,43 @@
+{
+  "verdict": "IF_THEN",
+  "mode": "finalize",
+  "continuation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\SCHEDULE_CONTINUE.json",
+    "bytes": 160315,
+    "sha256": "DC2DF3F6CFD67BF2A9075F8CCCE9870BF1746AB0D0E2BD0F785CD1BE8B4BB037"
+  },
+  "execution": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\schedule_finalize.execution.json",
+    "bytes": 2084,
+    "sha256": "D12A685691972A5A7C6A1FB14FCD5EC35A89F352B5721BE238A21FB4F4F0E8C0"
+  },
+  "run_record": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\RUN_RECORD_R1.json",
+    "bytes": 230385,
+    "sha256": "8D00AEF6B6BF61050CA4951098F3691F83BF75CE54CC56832B91C80868A50004"
+  },
+  "scope": "Final record custody and original120 input identities only; no semantic recomputation.",
+  "ended": "2026-10-25T16:35:54.016Z",
+  "events": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\SCHEDULE_FINALIZE.events.jsonl",
+    "bytes": 3655,
+    "sha256": "D5193364DCCE9847C18D76DADDECB88DFD29D2EEC18BB9AD1A4C1AFE0C761621"
+  },
+  "coordinator": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_schedule.mjs",
+    "bytes": 14552,
+    "sha256": "F0AB0626BFCB35FAE89C1BF5EF2A298AB1B9FB86C21EB68E0BA48F8C8823DFEB"
+  },
+  "executor": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_batch.mjs",
+    "bytes": 19842,
+    "sha256": "14E6B7B682D038000D82BC4BA2EBF627161680D600AA077AFDE5631D8AE92B11"
+  },
+  "execution_schedule": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\SCHEDULING_BINDING.json",
+    "bytes": 16971,
+    "sha256": "76FE1E1CA68F1AA6AF7CEDA0568C54E4D8BCD71E6E63654E917582A71D3E6C48"
+  },
+  "worldline": "UNCHANGED",
+  "promotion": "NOT_PERFORMED"
+}

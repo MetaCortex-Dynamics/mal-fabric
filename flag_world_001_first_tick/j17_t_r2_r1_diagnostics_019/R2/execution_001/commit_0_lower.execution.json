@@ -1,0 +1,15 @@
+{
+  "cmd": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\source\\lower.mjs",
+    "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\commit.mal",
+    "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\commit_0_image",
+    "observations=D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\observations.json",
+    "hashes=D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\commit_0.hashes.json"
+  ],
+  "start": "2026-10-25T13:11:59.599Z",
+  "end": "2026-10-25T13:11:59.694Z",
+  "status": 1,
+  "stdout": "",
+  "stderr": "file:///D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/source/lower.mjs:38\r\n if(!location)throw Error('input JSON required by source '+alias);\r\n                    ^\r\n\r\nError: input JSON required by source observations\r\n    at importValue (file:///D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/source/lower.mjs:38:21)\r\n    at file:///D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/source/lower.mjs:62:36\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:345:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\r\n\r\nNode.js v22.20.0\r\n"
+}

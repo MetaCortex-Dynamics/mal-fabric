@@ -1,0 +1,91 @@
+{
+  "verdict": "IF_THEN",
+  "scope": "ONE_REFINEMENT_OF_BOUND_012_2_0_TO_4_0_NOT_CHIRAL_GENERALIZATION",
+  "label": "duplicate",
+  "counts": {
+    "BASE_TRIAD": 80,
+    "REFINED_TRIAD": 320,
+    "SITE": 162,
+    "EDGE": 480,
+    "TRIAD": 320,
+    "FLAG": 1920,
+    "PAIR": 2880,
+    "DELTA": 1920,
+    "GAMMA": 1920,
+    "TAU": 1920,
+    "T_CHILD_PARENT": 320,
+    "T_CHILD_FACE": 320,
+    "T_FLAG_PARENT": 1920,
+    "T_FLAG_FACE": 1920,
+    "T_DOMAIN": 12
+  },
+  "degree_histogram": {
+    "5": 12,
+    "6": 150
+  },
+  "edge_triad_histogram": {
+    "2": 480
+  },
+  "overlap_degree": {
+    "3": 1920
+  },
+  "immediate_parent_count": 320,
+  "hardware_face_triads": {
+    "W_00": 16,
+    "W_01": 16,
+    "W_02": 16,
+    "W_17": 16,
+    "W_18": 16,
+    "W_19": 16,
+    "W_04": 16,
+    "W_05": 16,
+    "W_08": 16,
+    "W_10": 16,
+    "W_12": 16,
+    "W_15": 16,
+    "W_03": 16,
+    "W_09": 16,
+    "W_11": 16,
+    "W_13": 16,
+    "W_14": 16,
+    "W_16": 16,
+    "W_07": 16,
+    "W_06": 16
+  },
+  "hardware_face_flags": {
+    "W_00": 96,
+    "W_01": 96,
+    "W_02": 96,
+    "W_17": 96,
+    "W_18": 96,
+    "W_19": 96,
+    "W_04": 96,
+    "W_05": 96,
+    "W_08": 96,
+    "W_10": 96,
+    "W_12": 96,
+    "W_15": 96,
+    "W_03": 96,
+    "W_09": 96,
+    "W_11": 96,
+    "W_13": 96,
+    "W_14": 96,
+    "W_16": 96,
+    "W_07": 96,
+    "W_06": 96
+  },
+  "facts": 34069,
+  "terms": 37379,
+  "epochs": 10,
+  "error": 0,
+  "assertions": 117103,
+  "closure_sha256": "C6CC99B8A09A94806E8362ECC05A7C887C3AC821EF9A3D26E48BA24EDA756997",
+  "readback": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\duplicate\\stage\\readback.bin",
+    "bytes": 170917920,
+    "sha256": "5D697DB893C5AD473FBF347C3DC0E00D737B3E168B1C8F9D85A0BB5A59928500"
+  },
+  "world_effect": "NONE",
+  "admission": "NOT_RUN",
+  "kappa_selection": "NONE"
+}

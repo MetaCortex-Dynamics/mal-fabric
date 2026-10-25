@@ -1,0 +1,55 @@
+{
+  "verdict": "IF_THEN",
+  "comparison": "SAME",
+  "excluded_only": "KD_LIST_PARTS_019",
+  "original_observation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_002\\batch_000.OBSERVATIONS.json",
+    "bytes": 271901673,
+    "sha256": "D7DA5CA021C1392F29CA3184F6866A284727DBBB118EEE1824F78E91510C4BD4"
+  },
+  "original_readback": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_002\\batch_000\\stage\\readback.bin",
+    "bytes": 369098784,
+    "sha256": "2B51F6A241F0C96BFDF1A86E83A8F83E4CA5E288ACF7E2291614D661F6B1D8E1"
+  },
+  "projected_closure_sha256": "F4A9CFCC11B29D456C40F92F385017B0449DA27143045A099697742BCC057BF1",
+  "full_indexed_closure_sha256": "61B3E6A547E17710EC7E0684690A8F7480D98E458260D6DCA54B4247730B781D",
+  "independent": {
+    "observer_only": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1_INDEPENDENT_OBSERVATION.json",
+      "bytes": 808400,
+      "sha256": "D3F47E53B283C688546E4EBE50FF514C716AC3A8851282DA7C859A5AB526EBEA"
+    },
+    "checks": [
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_00|HW_02\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "364835CF0AADE2B76D01A2006AFCB10787A5C7CE94F93C0E4D59C578B8ECA7DD",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_00|HW_05\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "ABBAC330585E866306727705004AB4890E8A6689BC09056B5588B325A9490657",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_01|HW_02\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "4EC138428DA67BE1BA5B6843A32CDA84633642082173F49AA759E89637D6518B",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_01|HW_05\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "86781C9D3E08EFB08CD43F97BD6B3B02720E093E34DDAA4DAC5851D5D01F4E9A",
+        "strict_count": 0,
+        "comparison": "SAME"
+      }
+    ]
+  },
+  "helper_count": 71110
+}

@@ -1,0 +1,45 @@
+{
+  "scope": "OBSERVER_ONLY_NOT_NATIVE_INPUT",
+  "expectedNormal": {
+    "BASE_TRIAD": 80,
+    "REFINED_TRIAD": 320,
+    "SITE": 162,
+    "EDGE": 480,
+    "TRIAD": 320,
+    "FLAG": 1920,
+    "PAIR": 2880,
+    "DELTA": 1920,
+    "GAMMA": 1920,
+    "TAU": 1920,
+    "T_CHILD_PARENT": 320,
+    "T_CHILD_FACE": 320,
+    "T_FLAG_PARENT": 1920,
+    "T_FLAG_FACE": 1920,
+    "T_DOMAIN": 12
+  },
+  "expectedMissing": {
+    "BASE_TRIAD": 79,
+    "REFINED_TRIAD": 316,
+    "SITE": 162,
+    "EDGE": 477,
+    "TRIAD": 316,
+    "FLAG": 1896,
+    "PAIR": 2838,
+    "DELTA": 1896,
+    "GAMMA": 1896,
+    "TAU": 1884,
+    "T_CHILD_PARENT": 316,
+    "T_CHILD_FACE": 316,
+    "T_FLAG_PARENT": 1896,
+    "T_FLAG_FACE": 1896,
+    "T_DOMAIN": 12
+  },
+  "omitted_parent": {
+    "fact": 1084,
+    "term": "TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_01),TOGETHER_ALONE(HW_00,HW_02),TOGETHER_ALONE(HW_01,HW_02))"
+  },
+  "duplicate_parent": {
+    "fact": 1084,
+    "term": "TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_01),TOGETHER_ALONE(HW_00,HW_02),TOGETHER_ALONE(HW_01,HW_02))"
+  }
+}
