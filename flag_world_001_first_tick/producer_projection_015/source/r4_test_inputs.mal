@@ -1,0 +1,13 @@
+// TEST-ONLY input adapter for producer projection 015 R4 qualification.
+// This file is excluded from the production component. It supplies no expected
+// answer and performs no normalization: all conclusions use r4_verdicts.mal.
+// Test vectors are explicit verdict operands, not participant content or J17.
+// ABSENT is an opaque test reference, not an absent seed or a verdict.
+
+law P15_TEST_R4_WHAT := IF GOES_WITH(P15_TEST_R4_VECTOR,p,w,h,f,y) THEN GOES_WITH(P15_SEED,p,POSITION(THIS,WHAT),w,ABSENT);
+law P15_TEST_R4_HOW := IF GOES_WITH(P15_TEST_R4_VECTOR,p,w,h,f,y) THEN GOES_WITH(P15_SEED,p,POSITION(THIS,HOW),h,ABSENT);
+law P15_TEST_R4_FOR_WHAT := IF GOES_WITH(P15_TEST_R4_VECTOR,p,w,h,f,y) THEN GOES_WITH(P15_SEED,p,POSITION(THIS,FOR_WHAT),f,ABSENT);
+law P15_TEST_R4_WHY_F := IF GOES_WITH(P15_TEST_R4_VECTOR,p,w,h,f,y) THEN GOES_WITH(P15_SEED,p,POSITION(BECAUSE,FOR_WHAT),y,ABSENT);
+
+law P15_TEST_MEET_BEGIN := IF GOES_WITH(P15_MEET_REQUEST,t,a,b) THEN GOES_WITH(P15_R4_MEET_REQUEST,t,P15_R4_MEET_TEST,a,b);
+law P15_TEST_MEET_END := IF GOES_WITH(P15_R4_MEET_RESULT,t,P15_R4_MEET_TEST,a,b,v) THEN GOES_WITH(P15_MEET_RESULT,t,v);

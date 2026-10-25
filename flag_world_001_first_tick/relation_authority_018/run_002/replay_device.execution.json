@@ -1,0 +1,13 @@
+{
+  "exe": "nvidia-smi",
+  "args": [
+    "--query-gpu=name,memory.free",
+    "--format=csv,noheader,nounits"
+  ],
+  "started": "2026-10-25T03:22:00.369Z",
+  "ended": "2026-10-25T03:22:00.421Z",
+  "exit": 0,
+  "error": null,
+  "stdout": "NVIDIA GeForce RTX 3070, 6902\r\n",
+  "stderr": ""
+}

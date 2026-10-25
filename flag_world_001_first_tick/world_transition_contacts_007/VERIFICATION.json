@@ -1,0 +1,161 @@
+{
+  "schema": "J17ContactCustodyVerificationV1",
+  "verdict": "SAME",
+  "manifest_sha256": "13F4676010390261EAFC6C208498231806C738599D5376314D36E3DFDCA44EC6",
+  "readout_sha256": "EB5EB0BEE83FF6F067AE4B288E622C059D3D797DFB3E58E3B8F417A8A94DC76D",
+  "verifier_sha256": "F59AA7EDB07DC9F57644010A29E7476063A94ED8C6ACC26CD763E36844D11F3E",
+  "source_copy_pairs": 8,
+  "bound_files": 3,
+  "quoted_line_checks": 4,
+  "frozen_manifest_sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+  "g2": {
+    "links": 2,
+    "flags": 480,
+    "THIS": 12,
+    "NO": 468,
+    "overlaps": 720,
+    "SAME": 708,
+    "NOT_SAME": 12,
+    "pair_hash": "E3CB79631EE00239DA1F97B5AE7A9C65CD2CD138C915C093185D3BF90E4C6CC9",
+    "chain_head": "173E0FA1D318DE52472E31E3ACF064BF92D9B313BDB4E52D2F4593DDD3631386",
+    "receipt_opened": 0,
+    "receipt_discharged": 0
+  },
+  "results": [
+    {
+      "id": "ENGINE",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\world_transition_contacts_007\\contacts\\Markdowns\\SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0.md",
+      "bytes": 22328,
+      "sha256": "B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C",
+      "verdict": "SAME"
+    },
+    {
+      "id": "ENGINE_ORIGINAL",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0.md",
+      "bytes": 22328,
+      "sha256": "B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C",
+      "verdict": "SAME"
+    },
+    {
+      "id": "ENGINE_PROMOTION",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\world_transition_contacts_007\\contacts\\Markdowns\\SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0_PROMOTION_RECORD.md",
+      "bytes": 2286,
+      "sha256": "7E074857D17D622D6402BDBC58A3E0D75684D9D06CD23C22EB30090D4D32CA3A",
+      "verdict": "SAME"
+    },
+    {
+      "id": "ENGINE_PROMOTION_ORIGINAL",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0_PROMOTION_RECORD.md",
+      "bytes": 2286,
+      "sha256": "7E074857D17D622D6402BDBC58A3E0D75684D9D06CD23C22EB30090D4D32CA3A",
+      "verdict": "SAME"
+    },
+    {
+      "id": "A1_A10",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\world_transition_contacts_007\\contacts\\Markdowns\\PROMOTION_RECORD_A1-A10.md",
+      "bytes": 5665,
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805",
+      "verdict": "SAME"
+    },
+    {
+      "id": "A1_A10_ORIGINAL",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "bytes": 5665,
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805",
+      "verdict": "SAME"
+    },
+    {
+      "id": "GPU_SELF_WITNESS",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\world_transition_contacts_007\\contacts\\MaLv3\\DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "bytes": 3273,
+      "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7",
+      "verdict": "SAME"
+    },
+    {
+      "id": "GPU_SELF_WITNESS_ORIGINAL",
+      "path": "C:/Users/devon/Desktop/MaL/MaLv3/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "bytes": 3273,
+      "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7",
+      "verdict": "SAME"
+    },
+    {
+      "id": "GPU_SELF_WITNESS_PROMOTION",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\world_transition_contacts_007\\contacts\\Markdowns\\RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+      "bytes": 3207,
+      "sha256": "C1BA60101C95E76C3D2F090B00E3B679A6B58851B8A235829214D2B6249BD072",
+      "verdict": "SAME"
+    },
+    {
+      "id": "GPU_SELF_WITNESS_PROMOTION_ORIGINAL",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+      "bytes": 3207,
+      "sha256": "C1BA60101C95E76C3D2F090B00E3B679A6B58851B8A235829214D2B6249BD072",
+      "verdict": "SAME"
+    },
+    {
+      "id": "QUEUEGATE",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\world_transition_contacts_007\\contacts\\SPECS\\SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001_v0.1.0.md",
+      "bytes": 30926,
+      "sha256": "8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C",
+      "verdict": "SAME"
+    },
+    {
+      "id": "QUEUEGATE_ORIGINAL",
+      "path": "C:/Users/devon/Desktop/MaL/SPECS/SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001_v0.1.0.md",
+      "bytes": 30926,
+      "sha256": "8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C",
+      "verdict": "SAME"
+    },
+    {
+      "id": "QUEUEGATE_PROMOTION",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\world_transition_contacts_007\\contacts\\JSON\\PROMOTION_RECORD_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001.json",
+      "bytes": 2144,
+      "sha256": "EC445D2BF151A6AF009EB94DA36AF92186DF58E295541C956F164476038C7F00",
+      "verdict": "SAME"
+    },
+    {
+      "id": "QUEUEGATE_PROMOTION_ORIGINAL",
+      "path": "C:/Users/devon/Desktop/MaL/JSON/PROMOTION_RECORD_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001.json",
+      "bytes": 2144,
+      "sha256": "EC445D2BF151A6AF009EB94DA36AF92186DF58E295541C956F164476038C7F00",
+      "verdict": "SAME"
+    },
+    {
+      "id": "ERRATUM",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\world_transition_contacts_007\\contacts\\Markdowns\\07_The_Erratum.md",
+      "bytes": 7908,
+      "sha256": "E097CDA64A92199F11A97DB1EB113C491806FFE1AEC29032E060C9877BD8426C",
+      "verdict": "SAME"
+    },
+    {
+      "id": "ERRATUM_ORIGINAL",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/07_The_Erratum.md",
+      "bytes": 7908,
+      "sha256": "E097CDA64A92199F11A97DB1EB113C491806FFE1AEC29032E060C9877BD8426C",
+      "verdict": "SAME"
+    },
+    {
+      "id": "G2",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+      "verdict": "SAME"
+    },
+    {
+      "id": "RUN_023",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\RUN_RECORD_023.json",
+      "bytes": 111818,
+      "sha256": "6A07ACE68BD15DA5F084269FA7FDD57021EC89B30EAE44ED4BF9F9B697B79B0D",
+      "verdict": "SAME"
+    },
+    {
+      "id": "NATIVE_PRODUCER",
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\realization020\\source\\vector_displacement.mal",
+      "bytes": 32622,
+      "sha256": "22192EBAEE1248B35B722C97924B0FF6DF577CCD024F0A9B9F75C9A6ECFB3F8F",
+      "verdict": "SAME"
+    }
+  ],
+  "mismatches": [],
+  "effects": "READ_ONLY; no runtime execution, commit, push, or worldline append."
+}

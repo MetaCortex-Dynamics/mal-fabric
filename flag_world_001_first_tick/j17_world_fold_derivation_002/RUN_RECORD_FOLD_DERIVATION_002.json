@@ -1,0 +1,299 @@
+{
+  "record": "J17_FOLD_DERIVATION_002",
+  "date": "2026-10-24T01:56:33.102Z",
+  "branch": "review/fold-realization-j17-link-3-001",
+  "head": "67f16aaa212a747012a6eec1a192517c66a64717",
+  "authority_receipt": {
+    "path": "C:\\Users\\devon\\Desktop\\MaL\\Markdowns\\RECEIPT_PROMOTE_SPEC_J17_WORLD_FOLD_EFFECT_001_v0.1.0.md",
+    "bytes": 2634,
+    "sha256": "E674B00C04B0B8119BFFD4596A756467B8054C9A6CF6741E3B2869365B7ECD9A"
+  },
+  "acceptance_criterion": {
+    "source": "Devon, current turn: one successor requires exclusion of every alternative by bound constraints, with witnesses.",
+    "full_fold_requires": "Complete bound predicate plus exhaustive exclusion/uniqueness witness; constructing one satisfying output is insufficient.",
+    "no_selection": "No candidate is selected.",
+    "unevaluated_predicate": "Does not imply cardinality zero or cardinality greater than one."
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\program.json",
+      "bytes": 51262,
+      "sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\fabric.successor.json",
+      "bytes": 62837,
+      "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\source\\runtime_reentry.mal",
+      "bytes": 22604,
+      "sha256": "609716E78664E5295C886BEF7C1678E65177D2EBD813B337D7CC3C7F0FD10584"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+      "bytes": 8265,
+      "sha256": "05CE980CBC68707070837001819A90DF532A730569BA1112367C07BC017BD45B"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+      "bytes": 521216,
+      "sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_002\\QUALIFICATION.json",
+      "bytes": 28485,
+      "sha256": "D2F42E635BF8095CE5BA3208B030D8F7F26E0A96074F78597833F1CE7D6E41F5"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualify.mjs",
+      "bytes": 12765,
+      "sha256": "1DF9AA2DC6DD832C1717416CE7047B9286957A4A5B1D509DEA7CFCAB11EC8D8C"
+    }
+  ],
+  "contacts": [
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\SPECS\\SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001_v0.1.0.md",
+      "bytes": 30926,
+      "sha256": "8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C",
+      "clauses": [
+        {
+          "from": 128,
+          "to": 150,
+          "text": "\nThe fold law is:\n\n    FOLD_n :=\n      G_whole,n\n      IF_THEN\n      S_internal,n\n      IF_THEN\n      G_parts,n+1\n\nwith:\n\n    G_parts,n+1 = G_whole,n+1\n\nFor every n:\n\n    THIS_qua_fold(F_n)\n      IF_THEN\n    G(F_n, F_n+1)\n\n    NO(G(F_n, F_n+1))\n      IF_THEN\n    NO(THIS_qua_fold(F_n+1))"
+        },
+        {
+          "from": 338,
+          "to": 348,
+          "text": "Post-element Universe time is the unfolding of admitted configuration genealogy:\n\n    Universe_w\n      -> admitted reaction\n      -> Universe_w+1\n\nHorizontal reaction:\n\n    rearranges active relations\n    preserves the exact element multiset\n    preserves K_id_min"
+        },
+        {
+          "from": 681,
+          "to": 708,
+          "text": "### 24.4 JUNCTION_REACTION_ALGEBRA_V1\n\nPurpose:\n\n    derive admissible relations from shape\n    materialize horizontal reactions in the fiber\n    type every proposed vertical reaction through K_id_min\n\nInputs:\n\n    ElementBasis\n    intrinsic junction ports\n    Governed Reaction Lattice\n    admissibility predicate\n    K_id_min preservation law\n\nOutputs:\n\n    JunctionRelationSetV1\n    HorizontalReactionFiberV1\n    governed vertical-reaction candidates only when witnessed\n\nForbidden:\n\n    recipe-table reactions\n    automatic vertical edges\n    fallback joins or meets\n    host-authored compatibility"
+        },
+        {
+          "from": 991,
+          "to": 1006,
+          "text": "After promotion, QueueGate SHALL permit bounded candidate writes needed to implement U01 through U10 when:\n\n    parent identities are bound\n    target types are fixed\n    no authority escalation occurs\n    conformance vectors are named\n    candidate output remains sandboxed\n    effect capabilities remain separate\n\nCodex MUST write missing v3 implementations. Absence of an implementation file is not evidence that the governing law is absent.\n\nCodex MUST stop only on:\n\n    authoritative source contradiction\n    exact dependency hash mismatch\n    failed constitutive witness"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\Markdowns\\FABRIC_EXECUTION_SPEC_v0.3.0-candidate.md",
+      "bytes": 11257,
+      "sha256": "5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0",
+      "clauses": [
+        {
+          "from": 66,
+          "to": 106,
+          "text": "STEP_FABRIC(Σ_t):\n\n  program := Σ_t.program\n  snapshot := immutable(Σ_t.state)\n\n  1. SNAPSHOT\n\n  2. EVALUATE\n     active_t :=\n       { c | payload_state(c,snapshot) = ADMITTED(frame,_) }\n\n     cell_results_t :=\n       { c ↦ evaluate(c, program, snapshot)\n         FOR EVERY c ∈ active_t }\n\n  3. PROPAGATE\n     route_results_t :=\n       { r ↦ propagate(r, program, snapshot, cell_results_t)\n         FOR EVERY r ∈ program.routes }\n\n     canonicalize route results by route identity\n\n  4. RUNTIME GOVERNANCE\n     governance_results_t :=\n       govern_runtime(\n         program,\n         snapshot,\n         route_results_t,\n         imported_V3_2_authority\n       )\n\n  5. SIMULTANEOUS COMMIT\n     state_{t+1} :=\n       simultaneous_commit(\n         snapshot,\n         cell_results_t,\n         route_results_t,\n         governance_results_t\n       )\n\n  RETURN (program, state_{t+1})"
+        },
+        {
+          "from": 118,
+          "to": 132,
+          "text": "  evaluate(c, program, state_t)\n\ndepends only on:\n  c\n  program\n  state_t\n\nand CANNOT observe:\n  another cell's current-tick result\n  current-tick route results\n  current-tick governance results\n  partially committed state_{t+1}\n```\n\n`evaluate`, `propagate`, and `govern_runtime` MUST be pure deterministic functions of declared immutable inputs."
+        },
+        {
+          "from": 169,
+          "to": 205,
+          "text": "Only ADMITTED cells are active.\n\n## 6. Input frames\n\n`ADMITTED` carries a complete canonical `InputFrame`.\n\n```text\nInputFrame :=\n  canonical role-keyed payload structure\n  derived from:\n    ROLE_SCHEMA(operator)\n    JOIN_SIGNATURE(operator,witness)\n```\n\n## 7. FRAME_READY / ASSEMBLE_FRAME\n\n```text\nASSEMBLE_FRAME\n  → COMPLETE(frame)\n  | INCOMPLETE(pending_roles)\n  | INVALID(reason)\n```\n\n```text\nFRAME_READY(c, program, route_results_t)\n  iff ASSEMBLE_FRAME(...) = COMPLETE(frame)\n```\n\nRules:\n```text\nEXACTLY_ONE:\n  0 arrivals → INCOMPLETE\n  1 arrival  → bind + type-check\n  >1         → INVALID(overconnection)\n\nMANY:\n  >=1 → canonicalize + type-check"
+        },
+        {
+          "from": 216,
+          "to": 228,
+          "text": "## 8. Partial input custody\n\n```text\nPartialInputBuffer := (\n  arrived_values : RoleName → Value*,\n  tick_of_first_arrival,\n  source_receipts\n)\n```\n\nPartial values live in `pending_input_buffers`, not PayloadState.\n\nMANY inputs canonicalize by deterministic route identity."
+        },
+        {
+          "from": 261,
+          "to": 290,
+          "text": "## 11. Egress disposition\n\n```text\nEgressDisposition :=\n    ADMITTED_TO_TARGET(receipt)\n  | PENDING_AT_TARGET(candidate_ref)\n  | REJECTED_AT_TARGET(reason_receipt)\n```\n\n```text\nEGRESS_CLOSED(c)\niff EVERY emitted consequence\nhas a durable committed disposition\n```\n\n```text\nCOMPLETED → DISCHARGED\niff EGRESS_CLOSED\n```\n\nSink cells close vacuously.\n\n## 12. Canonical timeline\n\n```text\nΣ_t     EMPTY\nΣ_t+1   ADMITTED\nΣ_t+2   COMPLETED\nΣ_t+3   DISCHARGED\nΣ_t+4   EMPTY"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\MaLv3\\SPEC_J17_WORLD_FOLD_EFFECT_001_v0.1.0_PROPOSED.mal",
+      "bytes": 19195,
+      "sha256": "E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E",
+      "clauses": [
+        {
+          "from": 91,
+          "to": 105,
+          "text": "                           // correspondence (LAW's own MAYBE); the H⁺+e⁻→H+γ reading (FOLD) as locator.\n  FOR_WHAT(INSIDE_OUTSIDE),// Nothing OUTSIDE is imported INSIDE as evidence.\n\n  // NEAR_FAR\n  WHAT(NEAR_FAR),          // NEAR := degree of coupling (FPP §4). It is READ by the realization, never inferred from THIS\n                           // counts or from zero inter-snapshot edits (correction 10-23 11:43).\n  HOW(NEAR_FAR),           // The NEAREST moment to g₂ is its fold. Lifecycle re-entry (FPP T3/T7) is FAR and is not this step.\n  FOR_WHAT(NEAR_FAR),      // MUST fold WHERE NEAR is enough-for-fold (T6): enough-for-fold is read from the operands, not set.\n\n  // CAN_CANNOT\n  WHAT(CAN_CANNOT),        // The world CAN take link 3 iff the fold's operation on g₂ is realized; it CANNOT by repeating the\n                           // THIS/SAME read-only program (that would not witness HELD under FOLD; RUN_RECORD_FOLD_REALIZATION).\n  HOW(CAN_CANNOT),         // A step CANNOT observe current-tick results (FABEX §3); re-entry is across the commit only.\n  FOR_WHAT(CAN_CANNOT),    // A withheld candidate CANNOT be read as a wall or a reaction (L06; CARRIER_BINDING §5b).\n"
+        },
+        {
+          "from": 170,
+          "to": 188,
+          "text": "// ---------------------------------------------------------------\n// EXPECTED TERMINAL\n//   Structural: seed cells 45; derived 60 = WHERE 15 + WHICH 15 + WHEN 15 + WHENCE 15.\n//   Total 105 witness cells plus the 15 carrier atoms. PENDING seed/derived cells: {}.\n//   This structural terminal is NOT the execution terminal.\n//\n//   EXECUTION TERMINAL (named): T_FOLD_EFFECT ∈ { MOVED, HELD, REENTRY_NOT_SAME, MULTISET_NOT_PRESERVED, UNSUPPLIED(name) }.\n//     Read on ONE realization of the fold on g₂ with its chain, committed as link 3 (or stopped at a named absence).\n//\n//   O_exec, each PENDING:\n//     O_LAW_TEXT: hash-bind the quoted clause text of LAW §14 and §24.4 (:591, :681) and SRC :97, :189–198, :203.\n//     O_OPERAND_BIND: bind the five operands by hash (V2); report any missing (V3).\n//     O_FOLD_REALIZE: implement, in mal-fabric, the operation (g₂ field, incidence, ports, runtime state, genealogy) →\n//       successor relations and readings under §14/§24.4. Where an operation is absent from LAW/SRC/RXN: STOP, name it.\n//     O_REENTRY: successor.prev = link 2's link; RETURN (program, state_{t+1}); carry genealogy per SRC :189–198.\n//     O_QUALIFY: RTX 3070; replay twice byte-identical; DRC (i)–(viii) on the realized program; commit link 3; ONE run record.\n//   O_next = { physical-element correspondence (LAW's own MAYBE); H⁺+e⁻→H+γ ↔ J17 (TR M7 narrowed); tick 4 re-entry }.\n//   STOPS (CADENCE): NOT_SAME against promoted bytes; a face where a cell's OWN rank is MAYBE; UNSUPPLIED(name). Nothing else.\n// ---------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\geometric_reading_001\\witness_payload_v1.mal",
+      "bytes": 12702,
+      "sha256": "0B3B9FF7C29C6C0E74EAB2222D69AB334506EC53976EF8FA87514ACEA47BBCD5",
+      "clauses": [
+        {
+          "from": 296,
+          "to": 322,
+          "text": "    THIS content_digest = witness_payload_digest_v1.call(\n      witness_name, carrier_relations, genesis_state\n    )\n    NO IN TOGETHER {\n      kind: \"COMMITTED_WITNESS_STATE_V1\"\n      custody: \"COMMITTED\"\n      witness_identity: witness_name\n      incident_operators: witness_incident_operators_v1.call(witness_name)\n      domain_incidence: witness_domain_incidence_records_v1.call(\n        witness_name, carrier_relations\n      )\n      domain_incidence_count: witness_domain_incidence_count_v1.call(witness_name)\n      blind_spots: witness_blind_spots_v1.call(witness_name)\n      blind_spot_count: witness_blind_spot_count_v1.call(witness_name)\n      repair_adjacency_evidence: carrier_relations.repair_adjacency_evidence\n      support_membership: witness_support_membership_v1.call(witness_name)\n      genesis_site_count: witness_genesis_site_count_v1.call(witness_name)\n      genesis_state_evidence_digest: genesis_state_evidence_digest_v1.call(genesis_state)\n      structural_rank: witness_structural_rank_v1.call(witness_name)\n      registry_state: \"PRESENT\"\n      relation_digest: carrier_relations.axis_mediation_evidence.digest\n      coupling_digest: carrier_relations.support_triangle_evidence.digest\n      capability_digest: carrier_relations.repair_adjacency_evidence.digest\n      content_digest: content_digest\n      operator_result_count: 0\n      operand_values: MANY []\n    }"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\geometric_reading_001\\o15_operator_result_v1.mal",
+      "bytes": 15565,
+      "sha256": "34D79BEC206DB18181229713156B1581A26A296837469333B34F4F7E92D67B2D",
+      "clauses": [
+        {
+          "from": 291,
+          "to": 305,
+          "text": "  CAN readonly IN native_together_alone_v1(frame: Atom) -> Atom {\n    THIS left = frame.operand_1.operand_value\n    THIS right = frame.operand_2.operand_value\n    SAME left.kind {\n      \"ESSENCE_ID_VALUE_V1\" -> SAME right.kind {\n        \"ESSENCE_ID_VALUE_V1\" -> SAME digest256_equal.call(\n          left.coupling_digest, right.coupling_digest\n        ) {\n          true -> NO IN o15_result_v1.call(frame, \"IF_THEN\", \"COUPLING_CHECK\")\n          _ -> NO IN o15_result_v1.call(frame, \"NO\", \"COUPLING_CHECK\")\n        }\n        _ -> NO IN o15_result_unresolved_v1.call(frame, \"RIGHT_ESSENCE_ID_TYPE\")\n      }\n      _ -> NO IN o15_result_unresolved_v1.call(frame, \"LEFT_ESSENCE_ID_TYPE\")\n    }"
+        },
+        {
+          "from": 326,
+          "to": 345,
+          "text": "  CAN readonly IN native_near_far_v1(frame: Atom) -> Atom {\n    THIS left = frame.operand_1.operand_value\n    THIS right = frame.operand_2.operand_value\n    THIS boundary = frame.operand_3.operand_value\n    SAME left.kind {\n      \"ESSENCE_ID_VALUE_V1\" -> SAME right.kind {\n        \"ESSENCE_ID_VALUE_V1\" -> SAME boundary.kind {\n          \"Q32_32_BOUNDARY_VALUE_V1\" -> SAME boundary.proximity_class {\n            \"NEAR\" -> NO IN o15_result_v1.call(frame, \"IF_THEN\", \"DISTANCE_CHECK\")\n            \"MID\" -> NO IN o15_result_v1.call(frame, \"NOT_SAME\", \"DISTANCE_CHECK\")\n            \"FAR\" -> NO IN o15_result_v1.call(frame, \"NO\", \"DISTANCE_CHECK\")\n            \"UNRESOLVED\" -> NO IN o15_result_v1.call(frame, \"MAYBE\", \"DISTANCE_CHECK\")\n            _ -> NO IN o15_result_unresolved_v1.call(frame, \"INVALID_PROXIMITY_CLASS\")\n          }\n          _ -> NO IN o15_result_unresolved_v1.call(frame, \"Q32_BOUNDARY_TYPE\")\n        }\n        _ -> NO IN o15_result_unresolved_v1.call(frame, \"RIGHT_ESSENCE_ID_TYPE\")\n      }\n      _ -> NO IN o15_result_unresolved_v1.call(frame, \"LEFT_ESSENCE_ID_TYPE\")\n    }"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\geometric_reading_001\\immutable_committed_carrier_snapshot_v1.mal",
+      "bytes": 7408,
+      "sha256": "0546ED90A43D7AEDB771FE262F337AFAE2CD5FD861E91ED9C310CB7C99F7CE68",
+      "clauses": [
+        {
+          "from": 43,
+          "to": 64,
+          "text": "  CAN readonly IN materialize_scale_relations_v1(carrier_relations: Atom) -> Atom {\n    THIS digest = sha256_digest.call(byte_seq_concat.call(\n      byte_seq_leaf.call(MANY [83 67 86 49]),\n      digest256_to_bytes.call(carrier_relations.repair_adjacency_evidence.digest)\n    ))\n    NO IN TOGETHER {\n      kind: \"COMMITTED_SCALE_RELATIONS_V1\"\n      custody: \"COMMITTED\"\n      boundaries: MANY [\n        TOGETHER {\n          kind: \"INTRINSIC_NEAR_FAR_BOUNDARY_V1\"\n          left_witness: \"WHENCE\"\n          right_witness: \"WHICH\"\n          relation_basis: \"SHARED_BLIND_PAIR_02_09\"\n          proximity_class: \"NEAR\"\n          digest: digest\n        }\n      ]\n      operand_values: MANY []\n      digest: digest\n    }\n  }"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\geometric_reading_001\\GROUND_REACTION_FIBER_V1.mal",
+      "bytes": 2839,
+      "sha256": "1E1E82E3E5C237C8AF5F36BA8F79886F26B5298DEFEBE1F40A212CDBE34E8A6B",
+      "clauses": [
+        {
+          "from": 1,
+          "to": 36,
+          "text": "// GROUND_REACTION_FIBER_V1\n// Horizontal order preserves the multiset. Vertical proposals preserve K_id^min.\n// Missing governed evidence never creates an edge.\nIN ground_reaction_fiber_v1 {\n  CAN readonly IN admit_horizontal_cover_v1(source: Atom, target: Atom, proposal: Atom) -> Atom {\n    SAME source.verdict { \"IF_THEN\" -> NONE _ -> NO IN source }\n    SAME target.verdict { \"IF_THEN\" -> NONE _ -> NO IN target }\n    SAME source.arrangement.multiset { target.arrangement.multiset -> NONE _ -> NO IN TOGETHER {\n      kind: \"HORIZONTAL_COVER_V1\" verdict: \"NOT_SAME\"\n      first_failure_locus: \"MULTISET_CHANGED\"\n    } }\n    SAME proposal.vertical_conversion { false -> NONE _ -> NO IN TOGETHER {\n      kind: \"HORIZONTAL_COVER_V1\" verdict: \"NOT_SAME\"\n      first_failure_locus: \"VERTICAL_PROPOSAL_AT_HORIZONTAL_BOUNDARY\"\n    } }\n    SAME proposal.complete_directional_witness {\n      true -> NONE\n      _ -> NO IN TOGETHER {\n        kind: \"HORIZONTAL_COVER_V1\" verdict: \"MAYBE\"\n        first_failure_locus: \"ANTISYMMETRIC_DIRECTIONAL_INVARIANT\"\n      }\n    }\n    NO IN TOGETHER {\n      kind: \"HORIZONTAL_COVER_V1\" verdict: \"IF_THEN\"\n      source: source.world_identity target: target.world_identity\n      multiset: source.arrangement.multiset\n      genealogy: proposal.genealogy\n    }\n  }\n\n  CAN readonly IN admit_vertical_edge_v1(source: Atom, target: Atom, proposal: Atom) -> Atom {\n    SAME proposal.vertical_conversion { true -> NONE _ -> NO IN TOGETHER {\n      kind: \"VERTICAL_EDGE_V1\" verdict: \"NOT_SAME\"\n      first_failure_locus: \"HORIZONTAL_PROPOSAL_AT_VERTICAL_BOUNDARY\"\n    } }\n    NO IN ground_identity_conservation_v1.validate_vertical_transition_v1.call(source, target, proposal)"
+        }
+      ]
+    }
+  ],
+  "runtime_fragment": {
+    "verdict": "IF_THEN",
+    "scope": "Fixed admitted g2 program and its hash-bound COMPLETED snapshot; not the full fold.",
+    "successor_cardinality": 1,
+    "qualification": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_002\\QUALIFICATION.json",
+      "bytes": 15024,
+      "sha256": "2E9667AEF03308B560308DAC3A18CB600C025CAB64C968E48B276149F0FB396B"
+    },
+    "witness": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\RUNTIME_UNIQUENESS_WITNESS.json",
+      "bytes": 5923048,
+      "sha256": "1FE878CEF2B9843E5574501E404AE19B8ACA01413D1ACFB5129ED20CEEFDDE54"
+    },
+    "output": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_002\\uncommitted.runtime.json",
+      "bytes": 58625,
+      "sha256": "55F9E49A428BA9662DE5DDBD59F65E1DBDFA5B4B7C6CCC549EDEC1952308A966"
+    },
+    "replay": "SAME",
+    "payloads_discharged": 18,
+    "buffers_retained": 6,
+    "new_evaluations": 0,
+    "new_arrivals": 0,
+    "new_transition_receipts": 18
+  },
+  "scalar_transport_exclusion": {
+    "verdict": "IF_THEN",
+    "evidence": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\transport_evidence_001\\TRANSPORT_EXCLUSIONS.json",
+      "bytes": 221161,
+      "sha256": "A3032EBFC1A67CB89C4E8B4CF2A39E7F1F30E64A00D064E6DE3CE99B9A9DC37A"
+    },
+    "excluded": "Copying one scalar face reading to every incident flag cannot recover g2.",
+    "remaining": "Richer Patch/readout transports are not excluded."
+  },
+  "full_fold": {
+    "verdict": "MAYBE",
+    "successor_cardinality": null,
+    "unique_successor": "NOT_WITNESSED",
+    "reason": "The complete relations-from-shape predicate and its successor field consequence have not yet been materialized.",
+    "residual_operands": [
+      "Successor active-incidence relation entailed by intrinsic participants/ports and coupling under section 24.4.",
+      "Reading of that successor relation on the 480 flag occurrences."
+    ],
+    "scope": "These are unresolved derivation/implementation contacts, not a proof that the governing law is absent, not a certificate of multiple admissible futures, and not a request for a new law or per-case choice.",
+    "known_non_substitutes": [
+      "SAME reading is not automatically coupling.",
+      "Scalar phase-to-marker copying loses committed support.",
+      "Replaying the read-only THIS/SAME program does not witness HELD under FOLD."
+    ],
+    "link_3": "NOT_COMMITTED",
+    "world_successor": "NOT_PRODUCED",
+    "O_FOLD_REALIZE": "PENDING",
+    "O_REENTRY": "PENDING",
+    "O_QUALIFY": "PENDING_FOR_FULL_FOLD"
+  },
+  "qualification_correction": {
+    "prior_attempt": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_001\\STOP.json",
+      "bytes": 2853,
+      "sha256": "45E11CCEF7F2C124DF11F622CA416C6D6884D68D1B13BE85FD441C79D67E1C5E"
+    },
+    "reason": "Checker changed after review: distinct-arrival overconnection and exact new-receipt comparison. Custody guard stopped the earlier sandbox attempt; it is retained, not promoted."
+  },
+  "implementation": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\source\\runtime_reentry.mal",
+      "bytes": 22604,
+      "sha256": "609716E78664E5295C886BEF7C1678E65177D2EBD813B337D7CC3C7F0FD10584"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualify.mjs",
+      "bytes": 12765,
+      "sha256": "1DF9AA2DC6DD832C1717416CE7047B9286957A4A5B1D509DEA7CFCAB11EC8D8C"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\inspect_transport.mjs",
+      "bytes": 3375,
+      "sha256": "B8B2D78FD2A3C7AFA4DF77E5B25698965EC851C3C89B809326A0581F2E1595A4"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\export_witness.mjs",
+      "bytes": 3045,
+      "sha256": "B8B2132F2A89B5634286ACABE5748C32F128875955D92F37745C23EDD49A1D98"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\record_derivation.mjs",
+      "bytes": 6359,
+      "sha256": "A7F9FC3A995D5761370E5D2DF291EE2C975572C182E4452480C3AEE95DAFC14E"
+    }
+  ],
+  "custody": {
+    "frozen_manifest": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_runs_021_023_seal\\FROZEN_REHOME_MANIFEST_001.json",
+      "bytes": 539738,
+      "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560"
+    },
+    "files": 901,
+    "bytes": 1069571560,
+    "comparison": "SAME",
+    "original_g2": "UNCHANGED",
+    "sealed_prior_stop": "PRESERVED",
+    "admission": "NOT_REOPENED",
+    "python_execution": "NOT_RUN",
+    "board_action": "NOT_RUN",
+    "repository_commit": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED"
+  }
+}

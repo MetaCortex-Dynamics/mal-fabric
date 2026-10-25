@@ -1,0 +1,171 @@
+{
+  "schema": "J17WorldTransitionContactReadoutV1",
+  "recorded_on": "2026-10-24",
+  "status": "CONTACTS_PREPARED_UNCOMMITTED",
+  "scope": "Bound-source reading and byte custody. No GPU run, no offered-lift evaluation, no field successor, no link 3, no commit or push.",
+  "correction": {
+    "withdrawn": "A lifecycle phase for every one of the 480 flags is required as part of the committed world subject.",
+    "retained": "FABEX lifecycle inputs belong to the realizing program. They are not interchangeable with the worldline pair's field readings.",
+    "because": "GPU_SELF_WITNESS lines16-19 binds the worldline subject to (field,witness). Complete runtime FABRIC_STATE is a separately hashed subject."
+  },
+  "bindings": [
+    {
+      "id": "G2",
+      "path": "../j17_step_023/outputs/committed.world.json",
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+      "bytes": 568805
+    },
+    {
+      "id": "RUN_023",
+      "path": "../j17_step_023/RUN_RECORD_023.json",
+      "sha256": "6A07ACE68BD15DA5F084269FA7FDD57021EC89B30EAE44ED4BF9F9B697B79B0D",
+      "bytes": 111818
+    },
+    {
+      "id": "NATIVE_PRODUCER",
+      "path": "../evidence/first-tick-conform-v1-v2-001/files/realization020/source/vector_displacement.mal",
+      "sha256": "22192EBAEE1248B35B722C97924B0FF6DF577CCD024F0A9B9F75C9A6ECFB3F8F",
+      "bytes": 32622
+    }
+  ],
+  "g2_observation": {
+    "links": 2,
+    "flags": 480,
+    "THIS": 12,
+    "NO": 468,
+    "overlaps": 720,
+    "SAME": 708,
+    "NOT_SAME": 12,
+    "world_subject": "field,witness",
+    "pair_hash": "E3CB79631EE00239DA1F97B5AE7A9C65CD2CD138C915C093185D3BF90E4C6CC9",
+    "chain_head": "173E0FA1D318DE52472E31E3ACF064BF92D9B313BDB4E52D2F4593DDD3631386",
+    "receipt_opened": 0,
+    "receipt_discharged": 0,
+    "admission": "Retained; no admission re-run."
+  },
+  "source_findings": [
+    {
+      "contact": "ENGINE",
+      "lines": [
+        386,
+        387
+      ],
+      "quote": "PROPOSE reads the current committed snapshot and emits every completing lift\nfor the declared base move.",
+      "consequence": "Completion enumeration takes a declared base move; these lines do not derive it from wall locations."
+    },
+    {
+      "contact": "ENGINE",
+      "lines": [
+        407,
+        408
+      ],
+      "quote": "DECIDE receives the proposed completion relation and a governed input. It may\nselect only a proposed lift.",
+      "consequence": "Governed input remains an operand of this contract. No input is chosen in this read."
+    },
+    {
+      "contact": "ENGINE",
+      "lines": [
+        458,
+        464
+      ],
+      "consequence": "Disagreement is a wall; agreement is an opening; changes to agreement produce receipt entries. The clause explicitly says this is not an admission rule. It contains no wall-to-base-move producer."
+    },
+    {
+      "contact": "A1_A10",
+      "lines": [
+        17,
+        17
+      ],
+      "quote_fragment": "Receipt ≠ persistence; persistence is promoted continuity. Strict discharge ends at one of two distinct uniform states.",
+      "consequence": "The strict-discharge endpoint remains promoted. It does not by itself state that every tick is a strict-discharge transition."
+    },
+    {
+      "contact": "ERRATUM",
+      "lines": [
+        74,
+        74
+      ],
+      "quote_fragment": "K is not a reading of the carrier rule; K is strict discharge (A6)",
+      "consequence": "The promoted text distinguishes the strict-discharge relation from the carrier rule. No identity between this tick's completion relation and strict discharge is supplied by this clause."
+    },
+    {
+      "contact": "A1_A10",
+      "lines": [
+        18,
+        18
+      ],
+      "consequence": "A7 retains completion/readings, DECIDE lift/gate, PROMOTE successor and EXECUTE as separate moments."
+    },
+    {
+      "contact": "A1_A10",
+      "lines": [
+        46,
+        46
+      ],
+      "consequence": "D2 names A3/A4 at m2 wired to GameTickInput (DECIDE), not a wall-derived input."
+    },
+    {
+      "binding": "NATIVE_PRODUCER",
+      "lines": [
+        12,
+        18
+      ],
+      "consequence": "entity, kind, target and selected_lift are readonly vector inputs."
+    },
+    {
+      "binding": "NATIVE_PRODUCER",
+      "lines": [
+        132,
+        168
+      ],
+      "consequence": "Offer enumeration is geometric once entity and target are bound. No selected lift is a premise of that offer relation; its absence is not the missing precondition for enumeration."
+    },
+    {
+      "binding": "NATIVE_PRODUCER",
+      "lines": [
+        199,
+        223
+      ],
+      "consequence": "The accepted selected lift drives FROM to NO, TO to THIS and retains other flag readings. The source does not derive entity/kind/target from g2."
+    },
+    {
+      "contact": "QUEUEGATE",
+      "lines": [
+        681,
+        708
+      ],
+      "consequence": "JunctionRelationSetV1 and HorizontalReactionFiberV1 remain named required outputs. Copying the contact does not discharge their realization or identify them with the 720 overlap readings."
+    }
+  ],
+  "reading": {
+    "claim_examined": "nonuniform(g2) and 12 walls force native source/target operands at those walls this tick",
+    "verdict": "MAYBE",
+    "because": "The inspected promoted contracts retain declared-base-move and governed-input operands, and distinguish K strict discharge from the carrier rule. The wall count does not supply the missing operand correspondence.",
+    "missing_correspondence_in_this_read": "g2 and its admitted world-fold law -> declared move (entity,kind,target) for this producer, or another source-bound world operation that does not use that interface.",
+    "offered_set_status": "NOT_EVALUATED_UNBOUND_INPUTS",
+    "empty_set_claim": "NOT_MADE",
+    "A6_contradiction_claim": "NOT_MADE",
+    "corpus_absence_claim": "NOT_MADE",
+    "new_DECIDE_request": "NONE",
+    "world_terminal": "NOT_ASSIGNED",
+    "next_source_contact": "A source-owned binding for the world operation, distinguished from the already-conformed entity-input producer. No per-wall choice or inferred totality is substituted."
+  },
+  "repository_custody": {
+    "inspected_refs": [
+      "67f16aaa212a747012a6eec1a192517c66a64717",
+      "7a8c4e5fda88557dd49b41eeecae147e7778e464",
+      "3b703f6a2cd5227c497de2a02bfb693c9fe4d829"
+    ],
+    "method": "All tracked blob sizes compared with the four original contact sizes; zero same-size blobs for ENGINE, A1_A10, GPU_SELF_WITNESS and QUEUEGATE in each tree. Hash citations are distinct from standalone contact bytes.",
+    "scope": "Standalone exact-file presence, not a search inside every archived bundle. No remote fetch.",
+    "prepared": "Eight exact source/receipt/erratum copies, governed by MANIFEST.json; not yet committed."
+  },
+  "retained_boundaries": [
+    "J17 admission and its two committed links remain unchanged.",
+    "The 18-cell runtime derivation retains its own witnessed subject and is not reassigned to the worldline pair.",
+    "No entity is inferred solely from a THIS reading.",
+    "No relation is selected, no handedness is assigned and no digital-shell admission is required.",
+    "Python genealogy is not executed, imported as runtime or used as native acceptance.",
+    "No new promotion or law is recorded."
+  ]
+}

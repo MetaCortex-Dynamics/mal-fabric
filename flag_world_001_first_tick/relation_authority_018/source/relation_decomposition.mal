@@ -1,0 +1,37 @@
+// Recorded native-relation contact, implementation 018.
+// SPEC_MAL_SPECIFICATION_SYSTEM_002 :56,61-62,91-93,171-173;
+// FF85EE5F18813F7D64CE7BF275EBEA2F1FF581B32431D232FA4FD2B5B4E7E093.
+// Positive contacts to an actual rule/application record, not a field-name
+// classifier or a theorem extracting arbitrary prose. Transport preserves
+// source/map/readback and named law/parent identities. No FOR_WHAT is inferred.
+// The two application checks below reproduce the operand joins of SC_SITE_NO
+// and SC_STRICT in source 80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1.
+// They do not re-run the historical derivation or create its admission witness.
+// Missing record, law, parent or reference withholds the contact. Role labels
+// cannot supply a derivation. PROMOTE's recorded tuple is not a native firing.
+// Multiple application contacts retain distinct relation identifiers; a
+// consumer cannot choose the first payload at an operator/witness coordinate.
+
+law RD_CASE_INSTANCE := IF GOES_WITH(RD_APPLICATION,s,f,l,THIS(SC_CASE,SITE(v,"NO")),CONS(parent,NIL)), GOES_WITH(RD_RULE_NAME,s,l,SC_SITE_NO), GOES_WITH(RD_FACT,s,parent,THIS(SC_SITE,v)) THEN GOES_WITH(RD_SUPPORTED,s,f,l);
+law RD_STRICT_INSTANCE := IF GOES_WITH(RD_APPLICATION,s,f,l,THIS(SC_STRICT,m),CONS(p1,CONS(p2,CONS(p3,CONS(p4,NIL))))), GOES_WITH(RD_RULE_NAME,s,l,SC_STRICT), GOES_WITH(RD_FACT,s,p1,THIS(SC_COMPLETE,m)), GOES_WITH(RD_FACT,s,p2,THIS(SC_COVER_ROOT,root)), GOES_WITH(RD_FACT,s,p3,GOES_WITH(SC_EMPTY_OPEN,m,root)), GOES_WITH(RD_FACT,s,p4,GOES_WITH(SC_DISCHARGED,m,a,b)) THEN GOES_WITH(RD_SUPPORTED,s,f,l);
+
+// OWNER declares the source-bound subject restriction independently of content.
+// RULE carries the complete source-map antecedent AST and single consequent.
+// FACT transports both fact identity and term, including every concrete parent.
+law RD_OPEN := IF GOES_WITH(RD_OWNER,p,r,s,f), GOES_WITH(RD_SUPPORTED,s,f,l), GOES_WITH(RD_APPLICATION,s,f,l,c,ps), GOES_WITH(RD_FACT,s,f,c), GOES_WITH(RD_RULE,s,l,CONS(a,aa),z) THEN GOES_WITH(RD_APPLICATION_CONTACT,RD_CONTEXT(p,r,s,f,l,c,ps),CONS(a,aa),z);
+law RD_PARENTS_BEGIN := IF GOES_WITH(RD_APPLICATION_CONTACT,RD_CONTEXT(p,r,s,f,l,c,ps),aa,z) THEN GOES_WITH(RD_PARENT_SCAN,RD_CONTEXT(p,r,s,f,l,c,ps),aa,ps);
+law RD_PARENT_STEP := IF GOES_WITH(RD_PARENT_SCAN,RD_CONTEXT(p,r,s,f,l,c,ps),CONS(a,aa),CONS(parent,pp)), GOES_WITH(RD_FACT,s,parent,t) THEN GOES_WITH(RD_PARENT_SCAN,RD_CONTEXT(p,r,s,f,l,c,ps),aa,pp);
+law RD_PARENTS_END := IF GOES_WITH(RD_PARENT_SCAN,RD_CONTEXT(p,r,s,f,l,c,ps),NIL,NIL) THEN GOES_WITH(RD_COMPLETE,RD_CONTEXT(p,r,s,f,l,c,ps));
+
+// Rule and application references are separate content subjects, both bound to
+// all their operands. Neither replaces the member's identity or grants authority.
+law RD_RULE_READING := IF GOES_WITH(RD_COMPLETE,RD_CONTEXT(p,r,s,f,l,c,ps)), GOES_WITH(RD_APPLICATION_CONTACT,RD_CONTEXT(p,r,s,f,l,c,ps),aa,z), GOES_WITH(RD_RULE_CONTENT,s,l,aa,z,PRESENT(bits)) THEN GOES_WITH(RD_CONTACT,p,r,RD_RELATION(s,f),POSITION(IF_THEN,WHAT),RULE_RELATION,"IF_THEN",PRESENT(bits));
+law RD_PROOF_READING := IF GOES_WITH(RD_COMPLETE,RD_CONTEXT(p,r,s,f,l,c,ps)), GOES_WITH(RD_PROOF_CONTENT,s,f,l,c,ps,PRESENT(bits)) THEN GOES_WITH(RD_CONTACT,p,r,RD_RELATION(s,f),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,"IF_THEN",PRESENT(bits));
+
+// R4 normalizes verdicts only; the relation identifier keeps independent
+// contact subjects distinct. No derived content reference is manufactured.
+law RD_NORMALIZE := IF GOES_WITH(RD_CONTACT,p,r,k,POSITION(o,b),ty,v,ref) THEN GOES_WITH(P15_SEED,RD_SUBJECT(p,r,k),POSITION(o,b),v,ref);
+
+// A topology party is an additional supplied binding, never inferred from a
+// successful contact. The restriction component checks its visibility/grants.
+law RD_AUTHORITY_INPUT := IF GOES_WITH(RD_CONTACT,p,r,k,pos,ty,v,ref), GOES_WITH(RD_AUTHORITY_PARTY,p,r,k,party) THEN GOES_WITH(AR_CONTACT,party,pos,ty,v,ref);

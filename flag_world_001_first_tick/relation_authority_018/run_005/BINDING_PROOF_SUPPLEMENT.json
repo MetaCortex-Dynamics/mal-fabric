@@ -1,0 +1,6030 @@
+{
+  "schema": "RelationAuthority018BindingProofSupplement",
+  "verdict": "IF_THEN",
+  "scope": "READ_ONLY_PROVENANCE_AND_CUSTODY; NO_NATIVE_RUN_OR_AUTHORITY_EFFECT",
+  "observer": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\audit_binding_provenance.mjs",
+    "bytes": 2786,
+    "sha256": "42B44352D971049DB38747BBBE147C809AA361F30BA400C5A0A93EC4EFB9FF8C"
+  },
+  "record": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_005\\RUN_RECORD_018.json",
+    "bytes": 244931,
+    "sha256": "9333EA6CE1D187458C3849695B3E84AEA6629C8C1440CDBFE101987CB78B18F8"
+  },
+  "identity_checks": 75,
+  "runs": [
+    {
+      "label": "normal",
+      "source_map": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_005\\normal\\stage\\source-map.json",
+        "bytes": 13679529,
+        "sha256": "C793A6DC1557C4095EF3828AF610E41300D00500FDE83306AE1A182A7A8AEA32"
+      },
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_005\\normal\\stage\\readback.bin",
+        "bytes": 169345056,
+        "sha256": "282597D6D310462BFE1EA3712F656B085EE3EAF40282CFA51FAD15D13F040C91"
+      },
+      "terminals": [
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 604
+        },
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 605
+        },
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 606
+        },
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 607
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 696
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 697
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 731
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 732
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 733
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 734
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 735
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 736
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 749
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 750
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 751
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 752
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 753
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 754
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 755
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 756
+        }
+      ],
+      "proof_ancestry": [
+        {
+          "id": 30,
+          "term": 171,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 33,
+          "term": 174,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 34,
+          "term": 175,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 45,
+          "term": 187,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 46,
+          "term": 188,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 48,
+          "term": 191,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 54,
+          "term": 240,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 55,
+          "term": 267,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 56,
+          "term": 268,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 57,
+          "term": 272,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 58,
+          "term": 530,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 59,
+          "term": 786,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 60,
+          "term": 787,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 61,
+          "term": 789,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 62,
+          "term": 792,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 63,
+          "term": 803,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 64,
+          "term": 804,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 65,
+          "term": 814,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 66,
+          "term": 1071,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 67,
+          "term": 1329,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 68,
+          "term": 1330,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 69,
+          "term": 1332,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 70,
+          "term": 1343,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 71,
+          "term": 1345,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 72,
+          "term": 1351,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 134,
+          "term": 1480,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 135,
+          "term": 1481,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 136,
+          "term": 1482,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 137,
+          "term": 1483,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 138,
+          "term": 1484,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 139,
+          "term": 1485,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 140,
+          "term": 1486,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 141,
+          "term": 1487,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 142,
+          "term": 1488,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 143,
+          "term": 1492,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 153,
+          "term": 1514,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 154,
+          "term": 1515,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 344,
+          "term": 1909,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 345,
+          "term": 1912,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 346,
+          "term": 1914,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 347,
+          "term": 1915,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 348,
+          "term": 1916,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 349,
+          "term": 1936,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 350,
+          "term": 1937,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 351,
+          "term": 1938,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 352,
+          "term": 2138,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 353,
+          "term": 2144,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 354,
+          "term": 2145,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 355,
+          "term": 2407,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 426,
+          "term": 2526,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 427,
+          "term": 2527,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 428,
+          "term": 2528,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 429,
+          "term": 2529,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 430,
+          "term": 2530,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 431,
+          "term": 2531,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 432,
+          "term": 2532,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 433,
+          "term": 2533,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 435,
+          "term": 2539,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 436,
+          "term": 2540,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 437,
+          "term": 2541,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 438,
+          "term": 2542,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 439,
+          "term": 2543,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 440,
+          "term": 2544,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 441,
+          "term": 2545,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 442,
+          "term": 2546,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 445,
+          "term": 2553,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 446,
+          "term": 2554,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 447,
+          "term": 2555,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 448,
+          "term": 2556,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 449,
+          "term": 2557,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 450,
+          "term": 2558,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 451,
+          "term": 2560,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 452,
+          "term": 2561,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 454,
+          "term": 2563,
+          "rule": 0,
+          "origin": "RD_CASE_INSTANCE",
+          "rank": 1,
+          "support": [
+            55,
+            56,
+            61
+          ],
+          "rule_name": "RD_CASE_INSTANCE"
+        },
+        {
+          "id": 457,
+          "term": 2566,
+          "rule": 1,
+          "origin": "RD_STRICT_INSTANCE",
+          "rank": 1,
+          "support": [
+            63,
+            64,
+            69,
+            70,
+            71,
+            72
+          ],
+          "rule_name": "RD_STRICT_INSTANCE"
+        },
+        {
+          "id": 458,
+          "term": 2567,
+          "rule": 1,
+          "origin": "RD_STRICT_INSTANCE",
+          "rank": 1,
+          "support": [
+            135,
+            136,
+            140,
+            141,
+            142,
+            143
+          ],
+          "rule_name": "RD_STRICT_INSTANCE"
+        },
+        {
+          "id": 491,
+          "term": 2600,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            345,
+            346,
+            347,
+            348
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 497,
+          "term": 2606,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            426,
+            427,
+            428,
+            348
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 498,
+          "term": 2607,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            435,
+            436,
+            437,
+            348
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 499,
+          "term": 2608,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            445,
+            446,
+            447,
+            348
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 500,
+          "term": 2609,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            349,
+            350,
+            351
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 506,
+          "term": 2615,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            429,
+            430,
+            351
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 507,
+          "term": 2616,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            438,
+            439,
+            351
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 508,
+          "term": 2617,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            448,
+            449,
+            351
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 509,
+          "term": 2618,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            352
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 516,
+          "term": 2625,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            431
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 517,
+          "term": 2627,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            440
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 518,
+          "term": 2628,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            450
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 519,
+          "term": 2629,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            353
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 527,
+          "term": 2637,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            432
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 528,
+          "term": 2638,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            441
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 529,
+          "term": 2640,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            451
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 530,
+          "term": 2641,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            354
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 537,
+          "term": 2648,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            433
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 538,
+          "term": 2649,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            442
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 539,
+          "term": 2650,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            452
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 540,
+          "term": 2652,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            54,
+            454,
+            55,
+            60,
+            57
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 541,
+          "term": 2654,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            153,
+            454,
+            55,
+            60,
+            57
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 542,
+          "term": 2656,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            62,
+            457,
+            63,
+            68,
+            65
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 543,
+          "term": 2658,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            154,
+            457,
+            63,
+            68,
+            65
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 544,
+          "term": 2660,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            134,
+            458,
+            135,
+            139,
+            137
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 604,
+          "term": 2720,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            491,
+            500,
+            509,
+            519,
+            530
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 605,
+          "term": 2721,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            497,
+            506,
+            516,
+            527,
+            537
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 606,
+          "term": 2723,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            498,
+            507,
+            517,
+            528,
+            538
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 607,
+          "term": 2725,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            499,
+            508,
+            518,
+            529,
+            539
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 608,
+          "term": 2726,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            540
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 609,
+          "term": 2727,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            541
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 610,
+          "term": 2728,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            542
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 611,
+          "term": 2729,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            543
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 612,
+          "term": 2730,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            544
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 640,
+          "term": 2759,
+          "rule": 29,
+          "origin": "BR_CONTACT_RECORDED",
+          "rank": 3,
+          "support": [
+            604,
+            355,
+            344
+          ],
+          "rule_name": "BR_CONTACT_RECORDED"
+        },
+        {
+          "id": 641,
+          "term": 2760,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            608,
+            61
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 642,
+          "term": 2761,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            609,
+            61
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 643,
+          "term": 2762,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            610,
+            69
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 644,
+          "term": 2763,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            611,
+            69
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 645,
+          "term": 2764,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            612,
+            140
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 646,
+          "term": 2766,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 4,
+          "support": [
+            640
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 678,
+          "term": 2798,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 5,
+          "support": [
+            643,
+            70
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 679,
+          "term": 2799,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 5,
+          "support": [
+            644,
+            70
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 680,
+          "term": 2800,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 5,
+          "support": [
+            645,
+            141
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 681,
+          "term": 2801,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 5,
+          "support": [
+            641
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 682,
+          "term": 2802,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 5,
+          "support": [
+            642
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 688,
+          "term": 2813,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 5,
+          "support": [
+            646,
+            30,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 689,
+          "term": 2814,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 6,
+          "support": [
+            678,
+            71
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 690,
+          "term": 2815,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 6,
+          "support": [
+            679,
+            71
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 691,
+          "term": 2816,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 6,
+          "support": [
+            680,
+            142
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 692,
+          "term": 2818,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 6,
+          "support": [
+            681,
+            540,
+            58
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 693,
+          "term": 2819,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 6,
+          "support": [
+            682,
+            541,
+            58
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 694,
+          "term": 2820,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 6,
+          "support": [
+            681,
+            59
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 695,
+          "term": 2821,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 6,
+          "support": [
+            682,
+            59
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 696,
+          "term": 2823,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 6,
+          "support": [
+            688
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 697,
+          "term": 2825,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 6,
+          "support": [
+            688
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 703,
+          "term": 2831,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 7,
+          "support": [
+            689,
+            72
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 704,
+          "term": 2832,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 7,
+          "support": [
+            690,
+            72
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 705,
+          "term": 2833,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 7,
+          "support": [
+            691,
+            143
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 706,
+          "term": 2835,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            692
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 707,
+          "term": 2837,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            693
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 708,
+          "term": 2838,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            694
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 709,
+          "term": 2839,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            695
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 715,
+          "term": 2845,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 8,
+          "support": [
+            703
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 716,
+          "term": 2846,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 8,
+          "support": [
+            704
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 717,
+          "term": 2847,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 8,
+          "support": [
+            705
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 718,
+          "term": 2848,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            706,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 719,
+          "term": 2849,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            707,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 720,
+          "term": 2850,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            708,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 721,
+          "term": 2851,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            709,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 726,
+          "term": 2857,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 9,
+          "support": [
+            715,
+            542,
+            66
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 727,
+          "term": 2858,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 9,
+          "support": [
+            716,
+            543,
+            66
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 728,
+          "term": 2860,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 9,
+          "support": [
+            717,
+            544,
+            138
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 729,
+          "term": 2861,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 9,
+          "support": [
+            715,
+            67
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 730,
+          "term": 2862,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 9,
+          "support": [
+            716,
+            67
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 731,
+          "term": 2864,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 9,
+          "support": [
+            718
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 732,
+          "term": 2865,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 9,
+          "support": [
+            719
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 733,
+          "term": 2867,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 9,
+          "support": [
+            718
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 734,
+          "term": 2868,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 9,
+          "support": [
+            719
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 735,
+          "term": 2870,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 9,
+          "support": [
+            720
+          ],
+          "rule_name": "P15_R4_WHEN"
+        },
+        {
+          "id": 736,
+          "term": 2871,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 9,
+          "support": [
+            721
+          ],
+          "rule_name": "P15_R4_WHEN"
+        },
+        {
+          "id": 739,
+          "term": 2875,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            726
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 740,
+          "term": 2877,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            727
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 741,
+          "term": 2879,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            728
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 742,
+          "term": 2880,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            729
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 743,
+          "term": 2881,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            730
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 744,
+          "term": 2882,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            739,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 745,
+          "term": 2883,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            740,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 746,
+          "term": 2884,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            741,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 747,
+          "term": 2885,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            742,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 748,
+          "term": 2886,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            743,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 749,
+          "term": 2887,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 12,
+          "support": [
+            744
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 750,
+          "term": 2888,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 12,
+          "support": [
+            745
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 751,
+          "term": 2889,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 12,
+          "support": [
+            746
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 752,
+          "term": 2890,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 12,
+          "support": [
+            744
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 753,
+          "term": 2891,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 12,
+          "support": [
+            745
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 754,
+          "term": 2892,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 12,
+          "support": [
+            746
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 755,
+          "term": 2893,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 12,
+          "support": [
+            747
+          ],
+          "rule_name": "P15_R4_WHEN"
+        },
+        {
+          "id": 756,
+          "term": 2894,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 12,
+          "support": [
+            748
+          ],
+          "rule_name": "P15_R4_WHEN"
+        }
+      ]
+    },
+    {
+      "label": "replay",
+      "source_map": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_005\\replay\\source-map.json",
+        "bytes": 13679529,
+        "sha256": "C793A6DC1557C4095EF3828AF610E41300D00500FDE83306AE1A182A7A8AEA32"
+      },
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_005\\replay\\readback.bin",
+        "bytes": 169345056,
+        "sha256": "282597D6D310462BFE1EA3712F656B085EE3EAF40282CFA51FAD15D13F040C91"
+      },
+      "terminals": [
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 604
+        },
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 605
+        },
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 606
+        },
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 607
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 696
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 697
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 731
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 732
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 733
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 734
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 735
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 736
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 749
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 750
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 751
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 752
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 753
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 754
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 755
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 756
+        }
+      ],
+      "proof_ancestry": [
+        {
+          "id": 30,
+          "term": 171,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 33,
+          "term": 174,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 34,
+          "term": 175,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 45,
+          "term": 187,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 46,
+          "term": 188,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 48,
+          "term": 191,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 54,
+          "term": 240,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 55,
+          "term": 267,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 56,
+          "term": 268,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 57,
+          "term": 272,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 58,
+          "term": 530,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 59,
+          "term": 786,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 60,
+          "term": 787,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 61,
+          "term": 789,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 62,
+          "term": 792,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 63,
+          "term": 803,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 64,
+          "term": 804,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 65,
+          "term": 814,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 66,
+          "term": 1071,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 67,
+          "term": 1329,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 68,
+          "term": 1330,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 69,
+          "term": 1332,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 70,
+          "term": 1343,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 71,
+          "term": 1345,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 72,
+          "term": 1351,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 134,
+          "term": 1480,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 135,
+          "term": 1481,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 136,
+          "term": 1482,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 137,
+          "term": 1483,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 138,
+          "term": 1484,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 139,
+          "term": 1485,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 140,
+          "term": 1486,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 141,
+          "term": 1487,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 142,
+          "term": 1488,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 143,
+          "term": 1492,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 153,
+          "term": 1514,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 154,
+          "term": 1515,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 344,
+          "term": 1909,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 345,
+          "term": 1912,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 346,
+          "term": 1914,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 347,
+          "term": 1915,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 348,
+          "term": 1916,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 349,
+          "term": 1936,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 350,
+          "term": 1937,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 351,
+          "term": 1938,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 352,
+          "term": 2138,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 353,
+          "term": 2144,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 354,
+          "term": 2145,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 355,
+          "term": 2407,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 426,
+          "term": 2526,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 427,
+          "term": 2527,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 428,
+          "term": 2528,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 429,
+          "term": 2529,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 430,
+          "term": 2530,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 431,
+          "term": 2531,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 432,
+          "term": 2532,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 433,
+          "term": 2533,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 435,
+          "term": 2539,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 436,
+          "term": 2540,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 437,
+          "term": 2541,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 438,
+          "term": 2542,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 439,
+          "term": 2543,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 440,
+          "term": 2544,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 441,
+          "term": 2545,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 442,
+          "term": 2546,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 445,
+          "term": 2553,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 446,
+          "term": 2554,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 447,
+          "term": 2555,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 448,
+          "term": 2556,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 449,
+          "term": 2557,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 450,
+          "term": 2558,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 451,
+          "term": 2560,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 452,
+          "term": 2561,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 454,
+          "term": 2563,
+          "rule": 0,
+          "origin": "RD_CASE_INSTANCE",
+          "rank": 1,
+          "support": [
+            55,
+            56,
+            61
+          ],
+          "rule_name": "RD_CASE_INSTANCE"
+        },
+        {
+          "id": 457,
+          "term": 2566,
+          "rule": 1,
+          "origin": "RD_STRICT_INSTANCE",
+          "rank": 1,
+          "support": [
+            63,
+            64,
+            69,
+            70,
+            71,
+            72
+          ],
+          "rule_name": "RD_STRICT_INSTANCE"
+        },
+        {
+          "id": 458,
+          "term": 2567,
+          "rule": 1,
+          "origin": "RD_STRICT_INSTANCE",
+          "rank": 1,
+          "support": [
+            135,
+            136,
+            140,
+            141,
+            142,
+            143
+          ],
+          "rule_name": "RD_STRICT_INSTANCE"
+        },
+        {
+          "id": 491,
+          "term": 2600,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            345,
+            346,
+            347,
+            348
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 497,
+          "term": 2606,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            426,
+            427,
+            428,
+            348
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 498,
+          "term": 2607,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            435,
+            436,
+            437,
+            348
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 499,
+          "term": 2608,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            445,
+            446,
+            447,
+            348
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 500,
+          "term": 2609,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            349,
+            350,
+            351
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 506,
+          "term": 2615,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            429,
+            430,
+            351
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 507,
+          "term": 2616,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            438,
+            439,
+            351
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 508,
+          "term": 2617,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            448,
+            449,
+            351
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 509,
+          "term": 2618,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            352
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 516,
+          "term": 2625,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            431
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 517,
+          "term": 2627,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            440
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 518,
+          "term": 2628,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            450
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 519,
+          "term": 2629,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            353
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 527,
+          "term": 2637,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            432
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 528,
+          "term": 2638,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            441
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 529,
+          "term": 2640,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            451
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 530,
+          "term": 2641,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            354
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 537,
+          "term": 2648,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            433
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 538,
+          "term": 2649,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            442
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 539,
+          "term": 2650,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            452
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 540,
+          "term": 2652,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            54,
+            454,
+            55,
+            60,
+            57
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 541,
+          "term": 2654,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            153,
+            454,
+            55,
+            60,
+            57
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 542,
+          "term": 2656,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            62,
+            457,
+            63,
+            68,
+            65
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 543,
+          "term": 2658,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            154,
+            457,
+            63,
+            68,
+            65
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 544,
+          "term": 2660,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            134,
+            458,
+            135,
+            139,
+            137
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 604,
+          "term": 2720,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            491,
+            500,
+            509,
+            519,
+            530
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 605,
+          "term": 2721,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            497,
+            506,
+            516,
+            527,
+            537
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 606,
+          "term": 2723,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            498,
+            507,
+            517,
+            528,
+            538
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 607,
+          "term": 2725,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            499,
+            508,
+            518,
+            529,
+            539
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 608,
+          "term": 2726,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            540
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 609,
+          "term": 2727,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            541
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 610,
+          "term": 2728,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            542
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 611,
+          "term": 2729,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            543
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 612,
+          "term": 2730,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            544
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 640,
+          "term": 2759,
+          "rule": 29,
+          "origin": "BR_CONTACT_RECORDED",
+          "rank": 3,
+          "support": [
+            604,
+            355,
+            344
+          ],
+          "rule_name": "BR_CONTACT_RECORDED"
+        },
+        {
+          "id": 641,
+          "term": 2760,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            608,
+            61
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 642,
+          "term": 2761,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            609,
+            61
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 643,
+          "term": 2762,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            610,
+            69
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 644,
+          "term": 2763,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            611,
+            69
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 645,
+          "term": 2764,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            612,
+            140
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 646,
+          "term": 2766,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 4,
+          "support": [
+            640
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 678,
+          "term": 2798,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 5,
+          "support": [
+            643,
+            70
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 679,
+          "term": 2799,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 5,
+          "support": [
+            644,
+            70
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 680,
+          "term": 2800,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 5,
+          "support": [
+            645,
+            141
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 681,
+          "term": 2801,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 5,
+          "support": [
+            641
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 682,
+          "term": 2802,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 5,
+          "support": [
+            642
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 688,
+          "term": 2813,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 5,
+          "support": [
+            646,
+            30,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 689,
+          "term": 2814,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 6,
+          "support": [
+            678,
+            71
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 690,
+          "term": 2815,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 6,
+          "support": [
+            679,
+            71
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 691,
+          "term": 2816,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 6,
+          "support": [
+            680,
+            142
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 692,
+          "term": 2818,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 6,
+          "support": [
+            681,
+            540,
+            58
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 693,
+          "term": 2819,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 6,
+          "support": [
+            682,
+            541,
+            58
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 694,
+          "term": 2820,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 6,
+          "support": [
+            681,
+            59
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 695,
+          "term": 2821,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 6,
+          "support": [
+            682,
+            59
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 696,
+          "term": 2823,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 6,
+          "support": [
+            688
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 697,
+          "term": 2825,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 6,
+          "support": [
+            688
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 703,
+          "term": 2831,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 7,
+          "support": [
+            689,
+            72
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 704,
+          "term": 2832,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 7,
+          "support": [
+            690,
+            72
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 705,
+          "term": 2833,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 7,
+          "support": [
+            691,
+            143
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 706,
+          "term": 2835,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            692
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 707,
+          "term": 2837,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            693
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 708,
+          "term": 2838,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            694
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 709,
+          "term": 2839,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            695
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 715,
+          "term": 2845,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 8,
+          "support": [
+            703
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 716,
+          "term": 2846,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 8,
+          "support": [
+            704
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 717,
+          "term": 2847,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 8,
+          "support": [
+            705
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 718,
+          "term": 2848,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            706,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 719,
+          "term": 2849,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            707,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 720,
+          "term": 2850,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            708,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 721,
+          "term": 2851,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            709,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 726,
+          "term": 2857,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 9,
+          "support": [
+            715,
+            542,
+            66
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 727,
+          "term": 2858,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 9,
+          "support": [
+            716,
+            543,
+            66
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 728,
+          "term": 2860,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 9,
+          "support": [
+            717,
+            544,
+            138
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 729,
+          "term": 2861,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 9,
+          "support": [
+            715,
+            67
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 730,
+          "term": 2862,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 9,
+          "support": [
+            716,
+            67
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 731,
+          "term": 2864,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 9,
+          "support": [
+            718
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 732,
+          "term": 2865,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 9,
+          "support": [
+            719
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 733,
+          "term": 2867,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 9,
+          "support": [
+            718
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 734,
+          "term": 2868,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 9,
+          "support": [
+            719
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 735,
+          "term": 2870,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 9,
+          "support": [
+            720
+          ],
+          "rule_name": "P15_R4_WHEN"
+        },
+        {
+          "id": 736,
+          "term": 2871,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 9,
+          "support": [
+            721
+          ],
+          "rule_name": "P15_R4_WHEN"
+        },
+        {
+          "id": 739,
+          "term": 2875,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            726
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 740,
+          "term": 2877,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            727
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 741,
+          "term": 2879,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            728
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 742,
+          "term": 2880,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            729
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 743,
+          "term": 2881,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            730
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 744,
+          "term": 2882,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            739,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 745,
+          "term": 2883,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            740,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 746,
+          "term": 2884,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            741,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 747,
+          "term": 2885,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            742,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 748,
+          "term": 2886,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            743,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 749,
+          "term": 2887,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 12,
+          "support": [
+            744
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 750,
+          "term": 2888,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 12,
+          "support": [
+            745
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 751,
+          "term": 2889,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 12,
+          "support": [
+            746
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 752,
+          "term": 2890,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 12,
+          "support": [
+            744
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 753,
+          "term": 2891,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 12,
+          "support": [
+            745
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 754,
+          "term": 2892,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 12,
+          "support": [
+            746
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 755,
+          "term": 2893,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 12,
+          "support": [
+            747
+          ],
+          "rule_name": "P15_R4_WHEN"
+        },
+        {
+          "id": 756,
+          "term": 2894,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 12,
+          "support": [
+            748
+          ],
+          "rule_name": "P15_R4_WHEN"
+        }
+      ]
+    },
+    {
+      "label": "reversed",
+      "source_map": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_005\\reversed\\stage\\source-map.json",
+        "bytes": 13653229,
+        "sha256": "3A7E5AF1CD21844203EE287FC0FB8C9F454A395465AA04142FA00A80BC6DD3F1"
+      },
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_005\\reversed\\stage\\readback.bin",
+        "bytes": 169345056,
+        "sha256": "0B3270CED4999AD4B98E420B6794C65FCFBACBBFC1AA0FF253FC9F1FE6B13CA6"
+      },
+      "terminals": [
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 604
+        },
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 605
+        },
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 606
+        },
+        {
+          "tag": "BR_RECONSTRUCTED",
+          "id": 607
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 696
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 697
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 731
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 732
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 733
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 734
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 735
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 736
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 749
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 750
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 751
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 752
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 753
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 754
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 755
+        },
+        {
+          "tag": "P15_DERIVED",
+          "id": 756
+        }
+      ],
+      "proof_ancestry": [
+        {
+          "id": 30,
+          "term": 171,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 33,
+          "term": 174,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 34,
+          "term": 175,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 45,
+          "term": 187,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 46,
+          "term": 188,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 48,
+          "term": 191,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 55,
+          "term": 755,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 56,
+          "term": 757,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 57,
+          "term": 758,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 58,
+          "term": 759,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 59,
+          "term": 760,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 60,
+          "term": 761,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 61,
+          "term": 762,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 62,
+          "term": 763,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 65,
+          "term": 770,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 66,
+          "term": 771,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 67,
+          "term": 772,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 68,
+          "term": 773,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 69,
+          "term": 774,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 70,
+          "term": 775,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 71,
+          "term": 776,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 72,
+          "term": 777,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 74,
+          "term": 783,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 75,
+          "term": 784,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 76,
+          "term": 785,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 77,
+          "term": 786,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 78,
+          "term": 787,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 79,
+          "term": 788,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 80,
+          "term": 789,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 81,
+          "term": 790,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 152,
+          "term": 916,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 153,
+          "term": 917,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 154,
+          "term": 918,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 155,
+          "term": 919,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 156,
+          "term": 921,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 157,
+          "term": 922,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 158,
+          "term": 923,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 159,
+          "term": 924,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 160,
+          "term": 925,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 161,
+          "term": 926,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 162,
+          "term": 927,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 163,
+          "term": 929,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 353,
+          "term": 1327,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 354,
+          "term": 1328,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 364,
+          "term": 1872,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 365,
+          "term": 1881,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 366,
+          "term": 1884,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 367,
+          "term": 1887,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 368,
+          "term": 1889,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 369,
+          "term": 2156,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 370,
+          "term": 2157,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 371,
+          "term": 2158,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 372,
+          "term": 2163,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 373,
+          "term": 2165,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 435,
+          "term": 2542,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 436,
+          "term": 2543,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 437,
+          "term": 2544,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 438,
+          "term": 2545,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 439,
+          "term": 2546,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 440,
+          "term": 2547,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 441,
+          "term": 2548,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 442,
+          "term": 2549,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 443,
+          "term": 2550,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 444,
+          "term": 2551,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 445,
+          "term": 2553,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 446,
+          "term": 2554,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 447,
+          "term": 2555,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 448,
+          "term": 2556,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 449,
+          "term": 2557,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 450,
+          "term": 2558,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 451,
+          "term": 2559,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 452,
+          "term": 2560,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 453,
+          "term": 2562,
+          "rule": -1,
+          "origin": "SOURCE_SEED",
+          "rank": 0,
+          "support": [],
+          "rule_name": "SOURCE_SEED"
+        },
+        {
+          "id": 456,
+          "term": 2565,
+          "rule": 0,
+          "origin": "RD_CASE_INSTANCE",
+          "rank": 1,
+          "support": [
+            452,
+            451,
+            446
+          ],
+          "rule_name": "RD_CASE_INSTANCE"
+        },
+        {
+          "id": 457,
+          "term": 2566,
+          "rule": 1,
+          "origin": "RD_STRICT_INSTANCE",
+          "rank": 1,
+          "support": [
+            372,
+            371,
+            367,
+            366,
+            365,
+            364
+          ],
+          "rule_name": "RD_STRICT_INSTANCE"
+        },
+        {
+          "id": 458,
+          "term": 2567,
+          "rule": 1,
+          "origin": "RD_STRICT_INSTANCE",
+          "rank": 1,
+          "support": [
+            444,
+            443,
+            438,
+            437,
+            436,
+            435
+          ],
+          "rule_name": "RD_STRICT_INSTANCE"
+        },
+        {
+          "id": 491,
+          "term": 2600,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            62,
+            61,
+            60,
+            159
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 492,
+          "term": 2601,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            72,
+            71,
+            70,
+            159
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 493,
+          "term": 2602,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            81,
+            80,
+            79,
+            159
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 499,
+          "term": 2608,
+          "rule": 23,
+          "origin": "BR_BIND_SOURCE",
+          "rank": 1,
+          "support": [
+            162,
+            161,
+            160,
+            159
+          ],
+          "rule_name": "BR_BIND_SOURCE"
+        },
+        {
+          "id": 500,
+          "term": 2609,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            59,
+            58,
+            156
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 501,
+          "term": 2610,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            69,
+            68,
+            156
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 502,
+          "term": 2611,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            78,
+            77,
+            156
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 508,
+          "term": 2617,
+          "rule": 24,
+          "origin": "BR_BIND_MEMBER",
+          "rank": 1,
+          "support": [
+            158,
+            157,
+            156
+          ],
+          "rule_name": "BR_BIND_MEMBER"
+        },
+        {
+          "id": 509,
+          "term": 2618,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            57
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 510,
+          "term": 2620,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            67
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 511,
+          "term": 2621,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            76
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 518,
+          "term": 2628,
+          "rule": 25,
+          "origin": "BR_BIND_RECEIPT",
+          "rank": 1,
+          "support": [
+            155
+          ],
+          "rule_name": "BR_BIND_RECEIPT"
+        },
+        {
+          "id": 519,
+          "term": 2630,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            56
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 520,
+          "term": 2631,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            66
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 521,
+          "term": 2632,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            75
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 529,
+          "term": 2640,
+          "rule": 26,
+          "origin": "BR_BIND_SUCCESSOR",
+          "rank": 1,
+          "support": [
+            154
+          ],
+          "rule_name": "BR_BIND_SUCCESSOR"
+        },
+        {
+          "id": 530,
+          "term": 2641,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            55
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 531,
+          "term": 2642,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            65
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 532,
+          "term": 2643,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            74
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 539,
+          "term": 2650,
+          "rule": 27,
+          "origin": "BR_BIND_STATUS",
+          "rank": 1,
+          "support": [
+            153
+          ],
+          "rule_name": "BR_BIND_STATUS"
+        },
+        {
+          "id": 540,
+          "term": 2652,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            354,
+            456,
+            452,
+            447,
+            450
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 541,
+          "term": 2654,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            453,
+            456,
+            452,
+            447,
+            450
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 542,
+          "term": 2656,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            373,
+            457,
+            372,
+            368,
+            370
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 543,
+          "term": 2658,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            353,
+            458,
+            444,
+            439,
+            442
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 544,
+          "term": 2660,
+          "rule": 2,
+          "origin": "RD_OPEN",
+          "rank": 2,
+          "support": [
+            445,
+            458,
+            444,
+            439,
+            442
+          ],
+          "rule_name": "RD_OPEN"
+        },
+        {
+          "id": 604,
+          "term": 2721,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            491,
+            500,
+            509,
+            519,
+            530
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 605,
+          "term": 2723,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            492,
+            501,
+            510,
+            520,
+            531
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 606,
+          "term": 2724,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            493,
+            502,
+            511,
+            521,
+            532
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 607,
+          "term": 2725,
+          "rule": 28,
+          "origin": "BR_RECONSTRUCT",
+          "rank": 2,
+          "support": [
+            499,
+            508,
+            518,
+            529,
+            539
+          ],
+          "rule_name": "BR_RECONSTRUCT"
+        },
+        {
+          "id": 608,
+          "term": 2726,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            540
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 609,
+          "term": 2727,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            541
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 610,
+          "term": 2728,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            542
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 611,
+          "term": 2729,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            543
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 612,
+          "term": 2730,
+          "rule": 3,
+          "origin": "RD_PARENTS_BEGIN",
+          "rank": 3,
+          "support": [
+            544
+          ],
+          "rule_name": "RD_PARENTS_BEGIN"
+        },
+        {
+          "id": 640,
+          "term": 2759,
+          "rule": 29,
+          "origin": "BR_CONTACT_RECORDED",
+          "rank": 3,
+          "support": [
+            607,
+            152,
+            163
+          ],
+          "rule_name": "BR_CONTACT_RECORDED"
+        },
+        {
+          "id": 641,
+          "term": 2760,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            608,
+            446
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 642,
+          "term": 2761,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            609,
+            446
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 643,
+          "term": 2762,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            610,
+            367
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 644,
+          "term": 2763,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            611,
+            438
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 645,
+          "term": 2764,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 4,
+          "support": [
+            612,
+            438
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 646,
+          "term": 2766,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 4,
+          "support": [
+            640
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 678,
+          "term": 2798,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 5,
+          "support": [
+            643,
+            366
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 679,
+          "term": 2799,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 5,
+          "support": [
+            644,
+            437
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 680,
+          "term": 2800,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 5,
+          "support": [
+            645,
+            437
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 681,
+          "term": 2801,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 5,
+          "support": [
+            641
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 682,
+          "term": 2802,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 5,
+          "support": [
+            642
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 688,
+          "term": 2813,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 5,
+          "support": [
+            646,
+            30,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 689,
+          "term": 2814,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 6,
+          "support": [
+            678,
+            365
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 690,
+          "term": 2815,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 6,
+          "support": [
+            679,
+            436
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 691,
+          "term": 2816,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 6,
+          "support": [
+            680,
+            436
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 692,
+          "term": 2818,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 6,
+          "support": [
+            681,
+            540,
+            449
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 693,
+          "term": 2819,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 6,
+          "support": [
+            682,
+            541,
+            449
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 694,
+          "term": 2820,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 6,
+          "support": [
+            681,
+            448
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 695,
+          "term": 2821,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 6,
+          "support": [
+            682,
+            448
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 696,
+          "term": 2823,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 6,
+          "support": [
+            688
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 697,
+          "term": 2825,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 6,
+          "support": [
+            688
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 703,
+          "term": 2831,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 7,
+          "support": [
+            689,
+            364
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 704,
+          "term": 2832,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 7,
+          "support": [
+            690,
+            435
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 705,
+          "term": 2833,
+          "rule": 4,
+          "origin": "RD_PARENT_STEP",
+          "rank": 7,
+          "support": [
+            691,
+            435
+          ],
+          "rule_name": "RD_PARENT_STEP"
+        },
+        {
+          "id": 706,
+          "term": 2835,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            692
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 707,
+          "term": 2837,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            693
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 708,
+          "term": 2838,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            694
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 709,
+          "term": 2839,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 7,
+          "support": [
+            695
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 715,
+          "term": 2845,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 8,
+          "support": [
+            703
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 716,
+          "term": 2846,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 8,
+          "support": [
+            704
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 717,
+          "term": 2847,
+          "rule": 5,
+          "origin": "RD_PARENTS_END",
+          "rank": 8,
+          "support": [
+            705
+          ],
+          "rule_name": "RD_PARENTS_END"
+        },
+        {
+          "id": 718,
+          "term": 2848,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            706,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 719,
+          "term": 2849,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            707,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 720,
+          "term": 2850,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            708,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 721,
+          "term": 2851,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 8,
+          "support": [
+            709,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 726,
+          "term": 2857,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 9,
+          "support": [
+            715,
+            542,
+            369
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 727,
+          "term": 2859,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 9,
+          "support": [
+            716,
+            543,
+            441
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 728,
+          "term": 2860,
+          "rule": 6,
+          "origin": "RD_RULE_READING",
+          "rank": 9,
+          "support": [
+            717,
+            544,
+            441
+          ],
+          "rule_name": "RD_RULE_READING"
+        },
+        {
+          "id": 729,
+          "term": 2861,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 9,
+          "support": [
+            716,
+            440
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 730,
+          "term": 2862,
+          "rule": 7,
+          "origin": "RD_PROOF_READING",
+          "rank": 9,
+          "support": [
+            717,
+            440
+          ],
+          "rule_name": "RD_PROOF_READING"
+        },
+        {
+          "id": 731,
+          "term": 2864,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 9,
+          "support": [
+            718
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 732,
+          "term": 2865,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 9,
+          "support": [
+            719
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 733,
+          "term": 2867,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 9,
+          "support": [
+            718
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 734,
+          "term": 2868,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 9,
+          "support": [
+            719
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 735,
+          "term": 2870,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 9,
+          "support": [
+            720
+          ],
+          "rule_name": "P15_R4_WHEN"
+        },
+        {
+          "id": 736,
+          "term": 2871,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 9,
+          "support": [
+            721
+          ],
+          "rule_name": "P15_R4_WHEN"
+        },
+        {
+          "id": 739,
+          "term": 2875,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            726
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 740,
+          "term": 2877,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            727
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 741,
+          "term": 2879,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            728
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 742,
+          "term": 2880,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            729
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 743,
+          "term": 2881,
+          "rule": 8,
+          "origin": "RD_NORMALIZE",
+          "rank": 10,
+          "support": [
+            730
+          ],
+          "rule_name": "RD_NORMALIZE"
+        },
+        {
+          "id": 744,
+          "term": 2882,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            739,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 745,
+          "term": 2883,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            740,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 746,
+          "term": 2884,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            741,
+            33,
+            45,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 747,
+          "term": 2885,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            742,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 748,
+          "term": 2886,
+          "rule": 43,
+          "origin": "P15_R4_ACCEPT_SEED",
+          "rank": 11,
+          "support": [
+            743,
+            34,
+            46,
+            48
+          ],
+          "rule_name": "P15_R4_ACCEPT_SEED"
+        },
+        {
+          "id": 749,
+          "term": 2887,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 12,
+          "support": [
+            744
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 750,
+          "term": 2888,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 12,
+          "support": [
+            745
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 751,
+          "term": 2889,
+          "rule": 44,
+          "origin": "P15_R4_WHERE",
+          "rank": 12,
+          "support": [
+            746
+          ],
+          "rule_name": "P15_R4_WHERE"
+        },
+        {
+          "id": 752,
+          "term": 2890,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 12,
+          "support": [
+            744
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 753,
+          "term": 2891,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 12,
+          "support": [
+            745
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 754,
+          "term": 2892,
+          "rule": 45,
+          "origin": "P15_R4_WHICH",
+          "rank": 12,
+          "support": [
+            746
+          ],
+          "rule_name": "P15_R4_WHICH"
+        },
+        {
+          "id": 755,
+          "term": 2893,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 12,
+          "support": [
+            747
+          ],
+          "rule_name": "P15_R4_WHEN"
+        },
+        {
+          "id": 756,
+          "term": 2894,
+          "rule": 46,
+          "origin": "P15_R4_WHEN",
+          "rank": 12,
+          "support": [
+            748
+          ],
+          "rule_name": "P15_R4_WHEN"
+        }
+      ]
+    }
+  ]
+}

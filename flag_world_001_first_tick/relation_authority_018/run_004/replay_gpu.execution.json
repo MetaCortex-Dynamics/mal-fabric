@@ -1,0 +1,15 @@
+{
+  "exe": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+  "args": [
+    "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_004\\normal\\stage\\image.bin",
+    "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_004\\replay\\readback.bin",
+    "--fact-capacity",
+    "32768"
+  ],
+  "started": "2026-10-25T03:34:20.380Z",
+  "ended": "2026-10-25T03:34:22.640Z",
+  "exit": 0,
+  "error": null,
+  "stdout": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=757 terms=2895 epochs=13\r\n",
+  "stderr": "memory allocated_device_bytes=272339296 fact_capacity=32768 term_capacity=4194304 mapped_telemetry_bytes=33837216 stack_requested_per_thread=8192 stack_actual_per_thread=8192 free_before_bytes=7458521088 free_after_bytes=6674186240 resident_stack_upper_estimate=578813952\r\n"
+}

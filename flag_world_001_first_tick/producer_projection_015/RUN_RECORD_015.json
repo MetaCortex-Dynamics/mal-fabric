@@ -1,0 +1,178 @@
+{
+  "record": "RUN_RECORD_PRODUCER_PROJECTION_015",
+  "date": "2026-10-24",
+  "verdict": "IF_THEN",
+  "scope": "BOUNDED_SYNTHETIC_PRODUCER_INTERFACE_AND_R4_QUALIFICATION",
+  "authority": "Implementation and qualification under Devon's current request; no corpus promotion or worldline EXECUTE is inferred.",
+  "home": "mal-fabric/flag_world_001_first_tick/producer_projection_015",
+  "implementation": [
+    {
+      "path": "source/producer_projection.mal",
+      "bytes": 4271,
+      "sha256": "6D5154712636E80354154D2465A847DCEB6C7B7CA87036F3BFFC9C6C34577739",
+      "effect": "Three producer roles; owned record/domain contacts; declared shared/private positions; separate verdicts and references; native content-comparison requests."
+    },
+    {
+      "path": "source/r4_verdicts.mal",
+      "bytes": 5687,
+      "sha256": "4ACC52308528FDBCF38A73CAA36E020EB370F6B1ADFA361659AACEB5AF55A1F6",
+      "effect": "Bound R1 identities and R2 five-way meet over supplied verdicts; no content reference assigned to derived positions."
+    },
+    {
+      "path": "../governing_junction_content_014/source/governing_junction_content.mal",
+      "bytes": 2986,
+      "sha256": "056AD86E4D09BD21AD99385F981E7480854F21BE723F0350A7B282A7734F70E6",
+      "effect": "Unchanged native comparison: agreement, disagreement, explicit absence."
+    }
+  ],
+  "test_only_adapter": {
+    "path": "source/r4_test_inputs.mal",
+    "bytes": 1138,
+    "sha256": "155AC0DF0514B712E9618F80D2926D54025FB695110BF999D459F67F064C6E22",
+    "scope": "Synthetic tuple expansion and scalar meet requests; not a J17 producer or an authority input."
+  },
+  "contact_manifest": {
+    "path": "CONTACTS.json",
+    "sha256": "D7B4AD387E57FFF8F3C349C8AF785D3E9DFA495DF2723DD194609C2E9D2C38B2",
+    "contacts": 8,
+    "comparison": "SAME"
+  },
+  "qualification": {
+    "path": "run_001/QUALIFICATION.json",
+    "bytes": 28619,
+    "sha256": "A68FEDFAC495B3F7FFEC26F90F8383C0F2E3B5180A4036EE687D49272B8CC4D4",
+    "device": "NVIDIA GeForce RTX 3070",
+    "native_runs": 3,
+    "source_facts_each": 741,
+    "closure_facts_each": 8095,
+    "terms_each": 9893,
+    "epochs_each": 14,
+    "error_each": 0,
+    "assertions_each": 34,
+    "full_coordinate_maps": 3,
+    "readings_per_full_map": { "seed": 45, "derived": 60, "total": 105 },
+    "meet_pairs": 16,
+    "partial_R4_tuples": 256,
+    "shared_positions": 150,
+    "private_positions": 2,
+    "outside_both_positions": 1,
+    "explicit_unsupported_pending": 5,
+    "domain_conflict_observations": 1,
+    "content_requests": 146,
+    "content_results": { "IF_THEN": 138, "NOT_SAME": 4, "MAYBE": 3 },
+    "malformed_equal_content_withheld": 1,
+    "replay": {
+      "comparison": "SAME_RAW_READBACK_BYTES",
+      "sha256": "395979452D0E222B55FFCD5226D4047925DD405C90D25B397084EAB88AF0E680"
+    },
+    "reversed_enumeration": {
+      "comparison": "SAME_DECODED_FULL_CLOSURE",
+      "closure_sha256": "A5E614415F66FCF89626721B29E7913742AFAB91F327B0F06A62B72C473BA619",
+      "raw_readback_sha256": "CE74F0C3E4AA0024ACC376ADDA69AD14DE1E1EB91CF72A578BBDB6CB55313220",
+      "scope": "Allocation identities differ under reversal; raw reversed bytes are not claimed SAME."
+    },
+    "custody_bindings": 63,
+    "custody_comparison": "SAME"
+  },
+  "distinctions": [
+    "Sharedness is derived from declarations before any content comparison; disagreement does not remove a shared coordinate.",
+    "Explicit UNSUPPORTED emits P15_PENDING. Missing CONTACT at a supported coordinate yields no seed or comparison. The latter is reported as a pending observation, not a native P15_PENDING fact.",
+    "An explicit ABSENT content reference reaches the comparator's MAYBE branch without a wall or a private-domain conclusion.",
+    "Private positions require an explicit unsupported declaration from the other producer. Undeclared positions are not inferred private.",
+    "Domain conflict is observed additively. This positive closure is not a conflict-retracting schema validator or authorization boundary.",
+    "Verdicts normalize independently of content references. No reference is invented for a derived witness.",
+    "Partial R1/R2 closure is not a complete R4 normal-form claim; the full 45-coordinate fixtures are reported separately.",
+    "The three role-specific emitters consume declared domains and contacts. They do not derive J17's concrete AUTHOR declarations from its member hash."
+  ],
+  "worldline_custody": {
+    "path": "../j17_step_023/outputs/committed.world.json",
+    "bytes": 568805,
+    "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+    "link_count": 2,
+    "head": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+    "comparison": "SAME",
+    "promote_binding_013_sha256": "2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4",
+    "member_sha256": "19EBB89436905DB26E25BDB0039043C870C9282FA0E3CDEFECFBB749340DBDE9",
+    "frozen_files": 901,
+    "frozen_comparison": "SAME",
+    "frozen_manifest_sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+    "binding_checker_sha256": "09D620DC73331BB6E7D2EC56A6A9C8DA81DBBB008D6D5853A2DB4113E5829E32",
+    "binding_checker_comparisons": 55,
+    "binding_checker_negative_checks": 8
+  },
+  "obligations": {
+    "producer_interface_qualification": { "verdict": "IF_THEN", "scope": "BOUNDED_SYNTHETIC_PRODUCER_INTERFACE_AND_R4_QUALIFICATION" },
+    "J17_concrete_producer_domain_and_seed_emissions": "PENDING",
+    "J17_shared_restriction_and_local_sections": "NOT_RUN",
+    "GlobalSection_admission": "NOT_RUN",
+    "link_3": "NOT_RUN"
+  },
+  "boundary": "The illustrative THIS x WHAT coordinate is not installed as a J17 declaration. Existing member/chain/receipt identities are retained; actual producer-owned coordinate declarations and their verdict-bearing contacts are not fabricated by this interface qualification.",
+  "integration_reads": [
+    {
+      "path": "../j17_section_diagnostic_009/source/sections.mal",
+      "sha256": "B8D2F889A2C97F6F9CB7BC4DFAB014C9E7DCD49EDE64752BC3D99828B97E36ED",
+      "lines": "7-12,26-33,38-49",
+      "reading": "SC_CASE, SC_FIELD, case-keyed receipt and SC_STRICT; member restriction retained, no producer-coordinate declaration."
+    },
+    {
+      "path": "../j17_fibre_diagnostic_010/source/fibres.mal",
+      "sha256": "C67825AC67B279C82B45A90BB403E11E25311A0B04FAB6F1758E08C8F0644B87",
+      "lines": "6-18",
+      "reading": "EDGE/TRIAD case and field extensions; no producer-coordinate declaration."
+    },
+    {
+      "path": "../j17_pair_diagnostic_011/source/pairs.mal",
+      "sha256": "5912EA3812221BE1CBFE2414033474576244F7534AD4E8DD6F51AE212A5B4E95",
+      "lines": "5-20,21-30,34-45",
+      "reading": "PA_CASE, field, receipt and PA_STRICT; case/flag coordinates are not operator/basis coordinates."
+    },
+    {
+      "path": "../j17_tick_promote_binding_013/RECORD_J17_TICK_PROMOTE_BINDING_013.mal",
+      "sha256": "2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4",
+      "lines": "7-9,18-25,38-60,71-77",
+      "reading": "Member and successor custody supplied; projection seeds explicitly not supplied."
+    },
+    {
+      "path": "../j17_authority_contact_012/source/contact.mal",
+      "sha256": "5499DFF06260CFDA7484A99D6CA23AF2BE48789BAF4156B5E3AF6DFCEA9DE920",
+      "lines": "6-7,12-21",
+      "reading": "Consumes supplied authority sections/grants and joins proposal/member identities."
+    },
+    {
+      "path": "../j17_authority_contact_012/source/actual_contact.mal",
+      "sha256": "529F77E612D9664E2ACAF2A2A8DCAAE2227B4FC3E2016C3E063B96093BC953CE",
+      "lines": "2-11",
+      "reading": "Emits incidence and A12_OFFER references, not producer-owned operator/basis domains."
+    },
+    {
+      "path": "../j17_authority_contact_012/actual_001/CONTACTS.json",
+      "sha256": "BA9127801D515BD603204772FE94033067A31988750B69424EB6B3BB6774FE66",
+      "lines": "6406,8460-8468",
+      "reading": "228 A12_OFFER records; section and DECIDE-operands outputs empty."
+    }
+  ],
+  "independent_audit": {
+    "scope": "Read-only source, fixture, readback and record audit by a separate agent",
+    "verdict": "IF_THEN",
+    "custody_bindings_rehashed": 63,
+    "readbacks_independently_decoded": 3,
+    "expected_output_sets_compared": 15,
+    "checks": "All 16 meet pairs; 256 distinct basis tuples; three 45+60 maps; 24 domain/content edge cases; pair-context separation; explicit conflict observation; original/replay/reversed closure custody.",
+    "qualification_sha256": "A68FEDFAC495B3F7FFEC26F90F8383C0F2E3B5180A4036EE687D49272B8CC4D4"
+  },
+  "changes_not_performed": [
+    "No original or frozen bytes edited",
+    "No synthetic coordinates substituted for J17 declarations",
+    "No admission rerun or handedness assignment",
+    "No LocalSection seal or GlobalSection admission",
+    "No worldline, repository commit, push, promotion, or board action"
+  ],
+  "trace_custody": {
+    "reported_revision_sha256": "90511E10FCA72057A49DECD0E60DC394AF8204AC367C7D4CE6199D91564A37D1",
+    "attached_bytes_sha256": "C0B27A55E1FAF97B0366D1A2F787A304D845EFFA1378497445782B8863CFF6B9",
+    "attached_bytes": 73281,
+    "scope": "Different subjects retained; the reported revision is not substituted for the attachment's observed bytes."
+  },
+  "readme_sha256": "3501472D95E47B98BE0C5E29AAC8DBF14754180B77626D03033D1DFD7EE318E9"
+}

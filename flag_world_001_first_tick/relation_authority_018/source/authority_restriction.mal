@@ -1,0 +1,72 @@
+// Authority/topology restriction implementation candidate 018.
+// Contract contact: SPEC-JUNCTION-001 v0.3 :417-426,437-446,463-466,759-772,
+// SHA256 9A82BC60519DBA3793C66ED51A31501C953D4B2016F5F96D02710C6BEEB6BAB3.
+// This implementation consumes custody-bound declarations; it does not issue,
+// authenticate or infer grants, topology, participant roles or overlap rows.
+// No default topology, synthetic grant, seal, GlobalSection, admission or effect.
+// No BECAUSE-private rule. Ownership and content equality do not set visibility.
+// Operator and witness remain separate keys; no witness-only ordinal collapse.
+//
+// Explicit input contract (each row is GOES_WITH):
+// AR_PAIR(AR_CONTEXT(topology,scope,pairId),leftParty,rightParty).
+//   party := AR_PARTICIPANT(participant,record,role,grant).
+// AR_TYPE(topology,role,POSITION(operator,witness),payloadType).
+// AR_VISIBILITY(topology,scope,participant,role,position,SHARED|LOCAL_ONLY).
+// AR_GRANT(grant,participant,record,role,topology,scope).
+// AR_GRANT_POSITION(grant,position).
+// AR_CONTACT(party,position,payloadType,verdict,PRESENT(bits)|ABSENT).
+// AR_OVERLAP(AR_CONTEXT(topology,scope,pairId),position,leftType,rightType).
+// Types are topology-owned, never supplied as a per-contact type override.
+// Endpoint types may differ only as explicitly named by the overlap row;
+// comparison is exact reference-content comparison, not a type coercion.
+//
+// AR_PROJECTABLE and AR_SHARED depend on declarations, not contact contents.
+// Missing input withholds its dependent conclusion. Missing contact is pending
+// observationally; it does not emit LOCAL_ONLY, private, NO, or a wall.
+// Explicit ABSENT is preserved for the unchanged 014 comparator's MAYBE branch.
+// AR_LOCAL_* is separate local custody, never projected or sent to comparison.
+// Unshared is not private: every SHARED/granted contact remains projected even
+// without an overlap row. Do not put AR_LOCAL_CONTACT into a public section union.
+//
+// Positive closure limitation: contradictory SHARED/LOCAL_ONLY declarations
+// emit AR_VISIBILITY_CONFLICT but do not retract other derived observations.
+// This component does not certify uniqueness/consistency of input tables or
+// authorize effects from its observations. Unknown enum values withhold typing.
+
+@propose seed AR_FIXED_TYPES := {
+  GOES_WITH(AR_OPERATOR,THIS), GOES_WITH(AR_OPERATOR,SAME_NOT_SAME),
+  GOES_WITH(AR_OPERATOR,NO), GOES_WITH(AR_OPERATOR,IF_THEN),
+  GOES_WITH(AR_OPERATOR,BECAUSE), GOES_WITH(AR_OPERATOR,INSIDE_OUTSIDE),
+  GOES_WITH(AR_OPERATOR,NEAR_FAR), GOES_WITH(AR_OPERATOR,CAN_CANNOT),
+  GOES_WITH(AR_OPERATOR,MAYBE), GOES_WITH(AR_OPERATOR,MUST_LET),
+  GOES_WITH(AR_OPERATOR,TOGETHER_ALONE), GOES_WITH(AR_OPERATOR,MORE_LESS),
+  GOES_WITH(AR_OPERATOR,GOES_WITH), GOES_WITH(AR_OPERATOR,MANY_ONE),
+  GOES_WITH(AR_OPERATOR,EVERY_SOME),
+  GOES_WITH(AR_WITNESS,WHAT), GOES_WITH(AR_WITNESS,HOW),
+  GOES_WITH(AR_WITNESS,FOR_WHAT), GOES_WITH(AR_WITNESS,WHERE),
+  GOES_WITH(AR_WITNESS,WHICH), GOES_WITH(AR_WITNESS,WHEN),
+  GOES_WITH(AR_WITNESS,WHENCE),
+  GOES_WITH(AR_ROLE,PROPOSE), GOES_WITH(AR_ROLE,DECIDE),
+  GOES_WITH(AR_ROLE,PROMOTE), GOES_WITH(AR_ROLE,EXECUTE),
+  GOES_WITH(AR_VERDICT,"IF_THEN"), GOES_WITH(AR_VERDICT,"NOT_SAME"),
+  GOES_WITH(AR_VERDICT,"NO"), GOES_WITH(AR_VERDICT,"MAYBE")
+};
+
+law AR_LEFT_PARTY := IF GOES_WITH(AR_PAIR,c,l,r) THEN GOES_WITH(AR_PARTY,c,l);
+law AR_RIGHT_PARTY := IF GOES_WITH(AR_PAIR,c,l,r) THEN GOES_WITH(AR_PARTY,c,r);
+
+law AR_TOPOLOGY_TYPE := IF GOES_WITH(AR_PARTY,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g)), GOES_WITH(AR_TYPE,t,a,POSITION(o,w),ty), GOES_WITH(AR_ROLE,a), GOES_WITH(AR_OPERATOR,o), GOES_WITH(AR_WITNESS,w) THEN GOES_WITH(AR_TYPED,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g),POSITION(o,w),ty);
+law AR_BOUND_GRANT := IF GOES_WITH(AR_PARTY,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g)), GOES_WITH(AR_GRANT,g,p,r,a,t,s), GOES_WITH(AR_ROLE,a) THEN GOES_WITH(AR_SCOPE_GRANTED,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g));
+
+law AR_VISIBLE_GRANTED_POSITION := IF GOES_WITH(AR_TYPED,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g),pos,ty), GOES_WITH(AR_VISIBILITY,t,s,p,a,pos,SHARED), GOES_WITH(AR_SCOPE_GRANTED,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g)), GOES_WITH(AR_GRANT_POSITION,g,pos) THEN GOES_WITH(AR_PROJECTABLE,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g),pos,ty);
+law AR_EXPLICIT_LOCAL_POSITION := IF GOES_WITH(AR_TYPED,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g),pos,ty), GOES_WITH(AR_VISIBILITY,t,s,p,a,pos,LOCAL_ONLY) THEN GOES_WITH(AR_LOCAL_POSITION,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g),pos,ty);
+law AR_CONTRADICTORY_VISIBILITY := IF GOES_WITH(AR_TYPED,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g),pos,ty), GOES_WITH(AR_VISIBILITY,t,s,p,a,pos,SHARED), GOES_WITH(AR_VISIBILITY,t,s,p,a,pos,LOCAL_ONLY) THEN GOES_WITH(AR_VISIBILITY_CONFLICT,AR_CONTEXT(t,s,k),AR_PARTICIPANT(p,r,a,g),pos,ty);
+
+law AR_PROJECT_PRESENT := IF GOES_WITH(AR_PROJECTABLE,c,p,pos,ty), GOES_WITH(AR_CONTACT,p,pos,ty,v,PRESENT(bits)), GOES_WITH(AR_VERDICT,v) THEN GOES_WITH(AR_PROJECTED_CONTACT,c,p,pos,ty,v,PRESENT(bits));
+law AR_PROJECT_ABSENT := IF GOES_WITH(AR_PROJECTABLE,c,p,pos,ty), GOES_WITH(AR_CONTACT,p,pos,ty,v,ABSENT), GOES_WITH(AR_VERDICT,v) THEN GOES_WITH(AR_PROJECTED_CONTACT,c,p,pos,ty,v,ABSENT);
+law AR_RETAIN_LOCAL_PRESENT := IF GOES_WITH(AR_LOCAL_POSITION,c,p,pos,ty), GOES_WITH(AR_CONTACT,p,pos,ty,v,PRESENT(bits)), GOES_WITH(AR_VERDICT,v) THEN GOES_WITH(AR_LOCAL_CONTACT,c,p,pos,ty,v,PRESENT(bits));
+law AR_RETAIN_LOCAL_ABSENT := IF GOES_WITH(AR_LOCAL_POSITION,c,p,pos,ty), GOES_WITH(AR_CONTACT,p,pos,ty,v,ABSENT), GOES_WITH(AR_VERDICT,v) THEN GOES_WITH(AR_LOCAL_CONTACT,c,p,pos,ty,v,ABSENT);
+
+// Expected shared domain is present even when either CONTACT is missing.
+law AR_DECLARED_SHARED_DOMAIN := IF GOES_WITH(AR_PAIR,c,l,r), GOES_WITH(AR_OVERLAP,c,pos,lt,rt), GOES_WITH(AR_PROJECTABLE,c,l,pos,lt), GOES_WITH(AR_PROJECTABLE,c,r,pos,rt) THEN GOES_WITH(AR_SHARED,c,l,r,pos,lt,rt);
+law AR_COMPARE_DECLARED_OVERLAP := IF GOES_WITH(AR_SHARED,c,l,r,pos,lt,rt), GOES_WITH(AR_PROJECTED_CONTACT,c,l,pos,lt,lv,lr), GOES_WITH(AR_PROJECTED_CONTACT,c,r,pos,rt,rv,rr) THEN GOES_WITH(GJC_REQUEST,AR_COMPARE_CONTEXT(c,l,r,lt,rt),pos,lr,rr);

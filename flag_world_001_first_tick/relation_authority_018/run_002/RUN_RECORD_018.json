@@ -1,0 +1,1058 @@
+{
+  "schema": "RelationAuthority018Qualification",
+  "verdict": "IF_THEN",
+  "scope": "ACTUAL_NATIVE_PROPOSE_DECIDE_RELATION_CONTACTS_PLUS_SYNTHETIC_RESTRICTION_TESTS",
+  "inputs": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+      "bytes": 8265,
+      "sha256": "05CE980CBC68707070837001819A90DF532A730569BA1112367C07BC017BD45B"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+      "bytes": 521216,
+      "sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_002\\QUALIFICATION.json",
+      "bytes": 28485,
+      "sha256": "D2F42E635BF8095CE5BA3208B030D8F7F26E0A96074F78597833F1CE7D6E41F5"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\realization020\\readback.mjs",
+      "bytes": 2790,
+      "sha256": "4612D0189AD00B89522C8CD9F472E39EB1574991F5FB4241FF3CD85F415E32D3"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\verify_binding.mjs",
+      "bytes": 10960,
+      "sha256": "09D620DC73331BB6E7D2EC56A6A9C8DA81DBBB008D6D5853A2DB4113E5829E32"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\BINDING_EVIDENCE.json",
+      "bytes": 18662,
+      "sha256": "171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\RECORD_J17_TICK_PROMOTE_BINDING_013.mal",
+      "bytes": 3717,
+      "sha256": "2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4"
+    },
+    {
+      "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\RUN_RECORD_010.json",
+      "bytes": 230301,
+      "sha256": "2AD351F73AF9C7046C6883E0EF1C29180F272DAF9EDE5047630E242743F9A053"
+    },
+    {
+      "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\FIBRE_ASSIGNMENTS_AND_RECEIPTS.json",
+      "bytes": 328009558,
+      "sha256": "3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147"
+    },
+    {
+      "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\stage\\source-map.json",
+      "bytes": 12022305,
+      "sha256": "A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA"
+    },
+    {
+      "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\stage\\readback.bin",
+      "bytes": 369098784,
+      "sha256": "C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\producer_projection_015\\source\\producer_projection.mal",
+      "bytes": 4271,
+      "sha256": "6D5154712636E80354154D2465A847DCEB6C7B7CA87036F3BFFC9C6C34577739"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\producer_projection_015\\source\\r4_verdicts.mal",
+      "bytes": 5687,
+      "sha256": "4ACC52308528FDBCF38A73CAA36E020EB370F6B1ADFA361659AACEB5AF55A1F6"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\governing_junction_content_014\\source\\governing_junction_content.mal",
+      "bytes": 2986,
+      "sha256": "056AD86E4D09BD21AD99385F981E7480854F21BE723F0350A7B282A7734F70E6"
+    },
+    {
+      "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\stage\\source.mal",
+      "bytes": 125976,
+      "sha256": "80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1"
+    },
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\MaLv3\\SPEC_MAL_SPECIFICATION_SYSTEM_002.mal",
+      "bytes": 12037,
+      "sha256": "FF85EE5F18813F7D64CE7BF275EBEA2F1FF581B32431D232FA4FD2B5B4E7E093"
+    },
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\Markdowns\\SPEC-JUNCTION-001-GOVERNED-COREALIZATION-PROTOCOL_v0.3.md",
+      "bytes": 30020,
+      "sha256": "9A82BC60519DBA3793C66ED51A31501C953D4B2016F5F96D02710C6BEEB6BAB3"
+    },
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\Markdowns\\TRACE_FOLD_PRODUCT_PROJECTION_RECORD_001_2026-10-23.md",
+      "bytes": 79479,
+      "sha256": "ACE3A574E6748C2445D82133E32C0B5990C59AFD2879E5E90338B16EF506EBA2"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\source\\relation_decomposition.mal",
+      "bytes": 3933,
+      "sha256": "50E17D8F78FD733499563F98837AF52FA5BC04F4D60AC0D1E1FB88D6762070BF"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\source\\authority_restriction.mal",
+      "bytes": 6174,
+      "sha256": "801F1AAFB685EF2C18E2DBDAC58AC30E1221313E8FD37C1F43124C7FCAFDC4C6"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run.mjs",
+      "bytes": 10837,
+      "sha256": "6401EB07978EBCD7342DE7D90C7D04211F402C197B8B08FA3D705642F4435A5A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\fixtures.mjs",
+      "bytes": 12459,
+      "sha256": "8CEEB1B447D6C68F3315A5390335F0BEA0A26C87CD554CE0BAFF45BED1838989"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\INPUTS.json",
+      "bytes": 54586,
+      "sha256": "0EF3B8CEEC3069402EFA41CE617056FFD58E0877E03EDF8DA52B1BFB25D83C1B"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\EXPECTATIONS.json",
+      "bytes": 44489,
+      "sha256": "D732F065D8E80E7B97712DECCA10C429E47F06DC3A85B728E0D0BA26C9E9B604"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\custody_before.execution.json",
+      "bytes": 1424,
+      "sha256": "C36CBC0A490E5E3C14206DFCC6EAABE76F6156B7CE5B114E3FB292CF66C8FF14"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal\\input.mal",
+      "bytes": 144744,
+      "sha256": "57400E07B98BBEE5D54C1788E0C3561551BBF63D2F4525BE7241AA0BB61309FB"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal_lower.execution.json",
+      "bytes": 856,
+      "sha256": "1C2D05FFB67C74CEC45DF084A1FD721CAB1030451374B0BB69C6F84DD6FE4539"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal\\stage\\source.mal",
+      "bytes": 144744,
+      "sha256": "57400E07B98BBEE5D54C1788E0C3561551BBF63D2F4525BE7241AA0BB61309FB"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal\\stage\\image.bin",
+      "bytes": 41992208,
+      "sha256": "3CF8E9BB64CD6824B130DD88A0514263DE501B041F6A620E8AEE43C19B34600D"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal\\stage\\source-map.json",
+      "bytes": 5105625,
+      "sha256": "AC3664D06A27F52ECBE4776A6A36655FD719447512A40A9D05FF6FE6D2DD6B03"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal\\stage\\source-occurrence-custody.json",
+      "bytes": 2361881,
+      "sha256": "C47FC18DE58E284467015A60FE83758821B5675D1D15ECE7729B2539C52FCFA4"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal_device.execution.json",
+      "bytes": 290,
+      "sha256": "682B6DE9CA35B3B8BCFA567DF4FDB3244986B44A571678702E104F35E8E06D7A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal_gpu.execution.json",
+      "bytes": 1004,
+      "sha256": "787D0AD558A01D524A4BEAE0E8962CC3D51258742C601B85AABD2C471B6D75E2"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal\\stage\\readback.bin",
+      "bytes": 169345056,
+      "sha256": "384C14D4ACE7C976924B362E26311815E84A702B42CC30D1A8DD07579463119E"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal\\stage\\readback.bin.progress.jsonl",
+      "bytes": 392,
+      "sha256": "01214F210A43E2443C03DD3EC2EDB2BF1724A277A59CD8F7EBBE748D17BD7AB2"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal\\stage\\readback.bin.epochs.jsonl",
+      "bytes": 31097,
+      "sha256": "BAEFD05CAEB2AF7A2A03D0889ACAF2DE172D61DD79F27889AFDC6771439AE674"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal.OBSERVATION.json",
+      "bytes": 40576,
+      "sha256": "1564FF26BC91BDFFD3924B6F2429BCD04C188E51C90AC776F9096B9E99AB1B3C"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal.CLOSURE.txt",
+      "bytes": 249442,
+      "sha256": "BB519FCE88CCADC03514B5FFA94400A70201703B8100CE13C98FA525D9CAFBF9"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal.PROOFS.json",
+      "bytes": 240408,
+      "sha256": "A19A431942BFA473D2F61153638CEA7B92F7A7ADD7D335D6DBAF8CA739374766"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\replay\\source-map.json",
+      "bytes": 5105625,
+      "sha256": "AC3664D06A27F52ECBE4776A6A36655FD719447512A40A9D05FF6FE6D2DD6B03"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\replay_device.execution.json",
+      "bytes": 290,
+      "sha256": "AAFBDD371CC224B0CCEA054A9E56B3CE775EFC58A51C1033054F5B1F03CCB5C8"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\replay_gpu.execution.json",
+      "bytes": 997,
+      "sha256": "8F83113E56960F969D3F0577D1B79D8005001D9F9B4DE53669FA59F9624159C7"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\replay\\readback.bin",
+      "bytes": 169345056,
+      "sha256": "384C14D4ACE7C976924B362E26311815E84A702B42CC30D1A8DD07579463119E"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\replay\\readback.bin.progress.jsonl",
+      "bytes": 392,
+      "sha256": "3FE8B648915C16DFF1C36B3B84B010EA6B78A457DEF33155903C61BBDA90C2D7"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\replay\\readback.bin.epochs.jsonl",
+      "bytes": 31097,
+      "sha256": "BAEFD05CAEB2AF7A2A03D0889ACAF2DE172D61DD79F27889AFDC6771439AE674"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\replay.OBSERVATION.json",
+      "bytes": 40569,
+      "sha256": "BAAA9ACD50CF0EC82196DE60C8440037814E72216A03E824BCB0A301D7ED8489"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\replay.CLOSURE.txt",
+      "bytes": 249442,
+      "sha256": "BB519FCE88CCADC03514B5FFA94400A70201703B8100CE13C98FA525D9CAFBF9"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\replay.PROOFS.json",
+      "bytes": 240394,
+      "sha256": "878C5EF6FF939094FE827F93F1A019665CF68FB3DFD025CE8B2FFEFF09C8A5C0"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed\\input.mal",
+      "bytes": 144744,
+      "sha256": "A4E6BEDE206231071F638C01E24B84F7F17C729B5FEEC1D53CC323968F356698"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed_lower.execution.json",
+      "bytes": 860,
+      "sha256": "7565215CA29EA23623A6E6B9971E30EC2DA461DD7170FC4B7A9B089E410BE299"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed\\stage\\source.mal",
+      "bytes": 144744,
+      "sha256": "A4E6BEDE206231071F638C01E24B84F7F17C729B5FEEC1D53CC323968F356698"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed\\stage\\image.bin",
+      "bytes": 41992208,
+      "sha256": "4BC8556A83F92939177D53EF47014F38A781582ECF55AE5BA96AFB31A85EE738"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed\\stage\\source-map.json",
+      "bytes": 5117358,
+      "sha256": "493BCCF63FD34C0A39B889B294157BC1799D04DBD70C52B03262312879E74183"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed\\stage\\source-occurrence-custody.json",
+      "bytes": 2364716,
+      "sha256": "69F1760E21296C710796615D698EC2CD64D190BEC909D9C8161D0D8C965114C6"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed_device.execution.json",
+      "bytes": 290,
+      "sha256": "F8A59C792ADBAEFD3E64AB1F3650582F56CFEE956F20BC0401B5405B0FF63654"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed_gpu.execution.json",
+      "bytes": 1008,
+      "sha256": "69C590DDEDA139DA33B983BC45F2035CEB803EBE362D37CD346F74CF93E26570"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed\\stage\\readback.bin",
+      "bytes": 169345056,
+      "sha256": "6C2CD3919F869EC3BDD626286BC2C33AE11C613B491F879264658C2ECA0ACE7E"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed\\stage\\readback.bin.progress.jsonl",
+      "bytes": 392,
+      "sha256": "01214F210A43E2443C03DD3EC2EDB2BF1724A277A59CD8F7EBBE748D17BD7AB2"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed\\stage\\readback.bin.epochs.jsonl",
+      "bytes": 31097,
+      "sha256": "AE650515D80505694BEA253890CA7E905BFDAD891C849E483FF219EE7045B255"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed.OBSERVATION.json",
+      "bytes": 40580,
+      "sha256": "C32AC48FBF2E7318155A6AB17ECDDE262B74033BE7870C70057D1BD509FA9780"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed.CLOSURE.txt",
+      "bytes": 249442,
+      "sha256": "BB519FCE88CCADC03514B5FFA94400A70201703B8100CE13C98FA525D9CAFBF9"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed.PROOFS.json",
+      "bytes": 240286,
+      "sha256": "C127C85763937CD3D765F7C854792CD0FCDDAA8EE9A7529C4136EBE34D0D3FBA"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\custody_after.execution.json",
+      "bytes": 1424,
+      "sha256": "C3447F19E4823F818C70A28455A0F74816D05557A1793792AD2095CAC77DFC05"
+    }
+  ],
+  "native_sources": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\source\\relation_decomposition.mal",
+      "bytes": 3933,
+      "sha256": "50E17D8F78FD733499563F98837AF52FA5BC04F4D60AC0D1E1FB88D6762070BF"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\source\\authority_restriction.mal",
+      "bytes": 6174,
+      "sha256": "801F1AAFB685EF2C18E2DBDAC58AC30E1221313E8FD37C1F43124C7FCAFDC4C6"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\producer_projection_015\\source\\producer_projection.mal",
+      "bytes": 4271,
+      "sha256": "6D5154712636E80354154D2465A847DCEB6C7B7CA87036F3BFFC9C6C34577739"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\producer_projection_015\\source\\r4_verdicts.mal",
+      "bytes": 5687,
+      "sha256": "4ACC52308528FDBCF38A73CAA36E020EB370F6B1ADFA361659AACEB5AF55A1F6"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\governing_junction_content_014\\source\\governing_junction_content.mal",
+      "bytes": 2986,
+      "sha256": "056AD86E4D09BD21AD99385F981E7480854F21BE723F0350A7B282A7734F70E6"
+    }
+  ],
+  "runs": [
+    {
+      "verdict": "IF_THEN",
+      "scope": "SCOPED_RECORDED_RELATION_CONTACTS_AND_RESTRICTION_COMPONENT_QUALIFICATION",
+      "label": "normal",
+      "facts": 532,
+      "terms": 2053,
+      "epochs": 13,
+      "error": 0,
+      "assertions": 3501,
+      "relations": [
+        {
+          "id": "PROPOSE",
+          "contact_count": 2,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,PRODUCER(PROPOSE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,PRODUCER(PROPOSE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        },
+        {
+          "id": "DECIDE",
+          "contact_count": 2,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,PRODUCER(DECIDE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,PRODUCER(DECIDE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        },
+        {
+          "id": "MISSING_PARENT",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_PARENT_MEMBER",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_RULE",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_SOURCE",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_CONCLUSION",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "REORDERED_PARENTS",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "INCONSISTENT_ROOT",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "MISSING_PROOF_CONTENT",
+          "contact_count": 1,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MISSING_PROOF_CONTENT),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(TEST_CUSTODY(MISSING_PROOF_CONTENT,SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3)),FACT_3535068),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        },
+        {
+          "id": "NO_NATIVE_PROMOTE",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "FIELD_NAME_ONLY",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "MULTIPLE_RELATIONS_ONE_PRODUCER",
+          "contact_count": 4,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        }
+      ],
+      "authority": [
+        {
+          "id": "AGREEMENT",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "IF_THEN"
+          ]
+        },
+        {
+          "id": "WALL",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "NOT_SAME"
+          ]
+        },
+        {
+          "id": "ABSENCE",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "MAYBE"
+          ]
+        },
+        {
+          "id": "PROOF_SHARED",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "NOT_SAME"
+          ]
+        },
+        {
+          "id": "PROOF_LOCAL",
+          "shared": 0,
+          "projected": 0,
+          "local": 2,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "CONTACT_MISSING",
+          "shared": 1,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "GRANT_MISSING",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "WRONG_RECORD",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "WRONG_SCOPE",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "TYPE_MISMATCH",
+          "shared": 1,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "NO_OVERLAP",
+          "shared": 0,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "WRONG_OPERATOR",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "VISIBILITY_CONFLICT",
+          "shared": 1,
+          "projected": 2,
+          "local": 1,
+          "conflicts": 1,
+          "readings": [
+            "IF_THEN"
+          ]
+        }
+      ],
+      "r4_derived": 14,
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\normal\\stage\\readback.bin",
+        "bytes": 169345056,
+        "sha256": "384C14D4ACE7C976924B362E26311815E84A702B42CC30D1A8DD07579463119E"
+      },
+      "closure_sha256": "BB519FCE88CCADC03514B5FFA94400A70201703B8100CE13C98FA525D9CAFBF9",
+      "actual_authority": "NOT_RUN_NO_TOPOLOGY_OR_GRANTS_SUPPLIED",
+      "seal": "NOT_RUN",
+      "global_section": "NOT_RUN",
+      "link_3": "NOT_WRITTEN"
+    },
+    {
+      "verdict": "IF_THEN",
+      "scope": "SCOPED_RECORDED_RELATION_CONTACTS_AND_RESTRICTION_COMPONENT_QUALIFICATION",
+      "label": "replay",
+      "facts": 532,
+      "terms": 2053,
+      "epochs": 13,
+      "error": 0,
+      "assertions": 3501,
+      "relations": [
+        {
+          "id": "PROPOSE",
+          "contact_count": 2,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,PRODUCER(PROPOSE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,PRODUCER(PROPOSE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        },
+        {
+          "id": "DECIDE",
+          "contact_count": 2,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,PRODUCER(DECIDE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,PRODUCER(DECIDE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        },
+        {
+          "id": "MISSING_PARENT",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_PARENT_MEMBER",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_RULE",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_SOURCE",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_CONCLUSION",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "REORDERED_PARENTS",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "INCONSISTENT_ROOT",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "MISSING_PROOF_CONTENT",
+          "contact_count": 1,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MISSING_PROOF_CONTENT),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(TEST_CUSTODY(MISSING_PROOF_CONTENT,SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3)),FACT_3535068),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        },
+        {
+          "id": "NO_NATIVE_PROMOTE",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "FIELD_NAME_ONLY",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "MULTIPLE_RELATIONS_ONE_PRODUCER",
+          "contact_count": 4,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        }
+      ],
+      "authority": [
+        {
+          "id": "AGREEMENT",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "IF_THEN"
+          ]
+        },
+        {
+          "id": "WALL",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "NOT_SAME"
+          ]
+        },
+        {
+          "id": "ABSENCE",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "MAYBE"
+          ]
+        },
+        {
+          "id": "PROOF_SHARED",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "NOT_SAME"
+          ]
+        },
+        {
+          "id": "PROOF_LOCAL",
+          "shared": 0,
+          "projected": 0,
+          "local": 2,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "CONTACT_MISSING",
+          "shared": 1,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "GRANT_MISSING",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "WRONG_RECORD",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "WRONG_SCOPE",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "TYPE_MISMATCH",
+          "shared": 1,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "NO_OVERLAP",
+          "shared": 0,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "WRONG_OPERATOR",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "VISIBILITY_CONFLICT",
+          "shared": 1,
+          "projected": 2,
+          "local": 1,
+          "conflicts": 1,
+          "readings": [
+            "IF_THEN"
+          ]
+        }
+      ],
+      "r4_derived": 14,
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\replay\\readback.bin",
+        "bytes": 169345056,
+        "sha256": "384C14D4ACE7C976924B362E26311815E84A702B42CC30D1A8DD07579463119E"
+      },
+      "closure_sha256": "BB519FCE88CCADC03514B5FFA94400A70201703B8100CE13C98FA525D9CAFBF9",
+      "actual_authority": "NOT_RUN_NO_TOPOLOGY_OR_GRANTS_SUPPLIED",
+      "seal": "NOT_RUN",
+      "global_section": "NOT_RUN",
+      "link_3": "NOT_WRITTEN"
+    },
+    {
+      "verdict": "IF_THEN",
+      "scope": "SCOPED_RECORDED_RELATION_CONTACTS_AND_RESTRICTION_COMPONENT_QUALIFICATION",
+      "label": "reversed",
+      "facts": 532,
+      "terms": 2053,
+      "epochs": 13,
+      "error": 0,
+      "assertions": 3501,
+      "relations": [
+        {
+          "id": "PROPOSE",
+          "contact_count": 2,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,PRODUCER(PROPOSE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,PRODUCER(PROPOSE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        },
+        {
+          "id": "DECIDE",
+          "contact_count": 2,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,PRODUCER(DECIDE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,PRODUCER(DECIDE,H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        },
+        {
+          "id": "MISSING_PARENT",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_PARENT_MEMBER",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_RULE",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_SOURCE",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "WRONG_CONCLUSION",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "REORDERED_PARENTS",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "INCONSISTENT_ROOT",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "MISSING_PROOF_CONTENT",
+          "contact_count": 1,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MISSING_PROOF_CONTENT),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(TEST_CUSTODY(MISSING_PROOF_CONTENT,SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3)),FACT_3535068),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        },
+        {
+          "id": "NO_NATIVE_PROMOTE",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "FIELD_NAME_ONLY",
+          "contact_count": 0,
+          "contacts": []
+        },
+        {
+          "id": "MULTIPLE_RELATIONS_ONE_PRODUCER",
+          "contact_count": 4,
+          "contacts": [
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_3535068),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(BECAUSE,HOW),APPLICATION_PROVENANCE,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+            "GOES_WITH(RD_CONTACT,TEST_PRODUCER(MULTIPLE_RELATIONS),H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,RD_RELATION(SOURCE_CUSTODY(H_80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1,H_A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA,H_C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3),FACT_8296),POSITION(IF_THEN,WHAT),RULE_RELATION,\"IF_THEN\",PRESENT(CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"NO\",CONS(\"NO\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",CONS(\"THIS\",NIL))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          ]
+        }
+      ],
+      "authority": [
+        {
+          "id": "AGREEMENT",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "IF_THEN"
+          ]
+        },
+        {
+          "id": "WALL",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "NOT_SAME"
+          ]
+        },
+        {
+          "id": "ABSENCE",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "MAYBE"
+          ]
+        },
+        {
+          "id": "PROOF_SHARED",
+          "shared": 1,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": [
+            "NOT_SAME"
+          ]
+        },
+        {
+          "id": "PROOF_LOCAL",
+          "shared": 0,
+          "projected": 0,
+          "local": 2,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "CONTACT_MISSING",
+          "shared": 1,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "GRANT_MISSING",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "WRONG_RECORD",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "WRONG_SCOPE",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "TYPE_MISMATCH",
+          "shared": 1,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "NO_OVERLAP",
+          "shared": 0,
+          "projected": 2,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "WRONG_OPERATOR",
+          "shared": 0,
+          "projected": 1,
+          "local": 0,
+          "conflicts": 0,
+          "readings": []
+        },
+        {
+          "id": "VISIBILITY_CONFLICT",
+          "shared": 1,
+          "projected": 2,
+          "local": 1,
+          "conflicts": 1,
+          "readings": [
+            "IF_THEN"
+          ]
+        }
+      ],
+      "r4_derived": 14,
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\relation_authority_018\\run_002\\reversed\\stage\\readback.bin",
+        "bytes": 169345056,
+        "sha256": "6C2CD3919F869EC3BDD626286BC2C33AE11C613B491F879264658C2ECA0ACE7E"
+      },
+      "closure_sha256": "BB519FCE88CCADC03514B5FFA94400A70201703B8100CE13C98FA525D9CAFBF9",
+      "actual_authority": "NOT_RUN_NO_TOPOLOGY_OR_GRANTS_SUPPLIED",
+      "seal": "NOT_RUN",
+      "global_section": "NOT_RUN",
+      "link_3": "NOT_WRITTEN"
+    }
+  ],
+  "replay": "SAME_RAW_BYTES",
+  "reversed": "SAME_FULL_DECODED_CLOSURE",
+  "custody_before": {
+    "verdict": "SAME",
+    "evidence_sha256": "171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4",
+    "observer_sha256": "09D620DC73331BB6E7D2EC56A6A9C8DA81DBBB008D6D5853A2DB4113E5829E32",
+    "comparisons": 55,
+    "negative_checks": 8,
+    "frozen": {
+      "manifest_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+      "manifest_sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+      "files": 901,
+      "verdict": "SAME"
+    },
+    "pair_before": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+    "pair_after": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+    "receipt_hash": "a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd",
+    "member_hash": "19EBB89436905DB26E25BDB0039043C870C9282FA0E3CDEFECFBB749340DBDE9",
+    "sections": "NOT_RUN",
+    "world_commit": "NOT_RUN",
+    "link_count": 2
+  },
+  "custody_after": {
+    "verdict": "SAME",
+    "evidence_sha256": "171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4",
+    "observer_sha256": "09D620DC73331BB6E7D2EC56A6A9C8DA81DBBB008D6D5853A2DB4113E5829E32",
+    "comparisons": 55,
+    "negative_checks": 8,
+    "frozen": {
+      "manifest_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+      "manifest_sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+      "files": 901,
+      "verdict": "SAME"
+    },
+    "pair_before": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+    "pair_after": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+    "receipt_hash": "a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd",
+    "member_hash": "19EBB89436905DB26E25BDB0039043C870C9282FA0E3CDEFECFBB749340DBDE9",
+    "sections": "NOT_RUN",
+    "world_commit": "NOT_RUN",
+    "link_count": 2
+  },
+  "remaining": [
+    "PROMOTE_RECORDED_RELATION_CONTACT_NOT_NATIVE_FIRING",
+    "CONCRETE_AUTHORITY_TOPOLOGY_AND_GRANTS_NOT_SUPPLIED",
+    "NO_LOCAL_SECTION_GLOBAL_SECTION_OR_EXECUTE_LICENSE"
+  ],
+  "world_link_3": "NOT_WRITTEN",
+  "repository_commit": "NOT_PERFORMED"
+}

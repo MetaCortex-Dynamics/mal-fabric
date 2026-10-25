@@ -1,0 +1,13 @@
+{
+  "exe": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\verify_binding.mjs",
+    "--verify"
+  ],
+  "started": "2026-10-25T03:23:29.781Z",
+  "ended": "2026-10-25T03:23:32.596Z",
+  "exit": 0,
+  "error": null,
+  "stdout": "{\n  \"verdict\": \"SAME\",\n  \"evidence_sha256\": \"171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4\",\n  \"observer_sha256\": \"09D620DC73331BB6E7D2EC56A6A9C8DA81DBBB008D6D5853A2DB4113E5829E32\",\n  \"comparisons\": 55,\n  \"negative_checks\": 8,\n  \"frozen\": {\n    \"manifest_path\": \"D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json\",\n    \"manifest_sha256\": \"F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560\",\n    \"files\": 901,\n    \"verdict\": \"SAME\"\n  },\n  \"pair_before\": \"e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9\",\n  \"pair_after\": \"37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5\",\n  \"receipt_hash\": \"a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd\",\n  \"member_hash\": \"19EBB89436905DB26E25BDB0039043C870C9282FA0E3CDEFECFBB749340DBDE9\",\n  \"sections\": \"NOT_RUN\",\n  \"world_commit\": \"NOT_RUN\",\n  \"link_count\": 2\n}\n",
+  "stderr": ""
+}

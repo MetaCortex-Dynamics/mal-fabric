@@ -1,0 +1,38 @@
+DECISION_RECORD_GPU_SELF_WITNESS_001
+STATUS     := PROPOSED for DECIDE (Claude records Devon's statement; Devon decides; Codex applies)
+DATE       := 2026-10-21 17:09 America/New_York
+STATEMENT  := Devon: "The point of this project is to run on the GPU as close to metal as possible.
+              Adding another board to provide outside attestation is unnecessary.
+              The GPU witnesses itself as the game world."
+GOVERNS    := O_GENESIS_CAPTURE and O_COMMIT of SPEC-FLAG-WORLD-FIRST-TICK-001 (FT v0.1.1 73429D78…),
+              under SPEC-WITNESS-FACE-G-READOUT-001 v0.1.0 (057C30E2…) and DECISION_RECORD_FLAG_WORLD_D_G_001 (3419D528…).
+SOURCES    := GRL :113-119 (configuration := (arrangement, admissibility witness); the pair is the world object);
+              FT :52 (readback exposes the constituted successor), :164-167 (output projection: receipt + state with chain),
+              :196-197 (tick record, ONE new link); Paper B commit law (RETURN (program, state_{t+1}));
+              TRACE_CONTINUITY_SHAPE §4 ("it witnesses itself": the 720-overlap record IS the admission witness).
+              JTP :22 governs the Tang/VF2 hardware worldline. It is NOT the game world's worldline.
+
+BINDS
+  GAME_WORLD_WORLDLINE := the GPU-resident chain of committed (field, witness) pairs on carrier 012 (FT :164-167, :196-197).
+  WITNESS              := the GPU's own 720-overlap record for the committed field, walls included. No external attester.
+  COMMIT               := the GPU appends ONE chain link := (field, witness, receipt) with predecessor custody by hash
+                          (FT :196-197; RECEIPT_READING_001). This IS COMMITTED for the game world.
+  EVENT_RECORD         := the captured JTP frame 4472CFC5…7228B: its header names Junction("17") between Domain("4")
+                          and Domain("9"). The frame is the event's record; its locus is the header's vertex (NOTE_O_GENESIS_CAPTURE_LOCUS).
+  GENESIS_FIELD (g₁)   := on 012: the 12 site-support flags of Junction("17") read THIS; all other flags read NO
+                          (FT :51; Codex 17:03, derived without payload indexing or identifier ordering).
+  PREDECESSOR (x_t)    := Ground₀(012), B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3.
+
+NOT_SAME
+  The Tang/VF2 JTPClosureV1 append (JTP :22) is the HARDWARE lane's commit. It is NOT a gate on the game world.
+  The game world does not report the LED receipt as committed either; it commits its OWN pair on the GPU.
+  Outside attestation is unnecessary BECAUSE the configuration carries its witness (GRL dependent pair).
+
+APPLY (Codex, on DECIDE)
+  1. current := g₁ as bound above. Commit the genesis pair on the GPU as ONE chain link over Ground₀ (predecessor hash B263644E…).
+  2. Then the handoff RUN-THROUGH, unchanged: O_D_G_FROM_BYTES → O_FACE_READ_20 → O_J17_ROLE (check {G,S}) →
+     triad_position (FAB :44) → STEP_FABRIC → RETURN (program, state_{t+1}) → commit → CONFORM V1/V2.
+  3. Stop ONLY at: NOT_SAME against promoted bytes; a MAYBE tie on a face J17 is in; O_S_F_BINDING; repository commit/push/seal.
+
+OPEN (report, do not block)
+  O_S_F_BINDING (Devon). O_FLEX_MOTIF_CORRESPONDENCE. The hardware lane's own JTP append remains that lane's O_next.

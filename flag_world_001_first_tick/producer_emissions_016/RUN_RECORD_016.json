@@ -1,0 +1,139 @@
+{
+  "record": "RUN_RECORD_PRODUCER_EMISSIONS_016",
+  "date": "2026-10-24",
+  "verdict": "IF_THEN",
+  "scope": "ACTUAL_MEMBER_RESTRICTED_PARTIAL_AUTHOR_COMPONENT_QUALIFICATION",
+  "authority": "Implementation and qualification under Devon's current request. No corpus promotion, authority admission or worldline EXECUTE inferred.",
+  "home": "mal-fabric/flag_world_001_first_tick/producer_emissions_016",
+  "author_contact": {
+    "path": "C:/Users/devon/Desktop/MaL/MaLv3/SPEC_MAL_SPECIFICATION_SYSTEM_002.mal",
+    "sha256": "FF85EE5F18813F7D64CE7BF275EBEA2F1FF581B32431D232FA4FD2B5B4E7E093",
+    "lines": "91-93,171-172",
+    "promotion_receipt_sha256": "3155C1BDC53D3E067D8C4B53F6A121CD19ED910EFEEE68C8647AFE87BCE2D087",
+    "reading": "AUTHOR writes contacted readings under PROPOSE; subsequent normalization is fixed. This authoring permission does not establish a unique coordinate extraction from arbitrary record bytes."
+  },
+  "implementation": [
+    {"path":"source/member_producers.mal","bytes":5346,"sha256":"EC739D9889735A00A88C0F4D3E1A188D4CC2A0A46AF19666E16EDD2677A77DBD","effect":"Three source/member/role/record-bound emitters; independent domain declaration; exact native fact and supporting-reference joins."},
+    {"path":"../producer_projection_015/source/producer_projection.mal","bytes":4271,"sha256":"6D5154712636E80354154D2465A847DCEB6C7B7CA87036F3BFFC9C6C34577739","effect":"Unchanged declared-domain interface."},
+    {"path":"../producer_projection_015/source/r4_verdicts.mal","bytes":5687,"sha256":"4ACC52308528FDBCF38A73CAA36E020EB370F6B1ADFA361659AACEB5AF55A1F6","effect":"Unchanged partial R1/R2 verdict closure."},
+    {"path":"../governing_junction_content_014/source/governing_junction_content.mal","bytes":2986,"sha256":"056AD86E4D09BD21AD99385F981E7480854F21BE723F0350A7B282A7734F70E6","effect":"Unchanged content comparison."}
+  ],
+  "host_custody_and_observation": [
+    {"path":"run.mjs","bytes":9379,"sha256":"0F06A89704724A01B2BA3674BFCA2808CB5181C33F510ACA619D5A810CE0F31D"},
+    {"path":"fixtures.mjs","bytes":16027,"sha256":"76B0F4B944BA85614074B96C29AE26AC186F34B7EFC74DD3F2F3B2359C6E2FFA"},
+    {"path":"observe.mjs","bytes":6402,"sha256":"BEADD7E8269F7E9A0CB7F1003ABE038440492C0CEDB5BB185CB69301439FD661"}
+  ],
+  "inputs": {
+    "manifest":{"path":"run_001/INPUTS.json","bytes":9616,"sha256":"2551B77A0239B91FC025C71E36B0FE92080C5EAB977C9FA1C683B6BE527D24DD"},
+    "transport":{"path":"run_001/TRANSPORT.json","bytes":3920,"sha256":"8C9B1E8855A99F632D7DFB44798D0BC7A1074FE2209A38A76CA17136A3AD1A01"},
+    "contacts":{"path":"CONTACTS.json","bytes":1971,"sha256":"58DBC1BD04DA146112CDC22808E9C9A097AAF0DBAAD13A20A61F0E4670256AEF","count":7},
+    "native_member":"SITE(\"C:HW_04|HW_09\",\"NO\")",
+    "member_sha256":"19EBB89436905DB26E25BDB0039043C870C9282FA0E3CDEFECFBB749340DBDE9",
+    "member_pointer":"/cases/275",
+    "original_case_export_sha256":"3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147",
+    "original_readback_sha256":"C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3",
+    "original_source_map_sha256":"A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA",
+    "case_fact":{"id":8296,"term":"THIS(SC_CASE,SITE(\"C:HW_04|HW_09\",\"NO\"))","origin":"SC_SITE_NO","support":[7004]},
+    "strict_fact":{"id":3535068,"term":"THIS(SC_STRICT,SITE(\"C:HW_04|HW_09\",\"NO\"))","origin":"SC_STRICT","support":[3533939,2013,3534047,3296316]},
+    "promote_binding_sha256":"2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4",
+    "pair_family_scope":"011 is exhaustion custody only; it is not substituted for the source of the strict member."
+  },
+  "projection": {
+    "status":"SOURCE_GROUNDED_AUTHOR_CANDIDATE; NOT_UNIQUE_AUTOMATIC_EXTRACTION",
+    "subject":"Member restriction of each record, not the whole OfferedSet equated with a member or binding.",
+    "declared_per_producer":[
+      {"coordinate":"THIS x WHAT","verdict":"IF_THEN","reference":"Exact source-bound member identity"},
+      {"coordinate":"BECAUSE x HOW","verdict":"IF_THEN","reference":"Producer's own supporting construction or binding proof"}
+    ],
+    "proof_references": {
+      "PROPOSE":"88384D63F5187981736DDD9E8B1AEE80119FC33283DE70FA5A9C1E5B8BECE983",
+      "DECIDE":"35E9F6C861401472806CE9E257C34EAECA6A6F8C110C991772B5A80A30830C44",
+      "PROMOTE":"2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4",
+      "scope":"Case/strict references hash explicitly encoded observation descriptors of original native proofs. PROMOTE references the original binding bytes. Descriptor identities do not replace the original record identities."
+    },
+    "undeclared_basis_coordinates_per_producer":43,
+    "pending_scope":"Uncontacted AUTHOR coordinates; not native UNSUPPORTED or inferred private positions.",
+    "not_supplied":["FOR_WHAT(BECAUSE)","WHENCE","complete 45-seed map","complete 105-cell normal form","derived content-reference assignment"]
+  },
+  "qualification": {
+    "path":"run_001/QUALIFICATION.json",
+    "bytes":1408647,
+    "sha256":"B922099205975BC6522A632E7B5077CB6C1C434FC19C337E2ECF6AA33B4F3A62",
+    "device":"NVIDIA GeForce RTX 3070",
+    "native_runs":13,
+    "actual_runs":3,
+    "isolated_negative_runs":10,
+    "assertions_per_run":45,
+    "assertions_total":585,
+    "bound_inputs_and_contacts":33,
+    "artifacts":181,
+    "byte_hash_comparisons":214,
+    "actual_each":{"facts":898,"terms":2107,"epochs":266,"error":0,"source_facts":46,"fixed_schema_facts":30,"transported_facts":16,"producer_domains":6,"seed_readings":6,"derived_readings":9,"shared_comparisons":6,"member_agreements":3,"own_proof_walls":3,"absence_results":0},
+    "replay":{"comparison":"SAME_RAW_READBACK_BYTES","bytes":168558624,"sha256":"41C66458C3CAA562DCD89D5D9BEA24ED9816CFFC9395E1B83885BFF13193C9C2"},
+    "reversed":{"comparison":"SAME_DECODED_FULL_CLOSURE","raw_readback_sha256":"49280A1A1537357B26CC23023558E00B6C016D4039DA1DA50BA1C421D78A842F","scope":"Allocation identities differ under reversal; reversed raw bytes are not claimed SAME."},
+    "all_three_closure_sha256":"A6B8716505B3008B36140A930C54E04B2D55EC88106CC58A2CDD057C882A6FB9",
+    "observation":{"path":"run_001/normal.OBSERVATIONS.json","bytes":230026,"sha256":"AED8271123FB247DB0494E5ECA2216E99AF78B5C1E6C0FBBD1361A2C2473D876"},
+    "negatives": {
+      "cases":["wrong_source","wrong_member","wrong_member_reference","wrong_record","wrong_proof_identity","missing_SC_CASE","missing_SC_STRICT","PROMOTE_wrong_record","PROMOTE_wrong_member","missing_member_content"],
+      "verdict":"IF_THEN",
+      "domains_each":6,
+      "epochs_each":8,
+      "error_each":0,
+      "nine_join_cases":"Affected role's two contacts withheld; declared domains retained.",
+      "missing_member_content":"Only three own-proof contacts and three BECAUSE x WHEN readings remain; all member contacts withheld.",
+      "scope":"Negative fixtures omit P15_PAIR requests. They qualify contact withholding and declaration preservation, not the comparator's absence branch. No private or comparison conclusions are emitted."
+    }
+  },
+  "distinctions": [
+    "The domain declaration is independent of native support and content availability, BECAUSE its support closure uses only the record, source restriction and declared schema.",
+    "Each role's THIS x WHAT agrees on the identical member restriction. Whole PROPOSE, DECIDE and PROMOTE records are not compared as one object.",
+    "BECAUSE x HOW compares three different supporting-proof records. The three NOT_SAME results are walls in this authored partial projection, not new walls in the world's 720-overlap field or a claim that the world is inadmissible.",
+    "The coordinate schema is written AUTHOR implementation content. Source-bound content does not make that schema a uniquely forced decomposition of all record content.",
+    "Native IF_THEN records a contacted construction; it is not field NO, receipt THIS or a content hash renamed as a verdict.",
+    "Host code transports identity-bound operands, original facts and reference bits. It does not supply P15 seed conclusions, comparison verdicts, a seal or a successor.",
+    "Original fact proof custody is retained separately. Imported facts are source seeds in this component, not a rerun of the original multi-million-fact enumeration."
+  ],
+  "worldline_custody": {
+    "path":"../j17_step_023/outputs/committed.world.json",
+    "bytes":568805,
+    "sha256":"E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+    "link_count":2,
+    "head":"173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+    "comparison":"SAME",
+    "binding_checker_comparisons_before_and_after":55,
+    "binding_checker_negative_checks_before_and_after":8,
+    "frozen_files":901,
+    "frozen_comparison":"SAME",
+    "frozen_manifest_sha256":"F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+    "sections":"NOT_RUN",
+    "world_commit":"NOT_RUN"
+  },
+  "independent_audit": {
+    "verdict":"IF_THEN",
+    "scope":"Separate read-only audit of original native proof records, support ancestry, emission subjects, partial R4 outputs, replay/reversal, ten withholding cases and all 214 identities.",
+    "qualification_sha256":"B922099205975BC6522A632E7B5077CB6C1C434FC19C337E2ECF6AA33B4F3A62",
+    "audit_reruns":0
+  },
+  "obligations": {
+    "member_restricted_partial_emitters":"IF_THEN",
+    "remaining_producer_contacted_basis_readings":"PENDING",
+    "complete_producer_normal_forms":"NOT_RUN",
+    "operator_preserving_authority_projection":"NOT_RUN",
+    "LocalSection_seals":"NOT_RUN",
+    "GlobalSection_admission":"NOT_RUN",
+    "EXECUTE_license":"NOT_RUN",
+    "link_3":"NOT_RUN"
+  },
+  "integration_boundary": "The contacted sheaf record carries witness ordinal plus payload hash, not the interface's full operator/witness key; the governing junction separately consumes topology, locales, predicate, schema and authority-scoped sections. This run emits none of those authority conclusions. Existing J17 admission is not reopened.",
+  "changes_not_performed":["No original or frozen bytes edited","No proof content replaced to obtain agreement","No admission rerun or handedness assignment","No LocalSection seal or authority grant","No worldline or repository commit","No push, law promotion or board action"],
+  "trace_custody": {
+    "reported_revision_sha256":"3C217FDE053F839FD4CA5523336A2A6D16CE3718677B91AB739A532B025AF7B0",
+    "reported_revision_status":"USER_REPORTED",
+    "observed_older_local_path":"C:/Users/devon/Desktop/MaL/Markdowns/TRACE_FOLD_PRODUCT_PROJECTION_RECORD_001_2026-10-23.md",
+    "observed_older_local_bytes":69438,
+    "observed_older_local_sha256":"42FE11493503786CF3FC1299361FBDBE11DC2B13FBA177FD2F83CCDC6C23D235",
+    "scope":"Distinct revisions retained. Neither trace is substituted for an execution input."
+  },
+  "readme_sha256":"D41405452648686B8F10BA656FAA260846A099B54698540B329F25E21D14323D",
+  "continuity_and_compliance":"Member versus proof identity, domain versus missing contact, qualification versus authority, and existing worldline custody remain distinct. No retired construction is reinstated."
+}

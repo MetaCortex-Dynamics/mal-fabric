@@ -1,0 +1,48 @@
+// Producer-side projection interface, implementation candidate 015.
+// AUTHOR declarations are inputs owned by the named producer and bound to
+// its record/domain identities. This source does not assign those declarations.
+// Three role-specific emitters preserve that ownership; none promotes law.
+// R4 consumes verdicts only. Reference content remains at its declared basis
+// coordinate, never copied into a derived witness as an invented payload.
+// No LocalSection seal, GlobalSection admission, grant, or EXECUTE is emitted.
+// Scope: comparison and normalization interface, NOT an authorization boundary
+// or general schema validator. Contradictory domain declarations are named;
+// this positive closure does not retract other observations when they appear.
+
+@propose seed P15_FIXED_TYPES := {
+  GOES_WITH(P15_OPERATOR,THIS), GOES_WITH(P15_OPERATOR,SAME_NOT_SAME),
+  GOES_WITH(P15_OPERATOR,NO), GOES_WITH(P15_OPERATOR,IF_THEN),
+  GOES_WITH(P15_OPERATOR,BECAUSE), GOES_WITH(P15_OPERATOR,INSIDE_OUTSIDE),
+  GOES_WITH(P15_OPERATOR,NEAR_FAR), GOES_WITH(P15_OPERATOR,CAN_CANNOT),
+  GOES_WITH(P15_OPERATOR,MAYBE), GOES_WITH(P15_OPERATOR,MUST_LET),
+  GOES_WITH(P15_OPERATOR,TOGETHER_ALONE), GOES_WITH(P15_OPERATOR,MORE_LESS),
+  GOES_WITH(P15_OPERATOR,GOES_WITH), GOES_WITH(P15_OPERATOR,MANY_ONE),
+  GOES_WITH(P15_OPERATOR,EVERY_SOME),
+  GOES_WITH(P15_BASIS,WHAT), GOES_WITH(P15_BASIS,HOW), GOES_WITH(P15_BASIS,FOR_WHAT),
+  GOES_WITH(P15_VERDICT,"IF_THEN"), GOES_WITH(P15_VERDICT,"NOT_SAME"),
+  GOES_WITH(P15_VERDICT,"NO"), GOES_WITH(P15_VERDICT,"MAYBE"),
+  GOES_WITH(P15_DOMAIN_STATUS,SUPPORTED), GOES_WITH(P15_DOMAIN_STATUS,UNSUPPORTED)
+};
+
+law P15_PROPOSE_OWNER := IF GOES_WITH(P15_PRODUCER,p,PROPOSE,r,d) THEN GOES_WITH(P15_OWNER,p,r,d);
+law P15_DECIDE_OWNER := IF GOES_WITH(P15_PRODUCER,p,DECIDE,r,d) THEN GOES_WITH(P15_OWNER,p,r,d);
+law P15_PROMOTE_OWNER := IF GOES_WITH(P15_PRODUCER,p,PROMOTE,r,d) THEN GOES_WITH(P15_OWNER,p,r,d);
+
+law P15_DOMAIN_FROM_OWNER := IF GOES_WITH(P15_OWNER,p,r,d), GOES_WITH(P15_DECLARE,p,d,POSITION(o,w),s), GOES_WITH(P15_OPERATOR,o), GOES_WITH(P15_BASIS,w), GOES_WITH(P15_DOMAIN_STATUS,s) THEN GOES_WITH(P15_DOMAIN,p,d,POSITION(o,w),s);
+law P15_PRESENT_CONTACT := IF GOES_WITH(P15_OWNER,p,r,d), GOES_WITH(P15_DOMAIN,p,d,pos,SUPPORTED), GOES_WITH(P15_CONTACT,p,r,pos,v,PRESENT(bits)), GOES_WITH(P15_VERDICT,v) THEN GOES_WITH(P15_SEED,p,pos,v,PRESENT(bits));
+law P15_ABSENT_CONTACT := IF GOES_WITH(P15_OWNER,p,r,d), GOES_WITH(P15_DOMAIN,p,d,pos,SUPPORTED), GOES_WITH(P15_CONTACT,p,r,pos,v,ABSENT), GOES_WITH(P15_VERDICT,v) THEN GOES_WITH(P15_SEED,p,pos,v,ABSENT);
+law P15_UNSUPPORTED_PENDING := IF GOES_WITH(P15_DOMAIN,p,d,pos,UNSUPPORTED) THEN GOES_WITH(P15_PENDING,p,pos);
+law P15_CONTRADICTORY_DOMAIN := IF GOES_WITH(P15_DOMAIN,p,d,pos,SUPPORTED), GOES_WITH(P15_DOMAIN,p,d,pos,UNSUPPORTED) THEN GOES_WITH(P15_DOMAIN_CONFLICT,p,d,pos);
+
+// The shared-domain witness is independent of both payload values and their
+// availability. Explicit UNSUPPORTED, not absent content, witnesses private
+// domain membership relative to the other producer.
+law P15_DOMAIN_INTERSECTION := IF GOES_WITH(P15_PAIR,c,p,q), GOES_WITH(P15_DOMAIN,p,dp,pos,SUPPORTED), GOES_WITH(P15_DOMAIN,q,dq,pos,SUPPORTED) THEN GOES_WITH(P15_SHARED,c,p,q,pos);
+law P15_LEFT_PRIVATE := IF GOES_WITH(P15_PAIR,c,p,q), GOES_WITH(P15_DOMAIN,p,dp,pos,SUPPORTED), GOES_WITH(P15_DOMAIN,q,dq,pos,UNSUPPORTED) THEN GOES_WITH(P15_PRIVATE,PAIR_CONTEXT(c,p,q),p,pos);
+law P15_RIGHT_PRIVATE := IF GOES_WITH(P15_PAIR,c,p,q), GOES_WITH(P15_DOMAIN,p,dp,pos,UNSUPPORTED), GOES_WITH(P15_DOMAIN,q,dq,pos,SUPPORTED) THEN GOES_WITH(P15_PRIVATE,PAIR_CONTEXT(c,p,q),q,pos);
+law P15_BOTH_OUTSIDE := IF GOES_WITH(P15_PAIR,c,p,q), GOES_WITH(P15_DOMAIN,p,dp,pos,UNSUPPORTED), GOES_WITH(P15_DOMAIN,q,dq,pos,UNSUPPORTED) THEN GOES_WITH(P15_OUTSIDE_BOTH,PAIR_CONTEXT(c,p,q),pos);
+
+// Only shared positions reach the unchanged 014 comparator. Verdicts are not
+// converted to content. Missing CONTACT leaves comparison pending; an explicit
+// ABSENT reference reaches 014's MAYBE branch without becoming a wall.
+law P15_SHARED_CONTENT := IF GOES_WITH(P15_SHARED,c,p,q,pos), GOES_WITH(P15_SEED,p,pos,vp,lp), GOES_WITH(P15_SEED,q,pos,vq,rq) THEN GOES_WITH(GJC_REQUEST,PAIR_CONTEXT(c,p,q),pos,lp,rq);

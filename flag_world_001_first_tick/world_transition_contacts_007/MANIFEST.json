@@ -1,0 +1,90 @@
+{
+  "schema": "J17WorldTransitionContactCustodyV1",
+  "prepared_on": "2026-10-24",
+  "authority": "EXECUTE: byte-exact contact custody requested in the pasted handoff. No new DECIDE or PROMOTE.",
+  "scope": "Additive working-tree contacts only. No repository commit, push, runtime execution, worldline append, or edits to frozen evidence.",
+  "prepared_state": "UNCOMMITTED",
+  "repository_refs_observed": {
+    "branch": "review/fold-realization-j17-link-3-001",
+    "HEAD": "67f16aaa212a747012a6eec1a192517c66a64717",
+    "local_main": "7a8c4e5fda88557dd49b41eeecae147e7778e464",
+    "cached_origin_main": "3b703f6a2cd5227c497de2a02bfb693c9fe4d829",
+    "remote_check": "NOT_RUN; origin/main is a local cached ref."
+  },
+  "preparation_rule": "Original bytes are copied without normalization. Promotion status is carried by existing receipts; no header is rewritten. Filename 07_The_Erratum.md is bound by its hash, as cited by ENGINE.",
+  "contacts": [
+    {
+      "id": "ENGINE",
+      "source": "C:/Users/devon/Desktop/MaL/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0.md",
+      "path": "contacts/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0.md",
+      "bytes": 22328,
+      "sha256": "B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C",
+      "promotion_contact": "ENGINE_PROMOTION"
+    },
+    {
+      "id": "ENGINE_PROMOTION",
+      "source": "C:/Users/devon/Desktop/MaL/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0_PROMOTION_RECORD.md",
+      "path": "contacts/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0_PROMOTION_RECORD.md",
+      "bytes": 2286,
+      "sha256": "7E074857D17D622D6402BDBC58A3E0D75684D9D06CD23C22EB30090D4D32CA3A",
+      "promotion_contact": null
+    },
+    {
+      "id": "A1_A10",
+      "source": "C:/Users/devon/Desktop/MaL/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "path": "contacts/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "bytes": 5665,
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805",
+      "promotion_contact": null
+    },
+    {
+      "id": "GPU_SELF_WITNESS",
+      "source": "C:/Users/devon/Desktop/MaL/MaLv3/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "path": "contacts/MaLv3/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "bytes": 3273,
+      "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7",
+      "promotion_contact": "GPU_SELF_WITNESS_PROMOTION"
+    },
+    {
+      "id": "GPU_SELF_WITNESS_PROMOTION",
+      "source": "C:/Users/devon/Desktop/MaL/Markdowns/RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+      "path": "contacts/Markdowns/RECEIPT_PROMOTE_DECISION_RECORD_GPU_SELF_WITNESS_001.md",
+      "bytes": 3207,
+      "sha256": "C1BA60101C95E76C3D2F090B00E3B679A6B58851B8A235829214D2B6249BD072",
+      "promotion_contact": null
+    },
+    {
+      "id": "QUEUEGATE",
+      "source": "C:/Users/devon/Desktop/MaL/SPECS/SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001_v0.1.0.md",
+      "path": "contacts/SPECS/SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001_v0.1.0.md",
+      "bytes": 30926,
+      "sha256": "8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C",
+      "promotion_contact": "QUEUEGATE_PROMOTION"
+    },
+    {
+      "id": "QUEUEGATE_PROMOTION",
+      "source": "C:/Users/devon/Desktop/MaL/JSON/PROMOTION_RECORD_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001.json",
+      "path": "contacts/JSON/PROMOTION_RECORD_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001.json",
+      "bytes": 2144,
+      "sha256": "EC445D2BF151A6AF009EB94DA36AF92186DF58E295541C956F164476038C7F00",
+      "promotion_contact": null
+    },
+    {
+      "id": "ERRATUM",
+      "source": "C:/Users/devon/Desktop/MaL/Markdowns/07_The_Erratum.md",
+      "path": "contacts/Markdowns/07_The_Erratum.md",
+      "bytes": 7908,
+      "sha256": "E097CDA64A92199F11A97DB1EB113C491806FFE1AEC29032E060C9877BD8426C",
+      "promotion_contact": "A1_A10"
+    }
+  ],
+  "frozen_evidence_check": {
+    "manifest": "../j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+    "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+    "files_same": 901,
+    "files_missing": 0,
+    "files_not_same": 0,
+    "total_bytes": 1069571560,
+    "scope": "Independent read-only size and SHA256 check of all 901 files during contact preparation."
+  }
+}

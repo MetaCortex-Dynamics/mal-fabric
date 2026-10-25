@@ -1,0 +1,58 @@
+// Present-time reconstruction of the already recorded 013 binding.
+// AUTHOR/REALIZE contact: SPEC_MAL_SPECIFICATION_SYSTEM_002 :56,61-62,171-173;
+// SHA256 FF85EE5F18813F7D64CE7BF275EBEA2F1FF581B32431D232FA4FD2B5B4E7E093.
+// Recorded tuple: RECORD_J17_TICK_PROMOTE_BINDING_013.mal :11-60,66-77;
+// SHA256 2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4.
+// BINDING_EVIDENCE.json SHA256
+// 171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4.
+// This file reconstructs the supplied recorded operands. It neither attributes
+// a historical native firing to 013 nor repeats its admission/uniqueness work.
+// All transport rows and recorded-content references are custody-bound inputs.
+// This file does not authenticate arbitrary hashes, recompute receipt contents,
+// certify table uniqueness, or serialize LocalSection CANONICAL_BYTES.
+// No reconstruction licenses a participant, section, successor or effect.
+// No FOR_WHAT, authority grant, seal, promotion or execution conclusion is emitted.
+//
+// Input schemas, each wrapped in GOES_WITH. K = BR_KEY(recordSHA,evidenceSHA).
+// BR_OWNER(producer,recordSHA,K).
+// BR_SOURCE(K,worldSHA,sourcePairHash).
+// BR_WHENCE(K,whenceLink).
+// BR_PRIOR(K,priorHead).
+// BR_WORLD_ID(worldSHA,sourcePairHash,head).
+// BR_MEMBER(K,exportSHA,jsonPointer,memberSHA,caseFact).
+// BR_ENACTMENT(K,SECTION_READING,SITE,site,reading).
+// BR_EXPORT_MEMBER(exportSHA,jsonPointer,memberSHA,caseFact,SITE(site,reading)).
+// BR_RECEIPT(K,receiptHash,dischargedList,openedList,retainedList,carrierReading).
+// BR_SUCCESSOR(K,pairHash,fieldHash,witnessHash,fieldCount,witnessCount).
+// BR_STATUS(K,NOT_RUN,NOT_RUN,NOT_RUN,NOT_WRITTEN).
+//   Status positions: execution, local_sections, global_section, new_link.
+// BR_RECORDED_CONTENT(K,exactBindingTerm,PRESENT(bits)).
+//   The reference is to the existing recorded tuple under this exact key and
+//   encoding, not a reference generated from this producer's future readback.
+//
+// exactBindingTerm is:
+// BR_BINDING(
+//   BR_SOURCE_VALUE(worldSHA,sourcePairHash),
+//   BR_HEADS(whenceLink,priorHead),
+//   BR_MEMBER_VALUE(BR_MEMBER_REFERENCE(exportSHA,jsonPointer,memberSHA,caseFact),
+//                   BR_ENACTMENT_VALUE(SECTION_READING,SITE,site,reading)),
+//   BR_RECEIPT_VALUE(receiptHash,dischargedList,openedList,retainedList,carrierReading),
+//   BR_SUCCESSOR_VALUE(pairHash,fieldHash,witnessHash,fieldCount,witnessCount),
+//   BR_STATUS_VALUE(NOT_RUN,NOT_RUN,NOT_RUN,NOT_WRITTEN)).
+//
+// Complete operands remain separate. The repeated head and member operands
+// provide literal equality joins; other payload changes can reconstruct a
+// different tuple but cannot contact an unchanged recorded-content row.
+
+law BR_BIND_SOURCE := IF GOES_WITH(BR_SOURCE,k,w,sp), GOES_WITH(BR_WHENCE,k,h), GOES_WITH(BR_PRIOR,k,h), GOES_WITH(BR_WORLD_ID,w,sp,h) THEN GOES_WITH(BR_SOURCE_BOUND,k,BR_SOURCE_VALUE(w,sp),BR_HEADS(h,h));
+law BR_BIND_MEMBER := IF GOES_WITH(BR_MEMBER,k,x,j,m,f), GOES_WITH(BR_ENACTMENT,k,SECTION_READING,SITE,s,v), GOES_WITH(BR_EXPORT_MEMBER,x,j,m,f,SITE(s,v)) THEN GOES_WITH(BR_MEMBER_BOUND,k,BR_MEMBER_VALUE(BR_MEMBER_REFERENCE(x,j,m,f),BR_ENACTMENT_VALUE(SECTION_READING,SITE,s,v)));
+law BR_BIND_RECEIPT := IF GOES_WITH(BR_RECEIPT,k,h,d,o,t,v) THEN GOES_WITH(BR_RECEIPT_BOUND,k,BR_RECEIPT_VALUE(h,d,o,t,v));
+law BR_BIND_SUCCESSOR := IF GOES_WITH(BR_SUCCESSOR,k,p,f,w,fc,wc) THEN GOES_WITH(BR_SUCCESSOR_BOUND,k,BR_SUCCESSOR_VALUE(p,f,w,fc,wc));
+law BR_BIND_STATUS := IF GOES_WITH(BR_STATUS,k,NOT_RUN,NOT_RUN,NOT_RUN,NOT_WRITTEN) THEN GOES_WITH(BR_STATUS_BOUND,k,BR_STATUS_VALUE(NOT_RUN,NOT_RUN,NOT_RUN,NOT_WRITTEN));
+
+law BR_RECONSTRUCT := IF GOES_WITH(BR_SOURCE_BOUND,k,s,h), GOES_WITH(BR_MEMBER_BOUND,k,m), GOES_WITH(BR_RECEIPT_BOUND,k,r), GOES_WITH(BR_SUCCESSOR_BOUND,k,n), GOES_WITH(BR_STATUS_BOUND,k,z) THEN GOES_WITH(BR_RECONSTRUCTED,k,BR_BINDING(s,h,m,r,n,z));
+
+// THIS x WHAT names this producer's whole recorded binding, not the common
+// member identity. IF_THEN witnesses only the exact recorded-content contact.
+// RD_NORMALIZE may derive partial verdict consequences from this contact.
+law BR_CONTACT_RECORDED := IF GOES_WITH(BR_RECONSTRUCTED,BR_KEY(r,e),b), GOES_WITH(BR_RECORDED_CONTENT,BR_KEY(r,e),b,PRESENT(bits)), GOES_WITH(BR_OWNER,p,r,BR_KEY(r,e)) THEN GOES_WITH(RD_CONTACT,p,r,BR_RELATION(BR_KEY(r,e)),POSITION(THIS,WHAT),RECORD_BINDING,"IF_THEN",PRESENT(bits));

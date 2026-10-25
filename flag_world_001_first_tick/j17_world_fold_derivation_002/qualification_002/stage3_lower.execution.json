@@ -1,0 +1,22 @@
+{
+  "label": "stage3_lower",
+  "command": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_002\\stage3.mal",
+    "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_002\\stage3",
+    "-",
+    "rr_program=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\program.json",
+    "rr_state=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\fabric.successor.json",
+    "svc0=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_002\\svc0.json",
+    "svc1=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_002\\svc1.json",
+    "svc2=C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_002\\svc2.json"
+  ],
+  "started": "2026-10-24T01:53:03.437Z",
+  "ended": "2026-10-24T01:53:04.222Z",
+  "exit": 0,
+  "error": null,
+  "stdout": "{\"source_sha256\":\"8308B6F9EDBB8D62908F70A3BB7865E49904125EA9BF2F3F5C6C714829B03217\",\"image_sha256\":\"B0899825213AAC41572FDBC74F3431C7A279D5ABC08A5E1E4407A6743E8010B9\",\"patterns\":15895,\"seeds\":78,\"rules\":105}\n",
+  "stderr": "",
+  "memory": null
+}

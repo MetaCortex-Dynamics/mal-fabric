@@ -1,0 +1,97 @@
+{
+  "scope": "EXISTING_MEMBER_RESTRICTION_AND_EXISTING_NATIVE_FACT_TRANSPORT; NO_SEMANTIC_VERDICT_INPUT",
+  "native_proofs": [
+    {
+      "fact": 8296,
+      "term": "THIS(SC_CASE,SITE(\"C:HW_04|HW_09\",\"NO\"))",
+      "member": "SITE(\"C:HW_04|HW_09\",\"NO\")",
+      "origin": "SC_SITE_NO",
+      "rule": 64,
+      "rank": 4,
+      "support": [
+        7004
+      ]
+    },
+    {
+      "fact": 3535068,
+      "term": "THIS(SC_STRICT,SITE(\"C:HW_04|HW_09\",\"NO\"))",
+      "member": "SITE(\"C:HW_04|HW_09\",\"NO\")",
+      "origin": "SC_STRICT",
+      "rule": 96,
+      "rank": 40,
+      "support": [
+        3533939,
+        2013,
+        3534047,
+        3296316
+      ]
+    }
+  ],
+  "proof_descriptors": [
+    {
+      "kind": "OBSERVATION_DESCRIPTOR_HASH",
+      "encoding": "UTF8_SORTED_OBJECT_KEY_COMPACT_JSON; NOT_LOCAL_SECTION_CANONICAL_BYTES",
+      "value": {
+        "exportsha": "3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147",
+        "casepointer": "/cases/275",
+        "fact": 8296,
+        "origin": "SC_SITE_NO",
+        "support": [
+          7004
+        ]
+      },
+      "bytes_hex": "7b2263617365706f696e746572223a222f63617365732f323735222c226578706f7274736861223a2233434638454244303331373245303536383532333939414334373236303545464541333730344542364542373141364546464232353941323536364234313437222c2266616374223a383239362c226f726967696e223a2253435f534954455f4e4f222c22737570706f7274223a5b373030345d7d",
+      "sha256": "88384D63F5187981736DDD9E8B1AEE80119FC33283DE70FA5A9C1E5B8BECE983"
+    },
+    {
+      "kind": "OBSERVATION_DESCRIPTOR_HASH",
+      "encoding": "UTF8_SORTED_OBJECT_KEY_COMPACT_JSON; NOT_LOCAL_SECTION_CANONICAL_BYTES",
+      "value": {
+        "exportsha": "3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147",
+        "casepointer": "/cases/275",
+        "fact": 3535068,
+        "origin": "SC_STRICT",
+        "support": [
+          3533939,
+          2013,
+          3534047,
+          3296316
+        ]
+      },
+      "bytes_hex": "7b2263617365706f696e746572223a222f63617365732f323735222c226578706f7274736861223a2233434638454244303331373245303536383532333939414334373236303545464541333730344542364542373141364546464232353941323536364234313437222c2266616374223a333533353036382c226f726967696e223a2253435f535452494354222c22737570706f7274223a5b333533333933392c323031332c333533343034372c333239363331365d7d",
+      "sha256": "35E9F6C861401472806CE9E257C34EAECA6A6F8C110C991772B5A80A30830C44"
+    }
+  ],
+  "promote_proof": {
+    "kind": "ORIGINAL_RECORD_HASH",
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\RECORD_J17_TICK_PROMOTE_BINDING_013.mal",
+    "sha256": "2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4"
+  },
+  "source_readback": {
+    "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\stage\\readback.bin",
+    "bytes": 369098784,
+    "sha256": "C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3"
+  },
+  "source_map": {
+    "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\stage\\source-map.json",
+    "bytes": 12022305,
+    "sha256": "A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA"
+  },
+  "bit_order": "DIGEST_OCTETS_IN_FILE_ORDER; EACH_OCTET_MSB_FIRST; 0=NO,1=THIS",
+  "role_records": [
+    {
+      "role": "PROPOSE",
+      "record": "RECORD_REF(H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,\"/cases/275\")"
+    },
+    {
+      "role": "DECIDE",
+      "record": "RECORD_REF(H_3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147,\"/cases/275\")"
+    },
+    {
+      "role": "PROMOTE",
+      "record": "RECORD_REF(H_2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4,\"/\")"
+    }
+  ],
+  "keep_two_role": "EXHAUSTION_CUSTODY_ONLY; NOT_SC_STRICT_PRODUCER",
+  "uncontacted_basis_coordinates_per_producer": 43
+}
