@@ -1,0 +1,37 @@
+[
+  {
+    "cmd": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+      "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\actual_001\\source.mal",
+      "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\actual_001\\image"
+    ],
+    "status": 0,
+    "stdout": "{\"source_sha256\":\"BD4C74C12DBD84F11F9D93B92C8E5479DDA577CC25408F17733338697E2E7591\",\"image_sha256\":\"29AA0449E3CA1E0B19B9A7DF34D9247BDF3766ABA95FC702423EE681C94A96FD\",\"patterns\":1985,\"seeds\":769,\"rules\":12}\n",
+    "stderr": ""
+  },
+  {
+    "cmd": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+    "args": [
+      "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\actual_001\\image\\image.bin",
+      "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\actual_001\\run\\readback.bin",
+      "--fact-capacity",
+      "16384"
+    ],
+    "status": 0,
+    "stdout": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=1711 terms=3223 epochs=3\r\n",
+    "stderr": "memory allocated_device_bytes=269062496 fact_capacity=16384 term_capacity=4194304 mapped_telemetry_bytes=33837216 stack_requested_per_thread=8192 stack_actual_per_thread=8192 free_before_bytes=7458521088 free_after_bytes=6676283392 resident_stack_upper_estimate=578813952\r\n"
+  },
+  {
+    "cmd": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+    "args": [
+      "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\actual_001\\image\\image.bin",
+      "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\actual_001\\replay\\readback.bin",
+      "--fact-capacity",
+      "16384"
+    ],
+    "status": 0,
+    "stdout": "gpu=NVIDIA GeForce RTX 3070 error=0 facts=1711 terms=3223 epochs=3\r\n",
+    "stderr": "memory allocated_device_bytes=269062496 fact_capacity=16384 term_capacity=4194304 mapped_telemetry_bytes=33837216 stack_requested_per_thread=8192 stack_actual_per_thread=8192 free_before_bytes=7458521088 free_after_bytes=6676283392 resident_stack_upper_estimate=578813952\r\n"
+  }
+]

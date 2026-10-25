@@ -1,0 +1,659 @@
+{
+  "schema": "J17_LINK3_EXTERNAL_DEPENDENCIES_001",
+  "authority": "Devon: commit and push; additive custody of referenced 010/011 evidence",
+  "scope": "Exact external run bytes; no law execution, promotion, world mutation, or original write",
+  "source_file_count": 42,
+  "source_bytes": 1716427135,
+  "groups": [
+    {
+      "name": "j17_fibre_diagnostic_010",
+      "root": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001",
+      "files": 22,
+      "bytes": 1137562365
+    },
+    {
+      "name": "j17_pair_diagnostic_011",
+      "root": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001",
+      "files": 20,
+      "bytes": 578864770
+    }
+  ],
+  "files": [
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/FIBRE_ASSIGNMENTS_AND_RECEIPTS.json",
+      "source_relative": "FIBRE_ASSIGNMENTS_AND_RECEIPTS.json",
+      "sha256": "3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147",
+      "bytes": 328009558,
+      "prior_record_bound": true,
+      "storage": {
+        "encoding": "gzip-parts",
+        "compressed_bytes": 8173744,
+        "compressed_sha256": "E42B912286C0395495F66809E5CE3A463139ED99492A5DE7304B1195B56D2C57",
+        "parts": [
+          {
+            "path": "blobs/3CF8EBD03172E056852399AC472605EFEA3704EB6EB71A6EFFB259A2566B4147.gz.part0000",
+            "bytes": 8173744,
+            "sha256": "E42B912286C0395495F66809E5CE3A463139ED99492A5DE7304B1195B56D2C57"
+          }
+        ]
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/INPUTS.json",
+      "source_relative": "INPUTS.json",
+      "sha256": "A21BE9F3EA60681C924121FE5BBD8A007CF67A119FF2411568C24F56E9F96B7C",
+      "bytes": 3108,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/INPUTS.json",
+        "sha256": "A21BE9F3EA60681C924121FE5BBD8A007CF67A119FF2411568C24F56E9F96B7C",
+        "bytes": 3108
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/RUN_RECORD_010.json",
+      "source_relative": "RUN_RECORD_010.json",
+      "sha256": "2AD351F73AF9C7046C6883E0EF1C29180F272DAF9EDE5047630E242743F9A053",
+      "bytes": 230301,
+      "prior_record_bound": true,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/RUN_RECORD_010.json",
+        "sha256": "2AD351F73AF9C7046C6883E0EF1C29180F272DAF9EDE5047630E242743F9A053",
+        "bytes": 230301
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/SINGLE_FLAG_EXCLUSIONS.json",
+      "source_relative": "SINGLE_FLAG_EXCLUSIONS.json",
+      "sha256": "78A5922B01692DAF76372D100215AECCF2912C0BA46367621A5258A5A0A77327",
+      "bytes": 2226382,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/SINGLE_FLAG_EXCLUSIONS.json",
+        "sha256": "78A5922B01692DAF76372D100215AECCF2912C0BA46367621A5258A5A0A77327",
+        "bytes": 2226382
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/SUMMARY.json",
+      "source_relative": "SUMMARY.json",
+      "sha256": "7FB52C026050CC0CF8B757DBD369677A088B02C8B3BA7E2016248E7738D6E8C3",
+      "bytes": 202156,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/SUMMARY.json",
+        "sha256": "7FB52C026050CC0CF8B757DBD369677A088B02C8B3BA7E2016248E7738D6E8C3",
+        "bytes": 202156
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/TRANSPORT.json",
+      "source_relative": "TRANSPORT.json",
+      "sha256": "5328647C5AF51F3309AFFCB67331949930EC694E00EBA4DF73FEF8297FD468BE",
+      "bytes": 682,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/TRANSPORT.json",
+        "sha256": "5328647C5AF51F3309AFFCB67331949930EC694E00EBA4DF73FEF8297FD468BE",
+        "bytes": 682
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/coverage.json",
+      "source_relative": "coverage.json",
+      "sha256": "4C8752B17316D8676BB20EF493F58D44302024CCC4CBE9F05883473E39360DA7",
+      "bytes": 146828,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/coverage.json",
+        "sha256": "4C8752B17316D8676BB20EF493F58D44302024CCC4CBE9F05883473E39360DA7",
+        "bytes": 146828
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/diagnostic.mal",
+      "source_relative": "diagnostic.mal",
+      "sha256": "80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1",
+      "bytes": 125976,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/diagnostic.mal",
+        "sha256": "80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1",
+        "bytes": 125976
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/gpu.execution.json",
+      "source_relative": "gpu.execution.json",
+      "sha256": "A3B1F9445E1BD6ACA5B4E6FC51DA115D0E8A13097012D6B105C97B8FF14A8161",
+      "bytes": 45306,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/gpu.execution.json",
+        "sha256": "A3B1F9445E1BD6ACA5B4E6FC51DA115D0E8A13097012D6B105C97B8FF14A8161",
+        "bytes": 45306
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/lower.execution.json",
+      "source_relative": "lower.execution.json",
+      "sha256": "AC45FA8BD3D12E556E40FAE970792460B17631BE8027D700B125D93DBF981553",
+      "bytes": 1013,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/lower.execution.json",
+        "sha256": "AC45FA8BD3D12E556E40FAE970792460B17631BE8027D700B125D93DBF981553",
+        "bytes": 1013
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/replay.execution.json",
+      "source_relative": "replay.execution.json",
+      "sha256": "3F3EDC92DE259EF462588B52EBD54F456A055E69B1830E0D9E1B14EF0B3B443F",
+      "bytes": 45524,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/replay.execution.json",
+        "sha256": "3F3EDC92DE259EF462588B52EBD54F456A055E69B1830E0D9E1B14EF0B3B443F",
+        "bytes": 45524
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/replay/readback.bin",
+      "source_relative": "replay/readback.bin",
+      "sha256": "C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3",
+      "bytes": 369098784,
+      "prior_record_bound": true,
+      "storage": {
+        "encoding": "gzip-parts",
+        "compressed_bytes": 33430539,
+        "compressed_sha256": "1DD2D72E85443F88073A936C11DDC4C52A14EFE1608A2DDCE78B619F80812E7F",
+        "parts": [
+          {
+            "path": "blobs/C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3.gz.part0000",
+            "bytes": 33430539,
+            "sha256": "1DD2D72E85443F88073A936C11DDC4C52A14EFE1608A2DDCE78B619F80812E7F"
+          }
+        ]
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/replay/readback.bin.epochs.jsonl",
+      "source_relative": "replay/readback.bin.epochs.jsonl",
+      "sha256": "D641D945C5E2AA9CF37775046EF80742042D21CEABA0950D3B63AF8D0586B359",
+      "bytes": 368382,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/replay/readback.bin.epochs.jsonl",
+        "sha256": "D641D945C5E2AA9CF37775046EF80742042D21CEABA0950D3B63AF8D0586B359",
+        "bytes": 368382
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/replay/readback.bin.progress.jsonl",
+      "source_relative": "replay/readback.bin.progress.jsonl",
+      "sha256": "F86CFE7B461F02155C9BF8D73911CCF82A9EA5B3AF617E85C5932A88243D58B3",
+      "bytes": 60638,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/replay/readback.bin.progress.jsonl",
+        "sha256": "F86CFE7B461F02155C9BF8D73911CCF82A9EA5B3AF617E85C5932A88243D58B3",
+        "bytes": 60638
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/replay/source-map.json",
+      "source_relative": "replay/source-map.json",
+      "sha256": "A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA",
+      "bytes": 12022305,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/replay/source-map.json",
+        "sha256": "A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA",
+        "bytes": 12022305
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/stage/image.bin",
+      "source_relative": "stage/image.bin",
+      "sha256": "0B7E318B186BB17DF870563C0483F330AA1ED043F42E9611086548FC7F414DFB",
+      "bytes": 41992208,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "gzip-parts",
+        "compressed_bytes": 97279,
+        "compressed_sha256": "51368DEFE710F89CC13EB851A519F9F5991A0F35E866189899C062A8B5543203",
+        "parts": [
+          {
+            "path": "blobs/0B7E318B186BB17DF870563C0483F330AA1ED043F42E9611086548FC7F414DFB.gz.part0000",
+            "bytes": 97279,
+            "sha256": "51368DEFE710F89CC13EB851A519F9F5991A0F35E866189899C062A8B5543203"
+          }
+        ]
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/stage/readback.bin",
+      "source_relative": "stage/readback.bin",
+      "sha256": "C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3",
+      "bytes": 369098784,
+      "prior_record_bound": true,
+      "storage": {
+        "encoding": "gzip-parts",
+        "compressed_bytes": 33430539,
+        "compressed_sha256": "1DD2D72E85443F88073A936C11DDC4C52A14EFE1608A2DDCE78B619F80812E7F",
+        "parts": [
+          {
+            "path": "blobs/C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3.gz.part0000",
+            "bytes": 33430539,
+            "sha256": "1DD2D72E85443F88073A936C11DDC4C52A14EFE1608A2DDCE78B619F80812E7F"
+          }
+        ]
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/stage/readback.bin.epochs.jsonl",
+      "source_relative": "stage/readback.bin.epochs.jsonl",
+      "sha256": "D641D945C5E2AA9CF37775046EF80742042D21CEABA0950D3B63AF8D0586B359",
+      "bytes": 368382,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/stage/readback.bin.epochs.jsonl",
+        "sha256": "D641D945C5E2AA9CF37775046EF80742042D21CEABA0950D3B63AF8D0586B359",
+        "bytes": 368382
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/stage/readback.bin.progress.jsonl",
+      "source_relative": "stage/readback.bin.progress.jsonl",
+      "sha256": "3F6847C37CA5832DCA1446D6AA05E166D5CE412670D8D5C8E072665AEC690DA5",
+      "bytes": 60213,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/stage/readback.bin.progress.jsonl",
+        "sha256": "3F6847C37CA5832DCA1446D6AA05E166D5CE412670D8D5C8E072665AEC690DA5",
+        "bytes": 60213
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/stage/source-map.json",
+      "source_relative": "stage/source-map.json",
+      "sha256": "A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA",
+      "bytes": 12022305,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/stage/source-map.json",
+        "sha256": "A2D2E9A99EDCC25B1C63974BB60915B6746D87E0A189AAB43A2B14D62E5AD1CA",
+        "bytes": 12022305
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/stage/source-occurrence-custody.json",
+      "source_relative": "stage/source-occurrence-custody.json",
+      "sha256": "6A078D57BF337775A25EE96E3C96845ECFCA69272E6336A218EFDE9935C887C5",
+      "bytes": 1307554,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/stage/source-occurrence-custody.json",
+        "sha256": "6A078D57BF337775A25EE96E3C96845ECFCA69272E6336A218EFDE9935C887C5",
+        "bytes": 1307554
+      }
+    },
+    {
+      "group": "j17_fibre_diagnostic_010",
+      "source_path": "D:/mal_worldline_backups/j17_fibre_diagnostic_010/run_001/stage/source.mal",
+      "source_relative": "stage/source.mal",
+      "sha256": "80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1",
+      "bytes": 125976,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_fibre_diagnostic_010/run_001/stage/source.mal",
+        "sha256": "80CBE260C40FA58B5E5A70C557FF102428EC4036F5064446F143650196DEC2A1",
+        "bytes": 125976
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/INPUTS.json",
+      "source_relative": "INPUTS.json",
+      "sha256": "F622770FEB1AC71FF8AA2B8D248C917A7B238FEE7A9E6814241F307E75720E1C",
+      "bytes": 3109,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/INPUTS.json",
+        "sha256": "F622770FEB1AC71FF8AA2B8D248C917A7B238FEE7A9E6814241F307E75720E1C",
+        "bytes": 3109
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/PAIR_ASSIGNMENTS_AND_RECEIPTS.json",
+      "source_relative": "PAIR_ASSIGNMENTS_AND_RECEIPTS.json",
+      "sha256": "BF21091472DA1C4E61B4D75F3F27E8E9C48BE67742C8A6DC9DECE2D783BF981F",
+      "bytes": 81428544,
+      "prior_record_bound": true,
+      "storage": {
+        "encoding": "gzip-parts",
+        "compressed_bytes": 3837320,
+        "compressed_sha256": "6B0AC467BD88DA6778C855E04ACB19B47A0017F75DF7743A835DF81D61A95916",
+        "parts": [
+          {
+            "path": "blobs/BF21091472DA1C4E61B4D75F3F27E8E9C48BE67742C8A6DC9DECE2D783BF981F.gz.part0000",
+            "bytes": 3837320,
+            "sha256": "6B0AC467BD88DA6778C855E04ACB19B47A0017F75DF7743A835DF81D61A95916"
+          }
+        ]
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/RECORD_J17_REACTION_PDPE_001.mal",
+      "source_relative": "RECORD_J17_REACTION_PDPE_001.mal",
+      "sha256": "3605713EFF93B32033C51704C258B3EF60310247BB2917DCD72F7B0D872A5E05",
+      "bytes": 4830,
+      "prior_record_bound": true,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/RECORD_J17_REACTION_PDPE_001.mal",
+        "sha256": "3605713EFF93B32033C51704C258B3EF60310247BB2917DCD72F7B0D872A5E05",
+        "bytes": 4830
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/RUN_RECORD_011.json",
+      "source_relative": "RUN_RECORD_011.json",
+      "sha256": "35334015AC81697383480FAE210DE3CC1AF06FEBD75079761E280BCF948EE518",
+      "bytes": 6689,
+      "prior_record_bound": true,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/RUN_RECORD_011.json",
+        "sha256": "35334015AC81697383480FAE210DE3CC1AF06FEBD75079761E280BCF948EE518",
+        "bytes": 6689
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/SUMMARY.json",
+      "source_relative": "SUMMARY.json",
+      "sha256": "00C5FD4C7D0D0A8668912BA29EA8D0BC5009B959626EA55373159691D55C6EDD",
+      "bytes": 973,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/SUMMARY.json",
+        "sha256": "00C5FD4C7D0D0A8668912BA29EA8D0BC5009B959626EA55373159691D55C6EDD",
+        "bytes": 973
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/diagnostic.mal",
+      "source_relative": "diagnostic.mal",
+      "sha256": "5A5C33CF0B3FF7E67EDD2F29F278CDE833645982B5FF82B4B3E3C91F2623C29C",
+      "bytes": 86833,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/diagnostic.mal",
+        "sha256": "5A5C33CF0B3FF7E67EDD2F29F278CDE833645982B5FF82B4B3E3C91F2623C29C",
+        "bytes": 86833
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/gpu.execution.json",
+      "source_relative": "gpu.execution.json",
+      "sha256": "0CA7757C466AF30937F4EDB1809AF9975D58D9E9F9A2B905AD175D13AA7BB54B",
+      "bytes": 19903,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/gpu.execution.json",
+        "sha256": "0CA7757C466AF30937F4EDB1809AF9975D58D9E9F9A2B905AD175D13AA7BB54B",
+        "bytes": 19903
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/lower.execution.json",
+      "source_relative": "lower.execution.json",
+      "sha256": "498351B2E61E090BFD10443945CDCCA14B41D70CB64238FF1E94B2E2AF0870F8",
+      "bytes": 917,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/lower.execution.json",
+        "sha256": "498351B2E61E090BFD10443945CDCCA14B41D70CB64238FF1E94B2E2AF0870F8",
+        "bytes": 917
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/replay.execution.json",
+      "source_relative": "replay.execution.json",
+      "sha256": "C9E4528F76D33BA89C0AEA3DA5CC95F05486695AEC929AF2B327B0592F4D244D",
+      "bytes": 19748,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/replay.execution.json",
+        "sha256": "C9E4528F76D33BA89C0AEA3DA5CC95F05486695AEC929AF2B327B0592F4D244D",
+        "bytes": 19748
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/replay/readback.bin",
+      "source_relative": "replay/readback.bin",
+      "sha256": "7529D7B3ADBE275B9B7C4551031C3661FF8A4AB4E5A5054A2C9219AD98FB9AA5",
+      "bytes": 218103840,
+      "prior_record_bound": true,
+      "storage": {
+        "encoding": "gzip-parts",
+        "compressed_bytes": 3818854,
+        "compressed_sha256": "DCABF11BDC51BC00C9664381F6B0068335D456D0963A595D168437EB40083DED",
+        "parts": [
+          {
+            "path": "blobs/7529D7B3ADBE275B9B7C4551031C3661FF8A4AB4E5A5054A2C9219AD98FB9AA5.gz.part0000",
+            "bytes": 3818854,
+            "sha256": "DCABF11BDC51BC00C9664381F6B0068335D456D0963A595D168437EB40083DED"
+          }
+        ]
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/replay/readback.bin.epochs.jsonl",
+      "source_relative": "replay/readback.bin.epochs.jsonl",
+      "sha256": "198344D3A49E72F63DEC472814C7E3ECB67D7DDD08C01630B281DD8870FD44EF",
+      "bytes": 305709,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/replay/readback.bin.epochs.jsonl",
+        "sha256": "198344D3A49E72F63DEC472814C7E3ECB67D7DDD08C01630B281DD8870FD44EF",
+        "bytes": 305709
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/replay/readback.bin.progress.jsonl",
+      "source_relative": "replay/readback.bin.progress.jsonl",
+      "sha256": "A495367A69F96BCBC4B868C5B4BBBA9D53BB50267D9EE3810C23EE5712BD80AA",
+      "bytes": 26007,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/replay/readback.bin.progress.jsonl",
+        "sha256": "A495367A69F96BCBC4B868C5B4BBBA9D53BB50267D9EE3810C23EE5712BD80AA",
+        "bytes": 26007
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/replay/source-map.json",
+      "source_relative": "replay/source-map.json",
+      "sha256": "64D36F08558F4C5C8354278041063058BFACA55CCB7B54E8B50E243E0BE7CB20",
+      "bytes": 8815113,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/replay/source-map.json",
+        "sha256": "64D36F08558F4C5C8354278041063058BFACA55CCB7B54E8B50E243E0BE7CB20",
+        "bytes": 8815113
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/stage/image.bin",
+      "source_relative": "stage/image.bin",
+      "sha256": "99023B4C5AC8BBECF35685D8C729194826EB762B5602F4928D7FE3227DEE2C23",
+      "bytes": 41992208,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "gzip-parts",
+        "compressed_bytes": 69962,
+        "compressed_sha256": "684ED99F9216EDBC2FD8BE40FAA959D796D8CB89ACEFC6F074015A037B3F54BF",
+        "parts": [
+          {
+            "path": "blobs/99023B4C5AC8BBECF35685D8C729194826EB762B5602F4928D7FE3227DEE2C23.gz.part0000",
+            "bytes": 69962,
+            "sha256": "684ED99F9216EDBC2FD8BE40FAA959D796D8CB89ACEFC6F074015A037B3F54BF"
+          }
+        ]
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/stage/readback.bin",
+      "source_relative": "stage/readback.bin",
+      "sha256": "7529D7B3ADBE275B9B7C4551031C3661FF8A4AB4E5A5054A2C9219AD98FB9AA5",
+      "bytes": 218103840,
+      "prior_record_bound": true,
+      "storage": {
+        "encoding": "gzip-parts",
+        "compressed_bytes": 3818854,
+        "compressed_sha256": "DCABF11BDC51BC00C9664381F6B0068335D456D0963A595D168437EB40083DED",
+        "parts": [
+          {
+            "path": "blobs/7529D7B3ADBE275B9B7C4551031C3661FF8A4AB4E5A5054A2C9219AD98FB9AA5.gz.part0000",
+            "bytes": 3818854,
+            "sha256": "DCABF11BDC51BC00C9664381F6B0068335D456D0963A595D168437EB40083DED"
+          }
+        ]
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/stage/readback.bin.epochs.jsonl",
+      "source_relative": "stage/readback.bin.epochs.jsonl",
+      "sha256": "198344D3A49E72F63DEC472814C7E3ECB67D7DDD08C01630B281DD8870FD44EF",
+      "bytes": 305709,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/stage/readback.bin.epochs.jsonl",
+        "sha256": "198344D3A49E72F63DEC472814C7E3ECB67D7DDD08C01630B281DD8870FD44EF",
+        "bytes": 305709
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/stage/readback.bin.progress.jsonl",
+      "source_relative": "stage/readback.bin.progress.jsonl",
+      "sha256": "4CF25E5DA807BBC195827B30306DF09C5D1529ABA71BBA76FE30F82A50C18A27",
+      "bytes": 26217,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/stage/readback.bin.progress.jsonl",
+        "sha256": "4CF25E5DA807BBC195827B30306DF09C5D1529ABA71BBA76FE30F82A50C18A27",
+        "bytes": 26217
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/stage/source-map.json",
+      "source_relative": "stage/source-map.json",
+      "sha256": "64D36F08558F4C5C8354278041063058BFACA55CCB7B54E8B50E243E0BE7CB20",
+      "bytes": 8815113,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/stage/source-map.json",
+        "sha256": "64D36F08558F4C5C8354278041063058BFACA55CCB7B54E8B50E243E0BE7CB20",
+        "bytes": 8815113
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/stage/source-occurrence-custody.json",
+      "source_relative": "stage/source-occurrence-custody.json",
+      "sha256": "ECD6A9F148CC4C2F4730AC4EDDC15E045B0FCBE372A4EFF0FCF18FF6D58ADAF4",
+      "bytes": 712635,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/stage/source-occurrence-custody.json",
+        "sha256": "ECD6A9F148CC4C2F4730AC4EDDC15E045B0FCBE372A4EFF0FCF18FF6D58ADAF4",
+        "bytes": 712635
+      }
+    },
+    {
+      "group": "j17_pair_diagnostic_011",
+      "source_path": "D:/mal_worldline_backups/j17_pair_diagnostic_011/run_001/stage/source.mal",
+      "source_relative": "stage/source.mal",
+      "sha256": "5A5C33CF0B3FF7E67EDD2F29F278CDE833645982B5FF82B4B3E3C91F2623C29C",
+      "bytes": 86833,
+      "prior_record_bound": false,
+      "storage": {
+        "encoding": "raw",
+        "path": "raw/j17_pair_diagnostic_011/run_001/stage/source.mal",
+        "sha256": "5A5C33CF0B3FF7E67EDD2F29F278CDE833645982B5FF82B4B3E3C91F2623C29C",
+        "bytes": 86833
+      }
+    }
+  ]
+}

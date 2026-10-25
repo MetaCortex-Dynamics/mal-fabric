@@ -1,0 +1,45 @@
+{
+  "scope": "ACTUAL_OFFER_SOURCE_INCIDENCE; NOT_TICK_AUTHORITY_ADMISSION",
+  "counts": {
+    "A13_OFFER_SOURCE": 228,
+    "A13_OFFER_CORRIDOR": 228,
+    "A13_SOURCE_FACE": 228,
+    "A12_CORRIDOR": 30,
+    "A12_OFFER": 228,
+    "A12_ALLOCATION": 0,
+    "A12_SECTION": 0,
+    "A12_GRANT": 0,
+    "A12_CONTACT": 0,
+    "A12_OVERLAP": 0,
+    "A12_STATE": 0,
+    "A12_TRANSITION": 0,
+    "A12_DETERMINATION": 0,
+    "A12_DECIDE_OPERANDS": 0
+  },
+  "facts": 1711,
+  "epochs": 3,
+  "readback": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\actual_001\\run\\readback.bin",
+    "bytes": 168558624,
+    "sha256": "D58DB4E10E55D27515AE4DBCFCD105A7FF3309985AE096FA234A9E6102368106"
+  },
+  "replay": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\actual_001\\replay\\readback.bin",
+    "bytes": 168558624,
+    "sha256": "D58DB4E10E55D27515AE4DBCFCD105A7FF3309985AE096FA234A9E6102368106"
+  },
+  "comparison": "SAME",
+  "contacts": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\actual_001\\CONTACTS.json",
+    "bytes": 1221853,
+    "sha256": "BA9127801D515BD603204772FE94033067A31988750B69424EB6B3BB6774FE66"
+  },
+  "bindings": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\actual_001\\BINDINGS.json",
+    "bytes": 457160,
+    "sha256": "B0243F535D88A674BAB4B00C96987F0F0A1CF86F5DF4285F7D066E1D03027AF2"
+  },
+  "native_decide": "NOT_INVOKED: no source-bound local authority sections or grants supplied",
+  "selection": "NONE",
+  "link3": "NOT_COMMITTED"
+}

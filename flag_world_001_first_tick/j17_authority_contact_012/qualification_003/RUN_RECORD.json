@@ -1,0 +1,158 @@
+{
+  "scope": "SYNTHETIC_CONNECTION_QUALIFICATION_ONLY",
+  "world_admission": "NOT_CLAIMED",
+  "governed_input_record": "NOT_CONSTRUCTED; source operands only",
+  "link3": "NOT_COMMITTED",
+  "bindings": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\source\\contact.mal",
+      "sha256": "5499DFF06260CFDA7484A99D6CA23AF2BE48789BAF4156B5E3AF6DFCEA9DE920",
+      "bytes": 1891
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+      "sha256": "05CE980CBC68707070837001819A90DF532A730569BA1112367C07BC017BD45B",
+      "bytes": 8265
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+      "sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06",
+      "bytes": 521216
+    }
+  ],
+  "readback": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\qualification_003\\run\\readback.bin",
+    "sha256": "D03741DA7BF9D92B8BAE01CDE95CAA4A34782366D31417C35B6A90822657CCCD",
+    "bytes": 168558624
+  },
+  "replay": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\qualification_003\\replay\\readback.bin",
+    "sha256": "D03741DA7BF9D92B8BAE01CDE95CAA4A34782366D31417C35B6A90822657CCCD",
+    "bytes": 168558624
+  },
+  "replay_comparison": "SAME",
+  "checks": [
+    {
+      "name": "complete_fixture",
+      "expected": 1,
+      "observed": 1
+    },
+    {
+      "name": "missing_0",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "missing_1",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "missing_2",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "missing_3",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "missing_4",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "missing_5",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "missing_6",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "missing_7",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "missing_8",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "missing_9",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "reversed_incidence_not_reversed_grant",
+      "expected": 1,
+      "observed": 1
+    },
+    {
+      "name": "wrong_source",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "wrong_corridor",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "wrong_lift",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "transition_no",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "transition_maybe",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "name": "two_witnessed_contacts_no_selector",
+      "expected": 2,
+      "observed": 2
+    }
+  ],
+  "results": [
+    {
+      "term": "GOES_WITH(A12_DECIDE_OPERANDS,P_CASE_0,STATE_CASE_0,L_CASE_0,AUTHORITY_EVIDENCE(C_CASE_0,WITNESS(CONTACT(BOUND(A_CASE_0,SP_CASE_0,GP_CASE_0,SEAT_CASE_0),BOUND(B_CASE_0,SD_CASE_0,GD_CASE_0,SEAT_CASE_0),FIELD_CASE_0),OVERLAP_CASE_0,ADMISSION_CASE_0,TRANSITION_CASE_0)))",
+      "rule": 6,
+      "support": [
+        231
+      ]
+    },
+    {
+      "term": "GOES_WITH(A12_DECIDE_OPERANDS,P_CASE_17,STATE_CASE_17,L_CASE_17,AUTHORITY_EVIDENCE(C_CASE_17,WITNESS(CONTACT(BOUND(A_CASE_17,SP_CASE_17,GP_CASE_17,SEAT_CASE_17),BOUND(B_CASE_17,SD_CASE_17,GD_CASE_17,SEAT_CASE_17),FIELD_CASE_17),OVERLAP_CASE_17,ADMISSION_CASE_17,TRANSITION_CASE_17)))",
+      "rule": 6,
+      "support": [
+        232
+      ]
+    },
+    {
+      "term": "GOES_WITH(A12_DECIDE_OPERANDS,P_CASE_17,STATE_CASE_17,SECOND_LIFT_CASE_17,AUTHORITY_EVIDENCE(C_CASE_17,WITNESS(CONTACT(BOUND(A_CASE_17,SP_CASE_17,GP_CASE_17,SEAT_CASE_17),BOUND(B_CASE_17,SD_CASE_17,GD_CASE_17,SEAT_CASE_17),FIELD_CASE_17),OVERLAP_CASE_17,ADMISSION_CASE_17,TRANSITION_CASE_17)))",
+      "rule": 6,
+      "support": [
+        233
+      ]
+    },
+    {
+      "term": "GOES_WITH(A12_DECIDE_OPERANDS,P_CASE_11,STATE_CASE_11,L_CASE_11,AUTHORITY_EVIDENCE(C_CASE_11,WITNESS(CONTACT(BOUND(A_CASE_11,SP_CASE_11,GP_CASE_11,SEAT_CASE_11),BOUND(B_CASE_11,SD_CASE_11,GD_CASE_11,SEAT_CASE_11),FIELD_CASE_11),OVERLAP_CASE_11,ADMISSION_CASE_11,TRANSITION_CASE_11)))",
+      "rule": 6,
+      "support": [
+        234
+      ]
+    }
+  ],
+  "facts": 239,
+  "epochs": 6
+}

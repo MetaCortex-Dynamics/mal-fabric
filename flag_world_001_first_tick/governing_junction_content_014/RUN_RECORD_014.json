@@ -1,0 +1,60 @@
+{
+  "record": "GOVERNING_JUNCTION_CONTENT_AGREEMENT_014",
+  "date": "2026-10-24",
+  "verdict": "IF_THEN",
+  "scope": "Bounded native comparison qualification on supplied synthetic content at supplied shared operator/witness positions. Implementation candidate, not corpus promotion or J17 authority admission.",
+  "authority": "Current user instruction to implement the located library obligation. Existing promotions and world admission retained; no new promotion inferred.",
+  "implementation": {
+    "path": "source/governing_junction_content.mal",
+    "bytes": 2986,
+    "sha256": "056AD86E4D09BD21AD99385F981E7480854F21BE723F0350A7B282A7734F70E6",
+    "native_rules": 16,
+    "meaning": "Compare present finite NO/THIS payload lists; retain complete request and position; distinguish absence without a wall. No schema-validation or hash-width claim."
+  },
+  "bindings": {
+    "contacts": {"path":"CONTACTS.json","sha256":"BC9213A506EFC2488290128F00ADBD4A638CE1F08B6289FA6BA9EACD6E2B60A9"},
+    "readout": {"path":"READOUT_014.md","sha256":"C74AD7B22C2571BBEE3098FDDFBA71E550D101B8A63E01F9A5584965E1D0A6FB"},
+    "harness": {"path":"run.mjs","sha256":"AA109445519E873DF7FA97B89CA5D0889754813B5877ED035E0505A7340671D0"},
+    "fixtures": {"path":"fixtures.mjs","sha256":"EED5FB5A92603B2DB4527B5E8B6C3C9219D75A51E44AFC2FEEBEEAFE66557C81"},
+    "qualification": {"path":"run_001/QUALIFICATION.json","sha256":"E67068F21070941543927215BBFB32CE49033E270CEB49853AE6279F8CD82C51"},
+    "promote_record_013": "2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4"
+  },
+  "gpu": {
+    "device": "NVIDIA GeForce RTX 3070",
+    "runs": 3,
+    "fixtures_per_run": 25,
+    "observer_assertions_per_run": 101,
+    "facts_per_run": 1117,
+    "terms_per_run": 2251,
+    "epochs_per_run": 260,
+    "error_per_run": 0,
+    "native_terminals_per_run": {"IF_THEN":6,"NOT_SAME":10,"MAYBE":7},
+    "malformed_without_terminal_per_run": 2,
+    "replay": "SAME",
+    "replay_subject": "Raw readback bytes from the identical image",
+    "readback_sha256": "E255C807B042DE7546705CFCC2D3AC57EAA8E7EF18F5513E3C2E2A5B807967F9",
+    "reversed_enumeration": "SAME",
+    "reversed_subject": "Complete decoded closure; raw identifiers are not compared across the two image enumerations",
+    "closure_sha256": "2F7478714779006615DF58162AAA2780BED9A43E74F1EB0C55B81D07201DE558",
+    "reversed_raw_readback_sha256": "94FE4CE4AB3EE45A9D56C0391B75EDB046F2B5736EDAABD3EE0D3FCE4143EDD3",
+    "proofs": "run_001/{normal,replay,reversed}.NATIVE_PROOFS.json; source-map and per-fact rule/support custody retained",
+    "metadata_note": "Raw harness scope labels IF_THEN_FOR_BOUNDED_* are retained as captured metadata, not additional verdicts. This record uses IF_THEN with the qualification scope separate."
+  },
+  "obligations": [
+    {"name":"O_CONTENT_AGREEMENT_COMPARISON","verdict":"IF_THEN","scope":"New component and 25 supplied-content fixtures; no claim of full historical GoverningJunction integration or promotion."},
+    {"name":"O_PROJECTION_LAW","verdict":"MAYBE","point":"Record/world section to 45 seed readings, content projections and shared/private restrictions is not supplied by either named contact. R4 binding lines 200-202 explicitly exclude that extraction from the projector; content comparison does not discover it."},
+    {"name":"O_ABSENCE_NOT_WALL","verdict":"IF_THEN","scope":"New component only: seven explicit absence fixtures yield MAYBE and no agreement or wall. Original sheaf.mal unchanged."},
+    {"name":"POSITION_KEY_PRESERVATION","verdict":"IF_THEN","scope":"Synthetic repeated-witness and repeated-operator fixtures retain distinct full positions. No J17 position assignments."}
+  ],
+  "preserved": {
+    "custody_checker_comparisons":55,
+    "binding_negative_checks":8,
+    "frozen_files":901,
+    "frozen_reading":"SAME",
+    "world_sha256":"E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+    "worldline_links":2,
+    "head":"173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386"
+  },
+  "not_performed": ["record-to-seed assignment","shared/private partition assignment","LocalSection sealing","GlobalSection admission","link 3","law promotion","repository commit","push","board action"],
+  "continuity": "The continuity and compliance checks kept historical source, promoted inputs, and J17 state separate from the synthetic component qualification. No re-admission, handedness selection, or re-derivation of R4."
+}

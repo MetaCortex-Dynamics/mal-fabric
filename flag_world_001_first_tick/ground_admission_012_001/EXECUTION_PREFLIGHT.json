@@ -1,0 +1,89 @@
+{
+  "schema": "GROUND_ADMISSION_012_EXECUTION_PREFLIGHT_001",
+  "observed_at_utc": "2026-10-23T19:19:20.090Z",
+  "authority": "Devon: execute the run. EXECUTE only; no DECIDE or PROMOTE performed.",
+  "requested_subject": "Ten-class Ground admission for carrier 012's parent arrangement; not a replay on the historical Ground arrangement.",
+  "execution": {
+    "preflight": "EXECUTED",
+    "gpu_constructor": "NOT_RUN",
+    "gpu_vectors_24": "NOT_RUN",
+    "ground_node": "NOT_PRODUCED",
+    "verdict": "MAYBE",
+    "verdict_scope": "Input-contract reading from source, not a GPU-produced admission verdict.",
+    "first_unbound_contract": "012 evidence.status_of(ORIENTATION), specifically the Ground input's orientation_proper coordinate without the withdrawn name-ordering procedure",
+    "related_unbound_contract": "012 CHIRALITY coordinate interpretation for GroundConfigurationV1Device.chirality",
+    "device_observed": "NVIDIA GeForce RTX 3070; 8192 MiB; 1012 MiB in use at inspection"
+  },
+  "custody": {
+    "manifest": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/MANIFEST.json",
+    "manifest_sha256": "664FCB888EDAED3F8B8D76DE05629A6B7AF9CB431C48021F9CF2DFCF024070FA",
+    "members_checked": 49,
+    "members_same": 49,
+    "members_not_same": [],
+    "carrier_sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB",
+    "committed_genesis_sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+    "local_trace_sha256": "A9CB7F6ACBEAD926B7727C17A4E5260C57A30F5ADD9515A2E92C26122843A44D",
+    "local_trace_note": "Reported 3969154F...FD78 revision is not substituted for these local bytes. This mismatch did not stop the input audit."
+  },
+  "source_bindings": [
+    {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/geometric_reading_001/GROUND_DUAL_MACHINE_GENESIS_V1.mal",
+      "sha256": "89EF8EC4046D859365A0E63285A6F54073EB70850E7FDDA24DDA918377B8A808",
+      "contact": "Lines 10-28 consume evidence.status_of and return a MAYBE candidate when an obligation is MAYBE. A complete witness binds arrangement.identity."
+    },
+    {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/ground_reaction_lattice_v1.cu",
+      "sha256": "647E46E3152572E9B0C365879FE2D25A8B823D7CDAF8ADB1C9E3A4F5F31B484C",
+      "contact": "Lines 84-93 read pre-populated Ground fields, including orientation_proper and chirality; they do not derive those fields from QG incidence."
+    },
+    {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/ground_reaction_lattice_v1_harness.cu",
+      "sha256": "9CFD5D409F4D1810955488002391D5CEA1B4A98C4DBC44C9DB52AF7C84916304",
+      "contact": "Line 19 requires an already-materialized 276-byte GroundConfigurationV1Device. No such 012 record was located in the inspected realization and rehomed first-tick source/output trees."
+    },
+    {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/ground_stoichiometric_execution_v1.cu",
+      "sha256": "601E260C7E7880B8949D384E099888FA67F51C33D3C67E3BA3748FB0DC4A5318",
+      "contact": "Lines 77-79 call gsk_constitute_named_orientation and compare the supplied mapping against it. Line 85 then sets orientation_proper."
+    },
+    {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/ground_stoichiometric_execution_v1_harness.cu",
+      "sha256": "DCF23329A9E4DA1D028FC46ABC8EE36A138EFE8ED5DE86231CDC5B1DCDCB23F6",
+      "contact": "Line 25 invokes genesis_select_kappa_v1. This historical path was not executed on 012."
+    },
+    {
+      "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/genesis_select_kappa_v1.cu",
+      "sha256": "8ABF369F1779402C8799EF0008EDE849AD071559CF9BDD5480E5B98F09F2674E",
+      "contact": "Lines 131-137 choose the seed face and vertex and order the remaining vertices through lexical domain-name comparisons. This is the withdrawn ordering route."
+    }
+  ],
+  "available_without_selection": [
+    "012 parent incidence and D/I rectification derivation",
+    "Domain-preserving parent and refinement relations",
+    "One D plus one I construction binding",
+    "Committed J17 genealogy and GPU self-witness custody"
+  ],
+  "non_substitutions": [
+    "An unordered face triple is not an oriented-face record.",
+    "012 KAPPA_MAPS and positional candidate are not executed.",
+    "Seating rigidity is not substituted for orientation_proper.",
+    "The historical Ground record is not relabelled as 012.",
+    "The J17 link is not silently relabelled as historical genesis_ref_v2.",
+    "Missing fields are not initialized to THIS to obtain ten passing predicates."
+  ],
+  "preserved": [
+    "N2 construction/refinement identification remains discharged in its recorded scope.",
+    "Promoted GPU admission of the J17 field/overlap-witness pair is unchanged.",
+    "Historical ten-class and 24-vector receipts remain bound to their historical arrangement.",
+    "All 49 checked 012 manifest members are unchanged."
+  ],
+  "actions": {
+    "new_files": "This execution preflight record and its Markdown summary only, under mal-fabric's first-tick subproject.",
+    "original_edits": "NONE",
+    "gpu_launches": "NONE",
+    "board_actions": "NONE",
+    "repository_commit": "NONE",
+    "push": "NONE",
+    "promotion": "NONE"
+  }
+}

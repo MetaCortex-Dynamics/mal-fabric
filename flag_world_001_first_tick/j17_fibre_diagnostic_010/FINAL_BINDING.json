@@ -1,0 +1,84 @@
+{
+  "schema": "J17FibreDiagnosticFinalBinding010",
+  "run_record": {
+    "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\RUN_RECORD_010.json",
+    "bytes": 230301,
+    "sha256": "2AD351F73AF9C7046C6883E0EF1C29180F272DAF9EDE5047630E242743F9A053"
+  },
+  "baseline_qualification": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_fibre_diagnostic_010\\BASELINE_QUALIFICATION.json",
+    "bytes": 102653,
+    "sha256": "CB653B557FC17CBEC172980A24CD5550F200D05AF3E6D7B6AF134E2416DA4D45"
+  },
+  "contract_read": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_fibre_diagnostic_010\\CONTRACT_READ.json",
+    "bytes": 4494,
+    "sha256": "D2CF2DFF5F8C6EDDB0061E6D8CC851AA9FBE0D0EAE6FA0D7353D236472AB4411"
+  },
+  "sources": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_fibre_diagnostic_010\\source\\fibres.mal",
+      "bytes": 1517,
+      "sha256": "C67825AC67B279C82B45A90BB403E11E25311A0B04FAB6F1758E08C8F0644B87"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_fibre_diagnostic_010\\run.mjs",
+      "bytes": 14106,
+      "sha256": "3A6EDB836B38F2A8F6B67212AFD65DBC66292C5506672220A0054F8A7C8CA2E0"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_fibre_diagnostic_010\\qualify_and_bind.mjs",
+      "bytes": 4155,
+      "sha256": "4DC2CDD0266E449411960B856E48EBAE5C8746DC17C82FBCAC799B3D6678DB8C"
+    }
+  ],
+  "result": {
+    "site_cases": 84,
+    "edge_cases": 240,
+    "triad_cases": 160,
+    "strict": [
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_04|HW_09",
+          "NO"
+        ],
+        "changed": 12,
+        "discharged": 12,
+        "opened": 0,
+        "retained": 0,
+        "reading": "IF_THEN",
+        "proof": [
+          {
+            "fact": 3535068,
+            "origin": "SC_STRICT",
+            "support": [
+              3533939,
+              2013,
+              3534047,
+              3296316
+            ]
+          }
+        ]
+      }
+    ],
+    "facts": 3540393,
+    "epochs": 96,
+    "error": 0,
+    "replay": "SAME"
+  },
+  "readback": {
+    "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\stage\\readback.bin",
+    "bytes": 369098784,
+    "sha256": "C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3"
+  },
+  "replay": {
+    "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\replay\\readback.bin",
+    "bytes": 369098784,
+    "sha256": "C381CCCD2A580CA90BB88216CF63F7CEA4ACD444DBA95B75379D12507FECC9D3"
+  },
+  "diagnostic": "IF_THEN: complete requested484-case family",
+  "worldline": "UNCHANGED: O_COORDINATE_FIBRE_ACTION_OFFER_CORRESPONDENCE remains MAYBE; no successor chosen or appended",
+  "authority": "No new DECIDE requested; no PROMOTE performed",
+  "repository": "No repository commit or push"
+}

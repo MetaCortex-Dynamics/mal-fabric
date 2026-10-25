@@ -1,0 +1,32 @@
+// GoverningJunction content-agreement component, implementation candidate 014.
+// Scope: compare supplied projections at a supplied shared operator/witness
+// position. This does not extract record seeds, discover shared positions,
+// seal a LocalSection, admit a GlobalSection, or license a worldline commit.
+//
+// Source contract: GOES_WITH(GJC_REQUEST,case,POSITION(operator,witness),l,r).
+// Each side is ABSENT or PRESENT(bits); bits are a finite CONS list of the
+// carrier readings "NO" and "THIS", ending in NIL. Byte-to-bit transport is
+// representation only. All agreement conclusions are native rule outputs.
+// IF_THEN = equal supplied content; NOT_SAME = distinguished supplied content;
+// MAYBE = at least one absent projection. Missing evidence is not a wall.
+// Malformed content has no terminal unless the inspected prefix already
+// supplies a disagreement; this component is not a content-schema validator.
+// The original request is retained in every result, including its full key.
+
+law GJC_BEGIN := IF GOES_WITH(GJC_REQUEST,c,POSITION(o,w),PRESENT(a),PRESENT(b)) THEN GOES_WITH(GJC_SCAN,c,POSITION(o,w),PRESENT(a),PRESENT(b),a,b);
+law GJC_NEXT_NO := IF GOES_WITH(GJC_SCAN,c,p,l,r,CONS("NO",a),CONS("NO",b)) THEN GOES_WITH(GJC_SCAN,c,p,l,r,a,b);
+law GJC_NEXT_THIS := IF GOES_WITH(GJC_SCAN,c,p,l,r,CONS("THIS",a),CONS("THIS",b)) THEN GOES_WITH(GJC_SCAN,c,p,l,r,a,b);
+law GJC_EQUAL_END := IF GOES_WITH(GJC_SCAN,c,p,l,r,NIL,NIL) THEN GOES_WITH(GJC_RESULT,c,p,l,r,"IF_THEN");
+law GJC_DIFFER_NO_THIS := IF GOES_WITH(GJC_SCAN,c,p,l,r,CONS("NO",a),CONS("THIS",b)) THEN GOES_WITH(GJC_RESULT,c,p,l,r,"NOT_SAME");
+law GJC_DIFFER_THIS_NO := IF GOES_WITH(GJC_SCAN,c,p,l,r,CONS("THIS",a),CONS("NO",b)) THEN GOES_WITH(GJC_RESULT,c,p,l,r,"NOT_SAME");
+law GJC_LEFT_END := IF GOES_WITH(GJC_SCAN,c,p,l,r,NIL,CONS(v,b)) THEN GOES_WITH(GJC_RESULT,c,p,l,r,"NOT_SAME");
+law GJC_RIGHT_END := IF GOES_WITH(GJC_SCAN,c,p,l,r,CONS(v,a),NIL) THEN GOES_WITH(GJC_RESULT,c,p,l,r,"NOT_SAME");
+law GJC_AGREE := IF GOES_WITH(GJC_RESULT,c,p,l,r,"IF_THEN") THEN GOES_WITH(GJC_AGREEMENT,c,p,l,r);
+law GJC_DISTINGUISH := IF GOES_WITH(GJC_RESULT,c,p,l,r,"NOT_SAME") THEN GOES_WITH(GJC_WALL,c,p,l,r);
+
+law GJC_LEFT_ABSENT := IF GOES_WITH(GJC_REQUEST,c,POSITION(o,w),ABSENT,PRESENT(b)) THEN GOES_WITH(GJC_RESULT,c,POSITION(o,w),ABSENT,PRESENT(b),"MAYBE");
+law GJC_RIGHT_ABSENT := IF GOES_WITH(GJC_REQUEST,c,POSITION(o,w),PRESENT(a),ABSENT) THEN GOES_WITH(GJC_RESULT,c,POSITION(o,w),PRESENT(a),ABSENT,"MAYBE");
+law GJC_BOTH_ABSENT := IF GOES_WITH(GJC_REQUEST,c,POSITION(o,w),ABSENT,ABSENT) THEN GOES_WITH(GJC_RESULT,c,POSITION(o,w),ABSENT,ABSENT,"MAYBE");
+law GJC_LEFT_MISSING := IF GOES_WITH(GJC_RESULT,c,p,ABSENT,PRESENT(b),"MAYBE") THEN GOES_WITH(GJC_MISSING,c,p,LEFT);
+law GJC_RIGHT_MISSING := IF GOES_WITH(GJC_RESULT,c,p,PRESENT(a),ABSENT,"MAYBE") THEN GOES_WITH(GJC_MISSING,c,p,RIGHT);
+law GJC_BOTH_MISSING := IF GOES_WITH(GJC_RESULT,c,p,ABSENT,ABSENT,"MAYBE") THEN GOES_WITH(GJC_MISSING,c,p,BOTH);

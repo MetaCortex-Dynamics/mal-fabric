@@ -1,0 +1,679 @@
+{
+  "record": "J17_ROUTE_RESULT_CROSS_TERM_004",
+  "scope": "Read-only observation of qualified outputs; not a GPU execution, whole-fold certificate or world commit.",
+  "custody": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\program.json",
+      "bytes": 51262,
+      "sha256": "6A2A2B384638C6983C20F708D059B6538AB4AAA9D1F468F460A961EBEF7FC529",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\fabric.successor.json",
+      "bytes": 62837,
+      "sha256": "D41166EC3BC832AFA306D05E2F5E57E960FA635A1C4916A50381F3DB6A167C47",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\qualification_002\\uncommitted.runtime.json",
+      "bytes": 58625,
+      "sha256": "55F9E49A428BA9662DE5DDBD59F65E1DBDFA5B4B7C6CCC549EDEC1952308A966",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\RUN_RECORD_023.json",
+      "bytes": 111818,
+      "sha256": "6A07ACE68BD15DA5F084269FA7FDD57021EC89B30EAE44ED4BF9F9B697B79B0D",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_binding_003\\BINDINGS.json",
+      "bytes": 12091,
+      "sha256": "2CABCE82A8CC23012ED1EDC5725BAB8C0FAD0207A15C4014231D8B559E5A4C6B",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\source\\program.mal",
+      "bytes": 19211,
+      "sha256": "6FEA9C9B2FE462FC9E794C7E12F43DDDBAEE8A12BA947AB25DE60153FDE27B55",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\source\\runtime_step.mal",
+      "bytes": 14539,
+      "sha256": "46F7260047664C7D31F54A74BAD2BB7356D72271AB8A1D7A2F57D8353B8A714D",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\source\\commit_readout.mal",
+      "bytes": 17650,
+      "sha256": "23B480274497D854E6E6CE8ED9DE887F443E40D3FDBA2033B3A8EB892023AEE7",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_world_fold_derivation_002\\source\\runtime_reentry.mal",
+      "bytes": 22604,
+      "sha256": "609716E78664E5295C886BEF7C1678E65177D2EBD813B337D7CC3C7F0FD10584",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\Markdowns\\FABRIC_EXECUTION_SPEC_v0.3.0-candidate.md",
+      "bytes": 11257,
+      "sha256": "5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\MaLv3\\SPEC_J17_WORLD_FOLD_EFFECT_001_v0.1.0_PROPOSED.mal",
+      "bytes": 19195,
+      "sha256": "E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E",
+      "comparison": "SAME"
+    },
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\Markdowns\\RECEIPT_PROMOTE_SPEC_J17_WORLD_FOLD_EFFECT_001_v0.1.0.md",
+      "bytes": 2634,
+      "sha256": "E674B00C04B0B8119BFFD4596A756467B8054C9A6CF6741E3B2869365B7ECD9A",
+      "comparison": "SAME"
+    }
+  ],
+  "audit_source_sha256": "64F5A01D8E40CBCADEAED11CCB05025147D08A402E044F1E79D8344E0D901A32",
+  "coordinate_binding": "Exact occurrence identity joined to flag coordinates and independently checked against the retained six comparison witnesses. LEFT/RIGHT are role names, not a from/to displacement interpretation.",
+  "counts": {
+    "marker_occurrences": 12,
+    "comparator_occurrences": 6,
+    "routes": 12,
+    "marker_to_comparator_routes": 12,
+    "comparator_to_marker_routes": 0,
+    "route_targets_at_markers": 0,
+    "snapshot_admitted_cells": 0,
+    "snapshot_completed_cells": 18,
+    "successor_discharged_cells": 18,
+    "retained_result_refs": 18,
+    "retained_buffers": 6,
+    "receipts_before": 48,
+    "receipts_after": 66
+  },
+  "markers": [
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))))",
+      "flag": [
+        "C:HW_04|HW_05",
+        [
+          "C:HW_00|HW_04",
+          "C:HW_04|HW_05"
+        ],
+        [
+          "C:HW_00|HW_04",
+          "C:HW_00|HW_05",
+          "C:HW_04|HW_05"
+        ]
+      ],
+      "reading": "NO",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "352bf2bcb5fd9eff5d1b783e8effd85d0a6ceed67762ae373fc2317eb3c82a33"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))))",
+      "flag": [
+        "C:HW_04|HW_05",
+        [
+          "C:HW_00|HW_05",
+          "C:HW_04|HW_05"
+        ],
+        [
+          "C:HW_00|HW_04",
+          "C:HW_00|HW_05",
+          "C:HW_04|HW_05"
+        ]
+      ],
+      "reading": "NO",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "80d60c64993c14d670467f370bbc619ce660863d1526143e3ea99274221f4508"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))))",
+      "flag": [
+        "C:HW_04|HW_08",
+        [
+          "C:HW_03|HW_04",
+          "C:HW_04|HW_08"
+        ],
+        [
+          "C:HW_03|HW_04",
+          "C:HW_03|HW_08",
+          "C:HW_04|HW_08"
+        ]
+      ],
+      "reading": "NO",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "334d7a19ca6011cfcdbbfd691407592324996ee08359ca5ab01a9ec266cc656d"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))))",
+      "flag": [
+        "C:HW_04|HW_08",
+        [
+          "C:HW_03|HW_08",
+          "C:HW_04|HW_08"
+        ],
+        [
+          "C:HW_03|HW_04",
+          "C:HW_03|HW_08",
+          "C:HW_04|HW_08"
+        ]
+      ],
+      "reading": "NO",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "3f0b0c082db98dc2eb52bb818c6c3c13ba824ed773c637b3b331ba0a07c012f4"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))))",
+      "flag": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "d9ace26e1e21c3d37fa47561a3c8533852027d4b3b1cec43d9330421c082bbea"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))))",
+      "flag": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "e274da89ea9dc8ad8700e1f32c9904502dece7a7e1c88fcaf44ca78a1071ed17"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))))",
+      "flag": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "d4e9b8f1ea13f173abc10879284f151a1eb14cb4e432d8318900dcd4ea7c4f86"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))))",
+      "flag": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "9602eb3fec683e2b76605afd41310e34259e3207941d8ec7f1f5a95ae9118682"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))))",
+      "flag": [
+        "C:HW_05|HW_09",
+        [
+          "C:HW_05|HW_09",
+          "C:HW_05|HW_10"
+        ],
+        [
+          "C:HW_05|HW_09",
+          "C:HW_05|HW_10",
+          "C:HW_09|HW_10"
+        ]
+      ],
+      "reading": "NO",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "feca074c42706ea876cc1fd118e1fbe86cf7ef384c9f34f2006b9115c9f240a6"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))))",
+      "flag": [
+        "C:HW_05|HW_09",
+        [
+          "C:HW_05|HW_09",
+          "C:HW_09|HW_10"
+        ],
+        [
+          "C:HW_05|HW_09",
+          "C:HW_05|HW_10",
+          "C:HW_09|HW_10"
+        ]
+      ],
+      "reading": "NO",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "3870e5ef30256da82a1d480dd69f5f6da67357823ed51dda11f3947fa247068d"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))))",
+      "flag": [
+        "C:HW_08|HW_09",
+        [
+          "C:HW_08|HW_09",
+          "C:HW_08|HW_11"
+        ],
+        [
+          "C:HW_08|HW_09",
+          "C:HW_08|HW_11",
+          "C:HW_09|HW_11"
+        ]
+      ],
+      "reading": "NO",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "7c90970caab7e8d259653c02953c70365b86fe29a06cd80542bb195d1f60fdb4"
+      ]
+    },
+    {
+      "cell_id": "SOURCE_MARKER(GENESIS,TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))))",
+      "flag": [
+        "C:HW_08|HW_09",
+        [
+          "C:HW_08|HW_09",
+          "C:HW_09|HW_11"
+        ],
+        [
+          "C:HW_08|HW_09",
+          "C:HW_08|HW_11",
+          "C:HW_09|HW_11"
+        ]
+      ],
+      "reading": "NO",
+      "incoming_routes": [],
+      "outgoing_routes": [
+        "430a436762aa46b79cf8ae6e1a7622e38e3e7a0724bab4b00fe6aba4b6bdb15b"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "cell_id": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)),TOGETHER_ALONE(TOGETHER_ALONE(HW_00,HW_04),TOGETHER_ALONE(HW_00,HW_05),TOGETHER_ALONE(HW_04,HW_05)))))",
+      "incidence": "GAMMA",
+      "operands": [
+        {
+          "role": "LEFT",
+          "route_id": "352bf2bcb5fd9eff5d1b783e8effd85d0a6ceed67762ae373fc2317eb3c82a33",
+          "flag": [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_00|HW_04",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ]
+          ],
+          "reading": "NO"
+        },
+        {
+          "role": "RIGHT",
+          "route_id": "80d60c64993c14d670467f370bbc619ce660863d1526143e3ea99274221f4508",
+          "flag": [
+            "C:HW_04|HW_05",
+            [
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ],
+            [
+              "C:HW_00|HW_04",
+              "C:HW_00|HW_05",
+              "C:HW_04|HW_05"
+            ]
+          ],
+          "reading": "NO"
+        }
+      ],
+      "result": "SAME",
+      "outgoing_routes": [],
+      "displacement_instruction": "NOT_EMITTED",
+      "prior_fact": 99391,
+      "prior_rule": "S23_COMPARATOR_READING",
+      "prior_support": [
+        99362,
+        99277,
+        48423,
+        48456,
+        99244
+      ]
+    },
+    {
+      "cell_id": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)),TOGETHER_ALONE(TOGETHER_ALONE(HW_03,HW_04),TOGETHER_ALONE(HW_03,HW_08),TOGETHER_ALONE(HW_04,HW_08)))))",
+      "incidence": "GAMMA",
+      "operands": [
+        {
+          "role": "LEFT",
+          "route_id": "334d7a19ca6011cfcdbbfd691407592324996ee08359ca5ab01a9ec266cc656d",
+          "flag": [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_03|HW_04",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ]
+          ],
+          "reading": "NO"
+        },
+        {
+          "role": "RIGHT",
+          "route_id": "3f0b0c082db98dc2eb52bb818c6c3c13ba824ed773c637b3b331ba0a07c012f4",
+          "flag": [
+            "C:HW_04|HW_08",
+            [
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ],
+            [
+              "C:HW_03|HW_04",
+              "C:HW_03|HW_08",
+              "C:HW_04|HW_08"
+            ]
+          ],
+          "reading": "NO"
+        }
+      ],
+      "result": "SAME",
+      "outgoing_routes": [],
+      "displacement_instruction": "NOT_EMITTED",
+      "prior_fact": 99392,
+      "prior_rule": "S23_COMPARATOR_READING",
+      "prior_support": [
+        99362,
+        99278,
+        48420,
+        48453,
+        99244
+      ]
+    },
+    {
+      "cell_id": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_05),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_05,HW_09)))))",
+      "incidence": "GAMMA",
+      "operands": [
+        {
+          "role": "LEFT",
+          "route_id": "d9ace26e1e21c3d37fa47561a3c8533852027d4b3b1cec43d9330421c082bbea",
+          "flag": [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ]
+          ],
+          "reading": "THIS"
+        },
+        {
+          "role": "RIGHT",
+          "route_id": "d4e9b8f1ea13f173abc10879284f151a1eb14cb4e432d8318900dcd4ea7c4f86",
+          "flag": [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ],
+            [
+              "C:HW_04|HW_05",
+              "C:HW_04|HW_09",
+              "C:HW_05|HW_09"
+            ]
+          ],
+          "reading": "THIS"
+        }
+      ],
+      "result": "SAME",
+      "outgoing_routes": [],
+      "displacement_instruction": "NOT_EMITTED",
+      "prior_fact": 99393,
+      "prior_rule": "S23_COMPARATOR_READING",
+      "prior_support": [
+        99362,
+        99279,
+        48290,
+        48287,
+        99245
+      ]
+    },
+    {
+      "cell_id": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09))),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)),TOGETHER_ALONE(TOGETHER_ALONE(HW_04,HW_08),TOGETHER_ALONE(HW_04,HW_09),TOGETHER_ALONE(HW_08,HW_09)))))",
+      "incidence": "GAMMA",
+      "operands": [
+        {
+          "role": "LEFT",
+          "route_id": "e274da89ea9dc8ad8700e1f32c9904502dece7a7e1c88fcaf44ca78a1071ed17",
+          "flag": [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ]
+          ],
+          "reading": "THIS"
+        },
+        {
+          "role": "RIGHT",
+          "route_id": "9602eb3fec683e2b76605afd41310e34259e3207941d8ec7f1f5a95ae9118682",
+          "flag": [
+            "C:HW_04|HW_09",
+            [
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ],
+            [
+              "C:HW_04|HW_08",
+              "C:HW_04|HW_09",
+              "C:HW_08|HW_09"
+            ]
+          ],
+          "reading": "THIS"
+        }
+      ],
+      "result": "SAME",
+      "outgoing_routes": [],
+      "displacement_instruction": "NOT_EMITTED",
+      "prior_fact": 99394,
+      "prior_rule": "S23_COMPARATOR_READING",
+      "prior_support": [
+        99362,
+        99280,
+        48291,
+        48288,
+        99245
+      ]
+    },
+    {
+      "cell_id": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10))),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_09,HW_10)),TOGETHER_ALONE(TOGETHER_ALONE(HW_05,HW_09),TOGETHER_ALONE(HW_05,HW_10),TOGETHER_ALONE(HW_09,HW_10)))))",
+      "incidence": "GAMMA",
+      "operands": [
+        {
+          "role": "LEFT",
+          "route_id": "feca074c42706ea876cc1fd118e1fbe86cf7ef384c9f34f2006b9115c9f240a6",
+          "flag": [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "C:HW_09|HW_10"
+            ]
+          ],
+          "reading": "NO"
+        },
+        {
+          "role": "RIGHT",
+          "route_id": "3870e5ef30256da82a1d480dd69f5f6da67357823ed51dda11f3947fa247068d",
+          "flag": [
+            "C:HW_05|HW_09",
+            [
+              "C:HW_05|HW_09",
+              "C:HW_09|HW_10"
+            ],
+            [
+              "C:HW_05|HW_09",
+              "C:HW_05|HW_10",
+              "C:HW_09|HW_10"
+            ]
+          ],
+          "reading": "NO"
+        }
+      ],
+      "result": "SAME",
+      "outgoing_routes": [],
+      "displacement_instruction": "NOT_EMITTED",
+      "prior_fact": 99389,
+      "prior_rule": "S23_COMPARATOR_READING",
+      "prior_support": [
+        99362,
+        99275,
+        48303,
+        48335,
+        99244
+      ]
+    },
+    {
+      "cell_id": "OCCURRENCE(TYPE(SAME_NOT_SAME,WHAT),OVERLAP(TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11))),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_09,HW_11)),TOGETHER_ALONE(TOGETHER_ALONE(HW_08,HW_09),TOGETHER_ALONE(HW_08,HW_11),TOGETHER_ALONE(HW_09,HW_11)))))",
+      "incidence": "GAMMA",
+      "operands": [
+        {
+          "role": "LEFT",
+          "route_id": "7c90970caab7e8d259653c02953c70365b86fe29a06cd80542bb195d1f60fdb4",
+          "flag": [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "C:HW_09|HW_11"
+            ]
+          ],
+          "reading": "NO"
+        },
+        {
+          "role": "RIGHT",
+          "route_id": "430a436762aa46b79cf8ae6e1a7622e38e3e7a0724bab4b00fe6aba4b6bdb15b",
+          "flag": [
+            "C:HW_08|HW_09",
+            [
+              "C:HW_08|HW_09",
+              "C:HW_09|HW_11"
+            ],
+            [
+              "C:HW_08|HW_09",
+              "C:HW_08|HW_11",
+              "C:HW_09|HW_11"
+            ]
+          ],
+          "reading": "NO"
+        }
+      ],
+      "result": "SAME",
+      "outgoing_routes": [],
+      "displacement_instruction": "NOT_EMITTED",
+      "prior_fact": 99390,
+      "prior_rule": "S23_COMPARATOR_READING",
+      "prior_support": [
+        99362,
+        99276,
+        48497,
+        48538,
+        99244
+      ]
+    }
+  ],
+  "proof": [
+    "The snapshot payload inventory is exhaustive and every phase is COMPLETED; FABEX sections 2-3 restrict evaluation to snapshot ADMITTED cells.",
+    "runtime_reentry.mal:99-102 excludes new evaluation and propagation for these COMPLETED cells. Thus newly emitted route values in this step form the empty set; this is antecedent exclusion, not a missing-file inference.",
+    "Every existing route carries a marker RESULT into comparator LEFT or RIGHT. Comparators are sinks. No marker receives a comparator result.",
+    "The six comparison pairs have GAMMA incidence and equal readings. Geometry identifies overlap endpoints; it does not turn LEFT/RIGHT into producer source/target or turn a SAME result into a lift instruction.",
+    "Under this bounded program effect the section is retained, all 12 walls are retained and opened/discharged walls are empty, while payload custody advances. This is not a claim that all world-fold effects have been enumerated."
+  ],
+  "verdicts": {
+    "new_route_emissions": "IF_THEN_EMPTY",
+    "routed_displacement_instructions": "IF_THEN_EMPTY",
+    "bounded_section_projection": "SAME",
+    "runtime_state_comparison": "NOT_SAME",
+    "requested_whole_fold_equivalence": "MAYBE",
+    "link_3": "NOT_COMMITTED"
+  },
+  "whole_fold_boundary": "Promoted SPEC_J17_WORLD_FOLD_EFFECT_001:64-66 excludes A3 substitution; :101-102 says repeating the THIS/SAME program does not witness HELD under FOLD. A complete fold-equivalence derivation is not supplied by the empty routed-emission set alone.",
+  "previous_binding_unchanged": "J17_WORLD_FOLD_BINDING_003",
+  "new_law": "NONE",
+  "promotion": "NONE",
+  "gpu_run": "NOT_RUN",
+  "board_action": "NONE",
+  "git_commit_or_push": "NONE"
+}

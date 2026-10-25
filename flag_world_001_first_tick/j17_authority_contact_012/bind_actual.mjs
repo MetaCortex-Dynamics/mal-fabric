@@ -1,0 +1,40 @@
+// Exact evidence transport and observation; source .mal performs all joins.
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
+import {openReadback,sha} from '../evidence/first-tick-conform-v1-v2-001/files/realization020/readback.mjs';
+const here=path.dirname(fileURLToPath(import.meta.url)),root=path.dirname(here),out=path.join(here,'actual_001');
+if(fs.existsSync(out))throw Error('FRESH_OUTPUT_REQUIRED');
+const id=p=>({path:p,bytes:fs.statSync(p).size,sha256:sha(fs.readFileSync(p))});
+const world=path.join(root,'j17_step_023/outputs/committed.world.json'),offers=path.join(root,'j17_propose_008/execution_002/OFFERED_SET.json');
+const lower=path.join(root,'j17_step_021/tools/lower.mjs'),exe=path.join(root,'runtime_021/block_iterative_runtime.exe');
+const expected=new Map([[world,'E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059'],[offers,'C962288C1729F04214355BC72AB3E09F678113A2E71969559FE70BA5056EC0F3'],[exe,'9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06']]);
+for(const [p,h] of expected)if(id(p).sha256!==h)throw Error('NOT_SAME '+p);
+const cd=path.join(root,'j17_step_023/stage12'),pd=path.join(root,'j17_propose_008/execution_002/run');
+const carrier=openReadback(cd),proposals=openReadback(pd);
+if(sha(carrier.raw)!=='E22E39F4E04140FB59142BA969FB94FA601BB62EEF7E292590CC95A8BE9D5AD7')throw Error('CARRIER_NOT_SAME');
+if(sha(proposals.raw)!=='E4C7EC1E97AA52EB9FCFFF40B05D4F47105B04A14569595A221487CEB639B4C7')throw Error('PROPOSALS_NOT_SAME');
+const imports=[];
+for(const [origin,r,tags] of [['carrier',carrier,['HARDWARE_EDGE','WORLD_JUNCTION_SITE','WORLD_FLAG_FACE']],['offers',proposals,['VD_LIFT_GEOMETRY']]])for(const tag of tags)for(const f of r.predicate(tag))imports.push({origin,tag,fact:f.id,rule:f.rule,support:f.support,term:r.term(f.term)});
+const bindings=[world,offers,exe,lower,path.join(cd,'source-map.json'),path.join(pd,'source-map.json'),path.join(here,'source/contact.mal'),path.join(here,'source/actual_contact.mal'),fileURLToPath(import.meta.url)].map(id);
+const seeds=imports.map(x=>x.term);
+seeds.push(`THIS(A13_BINDING,INPUTS(H_${expected.get(offers)},H_${expected.get(world)},H_${sha(proposals.raw)}))`);
+fs.mkdirSync(out);
+fs.writeFileSync(path.join(out,'BINDINGS.json'),JSON.stringify({bindings,imports,carrier_readback:sha(carrier.raw),offer_readback:sha(proposals.raw)},null,2),{flag:'wx'});
+fs.writeFileSync(path.join(out,'source.mal'),'@propose seed ACTUAL_CUSTODY := {\n'+seeds.join(',\n')+'\n};\n'+fs.readFileSync(path.join(here,'source/actual_contact.mal'),'utf8')+'\n'+fs.readFileSync(path.join(here,'source/contact.mal'),'utf8'),{flag:'wx'});
+const commands=[];
+function run(cmd,args){const q=spawnSync(cmd,args,{encoding:'utf8',windowsHide:true,timeout:120000,maxBuffer:16*1024*1024});commands.push({cmd,args,status:q.status,stdout:q.stdout,stderr:q.stderr,error:q.error?.message});fs.writeFileSync(path.join(out,'COMMANDS.json'),JSON.stringify(commands,null,2));if(q.status!==0||q.error)throw Error('EXECUTION_STOP');}
+run(process.execPath,[lower,path.join(out,'source.mal'),path.join(out,'image')]);
+for(const name of ['run','replay']){const d=path.join(out,name);fs.mkdirSync(d);fs.copyFileSync(path.join(out,'image/source-map.json'),path.join(d,'source-map.json'));run(exe,[path.join(out,'image/image.bin'),path.join(d,'readback.bin'),'--fact-capacity','16384']);}
+const r=openReadback(path.join(out,'run')),replay=openReadback(path.join(out,'replay'));
+if(sha(r.raw)!==sha(replay.raw))throw Error('REPLAY_NOT_SAME');
+const tags=['A13_OFFER_SOURCE','A13_OFFER_CORRIDOR','A13_SOURCE_FACE','A12_CORRIDOR','A12_OFFER','A12_ALLOCATION','A12_SECTION','A12_GRANT','A12_CONTACT','A12_OVERLAP','A12_STATE','A12_TRANSITION','A12_DETERMINATION','A12_DECIDE_OPERANDS'];
+const observations=Object.fromEntries(tags.map(t=>[t,r.predicate(t).map(f=>({fact:f.id,rule:f.rule,support:f.support,term:r.term(f.term)}))]));
+const counts=Object.fromEntries(tags.map(t=>[t,observations[t].length]));
+fs.writeFileSync(path.join(out,'CONTACTS.json'),JSON.stringify(observations,null,2),{flag:'wx'});
+for(const b of bindings)if(id(b.path).sha256!==b.sha256)throw Error('POST_NOT_SAME '+b.path);
+const record={scope:'ACTUAL_OFFER_SOURCE_INCIDENCE; NOT_TICK_AUTHORITY_ADMISSION',counts,facts:r.count,epochs:r.epochs,readback:id(path.join(out,'run/readback.bin')),replay:id(path.join(out,'replay/readback.bin')),comparison:'SAME',contacts:id(path.join(out,'CONTACTS.json')),bindings:id(path.join(out,'BINDINGS.json')),native_decide:'NOT_INVOKED: no source-bound local authority sections or grants supplied',selection:'NONE',link3:'NOT_COMMITTED'};
+fs.writeFileSync(path.join(out,'RUN_RECORD.json'),JSON.stringify(record,null,2),{flag:'wx'});
+if(counts.A13_OFFER_CORRIDOR!==228||counts.A12_OFFER!==228)throw Error('OFFER_COVERAGE_NOT_SAME');
+console.log(JSON.stringify(record,null,2));

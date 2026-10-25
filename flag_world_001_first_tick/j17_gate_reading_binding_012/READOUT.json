@@ -1,0 +1,77 @@
+{
+  "schema": "J17GateReadingCorrespondence012",
+  "authority": "Source and identity binding under the current implementation request; no new law or promotion",
+  "record_revision": "RECORD_J17_REACTION_PDPE_001 v0.1.1, B5DBC1EF843B9203EE9F7434651B2ABF66059D83D38565DFD13501A2C1BCCA88",
+  "correction_to_prior_framing": "The two-flag lift producer is not the required target for a separate gate-enactment producer. Its NOT_SAME to a twelve-flag overwrite does not alone settle the separate readings branch. This record follows A7/D2/A4 and the named Tang sources instead.",
+  "findings": [
+    {
+      "id": "A7_READINGS_AND_GATE",
+      "verdict": "IF_THEN",
+      "sources": ["A1_A10:18", "A1_A10:46"],
+      "reading": "A7 names PROPOSE completions and readings, DECIDE a lift and gate; D2 names A3 completions and A4 gluing readings. This is promoted authority, not a requirement for another personal per-tick DECIDE."
+    },
+    {
+      "id": "ENGINE_7_1_ATTRIBUTION",
+      "verdict": "NOT_SAME",
+      "sources": ["ENGINE:386-387"],
+      "exact_text": "PROPOSE reads the current committed snapshot and emits every completing lift for the declared base move.",
+      "reading": "The bound file has no subsection 7.1(b) or literal local-reading enumeration. The separate readings branch is located through A7/D2, so this attribution difference is not used as a whole-corpus absence claim."
+    },
+    {
+      "id": "SIX_DOMAIN_KIND_CORRESPONDENCE",
+      "verdict": "IF_THEN",
+      "sources": ["A4_SOURCE:3-6", "A4_SOURCE:16-21", "A1_A10:15", "RUN010", "RUN011"],
+      "reading": "A4's promoted site_witness evidence names three keep-two pairs and three keep-one fibres. These are the six domain kinds enumerated on carrier012 by the retained native diagnostics. The draft manuscript is not needed as authority for these domain kinds."
+    },
+    {
+      "id": "A4_READING_OPERATION",
+      "verdict": "IF_THEN",
+      "sources": ["A4_SOURCE:22-26", "A4_SOURCE:47-55", "A4_RECEIPT"],
+      "input": "supplied field x and incidence domain U",
+      "output": "agreement of the restriction x|U; fibre agreement witnessed through internal pair agreements",
+      "scope": "The artifact is read as retained source/evidence only; no Python executed. Its sampling code is not used to produce engine inputs or new evidence."
+    },
+    {
+      "id": "TANG_CANON_CUSTODY",
+      "verdict": "IF_THEN",
+      "sources": ["TANG012_IMAGE", "TANG019_IMAGE", "TANG_SOURCE_AUDIT"],
+      "reading": "Both named image hashes and their associated firmware-source hashes are SAME. They retain their canonical hardware custody; no board action or fresh hardware admission is required."
+    },
+    {
+      "id": "TANG_INSPECTED_OPERATION",
+      "verdict": "IF_THEN",
+      "sources": ["TANG019_SOURCE:259-262", "TANG019_SOURCE:329-351", "JTP_HEADER:59-113"],
+      "input": "supplied AuthorityProjection with junction signature, opcode, operand bytes, obligation and predecessor fields",
+      "output": "operator result/verdict and predecessor-bound persistence/closure records",
+      "scope": "The inspected source path does not enumerate flag-field fibres, constant THIS/NO patches or A6 receipts over720 overlaps. JTP_O_FLAGS is a protocol-header field, not a flag-world incidence triple."
+    },
+    {
+      "id": "GATE_ENACTMENT_TO_CONSTANT_PATCH",
+      "verdict": "MAYBE",
+      "name": "O_GATE_ENACTMENT_TO_CONSTANT_FIBRE_PATCH",
+      "required_correspondence": "A7 offered gate enactment -> (x,U,q) -> x' with x'|U=q and x'|outside(U)=x, for exactly the six A4 domain kinds",
+      "reading": "The domain kinds and gluing readout are bound. The inspected A4 and Tang paths do not supply this update or the assertion that all and only these constant patches are the offered enactments. This is a read/update correspondence, not a correspondence to A3's lift cardinality.",
+      "reason": "MAYBE remains BECAUSE reading agreement on supplied x does not by itself enact replacement of x on U, and the named Tang interface consumes a supplied operator transaction rather than supplying that flag-field replacement."
+    }
+  ],
+  "retained_evidence": {
+    "keep_one": 484,
+    "keep_two": 1440,
+    "combined_assignments": 1924,
+    "strict_members": 1,
+    "strict_member": "J17 site fibre -> NO",
+    "receipt": {"discharged": 12, "opened": 0},
+    "scope": "IF_THEN on the two requested diagnostic families; no relabeling as conformance to an unbound offer/update operation",
+    "rerun": "NOT_RUN; retained byte-identical GPU replays reused"
+  },
+  "implementation_disposition": {
+    "existing_native_sources": "010/source/fibres.mal and011/source/pairs.mal already implement the requested constant-assignment computation. No implementation-absence claim is made about those bodies.",
+    "new_engine_source": "NOT_WRITTEN: no unsupported §7.1(b) authority label added to diagnostic source",
+    "worldline": "Two committed links retained; link3 NOT_COMMITTED",
+    "runtime_PDPE": "No new tick promotion or execution inferred from diagnostic strictness alone",
+    "repository": "Additive binding only; no commit or push",
+    "reopened_obligations": "NONE: admission, handedness, historical UNREAD/Tang and V1/V2 conformance remain retained",
+    "personal_decision_request": "NONE",
+    "scope_limit": "No claim that a section-update producer is absent from the entire corpus. The verdict names the inspected source paths and the required mapping."
+  }
+}

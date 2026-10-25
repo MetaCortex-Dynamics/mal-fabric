@@ -1,0 +1,21 @@
+// Connection qualification, not a selector or authority issuer.
+// A8: endpoint allocation must be evidenced; tuple order cannot supply it.
+// SPEC-JUNCTION-001 v0.3 sections 5, 6.2, 10.8: local sections are
+// scoped by grants; overlap, state and transition require separate evidence.
+// ENGINE v0.2.0 7.2: DECIDE input refers to a member of this proposal.
+// All evidence predicates below are caller operands, never manufactured here.
+// No PROMOTE or EXECUTE consequent is present in this connection.
+law A12_SEATED := IF GOES_WITH(A12_CORRIDOR,c,a,b), GOES_WITH(A12_ALLOCATION,c,a,b,seat)
+ THEN GOES_WITH(A12_SEATS,c,a,b,seat);
+law A12_SEATED_REVERSE := IF GOES_WITH(A12_CORRIDOR,c,b,a), GOES_WITH(A12_ALLOCATION,c,a,b,seat)
+ THEN GOES_WITH(A12_SEATS,c,a,b,seat);
+law A12_PROPOSE_SECTION := IF GOES_WITH(A12_SEATS,c,a,b,seat), GOES_WITH(A12_SECTION,c,a,PROPOSE,p,l,sec), GOES_WITH(A12_GRANT,c,a,PROPOSE,p,grant)
+ THEN GOES_WITH(A12_PROPOSE_BOUND,c,p,l,BOUND(a,sec,grant,seat));
+law A12_DECIDE_SECTION := IF GOES_WITH(A12_SEATS,c,a,b,seat), GOES_WITH(A12_SECTION,c,b,DECIDE,p,l,sec), GOES_WITH(A12_GRANT,c,b,DECIDE,p,grant)
+ THEN GOES_WITH(A12_DECIDE_BOUND,c,p,l,BOUND(b,sec,grant,seat));
+law A12_SECTIONS := IF GOES_WITH(A12_PROPOSE_BOUND,c,p,l,pa), GOES_WITH(A12_DECIDE_BOUND,c,p,l,da), GOES_WITH(A12_OFFER,p,state,l,field)
+ THEN GOES_WITH(A12_CONTACT,c,p,l,state,CONTACT(pa,da,field));
+law A12_DETERMINATION := IF GOES_WITH(A12_CONTACT,c,p,l,state,contact), GOES_WITH(A12_OVERLAP,c,p,l,contact,IF_THEN,overlap), GOES_WITH(A12_STATE,c,p,l,contact,IF_THEN,admission), GOES_WITH(A12_TRANSITION,c,p,l,state,contact,IF_THEN,transition)
+ THEN GOES_WITH(A12_DETERMINATION,c,p,l,state,WITNESS(contact,overlap,admission,transition));
+law A12_DECIDE_OPERANDS := IF GOES_WITH(A12_DETERMINATION,c,p,l,state,evidence)
+ THEN GOES_WITH(A12_DECIDE_OPERANDS,p,state,l,AUTHORITY_EVIDENCE(c,evidence));

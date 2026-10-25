@@ -1,0 +1,3416 @@
+{
+  "schema": "FibreDiagnostic010BaselineQualification",
+  "prior_record": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run_002\\RUN_RECORD_009.json",
+    "bytes": 44683,
+    "sha256": "949E23F8F7F2C493F9DB8A0B733C98FA993D5FF32F4EFCA0219165C0ADA27090"
+  },
+  "current_record": {
+    "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\RUN_RECORD_010.json",
+    "bytes": 230301,
+    "sha256": "2AD351F73AF9C7046C6883E0EF1C29180F272DAF9EDE5047630E242743F9A053"
+  },
+  "case_count": 87,
+  "comparison": "SAME",
+  "comparisons": [
+    {
+      "family": "BOUNDARY_GROW",
+      "operands": [],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "DF5867E846E5A84B83846B3971E4576CA15829BA8DEB0421640CE084E8D22811",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "3B99FFB54ECB6D94B34392E7055A29CA98AA5A76BBF67671857AD4E9665FF04D",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "BA4C5DF2125FCDB9672362560EBAB02A95B03CEE0D91036F3F04E4CF5799E5F5",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "F7D90E75BE8FBC9957A478553A827CBE67E853E924CCC0A43525A8AA72F37164",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_00|HW_01",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_00|HW_01",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "205ECCB378CE97D31B918797D5E4C9A56E5737362277C37A76814B70C2BCBCB9",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "E715C9420B1D9A71B58C16F0A2F15B36E2ABB92C2EF4625620048B5227B6F8B8",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "841A66B21DF012BD5CA7F050FEBFBA6FACB7AF87E5646D27CC235BF7326AC961",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "E55F2E6E68A640D9D351ACDAC7F832D47984FA9EAD2D5A135B64210919D9A5F7",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_00|HW_02",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_00|HW_02",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "7A2BE763A2E669A7779CD1C81039CFD1B5BC49F463BE1341063AD4B4C0194F30",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "17F9BEACDCB451DEF190A339D92C69479B5DB866AA6668C1E57349C96DC11BDA",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "50F15E8D335E1D66C94844739F2D246D2B12F342081806C2A3EB5D5A1BAA14A4",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "B178174398A7CE8011B23CD84A8F0388B5F1113CF7AC56043EFD348F51BFA792",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_00|HW_03",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_00|HW_03",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "24ABA3FFB01B382F8F0550AC2C8E296B61D1DC6591C1452E90478CF07201ED23",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "EB4637F5E9DFC245152E03A97CCCCDDFE2D1F1756D1CB65E141ED7D58C2782D9",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "32197E7125BEA92A5A0A8FA3FC1AA777D7BF7B67D4AF55F7CB56BE767EAEFA06",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "3A10D5B749E27FBBD6367E247CB87C62697227233FA431D3F5B1EA9F109893B7",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_00|HW_04",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_00|HW_04",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "9F09A8B37FF0F1628EBD9ADE41A953AB05BEF311EC688E07DC2CA84381B5AD9E",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "534EF4F0579EDEFC230334FC21FF5C14354E9AD7B19254B94BB5DA1FAAE4C4F7",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "2891AEE7DE5579ED1BF1828908C581D49D95BECBC835C6B9C14A85F8548A959E",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "24BCB1B30D02F3AA17A9D5443720DACA7266B44125F23AAFB8F7FBBA49691923",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_00|HW_05",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_00|HW_05",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "12E53A907AA15EC7BEA84FF570C5CF5365025A9C3E3F0927686F3EA93E7AE063",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "E69718093865FE52210B6E83FB018062A6550B4043106FD2E1FF78EC2A3C290F",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "EB8CC75A3B4949826AB056C28F11A54B8D056C7D175839B8362BDD1CD8C272D3",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "66611EDB153555C00ACDF7EF0BBA6D1278F3468FAC331B79E38A2377FC762FAC",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_01|HW_02",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_01|HW_02",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "5EA5F3B175F2BE80E816405DD5C5EEA40AC622C239DF99DA90E404B4DC9DBA19",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "823D62009F3B5C4016B9D03007A2CAE4A2E0435D1C9D65A4424EA757C127B921",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "CF99C5B27A209CCF34AB05B2E683E2872ECB5CA3935FA3E54FC84C4B9678FC08",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "BECAB5521AACD568EC8DB71D2780C82F922119285AF3522BBC76A4D68D9BF8E5",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_01|HW_05",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_01|HW_05",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "3B7E1CA4A18B379F1B8656C3ED09512D900670FADA5C668292DCF458B082747A",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "39BFC93E2F48995290401954826DC481B944D43AAB1E6C09995E967253613A0F",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "C27B595581F2000B8C20748619405014ABC36D53663FBAEA665F6283AD5131C7",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "9FDF76EC8E43C37426D540C4532A0E8FBF709EF68A97A3E79A3824DFFCA0955F",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_01|HW_06",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_01|HW_06",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "8577773A69DC51979A4FA101AAB8F43689E211139CAFB1C386EC8B1276058B96",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "0A4AEF671B314B762BD19D0D59A8539F48C7AC60FE5961B14C68611004ED1BE5",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "EF6F6D380E11A7580CECBCE83741BFD5F3E82A029E7EA5A307F26B67AB96572F",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "8797A09F9880BB1AA8CC6E33A56D98036BD2A71FE4A024D42DFD87E4ACD59B20",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_01|HW_10",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_01|HW_10",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "9D0BA0C6A0823E26C2E9543A8E131EEA3597E2F378D1D78A0DBDE1D9E09907EE",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "62C8B1518B7AF1A8A97853F32FBC8C0D4F59920E8F4AB7F37837EFD55A4AC251",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "535ECBCE31831BCD7A96615868D0A6347D7782082AE9279F67BCD5900672EDA5",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "7DD1E98792F8EB0867E60988C328DBEF90B54DBD9FCF554B6EF5EC37C79B5FB2",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_02|HW_03",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_02|HW_03",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FC0A0005231E0B55D18360B2E798FCD0671CF419AED23210F25E11A8ADC6A7A3",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "54D20DCEE5AE4582F55F18F547EBDD1B6C0A41E376E154C331B669220BBBFA5F",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "25AF9E4BEEC25CA9FA3E5F021F2BD220EB27BA0BAE01EC5B5531DA828B02CD60",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "2CBA47DB1333C591E502C707F1A6E1F3262F3A099C6E9F8C185399E1766BFEF8",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_02|HW_06",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_02|HW_06",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "4133C1CAF4215849C59F3C153742103FB3B604C13213871271FE3A8A05B4CFC4",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "DD1808D9C2C3D4847EF730CC9D705F1CE10B526CBF74B3FE7DCF17A1D9938E32",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "B8319A2522A8210E3920D2F5CF98B68788731B39EB6214C18EBB01700EAB7537",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "69F3C0429DF55721B131A6804BDB2EE5EF5B9BE1AF531325A99271E15A9275B8",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_02|HW_07",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_02|HW_07",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FC02F1633D5CA5C7A8B15697E507B2EA318F687805CAF04711BDAB9F59FF6170",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "C8C4B5C3AA61E26F2CF7A2C99A72A85C3066179F1B58BC35B70767C3E74DF3A1",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "6069C74C3B0B1AAF0769DE40A7E2094A79DAEEEAB16FE254F7CA53E66A55A9BA",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "4BEA902678AD0341CEB19C67829D63F56E2F06D27084C264685C81FE2D3E8B07",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_03|HW_04",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_03|HW_04",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "AFB41976BEFC6AABAB0AAE8037BD728DA81FFFECFA6384B28BEFED3497283368",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "7F94F8DC4091D98DBA27BB97646752D99B4344F4CFF33E611C61958076ED981E",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "5D8C2895B99D5AF2D9320867E3089A7FAB57BC9AB8452DA32591B4DA7D05D453",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "A652077F334A31487B56DCDFDADD514DF7E4AB30CBBF31CD8A7D9C8A0D0B3A07",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_03|HW_07",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_03|HW_07",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "414269A4EC0A480195EDB2769E1D3F51A920BEBF0B59D0592118CBFA439EEF28",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "26B0E075EA8C7794728B6AB3721B55CE52BA4F02D8591C82F6B5A05EF97DDA37",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "71584BE04332DD87016DCC6A64A56F4F20F58536D77CD93C10458E76B1E76B4C",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "FA16E3C3E8C8BE0EB4D1296B26E979AECCF1DF616A6BD8A1D1CB50A0A18F4CA3",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_03|HW_08",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_03|HW_08",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "4FD72C5A40F3F1F3AA4363868B53BBD1CFE97C3B75B1CC61A5830D61E4D2C7FE",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "0991E3C0299F3635BD382FB3DDFF68BB790CBEFB1362CD87F9F260988F155257",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "DB612EDEDF9B304F1AE8B8E62B82CD33888AFB466F064ABBB5578FF0C2492403",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "5EFB1A463AD73C3CD49990526AA34091233E41AF90E22E095F16B4F78941D2D4",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_04|HW_05",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_04|HW_05",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "3216C85B85B182AB13DEA1A841B53090CA3891FD2A84558D9C14BB4A7767C2DE",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "14D281B23A908BF5C81ADB6F4F69B6C8E7753F4F0C0E76B68D293406791E10DB",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "9DF2E55D72F2966C027543B381E757CDFE7ECE9707CF519A01D80494E6CD8124",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 2,
+          "sha256": "C34FFA7A13386438FE92E1B832221B609BDE378349C1D65925FE6E0B6790926B",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 10,
+          "sha256": "191DD9C0D3C4FD154344B3274391D8E1B4C530AC9BF26F57402E5365C951225D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "9A0FEBC29FA94224C183773438BFAE1FC6B36EE7F51E8576AE5A1F24F0699B0E",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_04|HW_08",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_04|HW_08",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "4CAB0B7366FAE0073408566184F0CE00BC8267D32DB0D09189BAF5F5EAF67A7E",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "4413ECF6FFC7AAAE9A4A328BBE4F32C01D1AF35B2B4274FF7710C932CD39D719",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "7311BC96777FB1C8C81A2092475FFA0E826A10CC79021A64D67C055A9E88478C",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 2,
+          "sha256": "66FEF1D1A485B5D0EDE4FF1A178CD407E451DFFB98FC990004ADAA60E9B0E6C2",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 10,
+          "sha256": "4094D39B500A7E0CA32AD4D5AFE7D45926453D5A3290CE528719C047E6CC1E4C",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "4BDC35EE9267AB45F2463196849A4D87257B51712680A64584C95EAD10CBE1B8",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_04|HW_09",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "BA5DA7DB75108D0ECE2A447BE51643B21BA5E4CF0039BD0B06BB94B94273F7CD",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "1725695FFE3028D13FBE7DFE738FEBD7E8764FE680F9DF2D7EC994339E7A02F6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "F8F7B5E58E178601E4C2A435C216B1710E4EA43ADFC5D9D1D6BF94E3E7F25699",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_04|HW_09",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_05|HW_09",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_05|HW_09",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "D2EF3B96667B502710D44061A48CF8E5E83821DB0BBD06363968CC473E92FA97",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "DF64B778418838ED06643A15599A6B9387683BB687E391B1CB41F605D56C1512",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "6345C142659EB182231CCDD0C53B69E9FA0084334D256FF77D853F44BD5941C8",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 2,
+          "sha256": "657370915CD653A621E4BBF924B2C99F0172645AC929423567214A090E8CF6A6",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 10,
+          "sha256": "A85EC84EAD1A111737C418BADD7532AAA7D3C04D6EA68A0C7B643456EC5697C5",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "858293B6DDD5B641467C35F5DF5DA2C46DA8F0482223DFDE597C18B94BBEB91B",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_05|HW_10",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_05|HW_10",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "1547D019DACD9258B5723372997D56D871EFD17D9BFAC321D8BBD71FD59FC5B6",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F0939C1B3BE13516E6346260416912AE222C2E761ECD945973886E82370EE8CB",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "21F5CF51CEE9E8524F9B288AB6705480F46F2895FFCEBBBE098EC2D51036B8F5",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "3829B7980127CDEEF1B54FC536042E45199950EA5E2823E02BBE256F269942A2",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_06|HW_07",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_06|HW_07",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "33F544DA14C39E5F374B999BB75C8DD9BBEDAA31893A6EAA11F05C227F294A32",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "AD99DF514065E6F1093EA08800B098A5C01588B27302F740950118F72FF48DA9",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "75961C37BC70AD351C95308F7605A2B755012503403D4969763398E7AA4CB0A7",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "02EFF27B14DA37FC305014222EF2D5FBC374AF7122F1358A8D8BBDE4185C1F72",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_06|HW_10",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_06|HW_10",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "D9C2817DFFF72F4726A711E872DE28DE2225D9FB43B7B3318D3399EB6FDB73E6",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "0DA8FD7F3283549012AA70E1E447391991F80692590F51A60E4F3BD40BF76EB0",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "04E26922D03E4DC0CA1944657025320783CDA3A9E7475F97761BDBDFA74E2C16",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "6D0058FD0C9AB9EE11A8CE62975CE8CD5415CF91FC2170BA011E8DCE272E3AA8",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_06|HW_11",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_06|HW_11",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "0D1999020C67BE90D761E23BFA44F433FA239BC47F177BDA98A81778465ED2CB",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "A7ED6926FB6DB890BF5A92D362116751D036CF45AA934A366D11728D9534B859",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "70039FBB62BBC73077D6333A4299A551F256DD83E4E4A0D7103C926ACA8218CB",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "8E56A2F2478A01B6F72FED11B6C11A0FC92D328E34B3B3E05E592C71C6A246CA",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_07|HW_08",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_07|HW_08",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "9ED7AA068092DF5DE2279C93B73464D33CCC72CF58234043D3138908062A6836",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "A0333C16768CC7E397D9C785E4B13B44F1358D15F6903BC78F7E86DAD4BBEBE4",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "C13E289EB1AFD6445D3AF25E0658410FC3EA9FC45977D06612BFD2AFB7237BC0",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "1B4F436091ABBFD85E96682BC1C61D6523B9980AA27C8EEEE7A0EA15718C83C8",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_07|HW_11",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_07|HW_11",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "C35401E05E5DC3C8832DED87B72F3CD5570FB21B960D199361EB6ED28D47073A",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "2C6179D7106695C8E8343E057E08ABE9EDFF34C7BD5B16E259B62FA68D25F811",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "5B3D570CBA3EC6656433B0D94C14955B72619177B0E5F8CCE0098C9F54668FDE",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "0AE642A75F3AF24B19608053D4587775BF7915BD14396BFAE2887FC490701BE3",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_08|HW_09",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_08|HW_09",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "0DF6A7C81775305ECC6ED91489D019F8E1B9409B49CFC2ADCE0808872FE55D39",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "5C52F074CB226EBEC042E8406C72121B81834D29B41187EBAB1E10FB30196403",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "773C935416CDBA12A9C95FECEFF09B2A6322473DBAEA9B478A36E1CCFA784000",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 2,
+          "sha256": "F6FD733AA2DA02F458D1A67CCF9A3716936BA6B53B2B8024384CAEF6576C7D29",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 10,
+          "sha256": "767B6B02B2663EBACBAABF456DE69E6E2A89D24E1D68494B90F71C98A7DBC11B",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "532F6B6DF12CF3C5422E67938A1C43AE2BC72F80C1EFAD2F0B14438CA5F488E4",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_08|HW_11",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_08|HW_11",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "2831A1A8D390DD40A3E06EBDD99E939A8F70B3769D31B612137A8BCB69CB112F",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "CF4848CC9DE58B5E8485F5A0A28A474127799645202CDF78AF85B835F911E938",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "BC1705AF0547E40F6B4153684A3AA481EEAFECACC3A1DA1CDCD80914F76FE56C",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "3521778459FE05A783C0C03B2F7AC2DCAB97600CD67142B18A2265505CEFF10A",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_09|HW_10",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_09|HW_10",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "DA3657B64ED45B5A782B58476DCC9CC8106052F74B51D8EFB1A18CE529A77787",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "7E85DC30B156E49D463A7633D8CEE7628280DE92B06CEF711544D737A2087DFB",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "DBFC44963BDE42E66E464571F3B0C33889755AE38B83D475533FF870469C7158",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "A7F803523AA404EA918CB6675EAD2C4DF60D68AD7255F7702D4C7F4F19A34733",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_09|HW_11",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_09|HW_11",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "775B729E6029B902E72BE62BC24060B65DA00E38EC7AA30A5B5F727F4F0A6285",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "AD55E8A054F6EF5FFF7504A38773F0F40B5FFE781CF17D8F5C8E08EE8A11FF3D",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "E5EDB668E3EAE68021F6F1360733C96B454C3DCAF6512457C8EB8DE55904788D",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "16F26E044868787E063335DE2D06DAEDA7DEF53D86B8BE068219A9AACB229849",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_10|HW_11",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "C:HW_10|HW_11",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "A9D339F63A922C4883E8F02A485666FF2861813733C8C67E608E79F2001B52ED",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "B85E8C6F8D6D5C672B25A8DA70B9A75D96045A88906CAF7BBF253D381A93115B",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 12,
+          "sha256": "85149BEE312FDA3DAD6335CA55AF88FD7E48421AA2097DCCCF753AFB94B94157",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "38A03ED0869D86286DE4F12E8000ECDE8F223F1A638F0A93FA49A3738764513B",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_00",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_00",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "A4470AE566FD4F5BF40A56E4A9F6E1618F632252FC1099FE56027564438C9CDA",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "434F2F8480706D70E677E38EE0B25C171B2964720BEA994108C0EFF1F1C9383A",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "E9B9DCA09A853EAFD8F7807373AB6376B381699281FDD4C2676BD5F8E4A14964",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "AC6567407334C5AF54D0EA34794404F735983D6AEBEF75C6555C528C05752F29",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_01",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_01",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "5685B11A86D0CEC8FD570368B305BF2A6C59C7E5BADE234676D01EE7DF9639C8",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "344722D1C288E2B5B94710DE47603657127674F855F71417CEBDA0300944994E",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "71B5CB0485795B05DC106D56800B83F7D42B9D20F0606227FC21D7ECFAB5C2C1",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "0577D1422D47F62CD3180774AA0DE7C32F6543445C2AD3C8C7ACEEF8FC3F7F9F",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_02",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_02",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "D2AC86D0A0D253561CF6DD345F1863F79CCD35E5E375FBA89A8FEDE80E7AA0C6",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "932831D8F4F476EFDA20AAE1B78D8878CE03B742A6585BC99ACC380DBB18DA23",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "025C50DB38A1D995D8076C0D960E48646BA1FEDBD3B5782A7EE991C6F02FBE99",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "6DC447E9CA3A9561E03C4F9DA7B055C0835A4E4AD7588B7DB60374E5847E55E5",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_03",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_03",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "5FA5A0CF29475477A1234BEB914F78FB437C02E8A4D6050570E90F08EE82F4E1",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "97EFE6BF60C78914AB339D1A625957F37D7E7844572345E7784B2AED001FEF13",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "E1B50ADC22C38F9E99543225873FD20B265DEFFAF3E0B862B7139081D9FA611C",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "468A7F6B8B3C26E27090E37FF5424F659BE89A6EC1136EBAEA926347DD7DDEA3",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_04",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_04",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "CCC320523176E6CDC9208FF1775CBCA144A6C314A29697EF07196236FA054D8A",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "6E08FD82F6DE0EB759C9693EA28227E431588D42041260D258781FA55D21BAEF",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 8,
+          "sha256": "42D07AED6C50C0BAC31449DE811299E409FAC29704C2CCA39A530A69558EE88F",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 2,
+          "sha256": "000E0C98A966684B2D86257EBB70FBC31A7FC47F2FDDDE8CEBFA8B52F8F7DE40",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 10,
+          "sha256": "0C3FB0A7662771D70DC10A8754BF2CC35A2A395029852778C8DAC251C27B6CAF",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "8EB1043B092EEB115D4389D3976F37CE265A8F33C529F0C927B97FDF6777C8C4",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_05",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_05",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "DA2DC85CA54C6108C44309FCA09F3ED366B9E7360D260E8069711282EAF61C22",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "D1500CAEE1B336CE80648A514F9890CB6FC299AAE79776EE0B9CB571C8C5F7B3",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "CE6AC934B62D9D7ABF5DE3CFE0DC9DE0657BA6CAB82D5E3A593CB7653C8DD5B4",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "933C0AF3A4335A24C2CEF6AAB187AC8C6B55A152674DEFA9C4A27648F6489BEE",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_06",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_06",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "281A493732598D06E3445ED43550EE677627BC1DC004A1254E61E50FE6A0C2E6",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "8AA1EB8B364B7B904363A94E50E87B949EFF3A5A51CDFAF3B82B259F3B00BCFE",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "A5F55DE4AD57B61FB38F6E7CA95E4EB225AF563D37F4E87CE63DAC40285054D4",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "8EAB5D973DEC4BC28FB8251E6A90184E50A9A39EEB67846CF790F1B325B2BAA2",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_07",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_07",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "01E4C9AAF0356DEA2ECAECC7E9BD528EB5B231C8FF06E239FAC8F3A5D9BBD962",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "A560159E6C80F693973C8CC1EB7CC275C99FE87F902F92F2170A04424BCE8C72",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "9E7620AAFA9CE76539DD0FFC11699844BA6BA53AA7C29397C738FBEE70D69368",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "7B12C5FE812B269AA8C51D4E805B7B4599A9C21FF54507C20197C4D9D83E7436",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_08",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_08",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "42970BC9C89AB1A130CCBFA99687099509FBB9E596ABF34AC18AB5FBC0B7B5F5",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "28F58FC27461FE23A0D6E9FD397D4B60F05117E1140C7D5074476A96E0E87B6C",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "144C66A03A201E5F9955EE3C86B1A42C985C2F88642D07A661E0C8C1AA452589",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "8DF4D28FCACBBE626247507F412DF7A795F2DCCC381A8B1A7D6CFC539D8B8912",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_09",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_09",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "58CEE823A385F59A36E9CAA2198B17C3719B482143864191084AAA6ADE56D2DC",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "4C4C199E3461C28C01BFBCE6EBB77D368B52B74F2263E17986BAC5D693986127",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 8,
+          "sha256": "9117ADE7BD1D77E5EC4F94CE507DDC6F85DD51427B6EC6A1EDBF0910696B9D60",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 2,
+          "sha256": "1A27C10807EF7FC80289DAF2E73B352D555EEFCB8CD2C230AA1904764CDDD505",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 10,
+          "sha256": "EF32EB39D9B8EB7B54D67658E41E4703593251F9924B859F00AC85CD66AEF302",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "CFF6E20B4E18C8C9805D3104FD63F5075BB144682FD9C05DF4464876CC0C4596",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_10",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_10",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "B401C9981CB1E0B8C8215AF30359D244B64FFBCC5640F6B0B950826C73887AD6",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "1849072540B34B7F418D4E505F264EE1CD67AD87C56006EAE499FBDBAC436ED8",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "6FDC5B4ABFC4296DAD09B2776DDE64397D6F77635A43A28A850D1E6A8CB01154",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "00AF88C397594EF395A0747E76EB339EBE9A9A4F5955BA96DD7820853C0BAFF9",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_11",
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "FE5B5D8922AD2E3624754A0C895D4696AF14EFCF2EDC2442D55B4BACE5A70B8D",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "F1198C3359A6C3B1DB777FE6D7A893E3D801DFCB3ABD115A070341171E1435C6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "SITE",
+      "operands": [
+        "D:HW_11",
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "2E215148FE29839D147AF8984F2D0E014F4F6C0869B7C1F8C41F61025EA69083",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "03D6B35EA0C91AFB55EFFC49B0896D60D16A4AC1CCCFE58BE65FCFD465AE2D79",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 10,
+          "sha256": "BA2CB21866A35FD4EA1D384B1CDDF84CB129AB99018CE5F5DEDCF6762AAB4F60",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 10,
+          "sha256": "368115CB5BCBD528291550CCF80210CA031405D583BE3C9F2A2E0CFE19E6EAE3",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "UNIFORM",
+      "operands": [
+        "NO"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "BA5DA7DB75108D0ECE2A447BE51643B21BA5E4CF0039BD0B06BB94B94273F7CD",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "1725695FFE3028D13FBE7DFE738FEBD7E8764FE680F9DF2D7EC994339E7A02F6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 12,
+          "sha256": "F8F7B5E58E178601E4C2A435C216B1710E4EA43ADFC5D9D1D6BF94E3E7F25699",
+          "comparison": "SAME"
+        }
+      }
+    },
+    {
+      "family": "UNIFORM",
+      "operands": [
+        "THIS"
+      ],
+      "fields": {
+        "field": {
+          "rows": 480,
+          "sha256": "D0D04CE5DB7FA086DD16CE31135214E89EF3471000B4A6B1B10FA22AD9BE9780",
+          "comparison": "SAME"
+        },
+        "overlaps": {
+          "rows": 720,
+          "sha256": "1725695FFE3028D13FBE7DFE738FEBD7E8764FE680F9DF2D7EC994339E7A02F6",
+          "comparison": "SAME"
+        },
+        "opened": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "discharged": {
+          "rows": 12,
+          "sha256": "C0CB04E6F8D0ABD8BA93BE304111FD85F8FFAF0B931FF5D1A8C695F35928358D",
+          "comparison": "SAME"
+        },
+        "retained": {
+          "rows": 0,
+          "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+          "comparison": "SAME"
+        },
+        "changed": {
+          "rows": 468,
+          "sha256": "C975EE91D6C2BB5BA4B172929B0A3537398B7AB1DC556D66E5381ABA2CF92764",
+          "comparison": "SAME"
+        }
+      }
+    }
+  ],
+  "frozen": {
+    "manifest": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_runs_021_023_seal\\FROZEN_REHOME_MANIFEST_001.json",
+      "bytes": 539738,
+      "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560"
+    },
+    "count": 901,
+    "comparison": "SAME",
+    "differences": []
+  },
+  "worldline": "UNCHANGED"
+}

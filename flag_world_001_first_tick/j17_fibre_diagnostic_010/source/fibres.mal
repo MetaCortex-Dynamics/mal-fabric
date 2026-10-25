@@ -1,0 +1,18 @@
+// Extend diagnostic009 to both readings of every edge and triad fibre.
+// Receipt evaluation and full-overlap coverage are unchanged native .mal.
+// Fibres are equality classes of a coordinate, not host-enumerated offers.
+// No worldline append or semantic offer-membership verdict is performed here.
+
+law FC_EDGE := IF GOES_WITH(KD_PARTS,f,v,e,t) THEN THIS(FC_EDGE,e);
+law FC_EDGE_THIS := IF THIS(FC_EDGE,e) THEN THIS(SC_CASE,EDGE(e,"THIS"));
+law FC_EDGE_NO := IF THIS(FC_EDGE,e) THEN THIS(SC_CASE,EDGE(e,"NO"));
+law FC_EDGE_INSIDE := IF THIS(SC_CASE,EDGE(e,r)), GOES_WITH(KD_PARTS,f,v,e,t) THEN GOES_WITH(SC_FIELD,EDGE(e,r),f,r);
+law FC_EDGE_COMPARE := IF THIS(FC_EDGE,e), THIS(FC_EDGE,q) THEN GOES_WITH(KD_DIFF_REQUEST,e,q);
+law FC_EDGE_OUTSIDE := IF THIS(SC_CASE,EDGE(e,r)), GOES_WITH(KD_PARTS,f,v,q,t), GOES_WITH(KD_DIFF,q,e), GOES_WITH(KD_FIELD,f,old) THEN GOES_WITH(SC_FIELD,EDGE(e,r),f,old);
+
+law FC_TRIAD := IF GOES_WITH(KD_PARTS,f,v,e,t) THEN THIS(FC_TRIAD,t);
+law FC_TRIAD_THIS := IF THIS(FC_TRIAD,t) THEN THIS(SC_CASE,TRIAD(t,"THIS"));
+law FC_TRIAD_NO := IF THIS(FC_TRIAD,t) THEN THIS(SC_CASE,TRIAD(t,"NO"));
+law FC_TRIAD_INSIDE := IF THIS(SC_CASE,TRIAD(t,r)), GOES_WITH(KD_PARTS,f,v,e,t) THEN GOES_WITH(SC_FIELD,TRIAD(t,r),f,r);
+law FC_TRIAD_COMPARE := IF THIS(FC_TRIAD,t), THIS(FC_TRIAD,u) THEN GOES_WITH(KD_DIFF_REQUEST,t,u);
+law FC_TRIAD_OUTSIDE := IF THIS(SC_CASE,TRIAD(t,r)), GOES_WITH(KD_PARTS,f,v,e,u), GOES_WITH(KD_DIFF,u,t), GOES_WITH(KD_FIELD,f,old) THEN GOES_WITH(SC_FIELD,TRIAD(t,r),f,old);

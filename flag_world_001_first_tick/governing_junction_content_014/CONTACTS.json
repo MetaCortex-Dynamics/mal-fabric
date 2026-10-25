@@ -1,0 +1,26 @@
+{
+  "record": "GOVERNING_JUNCTION_CONTENT_014_CONTACTS",
+  "status": "READ_AND_HASH_BOUND; IMPLEMENTATION_CANDIDATE_NOT_PROMOTED",
+  "contacts": [
+    {"name":"junction_v050","path":"C:/Users/devon/Desktop/MaL/MaLv3/governing_junction.mal","bytes":4513,"sha256":"A14B15BC19B354E49F744D13D762B61986BB74B206D19C2BCE692138C95DE7A4"},
+    {"name":"known_open_item","path":"C:/Users/devon/Documents/Codex/2026-10-11/i-have-11-now-and-it/work/v04-with-s3a-r3.md","bytes":49220,"sha256":"4683631F8DF94F66F6DB9042AA9E1B122FC767045D696F76FC9967ED3488028F","lines":"711,763"},
+    {"name":"v050_six_vector_receipt","path":"C:/Users/devon/Documents/Codex/2026-10-11/i-have-11-now-and-it/outputs/governing-junction-v050/receipt.json","bytes":42577,"sha256":"90A2F4D08783A43556ABEF09677A15E136F636C7DE65A201248CEBD6772E5512"},
+    {"name":"r4_formal_source","path":"C:/Dev/mal_kernel_lab_repo/v3/formal/witness_basis_theorem_r4/WitnessBasisTheorem_R4.lean","bytes":41410,"sha256":"775BE1AE38CFB5B5D7C3C60FB24707F269F6547BDF583D3D6CB69A66D5B81972","lines":"399-404,631-643,863-883,950-957"},
+    {"name":"r4_binding","path":"C:/Dev/mal_kernel_lab_repo/v3/formal/witness_basis_theorem_r4/BINDING_RECORD.md","bytes":6793,"sha256":"CA4865B47A3FF7866A14392A1C1F16CBC3170DC43B6177DD0C24B123CA72B7D7","lines":"200-223"},
+    {"name":"r4_native_normalizer","path":"C:/Dev/mal_kernel_lab_repo/v3/formal/witness_basis_theorem_r4/witness_basis_normalizer_r4.mal","bytes":6818,"sha256":"3B9480414D1A2A61F7F976993E713811EBFD3FEBEAD1F7878ACA8CF848BA048F","lines":"64-90,95-114,128-144"},
+    {"name":"basis_paper_plain_text_despite_extension","path":"C:/Users/devon/Desktop/MaL/Witness_Basis_Theorem_v2.docx","bytes":18562,"sha256":"B81DD1C844940CDA24683321CD6273411FFADDF2900ED2AE5AF0C0C92CFA0CFB","lines":"19,126-142,211,326"},
+    {"name":"sheaf_source","path":"C:/Users/devon/Desktop/MaL/MaLv3/sheaf.mal","bytes":8914,"sha256":"E4C25D91259A3C3E68414923552681B6C887A79F64260B957352D97485B9AE75","lines":"49,68,93-131"},
+    {"name":"tick_promote_binding_013","path":"D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_tick_promote_binding_013/RECORD_J17_TICK_PROMOTE_BINDING_013.mal","bytes":3717,"sha256":"2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4"},
+    {"name":"local_trace_revision","path":"C:/Users/devon/Desktop/MaL/Markdowns/TRACE_FOLD_PRODUCT_PROJECTION_RECORD_001_2026-10-23.md","bytes":69438,"sha256":"42FE11493503786CF3FC1299361FBDBE11DC2B13FBA177FD2F83CCDC6C23D235"}
+  ],
+  "reported_trace_revision": "7B425E034A49FCA3C451928999BE0EE8F18671D813D99F7FFE8E865A74875F4A",
+  "trace_disposition": "Latest user text applied as instruction; its reported trace hash is not substituted for the locally read revision.",
+  "custody_recheck": {
+    "checker":"../j17_tick_promote_binding_013/verify_binding.mjs",
+    "checker_sha256":"09D620DC73331BB6E7D2EC56A6A9C8DA81DBBB008D6D5853A2DB4113E5829E32",
+    "evidence_sha256":"171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4",
+    "verdict":"SAME","comparisons":55,"negative_binding_checks":8,
+    "frozen_files":901,"frozen_manifest_sha256":"F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+    "worldline_links":2,"world_commit":"NOT_RUN"
+  }
+}

@@ -1,0 +1,118 @@
+// Incidence correspondence of the already-bound run-023 program only.
+// Imports are exact stage12 facts, with their source proof/custody retained:
+// J23_PROGRAM, J23_COMPARATOR_LIST, J23_MARKER_MEMBER,
+// J23_COMPARATOR_MEMBER, J23_ROUTE, WORLD_JUNCTION_SITE, WORLD_FLAG_FACE.
+// No host-computed junction mapping or correspondence fact is an input.
+// Identifier equality joins the imported terms. Existing list serialization
+// is traversed for complete coverage only; it does not select an endpoint.
+// A marker has one site image and retains its two-vertex edge support and
+// three-vertex triad support. An overlap retains both full operand flags.
+// RESULT -> LEFT/RIGHT is retained from J23_ROUTE, never reversed.
+// Outputs are incidence images, not reaction relations, admissions, target
+// candidates, field updates, or worldline links.
+
+law JIC006_MARKER_BASE :=
+ IF GOES_WITH(J23_MARKER_MEMBER,p,m,TOGETHER_ALONE(v,e,t)),
+    GOES_WITH(WORLD_FLAG_FACE,TOGETHER_ALONE(v,e,t),w),
+    GOES_WITH(WORLD_JUNCTION_SITE,v,j)
+ THEN GOES_WITH(JIC006_MARKER_BASE,p,m,TOGETHER_ALONE(v,e,t),j,w);
+
+law JIC006_MARKER_EDGE :=
+ IF GOES_WITH(JIC006_MARKER_BASE,p,m,TOGETHER_ALONE(v,TOGETHER_ALONE(a,b),t),j,w),
+    GOES_WITH(WORLD_JUNCTION_SITE,a,ja),
+    GOES_WITH(WORLD_JUNCTION_SITE,b,jb)
+ THEN GOES_WITH(JIC006_MARKER_EDGE,p,m,
+               EDGE_SUPPORT(TOGETHER_ALONE(a,b),TOGETHER_ALONE(ja,jb)));
+
+law JIC006_MARKER_TRIAD :=
+ IF GOES_WITH(JIC006_MARKER_BASE,p,m,TOGETHER_ALONE(v,e,TOGETHER_ALONE(a,b,c)),j,w),
+    GOES_WITH(WORLD_JUNCTION_SITE,a,ja),
+    GOES_WITH(WORLD_JUNCTION_SITE,b,jb),
+    GOES_WITH(WORLD_JUNCTION_SITE,c,jc)
+ THEN GOES_WITH(JIC006_MARKER_TRIAD,p,m,
+               TRIAD_SUPPORT(TOGETHER_ALONE(a,b,c),TOGETHER_ALONE(ja,jb,jc)));
+
+law JIC006_MARKER_IMAGE :=
+ IF GOES_WITH(JIC006_MARKER_BASE,p,m,f,j,w),
+    GOES_WITH(JIC006_MARKER_EDGE,p,m,edge),
+    GOES_WITH(JIC006_MARKER_TRIAD,p,m,triad)
+ THEN GOES_WITH(JIC006_MARKER_IMAGE,p,m,f,SITE(j),edge,triad,PARENT(w));
+
+// The comparator's source-declared operand association supplies the role.
+// Merely sharing a triad or junction does not establish an endpoint match.
+law JIC006_LEFT_FLAG :=
+ IF GOES_WITH(J23_COMPARATOR_MEMBER,p,c,f,g)
+ THEN GOES_WITH(JIC006_ROLE_FLAG,p,c,LEFT,f);
+
+law JIC006_RIGHT_FLAG :=
+ IF GOES_WITH(J23_COMPARATOR_MEMBER,p,c,f,g)
+ THEN GOES_WITH(JIC006_ROLE_FLAG,p,c,RIGHT,g);
+
+law JIC006_ROUTE_IMAGE :=
+ IF GOES_WITH(J23_ROUTE,p,rid,m,RESULT,c,role),
+    GOES_WITH(JIC006_ROLE_FLAG,p,c,role,f),
+    GOES_WITH(JIC006_MARKER_IMAGE,p,m,f,site,edge,triad,parent)
+ THEN GOES_WITH(JIC006_ROUTE_IMAGE,p,rid,ENDPOINT(m,RESULT),ENDPOINT(c,role),f,
+               INCIDENCE_IMAGE(site,edge,triad,parent));
+
+law JIC006_COMPARATOR_IMAGE :=
+ IF GOES_WITH(J23_COMPARATOR_MEMBER,p,c,f,g),
+    GOES_WITH(JIC006_ROUTE_IMAGE,p,lr,ENDPOINT(l,RESULT),ENDPOINT(c,LEFT),f,li),
+    GOES_WITH(JIC006_ROUTE_IMAGE,p,rr,ENDPOINT(r,RESULT),ENDPOINT(c,RIGHT),g,ri)
+ THEN GOES_WITH(JIC006_COMPARATOR_IMAGE,p,c,OVERLAP(f,g),LEFT(lr,li),RIGHT(rr,ri));
+
+// Coverage uses the program's own finite cell/route/comparator inventories.
+// A missing support or role-specific endpoint withholds the final marker.
+law JIC006_CELL_LIST :=
+ IF GOES_WITH(J23_PROGRAM,p,cs,rs)
+ THEN GOES_WITH(JIC006_LIST,p,CELLS,cs);
+
+law JIC006_ROUTE_LIST :=
+ IF GOES_WITH(J23_PROGRAM,p,cs,rs)
+ THEN GOES_WITH(JIC006_LIST,p,ROUTES,rs);
+
+law JIC006_COMPARATOR_LIST :=
+ IF GOES_WITH(J23_COMPARATOR_LIST,p,ks)
+ THEN GOES_WITH(JIC006_LIST,p,COMPARATORS,ks);
+
+law JIC006_LIST_TAIL :=
+ IF GOES_WITH(JIC006_LIST,p,kind,CONS(x,tail))
+ THEN GOES_WITH(JIC006_LIST,p,kind,tail);
+
+law JIC006_LIST_END :=
+ IF GOES_WITH(JIC006_LIST,p,kind,NIL)
+ THEN THIS(JIC006_LIST_BOUND,p,kind,NIL);
+
+law JIC006_MARKER_BOUND :=
+ IF GOES_WITH(JIC006_MARKER_IMAGE,p,m,f,site,edge,triad,parent)
+ THEN THIS(JIC006_CELL_BOUND,p,m);
+
+law JIC006_COMPARATOR_BOUND :=
+ IF GOES_WITH(JIC006_COMPARATOR_IMAGE,p,c,overlap,left,right)
+ THEN THIS(JIC006_CELL_BOUND,p,c);
+
+law JIC006_CELL_COVER :=
+ IF GOES_WITH(JIC006_LIST,p,CELLS,CONS(c,tail)),
+    THIS(JIC006_CELL_BOUND,p,c),
+    THIS(JIC006_LIST_BOUND,p,CELLS,tail)
+ THEN THIS(JIC006_LIST_BOUND,p,CELLS,CONS(c,tail));
+
+law JIC006_ROUTE_COVER :=
+ IF GOES_WITH(JIC006_LIST,p,ROUTES,CONS(ROUTE(rid,m,RESULT,c,role),tail)),
+    GOES_WITH(JIC006_ROUTE_IMAGE,p,rid,ENDPOINT(m,RESULT),ENDPOINT(c,role),f,incidence),
+    THIS(JIC006_LIST_BOUND,p,ROUTES,tail)
+ THEN THIS(JIC006_LIST_BOUND,p,ROUTES,CONS(ROUTE(rid,m,RESULT,c,role),tail));
+
+law JIC006_COMPARATOR_COVER :=
+ IF GOES_WITH(JIC006_LIST,p,COMPARATORS,CONS(c,tail)),
+    GOES_WITH(JIC006_COMPARATOR_IMAGE,p,c,overlap,left,right),
+    THIS(JIC006_LIST_BOUND,p,COMPARATORS,tail)
+ THEN THIS(JIC006_LIST_BOUND,p,COMPARATORS,CONS(c,tail));
+
+law JIC006_INCIDENCE_IMAGE_COMPLETE :=
+ IF GOES_WITH(J23_PROGRAM,p,cs,rs),
+    GOES_WITH(J23_COMPARATOR_LIST,p,ks),
+    THIS(JIC006_LIST_BOUND,p,CELLS,cs),
+    THIS(JIC006_LIST_BOUND,p,ROUTES,rs),
+    THIS(JIC006_LIST_BOUND,p,COMPARATORS,ks)
+ THEN GOES_WITH(JIC006_INCIDENCE_IMAGE_COMPLETE,p,CELLS(cs),ROUTES(rs),COMPARATORS(ks));

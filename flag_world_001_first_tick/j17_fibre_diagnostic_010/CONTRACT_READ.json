@@ -1,0 +1,57 @@
+{
+  "schema": "J17CoordinateFibreContractRead010",
+  "authority": "Read of promoted contacts plus user-authorized diagnostic; no new DECIDE requested or PROMOTE performed",
+  "draft_status": "The coupled-geometry manuscript's OPEN is not used as governing authority or as a commit gate.",
+  "geometric_subjects": {
+    "flags": 480,
+    "overlaps": 720,
+    "coordinate_fibres": {"site": 42, "edge": 120, "triad": 80},
+    "assignment_count": 484,
+    "projection": "pi_site : Flags -> Sites; pi_edge : Flags -> Edges; pi_triad : Flags -> Triads",
+    "involution": "delta, gamma, tau : Flags -> Flags; each changes one coordinate and retains the other two",
+    "typed_distinction": "An involution is NOT_SAME a coordinate projection. A delta orbit is a two-flag fibre of the joint (edge,triad) projection, not a site-coordinate fibre; site fibres have 10 or 12 flags.",
+    "scope": "The coordinates determine every support used by the diagnostic. The diagnostic assigns a constant to one support and retains the complement. Its receipts do not by themselves prove this action family is the exhaustive promoted offer relation."
+  },
+  "contacts": [
+    {
+      "path": "../world_transition_contacts_007/contacts/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0.md",
+      "sha256": "B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C",
+      "lines": "386-400,407-408,439-446,455-464",
+      "reading": "Completing lifts for a declared base move; governed input restricted to proposed lifts; exact promoted successor extending current head; gluing is not an admission rule. The attribution of the phrase local section to ENGINE section7 is NOT_SAME this file's text."
+    },
+    {
+      "path": "../world_transition_contacts_007/contacts/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805",
+      "lines": "13-19",
+      "reading": "A2 flag involutions; A3 completing lifts; A4 gluing, no gate admission rule; A6 strict-discharge ledger; A7 distinct completion/reading proposal and lift/gate enactment. None is treated as a revocation of the admitted J17 world."
+    },
+    {
+      "path": "../world_transition_contacts_007/contacts/Markdowns/07_The_Erratum.md",
+      "sha256": "E097CDA64A92199F11A97DB1EB113C491806FFE1AEC29032E060C9877BD8426C",
+      "lines": "63,74",
+      "reading": "E10 types rotations about domain, triad and corridor; E21 identifies K with strict discharge. A rotation is not the whole-fibre constant-write operation constructed in this diagnostic."
+    },
+    {
+      "path": "../evidence/first-tick-conform-v1-v2-001/files/realization020/source/vector_displacement.mal",
+      "sha256": "22192EBAEE1248B35B722C97924B0FF6DF577CCD024F0A9B9F75C9A6ECFB3F8F",
+      "lines": "157-168,199-221",
+      "reading": "The cited producer emits LIFT(f,g,h), then FROM->NO and TO->THIS, retaining all other flags. Whole-fibre assignments are not its output type. This entity producer is not substituted for the universe fold."
+    },
+    {
+      "path": "../j17_world_fold_effect_001/SPEC_J17_WORLD_FOLD_EFFECT_001_v0.1.0_PROPOSED.mal",
+      "sha256": "E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E",
+      "promotion_sha256": "E674B00C04B0B8119BFFD4596A756467B8054C9A6CF6741E3B2869365B7ECD9A",
+      "lines": "65-77,101-118,182-187",
+      "reading": "Derive the relation/fibre from the bound operands; no A3 entity-lift substitution, no supplied absent operation; re-entry and replay/DRC qualification before the fold commit."
+    }
+  ],
+  "remaining_correspondence": {
+    "name": "O_COORDINATE_FIBRE_ACTION_OFFER_CORRESPONDENCE",
+    "subject": "OFFERED_READINGS(g2) = all constant THIS/NO assignments on exactly one coordinate fibre, retaining all other flags",
+    "status": "MAYBE: not discharged by equality of overlap involutions and coordinate projections; those have distinct types and fibres.",
+    "not_a_DECIDE_request": "The remaining item is a source-bound construction/exclusion witness, not an arbitrary choice of the unique diagnostic output.",
+    "not_an_admission_rerun": "The current world g2 remains admitted and committed. No digital-shell constructor is involved."
+  },
+  "commit_authorization": "The current user request authorizes a link3 commit if the claimed forced construction is witnessed; no further permission question is introduced.",
+  "worldline": "No diagnostic counterfactual is appended merely from its receipt or family uniqueness."
+}

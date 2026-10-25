@@ -1,0 +1,25 @@
+[
+  {
+    "cmd": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+      "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\qualification_002\\source.mal",
+      "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\qualification_002\\image"
+    ],
+    "status": 0,
+    "stdout": "{\"source_sha256\":\"EF56DC4570F1DE4390F7DE27FAFA70530C401745E113B9D78BC9BCB5BC6883EA\",\"image_sha256\":\"753F584F59826E2C9DC5489FEDD32FD5B9F1EAE790A833BDE4E35264D09E15B6\",\"patterns\":555,\"seeds\":180,\"rules\":7}\n",
+    "stderr": ""
+  },
+  {
+    "cmd": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+    "args": [
+      "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\qualification_002\\image\\image.bin",
+      "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_authority_contact_012\\qualification_002\\run\\readback.bin",
+      "--fact-capacity",
+      "16384"
+    ],
+    "status": 1,
+    "stdout": "",
+    "stderr": "memory allocated_device_bytes=269062496 fact_capacity=16384 term_capacity=4194304 mapped_telemetry_bytes=33837216 stack_requested_per_thread=8192 stack_actual_per_thread=8192 free_before_bytes=7458521088 free_after_bytes=6676283392 resident_stack_upper_estimate=578813952\r\noutput custody\r\n"
+  }
+]
