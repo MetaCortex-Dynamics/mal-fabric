@@ -1,0 +1,184 @@
+{
+  "scope": "GENERIC_SHA256_ONLY; NATIVE_REQUEST_SUBJECTS; APPEND_ONLY_RESPONSE_SEEDS",
+  "script": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\commit\\finish.mjs",
+    "bytes": 11639,
+    "sha256": "9875705B9561F6025B02C01F24E0308CE5A37D1B9CD241FFDACB1DB40A545178"
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "stage": {
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_initial\\stage\\readback.bin",
+          "bytes": 369098784,
+          "sha256": "5736555A678ECECF9108E32434263FB36A18989A041AD8D5970B6805C42C2078"
+        },
+        "map": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_initial\\stage\\source-map.json",
+          "bytes": 337586673,
+          "sha256": "581ED5A969F88AD981A37EABA21CA154B45A2EE933758359F87EA28B4BDCD94E"
+        },
+        "image": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_initial\\stage\\image.bin",
+          "bytes": 41992208,
+          "sha256": "23891B0D2152A5ED70C4FFAAA3FD583C3B442C702A249A23F81D3C09B51C2206"
+        },
+        "source": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_initial\\input.mal",
+          "bytes": 4824310,
+          "sha256": "68158012A81764ECE1BE114293ECDD926141B09A10BEA5AD987C25B7191F07BA"
+        }
+      },
+      "response_count_before": 0,
+      "new_responses": 2,
+      "total_responses": 2,
+      "continuation_guard": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_00\\stage\\GUARD.json",
+        "bytes": 1140,
+        "sha256": "33B86E60593BD53E8DA85EFFDA372A13760354FC81ED923E6E9A9D08A98B8330"
+      }
+    },
+    {
+      "round": 1,
+      "stage": {
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_00\\stage\\readback.bin",
+          "bytes": 369098784,
+          "sha256": "31B10BC4FB0C7290469853D4431A70A9769D5FA76C7F70E846B36B2EFABD1157"
+        },
+        "map": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_00\\stage\\source-map.json",
+          "bytes": 338739014,
+          "sha256": "990454521035DCA046749E5D410BA0AFBCA8910805130B0437AFCF0AF4368C0C"
+        },
+        "image": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_00\\stage\\image.bin",
+          "bytes": 41992208,
+          "sha256": "47FA9C712E93056443AD4460870E7C76F1F201352E082AD25E90CEAE7BD1B82D"
+        },
+        "source": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_00\\input.mal",
+          "bytes": 4824493,
+          "sha256": "D68CB4EBCEAB821B095C064B61146142C399F2AEB1DBBF5D494754202A7F3F8D"
+        }
+      },
+      "response_count_before": 2,
+      "new_responses": 2,
+      "total_responses": 4,
+      "continuation_guard": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_01\\stage\\GUARD.json",
+        "bytes": 1140,
+        "sha256": "C53F20DB9E5284B3E9FFEDE5328A0D0D7BCAB731F38A77D57117174C22050FF6"
+      }
+    },
+    {
+      "round": 2,
+      "stage": {
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_01\\stage\\readback.bin",
+          "bytes": 369098784,
+          "sha256": "8198046F1A3D584DC64C20B728696794F02A8AF32A9CE513FC0CBDA393D1C2FA"
+        },
+        "map": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_01\\stage\\source-map.json",
+          "bytes": 339399946,
+          "sha256": "F7C395F65B41374058D50CBF709BD2E88F239E0114387D53FF8404EBBED96F6B"
+        },
+        "image": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_01\\stage\\image.bin",
+          "bytes": 41992208,
+          "sha256": "FDB3F475D0B37FE2BE855949F0A9CDAF8DE432A3B70C7BB9E5BCE0C568A2E7F9"
+        },
+        "source": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_01\\input.mal",
+          "bytes": 4824611,
+          "sha256": "1BD195C981C3A840FE6F4092895127A4155F5BB0671C25E1BB8569EB5B00ABB7"
+        }
+      },
+      "response_count_before": 4,
+      "new_responses": 1,
+      "total_responses": 5,
+      "continuation_guard": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_02\\stage\\GUARD.json",
+        "bytes": 1140,
+        "sha256": "6899ECC846C8C7330ABA885BD4D2E9EE3DFCDD87E5CEF65C6295903A7E1227AA"
+      }
+    },
+    {
+      "round": 3,
+      "stage": {
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_02\\stage\\readback.bin",
+          "bytes": 369098784,
+          "sha256": "35DEB3567F209431DD728551E966B221AB6DF892C3079CEA54DE8D3BF8C8E239"
+        },
+        "map": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_02\\stage\\source-map.json",
+          "bytes": 340104251,
+          "sha256": "4F3A4DE7C8B311DF7F1D31E1A3B636EC5BC439FD7091F62C864D7AB1705DADBF"
+        },
+        "image": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_02\\stage\\image.bin",
+          "bytes": 41992208,
+          "sha256": "FE3F68AEAE3DC0DB9F5C4FF2584196A4533F248A18FEFD49091D233F91729407"
+        },
+        "source": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed_round_02\\input.mal",
+          "bytes": 4824670,
+          "sha256": "2809F6DEEEA577FCC38C813507F5BD16905FEDD2898335FB7834BCD64BCC60DC"
+        }
+      },
+      "response_count_before": 5,
+      "new_responses": 0,
+      "total_responses": 5
+    }
+  ],
+  "requests": [
+    {
+      "round": 0,
+      "fact": 11078,
+      "origin": "P20_C_SOURCE_PAIR_REQUEST",
+      "support": [
+        6790
+      ],
+      "subject_sha256": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9"
+    },
+    {
+      "round": 0,
+      "fact": 11079,
+      "origin": "P20_C_SOURCE_HEAD_REQUEST",
+      "support": [
+        6789
+      ],
+      "subject_sha256": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386"
+    },
+    {
+      "round": 1,
+      "fact": 630886,
+      "origin": "P20_C_PAIR_REQUEST",
+      "support": [
+        630883
+      ],
+      "subject_sha256": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5"
+    },
+    {
+      "round": 1,
+      "fact": 630887,
+      "origin": "P20_C_RECEIPT_REQUEST",
+      "support": [
+        630884
+      ],
+      "subject_sha256": "a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd"
+    },
+    {
+      "round": 2,
+      "fact": 630896,
+      "origin": "P20_C_TICK_REQUEST",
+      "support": [
+        630895
+      ],
+      "subject_sha256": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c"
+    }
+  ]
+}

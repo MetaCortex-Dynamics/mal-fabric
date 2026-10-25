@@ -1,0 +1,102 @@
+{
+  "variant": "missing_return",
+  "initialStage": {
+    "readbackDirectory": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_initial\\stage",
+    "mapPath": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_initial\\stage\\source-map.json",
+    "imagePath": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_initial\\stage\\image.bin",
+    "sourcePath": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_initial\\input.mal"
+  },
+  "finalStage": {
+    "readbackDirectory": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_round_00\\stage",
+    "mapPath": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_round_00\\stage\\source-map.json",
+    "imagePath": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_round_00\\stage\\image.bin",
+    "sourcePath": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_round_00\\input.mal",
+    "guardReportPath": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_round_00\\stage\\GUARD.json"
+  },
+  "observation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return.OBSERVATIONS.json",
+    "bytes": 70997684,
+    "sha256": "F20FE5529C2514C5251D422C736D45AB6E735D9C8BF55E31B82A5783EC0835D1"
+  },
+  "hash_service": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_hash_service\\HASH_SERVICE_CUSTODY.json",
+    "bytes": 4174,
+    "sha256": "3C7C218640FACEC07AA321680F0733ACE686EB17F91F70188CBC897282EBDAB8"
+  },
+  "response_count": 2,
+  "rounds": [
+    {
+      "round": 0,
+      "stage": {
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_initial\\stage\\readback.bin",
+          "bytes": 369098784,
+          "sha256": "DB002F6894CDD800669F1F59E4812151B31E60480C00C7BEF9473B735CEA93F7"
+        },
+        "map": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_initial\\stage\\source-map.json",
+          "bytes": 333622600,
+          "sha256": "8C559C15EFF9245BC2440C4CDB46225B3515E4119EA63797387732C1CC924535"
+        },
+        "image": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_initial\\stage\\image.bin",
+          "bytes": 41992208,
+          "sha256": "7A274982715C31E997316369C6F35BCDA25F0A89E8236138180E6BF6F6D772E6"
+        },
+        "source": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_initial\\input.mal",
+          "bytes": 4824258,
+          "sha256": "3E064C0D38BA98601720272A80CF999ECBFDFF81CA6AEBB833A93DE8FD59A259"
+        }
+      },
+      "response_count_before": 0,
+      "new_responses": 2,
+      "total_responses": 2,
+      "continuation_guard": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_round_00\\stage\\GUARD.json",
+        "bytes": 1138,
+        "sha256": "B66594A3BCD3A0AFC45E77916427683F61EE4370EC6D7ADA6BCA63951F6614CC"
+      }
+    },
+    {
+      "round": 1,
+      "stage": {
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_round_00\\stage\\readback.bin",
+          "bytes": 369098784,
+          "sha256": "543984711C439C11650E76EEFD1E84F35690CC7EC62BDAC7E14E04A205963D20"
+        },
+        "map": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_round_00\\stage\\source-map.json",
+          "bytes": 334767579,
+          "sha256": "B457025922BEBAAE9D0A9AB6FEDFCBED81D16B67271E85233785436514CB7884"
+        },
+        "image": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_round_00\\stage\\image.bin",
+          "bytes": 41992208,
+          "sha256": "B646C58F2FCA02A7DCC28F6BEF60ADA33BCA3CAA86F8BA5308A4B551E54683CE"
+        },
+        "source": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return_round_00\\input.mal",
+          "bytes": 4824441,
+          "sha256": "9A928530EE0A1C43BB81A5C194C7A64089B555B2E698C59E70979CDC954D1AB3"
+        }
+      },
+      "response_count_before": 2,
+      "new_responses": 0,
+      "total_responses": 2
+    }
+  ],
+  "closure_sha256": "1B473B6A15D87E0A57EDE73AA122192F2B350735D223BC05AEC35B1EAF4F5766",
+  "environment": {
+    "node": "v22.20.0",
+    "platform": "win32",
+    "architecture": "x64",
+    "heap_limit_request_mib": 8192,
+    "capacity": 4194304,
+    "term_capacity": 4194304,
+    "readback_bytes": 369098784,
+    "output_volume_free_bytes": 1576560132096,
+    "scope": "Execution capacity/custody only; no semantic input selection"
+  }
+}

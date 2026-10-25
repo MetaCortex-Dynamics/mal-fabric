@@ -1,0 +1,602 @@
+{
+  "schema": "RUN_RECORD_TEST_P_020",
+  "date": "2026-10-25",
+  "verdict": "IF_THEN",
+  "terminal": "MOVED",
+  "subject": "GPU-owned pair-world proposer re-entry: g2 -> one committed successor -> renewed PROPOSE on that RETURNED pair",
+  "scope": {
+    "offer_domain": "1924 incidence-fibre assignments, exact native inventory and complete receipts on both states",
+    "ticks": "First tick commits link 3; second pass enumerates and witnesses K empty; no second link appended",
+    "not_claimed": [
+      "Unbounded autonomous execution",
+      "Full FABRIC_STATE phase recurrence",
+      "Fixed four-tick period",
+      "Resonance or K-admissible outward/back cycle",
+      "New law promotion"
+    ]
+  },
+  "authority": {
+    "request": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\REQUEST.json",
+      "bytes": 2076,
+      "sha256": "473B6A01C5865DA8C691B0C14BB2E0CD6E4AF17302EF036286502F5C55059118"
+    },
+    "promote_binding": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\RECORD_J17_TICK_PROMOTE_BINDING_013.mal",
+      "bytes": 3717,
+      "sha256": "2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4"
+    }
+  },
+  "input": {
+    "world": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    "pair_hash": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+    "prior_head": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+    "links": 2
+  },
+  "output": {
+    "world": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\committed.world.json",
+      "bytes": 763526,
+      "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88"
+    },
+    "pair_hash": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+    "link": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+    "prev": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+    "links": 3,
+    "field": {
+      "THIS": 0,
+      "NO": 480
+    },
+    "witness": {
+      "SAME": 720,
+      "NOT_SAME": 0
+    },
+    "receipt": {
+      "discharged": 12,
+      "opened": 0,
+      "retained": 0,
+      "reading": "THIS",
+      "sha256": "a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd"
+    },
+    "changed": [
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09"
+          ],
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09"
+          ],
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09",
+            "D:HW_04"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09"
+          ],
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09"
+          ],
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09",
+            "D:HW_04"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09"
+          ],
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09"
+          ],
+          [
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09",
+            "D:HW_09"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09"
+          ],
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09"
+          ],
+          [
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09",
+            "D:HW_09"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "D:HW_04"
+          ],
+          [
+            "C:HW_04|HW_05",
+            "C:HW_04|HW_09",
+            "D:HW_04"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "D:HW_04"
+          ],
+          [
+            "C:HW_04|HW_08",
+            "C:HW_04|HW_09",
+            "D:HW_04"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "D:HW_09"
+          ],
+          [
+            "C:HW_04|HW_09",
+            "C:HW_05|HW_09",
+            "D:HW_09"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      },
+      {
+        "flag": [
+          "C:HW_04|HW_09",
+          [
+            "C:HW_04|HW_09",
+            "D:HW_09"
+          ],
+          [
+            "C:HW_04|HW_09",
+            "C:HW_08|HW_09",
+            "D:HW_09"
+          ]
+        ],
+        "from": "THIS",
+        "to": "NO"
+      }
+    ]
+  },
+  "proposer": {
+    "O1": {
+      "source_pair_hash": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+      "member_domain_sha256": "ab9808f3155221b65c4504ccb888a4b1207b6f7d68bf6a2dd0a91490c1a187da",
+      "content_sha256": "8fc654cebe780365795823198ebb91a7bf55eeba079376fb23d0f42b27639a66",
+      "receipt_content_sha256": "410a4fc363128835a9526d9527ea436f5bc0c43b1bc5938aa72216dd2befa8e2"
+    },
+    "O2": {
+      "source_pair_hash": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+      "member_domain_sha256": "ab9808f3155221b65c4504ccb888a4b1207b6f7d68bf6a2dd0a91490c1a187da",
+      "content_sha256": "0d04e54e5d63a5f39c82999a6cd4a4e881099ad54a72483a8513711d4dd37bca",
+      "receipt_content_sha256": "85c8e86f62196e04a873decad359a7f3d93e6d94b7fe7f1b73e395d72dc0d82d"
+    },
+    "offer_hash_subject": "Source pair identity, member assignment and exact receipts; excludes tick hashes and context constructors",
+    "offer_comparison": {
+      "member_domain": "SAME",
+      "content": "NOT-SAME",
+      "receipts": "NOT-SAME"
+    },
+    "first_K": 1,
+    "second_K": 0,
+    "native_cardinality": [
+      {
+        "trial": "G2",
+        "count": 1,
+        "reading": "ONE",
+        "root": {
+          "fact": 623150,
+          "origin": "P20_K_ONE_RIGHT",
+          "rank": 66,
+          "support": [
+            194913,
+            623059,
+            623060
+          ]
+        },
+        "member": "SITE(\"C:HW_04|HW_09\",\"NO\")"
+      },
+      {
+        "trial": "RETURNED(G2,SITE(\"C:HW_04|HW_09\",\"NO\"))",
+        "count": 0,
+        "reading": "ZERO",
+        "root": {
+          "fact": 821957,
+          "origin": "P20_K_ZERO_JOIN",
+          "rank": 1581,
+          "support": [
+            194913,
+            821953,
+            821956
+          ]
+        },
+        "member": null
+      }
+    ],
+    "second_trial": "RETURNED(G2,SITE(\"C:HW_04|HW_09\",\"NO\"))",
+    "native_return": {
+      "fact": 630902,
+      "origin": "P20_C_COMMITTED_RETURN",
+      "support": [
+        628476,
+        630901,
+        630899
+      ]
+    },
+    "native_world": {
+      "fact": 632105,
+      "origin": "P20_C_COMMITTED_WORLD",
+      "support": [
+        630902,
+        630901
+      ]
+    },
+    "proof_validation": {
+      "facts": 821959,
+      "native_facts": 820091,
+      "source_facts": 1868,
+      "antecedents": "SAME",
+      "consequents": "SAME",
+      "rank": "SAME",
+      "source_image_seeds": "SAME",
+      "support_precedence": "SAME"
+    },
+    "hash_service": {
+      "requests": 5,
+      "subjects": 5,
+      "responses": 5,
+      "pending_subjects": 0,
+      "canonical_subject_hashes": "SAME",
+      "no_unrequested_responses": "SAME",
+      "rows": [
+        {
+          "digest": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+          "proof": {
+            "fact": 628468,
+            "origin": "P20_C_HASH_ROW",
+            "rank": 1,
+            "support": [
+              628466
+            ]
+          },
+          "requests": [
+            {
+              "fact": 11078,
+              "origin": "P20_C_SOURCE_PAIR_REQUEST",
+              "rank": 3,
+              "support": [
+                6790
+              ]
+            }
+          ]
+        },
+        {
+          "digest": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+          "proof": {
+            "fact": 628469,
+            "origin": "P20_C_HASH_ROW",
+            "rank": 1,
+            "support": [
+              628467
+            ]
+          },
+          "requests": [
+            {
+              "fact": 11079,
+              "origin": "P20_C_SOURCE_HEAD_REQUEST",
+              "rank": 3,
+              "support": [
+                6789
+              ]
+            }
+          ]
+        },
+        {
+          "digest": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+          "proof": {
+            "fact": 630890,
+            "origin": "P20_C_HASH_ROW",
+            "rank": 1,
+            "support": [
+              630888
+            ]
+          },
+          "requests": [
+            {
+              "fact": 630886,
+              "origin": "P20_C_PAIR_REQUEST",
+              "rank": 1547,
+              "support": [
+                630883
+              ]
+            }
+          ]
+        },
+        {
+          "digest": "a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd",
+          "proof": {
+            "fact": 630891,
+            "origin": "P20_C_HASH_ROW",
+            "rank": 1,
+            "support": [
+              630889
+            ]
+          },
+          "requests": [
+            {
+              "fact": 630887,
+              "origin": "P20_C_RECEIPT_REQUEST",
+              "rank": 1547,
+              "support": [
+                630884
+              ]
+            }
+          ]
+        },
+        {
+          "digest": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+          "proof": {
+            "fact": 630898,
+            "origin": "P20_C_HASH_ROW",
+            "rank": 1,
+            "support": [
+              630897
+            ]
+          },
+          "requests": [
+            {
+              "fact": 630896,
+              "origin": "P20_C_TICK_REQUEST",
+              "rank": 1551,
+              "support": [
+                630895
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "proof_custody": "All native facts checked against image rules and supports in bound raw readback; compact ancestry export covers its named roots, not the entire closure"
+  },
+  "qualification": {
+    "artifact": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\QUALIFICATION.json",
+      "bytes": 16998,
+      "sha256": "1B126165B3A05833FE6379623BB0618981462A649839C051C56133795A97BAE6"
+    },
+    "replay_readbacks": "SAME",
+    "reversed_declaration_closure": "SAME",
+    "controls": [
+      {
+        "variant": "missing_return",
+        "result": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return.RESULT.json",
+          "bytes": 6191,
+          "sha256": "2DB17AEAE0CA0EBC894E6A731EE794DF6521E411A7CA9CCA3B1F703B663238F6"
+        },
+        "observation": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return.OBSERVATIONS.json",
+          "bytes": 70997684,
+          "sha256": "F20FE5529C2514C5251D422C736D45AB6E735D9C8BF55E31B82A5783EC0835D1"
+        },
+        "first_K": 1,
+        "second_K": null,
+        "second_trial": null,
+        "offer_comparison": {
+          "member_domain": "MAYBE",
+          "content": "MAYBE",
+          "receipts": "MAYBE"
+        }
+      },
+      {
+        "variant": "missing_k_root",
+        "result": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root.RESULT.json",
+          "bytes": 6191,
+          "sha256": "6F6F222F5D5B404D327546E6E078A82EC5FB9B8F71036BA2D63C0A84CA53B54C"
+        },
+        "observation": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root.OBSERVATIONS.json",
+          "bytes": 70515938,
+          "sha256": "3E55E3933C483F6BF8AC26ECB003215E68F523F1B0DEF4EBBCB0D2285900982C"
+        },
+        "first_K": 1,
+        "second_K": null,
+        "second_trial": null,
+        "offer_comparison": {
+          "member_domain": "MAYBE",
+          "content": "MAYBE",
+          "receipts": "MAYBE"
+        }
+      },
+      {
+        "variant": "reload_g2",
+        "result": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reload_g2.RESULT.json",
+          "bytes": 9693,
+          "sha256": "F8B9CB152BC7F7FE5972E1272170F281C3C056A23CD541FB32B5E038945F7090"
+        },
+        "observation": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reload_g2.OBSERVATIONS.json",
+          "bytes": 144356100,
+          "sha256": "8266BF30F04496052047A5C6A32C2F4012CD4769B2C11193CD9564F8334407FB"
+        },
+        "first_K": 1,
+        "second_K": 1,
+        "second_trial": "RELOADED_G2",
+        "offer_comparison": {
+          "member_domain": "SAME",
+          "content": "SAME",
+          "receipts": "SAME"
+        }
+      }
+    ],
+    "commit_controls": {
+      "altered_member": "WITHHELD",
+      "wrong_head": "WITHHELD"
+    },
+    "independent_receipts": [
+      {
+        "trial": "G2",
+        "comparison": "SAME",
+        "offers": 1924,
+        "overlaps_per_offer": 720,
+        "receipt_rows_sha256": "d743eeb571745fd3827a1f994b3bc5a7de20dea8a904897f805e5d4bb2432001",
+        "scope": "Independent observer recomputation from this native input pair and exact inventory member extents; not a runtime input"
+      },
+      {
+        "trial": "RETURNED(G2,SITE(\"C:HW_04|HW_09\",\"NO\"))",
+        "comparison": "SAME",
+        "offers": 1924,
+        "overlaps_per_offer": 720,
+        "receipt_rows_sha256": "76730518fbc78e2f888479f56f29452c255f645d81e30e491dd643cccb761b17",
+        "scope": "Independent observer recomputation from this native input pair and exact inventory member extents; not a runtime input"
+      }
+    ]
+  },
+  "custody": {
+    "before": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\CUSTODY_BEFORE.json",
+      "bytes": 1811,
+      "sha256": "F8E6178ABC8F8FE9A16B60D8E87E2AD3FD1C9749B1B5C6BBA64C1C4BCF288C1F"
+    },
+    "after": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\CUSTODY_AFTER.json",
+      "bytes": 1543,
+      "sha256": "7369789F92DD7F4894B3B5B63EBADC54D1FBFD3B16BBC876E85CA3DF0F85C104"
+    },
+    "frozen_files": 901,
+    "frozen_comparison": "SAME",
+    "original_g2": "SAME",
+    "git": {
+      "branch": "review/fold-realization-j17-link-3-001",
+      "head": "67f16aaa212a747012a6eec1a192517c66a64717",
+      "commit": "NOT_RUN",
+      "push": "NOT_RUN"
+    },
+    "board_action": "NOT_RUN",
+    "law_promotion": "NOT_RUN"
+  },
+  "artifacts": {
+    "manifest": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\SHA256_MANIFEST_TEST_P_020.json",
+      "bytes": 84737,
+      "sha256": "58221F7E8800A04F3BBCB7318E1CB57BF86E519AED9AA5227E9CE4EE1FFA1585"
+    },
+    "file_count": 279,
+    "normal": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal.RESULT.json",
+      "bytes": 9599,
+      "sha256": "DFA1D1B60842BC414900132788650377AD380344CDE6A7E193BB2E8B248644E0"
+    },
+    "observations": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal.OBSERVATIONS.json",
+      "bytes": 97435550,
+      "sha256": "B0E6111E7B8411B74623773651490DF5A37DF98352F88BEE7B7D1B1BB563E8F4"
+    },
+    "native_commit": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\NATIVE_COMMIT.json",
+      "bytes": 2820,
+      "sha256": "B8ECB27EC441FE2CBB85FF38467E8D93D92DC618E5E2E39C1F5D80A9B024C27F"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+// Test P's own pair-world commit. Not a LocalSection grant, not an A3 lift,
+// not the old 18-cell NO_FLAG_WRITE program, and not full FABRIC_STATE.
+// Inputs are byte-bound by finish.mjs. No returned reading is a host seed.
+// P20_RETURN already carries native full-field/full-witness coverage.
+// The folds below render those exact native rows in the archived g2 order.
+// The hash service only hashes native request subjects; no effect or verdict.
+// All native TICK fields are C23 :93-102 except execution_source replaces the
+// optional fabric_program slot: source custody is NOT geometric program ID.
+
+@readonly input P20_COMMIT_WORLD := "commit_world:";
+@readonly input P20_COMMIT_EXECUTION_SOURCE := "commit_execution_source:";
+@readonly input P20_COMMIT_EXPECTED_RECEIPT := "commit_binding:/binding/receipt";
+@readonly input P20_COMMIT_EXPECTED_SITE := "commit_binding:/binding/enactment/site";
+@readonly input P20_COMMIT_EXPECTED_READING := "commit_binding:/binding/enactment/reading";
+@readonly input P20_COMMIT_EXPECTED_PAIR := "commit_binding:/binding/successor_identity/pair_hash";
+@readonly input P20_COMMIT_EXPECTED_RECEIPT_HASH := "commit_binding:/binding/receipt_hash";
+@readonly input P20_COMMIT_EXPECTED_PREV := "commit_binding:/binding/prior_head";
+@readonly input P20_COMMIT_EXPECTED_WHENCE := "commit_binding:/binding/whence";
+@readonly input P20_COMMIT_EXPECTED_SOURCE_PAIR := "commit_binding:/binding/source/pair_hash";
+
+// One P20_COMMIT_HASH_ROW readonly seed is appended per native request response,
+// after ALL fixed laws. Prior rows remain identical in every continuation.
+law P20_C_HASH_ROW := IF THIS(P20_COMMIT_HASH_ROW,ARRAY(CONS(subject,CONS(digest,NIL)))) THEN GOES_WITH(GPU_HASH_RESPONSE,subject,digest);
+
+// Preserve the two archived entries as whole terms. The old head must also be
+// the SHA256 of its actual record; source-pair and raw-file bindings are distinct.
+law P20_C_SOURCE := IF THIS(P20_COMMIT_WORLD,OBJECT(CONS(MEMBER("chain",ARRAY(CONS(genesis,CONS(tick,NIL)))),CONS(MEMBER("field",field),CONS(MEMBER("receipt",receipt),CONS(MEMBER("witness",witness),NIL))))))
+ THEN GOES_WITH(P20_C_SOURCE,genesis,tick,field,witness);
+law P20_C_HEAD := IF GOES_WITH(P20_C_SOURCE,genesis,OBJECT(CONS(MEMBER("link",head),CONS(MEMBER("record",record),NIL))),field,witness)
+ THEN GOES_WITH(P20_C_HEAD,head,record);
+law P20_C_SOURCE_PAIR := IF GOES_WITH(P20_C_SOURCE,genesis,tick,field,witness)
+ THEN GOES_WITH(P20_C_SOURCE_PAIR,OBJECT(CONS(MEMBER("field",field),CONS(MEMBER("witness",witness),NIL))));
+law P20_C_SOURCE_PAIR_REQUEST := IF GOES_WITH(P20_C_SOURCE_PAIR,pair) THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_PAIR,SOURCE_G2,pair);
+law P20_C_SOURCE_HEAD_REQUEST := IF GOES_WITH(P20_C_HEAD,head,record) THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_TICK,SOURCE_G2_HEAD,record);
+law P20_C_SOURCE_CHECKED := IF GOES_WITH(P20_C_SOURCE_PAIR,pair), GOES_WITH(GPU_HASH_RESPONSE,pair,digest), THIS(P20_COMMIT_EXPECTED_SOURCE_PAIR,digest), GOES_WITH(P20_C_HEAD,head,record), GOES_WITH(GPU_HASH_RESPONSE,record,head), THIS(P20_COMMIT_EXPECTED_PREV,head), THIS(P20_COMMIT_EXPECTED_WHENCE,head)
+ THEN GOES_WITH(P20_C_SOURCE_CHECKED,head);
+// P20_SOURCE_ID is the pair identity, not the whole-file custody hash E447...
+law P20_C_CONTEXT_CHECKED := IF GOES_WITH(P20_RETURN,G2,RECORDED_PAIR(pairhash),m,q), THIS(P20_SOURCE_ID,pairhash), THIS(P20_COMMIT_EXPECTED_SOURCE_PAIR,pairhash), GOES_WITH(P20_C_SOURCE_CHECKED,head)
+ THEN GOES_WITH(P20_C_CONTEXT_CHECKED,G2,RECORDED_PAIR(pairhash),m,q,head);
+
+// No host selection: the singleton member must itself equal the recorded
+// SECTION_READING member. The two negative requests cannot cross this join.
+law P20_C_REQUEST := IF GOES_WITH(P20_C_CONTEXT_CHECKED,i,p,m,q,head) THEN GOES_WITH(P20_C_REQUEST,NORMAL,i,p,m,q,head);
+law P20_C_BAD_MEMBER_REQUEST := IF GOES_WITH(P20_C_CONTEXT_CHECKED,i,p,m,q,head), THIS(P20_COMMIT_EXPECTED_SITE,site) THEN GOES_WITH(P20_C_REQUEST,ALTERED_MEMBER,i,p,SITE(site,"THIS"),q,head);
+law P20_C_BAD_HEAD_REQUEST := IF GOES_WITH(P20_C_CONTEXT_CHECKED,i,p,m,q,head) THEN GOES_WITH(P20_C_REQUEST,WRONG_HEAD,i,p,m,q,"CONTROL_WRONG_HEAD");
+law P20_C_REQUEST_JOIN := IF GOES_WITH(P20_C_REQUEST,caseid,i,p,m,q,head), GOES_WITH(P20_C_CONTEXT_CHECKED,i,p,m,q,head), GOES_WITH(P20_UNIQUE,i,p,m), THIS(P20_COMMIT_EXPECTED_SITE,site), THIS(P20_COMMIT_EXPECTED_READING,reading), GOES_WITH(P20_RETURN,i,p,SITE(site,reading),q)
+ THEN GOES_WITH(P20_C_REQUEST_JOINED,caseid,i,p,m,q,head);
+law P20_C_GUARD := IF GOES_WITH(P20_C_REQUEST_JOINED,NORMAL,i,p,m,q,head) THEN GOES_WITH(P20_C_GUARD,i,p,m,q,head);
+
+// Native total field rendering. A missing, altered, or extra source row fails
+// its source-row join. No new order is chosen; the entire archived list is used.
+law P20_C_FIELD_BEGIN := IF GOES_WITH(P20_C_GUARD,i,p,m,q,head), GOES_WITH(P20_C_SOURCE,genesis,tick,ARRAY(rows),witness) THEN GOES_WITH(P20_C_FIELD_SCAN,i,m,rows);
+law P20_C_FIELD_TAIL := IF GOES_WITH(P20_C_FIELD_SCAN,i,m,CONS(ARRAY(CONS(f,CONS(old,NIL))),tail)), GOES_WITH(R1_SOURCE_FIELD,f,old) THEN GOES_WITH(P20_C_FIELD_SCAN,i,m,tail);
+law P20_C_FIELD_END := IF GOES_WITH(P20_C_FIELD_SCAN,i,m,NIL) THEN GOES_WITH(P20_C_FIELD_BUILD,i,m,NIL,NIL);
+law P20_C_FIELD_ROW := IF GOES_WITH(P20_C_FIELD_SCAN,i,m,CONS(ARRAY(CONS(f,CONS(old,NIL))),tail)), GOES_WITH(R1_SOURCE_FIELD,f,old), GOES_WITH(P20_EXEC_FIELD,i,m,f,reading), GOES_WITH(P20_C_FIELD_BUILD,i,m,tail,next)
+ THEN GOES_WITH(P20_C_FIELD_BUILD,i,m,CONS(ARRAY(CONS(f,CONS(old,NIL))),tail),CONS(ARRAY(CONS(f,CONS(reading,NIL))),next));
+law P20_C_FIELD_COMPLETE := IF GOES_WITH(P20_C_SOURCE,genesis,tick,ARRAY(rows),witness), GOES_WITH(P20_C_FIELD_BUILD,i,m,rows,next) THEN GOES_WITH(P20_C_FIELD_COMPLETE,i,m,ARRAY(next));
+
+// Witness and receipt are folded together from every old/new overlap reading.
+// The four branches are precisely A4's two readings before and after the step.
+law P20_C_WITNESS_BEGIN := IF GOES_WITH(P20_C_GUARD,i,p,m,q,head), GOES_WITH(P20_C_SOURCE,genesis,tick,field,ARRAY(rows)) THEN GOES_WITH(P20_C_WITNESS_SCAN,i,m,rows);
+law P20_C_WITNESS_TAIL := IF GOES_WITH(P20_C_WITNESS_SCAN,i,m,CONS(ARRAY(CONS(a,CONS(b,CONS(old,NIL)))),tail)), GOES_WITH(R1_SOURCE_WITNESS,a,b,old) THEN GOES_WITH(P20_C_WITNESS_SCAN,i,m,tail);
+law P20_C_WITNESS_END := IF GOES_WITH(P20_C_WITNESS_SCAN,i,m,NIL) THEN GOES_WITH(P20_C_WITNESS_BUILD,i,m,NIL,NIL,NIL,NIL,NIL);
+law P20_C_UNCHANGED := IF GOES_WITH(P20_C_WITNESS_SCAN,i,m,CONS(ARRAY(CONS(a,CONS(b,CONS("SAME",NIL)))),tail)), GOES_WITH(P20_EXEC_WITNESS,i,m,a,b,"SAME"), GOES_WITH(P20_C_WITNESS_BUILD,i,m,tail,ws,ds,os,rs)
+ THEN GOES_WITH(P20_C_WITNESS_BUILD,i,m,CONS(ARRAY(CONS(a,CONS(b,CONS("SAME",NIL)))),tail),CONS(ARRAY(CONS(a,CONS(b,CONS("SAME",NIL)))),ws),ds,os,rs);
+law P20_C_DISCHARGED := IF GOES_WITH(P20_C_WITNESS_SCAN,i,m,CONS(ARRAY(CONS(a,CONS(b,CONS("NOT_SAME",NIL)))),tail)), GOES_WITH(P20_EXEC_WITNESS,i,m,a,b,"SAME"), GOES_WITH(P20_C_WITNESS_BUILD,i,m,tail,ws,ds,os,rs)
+ THEN GOES_WITH(P20_C_WITNESS_BUILD,i,m,CONS(ARRAY(CONS(a,CONS(b,CONS("NOT_SAME",NIL)))),tail),CONS(ARRAY(CONS(a,CONS(b,CONS("SAME",NIL)))),ws),CONS(ARRAY(CONS(a,CONS(b,NIL))),ds),os,rs);
+law P20_C_OPENED := IF GOES_WITH(P20_C_WITNESS_SCAN,i,m,CONS(ARRAY(CONS(a,CONS(b,CONS("SAME",NIL)))),tail)), GOES_WITH(P20_EXEC_WITNESS,i,m,a,b,"NOT_SAME"), GOES_WITH(P20_C_WITNESS_BUILD,i,m,tail,ws,ds,os,rs)
+ THEN GOES_WITH(P20_C_WITNESS_BUILD,i,m,CONS(ARRAY(CONS(a,CONS(b,CONS("SAME",NIL)))),tail),CONS(ARRAY(CONS(a,CONS(b,CONS("NOT_SAME",NIL)))),ws),ds,CONS(ARRAY(CONS(a,CONS(b,NIL))),os),rs);
+law P20_C_RETAINED := IF GOES_WITH(P20_C_WITNESS_SCAN,i,m,CONS(ARRAY(CONS(a,CONS(b,CONS("NOT_SAME",NIL)))),tail)), GOES_WITH(P20_EXEC_WITNESS,i,m,a,b,"NOT_SAME"), GOES_WITH(P20_C_WITNESS_BUILD,i,m,tail,ws,ds,os,rs)
+ THEN GOES_WITH(P20_C_WITNESS_BUILD,i,m,CONS(ARRAY(CONS(a,CONS(b,CONS("NOT_SAME",NIL)))),tail),CONS(ARRAY(CONS(a,CONS(b,CONS("NOT_SAME",NIL)))),ws),ds,os,CONS(ARRAY(CONS(a,CONS(b,NIL))),rs));
+law P20_C_WITNESS_COMPLETE := IF GOES_WITH(P20_C_SOURCE,genesis,tick,field,ARRAY(rows)), GOES_WITH(P20_C_WITNESS_BUILD,i,m,rows,ws,ds,os,rs) THEN GOES_WITH(P20_C_WITNESS_COMPLETE,i,m,ARRAY(ws),ARRAY(ds),ARRAY(os),ARRAY(rs));
+law P20_C_PAIR := IF GOES_WITH(P20_C_GUARD,i,p,m,q,head), GOES_WITH(P20_C_FIELD_COMPLETE,i,m,field), GOES_WITH(P20_C_WITNESS_COMPLETE,i,m,witness,discharged,opened,retained)
+ THEN GOES_WITH(P20_C_PAIR,i,m,OBJECT(CONS(MEMBER("field",field),CONS(MEMBER("witness",witness),NIL))));
+law P20_C_RECEIPT := IF GOES_WITH(P20_C_WITNESS_COMPLETE,i,m,witness,discharged,opened,retained)
+ THEN GOES_WITH(P20_C_RECEIPT,i,m,OBJECT(CONS(MEMBER("discharged",discharged),CONS(MEMBER("opened",opened),NIL))));
+// RECEIPT_READING_001, first-tick v0.1.3 :350-354: content in either list -> THIS.
+law P20_C_RECEIPT_READING_DISCHARGED := IF GOES_WITH(P20_C_RECEIPT,i,m,OBJECT(CONS(MEMBER("discharged",ARRAY(CONS(x,xs))),CONS(MEMBER("opened",opened),NIL)))) THEN GOES_WITH(P20_C_RECEIPT_READING,i,m,"THIS");
+law P20_C_RECEIPT_READING_OPENED := IF GOES_WITH(P20_C_RECEIPT,i,m,OBJECT(CONS(MEMBER("discharged",discharged),CONS(MEMBER("opened",ARRAY(CONS(x,xs))),NIL)))) THEN GOES_WITH(P20_C_RECEIPT_READING,i,m,"THIS");
+law P20_C_RECEIPT_READING_EMPTY := IF GOES_WITH(P20_C_RECEIPT,i,m,OBJECT(CONS(MEMBER("discharged",ARRAY(NIL)),CONS(MEMBER("opened",ARRAY(NIL)),NIL)))) THEN GOES_WITH(P20_C_RECEIPT_READING,i,m,"NO");
+law P20_C_PAIR_REQUEST := IF GOES_WITH(P20_C_PAIR,i,m,pair) THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_PAIR,RETURN_PAIR(i,m),pair);
+law P20_C_RECEIPT_REQUEST := IF GOES_WITH(P20_C_RECEIPT,i,m,receipt) THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_RECEIPT,RETURN_PAIR(i,m),receipt);
+law P20_C_PAIR_BOUND := IF GOES_WITH(P20_C_PAIR,i,m,pair), GOES_WITH(GPU_HASH_RESPONSE,pair,digest), THIS(P20_COMMIT_EXPECTED_PAIR,digest) THEN GOES_WITH(P20_C_PAIR_BOUND,i,m,pair,digest);
+law P20_C_RECEIPT_BOUND := IF GOES_WITH(P20_C_RECEIPT,i,m,receipt), THIS(P20_COMMIT_EXPECTED_RECEIPT,receipt), GOES_WITH(GPU_HASH_RESPONSE,receipt,digest), THIS(P20_COMMIT_EXPECTED_RECEIPT_HASH,digest), GOES_WITH(P20_C_RECEIPT_READING,i,m,"THIS") THEN GOES_WITH(P20_C_RECEIPT_BOUND,i,m,receipt,digest,"THIS");
+
+// execution_source names exactly the .mal bundle producing this operation. Its
+// bytes identify code custody only; it is not a cells/routes program identifier.
+law P20_C_RECORD_PARTS := IF GOES_WITH(P20_C_PAIR_BOUND,i,m,OBJECT(CONS(MEMBER("field",field),CONS(MEMBER("witness",witness),NIL))),pairhash), GOES_WITH(P20_C_RECEIPT_BOUND,i,m,receipt,receipthash,reading)
+ THEN GOES_WITH(P20_C_RECORD_PARTS,i,m,PARTS(field,witness,receipt,pairhash,receipthash,reading));
+law P20_C_TICK_RECORD := IF GOES_WITH(P20_C_GUARD,i,p,m,q,head), GOES_WITH(P20_C_RECORD_PARTS,i,m,PARTS(field,witness,receipt,pairhash,receipthash,reading)), THIS(P20_COMMIT_EXECUTION_SOURCE,source)
+ THEN GOES_WITH(P20_C_TICK_RECORD,i,m,head,OBJECT(CONS(MEMBER("execution_source",source),CONS(MEMBER("field",field),CONS(MEMBER("kind","TICK"),CONS(MEMBER("pair_hash",pairhash),CONS(MEMBER("prev",head),CONS(MEMBER("receipt",receipt),CONS(MEMBER("receipt_hash",receipthash),CONS(MEMBER("receipt_reading",reading),CONS(MEMBER("witness",witness),NIL)))))))))));
+law P20_C_TICK_REQUEST := IF GOES_WITH(P20_C_TICK_RECORD,i,m,head,record) THEN GOES_WITH(GPU_HASH_REQUEST,WORLD_TICK,RETURN_PAIR(i,m),record);
+law P20_C_TICK_HASH := IF GOES_WITH(P20_C_TICK_RECORD,i,m,head,record), GOES_WITH(GPU_HASH_RESPONSE,record,digest) THEN GOES_WITH(P20_C_TICK_HASH,i,m,head,record,digest);
+law P20_C_TICK_ENTRY := IF GOES_WITH(P20_C_TICK_HASH,i,m,head,record,digest) THEN GOES_WITH(P20_C_TICK_ENTRY,i,m,head,OBJECT(CONS(MEMBER("link",digest),CONS(MEMBER("record",record),NIL))));
+law P20_C_WORLD := IF GOES_WITH(P20_C_SOURCE,genesis,prior,oldfield,oldwitness), GOES_WITH(P20_C_RECORD_PARTS,i,m,PARTS(field,witness,receipt,pairhash,receipthash,reading)), GOES_WITH(P20_C_TICK_ENTRY,i,m,head,tick)
+ THEN GOES_WITH(P20_C_WORLD,i,m,head,OBJECT(CONS(MEMBER("chain",ARRAY(CONS(genesis,CONS(prior,CONS(tick,NIL))))),CONS(MEMBER("field",field),CONS(MEMBER("receipt",receipt),CONS(MEMBER("witness",witness),NIL))))));
+law P20_C_COMMITTED_RETURN := IF GOES_WITH(P20_C_GUARD,i,p,m,q,head), GOES_WITH(P20_C_WORLD,i,m,head,world), GOES_WITH(P20_C_TICK_HASH,i,m,head,record,digest)
+ THEN GOES_WITH(P_COMMITTED_RETURN,i,p,m,q,head,digest);
+law P20_C_COMMITTED_WORLD := IF GOES_WITH(P_COMMITTED_RETURN,i,p,m,q,head,digest), GOES_WITH(P20_C_WORLD,i,m,head,world) THEN THIS(P20_COMMITTED_WORLD,world);

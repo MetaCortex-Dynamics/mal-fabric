@@ -1,0 +1,9762 @@
+{
+  "source_sha256": "B8AEDC68816012AC9819BD5162612C1DDEF0E014D61A4BB40BA87D52E1C3DDED",
+  "producer_sha256": "B39A9474CBC3F4BB1E0089C0CB725F6664F1E604CBE2C2D0697DE51671CE81EE",
+  "scope": "SOURCE_CUSTODY_ONLY_NOT_FABRIC_CONTAINMENT",
+  "offset_unit": "UTF8_BYTES",
+  "entries": [
+    {
+      "kind": "source",
+      "start": 0,
+      "end": 12450,
+      "parent": null
+    },
+    {
+      "kind": "input",
+      "start": 609,
+      "end": 661,
+      "parent": 0,
+      "name": "P20_COMMIT_WORLD",
+      "authority": "readonly"
+    },
+    {
+      "kind": "text",
+      "start": 645,
+      "end": 660,
+      "parent": 1,
+      "spelling": "\"commit_world:\"",
+      "position": 0
+    },
+    {
+      "kind": "input",
+      "start": 662,
+      "end": 736,
+      "parent": 0,
+      "name": "P20_COMMIT_EXECUTION_SOURCE",
+      "authority": "readonly"
+    },
+    {
+      "kind": "text",
+      "start": 709,
+      "end": 735,
+      "parent": 3,
+      "spelling": "\"commit_execution_source:\"",
+      "position": 0
+    },
+    {
+      "kind": "input",
+      "start": 737,
+      "end": 818,
+      "parent": 0,
+      "name": "P20_COMMIT_EXPECTED_RECEIPT",
+      "authority": "readonly"
+    },
+    {
+      "kind": "text",
+      "start": 784,
+      "end": 817,
+      "parent": 5,
+      "spelling": "\"commit_binding:/binding/receipt\"",
+      "position": 0
+    },
+    {
+      "kind": "input",
+      "start": 819,
+      "end": 904,
+      "parent": 0,
+      "name": "P20_COMMIT_EXPECTED_SITE",
+      "authority": "readonly"
+    },
+    {
+      "kind": "text",
+      "start": 863,
+      "end": 903,
+      "parent": 7,
+      "spelling": "\"commit_binding:/binding/enactment/site\"",
+      "position": 0
+    },
+    {
+      "kind": "input",
+      "start": 905,
+      "end": 996,
+      "parent": 0,
+      "name": "P20_COMMIT_EXPECTED_READING",
+      "authority": "readonly"
+    },
+    {
+      "kind": "text",
+      "start": 952,
+      "end": 995,
+      "parent": 9,
+      "spelling": "\"commit_binding:/binding/enactment/reading\"",
+      "position": 0
+    },
+    {
+      "kind": "input",
+      "start": 997,
+      "end": 1096,
+      "parent": 0,
+      "name": "P20_COMMIT_EXPECTED_PAIR",
+      "authority": "readonly"
+    },
+    {
+      "kind": "text",
+      "start": 1041,
+      "end": 1095,
+      "parent": 11,
+      "spelling": "\"commit_binding:/binding/successor_identity/pair_hash\"",
+      "position": 0
+    },
+    {
+      "kind": "input",
+      "start": 1097,
+      "end": 1188,
+      "parent": 0,
+      "name": "P20_COMMIT_EXPECTED_RECEIPT_HASH",
+      "authority": "readonly"
+    },
+    {
+      "kind": "text",
+      "start": 1149,
+      "end": 1187,
+      "parent": 13,
+      "spelling": "\"commit_binding:/binding/receipt_hash\"",
+      "position": 0
+    },
+    {
+      "kind": "input",
+      "start": 1189,
+      "end": 1270,
+      "parent": 0,
+      "name": "P20_COMMIT_EXPECTED_PREV",
+      "authority": "readonly"
+    },
+    {
+      "kind": "text",
+      "start": 1233,
+      "end": 1269,
+      "parent": 15,
+      "spelling": "\"commit_binding:/binding/prior_head\"",
+      "position": 0
+    },
+    {
+      "kind": "input",
+      "start": 1271,
+      "end": 1350,
+      "parent": 0,
+      "name": "P20_COMMIT_EXPECTED_WHENCE",
+      "authority": "readonly"
+    },
+    {
+      "kind": "text",
+      "start": 1317,
+      "end": 1349,
+      "parent": 17,
+      "spelling": "\"commit_binding:/binding/whence\"",
+      "position": 0
+    },
+    {
+      "kind": "input",
+      "start": 1351,
+      "end": 1445,
+      "parent": 0,
+      "name": "P20_COMMIT_EXPECTED_SOURCE_PAIR",
+      "authority": "readonly"
+    },
+    {
+      "kind": "text",
+      "start": 1402,
+      "end": 1444,
+      "parent": 19,
+      "spelling": "\"commit_binding:/binding/source/pair_hash\"",
+      "position": 0
+    },
+    {
+      "kind": "law",
+      "start": 1605,
+      "end": 1743,
+      "parent": 0,
+      "name": "P20_C_HASH_ROW"
+    },
+    {
+      "kind": "term",
+      "start": 1630,
+      "end": 1693,
+      "parent": 21,
+      "spelling": "THIS",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 1635,
+      "end": 1654,
+      "parent": 22,
+      "spelling": "P20_COMMIT_HASH_ROW",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 1655,
+      "end": 1692,
+      "parent": 22,
+      "spelling": "ARRAY",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 1661,
+      "end": 1691,
+      "parent": 24,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 1666,
+      "end": 1673,
+      "parent": 25,
+      "spelling": "subject",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 1674,
+      "end": 1690,
+      "parent": 25,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 1679,
+      "end": 1685,
+      "parent": 27,
+      "spelling": "digest",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 1686,
+      "end": 1689,
+      "parent": 27,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 1699,
+      "end": 1742,
+      "parent": 21,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 1709,
+      "end": 1726,
+      "parent": 30,
+      "spelling": "GPU_HASH_RESPONSE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 1727,
+      "end": 1734,
+      "parent": 30,
+      "spelling": "subject",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 1735,
+      "end": 1741,
+      "parent": 30,
+      "spelling": "digest",
+      "position": 2
+    },
+    {
+      "kind": "law",
+      "start": 1908,
+      "end": 2173,
+      "parent": 0,
+      "name": "P20_C_SOURCE"
+    },
+    {
+      "kind": "term",
+      "start": 1931,
+      "end": 2115,
+      "parent": 34,
+      "spelling": "THIS",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 1936,
+      "end": 1952,
+      "parent": 35,
+      "spelling": "P20_COMMIT_WORLD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 1953,
+      "end": 2114,
+      "parent": 35,
+      "spelling": "OBJECT",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 1960,
+      "end": 2113,
+      "parent": 37,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 1965,
+      "end": 2016,
+      "parent": 38,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 1972,
+      "end": 1979,
+      "parent": 39,
+      "spelling": "\"chain\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 1980,
+      "end": 2015,
+      "parent": 39,
+      "spelling": "ARRAY",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 1986,
+      "end": 2014,
+      "parent": 41,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 1991,
+      "end": 1998,
+      "parent": 42,
+      "spelling": "genesis",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 1999,
+      "end": 2013,
+      "parent": 42,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2004,
+      "end": 2008,
+      "parent": 44,
+      "spelling": "tick",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2009,
+      "end": 2012,
+      "parent": 44,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2017,
+      "end": 2112,
+      "parent": 38,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2022,
+      "end": 2043,
+      "parent": 47,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 2029,
+      "end": 2036,
+      "parent": 48,
+      "spelling": "\"field\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2037,
+      "end": 2042,
+      "parent": 48,
+      "spelling": "field",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2044,
+      "end": 2111,
+      "parent": 47,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2049,
+      "end": 2074,
+      "parent": 51,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 2056,
+      "end": 2065,
+      "parent": 52,
+      "spelling": "\"receipt\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2066,
+      "end": 2073,
+      "parent": 52,
+      "spelling": "receipt",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2075,
+      "end": 2110,
+      "parent": 51,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2080,
+      "end": 2105,
+      "parent": 55,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 2087,
+      "end": 2096,
+      "parent": 56,
+      "spelling": "\"witness\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2097,
+      "end": 2104,
+      "parent": 56,
+      "spelling": "witness",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2106,
+      "end": 2109,
+      "parent": 55,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2122,
+      "end": 2172,
+      "parent": 34,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 2132,
+      "end": 2144,
+      "parent": 60,
+      "spelling": "P20_C_SOURCE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2145,
+      "end": 2152,
+      "parent": 60,
+      "spelling": "genesis",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2153,
+      "end": 2157,
+      "parent": 60,
+      "spelling": "tick",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 2158,
+      "end": 2163,
+      "parent": 60,
+      "spelling": "field",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 2164,
+      "end": 2171,
+      "parent": 60,
+      "spelling": "witness",
+      "position": 4
+    },
+    {
+      "kind": "law",
+      "start": 2174,
+      "end": 2349,
+      "parent": 0,
+      "name": "P20_C_HEAD"
+    },
+    {
+      "kind": "term",
+      "start": 2195,
+      "end": 2308,
+      "parent": 66,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 2205,
+      "end": 2217,
+      "parent": 67,
+      "spelling": "P20_C_SOURCE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2218,
+      "end": 2225,
+      "parent": 67,
+      "spelling": "genesis",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2226,
+      "end": 2293,
+      "parent": 67,
+      "spelling": "OBJECT",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 2233,
+      "end": 2292,
+      "parent": 70,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2238,
+      "end": 2257,
+      "parent": 71,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 2245,
+      "end": 2251,
+      "parent": 72,
+      "spelling": "\"link\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2252,
+      "end": 2256,
+      "parent": 72,
+      "spelling": "head",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2258,
+      "end": 2291,
+      "parent": 71,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2263,
+      "end": 2286,
+      "parent": 75,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 2270,
+      "end": 2278,
+      "parent": 76,
+      "spelling": "\"record\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2279,
+      "end": 2285,
+      "parent": 76,
+      "spelling": "record",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2287,
+      "end": 2290,
+      "parent": 75,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2294,
+      "end": 2299,
+      "parent": 67,
+      "spelling": "field",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 2300,
+      "end": 2307,
+      "parent": 67,
+      "spelling": "witness",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 2315,
+      "end": 2348,
+      "parent": 66,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 2325,
+      "end": 2335,
+      "parent": 82,
+      "spelling": "P20_C_HEAD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2336,
+      "end": 2340,
+      "parent": 82,
+      "spelling": "head",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2341,
+      "end": 2347,
+      "parent": 82,
+      "spelling": "record",
+      "position": 2
+    },
+    {
+      "kind": "law",
+      "start": 2350,
+      "end": 2536,
+      "parent": 0,
+      "name": "P20_C_SOURCE_PAIR"
+    },
+    {
+      "kind": "term",
+      "start": 2378,
+      "end": 2428,
+      "parent": 86,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 2388,
+      "end": 2400,
+      "parent": 87,
+      "spelling": "P20_C_SOURCE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2401,
+      "end": 2408,
+      "parent": 87,
+      "spelling": "genesis",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2409,
+      "end": 2413,
+      "parent": 87,
+      "spelling": "tick",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 2414,
+      "end": 2419,
+      "parent": 87,
+      "spelling": "field",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 2420,
+      "end": 2427,
+      "parent": 87,
+      "spelling": "witness",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 2435,
+      "end": 2535,
+      "parent": 86,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 2445,
+      "end": 2462,
+      "parent": 93,
+      "spelling": "P20_C_SOURCE_PAIR",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2463,
+      "end": 2534,
+      "parent": 93,
+      "spelling": "OBJECT",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2470,
+      "end": 2533,
+      "parent": 95,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2475,
+      "end": 2496,
+      "parent": 96,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 2482,
+      "end": 2489,
+      "parent": 97,
+      "spelling": "\"field\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2490,
+      "end": 2495,
+      "parent": 97,
+      "spelling": "field",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2497,
+      "end": 2532,
+      "parent": 96,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2502,
+      "end": 2527,
+      "parent": 100,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 2509,
+      "end": 2518,
+      "parent": 101,
+      "spelling": "\"witness\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2519,
+      "end": 2526,
+      "parent": 101,
+      "spelling": "witness",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2528,
+      "end": 2531,
+      "parent": 100,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "law",
+      "start": 2537,
+      "end": 2666,
+      "parent": 0,
+      "name": "P20_C_SOURCE_PAIR_REQUEST"
+    },
+    {
+      "kind": "term",
+      "start": 2573,
+      "end": 2606,
+      "parent": 105,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 2583,
+      "end": 2600,
+      "parent": 106,
+      "spelling": "P20_C_SOURCE_PAIR",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2601,
+      "end": 2605,
+      "parent": 106,
+      "spelling": "pair",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2612,
+      "end": 2665,
+      "parent": 105,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 2622,
+      "end": 2638,
+      "parent": 109,
+      "spelling": "GPU_HASH_REQUEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2639,
+      "end": 2649,
+      "parent": 109,
+      "spelling": "WORLD_PAIR",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2650,
+      "end": 2659,
+      "parent": 109,
+      "spelling": "SOURCE_G2",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 2660,
+      "end": 2664,
+      "parent": 109,
+      "spelling": "pair",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 2667,
+      "end": 2803,
+      "parent": 0,
+      "name": "P20_C_SOURCE_HEAD_REQUEST"
+    },
+    {
+      "kind": "term",
+      "start": 2703,
+      "end": 2736,
+      "parent": 114,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 2713,
+      "end": 2723,
+      "parent": 115,
+      "spelling": "P20_C_HEAD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2724,
+      "end": 2728,
+      "parent": 115,
+      "spelling": "head",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2729,
+      "end": 2735,
+      "parent": 115,
+      "spelling": "record",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 2742,
+      "end": 2802,
+      "parent": 114,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 2752,
+      "end": 2768,
+      "parent": 119,
+      "spelling": "GPU_HASH_REQUEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2769,
+      "end": 2779,
+      "parent": 119,
+      "spelling": "WORLD_TICK",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2780,
+      "end": 2794,
+      "parent": 119,
+      "spelling": "SOURCE_G2_HEAD",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 2795,
+      "end": 2801,
+      "parent": 119,
+      "spelling": "record",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 2804,
+      "end": 3153,
+      "parent": 0,
+      "name": "P20_C_SOURCE_CHECKED"
+    },
+    {
+      "kind": "term",
+      "start": 2835,
+      "end": 2868,
+      "parent": 124,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 2845,
+      "end": 2862,
+      "parent": 125,
+      "spelling": "P20_C_SOURCE_PAIR",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2863,
+      "end": 2867,
+      "parent": 125,
+      "spelling": "pair",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2870,
+      "end": 2910,
+      "parent": 124,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 2880,
+      "end": 2897,
+      "parent": 128,
+      "spelling": "GPU_HASH_RESPONSE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2898,
+      "end": 2902,
+      "parent": 128,
+      "spelling": "pair",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2903,
+      "end": 2909,
+      "parent": 128,
+      "spelling": "digest",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 2912,
+      "end": 2956,
+      "parent": 124,
+      "spelling": "THIS",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 2917,
+      "end": 2948,
+      "parent": 132,
+      "spelling": "P20_COMMIT_EXPECTED_SOURCE_PAIR",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2949,
+      "end": 2955,
+      "parent": 132,
+      "spelling": "digest",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2958,
+      "end": 2991,
+      "parent": 124,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 2968,
+      "end": 2978,
+      "parent": 135,
+      "spelling": "P20_C_HEAD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 2979,
+      "end": 2983,
+      "parent": 135,
+      "spelling": "head",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 2984,
+      "end": 2990,
+      "parent": 135,
+      "spelling": "record",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 2993,
+      "end": 3033,
+      "parent": 124,
+      "spelling": "GOES_WITH",
+      "position": 4,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 3003,
+      "end": 3020,
+      "parent": 139,
+      "spelling": "GPU_HASH_RESPONSE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3021,
+      "end": 3027,
+      "parent": 139,
+      "spelling": "record",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3028,
+      "end": 3032,
+      "parent": 139,
+      "spelling": "head",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 3035,
+      "end": 3070,
+      "parent": 124,
+      "spelling": "THIS",
+      "position": 5,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 3040,
+      "end": 3064,
+      "parent": 143,
+      "spelling": "P20_COMMIT_EXPECTED_PREV",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3065,
+      "end": 3069,
+      "parent": 143,
+      "spelling": "head",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3072,
+      "end": 3109,
+      "parent": 124,
+      "spelling": "THIS",
+      "position": 6,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 3077,
+      "end": 3103,
+      "parent": 146,
+      "spelling": "P20_COMMIT_EXPECTED_WHENCE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3104,
+      "end": 3108,
+      "parent": 146,
+      "spelling": "head",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3116,
+      "end": 3152,
+      "parent": 124,
+      "spelling": "GOES_WITH",
+      "position": 7,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 3126,
+      "end": 3146,
+      "parent": 149,
+      "spelling": "P20_C_SOURCE_CHECKED",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3147,
+      "end": 3151,
+      "parent": 149,
+      "spelling": "head",
+      "position": 1
+    },
+    {
+      "kind": "law",
+      "start": 3233,
+      "end": 3509,
+      "parent": 0,
+      "name": "P20_C_CONTEXT_CHECKED"
+    },
+    {
+      "kind": "term",
+      "start": 3265,
+      "end": 3317,
+      "parent": 152,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 3275,
+      "end": 3285,
+      "parent": 153,
+      "spelling": "P20_RETURN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3286,
+      "end": 3288,
+      "parent": 153,
+      "spelling": "G2",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3289,
+      "end": 3312,
+      "parent": 153,
+      "spelling": "RECORDED_PAIR",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 3303,
+      "end": 3311,
+      "parent": 156,
+      "spelling": "pairhash",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3313,
+      "end": 3314,
+      "parent": 153,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 3315,
+      "end": 3316,
+      "parent": 153,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 3319,
+      "end": 3347,
+      "parent": 152,
+      "spelling": "THIS",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 3324,
+      "end": 3337,
+      "parent": 160,
+      "spelling": "P20_SOURCE_ID",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3338,
+      "end": 3346,
+      "parent": 160,
+      "spelling": "pairhash",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3349,
+      "end": 3395,
+      "parent": 152,
+      "spelling": "THIS",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 3354,
+      "end": 3385,
+      "parent": 163,
+      "spelling": "P20_COMMIT_EXPECTED_SOURCE_PAIR",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3386,
+      "end": 3394,
+      "parent": 163,
+      "spelling": "pairhash",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3397,
+      "end": 3433,
+      "parent": 152,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 3407,
+      "end": 3427,
+      "parent": 166,
+      "spelling": "P20_C_SOURCE_CHECKED",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3428,
+      "end": 3432,
+      "parent": 166,
+      "spelling": "head",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3440,
+      "end": 3508,
+      "parent": 152,
+      "spelling": "GOES_WITH",
+      "position": 4,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 3450,
+      "end": 3471,
+      "parent": 169,
+      "spelling": "P20_C_CONTEXT_CHECKED",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3472,
+      "end": 3474,
+      "parent": 169,
+      "spelling": "G2",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3475,
+      "end": 3498,
+      "parent": 169,
+      "spelling": "RECORDED_PAIR",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 3489,
+      "end": 3497,
+      "parent": 172,
+      "spelling": "pairhash",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3499,
+      "end": 3500,
+      "parent": 169,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 3501,
+      "end": 3502,
+      "parent": 169,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 3503,
+      "end": 3507,
+      "parent": 169,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "law",
+      "start": 3662,
+      "end": 3782,
+      "parent": 0,
+      "name": "P20_C_REQUEST"
+    },
+    {
+      "kind": "term",
+      "start": 3686,
+      "end": 3731,
+      "parent": 177,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 3696,
+      "end": 3717,
+      "parent": 178,
+      "spelling": "P20_C_CONTEXT_CHECKED",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3718,
+      "end": 3719,
+      "parent": 178,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3720,
+      "end": 3721,
+      "parent": 178,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 3722,
+      "end": 3723,
+      "parent": 178,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 3724,
+      "end": 3725,
+      "parent": 178,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 3726,
+      "end": 3730,
+      "parent": 178,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 3737,
+      "end": 3781,
+      "parent": 177,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 3747,
+      "end": 3760,
+      "parent": 185,
+      "spelling": "P20_C_REQUEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3761,
+      "end": 3767,
+      "parent": 185,
+      "spelling": "NORMAL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3768,
+      "end": 3769,
+      "parent": 185,
+      "spelling": "i",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 3770,
+      "end": 3771,
+      "parent": 185,
+      "spelling": "p",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 3772,
+      "end": 3773,
+      "parent": 185,
+      "spelling": "m",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 3774,
+      "end": 3775,
+      "parent": 185,
+      "spelling": "q",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 3776,
+      "end": 3780,
+      "parent": 185,
+      "spelling": "head",
+      "position": 6
+    },
+    {
+      "kind": "law",
+      "start": 3783,
+      "end": 3975,
+      "parent": 0,
+      "name": "P20_C_BAD_MEMBER_REQUEST"
+    },
+    {
+      "kind": "term",
+      "start": 3818,
+      "end": 3863,
+      "parent": 193,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 3828,
+      "end": 3849,
+      "parent": 194,
+      "spelling": "P20_C_CONTEXT_CHECKED",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3850,
+      "end": 3851,
+      "parent": 194,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3852,
+      "end": 3853,
+      "parent": 194,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 3854,
+      "end": 3855,
+      "parent": 194,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 3856,
+      "end": 3857,
+      "parent": 194,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 3858,
+      "end": 3862,
+      "parent": 194,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 3865,
+      "end": 3900,
+      "parent": 193,
+      "spelling": "THIS",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 3870,
+      "end": 3894,
+      "parent": 201,
+      "spelling": "P20_COMMIT_EXPECTED_SITE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3895,
+      "end": 3899,
+      "parent": 201,
+      "spelling": "site",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3906,
+      "end": 3974,
+      "parent": 193,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 3916,
+      "end": 3929,
+      "parent": 204,
+      "spelling": "P20_C_REQUEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 3930,
+      "end": 3944,
+      "parent": 204,
+      "spelling": "ALTERED_MEMBER",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3945,
+      "end": 3946,
+      "parent": 204,
+      "spelling": "i",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 3947,
+      "end": 3948,
+      "parent": 204,
+      "spelling": "p",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 3949,
+      "end": 3966,
+      "parent": 204,
+      "spelling": "SITE",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 3954,
+      "end": 3958,
+      "parent": 209,
+      "spelling": "site",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 3959,
+      "end": 3965,
+      "parent": 209,
+      "spelling": "\"THIS\"",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 3967,
+      "end": 3968,
+      "parent": 204,
+      "spelling": "q",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 3969,
+      "end": 3973,
+      "parent": 204,
+      "spelling": "head",
+      "position": 6
+    },
+    {
+      "kind": "law",
+      "start": 3976,
+      "end": 4125,
+      "parent": 0,
+      "name": "P20_C_BAD_HEAD_REQUEST"
+    },
+    {
+      "kind": "term",
+      "start": 4009,
+      "end": 4054,
+      "parent": 214,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4019,
+      "end": 4040,
+      "parent": 215,
+      "spelling": "P20_C_CONTEXT_CHECKED",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4041,
+      "end": 4042,
+      "parent": 215,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4043,
+      "end": 4044,
+      "parent": 215,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4045,
+      "end": 4046,
+      "parent": 215,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4047,
+      "end": 4048,
+      "parent": 215,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 4049,
+      "end": 4053,
+      "parent": 215,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 4060,
+      "end": 4124,
+      "parent": 214,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 4070,
+      "end": 4083,
+      "parent": 222,
+      "spelling": "P20_C_REQUEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4084,
+      "end": 4094,
+      "parent": 222,
+      "spelling": "WRONG_HEAD",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4095,
+      "end": 4096,
+      "parent": 222,
+      "spelling": "i",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4097,
+      "end": 4098,
+      "parent": 222,
+      "spelling": "p",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4099,
+      "end": 4100,
+      "parent": 222,
+      "spelling": "m",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 4101,
+      "end": 4102,
+      "parent": 222,
+      "spelling": "q",
+      "position": 5
+    },
+    {
+      "kind": "text",
+      "start": 4103,
+      "end": 4123,
+      "parent": 222,
+      "spelling": "\"CONTROL_WRONG_HEAD\"",
+      "position": 6
+    },
+    {
+      "kind": "law",
+      "start": 4126,
+      "end": 4462,
+      "parent": 0,
+      "name": "P20_C_REQUEST_JOIN"
+    },
+    {
+      "kind": "term",
+      "start": 4155,
+      "end": 4199,
+      "parent": 230,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4165,
+      "end": 4178,
+      "parent": 231,
+      "spelling": "P20_C_REQUEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4179,
+      "end": 4185,
+      "parent": 231,
+      "spelling": "caseid",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4186,
+      "end": 4187,
+      "parent": 231,
+      "spelling": "i",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4188,
+      "end": 4189,
+      "parent": 231,
+      "spelling": "p",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4190,
+      "end": 4191,
+      "parent": 231,
+      "spelling": "m",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 4192,
+      "end": 4193,
+      "parent": 231,
+      "spelling": "q",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 4194,
+      "end": 4198,
+      "parent": 231,
+      "spelling": "head",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 4201,
+      "end": 4246,
+      "parent": 230,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4211,
+      "end": 4232,
+      "parent": 239,
+      "spelling": "P20_C_CONTEXT_CHECKED",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4233,
+      "end": 4234,
+      "parent": 239,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4235,
+      "end": 4236,
+      "parent": 239,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4237,
+      "end": 4238,
+      "parent": 239,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4239,
+      "end": 4240,
+      "parent": 239,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 4241,
+      "end": 4245,
+      "parent": 239,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 4248,
+      "end": 4275,
+      "parent": 230,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4258,
+      "end": 4268,
+      "parent": 246,
+      "spelling": "P20_UNIQUE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4269,
+      "end": 4270,
+      "parent": 246,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4271,
+      "end": 4272,
+      "parent": 246,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4273,
+      "end": 4274,
+      "parent": 246,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4277,
+      "end": 4312,
+      "parent": 230,
+      "spelling": "THIS",
+      "position": 3,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4282,
+      "end": 4306,
+      "parent": 251,
+      "spelling": "P20_COMMIT_EXPECTED_SITE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4307,
+      "end": 4311,
+      "parent": 251,
+      "spelling": "site",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4314,
+      "end": 4355,
+      "parent": 230,
+      "spelling": "THIS",
+      "position": 4,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4319,
+      "end": 4346,
+      "parent": 254,
+      "spelling": "P20_COMMIT_EXPECTED_READING",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4347,
+      "end": 4354,
+      "parent": 254,
+      "spelling": "reading",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4357,
+      "end": 4403,
+      "parent": 230,
+      "spelling": "GOES_WITH",
+      "position": 5,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4367,
+      "end": 4377,
+      "parent": 257,
+      "spelling": "P20_RETURN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4378,
+      "end": 4379,
+      "parent": 257,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4380,
+      "end": 4381,
+      "parent": 257,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4382,
+      "end": 4400,
+      "parent": 257,
+      "spelling": "SITE",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4387,
+      "end": 4391,
+      "parent": 261,
+      "spelling": "site",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4392,
+      "end": 4399,
+      "parent": 261,
+      "spelling": "reading",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4401,
+      "end": 4402,
+      "parent": 257,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 4410,
+      "end": 4461,
+      "parent": 230,
+      "spelling": "GOES_WITH",
+      "position": 6,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 4420,
+      "end": 4440,
+      "parent": 265,
+      "spelling": "P20_C_REQUEST_JOINED",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4441,
+      "end": 4447,
+      "parent": 265,
+      "spelling": "caseid",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4448,
+      "end": 4449,
+      "parent": 265,
+      "spelling": "i",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4450,
+      "end": 4451,
+      "parent": 265,
+      "spelling": "p",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4452,
+      "end": 4453,
+      "parent": 265,
+      "spelling": "m",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 4454,
+      "end": 4455,
+      "parent": 265,
+      "spelling": "q",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 4456,
+      "end": 4460,
+      "parent": 265,
+      "spelling": "head",
+      "position": 6
+    },
+    {
+      "kind": "law",
+      "start": 4463,
+      "end": 4578,
+      "parent": 0,
+      "name": "P20_C_GUARD"
+    },
+    {
+      "kind": "term",
+      "start": 4485,
+      "end": 4536,
+      "parent": 273,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4495,
+      "end": 4515,
+      "parent": 274,
+      "spelling": "P20_C_REQUEST_JOINED",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4516,
+      "end": 4522,
+      "parent": 274,
+      "spelling": "NORMAL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4523,
+      "end": 4524,
+      "parent": 274,
+      "spelling": "i",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4525,
+      "end": 4526,
+      "parent": 274,
+      "spelling": "p",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4527,
+      "end": 4528,
+      "parent": 274,
+      "spelling": "m",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 4529,
+      "end": 4530,
+      "parent": 274,
+      "spelling": "q",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 4531,
+      "end": 4535,
+      "parent": 274,
+      "spelling": "head",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 4542,
+      "end": 4577,
+      "parent": 273,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 4552,
+      "end": 4563,
+      "parent": 282,
+      "spelling": "P20_C_GUARD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4564,
+      "end": 4565,
+      "parent": 282,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4566,
+      "end": 4567,
+      "parent": 282,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4568,
+      "end": 4569,
+      "parent": 282,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4570,
+      "end": 4571,
+      "parent": 282,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 4572,
+      "end": 4576,
+      "parent": 282,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "law",
+      "start": 4741,
+      "end": 4905,
+      "parent": 0,
+      "name": "P20_C_FIELD_BEGIN"
+    },
+    {
+      "kind": "term",
+      "start": 4769,
+      "end": 4804,
+      "parent": 289,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4779,
+      "end": 4790,
+      "parent": 290,
+      "spelling": "P20_C_GUARD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4791,
+      "end": 4792,
+      "parent": 290,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4793,
+      "end": 4794,
+      "parent": 290,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4795,
+      "end": 4796,
+      "parent": 290,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4797,
+      "end": 4798,
+      "parent": 290,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 4799,
+      "end": 4803,
+      "parent": 290,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 4806,
+      "end": 4862,
+      "parent": 289,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4816,
+      "end": 4828,
+      "parent": 297,
+      "spelling": "P20_C_SOURCE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4829,
+      "end": 4836,
+      "parent": 297,
+      "spelling": "genesis",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4837,
+      "end": 4841,
+      "parent": 297,
+      "spelling": "tick",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4842,
+      "end": 4853,
+      "parent": 297,
+      "spelling": "ARRAY",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4848,
+      "end": 4852,
+      "parent": 301,
+      "spelling": "rows",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4854,
+      "end": 4861,
+      "parent": 297,
+      "spelling": "witness",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 4868,
+      "end": 4904,
+      "parent": 289,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 4878,
+      "end": 4894,
+      "parent": 304,
+      "spelling": "P20_C_FIELD_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4895,
+      "end": 4896,
+      "parent": 304,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4897,
+      "end": 4898,
+      "parent": 304,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4899,
+      "end": 4903,
+      "parent": 304,
+      "spelling": "rows",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 4906,
+      "end": 5081,
+      "parent": 0,
+      "name": "P20_C_FIELD_TAIL"
+    },
+    {
+      "kind": "term",
+      "start": 4933,
+      "end": 5004,
+      "parent": 309,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 4943,
+      "end": 4959,
+      "parent": 310,
+      "spelling": "P20_C_FIELD_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4960,
+      "end": 4961,
+      "parent": 310,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4962,
+      "end": 4963,
+      "parent": 310,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 4964,
+      "end": 5003,
+      "parent": 310,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 4969,
+      "end": 4997,
+      "parent": 314,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4975,
+      "end": 4996,
+      "parent": 315,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4980,
+      "end": 4981,
+      "parent": 316,
+      "spelling": "f",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4982,
+      "end": 4995,
+      "parent": 316,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4987,
+      "end": 4990,
+      "parent": 318,
+      "spelling": "old",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 4991,
+      "end": 4994,
+      "parent": 318,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 4998,
+      "end": 5002,
+      "parent": 314,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5006,
+      "end": 5038,
+      "parent": 309,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 5016,
+      "end": 5031,
+      "parent": 322,
+      "spelling": "R1_SOURCE_FIELD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5032,
+      "end": 5033,
+      "parent": 322,
+      "spelling": "f",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5034,
+      "end": 5037,
+      "parent": 322,
+      "spelling": "old",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5044,
+      "end": 5080,
+      "parent": 309,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 5054,
+      "end": 5070,
+      "parent": 326,
+      "spelling": "P20_C_FIELD_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5071,
+      "end": 5072,
+      "parent": 326,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5073,
+      "end": 5074,
+      "parent": 326,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5075,
+      "end": 5079,
+      "parent": 326,
+      "spelling": "tail",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 5082,
+      "end": 5190,
+      "parent": 0,
+      "name": "P20_C_FIELD_END"
+    },
+    {
+      "kind": "term",
+      "start": 5108,
+      "end": 5143,
+      "parent": 331,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 5118,
+      "end": 5134,
+      "parent": 332,
+      "spelling": "P20_C_FIELD_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5135,
+      "end": 5136,
+      "parent": 332,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5137,
+      "end": 5138,
+      "parent": 332,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5139,
+      "end": 5142,
+      "parent": 332,
+      "spelling": "NIL",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5149,
+      "end": 5189,
+      "parent": 331,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 5159,
+      "end": 5176,
+      "parent": 337,
+      "spelling": "P20_C_FIELD_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5177,
+      "end": 5178,
+      "parent": 337,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5179,
+      "end": 5180,
+      "parent": 337,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5181,
+      "end": 5184,
+      "parent": 337,
+      "spelling": "NIL",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5185,
+      "end": 5188,
+      "parent": 337,
+      "spelling": "NIL",
+      "position": 4
+    },
+    {
+      "kind": "law",
+      "start": 5191,
+      "end": 5531,
+      "parent": 0,
+      "name": "P20_C_FIELD_ROW"
+    },
+    {
+      "kind": "term",
+      "start": 5217,
+      "end": 5288,
+      "parent": 343,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 5227,
+      "end": 5243,
+      "parent": 344,
+      "spelling": "P20_C_FIELD_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5244,
+      "end": 5245,
+      "parent": 344,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5246,
+      "end": 5247,
+      "parent": 344,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5248,
+      "end": 5287,
+      "parent": 344,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5253,
+      "end": 5281,
+      "parent": 348,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5259,
+      "end": 5280,
+      "parent": 349,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5264,
+      "end": 5265,
+      "parent": 350,
+      "spelling": "f",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5266,
+      "end": 5279,
+      "parent": 350,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5271,
+      "end": 5274,
+      "parent": 352,
+      "spelling": "old",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5275,
+      "end": 5278,
+      "parent": 352,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5282,
+      "end": 5286,
+      "parent": 348,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5290,
+      "end": 5322,
+      "parent": 343,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 5300,
+      "end": 5315,
+      "parent": 356,
+      "spelling": "R1_SOURCE_FIELD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5316,
+      "end": 5317,
+      "parent": 356,
+      "spelling": "f",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5318,
+      "end": 5321,
+      "parent": 356,
+      "spelling": "old",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5324,
+      "end": 5363,
+      "parent": 343,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 5334,
+      "end": 5348,
+      "parent": 360,
+      "spelling": "P20_EXEC_FIELD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5349,
+      "end": 5350,
+      "parent": 360,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5351,
+      "end": 5352,
+      "parent": 360,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5353,
+      "end": 5354,
+      "parent": 360,
+      "spelling": "f",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5355,
+      "end": 5362,
+      "parent": 360,
+      "spelling": "reading",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 5365,
+      "end": 5407,
+      "parent": 343,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 5375,
+      "end": 5392,
+      "parent": 366,
+      "spelling": "P20_C_FIELD_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5393,
+      "end": 5394,
+      "parent": 366,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5395,
+      "end": 5396,
+      "parent": 366,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5397,
+      "end": 5401,
+      "parent": 366,
+      "spelling": "tail",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5402,
+      "end": 5406,
+      "parent": 366,
+      "spelling": "next",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 5414,
+      "end": 5530,
+      "parent": 343,
+      "spelling": "GOES_WITH",
+      "position": 4,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 5424,
+      "end": 5441,
+      "parent": 372,
+      "spelling": "P20_C_FIELD_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5442,
+      "end": 5443,
+      "parent": 372,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5444,
+      "end": 5445,
+      "parent": 372,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5446,
+      "end": 5485,
+      "parent": 372,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5451,
+      "end": 5479,
+      "parent": 376,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5457,
+      "end": 5478,
+      "parent": 377,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5462,
+      "end": 5463,
+      "parent": 378,
+      "spelling": "f",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5464,
+      "end": 5477,
+      "parent": 378,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5469,
+      "end": 5472,
+      "parent": 380,
+      "spelling": "old",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5473,
+      "end": 5476,
+      "parent": 380,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5480,
+      "end": 5484,
+      "parent": 376,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5486,
+      "end": 5529,
+      "parent": 372,
+      "spelling": "CONS",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 5491,
+      "end": 5523,
+      "parent": 384,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5497,
+      "end": 5522,
+      "parent": 385,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5502,
+      "end": 5503,
+      "parent": 386,
+      "spelling": "f",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5504,
+      "end": 5521,
+      "parent": 386,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5509,
+      "end": 5516,
+      "parent": 388,
+      "spelling": "reading",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5517,
+      "end": 5520,
+      "parent": 388,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5524,
+      "end": 5528,
+      "parent": 384,
+      "spelling": "next",
+      "position": 1
+    },
+    {
+      "kind": "law",
+      "start": 5532,
+      "end": 5717,
+      "parent": 0,
+      "name": "P20_C_FIELD_COMPLETE"
+    },
+    {
+      "kind": "term",
+      "start": 5563,
+      "end": 5619,
+      "parent": 392,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 5573,
+      "end": 5585,
+      "parent": 393,
+      "spelling": "P20_C_SOURCE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5586,
+      "end": 5593,
+      "parent": 393,
+      "spelling": "genesis",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5594,
+      "end": 5598,
+      "parent": 393,
+      "spelling": "tick",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5599,
+      "end": 5610,
+      "parent": 393,
+      "spelling": "ARRAY",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5605,
+      "end": 5609,
+      "parent": 397,
+      "spelling": "rows",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5611,
+      "end": 5618,
+      "parent": 393,
+      "spelling": "witness",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 5621,
+      "end": 5663,
+      "parent": 392,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 5631,
+      "end": 5648,
+      "parent": 400,
+      "spelling": "P20_C_FIELD_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5649,
+      "end": 5650,
+      "parent": 400,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5651,
+      "end": 5652,
+      "parent": 400,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5653,
+      "end": 5657,
+      "parent": 400,
+      "spelling": "rows",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5658,
+      "end": 5662,
+      "parent": 400,
+      "spelling": "next",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 5669,
+      "end": 5716,
+      "parent": 392,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 5679,
+      "end": 5699,
+      "parent": 406,
+      "spelling": "P20_C_FIELD_COMPLETE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5700,
+      "end": 5701,
+      "parent": 406,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5702,
+      "end": 5703,
+      "parent": 406,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5704,
+      "end": 5715,
+      "parent": 406,
+      "spelling": "ARRAY",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5710,
+      "end": 5714,
+      "parent": 410,
+      "spelling": "next",
+      "position": 0
+    },
+    {
+      "kind": "law",
+      "start": 5878,
+      "end": 6044,
+      "parent": 0,
+      "name": "P20_C_WITNESS_BEGIN"
+    },
+    {
+      "kind": "term",
+      "start": 5908,
+      "end": 5943,
+      "parent": 412,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 5918,
+      "end": 5929,
+      "parent": 413,
+      "spelling": "P20_C_GUARD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5930,
+      "end": 5931,
+      "parent": 413,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5932,
+      "end": 5933,
+      "parent": 413,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5934,
+      "end": 5935,
+      "parent": 413,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5936,
+      "end": 5937,
+      "parent": 413,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 5938,
+      "end": 5942,
+      "parent": 413,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 5945,
+      "end": 5999,
+      "parent": 412,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 5955,
+      "end": 5967,
+      "parent": 420,
+      "spelling": "P20_C_SOURCE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 5968,
+      "end": 5975,
+      "parent": 420,
+      "spelling": "genesis",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 5976,
+      "end": 5980,
+      "parent": 420,
+      "spelling": "tick",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 5981,
+      "end": 5986,
+      "parent": 420,
+      "spelling": "field",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 5987,
+      "end": 5998,
+      "parent": 420,
+      "spelling": "ARRAY",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 5993,
+      "end": 5997,
+      "parent": 425,
+      "spelling": "rows",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6005,
+      "end": 6043,
+      "parent": 412,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 6015,
+      "end": 6033,
+      "parent": 427,
+      "spelling": "P20_C_WITNESS_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6034,
+      "end": 6035,
+      "parent": 427,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6036,
+      "end": 6037,
+      "parent": 427,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6038,
+      "end": 6042,
+      "parent": 427,
+      "spelling": "rows",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 6045,
+      "end": 6238,
+      "parent": 0,
+      "name": "P20_C_WITNESS_TAIL"
+    },
+    {
+      "kind": "term",
+      "start": 6074,
+      "end": 6155,
+      "parent": 432,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 6084,
+      "end": 6102,
+      "parent": 433,
+      "spelling": "P20_C_WITNESS_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6103,
+      "end": 6104,
+      "parent": 433,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6105,
+      "end": 6106,
+      "parent": 433,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6107,
+      "end": 6154,
+      "parent": 433,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6112,
+      "end": 6148,
+      "parent": 437,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6118,
+      "end": 6147,
+      "parent": 438,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6123,
+      "end": 6124,
+      "parent": 439,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6125,
+      "end": 6146,
+      "parent": 439,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6130,
+      "end": 6131,
+      "parent": 441,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6132,
+      "end": 6145,
+      "parent": 441,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6137,
+      "end": 6140,
+      "parent": 443,
+      "spelling": "old",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6141,
+      "end": 6144,
+      "parent": 443,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6149,
+      "end": 6153,
+      "parent": 437,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6157,
+      "end": 6193,
+      "parent": 432,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 6167,
+      "end": 6184,
+      "parent": 447,
+      "spelling": "R1_SOURCE_WITNESS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6185,
+      "end": 6186,
+      "parent": 447,
+      "spelling": "a",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6187,
+      "end": 6188,
+      "parent": 447,
+      "spelling": "b",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6189,
+      "end": 6192,
+      "parent": 447,
+      "spelling": "old",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6199,
+      "end": 6237,
+      "parent": 432,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 6209,
+      "end": 6227,
+      "parent": 452,
+      "spelling": "P20_C_WITNESS_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6228,
+      "end": 6229,
+      "parent": 452,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6230,
+      "end": 6231,
+      "parent": 452,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6232,
+      "end": 6236,
+      "parent": 452,
+      "spelling": "tail",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 6239,
+      "end": 6365,
+      "parent": 0,
+      "name": "P20_C_WITNESS_END"
+    },
+    {
+      "kind": "term",
+      "start": 6267,
+      "end": 6304,
+      "parent": 457,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 6277,
+      "end": 6295,
+      "parent": 458,
+      "spelling": "P20_C_WITNESS_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6296,
+      "end": 6297,
+      "parent": 458,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6298,
+      "end": 6299,
+      "parent": 458,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6300,
+      "end": 6303,
+      "parent": 458,
+      "spelling": "NIL",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6310,
+      "end": 6364,
+      "parent": 457,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 6320,
+      "end": 6339,
+      "parent": 463,
+      "spelling": "P20_C_WITNESS_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6340,
+      "end": 6341,
+      "parent": 463,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6342,
+      "end": 6343,
+      "parent": 463,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6344,
+      "end": 6347,
+      "parent": 463,
+      "spelling": "NIL",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6348,
+      "end": 6351,
+      "parent": 463,
+      "spelling": "NIL",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 6352,
+      "end": 6355,
+      "parent": 463,
+      "spelling": "NIL",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 6356,
+      "end": 6359,
+      "parent": 463,
+      "spelling": "NIL",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 6360,
+      "end": 6363,
+      "parent": 463,
+      "spelling": "NIL",
+      "position": 7
+    },
+    {
+      "kind": "law",
+      "start": 6366,
+      "end": 6724,
+      "parent": 0,
+      "name": "P20_C_UNCHANGED"
+    },
+    {
+      "kind": "term",
+      "start": 6392,
+      "end": 6476,
+      "parent": 472,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 6402,
+      "end": 6420,
+      "parent": 473,
+      "spelling": "P20_C_WITNESS_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6421,
+      "end": 6422,
+      "parent": 473,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6423,
+      "end": 6424,
+      "parent": 473,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6425,
+      "end": 6475,
+      "parent": 473,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6430,
+      "end": 6469,
+      "parent": 477,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6436,
+      "end": 6468,
+      "parent": 478,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6441,
+      "end": 6442,
+      "parent": 479,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6443,
+      "end": 6467,
+      "parent": 479,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6448,
+      "end": 6449,
+      "parent": 481,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6450,
+      "end": 6466,
+      "parent": 481,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 6455,
+      "end": 6461,
+      "parent": 483,
+      "spelling": "\"SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6462,
+      "end": 6465,
+      "parent": 483,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6470,
+      "end": 6474,
+      "parent": 477,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6478,
+      "end": 6520,
+      "parent": 472,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 6488,
+      "end": 6504,
+      "parent": 487,
+      "spelling": "P20_EXEC_WITNESS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6505,
+      "end": 6506,
+      "parent": 487,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6507,
+      "end": 6508,
+      "parent": 487,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6509,
+      "end": 6510,
+      "parent": 487,
+      "spelling": "a",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6511,
+      "end": 6512,
+      "parent": 487,
+      "spelling": "b",
+      "position": 4
+    },
+    {
+      "kind": "text",
+      "start": 6513,
+      "end": 6519,
+      "parent": 487,
+      "spelling": "\"SAME\"",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 6522,
+      "end": 6573,
+      "parent": 472,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 6532,
+      "end": 6551,
+      "parent": 494,
+      "spelling": "P20_C_WITNESS_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6552,
+      "end": 6553,
+      "parent": 494,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6554,
+      "end": 6555,
+      "parent": 494,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6556,
+      "end": 6560,
+      "parent": 494,
+      "spelling": "tail",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6561,
+      "end": 6563,
+      "parent": 494,
+      "spelling": "ws",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 6564,
+      "end": 6566,
+      "parent": 494,
+      "spelling": "ds",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 6567,
+      "end": 6569,
+      "parent": 494,
+      "spelling": "os",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 6570,
+      "end": 6572,
+      "parent": 494,
+      "spelling": "rs",
+      "position": 7
+    },
+    {
+      "kind": "term",
+      "start": 6580,
+      "end": 6723,
+      "parent": 472,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 6590,
+      "end": 6609,
+      "parent": 503,
+      "spelling": "P20_C_WITNESS_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6610,
+      "end": 6611,
+      "parent": 503,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6612,
+      "end": 6613,
+      "parent": 503,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6614,
+      "end": 6664,
+      "parent": 503,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6619,
+      "end": 6658,
+      "parent": 507,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6625,
+      "end": 6657,
+      "parent": 508,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6630,
+      "end": 6631,
+      "parent": 509,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6632,
+      "end": 6656,
+      "parent": 509,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6637,
+      "end": 6638,
+      "parent": 511,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6639,
+      "end": 6655,
+      "parent": 511,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 6644,
+      "end": 6650,
+      "parent": 513,
+      "spelling": "\"SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6651,
+      "end": 6654,
+      "parent": 513,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6659,
+      "end": 6663,
+      "parent": 507,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6665,
+      "end": 6713,
+      "parent": 503,
+      "spelling": "CONS",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 6670,
+      "end": 6709,
+      "parent": 517,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6676,
+      "end": 6708,
+      "parent": 518,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6681,
+      "end": 6682,
+      "parent": 519,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6683,
+      "end": 6707,
+      "parent": 519,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6688,
+      "end": 6689,
+      "parent": 521,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6690,
+      "end": 6706,
+      "parent": 521,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 6695,
+      "end": 6701,
+      "parent": 523,
+      "spelling": "\"SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6702,
+      "end": 6705,
+      "parent": 523,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6710,
+      "end": 6712,
+      "parent": 517,
+      "spelling": "ws",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6714,
+      "end": 6716,
+      "parent": 503,
+      "spelling": "ds",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 6717,
+      "end": 6719,
+      "parent": 503,
+      "spelling": "os",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 6720,
+      "end": 6722,
+      "parent": 503,
+      "spelling": "rs",
+      "position": 7
+    },
+    {
+      "kind": "law",
+      "start": 6725,
+      "end": 7125,
+      "parent": 0,
+      "name": "P20_C_DISCHARGED"
+    },
+    {
+      "kind": "term",
+      "start": 6752,
+      "end": 6840,
+      "parent": 530,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 6762,
+      "end": 6780,
+      "parent": 531,
+      "spelling": "P20_C_WITNESS_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6781,
+      "end": 6782,
+      "parent": 531,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6783,
+      "end": 6784,
+      "parent": 531,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6785,
+      "end": 6839,
+      "parent": 531,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6790,
+      "end": 6833,
+      "parent": 535,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6796,
+      "end": 6832,
+      "parent": 536,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6801,
+      "end": 6802,
+      "parent": 537,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6803,
+      "end": 6831,
+      "parent": 537,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6808,
+      "end": 6809,
+      "parent": 539,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6810,
+      "end": 6830,
+      "parent": 539,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 6815,
+      "end": 6825,
+      "parent": 541,
+      "spelling": "\"NOT_SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6826,
+      "end": 6829,
+      "parent": 541,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6834,
+      "end": 6838,
+      "parent": 535,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6842,
+      "end": 6884,
+      "parent": 530,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 6852,
+      "end": 6868,
+      "parent": 545,
+      "spelling": "P20_EXEC_WITNESS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6869,
+      "end": 6870,
+      "parent": 545,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6871,
+      "end": 6872,
+      "parent": 545,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6873,
+      "end": 6874,
+      "parent": 545,
+      "spelling": "a",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6875,
+      "end": 6876,
+      "parent": 545,
+      "spelling": "b",
+      "position": 4
+    },
+    {
+      "kind": "text",
+      "start": 6877,
+      "end": 6883,
+      "parent": 545,
+      "spelling": "\"SAME\"",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 6886,
+      "end": 6937,
+      "parent": 530,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 6896,
+      "end": 6915,
+      "parent": 552,
+      "spelling": "P20_C_WITNESS_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6916,
+      "end": 6917,
+      "parent": 552,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6918,
+      "end": 6919,
+      "parent": 552,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6920,
+      "end": 6924,
+      "parent": 552,
+      "spelling": "tail",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6925,
+      "end": 6927,
+      "parent": 552,
+      "spelling": "ws",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 6928,
+      "end": 6930,
+      "parent": 552,
+      "spelling": "ds",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 6931,
+      "end": 6933,
+      "parent": 552,
+      "spelling": "os",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 6934,
+      "end": 6936,
+      "parent": 552,
+      "spelling": "rs",
+      "position": 7
+    },
+    {
+      "kind": "term",
+      "start": 6944,
+      "end": 7124,
+      "parent": 530,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 6954,
+      "end": 6973,
+      "parent": 561,
+      "spelling": "P20_C_WITNESS_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6974,
+      "end": 6975,
+      "parent": 561,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 6976,
+      "end": 6977,
+      "parent": 561,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 6978,
+      "end": 7032,
+      "parent": 561,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 6983,
+      "end": 7026,
+      "parent": 565,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6989,
+      "end": 7025,
+      "parent": 566,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6994,
+      "end": 6995,
+      "parent": 567,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 6996,
+      "end": 7024,
+      "parent": 567,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7001,
+      "end": 7002,
+      "parent": 569,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7003,
+      "end": 7023,
+      "parent": 569,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 7008,
+      "end": 7018,
+      "parent": 571,
+      "spelling": "\"NOT_SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7019,
+      "end": 7022,
+      "parent": 571,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7027,
+      "end": 7031,
+      "parent": 565,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7033,
+      "end": 7081,
+      "parent": 561,
+      "spelling": "CONS",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 7038,
+      "end": 7077,
+      "parent": 575,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7044,
+      "end": 7076,
+      "parent": 576,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7049,
+      "end": 7050,
+      "parent": 577,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7051,
+      "end": 7075,
+      "parent": 577,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7056,
+      "end": 7057,
+      "parent": 579,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7058,
+      "end": 7074,
+      "parent": 579,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 7063,
+      "end": 7069,
+      "parent": 581,
+      "spelling": "\"SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7070,
+      "end": 7073,
+      "parent": 581,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7078,
+      "end": 7080,
+      "parent": 575,
+      "spelling": "ws",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7082,
+      "end": 7117,
+      "parent": 561,
+      "spelling": "CONS",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 7087,
+      "end": 7113,
+      "parent": 585,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7093,
+      "end": 7112,
+      "parent": 586,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7098,
+      "end": 7099,
+      "parent": 587,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7100,
+      "end": 7111,
+      "parent": 587,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7105,
+      "end": 7106,
+      "parent": 589,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7107,
+      "end": 7110,
+      "parent": 589,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7114,
+      "end": 7116,
+      "parent": 585,
+      "spelling": "ds",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7118,
+      "end": 7120,
+      "parent": 561,
+      "spelling": "os",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 7121,
+      "end": 7123,
+      "parent": 561,
+      "spelling": "rs",
+      "position": 7
+    },
+    {
+      "kind": "law",
+      "start": 7126,
+      "end": 7522,
+      "parent": 0,
+      "name": "P20_C_OPENED"
+    },
+    {
+      "kind": "term",
+      "start": 7149,
+      "end": 7233,
+      "parent": 595,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 7159,
+      "end": 7177,
+      "parent": 596,
+      "spelling": "P20_C_WITNESS_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7178,
+      "end": 7179,
+      "parent": 596,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7180,
+      "end": 7181,
+      "parent": 596,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 7182,
+      "end": 7232,
+      "parent": 596,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 7187,
+      "end": 7226,
+      "parent": 600,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7193,
+      "end": 7225,
+      "parent": 601,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7198,
+      "end": 7199,
+      "parent": 602,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7200,
+      "end": 7224,
+      "parent": 602,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7205,
+      "end": 7206,
+      "parent": 604,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7207,
+      "end": 7223,
+      "parent": 604,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 7212,
+      "end": 7218,
+      "parent": 606,
+      "spelling": "\"SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7219,
+      "end": 7222,
+      "parent": 606,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7227,
+      "end": 7231,
+      "parent": 600,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7235,
+      "end": 7281,
+      "parent": 595,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 7245,
+      "end": 7261,
+      "parent": 610,
+      "spelling": "P20_EXEC_WITNESS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7262,
+      "end": 7263,
+      "parent": 610,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7264,
+      "end": 7265,
+      "parent": 610,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 7266,
+      "end": 7267,
+      "parent": 610,
+      "spelling": "a",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 7268,
+      "end": 7269,
+      "parent": 610,
+      "spelling": "b",
+      "position": 4
+    },
+    {
+      "kind": "text",
+      "start": 7270,
+      "end": 7280,
+      "parent": 610,
+      "spelling": "\"NOT_SAME\"",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 7283,
+      "end": 7334,
+      "parent": 595,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 7293,
+      "end": 7312,
+      "parent": 617,
+      "spelling": "P20_C_WITNESS_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7313,
+      "end": 7314,
+      "parent": 617,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7315,
+      "end": 7316,
+      "parent": 617,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 7317,
+      "end": 7321,
+      "parent": 617,
+      "spelling": "tail",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 7322,
+      "end": 7324,
+      "parent": 617,
+      "spelling": "ws",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 7325,
+      "end": 7327,
+      "parent": 617,
+      "spelling": "ds",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 7328,
+      "end": 7330,
+      "parent": 617,
+      "spelling": "os",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 7331,
+      "end": 7333,
+      "parent": 617,
+      "spelling": "rs",
+      "position": 7
+    },
+    {
+      "kind": "term",
+      "start": 7341,
+      "end": 7521,
+      "parent": 595,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 7351,
+      "end": 7370,
+      "parent": 626,
+      "spelling": "P20_C_WITNESS_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7371,
+      "end": 7372,
+      "parent": 626,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7373,
+      "end": 7374,
+      "parent": 626,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 7375,
+      "end": 7425,
+      "parent": 626,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 7380,
+      "end": 7419,
+      "parent": 630,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7386,
+      "end": 7418,
+      "parent": 631,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7391,
+      "end": 7392,
+      "parent": 632,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7393,
+      "end": 7417,
+      "parent": 632,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7398,
+      "end": 7399,
+      "parent": 634,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7400,
+      "end": 7416,
+      "parent": 634,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 7405,
+      "end": 7411,
+      "parent": 636,
+      "spelling": "\"SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7412,
+      "end": 7415,
+      "parent": 636,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7420,
+      "end": 7424,
+      "parent": 630,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7426,
+      "end": 7478,
+      "parent": 626,
+      "spelling": "CONS",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 7431,
+      "end": 7474,
+      "parent": 640,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7437,
+      "end": 7473,
+      "parent": 641,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7442,
+      "end": 7443,
+      "parent": 642,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7444,
+      "end": 7472,
+      "parent": 642,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7449,
+      "end": 7450,
+      "parent": 644,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7451,
+      "end": 7471,
+      "parent": 644,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 7456,
+      "end": 7466,
+      "parent": 646,
+      "spelling": "\"NOT_SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7467,
+      "end": 7470,
+      "parent": 646,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7475,
+      "end": 7477,
+      "parent": 640,
+      "spelling": "ws",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7479,
+      "end": 7481,
+      "parent": 626,
+      "spelling": "ds",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 7482,
+      "end": 7517,
+      "parent": 626,
+      "spelling": "CONS",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 7487,
+      "end": 7513,
+      "parent": 651,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7493,
+      "end": 7512,
+      "parent": 652,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7498,
+      "end": 7499,
+      "parent": 653,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7500,
+      "end": 7511,
+      "parent": 653,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7505,
+      "end": 7506,
+      "parent": 655,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7507,
+      "end": 7510,
+      "parent": 655,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7514,
+      "end": 7516,
+      "parent": 651,
+      "spelling": "os",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7518,
+      "end": 7520,
+      "parent": 626,
+      "spelling": "rs",
+      "position": 7
+    },
+    {
+      "kind": "law",
+      "start": 7523,
+      "end": 7929,
+      "parent": 0,
+      "name": "P20_C_RETAINED"
+    },
+    {
+      "kind": "term",
+      "start": 7548,
+      "end": 7636,
+      "parent": 660,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 7558,
+      "end": 7576,
+      "parent": 661,
+      "spelling": "P20_C_WITNESS_SCAN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7577,
+      "end": 7578,
+      "parent": 661,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7579,
+      "end": 7580,
+      "parent": 661,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 7581,
+      "end": 7635,
+      "parent": 661,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 7586,
+      "end": 7629,
+      "parent": 665,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7592,
+      "end": 7628,
+      "parent": 666,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7597,
+      "end": 7598,
+      "parent": 667,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7599,
+      "end": 7627,
+      "parent": 667,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7604,
+      "end": 7605,
+      "parent": 669,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7606,
+      "end": 7626,
+      "parent": 669,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 7611,
+      "end": 7621,
+      "parent": 671,
+      "spelling": "\"NOT_SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7622,
+      "end": 7625,
+      "parent": 671,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7630,
+      "end": 7634,
+      "parent": 665,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7638,
+      "end": 7684,
+      "parent": 660,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 7648,
+      "end": 7664,
+      "parent": 675,
+      "spelling": "P20_EXEC_WITNESS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7665,
+      "end": 7666,
+      "parent": 675,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7667,
+      "end": 7668,
+      "parent": 675,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 7669,
+      "end": 7670,
+      "parent": 675,
+      "spelling": "a",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 7671,
+      "end": 7672,
+      "parent": 675,
+      "spelling": "b",
+      "position": 4
+    },
+    {
+      "kind": "text",
+      "start": 7673,
+      "end": 7683,
+      "parent": 675,
+      "spelling": "\"NOT_SAME\"",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 7686,
+      "end": 7737,
+      "parent": 660,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 7696,
+      "end": 7715,
+      "parent": 682,
+      "spelling": "P20_C_WITNESS_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7716,
+      "end": 7717,
+      "parent": 682,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7718,
+      "end": 7719,
+      "parent": 682,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 7720,
+      "end": 7724,
+      "parent": 682,
+      "spelling": "tail",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 7725,
+      "end": 7727,
+      "parent": 682,
+      "spelling": "ws",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 7728,
+      "end": 7730,
+      "parent": 682,
+      "spelling": "ds",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 7731,
+      "end": 7733,
+      "parent": 682,
+      "spelling": "os",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 7734,
+      "end": 7736,
+      "parent": 682,
+      "spelling": "rs",
+      "position": 7
+    },
+    {
+      "kind": "term",
+      "start": 7744,
+      "end": 7928,
+      "parent": 660,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 7754,
+      "end": 7773,
+      "parent": 691,
+      "spelling": "P20_C_WITNESS_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7774,
+      "end": 7775,
+      "parent": 691,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7776,
+      "end": 7777,
+      "parent": 691,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 7778,
+      "end": 7832,
+      "parent": 691,
+      "spelling": "CONS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 7783,
+      "end": 7826,
+      "parent": 695,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7789,
+      "end": 7825,
+      "parent": 696,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7794,
+      "end": 7795,
+      "parent": 697,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7796,
+      "end": 7824,
+      "parent": 697,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7801,
+      "end": 7802,
+      "parent": 699,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7803,
+      "end": 7823,
+      "parent": 699,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 7808,
+      "end": 7818,
+      "parent": 701,
+      "spelling": "\"NOT_SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7819,
+      "end": 7822,
+      "parent": 701,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7827,
+      "end": 7831,
+      "parent": 695,
+      "spelling": "tail",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7833,
+      "end": 7885,
+      "parent": 691,
+      "spelling": "CONS",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 7838,
+      "end": 7881,
+      "parent": 705,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7844,
+      "end": 7880,
+      "parent": 706,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7849,
+      "end": 7850,
+      "parent": 707,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7851,
+      "end": 7879,
+      "parent": 707,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7856,
+      "end": 7857,
+      "parent": 709,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7858,
+      "end": 7878,
+      "parent": 709,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "text",
+      "start": 7863,
+      "end": 7873,
+      "parent": 711,
+      "spelling": "\"NOT_SAME\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7874,
+      "end": 7877,
+      "parent": 711,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7882,
+      "end": 7884,
+      "parent": 705,
+      "spelling": "ws",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7886,
+      "end": 7888,
+      "parent": 691,
+      "spelling": "ds",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 7889,
+      "end": 7891,
+      "parent": 691,
+      "spelling": "os",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 7892,
+      "end": 7927,
+      "parent": 691,
+      "spelling": "CONS",
+      "position": 7
+    },
+    {
+      "kind": "term",
+      "start": 7897,
+      "end": 7923,
+      "parent": 717,
+      "spelling": "ARRAY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7903,
+      "end": 7922,
+      "parent": 718,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7908,
+      "end": 7909,
+      "parent": 719,
+      "spelling": "a",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7910,
+      "end": 7921,
+      "parent": 719,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7915,
+      "end": 7916,
+      "parent": 721,
+      "spelling": "b",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7917,
+      "end": 7920,
+      "parent": 721,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7924,
+      "end": 7926,
+      "parent": 717,
+      "spelling": "rs",
+      "position": 1
+    },
+    {
+      "kind": "law",
+      "start": 7930,
+      "end": 8154,
+      "parent": 0,
+      "name": "P20_C_WITNESS_COMPLETE"
+    },
+    {
+      "kind": "term",
+      "start": 7963,
+      "end": 8017,
+      "parent": 725,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 7973,
+      "end": 7985,
+      "parent": 726,
+      "spelling": "P20_C_SOURCE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 7986,
+      "end": 7993,
+      "parent": 726,
+      "spelling": "genesis",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 7994,
+      "end": 7998,
+      "parent": 726,
+      "spelling": "tick",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 7999,
+      "end": 8004,
+      "parent": 726,
+      "spelling": "field",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 8005,
+      "end": 8016,
+      "parent": 726,
+      "spelling": "ARRAY",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 8011,
+      "end": 8015,
+      "parent": 731,
+      "spelling": "rows",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8019,
+      "end": 8070,
+      "parent": 725,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 8029,
+      "end": 8048,
+      "parent": 733,
+      "spelling": "P20_C_WITNESS_BUILD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8049,
+      "end": 8050,
+      "parent": 733,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8051,
+      "end": 8052,
+      "parent": 733,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 8053,
+      "end": 8057,
+      "parent": 733,
+      "spelling": "rows",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 8058,
+      "end": 8060,
+      "parent": 733,
+      "spelling": "ws",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 8061,
+      "end": 8063,
+      "parent": 733,
+      "spelling": "ds",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 8064,
+      "end": 8066,
+      "parent": 733,
+      "spelling": "os",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 8067,
+      "end": 8069,
+      "parent": 733,
+      "spelling": "rs",
+      "position": 7
+    },
+    {
+      "kind": "term",
+      "start": 8076,
+      "end": 8153,
+      "parent": 725,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 8086,
+      "end": 8108,
+      "parent": 742,
+      "spelling": "P20_C_WITNESS_COMPLETE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8109,
+      "end": 8110,
+      "parent": 742,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8111,
+      "end": 8112,
+      "parent": 742,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 8113,
+      "end": 8122,
+      "parent": 742,
+      "spelling": "ARRAY",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 8119,
+      "end": 8121,
+      "parent": 746,
+      "spelling": "ws",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8123,
+      "end": 8132,
+      "parent": 742,
+      "spelling": "ARRAY",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 8129,
+      "end": 8131,
+      "parent": 748,
+      "spelling": "ds",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8133,
+      "end": 8142,
+      "parent": 742,
+      "spelling": "ARRAY",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 8139,
+      "end": 8141,
+      "parent": 750,
+      "spelling": "os",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8143,
+      "end": 8152,
+      "parent": 742,
+      "spelling": "ARRAY",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 8149,
+      "end": 8151,
+      "parent": 752,
+      "spelling": "rs",
+      "position": 0
+    },
+    {
+      "kind": "law",
+      "start": 8155,
+      "end": 8433,
+      "parent": 0,
+      "name": "P20_C_PAIR"
+    },
+    {
+      "kind": "term",
+      "start": 8176,
+      "end": 8211,
+      "parent": 754,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 8186,
+      "end": 8197,
+      "parent": 755,
+      "spelling": "P20_C_GUARD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8198,
+      "end": 8199,
+      "parent": 755,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8200,
+      "end": 8201,
+      "parent": 755,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 8202,
+      "end": 8203,
+      "parent": 755,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 8204,
+      "end": 8205,
+      "parent": 755,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 8206,
+      "end": 8210,
+      "parent": 755,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 8213,
+      "end": 8254,
+      "parent": 754,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 8223,
+      "end": 8243,
+      "parent": 762,
+      "spelling": "P20_C_FIELD_COMPLETE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8244,
+      "end": 8245,
+      "parent": 762,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8246,
+      "end": 8247,
+      "parent": 762,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 8248,
+      "end": 8253,
+      "parent": 762,
+      "spelling": "field",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 8256,
+      "end": 8328,
+      "parent": 754,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 8266,
+      "end": 8288,
+      "parent": 767,
+      "spelling": "P20_C_WITNESS_COMPLETE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8289,
+      "end": 8290,
+      "parent": 767,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8291,
+      "end": 8292,
+      "parent": 767,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 8293,
+      "end": 8300,
+      "parent": 767,
+      "spelling": "witness",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 8301,
+      "end": 8311,
+      "parent": 767,
+      "spelling": "discharged",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 8312,
+      "end": 8318,
+      "parent": 767,
+      "spelling": "opened",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 8319,
+      "end": 8327,
+      "parent": 767,
+      "spelling": "retained",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 8335,
+      "end": 8432,
+      "parent": 754,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 8345,
+      "end": 8355,
+      "parent": 775,
+      "spelling": "P20_C_PAIR",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8356,
+      "end": 8357,
+      "parent": 775,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8358,
+      "end": 8359,
+      "parent": 775,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 8360,
+      "end": 8431,
+      "parent": 775,
+      "spelling": "OBJECT",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 8367,
+      "end": 8430,
+      "parent": 779,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8372,
+      "end": 8393,
+      "parent": 780,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 8379,
+      "end": 8386,
+      "parent": 781,
+      "spelling": "\"field\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8387,
+      "end": 8392,
+      "parent": 781,
+      "spelling": "field",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8394,
+      "end": 8429,
+      "parent": 780,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8399,
+      "end": 8424,
+      "parent": 784,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 8406,
+      "end": 8415,
+      "parent": 785,
+      "spelling": "\"witness\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8416,
+      "end": 8423,
+      "parent": 785,
+      "spelling": "witness",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8425,
+      "end": 8428,
+      "parent": 784,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "law",
+      "start": 8434,
+      "end": 8646,
+      "parent": 0,
+      "name": "P20_C_RECEIPT"
+    },
+    {
+      "kind": "term",
+      "start": 8458,
+      "end": 8530,
+      "parent": 789,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 8468,
+      "end": 8490,
+      "parent": 790,
+      "spelling": "P20_C_WITNESS_COMPLETE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8491,
+      "end": 8492,
+      "parent": 790,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8493,
+      "end": 8494,
+      "parent": 790,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 8495,
+      "end": 8502,
+      "parent": 790,
+      "spelling": "witness",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 8503,
+      "end": 8513,
+      "parent": 790,
+      "spelling": "discharged",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 8514,
+      "end": 8520,
+      "parent": 790,
+      "spelling": "opened",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 8521,
+      "end": 8529,
+      "parent": 790,
+      "spelling": "retained",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 8537,
+      "end": 8645,
+      "parent": 789,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 8547,
+      "end": 8560,
+      "parent": 798,
+      "spelling": "P20_C_RECEIPT",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8561,
+      "end": 8562,
+      "parent": 798,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8563,
+      "end": 8564,
+      "parent": 798,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 8565,
+      "end": 8644,
+      "parent": 798,
+      "spelling": "OBJECT",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 8572,
+      "end": 8643,
+      "parent": 802,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8577,
+      "end": 8608,
+      "parent": 803,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 8584,
+      "end": 8596,
+      "parent": 804,
+      "spelling": "\"discharged\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8597,
+      "end": 8607,
+      "parent": 804,
+      "spelling": "discharged",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8609,
+      "end": 8642,
+      "parent": 803,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8614,
+      "end": 8637,
+      "parent": 807,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 8621,
+      "end": 8629,
+      "parent": 808,
+      "spelling": "\"opened\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8630,
+      "end": 8636,
+      "parent": 808,
+      "spelling": "opened",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8638,
+      "end": 8641,
+      "parent": 807,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "law",
+      "start": 8731,
+      "end": 8939,
+      "parent": 0,
+      "name": "P20_C_RECEIPT_READING_DISCHARGED"
+    },
+    {
+      "kind": "term",
+      "start": 8774,
+      "end": 8889,
+      "parent": 812,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 8784,
+      "end": 8797,
+      "parent": 813,
+      "spelling": "P20_C_RECEIPT",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8798,
+      "end": 8799,
+      "parent": 813,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8800,
+      "end": 8801,
+      "parent": 813,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 8802,
+      "end": 8888,
+      "parent": 813,
+      "spelling": "OBJECT",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 8809,
+      "end": 8887,
+      "parent": 817,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8814,
+      "end": 8852,
+      "parent": 818,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 8821,
+      "end": 8833,
+      "parent": 819,
+      "spelling": "\"discharged\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8834,
+      "end": 8851,
+      "parent": 819,
+      "spelling": "ARRAY",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8840,
+      "end": 8850,
+      "parent": 821,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8845,
+      "end": 8846,
+      "parent": 822,
+      "spelling": "x",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8847,
+      "end": 8849,
+      "parent": 822,
+      "spelling": "xs",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8853,
+      "end": 8886,
+      "parent": 818,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8858,
+      "end": 8881,
+      "parent": 825,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 8865,
+      "end": 8873,
+      "parent": 826,
+      "spelling": "\"opened\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8874,
+      "end": 8880,
+      "parent": 826,
+      "spelling": "opened",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8882,
+      "end": 8885,
+      "parent": 825,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8895,
+      "end": 8938,
+      "parent": 812,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 8905,
+      "end": 8926,
+      "parent": 830,
+      "spelling": "P20_C_RECEIPT_READING",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 8927,
+      "end": 8928,
+      "parent": 830,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 8929,
+      "end": 8930,
+      "parent": 830,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "text",
+      "start": 8931,
+      "end": 8937,
+      "parent": 830,
+      "spelling": "\"THIS\"",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 8940,
+      "end": 9148,
+      "parent": 0,
+      "name": "P20_C_RECEIPT_READING_OPENED"
+    },
+    {
+      "kind": "term",
+      "start": 8979,
+      "end": 9098,
+      "parent": 835,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 8989,
+      "end": 9002,
+      "parent": 836,
+      "spelling": "P20_C_RECEIPT",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9003,
+      "end": 9004,
+      "parent": 836,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9005,
+      "end": 9006,
+      "parent": 836,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9007,
+      "end": 9097,
+      "parent": 836,
+      "spelling": "OBJECT",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 9014,
+      "end": 9096,
+      "parent": 840,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9019,
+      "end": 9050,
+      "parent": 841,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 9026,
+      "end": 9038,
+      "parent": 842,
+      "spelling": "\"discharged\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9039,
+      "end": 9049,
+      "parent": 842,
+      "spelling": "discharged",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9051,
+      "end": 9095,
+      "parent": 841,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9056,
+      "end": 9090,
+      "parent": 845,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 9063,
+      "end": 9071,
+      "parent": 846,
+      "spelling": "\"opened\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9072,
+      "end": 9089,
+      "parent": 846,
+      "spelling": "ARRAY",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9078,
+      "end": 9088,
+      "parent": 848,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9083,
+      "end": 9084,
+      "parent": 849,
+      "spelling": "x",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9085,
+      "end": 9087,
+      "parent": 849,
+      "spelling": "xs",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9091,
+      "end": 9094,
+      "parent": 845,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9104,
+      "end": 9147,
+      "parent": 835,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 9114,
+      "end": 9135,
+      "parent": 853,
+      "spelling": "P20_C_RECEIPT_READING",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9136,
+      "end": 9137,
+      "parent": 853,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9138,
+      "end": 9139,
+      "parent": 853,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "text",
+      "start": 9140,
+      "end": 9146,
+      "parent": 853,
+      "spelling": "\"THIS\"",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 9149,
+      "end": 9347,
+      "parent": 0,
+      "name": "P20_C_RECEIPT_READING_EMPTY"
+    },
+    {
+      "kind": "term",
+      "start": 9187,
+      "end": 9299,
+      "parent": 858,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 9197,
+      "end": 9210,
+      "parent": 859,
+      "spelling": "P20_C_RECEIPT",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9211,
+      "end": 9212,
+      "parent": 859,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9213,
+      "end": 9214,
+      "parent": 859,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9215,
+      "end": 9298,
+      "parent": 859,
+      "spelling": "OBJECT",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 9222,
+      "end": 9297,
+      "parent": 863,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9227,
+      "end": 9258,
+      "parent": 864,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 9234,
+      "end": 9246,
+      "parent": 865,
+      "spelling": "\"discharged\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9247,
+      "end": 9257,
+      "parent": 865,
+      "spelling": "ARRAY",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9253,
+      "end": 9256,
+      "parent": 867,
+      "spelling": "NIL",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9259,
+      "end": 9296,
+      "parent": 864,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9264,
+      "end": 9291,
+      "parent": 869,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 9271,
+      "end": 9279,
+      "parent": 870,
+      "spelling": "\"opened\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9280,
+      "end": 9290,
+      "parent": 870,
+      "spelling": "ARRAY",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9286,
+      "end": 9289,
+      "parent": 872,
+      "spelling": "NIL",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9292,
+      "end": 9295,
+      "parent": 869,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9305,
+      "end": 9346,
+      "parent": 858,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 9315,
+      "end": 9336,
+      "parent": 875,
+      "spelling": "P20_C_RECEIPT_READING",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9337,
+      "end": 9338,
+      "parent": 875,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9339,
+      "end": 9340,
+      "parent": 875,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "text",
+      "start": 9341,
+      "end": 9345,
+      "parent": 875,
+      "spelling": "\"NO\"",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 9348,
+      "end": 9474,
+      "parent": 0,
+      "name": "P20_C_PAIR_REQUEST"
+    },
+    {
+      "kind": "term",
+      "start": 9377,
+      "end": 9407,
+      "parent": 880,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 9387,
+      "end": 9397,
+      "parent": 881,
+      "spelling": "P20_C_PAIR",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9398,
+      "end": 9399,
+      "parent": 881,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9400,
+      "end": 9401,
+      "parent": 881,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9402,
+      "end": 9406,
+      "parent": 881,
+      "spelling": "pair",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 9413,
+      "end": 9473,
+      "parent": 880,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 9423,
+      "end": 9439,
+      "parent": 886,
+      "spelling": "GPU_HASH_REQUEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9440,
+      "end": 9450,
+      "parent": 886,
+      "spelling": "WORLD_PAIR",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9451,
+      "end": 9467,
+      "parent": 886,
+      "spelling": "RETURN_PAIR",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9463,
+      "end": 9464,
+      "parent": 889,
+      "spelling": "i",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9465,
+      "end": 9466,
+      "parent": 889,
+      "spelling": "m",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9468,
+      "end": 9472,
+      "parent": 886,
+      "spelling": "pair",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 9475,
+      "end": 9616,
+      "parent": 0,
+      "name": "P20_C_RECEIPT_REQUEST"
+    },
+    {
+      "kind": "term",
+      "start": 9507,
+      "end": 9543,
+      "parent": 893,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 9517,
+      "end": 9530,
+      "parent": 894,
+      "spelling": "P20_C_RECEIPT",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9531,
+      "end": 9532,
+      "parent": 894,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9533,
+      "end": 9534,
+      "parent": 894,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9535,
+      "end": 9542,
+      "parent": 894,
+      "spelling": "receipt",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 9549,
+      "end": 9615,
+      "parent": 893,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 9559,
+      "end": 9575,
+      "parent": 899,
+      "spelling": "GPU_HASH_REQUEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9576,
+      "end": 9589,
+      "parent": 899,
+      "spelling": "WORLD_RECEIPT",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9590,
+      "end": 9606,
+      "parent": 899,
+      "spelling": "RETURN_PAIR",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9602,
+      "end": 9603,
+      "parent": 902,
+      "spelling": "i",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9604,
+      "end": 9605,
+      "parent": 902,
+      "spelling": "m",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9607,
+      "end": 9614,
+      "parent": 899,
+      "spelling": "receipt",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 9617,
+      "end": 9805,
+      "parent": 0,
+      "name": "P20_C_PAIR_BOUND"
+    },
+    {
+      "kind": "term",
+      "start": 9644,
+      "end": 9674,
+      "parent": 906,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 9654,
+      "end": 9664,
+      "parent": 907,
+      "spelling": "P20_C_PAIR",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9665,
+      "end": 9666,
+      "parent": 907,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9667,
+      "end": 9668,
+      "parent": 907,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9669,
+      "end": 9673,
+      "parent": 907,
+      "spelling": "pair",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 9676,
+      "end": 9716,
+      "parent": 906,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 9686,
+      "end": 9703,
+      "parent": 912,
+      "spelling": "GPU_HASH_RESPONSE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9704,
+      "end": 9708,
+      "parent": 912,
+      "spelling": "pair",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9709,
+      "end": 9715,
+      "parent": 912,
+      "spelling": "digest",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9718,
+      "end": 9755,
+      "parent": 906,
+      "spelling": "THIS",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 9723,
+      "end": 9747,
+      "parent": 916,
+      "spelling": "P20_COMMIT_EXPECTED_PAIR",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9748,
+      "end": 9754,
+      "parent": 916,
+      "spelling": "digest",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9761,
+      "end": 9804,
+      "parent": 906,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 9771,
+      "end": 9787,
+      "parent": 919,
+      "spelling": "P20_C_PAIR_BOUND",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9788,
+      "end": 9789,
+      "parent": 919,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9790,
+      "end": 9791,
+      "parent": 919,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9792,
+      "end": 9796,
+      "parent": 919,
+      "spelling": "pair",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 9797,
+      "end": 9803,
+      "parent": 919,
+      "spelling": "digest",
+      "position": 4
+    },
+    {
+      "kind": "law",
+      "start": 9806,
+      "end": 10115,
+      "parent": 0,
+      "name": "P20_C_RECEIPT_BOUND"
+    },
+    {
+      "kind": "term",
+      "start": 9836,
+      "end": 9872,
+      "parent": 925,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 9846,
+      "end": 9859,
+      "parent": 926,
+      "spelling": "P20_C_RECEIPT",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9860,
+      "end": 9861,
+      "parent": 926,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9862,
+      "end": 9863,
+      "parent": 926,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9864,
+      "end": 9871,
+      "parent": 926,
+      "spelling": "receipt",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 9874,
+      "end": 9915,
+      "parent": 925,
+      "spelling": "THIS",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 9879,
+      "end": 9906,
+      "parent": 931,
+      "spelling": "P20_COMMIT_EXPECTED_RECEIPT",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9907,
+      "end": 9914,
+      "parent": 931,
+      "spelling": "receipt",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9917,
+      "end": 9960,
+      "parent": 925,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 9927,
+      "end": 9944,
+      "parent": 934,
+      "spelling": "GPU_HASH_RESPONSE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 9945,
+      "end": 9952,
+      "parent": 934,
+      "spelling": "receipt",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 9953,
+      "end": 9959,
+      "parent": 934,
+      "spelling": "digest",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 9962,
+      "end": 10007,
+      "parent": 925,
+      "spelling": "THIS",
+      "position": 3,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 9967,
+      "end": 9999,
+      "parent": 938,
+      "spelling": "P20_COMMIT_EXPECTED_RECEIPT_HASH",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10000,
+      "end": 10006,
+      "parent": 938,
+      "spelling": "digest",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10009,
+      "end": 10052,
+      "parent": 925,
+      "spelling": "GOES_WITH",
+      "position": 4,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 10019,
+      "end": 10040,
+      "parent": 941,
+      "spelling": "P20_C_RECEIPT_READING",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10041,
+      "end": 10042,
+      "parent": 941,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10043,
+      "end": 10044,
+      "parent": 941,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "text",
+      "start": 10045,
+      "end": 10051,
+      "parent": 941,
+      "spelling": "\"THIS\"",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 10058,
+      "end": 10114,
+      "parent": 925,
+      "spelling": "GOES_WITH",
+      "position": 5,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 10068,
+      "end": 10087,
+      "parent": 946,
+      "spelling": "P20_C_RECEIPT_BOUND",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10088,
+      "end": 10089,
+      "parent": 946,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10090,
+      "end": 10091,
+      "parent": 946,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 10092,
+      "end": 10099,
+      "parent": 946,
+      "spelling": "receipt",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 10100,
+      "end": 10106,
+      "parent": 946,
+      "spelling": "digest",
+      "position": 4
+    },
+    {
+      "kind": "text",
+      "start": 10107,
+      "end": 10113,
+      "parent": 946,
+      "spelling": "\"THIS\"",
+      "position": 5
+    },
+    {
+      "kind": "law",
+      "start": 10279,
+      "end": 10583,
+      "parent": 0,
+      "name": "P20_C_RECORD_PARTS"
+    },
+    {
+      "kind": "term",
+      "start": 10308,
+      "end": 10420,
+      "parent": 953,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 10318,
+      "end": 10334,
+      "parent": 954,
+      "spelling": "P20_C_PAIR_BOUND",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10335,
+      "end": 10336,
+      "parent": 954,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10337,
+      "end": 10338,
+      "parent": 954,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 10339,
+      "end": 10410,
+      "parent": 954,
+      "spelling": "OBJECT",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 10346,
+      "end": 10409,
+      "parent": 958,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10351,
+      "end": 10372,
+      "parent": 959,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 10358,
+      "end": 10365,
+      "parent": 960,
+      "spelling": "\"field\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10366,
+      "end": 10371,
+      "parent": 960,
+      "spelling": "field",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10373,
+      "end": 10408,
+      "parent": 959,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10378,
+      "end": 10403,
+      "parent": 963,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 10385,
+      "end": 10394,
+      "parent": 964,
+      "spelling": "\"witness\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10395,
+      "end": 10402,
+      "parent": 964,
+      "spelling": "witness",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10404,
+      "end": 10407,
+      "parent": 963,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10411,
+      "end": 10419,
+      "parent": 954,
+      "spelling": "pairhash",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 10422,
+      "end": 10484,
+      "parent": 953,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 10432,
+      "end": 10451,
+      "parent": 969,
+      "spelling": "P20_C_RECEIPT_BOUND",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10452,
+      "end": 10453,
+      "parent": 969,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10454,
+      "end": 10455,
+      "parent": 969,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 10456,
+      "end": 10463,
+      "parent": 969,
+      "spelling": "receipt",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 10464,
+      "end": 10475,
+      "parent": 969,
+      "spelling": "receipthash",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 10476,
+      "end": 10483,
+      "parent": 969,
+      "spelling": "reading",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 10491,
+      "end": 10582,
+      "parent": 953,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 10501,
+      "end": 10519,
+      "parent": 976,
+      "spelling": "P20_C_RECORD_PARTS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10520,
+      "end": 10521,
+      "parent": 976,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10522,
+      "end": 10523,
+      "parent": 976,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 10524,
+      "end": 10581,
+      "parent": 976,
+      "spelling": "PARTS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 10530,
+      "end": 10535,
+      "parent": 980,
+      "spelling": "field",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10536,
+      "end": 10543,
+      "parent": 980,
+      "spelling": "witness",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10544,
+      "end": 10551,
+      "parent": 980,
+      "spelling": "receipt",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 10552,
+      "end": 10560,
+      "parent": 980,
+      "spelling": "pairhash",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 10561,
+      "end": 10572,
+      "parent": 980,
+      "spelling": "receipthash",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 10573,
+      "end": 10580,
+      "parent": 980,
+      "spelling": "reading",
+      "position": 5
+    },
+    {
+      "kind": "law",
+      "start": 10584,
+      "end": 11141,
+      "parent": 0,
+      "name": "P20_C_TICK_RECORD"
+    },
+    {
+      "kind": "term",
+      "start": 10612,
+      "end": 10647,
+      "parent": 987,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 10622,
+      "end": 10633,
+      "parent": 988,
+      "spelling": "P20_C_GUARD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10634,
+      "end": 10635,
+      "parent": 988,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10636,
+      "end": 10637,
+      "parent": 988,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 10638,
+      "end": 10639,
+      "parent": 988,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 10640,
+      "end": 10641,
+      "parent": 988,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 10642,
+      "end": 10646,
+      "parent": 988,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 10649,
+      "end": 10740,
+      "parent": 987,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 10659,
+      "end": 10677,
+      "parent": 995,
+      "spelling": "P20_C_RECORD_PARTS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10678,
+      "end": 10679,
+      "parent": 995,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10680,
+      "end": 10681,
+      "parent": 995,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 10682,
+      "end": 10739,
+      "parent": 995,
+      "spelling": "PARTS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 10688,
+      "end": 10693,
+      "parent": 999,
+      "spelling": "field",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10694,
+      "end": 10701,
+      "parent": 999,
+      "spelling": "witness",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10702,
+      "end": 10709,
+      "parent": 999,
+      "spelling": "receipt",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 10710,
+      "end": 10718,
+      "parent": 999,
+      "spelling": "pairhash",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 10719,
+      "end": 10730,
+      "parent": 999,
+      "spelling": "receipthash",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 10731,
+      "end": 10738,
+      "parent": 999,
+      "spelling": "reading",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 10742,
+      "end": 10782,
+      "parent": 987,
+      "spelling": "THIS",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 10747,
+      "end": 10774,
+      "parent": 1006,
+      "spelling": "P20_COMMIT_EXECUTION_SOURCE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10775,
+      "end": 10781,
+      "parent": 1006,
+      "spelling": "source",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10789,
+      "end": 11140,
+      "parent": 987,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 10799,
+      "end": 10816,
+      "parent": 1009,
+      "spelling": "P20_C_TICK_RECORD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10817,
+      "end": 10818,
+      "parent": 1009,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10819,
+      "end": 10820,
+      "parent": 1009,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 10821,
+      "end": 10825,
+      "parent": 1009,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 10826,
+      "end": 11139,
+      "parent": 1009,
+      "spelling": "OBJECT",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 10833,
+      "end": 11138,
+      "parent": 1014,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10838,
+      "end": 10871,
+      "parent": 1015,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 10845,
+      "end": 10863,
+      "parent": 1016,
+      "spelling": "\"execution_source\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10864,
+      "end": 10870,
+      "parent": 1016,
+      "spelling": "source",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10872,
+      "end": 11137,
+      "parent": 1015,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10877,
+      "end": 10898,
+      "parent": 1019,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 10884,
+      "end": 10891,
+      "parent": 1020,
+      "spelling": "\"field\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10892,
+      "end": 10897,
+      "parent": 1020,
+      "spelling": "field",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10899,
+      "end": 11136,
+      "parent": 1019,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10904,
+      "end": 10925,
+      "parent": 1023,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 10911,
+      "end": 10917,
+      "parent": 1024,
+      "spelling": "\"kind\"",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 10918,
+      "end": 10924,
+      "parent": 1024,
+      "spelling": "\"TICK\"",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10926,
+      "end": 11135,
+      "parent": 1023,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10931,
+      "end": 10959,
+      "parent": 1027,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 10938,
+      "end": 10949,
+      "parent": 1028,
+      "spelling": "\"pair_hash\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10950,
+      "end": 10958,
+      "parent": 1028,
+      "spelling": "pairhash",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10960,
+      "end": 11134,
+      "parent": 1027,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10965,
+      "end": 10984,
+      "parent": 1031,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 10972,
+      "end": 10978,
+      "parent": 1032,
+      "spelling": "\"prev\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 10979,
+      "end": 10983,
+      "parent": 1032,
+      "spelling": "head",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10985,
+      "end": 11133,
+      "parent": 1031,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 10990,
+      "end": 11015,
+      "parent": 1035,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 10997,
+      "end": 11006,
+      "parent": 1036,
+      "spelling": "\"receipt\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11007,
+      "end": 11014,
+      "parent": 1036,
+      "spelling": "receipt",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11016,
+      "end": 11132,
+      "parent": 1035,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11021,
+      "end": 11055,
+      "parent": 1039,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 11028,
+      "end": 11042,
+      "parent": 1040,
+      "spelling": "\"receipt_hash\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11043,
+      "end": 11054,
+      "parent": 1040,
+      "spelling": "receipthash",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11056,
+      "end": 11131,
+      "parent": 1039,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11061,
+      "end": 11094,
+      "parent": 1043,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 11068,
+      "end": 11085,
+      "parent": 1044,
+      "spelling": "\"receipt_reading\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11086,
+      "end": 11093,
+      "parent": 1044,
+      "spelling": "reading",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11095,
+      "end": 11130,
+      "parent": 1043,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11100,
+      "end": 11125,
+      "parent": 1047,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 11107,
+      "end": 11116,
+      "parent": 1048,
+      "spelling": "\"witness\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11117,
+      "end": 11124,
+      "parent": 1048,
+      "spelling": "witness",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11126,
+      "end": 11129,
+      "parent": 1047,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "law",
+      "start": 11142,
+      "end": 11284,
+      "parent": 0,
+      "name": "P20_C_TICK_REQUEST"
+    },
+    {
+      "kind": "term",
+      "start": 11171,
+      "end": 11215,
+      "parent": 1052,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 11181,
+      "end": 11198,
+      "parent": 1053,
+      "spelling": "P20_C_TICK_RECORD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11199,
+      "end": 11200,
+      "parent": 1053,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11201,
+      "end": 11202,
+      "parent": 1053,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11203,
+      "end": 11207,
+      "parent": 1053,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 11208,
+      "end": 11214,
+      "parent": 1053,
+      "spelling": "record",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 11221,
+      "end": 11283,
+      "parent": 1052,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 11231,
+      "end": 11247,
+      "parent": 1059,
+      "spelling": "GPU_HASH_REQUEST",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11248,
+      "end": 11258,
+      "parent": 1059,
+      "spelling": "WORLD_TICK",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11259,
+      "end": 11275,
+      "parent": 1059,
+      "spelling": "RETURN_PAIR",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11271,
+      "end": 11272,
+      "parent": 1062,
+      "spelling": "i",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11273,
+      "end": 11274,
+      "parent": 1062,
+      "spelling": "m",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11276,
+      "end": 11282,
+      "parent": 1059,
+      "spelling": "record",
+      "position": 3
+    },
+    {
+      "kind": "law",
+      "start": 11285,
+      "end": 11455,
+      "parent": 0,
+      "name": "P20_C_TICK_HASH"
+    },
+    {
+      "kind": "term",
+      "start": 11311,
+      "end": 11355,
+      "parent": 1066,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 11321,
+      "end": 11338,
+      "parent": 1067,
+      "spelling": "P20_C_TICK_RECORD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11339,
+      "end": 11340,
+      "parent": 1067,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11341,
+      "end": 11342,
+      "parent": 1067,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11343,
+      "end": 11347,
+      "parent": 1067,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 11348,
+      "end": 11354,
+      "parent": 1067,
+      "spelling": "record",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 11357,
+      "end": 11399,
+      "parent": 1066,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 11367,
+      "end": 11384,
+      "parent": 1073,
+      "spelling": "GPU_HASH_RESPONSE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11385,
+      "end": 11391,
+      "parent": 1073,
+      "spelling": "record",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11392,
+      "end": 11398,
+      "parent": 1073,
+      "spelling": "digest",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11405,
+      "end": 11454,
+      "parent": 1066,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 11415,
+      "end": 11430,
+      "parent": 1077,
+      "spelling": "P20_C_TICK_HASH",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11431,
+      "end": 11432,
+      "parent": 1077,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11433,
+      "end": 11434,
+      "parent": 1077,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11435,
+      "end": 11439,
+      "parent": 1077,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 11440,
+      "end": 11446,
+      "parent": 1077,
+      "spelling": "record",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 11447,
+      "end": 11453,
+      "parent": 1077,
+      "spelling": "digest",
+      "position": 5
+    },
+    {
+      "kind": "law",
+      "start": 11456,
+      "end": 11645,
+      "parent": 0,
+      "name": "P20_C_TICK_ENTRY"
+    },
+    {
+      "kind": "term",
+      "start": 11483,
+      "end": 11532,
+      "parent": 1084,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 11493,
+      "end": 11508,
+      "parent": 1085,
+      "spelling": "P20_C_TICK_HASH",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11509,
+      "end": 11510,
+      "parent": 1085,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11511,
+      "end": 11512,
+      "parent": 1085,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11513,
+      "end": 11517,
+      "parent": 1085,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 11518,
+      "end": 11524,
+      "parent": 1085,
+      "spelling": "record",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 11525,
+      "end": 11531,
+      "parent": 1085,
+      "spelling": "digest",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 11538,
+      "end": 11644,
+      "parent": 1084,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 11548,
+      "end": 11564,
+      "parent": 1092,
+      "spelling": "P20_C_TICK_ENTRY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11565,
+      "end": 11566,
+      "parent": 1092,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11567,
+      "end": 11568,
+      "parent": 1092,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11569,
+      "end": 11573,
+      "parent": 1092,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 11574,
+      "end": 11643,
+      "parent": 1092,
+      "spelling": "OBJECT",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 11581,
+      "end": 11642,
+      "parent": 1097,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11586,
+      "end": 11607,
+      "parent": 1098,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 11593,
+      "end": 11599,
+      "parent": 1099,
+      "spelling": "\"link\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11600,
+      "end": 11606,
+      "parent": 1099,
+      "spelling": "digest",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11608,
+      "end": 11641,
+      "parent": 1098,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11613,
+      "end": 11636,
+      "parent": 1102,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 11620,
+      "end": 11628,
+      "parent": 1103,
+      "spelling": "\"record\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11629,
+      "end": 11635,
+      "parent": 1103,
+      "spelling": "record",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11637,
+      "end": 11640,
+      "parent": 1102,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "law",
+      "start": 11646,
+      "end": 12074,
+      "parent": 0,
+      "name": "P20_C_WORLD"
+    },
+    {
+      "kind": "term",
+      "start": 11668,
+      "end": 11725,
+      "parent": 1107,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 11678,
+      "end": 11690,
+      "parent": 1108,
+      "spelling": "P20_C_SOURCE",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11691,
+      "end": 11698,
+      "parent": 1108,
+      "spelling": "genesis",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11699,
+      "end": 11704,
+      "parent": 1108,
+      "spelling": "prior",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11705,
+      "end": 11713,
+      "parent": 1108,
+      "spelling": "oldfield",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 11714,
+      "end": 11724,
+      "parent": 1108,
+      "spelling": "oldwitness",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 11727,
+      "end": 11818,
+      "parent": 1107,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 11737,
+      "end": 11755,
+      "parent": 1114,
+      "spelling": "P20_C_RECORD_PARTS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11756,
+      "end": 11757,
+      "parent": 1114,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11758,
+      "end": 11759,
+      "parent": 1114,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11760,
+      "end": 11817,
+      "parent": 1114,
+      "spelling": "PARTS",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 11766,
+      "end": 11771,
+      "parent": 1118,
+      "spelling": "field",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11772,
+      "end": 11779,
+      "parent": 1118,
+      "spelling": "witness",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11780,
+      "end": 11787,
+      "parent": 1118,
+      "spelling": "receipt",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11788,
+      "end": 11796,
+      "parent": 1118,
+      "spelling": "pairhash",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 11797,
+      "end": 11808,
+      "parent": 1118,
+      "spelling": "receipthash",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 11809,
+      "end": 11816,
+      "parent": 1118,
+      "spelling": "reading",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 11820,
+      "end": 11861,
+      "parent": 1107,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 11830,
+      "end": 11846,
+      "parent": 1125,
+      "spelling": "P20_C_TICK_ENTRY",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11847,
+      "end": 11848,
+      "parent": 1125,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11849,
+      "end": 11850,
+      "parent": 1125,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11851,
+      "end": 11855,
+      "parent": 1125,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 11856,
+      "end": 11860,
+      "parent": 1125,
+      "spelling": "tick",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 11868,
+      "end": 12073,
+      "parent": 1107,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 11878,
+      "end": 11889,
+      "parent": 1131,
+      "spelling": "P20_C_WORLD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11890,
+      "end": 11891,
+      "parent": 1131,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11892,
+      "end": 11893,
+      "parent": 1131,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 11894,
+      "end": 11898,
+      "parent": 1131,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 11899,
+      "end": 12072,
+      "parent": 1131,
+      "spelling": "OBJECT",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 11906,
+      "end": 12071,
+      "parent": 1136,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11911,
+      "end": 11974,
+      "parent": 1137,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 11918,
+      "end": 11925,
+      "parent": 1138,
+      "spelling": "\"chain\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11926,
+      "end": 11973,
+      "parent": 1138,
+      "spelling": "ARRAY",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11932,
+      "end": 11972,
+      "parent": 1140,
+      "spelling": "CONS",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11937,
+      "end": 11944,
+      "parent": 1141,
+      "spelling": "genesis",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11945,
+      "end": 11971,
+      "parent": 1141,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11950,
+      "end": 11955,
+      "parent": 1143,
+      "spelling": "prior",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11956,
+      "end": 11970,
+      "parent": 1143,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11961,
+      "end": 11965,
+      "parent": 1145,
+      "spelling": "tick",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11966,
+      "end": 11969,
+      "parent": 1145,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11975,
+      "end": 12070,
+      "parent": 1137,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 11980,
+      "end": 12001,
+      "parent": 1148,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 11987,
+      "end": 11994,
+      "parent": 1149,
+      "spelling": "\"field\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 11995,
+      "end": 12000,
+      "parent": 1149,
+      "spelling": "field",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12002,
+      "end": 12069,
+      "parent": 1148,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12007,
+      "end": 12032,
+      "parent": 1152,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 12014,
+      "end": 12023,
+      "parent": 1153,
+      "spelling": "\"receipt\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 12024,
+      "end": 12031,
+      "parent": 1153,
+      "spelling": "receipt",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12033,
+      "end": 12068,
+      "parent": 1152,
+      "spelling": "CONS",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12038,
+      "end": 12063,
+      "parent": 1156,
+      "spelling": "MEMBER",
+      "position": 0
+    },
+    {
+      "kind": "text",
+      "start": 12045,
+      "end": 12054,
+      "parent": 1157,
+      "spelling": "\"witness\"",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 12055,
+      "end": 12062,
+      "parent": 1157,
+      "spelling": "witness",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12064,
+      "end": 12067,
+      "parent": 1156,
+      "spelling": "NIL",
+      "position": 1
+    },
+    {
+      "kind": "law",
+      "start": 12075,
+      "end": 12290,
+      "parent": 0,
+      "name": "P20_C_COMMITTED_RETURN"
+    },
+    {
+      "kind": "term",
+      "start": 12108,
+      "end": 12143,
+      "parent": 1161,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 12118,
+      "end": 12129,
+      "parent": 1162,
+      "spelling": "P20_C_GUARD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 12130,
+      "end": 12131,
+      "parent": 1162,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12132,
+      "end": 12133,
+      "parent": 1162,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 12134,
+      "end": 12135,
+      "parent": 1162,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 12136,
+      "end": 12137,
+      "parent": 1162,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 12138,
+      "end": 12142,
+      "parent": 1162,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 12145,
+      "end": 12182,
+      "parent": 1161,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 12155,
+      "end": 12166,
+      "parent": 1169,
+      "spelling": "P20_C_WORLD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 12167,
+      "end": 12168,
+      "parent": 1169,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12169,
+      "end": 12170,
+      "parent": 1169,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 12171,
+      "end": 12175,
+      "parent": 1169,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 12176,
+      "end": 12181,
+      "parent": 1169,
+      "spelling": "world",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 12184,
+      "end": 12233,
+      "parent": 1161,
+      "spelling": "GOES_WITH",
+      "position": 2,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 12194,
+      "end": 12209,
+      "parent": 1175,
+      "spelling": "P20_C_TICK_HASH",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 12210,
+      "end": 12211,
+      "parent": 1175,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12212,
+      "end": 12213,
+      "parent": 1175,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 12214,
+      "end": 12218,
+      "parent": 1175,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 12219,
+      "end": 12225,
+      "parent": 1175,
+      "spelling": "record",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 12226,
+      "end": 12232,
+      "parent": 1175,
+      "spelling": "digest",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 12240,
+      "end": 12289,
+      "parent": 1161,
+      "spelling": "GOES_WITH",
+      "position": 3,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 12250,
+      "end": 12268,
+      "parent": 1182,
+      "spelling": "P_COMMITTED_RETURN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 12269,
+      "end": 12270,
+      "parent": 1182,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12271,
+      "end": 12272,
+      "parent": 1182,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 12273,
+      "end": 12274,
+      "parent": 1182,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 12275,
+      "end": 12276,
+      "parent": 1182,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 12277,
+      "end": 12281,
+      "parent": 1182,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 12282,
+      "end": 12288,
+      "parent": 1182,
+      "spelling": "digest",
+      "position": 6
+    },
+    {
+      "kind": "law",
+      "start": 12291,
+      "end": 12449,
+      "parent": 0,
+      "name": "P20_C_COMMITTED_WORLD"
+    },
+    {
+      "kind": "term",
+      "start": 12323,
+      "end": 12372,
+      "parent": 1190,
+      "spelling": "GOES_WITH",
+      "position": 0,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 12333,
+      "end": 12351,
+      "parent": 1191,
+      "spelling": "P_COMMITTED_RETURN",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 12352,
+      "end": 12353,
+      "parent": 1191,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12354,
+      "end": 12355,
+      "parent": 1191,
+      "spelling": "p",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 12356,
+      "end": 12357,
+      "parent": 1191,
+      "spelling": "m",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 12358,
+      "end": 12359,
+      "parent": 1191,
+      "spelling": "q",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 12360,
+      "end": 12364,
+      "parent": 1191,
+      "spelling": "head",
+      "position": 5
+    },
+    {
+      "kind": "term",
+      "start": 12365,
+      "end": 12371,
+      "parent": 1191,
+      "spelling": "digest",
+      "position": 6
+    },
+    {
+      "kind": "term",
+      "start": 12374,
+      "end": 12411,
+      "parent": 1190,
+      "spelling": "GOES_WITH",
+      "position": 1,
+      "clause": "antecedent"
+    },
+    {
+      "kind": "term",
+      "start": 12384,
+      "end": 12395,
+      "parent": 1199,
+      "spelling": "P20_C_WORLD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 12396,
+      "end": 12397,
+      "parent": 1199,
+      "spelling": "i",
+      "position": 1
+    },
+    {
+      "kind": "term",
+      "start": 12398,
+      "end": 12399,
+      "parent": 1199,
+      "spelling": "m",
+      "position": 2
+    },
+    {
+      "kind": "term",
+      "start": 12400,
+      "end": 12404,
+      "parent": 1199,
+      "spelling": "head",
+      "position": 3
+    },
+    {
+      "kind": "term",
+      "start": 12405,
+      "end": 12410,
+      "parent": 1199,
+      "spelling": "world",
+      "position": 4
+    },
+    {
+      "kind": "term",
+      "start": 12417,
+      "end": 12448,
+      "parent": 1190,
+      "spelling": "THIS",
+      "position": 2,
+      "clause": "consequent"
+    },
+    {
+      "kind": "term",
+      "start": 12422,
+      "end": 12441,
+      "parent": 1205,
+      "spelling": "P20_COMMITTED_WORLD",
+      "position": 0
+    },
+    {
+      "kind": "term",
+      "start": 12442,
+      "end": 12447,
+      "parent": 1205,
+      "spelling": "world",
+      "position": 1
+    }
+  ]
+}

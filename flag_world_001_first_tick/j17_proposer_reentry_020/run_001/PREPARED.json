@@ -1,0 +1,41 @@
+{
+  "verdict": "IF_THEN",
+  "execution": "NOT_RUN",
+  "stage": {
+    "readbackDirectory": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_initial\\stage",
+    "mapPath": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_initial\\stage\\source-map.json",
+    "imagePath": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_initial\\stage\\image.bin",
+    "sourcePath": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_initial\\input.mal"
+  },
+  "source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\source\\proposer_reentry.mal",
+    "bytes": 11483,
+    "sha256": "1C87166F0D6FE3941FB9625A50913A3ED508C9B6A8400E52424E216ACEB3BD33"
+  },
+  "image": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_initial\\stage\\image.bin",
+    "bytes": 41992208,
+    "sha256": "4C422561F0D41879F2E47C6F332012DBE642DF376F9C3C541BB5293620B319DA"
+  },
+  "source_map": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_initial\\stage\\source-map.json",
+    "bytes": 333623173,
+    "sha256": "FECF902A6128EDAFADB1061D6FB2808728BD1043C0B461690CEDD21BCA3E74F0"
+  },
+  "grouping": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\GROUPING.json",
+    "bytes": 1885032,
+    "sha256": "A95C5A65AF87F808DA7AE1B707BB341F892F389D445739DD52E129D820617A9B"
+  },
+  "environment": {
+    "node": "v22.20.0",
+    "platform": "win32",
+    "architecture": "x64",
+    "heap_limit_request_mib": 8192,
+    "capacity": 4194304,
+    "term_capacity": 4194304,
+    "readback_bytes": 369098784,
+    "output_volume_free_bytes": 1588976992256,
+    "scope": "Execution capacity/custody only; no semantic input selection"
+  }
+}

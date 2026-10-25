@@ -1,0 +1,74 @@
+{
+  "schema": "J17ReactionPDPERecordRead011",
+  "authority": "Execution record and source comparison; no new law or promotion",
+  "attachment": {
+    "path": "C:/Users/devon/Desktop/MaL/MaLv3/RECORD_J17_REACTION_PDPE_001.mal",
+    "bytes": 4830,
+    "sha256": "3605713EFF93B32033C51704C258B3EF60310247BB2917DCD72F7B0D872A5E05",
+    "own_status": "PROPOSED; interpretation recorded, not law"
+  },
+  "contacts": {
+    "packet_sha256": "13F4676010390261EAFC6C208498231806C738599D5376314D36E3DFDCA44EC6",
+    "engine_sha256": "B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C",
+    "A1_A10_sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805",
+    "erratum_sha256": "E097CDA64A92199F11A97DB1EB113C491806FFE1AEC29032E060C9877BD8426C",
+    "producer_sha256": "22192EBAEE1248B35B722C97924B0FF6DF577CCD024F0A9B9F75C9A6ECFB3F8F",
+    "fold_spec_sha256": "E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E"
+  },
+  "PDPE": [
+    {
+      "stage": "PROPOSE",
+      "clause": "ENGINE 386-387",
+      "text": "PROPOSE reads the current committed snapshot and emits every completing lift for the declared base move.",
+      "consequence": "The requested keep-one and keep-two constant assignments can be enumerated and receipted. Their correspondence to this clause's offered lifts/readings remains MAYBE; enumerating the diagnostic family does not discharge that correspondence. No proof over the power set is requested."
+    },
+    {
+      "stage": "DECIDE",
+      "clause": "ENGINE 407-411; E21 74; A6 17",
+      "text": "DECIDE receives the proposed completion relation and a governed input. It may select only a proposed lift. DECIDE does not create a lift.",
+      "consequence": "Strict discharge is computed without a person or scalar choice. A unique strict member is witnessed on the tested family; equality of that family with the promoted offer relation is a separate premise."
+    },
+    {
+      "stage": "PROMOTE",
+      "clause": "ENGINE 419-426; A7 18",
+      "text": "PROMOTE binds the selected lift to source committed state, WHENCE, agreement-change receipt, previous promoted-continuity link, successor identity.",
+      "consequence": "Tick-level promotion is in the law; no personal per-tick DECIDE is requested. Its operand must be a member supplied by the preceding law-bound stages."
+    },
+    {
+      "stage": "EXECUTE",
+      "clause": "ENGINE 439-446",
+      "text": "EXECUTE commits only the exact promoted successor extending the current continuity head. unpromoted successor := NO",
+      "consequence": "No link is appended from a diagnostic-only assignment. Existing J17 admission and links remain untouched."
+    }
+  ],
+  "typed_distinction": {
+    "producer_lines": "vector_displacement.mal 157-168, 199-221, 229-231",
+    "producer_member": "LIFT(from,via,to); writes FROM to NO and TO to THIS; retains every other flag",
+    "diagnostic_member": "Assign one reading to every flag of a coordinate fibre; J17-to-NO changes twelve flags",
+    "comparison": "NOT_SAME operations: the located lift producer writes at most two flag coordinates, while the strict J17 fibre assignment changes twelve. A7's reference to readings does not itself instantiate this multi-flag action.",
+    "E10": "Erratum 63 types rotations about domain, triad and corridor. A constant fibre overwrite is not the same operation as that rotation.",
+    "obligation": "O_COORDINATE_FIBRE_ACTION_OFFER_CORRESPONDENCE",
+    "status": "MAYBE; naming its stage does not discharge it"
+  },
+  "record_correction": {
+    "line": 31,
+    "claim": "483 keep-one members excluded by witnessed openings",
+    "comparison": "NOT_SAME",
+    "source": "RUN_RECORD_010.json",
+    "source_sha256": "2AD351F73AF9C7046C6883E0EF1C29180F272DAF9EDE5047630E242743F9A053",
+    "witness": {
+      "strict": 1,
+      "opened_nonempty": 253,
+      "unchanged_discharged_empty_opened_empty": 230
+    },
+    "disposition": "Original record retained byte-exact; correction carried here"
+  },
+  "boundaries": [
+    "No new admission gate, handedness field or digital-shell constructor",
+    "No demand that Devon choose a successor or re-prove admission",
+    "No draft OPEN used as authority",
+    "No complement added to the requested offer family",
+    "No physical hydrogen or radiation claim inferred from receipt counts",
+    "No repository commit, push or deletion"
+  ]
+}

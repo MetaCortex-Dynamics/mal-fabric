@@ -1,0 +1,16 @@
+{
+  "action": "TASK_OWNED_REPLAY_INTERRUPTION_FOR_ADDITIVE_EQUIVALENT_JOIN_OPTIMIZATION",
+  "orchestrator_id": 25724,
+  "child_id": 192360,
+  "child_parent_id": 25724,
+  "complete_first_readback_sha256": "92E6F084B886D21503182CD0A2A65890ABAA05572C6BC6330976BCCF77A9CCCE",
+  "complete_first_counts": {
+    "facts": 543884,
+    "terms": 574825,
+    "epochs": 96,
+    "error": 0
+  },
+  "first_closure_sha256": "7EE642AC65936BB7E9B709184FFDC61D2980C5F0E8BE669362855BE1EFB8A416",
+  "replay_readback_present": false,
+  "scope": "Preserve every artifact. Partial replay is not a result. No live-world, user-process, source or prior-evidence mutation."
+}

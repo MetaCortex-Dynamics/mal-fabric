@@ -1,0 +1,25 @@
+{
+  "schema": "J17SectionDiagnosticScope009",
+  "authority": "User-requested bounded diagnostic; no DECIDE or PROMOTE performed",
+  "engine": {
+    "path": "../world_transition_contacts_007/contacts/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0.md",
+    "sha256": "B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C",
+    "lines_386_387": "PROPOSE reads the current committed snapshot and emits every completing lift for the declared base move.",
+    "lines_398_400": "domain/site completion := 2 lifts; triad completion := 2 lifts; corridor/edge completion := 1 lift",
+    "lines_407_408": "DECIDE receives the proposed completion relation and a governed input. It may select only a proposed lift."
+  },
+  "coupled_geometry": {
+    "path": "C:/Users/devon/Desktop/MaL/Markdowns/Coupled Geometry Invariant Model — Dual Machine × ProjectionShell.md",
+    "sha256": "60F08FA1AE20243E11704F011B11A1CF2352CE83F798D6122D1AF878B8A9F9D9",
+    "line_120": "A local section is a gate at every flag; all 15 operators are gates. Restriction to an overlap U is the section's values on U; SAME iff they are constant on U, else NOT-SAME.",
+    "line_122": "PROPOSE enumerates every completing lift and local reading; DECIDE selects one lift and gate enactment by governed input",
+    "line_158_open": "Which local readings are offered at a tick"
+  },
+  "distinctions": {
+    "section": "The located text admits a multi-flag reading; it is not a literal claim that a section has only one flag.",
+    "diagnostic_family": "For each of the 42 sites, assign THIS or NO to all flags whose site equals that site, retaining other entries. Exactly 84 assignments.",
+    "offered_relation": "Not equated with the diagnostic family: the bound engine uses a declared move and the located model leaves local-reading offer membership OPEN.",
+    "uniform_checks": "Two separate diagnostic endpoints, excluded from the 84-case count. Receipt satisfaction is not promoted offer membership.",
+    "commit": "No worldline or repository commit. No promotion. No physical-element correspondence inferred."
+  }
+}

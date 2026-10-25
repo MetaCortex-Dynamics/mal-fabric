@@ -1,0 +1,106 @@
+{
+  "verdict": "SAME",
+  "prefixStrings": 1114126,
+  "prefixBoundaries": 3276847,
+  "coverage": "every single UTF16 code unit; all 1024x1024 high-low surrogate pairs at every prefix boundary; mixed malformed/valid sequences and complete source-custody fixtures",
+  "fixtures": [
+    {
+      "source_utf16_units": 137,
+      "source_sha256": "A9BFD89E9B76C0812CF88868B1CCFBF9CC245A5E562B2C5DEBC462D17903ACB8",
+      "entries": 18,
+      "output_sha256": "11014A2C614DD9B7A00298E21809EBCADE230387F4B287058ED72C93496F02B6",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 147,
+      "source_sha256": "32FC0765A2D5E0D7876552C8C3723E6AD854D40FDEB5DED07DF969BC3EFD8F54",
+      "entries": 18,
+      "output_sha256": "1758E66FC18B91D0887D221D0EB92BF3E7A2F7C285A5AAD03B1328ACEFEF2546",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 141,
+      "source_sha256": "288C1BD33F575C015498C0B2D0AED3384FDE0E3BCECEEA3FEF6FED1FD34EAB16",
+      "entries": 18,
+      "output_sha256": "803FBE69D74F393A8D5D63467A841660D77253C30D9E7BD2B831885410CDFD12",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 141,
+      "source_sha256": "E13BDA60ED6D6A05406E3E3146308EDBC82852E85345F0FDB02C1D30F8B6FB7D",
+      "entries": 18,
+      "output_sha256": "1E7D06ED8724C5E29E266BC16F8EDF5E000B2EAF0F4090BC5ED91226BDEAC589",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 141,
+      "source_sha256": "E1DF5271B71A0F21883E29158F82EF134356D13DF4FA44F0A031D2ADFE0B6D9D",
+      "entries": 18,
+      "output_sha256": "30420893AB0CB88840BB1CC415098E0C1639E039CF80B15F1CF9DD77D0E171C9",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 139,
+      "source_sha256": "04E3B96CE9A731108C321F9D19F21CB9666E556790E3E2A649EA7EE980F710CA",
+      "entries": 18,
+      "output_sha256": "FBBFAD94B1D57965147BF111ED419CDA627B78CCEE7ECADCE77D15805EBF4432",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 139,
+      "source_sha256": "04E3B96CE9A731108C321F9D19F21CB9666E556790E3E2A649EA7EE980F710CA",
+      "entries": 18,
+      "output_sha256": "B66956DE55FB08F424D1060233D43317573B0F75575844D65B168807DBDA5730",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 143,
+      "source_sha256": "4C74621207D988AB9D1A4D52CE8B2F0CA640060CFBC18A64866AD4F77A847088",
+      "entries": 18,
+      "output_sha256": "4E5C8962AC650766635DE4CA4E9B10AEFE94E5C46C695719856E9D5A1B819CA9",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 143,
+      "source_sha256": "4C74621207D988AB9D1A4D52CE8B2F0CA640060CFBC18A64866AD4F77A847088",
+      "entries": 18,
+      "output_sha256": "C153225D4803A4CDD917297F02A8C41990390C44D537384765BE7AB038D35D53",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 145,
+      "source_sha256": "0633D5DE39B2B6B4CD5F4AAF7909232448A68DA17A68ED5A2F372510A38E59CD",
+      "entries": 18,
+      "output_sha256": "E8671FC34B45CBFBC7899755E0E653E97F9084870E14D2122DE906B0EE843084",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 147,
+      "source_sha256": "90CAB1838B9D0E51EDD0DFDE1C2E8303AC96E039D1ECAD3B16DEFC6B61FF64AA",
+      "entries": 18,
+      "output_sha256": "415A128BF33E94B1C8BF07DD0350E3870EDAB5F00E91ECC35CD0978006DF7AEE",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 141,
+      "source_sha256": "1A7691FC1EE8C8834FF4B3D42A7F270D20C8F4CA25A3519D50C5109F92129F7F",
+      "entries": 18,
+      "output_sha256": "BABFB12C4721595705CD4DAB82C4CE8BE33C93BFCE74AFF5415B5392B0B66F12",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 139,
+      "source_sha256": "8D2521D2ED1F2EF852360C43E08B8AD06BE0A364321EA80132B39BD052442C27",
+      "entries": 18,
+      "output_sha256": "B4F70A5A91350815E32C00E1C00366737C86A6D00FB2624341E6F8D87D747A5E",
+      "verdict": "SAME"
+    },
+    {
+      "source_utf16_units": 143,
+      "source_sha256": "FBB01991A50B00BB100929D91433B75D1D67B64BA390DE5F5C693D95DCCCF4E1",
+      "entries": 18,
+      "output_sha256": "ACE0A6A42137086178BF121A3BCA749C475618B9431068E5539D8312BC469D65",
+      "verdict": "SAME"
+    }
+  ]
+}

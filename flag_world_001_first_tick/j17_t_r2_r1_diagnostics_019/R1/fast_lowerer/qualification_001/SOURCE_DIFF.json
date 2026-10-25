@@ -1,0 +1,11 @@
+{
+  "helper": {
+    "old": "  const byte=i=>Buffer.byteLength(source.slice(0,i),'utf8');",
+    "new": "  // Exact UTF-8 byte length of every UTF-16 prefix, including prefixes that\n  // split a surrogate pair. A high surrogate alone contributes three bytes;\n  // its following low surrogate increases that prefix total by one to four.\n  // No token, enclosure, offset unit, order, or emitted entry changes.\n  const byteOffsets = new Float64Array(source.length+1);\n  for(let i=0;i<source.length;i++){\n    const unit=source.charCodeAt(i);\n    const pairedLow=unit>=0xDC00&&unit<=0xDFFF&&i>0&&\n      source.charCodeAt(i-1)>=0xD800&&source.charCodeAt(i-1)<=0xDBFF;\n    const width=pairedLow?1:unit<0x80?1:unit<0x800?2:3;\n    byteOffsets[i+1]=byteOffsets[i]+width;\n  }\n  const byte=i=>byteOffsets[i];"
+  },
+  "lowerer": {
+    "old": "new URL('file:///C:/Users/devon/Documents/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/source_occurrence_custody.mjs')",
+    "new": "new URL('./source_occurrence_custody.mjs',import.meta.url)"
+  },
+  "all_other_source_bytes": "SAME"
+}

@@ -1,0 +1,1093 @@
+{
+  "schema": "J17PairDiagnosticQualification011",
+  "run_record": {
+    "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\RUN_RECORD_011.json",
+    "bytes": 6689,
+    "sha256": "35334015AC81697383480FAE210DE3CC1AF06FEBD75079761E280BCF948EE518"
+  },
+  "readback": {
+    "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\stage\\readback.bin",
+    "bytes": 218103840,
+    "sha256": "7529D7B3ADBE275B9B7C4551031C3661FF8A4AB4E5A5054A2C9219AD98FB9AA5"
+  },
+  "replay": {
+    "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\replay\\readback.bin",
+    "bytes": 218103840,
+    "sha256": "7529D7B3ADBE275B9B7C4551031C3661FF8A4AB4E5A5054A2C9219AD98FB9AA5"
+  },
+  "source_map": {
+    "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\stage\\source-map.json",
+    "bytes": 8815113,
+    "sha256": "64D36F08558F4C5C8354278041063058BFACA55CCB7B54E8B50E243E0BE7CB20"
+  },
+  "replay_source_map": {
+    "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\replay\\source-map.json",
+    "bytes": 8815113,
+    "sha256": "64D36F08558F4C5C8354278041063058BFACA55CCB7B54E8B50E243E0BE7CB20"
+  },
+  "pairs": 720,
+  "kind_counts": {
+    "DELTA": 240,
+    "GAMMA": 240,
+    "TAU": 240
+  },
+  "case_count": 1440,
+  "side_certificates": 8640,
+  "endpoint_certificates": 2880,
+  "affected_per_case": 5,
+  "prior_singles": {
+    "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\SINGLE_FLAG_EXCLUSIONS.json",
+    "bytes": 2226382,
+    "sha256": "78A5922B01692DAF76372D100215AECCF2912C0BA46367621A5258A5A0A77327"
+  },
+  "comparisons": [
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_05",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_05",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "C:HW_04|HW_05",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_05",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "b": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_05",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "b": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "C:HW_04|HW_05",
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_08",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_08",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "C:HW_04|HW_08",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_08",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "b": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_08",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "b": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "C:HW_04|HW_08",
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_05|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_05|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "C:HW_05|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_05|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_05|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "C:HW_05|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_08|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_08|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "C:HW_08|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_08|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "b": [
+        "C:HW_08|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "C:HW_08|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "b": [
+        "D:HW_04",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "b": [
+        "D:HW_04",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "D:HW_04",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_05",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "b": [
+        "D:HW_04",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "b": [
+        "D:HW_04",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "D:HW_04",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ],
+        [
+          "C:HW_04|HW_08",
+          "C:HW_04|HW_09",
+          "D:HW_04"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "b": [
+        "D:HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "b": [
+        "D:HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "D:HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_05|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "b": [
+        "D:HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "reading": "NO",
+      "changed": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    },
+    {
+      "kind": "DELTA",
+      "a": [
+        "C:HW_04|HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "b": [
+        "D:HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "reading": "THIS",
+      "changed": [
+        "D:HW_09",
+        [
+          "C:HW_04|HW_09",
+          "D:HW_09"
+        ],
+        [
+          "C:HW_04|HW_09",
+          "C:HW_08|HW_09",
+          "D:HW_09"
+        ]
+      ],
+      "opened": 2,
+      "discharged": 1,
+      "comparison": "SAME"
+    }
+  ],
+  "comparison": "SAME",
+  "frozen": {
+    "manifest": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_runs_021_023_seal\\FROZEN_REHOME_MANIFEST_001.json",
+      "bytes": 539738,
+      "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560"
+    },
+    "count": 901,
+    "comparison": "SAME",
+    "differences": []
+  },
+  "g2": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+    "bytes": 568805,
+    "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+  }
+}

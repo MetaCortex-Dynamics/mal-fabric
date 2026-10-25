@@ -1,0 +1,72 @@
+{
+  "schema": "J17_LINK3_T_CARRIER_CONTACTS_001",
+  "scope": "Five runtime T inputs absent from prior storage; byte custody only",
+  "bound_by": {
+    "path": "flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/T/run_001/INPUTS.json",
+    "sha256": "9A3A1C690DFE0CFA96047D380D4E260E6DE1CA626CDAB31B1C430F4419C52DB8"
+  },
+  "source_file_count": 5,
+  "source_bytes": 16811982,
+  "files": [
+    {
+      "source_path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/source/incidence.mal",
+      "source_relative": "source/incidence.mal",
+      "sha256": "8F53851F3ACB76B2672EECEA5595B313040C8FAC961469E029D8C5DE5BF19F3C",
+      "bytes": 7678,
+      "storage": {
+        "encoding": "raw",
+        "path": "t_contacts/raw/source/incidence.mal",
+        "sha256": "8F53851F3ACB76B2672EECEA5595B313040C8FAC961469E029D8C5DE5BF19F3C",
+        "bytes": 7678
+      }
+    },
+    {
+      "source_path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/source/junction_identity.mal",
+      "source_relative": "source/junction_identity.mal",
+      "sha256": "E4CF9C4D9F3CE2B231DE67C7FFD45B82DE79FFD9DD403F7BAFD097D8939B3ACD",
+      "bytes": 12149,
+      "storage": {
+        "encoding": "raw",
+        "path": "t_contacts/raw/source/junction_identity.mal",
+        "sha256": "E4CF9C4D9F3CE2B231DE67C7FFD45B82DE79FFD9DD403F7BAFD097D8939B3ACD",
+        "bytes": 12149
+      }
+    },
+    {
+      "source_path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/gpu/readback.bin",
+      "source_relative": "gpu/readback.bin",
+      "sha256": "8FF8E9B0EBBDD18445F0E294A3B8B501A2385D5A137C8B00CB6AA090A14205E7",
+      "bytes": 16777248,
+      "storage": {
+        "encoding": "gzip",
+        "path": "t_contacts/blobs/8FF8E9B0EBBDD18445F0E294A3B8B501A2385D5A137C8B00CB6AA090A14205E7.gz",
+        "bytes": 76498,
+        "sha256": "4D9E158874C7D0265C61417190DA7449F68F87D6B1885CBABC454AC5F2DE0D96"
+      }
+    },
+    {
+      "source_path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/parents/qg003-carrier.mcbf",
+      "source_relative": "parents/qg003-carrier.mcbf",
+      "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB",
+      "bytes": 12048,
+      "storage": {
+        "encoding": "raw",
+        "path": "t_contacts/raw/parents/qg003-carrier.mcbf",
+        "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB",
+        "bytes": 12048
+      }
+    },
+    {
+      "source_path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/parents/motif_junction_table_v1.h",
+      "source_relative": "parents/motif_junction_table_v1.h",
+      "sha256": "25AF837405F450986FBD24A425D2197BD5E5D9D4BF952F74BE43CFB992B10F64",
+      "bytes": 2859,
+      "storage": {
+        "encoding": "raw",
+        "path": "t_contacts/raw/parents/motif_junction_table_v1.h",
+        "sha256": "25AF837405F450986FBD24A425D2197BD5E5D9D4BF952F74BE43CFB992B10F64",
+        "bytes": 2859
+      }
+    }
+  ]
+}

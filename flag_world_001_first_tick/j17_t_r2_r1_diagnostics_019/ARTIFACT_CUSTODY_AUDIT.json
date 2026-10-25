@@ -1,0 +1,44 @@
+{
+  "scope": "READ_ONLY_HASH_CUSTODY; NATIVE_DIAGNOSTIC_VERDICTS_REMAIN_IN_THEIR_OWN_RECORDS",
+  "verdict": "SAME",
+  "observer": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\verify_diagnostic_custody.mjs",
+    "bytes": 3410,
+    "sha256": "5F4A3AE768605534A76448DC930203E30D8B38A80877D13EBF8E79F9BB89F6BC"
+  },
+  "records": [
+    {
+      "subject": "T",
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\RUN_RECORD_T.json",
+      "bytes": 39982,
+      "sha256": "01886C677970FC586BBE084C74A92F6227FADA9100EC0E6520A4F3310B384ECC"
+    },
+    {
+      "subject": "R2",
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\execution_001\\finish_001\\RUN_RECORD_R2_019.json",
+      "bytes": 12175,
+      "sha256": "2E1736651A889D225DA12E1F9613AFF9581F94F709413FDCE92962DE22599336"
+    },
+    {
+      "subject": "R2_custody",
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R2\\FINAL_BINDING.json",
+      "bytes": 5566,
+      "sha256": "AD8595FADFD6B24E8071821DD39F0948B8ED50AC5C80796B261FEB49703B5E4F"
+    },
+    {
+      "subject": "R1",
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\RUN_RECORD_R1.json",
+      "bytes": 230385,
+      "sha256": "8D00AEF6B6BF61050CA4951098F3691F83BF75CE54CC56832B91C80868A50004"
+    },
+    {
+      "subject": "R1_custody",
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\FINAL_BINDING_R1.json",
+      "bytes": 748406,
+      "sha256": "29BFAB2FC2A5B0F0DDCFA71C27BC6A8FA27274441B34C5E195B99F1B2AD393C5"
+    }
+  ],
+  "checked_paths": 742,
+  "recursive_task_json": 185,
+  "mismatches": []
+}

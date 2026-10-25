@@ -1,0 +1,41 @@
+{
+  "schema": "J17ProposerReentryRequest020",
+  "authority": "Devon, current Test P request, 2026-10-25",
+  "subject": "GPU-owned (field,witness) pair continuation on carrier 012; no supplied external move",
+  "trace": {
+    "path": "C:/Users/devon/Desktop/MaL/Markdowns/TRACE_FOLD_PRODUCT_PROJECTION_RECORD_001_2026-10-23.md",
+    "bytes": 86251,
+    "sha256": "C1ADDA8A3E1EFC2FF846E3F1C7EF4A8A368630473418BAB9FCA2B89E05B6B4E8"
+  },
+  "base_commit": "67f16aaa212a747012a6eec1a192517c66a64717",
+  "source_world": {
+    "path": "../j17_step_023/outputs/committed.world.json",
+    "bytes": 568805,
+    "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+    "pair_hash": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+    "head": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386"
+  },
+  "required": [
+    "Native PROPOSE on g2 over the qualified 1924-assignment scope",
+    "Exhaustive native K fold; one member enables the successor, with no host selection",
+    "Native successor field and overlap witness cover the complete input incidence",
+    "Second invocation of the same PROPOSE rules receives the returned pair through native support edges, not a second g2 import",
+    "Record O1/O2 content hashes, assignment-domain comparison, exact receipts, K cardinalities and provenance",
+    "Replay and source/return negative controls",
+    "Own world commit conditions are checked independently of the generic authority adapter; preserve the original g2 file"
+  ],
+  "expectations_not_inputs": {
+    "first_strict_member": "SITE C:HW_04|HW_09 -> NO",
+    "first_receipt": {"discharged": 12, "opened": 0, "retained": 0},
+    "second_strict_count": 0
+  },
+  "boundaries": [
+    "No external board or analog-proposer dependency",
+    "No new law or promotion",
+    "No Python in the engine path",
+    "No edits to 901 frozen files",
+    "No Git commit or push",
+    "Pair re-entry does not assert full FABRIC_STATE phase recurrence",
+    "Do not declare a live link committed from a diagnostic return alone"
+  ]
+}

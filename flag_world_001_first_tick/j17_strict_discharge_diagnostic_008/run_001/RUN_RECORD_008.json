@@ -1,0 +1,87 @@
+{
+  "schema": "J17StrictDischargeDiagnostic008",
+  "verdict": "IF_THEN_ON_DIAGNOSTIC_SUBJECT",
+  "inputs": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_strict_discharge_diagnostic_008\\source\\diagnostic.mal",
+      "bytes": 9111,
+      "sha256": "9DEBF75815CCAE27FA7726ABDA0C33174B6C97ABCD39F8981E55B11D8F30046C"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+      "bytes": 8265,
+      "sha256": "05CE980CBC68707070837001819A90DF532A730569BA1112367C07BC017BD45B"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+      "bytes": 521216,
+      "sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_002\\QUALIFICATION.json",
+      "bytes": 28485,
+      "sha256": "D2F42E635BF8095CE5BA3208B030D8F7F26E0A96074F78597833F1CE7D6E41F5"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_strict_discharge_diagnostic_008\\run.mjs",
+      "bytes": 9085,
+      "sha256": "BF87D394FEE929679D1A5AEDE280C3913F071B38F12107615E1609B918811C66"
+    }
+  ],
+  "source": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_strict_discharge_diagnostic_008\\run_001\\diagnostic.mal",
+    "bytes": 81133,
+    "sha256": "ACD31DD2CF20B4262272AAF96016E1EF8E927CCFA20BDEE4723A17D1A19B2C65"
+  },
+  "image": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_strict_discharge_diagnostic_008\\run_001\\stage\\image.bin",
+    "bytes": 41992208,
+    "sha256": "9193AAF4A21D44819EEAC83BC47EF372F2DAB5849543A44A4A625BD9C33A604D"
+  },
+  "readback": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_strict_discharge_diagnostic_008\\run_001\\stage\\readback.bin",
+    "bytes": 180355104,
+    "sha256": "28DD10A297FC6D1045C4BFB9A904EF024810B42BBF18A9155099C89F7B1A72F3"
+  },
+  "replay": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_strict_discharge_diagnostic_008\\run_001\\replay\\readback.bin",
+    "bytes": 180355104,
+    "sha256": "28DD10A297FC6D1045C4BFB9A904EF024810B42BBF18A9155099C89F7B1A72F3"
+  },
+  "replay_comparison": "SAME",
+  "facts": 38924,
+  "epochs": 96,
+  "error": 0,
+  "counts": {
+    "edge": 12,
+    "site": 144,
+    "triad": 72
+  },
+  "total": 228,
+  "strict_count": 0,
+  "receipt_histogram": {
+    "discharged=1;opened=2": 36,
+    "discharged=0;opened=4": 12,
+    "discharged=2;opened=4": 156,
+    "discharged=1;opened=5": 24
+  },
+  "excluded_with_opened_witness": 228,
+  "receipt_coverage": 228,
+  "incidence_roles": 1440,
+  "result": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_strict_discharge_diagnostic_008\\run_001\\OFFERS_AND_RECEIPTS.json",
+    "bytes": 2655574,
+    "sha256": "CC6FBD5377C6FB1EF5C8DD86C2E8E1079F2D72EAC036AF430266D586E5DF7B9D"
+  },
+  "interpretation": {
+    "all_targets_union": "User-authorized diagnostic; not a new promotion of ENGINE declared-move semantics.",
+    "A6": "No terminal contradiction inferred: zero strict lifts in this restricted one-source/one-target family is not exhaustion of every strict-discharge transition.",
+    "worldline": "UNCHANGED; no entity record created, no lift selected, no link committed.",
+    "repository": "UNCOMMITTED; no push."
+  }
+}

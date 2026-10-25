@@ -1,0 +1,22 @@
+{
+  "command": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "--max-old-space-size=8192",
+    "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\fast_lowerer\\lower.mjs",
+    "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reload_g2_round_00\\input.mal",
+    "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reload_g2_round_00\\stage",
+    "-",
+    "g2=D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+    "commit_world=D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+    "commit_binding=D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\commit_inputs\\binding.compact.json",
+    "commit_execution_source=D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\commit_inputs\\execution_source.compact.json",
+    "commit_hashes=D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reload_g2_hash_service\\hash_rows_00.json"
+  ],
+  "started": "2026-10-25T18:52:21.314Z",
+  "ended": "2026-10-25T18:52:34.102Z",
+  "status": 0,
+  "error": null,
+  "stdout": "{\"source_sha256\":\"A7EFC0C1D20D3C1899653757EABA663E0C2BA8493380A5EE63318E5ACC281D25\",\"image_sha256\":\"159BE36B6C0FDD5F74C5DB52C91A3D19E8B5139675B2F141D565AE4C5404C6A5\",\"patterns\":55293,\"seeds\":1865,\"rules\":213}\n",
+  "stderr": "",
+  "gpu": false
+}

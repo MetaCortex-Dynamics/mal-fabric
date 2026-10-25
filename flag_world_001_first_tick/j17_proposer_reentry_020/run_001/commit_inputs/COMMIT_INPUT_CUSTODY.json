@@ -1,0 +1,68 @@
+{
+  "schema": "TestPCommitInputCustody020",
+  "scope": "SOURCE_AND_EXISTING_BINDING_TRANSPORT_ONLY",
+  "bound": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\BINDING_EVIDENCE.json",
+      "bytes": 18662,
+      "sha256": "171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\RECORD_J17_TICK_PROMOTE_BINDING_013.mal",
+      "bytes": 3717,
+      "sha256": "2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4"
+    }
+  ],
+  "sources": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_strict_discharge_diagnostic_008\\source\\diagnostic.mal",
+      "bytes": 9111,
+      "sha256": "9DEBF75815CCAE27FA7726ABDA0C33174B6C97ABCD39F8981E55B11D8F30046C"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\source\\list_parts_index.mal",
+      "bytes": 757,
+      "sha256": "1B5C14F9D25606279E2401E743D0EE4030B3E4582499D0F28805989E720D7AB9"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\source\\r1_optimized.mal",
+      "bytes": 12451,
+      "sha256": "E8567527605453C6332BF5BC19D84A5EFF4DBA5B017F2819547B04AFE58392A9"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\source\\proposer_reentry.mal",
+      "bytes": 11483,
+      "sha256": "1C87166F0D6FE3941FB9625A50913A3ED508C9B6A8400E52424E216ACEB3BD33"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\commit\\source.mal",
+      "bytes": 12450,
+      "sha256": "B8AEDC68816012AC9819BD5162612C1DDEF0E014D61A4BB40BA87D52E1C3DDED"
+    }
+  ],
+  "execution_source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\commit_inputs\\execution_source.compact.json",
+    "bytes": 1344,
+    "sha256": "0F229C31DE9334A863A1D476A0AB81EF313FCCFACABF5ABEB9A6A3985F8D4186"
+  },
+  "binding_transport": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\commit_inputs\\binding.compact.json",
+    "bytes": 11564,
+    "sha256": "039B90ED31D72EA3C6C69F02DE7FEFA16F3716339AF131EC59C6A0D2C6FE215A"
+  },
+  "script": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\commit\\finish.mjs",
+    "bytes": 11639,
+    "sha256": "9875705B9561F6025B02C01F24E0308CE5A37D1B9CD241FFDACB1DB40A545178"
+  },
+  "commit_source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\commit\\source.mal",
+    "bytes": 12450,
+    "sha256": "B8AEDC68816012AC9819BD5162612C1DDEF0E014D61A4BB40BA87D52E1C3DDED"
+  }
+}

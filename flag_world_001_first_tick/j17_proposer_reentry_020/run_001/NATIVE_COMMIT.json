@@ -1,0 +1,62 @@
+{
+  "verdict": "IF_THEN",
+  "scope": "NATIVE_SECTION_PAIR_WORLD_COMMIT; NOT_FULL_FABRIC_STATE",
+  "artifact": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\committed.world.json",
+    "bytes": 763526,
+    "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88"
+  },
+  "prior_head": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+  "link": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+  "pair_hash": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+  "receipt_hash": "a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd",
+  "native_return": {
+    "fact": 630902,
+    "origin": "P20_C_COMMITTED_RETURN",
+    "support": [
+      628476,
+      630901,
+      630899
+    ]
+  },
+  "native_world": {
+    "fact": 632105,
+    "origin": "P20_C_COMMITTED_WORLD",
+    "support": [
+      630902,
+      630901
+    ]
+  },
+  "stage": {
+    "readback": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_round_02\\stage\\readback.bin",
+      "bytes": 369098784,
+      "sha256": "00BA1A2996D0B0D74BF5B1FCC3C32F5C4786CF9FF35B2CAB0D8AEEE41706DA90"
+    },
+    "map": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_round_02\\stage\\source-map.json",
+      "bytes": 336123819,
+      "sha256": "F4FD27451F184BC9F79090DC31D59CE61DF6DD3B9DE8B1C00202E25DEA8B6CFF"
+    },
+    "image": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_round_02\\stage\\image.bin",
+      "bytes": 41992208,
+      "sha256": "DEB8BC33CBDCC2241E5D741D40465B8A84FA0B617E6806F735BEE82AF1D45A6F"
+    },
+    "source": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_round_02\\input.mal",
+      "bytes": 4824670,
+      "sha256": "3FC23ABD3214B087E54C293F3D7C85734BEE6324A834380F19AE756B59E08653"
+    }
+  },
+  "qualification": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\QUALIFICATION.json",
+    "bytes": 16998,
+    "sha256": "1B126165B3A05833FE6379623BB0618981462A649839C051C56133795A97BAE6"
+  },
+  "original_world": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+    "bytes": 568805,
+    "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+  }
+}

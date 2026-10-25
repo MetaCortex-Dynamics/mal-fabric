@@ -1,0 +1,137 @@
+{
+  "schema": "J17DiagnosticsCustodyAfter019",
+  "scope": "READ_ONLY_CUSTODY; NATIVE_DIAGNOSTIC_VERDICTS_REMAIN_IN_THEIR_OWN_RECORDS; NO_LIVE_COMMIT",
+  "verdict": "SAME",
+  "request": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\REQUEST.json",
+    "bytes": 1210,
+    "sha256": "A3151B0B878FCF4B5C6C0D8C8709BACF0B9A8DDBE77BFA16511B2809298BCFD5"
+  },
+  "custody_before": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\CUSTODY_BEFORE.json",
+    "bytes": 973,
+    "sha256": "CDDADECE6F319ACFD1CD0C15247D7FE236DC5993A815418131FC50705A6CFC0D"
+  },
+  "observer": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\verify_live_custody.mjs",
+    "bytes": 3147,
+    "sha256": "F175B5667EAFF4118FA53040F91AB99AD37033DCEEA48E6595C76664B4403E29"
+  },
+  "checker": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\verify_binding.mjs",
+    "bytes": 10960,
+    "sha256": "09D620DC73331BB6E7D2EC56A6A9C8DA81DBBB008D6D5853A2DB4113E5829E32"
+  },
+  "checker_result": {
+    "verdict": "SAME",
+    "evidence_sha256": "171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4",
+    "observer_sha256": "09D620DC73331BB6E7D2EC56A6A9C8DA81DBBB008D6D5853A2DB4113E5829E32",
+    "comparisons": 55,
+    "negative_checks": 8,
+    "frozen": {
+      "manifest_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+      "manifest_sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+      "files": 901,
+      "verdict": "SAME"
+    },
+    "pair_before": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+    "pair_after": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+    "receipt_hash": "a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd",
+    "member_hash": "19EBB89436905DB26E25BDB0039043C870C9282FA0E3CDEFECFBB749340DBDE9",
+    "sections": "NOT_RUN",
+    "world_commit": "NOT_RUN",
+    "link_count": 2
+  },
+  "live_g2": {
+    "file": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    "pair_hash": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+    "chain_head": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+    "links": 2,
+    "comparison": "SAME"
+  },
+  "pre_execute_candidate": {
+    "pair_hash": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+    "world_commit": "NOT_RUN",
+    "scope": "Retained prior SITE(J17,NO) candidate; pair_after in checker_result is NOT a live after-state."
+  },
+  "frozen": {
+    "manifest_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+    "manifest_sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+    "files": 901,
+    "verdict": "SAME"
+  },
+  "repository": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001",
+    "requested_base": "67f16aaa212a747012a6eec1a192517c66a64717",
+    "observed_head": "67f16aaa212a747012a6eec1a192517c66a64717",
+    "tracked_status": "",
+    "read_only_checks": [
+      {
+        "executable": "git",
+        "args": [
+          "--no-optional-locks",
+          "-C",
+          "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001",
+          "rev-parse",
+          "HEAD"
+        ],
+        "status": 0,
+        "error": null,
+        "stdout": "67f16aaa212a747012a6eec1a192517c66a64717\n",
+        "stderr": ""
+      },
+      {
+        "executable": "git",
+        "args": [
+          "--no-optional-locks",
+          "-C",
+          "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001",
+          "diff",
+          "--no-ext-diff",
+          "--exit-code",
+          "--"
+        ],
+        "status": 0,
+        "error": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "executable": "git",
+        "args": [
+          "--no-optional-locks",
+          "-C",
+          "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001",
+          "diff",
+          "--cached",
+          "--no-ext-diff",
+          "--exit-code",
+          "--"
+        ],
+        "status": 0,
+        "error": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "executable": "git",
+        "args": [
+          "--no-optional-locks",
+          "-C",
+          "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=no"
+        ],
+        "status": 0,
+        "error": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    ]
+  }
+}

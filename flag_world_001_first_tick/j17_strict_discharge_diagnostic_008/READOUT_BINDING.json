@@ -1,0 +1,48 @@
+{
+  "schema": "J17StrictDischargeDiagnosticContactBinding008",
+  "status": "EXECUTED_DIAGNOSTIC_UNCOMMITTED",
+  "recorded_on": "2026-10-24",
+  "run_record": {
+    "path": "run_001/RUN_RECORD_008.json",
+    "sha256": "AB0128699327B078BE34D5C275E352160DE3A63A5269238D2693F55CF3B95B25"
+  },
+  "contacts": [
+    {
+      "path": "../world_transition_contacts_007/MANIFEST.json",
+      "sha256": "13F4676010390261EAFC6C208498231806C738599D5376314D36E3DFDCA44EC6"
+    },
+    {
+      "path": "../world_transition_contacts_007/contacts/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805",
+      "lines": [17, 18, 46]
+    },
+    {
+      "path": "../world_transition_contacts_007/contacts/Markdowns/07_The_Erratum.md",
+      "sha256": "E097CDA64A92199F11A97DB1EB113C491806FFE1AEC29032E060C9877BD8426C",
+      "lines": [74]
+    },
+    {
+      "path": "../world_transition_contacts_007/contacts/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0.md",
+      "sha256": "B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C",
+      "lines": [386, 387, 407, 408, 455, 464]
+    },
+    {
+      "path": "../evidence/first-tick-conform-v1-v2-001/files/realization020/source/vector_displacement.mal",
+      "sha256": "22192EBAEE1248B35B722C97924B0FF6DF577CCD024F0A9B9F75C9A6ECFB3F8F",
+      "lines": [132, 168, 223, 253]
+    }
+  ],
+  "input_scope": "Each g2 THIS flag is a diagnostic FROM locus, not an inferred entity record. All eligible adjacent targets of all three native move kinds are included. No VIA=FROM restriction is added.",
+  "offer_cardinality": {
+    "site": 144,
+    "edge": 12,
+    "triad": 72,
+    "total": 228,
+    "because": "2/1/2 is per bound base target. It is not the total over every target of one kind."
+  },
+  "verdict": "IF_THEN: K_offered(g2) is the empty set on this diagnostic family.",
+  "negative_witness": "Every one of the 228 native offers has at least one KD_NOT_STRICT fact supported by KD_OPENED. Each offer has complete FROM/TO delta/gamma/tau coverage. The result is not inferred from absent KD_STRICT output alone.",
+  "receipt_exhaustion": "The native baseline reproduces all 720 recorded overlap readings. Only overlaps incident to the two written flags can change under RETAIN_OTHER_FLAGS. The bound input has exactly one delta, gamma and tau overlap at each flag, so six endpoint-role checks exhaust all possible receipt differences, including a shared overlap without double counting.",
+  "interpretation_boundary": "K_offered denotes strict discharge intersected with the requested single-lift family. This run does not identify that family with every transition in A6 K. It does not discharge the promoted world-fold specification or establish an A6 endpoint contradiction.",
+  "retained": "J17 admission and two committed links unchanged; g2 bytes E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059 unchanged. Contact packet and diagnostic uncommitted. No selection, board action, promotion or push."
+}

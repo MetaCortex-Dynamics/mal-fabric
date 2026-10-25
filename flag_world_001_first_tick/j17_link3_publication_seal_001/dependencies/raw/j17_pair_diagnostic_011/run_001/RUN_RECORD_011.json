@@ -1,0 +1,177 @@
+{
+  "schema": "J17PairDiagnostic011",
+  "verdict": "IF_THEN_ON_REQUESTED_DIAGNOSTIC_SUBJECT",
+  "inputs": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_strict_discharge_diagnostic_008\\source\\diagnostic.mal",
+      "bytes": 9111,
+      "sha256": "9DEBF75815CCAE27FA7726ABDA0C33174B6C97ABCD39F8981E55B11D8F30046C"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+      "bytes": 8265,
+      "sha256": "05CE980CBC68707070837001819A90DF532A730569BA1112367C07BC017BD45B"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+      "bytes": 521216,
+      "sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_002\\QUALIFICATION.json",
+      "bytes": 28485,
+      "sha256": "D2F42E635BF8095CE5BA3208B030D8F7F26E0A96074F78597833F1CE7D6E41F5"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\world_transition_contacts_007\\MANIFEST.json",
+      "bytes": 4288,
+      "sha256": "13F4676010390261EAFC6C208498231806C738599D5376314D36E3DFDCA44EC6"
+    },
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\MaLv3\\RECORD_J17_REACTION_PDPE_001.mal",
+      "bytes": 4830,
+      "sha256": "3605713EFF93B32033C51704C258B3EF60310247BB2917DCD72F7B0D872A5E05"
+    },
+    {
+      "path": "D:\\mal_worldline_backups\\j17_fibre_diagnostic_010\\run_001\\RUN_RECORD_010.json",
+      "bytes": 230301,
+      "sha256": "2AD351F73AF9C7046C6883E0EF1C29180F272DAF9EDE5047630E242743F9A053"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_fibre_diagnostic_010\\FINAL_BINDING.json",
+      "bytes": 3188,
+      "sha256": "D3BC0F9871DDA01CE528634AC7EF384E54D4F317B4B8E8661B9B39C4D74B838E"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_pair_diagnostic_011\\source\\pairs.mal",
+      "bytes": 5707,
+      "sha256": "5912EA3812221BE1CBFE2414033474576244F7534AD4E8DD6F51AE212A5B4E95"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_pair_diagnostic_011\\run.mjs",
+      "bytes": 11738,
+      "sha256": "54053336AF61344115DEB9003AEA31E21D5245EBD697BA932D5D3DA69C08A0C9"
+    }
+  ],
+  "source": {
+    "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\diagnostic.mal",
+    "bytes": 86833,
+    "sha256": "5A5C33CF0B3FF7E67EDD2F29F278CDE833645982B5FF82B4B3E3C91F2623C29C"
+  },
+  "image": {
+    "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\stage\\image.bin",
+    "bytes": 41992208,
+    "sha256": "99023B4C5AC8BBECF35685D8C729194826EB762B5602F4928D7FE3227DEE2C23"
+  },
+  "readback": {
+    "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\stage\\readback.bin",
+    "bytes": 218103840,
+    "sha256": "7529D7B3ADBE275B9B7C4551031C3661FF8A4AB4E5A5054A2C9219AD98FB9AA5"
+  },
+  "replay": {
+    "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\replay\\readback.bin",
+    "bytes": 218103840,
+    "sha256": "7529D7B3ADBE275B9B7C4551031C3661FF8A4AB4E5A5054A2C9219AD98FB9AA5"
+  },
+  "replay_comparison": "SAME",
+  "facts": 372275,
+  "epochs": 96,
+  "error": 0,
+  "summary": {
+    "scope": "USER_REQUESTED_KEEP_TWO_CONSTANT_ASSIGNMENTS; OFFER_CORRESPONDENCE_NOT_INFERRED",
+    "total": 1440,
+    "counts": {
+      "DELTA": 480,
+      "GAMMA": 480,
+      "TAU": 480
+    },
+    "strict_count": 0,
+    "strict": [],
+    "histogram": {
+      "discharged=0;opened=0": 708,
+      "discharged=0;opened=4": 678,
+      "discharged=1;opened=2": 24,
+      "discharged=1;opened=3": 12,
+      "discharged=2;opened=2": 18
+    },
+    "by_kind": {
+      "DELTA": {
+        "discharged=0;opened=0": 228,
+        "discharged=0;opened=4": 228,
+        "discharged=1;opened=2": 24
+      },
+      "GAMMA": {
+        "discharged=0;opened=0": 240,
+        "discharged=0;opened=4": 222,
+        "discharged=1;opened=3": 12,
+        "discharged=2;opened=2": 6
+      },
+      "TAU": {
+        "discharged=0;opened=0": 240,
+        "discharged=0;opened=4": 228,
+        "discharged=2;opened=2": 12
+      }
+    },
+    "opened_nonempty": 732,
+    "discharged_empty": 1386,
+    "unchanged": 708,
+    "receipt_coverage": 1440,
+    "incidence_roles": 1440
+  },
+  "combined": {
+    "keep_one": 484,
+    "keep_two": 1440,
+    "total_assignments": 1924,
+    "strict_count": 1,
+    "keep_one_strict": [
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_04|HW_09",
+          "NO"
+        ],
+        "changed": 12,
+        "discharged": 12,
+        "opened": 0,
+        "retained": 0,
+        "reading": "IF_THEN",
+        "proof": [
+          {
+            "fact": 3535068,
+            "origin": "SC_STRICT",
+            "support": [
+              3533939,
+              2013,
+              3534047,
+              3296316
+            ]
+          }
+        ]
+      }
+    ],
+    "keep_two_strict": [],
+    "scope": "Exactly the two requested families; not an assertion of promoted offer exhaustion"
+  },
+  "record_correction": {
+    "keep_one_non_strict": 483,
+    "opened_nonempty": 253,
+    "unchanged_empty_discharge": 230,
+    "original_record_preserved": {
+      "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\RECORD_J17_REACTION_PDPE_001.mal",
+      "bytes": 4830,
+      "sha256": "3605713EFF93B32033C51704C258B3EF60310247BB2917DCD72F7B0D872A5E05"
+    }
+  },
+  "result": {
+    "path": "D:\\mal_worldline_backups\\j17_pair_diagnostic_011\\run_001\\PAIR_ASSIGNMENTS_AND_RECEIPTS.json",
+    "bytes": 81428544,
+    "sha256": "BF21091472DA1C4E61B4D75F3F27E8E9C48BE67742C8A6DC9DECE2D783BF981F"
+  },
+  "worldline": "UNCHANGED: no runtime PROMOTE or worldline EXECUTE inferred from this diagnostic",
+  "repository": "No repository commit or push"
+}

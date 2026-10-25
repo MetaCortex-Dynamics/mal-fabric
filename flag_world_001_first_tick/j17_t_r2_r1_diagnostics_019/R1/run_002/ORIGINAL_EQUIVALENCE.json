@@ -1,0 +1,41 @@
+{
+  "verdict": "IF_THEN",
+  "originalFactSet": {
+    "comparison": "SAME",
+    "closure_format": "structural-Merkle-fact-set-v1",
+    "closure_sha256": "7EE642AC65936BB7E9B709184FFDC61D2980C5F0E8BE669362855BE1EFB8A416",
+    "original_observation": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_001\\qualification.OBSERVATIONS.json",
+      "bytes": 47317431,
+      "sha256": "95FF7468ACA8C111645E6FFF5C2223EE930BAE5BE7920AD177EF43DAA3E2620D"
+    },
+    "original_readback": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_001\\qualification\\stage\\readback.bin",
+      "bytes": 369098784,
+      "sha256": "92E6F084B886D21503182CD0A2A65890ABAA05572C6BC6330976BCCF77A9CCCE"
+    },
+    "scope": "Entire decoded native fact set including inputs and intermediate facts; proof order and rule support may differ"
+  },
+  "retained": {
+    "verdict": "IF_THEN",
+    "cases": 1924,
+    "comparisons": 7696,
+    "scope": "SAME exact D/O/retained and strict for all 1924 retained g2 diagnostic offers"
+  },
+  "independent": {
+    "observer_only": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1_INDEPENDENT_OBSERVATION.json",
+      "bytes": 808400,
+      "sha256": "D3F47E53B283C688546E4EBE50FF514C716AC3A8851282DA7C859A5AB526EBEA"
+    },
+    "checks": [
+      {
+        "input": "G2",
+        "cases": 1924,
+        "receipt_rows_sha256": "A8F74F4FCA60EB052021C7D1E236AA20DB4661A979FC71E1913007E5533A1E5A",
+        "strict_count": 1,
+        "comparison": "SAME"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "TestPCommitInputCustody020",
+  "scope": "SOURCE_AND_EXISTING_BINDING_TRANSPORT_ONLY",
+  "bound": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\BINDING_EVIDENCE.json",
+      "bytes": 18662,
+      "sha256": "171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\RECORD_J17_TICK_PROMOTE_BINDING_013.mal",
+      "bytes": 3717,
+      "sha256": "2E762748A07C77A808B6CD8A612DE926839D6066D99D0E5949CE2E990BD735E4"
+    }
+  ],
+  "sources": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\commit\\source.mal",
+      "bytes": 12450,
+      "sha256": "B8AEDC68816012AC9819BD5162612C1DDEF0E014D61A4BB40BA87D52E1C3DDED"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\source\\proposer_reentry.mal",
+      "bytes": 11427,
+      "sha256": "AFF0DE33BCC14A6497A8F98F080708D81772BB791DC5B0CD4CFB880ADFF8522D"
+    }
+  ],
+  "execution_source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\commit\\preflight_001\\execution_source.compact.json",
+    "bytes": 588,
+    "sha256": "EB23A481E40AC5EF173BAD4825CA1899DD8F5640205471B187B3A7ECFB7BADA9"
+  },
+  "binding_transport": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\commit\\preflight_001\\binding.compact.json",
+    "bytes": 11564,
+    "sha256": "039B90ED31D72EA3C6C69F02DE7FEFA16F3716339AF131EC59C6A0D2C6FE215A"
+  },
+  "script": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\commit\\finish.mjs",
+    "bytes": 11639,
+    "sha256": "9875705B9561F6025B02C01F24E0308CE5A37D1B9CD241FFDACB1DB40A545178"
+  },
+  "commit_source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\commit\\source.mal",
+    "bytes": 12450,
+    "sha256": "B8AEDC68816012AC9819BD5162612C1DDEF0E014D61A4BB40BA87D52E1C3DDED"
+  }
+}

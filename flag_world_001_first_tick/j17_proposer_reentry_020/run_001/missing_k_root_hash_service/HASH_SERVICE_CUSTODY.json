@@ -1,0 +1,91 @@
+{
+  "scope": "GENERIC_SHA256_ONLY; NATIVE_REQUEST_SUBJECTS; APPEND_ONLY_RESPONSE_SEEDS",
+  "script": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\commit\\finish.mjs",
+    "bytes": 11639,
+    "sha256": "9875705B9561F6025B02C01F24E0308CE5A37D1B9CD241FFDACB1DB40A545178"
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "stage": {
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root_initial\\stage\\readback.bin",
+          "bytes": 369098784,
+          "sha256": "B48AF8D8134C22EF18A9054254607A2B25614EACB2B2FB5CE07EE9200945EC57"
+        },
+        "map": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root_initial\\stage\\source-map.json",
+          "bytes": 333622704,
+          "sha256": "7BF9769488521F3963B168A81C0B9B9D288424C05EAD61EBF4A5DF8D5651407E"
+        },
+        "image": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root_initial\\stage\\image.bin",
+          "bytes": 41992208,
+          "sha256": "3F1FF7B46738EEAD93149D5A2FABF85FF939EAFB55AC9317127027D1035BB419"
+        },
+        "source": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root_initial\\input.mal",
+          "bytes": 4824284,
+          "sha256": "E84858D316A0177A5CD208867E25DAE9CBFEC7427C79140FDEEC121105508C9F"
+        }
+      },
+      "response_count_before": 0,
+      "new_responses": 2,
+      "total_responses": 2,
+      "continuation_guard": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root_round_00\\stage\\GUARD.json",
+        "bytes": 1136,
+        "sha256": "AA1F74229B5FDF6F891AE86138F1E2681F7B4B0528F6CC18B57CDAE60FB943B5"
+      }
+    },
+    {
+      "round": 1,
+      "stage": {
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root_round_00\\stage\\readback.bin",
+          "bytes": 369098784,
+          "sha256": "CDF688FA0D9079266A7520A9FA67273C49BB88A87D1B6FDB4DBCFA18E1D37491"
+        },
+        "map": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root_round_00\\stage\\source-map.json",
+          "bytes": 334767683,
+          "sha256": "88B6C56084A7F2EDE816E27E0E7F03E500530E6D7B3914A2A6FDD0879A71F952"
+        },
+        "image": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root_round_00\\stage\\image.bin",
+          "bytes": 41992208,
+          "sha256": "7D9BCF5635C68177D3CA5698D92866B3C5CC28EC5AE6B254D3F62117473E28EB"
+        },
+        "source": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root_round_00\\input.mal",
+          "bytes": 4824467,
+          "sha256": "960D47EB0147F8BE79DC4205BED084A8D37BC0AE2B627566114D7BFB88842793"
+        }
+      },
+      "response_count_before": 2,
+      "new_responses": 0,
+      "total_responses": 2
+    }
+  ],
+  "requests": [
+    {
+      "round": 0,
+      "fact": 11078,
+      "origin": "P20_C_SOURCE_PAIR_REQUEST",
+      "support": [
+        6790
+      ],
+      "subject_sha256": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9"
+    },
+    {
+      "round": 0,
+      "fact": 11079,
+      "origin": "P20_C_SOURCE_HEAD_REQUEST",
+      "support": [
+        6789
+      ],
+      "subject_sha256": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386"
+    }
+  ]
+}

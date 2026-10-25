@@ -1,0 +1,431 @@
+{
+  "verdict": "IF_THEN",
+  "scope": "Native 1924-domain singleton, one pair-world link, same-source proposer re-entry; not full FABRIC_STATE or law promotion",
+  "normal": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal.RESULT.json",
+    "bytes": 9599,
+    "sha256": "DFA1D1B60842BC414900132788650377AD380344CDE6A7E193BB2E8B248644E0"
+  },
+  "replay": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\replay.RESULT.json",
+    "bytes": 9599,
+    "sha256": "3E4F655F691DBD5EE36F4A5919FA4EB0A2E3328DDFA4BFFA2ABCFE6DEC066EA9"
+  },
+  "reversed": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reversed.RESULT.json",
+    "bytes": 9661,
+    "sha256": "64E1F06EED0AA0D88F5B7BDA4846F6B60DC45B98ED78DDAD4A661336F4CB49D6"
+  },
+  "replay_readbacks": [
+    {
+      "normal": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_initial\\stage\\readback.bin",
+        "bytes": 369098784,
+        "sha256": "E59824FD4078C4238D1269AB5E96BBC4B9901B00A622D0B39F9130A577250867"
+      },
+      "replay": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\replay_initial\\stage\\readback.bin",
+        "bytes": 369098784,
+        "sha256": "E59824FD4078C4238D1269AB5E96BBC4B9901B00A622D0B39F9130A577250867"
+      },
+      "comparison": "SAME"
+    },
+    {
+      "normal": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_round_00\\stage\\readback.bin",
+        "bytes": 369098784,
+        "sha256": "5491FCE67CDE429B2E4C24FBF443B09B4CD8CD794B651603814185AC75C41C68"
+      },
+      "replay": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\replay_round_00\\stage\\readback.bin",
+        "bytes": 369098784,
+        "sha256": "5491FCE67CDE429B2E4C24FBF443B09B4CD8CD794B651603814185AC75C41C68"
+      },
+      "comparison": "SAME"
+    },
+    {
+      "normal": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_round_01\\stage\\readback.bin",
+        "bytes": 369098784,
+        "sha256": "85372105CA847756D7B840D778C55D68D2489B860BA6ADCEFA13FF56134510F6"
+      },
+      "replay": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\replay_round_01\\stage\\readback.bin",
+        "bytes": 369098784,
+        "sha256": "85372105CA847756D7B840D778C55D68D2489B860BA6ADCEFA13FF56134510F6"
+      },
+      "comparison": "SAME"
+    },
+    {
+      "normal": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_round_02\\stage\\readback.bin",
+        "bytes": 369098784,
+        "sha256": "00BA1A2996D0B0D74BF5B1FCC3C32F5C4786CF9FF35B2CAB0D8AEEE41706DA90"
+      },
+      "replay": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\replay_round_02\\stage\\readback.bin",
+        "bytes": 369098784,
+        "sha256": "00BA1A2996D0B0D74BF5B1FCC3C32F5C4786CF9FF35B2CAB0D8AEEE41706DA90"
+      },
+      "comparison": "SAME"
+    }
+  ],
+  "replay_closure": "SAME",
+  "reversal": "SAME",
+  "reversal_scope": "All initial R1/P20/KD transport declarations reversed; fixed commit declarations and chunk contents retained",
+  "controls": [
+    {
+      "variant": "missing_return",
+      "result": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return.RESULT.json",
+        "bytes": 6191,
+        "sha256": "2DB17AEAE0CA0EBC894E6A731EE794DF6521E411A7CA9CCA3B1F703B663238F6"
+      },
+      "observation": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_return.OBSERVATIONS.json",
+        "bytes": 70997684,
+        "sha256": "F20FE5529C2514C5251D422C736D45AB6E735D9C8BF55E31B82A5783EC0835D1"
+      }
+    },
+    {
+      "variant": "missing_k_root",
+      "result": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root.RESULT.json",
+        "bytes": 6191,
+        "sha256": "6F6F222F5D5B404D327546E6E078A82EC5FB9B8F71036BA2D63C0A84CA53B54C"
+      },
+      "observation": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\missing_k_root.OBSERVATIONS.json",
+        "bytes": 70515938,
+        "sha256": "3E55E3933C483F6BF8AC26ECB003215E68F523F1B0DEF4EBBCB0D2285900982C"
+      }
+    },
+    {
+      "variant": "reload_g2",
+      "result": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reload_g2.RESULT.json",
+        "bytes": 9693,
+        "sha256": "F8B9CB152BC7F7FE5972E1272170F281C3C056A23CD541FB32B5E038945F7090"
+      },
+      "observation": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\reload_g2.OBSERVATIONS.json",
+        "bytes": 144356100,
+        "sha256": "8266BF30F04496052047A5C6A32C2F4012CD4769B2C11193CD9564F8334407FB"
+      }
+    }
+  ],
+  "commit_controls": {
+    "altered_member": "WITHHELD",
+    "wrong_head": "WITHHELD"
+  },
+  "prior_head": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+  "link": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+  "pair_hash": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+  "receipt_hash": "a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd",
+  "normal_summary": {
+    "verdict": "IF_THEN",
+    "scope": "TEST_P_NATIVE_PAIR_COMMIT_AND_REENTRY_OBSERVATION; QUALIFIED_1924_ASSIGNMENT_SCOPE; NO_FULL_FABRIC_STATE_RECURRENCE; NO_OBSERVER_RUNTIME_INPUT",
+    "facts": 821959,
+    "terms": 875620,
+    "epochs": 1591,
+    "error": 0,
+    "fact_capacity": 4194304,
+    "source_facts": 1868,
+    "readback": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_round_02\\stage\\readback.bin",
+      "bytes": 369098784,
+      "sha256": "00BA1A2996D0B0D74BF5B1FCC3C32F5C4786CF9FF35B2CAB0D8AEEE41706DA90"
+    },
+    "source_map": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\normal_round_02\\stage\\source-map.json",
+      "sha256": "F4FD27451F184BC9F79090DC31D59CE61DF6DD3B9DE8B1C00202E25DEA8B6CFF"
+    },
+    "closure_sha256": "925D76F874083A51AC2961E39871336FE11027D800E34E19B3B6E143C3A569A5",
+    "closure_format": "structural-Merkle-fact-set-v1",
+    "projected_original_closure_sha256": "C2A2B41FA32B4A551EE0C608E43A7481259D221B7AB2AA4D2BD1482947E7E383",
+    "projected_original_fact_count": 798168,
+    "projection": {
+      "excluded_predicate": "KD_LIST_PARTS_019",
+      "excluded_fact_count": 23791,
+      "format": "structural-Merkle-fact-set-v1",
+      "scope": "ONLY_NATIVE_VALIDATED_HELPER_FACTS_EXCLUDED; ALL_ORIGINAL_FACTS_RETAINED"
+    },
+    "indexed_helper": {
+      "tag": "KD_LIST_PARTS_019",
+      "helper_count": 23791,
+      "cons_cons_request_count": 23791,
+      "producer": "KD_LIST_PARTS_019",
+      "native_producer_and_exact_parts": "SAME",
+      "request_support_bijection": "SAME"
+    },
+    "inventory_counts": {
+      "R1_INPUT": 120,
+      "R1_CASE": 1924,
+      "R1_MEMBER": 5760,
+      "R1_FLAG": 480,
+      "R1_OVERLAP": 720,
+      "R1_INCIDENT": 1440
+    },
+    "trials": [
+      {
+        "term": "G2",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 1,
+        "baseline_walls": 12
+      },
+      {
+        "term": "RETURNED(G2,SITE(\"C:HW_04|HW_09\",\"NO\"))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 0
+      }
+    ],
+    "partial_controls": [],
+    "variant": "normal",
+    "grouping": {
+      "K": {
+        "leaves": 1924,
+        "joins": 1923,
+        "root": "P20_K_N3846",
+        "declared_roots": 1
+      },
+      "field": {
+        "leaves": 480,
+        "joins": 479,
+        "root": "P20_FIELD_N958",
+        "declared_roots": 1
+      },
+      "witness": {
+        "leaves": 720,
+        "joins": 719,
+        "root": "P20_WITNESS_N1438",
+        "declared_roots": 1
+      },
+      "return_roots": 1,
+      "transported_rows": 6249
+    },
+    "source_pair_hash": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+    "candidate_pair_hash": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+    "first_K": 1,
+    "second_K": 0,
+    "second_trial": "RETURNED(G2,SITE(\"C:HW_04|HW_09\",\"NO\"))",
+    "native_candidate_returns": 1,
+    "native_committed_returns": 1,
+    "offer_comparison": {
+      "member_domain": "SAME",
+      "content": "NOT-SAME",
+      "receipts": "NOT-SAME"
+    },
+    "O1": {
+      "source_pair_hash": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+      "member_domain_sha256": "ab9808f3155221b65c4504ccb888a4b1207b6f7d68bf6a2dd0a91490c1a187da",
+      "content_sha256": "8fc654cebe780365795823198ebb91a7bf55eeba079376fb23d0f42b27639a66",
+      "receipt_content_sha256": "410a4fc363128835a9526d9527ea436f5bc0c43b1bc5938aa72216dd2befa8e2"
+    },
+    "O2": {
+      "source_pair_hash": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+      "member_domain_sha256": "ab9808f3155221b65c4504ccb888a4b1207b6f7d68bf6a2dd0a91490c1a187da",
+      "content_sha256": "0d04e54e5d63a5f39c82999a6cd4a4e881099ad54a72483a8513711d4dd37bca",
+      "receipt_content_sha256": "85c8e86f62196e04a873decad359a7f3d93e6d94b7fe7f1b73e395d72dc0d82d"
+    },
+    "proof_validation": {
+      "facts": 821959,
+      "native_facts": 820091,
+      "source_facts": 1868,
+      "antecedents": "SAME",
+      "consequents": "SAME",
+      "rank": "SAME",
+      "source_image_seeds": "SAME",
+      "support_precedence": "SAME"
+    },
+    "first_receipt_reference": {
+      "comparison": "SAME",
+      "cases": 1924,
+      "comparisons": 9620
+    },
+    "candidate_reference": {
+      "comparison": "SAME",
+      "pair_hash": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+      "field_hash": "b263644e59a696999c02dfd25386a5abefdb2d0fc4317a0fe2cccd90502ebad3",
+      "witness_hash": "be4ec32289e6f4c6ef50817203c89061d664735f7166cbb37c55f6d1a1e4afa3"
+    },
+    "independent_receipts": [
+      {
+        "trial": "G2",
+        "comparison": "SAME",
+        "offers": 1924,
+        "overlaps_per_offer": 720,
+        "receipt_rows_sha256": "d743eeb571745fd3827a1f994b3bc5a7de20dea8a904897f805e5d4bb2432001",
+        "scope": "Independent observer recomputation from this native input pair and exact inventory member extents; not a runtime input"
+      },
+      {
+        "trial": "RETURNED(G2,SITE(\"C:HW_04|HW_09\",\"NO\"))",
+        "comparison": "SAME",
+        "offers": 1924,
+        "overlaps_per_offer": 720,
+        "receipt_rows_sha256": "76730518fbc78e2f888479f56f29452c255f645d81e30e491dd643cccb761b17",
+        "scope": "Independent observer recomputation from this native input pair and exact inventory member extents; not a runtime input"
+      }
+    ],
+    "observer_only_references": {
+      "world": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+        "bytes": 568805,
+        "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+      },
+      "qualification019": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\qualification.OBSERVATIONS.json",
+        "bytes": 47318489,
+        "sha256": "5E8E814B8EF8EEEB29E2C60C5B82E2D049E598413C630022171EB579A5D20797"
+      },
+      "binding013": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_tick_promote_binding_013\\BINDING_EVIDENCE.json",
+        "bytes": 18662,
+        "sha256": "171CD86278BD859418D42A198D13466CEC5BB0204E4FB00F3F2FD99D87F8B6F4"
+      }
+    },
+    "commit": {
+      "reading": "IF_THEN",
+      "prior_hash": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+      "tick_hash": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+      "pair_hash": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+      "hash_service": {
+        "requests": 5,
+        "subjects": 5,
+        "responses": 5,
+        "pending_subjects": 0,
+        "canonical_subject_hashes": "SAME",
+        "no_unrequested_responses": "SAME",
+        "rows": [
+          {
+            "digest": "e3cb79631ee00239da1f97b5ae7a9c65cd2cd138c915c093185d3bf90e4c6cc9",
+            "proof": {
+              "fact": 628468,
+              "origin": "P20_C_HASH_ROW",
+              "rank": 1,
+              "support": [
+                628466
+              ]
+            },
+            "requests": [
+              {
+                "fact": 11078,
+                "origin": "P20_C_SOURCE_PAIR_REQUEST",
+                "rank": 3,
+                "support": [
+                  6790
+                ]
+              }
+            ]
+          },
+          {
+            "digest": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+            "proof": {
+              "fact": 628469,
+              "origin": "P20_C_HASH_ROW",
+              "rank": 1,
+              "support": [
+                628467
+              ]
+            },
+            "requests": [
+              {
+                "fact": 11079,
+                "origin": "P20_C_SOURCE_HEAD_REQUEST",
+                "rank": 3,
+                "support": [
+                  6789
+                ]
+              }
+            ]
+          },
+          {
+            "digest": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+            "proof": {
+              "fact": 630890,
+              "origin": "P20_C_HASH_ROW",
+              "rank": 1,
+              "support": [
+                630888
+              ]
+            },
+            "requests": [
+              {
+                "fact": 630886,
+                "origin": "P20_C_PAIR_REQUEST",
+                "rank": 1547,
+                "support": [
+                  630883
+                ]
+              }
+            ]
+          },
+          {
+            "digest": "a81df7b26bf585e6d14962f937ce39daf5b6888f5fd32e135116fbbc7d23d1fd",
+            "proof": {
+              "fact": 630891,
+              "origin": "P20_C_HASH_ROW",
+              "rank": 1,
+              "support": [
+                630889
+              ]
+            },
+            "requests": [
+              {
+                "fact": 630887,
+                "origin": "P20_C_RECEIPT_REQUEST",
+                "rank": 1547,
+                "support": [
+                  630884
+                ]
+              }
+            ]
+          },
+          {
+            "digest": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+            "proof": {
+              "fact": 630898,
+              "origin": "P20_C_HASH_ROW",
+              "rank": 1,
+              "support": [
+                630897
+              ]
+            },
+            "requests": [
+              {
+                "fact": 630896,
+                "origin": "P20_C_TICK_REQUEST",
+                "rank": 1551,
+                "support": [
+                  630895
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "observer": {
+      "elapsed_ms": 11379,
+      "max_rss_kib": 2739436,
+      "heap_used": 614378424
+    }
+  },
+  "environment": {
+    "node": "v22.20.0",
+    "platform": "win32",
+    "architecture": "x64",
+    "heap_limit_request_mib": 8192,
+    "capacity": 4194304,
+    "term_capacity": 4194304,
+    "readback_bytes": 369098784,
+    "output_volume_free_bytes": 1570997514240,
+    "scope": "Execution capacity/custody only; no semantic input selection"
+  }
+}

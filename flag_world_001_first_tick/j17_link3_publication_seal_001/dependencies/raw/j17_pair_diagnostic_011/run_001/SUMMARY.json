@@ -1,0 +1,41 @@
+{
+  "scope": "USER_REQUESTED_KEEP_TWO_CONSTANT_ASSIGNMENTS; OFFER_CORRESPONDENCE_NOT_INFERRED",
+  "total": 1440,
+  "counts": {
+    "DELTA": 480,
+    "GAMMA": 480,
+    "TAU": 480
+  },
+  "strict_count": 0,
+  "strict": [],
+  "histogram": {
+    "discharged=0;opened=0": 708,
+    "discharged=0;opened=4": 678,
+    "discharged=1;opened=2": 24,
+    "discharged=1;opened=3": 12,
+    "discharged=2;opened=2": 18
+  },
+  "by_kind": {
+    "DELTA": {
+      "discharged=0;opened=0": 228,
+      "discharged=0;opened=4": 228,
+      "discharged=1;opened=2": 24
+    },
+    "GAMMA": {
+      "discharged=0;opened=0": 240,
+      "discharged=0;opened=4": 222,
+      "discharged=1;opened=3": 12,
+      "discharged=2;opened=2": 6
+    },
+    "TAU": {
+      "discharged=0;opened=0": 240,
+      "discharged=0;opened=4": 228,
+      "discharged=2;opened=2": 12
+    }
+  },
+  "opened_nonempty": 732,
+  "discharged_empty": 1386,
+  "unchanged": 708,
+  "receipt_coverage": 1440,
+  "incidence_roles": 1440
+}

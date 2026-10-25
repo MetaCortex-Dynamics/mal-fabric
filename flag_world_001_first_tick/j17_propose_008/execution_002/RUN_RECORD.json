@@ -1,0 +1,50 @@
+{
+  "scope": "BOUNDED_PROPOSE_ENUMERATION; NOT_FOLD_SUCCESSOR_OR_ADMISSION",
+  "selection": "NONE",
+  "link3": "NOT_COMMITTED",
+  "source": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_propose_008\\execution_002\\source.mal",
+    "bytes": 979935,
+    "sha256": "79367BD1FD87E298E2BC03B07EEF46B469C3901E86772595386CBDD467ED8E73"
+  },
+  "image": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_propose_008\\execution_002\\image\\image.bin",
+    "bytes": 41992208,
+    "sha256": "5762124285C0963C8E0CB8291D572899709A8BCE73A338A61C9D4D34EA8D82E9"
+  },
+  "readbacks": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_propose_008\\execution_002\\run\\readback.bin",
+      "bytes": 268435488,
+      "sha256": "E4C7EC1E97AA52EB9FCFFF40B05D4F47105B04A14569595A221487CEB639B4C7"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_propose_008\\execution_002\\replay1\\readback.bin",
+      "bytes": 268435488,
+      "sha256": "E4C7EC1E97AA52EB9FCFFF40B05D4F47105B04A14569595A221487CEB639B4C7"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_propose_008\\execution_002\\replay2\\readback.bin",
+      "bytes": 268435488,
+      "sha256": "E4C7EC1E97AA52EB9FCFFF40B05D4F47105B04A14569595A221487CEB639B4C7"
+    }
+  ],
+  "replay": "SAME",
+  "facts": 630916,
+  "epochs": 39,
+  "contexts": 120,
+  "members": 228,
+  "totals": {
+    "[\"EDGE\",{\"discharged\":1,\"opened\":2,\"retained\":11}]": 12,
+    "[\"SITE\",{\"discharged\":2,\"opened\":4,\"retained\":10}]": 132,
+    "[\"SITE\",{\"discharged\":0,\"opened\":4,\"retained\":12}]": 12,
+    "[\"TRIAD\",{\"discharged\":1,\"opened\":5,\"retained\":11}]": 24,
+    "[\"TRIAD\",{\"discharged\":2,\"opened\":4,\"retained\":10}]": 24,
+    "[\"TRIAD\",{\"discharged\":1,\"opened\":2,\"retained\":11}]": 24
+  },
+  "offered_set": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_propose_008\\execution_002\\OFFERED_SET.json",
+    "bytes": 14883739,
+    "sha256": "C962288C1729F04214355BC72AB3E09F678113A2E71969559FE70BA5056EC0F3"
+  }
+}

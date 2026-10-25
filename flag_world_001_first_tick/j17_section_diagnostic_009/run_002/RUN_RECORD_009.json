@@ -1,0 +1,1988 @@
+{
+  "schema": "J17SiteSectionDiagnostic009",
+  "verdict": "IF_THEN_ON_DIAGNOSTIC_SUBJECT",
+  "inputs": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_strict_discharge_diagnostic_008\\source\\diagnostic.mal",
+      "bytes": 9111,
+      "sha256": "9DEBF75815CCAE27FA7726ABDA0C33174B6C97ABCD39F8981E55B11D8F30046C"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\tools\\lower.mjs",
+      "bytes": 8265,
+      "sha256": "05CE980CBC68707070837001819A90DF532A730569BA1112367C07BC017BD45B"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+      "bytes": 521216,
+      "sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_002\\QUALIFICATION.json",
+      "bytes": 28485,
+      "sha256": "D2F42E635BF8095CE5BA3208B030D8F7F26E0A96074F78597833F1CE7D6E41F5"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\world_transition_contacts_007\\MANIFEST.json",
+      "bytes": 4288,
+      "sha256": "13F4676010390261EAFC6C208498231806C738599D5376314D36E3DFDCA44EC6"
+    },
+    {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\Markdowns\\Coupled Geometry Invariant Model — Dual Machine × ProjectionShell.md",
+      "bytes": 16756,
+      "sha256": "60F08FA1AE20243E11704F011B11A1CF2352CE83F798D6122D1AF878B8A9F9D9"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\source\\sections.mal",
+      "bytes": 7501,
+      "sha256": "B8D2F889A2C97F6F9CB7BC4DFAB014C9E7DCD49EDE64752BC3D99828B97E36ED"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run.mjs",
+      "bytes": 14645,
+      "sha256": "5F7AEE14CA128770D445A0D1BD2D4B3B19CA608747EAF3B11BDD2DD0F38D4D3A"
+    }
+  ],
+  "source": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run_002\\diagnostic.mal",
+    "bytes": 124458,
+    "sha256": "DF674D38A953426EE3967666B3B942885D5CCBAF0BFAA71749DC77DE2A8D761D"
+  },
+  "native_source": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\source\\sections.mal",
+    "bytes": 7501,
+    "sha256": "B8D2F889A2C97F6F9CB7BC4DFAB014C9E7DCD49EDE64752BC3D99828B97E36ED"
+  },
+  "image": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run_002\\stage\\image.bin",
+    "bytes": 41992208,
+    "sha256": "48E6AA3BA0ACCDADB1DAC56A0AEA4A106DC6630B8BFDF283D56DFA04D802E7A6"
+  },
+  "readback": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run_002\\stage\\readback.bin",
+    "bytes": 218103840,
+    "sha256": "D392E763EFB96ADC771DA2D009D9AD4804D7B5BD275CA9673B500511D9AA2817"
+  },
+  "replay": {
+    "path": "D:\\mal_worldline_backups\\j17_section_diagnostic_009\\replay_001\\readback.bin",
+    "bytes": 218103840,
+    "sha256": "D392E763EFB96ADC771DA2D009D9AD4804D7B5BD275CA9673B500511D9AA2817"
+  },
+  "replay_comparison": "SAME",
+  "fact_capacity": 1048576,
+  "facts": 671734,
+  "epochs": 96,
+  "error": 0,
+  "summary": {
+    "site_cases": 84,
+    "site_strict": [
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_04|HW_09",
+          "NO"
+        ],
+        "changed": 12,
+        "discharged": 12,
+        "opened": 0,
+        "retained": 0,
+        "reading": "IF_THEN",
+        "proof": [
+          {
+            "fact": 667112,
+            "origin": "SC_STRICT",
+            "support": [
+              666871,
+              2013,
+              666898,
+              632831
+            ]
+          }
+        ]
+      }
+    ],
+    "site_non_strict": 83,
+    "separate_checks": [
+      {
+        "family": "BOUNDARY_GROW",
+        "operands": [],
+        "changed": 12,
+        "discharged": 12,
+        "opened": 12,
+        "retained": 0,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 337159
+          }
+        ]
+      },
+      {
+        "family": "UNIFORM",
+        "operands": [
+          "NO"
+        ],
+        "changed": 12,
+        "discharged": 12,
+        "opened": 0,
+        "retained": 0,
+        "reading": "IF_THEN",
+        "proof": [
+          {
+            "fact": 261630,
+            "origin": "SC_STRICT",
+            "support": [
+              256568,
+              2013,
+              256631,
+              25742
+            ]
+          }
+        ]
+      },
+      {
+        "family": "UNIFORM",
+        "operands": [
+          "THIS"
+        ],
+        "changed": 468,
+        "discharged": 12,
+        "opened": 0,
+        "retained": 0,
+        "reading": "IF_THEN",
+        "proof": [
+          {
+            "fact": 261629,
+            "origin": "SC_STRICT",
+            "support": [
+              256567,
+              2013,
+              256630,
+              25730
+            ]
+          }
+        ]
+      }
+    ],
+    "single_cases": 480,
+    "single_exclusions": 480,
+    "single_histogram": {
+      "NO->THIS;discharged=0;opened=3": 456,
+      "NO->THIS;discharged=1;opened=2": 12,
+      "THIS->NO;discharged=1;opened=2": 12
+    },
+    "walls": 12,
+    "wall_relations": [
+      "DELTA",
+      "DELTA",
+      "DELTA",
+      "DELTA",
+      "DELTA",
+      "DELTA",
+      "DELTA",
+      "DELTA",
+      "DELTA",
+      "DELTA",
+      "DELTA",
+      "DELTA"
+    ],
+    "internal_overlaps": 12,
+    "internal_relations": [
+      "GAMMA",
+      "GAMMA",
+      "GAMMA",
+      "GAMMA",
+      "GAMMA",
+      "GAMMA",
+      "TAU",
+      "TAU",
+      "TAU",
+      "TAU",
+      "TAU",
+      "TAU"
+    ],
+    "boundary_flags": 12,
+    "all_cases": [
+      {
+        "family": "BOUNDARY_GROW",
+        "operands": [],
+        "changed": 12,
+        "discharged": 12,
+        "opened": 12,
+        "retained": 0,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 337159
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_00|HW_01",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667140
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_00|HW_01",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667117
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667141
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_00|HW_02",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667133
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_00|HW_02",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667113
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667132
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_00|HW_03",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667135
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_00|HW_03",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667114
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667134
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_00|HW_04",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667137
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_00|HW_04",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667115
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667136
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_00|HW_05",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667139
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_00|HW_05",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667116
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667138
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_01|HW_02",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667147
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_01|HW_02",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667120
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667146
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_01|HW_05",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667143
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_01|HW_05",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667118
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667142
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_01|HW_06",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667145
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_01|HW_06",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667119
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667144
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_01|HW_10",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666661
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_01|HW_10",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 666652
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666660
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_02|HW_03",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667159
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_02|HW_03",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667126
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667158
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_02|HW_06",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667149
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_02|HW_06",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667121
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667148
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_02|HW_07",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667151
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_02|HW_07",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667122
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667150
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_03|HW_04",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667163
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_03|HW_04",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667128
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667162
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_03|HW_07",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667153
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_03|HW_07",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667123
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667152
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_03|HW_08",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667155
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_03|HW_08",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667124
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667154
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_04|HW_05",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667164
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_04|HW_05",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 2,
+        "opened": 10,
+        "retained": 10,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667129
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_04|HW_08",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667156
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_04|HW_08",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 2,
+        "opened": 10,
+        "retained": 10,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667125
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_04|HW_09",
+          "NO"
+        ],
+        "changed": 12,
+        "discharged": 12,
+        "opened": 0,
+        "retained": 0,
+        "reading": "IF_THEN",
+        "proof": [
+          {
+            "fact": 667112,
+            "origin": "SC_STRICT",
+            "support": [
+              666871,
+              2013,
+              666898,
+              632831
+            ]
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_04|HW_09",
+          "THIS"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667157
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_05|HW_09",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666662
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_05|HW_09",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 2,
+        "opened": 10,
+        "retained": 10,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 666653
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_05|HW_10",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666668
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_05|HW_10",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 666656
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666667
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_06|HW_07",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666664
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_06|HW_07",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 666654
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666663
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_06|HW_10",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667168
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_06|HW_10",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667131
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667167
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_06|HW_11",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667161
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_06|HW_11",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667127
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667160
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_07|HW_08",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666672
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_07|HW_08",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 666658
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666671
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_07|HW_11",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666666
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_07|HW_11",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 666655
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666665
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_08|HW_09",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666673
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_08|HW_09",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 2,
+        "opened": 10,
+        "retained": 10,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 666659
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_08|HW_11",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666670
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_08|HW_11",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 666657
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666669
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_09|HW_10",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666944
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_09|HW_10",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 666942
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 666943
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_09|HW_11",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667166
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_09|HW_11",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 667130
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 667165
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_10|HW_11",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 662181
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "C:HW_10|HW_11",
+          "THIS"
+        ],
+        "changed": 12,
+        "discharged": 0,
+        "opened": 12,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 662179
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 662180
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_00",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664626
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_00",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 0,
+        "opened": 10,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664606
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664625
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_01",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664610
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_01",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 0,
+        "opened": 10,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664597
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664609
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_02",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664612
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_02",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 0,
+        "opened": 10,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664598
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664611
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_03",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664614
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_03",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 0,
+        "opened": 10,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664599
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664613
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_04",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664615
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_04",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 2,
+        "opened": 8,
+        "retained": 10,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664600
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_05",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664617
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_05",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 0,
+        "opened": 10,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664601
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664616
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_06",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664619
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_06",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 0,
+        "opened": 10,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664602
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664618
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_07",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664621
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_07",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 0,
+        "opened": 10,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664603
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664620
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_08",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664623
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_08",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 0,
+        "opened": 10,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664604
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664622
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_09",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664624
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_09",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 2,
+        "opened": 8,
+        "retained": 10,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664605
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_10",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664630
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_10",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 0,
+        "opened": 10,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664608
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664629
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_11",
+          "NO"
+        ],
+        "changed": 0,
+        "discharged": 0,
+        "opened": 0,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664628
+          }
+        ]
+      },
+      {
+        "family": "SITE",
+        "operands": [
+          "D:HW_11",
+          "THIS"
+        ],
+        "changed": 10,
+        "discharged": 0,
+        "opened": 10,
+        "retained": 12,
+        "reading": "NO",
+        "proof": [
+          {
+            "reason": "OPENED_NONEMPTY",
+            "fact": 664607
+          },
+          {
+            "reason": "DISCHARGED_EMPTY",
+            "fact": 664627
+          }
+        ]
+      },
+      {
+        "family": "UNIFORM",
+        "operands": [
+          "NO"
+        ],
+        "changed": 12,
+        "discharged": 12,
+        "opened": 0,
+        "retained": 0,
+        "reading": "IF_THEN",
+        "proof": [
+          {
+            "fact": 261630,
+            "origin": "SC_STRICT",
+            "support": [
+              256568,
+              2013,
+              256631,
+              25742
+            ]
+          }
+        ]
+      },
+      {
+        "family": "UNIFORM",
+        "operands": [
+          "THIS"
+        ],
+        "changed": 468,
+        "discharged": 12,
+        "opened": 0,
+        "retained": 0,
+        "reading": "IF_THEN",
+        "proof": [
+          {
+            "fact": 261629,
+            "origin": "SC_STRICT",
+            "support": [
+              256567,
+              2013,
+              256630,
+              25730
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run_002\\TRANSPORT.json",
+      "bytes": 769,
+      "sha256": "52C1C4D62DBCCBF99DA52E59807CE49E39B38A421A00B46248EE5524C61E12FF"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run_002\\SITE_SECTIONS_AND_RECEIPTS.json",
+      "bytes": 58870824,
+      "sha256": "8AF421471B0F942B4319628A075981F9A54951EE889B04E7F39CBCD14651BD2F"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run_002\\SINGLE_FLAG_EXCLUSIONS.json",
+      "bytes": 2224202,
+      "sha256": "57F9E86E53579A171C98E4E43DA4CAFC98E11FFCDC00A8BC179C218BFD846FF9"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run_002\\SUMMARY.json",
+      "bytes": 33463,
+      "sha256": "51ECF703E9EEA2F6C4C5C54A140AB3A099F699D7401C2D6549CF64ADB3DD60B1"
+    }
+  ],
+  "storage_continuation": {
+    "driver": {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\finish.mjs",
+      "bytes": 5197,
+      "sha256": "7165AA1BFC08EE998764BBDCD878E36306F4FB9EB841DC87F092B5C03B5A6B4A"
+    },
+    "execution": {
+      "path": "D:\\mal_worldline_backups\\j17_section_diagnostic_009\\replay_001\\execution.json",
+      "bytes": 4589,
+      "sha256": "ADCAA9040EB8F70A10BFAC42085D95D0000234DEF0E7914C3EBB9BFDE6D8AB5B"
+    },
+    "prior_stops": [
+      {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run_001\\STOP.json",
+        "bytes": 4031,
+        "sha256": "8D71DA3EDB825C7DD0F1FD56171E99401EFDA65A12B271F546EFC88E70365BF0"
+      },
+      {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_section_diagnostic_009\\run_002\\STOP.json",
+        "bytes": 3931,
+        "sha256": "D916EF93F9DC406B2BD008E2C56210484395A8116E6323EE52C0C5A438C59305"
+      }
+    ],
+    "description": "First attempt and first replay refused readback output. Both partial files and stop records retained. Complete run_002 readback compared byte-for-byte with replay on D:."
+  },
+  "scope": {
+    "site_family": "84 user-requested constant assignments on site fibres, not a promoted autonomous offer relation.",
+    "receipt_uniqueness": "One strict SITE case. Both uniform endpoint checks satisfy strict discharge. No global uniqueness follows from the receipt predicate alone.",
+    "section_semantics": "ENGINE 7.1 binds a declared base move. Coupled Geometry line158 explicitly leaves offered local readings OPEN.",
+    "physical_correspondence": "No hydrogen or radiation correspondence established by these receipts.",
+    "worldline": "UNCHANGED; no link committed.",
+    "repository": "UNCOMMITTED; no push."
+  }
+}

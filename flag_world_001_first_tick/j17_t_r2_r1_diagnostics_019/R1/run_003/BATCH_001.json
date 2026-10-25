@@ -1,0 +1,171 @@
+{
+  "verdict": "IF_THEN",
+  "batch": 1,
+  "inputs": [
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"D:HW_00\",NIL))))",
+      "edge": [
+        "C:HW_00|HW_01",
+        "D:HW_00"
+      ]
+    },
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"D:HW_01\",NIL))))",
+      "edge": [
+        "C:HW_00|HW_01",
+        "D:HW_01"
+      ]
+    },
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_02\",CONS(\"C:HW_00|HW_03\",NIL))))",
+      "edge": [
+        "C:HW_00|HW_02",
+        "C:HW_00|HW_03"
+      ]
+    },
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_02\",CONS(\"C:HW_01|HW_02\",NIL))))",
+      "edge": [
+        "C:HW_00|HW_02",
+        "C:HW_01|HW_02"
+      ]
+    }
+  ],
+  "summary": {
+    "verdict": "IF_THEN",
+    "scope": "BOUNDED_R1_DIAGNOSTIC_OBSERVATION; NOT_PROMOTED_OFFER_EXHAUSTION_OR_WORLD_EXECUTE",
+    "facts": 2417081,
+    "terms": 2448025,
+    "epochs": 96,
+    "error": 0,
+    "fact_capacity": 4194304,
+    "source_facts": 2018,
+    "readback": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_001\\stage\\readback.bin",
+      "bytes": 369098784,
+      "sha256": "D19CEE9484AEF2AA539D393A78E63352B7DB4E144922D2AD8B69C3CDAF89EF8F"
+    },
+    "source_map": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_001\\stage\\source-map.json",
+      "sha256": "1D1541CB7BBB4BC95B16BDDD67512640A8DB3BAAE9E45BFBE15D98AF419DFE6A"
+    },
+    "closure_sha256": "9044CA88944184837586CE072C41B26315453B3673EEEBB1C54A140A3D73A826",
+    "closure_format": "structural-Merkle-fact-set-v1",
+    "projected_original_closure_sha256": "431CA4FC06FCC82C9C4F938C9FD784126ED40C09BCA23D68F82276F3CB8F2FD2",
+    "projected_original_fact_count": 2343735,
+    "projection": {
+      "excluded_predicate": "KD_LIST_PARTS_019",
+      "excluded_fact_count": 73346,
+      "format": "structural-Merkle-fact-set-v1",
+      "scope": "ONLY_NATIVE_VALIDATED_HELPER_FACTS_EXCLUDED; ALL_ORIGINAL_FACTS_RETAINED"
+    },
+    "indexed_helper": {
+      "tag": "KD_LIST_PARTS_019",
+      "helper_count": 73346,
+      "cons_cons_request_count": 73346,
+      "producer": "KD_LIST_PARTS_019",
+      "native_producer_and_exact_parts": "SAME",
+      "request_support_bijection": "SAME"
+    },
+    "inventory_counts": {
+      "R1_INPUT": 120,
+      "R1_CASE": 1924,
+      "R1_MEMBER": 5760,
+      "R1_FLAG": 480,
+      "R1_OVERLAP": 720,
+      "R1_INCIDENT": 1440
+    },
+    "trials": [
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"D:HW_00\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 18
+      },
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"D:HW_01\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 18
+      },
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_02\",CONS(\"C:HW_00|HW_03\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 20
+      },
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_02\",CONS(\"C:HW_01|HW_02\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 20
+      }
+    ],
+    "partial_controls": [],
+    "observer": {
+      "elapsed_ms": 19923,
+      "max_rss_kib": 2325556,
+      "heap_used": 174880736,
+      "scope": "Full native coverage checked; intermediate rows retained in readback, exact receipts and terminal proofs exported"
+    }
+  },
+  "independent": {
+    "observer_only": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1_INDEPENDENT_OBSERVATION.json",
+      "bytes": 808400,
+      "sha256": "D3F47E53B283C688546E4EBE50FF514C716AC3A8851282DA7C859A5AB526EBEA"
+    },
+    "checks": [
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"D:HW_00\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "C4C83BF3C7478F581054D3852A6D60126F4D4DC5C6EDC0E222EC027BE0056C00",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"D:HW_01\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "470F5147F74FB463A138F145A8990E3902BDA374D37F70502C7FB310370B35A1",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_02\",CONS(\"C:HW_00|HW_03\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "1E86A9C42FAEF1E015ED0630A623C537910D2DB34C08223DB90CDD0D79169E7A",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_02\",CONS(\"C:HW_01|HW_02\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "66A8F13DD05DD21EAB89A77858DDB22BB3D756B2BF59E9D0093FCCC725609F3F",
+        "strict_count": 0,
+        "comparison": "SAME"
+      }
+    ]
+  },
+  "readback": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_001\\stage\\readback.bin",
+    "bytes": 369098784,
+    "sha256": "D19CEE9484AEF2AA539D393A78E63352B7DB4E144922D2AD8B69C3CDAF89EF8F"
+  },
+  "observations": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_001.OBSERVATIONS.json",
+    "bytes": 261134948,
+    "sha256": "55394E68832735F457BA93E6770A46881D20C267E29C2EFA29ECC1B18D24570F"
+  }
+}

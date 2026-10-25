@@ -1,0 +1,171 @@
+{
+  "verdict": "IF_THEN",
+  "batch": 0,
+  "inputs": [
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_00|HW_02\",NIL))))",
+      "edge": [
+        "C:HW_00|HW_01",
+        "C:HW_00|HW_02"
+      ]
+    },
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_00|HW_05\",NIL))))",
+      "edge": [
+        "C:HW_00|HW_01",
+        "C:HW_00|HW_05"
+      ]
+    },
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_01|HW_02\",NIL))))",
+      "edge": [
+        "C:HW_00|HW_01",
+        "C:HW_01|HW_02"
+      ]
+    },
+    {
+      "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_01|HW_05\",NIL))))",
+      "edge": [
+        "C:HW_00|HW_01",
+        "C:HW_01|HW_05"
+      ]
+    }
+  ],
+  "summary": {
+    "verdict": "IF_THEN",
+    "scope": "BOUNDED_R1_DIAGNOSTIC_OBSERVATION; NOT_PROMOTED_OFFER_EXHAUSTION_OR_WORLD_EXECUTE",
+    "facts": 2474795,
+    "terms": 2505739,
+    "epochs": 96,
+    "error": 0,
+    "fact_capacity": 4194304,
+    "source_facts": 2018,
+    "readback": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_000\\stage\\readback.bin",
+      "bytes": 369098784,
+      "sha256": "76C4AFA5CBCEB10132B7A296412EC5849F43D200FBA98DCE4BA4FB4B47DF2EBE"
+    },
+    "source_map": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_000\\stage\\source-map.json",
+      "sha256": "C9D69E2AA5CDBF10C4D4CFF283ADFC5000EE890C1397A16267471A66F0328A32"
+    },
+    "closure_sha256": "61B3E6A547E17710EC7E0684690A8F7480D98E458260D6DCA54B4247730B781D",
+    "closure_format": "structural-Merkle-fact-set-v1",
+    "projected_original_closure_sha256": "F4A9CFCC11B29D456C40F92F385017B0449DA27143045A099697742BCC057BF1",
+    "projected_original_fact_count": 2403685,
+    "projection": {
+      "excluded_predicate": "KD_LIST_PARTS_019",
+      "excluded_fact_count": 71110,
+      "format": "structural-Merkle-fact-set-v1",
+      "scope": "ONLY_NATIVE_VALIDATED_HELPER_FACTS_EXCLUDED; ALL_ORIGINAL_FACTS_RETAINED"
+    },
+    "indexed_helper": {
+      "tag": "KD_LIST_PARTS_019",
+      "helper_count": 71110,
+      "cons_cons_request_count": 71110,
+      "producer": "KD_LIST_PARTS_019",
+      "native_producer_and_exact_parts": "SAME",
+      "request_support_bijection": "SAME"
+    },
+    "inventory_counts": {
+      "R1_INPUT": 120,
+      "R1_CASE": 1924,
+      "R1_MEMBER": 5760,
+      "R1_FLAG": 480,
+      "R1_OVERLAP": 720,
+      "R1_INCIDENT": 1440
+    },
+    "trials": [
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_00|HW_02\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 20
+      },
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_00|HW_05\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 20
+      },
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_01|HW_02\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 20
+      },
+      {
+        "term": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_01|HW_05\",NIL))))",
+        "base": 480,
+        "baseline": 720,
+        "cases": 1924,
+        "complete_cases": 1924,
+        "strict_count": 0,
+        "baseline_walls": 20
+      }
+    ],
+    "partial_controls": [],
+    "observer": {
+      "elapsed_ms": 20053,
+      "max_rss_kib": 2373588,
+      "heap_used": 179776168,
+      "scope": "Full native coverage checked; intermediate rows retained in readback, exact receipts and terminal proofs exported"
+    }
+  },
+  "independent": {
+    "observer_only": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1_INDEPENDENT_OBSERVATION.json",
+      "bytes": 808400,
+      "sha256": "D3F47E53B283C688546E4EBE50FF514C716AC3A8851282DA7C859A5AB526EBEA"
+    },
+    "checks": [
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_00|HW_02\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "364835CF0AADE2B76D01A2006AFCB10787A5C7CE94F93C0E4D59C578B8ECA7DD",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_00|HW_05\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "ABBAC330585E866306727705004AB4890E8A6689BC09056B5588B325A9490657",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_01|HW_02\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "4EC138428DA67BE1BA5B6843A32CDA84633642082173F49AA759E89637D6518B",
+        "strict_count": 0,
+        "comparison": "SAME"
+      },
+      {
+        "input": "TWO_SITES(ARRAY(CONS(\"C:HW_00|HW_01\",CONS(\"C:HW_01|HW_05\",NIL))))",
+        "cases": 1924,
+        "receipt_rows_sha256": "86781C9D3E08EFB08CD43F97BD6B3B02720E093E34DDAA4DAC5851D5D01F4E9A",
+        "strict_count": 0,
+        "comparison": "SAME"
+      }
+    ]
+  },
+  "readback": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_000\\stage\\readback.bin",
+    "bytes": 369098784,
+    "sha256": "76C4AFA5CBCEB10132B7A296412EC5849F43D200FBA98DCE4BA4FB4B47DF2EBE"
+  },
+  "observations": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\batch_000.OBSERVATIONS.json",
+    "bytes": 271902870,
+    "sha256": "809BF0BD452134C50F8C06DC704134E53B4D461C5DCAF7CF1B6D44440B77D544"
+  }
+}

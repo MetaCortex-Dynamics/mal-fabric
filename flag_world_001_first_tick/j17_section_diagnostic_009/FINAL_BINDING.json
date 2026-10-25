@@ -1,0 +1,56 @@
+{
+  "schema": "J17SectionDiagnosticFinalBinding009",
+  "date": "2026-10-24",
+  "authority": "EXECUTE of user-requested diagnostic only; no promotion",
+  "run_record": {
+    "path": "run_002/RUN_RECORD_009.json",
+    "bytes": 44683,
+    "sha256": "949E23F8F7F2C493F9DB8A0B733C98FA993D5FF32F4EFCA0219165C0ADA27090"
+  },
+  "scope_read": {
+    "path": "READ_SCOPE.json",
+    "sha256": "0A3C41DD3AD5804C9962B622AC68D2C7B4D7A7F02E6719EEB6BCDF8976B186C9"
+  },
+  "native_source": {
+    "path": "source/sections.mal",
+    "sha256": "B8D2F889A2C97F6F9CB7BC4DFAB014C9E7DCD49EDE64752BC3D99828B97E36ED"
+  },
+  "readback": {
+    "path": "run_002/stage/readback.bin",
+    "bytes": 218103840,
+    "sha256": "D392E763EFB96ADC771DA2D009D9AD4804D7B5BD275CA9673B500511D9AA2817"
+  },
+  "replay": {
+    "path": "D:/mal_worldline_backups/j17_section_diagnostic_009/replay_001/readback.bin",
+    "bytes": 218103840,
+    "sha256": "D392E763EFB96ADC771DA2D009D9AD4804D7B5BD275CA9673B500511D9AA2817",
+    "comparison": "SAME"
+  },
+  "frozen_custody": {
+    "manifest": "../j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+    "manifest_sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+    "checked_files": 901,
+    "comparison": "SAME",
+    "differences": []
+  },
+  "summary": {
+    "site_assignments": 84,
+    "strict_site_assignments": 1,
+    "strict_site": "C:HW_04|HW_09",
+    "strict_reading": "NO",
+    "strict_receipt": {"discharged": 12, "opened": 0, "retained": 0},
+    "single_flag_exclusions": 480,
+    "boundary_growth": {"discharged": 12, "opened": 12, "retained": 0},
+    "uniform_NO": {"discharged": 12, "opened": 0},
+    "uniform_THIS": {"discharged": 12, "opened": 0},
+    "facts": 671734,
+    "epochs": 96,
+    "runtime_error": 0
+  },
+  "worldline": "UNCHANGED; no successor selected or committed",
+  "repository": "No tracked or staged changes; new diagnostic files uncommitted; no push",
+  "retained_stops": [
+    "run_001/STOP.json: readback output refusal; partial bytes retained; not a result",
+    "run_002/STOP.json: initial replay output refusal; partial bytes retained; completed by the separately bound D: replay"
+  ]
+}
