@@ -1,0 +1,17 @@
+IN w9_fixture {
+ CAN readonly IN main() -> Atom {
+ THIS observed = w9_check.call(byte_seq_leaf.call(MANY [108,97,119,32,84,69,83,84,32,58,61,32,73,70,32,84,72,73,83,40,87,82,65,80,40,101,108,101,109,101,110,116,41,44,120,41,32,84,72,69,78,32,71,79,69,83,95,87,73,84,72,40,83,72,65,80,69,44,120,41,59]))
+ println.call("W9_BEGIN")
+ println.call(observed.verdict)
+ println.call(observed.atom)
+ println.call(observed.element)
+ println.call(observed.entropy)
+ println.call(observed.hydrogen)
+ println.call(observed.particle)
+ println.call(observed.singularity)
+ println.call(observed.tie)
+ println.call(observed.reason)
+ println.call("W9_END")
+ NO IN true
+ }
+}

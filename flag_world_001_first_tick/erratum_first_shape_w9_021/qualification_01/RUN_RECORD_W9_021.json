@@ -1,0 +1,1256 @@
+{
+  "kind": "W9_NATIVE_QUALIFICATION",
+  "authority": "Devon requests bind v0.1.3 and run W9 before promotion; no promotion performed.",
+  "scope": "Additional W9 only. W1-W8 and existing promotion integration untouched. Parser-boundary MAYBE is an implementation deferral, not an additional erratum verdict.",
+  "qualification": "FULL_FIXTURE_SET",
+  "declared_fixture_count": 34,
+  "executed_fixture_count": 34,
+  "inputs": [
+    {
+      "path": "inputs/ERRATUM_E_FIRST_SHAPE_NO_PIECES_001.mal",
+      "size": 7906,
+      "sha256": "E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC"
+    },
+    {
+      "path": "inputs/ERRATUM_E_FIRST_SHAPE_NO_PIECES_001.vectors",
+      "size": 1077,
+      "sha256": "F2CE7AE0544ED11A045F371847832386B582D8598DA15B540EC099EAF5E235CC"
+    },
+    {
+      "path": "inputs/V1.expected.json",
+      "size": 52,
+      "sha256": "001103E7C3F04033E031CCD2233D03D66BDD9A6BBA10E8A0C6FDA708A8DBAC4F"
+    },
+    {
+      "path": "inputs/V1.mal",
+      "size": 57,
+      "sha256": "7D68093FC8BC25F61BD468E822A2A9FF03A6C70A218C6830C7B96B6058D285C4"
+    },
+    {
+      "path": "inputs/V2.expected.json",
+      "size": 40,
+      "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+    },
+    {
+      "path": "inputs/V2.mal",
+      "size": 67,
+      "sha256": "E5627BE264BEEF7490CB9E375688807B10BC0DDCD95A080296FCEEE01DC8456C"
+    },
+    {
+      "path": "inputs/V3.expected.json",
+      "size": 40,
+      "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+    },
+    {
+      "path": "inputs/V3.mal",
+      "size": 87,
+      "sha256": "56C649A195C14035056FD18D175542A532E39BC2E742EEF5CD7087BD1A0EF758"
+    },
+    {
+      "path": "inputs/V4.expected.json",
+      "size": 40,
+      "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+    },
+    {
+      "path": "inputs/V5.expected.json",
+      "size": 40,
+      "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+    },
+    {
+      "path": "inputs/V5.mal",
+      "size": 63,
+      "sha256": "BEFDC60B2AD768C2E639D357C2C86C3A8B2786A0E0BFE3BFB42449352B67D833"
+    }
+  ],
+  "inputs_after": "SAME",
+  "executed_snapshots": {
+    "native_runtime": {
+      "origin": {
+        "path": "dependencies/malcog_g1.exe",
+        "size": 148814,
+        "sha256": "F47EF6DE1734F27984BBC6B75D9574CFA171171099A662F7CD5C53DDAE42F604"
+      },
+      "executed_copy": {
+        "path": "qualification_01/malcog_g1.exe",
+        "size": 148814,
+        "sha256": "F47EF6DE1734F27984BBC6B75D9574CFA171171099A662F7CD5C53DDAE42F604"
+      }
+    },
+    "byte_library": {
+      "origin": {
+        "path": "dependencies/v3/software_fpga/threejs_projection_001_committed_4d_world_sections/bytes.mal",
+        "size": 42262,
+        "sha256": "0A41D5EF3E1BADD0A2B702183D33927F41F2ED3AF0B68713EDCA795F27C5BB63"
+      },
+      "executed_copy": {
+        "path": "qualification_01/bytes.mal",
+        "size": 42262,
+        "sha256": "0A41D5EF3E1BADD0A2B702183D33927F41F2ED3AF0B68713EDCA795F27C5BB63"
+      }
+    },
+    "implementation": {
+      "origin": {
+        "path": "source/w9.mal",
+        "size": 34904,
+        "sha256": "1E1C57F1FFBC36650131E72F1D37C2FD658B3091B967FAF5AAB06E5524685677"
+      },
+      "executed_copy": {
+        "path": "qualification_01/w9.mal",
+        "size": 34904,
+        "sha256": "1E1C57F1FFBC36650131E72F1D37C2FD658B3091B967FAF5AAB06E5524685677"
+      }
+    },
+    "transport": {
+      "origin": {
+        "path": "qualify_w9.mjs",
+        "size": 10090,
+        "sha256": "FF85F6A784050CB1478F4248CA26018CF546A0AAB836FE6060E6A663C655C718"
+      },
+      "executed_copy": {
+        "path": "qualification_01/qualify_w9.mjs",
+        "size": 10090,
+        "sha256": "FF85F6A784050CB1478F4248CA26018CF546A0AAB836FE6060E6A663C655C718"
+      }
+    }
+  },
+  "snapshot_custody_after": "SAME",
+  "observations": [
+    {
+      "id": "V1",
+      "kind": "FROZEN",
+      "input": {
+        "path": "qualification_01/V1/input.mal",
+        "size": 57,
+        "sha256": "7D68093FC8BC25F61BD468E822A2A9FF03A6C70A218C6830C7B96B6058D285C4"
+      },
+      "expected": {
+        "path": "qualification_01/V1/expected.json",
+        "size": 52,
+        "sha256": "001103E7C3F04033E031CCD2233D03D66BDD9A6BBA10E8A0C6FDA708A8DBAC4F"
+      },
+      "harness": {
+        "path": "qualification_01/V1/harness.mal",
+        "size": 646,
+        "sha256": "3E5C6C7CC4CE82B9F78A98565EF985E5CE3F17D48F200163CD21E0C0E53C5406"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "atom",
+          "hydrogen"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/V1/actual.json",
+        "size": 52,
+        "sha256": "001103E7C3F04033E031CCD2233D03D66BDD9A6BBA10E8A0C6FDA708A8DBAC4F"
+      }
+    },
+    {
+      "id": "V2",
+      "kind": "FROZEN",
+      "input": {
+        "path": "qualification_01/V2/input.mal",
+        "size": 67,
+        "sha256": "E5627BE264BEEF7490CB9E375688807B10BC0DDCD95A080296FCEEE01DC8456C"
+      },
+      "expected": {
+        "path": "qualification_01/V2/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/V2/harness.mal",
+        "size": 695,
+        "sha256": "E725E64BFE0AB29579D951EF0B4146F4CC1B5A35A59155C13CD928CB18D4CFDE"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "IF_THEN"
+      },
+      "reason": "PARSED_NAMED_POSITIONS",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/V2/actual.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      }
+    },
+    {
+      "id": "V3",
+      "kind": "FROZEN",
+      "input": {
+        "path": "qualification_01/V3/input.mal",
+        "size": 87,
+        "sha256": "56C649A195C14035056FD18D175542A532E39BC2E742EEF5CD7087BD1A0EF758"
+      },
+      "expected": {
+        "path": "qualification_01/V3/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/V3/harness.mal",
+        "size": 738,
+        "sha256": "59ED7AC6E67AE6624A89AE7B9DAE140F10FD99872B8FA75BA7291CBD7B78140C"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "IF_THEN"
+      },
+      "reason": "PARSED_NAMED_POSITIONS",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/V3/actual.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      }
+    },
+    {
+      "id": "V4",
+      "kind": "FROZEN",
+      "input": {
+        "path": "qualification_01/V4/input.mal",
+        "size": 7906,
+        "sha256": "E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC"
+      },
+      "expected": {
+        "path": "qualification_01/V4/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/V4/harness.mal",
+        "size": 27564,
+        "sha256": "221A78BAD36AE0F19BC80038380AB121980B55D8F13B335D1A51768444912D4C"
+      },
+      "exit_code": 0,
+      "comparison": "NOT_SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "MAYBE"
+      },
+      "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/V4/actual.json",
+        "size": 38,
+        "sha256": "160CB115A145AEDDA57FA139DEDCCB15AD8B8A396FED8903E7F8C266231C9B58"
+      }
+    },
+    {
+      "id": "V5",
+      "kind": "FROZEN",
+      "input": {
+        "path": "qualification_01/V5/input.mal",
+        "size": 63,
+        "sha256": "BEFDC60B2AD768C2E639D357C2C86C3A8B2786A0E0BFE3BFB42449352B67D833"
+      },
+      "expected": {
+        "path": "qualification_01/V5/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/V5/harness.mal",
+        "size": 671,
+        "sha256": "AAFA4F5E3D070EA821A1B1D074A2876C336021FE0B60114DDC36B93E64F91CCB"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "IF_THEN"
+      },
+      "reason": "PARSED_NAMED_POSITIONS",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/V5/actual.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      }
+    },
+    {
+      "id": "C01_LAW_NAME",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C01_LAW_NAME/input.mal",
+        "size": 40,
+        "sha256": "D18BFF83BCBC66D8633F91F10EA0880BCB419063417EFDDF257F1212210F8F2C"
+      },
+      "expected": {
+        "path": "qualification_01/C01_LAW_NAME/expected.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      },
+      "harness": {
+        "path": "qualification_01/C01_LAW_NAME/harness.mal",
+        "size": 587,
+        "sha256": "AE9329F5283ECC44A9E073E0178EF316762C3003EEE6320FCE4301AD5C63D150"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "atom"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C01_LAW_NAME/actual.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      }
+    },
+    {
+      "id": "C02_DOMAIN",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C02_DOMAIN/input.mal",
+        "size": 15,
+        "sha256": "7B30AFB20F1A5F4093E96F41F71F29DFF44B60ED6509C07E820A9FB713F47313"
+      },
+      "expected": {
+        "path": "qualification_01/C02_DOMAIN/expected.json",
+        "size": 45,
+        "sha256": "5A0B56F7F2E85BD48A90F30C3EDFF8DB67A22744306AAE8E6BB5C15A656CF514"
+      },
+      "harness": {
+        "path": "qualification_01/C02_DOMAIN/harness.mal",
+        "size": 512,
+        "sha256": "6F34F59D07ECAA414EBCE66418CD704DB5E3793D5310BFB66C97B7D8D23E809E"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "hydrogen"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C02_DOMAIN/actual.json",
+        "size": 45,
+        "sha256": "5A0B56F7F2E85BD48A90F30C3EDFF8DB67A22744306AAE8E6BB5C15A656CF514"
+      }
+    },
+    {
+      "id": "C03_SEED",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C03_SEED/input.mal",
+        "size": 22,
+        "sha256": "90FFB5953587EE8F36640F6DB7B065639A7563F2CD38855FE15BCE5A9BB776DF"
+      },
+      "expected": {
+        "path": "qualification_01/C03_SEED/expected.json",
+        "size": 45,
+        "sha256": "9AF689D125CC006D2138095EAC99975A0AD396436D6673E810B43B5C3FA3CF26"
+      },
+      "harness": {
+        "path": "qualification_01/C03_SEED/harness.mal",
+        "size": 545,
+        "sha256": "D1B547A14508A0E5B04C2471650889CC3D4A678AD0094FC801B98987FEBCC50F"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "particle"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C03_SEED/actual.json",
+        "size": 45,
+        "sha256": "9AF689D125CC006D2138095EAC99975A0AD396436D6673E810B43B5C3FA3CF26"
+      }
+    },
+    {
+      "id": "C04_READONLY",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C04_READONLY/input.mal",
+        "size": 23,
+        "sha256": "46FAD5F4556C4CF462B00AD167FD0DA1ADA9A35FB8181078DFD7A3441FC5B9CE"
+      },
+      "expected": {
+        "path": "qualification_01/C04_READONLY/expected.json",
+        "size": 44,
+        "sha256": "4CB65011399D4B7EF42C0083B8DFB4386F32BAA8EE12A2DCAE9496FB8A005AFE"
+      },
+      "harness": {
+        "path": "qualification_01/C04_READONLY/harness.mal",
+        "size": 549,
+        "sha256": "FFF46E5867693C7070FF9C062CE84C76F2719647311E908459EB31E70E797CD2"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "element"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C04_READONLY/actual.json",
+        "size": 44,
+        "sha256": "4CB65011399D4B7EF42C0083B8DFB4386F32BAA8EE12A2DCAE9496FB8A005AFE"
+      }
+    },
+    {
+      "id": "C05_TERMINAL",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C05_TERMINAL/input.mal",
+        "size": 43,
+        "sha256": "932DAAEA8F8E729526F0F7949A5E21DEFEF1CF382D8455E0D0CF3621DCE32896"
+      },
+      "expected": {
+        "path": "qualification_01/C05_TERMINAL/expected.json",
+        "size": 48,
+        "sha256": "6240DAC59C1E1B50BCE1DCBF264898BD338E15907D9BF3F870974B0B1A082C30"
+      },
+      "harness": {
+        "path": "qualification_01/C05_TERMINAL/harness.mal",
+        "size": 603,
+        "sha256": "7A604CA19B4B66181A0D5FECCA3F231339964D763C37DCC6BCFB8AA4F4CE2C55"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "singularity"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C05_TERMINAL/actual.json",
+        "size": 48,
+        "sha256": "6240DAC59C1E1B50BCE1DCBF264898BD338E15907D9BF3F870974B0B1A082C30"
+      }
+    },
+    {
+      "id": "C06_CONTACT_TYPE",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C06_CONTACT_TYPE/input.mal",
+        "size": 27,
+        "sha256": "58591EFFD3C1B38905D95B0EA63BC047CADC3DE244BDEFE43446F3F2BAEDA6F2"
+      },
+      "expected": {
+        "path": "qualification_01/C06_CONTACT_TYPE/expected.json",
+        "size": 44,
+        "sha256": "2880BCA9BD668B516AB1E36F3DBE5073E30D0585BE96FDA5B7A1DDAE88A0F174"
+      },
+      "harness": {
+        "path": "qualification_01/C06_CONTACT_TYPE/harness.mal",
+        "size": 553,
+        "sha256": "E4FCFCBA183BEDB5A6C0713FF2CF89BCB8A1CC07C2D2E105B5AA490F64F6A4A3"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "entropy"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C06_CONTACT_TYPE/actual.json",
+        "size": 44,
+        "sha256": "2880BCA9BD668B516AB1E36F3DBE5073E30D0585BE96FDA5B7A1DDAE88A0F174"
+      }
+    },
+    {
+      "id": "C07_OPERAND_TYPE",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C07_OPERAND_TYPE/input.mal",
+        "size": 23,
+        "sha256": "0B71E8F8E5D2FA55E8D079E65835A031AE2F6032CC77048EE58553B4099D05FD"
+      },
+      "expected": {
+        "path": "qualification_01/C07_OPERAND_TYPE/expected.json",
+        "size": 40,
+        "sha256": "3AA7E634FAB8C8958D2830F366885B039CADA9DB1232D3A9F6B44BFB74981300"
+      },
+      "harness": {
+        "path": "qualification_01/C07_OPERAND_TYPE/harness.mal",
+        "size": 537,
+        "sha256": "670D50201F3B2084614890BE023095E402C1375A0B895104F4BCC6AF801E7048"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "tie"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C07_OPERAND_TYPE/actual.json",
+        "size": 40,
+        "sha256": "3AA7E634FAB8C8958D2830F366885B039CADA9DB1232D3A9F6B44BFB74981300"
+      }
+    },
+    {
+      "id": "C08_NESTED_ARGUMENT",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C08_NESTED_ARGUMENT/input.mal",
+        "size": 61,
+        "sha256": "E4D440A4378F460E6BB0DE3858A10E7D5A45ED7A8DD2ADEF1EA89131C5B3D090"
+      },
+      "expected": {
+        "path": "qualification_01/C08_NESTED_ARGUMENT/expected.json",
+        "size": 44,
+        "sha256": "4CB65011399D4B7EF42C0083B8DFB4386F32BAA8EE12A2DCAE9496FB8A005AFE"
+      },
+      "harness": {
+        "path": "qualification_01/C08_NESTED_ARGUMENT/harness.mal",
+        "size": 656,
+        "sha256": "286BFDA1B239C189D1F5C0E4BE3660009214A859119652561B7DBB361EDEFB87"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "element"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C08_NESTED_ARGUMENT/actual.json",
+        "size": 44,
+        "sha256": "4CB65011399D4B7EF42C0083B8DFB4386F32BAA8EE12A2DCAE9496FB8A005AFE"
+      }
+    },
+    {
+      "id": "C09_CASE",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C09_CASE/input.mal",
+        "size": 55,
+        "sha256": "DB46DC8B927BD9F86DD84DF32D578F8A54D6AC6D7546D222906B558749DC7846"
+      },
+      "expected": {
+        "path": "qualification_01/C09_CASE/expected.json",
+        "size": 52,
+        "sha256": "001103E7C3F04033E031CCD2233D03D66BDD9A6BBA10E8A0C6FDA708A8DBAC4F"
+      },
+      "harness": {
+        "path": "qualification_01/C09_CASE/harness.mal",
+        "size": 633,
+        "sha256": "F15162F0996107CF9060D40DB14441519768479BDB4470CFF63553BBCB06A5E1"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "atom",
+          "hydrogen"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C09_CASE/actual.json",
+        "size": 52,
+        "sha256": "001103E7C3F04033E031CCD2233D03D66BDD9A6BBA10E8A0C6FDA708A8DBAC4F"
+      }
+    },
+    {
+      "id": "C10_WHOLE_TOKEN",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C10_WHOLE_TOKEN/input.mal",
+        "size": 66,
+        "sha256": "17A88FD448342CBBEF9F507D68998497E9DF0EE845588E83FC2748AD883C6FDD"
+      },
+      "expected": {
+        "path": "qualification_01/C10_WHOLE_TOKEN/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/C10_WHOLE_TOKEN/harness.mal",
+        "size": 662,
+        "sha256": "B600E5AF0218579A913F8B5A9D0DE24139742252CA3DEA5DA9D504A917625B9C"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "IF_THEN"
+      },
+      "reason": "PARSED_NAMED_POSITIONS",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C10_WHOLE_TOKEN/actual.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      }
+    },
+    {
+      "id": "C11_COMMENT",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C11_COMMENT/input.mal",
+        "size": 46,
+        "sha256": "C5C30E04BA942F6335144473D6F605734CF62DDA9198B318B213B70CF5235331"
+      },
+      "expected": {
+        "path": "qualification_01/C11_COMMENT/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/C11_COMMENT/harness.mal",
+        "size": 613,
+        "sha256": "B4930F2CBDA6F0F593BB4F7A5B88009433B355B2601963318370A28342F3BE12"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "IF_THEN"
+      },
+      "reason": "PARSED_NAMED_POSITIONS",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C11_COMMENT/actual.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      }
+    },
+    {
+      "id": "C12_STRING",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C12_STRING/input.mal",
+        "size": 72,
+        "sha256": "8FD666219D9934DAB51C2004C023DEB3D498D12597954AC79A36E28915DCAD27"
+      },
+      "expected": {
+        "path": "qualification_01/C12_STRING/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/C12_STRING/harness.mal",
+        "size": 697,
+        "sha256": "67EE9CB1D10F83B8D420590B6BC36CBBF316D3871EEFA8B898CC415500757BCB"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "IF_THEN"
+      },
+      "reason": "PARSED_NAMED_POSITIONS",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C12_STRING/actual.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      }
+    },
+    {
+      "id": "C13_COMMENT_NEWLINE",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C13_COMMENT_NEWLINE/input.mal",
+        "size": 54,
+        "sha256": "36C73E6989ED877258CA17A5C93FA962E7A4DA6492556FBC361BAFA3A16933E3"
+      },
+      "expected": {
+        "path": "qualification_01/C13_COMMENT_NEWLINE/expected.json",
+        "size": 44,
+        "sha256": "2880BCA9BD668B516AB1E36F3DBE5073E30D0585BE96FDA5B7A1DDAE88A0F174"
+      },
+      "harness": {
+        "path": "qualification_01/C13_COMMENT_NEWLINE/harness.mal",
+        "size": 638,
+        "sha256": "B0BB5233867479F98B4BC38FBE16DC64B97043590FB37316E5EBA9F85FBCEDF2"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "entropy"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C13_COMMENT_NEWLINE/actual.json",
+        "size": 44,
+        "sha256": "2880BCA9BD668B516AB1E36F3DBE5073E30D0585BE96FDA5B7A1DDAE88A0F174"
+      }
+    },
+    {
+      "id": "C14_CONTACT_LABEL",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C14_CONTACT_LABEL/input.mal",
+        "size": 28,
+        "sha256": "AEBD01291E8B44CE64A58B456D0A78B854E2A6FFC004BF5A91E49C2AFE59424B"
+      },
+      "expected": {
+        "path": "qualification_01/C14_CONTACT_LABEL/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/C14_CONTACT_LABEL/harness.mal",
+        "size": 554,
+        "sha256": "F7F225BD350801B5C195BCEFB7872546F3CD9265A1B7D740CD18BB484439B0F7"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "IF_THEN"
+      },
+      "reason": "PARSED_NAMED_POSITIONS",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C14_CONTACT_LABEL/actual.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      }
+    },
+    {
+      "id": "C15_RETIRES",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C15_RETIRES/input.mal",
+        "size": 73,
+        "sha256": "ADA02DC18F4AF6F285B2480537142CB21F911C8FC28FEBE027FF75CE75CE34DE"
+      },
+      "expected": {
+        "path": "qualification_01/C15_RETIRES/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/C15_RETIRES/harness.mal",
+        "size": 702,
+        "sha256": "CEF59FDC9A659A2849CA0513C25C725DE88AE480720BEFB2D4AB1D0542E0F81A"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "IF_THEN"
+      },
+      "reason": "PARSED_NAMED_POSITIONS",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C15_RETIRES/actual.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      }
+    },
+    {
+      "id": "C16_SPECIMEN",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C16_SPECIMEN/input.mal",
+        "size": 96,
+        "sha256": "849ADE30A72BFFBAB6A15D4510E15E8221BB9AD48097A9BAD676FDF0E9DCE730"
+      },
+      "expected": {
+        "path": "qualification_01/C16_SPECIMEN/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/C16_SPECIMEN/harness.mal",
+        "size": 773,
+        "sha256": "C68C566682623F8F7A396FE93583804235C6050E91C360FADFE46B68F951EB16"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "IF_THEN"
+      },
+      "reason": "PARSED_NAMED_POSITIONS",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C16_SPECIMEN/actual.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      }
+    },
+    {
+      "id": "C17_CORRESPONDENCE",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C17_CORRESPONDENCE/input.mal",
+        "size": 55,
+        "sha256": "C9EAFABAE76275C24307EC56616B5238702CFDA0F1715EE2AC16BD9AA02CBB5D"
+      },
+      "expected": {
+        "path": "qualification_01/C17_CORRESPONDENCE/expected.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      },
+      "harness": {
+        "path": "qualification_01/C17_CORRESPONDENCE/harness.mal",
+        "size": 647,
+        "sha256": "9CF876CCB798CC13EC9DC47D5E4CA05B2D458C9BCA8349E1A9364F4D081E0C7B"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "IF_THEN"
+      },
+      "reason": "PARSED_NAMED_POSITIONS",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C17_CORRESPONDENCE/actual.json",
+        "size": 40,
+        "sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712"
+      }
+    },
+    {
+      "id": "C18_DUPLICATE",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C18_DUPLICATE/input.mal",
+        "size": 57,
+        "sha256": "4A07871FD9D7F376E4685220405E9A91044E0F9A7A6C9D491538C6C9BCF9417F"
+      },
+      "expected": {
+        "path": "qualification_01/C18_DUPLICATE/expected.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      },
+      "harness": {
+        "path": "qualification_01/C18_DUPLICATE/harness.mal",
+        "size": 647,
+        "sha256": "C476B8A7DA50AF66A209784D43AD3DD95B1C97DC4345ACAB83BEAC49B74A3457"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "atom"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C18_DUPLICATE/actual.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      }
+    },
+    {
+      "id": "C19_MULTILINE",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C19_MULTILINE/input.mal",
+        "size": 60,
+        "sha256": "34C4C3F450F2D8B442060553CBB9F503B61F132882538786D0869E23FE15A505"
+      },
+      "expected": {
+        "path": "qualification_01/C19_MULTILINE/expected.json",
+        "size": 45,
+        "sha256": "9AF689D125CC006D2138095EAC99975A0AD396436D6673E810B43B5C3FA3CF26"
+      },
+      "harness": {
+        "path": "qualification_01/C19_MULTILINE/harness.mal",
+        "size": 650,
+        "sha256": "CB25C67CDAA258853C59ABA845E42824FF80257E471D2FA05BD2B348097D3110"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "particle"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C19_MULTILINE/actual.json",
+        "size": 45,
+        "sha256": "9AF689D125CC006D2138095EAC99975A0AD396436D6673E810B43B5C3FA3CF26"
+      }
+    },
+    {
+      "id": "C20_ALL_RETIRED",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C20_ALL_RETIRED/input.mal",
+        "size": 87,
+        "sha256": "90838CBB1E46C775ACBA5E29502060FF2F552772A94248DBFB697F21C37EBE92"
+      },
+      "expected": {
+        "path": "qualification_01/C20_ALL_RETIRED/expected.json",
+        "size": 103,
+        "sha256": "63A0CCFC9B6F427799112D35E69863FA4EBE5B448EA2A2C23D428B897DD5DB40"
+      },
+      "harness": {
+        "path": "qualification_01/C20_ALL_RETIRED/harness.mal",
+        "size": 769,
+        "sha256": "AB01D2ABE6BE0CCECDDCEDD95D2975B203D36C8C11587B830AA9F2E49CB16026"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "atom",
+          "element",
+          "entropy",
+          "hydrogen",
+          "particle",
+          "singularity",
+          "tie"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C20_ALL_RETIRED/actual.json",
+        "size": 103,
+        "sha256": "63A0CCFC9B6F427799112D35E69863FA4EBE5B448EA2A2C23D428B897DD5DB40"
+      }
+    },
+    {
+      "id": "C21_MISSING_LAW_ID",
+      "kind": "PARSER_BOUNDARY_CONTROL",
+      "input": {
+        "path": "qualification_01/C21_MISSING_LAW_ID/input.mal",
+        "size": 35,
+        "sha256": "CEC1E9C6B018D54D2BE19DB818A0513F8658C1BF91470EF164F84EF1C8D45773"
+      },
+      "expected": {
+        "path": "qualification_01/C21_MISSING_LAW_ID/expected.json",
+        "size": 38,
+        "sha256": "160CB115A145AEDDA57FA139DEDCCB15AD8B8A396FED8903E7F8C266231C9B58"
+      },
+      "harness": {
+        "path": "qualification_01/C21_MISSING_LAW_ID/harness.mal",
+        "size": 569,
+        "sha256": "ACE73DED33294797AC0EE5DCEBE00CED6280A2B2331F2FB0644489196429F770"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "MAYBE"
+      },
+      "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C21_MISSING_LAW_ID/actual.json",
+        "size": 38,
+        "sha256": "160CB115A145AEDDA57FA139DEDCCB15AD8B8A396FED8903E7F8C266231C9B58"
+      }
+    },
+    {
+      "id": "C22_UNCLOSED_STRING",
+      "kind": "PARSER_BOUNDARY_CONTROL",
+      "input": {
+        "path": "qualification_01/C22_UNCLOSED_STRING/input.mal",
+        "size": 41,
+        "sha256": "87DF8C5B131E73EA9979CE76F16807F0919954EDE3267B70A0F87DDAAF7B576E"
+      },
+      "expected": {
+        "path": "qualification_01/C22_UNCLOSED_STRING/expected.json",
+        "size": 38,
+        "sha256": "160CB115A145AEDDA57FA139DEDCCB15AD8B8A396FED8903E7F8C266231C9B58"
+      },
+      "harness": {
+        "path": "qualification_01/C22_UNCLOSED_STRING/harness.mal",
+        "size": 591,
+        "sha256": "68039005F91EB49D18D767F7C2FA75709DE0C2191F189A442D6745EEFA710B70"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "MAYBE"
+      },
+      "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C22_UNCLOSED_STRING/actual.json",
+        "size": 38,
+        "sha256": "160CB115A145AEDDA57FA139DEDCCB15AD8B8A396FED8903E7F8C266231C9B58"
+      }
+    },
+    {
+      "id": "C23_UNCLOSED_BODY",
+      "kind": "PARSER_BOUNDARY_CONTROL",
+      "input": {
+        "path": "qualification_01/C23_UNCLOSED_BODY/input.mal",
+        "size": 39,
+        "sha256": "B32D421DCCFBE223F1E5E52D5AE47303AB4F5223F7C4CF9112EAB013BEC744EE"
+      },
+      "expected": {
+        "path": "qualification_01/C23_UNCLOSED_BODY/expected.json",
+        "size": 38,
+        "sha256": "160CB115A145AEDDA57FA139DEDCCB15AD8B8A396FED8903E7F8C266231C9B58"
+      },
+      "harness": {
+        "path": "qualification_01/C23_UNCLOSED_BODY/harness.mal",
+        "size": 581,
+        "sha256": "CF778160BD58DD92D690BB1BC92A4924C0F00855A6DA39E76A4D447F5D09AD34"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [],
+        "verdict": "MAYBE"
+      },
+      "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C23_UNCLOSED_BODY/actual.json",
+        "size": 38,
+        "sha256": "160CB115A145AEDDA57FA139DEDCCB15AD8B8A396FED8903E7F8C266231C9B58"
+      }
+    },
+    {
+      "id": "C24_AFTER_SPECIMEN",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C24_AFTER_SPECIMEN/input.mal",
+        "size": 122,
+        "sha256": "7393C82A014B4EA4DF2B18EA3E8714F523B078461ADF2DAB1C2BBE2DE5E1D21B"
+      },
+      "expected": {
+        "path": "qualification_01/C24_AFTER_SPECIMEN/expected.json",
+        "size": 40,
+        "sha256": "3AA7E634FAB8C8958D2830F366885B039CADA9DB1232D3A9F6B44BFB74981300"
+      },
+      "harness": {
+        "path": "qualification_01/C24_AFTER_SPECIMEN/harness.mal",
+        "size": 846,
+        "sha256": "185BD46CC98A6C5556BD9D2C425175862A0499E3896CA0D9AAC0EDC93A3CC21E"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "tie"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C24_AFTER_SPECIMEN/actual.json",
+        "size": 40,
+        "sha256": "3AA7E634FAB8C8958D2830F366885B039CADA9DB1232D3A9F6B44BFB74981300"
+      }
+    },
+    {
+      "id": "C25_UNQUOTED_VECTOR",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C25_UNQUOTED_VECTOR/input.mal",
+        "size": 60,
+        "sha256": "0FAFBD7ADD6C2F2089262AD80E40E4F43A3FFDD42010BD6C302CE88349D4AFE0"
+      },
+      "expected": {
+        "path": "qualification_01/C25_UNQUOTED_VECTOR/expected.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      },
+      "harness": {
+        "path": "qualification_01/C25_UNQUOTED_VECTOR/harness.mal",
+        "size": 647,
+        "sha256": "D19146117209CDE6002EE6CEE62929E568589437B5F3115A8E400C56E38CB2F8"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "atom"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C25_UNQUOTED_VECTOR/actual.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      }
+    },
+    {
+      "id": "C26_AFTER_RETIRES",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C26_AFTER_RETIRES/input.mal",
+        "size": 85,
+        "sha256": "C8E9F11DB1D1936897CD1BDECB1F5E4409E2AA619AE94CBA96B30B3516BB6E7A"
+      },
+      "expected": {
+        "path": "qualification_01/C26_AFTER_RETIRES/expected.json",
+        "size": 44,
+        "sha256": "2880BCA9BD668B516AB1E36F3DBE5073E30D0585BE96FDA5B7A1DDAE88A0F174"
+      },
+      "harness": {
+        "path": "qualification_01/C26_AFTER_RETIRES/harness.mal",
+        "size": 737,
+        "sha256": "EB647A269D544420B8CA483ABDCEE1706E56754DC5C70B5D9CAD1D95FBA36CC7"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "entropy"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C26_AFTER_RETIRES/actual.json",
+        "size": 44,
+        "sha256": "2880BCA9BD668B516AB1E36F3DBE5073E30D0585BE96FDA5B7A1DDAE88A0F174"
+      }
+    },
+    {
+      "id": "C27_SLASH_STRING",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C27_SLASH_STRING/input.mal",
+        "size": 42,
+        "sha256": "56F0A7E9C06FAA75EFB18D8A57BA8EE671B85592061779AFFA1D46752BA9D174"
+      },
+      "expected": {
+        "path": "qualification_01/C27_SLASH_STRING/expected.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      },
+      "harness": {
+        "path": "qualification_01/C27_SLASH_STRING/harness.mal",
+        "size": 593,
+        "sha256": "CB73D14308B94815A56D7F342462507254963C10BA4BB5972F3DB524077C15D0"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "atom"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C27_SLASH_STRING/actual.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      }
+    },
+    {
+      "id": "C28_RETIRES_ARGUMENT",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C28_RETIRES_ARGUMENT/input.mal",
+        "size": 45,
+        "sha256": "9A9A641F8F53E6D8CF14A3C26A44411FBC4E50633ED46916F623AEE5767C9649"
+      },
+      "expected": {
+        "path": "qualification_01/C28_RETIRES_ARGUMENT/expected.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      },
+      "harness": {
+        "path": "qualification_01/C28_RETIRES_ARGUMENT/harness.mal",
+        "size": 602,
+        "sha256": "DFE34A088C1C21261E8A4213D0AA0E2856C6FABB9D247F2FA54EADEB1950ED9F"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "atom"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C28_RETIRES_ARGUMENT/actual.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      }
+    },
+    {
+      "id": "C29_VECTORS_ARGUMENT",
+      "kind": "ADDITIVE_POSITION_CONTROL",
+      "input": {
+        "path": "qualification_01/C29_VECTORS_ARGUMENT/input.mal",
+        "size": 45,
+        "sha256": "464F4EB38B667F280CCDFDD13396A65239EC421CBF36F16F6B9815C8ADF6AD25"
+      },
+      "expected": {
+        "path": "qualification_01/C29_VECTORS_ARGUMENT/expected.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      },
+      "harness": {
+        "path": "qualification_01/C29_VECTORS_ARGUMENT/harness.mal",
+        "size": 602,
+        "sha256": "6A3E462A50BA94E273F530DAC924E4B0652D53F7E44127BBD4EEA263852D1FA5"
+      },
+      "exit_code": 0,
+      "comparison": "SAME",
+      "result": {
+        "law_positions": [
+          "atom"
+        ],
+        "verdict": "NO"
+      },
+      "reason": "RETIRED_LAW_POSITION",
+      "error": null,
+      "actual": {
+        "path": "qualification_01/C29_VECTORS_ARGUMENT/actual.json",
+        "size": 41,
+        "sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D"
+      }
+    }
+  ],
+  "terminal": "NOT_SAME"
+}

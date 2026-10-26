@@ -1,0 +1,6 @@
+ERRATUM_TEST
+law SAFE := IF THIS(SHAPE,a) THEN NO(a);
+RETIRES
+ atom
+STATES
+ shape := FIRST_SHAPE

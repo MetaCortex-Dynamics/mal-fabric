@@ -1,0 +1,1536 @@
+{
+  "kind": "RUN_RECORD_PROMOTION_CHECK_024",
+  "scope": "Additional W9 promotion check; W1-W8 unchanged. No attestation or repository seal performed.",
+  "old_qualification_sha256": "BCF261610B18BF535D235FE8FBF5AA153D03BFC8AEE6AE024923732A4A058D22",
+  "native_executions": 44,
+  "w9_regression_cases": 37,
+  "tests": [
+    {
+      "id": "baseline_byte_19",
+      "comparison": "SAME",
+      "detail": {
+        "reading": "IF_THEN",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        }
+      }
+    },
+    {
+      "id": "unchanged_W1_W8",
+      "comparison": "SAME",
+      "detail": {
+        "reading": "IF_THEN",
+        "kind": "EXECUTED",
+        "payload": "19"
+      }
+    },
+    {
+      "id": "combined_IF_THEN",
+      "comparison": "SAME",
+      "detail": {
+        "reading": "IF_THEN",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      }
+    },
+    {
+      "id": "W9_additional_rejection",
+      "comparison": "SAME",
+      "detail": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "hydrogen"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mention_not_use",
+      "comparison": "SAME",
+      "detail": {
+        "reading": "IF_THEN",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      }
+    },
+    {
+      "id": "W1_W8_NO_retained",
+      "comparison": "SAME",
+      "detail": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      }
+    },
+    {
+      "id": "parse_gap_named",
+      "comparison": "SAME",
+      "detail": {
+        "reading": "MAYBE",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        },
+        "w9": {
+          "verdict": "MAYBE",
+          "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+          "law_positions": []
+        }
+      }
+    },
+    {
+      "id": "erratum_kind_identity_bound",
+      "comparison": "SAME",
+      "detail": "NOT_SAME promoted erratum identity"
+    },
+    {
+      "id": "W9_V1",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "atom",
+          "hydrogen"
+        ]
+      }
+    },
+    {
+      "id": "W9_V2",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_V3",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_V4",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_V5",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C01_LAW_NAME",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "atom"
+        ]
+      }
+    },
+    {
+      "id": "W9_C02_DOMAIN",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "hydrogen"
+        ]
+      }
+    },
+    {
+      "id": "W9_C03_SEED",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "particle"
+        ]
+      }
+    },
+    {
+      "id": "W9_C04_READONLY",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "element"
+        ]
+      }
+    },
+    {
+      "id": "W9_C05_TERMINAL",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "singularity"
+        ]
+      }
+    },
+    {
+      "id": "W9_C06_CONTACT_TYPE",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "entropy"
+        ]
+      }
+    },
+    {
+      "id": "W9_C07_OPERAND_TYPE",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "tie"
+        ]
+      }
+    },
+    {
+      "id": "W9_C08_NESTED_ARGUMENT",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "element"
+        ]
+      }
+    },
+    {
+      "id": "W9_C09_CASE",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "atom",
+          "hydrogen"
+        ]
+      }
+    },
+    {
+      "id": "W9_C10_WHOLE_TOKEN",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C11_COMMENT",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C12_STRING",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C13_COMMENT_NEWLINE",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "entropy"
+        ]
+      }
+    },
+    {
+      "id": "W9_C14_CONTACT_LABEL",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C15_RETIRES",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C16_SPECIMEN",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C17_CORRESPONDENCE",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C18_DUPLICATE",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "atom"
+        ]
+      }
+    },
+    {
+      "id": "W9_C19_MULTILINE",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "particle"
+        ]
+      }
+    },
+    {
+      "id": "W9_C20_ALL_RETIRED",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "atom",
+          "element",
+          "entropy",
+          "hydrogen",
+          "particle",
+          "singularity",
+          "tie"
+        ]
+      }
+    },
+    {
+      "id": "W9_C21_MISSING_LAW_ID",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "MAYBE",
+        "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C22_UNCLOSED_STRING",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "MAYBE",
+        "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C23_UNCLOSED_BODY",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "MAYBE",
+        "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C24_AFTER_SPECIMEN",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "tie"
+        ]
+      }
+    },
+    {
+      "id": "W9_C25_UNQUOTED_VECTOR",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "atom"
+        ]
+      }
+    },
+    {
+      "id": "W9_C26_AFTER_RETIRES",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "entropy"
+        ]
+      }
+    },
+    {
+      "id": "W9_C27_SLASH_STRING",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "atom"
+        ]
+      }
+    },
+    {
+      "id": "W9_C28_RETIRES_ARGUMENT",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "atom"
+        ]
+      }
+    },
+    {
+      "id": "W9_C29_VECTORS_ARGUMENT",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "NO",
+        "reason": "RETIRED_LAW_POSITION",
+        "law_positions": [
+          "atom"
+        ]
+      }
+    },
+    {
+      "id": "W9_C30_ERRATUM_LAW_RETIRES",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C31_ERRATUM_DOMAIN_RETIRES",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "W9_C32_ERRATUM_AUTHORITY_RETIRES",
+      "comparison": "SAME",
+      "detail": {
+        "verdict": "IF_THEN",
+        "reason": "PARSED_NAMED_POSITIONS",
+        "law_positions": []
+      }
+    },
+    {
+      "id": "replay_readings_SAME",
+      "comparison": "SAME",
+      "detail": {
+        "reading": "IF_THEN",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "baseline",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/inputs/SPEC002_v030.mal",
+        "size": 12804,
+        "sha256": "454EF7D150A2D1C69D0BAA8C520884E105CC1A9E30D7CC24A76535259FD31D56"
+      },
+      "result": {
+        "reading": "IF_THEN",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        }
+      },
+      "record_sha256": "ADFF5145A9578477A5158F71E7B24E7F8D88F225DD60B8B8E0F443F44B47BB26"
+    },
+    {
+      "id": "combined",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/inputs/SPEC002_v030.mal",
+        "size": 12804,
+        "sha256": "454EF7D150A2D1C69D0BAA8C520884E105CC1A9E30D7CC24A76535259FD31D56"
+      },
+      "result": {
+        "reading": "IF_THEN",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "3597086A8DAEBFD6FAE69AC6293F974F47F2BAE607D660C26B99978947977FC4"
+    },
+    {
+      "id": "retired_domain",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/qualification_001/retired_domain.mal",
+        "size": 12792,
+        "sha256": "70A0D6DC80347F202C7248F2AEF4BC956EA90C5FEFFFFE165834737A7BDD4288"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "hydrogen"
+          ]
+        }
+      },
+      "record_sha256": "1D56E41E8A30ED412D7DDB0202AAAD8039EE58441F2477354DB4F2DA00163ED9"
+    },
+    {
+      "id": "mention",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/qualification_001/mention.mal",
+        "size": 12870,
+        "sha256": "FA3B3CBAF8D8A9F2D64A65DF3759DF31DD585B0444EF6E71C7E6762491AA28FF"
+      },
+      "result": {
+        "reading": "IF_THEN",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "FA51323BD965BF7A8C20FA236C309A957CCA05BEE513A840E3FDA3E18D8DB1A8"
+    },
+    {
+      "id": "form_NO",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/qualification_001/form_NO.mal",
+        "size": 12789,
+        "sha256": "9B5A184335DF653424FF6A1F80F192AF8DDD515E61B455910B30DF1FE6F0B647"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "AD2CF5E76B41F798918A9AD31D9686CC305FDEAEB776548D192991CBD1EE7835"
+    },
+    {
+      "id": "parse_gap",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/qualification_001/parse_gap.mal",
+        "size": 12823,
+        "sha256": "2B29CA822B2FBCC138FB271D4E1093D1546252E9AC73DB6783950B964D037414"
+      },
+      "result": {
+        "reading": "MAYBE",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        },
+        "w9": {
+          "verdict": "MAYBE",
+          "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "E1CC5E2CD7618C4AFE0760733A5EA106AFD70F09C5CC9AC4DAD367AB55E6E797"
+    },
+    {
+      "id": "w9_V1",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/V1/input.mal",
+        "size": 57,
+        "sha256": "7D68093FC8BC25F61BD468E822A2A9FF03A6C70A218C6830C7B96B6058D285C4"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "atom",
+            "hydrogen"
+          ]
+        }
+      },
+      "record_sha256": "6993FEFAE38158DA8B98F76011040026B93F09368FA6A582B674B89BC426DD83"
+    },
+    {
+      "id": "w9_V2",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/V2/input.mal",
+        "size": 67,
+        "sha256": "E5627BE264BEEF7490CB9E375688807B10BC0DDCD95A080296FCEEE01DC8456C"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "CF8B79E2FE5931618E565EC2A838DCBF8C274E80C6EFC8563289A6699A2E097E"
+    },
+    {
+      "id": "w9_V3",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/V3/input.mal",
+        "size": 87,
+        "sha256": "56C649A195C14035056FD18D175542A532E39BC2E742EEF5CD7087BD1A0EF758"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "C0DBB5E30BFBFF9D4F5131D389A2AB63B0CF5CF9E415E3DD48C42E32E3C17FC1"
+    },
+    {
+      "id": "w9_V4",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/V4/input.mal",
+        "size": 7906,
+        "sha256": "E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC"
+      },
+      "result": {
+        "reading": "IF_THEN",
+        "w1_w8": {
+          "reading": "NOT_A_SPECIFICATION",
+          "kind": "NOT_A_SPECIFICATION",
+          "payload": "NOT_A_SPECIFICATION"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "5D661CB6E3DA0D7E8293C402E8E54AE58B947E83CF1FF8CB0DCDE65BDA9E4950"
+    },
+    {
+      "id": "w9_V5",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/V5/input.mal",
+        "size": 63,
+        "sha256": "BEFDC60B2AD768C2E639D357C2C86C3A8B2786A0E0BFE3BFB42449352B67D833"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "7C685D1E8A78A50BC1F3D51084784C5C6D88AA2CBFA9DCE5D28F67EE4AEDB55A"
+    },
+    {
+      "id": "w9_C01_LAW_NAME",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C01_LAW_NAME/input.mal",
+        "size": 40,
+        "sha256": "D18BFF83BCBC66D8633F91F10EA0880BCB419063417EFDDF257F1212210F8F2C"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "atom"
+          ]
+        }
+      },
+      "record_sha256": "334506EEF010C4ABCAF5F7A207BE8FD1BD2F80F7A29FB284C87BA99FEB7C28BD"
+    },
+    {
+      "id": "w9_C02_DOMAIN",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C02_DOMAIN/input.mal",
+        "size": 15,
+        "sha256": "7B30AFB20F1A5F4093E96F41F71F29DFF44B60ED6509C07E820A9FB713F47313"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "hydrogen"
+          ]
+        }
+      },
+      "record_sha256": "27873FCDD1147EB76A69100B8A0A7E09DE25391BE694FFEFBA788DA49CF8AE91"
+    },
+    {
+      "id": "w9_C03_SEED",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C03_SEED/input.mal",
+        "size": 22,
+        "sha256": "90FFB5953587EE8F36640F6DB7B065639A7563F2CD38855FE15BCE5A9BB776DF"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "particle"
+          ]
+        }
+      },
+      "record_sha256": "839990D34159FAC1BAA4E272F26EE2BFC27C03168DD8CD80C235C7534A6BD0AF"
+    },
+    {
+      "id": "w9_C04_READONLY",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C04_READONLY/input.mal",
+        "size": 23,
+        "sha256": "46FAD5F4556C4CF462B00AD167FD0DA1ADA9A35FB8181078DFD7A3441FC5B9CE"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "element"
+          ]
+        }
+      },
+      "record_sha256": "1BB9D35A725A03E6B20C18D4979259323423037D3A13C67AE84702A997B5758E"
+    },
+    {
+      "id": "w9_C05_TERMINAL",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C05_TERMINAL/input.mal",
+        "size": 43,
+        "sha256": "932DAAEA8F8E729526F0F7949A5E21DEFEF1CF382D8455E0D0CF3621DCE32896"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "singularity"
+          ]
+        }
+      },
+      "record_sha256": "13307B5D04D62FE69AB20E53A94C273FA2980A8B56ACB3A5D20D4652D189CAA5"
+    },
+    {
+      "id": "w9_C06_CONTACT_TYPE",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C06_CONTACT_TYPE/input.mal",
+        "size": 27,
+        "sha256": "58591EFFD3C1B38905D95B0EA63BC047CADC3DE244BDEFE43446F3F2BAEDA6F2"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "entropy"
+          ]
+        }
+      },
+      "record_sha256": "7D116D15B614FE8813EB442CC63197C8E458D57CDD98DCF9D6F777DB0D8C2D1A"
+    },
+    {
+      "id": "w9_C07_OPERAND_TYPE",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C07_OPERAND_TYPE/input.mal",
+        "size": 23,
+        "sha256": "0B71E8F8E5D2FA55E8D079E65835A031AE2F6032CC77048EE58553B4099D05FD"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "tie"
+          ]
+        }
+      },
+      "record_sha256": "D23A0C6CBDB7226263294BDFF50634E6A890ADF5F4C4E032208AE20433D245B6"
+    },
+    {
+      "id": "w9_C08_NESTED_ARGUMENT",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C08_NESTED_ARGUMENT/input.mal",
+        "size": 61,
+        "sha256": "E4D440A4378F460E6BB0DE3858A10E7D5A45ED7A8DD2ADEF1EA89131C5B3D090"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "element"
+          ]
+        }
+      },
+      "record_sha256": "2A0644A749E3980F3C37AAEAA599A99F5F47FC9E8A41021CBA71DA97B65A7350"
+    },
+    {
+      "id": "w9_C09_CASE",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C09_CASE/input.mal",
+        "size": 55,
+        "sha256": "DB46DC8B927BD9F86DD84DF32D578F8A54D6AC6D7546D222906B558749DC7846"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "atom",
+            "hydrogen"
+          ]
+        }
+      },
+      "record_sha256": "3C3436F7A400BD5B9AAB978485BDB4C76B510E76610E3AA41B8584537C8C721F"
+    },
+    {
+      "id": "w9_C10_WHOLE_TOKEN",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C10_WHOLE_TOKEN/input.mal",
+        "size": 66,
+        "sha256": "17A88FD448342CBBEF9F507D68998497E9DF0EE845588E83FC2748AD883C6FDD"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "EF64E62B1CFE87A814657327D078BABC81C2C47BEF9EC8C76CDB0D1577AFA88F"
+    },
+    {
+      "id": "w9_C11_COMMENT",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C11_COMMENT/input.mal",
+        "size": 46,
+        "sha256": "C5C30E04BA942F6335144473D6F605734CF62DDA9198B318B213B70CF5235331"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "D6A61DA1ACF472240197CCE49AB2C6A1F9E5C4048223A45D3E834CC9F92AABBB"
+    },
+    {
+      "id": "w9_C12_STRING",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C12_STRING/input.mal",
+        "size": 72,
+        "sha256": "8FD666219D9934DAB51C2004C023DEB3D498D12597954AC79A36E28915DCAD27"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "D6EDE4BF332BB299A646BB62D54A01857ECCBA41F150FE3C6067E1AE6AF3D11C"
+    },
+    {
+      "id": "w9_C13_COMMENT_NEWLINE",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C13_COMMENT_NEWLINE/input.mal",
+        "size": 54,
+        "sha256": "36C73E6989ED877258CA17A5C93FA962E7A4DA6492556FBC361BAFA3A16933E3"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "entropy"
+          ]
+        }
+      },
+      "record_sha256": "2869C5CC8AB0B7928B9335EE93726266EE5CAF34AEF98EBDCF3796A8BC839EAD"
+    },
+    {
+      "id": "w9_C14_CONTACT_LABEL",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C14_CONTACT_LABEL/input.mal",
+        "size": 28,
+        "sha256": "AEBD01291E8B44CE64A58B456D0A78B854E2A6FFC004BF5A91E49C2AFE59424B"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "1C43A61387995405C4F314A3C08C2B8890C9727B98A28B62AD0233AA6F1CDDF4"
+    },
+    {
+      "id": "w9_C15_RETIRES",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C15_RETIRES/input.mal",
+        "size": 73,
+        "sha256": "ADA02DC18F4AF6F285B2480537142CB21F911C8FC28FEBE027FF75CE75CE34DE"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "2BF92CBCD9B73372FE86016C3EC35E43BCFFBBAC469F2CED3EBF5E282AA234E4"
+    },
+    {
+      "id": "w9_C16_SPECIMEN",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C16_SPECIMEN/input.mal",
+        "size": 96,
+        "sha256": "849ADE30A72BFFBAB6A15D4510E15E8221BB9AD48097A9BAD676FDF0E9DCE730"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "F8CEF82B35CADA32C3BBE086F767216CB9FFCE098DA231094753416CC0689158"
+    },
+    {
+      "id": "w9_C17_CORRESPONDENCE",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C17_CORRESPONDENCE/input.mal",
+        "size": 55,
+        "sha256": "C9EAFABAE76275C24307EC56616B5238702CFDA0F1715EE2AC16BD9AA02CBB5D"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "AB8688E112B3AFA03D236FF3767405194407C6266E337B44C8CA99C56840A285"
+    },
+    {
+      "id": "w9_C18_DUPLICATE",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C18_DUPLICATE/input.mal",
+        "size": 57,
+        "sha256": "4A07871FD9D7F376E4685220405E9A91044E0F9A7A6C9D491538C6C9BCF9417F"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "atom"
+          ]
+        }
+      },
+      "record_sha256": "931D65BB1FD2AF22D60A0A4CC69C27B30FBA60303FD3CA9E4D0C7FE4E7B0BB8A"
+    },
+    {
+      "id": "w9_C19_MULTILINE",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C19_MULTILINE/input.mal",
+        "size": 60,
+        "sha256": "34C4C3F450F2D8B442060553CBB9F503B61F132882538786D0869E23FE15A505"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "particle"
+          ]
+        }
+      },
+      "record_sha256": "871C861157AA36850D00BFBBCEAF05707795EF701187C3D1644CA0644A741C04"
+    },
+    {
+      "id": "w9_C20_ALL_RETIRED",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C20_ALL_RETIRED/input.mal",
+        "size": 87,
+        "sha256": "90838CBB1E46C775ACBA5E29502060FF2F552772A94248DBFB697F21C37EBE92"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "atom",
+            "element",
+            "entropy",
+            "hydrogen",
+            "particle",
+            "singularity",
+            "tie"
+          ]
+        }
+      },
+      "record_sha256": "2074F89BE4EE6A4D08119276D76C851BB7BA5CC79C65397F384BE4331B298091"
+    },
+    {
+      "id": "w9_C21_MISSING_LAW_ID",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C21_MISSING_LAW_ID/input.mal",
+        "size": 35,
+        "sha256": "CEC1E9C6B018D54D2BE19DB818A0513F8658C1BF91470EF164F84EF1C8D45773"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "MAYBE",
+          "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "F60D124FDFEF4CE7A39BD7360407D9918D6865588DD035C3E8F0D1F3F57A9B6F"
+    },
+    {
+      "id": "w9_C22_UNCLOSED_STRING",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C22_UNCLOSED_STRING/input.mal",
+        "size": 41,
+        "sha256": "87DF8C5B131E73EA9979CE76F16807F0919954EDE3267B70A0F87DDAAF7B576E"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "MAYBE",
+          "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "43348A8F17FAE55002AC39DC38FEB57B2FB7E91C9A303D265CA31369676AAD78"
+    },
+    {
+      "id": "w9_C23_UNCLOSED_BODY",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C23_UNCLOSED_BODY/input.mal",
+        "size": 39,
+        "sha256": "B32D421DCCFBE223F1E5E52D5AE47303AB4F5223F7C4CF9112EAB013BEC744EE"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "MAYBE",
+          "reason": "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "063220D304C34E687679EE6129D1BFFA4651263353FD4FB6AE667DDDD24578BB"
+    },
+    {
+      "id": "w9_C24_AFTER_SPECIMEN",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C24_AFTER_SPECIMEN/input.mal",
+        "size": 122,
+        "sha256": "7393C82A014B4EA4DF2B18EA3E8714F523B078461ADF2DAB1C2BBE2DE5E1D21B"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "tie"
+          ]
+        }
+      },
+      "record_sha256": "9C226596034C142E062BFB4C5749A3522E13C73EA8232982337588839B77FC28"
+    },
+    {
+      "id": "w9_C25_UNQUOTED_VECTOR",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C25_UNQUOTED_VECTOR/input.mal",
+        "size": 60,
+        "sha256": "0FAFBD7ADD6C2F2089262AD80E40E4F43A3FFDD42010BD6C302CE88349D4AFE0"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "atom"
+          ]
+        }
+      },
+      "record_sha256": "036DB52C5E997B434B78CFBE370315021F0A16E9FB421BF25DD3CA1E61110F79"
+    },
+    {
+      "id": "w9_C26_AFTER_RETIRES",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C26_AFTER_RETIRES/input.mal",
+        "size": 85,
+        "sha256": "C8E9F11DB1D1936897CD1BDECB1F5E4409E2AA619AE94CBA96B30B3516BB6E7A"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "entropy"
+          ]
+        }
+      },
+      "record_sha256": "ADD8E623A537E72893649D125AD509DFAD0E014591913E70890DAF86CA39C7A1"
+    },
+    {
+      "id": "w9_C27_SLASH_STRING",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C27_SLASH_STRING/input.mal",
+        "size": 42,
+        "sha256": "56F0A7E9C06FAA75EFB18D8A57BA8EE671B85592061779AFFA1D46752BA9D174"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "atom"
+          ]
+        }
+      },
+      "record_sha256": "41803E22A2A10065651DF77A224879B054FDCE3CC46DFB297FD8C6E27E879759"
+    },
+    {
+      "id": "w9_C28_RETIRES_ARGUMENT",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C28_RETIRES_ARGUMENT/input.mal",
+        "size": 45,
+        "sha256": "9A9A641F8F53E6D8CF14A3C26A44411FBC4E50633ED46916F623AEE5767C9649"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "atom"
+          ]
+        }
+      },
+      "record_sha256": "F6E85C6303A6103E2696C79CF3F156FDA6B5991E8BB689AAEBB3C1EA8278A2A0"
+    },
+    {
+      "id": "w9_C29_VECTORS_ARGUMENT",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C29_VECTORS_ARGUMENT/input.mal",
+        "size": 45,
+        "sha256": "464F4EB38B667F280CCDFDD13396A65239EC421CBF36F16F6B9815C8ADF6AD25"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "NO",
+          "reason": "RETIRED_LAW_POSITION",
+          "law_positions": [
+            "atom"
+          ]
+        }
+      },
+      "record_sha256": "7583277DDD0BEF0A78AC000BD0E05DA42696886EB7D66B0FF99706F80B469AC2"
+    },
+    {
+      "id": "w9_C30_ERRATUM_LAW_RETIRES",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C30_ERRATUM_LAW_RETIRES/input.mal",
+        "size": 96,
+        "sha256": "2DDD71BA7EB7AE84B960482075C24B00A960B0A4D0AA9ACD17CAB33E138AB6C9"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "412930A7AA9568AEC0403B0EAAAB2AFB9E78305F334F3C784DBA28D8E6D7C529"
+    },
+    {
+      "id": "w9_C31_ERRATUM_DOMAIN_RETIRES",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C31_ERRATUM_DOMAIN_RETIRES/input.mal",
+        "size": 68,
+        "sha256": "649A96335498A36FCDCC5ED8DED787E091E63AF3EEC6507C6E78BA0BD0F43AFF"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "580A2253510A19EDEC6594C9D235A951DA524FE1AD61A159558402044A48DED8"
+    },
+    {
+      "id": "w9_C32_ERRATUM_AUTHORITY_RETIRES",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_w9_021/qualification_03/C32_ERRATUM_AUTHORITY_RETIRES/input.mal",
+        "size": 99,
+        "sha256": "16AD52C2E5ADDC9665CBC5C7E4238705079DEBAB775ED459EBED9DF27BDF18BB"
+      },
+      "result": {
+        "reading": "NO",
+        "w1_w8": {
+          "reading": "NO",
+          "kind": "EXECUTED",
+          "payload": "0"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "A17AA46B471C5B6495F3953B80D9D090533FCDF991FFC3F4EDECDA417F16E648"
+    },
+    {
+      "id": "replay",
+      "input": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/inputs/SPEC002_v030.mal",
+        "size": 12804,
+        "sha256": "454EF7D150A2D1C69D0BAA8C520884E105CC1A9E30D7CC24A76535259FD31D56"
+      },
+      "result": {
+        "reading": "IF_THEN",
+        "w1_w8": {
+          "reading": "IF_THEN",
+          "kind": "EXECUTED",
+          "payload": "19"
+        },
+        "w9": {
+          "verdict": "IF_THEN",
+          "reason": "PARSED_NAMED_POSITIONS",
+          "law_positions": []
+        }
+      },
+      "record_sha256": "C4F5244EF06C178A61CF9309E7204D6AC7E7C49806799F84DD9BD42C824593E8"
+    }
+  ],
+  "terminal": "IF_THEN"
+}

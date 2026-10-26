@@ -1,0 +1,52 @@
+// Additional PROMOTE check under receipt 19AD057B...C8D17B65.
+// The W1-W8 realization and W9 parser are imported byte-unchanged.
+// This returns readings only: no attestation, corpus promotion, seal, or Git action.
+IN check_form_promote_024 {
+  CAN readonly IN conform_executed(cfp_bytes: ByteSeq) -> Observation {
+    NO IN TOGETHER { kind: "EXECUTED" actual: cfp_bytes }
+  }
+  CAN readonly IN conform_unexecuted(cfp_reason: Atom) -> Observation {
+    NO IN TOGETHER { kind: "UNEXECUTED" reason: cfp_reason }
+  }
+  CAN readonly IN cfp_read_observation(cfp_observation: Observation) -> Atom {
+    SAME cfp_observation.kind {
+      "EXECUTED" -> IN cfp_executed {
+        THIS cfp_read = byte_seq_index.call(cfp_observation.actual,byte_index_zero.call())
+        SAME cfp_read.found {
+          true -> SAME cfp_read.value { 19 -> NO IN "IF_THEN" 0 -> NO IN "NO" _ -> NO IN "MAYBE" }
+          _ -> NO IN "MAYBE"
+        }
+      }
+      _ -> NO IN "MAYBE"
+    }
+  }
+  CAN readonly IN cfp_meet(cfp_form: Atom, cfp_vocab: Atom) -> Atom {
+    SAME cfp_form { "NO" -> NO IN "NO" _ -> NONE }
+    SAME cfp_vocab { "NO" -> NO IN "NO" _ -> NONE }
+    SAME cfp_form { "MAYBE" -> NO IN "MAYBE" _ -> NONE }
+    SAME cfp_vocab { "MAYBE" -> NO IN "MAYBE" _ -> NONE }
+    NO IN "IF_THEN"
+  }
+  CAN readonly IN check_form_promote(cfp_input: ByteSeq, cfp_kind: Atom) -> PromotionCheck {
+    // Both checks consume the identical ByteSeq; callers cannot supply either verdict.
+    THIS cfp_w9 = w9_check.call(cfp_input)
+    SAME cfp_kind {
+      "SPECIFICATION" -> IN cfp_specification {
+        THIS cfp_original = conform_realize.call(cfp_input)
+        THIS cfp_form = cfp_read_observation.call(cfp_original)
+        NO IN TOGETHER {
+          kind: "SPECIFICATION" w1_w8: cfp_original w1_w8_reading: cfp_form w9: cfp_w9
+          reading: cfp_meet.call(cfp_form,cfp_w9.verdict)
+        }
+      }
+      "ERRATUM" -> NO IN TOGETHER {
+        kind: "ERRATUM" w1_w8: TOGETHER { kind: "NOT_A_SPECIFICATION" }
+        w1_w8_reading: "NOT_A_SPECIFICATION" w9: cfp_w9 reading: cfp_w9.verdict
+      }
+      _ -> NO IN TOGETHER {
+        kind: "UNSUPPLIED_RECORD_KIND" w1_w8: TOGETHER { kind: "UNEXECUTED" reason: "UNSUPPLIED_RECORD_KIND" }
+        w1_w8_reading: "MAYBE" w9: cfp_w9 reading: "MAYBE"
+      }
+    }
+  }
+}

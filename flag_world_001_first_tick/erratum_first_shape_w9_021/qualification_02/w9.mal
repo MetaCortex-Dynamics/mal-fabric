@@ -1,0 +1,738 @@
+// W9_ONLY_021 -- additive candidate realization; no promotion or CHECK_FORM W1-W8 integration.
+// Governing input: ERRATUM_E_FIRST_SHAPE_NO_PIECES_001 v0.1.3,
+// SHA256 E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC.
+// Native byte lexer followed by a typed-token parser, not a raw word scan.
+// Supported named productions: law id := IF term[,term]* THEN term; domain id;
+// @propose seed id; @readonly input id; TERMINAL [:=|=] {term[,term]*};
+// CONTACTS/OPERANDS [:=|=] {label:type-term[,label:type-term]*}.
+// Terms are identifiers, numeric literals, strings, and recursively nested calls.
+// Identifier vocabulary is ASCII letters/digits/underscore; keyword case follows native spelling.
+// Retired identifier recognition alone is case-insensitive and whole-token.
+// All antecedent/consequent identifier terms are operands of the parsed IF/THEN construction.
+// A CONTACTS/OPERANDS left-hand label is not a type position.
+// Comments and double-quoted strings are lexical mentions; backticks are opaque tokens.
+// A backtick token is a specimen mention only in an ERRATUM/SPEC VECTORS section.
+// Other prose is not parsed as a declaration. A standalone backtick outside VECTORS is unread.
+// RETIRES is a mention section only after an ERRATUM header; named next headings or a blank
+// line end this bounded section grammar. Native law declarations in VECTORS are NOT suppressed.
+// Unsupported/malformed relevant syntax yields MAYBE, not an invented negative or silent pass.
+// A separately witnessed retired law-position use yields NO even if another parse obligation remains.
+// Output flags are a unique-name set; they are not expected verdicts supplied by the host.
+IN w9_native_021 {
+  CAN readonly IN w9_push(w9_pc: Atom, w9_pw: Atom) -> Atom {
+    THIS w9_tokens = TOGETHER { kind: "NODE" c: w9_pc word: w9_pw next: w9_tokens }
+    NO IN NONE
+  }
+  CAN readonly IN w9_gap_note() -> Atom { THIS w9_gap = true NO IN NONE }
+  CAN readonly IN w9_mark(w9_mc: Atom) -> Atom {
+    SAME w9_mc {
+      "atom" -> IN w9_m1 { THIS w9_atom = 1 THIS w9_hit = true }
+      "hydrogen" -> IN w9_m2 { THIS w9_hydrogen = 1 THIS w9_hit = true }
+      "particle" -> IN w9_m3 { THIS w9_particle = 1 THIS w9_hit = true }
+      "element" -> IN w9_m4 { THIS w9_element = 1 THIS w9_hit = true }
+      "singularity" -> IN w9_m5 { THIS w9_singularity = 1 THIS w9_hit = true }
+      "entropy" -> IN w9_m6 { THIS w9_entropy = 1 THIS w9_hit = true }
+      "tie" -> IN w9_m7 { THIS w9_tie = 1 THIS w9_hit = true }
+      _ -> NONE
+    }
+    NO IN NONE
+  }
+  CAN readonly IN w9_char_class(w9_cc: Atom) -> Atom {
+    SAME w9_cc {
+      65 -> NO IN "LETTER"
+      97 -> NO IN "LETTER"
+      66 -> NO IN "LETTER"
+      98 -> NO IN "LETTER"
+      67 -> NO IN "LETTER"
+      99 -> NO IN "LETTER"
+      68 -> NO IN "LETTER"
+      100 -> NO IN "LETTER"
+      69 -> NO IN "LETTER"
+      101 -> NO IN "LETTER"
+      70 -> NO IN "LETTER"
+      102 -> NO IN "LETTER"
+      71 -> NO IN "LETTER"
+      103 -> NO IN "LETTER"
+      72 -> NO IN "LETTER"
+      104 -> NO IN "LETTER"
+      73 -> NO IN "LETTER"
+      105 -> NO IN "LETTER"
+      74 -> NO IN "LETTER"
+      106 -> NO IN "LETTER"
+      75 -> NO IN "LETTER"
+      107 -> NO IN "LETTER"
+      76 -> NO IN "LETTER"
+      108 -> NO IN "LETTER"
+      77 -> NO IN "LETTER"
+      109 -> NO IN "LETTER"
+      78 -> NO IN "LETTER"
+      110 -> NO IN "LETTER"
+      79 -> NO IN "LETTER"
+      111 -> NO IN "LETTER"
+      80 -> NO IN "LETTER"
+      112 -> NO IN "LETTER"
+      81 -> NO IN "LETTER"
+      113 -> NO IN "LETTER"
+      82 -> NO IN "LETTER"
+      114 -> NO IN "LETTER"
+      83 -> NO IN "LETTER"
+      115 -> NO IN "LETTER"
+      84 -> NO IN "LETTER"
+      116 -> NO IN "LETTER"
+      85 -> NO IN "LETTER"
+      117 -> NO IN "LETTER"
+      86 -> NO IN "LETTER"
+      118 -> NO IN "LETTER"
+      87 -> NO IN "LETTER"
+      119 -> NO IN "LETTER"
+      88 -> NO IN "LETTER"
+      120 -> NO IN "LETTER"
+      89 -> NO IN "LETTER"
+      121 -> NO IN "LETTER"
+      90 -> NO IN "LETTER"
+      122 -> NO IN "LETTER"
+      95 -> NO IN "LETTER"
+      48 -> NO IN "DIGIT"
+      49 -> NO IN "DIGIT"
+      50 -> NO IN "DIGIT"
+      51 -> NO IN "DIGIT"
+      52 -> NO IN "DIGIT"
+      53 -> NO IN "DIGIT"
+      54 -> NO IN "DIGIT"
+      55 -> NO IN "DIGIT"
+      56 -> NO IN "DIGIT"
+      57 -> NO IN "DIGIT"
+      32 -> NO IN "SPACE" 9 -> NO IN "SPACE" 13 -> NO IN "SPACE" 10 -> NO IN "NL"
+      _ -> NO IN "OTHER"
+    }
+  }
+  CAN readonly IN w9_fold(w9_fb: Atom) -> Atom {
+    SAME w9_fb {
+      65 -> IN w9_upper_0 { THIS w9_had_upper = true NO IN 97 }
+      66 -> IN w9_upper_1 { THIS w9_had_upper = true NO IN 98 }
+      67 -> IN w9_upper_2 { THIS w9_had_upper = true NO IN 99 }
+      68 -> IN w9_upper_3 { THIS w9_had_upper = true NO IN 100 }
+      69 -> IN w9_upper_4 { THIS w9_had_upper = true NO IN 101 }
+      70 -> IN w9_upper_5 { THIS w9_had_upper = true NO IN 102 }
+      71 -> IN w9_upper_6 { THIS w9_had_upper = true NO IN 103 }
+      72 -> IN w9_upper_7 { THIS w9_had_upper = true NO IN 104 }
+      73 -> IN w9_upper_8 { THIS w9_had_upper = true NO IN 105 }
+      74 -> IN w9_upper_9 { THIS w9_had_upper = true NO IN 106 }
+      75 -> IN w9_upper_10 { THIS w9_had_upper = true NO IN 107 }
+      76 -> IN w9_upper_11 { THIS w9_had_upper = true NO IN 108 }
+      77 -> IN w9_upper_12 { THIS w9_had_upper = true NO IN 109 }
+      78 -> IN w9_upper_13 { THIS w9_had_upper = true NO IN 110 }
+      79 -> IN w9_upper_14 { THIS w9_had_upper = true NO IN 111 }
+      80 -> IN w9_upper_15 { THIS w9_had_upper = true NO IN 112 }
+      81 -> IN w9_upper_16 { THIS w9_had_upper = true NO IN 113 }
+      82 -> IN w9_upper_17 { THIS w9_had_upper = true NO IN 114 }
+      83 -> IN w9_upper_18 { THIS w9_had_upper = true NO IN 115 }
+      84 -> IN w9_upper_19 { THIS w9_had_upper = true NO IN 116 }
+      85 -> IN w9_upper_20 { THIS w9_had_upper = true NO IN 117 }
+      86 -> IN w9_upper_21 { THIS w9_had_upper = true NO IN 118 }
+      87 -> IN w9_upper_22 { THIS w9_had_upper = true NO IN 119 }
+      88 -> IN w9_upper_23 { THIS w9_had_upper = true NO IN 120 }
+      89 -> IN w9_upper_24 { THIS w9_had_upper = true NO IN 121 }
+      90 -> IN w9_upper_25 { THIS w9_had_upper = true NO IN 122 }
+      97 -> IN w9_lower_0 { THIS w9_had_lower = true NO IN 97 }
+      98 -> IN w9_lower_1 { THIS w9_had_lower = true NO IN 98 }
+      99 -> IN w9_lower_2 { THIS w9_had_lower = true NO IN 99 }
+      100 -> IN w9_lower_3 { THIS w9_had_lower = true NO IN 100 }
+      101 -> IN w9_lower_4 { THIS w9_had_lower = true NO IN 101 }
+      102 -> IN w9_lower_5 { THIS w9_had_lower = true NO IN 102 }
+      103 -> IN w9_lower_6 { THIS w9_had_lower = true NO IN 103 }
+      104 -> IN w9_lower_7 { THIS w9_had_lower = true NO IN 104 }
+      105 -> IN w9_lower_8 { THIS w9_had_lower = true NO IN 105 }
+      106 -> IN w9_lower_9 { THIS w9_had_lower = true NO IN 106 }
+      107 -> IN w9_lower_10 { THIS w9_had_lower = true NO IN 107 }
+      108 -> IN w9_lower_11 { THIS w9_had_lower = true NO IN 108 }
+      109 -> IN w9_lower_12 { THIS w9_had_lower = true NO IN 109 }
+      110 -> IN w9_lower_13 { THIS w9_had_lower = true NO IN 110 }
+      111 -> IN w9_lower_14 { THIS w9_had_lower = true NO IN 111 }
+      112 -> IN w9_lower_15 { THIS w9_had_lower = true NO IN 112 }
+      113 -> IN w9_lower_16 { THIS w9_had_lower = true NO IN 113 }
+      114 -> IN w9_lower_17 { THIS w9_had_lower = true NO IN 114 }
+      115 -> IN w9_lower_18 { THIS w9_had_lower = true NO IN 115 }
+      116 -> IN w9_lower_19 { THIS w9_had_lower = true NO IN 116 }
+      117 -> IN w9_lower_20 { THIS w9_had_lower = true NO IN 117 }
+      118 -> IN w9_lower_21 { THIS w9_had_lower = true NO IN 118 }
+      119 -> IN w9_lower_22 { THIS w9_had_lower = true NO IN 119 }
+      120 -> IN w9_lower_23 { THIS w9_had_lower = true NO IN 120 }
+      121 -> IN w9_lower_24 { THIS w9_had_lower = true NO IN 121 }
+      122 -> IN w9_lower_25 { THIS w9_had_lower = true NO IN 122 }
+      _ -> NO IN w9_fb
+    }
+  }
+  CAN readonly IN w9_trie_step(w9_ts: Atom, w9_tb: Atom) -> Atom {
+    SAME w9_ts {
+      "N0" -> SAME w9_tb { 108 -> NO IN "N1" 100 -> NO IN "N4" 112 -> NO IN "N10" 115 -> NO IN "N17" 114 -> NO IN "N21" 105 -> NO IN "N29" 116 -> NO IN "N35" 118 -> NO IN "N44" 119 -> NO IN "N56" 103 -> NO IN "N64" 101 -> NO IN "N73" 99 -> NO IN "N85" 111 -> NO IN "N93" 97 -> NO IN "N112" 104 -> NO IN "N116" _ -> NO IN "DEAD" }
+      "N1" -> SAME w9_tb { 97 -> NO IN "N2" _ -> NO IN "DEAD" }
+      "N2" -> SAME w9_tb { 119 -> NO IN "N3" _ -> NO IN "DEAD" }
+      "N3" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N4" -> SAME w9_tb { 111 -> NO IN "N5" _ -> NO IN "DEAD" }
+      "N5" -> SAME w9_tb { 109 -> NO IN "N6" _ -> NO IN "DEAD" }
+      "N6" -> SAME w9_tb { 97 -> NO IN "N7" _ -> NO IN "DEAD" }
+      "N7" -> SAME w9_tb { 105 -> NO IN "N8" _ -> NO IN "DEAD" }
+      "N8" -> SAME w9_tb { 110 -> NO IN "N9" _ -> NO IN "DEAD" }
+      "N9" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N10" -> SAME w9_tb { 114 -> NO IN "N11" 97 -> NO IN "N124" _ -> NO IN "DEAD" }
+      "N11" -> SAME w9_tb { 111 -> NO IN "N12" _ -> NO IN "DEAD" }
+      "N12" -> SAME w9_tb { 112 -> NO IN "N13" _ -> NO IN "DEAD" }
+      "N13" -> SAME w9_tb { 111 -> NO IN "N14" _ -> NO IN "DEAD" }
+      "N14" -> SAME w9_tb { 115 -> NO IN "N15" _ -> NO IN "DEAD" }
+      "N15" -> SAME w9_tb { 101 -> NO IN "N16" _ -> NO IN "DEAD" }
+      "N16" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N17" -> SAME w9_tb { 101 -> NO IN "N18" 116 -> NO IN "N51" 112 -> NO IN "N108" 105 -> NO IN "N137" _ -> NO IN "DEAD" }
+      "N18" -> SAME w9_tb { 101 -> NO IN "N19" _ -> NO IN "DEAD" }
+      "N19" -> SAME w9_tb { 100 -> NO IN "N20" _ -> NO IN "DEAD" }
+      "N20" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N21" -> SAME w9_tb { 101 -> NO IN "N22" _ -> NO IN "DEAD" }
+      "N22" -> SAME w9_tb { 97 -> NO IN "N23" 116 -> NO IN "N39" _ -> NO IN "DEAD" }
+      "N23" -> SAME w9_tb { 100 -> NO IN "N24" _ -> NO IN "DEAD" }
+      "N24" -> SAME w9_tb { 111 -> NO IN "N25" _ -> NO IN "DEAD" }
+      "N25" -> SAME w9_tb { 110 -> NO IN "N26" _ -> NO IN "DEAD" }
+      "N26" -> SAME w9_tb { 108 -> NO IN "N27" _ -> NO IN "DEAD" }
+      "N27" -> SAME w9_tb { 121 -> NO IN "N28" _ -> NO IN "DEAD" }
+      "N28" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N29" -> SAME w9_tb { 110 -> NO IN "N30" 102 -> NO IN "N34" _ -> NO IN "DEAD" }
+      "N30" -> SAME w9_tb { 112 -> NO IN "N31" _ -> NO IN "DEAD" }
+      "N31" -> SAME w9_tb { 117 -> NO IN "N32" _ -> NO IN "DEAD" }
+      "N32" -> SAME w9_tb { 116 -> NO IN "N33" _ -> NO IN "DEAD" }
+      "N33" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N34" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N35" -> SAME w9_tb { 104 -> NO IN "N36" 101 -> NO IN "N78" 105 -> NO IN "N150" _ -> NO IN "DEAD" }
+      "N36" -> SAME w9_tb { 101 -> NO IN "N37" _ -> NO IN "DEAD" }
+      "N37" -> SAME w9_tb { 110 -> NO IN "N38" _ -> NO IN "DEAD" }
+      "N38" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N39" -> SAME w9_tb { 105 -> NO IN "N40" _ -> NO IN "DEAD" }
+      "N40" -> SAME w9_tb { 114 -> NO IN "N41" _ -> NO IN "DEAD" }
+      "N41" -> SAME w9_tb { 101 -> NO IN "N42" _ -> NO IN "DEAD" }
+      "N42" -> SAME w9_tb { 115 -> NO IN "N43" _ -> NO IN "DEAD" }
+      "N43" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N44" -> SAME w9_tb { 101 -> NO IN "N45" _ -> NO IN "DEAD" }
+      "N45" -> SAME w9_tb { 99 -> NO IN "N46" _ -> NO IN "DEAD" }
+      "N46" -> SAME w9_tb { 116 -> NO IN "N47" _ -> NO IN "DEAD" }
+      "N47" -> SAME w9_tb { 111 -> NO IN "N48" _ -> NO IN "DEAD" }
+      "N48" -> SAME w9_tb { 114 -> NO IN "N49" _ -> NO IN "DEAD" }
+      "N49" -> SAME w9_tb { 115 -> NO IN "N50" _ -> NO IN "DEAD" }
+      "N50" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N51" -> SAME w9_tb { 97 -> NO IN "N52" _ -> NO IN "DEAD" }
+      "N52" -> SAME w9_tb { 116 -> NO IN "N53" _ -> NO IN "DEAD" }
+      "N53" -> SAME w9_tb { 101 -> NO IN "N54" _ -> NO IN "DEAD" }
+      "N54" -> SAME w9_tb { 115 -> NO IN "N55" _ -> NO IN "DEAD" }
+      "N55" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N56" -> SAME w9_tb { 57 -> NO IN "N63" 114 -> NO IN "N57" _ -> NO IN "DEAD" }
+      "N57" -> SAME w9_tb { 105 -> NO IN "N58" _ -> NO IN "DEAD" }
+      "N58" -> SAME w9_tb { 116 -> NO IN "N59" _ -> NO IN "DEAD" }
+      "N59" -> SAME w9_tb { 105 -> NO IN "N60" _ -> NO IN "DEAD" }
+      "N60" -> SAME w9_tb { 110 -> NO IN "N61" _ -> NO IN "DEAD" }
+      "N61" -> SAME w9_tb { 103 -> NO IN "N62" _ -> NO IN "DEAD" }
+      "N62" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N63" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N64" -> SAME w9_tb { 101 -> NO IN "N65" _ -> NO IN "DEAD" }
+      "N65" -> SAME w9_tb { 110 -> NO IN "N66" _ -> NO IN "DEAD" }
+      "N66" -> SAME w9_tb { 101 -> NO IN "N67" _ -> NO IN "DEAD" }
+      "N67" -> SAME w9_tb { 97 -> NO IN "N68" _ -> NO IN "DEAD" }
+      "N68" -> SAME w9_tb { 108 -> NO IN "N69" _ -> NO IN "DEAD" }
+      "N69" -> SAME w9_tb { 111 -> NO IN "N70" _ -> NO IN "DEAD" }
+      "N70" -> SAME w9_tb { 103 -> NO IN "N71" _ -> NO IN "DEAD" }
+      "N71" -> SAME w9_tb { 121 -> NO IN "N72" _ -> NO IN "DEAD" }
+      "N72" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N73" -> SAME w9_tb { 110 -> NO IN "N74" 114 -> NO IN "N101" 108 -> NO IN "N131" _ -> NO IN "DEAD" }
+      "N74" -> SAME w9_tb { 116 -> NO IN "N75" _ -> NO IN "DEAD" }
+      "N75" -> SAME w9_tb { 114 -> NO IN "N76" _ -> NO IN "DEAD" }
+      "N76" -> SAME w9_tb { 121 -> NO IN "N77" 111 -> NO IN "N147" _ -> NO IN "DEAD" }
+      "N77" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N78" -> SAME w9_tb { 114 -> NO IN "N79" _ -> NO IN "DEAD" }
+      "N79" -> SAME w9_tb { 109 -> NO IN "N80" _ -> NO IN "DEAD" }
+      "N80" -> SAME w9_tb { 105 -> NO IN "N81" _ -> NO IN "DEAD" }
+      "N81" -> SAME w9_tb { 110 -> NO IN "N82" _ -> NO IN "DEAD" }
+      "N82" -> SAME w9_tb { 97 -> NO IN "N83" _ -> NO IN "DEAD" }
+      "N83" -> SAME w9_tb { 108 -> NO IN "N84" _ -> NO IN "DEAD" }
+      "N84" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N85" -> SAME w9_tb { 111 -> NO IN "N86" _ -> NO IN "DEAD" }
+      "N86" -> SAME w9_tb { 110 -> NO IN "N87" _ -> NO IN "DEAD" }
+      "N87" -> SAME w9_tb { 116 -> NO IN "N88" _ -> NO IN "DEAD" }
+      "N88" -> SAME w9_tb { 97 -> NO IN "N89" _ -> NO IN "DEAD" }
+      "N89" -> SAME w9_tb { 99 -> NO IN "N90" _ -> NO IN "DEAD" }
+      "N90" -> SAME w9_tb { 116 -> NO IN "N91" _ -> NO IN "DEAD" }
+      "N91" -> SAME w9_tb { 115 -> NO IN "N92" _ -> NO IN "DEAD" }
+      "N92" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N93" -> SAME w9_tb { 112 -> NO IN "N94" _ -> NO IN "DEAD" }
+      "N94" -> SAME w9_tb { 101 -> NO IN "N95" _ -> NO IN "DEAD" }
+      "N95" -> SAME w9_tb { 114 -> NO IN "N96" _ -> NO IN "DEAD" }
+      "N96" -> SAME w9_tb { 97 -> NO IN "N97" _ -> NO IN "DEAD" }
+      "N97" -> SAME w9_tb { 110 -> NO IN "N98" _ -> NO IN "DEAD" }
+      "N98" -> SAME w9_tb { 100 -> NO IN "N99" _ -> NO IN "DEAD" }
+      "N99" -> SAME w9_tb { 115 -> NO IN "N100" _ -> NO IN "DEAD" }
+      "N100" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N101" -> SAME w9_tb { 114 -> NO IN "N102" _ -> NO IN "DEAD" }
+      "N102" -> SAME w9_tb { 97 -> NO IN "N103" _ -> NO IN "DEAD" }
+      "N103" -> SAME w9_tb { 116 -> NO IN "N104" _ -> NO IN "DEAD" }
+      "N104" -> SAME w9_tb { 117 -> NO IN "N105" _ -> NO IN "DEAD" }
+      "N105" -> SAME w9_tb { 109 -> NO IN "N106" _ -> NO IN "DEAD" }
+      "N106" -> SAME w9_tb { 95 -> NO IN "N107" _ -> NO IN "DEAD" }
+      "N107" -> NO IN "N107"
+      "N108" -> SAME w9_tb { 101 -> NO IN "N109" _ -> NO IN "DEAD" }
+      "N109" -> SAME w9_tb { 99 -> NO IN "N110" _ -> NO IN "DEAD" }
+      "N110" -> SAME w9_tb { 95 -> NO IN "N111" _ -> NO IN "DEAD" }
+      "N111" -> NO IN "N111"
+      "N112" -> SAME w9_tb { 116 -> NO IN "N113" _ -> NO IN "DEAD" }
+      "N113" -> SAME w9_tb { 111 -> NO IN "N114" _ -> NO IN "DEAD" }
+      "N114" -> SAME w9_tb { 109 -> NO IN "N115" _ -> NO IN "DEAD" }
+      "N115" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N116" -> SAME w9_tb { 121 -> NO IN "N117" _ -> NO IN "DEAD" }
+      "N117" -> SAME w9_tb { 100 -> NO IN "N118" _ -> NO IN "DEAD" }
+      "N118" -> SAME w9_tb { 114 -> NO IN "N119" _ -> NO IN "DEAD" }
+      "N119" -> SAME w9_tb { 111 -> NO IN "N120" _ -> NO IN "DEAD" }
+      "N120" -> SAME w9_tb { 103 -> NO IN "N121" _ -> NO IN "DEAD" }
+      "N121" -> SAME w9_tb { 101 -> NO IN "N122" _ -> NO IN "DEAD" }
+      "N122" -> SAME w9_tb { 110 -> NO IN "N123" _ -> NO IN "DEAD" }
+      "N123" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N124" -> SAME w9_tb { 114 -> NO IN "N125" _ -> NO IN "DEAD" }
+      "N125" -> SAME w9_tb { 116 -> NO IN "N126" _ -> NO IN "DEAD" }
+      "N126" -> SAME w9_tb { 105 -> NO IN "N127" _ -> NO IN "DEAD" }
+      "N127" -> SAME w9_tb { 99 -> NO IN "N128" _ -> NO IN "DEAD" }
+      "N128" -> SAME w9_tb { 108 -> NO IN "N129" _ -> NO IN "DEAD" }
+      "N129" -> SAME w9_tb { 101 -> NO IN "N130" _ -> NO IN "DEAD" }
+      "N130" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N131" -> SAME w9_tb { 101 -> NO IN "N132" _ -> NO IN "DEAD" }
+      "N132" -> SAME w9_tb { 109 -> NO IN "N133" _ -> NO IN "DEAD" }
+      "N133" -> SAME w9_tb { 101 -> NO IN "N134" _ -> NO IN "DEAD" }
+      "N134" -> SAME w9_tb { 110 -> NO IN "N135" _ -> NO IN "DEAD" }
+      "N135" -> SAME w9_tb { 116 -> NO IN "N136" _ -> NO IN "DEAD" }
+      "N136" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N137" -> SAME w9_tb { 110 -> NO IN "N138" _ -> NO IN "DEAD" }
+      "N138" -> SAME w9_tb { 103 -> NO IN "N139" _ -> NO IN "DEAD" }
+      "N139" -> SAME w9_tb { 117 -> NO IN "N140" _ -> NO IN "DEAD" }
+      "N140" -> SAME w9_tb { 108 -> NO IN "N141" _ -> NO IN "DEAD" }
+      "N141" -> SAME w9_tb { 97 -> NO IN "N142" _ -> NO IN "DEAD" }
+      "N142" -> SAME w9_tb { 114 -> NO IN "N143" _ -> NO IN "DEAD" }
+      "N143" -> SAME w9_tb { 105 -> NO IN "N144" _ -> NO IN "DEAD" }
+      "N144" -> SAME w9_tb { 116 -> NO IN "N145" _ -> NO IN "DEAD" }
+      "N145" -> SAME w9_tb { 121 -> NO IN "N146" _ -> NO IN "DEAD" }
+      "N146" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N147" -> SAME w9_tb { 112 -> NO IN "N148" _ -> NO IN "DEAD" }
+      "N148" -> SAME w9_tb { 121 -> NO IN "N149" _ -> NO IN "DEAD" }
+      "N149" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      "N150" -> SAME w9_tb { 101 -> NO IN "N151" _ -> NO IN "DEAD" }
+      "N151" -> SAME w9_tb {  _ -> NO IN "DEAD" }
+      _ -> NO IN "DEAD"
+    }
+  }
+  CAN readonly IN w9_trie_word(w9_tw: Atom) -> Atom {
+    SAME w9_tw {
+      "N3" -> NO IN "LAW"
+      "N9" -> NO IN "DOMAIN"
+      "N16" -> NO IN "PROPOSE"
+      "N20" -> NO IN "SEED"
+      "N28" -> NO IN "READONLY"
+      "N33" -> NO IN "INPUT"
+      "N34" -> NO IN "IF"
+      "N38" -> NO IN "THEN"
+      "N43" -> NO IN "RETIRES"
+      "N50" -> NO IN "VECTORS"
+      "N55" -> NO IN "STATES"
+      "N62" -> NO IN "WRITING"
+      "N63" -> NO IN "W9"
+      "N72" -> NO IN "GENEALOGY"
+      "N77" -> NO IN "ENTRY"
+      "N84" -> NO IN "TERMINAL"
+      "N92" -> NO IN "CONTACTS"
+      "N100" -> NO IN "OPERANDS"
+      "N107" -> NO IN "ERRATUM_ID"
+      "N111" -> NO IN "SPEC_ID"
+      "N115" -> NO IN "atom"
+      "N123" -> NO IN "hydrogen"
+      "N130" -> NO IN "particle"
+      "N136" -> NO IN "element"
+      "N146" -> NO IN "singularity"
+      "N149" -> NO IN "entropy"
+      "N151" -> NO IN "tie"
+      _ -> NO IN "ID"
+    }
+  }
+
+  CAN readonly IN w9_finish_word() -> Atom {
+    SAME w9_word_active {
+      false -> NO IN NONE
+      true -> NONE
+    }
+    THIS w9_wc = w9_trie_word.call(w9_word_node)
+    SAME w9_wc {
+      "LAW" -> SAME w9_had_upper { true -> THIS w9_wc = "ID" _ -> NONE }
+      "DOMAIN" -> SAME w9_had_upper { true -> THIS w9_wc = "ID" _ -> NONE }
+      "PROPOSE" -> SAME w9_had_upper { true -> THIS w9_wc = "ID" _ -> NONE }
+      "SEED" -> SAME w9_had_upper { true -> THIS w9_wc = "ID" _ -> NONE }
+      "READONLY" -> SAME w9_had_upper { true -> THIS w9_wc = "ID" _ -> NONE }
+      "INPUT" -> SAME w9_had_upper { true -> THIS w9_wc = "ID" _ -> NONE }
+      "IF" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "THEN" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "RETIRES" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "VECTORS" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "STATES" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "WRITING" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "W9" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "GENEALOGY" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "ENTRY" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "TERMINAL" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "CONTACTS" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      "OPERANDS" -> SAME w9_had_lower { true -> THIS w9_wc = "ID" _ -> NONE }
+      _ -> NONE
+    }
+    SAME w9_word_number {
+      true -> w9_push.call("NUM", false)
+      false -> w9_push.call(w9_wc, true)
+    }
+    THIS w9_word_active = false
+    NO IN NONE
+  }
+  CAN readonly IN w9_word_byte(w9_wb: Atom, w9_wclass: Atom) -> Atom {
+    SAME w9_word_active {
+      false -> IN w9_word_begin {
+        THIS w9_word_active = true THIS w9_word_node = "N0"
+        THIS w9_had_upper = false THIS w9_had_lower = false
+        THIS w9_word_number = false
+        SAME w9_wclass { "DIGIT" -> THIS w9_word_number = true _ -> NONE }
+      }
+      _ -> NONE
+    }
+    SAME w9_wclass { "LETTER" -> THIS w9_word_number = false _ -> NONE }
+    THIS w9_word_node = w9_trie_step.call(w9_word_node, w9_fold.call(w9_wb))
+    NO IN NONE
+  }
+  CAN readonly IN w9_code_byte(w9_cb: Atom) -> Atom {
+    THIS w9_cls = w9_char_class.call(w9_cb)
+    SAME w9_cls {
+      "LETTER" -> NO IN w9_word_byte.call(w9_cb, w9_cls)
+      "DIGIT" -> NO IN w9_word_byte.call(w9_cb, w9_cls)
+      _ -> w9_finish_word.call()
+    }
+    SAME w9_cb {
+      47 -> THIS w9_lex = "SLASH"
+      34 -> THIS w9_lex = "STRING"
+      96 -> THIS w9_lex = "BACKTICK"
+      10 -> w9_push.call("NL", false)
+      40 -> w9_push.call("LP", false) 41 -> w9_push.call("RP", false)
+      123 -> w9_push.call("LB", false) 125 -> w9_push.call("RB", false)
+      91 -> w9_push.call("LSQ", false) 93 -> w9_push.call("RSQ", false)
+      44 -> w9_push.call("COMMA", false) 58 -> w9_push.call("COLON", false)
+      61 -> w9_push.call("EQ", false) 59 -> w9_push.call("SEMI", false)
+      64 -> w9_push.call("AT", false)
+      32 -> NONE 9 -> NONE 13 -> NONE
+      _ -> w9_push.call("OTHER", false)
+    }
+    NO IN NONE
+  }
+  CAN readonly IN w9_lex_byte(w9_lb: Atom) -> Atom {
+    SAME w9_lex {
+      "CODE" -> NO IN w9_code_byte.call(w9_lb)
+      "SLASH" -> SAME w9_lb {
+        47 -> THIS w9_lex = "COMMENT"
+        _ -> IN w9_lone_slash { THIS w9_lex = "CODE" w9_push.call("OTHER",false) w9_code_byte.call(w9_lb) }
+      }
+      "COMMENT" -> SAME w9_lb { 10 -> IN w9_comment_end { THIS w9_lex = "CODE" w9_push.call("NL",false) } _ -> NONE }
+      "STRING" -> SAME w9_lb {
+        92 -> THIS w9_lex = "ESCAPE"
+        34 -> IN w9_string_end { THIS w9_lex = "CODE" w9_push.call("STRING",false) }
+        _ -> NONE
+      }
+      "ESCAPE" -> THIS w9_lex = "STRING"
+      "BACKTICK" -> SAME w9_lb { 96 -> IN w9_tick_end { THIS w9_lex = "CODE" w9_push.call("BACKTICK",false) } _ -> NONE }
+    }
+    NO IN NONE
+  }
+  CAN readonly IN w9_reverse() -> Atom {
+    SAME w9_tokens.kind {
+      "END" -> NO IN NONE
+      "NODE" -> IN w9_reverse_node {
+        THIS w9_reversed = TOGETHER { kind: "NODE" c: w9_tokens.c word: w9_tokens.word next: w9_reversed }
+        THIS w9_tokens = w9_tokens.next
+        NO IN w9_reverse.call()
+      }
+    }
+  }
+  CAN readonly IN w9_current() -> Atom {
+    SAME w9_cursor.kind { "END" -> NO IN "EOF" "NODE" -> NO IN w9_cursor.c }
+  }
+  CAN readonly IN w9_word() -> Atom {
+    SAME w9_cursor.kind { "END" -> NO IN false "NODE" -> NO IN w9_cursor.word }
+  }
+  CAN readonly IN w9_next() -> Atom {
+    SAME w9_cursor.kind { "NODE" -> THIS w9_cursor = w9_cursor.next _ -> NONE }
+    NO IN NONE
+  }
+  CAN readonly IN w9_skip_nl() -> Atom {
+    SAME w9_current.call() { "NL" -> IN w9_skip_one { w9_next.call() NO IN w9_skip_nl.call() } _ -> NO IN NONE }
+  }
+  CAN readonly IN w9_equal(w9_ea: Atom, w9_eb: Atom) -> Atom {
+    SAME w9_ea {
+      "COLON" -> SAME w9_eb { "COLON" -> NO IN true _ -> NO IN false }
+      "EQ" -> SAME w9_eb { "EQ" -> NO IN true _ -> NO IN false }
+      "IF" -> SAME w9_eb { "IF" -> NO IN true _ -> NO IN false }
+      "SEMI" -> SAME w9_eb { "SEMI" -> NO IN true _ -> NO IN false }
+      "SEED" -> SAME w9_eb { "SEED" -> NO IN true _ -> NO IN false }
+      "INPUT" -> SAME w9_eb { "INPUT" -> NO IN true _ -> NO IN false }
+      "LB" -> SAME w9_eb { "LB" -> NO IN true _ -> NO IN false }
+      _ -> NO IN false
+    }
+  }
+  CAN readonly IN w9_expect(w9_ec: Atom) -> Atom {
+    w9_skip_nl.call()
+    SAME w9_equal.call(w9_current.call(), w9_ec) {
+      true -> IN w9_expected { w9_next.call() NO IN true }
+      _ -> IN w9_expected_gap { w9_gap_note.call() NO IN false }
+    }
+  }
+  CAN readonly IN w9_skip_rest() -> Atom {
+    SAME w9_current.call() {
+      "EOF" -> NO IN NONE
+      "NL" -> NO IN w9_next.call()
+      "SEMI" -> NO IN w9_next.call()
+      _ -> IN w9_rest_more { w9_next.call() NO IN w9_skip_rest.call() }
+    }
+  }
+  // Prose has no statement boundary at semicolons. Only code recovery uses skip_rest.
+  CAN readonly IN w9_skip_line() -> Atom {
+    SAME w9_current.call() {
+      "EOF" -> NO IN NONE
+      "NL" -> NO IN w9_next.call()
+      _ -> IN w9_line_more { w9_next.call() NO IN w9_skip_line.call() }
+    }
+  }
+  CAN readonly IN w9_term() -> Atom {
+    w9_skip_nl.call()
+    SAME w9_word.call() {
+      true -> IN w9_term_id {
+        w9_mark.call(w9_current.call())
+        w9_next.call() w9_skip_nl.call()
+        SAME w9_current.call() {
+          "LP" -> IN w9_term_call { w9_next.call() NO IN w9_arguments.call() }
+          _ -> NO IN true
+        }
+      }
+      false -> SAME w9_current.call() {
+        "NUM" -> IN w9_term_num { w9_next.call() NO IN true }
+        "STRING" -> IN w9_term_string { w9_next.call() NO IN true }
+        _ -> IN w9_term_gap { w9_gap_note.call() NO IN false }
+      }
+    }
+  }
+  CAN readonly IN w9_arguments() -> Atom {
+    w9_skip_nl.call()
+    SAME w9_current.call() { "RP" -> IN w9_args_empty { w9_next.call() NO IN true } _ -> NONE }
+    SAME w9_term.call() { false -> NO IN false _ -> NONE }
+    w9_skip_nl.call()
+    SAME w9_current.call() {
+      "COMMA" -> IN w9_args_more { w9_next.call() NO IN w9_arguments_nonempty.call() }
+      "RP" -> IN w9_args_end { w9_next.call() NO IN true }
+      _ -> IN w9_args_gap { w9_gap_note.call() NO IN false }
+    }
+  }
+  CAN readonly IN w9_arguments_nonempty() -> Atom {
+    w9_skip_nl.call()
+    SAME w9_current.call() { "RP" -> IN w9_trailing_comma { w9_gap_note.call() NO IN false } _ -> NO IN w9_arguments.call() }
+  }
+  CAN readonly IN w9_law_tail() -> Atom {
+    SAME w9_term.call() { false -> NO IN false _ -> NONE }
+    w9_skip_nl.call()
+    SAME w9_current.call() {
+      "COMMA" -> IN w9_law_antecedent { w9_next.call() NO IN w9_law_tail.call() }
+      "THEN" -> IN w9_law_consequent {
+        w9_next.call()
+        SAME w9_term.call() { false -> NO IN false _ -> NONE }
+        NO IN w9_expect.call("SEMI")
+      }
+      _ -> IN w9_law_tail_gap { w9_gap_note.call() NO IN false }
+    }
+  }
+  CAN readonly IN w9_law() -> Atom {
+    THIS w9_document = "SPEC"
+    w9_next.call() w9_skip_nl.call()
+    SAME w9_word.call() { false -> IN w9_law_id_gap { w9_gap_note.call() NO IN false } _ -> NONE }
+    THIS w9_law_name = w9_current.call()
+    w9_next.call()
+    SAME w9_expect.call("COLON") { false -> NO IN false _ -> NONE }
+    SAME w9_expect.call("EQ") { false -> NO IN false _ -> NONE }
+    w9_mark.call(w9_law_name)
+    SAME w9_expect.call("IF") { false -> NO IN false _ -> NONE }
+    NO IN w9_law_tail.call()
+  }
+  CAN readonly IN w9_named() -> Atom {
+    w9_skip_nl.call()
+    SAME w9_word.call() {
+      true -> IN w9_named_word { w9_mark.call(w9_current.call()) w9_next.call() NO IN true }
+      false -> IN w9_named_gap { w9_gap_note.call() NO IN false }
+    }
+  }
+  CAN readonly IN w9_authority() -> Atom {
+    w9_next.call() w9_skip_nl.call()
+    SAME w9_current.call() {
+      "PROPOSE" -> IN w9_authority_seed {
+        w9_next.call()
+        SAME w9_expect.call("SEED") { false -> NO IN false _ -> NONE }
+        THIS w9_document = "SPEC"
+        NO IN w9_named.call()
+      }
+      "READONLY" -> IN w9_authority_input {
+        w9_next.call()
+        SAME w9_expect.call("INPUT") { false -> NO IN false _ -> NONE }
+        THIS w9_document = "SPEC"
+        NO IN w9_named.call()
+      }
+      _ -> IN w9_other_authority { w9_gap_note.call() NO IN false }
+    }
+  }
+  CAN readonly IN w9_open_enumeration() -> Atom {
+    w9_next.call() w9_skip_nl.call()
+    SAME w9_current.call() {
+      "COLON" -> IN w9_enum_colon { w9_next.call() SAME w9_expect.call("EQ") { false -> NO IN false _ -> NONE } }
+      "EQ" -> w9_next.call()
+      _ -> NONE
+    }
+    NO IN w9_expect.call("LB")
+  }
+  CAN readonly IN w9_enum_entries() -> Atom {
+    w9_skip_nl.call()
+    SAME w9_current.call() { "RB" -> IN w9_enum_end { w9_next.call() NO IN true } _ -> NONE }
+    SAME w9_term.call() { false -> NO IN false _ -> NONE }
+    w9_skip_nl.call()
+    SAME w9_current.call() {
+      "COMMA" -> IN w9_enum_more { w9_next.call() NO IN w9_enum_entries.call() }
+      "RB" -> IN w9_enum_closed { w9_next.call() NO IN true }
+      _ -> IN w9_enum_gap { w9_gap_note.call() NO IN false }
+    }
+  }
+  CAN readonly IN w9_binding_entries() -> Atom {
+    w9_skip_nl.call()
+    SAME w9_current.call() { "RB" -> IN w9_binding_end { w9_next.call() NO IN true } _ -> NONE }
+    SAME w9_word.call() {
+      true -> w9_next.call()
+      false -> SAME w9_current.call() {
+        "STRING" -> w9_next.call()
+        _ -> IN w9_binding_label_gap { w9_gap_note.call() NO IN false }
+      }
+    }
+    SAME w9_expect.call("COLON") { false -> NO IN false _ -> NONE }
+    SAME w9_term.call() { false -> NO IN false _ -> NONE }
+    w9_skip_nl.call()
+    SAME w9_current.call() {
+      "COMMA" -> IN w9_binding_more { w9_next.call() NO IN w9_binding_entries.call() }
+      "RB" -> IN w9_binding_closed { w9_next.call() NO IN true }
+      _ -> IN w9_binding_gap { w9_gap_note.call() NO IN false }
+    }
+  }
+  CAN readonly IN w9_heading(w9_hc: Atom) -> Atom {
+    SAME w9_hc {
+      "STATES" -> NO IN true "WRITING" -> NO IN true "W9" -> NO IN true
+      "GENEALOGY" -> NO IN true "ENTRY" -> NO IN true "VECTORS" -> NO IN true
+      "TERMINAL" -> NO IN true "CONTACTS" -> NO IN true "OPERANDS" -> NO IN true
+      _ -> NO IN false
+    }
+  }
+  CAN readonly IN w9_top() -> Atom {
+    SAME w9_current.call() {
+      "EOF" -> NO IN NONE
+      "NL" -> IN w9_top_blank {
+        SAME w9_section { "RETIRES" -> THIS w9_section = "MAIN" _ -> NONE }
+        w9_next.call() NO IN w9_top.call()
+      }
+      "SEMI" -> IN w9_top_semi { w9_next.call() NO IN w9_top.call() }
+      _ -> NONE
+    }
+    SAME w9_section {
+      "RETIRES" -> SAME w9_heading.call(w9_current.call()) {
+        true -> THIS w9_section = "MAIN"
+        false -> IN w9_retired_mention_line { w9_skip_line.call() NO IN w9_top.call() }
+      }
+      _ -> NONE
+    }
+    SAME w9_current.call() {
+      "ERRATUM_ID" -> IN w9_doc_erratum { THIS w9_document = "ERRATUM" w9_skip_line.call() }
+      "SPEC_ID" -> IN w9_doc_spec { THIS w9_document = "SPEC" w9_skip_line.call() }
+      "RETIRES" -> IN w9_retires_header {
+        SAME w9_document { "ERRATUM" -> THIS w9_section = "RETIRES" _ -> w9_gap_note.call() }
+        w9_skip_line.call()
+      }
+      "VECTORS" -> IN w9_vectors_header {
+        SAME w9_document { "UNKNOWN" -> w9_gap_note.call() _ -> THIS w9_section = "VECTORS" }
+        w9_skip_line.call()
+      }
+      "STATES" -> IN w9_states_header { THIS w9_section = "MAIN" w9_skip_line.call() }
+      "WRITING" -> IN w9_writing_header { THIS w9_section = "MAIN" w9_skip_line.call() }
+      "W9" -> IN w9_w9_header { THIS w9_section = "MAIN" w9_skip_line.call() }
+      "GENEALOGY" -> IN w9_genealogy_header { THIS w9_section = "MAIN" w9_skip_line.call() }
+      "ENTRY" -> IN w9_entry_header { THIS w9_section = "MAIN" w9_skip_line.call() }
+      "LAW" -> SAME w9_law.call() { false -> w9_skip_rest.call() _ -> NONE }
+      "DOMAIN" -> IN w9_domain_decl {
+        THIS w9_document = "SPEC" w9_next.call() w9_named.call() w9_skip_rest.call()
+      }
+      "AT" -> IN w9_authority_decl { w9_authority.call() w9_skip_rest.call() }
+      "TERMINAL" -> IN w9_terminal_decl {
+        SAME w9_open_enumeration.call() {
+          true -> SAME w9_enum_entries.call() { false -> w9_skip_rest.call() _ -> NONE }
+          false -> w9_skip_rest.call()
+        }
+      }
+      "CONTACTS" -> IN w9_contacts_decl {
+        SAME w9_open_enumeration.call() {
+          true -> SAME w9_binding_entries.call() { false -> w9_skip_rest.call() _ -> NONE }
+          false -> w9_skip_rest.call()
+        }
+      }
+      "OPERANDS" -> IN w9_operands_decl {
+        SAME w9_open_enumeration.call() {
+          true -> SAME w9_binding_entries.call() { false -> w9_skip_rest.call() _ -> NONE }
+          false -> w9_skip_rest.call()
+        }
+      }
+      "BACKTICK" -> IN w9_top_tick {
+        SAME w9_section { "VECTORS" -> NONE _ -> w9_gap_note.call() }
+        w9_next.call()
+      }
+      "BROKEN" -> IN w9_top_broken { w9_gap_note.call() w9_next.call() }
+      _ -> w9_skip_line.call()
+    }
+    NO IN w9_top.call()
+  }
+  CAN readonly IN w9_check(w9_input: ByteSeq) -> W9Result {
+    THIS w9_atom = 0 THIS w9_hydrogen = 0 THIS w9_particle = 0
+    THIS w9_element = 0 THIS w9_singularity = 0 THIS w9_entropy = 0 THIS w9_tie = 0
+    THIS w9_hit = false THIS w9_gap = false
+    THIS w9_tokens = TOGETHER { kind: "END" }
+    THIS w9_reversed = TOGETHER { kind: "END" }
+    THIS w9_lex = "CODE" THIS w9_word_active = false
+    THIS w9_word_node = "N0" THIS w9_word_number = false
+    THIS w9_had_upper = false THIS w9_had_lower = false
+    THIS w9_document = "UNKNOWN" THIS w9_section = "MAIN"
+    SAME w9_input.kind {
+      "LEAF" -> IN w9_leaf_input {
+        MANY w9_byte IN w9_input.items { w9_lex_byte.call(w9_byte) }
+        w9_finish_word.call()
+        SAME w9_lex {
+          "CODE" -> NONE "COMMENT" -> NONE
+          "SLASH" -> w9_push.call("OTHER", false)
+          _ -> IN w9_unclosed_literal { w9_gap_note.call() w9_push.call("BROKEN",false) }
+        }
+        w9_reverse.call()
+        THIS w9_cursor = w9_reversed
+        w9_top.call()
+      }
+      _ -> w9_gap_note.call()
+    }
+    THIS w9_verdict = "IF_THEN" THIS w9_reason = "PARSED_NAMED_POSITIONS"
+    SAME w9_gap { true -> IN w9_unread { THIS w9_verdict = "MAYBE" THIS w9_reason = "UNSUPPORTED_OR_MALFORMED_RELEVANT_PARSE" } _ -> NONE }
+    SAME w9_hit {
+      true -> IN w9_excluded {
+        THIS w9_verdict = "NO" THIS w9_reason = "RETIRED_LAW_POSITION"
+        SAME w9_gap { true -> THIS w9_reason = "RETIRED_LAW_POSITION_WITH_OPEN_PARSE" _ -> NONE }
+      }
+      _ -> NONE
+    }
+    NO IN TOGETHER {
+      verdict: w9_verdict atom: w9_atom hydrogen: w9_hydrogen particle: w9_particle
+      element: w9_element singularity: w9_singularity entropy: w9_entropy tie: w9_tie reason: w9_reason
+    }
+  }
+}
+

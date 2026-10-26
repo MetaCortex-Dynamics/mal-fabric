@@ -1,0 +1,74 @@
+{
+  "kind": "SOURCE_BOUND_READ",
+  "question": "Does PROPOSE offer only single cells, or also connected unions?",
+  "subjects": {
+    "operative_offer": "One incidence fibre, potentially containing multiple flags; not one flag only.",
+    "diagnostic_input": "A two-site union field is a source state, not an additional offered enactment.",
+    "law_scope": "The inspected clauses supply completions and gluing readings but do not specify closure of offered domains under connected union."
+  },
+  "findings": [
+    {
+      "reading": "IF_THEN",
+      "subject": "Bound implementation 019/020",
+      "content": "Offers are SITE, EDGE, TRIAD and overlap PAIR fibres, each uniformly THIS or NO. 019 constructs TWO_SITES as input fields; it does not derive R1_CASE from TWO_SITES. 020 imports R1_CASE into P20_OFFER.",
+      "evidence": ["019:25-52", "020:55"]
+    },
+    {
+      "reading": "IF_THEN",
+      "subject": "ENGINE section 7.1",
+      "content": "Enumerates every completing lift for the declared base move. It does not define local reading there. A7 and D2 separately name the readings/gate branch.",
+      "evidence": ["ENGINE:386-403", "A1-A10:18", "A1-A10:46"]
+    },
+    {
+      "reading": "MAYBE",
+      "subject": "All connected unions are offered",
+      "content": "Not supplied by the inspected constructions. A6 constrains strict-discharge terminals; it does not uniquely construct an all-connected-unions offer family. A4/sheaf assembly glues supplied witness projections, not a flag-union offer constructor.",
+      "named_relation": "incidence union with compatible readings -> member of the world's offered field-assignment relation",
+      "evidence": ["A1-A10:15-18", "sheaf:186-230"]
+    },
+    {
+      "reading": "MAYBE",
+      "subject": "Single fibres are the exclusive law-level domain for every future realization",
+      "content": "The bounded implementation does not establish that universal restriction. No exclusion of union offers is inferred from the finite 1,924-member domain."
+    }
+  ],
+  "sources": [
+    {
+      "id": "ENGINE",
+      "path": "../world_transition_contacts_007/contacts/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0.md",
+      "sha256": "B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C"
+    },
+    {
+      "id": "ENGINE_PROMOTION",
+      "path": "../world_transition_contacts_007/contacts/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0_PROMOTION_RECORD.md",
+      "sha256": "7E074857D17D622D6402BDBC58A3E0D75684D9D06CD23C22EB30090D4D32CA3A"
+    },
+    {
+      "id": "A1-A10",
+      "path": "../world_transition_contacts_007/contacts/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805"
+    },
+    {
+      "id": "012_SCOPE",
+      "path": "../j17_gate_reading_binding_012/contacts/RECORD_J17_REACTION_PDPE_001_v0.1.1.mal",
+      "sha256": "B5DBC1EF843B9203EE9F7434651B2ABF66059D83D38565DFD13501A2C1BCCA88"
+    },
+    {
+      "id": "019",
+      "path": "../j17_t_r2_r1_diagnostics_019/R1/source/r1_optimized.mal",
+      "sha256": "E8567527605453C6332BF5BC19D84A5EFF4DBA5B017F2819547B04AFE58392A9"
+    },
+    {
+      "id": "020",
+      "path": "../j17_proposer_reentry_020/source/proposer_reentry.mal",
+      "sha256": "1C87166F0D6FE3941FB9625A50913A3ED508C9B6A8400E52424E216ACEB3BD33"
+    },
+    {
+      "id": "sheaf",
+      "path": "C:/Users/devon/Desktop/MaL/MaLv3/sheaf.mal",
+      "sha256": "E4C25D91259A3C3E68414923552681B6C887A79F64260B957352D97485B9AE75"
+    }
+  ],
+  "disposition": "Item 7 source read recorded with its exact relation boundary. No new offer family authored; no new admission gate; committed link 3 and the 1,924-member witnesses are unchanged.",
+  "mutations": "This additive read record only; no world, law, receipt, promotion, commit or remote ref changed."
+}

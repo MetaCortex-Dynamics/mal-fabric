@@ -1,0 +1,5 @@
+ERRATUM_TEST
+RETIRES
+ atom hydrogen
+STATES
+law SAFE := IF THIS(entropy,a) THEN NO(a);

@@ -1,0 +1,1632 @@
+// MALCOG_PROJECTION_ABI_001 — byte and ByteSeq library.
+// Direct MaLCog v3 source. No foreign semantic implementation.
+
+IN malcog_projection_bytes {
+  CAN readonly IN bool_xor(byte_bool_x: Atom, byte_bool_y: Atom) -> Atom {
+    SAME byte_bool_x {
+      true -> NO IN NO byte_bool_y
+      false -> NO IN byte_bool_y
+    }
+  }
+
+  CAN readonly IN bool_and(byte_and_x: Atom, byte_and_y: Atom) -> Atom {
+    SAME byte_and_x {
+      true -> NO IN byte_and_y
+      false -> NO IN false
+    }
+  }
+
+  CAN readonly IN bool_or(byte_or_x: Atom, byte_or_y: Atom) -> Atom {
+    SAME byte_or_x {
+      true -> NO IN true
+      false -> NO IN byte_or_y
+    }
+  }
+
+  CAN readonly IN byte_valid(byte_candidate: Atom) -> Atom {
+    SAME byte_candidate {
+      0 -> NO IN true
+      1 -> NO IN true
+      2 -> NO IN true
+      3 -> NO IN true
+      4 -> NO IN true
+      5 -> NO IN true
+      6 -> NO IN true
+      7 -> NO IN true
+      8 -> NO IN true
+      9 -> NO IN true
+      10 -> NO IN true
+      11 -> NO IN true
+      12 -> NO IN true
+      13 -> NO IN true
+      14 -> NO IN true
+      15 -> NO IN true
+      16 -> NO IN true
+      17 -> NO IN true
+      18 -> NO IN true
+      19 -> NO IN true
+      20 -> NO IN true
+      21 -> NO IN true
+      22 -> NO IN true
+      23 -> NO IN true
+      24 -> NO IN true
+      25 -> NO IN true
+      26 -> NO IN true
+      27 -> NO IN true
+      28 -> NO IN true
+      29 -> NO IN true
+      30 -> NO IN true
+      31 -> NO IN true
+      32 -> NO IN true
+      33 -> NO IN true
+      34 -> NO IN true
+      35 -> NO IN true
+      36 -> NO IN true
+      37 -> NO IN true
+      38 -> NO IN true
+      39 -> NO IN true
+      40 -> NO IN true
+      41 -> NO IN true
+      42 -> NO IN true
+      43 -> NO IN true
+      44 -> NO IN true
+      45 -> NO IN true
+      46 -> NO IN true
+      47 -> NO IN true
+      48 -> NO IN true
+      49 -> NO IN true
+      50 -> NO IN true
+      51 -> NO IN true
+      52 -> NO IN true
+      53 -> NO IN true
+      54 -> NO IN true
+      55 -> NO IN true
+      56 -> NO IN true
+      57 -> NO IN true
+      58 -> NO IN true
+      59 -> NO IN true
+      60 -> NO IN true
+      61 -> NO IN true
+      62 -> NO IN true
+      63 -> NO IN true
+      64 -> NO IN true
+      65 -> NO IN true
+      66 -> NO IN true
+      67 -> NO IN true
+      68 -> NO IN true
+      69 -> NO IN true
+      70 -> NO IN true
+      71 -> NO IN true
+      72 -> NO IN true
+      73 -> NO IN true
+      74 -> NO IN true
+      75 -> NO IN true
+      76 -> NO IN true
+      77 -> NO IN true
+      78 -> NO IN true
+      79 -> NO IN true
+      80 -> NO IN true
+      81 -> NO IN true
+      82 -> NO IN true
+      83 -> NO IN true
+      84 -> NO IN true
+      85 -> NO IN true
+      86 -> NO IN true
+      87 -> NO IN true
+      88 -> NO IN true
+      89 -> NO IN true
+      90 -> NO IN true
+      91 -> NO IN true
+      92 -> NO IN true
+      93 -> NO IN true
+      94 -> NO IN true
+      95 -> NO IN true
+      96 -> NO IN true
+      97 -> NO IN true
+      98 -> NO IN true
+      99 -> NO IN true
+      100 -> NO IN true
+      101 -> NO IN true
+      102 -> NO IN true
+      103 -> NO IN true
+      104 -> NO IN true
+      105 -> NO IN true
+      106 -> NO IN true
+      107 -> NO IN true
+      108 -> NO IN true
+      109 -> NO IN true
+      110 -> NO IN true
+      111 -> NO IN true
+      112 -> NO IN true
+      113 -> NO IN true
+      114 -> NO IN true
+      115 -> NO IN true
+      116 -> NO IN true
+      117 -> NO IN true
+      118 -> NO IN true
+      119 -> NO IN true
+      120 -> NO IN true
+      121 -> NO IN true
+      122 -> NO IN true
+      123 -> NO IN true
+      124 -> NO IN true
+      125 -> NO IN true
+      126 -> NO IN true
+      127 -> NO IN true
+      128 -> NO IN true
+      129 -> NO IN true
+      130 -> NO IN true
+      131 -> NO IN true
+      132 -> NO IN true
+      133 -> NO IN true
+      134 -> NO IN true
+      135 -> NO IN true
+      136 -> NO IN true
+      137 -> NO IN true
+      138 -> NO IN true
+      139 -> NO IN true
+      140 -> NO IN true
+      141 -> NO IN true
+      142 -> NO IN true
+      143 -> NO IN true
+      144 -> NO IN true
+      145 -> NO IN true
+      146 -> NO IN true
+      147 -> NO IN true
+      148 -> NO IN true
+      149 -> NO IN true
+      150 -> NO IN true
+      151 -> NO IN true
+      152 -> NO IN true
+      153 -> NO IN true
+      154 -> NO IN true
+      155 -> NO IN true
+      156 -> NO IN true
+      157 -> NO IN true
+      158 -> NO IN true
+      159 -> NO IN true
+      160 -> NO IN true
+      161 -> NO IN true
+      162 -> NO IN true
+      163 -> NO IN true
+      164 -> NO IN true
+      165 -> NO IN true
+      166 -> NO IN true
+      167 -> NO IN true
+      168 -> NO IN true
+      169 -> NO IN true
+      170 -> NO IN true
+      171 -> NO IN true
+      172 -> NO IN true
+      173 -> NO IN true
+      174 -> NO IN true
+      175 -> NO IN true
+      176 -> NO IN true
+      177 -> NO IN true
+      178 -> NO IN true
+      179 -> NO IN true
+      180 -> NO IN true
+      181 -> NO IN true
+      182 -> NO IN true
+      183 -> NO IN true
+      184 -> NO IN true
+      185 -> NO IN true
+      186 -> NO IN true
+      187 -> NO IN true
+      188 -> NO IN true
+      189 -> NO IN true
+      190 -> NO IN true
+      191 -> NO IN true
+      192 -> NO IN true
+      193 -> NO IN true
+      194 -> NO IN true
+      195 -> NO IN true
+      196 -> NO IN true
+      197 -> NO IN true
+      198 -> NO IN true
+      199 -> NO IN true
+      200 -> NO IN true
+      201 -> NO IN true
+      202 -> NO IN true
+      203 -> NO IN true
+      204 -> NO IN true
+      205 -> NO IN true
+      206 -> NO IN true
+      207 -> NO IN true
+      208 -> NO IN true
+      209 -> NO IN true
+      210 -> NO IN true
+      211 -> NO IN true
+      212 -> NO IN true
+      213 -> NO IN true
+      214 -> NO IN true
+      215 -> NO IN true
+      216 -> NO IN true
+      217 -> NO IN true
+      218 -> NO IN true
+      219 -> NO IN true
+      220 -> NO IN true
+      221 -> NO IN true
+      222 -> NO IN true
+      223 -> NO IN true
+      224 -> NO IN true
+      225 -> NO IN true
+      226 -> NO IN true
+      227 -> NO IN true
+      228 -> NO IN true
+      229 -> NO IN true
+      230 -> NO IN true
+      231 -> NO IN true
+      232 -> NO IN true
+      233 -> NO IN true
+      234 -> NO IN true
+      235 -> NO IN true
+      236 -> NO IN true
+      237 -> NO IN true
+      238 -> NO IN true
+      239 -> NO IN true
+      240 -> NO IN true
+      241 -> NO IN true
+      242 -> NO IN true
+      243 -> NO IN true
+      244 -> NO IN true
+      245 -> NO IN true
+      246 -> NO IN true
+      247 -> NO IN true
+      248 -> NO IN true
+      249 -> NO IN true
+      250 -> NO IN true
+      251 -> NO IN true
+      252 -> NO IN true
+      253 -> NO IN true
+      254 -> NO IN true
+      255 -> NO IN true
+      _ -> NO IN false
+    }
+  }
+
+  CAN readonly IN byte_equal(
+    byte_equal_left_value: Atom,
+    byte_equal_right_value: Atom
+  ) -> Atom {
+    SAME byte_equal_left_value {
+      0 -> SAME byte_equal_right_value {
+        0 -> NO IN true
+        _ -> NO IN false
+      }
+      1 -> SAME byte_equal_right_value {
+        1 -> NO IN true
+        _ -> NO IN false
+      }
+      2 -> SAME byte_equal_right_value {
+        2 -> NO IN true
+        _ -> NO IN false
+      }
+      3 -> SAME byte_equal_right_value {
+        3 -> NO IN true
+        _ -> NO IN false
+      }
+      4 -> SAME byte_equal_right_value {
+        4 -> NO IN true
+        _ -> NO IN false
+      }
+      5 -> SAME byte_equal_right_value {
+        5 -> NO IN true
+        _ -> NO IN false
+      }
+      6 -> SAME byte_equal_right_value {
+        6 -> NO IN true
+        _ -> NO IN false
+      }
+      7 -> SAME byte_equal_right_value {
+        7 -> NO IN true
+        _ -> NO IN false
+      }
+      8 -> SAME byte_equal_right_value {
+        8 -> NO IN true
+        _ -> NO IN false
+      }
+      9 -> SAME byte_equal_right_value {
+        9 -> NO IN true
+        _ -> NO IN false
+      }
+      10 -> SAME byte_equal_right_value {
+        10 -> NO IN true
+        _ -> NO IN false
+      }
+      11 -> SAME byte_equal_right_value {
+        11 -> NO IN true
+        _ -> NO IN false
+      }
+      12 -> SAME byte_equal_right_value {
+        12 -> NO IN true
+        _ -> NO IN false
+      }
+      13 -> SAME byte_equal_right_value {
+        13 -> NO IN true
+        _ -> NO IN false
+      }
+      14 -> SAME byte_equal_right_value {
+        14 -> NO IN true
+        _ -> NO IN false
+      }
+      15 -> SAME byte_equal_right_value {
+        15 -> NO IN true
+        _ -> NO IN false
+      }
+      16 -> SAME byte_equal_right_value {
+        16 -> NO IN true
+        _ -> NO IN false
+      }
+      17 -> SAME byte_equal_right_value {
+        17 -> NO IN true
+        _ -> NO IN false
+      }
+      18 -> SAME byte_equal_right_value {
+        18 -> NO IN true
+        _ -> NO IN false
+      }
+      19 -> SAME byte_equal_right_value {
+        19 -> NO IN true
+        _ -> NO IN false
+      }
+      20 -> SAME byte_equal_right_value {
+        20 -> NO IN true
+        _ -> NO IN false
+      }
+      21 -> SAME byte_equal_right_value {
+        21 -> NO IN true
+        _ -> NO IN false
+      }
+      22 -> SAME byte_equal_right_value {
+        22 -> NO IN true
+        _ -> NO IN false
+      }
+      23 -> SAME byte_equal_right_value {
+        23 -> NO IN true
+        _ -> NO IN false
+      }
+      24 -> SAME byte_equal_right_value {
+        24 -> NO IN true
+        _ -> NO IN false
+      }
+      25 -> SAME byte_equal_right_value {
+        25 -> NO IN true
+        _ -> NO IN false
+      }
+      26 -> SAME byte_equal_right_value {
+        26 -> NO IN true
+        _ -> NO IN false
+      }
+      27 -> SAME byte_equal_right_value {
+        27 -> NO IN true
+        _ -> NO IN false
+      }
+      28 -> SAME byte_equal_right_value {
+        28 -> NO IN true
+        _ -> NO IN false
+      }
+      29 -> SAME byte_equal_right_value {
+        29 -> NO IN true
+        _ -> NO IN false
+      }
+      30 -> SAME byte_equal_right_value {
+        30 -> NO IN true
+        _ -> NO IN false
+      }
+      31 -> SAME byte_equal_right_value {
+        31 -> NO IN true
+        _ -> NO IN false
+      }
+      32 -> SAME byte_equal_right_value {
+        32 -> NO IN true
+        _ -> NO IN false
+      }
+      33 -> SAME byte_equal_right_value {
+        33 -> NO IN true
+        _ -> NO IN false
+      }
+      34 -> SAME byte_equal_right_value {
+        34 -> NO IN true
+        _ -> NO IN false
+      }
+      35 -> SAME byte_equal_right_value {
+        35 -> NO IN true
+        _ -> NO IN false
+      }
+      36 -> SAME byte_equal_right_value {
+        36 -> NO IN true
+        _ -> NO IN false
+      }
+      37 -> SAME byte_equal_right_value {
+        37 -> NO IN true
+        _ -> NO IN false
+      }
+      38 -> SAME byte_equal_right_value {
+        38 -> NO IN true
+        _ -> NO IN false
+      }
+      39 -> SAME byte_equal_right_value {
+        39 -> NO IN true
+        _ -> NO IN false
+      }
+      40 -> SAME byte_equal_right_value {
+        40 -> NO IN true
+        _ -> NO IN false
+      }
+      41 -> SAME byte_equal_right_value {
+        41 -> NO IN true
+        _ -> NO IN false
+      }
+      42 -> SAME byte_equal_right_value {
+        42 -> NO IN true
+        _ -> NO IN false
+      }
+      43 -> SAME byte_equal_right_value {
+        43 -> NO IN true
+        _ -> NO IN false
+      }
+      44 -> SAME byte_equal_right_value {
+        44 -> NO IN true
+        _ -> NO IN false
+      }
+      45 -> SAME byte_equal_right_value {
+        45 -> NO IN true
+        _ -> NO IN false
+      }
+      46 -> SAME byte_equal_right_value {
+        46 -> NO IN true
+        _ -> NO IN false
+      }
+      47 -> SAME byte_equal_right_value {
+        47 -> NO IN true
+        _ -> NO IN false
+      }
+      48 -> SAME byte_equal_right_value {
+        48 -> NO IN true
+        _ -> NO IN false
+      }
+      49 -> SAME byte_equal_right_value {
+        49 -> NO IN true
+        _ -> NO IN false
+      }
+      50 -> SAME byte_equal_right_value {
+        50 -> NO IN true
+        _ -> NO IN false
+      }
+      51 -> SAME byte_equal_right_value {
+        51 -> NO IN true
+        _ -> NO IN false
+      }
+      52 -> SAME byte_equal_right_value {
+        52 -> NO IN true
+        _ -> NO IN false
+      }
+      53 -> SAME byte_equal_right_value {
+        53 -> NO IN true
+        _ -> NO IN false
+      }
+      54 -> SAME byte_equal_right_value {
+        54 -> NO IN true
+        _ -> NO IN false
+      }
+      55 -> SAME byte_equal_right_value {
+        55 -> NO IN true
+        _ -> NO IN false
+      }
+      56 -> SAME byte_equal_right_value {
+        56 -> NO IN true
+        _ -> NO IN false
+      }
+      57 -> SAME byte_equal_right_value {
+        57 -> NO IN true
+        _ -> NO IN false
+      }
+      58 -> SAME byte_equal_right_value {
+        58 -> NO IN true
+        _ -> NO IN false
+      }
+      59 -> SAME byte_equal_right_value {
+        59 -> NO IN true
+        _ -> NO IN false
+      }
+      60 -> SAME byte_equal_right_value {
+        60 -> NO IN true
+        _ -> NO IN false
+      }
+      61 -> SAME byte_equal_right_value {
+        61 -> NO IN true
+        _ -> NO IN false
+      }
+      62 -> SAME byte_equal_right_value {
+        62 -> NO IN true
+        _ -> NO IN false
+      }
+      63 -> SAME byte_equal_right_value {
+        63 -> NO IN true
+        _ -> NO IN false
+      }
+      64 -> SAME byte_equal_right_value {
+        64 -> NO IN true
+        _ -> NO IN false
+      }
+      65 -> SAME byte_equal_right_value {
+        65 -> NO IN true
+        _ -> NO IN false
+      }
+      66 -> SAME byte_equal_right_value {
+        66 -> NO IN true
+        _ -> NO IN false
+      }
+      67 -> SAME byte_equal_right_value {
+        67 -> NO IN true
+        _ -> NO IN false
+      }
+      68 -> SAME byte_equal_right_value {
+        68 -> NO IN true
+        _ -> NO IN false
+      }
+      69 -> SAME byte_equal_right_value {
+        69 -> NO IN true
+        _ -> NO IN false
+      }
+      70 -> SAME byte_equal_right_value {
+        70 -> NO IN true
+        _ -> NO IN false
+      }
+      71 -> SAME byte_equal_right_value {
+        71 -> NO IN true
+        _ -> NO IN false
+      }
+      72 -> SAME byte_equal_right_value {
+        72 -> NO IN true
+        _ -> NO IN false
+      }
+      73 -> SAME byte_equal_right_value {
+        73 -> NO IN true
+        _ -> NO IN false
+      }
+      74 -> SAME byte_equal_right_value {
+        74 -> NO IN true
+        _ -> NO IN false
+      }
+      75 -> SAME byte_equal_right_value {
+        75 -> NO IN true
+        _ -> NO IN false
+      }
+      76 -> SAME byte_equal_right_value {
+        76 -> NO IN true
+        _ -> NO IN false
+      }
+      77 -> SAME byte_equal_right_value {
+        77 -> NO IN true
+        _ -> NO IN false
+      }
+      78 -> SAME byte_equal_right_value {
+        78 -> NO IN true
+        _ -> NO IN false
+      }
+      79 -> SAME byte_equal_right_value {
+        79 -> NO IN true
+        _ -> NO IN false
+      }
+      80 -> SAME byte_equal_right_value {
+        80 -> NO IN true
+        _ -> NO IN false
+      }
+      81 -> SAME byte_equal_right_value {
+        81 -> NO IN true
+        _ -> NO IN false
+      }
+      82 -> SAME byte_equal_right_value {
+        82 -> NO IN true
+        _ -> NO IN false
+      }
+      83 -> SAME byte_equal_right_value {
+        83 -> NO IN true
+        _ -> NO IN false
+      }
+      84 -> SAME byte_equal_right_value {
+        84 -> NO IN true
+        _ -> NO IN false
+      }
+      85 -> SAME byte_equal_right_value {
+        85 -> NO IN true
+        _ -> NO IN false
+      }
+      86 -> SAME byte_equal_right_value {
+        86 -> NO IN true
+        _ -> NO IN false
+      }
+      87 -> SAME byte_equal_right_value {
+        87 -> NO IN true
+        _ -> NO IN false
+      }
+      88 -> SAME byte_equal_right_value {
+        88 -> NO IN true
+        _ -> NO IN false
+      }
+      89 -> SAME byte_equal_right_value {
+        89 -> NO IN true
+        _ -> NO IN false
+      }
+      90 -> SAME byte_equal_right_value {
+        90 -> NO IN true
+        _ -> NO IN false
+      }
+      91 -> SAME byte_equal_right_value {
+        91 -> NO IN true
+        _ -> NO IN false
+      }
+      92 -> SAME byte_equal_right_value {
+        92 -> NO IN true
+        _ -> NO IN false
+      }
+      93 -> SAME byte_equal_right_value {
+        93 -> NO IN true
+        _ -> NO IN false
+      }
+      94 -> SAME byte_equal_right_value {
+        94 -> NO IN true
+        _ -> NO IN false
+      }
+      95 -> SAME byte_equal_right_value {
+        95 -> NO IN true
+        _ -> NO IN false
+      }
+      96 -> SAME byte_equal_right_value {
+        96 -> NO IN true
+        _ -> NO IN false
+      }
+      97 -> SAME byte_equal_right_value {
+        97 -> NO IN true
+        _ -> NO IN false
+      }
+      98 -> SAME byte_equal_right_value {
+        98 -> NO IN true
+        _ -> NO IN false
+      }
+      99 -> SAME byte_equal_right_value {
+        99 -> NO IN true
+        _ -> NO IN false
+      }
+      100 -> SAME byte_equal_right_value {
+        100 -> NO IN true
+        _ -> NO IN false
+      }
+      101 -> SAME byte_equal_right_value {
+        101 -> NO IN true
+        _ -> NO IN false
+      }
+      102 -> SAME byte_equal_right_value {
+        102 -> NO IN true
+        _ -> NO IN false
+      }
+      103 -> SAME byte_equal_right_value {
+        103 -> NO IN true
+        _ -> NO IN false
+      }
+      104 -> SAME byte_equal_right_value {
+        104 -> NO IN true
+        _ -> NO IN false
+      }
+      105 -> SAME byte_equal_right_value {
+        105 -> NO IN true
+        _ -> NO IN false
+      }
+      106 -> SAME byte_equal_right_value {
+        106 -> NO IN true
+        _ -> NO IN false
+      }
+      107 -> SAME byte_equal_right_value {
+        107 -> NO IN true
+        _ -> NO IN false
+      }
+      108 -> SAME byte_equal_right_value {
+        108 -> NO IN true
+        _ -> NO IN false
+      }
+      109 -> SAME byte_equal_right_value {
+        109 -> NO IN true
+        _ -> NO IN false
+      }
+      110 -> SAME byte_equal_right_value {
+        110 -> NO IN true
+        _ -> NO IN false
+      }
+      111 -> SAME byte_equal_right_value {
+        111 -> NO IN true
+        _ -> NO IN false
+      }
+      112 -> SAME byte_equal_right_value {
+        112 -> NO IN true
+        _ -> NO IN false
+      }
+      113 -> SAME byte_equal_right_value {
+        113 -> NO IN true
+        _ -> NO IN false
+      }
+      114 -> SAME byte_equal_right_value {
+        114 -> NO IN true
+        _ -> NO IN false
+      }
+      115 -> SAME byte_equal_right_value {
+        115 -> NO IN true
+        _ -> NO IN false
+      }
+      116 -> SAME byte_equal_right_value {
+        116 -> NO IN true
+        _ -> NO IN false
+      }
+      117 -> SAME byte_equal_right_value {
+        117 -> NO IN true
+        _ -> NO IN false
+      }
+      118 -> SAME byte_equal_right_value {
+        118 -> NO IN true
+        _ -> NO IN false
+      }
+      119 -> SAME byte_equal_right_value {
+        119 -> NO IN true
+        _ -> NO IN false
+      }
+      120 -> SAME byte_equal_right_value {
+        120 -> NO IN true
+        _ -> NO IN false
+      }
+      121 -> SAME byte_equal_right_value {
+        121 -> NO IN true
+        _ -> NO IN false
+      }
+      122 -> SAME byte_equal_right_value {
+        122 -> NO IN true
+        _ -> NO IN false
+      }
+      123 -> SAME byte_equal_right_value {
+        123 -> NO IN true
+        _ -> NO IN false
+      }
+      124 -> SAME byte_equal_right_value {
+        124 -> NO IN true
+        _ -> NO IN false
+      }
+      125 -> SAME byte_equal_right_value {
+        125 -> NO IN true
+        _ -> NO IN false
+      }
+      126 -> SAME byte_equal_right_value {
+        126 -> NO IN true
+        _ -> NO IN false
+      }
+      127 -> SAME byte_equal_right_value {
+        127 -> NO IN true
+        _ -> NO IN false
+      }
+      128 -> SAME byte_equal_right_value {
+        128 -> NO IN true
+        _ -> NO IN false
+      }
+      129 -> SAME byte_equal_right_value {
+        129 -> NO IN true
+        _ -> NO IN false
+      }
+      130 -> SAME byte_equal_right_value {
+        130 -> NO IN true
+        _ -> NO IN false
+      }
+      131 -> SAME byte_equal_right_value {
+        131 -> NO IN true
+        _ -> NO IN false
+      }
+      132 -> SAME byte_equal_right_value {
+        132 -> NO IN true
+        _ -> NO IN false
+      }
+      133 -> SAME byte_equal_right_value {
+        133 -> NO IN true
+        _ -> NO IN false
+      }
+      134 -> SAME byte_equal_right_value {
+        134 -> NO IN true
+        _ -> NO IN false
+      }
+      135 -> SAME byte_equal_right_value {
+        135 -> NO IN true
+        _ -> NO IN false
+      }
+      136 -> SAME byte_equal_right_value {
+        136 -> NO IN true
+        _ -> NO IN false
+      }
+      137 -> SAME byte_equal_right_value {
+        137 -> NO IN true
+        _ -> NO IN false
+      }
+      138 -> SAME byte_equal_right_value {
+        138 -> NO IN true
+        _ -> NO IN false
+      }
+      139 -> SAME byte_equal_right_value {
+        139 -> NO IN true
+        _ -> NO IN false
+      }
+      140 -> SAME byte_equal_right_value {
+        140 -> NO IN true
+        _ -> NO IN false
+      }
+      141 -> SAME byte_equal_right_value {
+        141 -> NO IN true
+        _ -> NO IN false
+      }
+      142 -> SAME byte_equal_right_value {
+        142 -> NO IN true
+        _ -> NO IN false
+      }
+      143 -> SAME byte_equal_right_value {
+        143 -> NO IN true
+        _ -> NO IN false
+      }
+      144 -> SAME byte_equal_right_value {
+        144 -> NO IN true
+        _ -> NO IN false
+      }
+      145 -> SAME byte_equal_right_value {
+        145 -> NO IN true
+        _ -> NO IN false
+      }
+      146 -> SAME byte_equal_right_value {
+        146 -> NO IN true
+        _ -> NO IN false
+      }
+      147 -> SAME byte_equal_right_value {
+        147 -> NO IN true
+        _ -> NO IN false
+      }
+      148 -> SAME byte_equal_right_value {
+        148 -> NO IN true
+        _ -> NO IN false
+      }
+      149 -> SAME byte_equal_right_value {
+        149 -> NO IN true
+        _ -> NO IN false
+      }
+      150 -> SAME byte_equal_right_value {
+        150 -> NO IN true
+        _ -> NO IN false
+      }
+      151 -> SAME byte_equal_right_value {
+        151 -> NO IN true
+        _ -> NO IN false
+      }
+      152 -> SAME byte_equal_right_value {
+        152 -> NO IN true
+        _ -> NO IN false
+      }
+      153 -> SAME byte_equal_right_value {
+        153 -> NO IN true
+        _ -> NO IN false
+      }
+      154 -> SAME byte_equal_right_value {
+        154 -> NO IN true
+        _ -> NO IN false
+      }
+      155 -> SAME byte_equal_right_value {
+        155 -> NO IN true
+        _ -> NO IN false
+      }
+      156 -> SAME byte_equal_right_value {
+        156 -> NO IN true
+        _ -> NO IN false
+      }
+      157 -> SAME byte_equal_right_value {
+        157 -> NO IN true
+        _ -> NO IN false
+      }
+      158 -> SAME byte_equal_right_value {
+        158 -> NO IN true
+        _ -> NO IN false
+      }
+      159 -> SAME byte_equal_right_value {
+        159 -> NO IN true
+        _ -> NO IN false
+      }
+      160 -> SAME byte_equal_right_value {
+        160 -> NO IN true
+        _ -> NO IN false
+      }
+      161 -> SAME byte_equal_right_value {
+        161 -> NO IN true
+        _ -> NO IN false
+      }
+      162 -> SAME byte_equal_right_value {
+        162 -> NO IN true
+        _ -> NO IN false
+      }
+      163 -> SAME byte_equal_right_value {
+        163 -> NO IN true
+        _ -> NO IN false
+      }
+      164 -> SAME byte_equal_right_value {
+        164 -> NO IN true
+        _ -> NO IN false
+      }
+      165 -> SAME byte_equal_right_value {
+        165 -> NO IN true
+        _ -> NO IN false
+      }
+      166 -> SAME byte_equal_right_value {
+        166 -> NO IN true
+        _ -> NO IN false
+      }
+      167 -> SAME byte_equal_right_value {
+        167 -> NO IN true
+        _ -> NO IN false
+      }
+      168 -> SAME byte_equal_right_value {
+        168 -> NO IN true
+        _ -> NO IN false
+      }
+      169 -> SAME byte_equal_right_value {
+        169 -> NO IN true
+        _ -> NO IN false
+      }
+      170 -> SAME byte_equal_right_value {
+        170 -> NO IN true
+        _ -> NO IN false
+      }
+      171 -> SAME byte_equal_right_value {
+        171 -> NO IN true
+        _ -> NO IN false
+      }
+      172 -> SAME byte_equal_right_value {
+        172 -> NO IN true
+        _ -> NO IN false
+      }
+      173 -> SAME byte_equal_right_value {
+        173 -> NO IN true
+        _ -> NO IN false
+      }
+      174 -> SAME byte_equal_right_value {
+        174 -> NO IN true
+        _ -> NO IN false
+      }
+      175 -> SAME byte_equal_right_value {
+        175 -> NO IN true
+        _ -> NO IN false
+      }
+      176 -> SAME byte_equal_right_value {
+        176 -> NO IN true
+        _ -> NO IN false
+      }
+      177 -> SAME byte_equal_right_value {
+        177 -> NO IN true
+        _ -> NO IN false
+      }
+      178 -> SAME byte_equal_right_value {
+        178 -> NO IN true
+        _ -> NO IN false
+      }
+      179 -> SAME byte_equal_right_value {
+        179 -> NO IN true
+        _ -> NO IN false
+      }
+      180 -> SAME byte_equal_right_value {
+        180 -> NO IN true
+        _ -> NO IN false
+      }
+      181 -> SAME byte_equal_right_value {
+        181 -> NO IN true
+        _ -> NO IN false
+      }
+      182 -> SAME byte_equal_right_value {
+        182 -> NO IN true
+        _ -> NO IN false
+      }
+      183 -> SAME byte_equal_right_value {
+        183 -> NO IN true
+        _ -> NO IN false
+      }
+      184 -> SAME byte_equal_right_value {
+        184 -> NO IN true
+        _ -> NO IN false
+      }
+      185 -> SAME byte_equal_right_value {
+        185 -> NO IN true
+        _ -> NO IN false
+      }
+      186 -> SAME byte_equal_right_value {
+        186 -> NO IN true
+        _ -> NO IN false
+      }
+      187 -> SAME byte_equal_right_value {
+        187 -> NO IN true
+        _ -> NO IN false
+      }
+      188 -> SAME byte_equal_right_value {
+        188 -> NO IN true
+        _ -> NO IN false
+      }
+      189 -> SAME byte_equal_right_value {
+        189 -> NO IN true
+        _ -> NO IN false
+      }
+      190 -> SAME byte_equal_right_value {
+        190 -> NO IN true
+        _ -> NO IN false
+      }
+      191 -> SAME byte_equal_right_value {
+        191 -> NO IN true
+        _ -> NO IN false
+      }
+      192 -> SAME byte_equal_right_value {
+        192 -> NO IN true
+        _ -> NO IN false
+      }
+      193 -> SAME byte_equal_right_value {
+        193 -> NO IN true
+        _ -> NO IN false
+      }
+      194 -> SAME byte_equal_right_value {
+        194 -> NO IN true
+        _ -> NO IN false
+      }
+      195 -> SAME byte_equal_right_value {
+        195 -> NO IN true
+        _ -> NO IN false
+      }
+      196 -> SAME byte_equal_right_value {
+        196 -> NO IN true
+        _ -> NO IN false
+      }
+      197 -> SAME byte_equal_right_value {
+        197 -> NO IN true
+        _ -> NO IN false
+      }
+      198 -> SAME byte_equal_right_value {
+        198 -> NO IN true
+        _ -> NO IN false
+      }
+      199 -> SAME byte_equal_right_value {
+        199 -> NO IN true
+        _ -> NO IN false
+      }
+      200 -> SAME byte_equal_right_value {
+        200 -> NO IN true
+        _ -> NO IN false
+      }
+      201 -> SAME byte_equal_right_value {
+        201 -> NO IN true
+        _ -> NO IN false
+      }
+      202 -> SAME byte_equal_right_value {
+        202 -> NO IN true
+        _ -> NO IN false
+      }
+      203 -> SAME byte_equal_right_value {
+        203 -> NO IN true
+        _ -> NO IN false
+      }
+      204 -> SAME byte_equal_right_value {
+        204 -> NO IN true
+        _ -> NO IN false
+      }
+      205 -> SAME byte_equal_right_value {
+        205 -> NO IN true
+        _ -> NO IN false
+      }
+      206 -> SAME byte_equal_right_value {
+        206 -> NO IN true
+        _ -> NO IN false
+      }
+      207 -> SAME byte_equal_right_value {
+        207 -> NO IN true
+        _ -> NO IN false
+      }
+      208 -> SAME byte_equal_right_value {
+        208 -> NO IN true
+        _ -> NO IN false
+      }
+      209 -> SAME byte_equal_right_value {
+        209 -> NO IN true
+        _ -> NO IN false
+      }
+      210 -> SAME byte_equal_right_value {
+        210 -> NO IN true
+        _ -> NO IN false
+      }
+      211 -> SAME byte_equal_right_value {
+        211 -> NO IN true
+        _ -> NO IN false
+      }
+      212 -> SAME byte_equal_right_value {
+        212 -> NO IN true
+        _ -> NO IN false
+      }
+      213 -> SAME byte_equal_right_value {
+        213 -> NO IN true
+        _ -> NO IN false
+      }
+      214 -> SAME byte_equal_right_value {
+        214 -> NO IN true
+        _ -> NO IN false
+      }
+      215 -> SAME byte_equal_right_value {
+        215 -> NO IN true
+        _ -> NO IN false
+      }
+      216 -> SAME byte_equal_right_value {
+        216 -> NO IN true
+        _ -> NO IN false
+      }
+      217 -> SAME byte_equal_right_value {
+        217 -> NO IN true
+        _ -> NO IN false
+      }
+      218 -> SAME byte_equal_right_value {
+        218 -> NO IN true
+        _ -> NO IN false
+      }
+      219 -> SAME byte_equal_right_value {
+        219 -> NO IN true
+        _ -> NO IN false
+      }
+      220 -> SAME byte_equal_right_value {
+        220 -> NO IN true
+        _ -> NO IN false
+      }
+      221 -> SAME byte_equal_right_value {
+        221 -> NO IN true
+        _ -> NO IN false
+      }
+      222 -> SAME byte_equal_right_value {
+        222 -> NO IN true
+        _ -> NO IN false
+      }
+      223 -> SAME byte_equal_right_value {
+        223 -> NO IN true
+        _ -> NO IN false
+      }
+      224 -> SAME byte_equal_right_value {
+        224 -> NO IN true
+        _ -> NO IN false
+      }
+      225 -> SAME byte_equal_right_value {
+        225 -> NO IN true
+        _ -> NO IN false
+      }
+      226 -> SAME byte_equal_right_value {
+        226 -> NO IN true
+        _ -> NO IN false
+      }
+      227 -> SAME byte_equal_right_value {
+        227 -> NO IN true
+        _ -> NO IN false
+      }
+      228 -> SAME byte_equal_right_value {
+        228 -> NO IN true
+        _ -> NO IN false
+      }
+      229 -> SAME byte_equal_right_value {
+        229 -> NO IN true
+        _ -> NO IN false
+      }
+      230 -> SAME byte_equal_right_value {
+        230 -> NO IN true
+        _ -> NO IN false
+      }
+      231 -> SAME byte_equal_right_value {
+        231 -> NO IN true
+        _ -> NO IN false
+      }
+      232 -> SAME byte_equal_right_value {
+        232 -> NO IN true
+        _ -> NO IN false
+      }
+      233 -> SAME byte_equal_right_value {
+        233 -> NO IN true
+        _ -> NO IN false
+      }
+      234 -> SAME byte_equal_right_value {
+        234 -> NO IN true
+        _ -> NO IN false
+      }
+      235 -> SAME byte_equal_right_value {
+        235 -> NO IN true
+        _ -> NO IN false
+      }
+      236 -> SAME byte_equal_right_value {
+        236 -> NO IN true
+        _ -> NO IN false
+      }
+      237 -> SAME byte_equal_right_value {
+        237 -> NO IN true
+        _ -> NO IN false
+      }
+      238 -> SAME byte_equal_right_value {
+        238 -> NO IN true
+        _ -> NO IN false
+      }
+      239 -> SAME byte_equal_right_value {
+        239 -> NO IN true
+        _ -> NO IN false
+      }
+      240 -> SAME byte_equal_right_value {
+        240 -> NO IN true
+        _ -> NO IN false
+      }
+      241 -> SAME byte_equal_right_value {
+        241 -> NO IN true
+        _ -> NO IN false
+      }
+      242 -> SAME byte_equal_right_value {
+        242 -> NO IN true
+        _ -> NO IN false
+      }
+      243 -> SAME byte_equal_right_value {
+        243 -> NO IN true
+        _ -> NO IN false
+      }
+      244 -> SAME byte_equal_right_value {
+        244 -> NO IN true
+        _ -> NO IN false
+      }
+      245 -> SAME byte_equal_right_value {
+        245 -> NO IN true
+        _ -> NO IN false
+      }
+      246 -> SAME byte_equal_right_value {
+        246 -> NO IN true
+        _ -> NO IN false
+      }
+      247 -> SAME byte_equal_right_value {
+        247 -> NO IN true
+        _ -> NO IN false
+      }
+      248 -> SAME byte_equal_right_value {
+        248 -> NO IN true
+        _ -> NO IN false
+      }
+      249 -> SAME byte_equal_right_value {
+        249 -> NO IN true
+        _ -> NO IN false
+      }
+      250 -> SAME byte_equal_right_value {
+        250 -> NO IN true
+        _ -> NO IN false
+      }
+      251 -> SAME byte_equal_right_value {
+        251 -> NO IN true
+        _ -> NO IN false
+      }
+      252 -> SAME byte_equal_right_value {
+        252 -> NO IN true
+        _ -> NO IN false
+      }
+      253 -> SAME byte_equal_right_value {
+        253 -> NO IN true
+        _ -> NO IN false
+      }
+      254 -> SAME byte_equal_right_value {
+        254 -> NO IN true
+        _ -> NO IN false
+      }
+      255 -> SAME byte_equal_right_value {
+        255 -> NO IN true
+        _ -> NO IN false
+      }
+      _ -> NO IN false
+    }
+  }
+
+  CAN readonly IN byte_index_zero() -> ByteIndex {
+    NO IN TOGETHER {
+      kind: "ZERO"
+    }
+  }
+
+  CAN readonly IN byte_index_successor(
+    byte_index_predecessor: ByteIndex
+  ) -> ByteIndex {
+    NO IN TOGETHER {
+      kind: "SUCC"
+      previous: byte_index_predecessor
+    }
+  }
+
+  CAN readonly IN byte_seq_empty() -> ByteSeq {
+    NO IN TOGETHER {
+      kind: "EMPTY"
+    }
+  }
+
+  CAN readonly IN byte_seq_leaf(byte_leaf_items: Many(Atom)) -> ByteSeq {
+    NO IN TOGETHER {
+      kind: "LEAF"
+      items: byte_leaf_items
+    }
+  }
+
+  CAN readonly IN byte_seq_single(byte_single_value: Atom) -> ByteSeq {
+    SAME byte_valid.call(byte_single_value) {
+      true -> NO IN byte_seq_leaf.call(MANY [byte_single_value])
+      _ -> NO IN TOGETHER {
+        kind: "INVALID"
+      }
+    }
+  }
+
+  CAN readonly IN byte_seq_concat(
+    byte_concat_left: ByteSeq,
+    byte_concat_right: ByteSeq
+  ) -> ByteSeq {
+    NO IN TOGETHER {
+      kind: "CONCAT"
+      left: byte_concat_left
+      right: byte_concat_right
+    }
+  }
+
+  CAN readonly IN byte_seq_append(
+    byte_append_sequence: ByteSeq,
+    byte_append_value: Atom
+  ) -> ByteSeq {
+    THIS byte_append_single = byte_seq_single.call(byte_append_value)
+    SAME byte_append_single.kind {
+      "LEAF" -> NO IN byte_seq_concat.call(byte_append_sequence, byte_append_single)
+      _ -> NO IN TOGETHER {
+        kind: "INVALID"
+      }
+    }
+  }
+
+  CAN readonly IN byte_seq_validation_walk() -> Atom {
+    SAME byte_validation_stack.kind {
+      "END" -> NO IN byte_validation_result
+      "NODE" -> IN byte_validation_step {
+        THIS byte_validation_node = byte_validation_stack.value
+        THIS byte_validation_rest = byte_validation_stack.next
+        SAME byte_validation_node.kind {
+          "EMPTY" -> IN byte_validation_empty {
+            THIS byte_validation_stack = byte_validation_rest
+            NO IN byte_seq_validation_walk.call()
+          }
+          "LEAF" -> IN byte_validation_leaf {
+            MANY byte_validation_item IN byte_validation_node.items {
+              SAME byte_valid.call(byte_validation_item) {
+                false -> THIS byte_validation_result = false
+                _ -> NONE
+              }
+            }
+            THIS byte_validation_stack = byte_validation_rest
+            NO IN byte_seq_validation_walk.call()
+          }
+          "CONCAT" -> IN byte_validation_concat {
+            THIS byte_validation_stack = TOGETHER {
+              kind: "NODE"
+              value: byte_validation_node.left
+              next: TOGETHER {
+                kind: "NODE"
+                value: byte_validation_node.right
+                next: byte_validation_rest
+              }
+            }
+            NO IN byte_seq_validation_walk.call()
+          }
+          _ -> NO IN false
+        }
+      }
+      _ -> NO IN false
+    }
+  }
+
+  CAN readonly IN byte_seq_valid(byte_sequence_candidate: ByteSeq) -> Atom {
+    SAME byte_sequence_candidate.kind {
+      "EMPTY" -> IN byte_validation_start {
+        THIS byte_validation_result = true
+        THIS byte_validation_stack = TOGETHER {
+          kind: "NODE"
+          value: byte_sequence_candidate
+          next: TOGETHER {
+            kind: "END"
+          }
+        }
+        NO IN byte_seq_validation_walk.call()
+      }
+      "LEAF" -> IN byte_validation_start_leaf {
+        THIS byte_validation_result = true
+        THIS byte_validation_stack = TOGETHER {
+          kind: "NODE"
+          value: byte_sequence_candidate
+          next: TOGETHER {
+            kind: "END"
+          }
+        }
+        NO IN byte_seq_validation_walk.call()
+      }
+      "CONCAT" -> IN byte_validation_start_concat {
+        THIS byte_validation_result = true
+        THIS byte_validation_stack = TOGETHER {
+          kind: "NODE"
+          value: byte_sequence_candidate
+          next: TOGETHER {
+            kind: "END"
+          }
+        }
+        NO IN byte_seq_validation_walk.call()
+      }
+      _ -> NO IN false
+    }
+  }
+
+  CAN readonly IN byte_seq_index_walk() -> ByteLookup {
+    SAME byte_index_stack.kind {
+      "END" -> NO IN byte_index_result
+      "NODE" -> IN byte_index_step {
+        THIS byte_index_node = byte_index_stack.value
+        THIS byte_index_rest = byte_index_stack.next
+        SAME byte_index_node.kind {
+          "EMPTY" -> IN byte_index_empty {
+            THIS byte_index_stack = byte_index_rest
+            NO IN byte_seq_index_walk.call()
+          }
+          "LEAF" -> IN byte_index_leaf {
+            MANY byte_index_item IN byte_index_node.items {
+              SAME byte_index_result.found {
+                false -> SAME byte_index_cursor.kind {
+                  "ZERO" -> THIS byte_index_result = TOGETHER {
+                    found: true
+                    value: byte_index_item
+                  }
+                  "SUCC" -> THIS byte_index_cursor = byte_index_cursor.previous
+                  _ -> THIS byte_index_result = TOGETHER {
+                    found: false
+                    value: NONE
+                  }
+                }
+                _ -> NONE
+              }
+            }
+            THIS byte_index_stack = byte_index_rest
+            NO IN byte_seq_index_walk.call()
+          }
+          "CONCAT" -> IN byte_index_concat {
+            THIS byte_index_stack = TOGETHER {
+              kind: "NODE"
+              value: byte_index_node.left
+              next: TOGETHER {
+                kind: "NODE"
+                value: byte_index_node.right
+                next: byte_index_rest
+              }
+            }
+            NO IN byte_seq_index_walk.call()
+          }
+          _ -> NO IN TOGETHER {
+            found: false
+            value: NONE
+          }
+        }
+      }
+      _ -> NO IN TOGETHER {
+        found: false
+        value: NONE
+      }
+    }
+  }
+
+  CAN readonly IN byte_seq_index(
+    byte_index_sequence: ByteSeq,
+    byte_index_requested: ByteIndex
+  ) -> ByteLookup {
+    SAME byte_seq_valid.call(byte_index_sequence) {
+      true -> IN byte_index_start {
+        THIS byte_index_cursor = byte_index_requested
+        THIS byte_index_result = TOGETHER {
+          found: false
+          value: NONE
+        }
+        THIS byte_index_stack = TOGETHER {
+          kind: "NODE"
+          value: byte_index_sequence
+          next: TOGETHER {
+            kind: "END"
+          }
+        }
+        NO IN byte_seq_index_walk.call()
+      }
+      _ -> NO IN TOGETHER {
+        found: false
+        value: NONE
+      }
+    }
+  }
+
+  CAN readonly IN byte_seq_equal_walk() -> Atom {
+    SAME byte_equal_stack.kind {
+      "END" -> IN byte_equal_end {
+        THIS byte_equal_terminal_lookup = byte_seq_index.call(
+          byte_equal_right_sequence,
+          byte_equal_cursor
+        )
+        SAME byte_equal_terminal_lookup.found {
+          false -> NO IN byte_equal_result
+          _ -> NO IN false
+        }
+      }
+      "NODE" -> IN byte_equal_step {
+        THIS byte_equal_node = byte_equal_stack.value
+        THIS byte_equal_rest = byte_equal_stack.next
+        SAME byte_equal_node.kind {
+          "EMPTY" -> IN byte_equal_empty {
+            THIS byte_equal_stack = byte_equal_rest
+            NO IN byte_seq_equal_walk.call()
+          }
+          "LEAF" -> IN byte_equal_leaf {
+            MANY byte_equal_item IN byte_equal_node.items {
+              SAME byte_equal_result {
+                true -> IN byte_equal_compare {
+                  THIS byte_equal_lookup = byte_seq_index.call(
+                    byte_equal_right_sequence,
+                    byte_equal_cursor
+                  )
+                  SAME byte_equal_lookup.found {
+                    true -> THIS byte_equal_result = byte_equal.call(
+                      byte_equal_item,
+                      byte_equal_lookup.value
+                    )
+                    _ -> THIS byte_equal_result = false
+                  }
+                }
+                _ -> NONE
+              }
+              THIS byte_equal_cursor = byte_index_successor.call(
+                byte_equal_cursor
+              )
+            }
+            THIS byte_equal_stack = byte_equal_rest
+            NO IN byte_seq_equal_walk.call()
+          }
+          "CONCAT" -> IN byte_equal_concat {
+            THIS byte_equal_stack = TOGETHER {
+              kind: "NODE"
+              value: byte_equal_node.left
+              next: TOGETHER {
+                kind: "NODE"
+                value: byte_equal_node.right
+                next: byte_equal_rest
+              }
+            }
+            NO IN byte_seq_equal_walk.call()
+          }
+          _ -> NO IN false
+        }
+      }
+      _ -> NO IN false
+    }
+  }
+
+  CAN readonly IN byte_seq_equal(
+    byte_equal_left_sequence: ByteSeq,
+    byte_equal_right_input: ByteSeq
+  ) -> Atom {
+    SAME byte_seq_valid.call(byte_equal_left_sequence) {
+      true -> SAME byte_seq_valid.call(byte_equal_right_input) {
+        true -> IN byte_equal_start {
+          THIS byte_equal_result = true
+          THIS byte_equal_cursor = byte_index_zero.call()
+          THIS byte_equal_right_sequence = byte_equal_right_input
+          THIS byte_equal_stack = TOGETHER {
+            kind: "NODE"
+            value: byte_equal_left_sequence
+            next: TOGETHER {
+              kind: "END"
+            }
+          }
+          NO IN byte_seq_equal_walk.call()
+        }
+        _ -> NO IN false
+      }
+      _ -> NO IN false
+    }
+  }
+}

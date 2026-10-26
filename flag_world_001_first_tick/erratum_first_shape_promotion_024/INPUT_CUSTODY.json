@@ -1,0 +1,47 @@
+{
+  "kind": "ERRATUM_PROMOTION_INPUT_CUSTODY_024",
+  "files": [
+    {
+      "path": "dependencies/sha256.mal",
+      "sha256": "CC4E659254B9A093DF0A0EF025DB92D827528FF76844047DF7D4BEDEA44BE94D",
+      "size": 283151,
+      "origin": {
+        "repository": "C:/Dev/MaL-Cog",
+        "commit": "269421f8f3d9a7de59751d59ba7d2a7f5042e5c7",
+        "path": "v3/software_fpga/threejs_projection_001_committed_4d_world_sections/sha256.mal"
+      }
+    },
+    {
+      "path": "inputs/SPEC002_v030.mal",
+      "sha256": "454EF7D150A2D1C69D0BAA8C520884E105CC1A9E30D7CC24A76535259FD31D56",
+      "size": 12804,
+      "origin": {
+        "repository": "C:/Dev/MaL-Cog",
+        "commit": "269421f8f3d9a7de59751d59ba7d2a7f5042e5c7",
+        "path": "v3/spec_system/002_successor/v0.3.0/SPEC_MAL_SPECIFICATION_SYSTEM_002_v0.3.0_PROPOSED.mal"
+      }
+    },
+    {
+      "path": "inputs/BASELINE_CHECK_FORM_010.txt",
+      "sha256": "DFCC8D0BA359208F2ACA3DB6205EFB25B489E439857C4114F943649940FD4BC1",
+      "size": 1069,
+      "origin": {
+        "repository": "C:/Dev/MaL-Cog",
+        "commit": "269421f8f3d9a7de59751d59ba7d2a7f5042e5c7",
+        "path": "v3/spec_system/tig/corpus_first/OUTPUT_CHECK_FORM_010_002_v0.3.0.txt"
+      }
+    },
+    {
+      "path": "inputs/RECEIPT_PROMOTE_ERRATUM_E_FIRST_SHAPE_NO_PIECES_001_v0.1.3.md",
+      "sha256": "19AD057BD1C3F3EF27480F8D292A54EC6E5FAE518BBFF0AAB17BE0E4C8D17B65",
+      "size": 3043,
+      "origin": "C:/Users/devon/Desktop/MaL/Markdowns/RECEIPT_PROMOTE_ERRATUM_E_FIRST_SHAPE_NO_PIECES_001_v0.1.3.md"
+    },
+    {
+      "path": "inputs/ERRATUM_E_FIRST_SHAPE_NO_PIECES_001.mal",
+      "sha256": "E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC",
+      "size": 7906,
+      "origin": "../erratum_first_shape_w9_021/inputs/ERRATUM_E_FIRST_SHAPE_NO_PIECES_001.mal"
+    }
+  ]
+}

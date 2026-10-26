@@ -1,0 +1,72 @@
+{
+  "kind": "ERRATUM_REPOSITORY_SEAL_025",
+  "authority": "Devon: commit and push the erratum and receipt after the read",
+  "repository": "MetaCortex-Dynamics/mal-fabric",
+  "branch": "review/first-shape-w9-propose-scope-021",
+  "base_commit": "f099abe4e1708fc90edc09f04b2f855eb48c161b",
+  "subjects": [
+    {
+      "path": "flag_world_001_first_tick/erratum_first_shape_promotion_024/inputs/ERRATUM_E_FIRST_SHAPE_NO_PIECES_001.mal",
+      "size": 7906,
+      "sha256": "E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC"
+    },
+    {
+      "path": "flag_world_001_first_tick/erratum_first_shape_promotion_024/inputs/RECEIPT_PROMOTE_ERRATUM_E_FIRST_SHAPE_NO_PIECES_001_v0.1.3.md",
+      "size": 3043,
+      "sha256": "19AD057BD1C3F3EF27480F8D292A54EC6E5FAE518BBFF0AAB17BE0E4C8D17B65"
+    },
+    {
+      "path": "flag_world_001_first_tick/erratum_first_shape_promotion_024/BINDING_RECORD_024.json",
+      "size": 10333,
+      "sha256": "72FCC40F21CE8AC8654D289D71737ECE4691D422F02E30D30AA06E77698E35A8"
+    }
+  ],
+  "read": {
+    "path": "flag_world_001_first_tick/erratum_first_shape_seal_025/SECTION_7_1_READ_025.json",
+    "size": 3669,
+    "sha256": "CAE04683801022B6613715379CBEBB4BA22F73FEB51368C864F6B377F27FA858"
+  },
+  "qualification": {
+    "path": "flag_world_001_first_tick/erratum_first_shape_seal_025/qualification_final/RUN_RECORD_PROMOTION_CHECK_024.json",
+    "size": 44480,
+    "sha256": "BE3CE8A3725BEB720DF296135AE2E73BF1F93F9A68E6ECDC4D13B107596D085E"
+  },
+  "checks": {
+    "previous_w9_files_SAME": 903,
+    "frozen_files_SAME": 901,
+    "qualification_comparisons_SAME": 46,
+    "native_evaluations": 44,
+    "existing_W9_cases": 37
+  },
+  "entrypoints": [
+    {
+      "path": "flag_world_001_first_tick/erratum_first_shape_seal_025/entrypoints/HANDOFF_FLAG_WORLD_FIRST_TICK_2026-10-21.md",
+      "size": 14435,
+      "sha256": "2CB73B3A6DEE1237116287D01A9EFA36B0EB74D85ABE4DDCA3BD28187C97F4A0"
+    },
+    {
+      "path": "flag_world_001_first_tick/erratum_first_shape_seal_025/entrypoints/mal-compliance.SKILL.md",
+      "size": 5573,
+      "sha256": "310967DA49EFEBD7EA3E084AA2772BBE37596A3DFB7E0C7459B4E239233DAC4A"
+    }
+  ],
+  "checksum_scope": [
+    "erratum_first_shape_w9_021/",
+    "erratum_first_shape_promotion_024/",
+    "erratum_first_shape_seal_025/",
+    "CHECK_FORM_PROMOTE.ps1",
+    "world_transition_contacts_007/README.md",
+    "world_transition_contacts_007/PROMOTION_BINDINGS_024.json"
+  ],
+  "checksum_rule": "SHA256SUMS lists every scoped file except itself; paths relative to repository root; SEAL_025.json included.",
+  "exclusions": [
+    "Unrelated ancestral and parent diagnostic packages",
+    "All frozen evidence mutations",
+    "__pycache__ and .pyc",
+    "Any worldline append",
+    "New law promotion",
+    "Merge to main"
+  ],
+  "commit_identity": "Reported after commit; not invented here",
+  "remote_publication": "Authorized; confirmed after push, not asserted by this pre-commit seal"
+}

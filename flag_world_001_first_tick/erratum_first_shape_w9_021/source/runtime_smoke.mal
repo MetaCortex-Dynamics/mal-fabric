@@ -1,0 +1,9 @@
+// Transport qualification only; no W9 verdict is encoded here.
+IN runtime_smoke {
+  CAN readonly IN main() -> Atom {
+    THIS native_bytes = byte_seq_leaf.call(MANY [87,57])
+    println.call(native_bytes.kind)
+    MANY native_byte IN native_bytes.items { println.call(native_byte) }
+    NO IN true
+  }
+}

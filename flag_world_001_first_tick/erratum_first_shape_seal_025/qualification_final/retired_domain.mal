@@ -1,0 +1,228 @@
+// SPEC-MAL-SPECIFICATION-SYSTEM-002
+// STATUS:    PROPOSED (vector-binding successor; no promotion or merge)
+// AUTHORITY: Devon Generally (DECIDE / PROMOTE). Drafted by Codex under PROPOSE.
+// DATE:      2026-10-15
+// VERSION:   0.3.0
+// SUPERSEDES (only on promotion by Devon's receipt): 002 v0.2.0
+//            sha256 FF85EE5F18813F7D64CE7BF275EBEA2F1FF581B32431D232FA4FD2B5B4E7E093
+// CHANGE:    bind V3's input, each named argument of V5--V7, and V8's input and
+//            exact expected column. The 45 seed readings, four fixed laws,
+//            W1--W8 and predecessor terminal text remain byte-unchanged.
+// GENEALOGY: the retained terminal text is the predecessor's historical record;
+//            it does not reopen obligations discharged by subsequent receipts.
+//            V5--V7 retain the predecessor's historical expected readings;
+//            no execution of the historical Python realizations is claimed.
+// INPUTS:    each SHA-256 names exact bytes. A and B are distinct wordfreq.py
+//            realizations; the realization A/B/M aliases below retain that distinction.
+//            Argument positions and identities are explicit, not inferred from digest count.
+// EXPECTED:  V1--V7 are reading-opcode bytes. V8 is a 105-byte obligation column,
+//            a separate output type; it is never replaced by a reading opcode.
+// REFERENCE: VECTOR_BINDINGS_002_v0.3.0.mal carries the same associations as closed data.
+// METHOD:    the predecessor's Metis Walk and four shared laws are retained.
+// TARGET:    AUTHOR, CHECK_FORM, REALIZE, CONFORM, PROMOTE.
+//
+domain hydrogen on face_11;
+
+@propose seed SPECIFICATION_WALK := {
+
+  // THIS
+  WHAT(THIS),            // a specification is ONE byte sequence: header, ONE walk seed,
+                         // the four walk laws, terminal, vectors
+  HOW(THIS),             // identity := sha256 of its bytes; ONE changed byte is a NOT_SAME specification
+  FOR_WHAT(THIS),        // the reader sees the answer before anything is built
+
+  // SAME_NOT_SAME
+  WHAT(SAME_NOT_SAME),   // two realizations conform IFF their observable behavior is SAME on
+                         // EVERY vector; their text MAY be NOT_SAME
+  HOW(SAME_NOT_SAME),    // CONFORM checks identity first: spec or realization hash NOT_SAME its
+                         // id ends the run, verdict NOT_SAME, NO vector executed
+  FOR_WHAT(SAME_NOT_SAME), // SAME spec bytes, SAME realization bytes -> SAME verdict, by any party
+
+  // NO
+  WHAT(NO),              // NO law is authored for an object: every specification uses the SAME four walk laws
+  HOW(NO),               // a form test that fails is NO; NO absorbs in the meet
+  FOR_WHAT(NO),          // the implementer adds NO behavior that no reading obligates
+
+  // IF_THEN
+  WHAT(IF_THEN),         // law form:  law L := IF a[, a]* THEN c;  ONE consequent (§11.1)
+  HOW(IF_THEN),          // the four laws, verbatim, at the end of EVERY specification
+  FOR_WHAT(IF_THEN),     // IF EVERY vector reproduces exactly THEN the realization is terminal
+
+  // BECAUSE
+  WHAT(BECAUSE),         // EVERY derived cell is grounded in seed cells through ONE named law
+  HOW(BECAUSE),          // the engine records each derived cell with its law and its parent cells
+  FOR_WHAT(BECAUSE),     // why_F: FOR_WHAT(BECAUSE) is an input of EVERY WHENCE; absent -> EVERY
+                         // WHENCE stays PENDING
+
+  // INSIDE_OUTSIDE
+  WHAT(INSIDE_OUTSIDE),  // vectors are INSIDE the specification bytes
+  HOW(INSIDE_OUTSIDE),   // a vector gives exact input and exact expected output (bytes, or a hash of bytes)
+  FOR_WHAT(INSIDE_OUTSIDE), // an obligation not discharged INSIDE is named OUTSIDE, in O_next; none unnamed
+
+  // NEAR_FAR
+  WHAT(NEAR_FAR),        // NO nearness among seed cells: their order in the block carries no meaning
+  HOW(NEAR_FAR),         // closure is schedule-independent (WBT): any order, SAME normal form
+  FOR_WHAT(NEAR_FAR),    // the normal form depends on the seed SET only
+
+  // CAN_CANNOT
+  WHAT(CAN_CANNOT),      // a seed cell CAN enter the block only by Phase-1 contact; it CANNOT be derived
+  HOW(CAN_CANNOT),       // the engine treats EVERY listed cell as present; an unsealed seed is left out
+                         // and its reading carried as a comment
+  FOR_WHAT(CAN_CANNOT),  // missing evidence is NOT_SAME disagreement: an absent seed leaves its derived
+                         // cells PENDING, never NO
+
+  // MAYBE
+  WHAT(MAYBE),           // a form test that CANNOT be evaluated is MAYBE; MAYBE persists in the meet
+  HOW(MAYBE),            // engine dispositions (HOLDS / FAILS / MAYBE / HARD-FAIL) are reported BESIDE
+                         // reading verdicts, never as them (METIS_WALK §7)
+  FOR_WHAT(MAYBE),       // a result reported by another party without its run record is MAYBE in this
+                         // party's record
+
+  // MUST_LET
+  WHAT(MUST_LET),        // seed selection and readings are the only LET; EVERYTHING after is MUST
+  HOW(MUST_LET),         // AUTHOR writes the readings (Phase 1); the laws are fixed (Phase 2); NO
+                         // runtime rule creation
+  FOR_WHAT(MUST_LET),    // MUST: the exact observable behavior. LET: implementation style and language
+
+  // TOGETHER_ALONE
+  WHAT(TOGETHER_ALONE),  // PROPOSE, DECIDE, PROMOTE, EXECUTE are held ALONE, never merged
+  HOW(TOGETHER_ALONE),   // AUTHOR is PROPOSE. REALIZE and CONFORM are EXECUTE (any implementer).
+                         // DECIDE and PROMOTE: the authority named in the header
+  FOR_WHAT(TOGETHER_ALONE), // a drafter records an act; a drafter does not perform it
+
+  // MORE_LESS
+  WHAT(MORE_LESS),       // status: PROPOSED, then PROMOTED by receipt, then SUPERSEDED by a later receipt
+  HOW(MORE_LESS),        // promoted bytes are never edited: an amendment is new bytes, a new version,
+                         // and a receipt naming the bytes it supersedes
+  FOR_WHAT(MORE_LESS),   // ONE status per byte sequence at a time; status is NOT a verdict
+
+  // GOES_WITH
+  WHAT(GOES_WITH),       // each seed cell GOES_WITH its reading, written as the comment on the cell
+  HOW(GOES_WITH),        // header: identifier, status, authority, version, supersedes, target
+  FOR_WHAT(GOES_WITH),   // run record: spec id + sha256, realization sha256, environment, per vector
+                         // executed or not and SAME or NOT_SAME, ONE verdict
+
+  // MANY_ONE
+  WHAT(MANY_ONE),        // 45 seed coordinates (15 operators x WHAT, HOW, FOR_WHAT) in ONE seed block
+  HOW(MANY_ONE),         // 60 derived cells (WHERE, WHICH, WHEN, WHENCE of each operator); ONE normal form
+  FOR_WHAT(MANY_ONE),    // MANY realizations (by hand, v3 engine, hardware), ONE system
+
+  // EVERY_SOME
+  WHAT(EVERY_SOME),      // CHECK_FORM := meet of W1..W8 (listed below the laws)
+  HOW(EVERY_SOME),       // PROMOTE requires CHECK_FORM != NO; PROMOTE does not require CONFORM
+  FOR_WHAT(EVERY_SOME),  // CONFORM verdict, first that applies: NOT_SAME identity; NO SOME executed
+                         // vector NOT_SAME; MAYBE SOME vector not executed; IF_THEN EVERY vector SAME
+
+  // carrier atoms: the domain of the walk laws' schematic variable
+  THIS, SAME_NOT_SAME, NO, IF_THEN, BECAUSE, INSIDE_OUTSIDE, NEAR_FAR,
+  CAN_CANNOT, MAYBE, MUST_LET, TOGETHER_ALONE, MORE_LESS, GOES_WITH,
+  MANY_ONE, EVERY_SOME
+};
+
+// ---------------------------------------------------------------
+// WALK LAWS. Fixed. Shared by every specification. NOT authored here.
+//   WHERE  := INSIDE_OUTSIDE(WHAT)
+//   WHICH  := SAME_NOT_SAME(WHAT)
+//   WHEN   := IF_THEN(HOW)
+//   WHENCE := JOINT(WHERE, WHICH, WHEN, FOR_WHAT, why_F),  why_F := FOR_WHAT(BECAUSE)
+// ---------------------------------------------------------------
+
+law R1_WHERE :=
+  IF WHAT(o)
+  THEN WHERE(o);
+
+law R1_WHICH :=
+  IF WHAT(o)
+  THEN WHICH(o);
+
+law R1_WHEN :=
+  IF HOW(o)
+  THEN WHEN(o);
+
+law R2_WHENCE :=
+  IF WHERE(o), WHICH(o), WHEN(o), FOR_WHAT(o), FOR_WHAT(BECAUSE)
+  THEN WHENCE(o);
+
+// ---------------------------------------------------------------
+// CHECK_FORM — the form tests (content of EVERY_SOME's WHAT reading)
+//   W1  header: identifier, status, authority, version
+//   W2  exactly ONE seed block; each entry is a seed cell OP(B), OP one of the
+//       15 operators, B one of WHAT, HOW, FOR_WHAT, or one of the 15 carrier
+//       atoms; NO entry repeats
+//   W3  EVERY listed seed cell carries its reading
+//   W4  the four walk laws, verbatim, in §11.1 form
+//   W5  NO other law
+//   W6  terminal states: seed cells listed, derived cells, O_exec, O_next; for
+//       a partial seed set, the PENDING cells
+//   W7  vectors INSIDE the bytes: at least ONE, each with exact input and exact
+//       expected output (bytes or a hash of bytes)
+//   W8  the v3 engine admits the file: HARD_P5 = 0, structural fail = 0
+//   A test that fails is NO; a test that CANNOT be evaluated is MAYBE.
+//
+// AUTHOR(object) := Phase 1: read the object in each of the 45 cells; write
+//   the readings; leave out any cell without contact (PENDING). Authority PROPOSE.
+// REALIZE(spec)  := realize EVERY reading; add NO unobligated behavior. EXECUTE.
+// CONFORM / PROMOTE / status / identity: the readings above.
+// ---------------------------------------------------------------
+
+// ---------------------------------------------------------------
+// EXPECTED TERMINAL
+//   seed cells 45 + derived 60 (45 layer-1 + 15 WHENCE) = 105, plus 15 atoms
+//   O_exec = empty
+//   O_next = { D2 engine merge to main, D5 first-entry parity rule retirement,
+//              value layer (reading verdicts computed in v3) }
+// ---------------------------------------------------------------
+
+// ---------------------------------------------------------------
+// VECTORS
+//   Identity declarations below bind named inputs. Expected results retain their declared type.
+//   V5--V7 are historical declarations; no fresh execution is claimed in this proposal.
+//
+// V1  CHECK_FORM(this file)
+//     expected IF_THEN
+//
+// V2  CHECK_FORM(SPEC_WORDFREQ_002_v0.2.1.mal)
+//     sha256 80577537718B193EB0AEF3F660102D572A8E46FCA73727027FD5C4E96E3BD288
+//     45 cells + 15 atoms, four laws, 8 vectors; engine: 60 derived
+//     expected IF_THEN
+//
+// V3  CHECK_FORM(SPEC_CORPUS_WALK_001.mal)
+//     sha256 E5F48683B5C8FB563A8DACEEFC100513E73B881F86B609B16A205F4E5D1AE9B7
+//     input_path inputs/SPEC_CORPUS_WALK_001.mal; exact project-file preimage, 11883 bytes
+//     0 sealed cells, 15 atoms, four laws, 45 PENDING named; engine: 0 derived
+//     W7: no vector declarations
+//     expected NO
+//
+// V4  CHECK_FORM(SPEC_WORDFREQ_001.mal)
+//     sha256 71694669C5A8728AED1A772DB657E249399AE2D96731AA9C800855CFDAE47CE2
+//     named-clause form: W2, W4 and W5 fail under the walk form
+//     expected NO
+//
+// V5  CONFORM(SPEC_WORDFREQ_002_v0.2.1.mal, realization_A)
+//     argument_1 SPEC_WORDFREQ_002_v0.2.1.mal sha256 80577537718B193EB0AEF3F660102D572A8E46FCA73727027FD5C4E96E3BD288
+//     argument_2 realization_A sha256 6310A720DD5A023D5EFC0BE86F8C254E4345E3BA82B839AB6B978FFBB6DA5F2E
+//     historical result: 8 of 8 executed, 8 SAME
+//     expected IF_THEN
+//
+// V6  CONFORM(SPEC_WORDFREQ_002_v0.2.1.mal, realization_B)
+//     argument_1 SPEC_WORDFREQ_002_v0.2.1.mal sha256 80577537718B193EB0AEF3F660102D572A8E46FCA73727027FD5C4E96E3BD288
+//     argument_2 realization_B sha256 0B08DB309AABDE98CC2CD00BB46B3DCE9402D35455AEC3AB215AB17745CB7F43
+//     historical result: 8 of 8 executed, 8 SAME
+//     expected IF_THEN
+//
+// V7  CONFORM(SPEC_WORDFREQ_002_v0.2.1.mal, realization_M)
+//     argument_1 SPEC_WORDFREQ_002_v0.2.1.mal sha256 80577537718B193EB0AEF3F660102D572A8E46FCA73727027FD5C4E96E3BD288
+//     argument_2 realization_M sha256 18CE4222C11E2109250A5631DFC7C5D0962711C1300ADF0325502D26E217B007
+//     historical result: 8 of 8 executed, 6 SAME (V3 and V8 NOT_SAME)
+//     expected NO
+//
+// V8  ENGINE_COLUMN(SPEC_WORDFREQ_002_v0.2.1_WITHOUT_WHY_F.mal)
+//     sha256 B699FD8E2EE0285110944B92151BAB7AA5094E94FC6106D98F53825EBD7E8E97
+//     input_path inputs/SPEC_WORDFREQ_002_v0.2.1_WITHOUT_WHY_F.mal; 9372 bytes
+//     source: exact V8 payload in the existing ENGINE vector companion
+//     expected_type OBLIGATION_STATUS_COLUMN; 105 bytes, E1 axis order and ABI 2a witness order
+//     expected_sha256 C3F7D0498F6418BD6B11E222C2BEA8185B20536B24636683E802949C36243B50
+//     expected_bytes [1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0]
+//     expected_count_THIS 89; expected_count_NO 16
+//     derived 45, every WHENCE PENDING; FOR_WHAT(BECAUSE) absent
+// ---------------------------------------------------------------

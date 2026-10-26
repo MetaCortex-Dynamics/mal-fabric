@@ -1,0 +1,82 @@
+ERRATUM_E_FIRST_SHAPE_NO_PIECES_001
+VERSION    := 0.1.3 (amends FB4C2E55E511DDAE73F5553CD5BC48C111D46ACEFF7989F54C3F442CA57DEB4D: tessellation line; R1 binding)
+              v0.1.2 amended FC49F434…A67D83 per Codex 18:03 (specimen mention; V5).
+              v0.1.1 amended 022B094A…85FC5B7 per Codex 17:43 (four boundaries).
+STATUS     := PROPOSED (Claude PROPOSE; Devon DECIDE / PROMOTE; Codex binds into mal-fabric on Devon's word)
+DATE       := 2026-10-24 America/New_York
+KIND       := vocabulary erratum (E-series). Adds NO law. Names what promoted law already states; forbids a folk substitution.
+              This file is an erratum, NOT a specification: SPEC-MAL-SPECIFICATION-SYSTEM-002 CHECK_FORM W1–W8 applies to
+              specifications and is NOT claimed, exempted or altered here. W9 (below) is an ADDITIONAL check for PROMOTE.
+ORIGIN     := Devon 2026-10-24 15:59 "'Hydrogen' is a shape"; 16:03 "'Atom' needs to go as well. What we have is an admissibility
+              lattice where the first shape defines the admissible tessellations."
+
+RETIRES (as LAW-POSITION tokens; see W9 for the definition of law position)
+  "atom"      — stoichiometry-prototype lattice term (platonic_stoichiometry.jsx AAF00A72…: minimal element of B(≤3)).
+                Folk load: a smallest constituent prior to admissibility. The construction has none.
+  "hydrogen"  — physical-element name. Admissible ONLY as a correspondence label (physical-element correspondence is the law's
+                own MAYBE: SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001 v0.1.0 8A9986EB…42252C, §24 O_next).
+  Already retired in principles, same status: "particle", "element" (as entity primitive), "singularity", "entropy", "tie".
+  (The words above are MENTIONED here, not USED; W9 distinguishes the two.)
+
+STATES (the construction's own words; forcing clauses cited by document)
+  ADMISSIBILITY LATTICE  := the Governed Reaction Lattice over carrier configurations — Governed_Reaction_Lattice.docx
+                            83B5E5F0AD3EF5762777787071C1FB78617AB1952900459B01F4666EE46A5A4B: §3 C_M dependent pair
+                            (configuration := (arrangement, admissibility witness), :113–119); §4 A_M. Membership = admissibility.
+                            Not composition.
+  TYPED CHAIN            := F3 fold-receipt 563F99BA…3D93 returns the TYPE basis {Tetrahedron, Cube, Octahedron, Dodecahedron,
+                            Icosahedron} (SELF_UNFOLDING_ELEMENT_BASIS_V1 FF0319B1… :97/:203) →
+                            basis TYPES vs ElementInstances: QUEUEGATE 8A9986EB… §9 :216–225; multiplicity M : E → Nat §11 :261 →
+                            the configured instance (D,I), multiplicity 1 each, over the type basis →
+                            ProjectionShell (2,0) by A9/B3 → carrier 012 82E388FD…15BDB (RECTIFICATION_OF_DODECAHEDRAL_ICOSAHEDRAL_DUAL_PAIR).
+  THE FIRST SHAPE        := the configured (D,I) @ (2,0) at the end of that chain: the first fold's product.
+  WHAT IT DOES           := defines the admissible tessellations. Genealogical constraint on EVERY step: G_parts,n+1 = G_whole,n+1
+                            (QUEUEGATE §§6–7). Multiset preservation on HORIZONTAL folds: GRL §4 (a fold is horizontal);
+                            VERTICAL steps (refinement) are governed by GRL §7 and require K — not asserted preserved here.
+                            MULTISET_PRESERVED terminal in SPEC-J17-WORLD-FOLD-EFFECT-001 E2A87BDC… is the horizontal case.
+  ADMISSIBLE TESSELLATIONS := the ProjectionShell(m,n) refinements of the first shape: the 12 domains inherited on the 12
+                            directions at every (m,n); the hexagon field between them grows (10T − 10); closure by the twelve
+                            pentagonal defects (the dual pair is where the hexagon field — the tiled circle — is forced to close).
+                            TRACE_RESONANCE_THROUGH_DERIVED_SHAPES_001 (2026-10-25) §§3–5; The_Projection_Shell.docx.
+  REGISTRY (Devon R1, 2026-10-25): ONE primitive shape, the inverted triangle. rectangle := two triangles on a shared edge;
+                            circle := the closed fan of six triads around G. The first shape is DERIVED from the primitive, not a
+                            second primitive. "Three primitive shapes" retired as scaffold.
+  "base shape"           := the above. Not "smallest". Not "building block".
+  RETAINED (not retired by "no pieces"): incidence (flag := (site, edge, triad); 720 overlaps); multiplicity (M : E → Nat);
+                            G_parts / G_whole as GENEALOGICAL roles under the fold (§§6–7). "No pieces" := no constituent prior to
+                            admissibility; parts exist as genealogical roles with multiplicities, not as building blocks.
+
+WRITING RULE
+  shape first, label bracketed:   the first shape (D,I) @ (2,0) ["hydrogen", correspondence MAYBE]
+  Labels never appear bare in a law position. Prose, comments and string literals may use them.
+
+W9 — RETIRED-TOKEN LAW-POSITION CHECK (additional PROMOTE check; operates on PARSED positions, not on a word search)
+  LAW POSITION := any of: identifier declared by `law <id> :=`; `domain <id>`; `@propose seed <id>`; an argument of an operator
+                  application inside a law body (THIS(...), GOES_WITH(...), IF ... THEN ...); an `@readonly input` name;
+                  a member of a TERMINAL enumeration; a type or kind name in a CONTACTS/OPERANDS binding.
+  MENTION      := inside a `//` comment; inside a string literal "..."; inside a RETIRES list of an erratum; inside a
+                  bracketed correspondence `[ "<label>", correspondence MAYBE ]` following a shape term; inside a
+                  backtick-quoted VECTOR SPECIMEN in the VECTORS section of an erratum or spec (the standalone fixture file
+                  carrying the same bytes IS subject to W9; its embedded quotation is not).
+  W9(file)     := NO  IF_THEN some retired token occurs in a LAW POSITION;  IF_THEN otherwise.
+  RETIRED      := { atom, hydrogen, particle, element, singularity, entropy, tie }  (case-insensitive on the token; whole token).
+
+VECTORS (input bytes frozen in this file; W9 only; expected = sorted-key compact JSON, no terminal newline, uppercase digests)
+  V1  input  V1.mal   := `law H_ATOM := IF THIS(atom,a) THEN GOES_WITH(hydrogen,a);`              (two law-position uses)
+      expected {"law_positions":["atom","hydrogen"],"verdict":"NO"}
+  V2  input  V2.mal   := `// the first shape (D,I) @ (2,0) ["hydrogen", correspondence MAYBE]`      (bracketed label, comment)
+      expected {"law_positions":[],"verdict":"IF_THEN"}
+  V3  input  V3.mal   := `law SHAPE := IF THIS(FIRST_SHAPE,D,I) THEN GOES_WITH(SHELL,2,0); // hydrogen is a label`
+      expected {"law_positions":[],"verdict":"IF_THEN"}
+  V4  input  this file (ERRATUM_E_FIRST_SHAPE_NO_PIECES_001.mal v0.1.3)          (mentions only, incl. the specimens above)
+      expected {"law_positions":[],"verdict":"IF_THEN"}
+  V5  input  V5.mal   := `FIRST_SHAPE := (D,I) @ (2,0) ["hydrogen", correspondence MAYBE]`   (correspondence bracket, NOT a comment)
+      expected {"law_positions":[],"verdict":"IF_THEN"}
+  Digests of V1–V3, V5 inputs and all expected outputs: see ERRATUM_E_FIRST_SHAPE_NO_PIECES_001.vectors (frozen alongside).
+  V4's input digest is this file's own sha256 as bound by Codex.
+
+GENEALOGY (superseded wording, retained as record, not edited)
+  platonic_stoichiometry.jsx "atom"; TRACE_FOLD_PRODUCT_PROJECTION_RECORD_001 lines using "atom" / "hydrogen is base shape";
+  TRACE_MOST_BASIC_REACTION_H_RECOMBINATION_001 title (correspondence label; its TYPING is law-correct).
+
+ENTRY POINTS (bind this file's hash)
+  HANDOFF_FLAG_WORLD_FIRST_TICK header · Codex contact packet (world_transition_contacts) · mal-compliance skill drift list.

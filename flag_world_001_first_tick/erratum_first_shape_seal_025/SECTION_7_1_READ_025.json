@@ -1,0 +1,67 @@
+{
+  "kind": "SOURCE_BOUND_SECTION_7_1_READ_025",
+  "request": "Read whether ENGINE 7.1 offers incidence fibres or the archive's SAME-component unions before sealing the erratum package.",
+  "read_completion": "IF_THEN",
+  "sources": [
+    {
+      "id": "ENGINE",
+      "path": "../world_transition_contacts_007/contacts/Markdowns/SPEC_FLAG_WORLD_ENGINE_V3_001_v0.2.0.md",
+      "sha256": "B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C",
+      "lines": [63, 84, 114, 386, 403, 407, 408, 455, 464, 617, 626]
+    },
+    {
+      "id": "A1_A10",
+      "path": "../world_transition_contacts_007/contacts/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805",
+      "lines": [15, 18, 46]
+    },
+    {
+      "id": "ERRATUM_07",
+      "path": "../world_transition_contacts_007/contacts/Markdowns/07_The_Erratum.md",
+      "sha256": "E097CDA64A92199F11A97DB1EB113C491806FFE1AEC29032E060C9877BD8426C",
+      "lines": [74, 84]
+    },
+    {
+      "id": "ARCHIVE",
+      "path": "C:/Users/devon/Desktop/MaL/Compressed/forced_flag_system_clean.zip",
+      "sha256": "FF0F1FA2493A6EA0A4CAA2B5B28937FEA25F4DC77141ACEA49CCF48C8B9A6FE4",
+      "entry": "flag_rederive.py",
+      "entry_sha256": "A17272D377554B163E41D348E78B1BB1E35784A5CD43369E4E15722A3EB16838",
+      "lines": [43, 62],
+      "access": "Read-only ZIP entry bytes; no script executed, imported or transliterated."
+    }
+  ],
+  "findings": [
+    {
+      "subject": "ENGINE 7.1",
+      "reading": "IF_THEN",
+      "text": "PROPOSE reads the current committed snapshot and emits every completing lift for the declared base move.",
+      "content": "The clause names completing lifts and 2/2/1 domain-site/triad/corridor-edge multiplicities. It does not say 'and local readings' and does not enumerate uniform-fibre or SAME-component-union assignments."
+    },
+    {
+      "subject": "A7 and D2",
+      "reading": "IF_THEN",
+      "content": "A7 separately names completions and readings; D2 separately names flag completions from A3 and gluing readings from A4. Neither inspected clause enumerates the permitted successor-assignment extents."
+    },
+    {
+      "subject": "Archive construction versus uniform-fibre enumeration",
+      "reading": "NOT_SAME",
+      "content": "The archive traverses delta/gamma/tau neighbours of equal reading into components, samples a nonempty union of components, complements its flags, and checks opened agreements. Component membership depends on the source field, unlike a fixed incidence-projection fibre."
+    },
+    {
+      "subject": "Archive as native offer-set authority",
+      "reading": "NO",
+      "because": "ENGINE 1.1 lines 63-84 assigns these bundles genealogy only and excludes scripts, runtime behavior, outputs and oracle values from native acceptance authority. Line 114 preserves promoted decisions, not prototype evidence."
+    },
+    {
+      "subject": "Equality of either bounded assignment family with all offered gluing readings",
+      "reading": "MAYBE",
+      "named_relation": "A7/D2 gluing-reading proposal -> permitted successor-assignment extents",
+      "because": "The inspected native clauses do not state that equality. The archived sample is not a replacement native constructor, and a bounded fibre diagnostic is not an exclusivity clause."
+    }
+  ],
+  "disposition": "Read discharged by the source distinctions above; no successor family selected or authored. This is not an A6 refutation and does not reopen link 3. The separately authorized vocabulary seal proceeds.",
+  "worldline": "UNCHANGED",
+  "new_law": "NONE",
+  "new_offer_computation": "NOT_RUN"
+}

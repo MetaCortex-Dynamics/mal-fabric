@@ -1,0 +1,21 @@
+{
+  "kind": "ADDITIVE_SESSION_PROMOTION_BINDING_024",
+  "object": "ERRATUM_E_FIRST_SHAPE_NO_PIECES_001",
+  "version": "0.1.3",
+  "authority": "Devon Generally; receipt records promotion at 2026-10-25 21:14 America/New_York",
+  "erratum": {
+    "path": "../erratum_first_shape_promotion_024/inputs/ERRATUM_E_FIRST_SHAPE_NO_PIECES_001.mal",
+    "bytes": 7906,
+    "sha256": "E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC"
+  },
+  "receipt": {
+    "path": "../erratum_first_shape_promotion_024/inputs/RECEIPT_PROMOTE_ERRATUM_E_FIRST_SHAPE_NO_PIECES_001_v0.1.3.md",
+    "sha256": "19AD057BD1C3F3EF27480F8D292A54EC6E5FAE518BBFF0AAB17BE0E4C8D17B65"
+  },
+  "promotion_check": "../CHECK_FORM_PROMOTE.ps1",
+  "w9": "Additional parsed-LAW-POSITION check; W1-W8 unchanged",
+  "original_packet": "UNCHANGED; this binding is additive, not a replacement for historical custody",
+  "repository_seal": "NOT_PERFORMED",
+  "commit": "NOT_PERFORMED",
+  "push": "NOT_PERFORMED"
+}

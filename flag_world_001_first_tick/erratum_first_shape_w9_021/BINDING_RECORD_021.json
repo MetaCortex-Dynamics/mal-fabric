@@ -1,0 +1,260 @@
+{
+  "kind": "ERRATUM_V013_W9_AND_ITEM7_BINDING",
+  "authority": "Devon requested binding v0.1.3, executing W9 before promotion, and the item 7 read.",
+  "erratum": {
+    "path": "inputs/ERRATUM_E_FIRST_SHAPE_NO_PIECES_001.mal",
+    "size": 7906,
+    "sha256": "E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC"
+  },
+  "archive": {
+    "path": "erratum_e_first_shape_v0.1.3.zip",
+    "size": 5894,
+    "sha256": "574A41ECF4A415BC384E22ECDF3AE95605432341FD71E14A9435783E129EE010"
+  },
+  "original_archive": "C:/Users/devon/Desktop/MaL/Compressed/erratum_e_first_shape_v0.1.3.zip",
+  "archive_copy": "SAME",
+  "promotion": "NOT_PERFORMED",
+  "entrypoint_integration": "NOT_PERFORMED",
+  "repository_commit": "NOT_PERFORMED",
+  "push": "NOT_PERFORMED",
+  "implementation": {
+    "path": "source/w9.mal",
+    "size": 35363,
+    "sha256": "45B3FCC3E310D92ACB130AD37BC4A64E0CE0ED4D9225C9D5E6D64BD2791F9ECF"
+  },
+  "execution": "Native .mal W9 lexer/position reader in the unchanged bound MaLCog evaluator; Node transports bytes, serializes returned token flags/verdict, and compares frozen JSON. No Python.",
+  "qualification_records": [
+    {
+      "path": "qualification_03/RUN_RECORD_W9_021.json",
+      "size": 43911,
+      "sha256": "BCF261610B18BF535D235FE8FBF5AA153D03BFC8AEE6AE024923732A4A058D22"
+    },
+    {
+      "path": "qualification_04_replay/RUN_RECORD_W9_021.json",
+      "size": 44975,
+      "sha256": "6917D5BE113E5C3C9A0A989955B812FF0003CEADEB1CC1DA6DE99D436F79362E"
+    }
+  ],
+  "frozen_vectors": 5,
+  "additional_controls": 32,
+  "replay": [
+    {
+      "id": "V1",
+      "actual_sha256": "001103E7C3F04033E031CCD2233D03D66BDD9A6BBA10E8A0C6FDA708A8DBAC4F",
+      "comparison": "SAME"
+    },
+    {
+      "id": "V2",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "V3",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "V4",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "V5",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C01_LAW_NAME",
+      "actual_sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C02_DOMAIN",
+      "actual_sha256": "5A0B56F7F2E85BD48A90F30C3EDFF8DB67A22744306AAE8E6BB5C15A656CF514",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C03_SEED",
+      "actual_sha256": "9AF689D125CC006D2138095EAC99975A0AD396436D6673E810B43B5C3FA3CF26",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C04_READONLY",
+      "actual_sha256": "4CB65011399D4B7EF42C0083B8DFB4386F32BAA8EE12A2DCAE9496FB8A005AFE",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C05_TERMINAL",
+      "actual_sha256": "6240DAC59C1E1B50BCE1DCBF264898BD338E15907D9BF3F870974B0B1A082C30",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C06_CONTACT_TYPE",
+      "actual_sha256": "2880BCA9BD668B516AB1E36F3DBE5073E30D0585BE96FDA5B7A1DDAE88A0F174",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C07_OPERAND_TYPE",
+      "actual_sha256": "3AA7E634FAB8C8958D2830F366885B039CADA9DB1232D3A9F6B44BFB74981300",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C08_NESTED_ARGUMENT",
+      "actual_sha256": "4CB65011399D4B7EF42C0083B8DFB4386F32BAA8EE12A2DCAE9496FB8A005AFE",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C09_CASE",
+      "actual_sha256": "001103E7C3F04033E031CCD2233D03D66BDD9A6BBA10E8A0C6FDA708A8DBAC4F",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C10_WHOLE_TOKEN",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C11_COMMENT",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C12_STRING",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C13_COMMENT_NEWLINE",
+      "actual_sha256": "2880BCA9BD668B516AB1E36F3DBE5073E30D0585BE96FDA5B7A1DDAE88A0F174",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C14_CONTACT_LABEL",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C15_RETIRES",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C16_SPECIMEN",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C17_CORRESPONDENCE",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C18_DUPLICATE",
+      "actual_sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C19_MULTILINE",
+      "actual_sha256": "9AF689D125CC006D2138095EAC99975A0AD396436D6673E810B43B5C3FA3CF26",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C20_ALL_RETIRED",
+      "actual_sha256": "63A0CCFC9B6F427799112D35E69863FA4EBE5B448EA2A2C23D428B897DD5DB40",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C21_MISSING_LAW_ID",
+      "actual_sha256": "160CB115A145AEDDA57FA139DEDCCB15AD8B8A396FED8903E7F8C266231C9B58",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C22_UNCLOSED_STRING",
+      "actual_sha256": "160CB115A145AEDDA57FA139DEDCCB15AD8B8A396FED8903E7F8C266231C9B58",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C23_UNCLOSED_BODY",
+      "actual_sha256": "160CB115A145AEDDA57FA139DEDCCB15AD8B8A396FED8903E7F8C266231C9B58",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C24_AFTER_SPECIMEN",
+      "actual_sha256": "3AA7E634FAB8C8958D2830F366885B039CADA9DB1232D3A9F6B44BFB74981300",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C25_UNQUOTED_VECTOR",
+      "actual_sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C26_AFTER_RETIRES",
+      "actual_sha256": "2880BCA9BD668B516AB1E36F3DBE5073E30D0585BE96FDA5B7A1DDAE88A0F174",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C27_SLASH_STRING",
+      "actual_sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C28_RETIRES_ARGUMENT",
+      "actual_sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C29_VECTORS_ARGUMENT",
+      "actual_sha256": "64922A935AC1A53CFC92CBA83EEDDF1A51969E7617DE77BA611205A3543C9D9D",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C30_ERRATUM_LAW_RETIRES",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C31_ERRATUM_DOMAIN_RETIRES",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    },
+    {
+      "id": "C32_ERRATUM_AUTHORITY_RETIRES",
+      "actual_sha256": "535326B5AEF633D2B7A89DC9A6BCAF71548FC7482970A7A3FEE32092E60DB712",
+      "comparison": "SAME"
+    }
+  ],
+  "verdict": "IF_THEN",
+  "scope": "W9 additional PROMOTE check only, not W1-W8. Parser-boundary MAYBE is a named implementation deferral, not an added W9 law verdict. The named productions and qualification fixtures are the witnessed scope; no universal parser-coverage claim.",
+  "item7": {
+    "path": "ITEM_7_READ.json",
+    "size": 3832,
+    "sha256": "E7BDD6C46B388C36CEF8F2BBEF49CE3B4292F6742E514A4159A32CCC377DBAC1"
+  },
+  "protected_subjects": [
+    {
+      "path": "../j17_step_023/outputs/committed.world.json",
+      "size": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059",
+      "comparison": "SAME"
+    },
+    {
+      "path": "../j17_proposer_reentry_020/RUN_RECORD_TEST_P_020.json",
+      "size": 18123,
+      "sha256": "DE8052E6A1DB6F4B47D377D88622202E810D5FF3756BFB85CA17F31490DE1D70",
+      "comparison": "SAME"
+    },
+    {
+      "path": "../j17_runs_021_023_seal/FROZEN_REHOME_MANIFEST_001.json",
+      "size": 539738,
+      "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560",
+      "comparison": "SAME"
+    }
+  ],
+  "repository": {
+    "branch": "review/first-shape-w9-propose-scope-021",
+    "head": "f099abe4e1708fc90edc09f04b2f855eb48c161b",
+    "tracked_diff": ""
+  },
+  "world": "No world input, committed link, frozen fixture, promoted source, or authority receipt edited."
+}

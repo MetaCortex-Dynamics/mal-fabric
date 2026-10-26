@@ -1,0 +1,237 @@
+{
+  "kind": "BINDING_RECORD_024",
+  "authority": "Devon promotion recorded by receipt; Codex executes entry-point and checker integration only",
+  "erratum_sha256": "E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC",
+  "receipt_sha256": "19AD057BD1C3F3EF27480F8D292A54EC6E5FAE518BBFF0AAB17BE0E4C8D17B65",
+  "entrypoints": {
+    "handoff": {
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/HANDOFF_FLAG_WORLD_FIRST_TICK_2026-10-21.md",
+      "size": 14435,
+      "sha256": "2CB73B3A6DEE1237116287D01A9EFA36B0EB74D85ABE4DDCA3BD28187C97F4A0"
+    },
+    "packet": {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/world_transition_contacts_007/README.md",
+      "size": 882,
+      "sha256": "588500EEA4DC235720771B94B3C90754EDA583935DFF06E9A01AE3C59B4B0BA3"
+    },
+    "skill": {
+      "path": "C:/Users/devon/.agents/skills/synced/3bfc4f6d-7353-40b2-a2b3-75de649ef19e_71f39d80-8f16-485f-a606-0aa085360c46/mal-compliance/SKILL.md",
+      "size": 5573,
+      "sha256": "310967DA49EFEBD7EA3E084AA2772BBE37596A3DFB7E0C7459B4E239233DAC4A"
+    }
+  },
+  "additional_entrypoints": [
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/CHECK_FORM_PROMOTE.ps1",
+      "size": 427,
+      "sha256": "4FF293AA28AA41B3C97124BDF2163336A204F29183C27B7DFFD8FD31A4DB7C01"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/world_transition_contacts_007/PROMOTION_BINDINGS_024.json",
+      "size": 978,
+      "sha256": "BCC3817256426FFC4A0D69CB76D194D796F7F67C770D9CDE6A3437B0CEDA54FB"
+    }
+  ],
+  "files": [
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/source/check_form_promote.mal",
+      "size": 2297,
+      "sha256": "4D5017BD4349766EAA96317B0333C5A908F742B7F60B38E34DCDA8425354EAC4"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/check_form_promote.mjs",
+      "size": 6983,
+      "sha256": "E99C494D02D100E52D2A632A9C06A6FA2AF406DD05E693CD2F5A650AFBCE8C0C"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/qualify.mjs",
+      "size": 4362,
+      "sha256": "342FF113F6EF17CCE9534AA6A8B7D8E06E1B479256ECF800C99D88E69C524DCD"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/prepare.mjs",
+      "size": 3057,
+      "sha256": "69B239D590FAD863183E4F86597B4DF42A09BDBD85B4F6462CC9EDF2B275AB03"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/audit.mjs",
+      "size": 6271,
+      "sha256": "7916103DAF07884D72A84B905C950702A6F72CAD8EF14B06CD4802AF8E028105"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/README.md",
+      "size": 3235,
+      "sha256": "7B1026934A099EE4C2D5B93B46C42D9A4B18426194421B3167F6F06582D5257A"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/INPUT_CUSTODY.json",
+      "size": 1829,
+      "sha256": "20C76B63F95E9D5C475577AB9EEDFD3D48260EBFBFD3A2055A368557A9356408"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/qualification_001/RUN_RECORD_PROMOTION_CHECK_024.json",
+      "size": 44492,
+      "sha256": "7E856698560EDE7A7E32EE05D8E03EFCED7514A41B74AE08794B761A29E76170"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/inputs/ERRATUM_E_FIRST_SHAPE_NO_PIECES_001.mal",
+      "size": 7906,
+      "sha256": "E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/inputs/RECEIPT_PROMOTE_ERRATUM_E_FIRST_SHAPE_NO_PIECES_001_v0.1.3.md",
+      "size": 3043,
+      "sha256": "19AD057BD1C3F3EF27480F8D292A54EC6E5FAE518BBFF0AAB17BE0E4C8D17B65"
+    }
+  ],
+  "cli_records": [
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/public_erratum/CHECK_FORM_PROMOTE.json",
+      "size": 4657,
+      "sha256": "2BF76A7F3EFC6587CF0924697F9C583F1B19347A40ED11EA67013847BAF4A44D"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/erratum_first_shape_promotion_024/public_retired/CHECK_FORM_PROMOTE.json",
+      "size": 4628,
+      "sha256": "A20C3CD43D606008A328D0C9498EDD8241D99D68226836D6A6A284906497A2CC"
+    }
+  ],
+  "checks": [
+    {
+      "id": "handoff_full_bindings",
+      "comparison": "SAME",
+      "detail": {
+        "path": "C:/Users/devon/Desktop/MaL/Markdowns/HANDOFF_FLAG_WORLD_FIRST_TICK_2026-10-21.md",
+        "size": 14435,
+        "sha256": "2CB73B3A6DEE1237116287D01A9EFA36B0EB74D85ABE4DDCA3BD28187C97F4A0"
+      }
+    },
+    {
+      "id": "packet_full_bindings",
+      "comparison": "SAME",
+      "detail": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/world_transition_contacts_007/README.md",
+        "size": 882,
+        "sha256": "588500EEA4DC235720771B94B3C90754EDA583935DFF06E9A01AE3C59B4B0BA3"
+      }
+    },
+    {
+      "id": "skill_full_bindings",
+      "comparison": "SAME",
+      "detail": {
+        "path": "C:/Users/devon/.agents/skills/synced/3bfc4f6d-7353-40b2-a2b3-75de649ef19e_71f39d80-8f16-485f-a606-0aa085360c46/mal-compliance/SKILL.md",
+        "size": 5573,
+        "sha256": "310967DA49EFEBD7EA3E084AA2772BBE37596A3DFB7E0C7459B4E239233DAC4A"
+      }
+    },
+    {
+      "id": "skill_frontmatter_unchanged",
+      "comparison": "SAME",
+      "detail": null
+    },
+    {
+      "id": "skill_unrelated_text_unchanged",
+      "comparison": "SAME",
+      "detail": null
+    },
+    {
+      "id": "handoff_historical_body_unchanged",
+      "comparison": "SAME",
+      "detail": null
+    },
+    {
+      "id": "historical_packet_MANIFEST.json",
+      "comparison": "SAME",
+      "detail": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/world_transition_contacts_007/MANIFEST.json",
+        "size": 4288,
+        "sha256": "13F4676010390261EAFC6C208498231806C738599D5376314D36E3DFDCA44EC6"
+      }
+    },
+    {
+      "id": "historical_packet_READOUT.json",
+      "comparison": "SAME",
+      "detail": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/world_transition_contacts_007/READOUT.json",
+        "size": 7315,
+        "sha256": "EB5EB0BEE83FF6F067AE4B288E622C059D3D797DFB3E58E3B8F417A8A94DC76D"
+      }
+    },
+    {
+      "id": "historical_packet_VERIFICATION.json",
+      "comparison": "SAME",
+      "detail": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/world_transition_contacts_007/VERIFICATION.json",
+        "size": 7446,
+        "sha256": "EEED187049FE1D066127A539F2EB860177980D13F3F2CB239117380EC6CE6BFB"
+      }
+    },
+    {
+      "id": "historical_packet_verify_contacts.mjs",
+      "comparison": "SAME",
+      "detail": {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/world_transition_contacts_007/verify_contacts.mjs",
+        "size": 4035,
+        "sha256": "F59AA7EDB07DC9F57644010A29E7476063A94ED8C6ACC26CD763E36844D11F3E"
+      }
+    },
+    {
+      "id": "historical_packet_contacts",
+      "comparison": "SAME",
+      "detail": {
+        "count": 8,
+        "not_same": []
+      }
+    },
+    {
+      "id": "frozen_901",
+      "comparison": "SAME",
+      "detail": {
+        "count": 901,
+        "not_same": []
+      }
+    },
+    {
+      "id": "public_erratum",
+      "comparison": "SAME",
+      "detail": {
+        "exit_code": 0,
+        "expected_code": 0,
+        "stdout": "{\"input_sha256\":\"E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC\",\"reading\":\"IF_THEN\",\"w1_w8\":{\"reading\":\"NOT_A_SPECIFICATION\",\"kind\":\"NOT_A_SPECIFICATION\",\"payload\":\"NOT_A_SPECIFICATION\"},\"w9\":{\"verdict\":\"IF_THEN\",\"reason\":\"PARSED_NAMED_POSITIONS\",\"law_positions\":[]},\"record\":\"D:\\\\Dev\\\\Codex\\\\2026-10-04\\\\new-chat\\\\mal_fabric_flag_world_001\\\\flag_world_001_first_tick\\\\erratum_first_shape_promotion_024\\\\public_erratum\\\\CHECK_FORM_PROMOTE.json\"}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "id": "public_retired",
+      "comparison": "SAME",
+      "detail": {
+        "exit_code": 1,
+        "expected_code": 1,
+        "stdout": "{\"input_sha256\":\"70A0D6DC80347F202C7248F2AEF4BC956EA90C5FEFFFFE165834737A7BDD4288\",\"reading\":\"NO\",\"w1_w8\":{\"reading\":\"IF_THEN\",\"kind\":\"EXECUTED\",\"payload\":\"19\"},\"w9\":{\"verdict\":\"NO\",\"reason\":\"RETIRED_LAW_POSITION\",\"law_positions\":[\"hydrogen\"]},\"record\":\"D:\\\\Dev\\\\Codex\\\\2026-10-04\\\\new-chat\\\\mal_fabric_flag_world_001\\\\flag_world_001_first_tick\\\\erratum_first_shape_promotion_024\\\\public_retired\\\\CHECK_FORM_PROMOTE.json\"}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "id": "HEAD_unchanged",
+      "comparison": "SAME",
+      "detail": "f099abe4e1708fc90edc09f04b2f855eb48c161b"
+    },
+    {
+      "id": "no_tracked_diffs",
+      "comparison": "SAME",
+      "detail": null
+    }
+  ],
+  "terminal": "IF_THEN",
+  "repository": {
+    "head": "f099abe4e1708fc90edc09f04b2f855eb48c161b",
+    "branch": "review/first-shape-w9-propose-scope-021",
+    "seal": "NOT_PERFORMED",
+    "staging": "NOT_PERFORMED",
+    "commit": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED"
+  },
+  "worldline": "UNCHANGED",
+  "promotion": "RECEIPT_BOUND; no new attestation performed",
+  "scope": "This mal-fabric promotion-check entrypoint; no automatic hook in every historical script"
+}

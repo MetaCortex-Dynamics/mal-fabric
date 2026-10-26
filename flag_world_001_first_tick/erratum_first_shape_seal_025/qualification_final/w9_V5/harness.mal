@@ -1,0 +1,23 @@
+IN check_form_transport_024 { CAN readonly IN main() -> Atom {
+    THIS checked = check_form_promote.call(byte_seq_leaf.call(MANY [70,73,82,83,84,95,83,72,65,80,69,32,58,61,32,40,68,44,73,41,32,64,32,40,50,44,48,41,32,91,34,104,121,100,114,111,103,101,110,34,44,32,99,111,114,114,101,115,112,111,110,100,101,110,99,101,32,77,65,89,66,69,93]),"SPECIFICATION")
+    println.call("CHECK_FORM_024_BEGIN")
+    println.call(checked.reading)
+    println.call(checked.w1_w8_reading)
+    println.call(checked.w1_w8.kind)
+    SAME checked.w1_w8.kind {
+      "EXECUTED" -> IN raw_composite { THIS raw = byte_seq_index.call(checked.w1_w8.actual,byte_index_zero.call()) println.call(raw.value) }
+      "UNEXECUTED" -> println.call(checked.w1_w8.reason)
+      _ -> println.call("NOT_A_SPECIFICATION")
+    }
+    println.call(checked.w9.verdict)
+    println.call(checked.w9.reason)
+    println.call(checked.w9.atom)
+    println.call(checked.w9.element)
+    println.call(checked.w9.entropy)
+    println.call(checked.w9.hydrogen)
+    println.call(checked.w9.particle)
+    println.call(checked.w9.singularity)
+    println.call(checked.w9.tie)
+    println.call("CHECK_FORM_024_END")
+ NO IN true
+} }
