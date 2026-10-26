@@ -1,0 +1,107 @@
+{
+  "schema": "GENESIS_DOI_PACKAGE_REVIEW_001",
+  "independent_review": {
+    "reading": "SAME",
+    "archive_entries": "12/12 SAME",
+    "copied_repository_files": "6/6 SAME",
+    "metadata": "Title, creator, affiliation, ORCID, version and date match; abstract verbatim; Apache-2.0 attested",
+    "doi": "No paper DOI assigned or software DOI reused",
+    "external_actions": "NOT_RUN"
+  },
+  "repository_after_preparation": {
+    "head": "b57fc09dfd41af65fc5be6eeab8174e61bc22a98",
+    "tracked_changes": "NONE",
+    "released_file_rehash": "13/13 SAME",
+    "promoted_manuscript_sha256": "65D2DB5EA689F040B304E5AB89AD33A86220CA1152A2847ADEE9712A048998DF"
+  },
+  "package": {
+    "path": "Genesis_on_the_GPU_v0.5_DOI_deposit.zip",
+    "bytes": 218043,
+    "sha256": "D29A3DFB3442A8A2E5A677E0CAB1852E917CF2A39F9ED34FE49ED73FA001F198"
+  },
+  "checks": {
+    "source_copies": "6/6 SAME",
+    "upload_files": 8,
+    "archive_entries": 12,
+    "archive_readback": "12/12 SAME",
+    "abstract": "VERBATIM_SAME",
+    "license": "Apache-2.0",
+    "metadata": "REQUIRED_FIELDS_PRESENT; SERVER_SUBMISSION_NOT_RUN",
+    "paper_doi": "NOT_ASSIGNED",
+    "external_mutations": "NONE"
+  },
+  "entries": [
+    {
+      "path": "CITATION.bib",
+      "bytes": 554,
+      "sha256": "4B25FE609E0167C1252029C54E5291AED7A2F67E76B4C3ADA00479620A693564",
+      "reading": "SAME"
+    },
+    {
+      "path": "DEPOSIT_PLAN.json",
+      "bytes": 2669,
+      "sha256": "1EF8D635CED68405C9E5DD221330F2322A050342CDED00C77F45FFC67B848711",
+      "reading": "SAME"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2669,
+      "sha256": "D07C86EEA54805634BF303C7438C1B115EC7F91C5A6366AD668744B7C164DAF0",
+      "reading": "SAME"
+    },
+    {
+      "path": "upload/Genesis_on_the_GPU_v0.5.pdf",
+      "bytes": 207879,
+      "sha256": "E4E3B0121D7C3F113362A22FB0BEE26EE317E69DBEC4274A0DB67AB8607F39F3",
+      "reading": "SAME"
+    },
+    {
+      "path": "upload/LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "C71D239DF91726FC519C6EB72D318EC65820627232B2F796219E87DCF35D0AB4",
+      "reading": "SAME"
+    },
+    {
+      "path": "upload/MANIFEST.json",
+      "bytes": 2592,
+      "sha256": "5D22012EE6590FD435DA0BD4B543CF9DFE0D8289C481F0837050B670B80483D7",
+      "reading": "SAME"
+    },
+    {
+      "path": "upload/README.md",
+      "bytes": 2398,
+      "sha256": "228A8EEEF2C332C989E64DC7910263CDD9F9F3A6719C96D5E255182306D65EC2",
+      "reading": "SAME"
+    },
+    {
+      "path": "upload/RUN_RECORD_022.json",
+      "bytes": 59703,
+      "sha256": "BE07194B30BE2788E2AC90FC06A97C8720209C65DF39B7C2EC1E287BEF5C5942",
+      "reading": "SAME"
+    },
+    {
+      "path": "upload/RUN_RECORD_PARENT_PAIR_023.json",
+      "bytes": 40903,
+      "sha256": "04E81447AF274D88F04F0EDCD1C088BD200CCF40F8EC82D8002FDC1873B63A87",
+      "reading": "SAME"
+    },
+    {
+      "path": "upload/SEAL_022.json",
+      "bytes": 12478,
+      "sha256": "EF1D5AA50EAE720DF0BAA8E6702EFB3AEB43C7EAA52455DE5CD24535DBB6D587",
+      "reading": "SAME"
+    },
+    {
+      "path": "upload/SEAL_023.json",
+      "bytes": 5666,
+      "sha256": "64F81B3B770AC085C46B30649E0A660FFFD7D6288F9BB9B9D6FA7E1C01AA3F52",
+      "reading": "SAME"
+    },
+    {
+      "path": "ZENODO_DEPOSIT_METADATA.json",
+      "bytes": 2655,
+      "sha256": "ABE340CB8337318BA1D86F6EC851322A11D8DB649F30280BB9CD704F48253F6A",
+      "reading": "SAME"
+    }
+  ]
+}

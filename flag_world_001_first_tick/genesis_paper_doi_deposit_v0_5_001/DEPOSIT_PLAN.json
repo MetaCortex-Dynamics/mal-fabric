@@ -1,0 +1,75 @@
+{
+  "schema": "GENESIS_DOI_DEPOSIT_PREPARATION_001",
+  "status": "LOCAL_PREPARATION",
+  "source_repository": "MetaCortex-Dynamics/mal-fabric",
+  "source_commit": "b57fc09dfd41af65fc5be6eeab8174e61bc22a98",
+  "title": "Genesis on the GPU A World That Proposes Its Own Next Step",
+  "version": "0.5",
+  "license": {
+    "identifier": "Apache-2.0",
+    "user_attestation": "Apache License 2.0",
+    "recorded_date": "2026-10-26",
+    "prior_repository_binding": [
+      "LICENSE",
+      "README.md:476-479",
+      ".zenodo.json:42",
+      "CITATION.cff:12"
+    ],
+    "license_sha256": "C71D239DF91726FC519C6EB72D318EC65820627232B2F796219E87DCF35D0AB4",
+    "scope": "Paper and four supporting records; repository license copy unchanged"
+  },
+  "metadata_shape": {
+    "documentation": "https://developers.zenodo.org/#deposit-metadata",
+    "file": "ZENODO_DEPOSIT_METADATA.json",
+    "resource_type": "publication/preprint",
+    "status": "PREPARED_FROM_DOCUMENTED_FIELDS_NOT_SUBMITTED_TO_API"
+  },
+  "identity_policy": {
+    "paper_doi": "NOT_ASSIGNED_IN_BOUND_RECORDS",
+    "reserve_doi": "NOT_RUN",
+    "do_not_reuse_software_dois": [
+      "10.5281/zenodo.22739341",
+      "10.5281/zenodo.22678127"
+    ],
+    "future_doi_binding": "Record the archive's actual record ID and version DOI in a separate deposit receipt; preserve the released PDF bytes."
+  },
+  "files_to_upload": [
+    "upload/Genesis_on_the_GPU_v0.5.pdf",
+    "upload/RUN_RECORD_022.json",
+    "upload/SEAL_022.json",
+    "upload/RUN_RECORD_PARENT_PAIR_023.json",
+    "upload/SEAL_023.json",
+    "upload/LICENSE.txt",
+    "upload/README.md",
+    "upload/MANIFEST.json"
+  ],
+  "local_helpers": [
+    "ZENODO_DEPOSIT_METADATA.json",
+    "CITATION.bib",
+    "DEPOSIT_PLAN.json",
+    "README.md"
+  ],
+  "external_actions": {
+    "zenodo_draft": "NOT_CREATED",
+    "upload": "NOT_RUN",
+    "doi_reservation": "NOT_RUN",
+    "publication": "NOT_RUN",
+    "git_commit": "NOT_RUN",
+    "git_push": "NOT_RUN",
+    "journal_submission": "NOT_RUN",
+    "substack_post": "NOT_RUN"
+  },
+  "metadata_omissions": {
+    "doi": "No paper DOI is recorded; leave absent so the archive can assign a new one when authorized.",
+    "journal": "No journal claim.",
+    "funding": "No bound funding claim.",
+    "community": "No community submission requested."
+  },
+  "archive_references": [
+    "https://help.zenodo.org/docs/deposit/create-new-upload/",
+    "https://help.zenodo.org/docs/deposit/describe-records/licenses/",
+    "https://help.zenodo.org/docs/deposit/describe-records/publication-date/",
+    "https://help.zenodo.org/docs/deposit/describe-records/resource-type/",
+    "https://developers.zenodo.org/"
+  ]
+}

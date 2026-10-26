@@ -1,0 +1,61 @@
+{
+  "schema": "GENESIS_DOI_UPLOAD_MANIFEST_001",
+  "title": "Genesis on the GPU A World That Proposes Its Own Next Step",
+  "version": "0.5",
+  "source_repository": "MetaCortex-Dynamics/mal-fabric",
+  "source_commit": "b57fc09dfd41af65fc5be6eeab8174e61bc22a98",
+  "hash_algorithm": "SHA-256",
+  "scope": "Byte identities of the seven payload/license/description files. This manifest is the eighth upload file and does not hash itself.",
+  "license": "Apache-2.0",
+  "license_authority": "Devon's explicit response: Apache License 2.0; matches repository LICENSE.",
+  "files": [
+    {
+      "path": "Genesis_on_the_GPU_v0.5.pdf",
+      "bytes": 207879,
+      "sha256": "E4E3B0121D7C3F113362A22FB0BEE26EE317E69DBEC4274A0DB67AB8607F39F3",
+      "source_repository_path": "flag_world_001_first_tick/genesis_paper_publication_v0_5_001/output/pdf/Genesis_on_the_GPU_v0.5.pdf",
+      "copy_reading": "SAME"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "C71D239DF91726FC519C6EB72D318EC65820627232B2F796219E87DCF35D0AB4",
+      "source_repository_path": "LICENSE",
+      "copy_reading": "SAME"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2398,
+      "sha256": "228A8EEEF2C332C989E64DC7910263CDD9F9F3A6719C96D5E255182306D65EC2",
+      "origin": "New deposit description; not a copied experimental record"
+    },
+    {
+      "path": "RUN_RECORD_022.json",
+      "bytes": 59703,
+      "sha256": "BE07194B30BE2788E2AC90FC06A97C8720209C65DF39B7C2EC1E287BEF5C5942",
+      "source_repository_path": "flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/RUN_RECORD_022.json",
+      "copy_reading": "SAME"
+    },
+    {
+      "path": "RUN_RECORD_PARENT_PAIR_023.json",
+      "bytes": 40903,
+      "sha256": "04E81447AF274D88F04F0EDCD1C088BD200CCF40F8EC82D8002FDC1873B63A87",
+      "source_repository_path": "flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/RUN_RECORD_PARENT_PAIR_023.json",
+      "copy_reading": "SAME"
+    },
+    {
+      "path": "SEAL_022.json",
+      "bytes": 12478,
+      "sha256": "EF1D5AA50EAE720DF0BAA8E6702EFB3AEB43C7EAA52455DE5CD24535DBB6D587",
+      "source_repository_path": "flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/SEAL_022.json",
+      "copy_reading": "SAME"
+    },
+    {
+      "path": "SEAL_023.json",
+      "bytes": 5666,
+      "sha256": "64F81B3B770AC085C46B30649E0A660FFFD7D6288F9BB9B9D6FA7E1C01AA3F52",
+      "source_repository_path": "flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/SEAL_023.json",
+      "copy_reading": "SAME"
+    }
+  ]
+}

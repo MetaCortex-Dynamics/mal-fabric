@@ -1,0 +1,115 @@
+{
+  "schema": "ParentPairDiagnostic023Seal",
+  "verdict": "IF_THEN",
+  "run_record": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\parent_pair_diagnostic_023\\run_001\\RUN_RECORD_PARENT_PAIR_023.json",
+    "bytes": 40903,
+    "sha256": "04E81447AF274D88F04F0EDCD1C088BD200CCF40F8EC82D8002FDC1873B63A87"
+  },
+  "audit": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\parent_pair_diagnostic_023\\run_001\\AUDIT_023.json",
+    "bytes": 88998,
+    "sha256": "5CBCCABAEF33B50C56316FC5B8CB66636092F193463103ABD1C70D31DD764D09"
+  },
+  "native_source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\parent_pair_diagnostic_023\\source\\parent_incidence.mal",
+    "bytes": 4459,
+    "sha256": "F009EAB29264B03ED8BBD82659D00F25DE03013B29A61F1F4335416BC0C40B50"
+  },
+  "driver": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\parent_pair_diagnostic_023\\run.mjs",
+    "bytes": 16302,
+    "sha256": "F504C0C0079B83D7A38C2A2B5CCD2C6DDC73E659BBCE2DA31D65430242BCD736"
+  },
+  "observer": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\parent_pair_diagnostic_023\\observe.mjs",
+    "bytes": 31976,
+    "sha256": "E26F03B21444BE198D34D9BACC5828B8039149C985BF91819F82456F200E02EE"
+  },
+  "supervisor": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\parent_pair_diagnostic_023\\sweep.mjs",
+    "bytes": 2146,
+    "sha256": "9EB5B700DFD3257C48E492B28333F261F9F10B1764B7D28667EBF57AF9CEEDBF"
+  },
+  "sealer": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\parent_pair_diagnostic_023\\seal.mjs",
+    "bytes": 24007,
+    "sha256": "C1E8AD5DB7009D10B63754DA5C3D2B41963020BE9B9B2631E5A7A311BA14F3F7"
+  },
+  "parent": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\parent_pair_diagnostic_023\\run_001\\PARENT_WORLD.json",
+    "bytes": 149500,
+    "sha256": "98E3AB968690E4CFCDE649E75CB9D3BA955A7380C7FA0CF7B098A169904E5383"
+  },
+  "inventory": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\parent_pair_diagnostic_023\\run_001\\NATIVE_INVENTORY.json",
+    "bytes": 5113244,
+    "sha256": "920791A6535900CA3A48A4822A5AA4A509C0F1EB4B4D52C96F8AEE9454DEDF76"
+  },
+  "pairs": {
+    "inputs": 30,
+    "offers_per_input": 484,
+    "complete_receipt_cases": 14520,
+    "inputs_with_strict": 0,
+    "strict_assignments": 0
+  },
+  "peak_batch_facts": 645512,
+  "frozen": {
+    "manifest": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_runs_021_023_seal\\FROZEN_REHOME_MANIFEST_001.json",
+      "bytes": 539738,
+      "sha256": "F7CADDA1C99DE37E9AF00D5429BA34600ACFF421A3FC4C5622FD8F239DF19560"
+    },
+    "files": 901,
+    "bytes": 1069571560,
+    "verdict": "SAME",
+    "inventory_sha256": "24617026C1FD76510B2DD881D1D4F72BDD84FBAAB1EED31B2DF7C806103DAE80"
+  },
+  "worlds": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\committed.world.json",
+      "bytes": 763526,
+      "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88"
+    }
+  ],
+  "prior022": {
+    "seal": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_ancestral_fibre_diagnostic_022\\run_002\\SEAL_022.json",
+      "bytes": 12478,
+      "sha256": "EF1D5AA50EAE720DF0BAA8E6702EFB3AEB43C7EAA52455DE5CD24535DBB6D587"
+    },
+    "run_record": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_ancestral_fibre_diagnostic_022\\run_002\\RUN_RECORD_022.json",
+      "bytes": 59703,
+      "sha256": "BE07194B30BE2788E2AC90FC06A97C8720209C65DF39B7C2EC1E287BEF5C5942"
+    },
+    "new_inventory": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_ancestral_fibre_diagnostic_022\\run_002\\NATIVE_INVENTORY.json",
+      "bytes": 3510723,
+      "sha256": "21373749355A661120D101F3029EEDC09E7077BB8ECB7F799B7015D97883A078"
+    },
+    "retained_inventory": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\run_003\\NATIVE_INVENTORY.json",
+      "bytes": 24146920,
+      "sha256": "0BFB3DFF879498037317A006F4790311AEF1357E42659931293E0C202DB91202"
+    },
+    "duplicates": 24,
+    "parent_domains": 12,
+    "readings": [
+      "NO",
+      "THIS"
+    ],
+    "combined_unique": 2024
+  },
+  "A6_scope": "Original exchange genealogy includes unions of SAME-connected components; no equality of that family with single incidence fibres is established here. Parent K=empty under these484 offers does not by itself contradict A6.",
+  "record_frozen_status": "POST_RUN_REHASH_PENDING preserved in original record; discharged by this additive audit",
+  "worldline": "UNCHANGED",
+  "erratum": "NOT_PROMOTED",
+  "repository_commit": "NOT_PERFORMED",
+  "push": "NOT_PERFORMED"
+}
