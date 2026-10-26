@@ -1,0 +1,156 @@
+{
+  "schema": "ZENODO_DRAFT_UPLOAD_RECEIPT_001",
+  "recorded_at_utc": "2026-10-26T18:51:49Z",
+  "authority": {
+    "request": "upload commit and push",
+    "license_choice": "Apache License 2.0",
+    "scope": "Upload the prepared package to an unpublished Zenodo draft; commit and push the publication review branch. Publication and merge are not performed."
+  },
+  "repository": {
+    "home": "MetaCortex-Dynamics/mal-fabric",
+    "branch": "review/genesis-paper-v0-5-publication-001",
+    "publication_source_commit": "b57fc09dfd41af65fc5be6eeab8174e61bc22a98",
+    "package_commit": "1a581a586a90211f261405a60eab0136ec9d8411",
+    "receipt_commit": "The Git commit containing this receipt supplies its identity.",
+    "push": "AUTHORIZED_PENDING_AT_RECEIPT_CREATION",
+    "main_merge": "NOT_RUN"
+  },
+  "package": {
+    "path": "flag_world_001_first_tick/genesis_paper_doi_deposit_v0_5_001",
+    "zip": "Genesis_on_the_GPU_v0.5_DOI_deposit.zip",
+    "zip_bytes": 218043,
+    "zip_sha256": "D29A3DFB3442A8A2E5A677E0CAB1852E917CF2A39F9ED34FE49ED73FA001F198",
+    "metadata": "ZENODO_DEPOSIT_METADATA.json",
+    "metadata_sha256": "ABE340CB8337318BA1D86F6EC851322A11D8DB649F30280BB9CD704F48253F6A",
+    "uploaded_files": 8,
+    "uploaded_bytes": 342976
+  },
+  "archive": {
+    "service": "Zenodo",
+    "draft_id": "23673872",
+    "edit_url": "https://zenodo.org/uploads/23673872",
+    "preview_url": "https://zenodo.org/records/23673872?preview=1",
+    "status": "DRAFT_SAVED_UNPUBLISHED",
+    "page_evidence": "You are previewing a new record that has not yet been published.",
+    "publish": "NOT_RUN",
+    "concept_doi": {
+      "value": "10.5281/zenodo.23673871",
+      "status": "DISPLAYED_BY_ARCHIVE_UNREGISTERED",
+      "page_evidence": "The DOI is registered when the first version is published.",
+      "explicit_reservation_action": "NOT_RUN"
+    },
+    "version_doi": "NOT_OBSERVED",
+    "older_record_left_untouched": "https://zenodo.org/records/23584296"
+  },
+  "metadata_observed": {
+    "title": "Genesis on the GPU A World That Proposes Its Own Next Step",
+    "version": "0.5",
+    "resource_type": "Preprint",
+    "publication_date": "2026-10-26",
+    "creator": "Generally, Devon A.",
+    "orcid": "0009-0004-8164-2159",
+    "affiliation": "MetaCortex Dynamics LLC",
+    "publisher": "Zenodo",
+    "license": "Apache License 2.0",
+    "language": "English",
+    "keywords": [
+      "geometric computation",
+      "GPU computation",
+      "incidence",
+      "strict discharge",
+      "persistent structure",
+      "deterministic replay",
+      "renewed proposal"
+    ],
+    "related_work": {
+      "relation": "References",
+      "url": "https://github.com/MetaCortex-Dynamics/mal-fabric/tree/b57fc09dfd41af65fc5be6eeab8174e61bc22a98/flag_world_001_first_tick/genesis_paper_publication_v0_5_001"
+    },
+    "abstract": "SAME_AS_PREPARED_METADATA",
+    "notes": "SAME_AS_PREPARED_METADATA",
+    "pdf_preview_pages": 8
+  },
+  "verification": {
+    "upload_progress": "8_OF_8_FILES_100_PERCENT",
+    "checksum_comparison": "8_OF_8_SAME",
+    "remote_checksum_source": "MD5 values displayed in the saved Zenodo draft preview file list.",
+    "local_identity_source": "Local upload files, independently checked against the prepared package and publication release.",
+    "remote_sha256_readback": "NOT_RUN",
+    "scope": "Remote MD5 compared with locally computed MD5. SHA-256 below binds the local uploaded bytes; no remote SHA-256 or downloaded-byte audit is claimed.",
+    "package_audit": "12/12 ZIP entries SAME; 7/7 upload-manifest files SAME; 6/6 copied artifacts SAME against publication-source Git blobs; 13/13 publication-release files SAME."
+  },
+  "files": [
+    {
+      "name": "Genesis_on_the_GPU_v0.5.pdf",
+      "bytes": 207879,
+      "local_sha256": "E4E3B0121D7C3F113362A22FB0BEE26EE317E69DBEC4274A0DB67AB8607F39F3",
+      "local_md5": "af5999c71916b20ea418e1827468b720",
+      "remote_md5": "af5999c71916b20ea418e1827468b720",
+      "comparison": "SAME"
+    },
+    {
+      "name": "LICENSE.txt",
+      "bytes": 11357,
+      "local_sha256": "C71D239DF91726FC519C6EB72D318EC65820627232B2F796219E87DCF35D0AB4",
+      "local_md5": "86d3f3a95c324c9479bd8986968f4327",
+      "remote_md5": "86d3f3a95c324c9479bd8986968f4327",
+      "comparison": "SAME"
+    },
+    {
+      "name": "MANIFEST.json",
+      "bytes": 2592,
+      "local_sha256": "5D22012EE6590FD435DA0BD4B543CF9DFE0D8289C481F0837050B670B80483D7",
+      "local_md5": "d02af3cb91104b7220986de21548a81e",
+      "remote_md5": "d02af3cb91104b7220986de21548a81e",
+      "comparison": "SAME"
+    },
+    {
+      "name": "README.md",
+      "bytes": 2398,
+      "local_sha256": "228A8EEEF2C332C989E64DC7910263CDD9F9F3A6719C96D5E255182306D65EC2",
+      "local_md5": "6b7facee322b19af920e6e3b51ef3eb4",
+      "remote_md5": "6b7facee322b19af920e6e3b51ef3eb4",
+      "comparison": "SAME"
+    },
+    {
+      "name": "RUN_RECORD_022.json",
+      "bytes": 59703,
+      "local_sha256": "BE07194B30BE2788E2AC90FC06A97C8720209C65DF39B7C2EC1E287BEF5C5942",
+      "local_md5": "aa81264d651db1b94591c8e0676adb92",
+      "remote_md5": "aa81264d651db1b94591c8e0676adb92",
+      "comparison": "SAME"
+    },
+    {
+      "name": "RUN_RECORD_PARENT_PAIR_023.json",
+      "bytes": 40903,
+      "local_sha256": "04E81447AF274D88F04F0EDCD1C088BD200CCF40F8EC82D8002FDC1873B63A87",
+      "local_md5": "48a29368491ccac23fc979b36b7e0bd9",
+      "remote_md5": "48a29368491ccac23fc979b36b7e0bd9",
+      "comparison": "SAME"
+    },
+    {
+      "name": "SEAL_022.json",
+      "bytes": 12478,
+      "local_sha256": "EF1D5AA50EAE720DF0BAA8E6702EFB3AEB43C7EAA52455DE5CD24535DBB6D587",
+      "local_md5": "5d2b6a6693d96c252a948427965f73db",
+      "remote_md5": "5d2b6a6693d96c252a948427965f73db",
+      "comparison": "SAME"
+    },
+    {
+      "name": "SEAL_023.json",
+      "bytes": 5666,
+      "local_sha256": "64F81B3B770AC085C46B30649E0A660FFFD7D6288F9BB9B9D6FA7E1C01AA3F52",
+      "local_md5": "1d90496a87c160b26fdd779816fea65c",
+      "remote_md5": "1d90496a87c160b26fdd779816fea65c",
+      "comparison": "SAME"
+    }
+  ],
+  "preservation": {
+    "prepared_package": "UNCHANGED_AFTER_PREPARATION",
+    "preparation_status_records": "Retained as historical preparation records; this receipt records the later upload.",
+    "publication_and_experiment_bytes": "UNCHANGED",
+    "new_experiment": "NOT_RUN",
+    "frozen_evidence_edits": "NONE",
+    "board_action": "NOT_RUN"
+  }
+}
