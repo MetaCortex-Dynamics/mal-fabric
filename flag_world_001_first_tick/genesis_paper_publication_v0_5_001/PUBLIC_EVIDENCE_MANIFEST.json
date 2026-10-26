@@ -1,0 +1,35 @@
+{
+  "schema": "GENESIS_PAPER_PUBLIC_EVIDENCE_001",
+  "subject": "Exact reference 5 and 6 run-record and seal copies for the promoted v0.5 paper",
+  "promoted_manuscript": {
+    "repository_commit": "4c891973a1c104779116c4717704adb15eabb1ed",
+    "sha256": "65D2DB5EA689F040B304E5AB89AD33A86220CA1152A2847ADEE9712A048998DF"
+  },
+  "scope": "Four complete run-record/seal documents only. Referenced sources, inventories, audits and raw readbacks are not included. Original provenance paths and diagnostic statuses are retained. No new experiment, promotion or worldline mutation.",
+  "files": [
+    {
+      "path": "evidence/RUN_RECORD_022.json",
+      "source": "flag_world_001_first_tick/j17_ancestral_fibre_diagnostic_022/run_002/RUN_RECORD_022.json",
+      "bytes": 59703,
+      "sha256": "BE07194B30BE2788E2AC90FC06A97C8720209C65DF39B7C2EC1E287BEF5C5942"
+    },
+    {
+      "path": "evidence/SEAL_022.json",
+      "source": "flag_world_001_first_tick/j17_ancestral_fibre_diagnostic_022/run_002/SEAL_022.json",
+      "bytes": 12478,
+      "sha256": "EF1D5AA50EAE720DF0BAA8E6702EFB3AEB43C7EAA52455DE5CD24535DBB6D587"
+    },
+    {
+      "path": "evidence/RUN_RECORD_PARENT_PAIR_023.json",
+      "source": "flag_world_001_first_tick/parent_pair_diagnostic_023/run_001/RUN_RECORD_PARENT_PAIR_023.json",
+      "bytes": 40903,
+      "sha256": "04E81447AF274D88F04F0EDCD1C088BD200CCF40F8EC82D8002FDC1873B63A87"
+    },
+    {
+      "path": "evidence/SEAL_023.json",
+      "source": "flag_world_001_first_tick/parent_pair_diagnostic_023/run_001/SEAL_023.json",
+      "bytes": 5666,
+      "sha256": "64F81B3B770AC085C46B30649E0A660FFFD7D6288F9BB9B9D6FA7E1C01AA3F52"
+    }
+  ]
+}
