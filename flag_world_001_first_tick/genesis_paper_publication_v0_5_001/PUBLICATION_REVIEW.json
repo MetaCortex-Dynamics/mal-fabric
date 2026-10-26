@@ -1,0 +1,42 @@
+{
+  "schema": "GENESIS_PUBLICATION_REVIEW_001",
+  "pdf_sha256": "E4E3B0121D7C3F113362A22FB0BEE26EE317E69DBEC4274A0DB67AB8607F39F3",
+  "pdf_bytes": 207879,
+  "pages": 8,
+  "visual_review": {
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "method": "Poppler PNG render at 110 dpi; direct page-by-page inspection",
+    "clipping": "NONE_OBSERVED",
+    "overlap": "NONE_OBSERVED",
+    "missing_glyphs": "NONE_OBSERVED",
+    "tables": "Three tables aligned to text column; all rows present",
+    "equations": "Four display equations legible",
+    "headers_footers": "Page numbers and edition footer present on all eight pages; running headers on pages 2-8"
+  },
+  "mechanical_review": {
+    "promoted_manuscript": "SAME",
+    "evidence_copies": "4/4 SAME locally and in committed Git blobs",
+    "pdf_rebuild": "BYTE_SAME",
+    "full_hashes_in_pdf": 16,
+    "missing_uri_annotations": [],
+    "private_attachment_links": 0,
+    "all_characters_within_page_margins": "IF_THEN"
+  },
+  "independent_review": {
+    "agent": "closure_evidence_trace",
+    "markdown": "Eight declared replacement groups reproduce publication Markdown exactly",
+    "scientific_content": "UNCHANGED",
+    "pdf_text": "Ordered normalized text SAME; 17511 non-whitespace characters; no omitted or duplicated body, table or reference content",
+    "mathematics": "Operands, set-difference directions and strictness conditions preserved",
+    "privacy": "Four records/seals inspected; no credentials or unrelated personal content located; original local provenance paths retained"
+  }
+}

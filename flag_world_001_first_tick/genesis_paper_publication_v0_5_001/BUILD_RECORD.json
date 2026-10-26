@@ -1,0 +1,96 @@
+{
+  "schema": "GENESIS_PUBLICATION_BUILD_001",
+  "scope": "Document typesetting only; no MaL execution or experimental rerun",
+  "promoted_source": {
+    "path": "genesis_paper_promotion_v0_5_001\\GENESIS_ON_THE_GPU_v0.5.md",
+    "sha256": "65D2DB5EA689F040B304E5AB89AD33A86220CA1152A2847ADEE9712A048998DF"
+  },
+  "publication_source": {
+    "path": "GENESIS_ON_THE_GPU_v0.5_publication.md",
+    "sha256": "94C118C8C373A585110931B164EA5E75AFF5AA70A702715A2DFDB447D07A254C",
+    "bytes": 24403
+  },
+  "pdf": {
+    "path": "output/pdf/Genesis_on_the_GPU_v0.5.pdf",
+    "sha256": "E4E3B0121D7C3F113362A22FB0BEE26EE317E69DBEC4274A0DB67AB8607F39F3",
+    "bytes": 207879,
+    "pages": 8
+  },
+  "checks": {
+    "math_blocks": 4,
+    "tables": 3,
+    "hashes_preserved": 16,
+    "missing_hashes": [],
+    "missing_uri_annotations": [],
+    "private_attachment_links": 0,
+    "missing_glyphs": [],
+    "page_character_counts": [
+      3001,
+      2410,
+      2281,
+      2665,
+      2765,
+      3148,
+      2454,
+      2276
+    ]
+  },
+  "links": [
+    "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c6191b322411b9ff24c9813d41bf518ceccb5332/flag_world_001_first_tick/evidence/first-tick-conform-v1-v2-001/README.md",
+    "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c6191b322411b9ff24c9813d41bf518ceccb5332/flag_world_001_first_tick/j17_proposer_reentry_020/RUN_RECORD_TEST_P_020.json",
+    "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c6191b322411b9ff24c9813d41bf518ceccb5332/flag_world_001_first_tick/j17_step_023/RUN_RECORD_023.json",
+    "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c6191b322411b9ff24c9813d41bf518ceccb5332/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R1/run_003/RUN_RECORD_R1.json",
+    "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c6191b322411b9ff24c9813d41bf518ceccb5332/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R2/execution_001/finish_001/RUN_RECORD_R2_019.json",
+    "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c7ba659be18d0b5cbbc3d81346262f8de053fcde/flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/RUN_RECORD_022.json",
+    "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c7ba659be18d0b5cbbc3d81346262f8de053fcde/flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/RUN_RECORD_PARENT_PAIR_023.json",
+    "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c7ba659be18d0b5cbbc3d81346262f8de053fcde/flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/SEAL_022.json",
+    "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c7ba659be18d0b5cbbc3d81346262f8de053fcde/flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/SEAL_023.json",
+    "https://github.com/MetaCortex-Dynamics/mal-fabric/tree/c6191b322411b9ff24c9813d41bf518ceccb5332/flag_world_001_first_tick",
+    "https://orcid.org/0009-0004-8164-2159"
+  ],
+  "renderer": {
+    "reportlab": "4.4.9",
+    "fonts": {
+      "Body": {
+        "file": "georgia.ttf",
+        "sha256": "38DFFCAF1FAC89492F7C56C600A14DAF36AE42F7C21985CD4134AE113124A58F",
+        "collection_index": 0
+      },
+      "Body-Bold": {
+        "file": "georgiab.ttf",
+        "sha256": "72A6CD94FAB6C179392075D3FB361E269CDDDFAD41BB7AB385FA22A37E49A900",
+        "collection_index": 0
+      },
+      "Body-Italic": {
+        "file": "georgiai.ttf",
+        "sha256": "D3E4BAD27651D120AC8F2CEA42CF4B4F077264FB243F66B3CAFFCFD35465F49B",
+        "collection_index": 0
+      },
+      "Body-BoldItalic": {
+        "file": "georgiaz.ttf",
+        "sha256": "3F9E512F82EAF6F1B7869B82013FB79F6EAF1A41E75A0E7B96F31F35B1022AE4",
+        "collection_index": 0
+      },
+      "Sans": {
+        "file": "segoeui.ttf",
+        "sha256": "704EADA12961A27FD271F7D3B09E2066520E758390C1776744EFF430FEE30F6E",
+        "collection_index": 0
+      },
+      "Sans-Bold": {
+        "file": "segoeuib.ttf",
+        "sha256": "B169E636719880976A97E94E3B1CB3DBE5F4A38EABC037BF9F2A9165154C3AD2",
+        "collection_index": 0
+      },
+      "Mono": {
+        "file": "consola.ttf",
+        "sha256": "CF00B507B3286870CC5064EBD0633C303F70B491A4AF25EEC2D32DF413DB0179",
+        "collection_index": 0
+      },
+      "Math": {
+        "file": "cambria.ttc",
+        "sha256": "84E70CCC1664482F4A960442C7A166C91A1B2CF98FF88C33CB73F79403F66D7B",
+        "collection_index": 1
+      }
+    }
+  }
+}

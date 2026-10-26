@@ -1,0 +1,57 @@
+{
+  "schema": "GENESIS_PUBLICATION_PRESENTATION_CHANGES_001",
+  "source_sha256": "65D2DB5EA689F040B304E5AB89AD33A86220CA1152A2847ADEE9712A048998DF",
+  "source_commit": "4c891973a1c104779116c4717704adb15eabb1ed",
+  "evidence_commit": "c7ba659be18d0b5cbbc3d81346262f8de053fcde",
+  "scope": "Citation, availability and edition-label changes only. No scientific claims, numerical results or evidence hashes changed. No new promotion.",
+  "replacements": [
+    {
+      "from": "Review draft 0.5 · 26 October 2026",
+      "to": "Version 0.5 · Promoted 26 October 2026",
+      "occurrences": 1
+    },
+    {
+      "from": "library-file:fde1_bGliZmlsZV8taU5WT3ZLd0hNN0FZZjMtSmtTWXpR_FileDrive_7e2f37d49b2481918c9dca3022dab5bd",
+      "to": "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c7ba659be18d0b5cbbc3d81346262f8de053fcde/flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/RUN_RECORD_022.json",
+      "occurrences": 2
+    },
+    {
+      "from": "library-file:fde1_bGliZmlsZV8xY1VOWmxCTDE5d0dVOEpVdXhjdEhR_FileDrive_7e2f37d49b2481918c9dca3022dab5bd",
+      "to": "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c7ba659be18d0b5cbbc3d81346262f8de053fcde/flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/SEAL_022.json",
+      "occurrences": 1
+    },
+    {
+      "from": "library-file:fde1_bGliZmlsZV9kZWN3dVZLRzRQMzdrd1ZjcTVJS2ZR_FileDrive_7e2f37d49b2481918c9dca3022dab5bd",
+      "to": "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c7ba659be18d0b5cbbc3d81346262f8de053fcde/flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/RUN_RECORD_PARENT_PAIR_023.json",
+      "occurrences": 2
+    },
+    {
+      "from": "library-file:fde1_bGliZmlsZV96ekdRbFBrMndMMnItS0Z2dmNHX0pB_FileDrive_7e2f37d49b2481918c9dca3022dab5bd",
+      "to": "https://github.com/MetaCortex-Dynamics/mal-fabric/blob/c7ba659be18d0b5cbbc3d81346262f8de053fcde/flag_world_001_first_tick/genesis_paper_publication_v0_5_001/evidence/SEAL_023.json",
+      "occurrences": 1
+    },
+    {
+      "from": "attached sealed run record",
+      "to": "sealed run record",
+      "occurrences": 2
+    },
+    {
+      "from": "References 5 and 6 link to byte-identical copies of their run records and seals attached to this review draft, with full SHA-256 identities preserved. These attachments make the cited records accessible within the draft; they do not constitute a repository release of the complete diagnostic packages.",
+      "to": "References 5 and 6 link to byte-identical public copies of their run records and seals at repository commit `c7ba659be18d0b5cbbc3d81346262f8de053fcde`, with full SHA-256 identities preserved. This release makes the four cited records and seals publicly accessible; it does not include the complete diagnostic packages they reference.",
+      "occurrences": 1
+    },
+    {
+      "from": "The present draft replaces",
+      "to": "The present paper replaces",
+      "occurrences": 1
+    }
+  ],
+  "pdf_presentation": [
+    "Title split into title and subtitle",
+    "Markdown equations typeset without changing their mathematical content",
+    "Typographic dashes normalized to ASCII hyphens in the PDF",
+    "Unicode subscript digits rendered as typographic subscripts",
+    "Font fallback used for mathematical symbols",
+    "Long evidence identities use monospaced text with line wrapping"
+  ]
+}

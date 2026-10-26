@@ -1,0 +1,73 @@
+{
+  "schema": "GENESIS_PUBLICATION_RELEASE_001",
+  "source_commit": "4c891973a1c104779116c4717704adb15eabb1ed",
+  "evidence_commit": "c7ba659be18d0b5cbbc3d81346262f8de053fcde",
+  "scope": "Promoted-paper publication rendering and exact cited evidence copies; no scientific revision, diagnostic rerun or additional promotion",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 24,
+      "sha256": "035B4A61123A37F9B8930488199EE06037508FBBF261C062EBB07CE6456AC22E"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2542,
+      "sha256": "9CE2B15A8F405BDDB134BF114FB716F633D954C58A5D1BCA424BEF4927880D15"
+    },
+    {
+      "path": "GENESIS_ON_THE_GPU_v0.5_publication.md",
+      "bytes": 24403,
+      "sha256": "94C118C8C373A585110931B164EA5E75AFF5AA70A702715A2DFDB447D07A254C"
+    },
+    {
+      "path": "PUBLICATION_CHANGES.json",
+      "bytes": 3367,
+      "sha256": "0522858595E08F9A071A21068BBD68B691959BB117084BE919DF31425BF49CF0"
+    },
+    {
+      "path": "PUBLIC_EVIDENCE_MANIFEST.json",
+      "bytes": 1669,
+      "sha256": "4D696E3B7AC85A018648BCB8C2ED55F13FFC740FE76AC8366574D5EBC5FB2B6C"
+    },
+    {
+      "path": "PUBLICATION_REVIEW.json",
+      "bytes": 1614,
+      "sha256": "0F5CC75B043FD0ED001E892BF25B4476DFA6E22D17DE716D1AAED6509A59FD77"
+    },
+    {
+      "path": "BUILD_RECORD.json",
+      "bytes": 4476,
+      "sha256": "23552E0EBA61DB21938E0546237FC25565A8126DB5301BFD75DFF2362561668F"
+    },
+    {
+      "path": "build_publication.py",
+      "bytes": 13860,
+      "sha256": "3DF1AD15D6CED8BFCB37CC07EE29DEAF73B58B3AD326E1A76E77124A6E21BA88"
+    },
+    {
+      "path": "output/pdf/Genesis_on_the_GPU_v0.5.pdf",
+      "bytes": 207879,
+      "sha256": "E4E3B0121D7C3F113362A22FB0BEE26EE317E69DBEC4274A0DB67AB8607F39F3"
+    },
+    {
+      "path": "evidence/RUN_RECORD_022.json",
+      "bytes": 59703,
+      "sha256": "BE07194B30BE2788E2AC90FC06A97C8720209C65DF39B7C2EC1E287BEF5C5942"
+    },
+    {
+      "path": "evidence/SEAL_022.json",
+      "bytes": 12478,
+      "sha256": "EF1D5AA50EAE720DF0BAA8E6702EFB3AEB43C7EAA52455DE5CD24535DBB6D587"
+    },
+    {
+      "path": "evidence/RUN_RECORD_PARENT_PAIR_023.json",
+      "bytes": 40903,
+      "sha256": "04E81447AF274D88F04F0EDCD1C088BD200CCF40F8EC82D8002FDC1873B63A87"
+    },
+    {
+      "path": "evidence/SEAL_023.json",
+      "bytes": 5666,
+      "sha256": "64F81B3B770AC085C46B30649E0A660FFFD7D6288F9BB9B9D6FA7E1C01AA3F52"
+    }
+  ]
+}
