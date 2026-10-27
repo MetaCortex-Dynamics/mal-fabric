@@ -1,0 +1,64 @@
+{
+  "schema": "SUBSTACK_PUBLICATION_RECEIPT_001",
+  "recorded_at_utc": "2026-10-27T00:04:12Z",
+  "status": "PUBLISHED",
+  "authority": {
+    "user_report": "published",
+    "agent_action": "Verify live publication and bind its URL; no publication or distribution action by the agent in this pass"
+  },
+  "record": {
+    "post_id": "222238067",
+    "url": "https://metacortexdynamics.substack.com/p/the-world-took-its-next-step",
+    "title": "The World Took Its Next Step",
+    "subtitle": "One region dissolves. Adjacent pairs persist. The GPU proposes again from the state it became.",
+    "published_at_utc": "2026-10-26T20:18:55.494Z",
+    "publication_time_source": "Live post header time element datetime attribute; dashboard also displays Published at 4:18 PM",
+    "publication": "MetaCortex Dynamics"
+  },
+  "custody": {
+    "prior_record": "DRAFT_BINDING.json",
+    "prior_record_sha256": "92E53E9D4C4F7750516B5BBFECB2F70AFDA9F4EA1246761D2A2F08EDF57AFC42",
+    "manuscript": "THE_WORLD_TOOK_ITS_NEXT_STEP_DRAFT.md",
+    "manuscript_sha256": "04A6673F5ECBB7F5D0A9AFE076D59B8D0F9EFAA5191A75FF34854D4C631E6897",
+    "paper_doi": "10.5281/zenodo.23673872",
+    "paper_publication_markdown_sha256": "94C118C8C373A585110931B164EA5E75AFF5AA70A702715A2DFDB447D07A254C"
+  },
+  "verification": {
+    "publication_observation": "Publisher dashboard marks the post Published; canonical post URL renders the title and full article",
+    "body_readback": "SAME",
+    "body_comparison_scope": "Rendered article body against the saved draft body after Markdown formatting removal and whitespace normalization; not a byte identity claim for Substack HTML",
+    "link_count": 4,
+    "links": [
+      "https://doi.org/10.5281/zenodo.23673872",
+      "https://metacortexdynamics.substack.com/p/genesis-on-the-gpu",
+      "https://doi.org/10.5281/zenodo.23673872",
+      "https://github.com/MetaCortex-Dynamics/mal-fabric/tree/1f1d500fa776f8241d07bc9e64fcb7e5c5b9fc40/flag_world_001_first_tick"
+    ],
+    "published_tags": [
+      "Geometric Computing",
+      "Mathematics as Language",
+      "Computational Geometry",
+      "GPU Computing",
+      "Reproducible Research"
+    ],
+    "tags_source": "Published post dashboard tag popup; inspected without edits",
+    "published_browser_title": "Genesis on the GPU: A World That Proposes Its Next Step",
+    "screenshot": "C:/Users/devon/Documents/Codex/substack-published-222238067.jpg"
+  },
+  "distribution": {
+    "audience": "NOT_CHECKED_IN_THIS_PASS",
+    "email_dispatch": "NOT_CHECKED_IN_THIS_PASS",
+    "scope": "The authenticated live-page read establishes publication, not anonymous access or email dispatch"
+  },
+  "preservation": {
+    "prior_draft_binding": "UNCHANGED; retained as the historical draft observation",
+    "published_article": "NOT_EDITED",
+    "scientific_and_frozen_bytes": "NOT_EDITED",
+    "new_experiments": "NOT_RUN"
+  },
+  "repository": {
+    "home": "MetaCortex-Dynamics/mal-fabric",
+    "commit": "NOT_RUN",
+    "push": "NOT_RUN"
+  }
+}

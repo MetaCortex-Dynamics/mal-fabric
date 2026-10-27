@@ -1,0 +1,42 @@
+{
+  "kind": "SUBSTACK_LAUNCH_DRAFT_BINDING_001",
+  "recorded_at_utc": "2026-10-26T19:53:31Z",
+  "status": "DRAFT_NOT_PUBLISHED",
+  "title": "The World Took Its Next Step",
+  "subtitle": "One region dissolves. Adjacent pairs persist. The GPU proposes again from the state it became.",
+  "draft_id": "222238067",
+  "editor_url": "https://metacortexdynamics.substack.com/publish/post/222238067",
+  "source": {
+    "publication": "flag_world_001_first_tick/genesis_paper_publication_v0_5_001/GENESIS_ON_THE_GPU_v0.5_publication.md",
+    "sha256": "94C118C8C373A585110931B164EA5E75AFF5AA70A702715A2DFDB447D07A254C",
+    "doi": "10.5281/zenodo.23673872",
+    "repository_main": "1f1d500fa776f8241d07bc9e64fcb7e5c5b9fc40",
+    "earlier_post": "https://metacortexdynamics.substack.com/p/genesis-on-the-gpu",
+    "earlier_post_disposition": "UNTOUCHED"
+  },
+  "local_artifacts": [
+    {
+      "path": "SKELETON.txt",
+      "sha256": "922168191A22DA2A4EB7548D4A84F21FCA70F9BF779A655A7F6493CDE13ACB73"
+    },
+    {
+      "path": "THE_WORLD_TOOK_ITS_NEXT_STEP_DRAFT.md",
+      "sha256": "04A6673F5ECBB7F5D0A9AFE076D59B8D0F9EFAA5191A75FF34854D4C631E6897"
+    }
+  ],
+  "verification": {
+    "source_claim_review": "Independent review against the published manuscript; single-site control wording narrowed to one strict exit, not an executed transition.",
+    "editor_readback": "SAME against the Markdown body after formatting and whitespace normalization",
+    "heading_count": 4,
+    "link_count": 4,
+    "save_indicator": "Saved",
+    "screenshot": "C:/Users/devon/Documents/Codex/substack-launch-draft-222238067.jpg"
+  },
+  "observed_release_defaults_unchanged": {
+    "audience": "Paid subscribers only",
+    "delivery": "Send via email and the Substack app checked",
+    "scheduling": "Unchecked",
+    "disposition": "Publish dialog inspected, then cancelled; no release action taken"
+  },
+  "actions_not_run": ["PUBLISH", "EMAIL", "SCHEDULE", "GIT_COMMIT", "GIT_PUSH", "CORPUS_PROMOTION"]
+}
