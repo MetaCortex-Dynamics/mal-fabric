@@ -1,0 +1,141 @@
+{
+  "cells": [
+    {
+      "cell_id": "00EFC929AACCF6AE204FB6D48D451A599D93C4B44720D331BC92F75136DB7797",
+      "operator": "SAME_NOT_SAME",
+      "payload_slot_type": "identity/essence",
+      "triad_capability": [
+        "□G",
+        "□S"
+      ],
+      "witness": "WHAT"
+    },
+    {
+      "cell_id": "018EB2245D27CF3D1CC2077BDBEC2E322C735BC0F411162C152C00E960FA85B1",
+      "operator": "SAME_NOT_SAME",
+      "payload_slot_type": "identity/essence",
+      "triad_capability": [
+        "□G",
+        "□S"
+      ],
+      "witness": "WHAT"
+    },
+    {
+      "cell_id": "01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A",
+      "operator": "SAME_NOT_SAME",
+      "payload_slot_type": "identity/essence",
+      "triad_capability": [
+        "□G",
+        "□S"
+      ],
+      "witness": "WHAT"
+    },
+    {
+      "cell_id": "021159829F3F71EB2768B75BAF55D2F068CC9CB74A4133E78E50043C535B33F8",
+      "operator": "SAME_NOT_SAME",
+      "payload_slot_type": "identity/essence",
+      "triad_capability": [
+        "□G",
+        "□S"
+      ],
+      "witness": "WHAT"
+    }
+  ],
+  "fabric_id": "FLAG_WORLD_FIRST_TICK_020",
+  "motifs": [
+    {
+      "contained_ids": [
+        "00EFC929AACCF6AE204FB6D48D451A599D93C4B44720D331BC92F75136DB7797"
+      ],
+      "motif_id": "overlap:00EFC929AACCF6AE204FB6D48D451A599D93C4B44720D331BC92F75136DB7797"
+    },
+    {
+      "contained_ids": [
+        "018EB2245D27CF3D1CC2077BDBEC2E322C735BC0F411162C152C00E960FA85B1"
+      ],
+      "motif_id": "overlap:018EB2245D27CF3D1CC2077BDBEC2E322C735BC0F411162C152C00E960FA85B1"
+    },
+    {
+      "contained_ids": [
+        "01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A"
+      ],
+      "motif_id": "overlap:01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A"
+    },
+    {
+      "contained_ids": [
+        "021159829F3F71EB2768B75BAF55D2F068CC9CB74A4133E78E50043C535B33F8"
+      ],
+      "motif_id": "overlap:021159829F3F71EB2768B75BAF55D2F068CC9CB74A4133E78E50043C535B33F8"
+    }
+  ],
+  "placements": [
+    {
+      "cell_id": "00EFC929AACCF6AE204FB6D48D451A599D93C4B44720D331BC92F75136DB7797",
+      "location": {
+        "containment_path": [
+          "overlap:018EB2245D27CF3D1CC2077BDBEC2E322C735BC0F411162C152C00E960FA85B1",
+          "FIRST_TICK",
+          "FLAG_WORLD_FIRST_TICK_020"
+        ],
+        "triad_position": {
+          "dimension": "□S",
+          "kind": "INTERIOR"
+        }
+      }
+    },
+    {
+      "cell_id": "018EB2245D27CF3D1CC2077BDBEC2E322C735BC0F411162C152C00E960FA85B1",
+      "location": {
+        "containment_path": [
+          "overlap:018EB2245D27CF3D1CC2077BDBEC2E322C735BC0F411162C152C00E960FA85B1",
+          "FIRST_TICK",
+          "FLAG_WORLD_FIRST_TICK_020"
+        ],
+        "triad_position": {
+          "dimension": "□S",
+          "kind": "INTERIOR"
+        }
+      }
+    },
+    {
+      "cell_id": "01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A",
+      "location": {
+        "containment_path": [
+          "overlap:01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A",
+          "FIRST_TICK",
+          "FLAG_WORLD_FIRST_TICK_020"
+        ],
+        "triad_position": {
+          "dimension": "□S",
+          "kind": "INTERIOR"
+        }
+      }
+    },
+    {
+      "cell_id": "021159829F3F71EB2768B75BAF55D2F068CC9CB74A4133E78E50043C535B33F8",
+      "location": {
+        "containment_path": [
+          "overlap:021159829F3F71EB2768B75BAF55D2F068CC9CB74A4133E78E50043C535B33F8",
+          "FIRST_TICK",
+          "FLAG_WORLD_FIRST_TICK_020"
+        ],
+        "triad_position": {
+          "dimension": "□S",
+          "kind": "INTERIOR"
+        }
+      }
+    }
+  ],
+  "routes": [],
+  "triad_blocks": [
+    {
+      "block_id": "FIRST_TICK",
+      "contained_ids": [
+        "overlap:00EFC929AACCF6AE204FB6D48D451A599D93C4B44720D331BC92F75136DB7797",
+        "overlap:018EB2245D27CF3D1CC2077BDBEC2E322C735BC0F411162C152C00E960FA85B1",
+        "overlap:01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A",
+        "overlap:021159829F3F71EB2768B75BAF55D2F068CC9CB74A4133E78E50043C535B33F8"
+      ]
+    }
+  ]
+}

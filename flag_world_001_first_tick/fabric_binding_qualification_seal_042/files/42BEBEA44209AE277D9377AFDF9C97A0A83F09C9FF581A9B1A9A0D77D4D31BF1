@@ -1,0 +1,18 @@
+# FabricSpec binding 042
+
+W38_SITE_READING_JOIN: IF_THEN. Eight canonical DRC conditions: IF_THEN.
+Run record SHA256: `CEF156E945D0A966358E3C63B7338AE133A88344BCED2247A01E7101C2BE3F1A`.
+
+The exact 720-cell comparator program was rebound from its native proof. Its overlap occurrences equal the 038 source incidence. The new native result projection requires returned comparator readings for every parent join; retained inputs alone cannot emit a parent.
+
+The baseline reproduces all 438 bound parent records. The all-NO, split-site, result-withheld and result-displaced controls preserve the source/result dependency. Every case replayed byte-SAME.
+
+DRC covers the full canonical program; its empty route domain is explicit. A routed positive and eight malformed controls exercise the eight conditions.
+
+Scope: W38_SITE_READING_JOIN and its canonical execution/readout correspondence. This record does not assert DRC for unrelated 038 operations.
+
+The failed host preparation, blocked runtime observer attempt and unused contingency remain recorded. Neither counts as a GPU qualification. The two committed world files and repository HEAD remain SAME. No world transition, commit, push or promotion occurred.
+
+Canonical program SHA256: `07320BB711DE9A195E0FE6AB663F980F685B3CF161670EDA103300A2C8753C56`.
+- drc_042.mal: `2283451FEA712F0CC0DFAB0ACD4D021221F5F352381340B18F9FD9DDEDEF5CE2`
+- runtime_join_042.mal: `5FE9CF62CE6EE2DF631A37F643B21B85DCFE609AE2672D349A7E6F09860628D1`

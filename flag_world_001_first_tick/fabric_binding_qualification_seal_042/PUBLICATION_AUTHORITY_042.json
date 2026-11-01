@@ -1,0 +1,53 @@
+{
+  "schema": "FabricBindingPublicationAuthority042",
+  "holder": "Devon",
+  "request": "Commit and push the FabricSpec binding and qualification packet 042. No world transition.",
+  "repository": "https://github.com/MetaCortex-Dynamics/mal-fabric.git",
+  "branch": "review/fabric-binding-042",
+  "base_commit": "ce3e73b60e49dd217621bac274c77e17a88df59e",
+  "run_record": {
+    "name": "RUN_RECORD_FABRIC_BINDING_042.json",
+    "bytes": 89184,
+    "sha256": "CEF156E945D0A966358E3C63B7338AE133A88344BCED2247A01E7101C2BE3F1A"
+  },
+  "scope": "Repository publication of W38_SITE_READING_JOIN canonical FabricSpec binding, its eight-condition DRC and runtime qualification, with exact source and evidence custody.",
+  "O_DRC_FABRIC_REALIZATION_038": {
+    "W38_SITE_READING_JOIN": "QUALIFIED_BY_042",
+    "effect_comparison": "OPEN",
+    "write_assembly": "OPEN",
+    "overall": "OPEN"
+  },
+  "boundaries": {
+    "world_transition": "NO",
+    "GPU_execution": "NO",
+    "K_member_taken": "NO",
+    "new_promotion": "NO",
+    "merge_to_main": "NO",
+    "unrelated_pending_work": "EXCLUDED",
+    "failed_attempts": "PRESERVED_UNCOUNTED"
+  },
+  "packaging_attempt_001": {
+    "disposition": "PRESERVED_UNCLOSED_NOT_COUNTED",
+    "counted": 0,
+    "merged": 0,
+    "source_root": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\fabric_binding_qualification_seal_042_attempt_001",
+    "terminal_sha256": "2EC1475A510FE89BA1B9C76FAAA9E0A5B764802A2726E8888F93BC36A36A9692",
+    "terminal": {
+      "schema": "FabricBindingSealBuildFailed042",
+      "at": "2026-11-01T06:39:55.127Z",
+      "condition": "Error: NOT_SAME:METADATA_CHANGED:{\"actual\":{\"sha256\":\"61A14DA0F5A7BC4F7043D0B5E89AA5E624C6CF5D3469D840D90C59ACE3DF0A62\",\"bytes\":18389},\"expected\":{\"path\":\"seal.mjs\",\"sha256\":\"CEE11F4E87E480E113403D4E1D377A8C9A75738A7878D20A4F462C2212435958\",\"bytes\":18370}}\n    at need (file:///D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/fabric_binding_qualification_seal_042/seal.mjs:15:32)\n    at same (file:///D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/fabric_binding_qualification_seal_042/seal.mjs:26:26)\n    at build (file:///D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/fabric_binding_qualification_seal_042/seal.mjs:47:245)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async file:///D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/fabric_binding_qualification_seal_042/seal.mjs:63:22",
+      "disposition": "OPEN_UNRECONCILED_NOT_COUNTED_NO_AUTOMATIC_RETRY",
+      "scope": {
+        "qualified_subject": "W38_SITE_READING_JOIN_CANONICAL_FABRIC_RUNTIME_CORRESPONDENCE_ONLY",
+        "effect_comparison": "OPEN",
+        "write_assembly": "OPEN",
+        "whole_038_closure": "NOT_CLAIMED",
+        "law_promotion": "NONE",
+        "world_transition": "NONE",
+        "gpu_rerun": "NONE",
+        "failed_or_uncounted_artifacts": "GENEALOGY_ONLY_NOT_COUNTED"
+      }
+    },
+    "fresh_helper_sha256": "61A14DA0F5A7BC4F7043D0B5E89AA5E624C6CF5D3469D840D90C59ACE3DF0A62"
+  }
+}

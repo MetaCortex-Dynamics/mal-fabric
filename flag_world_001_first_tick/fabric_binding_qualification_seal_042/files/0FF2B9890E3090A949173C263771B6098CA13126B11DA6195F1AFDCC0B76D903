@@ -1,0 +1,36 @@
+{
+  "schema": "FabricRuntimeLaneReleaseIntent042",
+  "at": "2026-11-01T06:13:56.142Z",
+  "decision": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\reconciliation_runtime_001\\RELEASE_DECISION.json",
+    "bytes": 1395,
+    "sha256": "6D7258BD143DAF12DC925A26083E0BA035D33EA768ADA487610C5E89A4A28CE5"
+  },
+  "reconciliation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\reconciliation_runtime_001\\RECONCILIATION.json",
+    "bytes": 37416,
+    "sha256": "ED1B01D60CFC35A9D90AA58BFD57F998810BA040A30D1459995CA38353110243"
+  },
+  "process_census": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\reconciliation_runtime_001\\RELEASE_CENSUS.json",
+    "bytes": 266622,
+    "sha256": "B0B92A47212B27E3DB7E0FFABAECBAD29D7DC3489472B99B5EA0C091D668176E"
+  },
+  "owner": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\queuegate_027\\shared_lane\\ACTIVE\\OWNER.json",
+    "bytes": 582,
+    "sha256": "C42A6B3481384811585D3FA8B020D953C2C453BBE93CC5CD5F61E8FC1EC7C397"
+  },
+  "source_path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\queuegate_027\\shared_lane\\ACTIVE",
+  "destination_path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\queuegate_027\\shared_lane\\FAILED_FABRIC_RUNTIME_042_C42A6B3481384811",
+  "operation": "RECOVERABLE_RENAME_EXACT_LOCK_ONLY",
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN",
+  "counted": 0,
+  "merged": 0,
+  "automatic_retry": "NO",
+  "recovery_resume": "NO",
+  "world_transition": "NO",
+  "repository_commit": "NO",
+  "push": "NO"
+}

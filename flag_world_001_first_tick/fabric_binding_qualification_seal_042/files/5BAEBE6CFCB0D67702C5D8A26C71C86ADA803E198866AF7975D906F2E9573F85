@@ -1,0 +1,33 @@
+// Closed native-cache views. No cache conclusion is manufactured here.
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import {record,sha} from '../../../local_restriction_scope/census.mjs';
+export const here=path.dirname(fileURLToPath(import.meta.url)),sweep=path.resolve(here,'../../..'),pkg=path.resolve(sweep,'../..');
+export const need=(x,m)=>{if(!x)throw Error(m);},read=p=>JSON.parse(fs.readFileSync(p)),json=x=>JSON.stringify(x,null,2)+'\n',equal=(a,b,m)=>need(JSON.stringify(a)===JSON.stringify(b),m),key=(...a)=>JSON.stringify(a);
+export const helper=path.join(pkg,'evidence/first-tick-conform-v1-v2-001/files/realization020/readback.mjs');
+need(record(helper).sha256==='4612D0189AD00B89522C8CD9F472E39EB1574991F5FB4241FF3CD85F415E32D3','bound readback helper');
+const{openReadback}=await import(pathToFileURL(helper));
+export function verify(r){need(r&&typeof r.path==='string'&&typeof r.sha256==='string','identity record');const a=record(r.path);need(a.sha256===r.sha256&&(r.bytes===undefined||a.bytes===r.bytes),'NOT_SAME '+r.path);return a;}
+export function verifyRecords(x,out=new Map()){if(!x||typeof x!=='object')return out;if(typeof x.path==='string'&&typeof x.sha256==='string'){const a=verify(x),old=out.get(a.path);need(!old||old.sha256===a.sha256,'contradictory identity '+a.path);out.set(a.path,a);}for(const v of Object.values(x))if(v&&typeof v==='object')verifyRecords(v,out);return out;}
+export function nativeProof(q){
+ const seen=new Set(),patterns=q.map.patterns;
+ function match(p,id,env,allow){const x=patterns[p];need(x,'native pattern');if(x.sym<0){const v=-x.sym-1;if(env.has(v))return env.get(v)===id;if(!allow)return false;env.set(v,id);return true;}const n=q.node(id);return n.s===q.map.symbols[x.sym]&&n.c.length===x.children.length&&x.children.every((c,i)=>match(c,n.c[i],env,allow));}
+ const seeds=new Set();for(const f of q.facts)if(f.rule===-1)seeds.add(f.term);need(seeds.size===q.map.seeds.length,'native seed scope');for(const p of q.map.seeds)need([...seeds].some(t=>match(p,t,new Map(),false)),'native source seed identity');
+ function proof(id){need(Number.isInteger(id)&&id>=0&&id<q.facts.length,'native fact index');if(seen.has(id))return;const f=q.facts[id];need(f.rule>=-1&&f.rule<q.map.rules.length,'native rule index');if(f.rule===-1){need(seeds.has(f.term)&&f.rank===0&&f.support.length===0,'native seed closure');seen.add(id);return;}const r=q.map.rules[f.rule],env=new Map();need(f.support.length===r.ants.length,'native premise arity');for(let i=0;i<f.support.length;i++){const j=f.support[i];need(j<id&&q.facts[j].rank<f.rank,'native prior premise');proof(j);need(match(r.ants[i],q.facts[j].term,env,true),'native antecedent substitution');}need(match(r.result,f.term,env,false),'native consequent substitution');seen.add(id);}
+ function contact(id,tag,args){const f=q.facts[id];need(f&&f.rule>=0,'native conclusion is derived');const a=q.node(f.term).c.map(q.term);equal(a,[tag,...args],'native conclusion identity');proof(id);}
+ return{contact,proof,seen};
+}
+export function openNative(identity){verify(identity.readback);verify(identity.source_map);verify(identity.source);verify(identity.image);const q=openReadback(path.dirname(identity.readback.path));need(q.error===0,'native run error/capacity');need(sha(q.raw)===identity.readback.sha256&&q.raw.length===identity.readback.bytes,'inspected native bytes');need(q.map.source_sha256===identity.source.sha256&&q.map.image_sha256===identity.image.sha256,'native source/image subject');return q;}
+export function fieldSiteCache(cachePath){
+ const cacheId=record(cachePath),c=read(cachePath),version=c.schema==='NativeFieldSiteCache013'?'013':c.schema==='NativeFieldSiteCache014'?'014':null;need(version&&c.world_effect==='NONE','native field/site cache subject');verify(c.observation);const o=read(c.observation.path);need(o.schema==='NativeFieldSiteGuarded'+version&&o.verdict==='IF_THEN'&&o.world_effect==='NONE','closed native field/site observation');for(const k of['totals','readings','walls'])equal(c[k],o[k],'cache exact observation '+k);equal(c.fields,o.request.fields,'cache field domain');equal(c.sites,o.request.sites,'cache site domain');const ids=verifyRecords(c);verifyRecords(o,ids);
+ const q=openNative(c),p=nativeProof(q),totals=new Map(),readings=new Map(),walls=new Map(c.fields.map(t=>[t,new Set()]));need(new Set(c.fields).size===c.fields.length&&new Set(c.sites).size===c.sites.length,'cache declared domains unique');
+ for(const x of c.totals){need(c.fields.includes(x.field)&&!totals.has(x.field),'unique field total');p.contact(x.fact,'SITE_CACHE_FIELD_TOTAL',[x.field]);p.contact(x.native_fact,'SW_FIELD_TOTAL',[x.field]);totals.set(x.field,x);}
+ need(totals.size===c.fields.length,'complete cached field totals');
+ for(const x of c.readings){const k=key(x.field,x.site);need(c.fields.includes(x.field)&&c.sites.includes(x.site)&&!readings.has(k)&&['READING_NO','READING_THIS'].includes(x.reading),'unique cached site reading');p.contact(x.fact,'SITE_CACHE_READING',[x.field,x.site,x.reading]);p.contact(x.native_fact,version==='014'?'SO_SITE_READING':'CS_SITE_READING',[x.field,x.site,x.reading]);readings.set(k,x);}
+ need(readings.size===c.fields.length*c.sites.length,'complete cached field/site product');
+ for(const x of c.walls){need(walls.has(x.field)&&!walls.get(x.field).has(x.overlap),'unique cached old wall');p.contact(x.fact,'SW_OLD_WALL',[x.field,x.overlap]);walls.get(x.field).add(x.overlap);}
+ const actualWalls=q.predicate('SW_OLD_WALL').map(f=>{const a=q.node(f.term).c.slice(1).map(q.term);return key(...a);}).sort();equal(c.walls.map(x=>key(x.field,x.overlap)).sort(),actualWalls,'complete native old-wall relation');
+ for(const r of ids.values())verify(r);verify(cacheId);need(sha(q.raw)===c.readback.sha256,'closing native raw buffer');return{cache:cacheId,value:c,observation:c.observation,totals,readings,walls,identities:[cacheId,...ids.values()],proof_facts:p.seen.size};
+}
+export function catalogue(bindingPath){const b=read(bindingPath);verify(b.catalogue);verify(b.implementation);for(const r of b.inputs??[])verify(r);const c=read(b.catalogue.path);need(c.schema==='StagedFieldMaskCatalogueV13','candidate catalogue schema');need(c.fields.length===c.counts.fields&&c.supports.length===c.counts.supports,'candidate catalogue counts');return{c,b,binding:record(bindingPath)};}

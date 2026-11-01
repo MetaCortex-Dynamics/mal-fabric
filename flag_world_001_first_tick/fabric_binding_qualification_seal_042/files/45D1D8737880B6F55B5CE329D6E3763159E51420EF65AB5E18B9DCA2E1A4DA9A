@@ -1,0 +1,10 @@
+// Versioned host observation only: retained bytes/term access and value decoding,
+// explicit-stack proof validation and term spelling. No native semantics change.
+import {openNative as openRetainedNative,verify} from './native_reader_038.mjs';
+import {nativeProof} from './staging_proof/native_proof_iterative_038.mjs';
+import {renderNativeTermIterative} from './staging_proof/native_term_iterative_038.mjs';
+export {verify,nativeProof};
+export function openNative(refs){
+ const q=openRetainedNative(refs);
+ return{...q,term:id=>renderNativeTermIterative(q,id)};
+}

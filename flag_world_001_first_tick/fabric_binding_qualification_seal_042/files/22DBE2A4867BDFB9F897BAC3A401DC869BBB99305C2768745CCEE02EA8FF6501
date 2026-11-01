@@ -1,0 +1,42 @@
+{
+  "schema": "SiteJoinLaneRelease041",
+  "verdict": "IF_THEN",
+  "at": "2026-11-01T04:59:10.751Z",
+  "decision": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\reconciliation_001\\RELEASE_DECISION.json",
+    "bytes": 1426,
+    "sha256": "34C04960D483207453477D93EDF21CEBAB9E1F0041795C87AAAC259BB0D833B0"
+  },
+  "reconciliation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\reconciliation_001\\RECONCILIATION.json",
+    "bytes": 26518,
+    "sha256": "96011A1C31B17D20690D58AAC9CE517358ACE94C8CC1CDDB1F37C5081C30FE6A"
+  },
+  "intent": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\reconciliation_001\\LANE_RELEASE_INTENT.json",
+    "bytes": 2145,
+    "sha256": "325071E7555F46A9075F5A33911B6B2B7D8CD616AF5D2E04800F2ABA9487243F"
+  },
+  "archived_owner": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\queuegate_027\\shared_lane\\FAILED_SITE_JOIN_041_B86805896280E052\\OWNER.json",
+    "bytes": 580,
+    "sha256": "B86805896280E05229534C8EC4B5923891CC79BD7F6D0C1CF557A7E76A4BBF50"
+  },
+  "lane": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\queuegate_027\\shared_lane",
+  "status": "EMPTY",
+  "original_terminal": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_001\\queuegate_attempt\\BLOCKED.json",
+    "bytes": 359,
+    "sha256": "35590A9B7EA3FB784BC06237A88FF890902C625CEE0401FB74744E118A5D9529"
+  },
+  "original_terminal_status": "BLOCKED_UNCHANGED",
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN",
+  "counted": 0,
+  "merged": 0,
+  "automatic_retry": "NO",
+  "recovery_resume": "NO",
+  "world_transition": "NO",
+  "repository_commit": "NO",
+  "push": "NO"
+}

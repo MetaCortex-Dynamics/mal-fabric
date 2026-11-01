@@ -1,0 +1,115 @@
+// Observation/proof/custody only. No native evaluator or join is supplied here.
+import fs from 'node:fs';
+import {openNative,nativeProof} from '../native_reader_v2_038.mjs';
+import {need,sha,identity,read,verify,exact,sorted} from './custody_042.mjs';
+export async function observe(config,{readback}){
+ verify(config.expected);const e=read(config.expected.path);
+ for(const r of Object.values(e.inputs))verify(r);
+ const program=read(e.inputs.program.path),occurrence=read(e.inputs.occurrence.path),contacts=read(e.inputs.contacts.path),values=new Map(e.values);
+ const q=openNative({...config,readback:identity(readback)}),proof=nativeProof(q);
+ need(config.source.sha256===e.inputs.compiled_source.sha256&&config.source.bytes===e.inputs.compiled_source.bytes,'EXACT_PREPARER_BOUND_SOURCE');
+ const sourceText=fs.readFileSync(config.source.path,'utf8'),adapterText=fs.readFileSync(e.inputs.adapter.path,'utf8');
+ need(sourceText.endsWith(adapterText),'EXACT_NATIVE_RUNTIME_SOURCE_SUFFIX');
+ const adapterStart=sourceText.length-adapterText.length;
+ const expectedRuleNames=[...adapterText.matchAll(/^law ([A-Z][A-Z0-9_]+)\s*:=/gm)].map(x=>x[1]);
+ need(q.map.rules.length===expectedRuleNames.length&&JSON.stringify(q.map.rules.map(r=>r.name))===JSON.stringify(expectedRuleNames),'EXACT_FROZEN_RUNTIME_RULE_LIST');
+ for(const r of q.map.rules)need(Number.isInteger(r.start)&&Number.isInteger(r.end)&&r.start>=adapterStart&&r.end>r.start&&r.end<=sourceText.length,'RULE_OUTSIDE_FROZEN_ADAPTER_SUFFIX');
+ let prefixSeeds=0;
+ for(const id of q.map.seeds){const p=q.map.patterns[id];need(p&&Number.isInteger(p.offset),'SEED_SOURCE_SPAN');if(p.offset<adapterStart){prefixSeeds++;need(q.map.symbols[p.sym]==='GOES_WITH'&&p.children.length===2,'PREFIX_SEED_NOT_PACK');const tag=q.map.patterns[p.children[0]],items=q.map.patterns[p.children[1]];need(q.map.symbols[tag.sym]==='R42_PACK'&&tag.children.length===0&&q.map.symbols[items.sym]==='CONS'&&items.children.length===2,'PREFIX_SEED_NOT_PACK');}}
+ need(prefixSeeds===e.source_prefix_seed_packs,'EXACT_PREFIX_PACK_COUNT');
+ const args=f=>q.node(f.term).c.slice(1);
+ const rows=tag=>q.predicate(tag).map(f=>({f,a:args(f)}));
+ const term=(tag,as)=>`GOES_WITH(${tag},${as.join(',')})`;
+ const named=(id,name,count)=>{const n=q.node(id);need(n.s===name&&(count===undefined||n.c.length===count),'NATIVE_SHAPE_'+name);return n.c;};
+ const one=(items,name)=>{need(items.length===1,'ONE_'+name);return items[0];};
+ const eqJSON=(a,b,name)=>need(JSON.stringify(a)===JSON.stringify(b),name);
+ const cellIDs=program.cells.map(c=>c.cell_id),t=e.snapshot;
+ const encode=xs=>xs.map(x=>JSON.stringify(x));
+ const pb=read(e.inputs.program_binding.path);
+ exact(encode(rows('R42_CASE').map(x=>[q.term(x.a[0]),q.text(x.a[1]),q.term(x.a[2]),q.term(x.a[3])])),encode([[t,pb.baseline_worlds[0].sha256,e.mode,e.target_site]]),'EXACT_DIAGNOSTIC_CASE');
+ exact(encode(rows('R42_CASE_TEXT').map(x=>[q.term(x.a[0]),q.text(x.a[1])])),encode([[t,t]]),'EXACT_SNAPSHOT_LABEL');
+ exact(rows('R42_PROGRAM_ID').map(x=>q.text(x.a[0])),[e.program_sha256],'EXACT_IMMUTABLE_PROGRAM_REFERENCE');
+ // Complete imported input domain, not merely output agreement. Unknown,
+ // duplicated or unused field contacts cannot disappear behind the readout.
+ exact(encode(rows('R42_INPUT_READING').map(x=>x.a.map(q.term))),encode([...values].map(([f,r])=>[t,f,r])),'EXACT_INPUT_READING_DOMAIN');
+ exact(encode(rows('R42_CELL').map(x=>[q.text(x.a[0]),q.term(x.a[1]),q.term(x.a[2])])),encode(occurrence.occurrences.map(c=>[c.cell_id,c.left,c.right])),'EXACT_CELL_CONTACT_DOMAIN');
+ exact(encode(rows('R42_FLAG').map(x=>x.a.map(q.term))),encode(occurrence.flags.map(f=>[f.term,f.site])),'EXACT_FLAG_DOMAIN');
+ exact(encode(rows('R42_FLAG_JSON').map(x=>[q.term(x.a[0]),q.value(x.a[1])])),encode(occurrence.flags.map(f=>[f.term,JSON.parse(f.original)])),'EXACT_FLAG_JSON_DOMAIN');
+ exact(encode(rows('R42_COVER_LEAF').map(x=>x.a.map(q.term))),encode(contacts.leaf_inputs.map(x=>[x.site,x.node,x.flag])),'EXACT_COVER_LEAF_DOMAIN');
+ exact(encode(rows('R42_COVER_JOIN').map(x=>x.a.map(q.term))),encode(contacts.cover_contacts.map(x=>[x.site,x.parent_node,x.left_node,x.right_node])),'EXACT_COVER_JOIN_DOMAIN');
+ const expectedContacts=occurrence.occurrences.flatMap(c=>{const affected=c.left_site===e.target_site&&c.right_site===e.target_site;if(affected&&e.mode==='WITHHELD')return[];return[[t,c.cell_id,affected&&e.mode==='DISPLACED'?'R42_DISPLACED_RESULTS':t]];});
+ exact(encode(rows('R42_RESULT_CONTACT').map(x=>[q.term(x.a[0]),q.text(x.a[1]),q.term(x.a[2])])),encode(expectedContacts),'EXACT_RESULT_CONTACT_DOMAIN');
+ const declaredRows=rows('R42_ROW'),rowCounts={},oracleCandidates=[];
+ for(const x of declaredRows){const n=q.node(x.a[0]);need(Object.hasOwn(e.source_row_counts,n.s),'UNSUPPORTED_SOURCE_ROW_'+n.s);rowCounts[n.s]=(rowCounts[n.s]??0)+1;}
+ eqJSON(Object.entries(rowCounts).sort(),Object.entries(e.source_row_counts).sort(),'SOURCE_ROW_MULTIPLICITIES');
+ const oracleImported=one(rows('R42_HASH_BYTES'),'HASH_ORACLE_IMPORT');eqJSON(q.value(oracleImported.a[0]),read(e.inputs.oracle.path),'EXACT_ORACLE_TRANSPORT');
+ for(const x of rows('R42_HASH_CANDIDATE')){const subject=q.value(x.a[0]),digest=q.text(x.a[1]);need(sha(JSON.stringify(subject))===digest,'HASH_CANDIDATE_NOT_SAME');oracleCandidates.push(JSON.stringify([subject,digest]));}
+ need(sha(JSON.stringify(oracleCandidates.sort()))===e.hash_candidate_digest,'HASH_CANDIDATE_DOMAIN');
+ const mapLeaves=rows('R42_MAP_LEAF'),mapJoins=rows('R42_MAP_JOIN'),mapRoots=rows('R42_MAP_ROOT');
+ need(mapLeaves.length===720&&mapJoins.length===719&&mapRoots.length===1,'FIXED_MAP_INVENTORY');
+ exact(mapLeaves.map(x=>q.text(x.a[1])),cellIDs,'MAP_LEAF_CELL_DOMAIN');
+ const ml=new Map(mapLeaves.map(x=>[q.term(x.a[0]),x])),mj=new Map(mapJoins.map(x=>[q.term(x.a[0]),x]));
+ need(ml.size===720&&mj.size===719,'MAP_NODE_MULTIPLICITY');
+ const seenMap=new Set(),walk=[q.term(mapRoots[0].a[0])];
+ while(walk.length){const n=walk.pop();need(!seenMap.has(n),'MAP_ALIAS_OR_CYCLE');seenMap.add(n);need(ml.has(n)!==mj.has(n),'ONE_MAP_NODE_KIND');if(mj.has(n))walk.push(...mj.get(n).a.slice(1).map(q.term));}
+ need(seenMap.size===1439,'UNUSED_MAP_NODE');
+ const returns=rows('STEP_FABRIC_RETURN');need(returns.length===e.expected_return_count,'RETURN_COUNT');
+ const returned=one(returns,'RETURN');need(q.term(returned.a[0])===t,'RETURN_SNAPSHOT');
+ eqJSON(q.value(returned.a[1]),program,'RETURN_PROGRAM_NOT_SAME');
+ const importedProgram=one(rows('R42_PROGRAM_BYTES'),'PROGRAM_IMPORT');eqJSON(q.value(importedProgram.a[0]),program,'IMPORT_PROGRAM_NOT_SAME');
+ const admittedProgram=one(rows('R42_ADMITTED_PROGRAM'),'ADMITTED_PROGRAM');need(q.text(admittedProgram.a[0])===e.program_sha256,'DRC_PROGRAM_ID');proof.proof(admittedProgram.f.id);
+ const completed=rows('R42_COMPLETED');need(completed.length===720,'COMPLETE_720_PAYLOADS');
+ exact(encode(rows('R42_INITIAL_EMPTY').map(x=>[q.term(x.a[0]),q.text(x.a[1]),q.term(x.a[2])])),encode(cellIDs.map(c=>[t,c,'EMPTY'])),'EXPLICIT_NEW_DIAGNOSTIC_EMPTY_STATE');
+ const initialAux=one(rows('R42_INITIAL_AUX'),'INITIAL_AUX');need(q.term(initialAux.a[0])===t&&q.term(initialAux.a[1])==='AUX(NIL,NIL,NIL,NIL,NIL)','EXPLICIT_NEW_DIAGNOSTIC_AUX');
+ const completeByCell=new Map(completed.map(x=>[q.text(x.a[1]),x.a[2]]));
+ exact([...completeByCell.keys()],cellIDs,'COMPLETE_CELL_DOMAIN');
+ const frames=new Map(rows('R42_FRAME_JSON').map(x=>[q.text(x.a[1]),q.value(x.a[2])]));
+ const results=new Map(rows('R42_RESULT_JSON').map(x=>[q.text(x.a[1]),q.value(x.a[2])]));
+ const admission=new Map(rows('R42_ADMITTED').map(x=>{const a=named(x.a[2],'ADMITTED',2);return[q.text(x.a[1]),q.text(a[1])];}));
+ const expectedFrames=new Map(e.frames.map(x=>[x.cell_id,x])),expectedResults=new Map(e.results.map(x=>[x.cell_id,x]));
+ exact([...frames.keys()],cellIDs,'FULL_FRAME_DOMAIN');exact([...results.keys()],cellIDs,'FULL_RESULT_DOMAIN');
+ function inputValue(id){const[route,type,payload,receipt]=named(id,'INPUT_VALUE',4);need(q.node(type).s==='IDENTITY_ESSENCE','INPUT_TYPE');return{payload_type:'identity/essence',route_id:q.text(route),source_receipt:q.text(receipt),value:q.value(payload)};}
+ function frameValue(id){const[left,right]=named(id,'FRAME',2);const l=named(left,'LEFT',1),r=named(right,'RIGHT',1);const ls=q.list(l[0]),rs=q.list(r[0]);need(ls.length===1&&rs.length===1,'EXACTLY_ONE_COMPLETE_ROLES');return{LEFT:ls.map(inputValue),RIGHT:rs.map(inputValue)};}
+ for(const[c,payload]of completeByCell){const[frame,result,egress]=named(payload,'COMPLETED',3);need(q.node(egress).s==='NIL','EMPTY_EGRESS');const[op,wit,rf,verdict]=named(result,'RESULT',4);need(q.node(op).s==='SAME_NOT_SAME'&&q.node(wit).s==='WHAT'&&frame===rf,'EXACT_OPERATOR_RESULT_FRAME');eqJSON(frameValue(frame),expectedFrames.get(c).frame,'RETAINED_FRAME_'+c);eqJSON(frames.get(c),expectedFrames.get(c).frame,'FRAME_JSON_'+c);need(admission.get(c)===expectedFrames.get(c).admission_receipt,'ADMISSION_HASH_'+c);eqJSON(results.get(c),{input_frame:frames.get(c),operator:'SAME_NOT_SAME',reading:expectedResults.get(c).reading,witness:'WHAT'},'EVALUATOR_RESULT_'+c);need(q.node(verdict).s===expectedResults.get(c).reading,'RETAINED_VERDICT_'+c);}
+ // Canonical finite maps are represented by a balanced tree with unique keys.
+ // Read every leaf and compare it to the complete native inventory; no partial
+ // suffix or repeated key can pass the RETURN check.
+ function keyedMap(root){const out=new Map(),todo=[root];while(todo.length){const n=q.node(todo.pop());if(n.s==='KEYED_JOIN'){need(n.c.length===2,'KEYED_JOIN');todo.push(...n.c);}else{need(n.s==='KEYED_LEAF'&&n.c.length===2,'KEYED_LEAF');const k=q.text(n.c[0]);need(!out.has(k),'DUPLICATE_MAP_KEY');out.set(k,n.c[1]);}}return out;}
+ const prior=named(returned.a[2],'FABRIC_STATE',6),next=named(returned.a[3],'FABRIC_STATE',6);
+ for(const index of [1,2,3,4])need(q.node(prior[index]).s==='NIL'&&q.node(next[index]).s==='NIL','AUX_CUSTODY_'+index);
+ need(q.node(prior[5]).s==='NIL','NEW_DIAGNOSTIC_INITIAL_RECEIPTS');
+ const priorMap=keyedMap(named(prior[0],'PAYLOAD_MAP',1)[0]);
+ const nextMap=keyedMap(named(next[0],'PAYLOAD_MAP',1)[0]);
+ const receiptMap=keyedMap(named(next[5],'RECEIPT_SET',1)[0]);
+ exact([...priorMap.keys()],cellIDs,'PRIOR_COMPLETE_INVENTORY');exact([...nextMap.keys()],cellIDs,'NEXT_COMPLETE_INVENTORY');exact([...receiptMap.keys()],cellIDs,'RECEIPT_COMPLETE_INVENTORY');
+ for(const[c,payload]of nextMap){need(payload===completeByCell.get(c),'RETURN_PAYLOAD_NOT_SAME');const[fr,receipt]=named(priorMap.get(c),'ADMITTED',2);eqJSON(frameValue(fr),frames.get(c),'RETURN_PRIOR_FRAME');need(q.text(receipt)===admission.get(c),'RETURN_PRIOR_ADMISSION');}
+ const nativeReceipts=rows('R42_RUNTIME_RECEIPT').map(x=>q.value(x.a[3]));
+ exact(nativeReceipts.map(JSON.stringify),e.receipts.map(JSON.stringify),'RUNTIME_RECEIPT_DOMAIN');
+ for(const[c,id]of receiptMap){const rs=named(id,'RECEIPTS',2).map(q.value);need(rs.every(r=>r.subject_id===c),'RECEIPT_SUBJECT');exact(rs.map(JSON.stringify),e.receipts.filter(r=>r.subject_id===c).map(JSON.stringify),'RETURN_RECEIPTS');}
+ // Every matched oracle response is checked independently against its exact
+ // source-constructed JSON subject. Unrequested candidates are inert inputs.
+ const hashResponses=rows('R42_HASH_RESPONSE');for(const x of hashResponses){const subject=q.value(x.a[0]),digest=q.text(x.a[1]);need(sha(JSON.stringify(subject))===digest,'HASH_ORACLE_NOT_SAME');proof.proof(x.f.id);}
+ const requested=rows('R42_HASH_REQUEST');exact(requested.map(x=>q.term(x.a[0])),hashResponses.map(x=>q.term(x.a[0])),'ALL_HASH_REQUESTS_DISCHARGED');
+ const leaves=rows('R42_RETURNED_READING');need(leaves.length===480,'RETURNED_FLAG_COVERAGE');
+ exact(leaves.map(x=>term('R42_RETURNED_READING',x.a.map(q.term))),[...values].map(([f,r])=>term('R42_RETURNED_READING',[t,f,r])),'RETURNED_READINGS_NOT_SAME');
+ const paths=rows('R42_PATH'),expectedPaths=[];
+ for(const s of occurrence.sites){const target=e.mode!=='NORMAL'&&s.term===e.target_site?(e.mode==='DISPLACED'?'R42_DISPLACED_RESULTS':null):t;if(!target)continue;for(const a of s.members)for(const b of s.members)expectedPaths.push(term('R42_PATH',[target,s.term,a,b,values.get(a)===values.get(b)?'SAME':'NOT_SAME']));}
+ exact(paths.map(x=>q.term(x.f.term)),expectedPaths,'COMPLETE_RESULT_PATH_RELATION');
+ need(paths.filter(x=>q.term(x.a[0])===t).length===e.expected_path_count,'PATH_COUNT');
+ need(paths.filter(x=>q.term(x.a[0])==='R42_DISPLACED_RESULTS').length===e.expected_displaced_paths,'DISPLACED_PATH_COUNT');
+ const outputs=rows('W38_SITE_READING_TREE');exact(outputs.map(x=>q.term(x.f.term)),e.expected_join_terms,'SOURCE_PARENT_OUTPUT_DOMAIN');
+ need(outputs.every(x=>x.f.origin==='R42_SOURCE_PARENT'),'PARENT_OUTPUT_SOURCE_CONSTRUCTOR');
+ const joins=rows('R42_TREE').filter(x=>x.f.origin==='R42_TREE_JOIN');need(joins.length===outputs.length,'EVERY_PARENT_HAS_JOIN');
+ for(const j of joins){const witnesses=j.f.support.map(i=>q.facts[i]);need(witnesses.some(f=>q.node(q.node(f.term).c[0]).s==='R42_PATH'),'JOIN_WITHOUT_CANONICAL_EQUALITY_SUPPORT');proof.proof(j.f.id);}
+ for(const x of [...outputs,...paths,...leaves,...returns,...rows('R42_RETURNED_CELL'),...rows('R42_RUNTIME_RECEIPT')])proof.proof(x.f.id);
+ const seededOutputs=q.facts.filter(f=>f.rule<0&&['R42_RESULT','R42_PATH','R42_TREE','W38_SITE_READING_TREE','STEP_FABRIC_RETURN'].includes(q.node(q.node(f.term).c[0]).s));need(seededOutputs.length===0,'SEMANTIC_OUTPUT_SEEDED');
+ const originCounts={};for(const x of paths)originCounts[x.f.origin]=(originCounts[x.f.origin]??0)+1;
+ const evidence=outputs.map(x=>({term:q.term(x.f.term),fact_id:x.f.id,rule:x.f.origin,support:x.f.support}));
+ // Serialization order uses the cell identity only. Native JSON values have
+ // null prototypes and must never be coerced to strings by Array.sort.
+ const byCellId=([a],[b])=>a<b?-1:a>b?1:0;
+ const digest=sha(JSON.stringify({program:e.program_sha256,frames:[...frames].sort(byCellId),results:[...results].sort(byCellId),receipts:sorted(nativeReceipts.map(JSON.stringify)),outputs:sorted(outputs.map(x=>q.term(x.f.term))),paths:sorted(expectedPaths)}));
+ return{schema:'RuntimeJoinObservation042',verdict:'IF_THEN',case:e.name,qualification_scope:'EXACT_CANONICAL720_RUNTIME_TO_W38_SITE_READING_JOIN_BOUNDARY',expected:config.expected,inputs:e.inputs,source:config.source,source_map:config.source_map,image:config.image,readback:identity(readback),native:{facts:q.count,terms:q.terms,epochs:q.epochs,error:q.error,proof_facts_checked:proof.seen.size},counts:{canonical_cells:720,explicit_initial_empty:720,complete_frames:frames.size,completed:completed.length,runtime_receipts:nativeReceipts.length,returned_flags:leaves.length,paths:paths.length,native_parent_outputs:outputs.length,hash_responses:hashResponses.length},source_row_counts:rowCounts,path_proof_origins:originCounts,evidence,semantic_digest:digest,canonical_program_sha256:e.program_sha256,world_transition:'NO',commit:'NO',push:'NO'};
+}
+
+

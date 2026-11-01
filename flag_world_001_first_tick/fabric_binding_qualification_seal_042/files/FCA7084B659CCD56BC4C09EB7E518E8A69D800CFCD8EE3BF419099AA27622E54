@@ -1,0 +1,12 @@
+// Observation-only rendering of an existing native term, with no recursion.
+// The emitted spelling is the retained reader's symbol(children...) spelling.
+export function renderNativeTermIterative(q,id){
+ const work=[{id}],parts=[],active=new Set();
+ while(work.length){
+  const entry=work.pop();if(Object.hasOwn(entry,'leave')){active.delete(entry.leave);continue;}if(Object.hasOwn(entry,'text')){parts.push(entry.text);continue;}
+  if(active.has(entry.id))throw Error('native term cycle');active.add(entry.id);work.push({leave:entry.id});
+  const n=q.node(entry.id);parts.push(n.s);
+  if(n.c.length){parts.push('(');work.push({text:')'});for(let i=n.c.length-1;i>=0;i--){work.push({id:n.c[i]});if(i>0)work.push({text:','});}}
+ }
+ return parts.join('');
+}

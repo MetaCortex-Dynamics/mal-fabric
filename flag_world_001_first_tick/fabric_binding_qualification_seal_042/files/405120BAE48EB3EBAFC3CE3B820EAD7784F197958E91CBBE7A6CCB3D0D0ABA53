@@ -1,0 +1,17 @@
+// Explicit separate operator invocation only; no GPU, retry or world action.
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {identity,release} from './reconcile_failure_042.mjs';
+export async function releaseExact(reconciliationPath){
+ const ref=identity(reconciliationPath),r=JSON.parse(fs.readFileSync(ref.path,'utf8'));
+ if(r.schema!=='FabricRuntimeObserverFailureReconciliation042'||r.verdict!=='IF_THEN'||r.counted!==0||r.merged!==0)throw Error('EXACT_RECONCILIATION_REQUIRED');
+ const output=path.join(path.dirname(ref.path),'RELEASE_DECISION.json');
+ const decision={schema:'FabricRuntimeLaneReleaseDecision042',at:new Date().toISOString(),operation:'ARCHIVE_EXACT_FAILED_ATTEMPT_LOCK_ONLY',authority:r.authority,reconciliation:ref,owner:r.owner,automatic_retry:'NO',world_effect:'NONE',selection:'NO_MEMBER_TAKEN',counted:0,merged:0,scope:'Operational release of the reconciled runtime001 lock; original BLOCKED and all outputs retained; no completion backfill, native run or retry.'};
+ const fd=fs.openSync(output,'wx');try{fs.writeFileSync(fd,JSON.stringify(decision,null,2)+'\n');fs.fsyncSync(fd);}finally{fs.closeSync(fd);}
+ return release(ref.path,output);
+}
+if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
+ if(process.argv.length!==4||process.argv[2]!=='release')throw Error('USAGE: release_runtime_failure_042.mjs release EXACT_RECONCILIATION');
+ console.log(JSON.stringify(await releaseExact(process.argv[3]),null,2));
+}

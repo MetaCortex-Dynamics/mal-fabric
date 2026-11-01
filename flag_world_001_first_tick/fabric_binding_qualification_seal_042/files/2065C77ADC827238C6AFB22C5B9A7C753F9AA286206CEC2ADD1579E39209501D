@@ -1,0 +1,246 @@
+// QueueGate operational custody adapter; no MaL semantics or automatic retry.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { spawn, fork } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import { Worker, workerData, parentPort } from 'node:worker_threads';
+
+const self = fileURLToPath(import.meta.url);
+const now = () => new Date().toISOString();
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const read = p => JSON.parse(fs.readFileSync(p, 'utf8'));
+export function identity(p) {
+  const absolute = fs.realpathSync.native(p), hash = crypto.createHash('sha256');
+  const fd = fs.openSync(absolute, 'r'), buffer = Buffer.alloc(1024 * 1024);
+  try { let n; while ((n = fs.readSync(fd, buffer)) > 0) hash.update(buffer.subarray(0, n)); }
+  finally { fs.closeSync(fd); }
+  return { path: absolute, bytes: fs.statSync(absolute).size, sha256: hash.digest('hex').toUpperCase() };
+}
+function same(ref) {
+  const got = identity(ref.path);
+  if (got.sha256 !== ref.sha256 || (ref.bytes !== undefined && ref.bytes !== got.bytes)) throw Error(`NOT_SAME_INPUT:${ref.path}`);
+  return got;
+}
+function record(p, value) {
+  const fd = fs.openSync(p, 'wx');
+  try { fs.writeFileSync(fd, JSON.stringify(value, null, 2) + '\n'); fs.fsyncSync(fd); }
+  finally { fs.closeSync(fd); }
+}
+function block(dir, condition, detail = {}) {
+  const result = { schema: 'QueueGateBlocked027', queue_status: 'BLOCKED', artifact_gate: 'FAILED', condition, at: now(), ...detail, world_effect: 'NONE', selection: 'NO_MEMBER_TAKEN' };
+  try { record(path.join(dir, 'BLOCKED.json'), result); }
+  catch (e) { if (e.code !== 'EEXIST') { process.stderr.write(`CONTROL_RECORD_WRITE_FAILED:${e.message}\n`); throw e; } }
+  return result;
+}
+function verifyCandidate(r) {
+  if (r.schema !== 'QueueGateCandidateClosure027' || r.world_effect !== 'NONE' || r.selection !== 'NO_MEMBER_TAKEN') throw Error('CLOSURE_SHAPE_NOT_SAME');
+  same(r.plan); same(r.implementation);
+  const p = read(r.plan.path);
+  validatePlan(p);
+  if (r.steps.length !== p.steps.length) throw Error('STEP_COVERAGE_NOT_SAME');
+  for (const required of p.inputs) {
+    if (!r.inputs.some(ref => ref.path === required.path && ref.sha256 === required.sha256)) throw Error('INPUT_COVERAGE_NOT_SAME');
+  }
+  for (const ref of r.inputs) same(ref);
+  for (const prior of p.predecessors) {
+    const v = inspect(prior.path);
+    if (v.queue_status !== 'EMPTY' || v.closure.sha256 !== prior.sha256) throw Error(`PREDECESSOR_UNCLOSED:${prior.path}`);
+  }
+  for (let i = 0; i < p.steps.length; i++) {
+    const s = r.steps[i], wanted = p.steps[i];
+    if (s.id !== wanted.id || s.exit_code !== 0 || s.signal !== null || s.outputs.length !== wanted.outputs.length) throw Error('STEP_NOT_CLOSED');
+    same(s.exit_record); same(s.stdout); same(s.stderr);
+    for (let j = 0; j < wanted.outputs.length; j++) {
+      if (path.resolve(s.outputs[j].path) !== path.resolve(wanted.outputs[j].path)) throw Error('OUTPUT_PATH_NOT_SAME');
+      same(s.outputs[j]); checkOutput(wanted.outputs[j]);
+    }
+  }
+}
+export function inspect(dir) {
+  if (fs.existsSync(path.join(dir, 'BLOCKED.json'))) return read(path.join(dir, 'BLOCKED.json'));
+  const closed = path.join(dir, 'CLOSED.json');
+  if (!fs.existsSync(closed)) return { queue_status: 'BLOCKED', artifact_gate: 'PENDING', condition: 'OPEN_UNRECONCILED', attempt: path.resolve(dir) };
+  try {
+    const r = read(closed);
+    if (r.schema !== 'QueueGateClosure027' || r.queue_status !== 'EMPTY') throw Error('CLOSURE_SHAPE_NOT_SAME');
+    same(r.candidate); same(r.observer); verifyCandidate(read(r.candidate.path));
+    const witness = read(r.observer.path);
+    if (witness.candidate.sha256 !== r.candidate.sha256 || witness.verdict !== 'IF_THEN') throw Error('OBSERVER_CLOSURE_NOT_SAME');
+    return { queue_status: 'EMPTY', artifact_gate: 'PASSED', closure: identity(closed) };
+  } catch (e) { return { queue_status: 'BLOCKED', artifact_gate: 'FAILED', condition: e.message }; }
+}
+function checkOutput(o) {
+  if (!path.isAbsolute(o.path) || !o.equals || !Object.keys(o.equals).length) throw Error('OUTPUT_CONTRACT_UNSUPPLIED');
+  const content = read(o.path);
+  for (const [field, expected] of Object.entries(o.equals)) {
+    const got = field.split('.').reduce((v, key) => v?.[key], content);
+    if (JSON.stringify(got) !== JSON.stringify(expected)) throw Error(`OUTPUT_ASSERTION_NOT_SAME:${o.path}:${field}`);
+  }
+  return identity(o.path);
+}
+function validatePlan(p) {
+  if (p.schema !== 'QueueGateBoundExecution027' || p.world_effect !== 'NONE' || p.selection !== 'NO_MEMBER_TAKEN') throw Error('PLAN_SCOPE_NOT_SAME');
+  if (!Array.isArray(p.steps) || !p.steps.length || !Array.isArray(p.inputs) || !p.inputs.length || !Array.isArray(p.predecessors)) throw Error('PLAN_OPERANDS_UNSUPPLIED');
+  if (!path.isAbsolute(p.lane ?? '') || !fs.statSync(p.lane).isDirectory()) throw Error('SERIAL_LANE_UNSUPPLIED');
+  const ids = new Set(), outputs = new Set();
+  for (const s of p.steps) {
+    if (!/^[A-Za-z0-9_-]+$/.test(s.id) || ids.has(s.id)) throw Error('STEP_ID_NOT_SAME');
+    ids.add(s.id);
+    if (!path.isAbsolute(s.executable) || !path.isAbsolute(s.cwd) || !Array.isArray(s.argv) || !s.argv.every(a => typeof a === 'string') || !s.outputs?.length) throw Error('COMMAND_CONTRACT_UNSUPPLIED');
+    if (!p.inputs.some(r => path.resolve(r.path) === path.resolve(s.executable))) throw Error('EXECUTABLE_NOT_BOUND');
+    if (!s.sources?.length || !s.sources.every(source => path.isAbsolute(source) && p.inputs.some(r => path.resolve(r.path) === path.resolve(source))) || !s.sources.some(source => s.argv.includes(source))) throw Error('ENTRY_SOURCE_NOT_BOUND');
+    for (const o of s.outputs) {
+      if (!path.isAbsolute(o.path) || outputs.has(path.resolve(o.path)) || !o.equals || !Object.keys(o.equals).length) throw Error('OUTPUT_CONTRACT_NOT_SAME');
+      outputs.add(path.resolve(o.path));
+    }
+  }
+}
+// Large readback hashes must not block either observer's liveness event loop.
+function checked(op, value) {
+  return new Promise((resolve, reject) => {
+    const worker = new Worker(self, { workerData: { op, value } });
+    let delivered = false;
+    worker.on('message', msg => { delivered = true; if (msg.error) reject(Error(msg.error)); else resolve(msg.value); });
+    worker.on('error', reject);
+    worker.on('exit', code => { if (!delivered) reject(Error(`CUSTODY_WORKER_EXIT_WITHOUT_RESULT:${code}`)); });
+  });
+}
+async function watch(dir) {
+  const start = read(path.join(dir, 'START.json'));
+  same(start.implementation);
+  let last = Date.now(), finished = false, scope = 'START_BARRIER', worker = null;
+  record(path.join(dir, 'OBSERVER_READY.json'), { pid: process.pid, owner: start.owner, at: now(), implementation: identity(self) });
+  process.send({ type: 'ready', pid: process.pid });
+  const timer = setInterval(() => {
+    if (process.connected) process.send({ type: 'observer_heartbeat' });
+    if (Date.now() - last > 30000 && !finished) {
+      block(dir, 'SUPERVISOR_HEARTBEAT_MISSING', { scope, worker, cause: 'NOT_RECORDED' });
+      process.send?.({ type: 'blocked' });
+    }
+  }, 1000);
+  process.on('message', async msg => {
+    if (msg.type === 'heartbeat') { last = Date.now(); scope = msg.scope; worker = msg.worker; }
+    if (msg.type === 'finish') {
+      try {
+        const candidate = identity(path.join(dir, 'CANDIDATE_CLOSURE.json'));
+        if (fs.existsSync(path.join(dir, 'BLOCKED.json'))) throw Error('BLOCKED_BEFORE_CLOSURE');
+        await checked('candidate', read(candidate.path));
+        if (fs.existsSync(path.join(dir, 'BLOCKED.json'))) throw Error('BLOCKED_DURING_CLOSURE');
+        record(path.join(dir, 'OBSERVER_CLOSED.json'), { verdict: 'IF_THEN', candidate, owner: start.owner, at: now() });
+        finished = true; clearInterval(timer);
+        process.send({ type: 'closed' }); process.disconnect();
+      } catch (e) { block(dir, e.message, { scope }); clearInterval(timer); process.disconnect(); }
+    }
+    if (msg.type === 'stop') { finished = true; clearInterval(timer); process.disconnect(); }
+  });
+  process.on('disconnect', () => {
+    clearInterval(timer);
+    if (!finished) block(dir, 'OWNER_DISCONNECTED_WITHOUT_CLOSURE', { scope, worker, cause: 'NOT_RECORDED' });
+  });
+}
+export async function run(planPath, dir) {
+  dir = path.resolve(dir); planPath = path.resolve(planPath);
+  fs.mkdirSync(dir); // fresh directory only; no overwrite or implicit resume
+  let observer, heartbeat, activeChild, laneLock, scope = 'PREFLIGHT', inputs = [], finishing = false;
+  let observerReady = false, observerClosed = false, observerLost = false;
+  let lastObserver = Date.now();
+  try {
+    const boundPlan = identity(planPath), p = read(planPath), implementation = identity(self);
+    record(path.join(dir, 'START.json'), { schema: 'QueueGateStart027', queue_status: 'ACTIVE', at: now(), owner: { pid: process.pid, started_observation: now() }, plan: boundPlan, implementation, world_effect: 'NONE', selection: 'NO_MEMBER_TAKEN' });
+    validatePlan(p);
+    laneLock = path.join(fs.realpathSync.native(p.lane), 'ACTIVE');
+    try { fs.mkdirSync(laneLock); } catch (e) { if (e.code === 'EEXIST') throw Error('SERIAL_LANE_ALREADY_OCCUPIED'); throw e; }
+    record(path.join(laneLock, 'OWNER.json'), { attempt: dir, plan: boundPlan, pid: process.pid, at: now() });
+    inputs = await checked('inputs', p.inputs);
+    for (const prior of p.predecessors) {
+      const r = await checked('inspect', prior.path);
+      if (r.queue_status !== 'EMPTY' || r.closure.sha256 !== prior.sha256) throw Error(`PREDECESSOR_UNCLOSED:${prior.path}`);
+      inputs.push(r.closure);
+    }
+    for (const s of p.steps) for (const o of s.outputs) if (fs.existsSync(o.path)) throw Error(`OUTPUT_ALREADY_PRESENT:${o.path}`);
+    const err = fs.openSync(path.join(dir, 'observer.stderr.log'), 'wx');
+    observer = fork(self, ['watch', dir], { detached: true, windowsHide: true, stdio: ['ignore', 'ignore', err, 'ipc'] });
+    fs.closeSync(err);
+    observer.on('error', e => { observerLost = true; block(dir, 'OBSERVER_START_ERROR', { detail: e.message }); });
+    observer.on('exit', (code, signal) => {
+      if (!finishing || !observerClosed) { observerLost = true; block(dir, 'OBSERVER_LOST', { code, signal, scope, worker_pid: activeChild?.pid ?? null }); }
+    });
+    observer.on('message', msg => { lastObserver = Date.now(); if (msg.type === 'ready') observerReady = true; if (msg.type === 'closed') observerClosed = true; });
+    const send = () => { if (observer.connected) observer.send({ type: 'heartbeat', scope, worker: activeChild?.pid ?? null }, e => { if (e) observerLost = true; }); };
+    heartbeat = setInterval(() => {
+      send();
+      if (observerReady && !observerClosed && Date.now() - lastObserver > 30000) { observerLost = true; block(dir, 'OBSERVER_HEARTBEAT_MISSING', { scope }); }
+    }, 1000); send();
+    for (let n = 0; !observerReady && n < 300; n++) { if (observerLost) throw Error('OBSERVER_UNAVAILABLE'); await sleep(100); }
+    if (!observerReady) throw Error('OBSERVER_READY_NOT_WITNESSED');
+    const steps = [];
+    for (const s of p.steps) {
+      scope = s.id; send();
+      if (observerLost || fs.existsSync(path.join(dir, 'BLOCKED.json'))) throw Error('OBSERVATION_GATE_NOT_OPEN');
+      await checked('inputs', [boundPlan, implementation, ...inputs]);
+      if (observerLost || fs.existsSync(path.join(dir, 'BLOCKED.json'))) throw Error('OBSERVATION_GATE_NOT_OPEN_AFTER_CUSTODY');
+      for (const o of s.outputs) if (fs.existsSync(o.path)) throw Error(`OUTPUT_ALREADY_PRESENT:${o.path}`);
+      const prefix = path.join(dir, s.id), stdoutPath = prefix + '.stdout.log', stderrPath = prefix + '.stderr.log';
+      record(prefix + '.START.json', { at: now(), command: s, implementation, plan: boundPlan, world_effect: 'NONE' });
+      const out = fs.openSync(stdoutPath, 'wx'), err = fs.openSync(stderrPath, 'wx');
+      let outcome;
+      try {
+        activeChild = spawn(s.executable, s.argv, { cwd: s.cwd, shell: false, windowsHide: true, stdio: ['ignore', out, err] });
+        const executableIdentity = inputs.find(ref => ref.path === fs.realpathSync.native(s.executable));
+        if (!executableIdentity) throw Error('EXECUTABLE_IDENTITY_UNSUPPLIED');
+        record(prefix + '.PROCESS.json', { pid: activeChild.pid ?? null, at: now(), executable: executableIdentity, argv: s.argv }); send();
+        outcome = await new Promise(resolve => {
+          let error = null;
+          activeChild.on('error', e => { error = e.message; });
+          activeChild.on('close', (code, signal) => resolve({ exit_code: code, signal, error }));
+        });
+      } finally { fs.closeSync(out); fs.closeSync(err); }
+      record(prefix + '.EXIT.json', { ...outcome, at: now(), world_effect: 'NONE' });
+      activeChild = null;
+      if (outcome.error || outcome.exit_code !== 0 || outcome.signal !== null) throw Error(`WORKER_NOT_CLOSED:${s.id}`);
+      if (observerLost || fs.existsSync(path.join(dir, 'BLOCKED.json'))) throw Error('OBSERVATION_GATE_LOST');
+      const outputs = await checked('outputs', s.outputs);
+      const [exit_record, stdout, stderr] = await checked('identities', [prefix + '.EXIT.json', stdoutPath, stderrPath]);
+      if (observerLost || fs.existsSync(path.join(dir, 'BLOCKED.json'))) throw Error('OBSERVATION_GATE_LOST_DURING_LOG_CUSTODY');
+      steps.push({ id: s.id, ...outcome, outputs, exit_record, stdout, stderr });
+    }
+    const candidate = { schema: 'QueueGateCandidateClosure027', plan: boundPlan, implementation, inputs, steps, world_effect: 'NONE', selection: 'NO_MEMBER_TAKEN' };
+    await checked('candidate', candidate); record(path.join(dir, 'CANDIDATE_CLOSURE.json'), candidate);
+    finishing = true;
+    observer.send({ type: 'finish' });
+    while (!observerClosed) { if (observerLost || fs.existsSync(path.join(dir, 'BLOCKED.json'))) throw Error('OBSERVER_CLOSURE_WITHHELD'); await sleep(100); }
+    if (fs.existsSync(path.join(dir, 'BLOCKED.json'))) throw Error('BLOCKED_BEFORE_COMMIT');
+    record(path.join(dir, 'CLOSED.json'), { schema: 'QueueGateClosure027', queue_status: 'EMPTY', artifact_gate: 'PASSED', candidate: identity(path.join(dir, 'CANDIDATE_CLOSURE.json')), observer: identity(path.join(dir, 'OBSERVER_CLOSED.json')), at: now(), world_effect: 'NONE', selection: 'NO_MEMBER_TAKEN' });
+    const owner = read(path.join(laneLock, 'OWNER.json'));
+    if (owner.attempt !== dir || owner.plan.sha256 !== boundPlan.sha256) throw Error('SERIAL_LANE_OWNER_NOT_SAME');
+    fs.renameSync(laneLock, path.join(p.lane, 'CLOSED_' + crypto.randomUUID()));
+    return await checked('inspect', dir);
+  } catch (e) { block(dir, e.message, { scope, worker_pid: activeChild?.pid ?? null, outputs: 'RETAINED; NO_AUTOMATIC_RETRY' }); return inspect(dir); }
+  finally {
+    clearInterval(heartbeat);
+    if (observer?.connected) observer.send({ type: 'stop' }, () => {});
+    activeChild?.unref(); observer?.unref();
+  }
+}
+
+if (workerData) {
+  try {
+    let value;
+    if (workerData.op === 'inputs') value = workerData.value.map(same);
+    else if (workerData.op === 'identities') value = workerData.value.map(identity);
+    else if (workerData.op === 'outputs') value = workerData.value.map(checkOutput);
+    else if (workerData.op === 'candidate') { verifyCandidate(workerData.value); value = 'IF_THEN'; }
+    else if (workerData.op === 'inspect') value = inspect(workerData.value);
+    else throw Error('CUSTODY_OPERATION_UNSUPPORTED');
+    parentPort.postMessage({ value });
+  } catch (e) { parentPort.postMessage({ error: e.message }); }
+} else if (process.argv[1] && path.resolve(process.argv[1]) === self) {
+  const [mode, a, b] = process.argv.slice(2);
+  try {
+    if (mode === 'watch') await watch(a);
+    else if (mode === 'inspect') { const r = inspect(a); console.log(JSON.stringify(r, null, 2)); process.exitCode = r.queue_status === 'EMPTY' ? 0 : 2; }
+    else if (mode === 'run') { const r = await run(a, b); console.log(JSON.stringify(r, null, 2)); process.exitCode = r.queue_status === 'EMPTY' ? 0 : 2; }
+    else throw Error('USAGE: inspect ATTEMPT | run PLAN FRESH_ATTEMPT');
+  } catch (e) { console.error(e.message); process.exitCode = 2; }
+}

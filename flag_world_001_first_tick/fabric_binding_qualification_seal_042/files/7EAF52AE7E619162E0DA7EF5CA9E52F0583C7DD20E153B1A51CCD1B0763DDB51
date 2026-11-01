@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {identity} from '../launch_generation_v1_038.mjs';
+import {prepareExecution} from './prepare_execution_041.mjs';
+const here=path.dirname(fileURLToPath(import.meta.url)),home=path.dirname(here);
+const preparedPath=path.join(here,'PREPARED_INPUTS_v2_041.json');
+const p=JSON.parse(fs.readFileSync(preparedPath));
+const c=JSON.parse(fs.readFileSync(path.join(here,'ACTUAL_JOIN_CONTACTS_041.json')));
+const sources=[p.lowerer,identity(path.join(here,'prepare_v2_041.mjs')),identity(fileURLToPath(import.meta.url)),identity(path.join(here,'extract_join_041.mjs')),
+ ...['native_reader_v2_038.mjs','native_reader_038.mjs','staging_proof/native_proof_iterative_038.mjs','staging_proof/native_term_iterative_038.mjs'].map(n=>identity(path.join(home,n))),c.custody.proof_checker];
+const result=await prepareExecution({source:p.source,image:p.image,sourceMap:p.source_map,observer:path.join(here,'observe_041.mjs'),expected:p.expected,outputDirectory:path.join(here,'execution_002'),extraInputs:[...p.inputs,identity(preparedPath),...c.custody.verified_files,identity(path.join(here,'reconciliation_001/RECONCILIATION.json')),identity(path.join(here,'reconciliation_001/LANE_RELEASE.json'))],extraSources:sources,perInvocationMs:300000});
+console.log(JSON.stringify({plan:result.plan,package_binding:result.package_binding,prepared:result.prepared},null,2));

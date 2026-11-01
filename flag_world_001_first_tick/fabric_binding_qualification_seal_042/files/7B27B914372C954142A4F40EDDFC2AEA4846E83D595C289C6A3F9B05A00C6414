@@ -1,0 +1,21 @@
+// Byte custody and observation utilities. No native verdict or field operation.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+export const here=path.dirname(fileURLToPath(import.meta.url));
+export const home=path.dirname(here),carrier=path.dirname(home);
+export const need=(v,n)=>{if(!v)throw Error(n);};
+export const sha=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
+export function identity(p){
+ const absolute=fs.realpathSync.native(p),fd=fs.openSync(absolute,'r'),h=crypto.createHash('sha256'),buffer=Buffer.alloc(1048576);let bytes=0;
+ try{const a=fs.fstatSync(fd);for(;;){const n=fs.readSync(fd,buffer);if(!n)break;h.update(buffer.subarray(0,n));bytes+=n;}const b=fs.fstatSync(fd);need(a.size===b.size&&a.mtimeMs===b.mtimeMs&&bytes===b.size,'CHANGED_DURING_READ:'+p);}finally{fs.closeSync(fd);}
+ return{path:absolute,bytes,sha256:h.digest('hex').toUpperCase()};
+}
+export function verify(r){const a=identity(r.path);need(a.bytes===r.bytes&&a.sha256===r.sha256,'NOT_SAME:'+r.path);return a;}
+export function save(p,value){const fd=fs.openSync(p,'wx');try{fs.writeFileSync(fd,typeof value==='string'?value:JSON.stringify(value,null,2)+'\n');fs.fsyncSync(fd);}finally{fs.closeSync(fd);}return identity(p);}
+export const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+export const unique=refs=>[...new Map(refs.map(r=>[r.path.toLowerCase(),r])).values()];
+export function nestedRefs(value,out=[]){if(!value||typeof value!=='object')return out;if('path'in value&&'bytes'in value&&'sha256'in value){out.push(value);return out;}for(const x of Object.values(value))nestedRefs(x,out);return out;}
+export const sorted=a=>[...new Set(a)].sort();
+export function exact(a,b,n){need(JSON.stringify(sorted(a))===JSON.stringify(sorted(b)),n);}

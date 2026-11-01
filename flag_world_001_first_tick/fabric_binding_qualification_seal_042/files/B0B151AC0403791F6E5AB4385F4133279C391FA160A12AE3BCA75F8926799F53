@@ -1,0 +1,70 @@
+// Transport only. No DRC verdict is computed or seeded here. No GPU invocation.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+import {pathToFileURL,fileURLToPath} from 'node:url';
+import {here,carrier,need,identity,save,read,verify,sha} from './custody_042.mjs';
+export const P20='D:/Dev/flag-world-first-tick-020/actual_core_qualification/fabric.program.json';
+export const LOWER=path.join(carrier,'j17_t_r2_r1_diagnostics_019/R1/fast_lowerer/lower.mjs');
+const KERNEL='C:/Dev/mal_kernel_lab_repo/v3/software_fpga/static_fabric_v0_1_0/kernel.py';
+const SPEC='C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/flag_world_engine_v3_fold_bootstrap_001/candidate_successors/W040_SURFACE_FABRIC_LOWERING_116/parents/STATIC_FABRIC_SPEC.md';
+const text=JSON.stringify;
+const term=(s,...a)=>s+'('+a.join(',')+')';
+const list=a=>a.reduceRight((t,h)=>term('CONS',h,t),'NIL');
+export function tree(a){if(!a.length)return'T_EMPTY';if(a.length===1)return term('T_LEAF',a[0]);const n=Math.floor(a.length/2);return term('T_JOIN',tree(a.slice(0,n)),tree(a.slice(n)));}
+const sort=(a,key)=>[...a].sort((x,y)=>Buffer.compare(Buffer.from(key(x)),Buffer.from(key(y))));
+export function routeHash(parts){const buffers=[];for(const s of parts){need(typeof s==='string','HASH_COMPONENT');const b=Buffer.from(s,'utf8'),h=Buffer.alloc(8);h.writeBigUInt64BE(BigInt(b.length));buffers.push(h,b);}const bytes=Buffer.concat(buffers);return{parts,preimage_hex:bytes.toString('hex'),sha256:crypto.createHash('sha256').update(bytes).digest('hex')};}
+const connection=r=>[r.source_cell_id,r.source_role,r.target_cell_id,r.target_role];
+export function serializeProgram(p){
+ need(Array.isArray(p.cells)&&Array.isArray(p.motifs)&&Array.isArray(p.triad_blocks)&&Array.isArray(p.placements)&&Array.isArray(p.routes)&&typeof p.fabric_id==='string','PRIMITIVE_SHAPE');
+ const cells=p.cells.map(c=>term('CELL',...[c.cell_id,c.operator,c.witness,c.payload_slot_type].map(text),list(c.triad_capability.map(text))));
+ const motifs=p.motifs.map(m=>term('MOTIF',text(m.motif_id),tree(m.contained_ids.map(text))));
+ const blocks=p.triad_blocks.map(b=>term('BLOCK',text(b.block_id),tree(b.contained_ids.map(text))));
+ const placements=sort(p.placements,x=>x.cell_id).map(p=>{const v=p.location.triad_position;need(v.kind==='INTERIOR','PLACEMENT_SERIALIZATION_SCOPE');return term('PLACEMENT',text(p.cell_id),term('INTERIOR',text(v.dimension)),list(p.location.containment_path.map(text)));});
+ const routes=sort(p.routes,x=>x.route_id).map(r=>term('ROUTE',text(r.route_id),...connection(r).map(text)));
+ const ids=sort([{kind:'ROOT',id:p.fabric_id},...p.cells.map(c=>({kind:'CELL',id:c.cell_id})),...p.motifs.map(m=>({kind:'MOTIF',id:m.motif_id})),...p.triad_blocks.map(b=>({kind:'BLOCK',id:b.block_id}))],x=>x.id).map(x=>term('OBJ',x.kind,text(x.id)));
+ const members=sort([...p.motifs.flatMap(m=>m.contained_ids.map(c=>({c,p:m.motif_id}))),...p.triad_blocks.flatMap(b=>b.contained_ids.map(c=>({c,p:b.block_id}))),...p.triad_blocks.map(b=>({c:b.block_id,p:p.fabric_id}))],x=>x.c).map(x=>term('MEMBER',text(x.c),text(x.p)));
+ return{data:term('DATA',...[ids,cells,motifs,blocks,placements,routes,members].map(tree)),inventories:{IDS:ids,CELLS:cells,MOTIFS:motifs,BLOCKS:blocks,PLACEMENTS:placements,ROUTES:routes,MEMBERS:members},counts:{objects:ids.length,cells:cells.length,motifs:motifs.length,blocks:blocks.length,placements:placements.length,routes:routes.length,members:members.length}};
+}
+function casesOf(p){
+ const clone=x=>structuredClone(x),route=(a,b,s,r='RESULT')=>{const parts=[a,r,b,s];return{route_id:routeHash(parts).sha256,source_cell_id:a,source_role:r,target_cell_id:b,target_role:s};};
+ const small=clone(p);small.cells=small.cells.slice(0,4);const selected=new Set(small.cells.map(c=>c.cell_id));small.motifs=small.motifs.filter(m=>m.contained_ids.every(id=>selected.has(id)));small.placements=small.placements.filter(x=>selected.has(x.cell_id));small.triad_blocks[0].contained_ids=small.motifs.map(m=>m.motif_id);
+ const routed=clone(small);routed.routes=[route(p.cells[0].cell_id,p.cells[2].cell_id,'LEFT'),route(p.cells[1].cell_id,p.cells[2].cell_id,'RIGHT')];
+ const cases=[{id:'P20',program:p,expected:'IF_THEN'},{id:'ROUTED',program:routed,expected:'IF_THEN'}];
+ const add=(id,base,condition,change)=>{const program=clone(base);change(program);cases.push({id,program,expected:'NO',failed_condition:condition});};
+ add('BAD_I',small,'I',x=>x.cells.push(clone(x.cells[0])));
+ add('BAD_II',small,'II',x=>x.placements[0].location.containment_path[0]=x.motifs[1].motif_id);
+ add('BAD_III',small,'III',x=>x.cells[0].triad_capability=['□G']);
+ add('BAD_IV',routed,'IV',x=>{x.routes[0].source_cell_id=x.motifs[0].motif_id;x.routes[0].route_id=routeHash(connection(x.routes[0])).sha256;});
+ add('BAD_V',routed,'V',x=>x.routes[0].route_id='0'.repeat(64));
+ add('BAD_VI',routed,'VI',x=>{x.routes[0].source_role='LEFT';x.routes[0].route_id=routeHash(connection(x.routes[0])).sha256;});
+ add('BAD_VII',routed,'VII',x=>{x.cells[2].witness='HOW';x.cells[2].payload_slot_type='mechanism/process';});
+ add('BAD_VIII',routed,'VIII',x=>x.routes.push(route(x.cells[3].cell_id,x.cells[2].cell_id,'LEFT')));
+ return cases;
+}
+export function prepare(){
+ const own=identity(fileURLToPath(import.meta.url)),body=identity(path.join(here,'drc_042.mal')),program=identity(P20),binding=identity(path.join(here,'CANONICAL_PROGRAM_BINDING_042.json'));
+ need(program.sha256==='07320BB711DE9A195E0FE6AB663F980F685B3CF161670EDA103300A2C8753C56','P20_BYTES');
+ const kernel=identity(KERNEL),spec=identity(SPEC),lowerer=identity(LOWER);
+ need(kernel.sha256==='8B983301DAD795DD9C3F020970BAD76017EF648AC0C71E3FB6FDEF3D0E4347C0','CANONICAL_KERNEL_BYTES');
+ need(spec.sha256==='E328B574DE32635358AC488C4C5E20E80E86A845EB154401C8E1A7C0DD8D68F1','STATIC_SPEC_BYTES');
+ need(lowerer.sha256==='C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE','LOWERER_BYTES');
+ const output=path.join(here,'drc_prepared_v2');need(!fs.existsSync(output),'FRESH_OUTPUT_REQUIRED');fs.mkdirSync(output);
+ const cases=casesOf(read(P20)),hashes=new Map(),rows=[],records=[];
+ for(const c of cases){const programRef=c.id==='P20'?program:save(path.join(output,c.id+'.program.json'),c.program),s=serializeProgram(c.program),row=term('GOES_WITH','D42_CASE',c.id,text(c.program.fabric_id),s.data);rows.push(row);records.push({id:c.id,program:programRef,expected:c.expected,failed_condition:c.failed_condition??null,counts:s.counts,case_source_sha256:sha(Buffer.from(row)),inventory_source_sha256:sha(Buffer.from(JSON.stringify(s.inventories)))});for(const r of c.program.routes){const h=routeHash(connection(r));hashes.set(JSON.stringify(h.parts),h);}}
+ for(let i=0;i<256;i++)rows.push(term('GOES_WITH','D42_BYTE_BITS','B'+i,term('BITS',...Array.from({length:8},(_,j)=>(i&(1<<(7-j)))?'O':'Z'))));
+ for(const h of hashes.values())rows.push(term('GOES_WITH','D42_HASH_RESPONSE',term('CONNECTION',...h.parts.map(text)),text(h.sha256)));
+ need(new Set(rows).size===rows.length,'DUPLICATE_NATIVE_INPUT');
+ const source=save(path.join(output,'drc_execution_042.mal'),fs.readFileSync(body.path,'utf8')+'\n@propose seed D42_INPUTS := {\n'+rows.join(',\n')+'\n};\n');
+ const expected=save(path.join(here,'DRC_EXPECTED_V2_042.json'),{schema:'CanonicalFabricDrcExpected042',scope:'Exact P20 primitive subject plus explicit finite P20-shaped malformed and routed controls; no general arbitrary-program admission claim.',canonical_program:program,canonical_program_binding:binding,law_sources:{kernel,spec},native_body:body,preparer:own,cases:records,generic_hash_contacts:[...hashes.values()],byte_encoding:'All 256 unsigned UTF8 octets, eight high-to-low bits; order derived natively at first differing bit.',native_input_rows:rows.length,host_verdict_inputs:'NONE',world_effect:'NONE',repository_effect:'NONE'});
+ console.log(JSON.stringify({phase:'LOWER',source_bytes:source.bytes,cases:records.map(x=>({id:x.id,...x.counts})),native_input_rows:rows.length}));
+ const imageDir=path.join(output,'native_image'),start=Date.now(),r=spawnSync(process.execPath,[LOWER,source.path,imageDir],{encoding:'utf8',maxBuffer:8*1024*1024,timeout:300000});
+ const stdout=save(path.join(output,'LOWER.stdout.txt'),r.stdout??''),stderr=save(path.join(output,'LOWER.stderr.txt'),r.stderr??'');
+ need(r.status===0&&!r.error,'LOWER_NOT_CLOSED:'+JSON.stringify({status:r.status,error:r.error?.message,stderr:r.stderr}));
+ const map=read(path.join(imageDir,'source-map.json'));need(new Set(map.seeds).size===map.seeds.length,'LOWERED_DUPLICATE_SEEDS');
+ for(const ref of[own,body,program,binding,kernel,spec,lowerer,source,expected])verify(ref);
+ const prepared=save(path.join(here,'PREPARED_DRC_V2_042.json'),{schema:'CanonicalFabricDrcPrepared042',verdict:'IF_THEN',native_case:'P20',canonical_program:program,source:identity(path.join(imageDir,'source.mal')),source_map:identity(path.join(imageDir,'source-map.json')),image:identity(path.join(imageDir,'image.bin')),expected,source_refs:[own,body,program,binding,kernel,spec,lowerer,identity(path.join(path.dirname(LOWER),'source_occurrence_custody.mjs')),source,expected],resources:{patterns:map.patterns.length,seeds:map.seeds.length,rules:map.rules.length,native_fact_capacity:2097152,case_count:records.length,complete_program_cells:720,complete_program_routes:0},lowering:{stdout,stderr,elapsed_ms:Date.now()-start,exit:0},scope:'PREPARED_ONLY; no GPU launch; no native DRC verdict observed; no live transition or repository write.'});
+ console.log(JSON.stringify({prepared}));return prepared;
+}
+if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))prepare();

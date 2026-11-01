@@ -1,0 +1,74 @@
+{
+  "schema": "SnapshotWaveNativeRequest038",
+  "id": "B_000",
+  "config": {
+    "stage": "B",
+    "field": "J17_G2_DIAGNOSTIC_COPY",
+    "level": "2",
+    "variant": "normal",
+    "fixture": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\prepare_B\\B_000\\TRANSPORT.json",
+      "bytes": 3180570,
+      "sha256": "4F620E3A009D5CF7A53A09A2CB99B6CE267BC2CC321EBB3593DCA2DFE0CF31CA"
+    },
+    "prepared": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\prepare_B\\B_000\\PREPARED.json",
+      "bytes": 4667,
+      "sha256": "8C72F5F2BDBCF9D3069AEA1EE8B646B0B0408B9A088AA7A167AA50DD137C95EA"
+    },
+    "transport": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\prepare_B\\B_000\\TRANSPORT.json",
+      "bytes": 3180570,
+      "sha256": "4F620E3A009D5CF7A53A09A2CB99B6CE267BC2CC321EBB3593DCA2DFE0CF31CA"
+    },
+    "source": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\prepare_B\\B_000\\stage\\source.mal",
+      "bytes": 857437,
+      "sha256": "B8145A01E8351F4C32E7443A47A59913EE5CE4AE3C27C6D485F4958B522E56B2"
+    },
+    "image": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\prepare_B\\B_000\\stage\\image.bin",
+      "bytes": 41992208,
+      "sha256": "95652907BFCD7ED08B09E5932CEC8DFDC5F354074DB6679916F02A8990306D3D"
+    },
+    "source_map": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\prepare_B\\B_000\\stage\\source-map.json",
+      "bytes": 20294879,
+      "sha256": "A612C9C270F29B193B9010828774B899B7F42A741A8E22DD35934F135BC49C71"
+    },
+    "raw_offers": [
+      {
+        "reading": "READING_NO",
+        "raw_identity": "SITE(\"C:HW_04|HW_09\",\"NO\")",
+        "member": "OFFER038(SITE(ID(N0,N0,N0,N5,N7,N7)),READING_NO)",
+        "support": "SITE(ID(N0,N0,N0,N5,N7,N7))"
+      }
+    ],
+    "supports": [
+      "SITE(ID(N0,N0,N0,N5,N7,N7))"
+    ],
+    "expected_withheld": [],
+    "expected_scope": "IF_THEN",
+    "stage_a_observations": [
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_000\\prepared\\A_000\\NATIVE_OBSERVATION.json",
+        "bytes": 1869141,
+        "sha256": "68DA0B69221703F3D72ADE9D621F5C58E46FE3BD4BEAD83E7C42A1F87AFA62F3"
+      },
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_001\\prepared\\A_001\\NATIVE_OBSERVATION.json",
+        "bytes": 1896886,
+        "sha256": "3F3BE630BDDDBED3D8892F259BA68D5B7845E825840E0E0E24E2451CAD82D611"
+      }
+    ],
+    "origin_term": "HEE79C9C9E50BA1860921506BC4F271EA90E3B626DB4B9E5BBB3885FA374F75B9"
+  },
+  "image": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\prepare_B\\B_000\\stage\\image.bin",
+    "bytes": 41992208,
+    "sha256": "95652907BFCD7ED08B09E5932CEC8DFDC5F354074DB6679916F02A8990306D3D"
+  },
+  "invocation_limit_ms": 900000,
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN"
+}

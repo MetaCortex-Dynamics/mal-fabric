@@ -1,0 +1,52 @@
+// Pure operational controls. No process launch, state write, GPU or MaL semantics.
+import path from 'node:path';
+const need=(x,m)=>{if(!x)throw Error(m);};
+const pid=x=>Number.isSafeInteger(x)&&x>=0&&x<=0xffffffff;
+const ft=x=>typeof x==='string'&&/^[0-9]+$/.test(x);
+const key=p=>path.win32.normalize(p).toLowerCase();
+export function cutoffFiletime(at){const ms=Date.parse(at);need(Number.isFinite(ms),'ABSENCE_TIME_UNSUPPLIED');return(BigInt(ms)*10000n+116444736000000000n).toString();}
+export function descendants(rows,roots){const ids=new Set(roots);let changed=true;while(changed){changed=false;for(const r of rows)if(ids.has(r.parent_pid)&&!ids.has(r.pid)){ids.add(r.pid);changed=true;}}return ids;}
+export function validateSnapshot(v,{callerPid,parentPid,helperPid}){
+ need(v?.schema==='GenerationProcessSnapshot038V1'&&v.coverage==='ALL_HOST_PROCESSES'&&v.provider==='CreateToolhelp32Snapshot'&&v.flags===2&&v.process_id===0,'CENSUS_ENVELOPE');
+ need(v.enumeration_status==='COMPLETE'&&v.terminal_win32_error===18,'CENSUS_ENUMERATION_NOT_COMPLETE');
+ need(v.supplier_pid===helperPid&&pid(helperPid)&&helperPid>0,'CENSUS_HELPER_IDENTITY');
+ need((v.pointer_bytes===8&&v.process_entry_bytes===568)||(v.pointer_bytes===4&&v.process_entry_bytes===556),'CENSUS_ENTRY_LAYOUT');
+ need(Number.isFinite(Date.parse(v.started_utc))&&Date.parse(v.ended_utc)>=Date.parse(v.started_utc)&&ft(v.snapshot_before_filetime),'CENSUS_TIME_UNSUPPLIED');
+ need(Array.isArray(v.processes)&&v.processes.length>0&&v.processes_count===v.processes.length,'CENSUS_ROW_COVERAGE');
+ const byPid=new Map();
+ for(const r of v.processes){
+  need(pid(r.pid)&&pid(r.parent_pid)&&!byPid.has(r.pid)&&typeof r.name==='string'&&r.name.length>0&&!r.name.includes('\0'),'CENSUS_ROW_IDENTITY');
+  need(['IF_THEN','MAYBE'].includes(r.identity_stable)&&Array.isArray(r.win32_errors),'CENSUS_STABILITY_SHAPE');
+  for(const e of r.win32_errors)need(typeof e.stage==='string'&&e.stage.length>0&&Number.isSafeInteger(e.win32_error)&&e.win32_error>0,'CENSUS_WIN32_ERROR_UNSUPPLIED');
+  for(const k of['executable_path','executable_path_recheck'])need(r[k]===null||(typeof r[k]==='string'&&path.win32.isAbsolute(r[k])&&!r[k].includes('\0')),'CENSUS_IMAGE_SHAPE');
+  for(const k of['creation_filetime','creation_filetime_recheck','exit_filetime','exit_filetime_recheck'])need(r[k]===null||ft(r[k]),'CENSUS_FILETIME_SHAPE');
+  if(r.identity_stable==='IF_THEN'){
+   need(r.handle_pid===r.pid&&ft(r.creation_filetime)&&r.creation_filetime===r.creation_filetime_recheck&&r.exit_filetime==='0'&&r.exit_filetime_recheck==='0'&&r.executable_path&&r.executable_path===r.executable_path_recheck&&r.win32_errors.length===0,'CENSUS_STABILITY_NOT_SAME');
+   need(path.win32.basename(r.executable_path).toLowerCase()===r.name.toLowerCase()&&BigInt(r.creation_filetime)<=BigInt(v.snapshot_before_filetime),'CENSUS_SNAPSHOT_HANDLE_NOT_SAME');
+  } else need(r.win32_errors.length>0||r.handle_pid===r.pid,'CENSUS_UNRESOLVED_IDENTITY_SHAPE');
+  byPid.set(r.pid,r);
+ }
+ need(byPid.has(0)&&byPid.has(callerPid)&&byPid.has(parentPid)&&byPid.has(helperPid),'CENSUS_CALLER_COVERAGE');
+ need(byPid.get(callerPid).parent_pid===parentPid&&byPid.get(helperPid).parent_pid===callerPid,'CENSUS_CALLER_RELATION');
+ return v.processes;
+}
+export function evaluateGenerations(rows,roots,cutoff,nativeExecutables){
+ need(Array.isArray(nativeExecutables)&&nativeExecutables.length>0,'NATIVE_EXECUTABLE_DOMAIN_UNSUPPLIED');
+ need(Array.isArray(rows)&&rows.length>0&&Array.isArray(roots)&&roots.length>0&&roots.every(p=>pid(p)&&p>0)&&ft(cutoff),'GENERATION_DOMAIN_UNSUPPLIED');
+ const seen=new Set();for(const r of rows){need(pid(r.pid)&&pid(r.parent_pid)&&typeof r.name==='string'&&!seen.has(r.pid),'GENERATION_ROWS_NOT_SAME');seen.add(r.pid);}
+ const implicated=descendants(rows,roots),retired=[];
+ // Executable name and both held-handle paths are independently protected:
+ // a snapshot name is never excused by a different later handle path.
+ for(const r of rows)for(const exe of nativeExecutables){
+  const p=typeof exe==='string'?exe:exe.path;need(typeof p==='string'&&path.win32.isAbsolute(p),'NATIVE_EXECUTABLE_UNSUPPLIED');
+  need(r.name.toLowerCase()!==path.win32.basename(p).toLowerCase(),'NATIVE_EXECUTABLE_PRESENT:'+r.pid);
+  for(const k of['executable_path','executable_path_recheck'])if(r[k])need(key(r[k])!==key(p),'NATIVE_EXECUTABLE_PRESENT:'+r.pid);
+ }
+ for(const r of rows)if(implicated.has(r.pid)){
+  need(r.identity_stable==='IF_THEN'&&ft(r.creation_filetime)&&r.creation_filetime===r.creation_filetime_recheck&&r.handle_pid===r.pid&&r.executable_path&&r.executable_path===r.executable_path_recheck&&r.exit_filetime==='0'&&r.exit_filetime_recheck==='0'&&r.win32_errors?.length===0,'PROCESS_GENERATION_UNSUPPLIED:'+r.pid);
+  need(BigInt(r.creation_filetime)>BigInt(cutoff),'PRIOR_PROCESS_OR_DESCENDANT_PRESENT:'+r.pid);
+  retired.push({pid:r.pid,parent_pid:r.parent_pid,name:r.name,executable_path:r.executable_path,creation_filetime:r.creation_filetime,absence_cutoff_filetime:cutoff,identity_stable:r.identity_stable,disposition:'NUMERIC_IDENTIFIER_REUSED_AFTER_ABSENCE'});
+ }
+ return{verdict:'IF_THEN',implicated:rows.filter(r=>implicated.has(r.pid)).map(r=>r.pid),retired_generations:retired,rows_checked:rows.length,required_absent:roots.length,native_exclusivity:'NO_NATIVE_EXECUTABLE_PRESENT'};
+}
+

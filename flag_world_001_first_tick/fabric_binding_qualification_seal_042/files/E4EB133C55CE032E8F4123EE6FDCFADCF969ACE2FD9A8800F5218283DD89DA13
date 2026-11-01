@@ -1,0 +1,52 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {identity} from '../launch_generation_v1_038.mjs';
+const here=path.dirname(fileURLToPath(import.meta.url)),home=path.dirname(here),base=path.dirname(home);
+const need=(v,n)=>{if(!v)throw Error(n);},read=p=>JSON.parse(fs.readFileSync(p));
+function verify(r){const x=identity(r.path);need(x.bytes===r.bytes&&x.sha256===r.sha256,'NOT_SAME:'+r.path);return x;}
+function save(n,x){const p=path.join(here,n);fs.writeFileSync(p,JSON.stringify(x,null,2)+'\n',{flag:'wx'});return identity(p);}
+const attempt=path.join(here,'execution_002/queuegate_attempt');
+const closureRef=identity(path.join(attempt,'CLOSED.json')),closure=read(closureRef.path);
+need(closure.queue_status==='EMPTY'&&closure.artifact_gate==='PASSED','QUEUEGATE_NOT_CLOSED');
+verify(closure.candidate);verify(closure.observer);
+const candidate=read(closure.candidate.path);
+const planRef=identity(path.join(here,'execution_002/prepared/PLAN.json')),plan=read(planRef.path);
+const inputs=plan.inputs.map(verify);
+const invocation=['SITE_JOIN_CONTACT_041_01','SITE_JOIN_CONTACT_041_02'].map(name=>{
+ const dir=path.join(here,'execution_002/prepared',name),observation=identity(path.join(dir,'NATIVE_OBSERVATION.json')),o=read(observation.path);
+ need(o.verdict==='IF_THEN'&&o.observation.verdict==='IF_THEN','OBSERVATION_WITHHELD');
+ need(candidate.steps.some(s=>s.outputs.some(r=>r.sha256===observation.sha256&&r.bytes===observation.bytes)),'OBSERVATION_NOT_IN_CLOSURE');
+ verify(o.readback);
+ const exit=identity(path.join(dir,'GPU.EXIT.json')),e=read(exit.path);
+ need(e.exit_code===0&&e.deadline==='WITHIN_LIMIT','NATIVE_EXIT_WITHHELD');
+ return{name,observation,readback:o.readback,native_exit:exit,native_elapsed_ms:e.elapsed_ms,semantic_digest:o.observation.semantic_digest,counts:o.observation.counts,native:o.observation.native,controls:o.observation.controls};
+});
+need(invocation[0].readback.sha256===invocation[1].readback.sha256,'REPLAY_NOT_BYTE_SAME');
+need(invocation[0].semantic_digest===invocation[1].semantic_digest,'REPLAY_NOT_SEMANTIC_SAME');
+const frozen=[
+ [path.join(home,'wave_038.mal'),'00260D576A1591B4ADD768193EE2403A6032334AD8B0C95E6E5C917754B2227F'],
+ [path.join(home,'RUN_RECORD_038_001.json'),'0BEA0CBBBCDB5DE5B2C1B86228478A1A12C1FDF5BF3571EA4974580BF8EB5908'],
+ [path.join(base,'j17_step_023/outputs/committed.world.json'),'E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059'],
+ [path.join(base,'j17_proposer_reentry_020/run_001/committed.world.json'),'946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88']
+].map(([p,h])=>{const r=identity(p);need(r.sha256===h,'FROZEN_SUBJECT_NOT_SAME');return r;});
+const staticPath='C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/flag_world_engine_v3_fold_bootstrap_001/candidate_successors/W040_SURFACE_FABRIC_LOWERING_116/parents/STATIC_FABRIC_SPEC.md';
+const staticRef=identity(staticPath);need(staticRef.sha256==='E328B574DE32635358AC488C4C5E20E80E86A845EB154401C8E1A7C0DD8D68F1','STATIC_CONTRACT_NOT_SAME');
+const fabex=identity('C:/Users/devon/Desktop/MaL/Markdowns/FABRIC_EXECUTION_SPEC_v0.3.0-candidate.md');
+need(fabex.sha256==='5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0','FABEX_NOT_SAME');
+const conditions=[
+ ['I','IDENTITY_INTEGRITY','Canonical CellDef/motif/block/root inventory is not emitted. F41_RESOURCE is a source-cover resource contact only.'],
+ ['II','CONTAINMENT','Canonical membership/path construction is not emitted. Coverage-tree ancestry is not silently used as fabric containment.'],
+ ['III','PLACEMENT_CAPABILITY','Source-bound capability and semantic LOCATION for the site-coverage join are not supplied by this component.'],
+ ['IV','ROUTE_ENDPOINTS','No canonical route endpoints are emitted.'],
+ ['V','ROUTE_IDENTITY','No canonical connection tuples or route hash identities are emitted.'],
+ ['VI','PORT_DIRECTION','LEFT/RIGHT correspondence is qualified as source operands, not as physical routes.'],
+ ['VII','WITNESS_PAYLOAD_TYPES','READING_IDENTITY is a correspondence term, not an admitted CellDef payload-slot binding.'],
+ ['VIII','ROLE_MULTIPLICITY','Native matching operands are checked; one canonical frame/result per resource with payload custody is not realized.']
+].map(([condition,name,operand])=>({condition,name,verdict:'MAYBE',execution:'NOT_RUN',operand}));
+const first=identity(path.join(here,'reconciliation_001/RECONCILIATION.json')),firstData=read(first.path),release=identity(path.join(here,'reconciliation_001/LANE_RELEASE.json'));
+need(firstData.counted===0&&firstData.merged===0&&read(release.path).status==='EMPTY','FAILED_ATTEMPT_DISPOSITION');
+const newSources=['site_join_contacts_041.mal','site_join_execution_v2_041.mal','prepare_v2_041.mjs','observe_041.mjs','extract_join_041.mjs','prepare_execution_041.mjs','bind_execution_v2_041.mjs','write_record_041.mjs'].map(n=>identity(path.join(here,n)));
+const record={schema:'SiteJoinFabricCorrespondenceRunRecord041',recorded_at:new Date().toISOString(),requested_obligation:'O_DRC_FABRIC_REALIZATION_038',status:'PARTIAL',verdict:'MAYBE',authority:identity(path.join(here,'AUTHORITY_041.json')),sources:newSources,canonical_contracts:{static_fabric:staticRef,FABEX:fabex},operand_result_component:{verdict:'IF_THEN',scope:'Every W38_SITE_READING_JOIN in one closed J17 diagnostic invocation, recomputed from native leaf inputs; fourteen additional contact controls.',actual_contacts:identity(path.join(here,'ACTUAL_JOIN_CONTACTS_041.json')),actual_sites:42,actual_cover_joins:438,actual_leaf_inputs:480,intermediate_tree_seeds:0,native_fixture_cases:14,reading_result:'SAME/NOT_SAME is distinct from source-supplied parent tuple construction',resource_contact_scope:'Cover resource keyed by SITE(s),n,a,b within this exact source/cover context; snapshot and reading remain payload coordinates. No canonical resource/lifetime claim.',native_controls:invocation[0].controls,observer_static_guards_not_separate_native_controls:['original-clause deletion','derived-parent seed injection']},queuegate:{plan:planRef,closure:closureRef,candidate:closure.candidate,observer:closure.observer,inputs_verified:inputs.length,invocations:invocation,replay:'BYTE_SAME',native_elapsed_total_ms:invocation.reduce((s,x)=>s+x.native_elapsed_ms,0)},DRC:{verdict:'MAYBE',execution:'NOT_RUN',canonical_fabric:'NOT_EMITTED',conditions},next_operand:{name:'COVER_RESOURCE_TO_CANONICAL_CELL_LOCATION_AND_RUNTIME_BINDING',input:'F41_RESOURCE(SITE(s),n,a,b), typed child-reading operand contacts and source-supplied parent-result contact',required_output:'Actual canonical CellDef/motif occurrence(s), capability and semantic LOCATION/containment, exact typed routes, and a one-frame/result-per-cell runtime association that preserves fixed program identity across snapshots.',specific_boundary:'W38 source line31 constructs the parent relation. Canonical SAME/IF_THEN evaluation alone is not that record constructor. Historical comparator placement uses PAIR(f,g) and W12/W13 own-S readings; no such correspondence for these cover-node operands has been supplied in this implementation.',source_contacts:[{path:frozen[0].path,line:31},{path:staticPath,line:74},{path:staticPath,line:387},{path:fabex.path,clause:'2;5;6'}],disposition:'OPEN_IMPLEMENTATION_CONTACT; no claim that the world law is absent; no default placement or proof-tree-as-fabric substitution'},first_attempt:{reconciliation:first,release,counted:0,merged:0,native_exit:0,worker_exit:2,condition:'native seed scope',repair:'Raw duplicate custody retained; unique native seed set serialized. Frozen proof guard unchanged.',raw_seed_rows:963,distinct_native_seeds:960},frozen_subjects_same:frozen,scope:{world_transition:'NO',live_world_append:'NO',K_member_taken:'NO',law_change:'NO',promotion:'NO',repository_commit:'NO',push:'NO',old_recovery_resume:'NO'}};
+const result=save('RUN_RECORD_FABRIC_CONTACT_041.json',record);
+console.log(JSON.stringify({record:result,component:record.operand_result_component.verdict,status:record.status,DRC:record.DRC.execution,replay:record.queuegate.replay,native_elapsed_total_ms:record.queuegate.native_elapsed_total_ms},null,2));

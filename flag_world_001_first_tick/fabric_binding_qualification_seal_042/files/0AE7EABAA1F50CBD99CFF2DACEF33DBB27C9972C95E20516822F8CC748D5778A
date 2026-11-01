@@ -1,0 +1,57 @@
+// Versioned observation-only replacement for native_cache_v13.nativeProof.
+// Same source/seed/rank/support/substitution contract; explicit work stacks.
+// No GPU launch, inference, readback mutation or additional accepted premise.
+const need=(x,m)=>{if(!x)throw Error(m);};
+const equal=(a,b,m)=>need(JSON.stringify(a)===JSON.stringify(b),m);
+
+export function nativeProof(q){
+ const seen=new Set(),patterns=q.map.patterns;
+ function match(pattern,term,env,allow){
+  const work=[{p:pattern,id:term}],active=new Set();
+  while(work.length){
+   const entry=work.pop(),{p,id}=entry;if(entry.leave){active.delete(entry.key);continue;}
+   const x=patterns[p];need(x,'native pattern');
+   if(x.sym<0){const v=-x.sym-1;if(env.has(v)){if(env.get(v)!==id)return false;}else{if(!allow)return false;env.set(v,id);}continue;}
+   const n=q.node(id);if(n.s!==q.map.symbols[x.sym]||n.c.length!==x.children.length)return false;
+   const key=p+':'+id;need(!active.has(key),'native pattern cycle');active.add(key);work.push({leave:true,key});
+   // Reverse pushes preserve the recursive reader's left-to-right matching.
+   for(let i=x.children.length-1;i>=0;i--)work.push({p:x.children[i],id:n.c[i]});
+  }
+  return true;
+ }
+ const seeds=new Set();for(const f of q.facts)if(f.rule===-1)seeds.add(f.term);
+ need(seeds.size===q.map.seeds.length,'native seed scope');
+ for(const p of q.map.seeds)need([...seeds].some(t=>match(p,t,new Map(),false)),'native source seed identity');
+
+ function enter(id){
+  need(Number.isInteger(id)&&id>=0&&id<q.facts.length,'native fact index');
+  if(seen.has(id))return null;
+  const f=q.facts[id];need(f.rule>=-1&&f.rule<q.map.rules.length,'native rule index');
+  if(f.rule===-1){need(seeds.has(f.term)&&f.rank===0&&f.support.length===0,'native seed closure');seen.add(id);return null;}
+  const r=q.map.rules[f.rule];need(f.support.length===r.ants.length,'native premise arity');
+  return{id,f,r,env:new Map(),next:0};
+ }
+ function proof(id){
+  const first=enter(id);if(!first)return;
+  const stack=[first];
+  while(stack.length){
+   const frame=stack[stack.length-1],{f,r,env}=frame;
+   if(frame.next<f.support.length){
+    const i=frame.next,j=f.support[i];
+    need(Number.isInteger(j)&&j>=0&&j<frame.id&&q.facts[j].rank<f.rank,'native prior premise');
+    if(!seen.has(j)){const child=enter(j);if(child){stack.push(child);continue;}}
+    // Seen records only closure. Substitution belongs to this invocation and
+    // must run again for every antecedent, including a shared earlier premise.
+    need(match(r.ants[i],q.facts[j].term,env,true),'native antecedent substitution');
+    frame.next++;continue;
+   }
+   need(match(r.result,f.term,env,false),'native consequent substitution');
+   seen.add(frame.id);stack.pop();
+  }
+ }
+ function contact(id,tag,args){
+  const f=q.facts[id];need(f&&f.rule>=0,'native conclusion is derived');
+  const a=q.node(f.term).c.map(q.term);equal(a,[tag,...args],'native conclusion identity');proof(id);
+ }
+ return{contact,proof,seen};
+}

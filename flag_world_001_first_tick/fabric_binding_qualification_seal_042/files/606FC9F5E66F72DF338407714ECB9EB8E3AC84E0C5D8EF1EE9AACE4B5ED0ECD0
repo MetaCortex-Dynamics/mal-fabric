@@ -1,0 +1,56 @@
+// Host-only qualification. Synthetic controls and one complete OS census.
+// No GPU, no lane changes, no process termination except owned-helper timeout.
+import fs from 'node:fs';import path from 'node:path';import {spawnSync} from 'node:child_process';import {fileURLToPath} from 'node:url';
+import {identity,validateAbsence} from './generation_census_v1.mjs';
+import {validateSnapshot,evaluateGenerations,cutoffFiletime} from './generation_guard_v1.mjs';
+const own=fileURLToPath(import.meta.url),home=path.dirname(own),newRoot=path.dirname(home),pkg=path.dirname(newRoot),broad=path.join(pkg,'sand_refinement_diagnostics_026/sweep/broad_execution_020');
+const output=path.join(home,'GENERATION_QUALIFICATION_V1.json'),dir=path.join(home,'qualification_001');if(fs.existsSync(output)||fs.existsSync(dir))throw Error('FRESH_QUALIFICATION_REQUIRED');fs.mkdirSync(dir);
+const save=(name,value)=>{const p=path.join(dir,name);fs.writeFileSync(p,JSON.stringify(value,null,2)+'\n',{flag:'wx'});return identity(p);};
+const buildRef=identity(path.join(home,'GENERATION_BUILD_V2.json')),build=JSON.parse(fs.readFileSync(buildRef.path));
+const refs=[build.source,build.module,build.guard,build.builder,build.compiler,build.executable];
+const oldSources=[path.join(newRoot,'launch_038.mjs'),path.join(broad,'census_repair_033/supplier_sources/census_supplier_v33.mjs'),path.join(broad,'queuegate_027/queuegate_runner.mjs')].map(identity);
+const absenceRef=identity(path.join(broad,'targeted_receipt_proposal_035/reconciliation_001/PROCESS_RECONCILIATION_035.json')),old=JSON.parse(fs.readFileSync(absenceRef.path)),absence=validateAbsence(absenceRef,old.required_absent);
+const runtime=identity(path.join(pkg,'runtime_021/block_iterative_runtime.exe'));
+const cutoff=cutoffFiletime('2026-10-30T21:14:14.049Z'),born=(BigInt(cutoff)+10000000n).toString(),earlier=(BigInt(cutoff)-10000000n).toString();
+const row=(pid,parent,birth=born)=>({pid,parent_pid:parent,name:'node.exe',executable_path:'C:\\Program Files\\nodejs\\node.exe',executable_path_recheck:'C:\\Program Files\\nodejs\\node.exe',handle_pid:pid,creation_filetime:birth,creation_filetime_recheck:birth,exit_filetime:'0',exit_filetime_recheck:'0',identity_stable:'IF_THEN',win32_errors:[]});
+const tests=[];function test(name,expected,fn){let value=null,condition=null;try{value=fn();}catch(e){condition=e.message;}const verdict=expected==='IF_THEN'?!condition:condition?.startsWith(expected);tests.push({name,expected,observed:condition??'IF_THEN',verdict:verdict?'IF_THEN':'NOT_SAME',result:value});if(!verdict)throw Error('CONTROL_NOT_SAME:'+name+':'+condition);}
+const run=rows=>evaluateGenerations(rows,[100],cutoff,[runtime]);
+test('actual_old_generation','PRIOR_PROCESS_OR_DESCENDANT_PRESENT',()=>run([row(100,5,earlier)]));
+test('equal_cutoff_birth','PRIOR_PROCESS_OR_DESCENDANT_PRESENT',()=>run([row(100,5,cutoff)]));
+test('reused_root_new_generation','IF_THEN',()=>run([row(100,5)]));
+test('reused_root_with_new_descendant','IF_THEN',()=>run([row(100,5),row(200,100)]));
+test('reused_root_with_older_descendant','PRIOR_PROCESS_OR_DESCENDANT_PRESENT',()=>run([row(100,5),row(200,100,earlier)]));
+test('old_descendant_root_absent','PRIOR_PROCESS_OR_DESCENDANT_PRESENT',()=>run([row(200,100,earlier)]));
+const missing={...row(200,100),identity_stable:'MAYBE',creation_filetime:null,creation_filetime_recheck:null,win32_errors:[{stage:'GetProcessTimes:first',win32_error:5}]};
+test('new_descendant_missing_birth','PROCESS_GENERATION_UNSUPPLIED',()=>run([row(100,5),missing]));
+test('root_missing_birth','PROCESS_GENERATION_UNSUPPLIED',()=>run([{...missing,pid:100,handle_pid:100,parent_pid:5}]));
+test('path_changed','PROCESS_GENERATION_UNSUPPLIED',()=>run([{...row(100,5),executable_path_recheck:'C:\\different.exe'}]));
+test('already_exited','PROCESS_GENERATION_UNSUPPLIED',()=>run([{...row(100,5),exit_filetime_recheck:'1'}]));
+test('native_name_even_different_path','NATIVE_EXECUTABLE_PRESENT',()=>run([{...row(100,5),name:path.basename(runtime.path)}]));
+test('native_path_even_different_name','NATIVE_EXECUTABLE_PRESENT',()=>run([{...row(300,5),executable_path:runtime.path}]));
+test('native_recheck_path','NATIVE_EXECUTABLE_PRESENT',()=>run([{...row(300,5),executable_path_recheck:runtime.path}]));
+test('native_old_generation','NATIVE_EXECUTABLE_PRESENT',()=>run([{...row(100,5,earlier),name:path.basename(runtime.path)}]));
+test('native_without_path','NATIVE_EXECUTABLE_PRESENT',()=>run([{...row(300,5),name:path.basename(runtime.path),executable_path:null,executable_path_recheck:null}]));
+test('unrelated_birth_access_denied','IF_THEN',()=>run([{...missing,pid:300,handle_pid:0,parent_pid:5}]));
+test('duplicate_rows','GENERATION_ROWS_NOT_SAME',()=>run([row(100,5),row(100,5)]));
+test('empty_native_domain','NATIVE_EXECUTABLE_DOMAIN_UNSUPPLIED',()=>evaluateGenerations([row(100,5)],[100],cutoff,[]));
+test('absence_roots_not_same','ABSENCE_REQUIRED_DOMAIN_NOT_SAME',()=>validateAbsence(absenceRef,[100]));
+const started=new Date().toISOString(),r=spawnSync(build.executable.path,[],{shell:false,windowsHide:true,encoding:null,timeout:15000,maxBuffer:8388608});
+const captured=save('LIVE_CAPTURE.json',{schema:'GenerationLiveCapture038V1',started,ended:new Date().toISOString(),executable:build.executable,caller_pid:process.pid,parent_pid:process.ppid,helper_pid:r.pid,status:r.status,signal:r.signal,error:r.error?String(r.error):null,stdout:r.stdout?.toString('utf8'),stderr:r.stderr?.toString('utf8'),gpu_execution:'NONE'});
+if(r.status!==0||r.error||r.signal!==null||r.stderr.length!==0)throw Error('LIVE_CENSUS_UNCLOSED:'+captured.path);
+const envelope=JSON.parse(r.stdout.toString('utf8')),args={callerPid:process.pid,parentPid:process.ppid,helperPid:r.pid};
+let liveRows;test('actual_full_host_snapshot','IF_THEN',()=>{liveRows=validateSnapshot(envelope,args);return{rows:liveRows.length,stable:liveRows.filter(x=>x.identity_stable==='IF_THEN').length,explicit_errors:liveRows.filter(x=>x.win32_errors.length>0).length};});
+test('historical035_current_generations','IF_THEN',()=>evaluateGenerations(liveRows,old.required_absent,absence.cutoff_filetime,[runtime]));
+const caller=liveRows.find(x=>x.pid===process.pid);if(caller.identity_stable!=='IF_THEN')throw Error('LIVE_CALLER_IDENTITY_UNSUPPLIED');
+test('actual_live_process_born_before_cutoff','PRIOR_PROCESS_OR_DESCENDANT_PRESENT',()=>evaluateGenerations([caller],[caller.pid],envelope.snapshot_before_filetime,[runtime]));
+test('actual_live_process_born_after_control_cutoff','IF_THEN',()=>evaluateGenerations([caller],[caller.pid],(BigInt(caller.creation_filetime)-1n).toString(),[runtime]));
+test('snapshot_birth_after_snapshot_start','CENSUS_SNAPSHOT_HANDLE_NOT_SAME',()=>{const e=structuredClone(envelope),c=e.processes.find(x=>x.pid===process.pid);c.creation_filetime=c.creation_filetime_recheck=(BigInt(e.snapshot_before_filetime)+1n).toString();return validateSnapshot(e,args);});
+test('snapshot_duplicate_row','CENSUS_ROW_IDENTITY',()=>{const e=structuredClone(envelope);e.processes.push(e.processes[0]);e.processes_count++;return validateSnapshot(e,args);});
+test('snapshot_incomplete','CENSUS_ENUMERATION_NOT_COMPLETE',()=>validateSnapshot({...envelope,enumeration_status:'WITHHELD'},args));
+test('snapshot_count_mismatch','CENSUS_ROW_COVERAGE',()=>validateSnapshot({...envelope,processes_count:0},args));
+test('snapshot_same_handle_disagreement','CENSUS_STABILITY_NOT_SAME',()=>{const e=structuredClone(envelope),c=e.processes.find(x=>x.pid===process.pid);c.creation_filetime_recheck=(BigInt(c.creation_filetime)+1n).toString();return validateSnapshot(e,args);});
+for(const ref of[...refs,...oldSources,absenceRef,runtime,buildRef])if(JSON.stringify(identity(ref.path))!==JSON.stringify(ref))throw Error('QUALIFICATION_INPUT_CHANGED:'+ref.path);
+const controls=save('CONTROLS.json',{schema:'GenerationCensusControls038V1',verdict:'IF_THEN',tests,live_capture:captured,world_effect:'NONE',gpu_execution:'NONE'});
+const q={schema:'GenerationCensusQualification038V1',verdict:'IF_THEN',at:new Date().toISOString(),build:buildRef,qualifier:identity(own),controls,controls_passed:tests.length,controls_total:tests.length,live_capture:captured,absence:absenceRef,absence_cutoff:absence,native_runtime:runtime,old_sources_same:oldSources,gpu_execution:'NONE',guard_wiring:'NOT_PERFORMED',queuegate_change:'NONE',world_effect:'NONE',selection:'NO_MEMBER_TAKEN',scope:'Complete host census + generation-identity host controls; no native semantic/DRC qualification.'};
+fs.writeFileSync(output,JSON.stringify(q,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({qualification:identity(output),controls:tests.length,live_rows:liveRows.length}));
+

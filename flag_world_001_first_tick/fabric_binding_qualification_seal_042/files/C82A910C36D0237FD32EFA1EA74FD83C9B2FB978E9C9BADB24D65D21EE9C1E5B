@@ -1,0 +1,92 @@
+// Host-process identity custody only. No GPU, process mutation, filtering or retry.
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.Runtime.InteropServices;
+using System.Text;
+
+internal static class GenerationCensus038 {
+ const uint SNAP=2, QUERY=0x1000;
+ static readonly IntPtr BAD=new IntPtr(-1);
+ [StructLayout(LayoutKind.Sequential,CharSet=CharSet.Unicode)]
+ struct PE {
+  public uint size,usage,pid; public UIntPtr heap;
+  public uint module,threads,parent; public int priority; public uint flags;
+  [MarshalAs(UnmanagedType.ByValTStr,SizeConst=260)] public string name;
+ }
+ [StructLayout(LayoutKind.Sequential)] struct FT { public uint low,high; public ulong Value {get{return ((ulong)high<<32)|low;}} }
+ [DllImport("kernel32.dll",SetLastError=true,ExactSpelling=true)] static extern IntPtr CreateToolhelp32Snapshot(uint f,uint p);
+ [DllImport("kernel32.dll",SetLastError=true,ExactSpelling=true,CharSet=CharSet.Unicode)] [return:MarshalAs(UnmanagedType.Bool)] static extern bool Process32FirstW(IntPtr h,ref PE e);
+ [DllImport("kernel32.dll",SetLastError=true,ExactSpelling=true,CharSet=CharSet.Unicode)] [return:MarshalAs(UnmanagedType.Bool)] static extern bool Process32NextW(IntPtr h,ref PE e);
+ [DllImport("kernel32.dll",SetLastError=true,ExactSpelling=true)] static extern IntPtr OpenProcess(uint a,[MarshalAs(UnmanagedType.Bool)] bool inherit,uint p);
+ [DllImport("kernel32.dll",SetLastError=true,ExactSpelling=true)] [return:MarshalAs(UnmanagedType.Bool)] static extern bool GetProcessTimes(IntPtr h,out FT c,out FT e,out FT k,out FT u);
+ [DllImport("kernel32.dll",SetLastError=true,ExactSpelling=true)] static extern uint GetProcessId(IntPtr h);
+ [DllImport("kernel32.dll",SetLastError=true,ExactSpelling=true,CharSet=CharSet.Unicode)] [return:MarshalAs(UnmanagedType.Bool)] static extern bool QueryFullProcessImageNameW(IntPtr h,uint f,StringBuilder b,ref uint n);
+ [DllImport("kernel32.dll",SetLastError=true,ExactSpelling=true)] [return:MarshalAs(UnmanagedType.Bool)] static extern bool CloseHandle(IntPtr h);
+ sealed class Row {
+  public uint pid,parent,handlePid; public string name,image,image2,creation,creation2,exit,exit2,stable="MAYBE";
+  public List<string> errors=new List<string>();
+ }
+ static string Q(string x) {
+  if(x==null)return "null"; StringBuilder b=new StringBuilder("\"");
+  foreach(char c in x){if(c=='"')b.Append("\\\"");else if(c=='\\')b.Append("\\\\");else if(c<32||Char.IsSurrogate(c))b.Append("\\u"+((int)c).ToString("x4"));else b.Append(c);}
+  return b.Append('"').ToString();
+ }
+ static string N(ulong x){return x.ToString(CultureInfo.InvariantCulture);}
+ static string Err(string s,int e){return "{\"stage\":"+Q(s)+",\"win32_error\":"+e.ToString(CultureInfo.InvariantCulture)+"}";}
+ static string Image(IntPtr h,Row r,string stage) {
+  StringBuilder b=new StringBuilder(32768);uint n=(uint)b.Capacity;
+  if(!QueryFullProcessImageNameW(h,0,b,ref n)){r.errors.Add(Err(stage,Marshal.GetLastWin32Error()));return null;}
+  if(n==0||n>=b.Capacity||b.Length!=n)throw new Exception("IMAGE_LENGTH");
+  return b.ToString();
+ }
+ static void Times(IntPtr h,Row r,string stage,out string birth,out string exit) {
+  FT c,e,k,u;birth=null;exit=null;
+  if(!GetProcessTimes(h,out c,out e,out k,out u)){r.errors.Add(Err(stage,Marshal.GetLastWin32Error()));return;}
+  birth=N(c.Value);exit=N(e.Value);
+ }
+ static void Inspect(Row r,ulong snapshotBefore) {
+  IntPtr h=OpenProcess(QUERY,false,r.pid);
+  if(h==IntPtr.Zero){r.errors.Add(Err("OpenProcess",Marshal.GetLastWin32Error()));return;}
+  try {
+   r.handlePid=GetProcessId(h);
+   if(r.handlePid==0)r.errors.Add(Err("GetProcessId",Marshal.GetLastWin32Error()));
+   Times(h,r,"GetProcessTimes:first",out r.creation,out r.exit);
+   r.image=Image(h,r,"QueryFullProcessImageNameW:first");
+   // The held handle pins one generation. Birth before snapshot start excludes
+   // substitution after the snapshot, even for an equal executable name.
+   r.image2=Image(h,r,"QueryFullProcessImageNameW:second");
+   Times(h,r,"GetProcessTimes:second",out r.creation2,out r.exit2);
+   bool sameName=r.image!=null&&String.Equals(System.IO.Path.GetFileName(r.image),r.name,StringComparison.OrdinalIgnoreCase);
+   if(r.errors.Count==0&&r.handlePid==r.pid&&r.creation==r.creation2&&r.image==r.image2&&r.exit=="0"&&r.exit2=="0"&&sameName&&UInt64.Parse(r.creation,CultureInfo.InvariantCulture)<=snapshotBefore)r.stable="IF_THEN";
+  } finally {if(!CloseHandle(h))throw new Exception("CLOSE_PROCESS:"+Marshal.GetLastWin32Error());}
+ }
+ public static int Main(string[] args) {
+  Console.OutputEncoding=new UTF8Encoding(false);int count=0;string started=DateTime.UtcNow.ToString("o",CultureInfo.InvariantCulture);
+  try {
+   if(args.Length!=0)throw new Exception("ARGUMENTS");
+   ulong snapshotBefore=(ulong)DateTime.UtcNow.ToFileTimeUtc();
+   IntPtr h=CreateToolhelp32Snapshot(SNAP,0);if(h==BAD)throw new Exception("SNAPSHOT:"+Marshal.GetLastWin32Error());
+   List<Row> rows=new List<Row>();int terminal=0,entrySize=Marshal.SizeOf(typeof(PE));
+   try {
+    PE e=new PE();e.size=(uint)entrySize;e.name=String.Empty;
+    if(!Process32FirstW(h,ref e))throw new Exception("FIRST:"+Marshal.GetLastWin32Error());
+    while(true) {
+     Row r=new Row();r.pid=e.pid;r.parent=e.parent;r.name=e.name;Inspect(r,snapshotBefore);rows.Add(r);count++;
+     e.size=(uint)entrySize;if(!Process32NextW(h,ref e)){terminal=Marshal.GetLastWin32Error();if(terminal!=18)throw new Exception("NEXT:"+terminal);break;}
+    }
+   } finally {if(!CloseHandle(h))throw new Exception("CLOSE_SNAPSHOT:"+Marshal.GetLastWin32Error());}
+   StringBuilder b=new StringBuilder("{\"schema\":\"GenerationProcessSnapshot038V1\",\"coverage\":\"ALL_HOST_PROCESSES\",\"provider\":\"CreateToolhelp32Snapshot\",\"flags\":2,\"process_id\":0,\"enumeration_status\":\"COMPLETE\",\"terminal_win32_error\":18");
+   b.Append(",\"started_utc\":").Append(Q(started)).Append(",\"ended_utc\":").Append(Q(DateTime.UtcNow.ToString("o",CultureInfo.InvariantCulture))).Append(",\"snapshot_before_filetime\":").Append(Q(N(snapshotBefore)));
+   b.Append(",\"supplier_pid\":").Append(Process.GetCurrentProcess().Id).Append(",\"pointer_bytes\":").Append(IntPtr.Size).Append(",\"process_entry_bytes\":").Append(entrySize).Append(",\"processes_count\":").Append(rows.Count).Append(",\"processes\":[");
+   for(int i=0;i<rows.Count;i++){
+    Row r=rows[i];if(i>0)b.Append(',');
+    b.Append("{\"pid\":").Append(r.pid).Append(",\"parent_pid\":").Append(r.parent).Append(",\"name\":").Append(Q(r.name)).Append(",\"executable_path\":").Append(Q(r.image)).Append(",\"executable_path_recheck\":").Append(Q(r.image2));
+    b.Append(",\"handle_pid\":").Append(r.handlePid).Append(",\"creation_filetime\":").Append(Q(r.creation)).Append(",\"creation_filetime_recheck\":").Append(Q(r.creation2)).Append(",\"exit_filetime\":").Append(Q(r.exit)).Append(",\"exit_filetime_recheck\":").Append(Q(r.exit2)).Append(",\"identity_stable\":").Append(Q(r.stable)).Append(",\"win32_errors\":[").Append(String.Join(",",r.errors.ToArray())).Append("]}");
+   }
+   Console.WriteLine(b.Append("]}").ToString());return 0;
+  }catch(Exception e){Console.Error.WriteLine("{\"schema\":\"GenerationProcessSnapshotFailure038V1\",\"enumeration_status\":\"WITHHELD\",\"partial_rows\":"+count+",\"condition\":"+Q(e.Message)+"}");return 2;}
+ }
+}
+

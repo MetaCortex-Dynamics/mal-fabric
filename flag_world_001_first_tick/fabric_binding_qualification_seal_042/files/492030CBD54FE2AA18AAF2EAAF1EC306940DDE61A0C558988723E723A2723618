@@ -1,0 +1,39 @@
+{
+  "at": "2026-11-01T04:59:29.976Z",
+  "command": {
+    "id": "SITE_JOIN_CONTACT_041_01",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "argv": [
+      "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\launch_generation_v1_038.mjs",
+      "worker",
+      "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\PLAN.json",
+      "SITE_JOIN_CONTACT_041_01"
+    ],
+    "cwd": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038",
+    "sources": [
+      "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\launch_generation_v1_038.mjs"
+    ],
+    "outputs": [
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\SITE_JOIN_CONTACT_041_01\\NATIVE_OBSERVATION.json",
+        "equals": {
+          "schema": "SnapshotWaveNativeObservation038",
+          "verdict": "IF_THEN",
+          "world_effect": "NONE",
+          "selection": "NO_MEMBER_TAKEN"
+        }
+      }
+    ]
+  },
+  "implementation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\queuegate_027\\queuegate_runner.mjs",
+    "bytes": 16256,
+    "sha256": "2065C77ADC827238C6AFB22C5B9A7C753F9AA286206CEC2ADD1579E39209501D"
+  },
+  "plan": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\PLAN.json",
+    "bytes": 23813,
+    "sha256": "3C8EA2FCFF171FF9B58AAA53FC3A84E1590E37EF81C902C7188A9F1A0063E389"
+  },
+  "world_effect": "NONE"
+}

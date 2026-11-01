@@ -1,0 +1,41 @@
+// Package custody only. The unchanged QueueGate launcher owns the live census,
+// exclusive lane, exit/readback closure and failure disposition.
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {preparePlan} from '../launch_generation_v1_038.mjs';
+import {here,home,carrier,need,identity,verify,read,save,unique,nestedRefs} from './custody_042.mjs';
+const own=fileURLToPath(import.meta.url),scope={world_effect:'NONE',selection:'NO_MEMBER_TAKEN'};
+function ref(x){return typeof x==='string'?identity(x):verify(x);}
+export async function prepare(requestPath){
+ const requestRef=identity(requestPath),r=read(requestPath);
+ need(/^[A-Z][A-Z0-9_]+$/.test(r.stage),'STAGE_ID');
+ const output=path.resolve(r.directory),relative=path.relative(here,output);
+ need(relative!==''&&!relative.startsWith('..')&&!path.isAbsolute(relative)&&!fs.existsSync(output),'FRESH_042_OUTPUT_REQUIRED');
+ const source=ref(r.source),source_map=ref(r.source_map),image=ref(r.image),observer=ref(r.observer),expected=ref(r.expected);
+ const authority=identity(path.join(here,'AUTHORITY_042.json'));
+ const binding=identity(path.join(here,'CANONICAL_PROGRAM_BINDING_042.json'));
+ const prior=path.join(carrier,'sand_refinement_diagnostics_026/sweep/broad_execution_020');
+ const process_closure=identity(path.join(prior,'targeted_receipt_proposal_035/reconciliation_001/PROCESS_RECONCILIATION_035.json'));
+ need(process_closure.sha256==='89BCCFE7403B4C7F43AA4755A16D3794A5BBB1F1034C33C19BB10B4963E673B6','PROCESS_CLOSURE_NOT_SAME');
+ const runtime=identity(path.join(carrier,'runtime_021/block_iterative_runtime.exe'));
+ const launcher=identity(path.join(home,'launch_generation_v1_038.mjs'));
+ need(launcher.sha256==='8A110F5C54BAC1D7C49E7430C5DA4F220C42C98FF73BC85FFD6F675D358D5E30','LAUNCHER_NOT_SAME');
+ const priorClosed=identity(path.join(home,'fabric_correspondence_041/execution_002/queuegate_attempt/CLOSED.json'));
+ need(priorClosed.sha256==='FFC2FAD70528A8B2A2EB3AAC4BE73A21FA1B28B1DA0926E70C172A56D5EA7D66','041_CLOSURE_NOT_SAME');
+ const vocabulary=identity(path.join(carrier,'snapshot_effect_vocabulary_040/inputs/ERRATUM_E_WAVE_001.mal'));
+ need(vocabulary.sha256==='81B5C6AD858624DB1B577524BFA983928F71D3BA19064725DB3706B6E1513E32','VOCABULARY_NOT_SAME');
+ const receipt=identity(path.join(carrier,'snapshot_effect_vocabulary_040/inputs/RECEIPT_PROMOTE_ERRATUM_E_WAVE_001_v0.1.1.md'));
+ const extra=(r.inputs??[]).map(ref),sources=unique([identity(own),identity(path.join(here,'custody_042.mjs')),launcher,source,observer,...(r.sources??[]).map(ref)]);
+ const expectedRefs=nestedRefs(read(expected.path));
+ const inputs=unique([requestRef,authority,binding,...nestedRefs(read(binding.path)),vocabulary,receipt,source_map,image,expected,priorClosed,...sources,...extra,...expectedRefs]);
+ for(const x of inputs)verify(x);
+ const observerConfig={source,source_map,image,expected,...(r.config??{})};
+ const additionalPredecessors=(r.predecessors??[]).map(ref);
+ fs.mkdirSync(output);
+ const config=save(path.join(output,'CONFIG.json'),{schema:'SnapshotWaveExecutionConfig038',authority,inputs,sources,runtime,observer,process_closure,predecessors:[priorClosed,...additionalPredecessors].map(x=>({path:path.dirname(x.path),sha256:x.sha256})),runs:['01','02'].map(suffix=>({id:r.stage+'_'+suffix,image,config:observerConfig,invocation_limit_ms:900000})),...scope});
+ const prepared=await preparePlan(config.path,path.join(output,'prepared'));
+ for(const x of inputs)verify(x);
+ return save(path.join(output,'PREPARED_042.json'),{schema:'FabricBindingPreparation042',stage:r.stage,at:new Date().toISOString(),request:requestRef,config,...prepared,automatic_retry:'NO',...scope});
+}
+if(process.argv[1]&&path.resolve(process.argv[1])===own)console.log(JSON.stringify(await prepare(process.argv[2])));

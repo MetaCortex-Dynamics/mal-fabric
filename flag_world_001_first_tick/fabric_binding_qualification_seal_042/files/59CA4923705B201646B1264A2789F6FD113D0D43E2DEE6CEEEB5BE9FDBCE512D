@@ -1,0 +1,42 @@
+{
+  "schema": "FabricRuntimeLaneRelease042",
+  "verdict": "IF_THEN",
+  "at": "2026-11-01T06:13:56.145Z",
+  "decision": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\reconciliation_runtime_001\\RELEASE_DECISION.json",
+    "bytes": 1395,
+    "sha256": "6D7258BD143DAF12DC925A26083E0BA035D33EA768ADA487610C5E89A4A28CE5"
+  },
+  "reconciliation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\reconciliation_runtime_001\\RECONCILIATION.json",
+    "bytes": 37416,
+    "sha256": "ED1B01D60CFC35A9D90AA58BFD57F998810BA040A30D1459995CA38353110243"
+  },
+  "intent": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\reconciliation_runtime_001\\LANE_RELEASE_INTENT.json",
+    "bytes": 2158,
+    "sha256": "0FF2B9890E3090A949173C263771B6098CA13126B11DA6195F1AFDCC0B76D903"
+  },
+  "archived_owner": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\queuegate_027\\shared_lane\\FAILED_FABRIC_RUNTIME_042_C42A6B3481384811\\OWNER.json",
+    "bytes": 582,
+    "sha256": "C42A6B3481384811585D3FA8B020D953C2C453BBE93CC5CD5F61E8FC1EC7C397"
+  },
+  "lane": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\queuegate_027\\shared_lane",
+  "status": "EMPTY",
+  "original_terminal": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\execution_runtime_001\\queuegate_attempt\\BLOCKED.json",
+    "bytes": 365,
+    "sha256": "B13E70AA28BBADB26118B1E66FA74149167069E749AE4FE957335E84247A28D4"
+  },
+  "original_terminal_status": "BLOCKED_UNCHANGED",
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN",
+  "counted": 0,
+  "merged": 0,
+  "automatic_retry": "NO",
+  "recovery_resume": "NO",
+  "world_transition": "NO",
+  "repository_commit": "NO",
+  "push": "NO"
+}

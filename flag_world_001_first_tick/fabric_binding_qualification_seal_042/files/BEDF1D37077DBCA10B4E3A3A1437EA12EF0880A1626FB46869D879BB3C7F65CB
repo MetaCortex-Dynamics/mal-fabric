@@ -1,0 +1,130 @@
+// Transport preparation only. Native .mal and its observer supply every result.
+// This module neither launches a runtime nor touches the shared execution lane.
+// API: prepareExecution({source, image, sourceMap, observer, expected,
+//   outputDirectory, extraInputs?:[path|ref], extraSources?:[path|ref],
+//   perInvocationMs?:number}) -> {config, package_binding, plan, runs, prepared}.
+// All input fields accept absolute paths or exact {path,bytes,sha256} references.
+// CLI: node prepare_execution_041.mjs REQUEST.json
+// REQUEST.json carries those API arguments. Its own identity is also bound.
+// Observer ABI: observe({source,source_map,image,expected},
+//   {readback,stdout,stderr,grant}); the three artifact arguments are paths.
+// Two invocations use the same source, image and observer input, with separate
+// fresh readback/exit/observation paths. Preparation makes no replay claim.
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {identity, preparePlan} from '../launch_generation_v1_038.mjs';
+
+const own = fileURLToPath(import.meta.url);
+const home = path.dirname(own);
+const realization = path.dirname(home);
+const carrier = path.dirname(realization);
+const broad = path.join(carrier, 'sand_refinement_diagnostics_026/sweep/broad_execution_020');
+const vocabulary = path.join(carrier, 'snapshot_effect_vocabulary_040/inputs');
+const scope = {world_effect:'NONE', selection:'NO_MEMBER_TAKEN'};
+const need = (x, message) => { if (!x) throw Error(message); };
+const key = p => path.resolve(p).toLowerCase();
+const same = (a,b) => a && b && key(a.path) === key(b.path) && a.bytes === b.bytes && a.sha256 === b.sha256;
+const within = (root,p) => { const r=path.relative(root,p); return r!=='' && r!=='..' && !r.startsWith('..'+path.sep) && !path.isAbsolute(r); };
+const moduleAtLoad = identity(own);
+
+function ref(value, label) {
+  const p = typeof value === 'string' ? value : value?.path;
+  need(typeof p === 'string' && path.isAbsolute(p), 'ABSOLUTE_INPUT_REQUIRED:'+label);
+  const actual = identity(p);
+  if (typeof value !== 'string') need(same(actual,value), 'INPUT_NOT_SAME:'+label);
+  return actual;
+}
+function pin(p, sha256) {
+  const r = ref(p,p); need(r.sha256 === sha256, 'PIN_NOT_SAME:'+p); return r;
+}
+function unique(refs) {
+  const found = new Map();
+  for (const r of refs) {
+    const old = found.get(key(r.path));
+    need(!old || same(old,r), 'INPUT_IDENTITY_CONFLICT:'+r.path);
+    found.set(key(r.path),r);
+  }
+  return [...found.values()];
+}
+function save(p, value) {
+  const fd=fs.openSync(p,'wx');
+  try { fs.writeFileSync(fd,JSON.stringify(value,null,2)+'\n'); fs.fsyncSync(fd); }
+  finally { fs.closeSync(fd); }
+  return identity(p);
+}
+function recheck(refs) {
+  for (const r of refs) need(same(identity(r.path),r), 'INPUT_CHANGED:'+r.path);
+  need(same(identity(own),moduleAtLoad), 'PREPARER_CHANGED_SINCE_LOAD');
+}
+
+export async function prepareExecution(options, requestIdentity) {
+  need(options && typeof options === 'object' && !Array.isArray(options),'REQUEST_UNSUPPLIED');
+  const source=ref(options.source,'source');
+  const source_map=ref(options.sourceMap,'sourceMap');
+  const image=ref(options.image,'image');
+  const observer=ref(options.observer,'observer');
+  const expected=ref(options.expected,'expected');
+  need(source.path.endsWith('.mal') && source_map.path.endsWith('.json') && observer.path.endsWith('.mjs') && expected.path.endsWith('.json'),'INPUT_KIND_NOT_SAME');
+  for (const name of ['extraInputs','extraSources']) need(options[name]===undefined || Array.isArray(options[name]),'INPUT_LIST_UNSUPPLIED:'+name);
+  const extraInputs=(options.extraInputs??[]).map((r,i)=>ref(r,'extraInputs:'+i));
+  const extraSources=(options.extraSources??[]).map((r,i)=>ref(r,'extraSources:'+i));
+  const request=requestIdentity===undefined ? [] : [ref(requestIdentity,'request')];
+  const limit=options.perInvocationMs??900000;
+  need(Number.isSafeInteger(limit) && limit>0 && limit<=2147483647,'INVOCATION_LIMIT_UNSUPPLIED');
+  const directory=options.outputDirectory;
+  need(typeof directory==='string' && path.isAbsolute(directory) && within(home,directory) && !fs.existsSync(directory),'FRESH_041_DIRECTORY_REQUIRED');
+  need(key(fs.realpathSync.native(path.dirname(directory)))===key(path.dirname(directory)),'OUTPUT_PARENT_ALIAS');
+
+  const launcher=pin(path.join(realization,'launch_generation_v1_038.mjs'),'8A110F5C54BAC1D7C49E7430C5DA4F220C42C98FF73BC85FFD6F675D358D5E30');
+  const authority=ref(path.join(home,'AUTHORITY_041.json'),'authority');
+  const erratum=pin(path.join(vocabulary,'ERRATUM_E_WAVE_001.mal'),'81B5C6AD858624DB1B577524BFA983928F71D3BA19064725DB3706B6E1513E32');
+  const promotion=pin(path.join(vocabulary,'RECEIPT_PROMOTE_ERRATUM_E_WAVE_001_v0.1.1.md'),'72493D5FFFED2921BF9D365F0D96BED5443BE5F32F9D27D6B93873C609A1A579');
+  const process_closure=pin(path.join(broad,'targeted_receipt_proposal_035/reconciliation_001/PROCESS_RECONCILIATION_035.json'),'89BCCFE7403B4C7F43AA4755A16D3794A5BBB1F1034C33C19BB10B4963E673B6');
+  const predecessor=pin(path.join(broad,'targeted_receipt_execution_036/execution_target/queuegate_attempt/CLOSED.json'),'03BF1543EB7BA56A9DE1872FA1D7ECE66F51634282C1A4FAFBDD56D4438481DB');
+  const runtime=pin(path.join(carrier,'runtime_021/block_iterative_runtime.exe'),'9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06');
+  const sources=unique([moduleAtLoad,launcher,source,observer,...extraSources]);
+  const inputs=unique([authority,erratum,promotion,source_map,image,expected,predecessor,...request,...extraInputs,...sources]);
+  const all=unique([...inputs,process_closure,runtime]);
+  recheck(all);
+  // No execution or lane inspection occurs here. The unchanged launcher performs
+  // generation-aware live census and QueueGate guards only when launch is called.
+  fs.mkdirSync(directory);
+  need(key(fs.realpathSync.native(directory))===key(directory),'OUTPUT_DIRECTORY_ALIAS');
+  const observerInput={source,source_map,image,expected};
+  const configValue={
+    schema:'SnapshotWaveExecutionConfig038', authority, inputs, sources, runtime,
+    observer, process_closure,
+    predecessors:[{path:path.dirname(predecessor.path),sha256:predecessor.sha256}],
+    runs:['SITE_JOIN_CONTACT_041_01','SITE_JOIN_CONTACT_041_02'].map(id=>({id,image,config:observerInput,invocation_limit_ms:limit})),
+    per_invocation_ms:limit, ...scope
+  };
+  const config=save(path.join(directory,'CONFIG.json'),configValue);
+  const preparedPlan=await preparePlan(config.path,path.join(directory,'prepared'));
+  recheck(all);
+  const prepared=save(path.join(directory,'PREPARED_041.json'),{
+    schema:'SiteReadingJoinExecutionPreparation041',at:new Date().toISOString(),
+    status:'PREPARED_NOT_RUN',implementation:moduleAtLoad,config,
+    package_binding:preparedPlan.package_binding,plan:preparedPlan.plan,
+    invocation_count:2,comparison:'EXACT_IMAGE_REPEAT_REQUESTED_NOT_WITNESSED',
+    authority,vocabulary:{erratum,promotion},source,source_map,image,observer,expected,
+    resource_bounds:{fact_capacity:2097152,per_invocation_ms:limit},
+    runtime_invoked:'NO',lane_acquired:'NO',automatic_retry:'NO',...scope
+  });
+  return {config,...preparedPlan,prepared};
+}
+
+if (process.argv[1] && key(process.argv[1])===key(own)) {
+  const arg=process.argv[2];
+  if (arg==='--help') {
+    console.log('node prepare_execution_041.mjs REQUEST.json\nRequired: source,image,sourceMap,observer,expected,outputDirectory (absolute paths). Optional: extraInputs,extraSources,perInvocationMs. Preparation only; no GPU or lane acquisition.');
+  } else {
+    try {
+      need(process.argv.length===3,'USAGE: node prepare_execution_041.mjs REQUEST.json');
+      const request=ref(arg,'request');
+      const options=JSON.parse(fs.readFileSync(request.path,'utf8'));
+      recheck([request]);
+      console.log(JSON.stringify(await prepareExecution(options,request),null,2));
+    } catch (error) { console.error(error.stack??String(error)); process.exitCode=1; }
+  }
+}

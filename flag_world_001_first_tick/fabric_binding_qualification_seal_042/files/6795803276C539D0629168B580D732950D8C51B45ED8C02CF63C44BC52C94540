@@ -1,0 +1,273 @@
+{
+  "schema": "SnapshotWaveCaseClosure038",
+  "verdict": "IF_THEN",
+  "case_id": "J17_G2_DIAGNOSTIC_COPY",
+  "version": "q008_normal",
+  "variant": "normal",
+  "field": {
+    "id": "J17_G2_DIAGNOSTIC_COPY",
+    "level": "2",
+    "this_flags": [
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]]",
+      "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]]"
+    ],
+    "construction": "Exact field from historical committed g2, copied only as a diagnostic fixture; no live world head is supplied.",
+    "expected_host_oracle": {
+      "status": "READ_ONLY_HOST_EXPECTATION_NOT_GPU_RECEIPT_NOT_ENGINE_SEED",
+      "field_sha256": "861923173096B276F698F894C3699B7DE9B6CFB16694D315868B927568B54A98",
+      "this_flags": 12,
+      "walls": 12,
+      "whole_site": "IF_THEN",
+      "split_sites": [],
+      "raw_assignment_count": 2048,
+      "K": [
+        {
+          "raw_identity": "SITE(\"C:HW_04|HW_09\",\"NO\")",
+          "support": "[\"level2_native_inventory\",\"SITE\",\"C:HW_04|HW_09\"]",
+          "reading": "READING_NO",
+          "effect_sha256": "5E4EF07E65DCAF372375A444D83F0BE8755DC387DAD85ED8B46314EF770CBA55",
+          "receipt": {
+            "changed": [
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]]",
+              "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]]"
+            ],
+            "discharged": [
+              "[[\"C:HW_04|HW_05\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]],[\"C:HW_04|HW_09\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]]]",
+              "[[\"C:HW_04|HW_05\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]],[\"C:HW_04|HW_09\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]]]",
+              "[[\"C:HW_04|HW_08\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]],[\"C:HW_04|HW_09\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]]]",
+              "[[\"C:HW_04|HW_08\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]],[\"C:HW_04|HW_09\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]]]",
+              "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]],[\"C:HW_05|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]]]",
+              "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]],[\"C:HW_05|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]]]",
+              "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]],[\"C:HW_08|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]]]",
+              "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]],[\"C:HW_08|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]]]",
+              "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]],[\"D:HW_04\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]]]",
+              "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]],[\"D:HW_04\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]]]",
+              "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]],[\"D:HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]]]",
+              "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]],[\"D:HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]]]"
+            ],
+            "opened": [],
+            "retained": []
+          }
+        }
+      ],
+      "effect_classes": [
+        {
+          "effect_sha256": "5E4EF07E65DCAF372375A444D83F0BE8755DC387DAD85ED8B46314EF770CBA55",
+          "raw_identities": [
+            "SITE(\"C:HW_04|HW_09\",\"NO\")"
+          ]
+        }
+      ],
+      "joint_receipt": {
+        "changed": [
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]]",
+          "[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]]"
+        ],
+        "discharged": [
+          "[[\"C:HW_04|HW_05\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]],[\"C:HW_04|HW_09\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]]]",
+          "[[\"C:HW_04|HW_05\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]],[\"C:HW_04|HW_09\",[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]]]",
+          "[[\"C:HW_04|HW_08\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]],[\"C:HW_04|HW_09\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]]]",
+          "[[\"C:HW_04|HW_08\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]],[\"C:HW_04|HW_09\",[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]]]",
+          "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]],[\"C:HW_05|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"]]]",
+          "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]],[\"C:HW_05|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]]]",
+          "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]],[\"C:HW_08|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"]]]",
+          "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]],[\"C:HW_08|HW_09\",[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]]]",
+          "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]],[\"D:HW_04\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_05\",\"C:HW_04|HW_09\",\"D:HW_04\"]]]",
+          "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]],[\"D:HW_04\",[\"C:HW_04|HW_09\",\"D:HW_04\"],[\"C:HW_04|HW_08\",\"C:HW_04|HW_09\",\"D:HW_04\"]]]",
+          "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]],[\"D:HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_05|HW_09\",\"D:HW_09\"]]]",
+          "[[\"C:HW_04|HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]],[\"D:HW_09\",[\"C:HW_04|HW_09\",\"D:HW_09\"],[\"C:HW_04|HW_09\",\"C:HW_08|HW_09\",\"D:HW_09\"]]]"
+        ],
+        "opened": [],
+        "retained": []
+      },
+      "returned_this_flags": [],
+      "next_snapshot_K": []
+    }
+  },
+  "request": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\REQUEST.json",
+    "bytes": 1375,
+    "sha256": "6CA3EF5CDB7918C2D4D19CCCC4B76BAF8743B7F611ADF86838842AA49D61ACBF"
+  },
+  "field_binding": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\FIELD_BINDING.json",
+    "bytes": 14712,
+    "sha256": "36AF53FF025E56C5CA279B9097FC087672E5A88FB6C5D498EDCA7944FB17D9AF"
+  },
+  "frozen_sources": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\SOURCES_AT_START.json",
+    "bytes": 6640,
+    "sha256": "92C55C3A58CD9D6C8F60610CB33D8ADB9C63E2253C66E63E7A3C2FE707DD85D1"
+  },
+  "prepared_A": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_PREPARED_RETURN.json",
+    "bytes": 1177427,
+    "sha256": "A1E9C2E185598492D8FEAD8A85D9665DAB041259D270BF417D97A72D57811E5B"
+  },
+  "prepared_B": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_PREPARED_RETURN.json",
+    "bytes": 44077,
+    "sha256": "B80A4AC9363E5A8C497849BE7566734C0C3909A53B1BCAAEF1D3BAC12009C78F"
+  },
+  "stage_A": [
+    {
+      "schema": "SnapshotWaveClosedInvocation038",
+      "id": "A_000",
+      "elapsed_ms": 31334,
+      "plan": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_000\\prepared\\PLAN.json",
+        "bytes": 26571,
+        "sha256": "6CD7181630C6A0D936B3EC5657EDC2B9FD720DB1FE7198E31BA0494F5FB5444A"
+      },
+      "observation": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_000\\prepared\\A_000\\NATIVE_OBSERVATION.json",
+        "bytes": 1869141,
+        "sha256": "68DA0B69221703F3D72ADE9D621F5C58E46FE3BD4BEAD83E7C42A1F87AFA62F3"
+      },
+      "closed": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_000\\queuegate_attempt\\CLOSED.json",
+        "bytes": 943,
+        "sha256": "A638809C0C61B610322CBB109828DCB35AB69FD57FB8CD158E6DC1B7659D2E52"
+      },
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_000\\prepared\\A_000\\readback.bin",
+        "bytes": 268435488,
+        "sha256": "8A54CB12C9AB782A9B3490C6FF3F968AE13135B7AFE2E72022E5B7FED53A2D27"
+      },
+      "result": {
+        "queue_status": "EMPTY",
+        "artifact_gate": "PASSED",
+        "closure": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_000\\queuegate_attempt\\CLOSED.json",
+          "bytes": 943,
+          "sha256": "A638809C0C61B610322CBB109828DCB35AB69FD57FB8CD158E6DC1B7659D2E52"
+        }
+      },
+      "world_effect": "NONE",
+      "selection": "NO_MEMBER_TAKEN",
+      "record": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_CLOSED_000.json",
+        "bytes": 2069,
+        "sha256": "7ABDB5E7DD92120EEDD233CBB269F97C87FF531777156B69DD0C797D654014B0"
+      }
+    },
+    {
+      "schema": "SnapshotWaveClosedInvocation038",
+      "id": "A_001",
+      "elapsed_ms": 45048,
+      "plan": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_001\\prepared\\PLAN.json",
+        "bytes": 26572,
+        "sha256": "E0BAFC7D65F6C8FEA9989FF27374AEB7FD5DF2599DEAAC4D6A9F26A07A201BE0"
+      },
+      "observation": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_001\\prepared\\A_001\\NATIVE_OBSERVATION.json",
+        "bytes": 1896886,
+        "sha256": "3F3BE630BDDDBED3D8892F259BA68D5B7845E825840E0E0E24E2451CAD82D611"
+      },
+      "closed": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_001\\queuegate_attempt\\CLOSED.json",
+        "bytes": 943,
+        "sha256": "3B91F198E455CD804D44648BA28ED0BEBC8E226F633669CF48E567C89926380D"
+      },
+      "readback": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_001\\prepared\\A_001\\readback.bin",
+        "bytes": 268435488,
+        "sha256": "1F1B832A13BD3CF8CE7BA956A16CC66633D815C1F6A21A84A3491E737192A416"
+      },
+      "result": {
+        "queue_status": "EMPTY",
+        "artifact_gate": "PASSED",
+        "closure": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_execute_001\\queuegate_attempt\\CLOSED.json",
+          "bytes": 943,
+          "sha256": "3B91F198E455CD804D44648BA28ED0BEBC8E226F633669CF48E567C89926380D"
+        }
+      },
+      "world_effect": "NONE",
+      "selection": "NO_MEMBER_TAKEN",
+      "record": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\A_CLOSED_001.json",
+        "bytes": 2069,
+        "sha256": "FE187D3F6015FCA9E0EF184CEB3D5F320FD48E01D4269115BE14D8FB64CA5247"
+      }
+    }
+  ],
+  "stage_B": {
+    "schema": "SnapshotWaveClosedInvocation038",
+    "id": "B_000",
+    "elapsed_ms": 18611,
+    "plan": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\prepared\\PLAN.json",
+      "bytes": 32007,
+      "sha256": "BFAA33576065FFF00B5B34B44C0B4F250925A5B2655A73C33E7D742D94772CFE"
+    },
+    "observation": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+      "bytes": 214075,
+      "sha256": "981EDE8FCC2599EAD8070F534933DBA6638290434D3C024E3667E9F862DC8657"
+    },
+    "closed": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+      "bytes": 943,
+      "sha256": "2908E25527DF31251C918342BD84A88631FD1F7E4D92833D6722B68AA87E8860"
+    },
+    "readback": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\prepared\\B_000\\readback.bin",
+      "bytes": 268435488,
+      "sha256": "E3A0FA6EFECA8C9DAFFBC2153BA7A778BDD3C4012691B0F6DE27F3D431FB54C6"
+    },
+    "result": {
+      "queue_status": "EMPTY",
+      "artifact_gate": "PASSED",
+      "closure": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+        "bytes": 943,
+        "sha256": "2908E25527DF31251C918342BD84A88631FD1F7E4D92833D6722B68AA87E8860"
+      }
+    },
+    "world_effect": "NONE",
+    "selection": "NO_MEMBER_TAKEN",
+    "record": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_CLOSED_000.json",
+      "bytes": 2068,
+      "sha256": "F9883212152DF7B8676EF025BF2E74ADD8889B9F9A571BC16C15C0A35AB2C1DE"
+    }
+  },
+  "result": "WAVE_READY",
+  "comparison": null,
+  "elapsed_ms": 156310,
+  "closed_at": "2026-10-31T00:26:36.838Z",
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN"
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "SiteReadingJoinExecutionPreparation041",
+  "at": "2026-11-01T04:59:17.626Z",
+  "status": "PREPARED_NOT_RUN",
+  "implementation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\prepare_execution_041.mjs",
+    "bytes": 8018,
+    "sha256": "BEDF1D37077DBCA10B4E3A3A1437EA12EF0880A1626FB46869D879BB3C7F65CB"
+  },
+  "config": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\CONFIG.json",
+    "bytes": 24329,
+    "sha256": "A49DF6133E55E50D7DADCA28E474A0477FD3D34FE04DD26E45242715D8E6AA65"
+  },
+  "package_binding": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\PACKAGE.json",
+    "bytes": 27371,
+    "sha256": "DA8A3617109036E535C6B5D9044C177CD90F4E51562C519CB8238410C0C02471"
+  },
+  "plan": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\PLAN.json",
+    "bytes": 23813,
+    "sha256": "3C8EA2FCFF171FF9B58AAA53FC3A84E1590E37EF81C902C7188A9F1A0063E389"
+  },
+  "invocation_count": 2,
+  "comparison": "EXACT_IMAGE_REPEAT_REQUESTED_NOT_WITNESSED",
+  "authority": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\AUTHORITY_041.json",
+    "bytes": 1034,
+    "sha256": "E845BE1DB4577B9D867ABBA5A65EBDCD9A7A518C07E7919BF5D858046B46169D"
+  },
+  "vocabulary": {
+    "erratum": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\snapshot_effect_vocabulary_040\\inputs\\ERRATUM_E_WAVE_001.mal",
+      "bytes": 10373,
+      "sha256": "81B5C6AD858624DB1B577524BFA983928F71D3BA19064725DB3706B6E1513E32"
+    },
+    "promotion": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\snapshot_effect_vocabulary_040\\inputs\\RECEIPT_PROMOTE_ERRATUM_E_WAVE_001_v0.1.1.md",
+      "bytes": 3524,
+      "sha256": "72493D5FFFED2921BF9D365F0D96BED5443BE5F32F9D27D6B93873C609A1A579"
+    }
+  },
+  "source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\site_join_execution_v2_041.mal",
+    "bytes": 113776,
+    "sha256": "03A58FFC1161BB9C94BF46007BB58AC8958F63AC3EFE7462C8E3073CF9D27AD4"
+  },
+  "source_map": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\native_image_v2\\source-map.json",
+    "bytes": 2072062,
+    "sha256": "2EE971BE7D82C317DADF7CB30E5E6B1A3BA2FE49A66D86B31EAF9FCAC91674B6"
+  },
+  "image": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\native_image_v2\\image.bin",
+    "bytes": 41992208,
+    "sha256": "6E4013B770B796BCD72F4A74E9C42C0E308FEF27377720F5312A709E9E86D3DB"
+  },
+  "observer": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\observe_041.mjs",
+    "bytes": 6382,
+    "sha256": "1120453268481D59E63AE2CBEEB0F09EC347D0CA81C7B0B4758C2A1D53BA21EC"
+  },
+  "expected": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\EXPECTED_v2_041.json",
+    "bytes": 67518,
+    "sha256": "4938515268CAD5005CCEC2CB0410D08C84C9A7F9F3A4D39FCF917E38B0497288"
+  },
+  "resource_bounds": {
+    "fact_capacity": 2097152,
+    "per_invocation_ms": 300000
+  },
+  "runtime_invoked": "NO",
+  "lane_acquired": "NO",
+  "automatic_retry": "NO",
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN"
+}

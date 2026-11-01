@@ -1,0 +1,49 @@
+// Final evidence accounting only. No conclusion is written before both
+// QueueGate plans and every expected diagnostic observation have closed.
+import fs from 'node:fs';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+import {here,home,carrier,need,identity,verify,read,save,unique,nestedRefs,exact} from './custody_042.mjs';
+function execution(name){
+ const root=path.join(here,name),prep=identity(path.join(root,'PREPARED_042.json')),p=read(prep.path);
+ const closure=identity(path.join(root,'queuegate_attempt/CLOSED.json')),c=read(closure.path);
+ need(c.queue_status==='EMPTY'&&c.artifact_gate==='PASSED','UNCLOSED_'+name);
+ verify(c.candidate);verify(c.observer);const candidate=read(c.candidate.path),oc=read(c.observer.path);
+ need(candidate.plan.sha256===p.plan.sha256&&oc.verdict==='IF_THEN'&&oc.candidate.sha256===c.candidate.sha256,'CLOSURE_BINDING_'+name);
+ const observations=p.runs.map(r=>({ref:identity(r.output),value:read(r.output)}));
+ const refs=nestedRefs(candidate);
+ for(const o of observations){need(o.value.verdict==='IF_THEN'&&o.value.observation.verdict==='IF_THEN','OBSERVATION_'+name);need(refs.some(r=>r.sha256===o.ref.sha256&&r.path.toLowerCase()===o.ref.path.toLowerCase()),'UNCOVERED_OBSERVATION');const e=read(o.value.exit.path);need(e.exit_code===0&&e.deadline==='WITHIN_LIMIT','NATIVE_EXIT_'+name);}
+ return{prep,closure,candidate:c.candidate,observer:c.observer,observations,refs};
+}
+const drc=execution('execution_drc_001'),runtime=execution('execution_runtime_001');
+need(drc.observations.length===2&&runtime.observations.length===10,'INVOCATION_DOMAIN');
+const pairs=[];
+for(let i=0;i<runtime.observations.length;i+=2){
+ const a=runtime.observations[i],b=runtime.observations[i+1];
+ need(a.value.observation.case===b.value.observation.case,'CASE_REPLAY_SUBJECT');
+ need(a.value.readback.sha256===b.value.readback.sha256&&a.value.observation.semantic_digest===b.value.observation.semantic_digest,'RUNTIME_REPLAY_NOT_SAME');
+ pairs.push({case:a.value.observation.case,verdict:'IF_THEN',replay:'SAME',counts:a.value.observation.counts,native:a.value.observation.native,readback:a.value.readback,observations:[a.ref,b.ref],native_ms:[a.value.operational.native_ms,b.value.operational.native_ms],semantic_digest:a.value.observation.semantic_digest});
+}
+exact(pairs.map(x=>x.case),['baseline','all_no','split_site','result_withheld','result_displaced'],'CASE_SET');
+const canonical=drc.observations[0].value.observation.canonical_program_drc;
+need(drc.observations[0].value.readback.sha256===drc.observations[1].value.readback.sha256,'DRC_REPLAY_NOT_SAME');
+exact(canonical.checks,['I','II','III','IV','V','VI','VII','VIII'],'DRC_EIGHT');
+const binding=identity(path.join(here,'CANONICAL_PROGRAM_BINDING_042.json')),b=read(binding.path);
+need(canonical.program_sha256===b.program.sha256&&pairs.every(x=>runtime.observations.find(o=>o.value.observation.case===x.case).value.observation.canonical_program_sha256===b.program.sha256),'PROGRAM_SUBJECT_CHANGED');
+for(const r of b.baseline_worlds)verify(r);
+const implementation=['drc_042.mal','prepare_drc_v2_042.mjs','observe_drc_042.mjs','runtime_join_042.mal','prepare_runtime_042.mjs','observe_runtime_042.mjs','prepare_execution_042.mjs','prepare_runtime_execution_042.mjs','project_drc_gate_042.mjs','custody_042.mjs','bind_existing_program_042.mjs','extract_occurrences_042.mjs','write_record_042.mjs'].map(x=>identity(path.join(here,x)));
+const refs=unique([...drc.refs,...runtime.refs,...implementation,binding,identity(path.join(here,'OCCURRENCE_CONTACTS_042.json')),identity(path.join(here,'DRC_GATE_042.json')),identity(path.join(here,'AUTHORITY_042.json'))]);
+for(const r of refs)verify(r);
+const repository=path.dirname(carrier),head=execFileSync('git',['-C',repository,'rev-parse','HEAD'],{encoding:'utf8',windowsHide:true}).trim();
+need(head==='ce3e73b60e49dd217621bac274c77e17a88df59e','REPOSITORY_HEAD_NOT_SAME');
+const record={schema:'FabricBindingRunRecord042',at:new Date().toISOString(),verdict:'IF_THEN',subject:'W38_SITE_READING_JOIN',scope:'Canonical FabricSpec and source-owned runtime/result projection for this native source operation; no whole-038 application claim.',
+ authority:identity(path.join(here,'AUTHORITY_042.json')),vocabulary:identity(path.join(carrier,'snapshot_effect_vocabulary_040/inputs/ERRATUM_E_WAVE_001.mal')),
+ predecessor_component:identity(path.join(home,'fabric_correspondence_041/RUN_RECORD_FABRIC_CONTACT_041.json')),canonical_binding:binding,occurrence_binding:identity(path.join(here,'OCCURRENCE_CONTACTS_042.json')),canonical_program:b.program,
+ drc:{verdict:'IF_THEN',checks:canonical.checks,proof:canonical.proof,positive_cases:2,malformed_controls:8,replay:'SAME',readbacks:drc.observations.map(x=>x.value.readback),native_ms:drc.observations.map(x=>x.value.operational.native_ms),observations:drc.observations.map(x=>x.ref),queuegate:{preparation:drc.prep,closure:drc.closure,candidate:drc.candidate,observer:drc.observer}},
+ runtime:{verdict:'IF_THEN',cases:pairs,queuegate:{preparation:runtime.prep,closure:runtime.closure,candidate:runtime.candidate,observer:runtime.observer},binding:'Each parent constructor requires returned canonical comparison-result path support plus returned complete child readings. Complete immutable 720-cell frames precede RETURN. Coverage ancestry is not physical containment.'},
+ implementation,input_audit:{verdict:'SAME',files:refs.length,bytes:refs.reduce((n,r)=>n+r.bytes,0),references:refs},worlds:{verdict:'SAME',subjects:b.baseline_worlds},repository:{HEAD:head,action:'NO_COMMIT_NO_PUSH'},world_transition:'NO',member_taken:'NO',law_change:'NO',promotion:'NO',
+ retained_preparation:identity(path.join(here,'DRC_PREPARATION_INTERRUPTION_001.json')),contingency:{status:'PREPARED_NOT_RUN',record:identity(path.join(here,'DRC_CONTINGENCY_V3_PREPARATION_001.json'))}};
+const out=save(path.join(here,'RUN_RECORD_FABRIC_BINDING_042.json'),record);
+const lines=['# FabricSpec binding 042','',`W38_SITE_READING_JOIN: IF_THEN. Eight canonical DRC conditions: IF_THEN.`,`Run record SHA256: \`${out.sha256}\`.`,``,`The exact720-cell comparator program was rebound from its native proof. Its overlap occurrences equal the038 source incidence. The new native result projection requires returned comparator readings for every parent join; retained inputs alone cannot emit a parent.`,``,`The baseline reproduces all438 bound parent records. The all-NO, split-site, result-withheld and result-displaced controls preserve the source/result dependency. Every case replayed byte-SAME.`,``,`DRC covers the full canonical program; its empty route domain is explicit. A routed positive and eight malformed controls exercise the eight conditions.`,``,`Scope: W38_SITE_READING_JOIN and its canonical execution/readout correspondence. This record does not assert DRC for unrelated038 operations.`,``,`The failed host preparation and unused contingency remain recorded. Neither counts as a GPU qualification. The two committed world files and repository HEAD remain SAME. No world transition, commit, push or promotion occurred.`,``,`Canonical program SHA256: \`${b.program.sha256}\`.`,...implementation.filter(x=>x.path.endsWith('.mal')).map(x=>`- ${path.basename(x.path)}: \`${x.sha256}\``),''];
+save(path.join(here,'README.md'),lines.join('\n'));
+console.log(JSON.stringify({record:out,cases:pairs.map(x=>({case:x.case,parents:x.counts.native_parent_outputs,replay:x.replay})),drc:'I_VIII_IF_THEN',audited:refs.length}));

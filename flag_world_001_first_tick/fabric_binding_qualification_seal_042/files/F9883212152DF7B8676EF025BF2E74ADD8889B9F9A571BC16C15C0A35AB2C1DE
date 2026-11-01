@@ -1,0 +1,36 @@
+{
+  "schema": "SnapshotWaveClosedInvocation038",
+  "id": "B_000",
+  "elapsed_ms": 18611,
+  "plan": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\prepared\\PLAN.json",
+    "bytes": 32007,
+    "sha256": "BFAA33576065FFF00B5B34B44C0B4F250925A5B2655A73C33E7D742D94772CFE"
+  },
+  "observation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+    "bytes": 214075,
+    "sha256": "981EDE8FCC2599EAD8070F534933DBA6638290434D3C024E3667E9F862DC8657"
+  },
+  "closed": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+    "bytes": 943,
+    "sha256": "2908E25527DF31251C918342BD84A88631FD1F7E4D92833D6722B68AA87E8860"
+  },
+  "readback": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\prepared\\B_000\\readback.bin",
+    "bytes": 268435488,
+    "sha256": "E3A0FA6EFECA8C9DAFFBC2153BA7A778BDD3C4012691B0F6DE27F3D431FB54C6"
+  },
+  "result": {
+    "queue_status": "EMPTY",
+    "artifact_gate": "PASSED",
+    "closure": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+      "bytes": 943,
+      "sha256": "2908E25527DF31251C918342BD84A88631FD1F7E4D92833D6722B68AA87E8860"
+    }
+  },
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN"
+}

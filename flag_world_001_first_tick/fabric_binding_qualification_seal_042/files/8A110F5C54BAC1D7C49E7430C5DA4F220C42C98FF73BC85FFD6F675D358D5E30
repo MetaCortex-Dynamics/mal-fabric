@@ -1,0 +1,203 @@
+// Versioned process-generation custody; frozen launch_038.mjs remains unchanged.
+// Snapshot-wave operational custody only. Native .mal supplies every semantic
+// result. This module does not construct an offer, select a member, append a
+// world link, release a blocked lane, resume recovery, or retry an invocation.
+//
+// Exported API:
+//   identity(path) -> {path, bytes, sha256}
+//   preparePlan(configPath, freshDirectory) -> {package_binding, plan, runs}
+//     This only binds inputs and writes a fresh transport plan; no GPU launch.
+//   launch(planPath, freshAttemptDirectory) -> QueueGate027 inspection result
+//   executeWorker(planPath, runId) -> output identity (QueueGate workers only)
+//   Process identity is checked by the separately qualified generation census.
+//
+// Config schema SnapshotWaveExecutionConfig038:
+// {authority:ref, inputs:[ref], sources:[ref], runtime:ref, observer:ref,
+//  process_closure:ref, required_absent?:[pid], predecessors:[{path,sha256}],
+//  runs:[{id,image:ref,config:<observer input>,invocation_limit_ms?:number}],
+//  per_invocation_ms?:900000, world_effect:'NONE',selection:'NO_MEMBER_TAKEN'}.
+// process_closure binds an ALL_HOST_PROCESSES record carrying required_absent.
+// observer exports observe(runConfig,{readback,stdout,stderr,grant}) and returns
+// {verdict:'IF_THEN',...}. All referenced files must occur in bound inputs.
+// Fresh directories and native exit/readback closure are mandatory. Partial
+// artifacts remain uncounted; an open QueueGate attempt is OPEN_UNRECONCILED.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawn} from 'node:child_process';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import {performance} from 'node:perf_hooks';
+
+const own=fileURLToPath(import.meta.url),home=path.dirname(own);
+const prior=path.join(path.dirname(home),'sand_refinement_diagnostics_026','sweep','broad_execution_020');
+const QG=path.join(prior,'queuegate_027','queuegate_runner.mjs');
+const LANE=path.join(prior,'queuegate_027','shared_lane');
+const CENSUS=path.join(home,'staging_census','generation_census_v1.mjs');
+const CENSUS_QUAL=path.join(path.dirname(CENSUS),'GENERATION_QUALIFICATION_V1.json');
+const QG_SHA='2065C77ADC827238C6AFB22C5B9A7C753F9AA286206CEC2ADD1579E39209501D';
+const CENSUS_SHA='A2DC8B5D905402A9FA9F4B6B7C6C69A93EBCA1CB8F805F9244A56136E84AC4C3';
+const CENSUS_QUAL_SHA='3ACC4C08DA6D1F3B8B46C64810F7BC024F031021BD39736E1AB8A14BDD34392F';
+const RUNTIME_SHA='9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06';
+const FACT_CAPACITY=2097152,DEFAULT_LIMIT=900000;
+const scope={world_effect:'NONE',selection:'NO_MEMBER_TAKEN'};
+const need=(value,message)=>{if(!value)throw Error(message);};
+const key=p=>path.resolve(p).toLowerCase();
+const same=(a,b)=>a&&b&&key(a.path)===key(b.path)&&a.bytes===b.bytes&&a.sha256===b.sha256;
+const equal=(a,b,message)=>need(JSON.stringify(a)===JSON.stringify(b),message);
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const within=(root,p)=>{const r=path.relative(root,p);return r!==''&&r!=='..'&&!r.startsWith('..'+path.sep)&&!path.isAbsolute(r);};
+const scopeCheck=x=>need(x?.world_effect==='NONE'&&x.selection==='NO_MEMBER_TAKEN','SCOPE_NOT_SAME');
+const bound=(refs,r)=>refs.some(x=>same(x,r));
+const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+function shape(r){need(r&&path.isAbsolute(r.path??'')&&Number.isSafeInteger(r.bytes)&&r.bytes>=0&&/^[0-9A-F]{64}$/.test(r.sha256??''),'IDENTITY_UNSUPPLIED');}
+export function identity(p){
+ const absolute=fs.realpathSync.native(p),fd=fs.openSync(absolute,'r'),h=crypto.createHash('sha256'),buffer=Buffer.alloc(1048576);let bytes=0;
+ try{const before=fs.fstatSync(fd);for(;;){const n=fs.readSync(fd,buffer);if(!n)break;h.update(buffer.subarray(0,n));bytes+=n;}const after=fs.fstatSync(fd);need(before.size===after.size&&before.mtimeMs===after.mtimeMs&&bytes===after.size,'INPUT_CHANGED_DURING_HASH');}finally{fs.closeSync(fd);}
+ return{path:absolute,bytes,sha256:h.digest('hex').toUpperCase()};
+}
+function verify(r){shape(r);need(same(identity(r.path),r),'NOT_SAME_INPUT:'+r.path);return r;}
+function load(r){verify(r);const bytes=fs.readFileSync(r.path);need(bytes.length===r.bytes&&crypto.createHash('sha256').update(bytes).digest('hex').toUpperCase()===r.sha256,'READ_BYTES_NOT_SAME');return JSON.parse(bytes);}
+function save(p,value){const fd=fs.openSync(p,'wx');try{fs.writeFileSync(fd,JSON.stringify(value,null,2)+'\n');fs.fsyncSync(fd);}finally{fs.closeSync(fd);}return identity(p);}
+function unique(refs){
+ // QueueGate's closure compares literal input paths with identity() output.
+ // Emit that native path here; retain the supplied byte/hash obligations.
+ const seen=new Map();for(const r of refs){shape(r);const canonical={...r,path:fs.realpathSync.native(r.path)};need(key(canonical.path)===key(r.path),'INPUT_PATH_ALIAS');const old=seen.get(key(canonical.path));need(!old||same(old,canonical),'INPUT_IDENTITY_CONFLICT');seen.set(key(canonical.path),canonical);}return[...seen.values()];
+}
+function nestedRefs(value,out=[]){if(!value||typeof value!=='object')return out;if('path'in value&&'sha256'in value&&'bytes'in value){shape(value);out.push(value);return out;}for(const child of Object.values(value))nestedRefs(child,out);return out;}
+function freshDirectory(p){need(path.isAbsolute(p)&&within(home,p)&&!fs.existsSync(p),'FRESH_DIRECTORY_REQUIRED');need(key(fs.realpathSync.native(path.dirname(p)))===key(path.dirname(p)),'OUTPUT_PARENT_ALIAS');fs.mkdirSync(p);need(key(fs.realpathSync.native(p))===key(p),'OUTPUT_DIRECTORY_ALIAS');}
+function limit(n){need(Number.isSafeInteger(n)&&n>0&&n<=2147483647,'INVOCATION_LIMIT_UNSUPPLIED');return n;}
+async function dependencies(){
+ const queuegate=identity(QG),census=identity(CENSUS),qualification=identity(CENSUS_QUAL);
+ need(queuegate.sha256===QG_SHA&&census.sha256===CENSUS_SHA&&qualification.sha256===CENSUS_QUAL_SHA,'QUALIFIED_CUSTODY_SOURCE_NOT_SAME');
+ const q=load(qualification);need(q.verdict==='IF_THEN','GENERATION_CENSUS_QUALIFICATION_NOT_SAME');
+ const supplier=await import(pathToFileURL(CENSUS).href),binding=supplier.generationBinding();
+ need(same(binding.module,census)&&same(binding.qualification,qualification),'GENERATION_CENSUS_MODULE_NOT_SAME');
+ const identities=unique([queuegate,census,qualification,...nestedRefs(binding)]);
+ for(const r of identities)verify(r);
+ return{queuegate,census,qualification,binding,supplier,identities};
+}
+function validateConfig(config){
+ need(config?.schema==='SnapshotWaveExecutionConfig038','CONFIG_SCHEMA');scopeCheck(config);
+ for(const k of['inputs','sources','runs','predecessors'])need(Array.isArray(config[k]),'CONFIG_'+k.toUpperCase()+'_UNSUPPLIED');
+ need(config.inputs.length>0&&config.sources.length>0&&config.runs.length>0,'CONFIG_DOMAIN_EMPTY');
+ for(const r of[config.authority,config.runtime,config.observer,config.process_closure,...config.inputs,...config.sources])shape(r);
+ need(config.runtime.sha256===RUNTIME_SHA&&path.basename(config.runtime.path).toLowerCase()==='block_iterative_runtime.exe','NATIVE_RUNTIME_NOT_SAME');
+ need(config.observer.path.endsWith('.mjs'),'OBSERVER_MODULE_UNSUPPLIED');
+ const ids=new Set();for(const r of config.runs){need(/^[A-Za-z0-9_-]+$/.test(r.id??'')&&!ids.has(r.id),'RUN_ID_NOT_SAME');ids.add(r.id);shape(r.image);need(r.config&&typeof r.config==='object','OBSERVER_INPUT_UNSUPPLIED');limit(r.invocation_limit_ms??config.per_invocation_ms??DEFAULT_LIMIT);}
+ for(const p of config.predecessors)need(path.isAbsolute(p.path??'')&&/^[0-9A-F]{64}$/.test(p.sha256??''),'PREDECESSOR_SHAPE');
+ if(config.required_absent!==undefined)need(Array.isArray(config.required_absent)&&config.required_absent.every(p=>Number.isSafeInteger(p)&&p>0),'PRIOR_PID_SHAPE');
+ const snapshot=load(config.process_closure);need(snapshot.coverage==='ALL_HOST_PROCESSES'&&Array.isArray(snapshot.required_absent)&&snapshot.required_absent.length>0&&snapshot.required_absent.every(p=>Number.isSafeInteger(p)&&p>0),'PROCESS_CLOSURE_UNSUPPLIED');
+ return[...new Set([...snapshot.required_absent,...config.required_absent??[]])];
+}
+function stepFor(pkg,planPath,run){return{id:run.id,executable:pkg.node.path,argv:[own,'worker',planPath,run.id],cwd:home,sources:[own],outputs:[{path:run.output,equals:{schema:'SnapshotWaveNativeObservation038',verdict:'IF_THEN',world_effect:'NONE',selection:'NO_MEMBER_TAKEN'}}]};}
+export async function preparePlan(configPath,freshPreparedDirectory){
+ const configRef=identity(configPath),config=load(configRef),requiredAbsent=validateConfig(config),deps=await dependencies(),launcher=identity(own),node=identity(process.execPath);
+ const configRefs=unique([...nestedRefs(config),...deps.identities,launcher,node]);for(const r of configRefs)verify(r);
+ freshDirectory(freshPreparedDirectory);const runs=[];
+ for(const item of config.runs){
+  const dir=path.join(freshPreparedDirectory,item.id);freshDirectory(dir);
+  const request=save(path.join(dir,'REQUEST.json'),{schema:'SnapshotWaveNativeRequest038',id:item.id,config:item.config,image:item.image,invocation_limit_ms:item.invocation_limit_ms??config.per_invocation_ms??DEFAULT_LIMIT,...scope});
+  runs.push({id:item.id,dir,request,image:item.image,readback:path.join(dir,'readback.bin'),output:path.join(dir,'NATIVE_OBSERVATION.json'),invocation_limit_ms:item.invocation_limit_ms??config.per_invocation_ms??DEFAULT_LIMIT});
+ }
+ const pkg={schema:'SnapshotWaveExecutionPackage038',created_at:new Date().toISOString(),config:configRef,launcher,node,runtime:config.runtime,observer:config.observer,authority:config.authority,queuegate:deps.queuegate,census:deps.census,census_qualification:deps.qualification,shared_lane:LANE,process_closure:config.process_closure,required_absent:requiredAbsent,inputs:unique([configRef,...configRefs,...runs.map(r=>r.request)]),runs,predecessors:config.predecessors,fact_capacity:FACT_CAPACITY,...scope};
+ const pkgRef=save(path.join(freshPreparedDirectory,'PACKAGE.json'),pkg),planPath=path.join(freshPreparedDirectory,'PLAN.json');
+ const plan={schema:'QueueGateBoundExecution027',lane:LANE,inputs:unique([pkgRef,...pkg.inputs]),predecessors:pkg.predecessors,steps:runs.map(r=>stepFor(pkg,planPath,r)),snapshot_wave_038:{package_binding:pkgRef},...scope};
+ const planRef=save(planPath,plan);return{package_binding:pkgRef,plan:planRef,runs};
+}
+async function planState(planPath){
+ const ref=identity(planPath),plan=load(ref);need(plan.schema==='QueueGateBoundExecution027','PLAN_SCHEMA');scopeCheck(plan);
+ const pkgRef=plan.snapshot_wave_038?.package_binding;shape(pkgRef);const pkg=load(pkgRef);need(pkg.schema==='SnapshotWaveExecutionPackage038','PACKAGE_SCHEMA');scopeCheck(pkg);
+ need(same(pkg.launcher,identity(own))&&key(pkg.shared_lane)===key(LANE)&&key(plan.lane)===key(LANE),'LAUNCHER_OR_LANE_NOT_SAME');
+ need(key(fs.realpathSync.native(LANE))===key(LANE),'SHARED_LANE_ALIAS');
+ need(pkg.fact_capacity===FACT_CAPACITY,'FACT_CAPACITY_NOT_SAME');
+ const config=load(pkg.config),requiredAbsent=validateConfig(config),deps=await dependencies();
+ equal(pkg.required_absent,requiredAbsent,'PROCESS_DOMAIN_NOT_SAME');
+ for(const pair of[[pkg.runtime,config.runtime],[pkg.observer,config.observer],[pkg.authority,config.authority],[pkg.queuegate,deps.queuegate],[pkg.census,deps.census],[pkg.census_qualification,deps.qualification]])need(same(...pair),'PACKAGE_BINDING_NOT_SAME');
+ equal(pkg.predecessors,config.predecessors,'PREDECESSOR_DOMAIN_NOT_SAME');equal(plan.predecessors,pkg.predecessors,'PLAN_PREDECESSORS_NOT_SAME');
+ need(pkg.runs.length===config.runs.length,'RUN_COVERAGE_NOT_SAME');
+ const generated=[];
+ for(let i=0;i<pkg.runs.length;i++){
+  const run=pkg.runs[i],wanted=config.runs[i];need(run.id===wanted.id&&same(run.image,wanted.image),'RUN_INPUT_NOT_SAME');
+  need(path.isAbsolute(run.dir)&&within(path.dirname(pkgRef.path),run.dir)&&key(fs.realpathSync.native(run.dir))===key(run.dir),'RUN_DIRECTORY_NOT_SAME');
+  need(key(run.readback)===key(path.join(run.dir,'readback.bin'))&&key(run.output)===key(path.join(run.dir,'NATIVE_OBSERVATION.json'))&&key(run.request.path)===key(path.join(run.dir,'REQUEST.json')),'RUN_OUTPUT_NOT_SAME');
+  const request=load(run.request);equal(request,{schema:'SnapshotWaveNativeRequest038',id:wanted.id,config:wanted.config,image:wanted.image,invocation_limit_ms:wanted.invocation_limit_ms??config.per_invocation_ms??DEFAULT_LIMIT,...scope},'REQUEST_NOT_SAME');
+  need(run.invocation_limit_ms===request.invocation_limit_ms,'INVOCATION_BOUND_NOT_SAME');generated.push(stepFor(pkg,ref.path,run));
+ }
+ equal(plan.steps,generated,'PLAN_COMMAND_DOMAIN_NOT_SAME');
+ const required=unique([pkgRef,pkg.config,pkg.launcher,pkg.node,...nestedRefs(config),...deps.identities,...pkg.runs.map(r=>r.request)]);
+ need(plan.inputs.length===required.length&&required.every(r=>bound(plan.inputs,r)),'PLAN_INPUT_DOMAIN_NOT_SAME');
+ need(pkg.inputs.length===required.length-1&&pkg.inputs.every(r=>bound(required,r)),'PACKAGE_INPUT_DOMAIN_NOT_SAME');
+ for(const r of plan.inputs)verify(r);return{ref,plan,pkgRef,pkg,config,deps};
+}
+async function census(state){
+ for(const r of state.deps.identities)verify(r);
+ const result=await state.deps.supplier.checkCurrentProcesses(state.pkg.process_closure,state.pkg.required_absent,[state.pkg.runtime]);
+ need(result.verdict==='IF_THEN','GENERATION_PROCESS_CHECK_WITHHELD');
+ for(const r of state.deps.identities)verify(r);
+ return{...result,supplier:state.pkg.census,qualification:state.pkg.census_qualification};
+}
+export async function launch(planPath,freshAttemptDirectory){
+ const state=await planState(planPath);
+ need(path.isAbsolute(freshAttemptDirectory)&&within(home,freshAttemptDirectory)&&!fs.existsSync(freshAttemptDirectory),'FRESH_ATTEMPT_REQUIRED');
+ need(key(fs.realpathSync.native(path.dirname(freshAttemptDirectory)))===key(path.dirname(freshAttemptDirectory)),'ATTEMPT_PARENT_ALIAS');
+ need(!fs.existsSync(path.join(LANE,'ACTIVE')),'SHARED_LANE_OCCUPIED');
+ for(const r of state.pkg.runs)for(const p of[r.readback,r.output,path.join(r.dir,'GPU.START.json'),path.join(r.dir,'STOP.json')])need(!fs.existsSync(p),'NO_IMPLICIT_RETRY:'+p);
+ const processCheck=await census(state),queue=await import(pathToFileURL(QG).href);
+ const result=await queue.run(state.ref.path,freshAttemptDirectory);
+ for(const r of state.plan.inputs)verify(r);
+ save(path.join(freshAttemptDirectory,'LAUNCH_RESULT_038.json'),{schema:'SnapshotWaveLaunchResult038',at:new Date().toISOString(),plan:state.ref,package_binding:state.pkgRef,process_check:processCheck,queuegate:result,automatic_retry:'NO',recovery_resume:'NO',...scope});
+ return result;
+}
+async function workerGrant(state,run){
+ const lock=path.join(LANE,'ACTIVE'),owner=read(path.join(lock,'OWNER.json'));need(same(owner.plan,state.ref),'QUEUEGATE_OWNER_PLAN_NOT_SAME');
+ const attempt=owner.attempt;need(path.isAbsolute(attempt)&&within(home,attempt),'ATTEMPT_OUTSIDE_HOME');
+ const active=()=>!fs.existsSync(path.join(attempt,'CLOSED.json'))&&!fs.existsSync(path.join(attempt,'BLOCKED.json'));
+ need(active(),'QUEUEGATE_ATTEMPT_NOT_ACTIVE');
+ let processFile=path.join(attempt,run.id+'.PROCESS.json');for(let n=0;!fs.existsSync(processFile)&&n<100;n++){need(active(),'QUEUEGATE_BLOCKED_BEFORE_PROCESS_BINDING');await delay(20);}
+ need(fs.existsSync(processFile),'CALLER_NOT_QUEUEGATE_WORKER');
+ const start=read(path.join(attempt,'START.json')),phase=read(path.join(attempt,run.id+'.START.json')),proc=read(processFile),step=state.plan.steps.find(s=>s.id===run.id);
+ need(start.schema==='QueueGateStart027'&&same(start.plan,state.ref)&&same(start.implementation,state.pkg.queuegate)&&owner.pid===start.owner?.pid,'QUEUEGATE_START_NOT_SAME');
+ need(proc.pid===process.pid&&same(proc.executable,state.pkg.node)&&key(process.execPath)===key(state.pkg.node.path)&&key(process.cwd())===key(step.cwd),'WORKER_PROCESS_NOT_SAME');
+ need(same(phase.plan,state.ref),'WORKER_PHASE_NOT_SAME');equal(phase.command,step,'WORKER_COMMAND_NOT_SAME');equal(proc.argv,step.argv,'WORKER_RECORDED_ARGV_NOT_SAME');equal([...process.execArgv,...process.argv.slice(1)],step.argv,'WORKER_ACTUAL_ARGV_NOT_SAME');
+ need(!fs.existsSync(path.join(attempt,run.id+'.EXIT.json')),'WORKER_ALREADY_EXITED');process.kill(owner.pid,0);
+ const processCheck=await census(state);need(active()&&same(read(path.join(lock,'OWNER.json')).plan,state.ref),'INVOCATION_GATE_LOST');
+ return{schema:'SnapshotWaveWorkerGrant038',verdict:'IF_THEN',plan:state.ref,package_binding:state.pkgRef,attempt,step:run.id,process:identity(processFile),process_check:processCheck,...scope};
+}
+export async function executeWorker(planPath,runId){
+ const began=performance.now(),started=new Date().toISOString(),state=await planState(planPath),run=state.pkg.runs.find(r=>r.id===runId);need(run,'RUN_NOT_IN_PLAN');
+ const grant=await workerGrant(state,run),request=load(run.request),prefix=path.join(run.dir,'GPU');
+ need(!fs.existsSync(run.readback)&&!fs.existsSync(run.output)&&!fs.existsSync(prefix+'.START.json'),'NO_IMPLICIT_RETRY_READBACK');
+ const argv=[run.image.path,run.readback,'--fact-capacity',String(FACT_CAPACITY)],ms=limit(run.invocation_limit_ms);
+ save(prefix+'.START.json',{schema:'SnapshotWaveNativeStart038',started,runtime:state.pkg.runtime,image:run.image,argv,cwd:run.dir,limit_ms:ms,grant,...scope});
+ let out=null,err=null;
+ try{
+  out=fs.openSync(prefix+'.stdout.log','wx');err=fs.openSync(prefix+'.stderr.log','wx');
+  const result=await new Promise((resolve,reject)=>{
+   let spawnError=null,expired=false;const t=performance.now();
+   const child=spawn(state.pkg.runtime.path,argv,{cwd:run.dir,windowsHide:true,shell:false,stdio:['ignore',out,err]});
+   let timer;child.on('error',e=>{spawnError={message:e.message,code:e.code??null};});
+   child.on('close',(exit_code,signal)=>{clearTimeout(timer);resolve({exit_code,signal,spawn_error:spawnError,elapsed_ms:performance.now()-t,deadline:expired?'LIMIT_REACHED':'WITHIN_LIMIT'});});
+   timer=setTimeout(()=>{expired=true;child.kill();},ms);
+   try{save(prefix+'.PROCESS.json',{pid:child.pid??null,at:new Date().toISOString(),runtime:state.pkg.runtime,argv,...scope});}catch(e){child.kill();reject(e);}
+  });
+  fs.closeSync(out);out=null;fs.closeSync(err);err=null;
+  const exit=save(prefix+'.EXIT.json',{schema:'SnapshotWaveNativeExit038',...result,ended:new Date().toISOString(),...scope});
+  need(result.exit_code===0&&result.signal===null&&result.spawn_error===null&&result.deadline==='WITHIN_LIMIT','NATIVE_INVOCATION_UNCLOSED');
+  await workerGrant(state,run);
+  const readback=identity(run.readback),stdout=identity(prefix+'.stdout.log'),stderr=identity(prefix+'.stderr.log');need(readback.bytes>0,'FINAL_READBACK_EMPTY');
+  verify(state.pkg.observer);const module=await import(pathToFileURL(state.pkg.observer.path).href);need(typeof module.observe==='function','OBSERVER_EXPORT_UNSUPPLIED');
+  const observation=await module.observe(request.config,{readback:readback.path,stdout:stdout.path,stderr:stderr.path,grant});
+  need(observation?.verdict==='IF_THEN','OBSERVATION_WITHHELD');
+  for(const r of state.plan.inputs)verify(r);verify(readback);verify(stdout);verify(stderr);await workerGrant(state,run);
+  const output=save(run.output,{schema:'SnapshotWaveNativeObservation038',verdict:'IF_THEN',id:run.id,request:run.request,readback,stdout,stderr,exit,observation,operational:{started,ended:new Date().toISOString(),elapsed_ms:performance.now()-began,native_ms:result.elapsed_ms,grant},...scope});
+  return output;
+ }catch(e){
+  for(const fd of[out,err])if(fd!==null)try{fs.closeSync(fd);}catch{}
+  save(path.join(run.dir,'STOP.json'),{schema:'SnapshotWaveNativeStop038',at:new Date().toISOString(),condition:e.message,stack:e.stack,disposition:'UNCLOSED_NOT_COUNTED_NO_AUTOMATIC_RETRY',...scope});throw e;
+ }
+}
+if(process.argv[1]&&key(process.argv[1])===key(own)){
+ const[mode,a,b]=process.argv.slice(2);
+ try{let result;if(mode==='prepare')result=await preparePlan(a,b);else if(mode==='launch')result=await launch(a,b);else if(mode==='worker')result=await executeWorker(a,b);else throw Error('USAGE: prepare CONFIG FRESH_DIR | launch PLAN FRESH_ATTEMPT | worker PLAN RUN_ID');console.log(JSON.stringify(result,null,2));if(mode==='launch'&&result.queue_status!=='EMPTY')process.exitCode=2;}
+ catch(e){console.error(e.stack??e.message);process.exitCode=2;}
+}

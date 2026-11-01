@@ -1,0 +1,93 @@
+{
+  "schema": "CanonicalFabricSourceBinding042",
+  "at": "2026-11-01T05:27:38.470Z",
+  "verdict": "IF_THEN",
+  "subject": "EXISTING_P20_PROGRAM_NATIVE_SOURCE_IDENTITY_ONLY",
+  "program": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\actual_core_qualification\\fabric.program.json",
+    "bytes": 525750,
+    "sha256": "07320BB711DE9A195E0FE6AB663F980F685B3CF161670EDA103300A2C8753C56"
+  },
+  "prior_projection": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\actual_core_qualification\\fabric.program.json.custody.json",
+    "bytes": 675,
+    "sha256": "8E1A9D63789316DDF91C2703CB0BFC3D54A876AB4C3346A67CDF51E45EF3C1BE"
+  },
+  "native": {
+    "source": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\actual_core_qualification\\gpu\\source.mal",
+      "bytes": 774363,
+      "sha256": "0D7AEEB62F77E2C2C411BEA9478C4AB0B26F5A2C35756C62458C60862B0F5D8A"
+    },
+    "image": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\actual_core_qualification\\gpu\\image.bin",
+      "bytes": 41992208,
+      "sha256": "51C8C5D633038BFE2470BDDB86D8840B0A07FE0ADBAF1BB7DC0BCB1B1963D09C"
+    },
+    "source_map": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\actual_core_qualification\\gpu\\source-map.json",
+      "bytes": 138950923,
+      "sha256": "223657E9B1CAA8BE5243F27644066DFE16E0A329EA9EB822D1F4E8352BC4B3D0"
+    },
+    "readback": {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\actual_core_qualification\\gpu\\readback.bin",
+      "bytes": 67108896,
+      "sha256": "D71D17B501914C50E73E1400F7CF8BD0DDC428D8727B489858F5B57E32339FD1"
+    }
+  },
+  "program_fact": {
+    "id": 122380,
+    "origin": "P20_PROGRAM_OBJECT_EXPORT",
+    "support": [
+      122378
+    ]
+  },
+  "proof_facts_checked": 49784,
+  "counts": {
+    "cells": 720,
+    "motifs": 720,
+    "placements": 720,
+    "triad_blocks": 1,
+    "routes": 0
+  },
+  "sources": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\realization020\\source\\program_core.mal",
+      "bytes": 10271,
+      "sha256": "074C3E00794D6D3EFB9020CCE3A5600606851677AE25B7E1D6D65457ED663D82"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\realization020\\source\\ingress_core.mal",
+      "bytes": 20263,
+      "sha256": "1711AFA95ED0FC5F09F5AD97B6841D57020EFDC2E7A9DB50472912CF21979E3C"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\realization020\\source\\actual_core_contacts.mal",
+      "bytes": 1278,
+      "sha256": "89969396449021CAA08BDFEFB282191516F152B9E262DB701B9FF6879A70A115"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\evidence\\first-tick-conform-v1-v2-001\\files\\realization020\\source\\fixture_core_contacts.mal",
+      "bytes": 5174,
+      "sha256": "7742D51A77BE1691356955773D41E2EF7FB73C36451956AED2ABB295624EE541"
+    }
+  ],
+  "baseline_worlds": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\committed.world.json",
+      "bytes": 763526,
+      "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88"
+    }
+  ],
+  "prior_DRC": "NOT_TRANSFERRED",
+  "new_DRC": "NOT_RUN",
+  "source": "W38_SITE_READING_JOIN will consume the exact comparator result/returned-frame subject through a separately qualified projection.",
+  "world_transition": "NO",
+  "commit": "NO",
+  "push": "NO"
+}

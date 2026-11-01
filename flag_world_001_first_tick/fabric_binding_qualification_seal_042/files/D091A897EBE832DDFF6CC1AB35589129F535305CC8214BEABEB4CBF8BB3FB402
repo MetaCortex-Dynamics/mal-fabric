@@ -1,0 +1,96 @@
+// Exact execution_001 observer result-rendering failure only. No native execution,
+// process termination, retries, result qualification or completion backfill.
+// reconcile(FRESH_DIR) preserves the failed attempt and leaves its lock held.
+// release(RECONCILIATION, DECISION) is a separate explicit operation, limited
+// to a recoverable rename of that exact lock after another complete census.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+const own=fileURLToPath(import.meta.url),home=path.dirname(own),prior=path.dirname(home),carrier=path.dirname(prior);
+const broad=path.join(carrier,'sand_refinement_diagnostics_026/sweep/broad_execution_020');
+const lane=path.join(broad,'queuegate_027/shared_lane'),active=path.join(lane,'ACTIVE');
+const failed=path.join(home,'execution_runtime_001'),attempt=path.join(failed,'queuegate_attempt');
+const step='FABRIC_JOIN_042_BASELINE_01';
+const native=path.join(failed,'prepared',step);
+const laterSteps=['FABRIC_JOIN_042_BASELINE_02','FABRIC_JOIN_042_ALL_NO_01','FABRIC_JOIN_042_ALL_NO_02','FABRIC_JOIN_042_RESULT_DISPLACED_01','FABRIC_JOIN_042_RESULT_DISPLACED_02','FABRIC_JOIN_042_RESULT_WITHHELD_01','FABRIC_JOIN_042_RESULT_WITHHELD_02','FABRIC_JOIN_042_SPLIT_SITE_01','FABRIC_JOIN_042_SPLIT_SITE_02'];
+const roles={owner:33820,observer:39852,worker:37700,native:35908};
+const scope={world_effect:'NONE',selection:'NO_MEMBER_TAKEN',counted:0,merged:0,automatic_retry:'NO',recovery_resume:'NO',world_transition:'NO',repository_commit:'NO',push:'NO'};
+const need=(v,n)=>{if(!v)throw Error(n);},key=p=>path.resolve(p).toLowerCase();
+const same=(a,b)=>a&&b&&key(a.path)===key(b.path)&&a.bytes===b.bytes&&a.sha256===b.sha256;
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const within=(r,p)=>{const d=path.relative(r,p);return d!==''&&d!=='..'&&!d.startsWith('..'+path.sep)&&!path.isAbsolute(d);};
+export function identity(p){const absolute=fs.realpathSync.native(p),fd=fs.openSync(absolute,'r'),h=crypto.createHash('sha256'),buffer=Buffer.alloc(1048576);let bytes=0;try{const a=fs.fstatSync(fd);for(;;){const n=fs.readSync(fd,buffer);if(!n)break;h.update(buffer.subarray(0,n));bytes+=n;}const b=fs.fstatSync(fd);need(a.size===b.size&&a.mtimeMs===b.mtimeMs&&bytes===b.size,'INPUT_CHANGED_DURING_HASH');}finally{fs.closeSync(fd);}return{path:absolute,bytes,sha256:h.digest('hex').toUpperCase()};}
+const verify=r=>{need(same(identity(r.path),r),'NOT_SAME:'+r.path);return r;};
+const pin=(p,h)=>{const r=identity(p);need(r.sha256===h,'PIN_NOT_SAME:'+p);return r;};
+const ownAtLoad=identity(own);
+function save(p,v){const fd=fs.openSync(p,'wx');try{fs.writeFileSync(fd,JSON.stringify(v,null,2)+'\n');fs.fsyncSync(fd);}finally{fs.closeSync(fd);}return identity(p);}
+function inventory(root){need(key(fs.realpathSync.native(root))===key(root),'ATTEMPT_ALIAS');const out=[];function walk(dir){for(const x of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,x.name),s=fs.lstatSync(p);need(!s.isSymbolicLink(),'ATTEMPT_LINK');if(s.isDirectory())walk(p);else{need(s.isFile(),'ATTEMPT_ARTIFACT_KIND');out.push({...identity(p),mtime_ms:s.mtimeMs});}}}walk(root);return out.sort((a,b)=>a.path.localeCompare(b.path));}
+function stable(files){for(const r of files){const s=fs.statSync(r.path);need(s.size===r.bytes&&s.mtimeMs===r.mtime_ms,'FAILED_ARTIFACT_CHANGED:'+r.path);}}
+function noCompletion(){for(const p of ['CLOSED.json','OBSERVER_CLOSED.json','CANDIDATE_CLOSURE.json'])need(!fs.existsSync(path.join(attempt,p)),'NO_COMPLETION_BACKFILL:'+p);need(!fs.existsSync(path.join(native,'NATIVE_OBSERVATION.json')),'NO_OBSERVATION_BACKFILL');for(const stepId of laterSteps){const dir=path.join(failed,'prepared',stepId);for(const p of ['GPU.START.json','GPU.PROCESS.json','GPU.EXIT.json','readback.bin','NATIVE_OBSERVATION.json'])need(!fs.existsSync(path.join(dir,p)),'LATER_INVOCATION_NOT_UNSTARTED:'+stepId+':'+p);for(const p of [stepId+'.START.json',stepId+'.PROCESS.json',stepId+'.EXIT.json'])need(!fs.existsSync(path.join(attempt,p)),'LATER_WORKER_NOT_UNSTARTED:'+p);}}
+function laneCheck(ownerRef,plan,destination){verify(ownerRef);need(key(fs.realpathSync.native(lane))===key(lane)&&key(fs.realpathSync.native(active))===key(active),'LANE_ALIAS');need(JSON.stringify(fs.readdirSync(active).sort())===JSON.stringify(['OWNER.json']),'EXACT_OWNER_ONLY_LOCK');const o=read(ownerRef.path);need(key(o.attempt)===key(attempt)&&o.pid===roles.owner&&same(o.plan,plan),'EXACT_FAILED_OWNER');need(path.dirname(destination)===lane&&/^FAILED_FABRIC_RUNTIME_042_[0-9A-F]{16}$/.test(path.basename(destination))&&!fs.existsSync(destination),'FRESH_EXACT_LOCK_ARCHIVE');}
+function checkAbsent(rows){need(Array.isArray(rows)&&rows.length>0&&new Set(rows.map(r=>r.pid)).size===rows.length,'COMPLETE_UNIQUE_CENSUS');const closure=new Set(Object.values(roles));let changed;do{changed=false;for(const r of rows)if(closure.has(r.parent_pid)&&!closure.has(r.pid)){closure.add(r.pid);changed=true;}}while(changed);for(const r of rows)need(!closure.has(r.pid),'FAILED_PROCESS_OR_DESCENDANT_PRESENT:'+r.pid);return[...closure].sort((a,b)=>a-b);}
+async function census(directory){
+  const moduleRef=pin(path.join(prior,'staging_census/generation_census_v1.mjs'),'A2DC8B5D905402A9FA9F4B6B7C6C69A93EBCA1CB8F805F9244A56136E84AC4C3');
+  const qualification=pin(path.join(prior,'staging_census/GENERATION_QUALIFICATION_V1.json'),'3ACC4C08DA6D1F3B8B46C64810F7BC024F031021BD39736E1AB8A14BDD34392F');
+  const absence=pin(path.join(broad,'targeted_receipt_proposal_035/reconciliation_001/PROCESS_RECONCILIATION_035.json'),'89BCCFE7403B4C7F43AA4755A16D3794A5BBB1F1034C33C19BB10B4963E673B6');
+  const runtime=pin(path.join(carrier,'runtime_021/block_iterative_runtime.exe'),'9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06');
+  const supplier=await import(pathToFileURL(moduleRef.path).href),binding=supplier.generationBinding();
+  need(same(binding.module,moduleRef)&&same(binding.qualification,qualification),'GENERATION_QUALIFICATION_BINDING');
+  const current=supplier.checkCurrentProcesses(absence,read(absence.path).required_absent,[runtime],{outputDirectory:directory});
+  need(current.verdict==='IF_THEN','CURRENT_CENSUS_WITHHELD');
+  const required=checkAbsent(current.rows);
+  return{schema:'FabricRuntimeFailedProcessCensus042',verdict:'IF_THEN',coverage:'ALL_HOST_PROCESSES',at:current.at,required_absent:required,recorded_roles:roles,processes:current.rows,supplier:moduleRef,qualification,dependencies:binding.identities,historical_absence:absence,generation_diagnostic:current.diagnostic,retired_historical_generations:current.retired_generations??[],...scope};
+}
+function structuralReadback(p){const fd=fs.openSync(p,'r'),b=Buffer.alloc(32);try{need(fs.readSync(fd,b,0,32,0)===32,'READBACK_HEADER');}finally{fs.closeSync(fd);}const w=i=>b.readInt32LE(i*4),bytes=fs.statSync(p).size;need(w(0)===0x31524c47&&w(1)===1&&w(4)===0&&w(2)>0&&w(3)===2097152&&w(5)<=w(2)&&w(6)<=w(3)&&bytes===4*(8+w(2)*10+w(3)*12),'READBACK_STRUCTURE');return{terms:w(5),facts:w(6),epochs:w(7),native_error:w(4),bytes,semantic_qualification:'NOT_CLAIMED'};}
+function exactFailure(){
+  verify(ownAtLoad);
+  const authority=pin(path.join(home,'AUTHORITY_042.json'),'BF417F4F55FA90C66A0F4751EA82520BA8F9952DB67A79E59EE5158D8D874B59');
+  const queuegate=pin(path.join(broad,'queuegate_027/queuegate_runner.mjs'),'2065C77ADC827238C6AFB22C5B9A7C753F9AA286206CEC2ADD1579E39209501D');
+  const plan=pin(path.join(failed,'prepared/PLAN.json'),'4628B1D757D1A4970AFAAAD769F34A7CBA02938645387A5D203AD644631F8056'),p=read(plan.path);
+  const owner=pin(path.join(active,'OWNER.json'),'C42A6B3481384811585D3FA8B020D953C2C453BBE93CC5CD5F61E8FC1EC7C397');
+  const stop=pin(path.join(native,'STOP.json'),'5FB9033BCFC941474C308F062CE559D357BE4DF3F4CC402A82D50CFE509A257D');
+  const named={start:path.join(attempt,'START.json'),observer:path.join(attempt,'OBSERVER_READY.json'),worker:path.join(attempt,step+'.PROCESS.json'),gpu:path.join(native,'GPU.PROCESS.json'),gpu_start:path.join(native,'GPU.START.json'),worker_exit:path.join(attempt,step+'.EXIT.json'),native_exit:path.join(native,'GPU.EXIT.json'),blocked:path.join(attempt,'BLOCKED.json')};
+  const refs=Object.fromEntries(Object.entries(named).map(([k,v])=>[k,identity(v)]));
+  const d=Object.fromEntries(Object.entries(refs).map(([k,v])=>[k,read(v.path)]));
+  need(p.schema==='QueueGateBoundExecution027'&&key(p.lane)===key(lane)&&p.steps.length===10&&p.steps[0].id===step&&JSON.stringify(p.steps.slice(1).map(x=>x.id).sort())===JSON.stringify([...laterSteps].sort()),'EXACT_TEN_INVOCATION_PLAN');
+  need(d.start.schema==='QueueGateStart027'&&d.start.owner.pid===roles.owner&&same(d.start.plan,plan)&&same(d.start.implementation,queuegate),'OWNER_START_BINDING');
+  need(d.observer.pid===roles.observer&&d.observer.owner.pid===roles.owner&&same(d.observer.implementation,queuegate),'OBSERVER_BINDING');
+  need(d.worker.pid===roles.worker&&JSON.stringify(d.worker.argv)===JSON.stringify(p.steps[0].argv),'WORKER_BINDING');
+  need(d.gpu.pid===roles.native&&same(d.gpu.runtime,d.gpu_start.runtime)&&JSON.stringify(d.gpu.argv)===JSON.stringify(d.gpu_start.argv),'NATIVE_BINDING');
+  need(d.gpu_start.grant?.step===step&&same(d.gpu_start.grant?.plan,plan)&&same(d.gpu_start.grant?.process,refs.worker),'NATIVE_GRANT_BINDING');
+  need(d.worker_exit.exit_code===2&&d.worker_exit.signal===null&&d.worker_exit.error===null,'WORKER_EXIT_2');
+  need(d.native_exit.exit_code===0&&d.native_exit.signal===null&&d.native_exit.spawn_error===null&&d.native_exit.deadline==='WITHIN_LIMIT','NATIVE_EXIT_0');
+  need(d.blocked.schema==='QueueGateBlocked027'&&d.blocked.condition==='WORKER_NOT_CLOSED:'+step&&d.blocked.queue_status==='BLOCKED','BLOCKED_BINDING');
+  need(read(stop.path).condition==='Cannot convert object to primitive value'&&fs.readFileSync(path.join(attempt,step+'.stderr.log'),'utf8').includes('TypeError: Cannot convert object to primitive value'),'OBSERVER_RENDER_ERROR');
+  noCompletion();
+  const inputs=p.inputs.map(verify),destination=path.join(lane,'FAILED_FABRIC_RUNTIME_042_'+owner.sha256.slice(0,16));
+  laneCheck(owner,plan,destination);
+  return{authority,queuegate,plan,owner,stop,refs,inputs,destination,worker_exit_at:d.worker_exit.at};
+}
+export async function reconcile(directory){
+  const out=path.resolve(directory);need(within(home,out)&&!fs.existsSync(out)&&key(fs.realpathSync.native(path.dirname(out)))===key(path.dirname(out)),'FRESH_042_RECONCILIATION_DIRECTORY');
+  const f=exactFailure();fs.mkdirSync(out);
+  const current=await census(path.join(out,'census'));
+  need(Date.parse(current.at)>=Date.parse(f.worker_exit_at),'CENSUS_AFTER_WORKER_EXIT');
+  const files=inventory(failed),readback=structuralReadback(path.join(native,'readback.bin'));
+  stable(files);for(const r of f.inputs)verify(r);verify(ownAtLoad);noCompletion();laneCheck(f.owner,f.plan,f.destination);
+  const processes=save(path.join(out,'PROCESS_RECONCILIATION.json'),current);
+  const artifacts=save(path.join(out,'ARTIFACTS_RETAINED.json'),{schema:'FabricRuntimeFailedArtifacts042',files,total_bytes:files.reduce((s,r)=>s+r.bytes,0),readback,completion:'UNCLOSED_NOT_COUNTED',preservation:'NO_EDIT_NO_DELETE',...scope});
+  return save(path.join(out,'RECONCILIATION.json'),{schema:'FabricRuntimeObserverFailureReconciliation042',verdict:'IF_THEN',at:new Date().toISOString(),implementation:ownAtLoad,authority:f.authority,queuegate:f.queuegate,failed_target:failed,attempt,plan:f.plan,owner:f.owner,destination:f.destination,input_refs:f.inputs,inputs_verdict:'SAME',failure:{condition:'Cannot convert object to primitive value',native_exit:0,worker_exit:2,later_invocations:{status:'NOT_STARTED',ids:laterSteps},semantic_result:'NOT_COUNTED'},failure_diagnostic:f.stop,process_roles:f.refs,process_census:processes,artifacts,terminal:f.refs.blocked,completion:'UNCLOSED_NOT_COUNTED',posthoc_observation:'NO_BACKFILL_NO_COUNT',lane_status:'HELD_PENDING_SEPARATE_RELEASE_CALL',...scope});
+}
+export async function release(reconciliationPath,decisionPath){
+  const reconciliation=identity(reconciliationPath),r=read(reconciliationPath),decision=identity(decisionPath),d=read(decisionPath);
+  need(r.schema==='FabricRuntimeObserverFailureReconciliation042'&&r.verdict==='IF_THEN'&&r.counted===0&&r.merged===0&&same(r.implementation,ownAtLoad),'RECONCILIATION_REQUIRED');
+  need(d.schema==='FabricRuntimeLaneReleaseDecision042'&&d.operation==='ARCHIVE_EXACT_FAILED_ATTEMPT_LOCK_ONLY'&&same(d.reconciliation,reconciliation)&&same(d.owner,r.owner)&&same(d.authority,r.authority)&&d.automatic_retry==='NO'&&d.world_effect==='NONE'&&d.selection==='NO_MEMBER_TAKEN','SEPARATE_EXACT_RELEASE_DECISION_REQUIRED');
+  const out=path.dirname(reconciliationPath);need(within(home,out)&&!fs.existsSync(path.join(out,'LANE_RELEASE_INTENT.json')),'ONE_RELEASE_INVOCATION');
+  for(const x of [r.implementation,r.authority,r.queuegate,r.plan,r.artifacts,r.process_census,r.terminal,r.failure_diagnostic,...Object.values(r.process_roles),...r.input_refs])verify(x);
+  noCompletion();laneCheck(r.owner,r.plan,r.destination);
+  const current=await census(path.join(out,'release_census'));
+  const files=read(r.artifacts.path).files;stable(files);verify(reconciliation);verify(decision);verify(ownAtLoad);noCompletion();laneCheck(r.owner,r.plan,r.destination);
+  const processes=save(path.join(out,'RELEASE_CENSUS.json'),current);
+  const intent=save(path.join(out,'LANE_RELEASE_INTENT.json'),{schema:'FabricRuntimeLaneReleaseIntent042',at:new Date().toISOString(),decision,reconciliation,process_census:processes,owner:r.owner,source_path:active,destination_path:r.destination,operation:'RECOVERABLE_RENAME_EXACT_LOCK_ONLY',...scope});
+  try{laneCheck(r.owner,r.plan,r.destination);fs.renameSync(active,r.destination);const archived=identity(path.join(r.destination,'OWNER.json'));need(archived.sha256===r.owner.sha256&&archived.bytes===r.owner.bytes&&!fs.existsSync(active),'EXACT_ARCHIVE_AND_ACTIVE_ABSENT');verify(r.terminal);return save(path.join(out,'LANE_RELEASE.json'),{schema:'FabricRuntimeLaneRelease042',verdict:'IF_THEN',at:new Date().toISOString(),decision,reconciliation,intent,archived_owner:archived,lane,status:'EMPTY',original_terminal:r.terminal,original_terminal_status:'BLOCKED_UNCHANGED',...scope});}
+  catch(e){save(path.join(out,'RELEASE_WITHHELD.json'),{schema:'FabricRuntimeReleaseWithheld042',condition:e.message,intent,active_present:fs.existsSync(active),archive_present:fs.existsSync(r.destination),...scope});throw e;}
+}
+if(process.argv[1]&&key(process.argv[1])===key(own)){const [mode,a,b]=process.argv.slice(2);try{need((mode==='reconcile'&&a&&!b)||(mode==='release'&&a&&b),'USAGE: reconcile FRESH_DIR | release RECONCILIATION RELEASE_DECISION');console.log(JSON.stringify(await(mode==='reconcile'?reconcile(a):release(a,b)),null,2));}catch(e){console.error(e.stack??e.message);process.exitCode=2;}}

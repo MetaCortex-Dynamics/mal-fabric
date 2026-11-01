@@ -1,0 +1,305 @@
+{
+  "schema": "CanonicalFabricDrcExpected042",
+  "scope": "Exact P20 primitive subject plus explicit finite P20-shaped malformed and routed controls; no general arbitrary-program admission claim.",
+  "canonical_program": {
+    "path": "D:\\Dev\\flag-world-first-tick-020\\actual_core_qualification\\fabric.program.json",
+    "bytes": 525750,
+    "sha256": "07320BB711DE9A195E0FE6AB663F980F685B3CF161670EDA103300A2C8753C56"
+  },
+  "canonical_program_binding": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\CANONICAL_PROGRAM_BINDING_042.json",
+    "bytes": 3983,
+    "sha256": "655B4EACD396B321F8E474D62272697AAE38B682FD83706393692994719D60F3"
+  },
+  "law_sources": {
+    "kernel": {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\static_fabric_v0_1_0\\kernel.py",
+      "bytes": 30841,
+      "sha256": "8B983301DAD795DD9C3F020970BAD76017EF648AC0C71E3FB6FDEF3D0E4347C0"
+    },
+    "spec": {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\gpu_carrier_001\\flag_world_engine_v3_fold_bootstrap_001\\candidate_successors\\W040_SURFACE_FABRIC_LOWERING_116\\parents\\STATIC_FABRIC_SPEC.md",
+      "bytes": 21733,
+      "sha256": "E328B574DE32635358AC488C4C5E20E80E86A845EB154401C8E1A7C0DD8D68F1"
+    }
+  },
+  "native_body": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_042.mal",
+    "bytes": 23384,
+    "sha256": "2283451FEA712F0CC0DFAB0ACD4D021221F5F352381340B18F9FD9DDEDEF5CE2"
+  },
+  "preparer": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\prepare_drc_v2_042.mjs",
+    "bytes": 9746,
+    "sha256": "B0B151AC0403791F6E5AB4385F4133279C391FA160A12AE3BCA75F8926799F53"
+  },
+  "cases": [
+    {
+      "id": "P20",
+      "program": {
+        "path": "D:\\Dev\\flag-world-first-tick-020\\actual_core_qualification\\fabric.program.json",
+        "bytes": 525750,
+        "sha256": "07320BB711DE9A195E0FE6AB663F980F685B3CF161670EDA103300A2C8753C56"
+      },
+      "expected": "IF_THEN",
+      "failed_condition": null,
+      "counts": {
+        "objects": 1442,
+        "cells": 720,
+        "motifs": 720,
+        "blocks": 1,
+        "placements": 720,
+        "routes": 0,
+        "members": 1441
+      },
+      "case_source_sha256": "8D7CA23B7A0E766FC21711008FEB79841DF846B31B5F66D13F2F144CD7340FA5",
+      "inventory_source_sha256": "2E8F287CE810139343C9DEC815D0D8FBECA95024BDB23729A85853966123A42B"
+    },
+    {
+      "id": "ROUTED",
+      "program": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\ROUTED.program.json",
+        "bytes": 4844,
+        "sha256": "8211E6BF8B1C9D0FE5D4E2609585067EC4C3FC4879FFABAA02E0BD705278DF2E"
+      },
+      "expected": "IF_THEN",
+      "failed_condition": null,
+      "counts": {
+        "objects": 10,
+        "cells": 4,
+        "motifs": 4,
+        "blocks": 1,
+        "placements": 4,
+        "routes": 2,
+        "members": 9
+      },
+      "case_source_sha256": "8BC4B922615CE32E0953B727568BDD7B884E15AC195925BADA9E07FA3E3F6CC6",
+      "inventory_source_sha256": "3555D47B35D60311A1F93D0759056EA23F47CB1E2F5D5D6B14C035DC90434E43"
+    },
+    {
+      "id": "BAD_I",
+      "program": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_I.program.json",
+        "bytes": 4429,
+        "sha256": "2999220E9CFCAD7F1DD60424C7EF5C43C417181DDCE069FE582230E3A1DF1AF2"
+      },
+      "expected": "NO",
+      "failed_condition": "I",
+      "counts": {
+        "objects": 11,
+        "cells": 5,
+        "motifs": 4,
+        "blocks": 1,
+        "placements": 4,
+        "routes": 0,
+        "members": 9
+      },
+      "case_source_sha256": "C73AA2B3AD68364C8E4645EA98388C8362487B2E5DDD9C97C17F6E7ACB9640FD",
+      "inventory_source_sha256": "81BFED4926AFE7701B8DE8F8B0B9F4E0C5B6BD3DFEFEF88FB9B853EFB67CF35B"
+    },
+    {
+      "id": "BAD_II",
+      "program": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_II.program.json",
+        "bytes": 4157,
+        "sha256": "FB43506C663264934049A4169D590830884D556088D103EDE386E866519AF424"
+      },
+      "expected": "NO",
+      "failed_condition": "II",
+      "counts": {
+        "objects": 10,
+        "cells": 4,
+        "motifs": 4,
+        "blocks": 1,
+        "placements": 4,
+        "routes": 0,
+        "members": 9
+      },
+      "case_source_sha256": "E863CD4A1E582A9E66D92090C494E5B3719F29ABE9AB3BEB5DD82F4422396C77",
+      "inventory_source_sha256": "DEBDDC89FE94930D0E6F69DDD4CAB2B2A48CF9725B75795C4DDE2D2C34714363"
+    },
+    {
+      "id": "BAD_III",
+      "program": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_III.program.json",
+        "bytes": 4141,
+        "sha256": "A24B6F99B8B79D3607BF0AFD31E917E0F117F4C13FFA845587D83D99BB61DFED"
+      },
+      "expected": "NO",
+      "failed_condition": "III",
+      "counts": {
+        "objects": 10,
+        "cells": 4,
+        "motifs": 4,
+        "blocks": 1,
+        "placements": 4,
+        "routes": 0,
+        "members": 9
+      },
+      "case_source_sha256": "8C2C036DA11B7E0E75DC828C3626B0CF28E02BDD3C99D535F766C887C841519A",
+      "inventory_source_sha256": "01E7ADDFA4AA3FF2D06AF3B8C5217EF4567E5B16DF08BFC9234E3B70F12AC5B3"
+    },
+    {
+      "id": "BAD_IV",
+      "program": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_IV.program.json",
+        "bytes": 4852,
+        "sha256": "D30FD02EB6745C1E00D584224B0D1DCCFA0A128A8A7B92567AE095179449A211"
+      },
+      "expected": "NO",
+      "failed_condition": "IV",
+      "counts": {
+        "objects": 10,
+        "cells": 4,
+        "motifs": 4,
+        "blocks": 1,
+        "placements": 4,
+        "routes": 2,
+        "members": 9
+      },
+      "case_source_sha256": "131937C2B8B96EE9FC45CF168B203DCF0E5EC5B1277F9BB4A8A7A17DBBB2A5CE",
+      "inventory_source_sha256": "BCAC9657E13D3F3D4B8A2813FA2AFA8234659E6354AFFBCBBCB2B17BDC0916F3"
+    },
+    {
+      "id": "BAD_V",
+      "program": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_V.program.json",
+        "bytes": 4844,
+        "sha256": "8DD7D6780002E5E0704F570AD7D5F575D540BCC73E6E1C1289DD668792DD953A"
+      },
+      "expected": "NO",
+      "failed_condition": "V",
+      "counts": {
+        "objects": 10,
+        "cells": 4,
+        "motifs": 4,
+        "blocks": 1,
+        "placements": 4,
+        "routes": 2,
+        "members": 9
+      },
+      "case_source_sha256": "D97736675BBA7BB091E93A8C4B002B6A397484CF50C04EEB6C87143E81E30495",
+      "inventory_source_sha256": "F175EA908DB23CF14F786D5B78F1634686F27615EC189580D3FE58DE108B8018"
+    },
+    {
+      "id": "BAD_VI",
+      "program": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_VI.program.json",
+        "bytes": 4842,
+        "sha256": "7C52CD84046F814C1C5830D1CD4E09377FAE88BC1B5A06E075D5B5C73A4B3852"
+      },
+      "expected": "NO",
+      "failed_condition": "VI",
+      "counts": {
+        "objects": 10,
+        "cells": 4,
+        "motifs": 4,
+        "blocks": 1,
+        "placements": 4,
+        "routes": 2,
+        "members": 9
+      },
+      "case_source_sha256": "305E4FA22FBF444A74C5199B86D1D34B6BCBA5AA64FD289B3CB2106A5E39C082",
+      "inventory_source_sha256": "92ACDAA5AD969136081984CAC2B72AF848435CBFFD9BAFCFB3FA413B8F8ADD52"
+    },
+    {
+      "id": "BAD_VII",
+      "program": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_VII.program.json",
+        "bytes": 4844,
+        "sha256": "FFF867484DBBE8B3EE7C54AF5043D25120E6771048DDEE9A4091EE5E24E5CC86"
+      },
+      "expected": "NO",
+      "failed_condition": "VII",
+      "counts": {
+        "objects": 10,
+        "cells": 4,
+        "motifs": 4,
+        "blocks": 1,
+        "placements": 4,
+        "routes": 2,
+        "members": 9
+      },
+      "case_source_sha256": "46B5E34B6963E40917B95208F386F0D3E578C82E8A5A8BB7CDDE7D47A981EBDC",
+      "inventory_source_sha256": "5811E1A01086F21C5D18F4D183AC77C363CBCAE52DCFDF5B5C6AE516A432CFF0"
+    },
+    {
+      "id": "BAD_VIII",
+      "program": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_VIII.program.json",
+        "bytes": 5186,
+        "sha256": "9683DDE0DFB250311A76A85E4115A82037C4EF8B2F4193BA877D9D6A6B58FA76"
+      },
+      "expected": "NO",
+      "failed_condition": "VIII",
+      "counts": {
+        "objects": 10,
+        "cells": 4,
+        "motifs": 4,
+        "blocks": 1,
+        "placements": 4,
+        "routes": 3,
+        "members": 9
+      },
+      "case_source_sha256": "E8B087CF3E4DEA9D585572767EADEEC9C97983D911C320B6B67907AF7F38BDE1",
+      "inventory_source_sha256": "FC4E1C04498C7275089AD7ED252FFC5AAE2C6A6FFEE857F1DB5D3C48A3478CF4"
+    }
+  ],
+  "generic_hash_contacts": [
+    {
+      "parts": [
+        "00EFC929AACCF6AE204FB6D48D451A599D93C4B44720D331BC92F75136DB7797",
+        "RESULT",
+        "01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A",
+        "LEFT"
+      ],
+      "preimage_hex": "0000000000000040303045464339323941414343463641453230344642364434384434353141353939443933433442343437323044333331424339324637353133364442373739370000000000000006524553554c5400000000000000403031433344463744353044333433364644414535443430423939373733373845303833343742323835393735324444463942334432363842353038333035394100000000000000044c454654",
+      "sha256": "37d6f7ce8fce06c1a5dae1e024b81aa773f1b1b777b6e16f42223a5b382505c1"
+    },
+    {
+      "parts": [
+        "018EB2245D27CF3D1CC2077BDBEC2E322C735BC0F411162C152C00E960FA85B1",
+        "RESULT",
+        "01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A",
+        "RIGHT"
+      ],
+      "preimage_hex": "0000000000000040303138454232323435443237434633443143433230373742444245433245333232433733354243304634313131363243313532433030453936304641383542310000000000000006524553554c5400000000000000403031433344463744353044333433364644414535443430423939373733373845303833343742323835393735324444463942334432363842353038333035394100000000000000055249474854",
+      "sha256": "45d3211b3ef297e99799ecf014794fba252d84db410b51ebcf6696575668428b"
+    },
+    {
+      "parts": [
+        "overlap:00EFC929AACCF6AE204FB6D48D451A599D93C4B44720D331BC92F75136DB7797",
+        "RESULT",
+        "01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A",
+        "LEFT"
+      ],
+      "preimage_hex": "00000000000000486f7665726c61703a303045464339323941414343463641453230344642364434384434353141353939443933433442343437323044333331424339324637353133364442373739370000000000000006524553554c5400000000000000403031433344463744353044333433364644414535443430423939373733373845303833343742323835393735324444463942334432363842353038333035394100000000000000044c454654",
+      "sha256": "087de188e7ffde90e30b9bc7d3aac6d47da8455b7ff2228d7d4f20e182ff5bcc"
+    },
+    {
+      "parts": [
+        "00EFC929AACCF6AE204FB6D48D451A599D93C4B44720D331BC92F75136DB7797",
+        "LEFT",
+        "01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A",
+        "LEFT"
+      ],
+      "preimage_hex": "00000000000000403030454643393239414143434636414532303446423644343844343531413539394439334334423434373230443333314243393246373531333644423737393700000000000000044c45465400000000000000403031433344463744353044333433364644414535443430423939373733373845303833343742323835393735324444463942334432363842353038333035394100000000000000044c454654",
+      "sha256": "9c8ac43e1823b0d015ce3ba7e99026fe1f7156fecd1aed27f64aea34a6dcddaa"
+    },
+    {
+      "parts": [
+        "021159829F3F71EB2768B75BAF55D2F068CC9CB74A4133E78E50043C535B33F8",
+        "RESULT",
+        "01C3DF7D50D3436FDAE5D40B9977378E08347B2859752DDF9B3D268B5083059A",
+        "LEFT"
+      ],
+      "preimage_hex": "0000000000000040303231313539383239463346373145423237363842373542414635354432463036384343394342373441343133334537384535303034334335333542333346380000000000000006524553554c5400000000000000403031433344463744353044333433364644414535443430423939373733373845303833343742323835393735324444463942334432363842353038333035394100000000000000044c454654",
+      "sha256": "ef6a3ef9a2b1936b27777e59689f5a7f788d179c581604a83475ff9295d45b63"
+    }
+  ],
+  "byte_encoding": "All 256 unsigned UTF8 octets, eight high-to-low bits; order derived natively at first differing bit.",
+  "native_input_rows": 271,
+  "host_verdict_inputs": "NONE",
+  "world_effect": "NONE",
+  "repository_effect": "NONE"
+}

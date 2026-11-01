@@ -1,0 +1,38 @@
+// Observation transport: project already-derived native DRC facts only after
+// both requested invocations have closed under QueueGate. No condition seed.
+import fs from 'node:fs';
+import path from 'node:path';
+import {openNative,nativeProof} from '../native_reader_v2_038.mjs';
+import {here,need,read,save,identity,verify,exact,nestedRefs} from './custody_042.mjs';
+const [preparedPath,closurePath,caseName]=process.argv.slice(2);
+need(preparedPath&&closurePath&&caseName,'USAGE: PREPARED_042.json CLOSED.json NATIVE_CASE');
+need(caseName==='P20','ONLY_BOUND_CANONICAL_CASE');
+const preparedRef=identity(preparedPath),prepared=read(preparedPath),closure=identity(closurePath),closed=read(closurePath);
+need(closed.schema==='QueueGateClosure027' || closed.schema==='QueueGateClosed027','CLOSURE_SCHEMA');
+need(closed.queue_status==='EMPTY'&&closed.artifact_gate==='PASSED','QUEUEGATE_CLOSURE_WITHHELD');
+verify(closed.candidate);verify(closed.observer);
+const candidate=read(closed.candidate.path),observerClosure=read(closed.observer.path);
+need(candidate.plan.sha256===prepared.plan.sha256&&observerClosure.verdict==='IF_THEN'&&observerClosure.candidate.sha256===closed.candidate.sha256,'CLOSED_PLAN_NOT_SAME');
+for(const r of nestedRefs(candidate))verify(r);
+need(!fs.existsSync(path.join(path.dirname(closurePath),'BLOCKED.json')),'QUEUEGATE_BLOCKED');
+need(prepared.runs.length===2,'REPLAY_DOMAIN');
+const observations=prepared.runs.map(r=>({ref:identity(r.output),value:read(r.output)}));
+const closedReferences=nestedRefs(candidate);
+for(const o of observations)need(closedReferences.some(r=>r.path.toLowerCase()===o.ref.path.toLowerCase()&&r.sha256===o.ref.sha256&&r.bytes===o.ref.bytes),'OBSERVATION_OUTSIDE_CLOSED_PLAN');
+for(const o of observations){need(o.value.verdict==='IF_THEN'&&o.value.observation.verdict==='IF_THEN','OBSERVATION_NOT_CLOSED');for(const r of [o.value.readback,o.value.exit,o.value.request])verify(r);const e=read(o.value.exit.path);need(e.exit_code===0&&e.deadline==='WITHIN_LIMIT','NATIVE_EXIT_NOT_CLOSED');}
+need(observations[0].value.readback.sha256===observations[1].value.readback.sha256,'REPLAY_NOT_SAME');
+const request=read(observations[0].value.request.path),config=request.config;
+const q=openNative({...config,readback:observations[0].value.readback}),proof=nativeProof(q);
+const rows=tag=>q.predicate(tag).map(f=>({f,args:q.node(f.term).c.slice(1).map(q.term)}));
+const ds=rows('D42_DRC').filter(x=>x.args[0]===caseName);
+need(ds.length===1&&ds[0].args[1]==='IF_THEN','NATIVE_DRC_NOT_ADMITTED');
+const checks=['I','II','III','IV','V','VI','VII','VIII'];
+const conditions=rows('D42_CONDITION').filter(x=>x.args[0]===caseName);
+need(conditions.length===8,'EIGHT_NATIVE_ROWS_REQUIRED');
+exact(conditions.map(x=>x.args.slice(1).join(':')),checks.map(c=>c+':IF_THEN'),'NATIVE_EIGHT_CONDITIONS_NOT_SAME');
+for(const x of [ds[0],...conditions])proof.proof(x.f.id);
+const bindingRef=identity(path.join(here,'CANONICAL_PROGRAM_BINDING_042.json')),binding=read(bindingRef.path);verify(binding.program);
+for(const o of observations){const c=o.value.observation.canonical_program_drc;need(c&&c.program_sha256===binding.program.sha256&&c.native_case===caseName&&c.verdict==='IF_THEN'&&c.proof.drc_fact===ds[0].f.id,'CANONICAL_CASE_PROJECTION_NOT_SAME');exact(c.proof.condition_facts.map(x=>x.condition+':'+x.fact_id),conditions.map(x=>x.args[1]+':'+x.f.id),'CONDITION_PROJECTION_NOT_SAME');}
+const native={source:config.source,source_map:config.source_map,image:config.image,readback:observations[0].value.readback};
+const gate={program_sha256:binding.program.sha256,verdict:ds[0].args[1],checks,proof:{schema:'ClosedNativeDRCProjection042',case:caseName,canonical_program:binding.program,binding:bindingRef,native,native_drc_fact:ds[0].f.id,condition_facts:Object.fromEntries(conditions.map(x=>[x.args[1],x.f.id])),proof_facts_checked:proof.seen.size,queuegate_closed:closure,preparation:preparedRef,plan:prepared.plan,observations:observations.map(x=>x.ref),replay:'SAME',world_effect:'NONE',selection:'NO_MEMBER_TAKEN'}};
+console.log(JSON.stringify(save(path.join(here,'DRC_GATE_042.json'),JSON.stringify(gate))));

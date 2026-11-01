@@ -1,0 +1,12 @@
+{
+  "schema": "QueueGateBlocked027",
+  "queue_status": "BLOCKED",
+  "artifact_gate": "FAILED",
+  "condition": "WORKER_NOT_CLOSED:FABRIC_JOIN_042_BASELINE_01",
+  "at": "2026-11-01T06:08:11.270Z",
+  "scope": "FABRIC_JOIN_042_BASELINE_01",
+  "worker_pid": null,
+  "outputs": "RETAINED; NO_AUTOMATIC_RETRY",
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN"
+}

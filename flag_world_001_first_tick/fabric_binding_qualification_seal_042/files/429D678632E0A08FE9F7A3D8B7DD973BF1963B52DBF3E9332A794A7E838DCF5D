@@ -1,0 +1,581 @@
+{
+  "schema": "SiteJoinFabricCorrespondenceRunRecord041",
+  "recorded_at": "2026-11-01T05:01:46.461Z",
+  "requested_obligation": "O_DRC_FABRIC_REALIZATION_038",
+  "status": "PARTIAL",
+  "verdict": "MAYBE",
+  "authority": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\AUTHORITY_041.json",
+    "bytes": 1034,
+    "sha256": "E845BE1DB4577B9D867ABBA5A65EBDCD9A7A518C07E7919BF5D858046B46169D"
+  },
+  "sources": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\site_join_contacts_041.mal",
+      "bytes": 2113,
+      "sha256": "329C1E3557AE6087E7757526F04871820B8E57C928399F34C2F8B7A668CBD468"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\site_join_execution_v2_041.mal",
+      "bytes": 113776,
+      "sha256": "03A58FFC1161BB9C94BF46007BB58AC8958F63AC3EFE7462C8E3073CF9D27AD4"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\prepare_v2_041.mjs",
+      "bytes": 6274,
+      "sha256": "5FDA349B012D94B2AA139C442A24A9E4532680C61AF08037A00A1696D730464B"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\observe_041.mjs",
+      "bytes": 6382,
+      "sha256": "1120453268481D59E63AE2CBEEB0F09EC347D0CA81C7B0B4758C2A1D53BA21EC"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\extract_join_041.mjs",
+      "bytes": 12522,
+      "sha256": "46C2E5BD9252F8CBD452CC6F8FC95C4D413FA25BF241CF8F8BC199FE31914610"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\prepare_execution_041.mjs",
+      "bytes": 8018,
+      "sha256": "BEDF1D37077DBCA10B4E3A3A1437EA12EF0880A1626FB46869D879BB3C7F65CB"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\bind_execution_v2_041.mjs",
+      "bytes": 1452,
+      "sha256": "7EAF52AE7E619162E0DA7EF5CA9E52F0583C7DD20E153B1A51CCD1B0763DDB51"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\write_record_041.mjs",
+      "bytes": 8213,
+      "sha256": "E4EB133C55CE032E8F4123EE6FDCFADCF969ACE2FD9A8800F5218283DD89DA13"
+    }
+  ],
+  "canonical_contracts": {
+    "static_fabric": {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\gpu_carrier_001\\flag_world_engine_v3_fold_bootstrap_001\\candidate_successors\\W040_SURFACE_FABRIC_LOWERING_116\\parents\\STATIC_FABRIC_SPEC.md",
+      "bytes": 21733,
+      "sha256": "E328B574DE32635358AC488C4C5E20E80E86A845EB154401C8E1A7C0DD8D68F1"
+    },
+    "FABEX": {
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\Markdowns\\FABRIC_EXECUTION_SPEC_v0.3.0-candidate.md",
+      "bytes": 11257,
+      "sha256": "5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0"
+    }
+  },
+  "operand_result_component": {
+    "verdict": "IF_THEN",
+    "scope": "Every W38_SITE_READING_JOIN in one closed J17 diagnostic invocation, recomputed from native leaf inputs; fourteen additional contact controls.",
+    "actual_contacts": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\ACTUAL_JOIN_CONTACTS_041.json",
+      "bytes": 1110371,
+      "sha256": "9FF170302CF691853D278A5F09A1572A01CC2B94C704A070CAE64EEA8FE34ACC"
+    },
+    "actual_sites": 42,
+    "actual_cover_joins": 438,
+    "actual_leaf_inputs": 480,
+    "intermediate_tree_seeds": 0,
+    "native_fixture_cases": 14,
+    "reading_result": "SAME/NOT_SAME is distinct from source-supplied parent tuple construction",
+    "resource_contact_scope": "Cover resource keyed by SITE(s),n,a,b within this exact source/cover context; snapshot and reading remain payload coordinates. No canonical resource/lifetime claim.",
+    "native_controls": [
+      {
+        "name": "NO_NO",
+        "verdict": "IF_THEN",
+        "frame": "PRESENT",
+        "native_join_outputs": 1
+      },
+      {
+        "name": "THIS_THIS",
+        "verdict": "IF_THEN",
+        "frame": "PRESENT",
+        "native_join_outputs": 1
+      },
+      {
+        "name": "THIS_NO",
+        "verdict": "IF_THEN",
+        "frame": "PRESENT",
+        "native_join_outputs": 0
+      },
+      {
+        "name": "NO_THIS",
+        "verdict": "IF_THEN",
+        "frame": "PRESENT",
+        "native_join_outputs": 0
+      },
+      {
+        "name": "SNAPSHOT_MISMATCH",
+        "verdict": "IF_THEN",
+        "frame": "ABSENT",
+        "native_join_outputs": 0
+      },
+      {
+        "name": "SITE_MISMATCH",
+        "verdict": "IF_THEN",
+        "frame": "ABSENT",
+        "native_join_outputs": 0
+      },
+      {
+        "name": "LEFT_NODE_MISMATCH",
+        "verdict": "IF_THEN",
+        "frame": "ABSENT",
+        "native_join_outputs": 0
+      },
+      {
+        "name": "RIGHT_NODE_MISMATCH",
+        "verdict": "IF_THEN",
+        "frame": "ABSENT",
+        "native_join_outputs": 0
+      },
+      {
+        "name": "MISSING_COVER",
+        "verdict": "IF_THEN",
+        "frame": "ABSENT",
+        "native_join_outputs": 0
+      },
+      {
+        "name": "MISSING_LEFT",
+        "verdict": "IF_THEN",
+        "frame": "ABSENT",
+        "native_join_outputs": 0
+      },
+      {
+        "name": "MISSING_RIGHT",
+        "verdict": "IF_THEN",
+        "frame": "ABSENT",
+        "native_join_outputs": 0
+      },
+      {
+        "name": "DUPLICATE_CUSTODY",
+        "verdict": "IF_THEN",
+        "frame": "PRESENT",
+        "native_join_outputs": 1
+      },
+      {
+        "name": "COVER_ALIAS",
+        "verdict": "IF_THEN",
+        "frame": "PRESENT",
+        "native_join_outputs": 1
+      },
+      {
+        "name": "TWO_SNAPSHOTS",
+        "verdict": "IF_THEN",
+        "frame": "PRESENT",
+        "native_join_outputs": 2
+      }
+    ],
+    "observer_static_guards_not_separate_native_controls": [
+      "original-clause deletion",
+      "derived-parent seed injection"
+    ]
+  },
+  "queuegate": {
+    "plan": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\PLAN.json",
+      "bytes": 23813,
+      "sha256": "3C8EA2FCFF171FF9B58AAA53FC3A84E1590E37EF81C902C7188A9F1A0063E389"
+    },
+    "closure": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\queuegate_attempt\\CLOSED.json",
+      "bytes": 883,
+      "sha256": "FFC2FAD70528A8B2A2EB3AAC4BE73A21FA1B28B1DA0926E70C172A56D5EA7D66"
+    },
+    "candidate": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\queuegate_attempt\\CANDIDATE_CLOSURE.json",
+      "bytes": 24444,
+      "sha256": "76E19FCE833DFCD071FEFBEF748C698A9173873C10FAD1E1E3252D462FDDA2E8"
+    },
+    "observer": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\queuegate_attempt\\OBSERVER_CLOSED.json",
+      "bytes": 502,
+      "sha256": "B890FADA71124982238ED4BF3D96589CEC2D29370B3329099D655E278AF1D6DE"
+    },
+    "inputs_verified": 62,
+    "invocations": [
+      {
+        "name": "SITE_JOIN_CONTACT_041_01",
+        "observation": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\SITE_JOIN_CONTACT_041_01\\NATIVE_OBSERVATION.json",
+          "bytes": 429679,
+          "sha256": "2E8BE1EF617896F23CD4F55582C81DA28BC8F1012F901D3DEDE45A03BD1FDA17"
+        },
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\SITE_JOIN_CONTACT_041_01\\readback.bin",
+          "bytes": 268435488,
+          "sha256": "1BD92FCEF029475ABAC88148ED8422D6B517D22442CA6C9AC833A0B153C41E5E"
+        },
+        "native_exit": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\SITE_JOIN_CONTACT_041_01\\GPU.EXIT.json",
+          "bytes": 268,
+          "sha256": "09E41169D62A706CEEABF9B90FCCB062DBD513610F2BC8F1B3E9868E8F98A3E9"
+        },
+        "native_elapsed_ms": 3667.4291999999996,
+        "semantic_digest": "5D1EFA9AC817B75D900A34D7ECBA186A502170FA67DD6EABBB60ED267792629A",
+        "counts": {
+          "native_join_outputs": 444,
+          "resources": 452,
+          "frames": 446,
+          "reading_contacts": 446,
+          "parent_payloads": 444,
+          "source_correspondences": 444
+        },
+        "native": {
+          "facts": 4528,
+          "terms": 4806,
+          "epochs": 8,
+          "error": 0,
+          "proof_facts_checked": 4516
+        },
+        "controls": [
+          {
+            "name": "NO_NO",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 1
+          },
+          {
+            "name": "THIS_THIS",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 1
+          },
+          {
+            "name": "THIS_NO",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "NO_THIS",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "SNAPSHOT_MISMATCH",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "SITE_MISMATCH",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "LEFT_NODE_MISMATCH",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "RIGHT_NODE_MISMATCH",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "MISSING_COVER",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "MISSING_LEFT",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "MISSING_RIGHT",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "DUPLICATE_CUSTODY",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 1
+          },
+          {
+            "name": "COVER_ALIAS",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 1
+          },
+          {
+            "name": "TWO_SNAPSHOTS",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 2
+          }
+        ]
+      },
+      {
+        "name": "SITE_JOIN_CONTACT_041_02",
+        "observation": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\SITE_JOIN_CONTACT_041_02\\NATIVE_OBSERVATION.json",
+          "bytes": 430788,
+          "sha256": "C70AB46556985D036A7269C9F745AAF274471EF9DA8A13F0D2DC71F08A7A3BF0"
+        },
+        "readback": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\SITE_JOIN_CONTACT_041_02\\readback.bin",
+          "bytes": 268435488,
+          "sha256": "1BD92FCEF029475ABAC88148ED8422D6B517D22442CA6C9AC833A0B153C41E5E"
+        },
+        "native_exit": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\execution_002\\prepared\\SITE_JOIN_CONTACT_041_02\\GPU.EXIT.json",
+          "bytes": 259,
+          "sha256": "D72B88BA73078D8688D2736BC286E6D1E65D6A76F728170A74C1329AAB7AFAD0"
+        },
+        "native_elapsed_ms": 3478.7649,
+        "semantic_digest": "5D1EFA9AC817B75D900A34D7ECBA186A502170FA67DD6EABBB60ED267792629A",
+        "counts": {
+          "native_join_outputs": 444,
+          "resources": 452,
+          "frames": 446,
+          "reading_contacts": 446,
+          "parent_payloads": 444,
+          "source_correspondences": 444
+        },
+        "native": {
+          "facts": 4528,
+          "terms": 4806,
+          "epochs": 8,
+          "error": 0,
+          "proof_facts_checked": 4516
+        },
+        "controls": [
+          {
+            "name": "NO_NO",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 1
+          },
+          {
+            "name": "THIS_THIS",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 1
+          },
+          {
+            "name": "THIS_NO",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "NO_THIS",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "SNAPSHOT_MISMATCH",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "SITE_MISMATCH",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "LEFT_NODE_MISMATCH",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "RIGHT_NODE_MISMATCH",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "MISSING_COVER",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "MISSING_LEFT",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "MISSING_RIGHT",
+            "verdict": "IF_THEN",
+            "frame": "ABSENT",
+            "native_join_outputs": 0
+          },
+          {
+            "name": "DUPLICATE_CUSTODY",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 1
+          },
+          {
+            "name": "COVER_ALIAS",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 1
+          },
+          {
+            "name": "TWO_SNAPSHOTS",
+            "verdict": "IF_THEN",
+            "frame": "PRESENT",
+            "native_join_outputs": 2
+          }
+        ]
+      }
+    ],
+    "replay": "BYTE_SAME",
+    "native_elapsed_total_ms": 7146.1941
+  },
+  "DRC": {
+    "verdict": "MAYBE",
+    "execution": "NOT_RUN",
+    "canonical_fabric": "NOT_EMITTED",
+    "conditions": [
+      {
+        "condition": "I",
+        "name": "IDENTITY_INTEGRITY",
+        "verdict": "MAYBE",
+        "execution": "NOT_RUN",
+        "operand": "Canonical CellDef/motif/block/root inventory is not emitted. F41_RESOURCE is a source-cover resource contact only."
+      },
+      {
+        "condition": "II",
+        "name": "CONTAINMENT",
+        "verdict": "MAYBE",
+        "execution": "NOT_RUN",
+        "operand": "Canonical membership/path construction is not emitted. Coverage-tree ancestry is not silently used as fabric containment."
+      },
+      {
+        "condition": "III",
+        "name": "PLACEMENT_CAPABILITY",
+        "verdict": "MAYBE",
+        "execution": "NOT_RUN",
+        "operand": "Source-bound capability and semantic LOCATION for the site-coverage join are not supplied by this component."
+      },
+      {
+        "condition": "IV",
+        "name": "ROUTE_ENDPOINTS",
+        "verdict": "MAYBE",
+        "execution": "NOT_RUN",
+        "operand": "No canonical route endpoints are emitted."
+      },
+      {
+        "condition": "V",
+        "name": "ROUTE_IDENTITY",
+        "verdict": "MAYBE",
+        "execution": "NOT_RUN",
+        "operand": "No canonical connection tuples or route hash identities are emitted."
+      },
+      {
+        "condition": "VI",
+        "name": "PORT_DIRECTION",
+        "verdict": "MAYBE",
+        "execution": "NOT_RUN",
+        "operand": "LEFT/RIGHT correspondence is qualified as source operands, not as physical routes."
+      },
+      {
+        "condition": "VII",
+        "name": "WITNESS_PAYLOAD_TYPES",
+        "verdict": "MAYBE",
+        "execution": "NOT_RUN",
+        "operand": "READING_IDENTITY is a correspondence term, not an admitted CellDef payload-slot binding."
+      },
+      {
+        "condition": "VIII",
+        "name": "ROLE_MULTIPLICITY",
+        "verdict": "MAYBE",
+        "execution": "NOT_RUN",
+        "operand": "Native matching operands are checked; one canonical frame/result per resource with payload custody is not realized."
+      }
+    ]
+  },
+  "next_operand": {
+    "name": "COVER_RESOURCE_TO_CANONICAL_CELL_LOCATION_AND_RUNTIME_BINDING",
+    "input": "F41_RESOURCE(SITE(s),n,a,b), typed child-reading operand contacts and source-supplied parent-result contact",
+    "required_output": "Actual canonical CellDef/motif occurrence(s), capability and semantic LOCATION/containment, exact typed routes, and a one-frame/result-per-cell runtime association that preserves fixed program identity across snapshots.",
+    "specific_boundary": "W38 source line31 constructs the parent relation. Canonical SAME/IF_THEN evaluation alone is not that record constructor. Historical comparator placement uses PAIR(f,g) and W12/W13 own-S readings; no such correspondence for these cover-node operands has been supplied in this implementation.",
+    "source_contacts": [
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\wave_038.mal",
+        "line": 31
+      },
+      {
+        "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/flag_world_engine_v3_fold_bootstrap_001/candidate_successors/W040_SURFACE_FABRIC_LOWERING_116/parents/STATIC_FABRIC_SPEC.md",
+        "line": 74
+      },
+      {
+        "path": "C:/Dev/mal_kernel_lab_repo/v3/software_fpga/gpu_carrier_001/flag_world_engine_v3_fold_bootstrap_001/candidate_successors/W040_SURFACE_FABRIC_LOWERING_116/parents/STATIC_FABRIC_SPEC.md",
+        "line": 387
+      },
+      {
+        "path": "C:\\Users\\devon\\Desktop\\MaL\\Markdowns\\FABRIC_EXECUTION_SPEC_v0.3.0-candidate.md",
+        "clause": "2;5;6"
+      }
+    ],
+    "disposition": "OPEN_IMPLEMENTATION_CONTACT; no claim that the world law is absent; no default placement or proof-tree-as-fabric substitution"
+  },
+  "first_attempt": {
+    "reconciliation": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\reconciliation_001\\RECONCILIATION.json",
+      "bytes": 26518,
+      "sha256": "96011A1C31B17D20690D58AAC9CE517358ACE94C8CC1CDDB1F37C5081C30FE6A"
+    },
+    "release": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_correspondence_041\\reconciliation_001\\LANE_RELEASE.json",
+      "bytes": 2303,
+      "sha256": "22DBE2A4867BDFB9F897BAC3A401DC869BBB99305C2768745CCEE02EA8FF6501"
+    },
+    "counted": 0,
+    "merged": 0,
+    "native_exit": 0,
+    "worker_exit": 2,
+    "condition": "native seed scope",
+    "repair": "Raw duplicate custody retained; unique native seed set serialized. Frozen proof guard unchanged.",
+    "raw_seed_rows": 963,
+    "distinct_native_seeds": 960
+  },
+  "frozen_subjects_same": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\wave_038.mal",
+      "bytes": 22205,
+      "sha256": "00260D576A1591B4ADD768193EE2403A6032334AD8B0C95E6E5C917754B2227F"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\RUN_RECORD_038_001.json",
+      "bytes": 96792,
+      "sha256": "0BEA0CBBBCDB5DE5B2C1B86228478A1A12C1FDF5BF3571EA4974580BF8EB5908"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\committed.world.json",
+      "bytes": 763526,
+      "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88"
+    }
+  ],
+  "scope": {
+    "world_transition": "NO",
+    "live_world_append": "NO",
+    "K_member_taken": "NO",
+    "law_change": "NO",
+    "promotion": "NO",
+    "repository_commit": "NO",
+    "push": "NO",
+    "old_recovery_resume": "NO"
+  }
+}

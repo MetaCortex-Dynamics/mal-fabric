@@ -1,0 +1,39 @@
+// Bind the prepared diagnostic cases to one serial QueueGate plan. Two exact
+// invocations per case; no result is counted until the plan closes.
+import fs from 'node:fs';
+import path from 'node:path';
+import {preparePlan} from '../launch_generation_v1_038.mjs';
+import {here,home,carrier,need,identity,verify,read,save,nestedRefs,unique} from './custody_042.mjs';
+const preparedRef=identity(path.join(here,'PREPARED_RUNTIME_042.json')),prepared=read(preparedRef.path);
+const transportRef=verify(prepared.transport),transport=read(transportRef.path);
+need(prepared.cases.length===5,'FIVE_CASE_DOMAIN_REQUIRED');
+const observer=identity(path.join(here,'observe_runtime_v2_042.mjs'));
+need(observer.sha256==='1829374C952F006F00862E0D591AB632EAF1FB2519B646C7249252CE6D77DB91','RUNTIME_OBSERVER_NOT_SAME');
+const drcClosed=identity(path.join(here,'execution_drc_001/queuegate_attempt/CLOSED.json'));
+const drcClosure=read(drcClosed.path);need(drcClosure.queue_status==='EMPTY'&&drcClosure.artifact_gate==='PASSED','DRC_CLOSURE_UNSUPPLIED');
+const gateRef=identity(path.join(here,'DRC_GATE_042.json')),gate=read(gateRef.path);
+need(gate.proof.queuegate_closed.sha256===drcClosed.sha256,'DRC_GATE_CLOSURE_NOT_SAME');
+const modules=new Map();
+function visit(file){const r=identity(file);if(modules.has(r.path))return;modules.set(r.path,r);const source=fs.readFileSync(r.path,'utf8');for(const m of source.matchAll(/^import\s+[^;]*?from\s*['"]([^'"]+)['"]/gm))if(m[1].startsWith('.'))visit(path.resolve(path.dirname(r.path),m[1]));}
+visit(observer.path);visit(path.join(here,'prepare_runtime_execution_v2_042.mjs'));visit(path.join(here,'prepare_runtime_042.mjs'));visit(path.join(here,'project_drc_gate_042.mjs'));
+const authority=identity(path.join(here,'AUTHORITY_042.json'));
+const sourceBinding=identity(path.join(here,'CANONICAL_PROGRAM_BINDING_042.json'));
+const prior=path.join(carrier,'sand_refinement_diagnostics_026/sweep/broad_execution_020');
+const process_closure=identity(path.join(prior,'targeted_receipt_proposal_035/reconciliation_001/PROCESS_RECONCILIATION_035.json'));
+const runtime=identity(path.join(carrier,'runtime_021/block_iterative_runtime.exe'));
+const vocabulary=identity(path.join(carrier,'snapshot_effect_vocabulary_040/inputs/ERRATUM_E_WAVE_001.mal'));
+const promotion=identity(path.join(carrier,'snapshot_effect_vocabulary_040/inputs/RECEIPT_PROMOTE_ERRATUM_E_WAVE_001_v0.1.1.md'));
+const expectedRefs=prepared.cases.flatMap(c=>nestedRefs(read(c.expected.path)));
+const reconciliation=identity(path.join(here,'reconciliation_runtime_001/RECONCILIATION.json'));
+const laneRelease=identity(path.join(here,'reconciliation_runtime_001/LANE_RELEASE.json'));
+const reconciliationData=read(reconciliation.path),releaseData=read(laneRelease.path);
+need(reconciliationData.counted===0&&reconciliationData.merged===0&&releaseData.status==='EMPTY','FAILED_ATTEMPT_DISPOSITION');
+const inputs=unique([reconciliation,laneRelease,releaseData.archived_owner,reconciliationData.artifacts,reconciliationData.failure_diagnostic,reconciliationData.terminal,authority,preparedRef,transportRef,sourceBinding,...nestedRefs(read(sourceBinding.path)),gateRef,...nestedRefs(gate),...nestedRefs(prepared),...nestedRefs(transport),...expectedRefs,...modules.values(),drcClosed,vocabulary,promotion]);
+for(const r of inputs)verify(r);
+const output=path.join(here,'execution_runtime_002');need(!fs.existsSync(output),'FRESH_RUNTIME_EXECUTION_REQUIRED');fs.mkdirSync(output);
+const sources=unique([...modules.values(),...prepared.cases.map(c=>c.source),transport.inputs.adapter]);
+const runs=prepared.cases.flatMap(c=>['01','02'].map(suffix=>({id:'FABRIC_JOIN_042_'+c.name.toUpperCase()+'_'+suffix,image:c.image,config:{source:c.source,source_map:c.source_map,image:c.image,expected:c.expected},invocation_limit_ms:900000})));
+const config=save(path.join(output,'CONFIG.json'),{schema:'SnapshotWaveExecutionConfig038',authority,inputs,sources,runtime,observer,process_closure,predecessors:[{path:path.dirname(drcClosed.path),sha256:drcClosed.sha256}],runs,world_effect:'NONE',selection:'NO_MEMBER_TAKEN'});
+const plan=await preparePlan(config.path,path.join(output,'prepared'));
+for(const r of inputs)verify(r);
+console.log(JSON.stringify(save(path.join(output,'PREPARED_042.json'),{schema:'RuntimeJoinExecutionPreparation042',at:new Date().toISOString(),prepared_source:preparedRef,config,...plan,case_count:5,invocation_count:10,world_effect:'NONE',selection:'NO_MEMBER_TAKEN',automatic_retry:'NO'})));

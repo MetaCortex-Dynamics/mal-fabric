@@ -1,0 +1,68 @@
+// EXECUTE frozen V1/V2 through the SAME canonical program and ingress core.
+// Governing contacts: FT v0.1.3 2ECF2EEF...C1A01; 116 L11 checked reference
+// correspondence; MF_GAME section9 FED38C3B...480557; V3.3 sections2--8.
+// VD/VO have constructed and checked all120 observer correspondences, every
+// offered lift and its reading, the supplied selected lift, the full field,
+// entities, and the exact source-recomputed frozen initial chain.
+// No observer correspondence is selected as the actual world's kappa.
+//
+// The prior genesis entry below IS committed fixture custody. The candidate
+// field is NOT a committed world state: it is a prepared proposal observation
+// supplied through MF_GAME's external ingress before STEP_FABRIC snapshots
+// its admitted frames. h always names that prior genesis link, not a digest
+// claimed for the candidate field. Input/admission receipts bind each exact
+// candidate observation. vector_commit requires the ACTUAL shared RETURN and
+// all720 returned comparisons before publishing a world successor.
+//
+// This file replaces actual_core_contacts.mal for the frozen-vector runs;
+// those two contact files MUST NOT be combined in one realization image.
+
+// The occurrence and its raw JSON flag identity come from the complete
+// source-certified observer. Field entries are not producer CellDefs.
+law FC_OCCURRENCE := IF GOES_WITH(VO_COMPARATOR,c,f,g), THIS(VO_OPERAND_FIXTURE_READY,FROZEN_VECTOR_OBSERVER)
+ THEN GOES_WITH(P20_SOURCE_OCCURRENCE,c,f,g);
+law FC_FLAG_JSON := IF GOES_WITH(VO_FLAG_JSON,f,j), THIS(VO_OPERAND_FIXTURE_READY,FROZEN_VECTOR_OBSERVER)
+ THEN GOES_WITH(P20_SOURCE_FLAG_JSON,f,j);
+
+// Retain the actual018/019 readout and promoted S/F binding 276EBD71...3108.
+// Both incident-face readings place the SAME/WHAT type at INTERIOR(S).
+// The fixture supplies only its per-overlap occurrence and containment.
+// No capability-to-role inference, default placement, or fixture-local G is
+// introduced. The actual readout's provenance remains in every support chain.
+law FC_PLACEMENT := IF GOES_WITH(VO_COMPARATOR,c,f,g), GOES_WITH(SF_FACE_ROLE,W_12,J_17,S), GOES_WITH(SF_FACE_ROLE,W_13,J_17,S), GOES_WITH(SF_CAPABILITY,SAME_NOT_SAME,S), THIS(VO_OPERAND_FIXTURE_READY,FROZEN_VECTOR_OBSERVER)
+ THEN GOES_WITH(P20_SOURCE_PLACEMENT,c,LOCATION(INTERIOR(S),CONTAINMENT(FIRST_TICK,OVERLAP(f,g))));
+law FC_ADMISSION := IF THIS(READOUT_CURRENT_ADMITTED), GOES_WITH(VO_COMPARATOR,c,f,g), GOES_WITH(P20_SOURCE_PLACEMENT,c,location), THIS(VO_OPERAND_FIXTURE_READY,FROZEN_VECTOR_OBSERVER)
+ THEN GOES_WITH(P20_SOURCE_ADMISSION,c,ADMISSION(SF_BINDING_001,location));
+
+// Source maps the checked720 pair sequence to the core's three-column
+// coverage schema. Its comparison column is proposal observation evidence,
+// never an I20 result or receipt. The core uses these rows for reverse pair
+// coverage; runtime independently evaluates each admitted frame afterward.
+@propose seed FC_OBSERVATION_ENCODING := {
+ GOES_WITH(FC_READING_TEXT,SAME,"SAME"),
+ GOES_WITH(FC_READING_TEXT,NOT_SAME,"NOT_SAME")
+};
+law FC_COVERAGE_ROWS := IF THIS(VO_PAIR_SEQUENCE,ARRAY(rows))
+ THEN THIS(FC_COVERAGE_ROWS,rows);
+law FC_COVERAGE_TAIL := IF THIS(FC_COVERAGE_ROWS,CONS(row,tail))
+ THEN THIS(FC_COVERAGE_ROWS,tail);
+law FC_COMPARISON := IF GOES_WITH(VO_PAIR,f,g), GOES_WITH(VO_FIELD,CANDIDATE,f,a), GOES_WITH(VO_FIELD,CANDIDATE,g,b), GOES_WITH(JTP_SAME_RESULT,MARKER(a),MARKER(b),word,reading), GOES_WITH(FC_READING_TEXT,reading,text)
+ THEN GOES_WITH(FC_COMPARISON,f,g,text);
+law FC_COVERAGE_END := IF THIS(FC_COVERAGE_ROWS,NIL)
+ THEN GOES_WITH(FC_COVERAGE_SUFFIX,NIL,NIL);
+law FC_COVERAGE_HEAD := IF THIS(FC_COVERAGE_ROWS,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail)), GOES_WITH(FC_COMPARISON,f,g,text), GOES_WITH(FC_COVERAGE_SUFFIX,tail,rows)
+ THEN GOES_WITH(FC_COVERAGE_SUFFIX,CONS(ARRAY(CONS(f,CONS(g,NIL))),tail),CONS(ARRAY(CONS(f,CONS(g,CONS(text,NIL)))),rows));
+law FC_COVERAGE := IF THIS(VO_PAIR_SEQUENCE,ARRAY(pairs)), GOES_WITH(FC_COVERAGE_SUFFIX,pairs,rows), THIS(VO_OPERAND_FIXTURE_READY,FROZEN_VECTOR_OBSERVER)
+ THEN THIS(P20_SOURCE_COVERAGE,ARRAY(rows));
+
+// This contact names ONLY the frozen predecessor, whose hash and full entry
+// were reconstructed from source then matched against its initial chain.
+law FC_SNAPSHOT := IF GOES_WITH(VO_FIXTURE_PARENT,basis,h,entry), THIS(VD_INITIAL_CHAIN_MATCH), THIS(VO_OPERAND_FIXTURE_READY,FROZEN_VECTOR_OBSERVER)
+ THEN GOES_WITH(P20_SOURCE_SNAPSHOT,h,entry);
+law FC_ADMITTED := IF GOES_WITH(P20_SOURCE_SNAPSHOT,h,entry), GOES_WITH(VO_FIXTURE_PARENT,basis,h,entry), THIS(VO_DECISION,DECISION(PROPOSAL(basis,entity,kind,target,lifts),selected)), THIS(VD_INITIAL_CHAIN_MATCH)
+ THEN THIS(P20_SOURCE_ADMITTED,h);
+
+// Prepared external ingress observations: snapshot/commit custody stays at
+// the predecessor h. The candidate is not promoted or committed here.
+law FC_OPERAND := IF GOES_WITH(P20_SOURCE_SNAPSHOT,h,entry), GOES_WITH(VO_FIXTURE_PARENT,basis,h,entry), THIS(VO_DECISION,DECISION(PROPOSAL(basis,entity,kind,target,lifts),selected)), THIS(VO_OPERAND_FIXTURE_READY,FROZEN_VECTOR_OBSERVER), GOES_WITH(VO_FIELD,CANDIDATE,f,reading)
+ THEN GOES_WITH(P20_SOURCE_OPERAND,h,f,reading);

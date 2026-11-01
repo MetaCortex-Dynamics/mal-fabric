@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {here,home,need,identity,read,save,nestedRefs,unique} from './custody_042.mjs';
+import {prepare} from './prepare_execution_042.mjs';
+const preparedRef=identity(path.join(here,'PREPARED_DRC_V2_042.json')),p=read(preparedRef.path);
+need(preparedRef.sha256==='800A8DC4433F7CC9520ECAC4A1B83014D8E5D0E827F3360E35A431FBCDBC4CD9','PREPARED_NOT_SAME');
+const observer=identity(path.join(here,'observe_drc_042.mjs'));
+need(observer.sha256==='A8DA404AFA45AF193388C63DA7AE368C815479FE3D9D8B4BDA7C4EA018719904','OBSERVER_NOT_SAME');
+const modules=new Map();
+function visit(file){const r=identity(file);if(modules.has(r.path))return;modules.set(r.path,r);const source=fs.readFileSync(r.path,'utf8');for(const m of source.matchAll(/^import\s+[^;]*?from\s*['"]([^'"]+)['"]/gm)){if(m[1].startsWith('.'))visit(path.resolve(path.dirname(r.path),m[1]));}}
+visit(observer.path);visit(path.join(here,'make_drc_request_042.mjs'));
+const request=save(path.join(here,'DRC_REQUEST_042.json'),{stage:'CANONICAL_DRC_042',directory:path.join(here,'execution_drc_001'),source:p.source,source_map:p.source_map,image:p.image,observer,expected:p.expected,config:{prepared:preparedRef},inputs:unique([preparedRef,...nestedRefs(p),...nestedRefs(read(p.expected.path)),...modules.values()]),sources:[...modules.values()]});
+console.log(JSON.stringify(await prepare(request.path)));

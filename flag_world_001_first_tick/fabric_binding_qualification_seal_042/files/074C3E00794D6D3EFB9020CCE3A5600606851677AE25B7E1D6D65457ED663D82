@@ -1,0 +1,124 @@
+// EXECUTE retained FT v0.1.3 and S/F decision 276EBD71...A1983108 C2.
+// Static contact: E328B574...D8D68F1 sections 3--8,13 and reference/kernel.py
+// 8B983301...4347C0 (CellDef, containment, DRC, canonical normalization).
+// Initial operand custody is MF_GAME section 9, FED38C3B...480557. This
+// source declares a comparator-only program: snapshot ingress is NOT an
+// internal RESULT route and does not manufacture marker CellDefs.
+//
+// Inputs, all custody rather than verdicts:
+//   P20_INVENTORY: [cell_digest, flag_json_left, flag_json_right] rows, sorted
+//   by digest bytes only for the bound canonical JSON observation encoding.
+//   P20_CELL_HASH(c,digest,TYPE(SAME_NOT_SAME,WHAT),OVERLAP(f,g)): generic
+//   SHA-256 of retained014 u64be-length-prefixed type/overlap term bytes.
+//   The hash response is tied to those source terms, NOT to the inventory.
+//   GPU_HASH_RESPONSE(subject_json,digest): generic SHA-256 over compact,
+//   sorted-key UTF-8 JSON. No host program, placement or DRC verdict enters.
+//
+// Export: P20_CELL(c,id,CellDefJSON,LocationJSON), P20_PROGRAM_OBJECT(p,json),
+// SF_PROGRAM(p,symbolic_occurrence_list,NIL), SF_PROGRAM_DRC(p,IF_THEN,proof),
+// and P20_NO_INTERNAL_ROUTES(p). p is the canonical program's SHA-256.
+// Source terms use G/S/F. Boxed strings below preserve the retained static
+// format's ABI spelling; they are not a reintroduction of boxed modalities.
+@readonly input P20_INVENTORY := "program_inventory:";
+
+@propose seed P20_STATIC_BOUNDARY := {
+ THIS(P20_FABRIC_ROOT,"FLAG_WORLD_FIRST_TICK_020"),
+ THIS(P20_TICK_BLOCK,"FIRST_TICK"),
+ THIS(P20_DECLARED_ROUTES,NIL),
+ GOES_WITH(P20_OPERATOR_SCHEMA,SAME_NOT_SAME,LEFT,EXACTLY_ONE,RIGHT,EXACTLY_ONE),
+ GOES_WITH(P20_WITNESS_TYPE,WHAT,"identity/essence"),
+ GOES_WITH(P20_HEX_NEXT,B48,B49), GOES_WITH(P20_HEX_NEXT,B49,B50),
+ GOES_WITH(P20_HEX_NEXT,B50,B51), GOES_WITH(P20_HEX_NEXT,B51,B52),
+ GOES_WITH(P20_HEX_NEXT,B52,B53), GOES_WITH(P20_HEX_NEXT,B53,B54),
+ GOES_WITH(P20_HEX_NEXT,B54,B55), GOES_WITH(P20_HEX_NEXT,B55,B56),
+ GOES_WITH(P20_HEX_NEXT,B56,B57), GOES_WITH(P20_HEX_NEXT,B57,B65),
+ GOES_WITH(P20_HEX_NEXT,B65,B66), GOES_WITH(P20_HEX_NEXT,B66,B67),
+ GOES_WITH(P20_HEX_NEXT,B67,B68), GOES_WITH(P20_HEX_NEXT,B68,B69),
+ GOES_WITH(P20_HEX_NEXT,B69,B70)
+};
+
+law P20_CAPABILITY_BINDING := IF GOES_WITH(SF_CAPABILITY,SAME_NOT_SAME,d)
+ THEN GOES_WITH(P20_CAPABILITY,SAME_NOT_SAME,d);
+
+// Digest order is canonical observation order, never a world-locus selection.
+law P20_HEX_ORDER_BASE := IF GOES_WITH(P20_HEX_NEXT,a,b)
+ THEN GOES_WITH(P20_HEX_LESS,a,b);
+law P20_HEX_ORDER_TRANSITIVE := IF GOES_WITH(P20_HEX_LESS,a,b), GOES_WITH(P20_HEX_NEXT,b,c)
+ THEN GOES_WITH(P20_HEX_LESS,a,c);
+law P20_ROWS := IF THIS(P20_INVENTORY,ARRAY(rows)) THEN THIS(P20_ROWS,rows);
+law P20_ROWS_TAIL := IF THIS(P20_ROWS,CONS(row,tail)) THEN THIS(P20_ROWS,tail);
+law P20_ROW_MATCH := IF THIS(P20_ROWS,CONS(ARRAY(CONS(id,CONS(a,CONS(b,NIL)))),tail)), GOES_WITH(P20_SOURCE_FLAG_JSON,f,a), GOES_WITH(P20_SOURCE_FLAG_JSON,g,b), GOES_WITH(P20_SOURCE_OCCURRENCE,c,f,g), GOES_WITH(P20_CELL_HASH,c,id,TYPE(SAME_NOT_SAME,WHAT),OVERLAP(f,g))
+ THEN GOES_WITH(P20_INVENTORY_CELL,ARRAY(CONS(id,CONS(a,CONS(b,NIL)))),c,id,f,g);
+law P20_PAIR_PRESENT := IF GOES_WITH(P20_INVENTORY_CELL,row,c,id,f,g)
+ THEN GOES_WITH(P20_PAIR_PRESENT,f,g,c);
+law P20_ORDER_REQUEST := IF THIS(P20_ROWS,CONS(a,CONS(b,tail))), GOES_WITH(P20_INVENTORY_CELL,a,c,TEXT(x),f,g), GOES_WITH(P20_INVENTORY_CELL,b,d,TEXT(y),h,i)
+ THEN THIS(P20_ORDER_REQUEST,x,y);
+law P20_ORDER_TAIL_REQUEST := IF THIS(P20_ORDER_REQUEST,CONS(a,x),CONS(a,y))
+ THEN THIS(P20_ORDER_REQUEST,x,y);
+law P20_ORDER_FIRST_DISTINCT := IF THIS(P20_ORDER_REQUEST,CONS(a,x),CONS(b,y)), GOES_WITH(P20_HEX_LESS,a,b)
+ THEN GOES_WITH(P20_ORDERED,CONS(a,x),CONS(b,y));
+law P20_ORDER_EQUAL_PREFIX := IF THIS(P20_ORDER_REQUEST,CONS(a,x),CONS(a,y)), GOES_WITH(P20_ORDERED,x,y)
+ THEN GOES_WITH(P20_ORDERED,CONS(a,x),CONS(a,y));
+law P20_ROW_ORDERED := IF THIS(P20_ROWS,CONS(a,CONS(b,tail))), GOES_WITH(P20_INVENTORY_CELL,a,c,TEXT(x),f,g), GOES_WITH(P20_INVENTORY_CELL,b,d,TEXT(y),h,i), GOES_WITH(P20_ORDERED,x,y)
+ THEN THIS(P20_ROW_ORDERED,CONS(a,CONS(b,tail)));
+law P20_ROW_LAST := IF THIS(P20_ROWS,CONS(a,NIL)), GOES_WITH(P20_INVENTORY_CELL,a,c,id,f,g)
+ THEN THIS(P20_ROW_ORDERED,CONS(a,NIL));
+
+// The motif namespace is disjoint from SHA-256 cell IDs and both root names.
+// It is a source-owned observation identity for this overlap enclosure.
+law P20_MOTIF_ID := IF GOES_WITH(P20_INVENTORY_CELL,row,c,TEXT(h),f,g)
+ THEN GOES_WITH(P20_MOTIF_ID,c,TEXT(CONS(B111,CONS(B118,CONS(B101,CONS(B114,CONS(B108,CONS(B97,CONS(B112,CONS(B58,h))))))))));
+
+// Per-row DRC is constructed from the retained schema, source placement,
+// admitted occurrence, hardware capability, and source enclosure. There is
+// no seeded DRC success. EXACTLY_ONE ports are schema, not internal routes.
+law P20_TYPED_CELL := IF GOES_WITH(P20_INVENTORY_CELL,row,c,id,f,g), GOES_WITH(P20_OPERATOR_SCHEMA,SAME_NOT_SAME,LEFT,EXACTLY_ONE,RIGHT,EXACTLY_ONE), GOES_WITH(P20_WITNESS_TYPE,WHAT,t), GOES_WITH(P20_CAPABILITY,SAME_NOT_SAME,G), GOES_WITH(P20_CAPABILITY,SAME_NOT_SAME,S)
+ THEN GOES_WITH(P20_TYPED_CELL,c,id,OBJECT(CONS(MEMBER("cell_id",id),CONS(MEMBER("operator","SAME_NOT_SAME"),CONS(MEMBER("payload_slot_type",t),CONS(MEMBER("triad_capability",ARRAY(CONS("\u25a1G",CONS("\u25a1S",NIL)))),CONS(MEMBER("witness","WHAT"),NIL)))))));
+law P20_LOCATED_CELL := IF GOES_WITH(P20_INVENTORY_CELL,row,c,id,f,g), GOES_WITH(P20_SOURCE_PLACEMENT,c,LOCATION(INTERIOR(S),CONTAINMENT(FIRST_TICK,OVERLAP(f,g)))), GOES_WITH(P20_SOURCE_ADMISSION,c,e), GOES_WITH(P20_CAPABILITY,SAME_NOT_SAME,S), GOES_WITH(P20_MOTIF_ID,c,m), THIS(P20_TICK_BLOCK,b), THIS(P20_FABRIC_ROOT,p)
+ THEN GOES_WITH(P20_LOCATED_CELL,c,OBJECT(CONS(MEMBER("containment_path",ARRAY(CONS(m,CONS(b,CONS(p,NIL))))),CONS(MEMBER("triad_position",OBJECT(CONS(MEMBER("dimension","\u25a1S"),CONS(MEMBER("kind","INTERIOR"),NIL)))),NIL))));
+law P20_CELL_EXPORT := IF GOES_WITH(P20_TYPED_CELL,c,id,def), GOES_WITH(P20_LOCATED_CELL,c,loc)
+ THEN GOES_WITH(P20_CELL,c,id,def,loc);
+law P20_PLACEMENT_ROW := IF GOES_WITH(P20_CELL,c,id,def,loc)
+ THEN GOES_WITH(P20_PLACEMENT_ROW,c,OBJECT(CONS(MEMBER("cell_id",id),CONS(MEMBER("location",loc),NIL))));
+law P20_MOTIF_ROW := IF GOES_WITH(P20_CELL,c,id,def,loc), GOES_WITH(P20_MOTIF_ID,c,m)
+ THEN GOES_WITH(P20_MOTIF_ROW,c,OBJECT(CONS(MEMBER("contained_ids",ARRAY(CONS(id,NIL))),CONS(MEMBER("motif_id",m),NIL))));
+law P20_CELL_DRC := IF GOES_WITH(P20_CELL,c,id,def,loc), GOES_WITH(P20_PLACEMENT_ROW,c,place), GOES_WITH(P20_MOTIF_ROW,c,motif), GOES_WITH(P20_MOTIF_ID,c,m), THIS(P20_TICK_BLOCK,b), THIS(P20_FABRIC_ROOT,p)
+ THEN GOES_WITH(P20_CELL_DRC,c,STATIC_CELL_CHECK(def,place,motif,CONTAINMENT_PATH(m,b,p)));
+law P20_READY_ROW := IF GOES_WITH(P20_INVENTORY_CELL,row,c,id,f,g), GOES_WITH(P20_CELL,c,id,def,loc), GOES_WITH(P20_PLACEMENT_ROW,c,place), GOES_WITH(P20_MOTIF_ROW,c,motif), GOES_WITH(P20_MOTIF_ID,c,m), GOES_WITH(P20_CELL_DRC,c,proof)
+ THEN GOES_WITH(P20_READY_ROW,row,c,def,motif,place,m);
+
+// Coverage in the reverse direction walks the already source-checked complete
+// committed overlap witness. No total count substitutes for a missing row.
+law P20_COVERAGE_ROWS := IF THIS(P20_SOURCE_COVERAGE,ARRAY(rows))
+ THEN THIS(P20_COVERAGE_ROWS,rows);
+law P20_COVERAGE_TAIL := IF THIS(P20_COVERAGE_ROWS,CONS(row,tail))
+ THEN THIS(P20_COVERAGE_ROWS,tail);
+law P20_COVERAGE_END := IF THIS(P20_COVERAGE_ROWS,NIL)
+ THEN THIS(P20_COVERED_SUFFIX,NIL);
+law P20_COVERAGE_ROW := IF THIS(P20_COVERAGE_ROWS,CONS(ARRAY(CONS(a,CONS(b,CONS(r,NIL)))),tail)), GOES_WITH(P20_SOURCE_FLAG_JSON,f,a), GOES_WITH(P20_SOURCE_FLAG_JSON,g,b), GOES_WITH(P20_PAIR_PRESENT,f,g,c), GOES_WITH(P20_CELL_DRC,c,proof), THIS(P20_COVERED_SUFFIX,tail)
+ THEN THIS(P20_COVERED_SUFFIX,CONS(ARRAY(CONS(a,CONS(b,CONS(r,NIL)))),tail));
+law P20_COVERAGE_COMPLETE := IF THIS(P20_SOURCE_COVERAGE,ARRAY(rows)), THIS(P20_COVERED_SUFFIX,rows)
+ THEN THIS(P20_ALL_SOURCE_PAIRS_COVERED);
+
+// Full canonical lists, in the checked identity encoding order. Both CellDefs
+// and placements follow cell-ID order; motif IDs have the same fixed prefix.
+law P20_LIST_END := IF THIS(P20_ROWS,NIL)
+ THEN GOES_WITH(P20_LIST_SUFFIX,NIL,LISTS(NIL,NIL,NIL,NIL,NIL),NIL);
+law P20_LIST_ROW := IF THIS(P20_ROWS,CONS(row,tail)), THIS(P20_ROW_ORDERED,CONS(row,tail)), GOES_WITH(P20_READY_ROW,row,c,def,motif,place,m), GOES_WITH(P20_LIST_SUFFIX,tail,LISTS(ds,ms,ps,cs,bs),proofs)
+ THEN GOES_WITH(P20_LIST_SUFFIX,CONS(row,tail),LISTS(CONS(def,ds),CONS(motif,ms),CONS(place,ps),CONS(c,cs),CONS(m,bs)),CONS(c,proofs));
+law P20_NORMALIZED_PARTS := IF THIS(P20_INVENTORY,ARRAY(rows)), GOES_WITH(P20_LIST_SUFFIX,rows,LISTS(ds,ms,ps,cs,bs),proofs), THIS(P20_ALL_SOURCE_PAIRS_COVERED), THIS(P20_DECLARED_ROUTES,NIL)
+ THEN GOES_WITH(P20_NORMALIZED_PARTS,LISTS(ds,ms,ps,cs,bs),STATIC_DRC_SOURCE_CHECKS(proofs,ALL_SOURCE_PAIRS_COVERED,NO_INTERNAL_ROUTES));
+law P20_PROGRAM_JSON := IF GOES_WITH(P20_NORMALIZED_PARTS,LISTS(ds,ms,ps,cs,bs),proof), THIS(P20_FABRIC_ROOT,root), THIS(P20_TICK_BLOCK,block)
+ THEN GOES_WITH(P20_CANONICAL_PROGRAM,cs,proof,OBJECT(CONS(MEMBER("cells",ARRAY(ds)),CONS(MEMBER("fabric_id",root),CONS(MEMBER("motifs",ARRAY(ms)),CONS(MEMBER("placements",ARRAY(ps)),CONS(MEMBER("routes",ARRAY(NIL)),CONS(MEMBER("triad_blocks",ARRAY(CONS(OBJECT(CONS(MEMBER("block_id",block),CONS(MEMBER("contained_ids",ARRAY(bs)),NIL))),NIL))),NIL))))))));
+law P20_PROGRAM_HASH_REQUEST := IF GOES_WITH(P20_CANONICAL_PROGRAM,cs,proof,object)
+ THEN GOES_WITH(GPU_HASH_REQUEST,PROGRAM,PROGRAM_020,object);
+law P20_PROGRAM_BOUND := IF GOES_WITH(P20_CANONICAL_PROGRAM,cs,proof,object), GOES_WITH(GPU_HASH_RESPONSE,object,p)
+ THEN GOES_WITH(P20_PROGRAM_BOUND,p,cs,proof,object);
+law P20_PROGRAM_EXPORT := IF GOES_WITH(P20_PROGRAM_BOUND,p,cs,proof,object)
+ THEN GOES_WITH(SF_PROGRAM,p,cs,NIL);
+law P20_PROGRAM_OBJECT_EXPORT := IF GOES_WITH(P20_PROGRAM_BOUND,p,cs,proof,object)
+ THEN GOES_WITH(P20_PROGRAM_OBJECT,p,object);
+law P20_DRC_EXPORT := IF GOES_WITH(P20_PROGRAM_BOUND,p,cs,proof,object)
+ THEN GOES_WITH(SF_PROGRAM_DRC,p,IF_THEN,proof);
+law P20_EMPTY_INTERNAL_ROUTE_SET := IF GOES_WITH(P20_PROGRAM_BOUND,p,cs,proof,object), THIS(P20_DECLARED_ROUTES,NIL)
+ THEN THIS(P20_NO_INTERNAL_ROUTES,p);

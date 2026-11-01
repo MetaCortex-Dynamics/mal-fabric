@@ -1,0 +1,71 @@
+// Custody, fixture serialization and generic native lowering only.
+// No FabricSpec, operator result, placement or world effect is authored here.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const here=path.dirname(fileURLToPath(import.meta.url)),home=path.dirname(here);
+const need=(v,n)=>{if(!v)throw Error(n);};
+const hash=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
+function id(p){const b=fs.readFileSync(p);return{path:fs.realpathSync.native(p),bytes:b.length,sha256:hash(b)};}
+function save(p,b){fs.writeFileSync(p,b,{flag:'wx'});return id(p);}
+const source=path.join(home,'wave_038.mal'),sourceRef=id(source);
+need(sourceRef.sha256==='00260D576A1591B4ADD768193EE2403A6032334AD8B0C95E6E5C917754B2227F','FROZEN_SOURCE_NOT_SAME');
+const raw=fs.readFileSync(source,'utf8');
+const clause=raw.match(/^law W38_SITE_READING_JOIN :=[^;]+;/m)?.[0];
+need(clause,'SOURCE_CLAUSE_UNSUPPLIED');
+const contactsPath=path.join(here,'ACTUAL_JOIN_CONTACTS_041.json');
+const contacts=JSON.parse(fs.readFileSync(contactsPath));
+need(Array.isArray(contacts.seed_terms)&&Array.isArray(contacts.expected_native_join_output_terms),'ACTUAL_CONTACT_SCHEMA');
+const cases=[];
+function make(name,options={}){
+ const p='F41_'+name,s=p+'_SITE',t=p+'_SNAPSHOT',n=p+'_PARENT',a=p+'_LEFT',b=p+'_RIGHT';
+ const l=options.left??'READING_NO',r=options.right??'READING_NO';
+ const cover=`GOES_WITH(SW_COVER_JOIN,SITE(${s}),${n},${a},${b})`;
+ const left=`GOES_WITH(W38_SITE_READING_TREE,${options.leftSnapshot??t},${s},${l},${options.leftNode??a})`;
+ const right=`GOES_WITH(W38_SITE_READING_TREE,${t},${options.rightSite??s},${r},${options.rightNode??b})`;
+ const seeds=[];if(!options.noCover)seeds.push(cover);if(!options.noLeft)seeds.push(left);if(!options.noRight)seeds.push(right);
+ if(options.duplicate)seeds.push(left,right,cover);
+ const joined=options.joined??(l===r),frame=options.frame??!['noCover','noLeft','noRight','leftSnapshot','rightSite','leftNode','rightNode'].some(k=>options[k]);
+ const expected=joined?[`GOES_WITH(W38_SITE_READING_TREE,${t},${s},${l},${n})`]:[];
+ const result={name,site:s,snapshot:t,parent:n,left:a,right:b,reading_left:l,reading_right:r,seeds,expected_join_terms:expected,frame:frame?'PRESENT':'ABSENT',reading:frame?(l===r?'SAME':'NOT_SAME'):'ABSENT',resource:options.noCover?'ABSENT':'PRESENT'};
+ cases.push(result);return result;
+}
+make('NO_NO');make('THIS_THIS',{left:'READING_THIS',right:'READING_THIS'});
+make('THIS_NO',{left:'READING_THIS'});make('NO_THIS',{right:'READING_THIS'});
+make('SNAPSHOT_MISMATCH',{leftSnapshot:'F41_DISPLACED_SNAPSHOT',joined:false});
+make('SITE_MISMATCH',{rightSite:'F41_DISPLACED_SITE',joined:false});
+make('LEFT_NODE_MISMATCH',{leftNode:'F41_DISPLACED_LEFT',joined:false});
+make('RIGHT_NODE_MISMATCH',{rightNode:'F41_DISPLACED_RIGHT',joined:false});
+make('MISSING_COVER',{noCover:true,joined:false});
+make('MISSING_LEFT',{noLeft:true,joined:false});
+make('MISSING_RIGHT',{noRight:true,joined:false});
+make('DUPLICATE_CUSTODY',{duplicate:true});
+const alias=make('COVER_ALIAS');
+alias.seeds.push(`GOES_WITH(SW_COVER_JOIN,SITE(${alias.site}),${alias.parent},${alias.left},F41_ALIAS_CHILD_WITHOUT_INPUT)`);
+alias.additional_resource_without_frame='F41_ALIAS_CHILD_WITHOUT_INPUT';
+const repeat=make('TWO_SNAPSHOTS');
+const second=repeat.snapshot+'_SECOND';
+repeat.seeds.push(`GOES_WITH(W38_SITE_READING_TREE,${second},${repeat.site},READING_THIS,${repeat.left})`,`GOES_WITH(W38_SITE_READING_TREE,${second},${repeat.site},READING_THIS,${repeat.right})`);
+repeat.expected_join_terms.push(`GOES_WITH(W38_SITE_READING_TREE,${second},${repeat.site},READING_THIS,${repeat.parent})`);
+repeat.additional_snapshot={snapshot:second,reading:'READING_THIS'};
+const rawSeeds=[...contacts.seed_terms,...cases.flatMap(x=>x.seeds)];
+// Literal duplicate rows are retained in cases; native seed identity is a set.
+const seeds=[...new Set(rawSeeds)];
+need(seeds.length<=2048,'SOURCE_SEED_CAPACITY');
+const adapter=path.join(here,'site_join_contacts_041.mal');
+const program='// Exact source clause and bound leaf contacts; diagnostic only.\n'+
+ '@propose seed F41_SOURCE_INPUT := {\n'+seeds.join(',\n')+'\n};\n'+clause+'\n'+fs.readFileSync(adapter,'utf8');
+const programRef=save(path.join(here,'site_join_execution_v2_041.mal'),program);
+const expected={native_seed_transport:{raw_rows:rawSeeds.length,distinct_rows:seeds.length,duplicates_retained_in_case_custody:rawSeeds.length-seeds.length},schema:'SiteJoinCorrespondenceExpectations041',subject:'OPERAND_RESULT_CONTACT_ONLY',frozen_source:sourceRef,clause:{text:clause,sha256:hash(clause),line:raw.slice(0,raw.indexOf(clause)).split(/\r?\n/).length},adapter:id(adapter),actual_contacts:id(contactsPath),cases,expected_join_terms:[...contacts.expected_native_join_output_terms,...cases.flatMap(x=>x.expected_join_terms)].sort(),canonical_fabric:'NOT_EMITTED',DRC:'NOT_RUN_CANONICAL_SUBJECT_UNSUPPLIED',world_transition:'NO',commit:'NO',push:'NO'};
+const expectedRef=save(path.join(here,'EXPECTED_v2_041.json'),JSON.stringify(expected,null,2)+'\n');
+const lowerer=path.resolve(home,'../j17_t_r2_r1_diagnostics_019/R1/fast_lowerer/lower.mjs');
+need(id(lowerer).sha256==='C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE','LOWERER_NOT_SAME');
+const out=path.join(here,'native_image_v2');need(!fs.existsSync(out),'FRESH_IMAGE_REQUIRED');
+const run=spawnSync(process.execPath,[lowerer,programRef.path,out],{encoding:'utf8',windowsHide:true});
+save(path.join(here,'LOWER_STDOUT_v2.txt'),run.stdout??'');save(path.join(here,'LOWER_STDERR_v2.txt'),run.stderr??'');
+need(run.status===0,'LOWERING_EXIT_'+run.status+': '+run.stderr);
+const result={schema:'SiteJoinPreparation041',source:programRef,image:id(path.join(out,'image.bin')),source_map:id(path.join(out,'source-map.json')),expected:expectedRef,lowerer:id(lowerer),inputs:[sourceRef,id(adapter),id(contactsPath)],seed_rows:seeds.length,raw_seed_rows:rawSeeds.length,duplicate_seed_rows:rawSeeds.length-seeds.length,fixture_cases:cases.length};
+save(path.join(here,'PREPARED_INPUTS_v2_041.json'),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify(result,null,2));

@@ -1,0 +1,12 @@
+file:///D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R1/fast_lowerer/lower.mjs:84
+fs.writeFileSync(path.join(out,'source-map.json'),JSON.stringify({source:path.resolve(input),source_sha256:hash(raw),lowerer_sha256:hash(fs.readFileSync(new URL(import.meta.url))),image_sha256:hash(bytes),input:inputBytes?{path:path.resolve(inputJSON),sha256:hash(inputBytes),size:inputBytes.length,imports}:null,inputs:[...inputCustody].map(([alias,{object,...record}])=>({alias,...record})),imports,symbols,patterns,occurrence_encoding:{kind:'count-by-pattern-and-source-offset',total:occurrenceCount,sequence_sha256:occurrenceHash.digest('hex').toUpperCase(),rows:[...occurrenceCounts].map(([key,count])=>{const [pattern,offset]=key.split(':').map(Number);return {pattern,offset,count};})},seeds,rules},null,2));
+                                                       ^
+
+RangeError: Invalid string length
+    at JSON.stringify (<anonymous>)
+    at file:///D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/R1/fast_lowerer/lower.mjs:84:56
+    at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+
+Node.js v22.20.0

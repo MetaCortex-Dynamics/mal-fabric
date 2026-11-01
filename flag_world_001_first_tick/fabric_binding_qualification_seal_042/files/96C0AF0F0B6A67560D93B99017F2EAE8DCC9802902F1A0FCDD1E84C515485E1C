@@ -1,0 +1,54 @@
+{
+  "schema": "CanonicalFabricDrcPreparationInterruption042",
+  "verdict": "NOT_SAME",
+  "phase": "HOST_LOWERING",
+  "native_execution": "NOT_STARTED",
+  "queuegate": "NOT_INVOKED",
+  "reason": "Lowerer reached source/image writing, then JSON.stringify of the oversized all-ten-full-program source map raised RangeError: Invalid string length.",
+  "source_scope": "Every fixture replicated all720 cells. No semantic DRC result was computed.",
+  "retained": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\prepare_drc_042.mjs",
+      "bytes": 9391,
+      "sha256": "F213B13F5B555FBB1EB4A39F68AA31009B18378422D34B908188F4D21DA66F5F"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\DRC_EXPECTED_042.json",
+      "bytes": 13694,
+      "sha256": "AD6C499DE6E6E51D22EE70A903B2ED3D22D01A866383CF93F60346B1932C92E8"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared\\LOWER.stderr.txt",
+      "bytes": 1422,
+      "sha256": "3DD1647312B574FC1ECE62BBB12281BDF11BA323EB0423A90852BD22AEF660C0"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared\\LOWER.stdout.txt",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared\\drc_execution_042.mal",
+      "bytes": 8301943,
+      "sha256": "DC62A647E38E965A337F56C290A485DD3D20264A288DEFF0E3F7DDF5264AFAB3"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared\\native_image\\image.bin",
+      "bytes": 41992208,
+      "sha256": "132508DFDE43501F33FABA21CE236DF51F38F72D901423D55F49091DAA1BD7C8"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared\\native_image\\source.mal",
+      "bytes": 8301943,
+      "sha256": "DC62A647E38E965A337F56C290A485DD3D20264A288DEFF0E3F7DDF5264AFAB3"
+    }
+  ],
+  "counted": 0,
+  "merged": 0,
+  "source_map": "NOT_WRITTEN",
+  "prepared_record": "NOT_WRITTEN",
+  "replacement": "PREPARED_DRC_V2_042.json: full P20 preserved once; routed and eight malformed fixtures contain complete four-cell subsets; same native law body.",
+  "gpu_action": "NONE",
+  "world_effect": "NONE",
+  "repository_effect": "NONE"
+}

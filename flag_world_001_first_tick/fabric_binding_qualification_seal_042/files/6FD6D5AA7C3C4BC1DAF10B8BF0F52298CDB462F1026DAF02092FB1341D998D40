@@ -1,0 +1,30 @@
+// Custody-only revision after the recorded observer serialization error.
+// Preserve the original preparation, observer, attempt and final-record draft.
+import fs from 'node:fs';
+import path from 'node:path';
+import {here,need,identity,save} from './custody_042.mjs';
+const replace=(text,a,b)=>{need(text.split(a).length===2,'EXACT_ONE_REPLACEMENT:'+a);return text.replace(a,b);};
+const repaired=identity(path.join(here,'observe_runtime_v2_042.mjs'));
+need(repaired.sha256==='1829374C952F006F00862E0D591AB632EAF1FB2519B646C7249252CE6D77DB91','OBSERVER_REPAIR_NOT_SAME');
+let prep=fs.readFileSync(path.join(here,'prepare_runtime_execution_042.mjs'),'utf8');
+prep=prep.replaceAll('observe_runtime_042.mjs','observe_runtime_v2_042.mjs').replaceAll('prepare_runtime_execution_042.mjs','prepare_runtime_execution_v2_042.mjs').replaceAll('execution_runtime_001','execution_runtime_002');
+prep=replace(prep,'B29A9D953AD6567A1876FC3ECFDC2BF055D180EBD5BA1A08C8B28828A6616E7D',repaired.sha256);
+prep=replace(prep,'const inputs=unique([authority,',`const reconciliation=identity(path.join(here,'reconciliation_runtime_001/RECONCILIATION.json'));
+const laneRelease=identity(path.join(here,'reconciliation_runtime_001/LANE_RELEASE.json'));
+const reconciliationData=read(reconciliation.path),releaseData=read(laneRelease.path);
+need(reconciliationData.counted===0&&reconciliationData.merged===0&&releaseData.status==='EMPTY','FAILED_ATTEMPT_DISPOSITION');
+const inputs=unique([reconciliation,laneRelease,...nestedRefs(reconciliationData),...nestedRefs(releaseData),authority,`);
+// The archived OWNER has a new path. Original owner references retain genealogy
+// in reconciliation and must not be treated as currently present input paths.
+prep=replace(prep,'reconciliation,laneRelease,...nestedRefs(reconciliationData),...nestedRefs(releaseData),authority,','reconciliation,laneRelease,releaseData.archived_owner,reconciliationData.artifacts,reconciliationData.failure_diagnostic,reconciliationData.terminal,authority,');
+const prepRef=save(path.join(here,'prepare_runtime_execution_v2_042.mjs'),prep);
+let writer=fs.readFileSync(path.join(here,'write_record_042.mjs'),'utf8');
+writer=writer.replaceAll('execution_runtime_001','execution_runtime_002').replaceAll('observe_runtime_042.mjs','observe_runtime_v2_042.mjs').replaceAll('prepare_runtime_execution_042.mjs','prepare_runtime_execution_v2_042.mjs').replaceAll('write_record_042.mjs','write_record_v2_042.mjs');
+writer=replace(writer,"const refs=unique([",`const reconciliation=identity(path.join(here,'reconciliation_runtime_001/RECONCILIATION.json')),reconciled=read(reconciliation.path),release=identity(path.join(here,'reconciliation_runtime_001/LANE_RELEASE.json'));
+need(reconciled.counted===0&&reconciled.merged===0&&read(release.path).status==='EMPTY','FAILED_ATTEMPT_NOT_RECONCILED');
+const refs=unique([reconciliation,release,reconciled.artifacts,reconciled.failure_diagnostic,reconciled.terminal,identity(path.join(here,'observe_runtime_042.mjs')),`);
+writer=replace(writer,"retained_preparation:identity(","failed_runtime_attempt:{reconciliation,release,counted:0,merged:0,completion:'UNCLOSED_NOT_COUNTED',repair:'Semantic digest sorts unique cell IDs explicitly; native source, inputs and all proof checks unchanged.'},retained_preparation:identity(");
+writer=writer.replaceAll('exact720','exact 720').replaceAll('all438','all 438').replaceAll('the038','the 038').replaceAll('unrelated038','unrelated 038');
+writer=replace(writer,'The failed host preparation and unused contingency remain recorded.','The failed host preparation, blocked runtime observer attempt and unused contingency remain recorded.');
+const writerRef=save(path.join(here,'write_record_v2_042.mjs'),writer);
+console.log(JSON.stringify({preparation:prepRef,writer:writerRef,observer:repaired,world_transition:'NO',commit:'NO',push:'NO'}));

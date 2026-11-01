@@ -1,0 +1,112 @@
+// Read-only extraction of actual native join contacts from one closed invocation.
+// This imports no FabricSpec, placement, capability, physical role or LINK claim.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import {openNative,nativeProof} from '../native_reader_038.mjs';
+
+const HERE=path.dirname(fileURLToPath(import.meta.url)),ROOT=path.resolve(HERE,'..');
+const need=(v,n)=>{if(!v)throw Error(n);};
+const sha=v=>crypto.createHash('sha256').update(v).digest('hex').toUpperCase();
+const key=v=>JSON.stringify(v),read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const verified=new Map();
+function identity(p){
+  const absolute=fs.realpathSync.native(p),prior=verified.get(absolute);if(prior)return prior;
+  const fd=fs.openSync(absolute,'r'),h=crypto.createHash('sha256'),buf=Buffer.alloc(1048576);let bytes=0;
+  try{const before=fs.fstatSync(fd);for(;;){const n=fs.readSync(fd,buf);if(!n)break;h.update(buf.subarray(0,n));bytes+=n;}
+    const after=fs.fstatSync(fd);need(bytes===after.size&&before.size===after.size&&before.mtimeMs===after.mtimeMs,'INPUT_CHANGED_DURING_HASH:'+p);
+  }finally{fs.closeSync(fd);}
+  const out={path:absolute,bytes,sha256:h.digest('hex').toUpperCase()};verified.set(absolute,out);return out;
+}
+function verify(r){need(r&&r.path&&r.sha256,'IDENTITY_UNSUPPLIED');const a=identity(r.path);need(a.sha256===r.sha256&&a.bytes===r.bytes,'NOT_SAME:'+r.path);return a;}
+const same=(a,b,n)=>need(key(a)===key(b),n);
+const sameSet=(a,b,n)=>{need(new Set(a).size===a.length&&new Set(b).size===b.length,n+':DUPLICATE');same([...a].sort(),[...b].sort(),n);};
+const refSame=(a,b,n)=>need(a.sha256===b.sha256&&a.bytes===b.bytes&&path.resolve(a.path)===path.resolve(b.path),n);
+function getArg(name,fallback){const i=process.argv.indexOf(name);return i<0?fallback:process.argv[i+1];}
+
+const batchPath=path.resolve(getArg('--batch',path.join(ROOT,'qualification_batches/j17__q008/BATCH_CLOSED.json')));
+const casePath=path.resolve(getArg('--case',path.join(ROOT,'qualification_runs/J17_G2_DIAGNOSTIC_COPY__q008_normal/CASE_CLOSED.json')));
+const outputPath=path.resolve(getArg('--out',path.join(HERE,'ACTUAL_JOIN_CONTACTS_041.json')));
+need(path.dirname(outputPath)===HERE,'OUTPUT_OUTSIDE_041');
+const batchId=identity(batchPath),batch=read(batchPath);need(batch.verdict==='IF_THEN','BATCH_NOT_CLOSED');
+const caseRef=batch.cases.find(x=>path.resolve(x.path)===casePath);need(caseRef,'CASE_NOT_IN_BATCH');verify(caseRef);
+const c=read(casePath);need(c.verdict==='IF_THEN'&&c.world_effect==='NONE'&&c.selection==='NO_MEMBER_TAKEN','CASE_SUBJECT');
+const b=c.stage_B;need(b.id==='B_000','STAGE_B_UNSUPPLIED');
+for(const r of [b.record,b.plan,b.observation,b.closed,c.frozen_sources])verify(r);
+const invocation=read(b.record.path);refSame(invocation.plan,b.plan,'INVOCATION_PLAN');refSame(invocation.observation,b.observation,'INVOCATION_OBSERVATION');
+const closed=read(b.closed.path);need(closed.queue_status==='EMPTY'&&closed.artifact_gate==='PASSED','QUEUE_NOT_CLOSED');
+verify(closed.candidate);verify(closed.observer);
+const candidate=read(closed.candidate.path),observer=read(closed.observer.path);refSame(candidate.plan,b.plan,'CLOSURE_PLAN');
+need(observer.verdict==='IF_THEN','OBSERVER_NOT_CLOSED');refSame(observer.candidate,closed.candidate,'OBSERVER_SUBJECT');
+need(candidate.steps.length===1,'ONE_INVOCATION_ONLY');const step=candidate.steps[0];
+need(step.id==='B_000'&&step.exit_code===0&&step.signal===null&&step.error===null,'INVOCATION_EXIT');
+need(step.outputs.some(x=>x.sha256===b.observation.sha256&&path.resolve(x.path)===path.resolve(b.observation.path)),'OBSERVATION_NOT_CLOSED_OUTPUT');
+verify(step.exit_record);
+const observed=read(b.observation.path);need(observed.verdict==='IF_THEN'&&observed.observation.stage==='B','NATIVE_OBSERVATION_SUBJECT');
+verify(observed.request);verify(observed.exit);verify(observed.stdout);verify(observed.stderr);
+const request=read(observed.request.path),config=request.config,plan=read(b.plan.path);
+need(config.stage==='B'&&config.field===c.case_id,'REQUEST_SUBJECT');
+const directRef=r=>{const found=plan.inputs.find(x=>path.resolve(x.path)===path.resolve(r.path));need(found,'DIRECT_INPUT_NOT_IN_PLAN:'+r.path);refSame(found,r,'DIRECT_INPUT_IDENTITY');return r;};
+const nativeRefs={readback:b.readback,source:config.source,image:config.image,source_map:config.source_map};
+for(const name of ['source','image','source_map'])directRef(nativeRefs[name]);
+refSame(observed.readback,b.readback,'OBSERVED_READBACK');
+for(const name of ['source','image','source_map'])refSame(observed.observation[name],nativeRefs[name],'OBSERVED_'+name);
+// openNative verifies these four files once and checks the image/source/map link.
+const q=openNative(nativeRefs);for(const r of Object.values(nativeRefs))verified.set(fs.realpathSync.native(r.path),r);
+const prove=nativeProof(q);need(q.error===0,'NATIVE_ERROR');
+verify(directRef(config.transport));const transport=read(config.transport.path);
+need(transport.field.term===c.case_id,'TRANSPORT_FIELD');
+const sources=read(c.frozen_sources.path),originalRef=sources.sources.find(x=>path.basename(x.path)==='wave_038.mal');
+need(originalRef,'FROZEN_SOURCE_UNSUPPLIED');verify(originalRef);directRef(originalRef);
+const nativeText=fs.readFileSync(originalRef.path,'utf8'),compiledText=fs.readFileSync(config.source.path,'utf8');
+const clauses=nativeText.match(/^law W38_SITE_READING_JOIN :=[^\r\n]+/gm);need(clauses?.length===1,'NATIVE_JOIN_CLAUSE_SCOPE');
+const rules=q.map.rules.map((r,i)=>({...r,index:i})).filter(r=>r.name==='W38_SITE_READING_JOIN');need(rules.length===1,'NATIVE_JOIN_RULE_SCOPE');
+const rule=rules[0];same(compiledText.slice(rule.start,rule.end),clauses[0],'NATIVE_JOIN_CLAUSE_BYTE_SAME');
+const originalLine=nativeText.slice(0,nativeText.indexOf(clauses[0])).split('\n').length;
+function contact(f){prove.proof(f.id);return{fact_id:f.id,term_id:f.term,rule_id:f.rule,rule_name:f.origin,rank:f.rank,support_fact_ids:f.support,term:q.term(f.term)};}
+function rows(tag){return q.predicate(tag).map(f=>({f,args:q.node(f.term).c.slice(1).map(q.term)}));}
+const coverRows=rows('SW_COVER_JOIN').filter(r=>r.args[0].startsWith('SITE('));
+const coverLeaves=rows('SW_COVER_LEAF').filter(r=>r.args[0].startsWith('SITE('));
+const coverRoots=rows('SW_COVER_ROOT').filter(r=>r.args[0].startsWith('SITE('));
+const trees=rows('W38_SITE_READING_TREE'),treeByKey=new Map();
+for(const t of trees){need(t.args.length===4&&t.args[0]===c.case_id,'TREE_SUBJECT');const k=key([t.args[1],t.args[3]]);need(!treeByKey.has(k),'MULTIPLE_TREE_READINGS');treeByKey.set(k,t);}
+const coverByKey=new Map();for(const r of coverRows){need(r.args.length===4,'COVER_ARITY');const k=key([r.args[0].slice(5,-1),r.args[1]]);need(!coverByKey.has(k),'DUPLICATE_COVER');coverByKey.set(k,r);}
+const siteSet=transport.carrier.sites.map(s=>s.term);sameSet(coverRoots.map(r=>r.args[0].slice(5,-1)),siteSet,'ALL_SITE_ROOTS');
+const leavesByKey=new Map();for(const r of coverLeaves){need(r.args.length===3,'COVER_LEAF_ARITY');const k=key([r.args[0].slice(5,-1),r.args[1]]);need(!leavesByKey.has(k)&&!coverByKey.has(k),'COVER_LEAF_DISJOINT');leavesByKey.set(k,r);contact(r.f);}
+const consumed=new Set(),outputKeys=new Set(),leafKeys=new Set(),visitedCover=new Set();
+for(const root of coverRoots){contact(root.f);const site=root.args[0].slice(5,-1),stack=[root.args[1]],seen=new Set(),members=[];
+  while(stack.length){const n=stack.pop(),k=key([site,n]);need(!seen.has(n),'COVER_REPEATS_OR_CYCLES');seen.add(n);
+    if(coverByKey.has(k)){const r=coverByKey.get(k);visitedCover.add(k);stack.push(r.args[2],r.args[3]);}
+    else{const leaf=leavesByKey.get(k);need(leaf,'COVER_CHILD_UNSUPPLIED');members.push(leaf.args[2]);}}
+  sameSet(members,transport.carrier.sites.find(s=>s.term===site).members,'COVER_SITE_MEMBER_EXHAUSTION:'+site);
+}
+sameSet([...visitedCover],[...coverByKey.keys()],'ALL_SITE_COVERS_REACH_ROOT');
+const coverContacts=[],joinOutputs=[];
+for(const r of coverRows){const [support,n,a,b]=r.args,site=support.slice(5,-1),pk=key([site,n]);const left=treeByKey.get(key([site,a])),right=treeByKey.get(key([site,b])),out=treeByKey.get(pk);
+  need(left&&right&&out,'JOIN_INPUT_OR_OUTPUT_UNSUPPLIED');need(left.args[2]===right.args[2]&&out.args[2]===left.args[2],'JOIN_READING_IDENTITY');
+  need(out.f.rule===rule.index&&out.f.origin==='W38_SITE_READING_JOIN','OUTPUT_NOT_NATIVE_JOIN');
+  same(out.f.support,[r.f.id,left.f.id,right.f.id],'NATIVE_JOIN_PREMISES');
+  coverContacts.push({...contact(r.f),support,site,parent_node:n,left_node:a,right_node:b});
+  joinOutputs.push({...contact(out.f),snapshot:out.args[0],site,reading:out.args[2],parent_node:n,cover_fact_id:r.f.id,left_input_fact_id:left.f.id,right_input_fact_id:right.f.id});
+  outputKeys.add(pk);for(const node of [a,b]){const ck=key([site,node]);consumed.add(ck);if(!coverByKey.has(ck))leafKeys.add(ck);}
+}
+sameSet(joinOutputs.map(x=>String(x.fact_id)),q.facts.filter(f=>f.rule===rule.index).map(f=>String(f.id)),'ALL_NATIVE_JOIN_OUTPUTS');
+sameSet([...outputKeys],[...coverByKey.keys()],'ALL_COVERS_HAVE_OUTPUT');
+sameSet([...leafKeys],[...leavesByKey.keys()],'ALL_AND_ONLY_COVER_LEAVES');
+sameSet([...treeByKey.keys()],[...outputKeys,...leafKeys],'ALL_TREE_ROWS_ACCOUNTED');
+const leafInputs=[...leafKeys].map(k=>{const t=treeByKey.get(k),leaf=leavesByKey.get(k);need(t.f.origin==='W38_SITE_READING_LEAF','LEAF_INPUT_NOT_NATIVE_LEAF');return{...contact(t.f),snapshot:t.args[0],site:t.args[1],reading:t.args[2],node:t.args[3],cover_leaf_fact_id:leaf.f.id,flag:leaf.args[2]};});
+const seedTerms=[...coverContacts.map(x=>x.term),...leafInputs.map(x=>x.term)];sameSet(seedTerms,[...new Set(seedTerms)],'UNIQUE_SEED_TERMS');
+need(joinOutputs.every(x=>!seedTerms.includes(x.term)),'INTERMEDIATE_OUTPUT_IMPORTED');
+const provenance=[...prove.seen].sort((a,b)=>a-b).map(id=>{const f=q.facts[id];return[id,f.term,f.rule,f.rank,...f.support];});
+const output={schema:'ActualNativeJoinContacts041',verdict:'IF_THEN',subject:'W38_SITE_READING_JOIN',scope:'One already-closed J17 diagnostic stage B invocation; extraction and proof verification only.',
+  batch:batchId,case:caseRef,invocation:b.record,native_rule:{source:originalRef,line:originalLine,clause:clauses[0],compiled_rule_index:rule.index,compiled_source_span:{start:rule.start,end:rule.end}},
+  seed_terms:seedTerms,expected_native_join_output_terms:joinOutputs.map(x=>x.term),cover_contacts:coverContacts,leaf_inputs:leafInputs,join_outputs:joinOutputs,
+  output_subjects:coverRoots.map(r=>{const site=r.args[0].slice(5,-1),t=treeByKey.get(key([site,r.args[1]]));return{snapshot:t.args[0],site,site_original:transport.carrier.sites.find(s=>s.term===site).original,reading:t.args[2],root_node:r.args[1],native_root_tree_fact_id:t.f.id,cover_root_fact_id:r.f.id};}),
+  completeness:{sites:siteSet.length,site_cover_joins:coverContacts.length,leaf_inputs:leafInputs.length,intermediate_tree_seeds:0,seed_terms:seedTerms.length,expected_join_outputs:joinOutputs.length,all_native_tree_rows:trees.length,all_cover_roots:coverRoots.length,proof_closed_facts:prove.seen.size,proof_tuple_format:['fact_id','term_id','rule_id','rank','...support_fact_ids'],proof_tuple_sha256:sha(key(provenance)),checks:['CLOSURE_AND_INPUT_HASHES_SAME','EXACT_FROZEN_NATIVE_CLAUSE','ALL_SITE_COVERS_AND_LEAVES_EXHAUSTED','SITE_COVERS_EQUAL_TRANSPORT_MEMBERS','LEAF_INPUTS_ONLY','NO_INTERMEDIATE_OUTPUT_SEEDED','EVERY_EXPECTED_OUTPUT_NATIVE_JOIN_PROVEN','ALL_NATIVE_JOIN_OUTPUTS_ACCOUNTED']},
+  proof_fact_ids:[...prove.seen].sort((a,b)=>a-b),
+  custody:{extractor:identity(fileURLToPath(import.meta.url)),reader:identity(path.join(ROOT,'native_reader_038.mjs')),proof_checker:identity(path.resolve(ROOT,'../sand_refinement_diagnostics_026/sweep/local_restriction_011/broad_012/staged_013/native_cache_v13.mjs')),verified_files:[...verified.values()],scope:'Reverified selected closure chain, direct invocation source/image/map/readback/transport and proof closure. Unrelated plan inputs are not rehashed.'},
+  fabric_correspondence:'NOT_CLAIMED',world_effect:'NONE',selection:'NO_MEMBER_TAKEN'};
+const bytes=Buffer.from(JSON.stringify(output,null,2)+'\n');
+if(fs.existsSync(outputPath))need(fs.readFileSync(outputPath).equals(bytes),'FROZEN_OUTPUT_NOT_SAME');else fs.writeFileSync(outputPath,bytes,{flag:'wx'});
+console.log(JSON.stringify({verdict:'IF_THEN',output:{path:outputPath,bytes:bytes.length,sha256:sha(bytes)},counts:output.completeness},null,2));

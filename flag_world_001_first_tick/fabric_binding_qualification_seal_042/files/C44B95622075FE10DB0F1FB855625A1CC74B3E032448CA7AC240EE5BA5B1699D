@@ -1,0 +1,280 @@
+{
+  "stage": "CANONICAL_DRC_042",
+  "directory": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\execution_drc_001",
+  "source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\native_image\\source.mal",
+    "bytes": 910675,
+    "sha256": "44D19A5173A7E556962379FDC3EE08D496020686EA40DA673E245442CB841FAC"
+  },
+  "source_map": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\native_image\\source-map.json",
+    "bytes": 88103473,
+    "sha256": "A4958A3FCA37EE0A912C991DFAFB68899D0429C0578530CC378C35F075F91606"
+  },
+  "image": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\native_image\\image.bin",
+    "bytes": 41992208,
+    "sha256": "61537AC950E4854F76E1388618B4A1C515565FB93B9A6BA3FD072637B1B651E2"
+  },
+  "observer": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\observe_drc_042.mjs",
+    "bytes": 9079,
+    "sha256": "A8DA404AFA45AF193388C63DA7AE368C815479FE3D9D8B4BDA7C4EA018719904"
+  },
+  "expected": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\DRC_EXPECTED_V2_042.json",
+    "bytes": 13607,
+    "sha256": "D74113D84615059FECF220A3AADEB75F82440979682A1294ED170DDE476805E1"
+  },
+  "config": {
+    "prepared": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\PREPARED_DRC_V2_042.json",
+      "bytes": 5566,
+      "sha256": "800A8DC4433F7CC9520ECAC4A1B83014D8E5D0E827F3360E35A431FBCDBC4CD9"
+    }
+  },
+  "inputs": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\PREPARED_DRC_V2_042.json",
+      "bytes": 5566,
+      "sha256": "800A8DC4433F7CC9520ECAC4A1B83014D8E5D0E827F3360E35A431FBCDBC4CD9"
+    },
+    {
+      "path": "D:\\Dev\\flag-world-first-tick-020\\actual_core_qualification\\fabric.program.json",
+      "bytes": 525750,
+      "sha256": "07320BB711DE9A195E0FE6AB663F980F685B3CF161670EDA103300A2C8753C56"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\native_image\\source.mal",
+      "bytes": 910675,
+      "sha256": "44D19A5173A7E556962379FDC3EE08D496020686EA40DA673E245442CB841FAC"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\native_image\\source-map.json",
+      "bytes": 88103473,
+      "sha256": "A4958A3FCA37EE0A912C991DFAFB68899D0429C0578530CC378C35F075F91606"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\native_image\\image.bin",
+      "bytes": 41992208,
+      "sha256": "61537AC950E4854F76E1388618B4A1C515565FB93B9A6BA3FD072637B1B651E2"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\DRC_EXPECTED_V2_042.json",
+      "bytes": 13607,
+      "sha256": "D74113D84615059FECF220A3AADEB75F82440979682A1294ED170DDE476805E1"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\prepare_drc_v2_042.mjs",
+      "bytes": 9746,
+      "sha256": "B0B151AC0403791F6E5AB4385F4133279C391FA160A12AE3BCA75F8926799F53"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_042.mal",
+      "bytes": 23384,
+      "sha256": "2283451FEA712F0CC0DFAB0ACD4D021221F5F352381340B18F9FD9DDEDEF5CE2"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\CANONICAL_PROGRAM_BINDING_042.json",
+      "bytes": 3983,
+      "sha256": "655B4EACD396B321F8E474D62272697AAE38B682FD83706393692994719D60F3"
+    },
+    {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\static_fabric_v0_1_0\\kernel.py",
+      "bytes": 30841,
+      "sha256": "8B983301DAD795DD9C3F020970BAD76017EF648AC0C71E3FB6FDEF3D0E4347C0"
+    },
+    {
+      "path": "C:\\Dev\\mal_kernel_lab_repo\\v3\\software_fpga\\gpu_carrier_001\\flag_world_engine_v3_fold_bootstrap_001\\candidate_successors\\W040_SURFACE_FABRIC_LOWERING_116\\parents\\STATIC_FABRIC_SPEC.md",
+      "bytes": 21733,
+      "sha256": "E328B574DE32635358AC488C4C5E20E80E86A845EB154401C8E1A7C0DD8D68F1"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\fast_lowerer\\lower.mjs",
+      "bytes": 8181,
+      "sha256": "C0347EA6166C129AE4223B4E4E2EEB2F662C36520EBA55E5658F6EE23872FEDE"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\R1\\fast_lowerer\\source_occurrence_custody.mjs",
+      "bytes": 3344,
+      "sha256": "B39A9474CBC3F4BB1E0089C0CB725F6664F1E604CBE2C2D0697DE51671CE81EE"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\drc_execution_042.mal",
+      "bytes": 910675,
+      "sha256": "44D19A5173A7E556962379FDC3EE08D496020686EA40DA673E245442CB841FAC"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\LOWER.stdout.txt",
+      "bytes": 208,
+      "sha256": "F6B6458D32E87516D407D696E104E43FDD7E21845548236C17955837D593BDD9"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\LOWER.stderr.txt",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\ROUTED.program.json",
+      "bytes": 4844,
+      "sha256": "8211E6BF8B1C9D0FE5D4E2609585067EC4C3FC4879FFABAA02E0BD705278DF2E"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_I.program.json",
+      "bytes": 4429,
+      "sha256": "2999220E9CFCAD7F1DD60424C7EF5C43C417181DDCE069FE582230E3A1DF1AF2"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_II.program.json",
+      "bytes": 4157,
+      "sha256": "FB43506C663264934049A4169D590830884D556088D103EDE386E866519AF424"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_III.program.json",
+      "bytes": 4141,
+      "sha256": "A24B6F99B8B79D3607BF0AFD31E917E0F117F4C13FFA845587D83D99BB61DFED"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_IV.program.json",
+      "bytes": 4852,
+      "sha256": "D30FD02EB6745C1E00D584224B0D1DCCFA0A128A8A7B92567AE095179449A211"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_V.program.json",
+      "bytes": 4844,
+      "sha256": "8DD7D6780002E5E0704F570AD7D5F575D540BCC73E6E1C1289DD668792DD953A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_VI.program.json",
+      "bytes": 4842,
+      "sha256": "7C52CD84046F814C1C5830D1CD4E09377FAE88BC1B5A06E075D5B5C73A4B3852"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_VII.program.json",
+      "bytes": 4844,
+      "sha256": "FFF867484DBBE8B3EE7C54AF5043D25120E6771048DDEE9A4091EE5E24E5CC86"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\drc_prepared_v2\\BAD_VIII.program.json",
+      "bytes": 5186,
+      "sha256": "9683DDE0DFB250311A76A85E4115A82037C4EF8B2F4193BA877D9D6A6B58FA76"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\observe_drc_042.mjs",
+      "bytes": 9079,
+      "sha256": "A8DA404AFA45AF193388C63DA7AE368C815479FE3D9D8B4BDA7C4EA018719904"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\native_reader_v2_038.mjs",
+      "bytes": 567,
+      "sha256": "45D1D8737880B6F55B5CE329D6E3763159E51420EF65AB5E18B9DCA2E1A4DA9A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\native_reader_038.mjs",
+      "bytes": 4017,
+      "sha256": "1364E0056BBAAA28D71F45D70E27BBAE2113A3285C988AE2C9C118B7EA5D61CD"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\native_cache_v13.mjs",
+      "bytes": 6406,
+      "sha256": "5BAEBE6CFCB0D67702C5D8A26C71C86ADA803E198866AF7975D906F2E9573F85"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_scope\\census.mjs",
+      "bytes": 8014,
+      "sha256": "5C8BC1F8ECEA1ABE14C4CA1266E7321E55DDC2EB891D19D5CB6094552408F266"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_proof\\native_proof_iterative_038.mjs",
+      "bytes": 2985,
+      "sha256": "0AE7EABAA1F50CBD99CFF2DACEF33DBB27C9972C95E20516822F8CC748D5778A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_proof\\native_term_iterative_038.mjs",
+      "bytes": 758,
+      "sha256": "FCA7084B659CCD56BC4C09EB7E518E8A69D800CFCD8EE3BF419099AA27622E54"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\custody_042.mjs",
+      "bytes": 1842,
+      "sha256": "7B27B914372C954142A4F40EDDFC2AEA4846E83D595C289C6A3F9B05A00C6414"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\make_drc_request_042.mjs",
+      "bytes": 1410,
+      "sha256": "C72272C7F9A11CBA301AA7A19303971A11EA7065EB9ABDF7D0421D8F27E670DC"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\prepare_execution_042.mjs",
+      "bytes": 3836,
+      "sha256": "401EB1B1304BA63D931497F07A201591A4F8DE21AFD18144CED85371EC6B6CEF"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\launch_generation_v1_038.mjs",
+      "bytes": 20347,
+      "sha256": "8A110F5C54BAC1D7C49E7430C5DA4F220C42C98FF73BC85FFD6F675D358D5E30"
+    }
+  ],
+  "sources": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\observe_drc_042.mjs",
+      "bytes": 9079,
+      "sha256": "A8DA404AFA45AF193388C63DA7AE368C815479FE3D9D8B4BDA7C4EA018719904"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\native_reader_v2_038.mjs",
+      "bytes": 567,
+      "sha256": "45D1D8737880B6F55B5CE329D6E3763159E51420EF65AB5E18B9DCA2E1A4DA9A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\native_reader_038.mjs",
+      "bytes": 4017,
+      "sha256": "1364E0056BBAAA28D71F45D70E27BBAE2113A3285C988AE2C9C118B7EA5D61CD"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\native_cache_v13.mjs",
+      "bytes": 6406,
+      "sha256": "5BAEBE6CFCB0D67702C5D8A26C71C86ADA803E198866AF7975D906F2E9573F85"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_scope\\census.mjs",
+      "bytes": 8014,
+      "sha256": "5C8BC1F8ECEA1ABE14C4CA1266E7321E55DDC2EB891D19D5CB6094552408F266"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_proof\\native_proof_iterative_038.mjs",
+      "bytes": 2985,
+      "sha256": "0AE7EABAA1F50CBD99CFF2DACEF33DBB27C9972C95E20516822F8CC748D5778A"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_proof\\native_term_iterative_038.mjs",
+      "bytes": 758,
+      "sha256": "FCA7084B659CCD56BC4C09EB7E518E8A69D800CFCD8EE3BF419099AA27622E54"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\custody_042.mjs",
+      "bytes": 1842,
+      "sha256": "7B27B914372C954142A4F40EDDFC2AEA4846E83D595C289C6A3F9B05A00C6414"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\prepare_drc_v2_042.mjs",
+      "bytes": 9746,
+      "sha256": "B0B151AC0403791F6E5AB4385F4133279C391FA160A12AE3BCA75F8926799F53"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\make_drc_request_042.mjs",
+      "bytes": 1410,
+      "sha256": "C72272C7F9A11CBA301AA7A19303971A11EA7065EB9ABDF7D0421D8F27E670DC"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\fabric_binding_042\\prepare_execution_042.mjs",
+      "bytes": 3836,
+      "sha256": "401EB1B1304BA63D931497F07A201591A4F8DE21AFD18144CED85371EC6B6CEF"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\launch_generation_v1_038.mjs",
+      "bytes": 20347,
+      "sha256": "8A110F5C54BAC1D7C49E7430C5DA4F220C42C98FF73BC85FFD6F675D358D5E30"
+    }
+  ]
+}

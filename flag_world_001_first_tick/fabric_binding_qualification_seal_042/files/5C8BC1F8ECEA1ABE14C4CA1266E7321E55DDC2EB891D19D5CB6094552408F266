@@ -1,0 +1,46 @@
+// CPU authoring support only. No application verdict, GPU invocation, or world action.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const own=fileURLToPath(import.meta.url),here=path.dirname(own),sweep=path.dirname(here),fresh=path.dirname(sweep);
+export const sha=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
+export const record=p=>({path:path.resolve(p),bytes:fs.statSync(p).size,sha256:sha(fs.readFileSync(p))});
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),need=(x,m)=>{if(!x)throw Error(m);};
+const json=x=>JSON.stringify(x,null,2)+'\n';
+function args(t){const s=t.slice(t.indexOf('(')+1,-1),out=[];let d=0,start=0;for(let i=0;i<s.length;i++){if(s[i]==='(')d++;else if(s[i]===')')d--;else if(s[i]===','&&d===0){out.push(s.slice(start,i));start=i+1;}}out.push(s.slice(start));return out;}
+export function loadScope(){
+ const level=path.join(sweep,'level4_001'),inputs=['INPUT.json','INVENTORY.json','CATALOG.json'].map(n=>record(path.join(level,n)));
+ const scopePath=path.join(fresh,'composite_scope_001/SWEEP_REQUEST.json');inputs.push(record(scopePath));
+ const d=read(inputs[0].path),inv=read(inputs[1].path),cat=read(inputs[2].path),request=read(scopePath);
+ const ib=read(path.join(level,'INVENTORY_BINDING.json'));need(record(ib.inventory.path).sha256===ib.inventory.sha256,'inventory NOT_SAME');
+ const gb=read(path.join(level,'GENERATED_INPUT_BINDING.json'));for(const p of gb.files)need(record(p.path).sha256===p.sha256,'generated input NOT_SAME');
+ const prior=read(path.join(fresh,'composite_scope_001/REPORT.json'));const ref=prior.outputs.find(x=>x.path.endsWith('SWEEP_REQUEST.json'));need(ref&&record(ref.path).sha256===ref.sha256,'composite request NOT_SAME');
+ inputs.push(record(path.join(level,'INVENTORY_BINDING.json')),record(path.join(level,'GENERATED_INPUT_BINDING.json')),record(path.join(fresh,'composite_scope_001/REPORT.json')));
+ const map=new Map(cat.map(x=>[JSON.stringify([x.kind,x.identity]),x.term]));
+ const id=(k,x)=>{const t=map.get(JSON.stringify([k,x]));need(t,'catalog reference');return t;};
+ const sites=cat.filter(x=>x.kind==='site').map(x=>x.term).sort(),siteIndex=new Map(sites.map((s,i)=>[s,i]));
+ const flags=d.flags.map(f=>({term:id('flag',f.id),raw:f.id,site:id('site',f.site),siteIndex:siteIndex.get(id('site',f.site))}));
+ const flagIndex=new Map(flags.map((f,i)=>[f.raw,i])),flagTermIndex=new Map(flags.map((f,i)=>[f.term,i]));
+ const overlaps=d.overlaps.map(o=>({term:id('overlap',o.id),a:flagIndex.get(o.a),b:flagIndex.get(o.b),kind:o.kind}));
+ const flagOverlaps=flags.map(()=>[]);overlaps.forEach((o,i)=>{flagOverlaps[o.a].push(i);flagOverlaps[o.b].push(i);});
+ const adj=new Map(sites.map(s=>[s,new Set()]));for(const e of d.edges){const a=id('site',e.a),b=id('site',e.b);adj.get(a).add(b);adj.get(b).add(a);}
+ const fieldTerms=[...inv.fields.filter(t=>!t.startsWith('UNIFORM(')),...request.fields].sort();need(new Set(fieldTerms).size===5096,'field scope');
+ const fields=fieldTerms.map(term=>{const kind=term.slice(0,term.indexOf('(')),a=args(term);let on;if(kind==='RING')on=[...adj.get(a[0])];else if(kind==='DISC')on=[a[0],...adj.get(a[0])];else{need(['SINGLE','PAIR_FIELD','TRIPLE','SEPARATED','PAIR_SINGLE'].includes(kind),'field family');on=a;}return{term,kind,on:new Set(on),siteReadings:sites.map(s=>on.includes(s)?'READING_THIS':'READING_NO')};});
+ const supports=inv.offers.map(o=>{const members=o.members.map(f=>{need(flagTermIndex.has(f),'member flag');return flagTermIndex.get(f);}),ms=new Set(members),affected=[...new Set(members.flatMap(f=>flagOverlaps[f]))].sort((a,b)=>a-b),halo=[...new Set(affected.flatMap(i=>[flags[overlaps[i].a].site,flags[overlaps[i].b].site]))].sort();const kind=o.support.startsWith('A_')?o.support.slice(0,o.support.indexOf(',')):o.support.slice(0,o.support.indexOf('('));return{term:o.support,kind,members,affected,halo,haloIndices:halo.map(s=>siteIndex.get(s)),internal:affected.filter(i=>ms.has(overlaps[i].a)&&ms.has(overlaps[i].b)),boundary:affected.filter(i=>ms.has(overlaps[i].a)!==ms.has(overlaps[i].b))};});
+ need(supports.length===4146&&flags.length===1920&&overlaps.length===2880,'carrier scope');return{inputs,d,inv,cat,sites,flags,overlaps,fields,supports};
+}
+export function signature(field,support){return support.haloIndices.map(i=>field.siteReadings[i]==='READING_THIS'?'1':'0').join('');}
+export function census(){
+ const m=loadScope(),counts={fields:m.fields.length,supports:m.supports.length,readings:2,field_support_pairs:m.fields.length*m.supports.length,assignment_cases:m.fields.length*m.supports.length*2,all_NO_pairs:0,all_THIS_pairs:0,mixed_pairs:0,unique_restrictions:0,uniform_restrictions:0,mixed_restrictions:0},families={},kinds={},haloSizes={},patternCounts={},supports=[];
+ for(const f of m.fields)families[f.kind]=(families[f.kind]??0)+1;
+ for(const u of m.supports){const restrictions=new Map();for(const t of m.fields){const s=signature(t,u);restrictions.set(s,(restrictions.get(s)??0)+1);if(/^0+$/.test(s))counts.all_NO_pairs++;else if(/^1+$/.test(s))counts.all_THIS_pairs++;else counts.mixed_pairs++;}
+  const patterns=[...restrictions.keys()].sort(),uniform=patterns.filter(s=>/^0+$|^1+$/.test(s)).length;counts.unique_restrictions+=patterns.length;counts.uniform_restrictions+=uniform;counts.mixed_restrictions+=patterns.length-uniform;haloSizes[u.halo.length]=(haloSizes[u.halo.length]??0)+1;patternCounts[patterns.length]=(patternCounts[patterns.length]??0)+1;
+  const g=kinds[u.kind]??={supports:0,halo_min:Infinity,halo_max:0,unique_restrictions:0,uniform_restrictions:0,mixed_restrictions:0,patterns_min:Infinity,patterns_max:0};g.supports++;g.halo_min=Math.min(g.halo_min,u.halo.length);g.halo_max=Math.max(g.halo_max,u.halo.length);g.unique_restrictions+=patterns.length;g.uniform_restrictions+=uniform;g.mixed_restrictions+=patterns.length-uniform;g.patterns_min=Math.min(g.patterns_min,patterns.length);g.patterns_max=Math.max(g.patterns_max,patterns.length);
+  supports.push({support:u.term,halo:u.halo,affected_overlaps:u.affected.map(i=>m.overlaps[i].term),boundary_overlaps:u.boundary.map(i=>m.overlaps[i].term),restriction_census:patterns.map(readings=>({readings,fields:restrictions.get(readings)}))});
+ }
+ counts.factored_assignment_cases=counts.unique_restrictions*2;counts.mixed_assignment_cases=counts.mixed_restrictions*2;counts.receipt_evaluation_reduction=counts.assignment_cases/counts.factored_assignment_cases;
+ need(counts.unique_restrictions===39924&&counts.uniform_restrictions===8162&&counts.mixed_restrictions===31762,'census changed');
+ return{schema:'SupportLocalRestrictionCPUCensusV1',scope:'AUTHORING_SUPPORT_NOT_NATIVE_RECEIPT',GPU:'NOT_RUN',world_effect:'NONE',selection:'NO_MEMBER_TAKEN',implementation:record(own),inputs:m.inputs,source_semantics:[record(path.join(sweep,'source/receipts_cached_v9.mal')),record(path.join(sweep,'source/fields_retained_v4.mal'))],field_identity_hash:sha(Buffer.from(json(m.fields.map(x=>x.term)))),support_identity_hash:sha(Buffer.from(json(m.supports.map(x=>x.term)))),counts,families,support_kinds:kinds,halo_sizes:haloSizes,pattern_counts:patternCounts,supports,notes:['Site readings are CPU reconstruction of the bound native field constructors for scope/cost only; they are not execution inputs or GPU witnesses.','Signature bit strings are transport encodings of ordered halo readings, not law scalars or selection keys.','No offer identity is deduplicated; equal effects remain separately observable.','Counts reduce local receipt evaluations only. Full field-to-restriction equality and coverage still require native proof.']};
+}
+if(process.argv[1]&&path.resolve(process.argv[1])===own){const out=path.join(here,'CENSUS.json');need(!fs.existsSync(out),'fresh output required');const result=census();fs.writeFileSync(out,json(result),{flag:'wx'});console.log(json({record:record(out),counts:result.counts,families:result.families,support_kinds:result.support_kinds}));}

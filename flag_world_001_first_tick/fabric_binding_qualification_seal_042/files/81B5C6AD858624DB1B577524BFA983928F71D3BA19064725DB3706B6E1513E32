@@ -1,0 +1,111 @@
+ERRATUM_E_WAVE_001
+VERSION    := 0.1.1 (amends 70C2D09347DB5F44A6A9F126A735A1FC4A04D695E2FE1EC566289D32E7998735: MAPPING widened to
+              T1–T6 from terms already defined; nine 039 operands resolved by occurrence reading; L099 W9 note;
+              Codex 2026-10-31 21:07 repairs: T6 covers historical designations; T4 retains N2/N6 bindings)
+STATUS     := PROPOSED (Claude PROPOSE; Devon DECIDE / PROMOTE; Codex binds into mal-fabric on Devon's word)
+DATE       := 2026-10-31 America/New_York
+KIND       := vocabulary erratum (E-series). Adds NO law and changes NO law. Names what the promoted amendment already
+              constructs and forbids a folk substitution. This file is an erratum, NOT a specification:
+              SPEC-MAL-SPECIFICATION-SYSTEM-002 CHECK_FORM W1–W8 applies to specifications and is NOT claimed, exempted or
+              altered here. W9 (ERRATUM_E_FIRST_SHAPE_NO_PIECES_001 v0.1.3, E93318BC…337BCC) is extended below.
+ORIGIN     := v0.1.1: Codex 2026-10-31 20:53 — nine occurrences name a combined output, successor field or implementation
+              contract that the two-target MAPPING did not offer. v0.1.0: Devon 2026-10-31 15:40 "I am very suspicious of 'Wave' is this just a descrption?"; 15:41 "draft it".
+AMENDS     := the vocabulary of SPEC_J17_WORLD_FOLD_EFFECT_001_AMENDMENT_SNAPSHOT_WAVE_001 v0.1.0 (F245D77E…448A3A0),
+              PROMOTED by receipt PROMOTION_RECEIPT_037 (66519524…11E1DFA). Its bytes are NOT edited; they stand as promoted
+              law and as genealogy, read under the MAPPING below.
+
+RETIRES (as a LAW-POSITION token; law position as defined by W9)
+  "wave"  — folk load: propagation (an effect travelling outward from a source), and by association oscillation or
+            frequency. The construction carries none of these. Nothing travels: each link's effects are computed from one
+            committed snapshot. A succession of links may be READ as a front moving outward; that reading is not recorded
+            by any receipt.
+  (The word above is MENTIONED here, not USED; W9 distinguishes the two.)
+
+STATES (the construction's own terms; every term below is already in the promoted amendment or the fold-effect spec)
+  SNAPSHOT            := qₙ, the committed field returned across RETURN. A step CANNOT observe current-tick results;
+                         re-entry is across the commit only (SPEC_J17_WORLD_FOLD_EFFECT_001 :103).
+  SNAPSHOT_EFFECT_SET := E(qₙ), the distinct strict effects enabled at qₙ, computed from qₙ alone. An effect is enabled iff
+                         some offered assignment U→b has ∅ ≠ ∂D ⊆ W(qₙ). Offers with the same effect (aliases, e.g. a site
+                         and a face) are ONE effect; no offer is selected.
+  JOINT_APPLICATION   := E(qₙ) applied together: concurrent effects jointly (disjoint changed flags and affected overlaps;
+                         neither changes the other's receipt); an absorbed effect within the effect that absorbs it.
+                         Conflicting effects do not occur in the amendment's scope (whole-site fields, fixed-incidence strict
+                         evolution, the bound (1,0), (2,0), (4,0) carriers and offered families).
+  LINK                := the commit of JOINT_APPLICATION(E(qₙ)) as qₙ₊₁, with ONE receipt computed directly:
+                         discharged = W(qₙ) \ W(qₙ₊₁), opened = ∅. Per-effect receipts are NOT summed. Effects enabled by
+                         qₙ₊₁ belong to the next PROPOSE.
+
+MAPPING (how the promoted amendment's wording reads; v0.1.1 widens the targets to the construction's own terms)
+  "wave", "snapshot wave", "prior-snapshot wave", and any identifier containing WAVE as an underscore-delimited component
+  read as ONE of the targets below. Every target is already defined in STATES above or in the amendment's own N4/N6 text;
+  none is new. The occurrence's own words and its cited clauses (N1–N7) fix the target; nothing is chosen.
+    T1  names WHAT IS ASSEMBLED from the snapshot (members, classes, provenance)        → SNAPSHOT_EFFECT_SET, E(qₙ)
+    T2  names THE COMBINED ASSIGNMENT formed from E(qₙ) (amendment N4 "combined effect") → JOINT_APPLICATION(E(qₙ))
+    T3  names THE FIELD that assignment determines, before commit (N4 "q_next")         → qₙ₊₁
+    T4  names qₙ₊₁ WITH ITS JOINT RECEIPT, before commit (N6's own term)                → JOINT_CANDIDATE
+        T4 names the successor-and-receipt subject; all provenance, witness, predecessor and authority bindings required
+        by N2/N6 remain attached. This notation does not redefine the candidate or LINK record schema.
+    T5  names THE COMMITTED TRANSITION (N6 "ONE new link")                              → LINK
+    T6  is a frozen identifier or historical designation naming the whole N1–N7 construction (title, seed,
+        obligation identifiers; attestation prose)
+                                                                                         → GENEALOGY: read as "the N1–N7 construction"
+  T2–T4 are distinct subjects and are not substituted for one another: T2 is an assignment on changed flags, T3 is a whole
+  field, T4 is that field with the receipt computed from (qₙ, qₙ₊₁), its N2/N6 bindings attached. T5 is T4 after the existing authority section and commit.
+
+  Occurrence reading of the promoted amendment (F245D77E…448A3A0; line numbers as in AMENDMENT_OCCURRENCE_MAP_039,
+  CFB7131E…D430AE003). The ten readings bound in 039 are unchanged; the nine operands resolve as follows:
+    L009  "the scoped prior-snapshot wave stated immediately before Devon's promote" — the attested contract, N1–N7    → T6
+    L045  "A combined effect is the wave output, not a newly invented single offered support" — N4's combined effect   → T2
+    L094  "R036 … individual receipts, not a joint wave" — R036 has per-offer receipts and no receipt read from
+          (qₙ, qₙ₊₁); what it lacks is the joint candidate                                                            → T4
+    L099  "@propose seed J17_WORLD_FOLD_EFFECT_SNAPSHOT_WAVE_WALK" — seed identifier for the whole Walk, N1–N7         → T6
+    L100  "One successor wave over one immutable committed whole-site snapshot; N1-N4" — N4 ends at q_next, before N5  → T3
+    L120  "Many enabled raw offers determine one compatible wave field; N3-N4" — the field N4 determines              → T3
+    L144  "… premises yields the one wave; N1-N5" — N5 adds the joint receipt; N6 (commit) is not cited               → T4
+    L175  "O_exec = { O_IMPLEMENT_WAVE, … }" — obligation identifier                                                  → T6
+    L177  "O_IMPLEMENT_WAVE: native .mal realization of N1-N7 …" — obligation identifier for the whole construction   → T6
+  No occurrence remains unresolved. If a binding read finds an occurrence that none of T1–T6 fits, it is recorded as an
+  operand by line, not assigned.
+
+  Frozen identifiers (T6) keep their bytes in the promoted amendment and its records. NOTE: L099 is a seed identifier, a
+  LAW POSITION under W9; with the component rule, a successor serialization of the amendment carrying it unchanged would
+  return NO. Renaming it belongs to that successor serialization, under its own PROMOTE; this erratum does not rename it.
+  New files, identifiers and run records use the terms above.
+
+W9 EXTENSION (additive; W9's definitions of LAW POSITION and MENTION are unchanged)
+  RETIRED      := RETIRED(v0.1.3) ∪ { wave }.
+  COMPONENT RULE (for "wave" only): "wave" also occurs in a law position when it is an underscore-delimited component of an
+               identifier in a law position (case-insensitive). The tokenization of the v0.1.3 RETIRED set is unchanged, so
+               the v0.1.3 vectors and their expected outputs are unaffected.
+  W9(file)     := NO IF_THEN some retired token occurs in a LAW POSITION; IF_THEN otherwise.
+
+VECTORS (input bytes frozen alongside; W9 with the component rule only; expected = sorted-key compact JSON, no terminal
+newline; inputs have no terminal newline; uppercase digests)
+  V1  input  V1.mal  := `law LINK := IF THIS(wave,q) THEN GOES_WITH(LINK,q);`                       (operator argument)
+      expected {"law_positions":["wave"],"verdict":"NO"}
+  V2  input  V2.mal  := `// the joint application was once called a "wave"`                         (comment mention)
+      expected {"law_positions":[],"verdict":"IF_THEN"}
+  V3  input  V3.mal  := `law SNAPSHOT_WAVE := IF THIS(E,q) THEN GOES_WITH(LINK,q);`                 (identifier component)
+      expected {"law_positions":["wave"],"verdict":"NO"}
+  V4  input  this file (ERRATUM_E_WAVE_001.mal v0.1.1)                                            (mentions only)
+      expected {"law_positions":[],"verdict":"IF_THEN"}
+  V5  input  V5.mal  := `law SNAPSHOT_EFFECT_SET := IF THIS(E,q) THEN GOES_WITH(LINK,q); // not a wave` (clean law, comment)
+      expected {"law_positions":[],"verdict":"IF_THEN"}
+  Digests of V1–V3, V5 inputs and all expected outputs: ERRATUM_E_WAVE_001.vectors (frozen alongside). V4's input digest is
+  this file's own sha256 as bound by Codex.
+
+UNCHANGED (stated so nothing is read as changed)
+  The promoted amendment's law: one link commits the joint application of the snapshot's enabled effects; no member is
+  chosen; no ordering, ranking or tie-break is introduced. Its scope. Run record 038 (0BEA0CBB…EB5908) and its results.
+  The open obligation O_DRC_FABRIC_REALIZATION_038. The operation name W38_SITE_READING_JOIN (it names what it does).
+  The committed J17 world.
+
+GENEALOGY (superseded wording, retained as record, not edited)
+  SPEC_J17_WORLD_FOLD_EFFECT_001_AMENDMENT_SNAPSHOT_WAVE_001 v0.1.0 (title, identifiers and prose using "wave");
+  ERRATUM_E_WAVE_001 v0.1.0 two-target MAPPING (70C2D093…E7998735), superseded by T1–T6;
+  directory j17_snapshot_wave_realization_038 and run record 038 wording; Codex 2026-10-30 18:46 "prior-snapshot wave";
+  Claude's adoption of that term in conversation 2026-10-30.
+
+ENTRY POINTS (bind this file's hash)
+  HANDOFF_FLAG_WORLD_FIRST_TICK header · Codex contact packet (world_transition_contacts) · mal-compliance skill drift list ·
+  the O_DRC_FABRIC_REALIZATION_038 work packet.

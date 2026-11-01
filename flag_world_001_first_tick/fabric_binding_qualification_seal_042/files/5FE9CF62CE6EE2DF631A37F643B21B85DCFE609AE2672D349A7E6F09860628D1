@@ -1,0 +1,169 @@
+// R042: bounded source specialization of I20 ingress/STEP_FABRIC/RETURN.
+// The exact canonical 720-cell program is imported unchanged. Static inventory
+// and source overlap contacts are extracted from its closed native proof.
+// The balanced keyed map is a proof representation of PAYLOAD_MAP, not program
+// containment. Its complete root is required before snapshot and RETURN.
+// Source-owned W38 parent constructors are projections, not extra CellDefs.
+// No world commit, field write, effect selection or all-038 claim occurs here.
+@readonly input R42_PROGRAM_BYTES := "program:";
+@readonly input R42_DRC_BYTES := "drc:";
+@readonly input R42_HASH_BYTES := "oracle:";
+
+// Packed literal source contacts keep native seed count bounded. They carry
+// only immutable inventory, input readings and diagnostic controls.
+law R42_PACK_HEAD := IF GOES_WITH(R42_PACK,CONS(row,tail)) THEN THIS(R42_ROW,row);
+law R42_PACK_TAIL := IF GOES_WITH(R42_PACK,CONS(row,tail)) THEN GOES_WITH(R42_PACK,tail);
+law R42_CELL_INPUT := IF THIS(R42_ROW,CELL(c,f,g)) THEN GOES_WITH(R42_CELL,c,f,g);
+law R42_FLAG_INPUT := IF THIS(R42_ROW,FLAG(f,s)) THEN GOES_WITH(R42_FLAG,f,s);
+law R42_LEAF_INPUT := IF THIS(R42_ROW,COVER_LEAF(s,n,f)) THEN GOES_WITH(R42_COVER_LEAF,s,n,f);
+law R42_JOIN_INPUT := IF THIS(R42_ROW,COVER_JOIN(s,n,a,b)) THEN GOES_WITH(R42_COVER_JOIN,s,n,a,b);
+law R42_MAP_LEAF_INPUT := IF THIS(R42_ROW,MAP_LEAF(n,c)) THEN GOES_WITH(R42_MAP_LEAF,n,c);
+law R42_MAP_JOIN_INPUT := IF THIS(R42_ROW,MAP_JOIN(n,a,b)) THEN GOES_WITH(R42_MAP_JOIN,n,a,b);
+law R42_MAP_ROOT_INPUT := IF THIS(R42_ROW,MAP_ROOT(n)) THEN THIS(R42_MAP_ROOT,n);
+law R42_CASE_INPUT := IF THIS(R42_ROW,CASE(t,source,mode,site)) THEN GOES_WITH(R42_CASE,t,source,mode,site);
+law R42_READING_INPUT := IF THIS(R42_ROW,INPUT_READING(t,f,r)) THEN GOES_WITH(R42_INPUT_READING,t,f,r);
+law R42_PASS_INPUT := IF THIS(R42_ROW,RESULT_CONTACT(t,c,target)) THEN GOES_WITH(R42_RESULT_CONTACT,t,c,target);
+law R42_PROGRAM_ID_INPUT := IF THIS(R42_ROW,PROGRAM_ID(p)) THEN THIS(R42_PROGRAM_ID,p);
+law R42_FLAG_JSON_INPUT := IF THIS(R42_ROW,FLAG_JSON(f,j)) THEN GOES_WITH(R42_FLAG_JSON,f,j);
+law R42_CASE_TEXT_INPUT := IF THIS(R42_ROW,CASE_TEXT(t,h)) THEN GOES_WITH(R42_CASE_TEXT,t,h);
+// Generic SHA candidates use a balanced JSON transport with short leaf lists.
+// This is serialization, never carrier incidence or canonical containment.
+law R42_HASH_ROOT := IF THIS(R42_HASH_BYTES,node) THEN THIS(R42_HASH_NODE,node);
+law R42_HASH_BRANCH_LEFT := IF THIS(R42_HASH_NODE,ARRAY(CONS("BRANCH",CONS(left,CONS(right,NIL))))) THEN THIS(R42_HASH_NODE,left);
+law R42_HASH_BRANCH_RIGHT := IF THIS(R42_HASH_NODE,ARRAY(CONS("BRANCH",CONS(left,CONS(right,NIL))))) THEN THIS(R42_HASH_NODE,right);
+law R42_HASH_LEAF := IF THIS(R42_HASH_NODE,ARRAY(CONS("LEAF",CONS(ARRAY(rows),NIL)))) THEN THIS(R42_HASH_TAIL,rows);
+law R42_HASH_TAIL := IF THIS(R42_HASH_TAIL,CONS(row,tail)) THEN THIS(R42_HASH_TAIL,tail);
+law R42_HASH_CANDIDATE := IF THIS(R42_HASH_TAIL,CONS(ARRAY(CONS(subject,CONS(digest,NIL))),tail)) THEN GOES_WITH(R42_HASH_CANDIDATE,subject,digest);
+// A candidate becomes a response only after an exact source-built request.
+law R42_HASH_RESPONSE := IF GOES_WITH(R42_HASH_CANDIDATE,subject,digest), GOES_WITH(R42_HASH_REQUEST,subject) THEN GOES_WITH(R42_HASH_RESPONSE,subject,digest);
+
+// The first three members are a source-preserving projection of fresh native
+// DRC evidence. The remaining proof object is retained, never replaced.
+law R42_DRC_GATE := IF THIS(R42_DRC_BYTES,OBJECT(CONS(MEMBER("program_sha256",p),CONS(MEMBER("verdict","IF_THEN"),CONS(MEMBER("checks",ARRAY(CONS("I",CONS("II",CONS("III",CONS("IV",CONS("V",CONS("VI",CONS("VII",CONS("VIII",NIL)))))))))),CONS(MEMBER("proof",proof),NIL)))))), THIS(R42_PROGRAM_ID,p), THIS(R42_PROGRAM_BYTES,program)
+ THEN GOES_WITH(R42_ADMITTED_PROGRAM,p,program,proof);
+
+// I20 :34-90. Complete canonical InputValue fields, including actual text hash
+// identities. This diagnostic ingress has its own binding; it does not reuse
+// a historical run's admission receipt or pretend to commit a world step.
+@propose seed R42_TEXT_DOMAIN := {
+ GOES_WITH(R42_ROLE_TEXT,LEFT,"LEFT"), GOES_WITH(R42_ROLE_TEXT,RIGHT,"RIGHT"),
+ GOES_WITH(R42_READING_TEXT,READING_NO,"NO"), GOES_WITH(R42_READING_TEXT,READING_THIS,"THIS"),
+ GOES_WITH(R42_VERDICT_TEXT,SAME,"SAME"), GOES_WITH(R42_VERDICT_TEXT,NOT_SAME,"NOT_SAME"),
+ GOES_WITH(R42_KIND_TEXT,CELL_EVALUATED,"CELL_EVALUATED"), GOES_WITH(R42_KIND_TEXT,PAYLOAD_TRANSITION,"PAYLOAD_TRANSITION")
+};
+law R42_BINDING_SUBJECT := IF GOES_WITH(R42_CASE_TEXT,t,h), GOES_WITH(R42_ADMITTED_PROGRAM,p,program,proof)
+ THEN GOES_WITH(R42_BINDING_SUBJECT,t,ARRAY(CONS("R42_DIAGNOSTIC_INGRESS",CONS(p,CONS(h,NIL)))));
+law R42_BINDING_REQUEST := IF GOES_WITH(R42_BINDING_SUBJECT,t,subject) THEN GOES_WITH(R42_HASH_REQUEST,subject);
+law R42_BINDING := IF GOES_WITH(R42_BINDING_SUBJECT,t,subject), GOES_WITH(R42_HASH_RESPONSE,subject,digest) THEN GOES_WITH(R42_BINDING,t,digest);
+law R42_RUN_SUBJECT := IF GOES_WITH(R42_BINDING,t,binding), GOES_WITH(R42_CASE_TEXT,t,h), GOES_WITH(R42_ADMITTED_PROGRAM,p,program,proof)
+ THEN GOES_WITH(R42_RUN_SUBJECT,t,ARRAY(CONS("FLAG_WORLD_RUN",CONS(p,CONS(binding,CONS(h,NIL))))));
+law R42_RUN_REQUEST := IF GOES_WITH(R42_RUN_SUBJECT,t,subject) THEN GOES_WITH(R42_HASH_REQUEST,subject);
+law R42_RUN := IF GOES_WITH(R42_RUN_SUBJECT,t,subject), GOES_WITH(R42_HASH_RESPONSE,subject,digest) THEN GOES_WITH(R42_RUN,t,digest);
+law R42_LEFT_CONTACT := IF GOES_WITH(R42_CELL,c,f,g) THEN GOES_WITH(R42_INPUT_CONTACT,c,LEFT,f);
+law R42_RIGHT_CONTACT := IF GOES_WITH(R42_CELL,c,f,g) THEN GOES_WITH(R42_INPUT_CONTACT,c,RIGHT,g);
+law R42_INPUT_PAYLOAD := IF GOES_WITH(R42_INPUT_CONTACT,c,role,f), GOES_WITH(R42_INPUT_READING,t,f,r), GOES_WITH(R42_CASE_TEXT,t,h), GOES_WITH(R42_FLAG_JSON,f,j), GOES_WITH(R42_READING_TEXT,r,text)
+ THEN GOES_WITH(R42_INPUT_PAYLOAD,t,c,role,r,OBJECT(CONS(MEMBER("flag",j),CONS(MEMBER("reading",text),CONS(MEMBER("snapshot",h),NIL)))));
+law R42_ROUTE_SUBJECT := IF GOES_WITH(R42_INPUT_CONTACT,c,role,f), GOES_WITH(R42_BINDING,t,binding), GOES_WITH(R42_ROLE_TEXT,role,text)
+ THEN GOES_WITH(R42_ROUTE_SUBJECT,t,c,role,ARRAY(CONS("GAME_INGRESS",CONS(binding,CONS(JSON_INTEGER("0"),CONS(c,CONS(text,NIL)))))));
+law R42_ROUTE_REQUEST := IF GOES_WITH(R42_ROUTE_SUBJECT,t,c,role,subject) THEN GOES_WITH(R42_HASH_REQUEST,subject);
+law R42_ROUTE_ID := IF GOES_WITH(R42_ROUTE_SUBJECT,t,c,role,subject), GOES_WITH(R42_HASH_RESPONSE,subject,digest) THEN GOES_WITH(R42_ROUTE_ID,t,c,role,digest);
+law R42_INPUT_RECEIPT_SUBJECT := IF GOES_WITH(R42_ROUTE_ID,t,c,role,route), GOES_WITH(R42_INPUT_PAYLOAD,t,c,role,r,payload)
+ THEN GOES_WITH(R42_INPUT_RECEIPT_SUBJECT,t,c,role,ARRAY(CONS("GAME_INGRESS_RECEIPT",CONS(route,CONS(payload,NIL)))));
+law R42_INPUT_RECEIPT_REQUEST := IF GOES_WITH(R42_INPUT_RECEIPT_SUBJECT,t,c,role,subject) THEN GOES_WITH(R42_HASH_REQUEST,subject);
+law R42_INPUT_VALUE := IF GOES_WITH(R42_ROUTE_ID,t,c,role,route), GOES_WITH(R42_INPUT_PAYLOAD,t,c,role,r,payload), GOES_WITH(R42_INPUT_RECEIPT_SUBJECT,t,c,role,subject), GOES_WITH(R42_HASH_RESPONSE,subject,receipt), GOES_WITH(R42_INPUT_CONTACT,c,role,f)
+ THEN GOES_WITH(R42_INPUT_VALUE,t,c,role,f,r,INPUT_VALUE(route,IDENTITY_ESSENCE,payload,receipt));
+law R42_INPUT_JSON := IF GOES_WITH(R42_INPUT_VALUE,t,c,role,f,r,INPUT_VALUE(route,IDENTITY_ESSENCE,payload,receipt))
+ THEN GOES_WITH(R42_INPUT_JSON,t,c,role,OBJECT(CONS(MEMBER("payload_type","identity/essence"),CONS(MEMBER("route_id",route),CONS(MEMBER("source_receipt",receipt),CONS(MEMBER("value",payload),NIL))))));
+// I20 :94-110. Both EXACTLY_ONE roles precede admission; every admitted cell
+// precedes the immutable snapshot. A missing frame withholds that snapshot.
+// This is a NEW diagnostic fabric instance. EMPTY and its empty auxiliary
+// custody are constructed explicitly, never substituted for live g2 runtime.
+law R42_INITIAL_EMPTY := IF GOES_WITH(R42_CASE,t,source,mode,site), GOES_WITH(R42_CELL,c,f,g), GOES_WITH(R42_ADMITTED_PROGRAM,p,program,proof)
+ THEN GOES_WITH(R42_INITIAL_EMPTY,t,c,EMPTY);
+law R42_INITIAL_AUX := IF GOES_WITH(R42_CASE,t,source,mode,site), GOES_WITH(R42_ADMITTED_PROGRAM,p,program,proof)
+ THEN GOES_WITH(R42_INITIAL_AUX,t,AUX(NIL,NIL,NIL,NIL,NIL));
+law R42_FRAME := IF GOES_WITH(R42_INPUT_VALUE,t,c,LEFT,f,l,lv), GOES_WITH(R42_INPUT_VALUE,t,c,RIGHT,g,r,rv)
+ THEN GOES_WITH(R42_FRAME,t,c,FRAME(LEFT(CONS(lv,NIL)),RIGHT(CONS(rv,NIL))));
+law R42_FRAME_JSON := IF GOES_WITH(R42_INPUT_JSON,t,c,LEFT,left), GOES_WITH(R42_INPUT_JSON,t,c,RIGHT,right)
+ THEN GOES_WITH(R42_FRAME_JSON,t,c,OBJECT(CONS(MEMBER("LEFT",ARRAY(CONS(left,NIL))),CONS(MEMBER("RIGHT",ARRAY(CONS(right,NIL))),NIL))));
+law R42_ADMISSION_SUBJECT := IF GOES_WITH(R42_FRAME_JSON,t,c,json), GOES_WITH(R42_RUN,t,run)
+ THEN GOES_WITH(R42_ADMISSION_SUBJECT,t,c,ARRAY(CONS("GAME_FRAME_ADMITTED",CONS(run,CONS(JSON_INTEGER("0"),CONS(c,CONS(json,NIL)))))));
+law R42_ADMISSION_REQUEST := IF GOES_WITH(R42_ADMISSION_SUBJECT,t,c,subject) THEN GOES_WITH(R42_HASH_REQUEST,subject);
+law R42_ADMITTED := IF GOES_WITH(R42_INITIAL_EMPTY,t,c,EMPTY), GOES_WITH(R42_FRAME,t,c,frame), GOES_WITH(R42_ADMISSION_SUBJECT,t,c,subject), GOES_WITH(R42_HASH_RESPONSE,subject,receipt)
+ THEN GOES_WITH(R42_ADMITTED,t,c,ADMITTED(frame,receipt));
+law R42_PRIOR_LEAF := IF GOES_WITH(R42_MAP_LEAF,n,c), GOES_WITH(R42_ADMITTED,t,c,payload)
+ THEN GOES_WITH(R42_PRIOR_MAP,t,n,KEYED_LEAF(c,payload));
+law R42_PRIOR_JOIN := IF GOES_WITH(R42_MAP_JOIN,n,a,b), GOES_WITH(R42_PRIOR_MAP,t,a,left), GOES_WITH(R42_PRIOR_MAP,t,b,right)
+ THEN GOES_WITH(R42_PRIOR_MAP,t,n,KEYED_JOIN(left,right));
+law R42_SNAPSHOT := IF THIS(R42_MAP_ROOT,n), GOES_WITH(R42_PRIOR_MAP,t,n,payloads), GOES_WITH(R42_ADMITTED_PROGRAM,p,program,proof), GOES_WITH(R42_INITIAL_AUX,t,AUX(rs,pa,ib,ob,receipts))
+ THEN GOES_WITH(R42_SNAPSHOT,t,p,FABRIC_STATE(PAYLOAD_MAP(payloads),rs,pa,ib,ob,receipts));
+
+// I20 :65-68,113-114. Exact two-reading SAME semantics, before projection.
+@propose seed R42_COMPARISON_DOMAIN := {
+ GOES_WITH(R42_COMPARE,READING_NO,READING_NO,SAME),
+ GOES_WITH(R42_COMPARE,READING_THIS,READING_THIS,SAME),
+ GOES_WITH(R42_COMPARE,READING_NO,READING_THIS,NOT_SAME),
+ GOES_WITH(R42_COMPARE,READING_THIS,READING_NO,NOT_SAME)
+};
+law R42_EVALUATE := IF GOES_WITH(R42_SNAPSHOT,t,p,snapshot), GOES_WITH(R42_ADMITTED,t,c,ADMITTED(frame,admission)), GOES_WITH(R42_INPUT_VALUE,t,c,LEFT,f,l,lv), GOES_WITH(R42_INPUT_VALUE,t,c,RIGHT,g,r,rv), GOES_WITH(R42_COMPARE,l,r,result)
+ THEN GOES_WITH(R42_RESULT,t,c,RESULT(SAME_NOT_SAME,WHAT,frame,result));
+// I20 :122-140,155-166. Complete retained frame, result, two runtime receipt
+// subjects, empty egress (canonical routes are NIL), then one RETURN barrier.
+law R42_COMPLETED := IF GOES_WITH(R42_ADMITTED,t,c,ADMITTED(frame,admission)), GOES_WITH(R42_RESULT,t,c,result)
+ THEN GOES_WITH(R42_COMPLETED,t,c,COMPLETED(frame,result,NIL));
+law R42_RESULT_JSON := IF GOES_WITH(R42_RESULT,t,c,RESULT(SAME_NOT_SAME,WHAT,frame,v)), GOES_WITH(R42_FRAME_JSON,t,c,fj), GOES_WITH(R42_VERDICT_TEXT,v,text)
+ THEN GOES_WITH(R42_RESULT_JSON,t,c,OBJECT(CONS(MEMBER("input_frame",fj),CONS(MEMBER("operator","SAME_NOT_SAME"),CONS(MEMBER("reading",text),CONS(MEMBER("witness","WHAT"),NIL))))));
+law R42_EVAL_RECEIPT_PAYLOAD := IF GOES_WITH(R42_RESULT_JSON,t,c,json) THEN GOES_WITH(R42_RECEIPT_PAYLOAD,t,c,CELL_EVALUATED,json);
+law R42_TRANSITION_RECEIPT_PAYLOAD := IF GOES_WITH(R42_RESULT,t,c,result) THEN GOES_WITH(R42_RECEIPT_PAYLOAD,t,c,PAYLOAD_TRANSITION,ARRAY(CONS("ADMITTED",CONS("COMPLETED",NIL))));
+law R42_RECEIPT_PAYLOAD_REQUEST := IF GOES_WITH(R42_RECEIPT_PAYLOAD,t,c,kind,subject) THEN GOES_WITH(R42_HASH_REQUEST,subject);
+law R42_RECEIPT_ID_SUBJECT := IF GOES_WITH(R42_RECEIPT_PAYLOAD,t,c,kind,subject), GOES_WITH(R42_HASH_RESPONSE,subject,digest), GOES_WITH(R42_KIND_TEXT,kind,text)
+ THEN GOES_WITH(R42_RECEIPT_ID_SUBJECT,t,c,kind,digest,ARRAY(CONS(text,CONS(c,CONS(digest,NIL)))));
+law R42_RECEIPT_ID_REQUEST := IF GOES_WITH(R42_RECEIPT_ID_SUBJECT,t,c,kind,digest,subject) THEN GOES_WITH(R42_HASH_REQUEST,subject);
+law R42_RUNTIME_RECEIPT := IF GOES_WITH(R42_RECEIPT_ID_SUBJECT,t,c,kind,digest,subject), GOES_WITH(R42_HASH_RESPONSE,subject,rid), GOES_WITH(R42_KIND_TEXT,kind,text)
+ THEN GOES_WITH(R42_RUNTIME_RECEIPT,t,c,kind,OBJECT(CONS(MEMBER("kind",text),CONS(MEMBER("payload_digest",digest),CONS(MEMBER("receipt_id",rid),CONS(MEMBER("subject_id",c),NIL))))));
+law R42_RECEIPTS := IF GOES_WITH(R42_RUNTIME_RECEIPT,t,c,CELL_EVALUATED,e), GOES_WITH(R42_RUNTIME_RECEIPT,t,c,PAYLOAD_TRANSITION,p)
+ THEN GOES_WITH(R42_RECEIPTS,t,c,RECEIPTS(e,p));
+law R42_NEXT_LEAF := IF GOES_WITH(R42_MAP_LEAF,n,c), GOES_WITH(R42_COMPLETED,t,c,payload), GOES_WITH(R42_RECEIPTS,t,c,receipts)
+ THEN GOES_WITH(R42_NEXT_MAP,t,n,KEYED_LEAF(c,payload),KEYED_LEAF(c,receipts));
+law R42_NEXT_JOIN := IF GOES_WITH(R42_MAP_JOIN,n,a,b), GOES_WITH(R42_NEXT_MAP,t,a,left,lr), GOES_WITH(R42_NEXT_MAP,t,b,right,rr)
+ THEN GOES_WITH(R42_NEXT_MAP,t,n,KEYED_JOIN(left,right),KEYED_JOIN(lr,rr));
+law R42_RETURN := IF THIS(R42_MAP_ROOT,n), GOES_WITH(R42_NEXT_MAP,t,n,payloads,receipts), GOES_WITH(R42_SNAPSHOT,t,p,prior), GOES_WITH(R42_ADMITTED_PROGRAM,p,program,proof)
+ THEN GOES_WITH(STEP_FABRIC_RETURN,t,program,prior,FABRIC_STATE(PAYLOAD_MAP(payloads),NIL,NIL,NIL,NIL,RECEIPT_SET(receipts)));
+law R42_RETURNED_CELL := IF GOES_WITH(STEP_FABRIC_RETURN,t,program,prior,next), GOES_WITH(R42_COMPLETED,t,c,payload)
+ THEN GOES_WITH(R42_RETURNED_CELL,t,c,payload);
+
+// Leaves come from returned COMPLETED frame values, never raw source readings.
+law R42_RETURNED_LEFT := IF GOES_WITH(R42_RETURNED_CELL,t,c,COMPLETED(FRAME(LEFT(CONS(INPUT_VALUE(route,IDENTITY_ESSENCE,OBJECT(CONS(MEMBER("flag",j),CONS(MEMBER("reading",text),CONS(MEMBER("snapshot",h),NIL)))),receipt),NIL)),RIGHT(rv)),result,NIL)), GOES_WITH(R42_CELL,c,f,g), GOES_WITH(R42_FLAG_JSON,f,j), GOES_WITH(R42_CASE_TEXT,t,h), GOES_WITH(R42_READING_TEXT,r,text)
+ THEN GOES_WITH(R42_RETURNED_READING,t,f,r);
+law R42_RETURNED_RIGHT := IF GOES_WITH(R42_RETURNED_CELL,t,c,COMPLETED(FRAME(LEFT(lv),RIGHT(CONS(INPUT_VALUE(route,IDENTITY_ESSENCE,OBJECT(CONS(MEMBER("flag",j),CONS(MEMBER("reading",text),CONS(MEMBER("snapshot",h),NIL)))),receipt),NIL))),result,NIL)), GOES_WITH(R42_CELL,c,g,f), GOES_WITH(R42_FLAG_JSON,f,j), GOES_WITH(R42_CASE_TEXT,t,h), GOES_WITH(R42_READING_TEXT,r,text)
+ THEN GOES_WITH(R42_RETURNED_READING,t,f,r);
+// RESULT_CONTACT transports a result to its unchanged snapshot in positives.
+// The two diagnostic controls omit/displace this contact for one entire site;
+// canonical execution and returned frames remain present in those controls.
+law R42_RETURNED_RESULT := IF GOES_WITH(R42_RETURNED_CELL,t,c,COMPLETED(frame,RESULT(SAME_NOT_SAME,WHAT,frame,v),NIL)), GOES_WITH(R42_RESULT_CONTACT,t,c,target), GOES_WITH(R42_CELL,c,f,g), GOES_WITH(R42_FLAG,f,s), GOES_WITH(R42_FLAG,g,s)
+ THEN GOES_WITH(R42_EDGE_RESULT,target,s,f,g,v);
+law R42_PATH_EDGE := IF GOES_WITH(R42_EDGE_RESULT,t,s,f,g,v) THEN GOES_WITH(R42_PATH,t,s,f,g,v);
+law R42_PATH_REVERSE := IF GOES_WITH(R42_EDGE_RESULT,t,s,f,g,v) THEN GOES_WITH(R42_PATH,t,s,g,f,v);
+// Every incidence path participates. No convenient route is selected. These
+// four compositions are exact equality on the bound two-reading domain.
+// This closure reads the RETURNED result record. It neither evaluates another
+// canonical cell nor observes a current-tick result inside STEP_FABRIC.
+law R42_PATH_SS := IF GOES_WITH(R42_PATH,t,s,a,b,SAME), GOES_WITH(R42_PATH,t,s,b,c,SAME)
+ THEN GOES_WITH(R42_PATH,t,s,a,c,SAME);
+law R42_PATH_SN := IF GOES_WITH(R42_PATH,t,s,a,b,SAME), GOES_WITH(R42_PATH,t,s,b,c,NOT_SAME)
+ THEN GOES_WITH(R42_PATH,t,s,a,c,NOT_SAME);
+law R42_PATH_NS := IF GOES_WITH(R42_PATH,t,s,a,b,NOT_SAME), GOES_WITH(R42_PATH,t,s,b,c,SAME)
+ THEN GOES_WITH(R42_PATH,t,s,a,c,NOT_SAME);
+law R42_PATH_NN := IF GOES_WITH(R42_PATH,t,s,a,b,NOT_SAME), GOES_WITH(R42_PATH,t,s,b,c,NOT_SAME)
+ THEN GOES_WITH(R42_PATH,t,s,a,c,SAME);
+
+// Source cover-left supplies the representative structurally. The parent
+// constructor is W38 :31; canonical results supply its equality premise. Both
+// complete child-uniformity proofs remain required, including disconnected
+// intermediate supports. No equality is reconstructed from source readings.
+law R42_TREE_LEAF := IF GOES_WITH(R42_COVER_LEAF,s,n,f), GOES_WITH(R42_RETURNED_READING,t,f,r)
+ THEN GOES_WITH(R42_TREE,t,s,n,r,f);
+law R42_TREE_JOIN := IF GOES_WITH(R42_COVER_JOIN,s,n,a,b), GOES_WITH(R42_TREE,t,s,a,l,fa), GOES_WITH(R42_TREE,t,s,b,r,fb), GOES_WITH(R42_PATH,t,s,fa,fb,SAME)
+ THEN GOES_WITH(R42_TREE,t,s,n,l,fa);
+law R42_SOURCE_PARENT := IF GOES_WITH(R42_COVER_JOIN,s,n,a,b), GOES_WITH(R42_TREE,t,s,n,r,f)
+ THEN GOES_WITH(W38_SITE_READING_TREE,t,s,r,n);

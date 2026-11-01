@@ -1,0 +1,23 @@
+// Rebind the existing source-produced canonical FabricSpec. No DRC verdict is
+// imported and no prior world record is written.
+import fs from 'node:fs';
+import path from 'node:path';
+import {openNative,nativeProof} from '../native_reader_v2_038.mjs';
+import {here,home,carrier,need,sha,identity,save,read,verify} from './custody_042.mjs';
+const prior='D:/Dev/flag-world-first-tick-020/actual_core_qualification';
+const program=identity(path.join(prior,'fabric.program.json'));
+need(program.sha256==='07320BB711DE9A195E0FE6AB663F980F685B3CF161670EDA103300A2C8753C56','PROGRAM_NOT_SAME');
+const refs=Object.fromEntries([['source','source.mal'],['image','image.bin'],['source_map','source-map.json'],['readback','readback.bin']].map(([k,p])=>[k,identity(path.join(prior,'gpu',p))]));
+const custodyRef=identity(path.join(prior,'fabric.program.json.custody.json')),custody=read(custodyRef.path);
+for(const k of ['source','image','readback'])need(refs[k].sha256===custody[k+'_sha256'],'PROGRAM_CUSTODY_'+k);
+const q=openNative(refs),fact=q.facts[custody.fact];
+need(fact.origin===custody.origin&&JSON.stringify(fact.support)===JSON.stringify(custody.support),'PROGRAM_FACT_NOT_SAME');
+const node=q.node(fact.term);need(q.node(node.c[0]).s===custody.tag,'PROGRAM_TAG_NOT_SAME');
+const object=q.value(node.c[custody.slot]);
+need(Buffer.from(JSON.stringify(object)).equals(fs.readFileSync(program.path)),'PROGRAM_NATIVE_PROJECTION_NOT_SAME');
+const proof=nativeProof(q);proof.proof(fact.id);
+const evidenceRoot=path.join(carrier,'evidence/first-tick-conform-v1-v2-001/files/realization020/source');
+const sources=['program_core.mal','ingress_core.mal','actual_core_contacts.mal','fixture_core_contacts.mal'].map(x=>identity(path.join(evidenceRoot,x)));
+const baselineWorlds=['j17_step_023/outputs/committed.world.json','j17_proposer_reentry_020/run_001/committed.world.json'].map(p=>identity(path.join(carrier,p)));
+const result={schema:'CanonicalFabricSourceBinding042',at:new Date().toISOString(),verdict:'IF_THEN',subject:'EXISTING_P20_PROGRAM_NATIVE_SOURCE_IDENTITY_ONLY',program,prior_projection:custodyRef,native:refs,program_fact:{id:fact.id,origin:fact.origin,support:fact.support},proof_facts_checked:proof.seen.size,counts:{cells:object.cells.length,motifs:object.motifs.length,placements:object.placements.length,triad_blocks:object.triad_blocks.length,routes:object.routes.length},sources,baseline_worlds:baselineWorlds,prior_DRC:'NOT_TRANSFERRED',new_DRC:'NOT_RUN',source:'W38_SITE_READING_JOIN will consume the exact comparator result/returned-frame subject through a separately qualified projection.',world_transition:'NO',commit:'NO',push:'NO'};
+console.log(JSON.stringify(save(path.join(here,'CANONICAL_PROGRAM_BINDING_042.json'),result)));

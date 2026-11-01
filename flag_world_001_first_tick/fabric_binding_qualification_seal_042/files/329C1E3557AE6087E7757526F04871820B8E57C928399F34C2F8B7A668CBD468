@@ -1,0 +1,31 @@
+// Native operand/result correspondence for frozen W38_SITE_READING_JOIN.
+// This unit does not emit CellDef, LOCATION, FabricSpec, DRC admission, or LINK.
+// Cover-node order comes from SW_COVER_JOIN, never host enumeration order.
+// Snapshot and reading are payload coordinates, not resource identity.
+// The actual frozen source clause is concatenated unchanged by prepare_041.mjs.
+
+law F41_RESOURCE := IF GOES_WITH(SW_COVER_JOIN,SITE(s),n,a,b)
+ THEN GOES_WITH(F41_RESOURCE,SITE(s),n,a,b);
+law F41_FRAME := IF GOES_WITH(SW_COVER_JOIN,SITE(s),n,a,b), GOES_WITH(W38_SITE_READING_TREE,t,s,l,a), GOES_WITH(W38_SITE_READING_TREE,t,s,r,b)
+ THEN GOES_WITH(F41_FRAME,t,s,n,a,b,l,r);
+
+// The source relation compares reading identities. These role contacts are
+// correspondence representations, not admitted physical ports or InputFrames.
+// The cover retains both child identities, separate from the compared reading.
+law F41_LEFT := IF GOES_WITH(F41_FRAME,t,s,n,a,b,l,r)
+ THEN GOES_WITH(F41_ROLE_CONTACT,t,s,n,LEFT,a,READING_IDENTITY(t,s,l));
+law F41_RIGHT := IF GOES_WITH(F41_FRAME,t,s,n,a,b,l,r)
+ THEN GOES_WITH(F41_ROLE_CONTACT,t,s,n,RIGHT,b,READING_IDENTITY(t,s,r));
+law F41_SAME := IF GOES_WITH(F41_FRAME,t,s,n,a,b,r,r)
+ THEN GOES_WITH(F41_READING,t,s,n,a,b,SAME);
+law F41_NOT_SAME_A := IF GOES_WITH(F41_FRAME,t,s,n,a,b,READING_THIS,READING_NO)
+ THEN GOES_WITH(F41_READING,t,s,n,a,b,NOT_SAME);
+law F41_NOT_SAME_B := IF GOES_WITH(F41_FRAME,t,s,n,a,b,READING_NO,READING_THIS)
+ THEN GOES_WITH(F41_READING,t,s,n,a,b,NOT_SAME);
+
+// This consequent is supplied by W38's source template, NOT by the SAME
+// evaluator. Retain that distinction in the emitted correspondence.
+law F41_PARENT_PAYLOAD := IF GOES_WITH(F41_FRAME,t,s,n,a,b,r,r), GOES_WITH(F41_READING,t,s,n,a,b,SAME)
+ THEN GOES_WITH(F41_PARENT_PAYLOAD,t,s,n,a,b,GOES_WITH(W38_SITE_READING_TREE,t,s,r,n));
+law F41_SOURCE_CORRESPONDENCE := IF GOES_WITH(F41_PARENT_PAYLOAD,t,s,n,a,b,GOES_WITH(W38_SITE_READING_TREE,t,s,r,n)), GOES_WITH(W38_SITE_READING_TREE,t,s,r,n), GOES_WITH(F41_RESOURCE,SITE(s),n,a,b)
+ THEN GOES_WITH(F41_SOURCE_CORRESPONDENCE,t,s,n,r,a,b);

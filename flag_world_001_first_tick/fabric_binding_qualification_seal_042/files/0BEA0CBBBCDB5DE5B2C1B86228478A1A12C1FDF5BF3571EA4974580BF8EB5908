@@ -1,0 +1,1908 @@
+{
+  "schema": "SnapshotWaveScopedQualificationRunRecord038",
+  "version": "p008_closed_iterative_validation_001",
+  "verdict": "MAYBE",
+  "status": "PARTIAL",
+  "native_qualification": {
+    "verdict": "IF_THEN",
+    "scope": "The explicitly supplied closed native snapshot-wave, refusal, replay, and diagnostic N6-return vectors only.",
+    "authority": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\AUTHORITY_038.json",
+      "bytes": 2621,
+      "sha256": "845918BA549F2D3B7E4913BFFEB44C5212A423154A8359BC30B27A475A12B372"
+    },
+    "amendment": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_amendment_037\\SPEC_J17_WORLD_FOLD_EFFECT_001_AMENDMENT_SNAPSHOT_WAVE_001_v0.1.0.mal",
+      "bytes": 15359,
+      "sha256": "F245D77E96AFB47670F9A05F2A104FD982581B0FB44ECC2593117FA2C448A3A0"
+    },
+    "promotion": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_amendment_037\\PROMOTION_RECEIPT_037.json",
+      "bytes": 5299,
+      "sha256": "66519524BC7696BA10B87D1400552C8946E7B4764AF43FEA9A88032A411E1DFA"
+    }
+  },
+  "request": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\AGGREGATE_REQUEST_038_001.json",
+    "bytes": 25602,
+    "sha256": "88C722D8B6D8C86BDA9FE57D72F53DA3A3E824DF7FF5D9FA1A5BF42A6DA3BB51"
+  },
+  "writer_sources": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\write_aggregate_record_038.mjs",
+      "bytes": 25900,
+      "sha256": "8D4FA549648D1C5890F89D1D5EB68D2993B26DCA60BF4BC30E47734594FFFEDD"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\aggregate_read_038.mjs",
+      "bytes": 9868,
+      "sha256": "C90F15D2E03163DB0DEAE34CBE9A371FCE18E74EEB4505A5FE5A18FD7A070669"
+    }
+  ],
+  "pilot": {
+    "baseline": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__normal005\\CASE_CLOSED.json",
+      "bytes": 10278,
+      "sha256": "C92DA708CBBAF17C0793B60D2C7865F785B598D1FFFA05C70A6DEA63781C2BA6"
+    },
+    "batch": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\pilot__q007\\BATCH_CLOSED.json",
+      "bytes": 2943,
+      "sha256": "8B4E18705FC1E32074FF9F2D2C650AF63F34422882DB836B9DEF92173F66559B"
+    },
+    "full_A_B_exact_and_reversed": "SAME",
+    "controls": [
+      {
+        "case_id": "SPLIT_SITE_FIVE_FLAG_FORK",
+        "variant": "normal",
+        "result": "WITHHELD"
+      },
+      {
+        "case_id": "OPEN_TRIANGLE",
+        "variant": "normal",
+        "result": "WITHHELD"
+      },
+      {
+        "case_id": "L1_ISOLATED_SITE",
+        "variant": "missing_origin",
+        "result": "WITHHELD"
+      },
+      {
+        "case_id": "L1_ISOLATED_SITE",
+        "variant": "missing_k_member",
+        "result": "WITHHELD"
+      },
+      {
+        "case_id": "L1_ISOLATED_SITE",
+        "variant": "missing_k_root",
+        "result": "WITHHELD"
+      },
+      {
+        "case_id": "L1_UNIFORM_NO",
+        "variant": "normal",
+        "result": "NO_APPEND"
+      }
+    ]
+  },
+  "J17": {
+    "batch": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\j17__q008\\BATCH_CLOSED.json",
+      "bytes": 1282,
+      "sha256": "DEF13A5FB5C8684E9A0374C55FDC85172B8B186B6B12CCCB9E6D566439D6E697"
+    },
+    "full_A_B_exact_and_reversed": "SAME",
+    "historical_replay": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\j17__q008\\HISTORICAL_PAIR_RECEIPT_REPLAY.json",
+      "bytes": 7790,
+      "sha256": "538222DDD68F2F7AE914BF1F43D9D81667D60B303F2FF86C48F70238EB1AC031"
+    },
+    "compared_subjects": {
+      "field": {
+        "reading": "SAME",
+        "bytes": 48001,
+        "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3",
+        "canonical_bytes": "SAME"
+      },
+      "witness": {
+        "reading": "SAME",
+        "bytes": 140401,
+        "sha256": "BE4EC32289E6F4C6EF50817203C89061D664735F7166CBB37C55F6D1A1E4AFA3",
+        "canonical_bytes": "SAME"
+      },
+      "receipt": {
+        "reading": "SAME",
+        "bytes": 2332,
+        "sha256": "A81DF7B26BF585E6D14962F937CE39DAF5B6888F5FD32E135116FBBC7D23D1FD",
+        "canonical_bytes": "SAME"
+      },
+      "pair": {
+        "reading": "SAME",
+        "bytes": 188423,
+        "sha256": "37F5767D3054D094BE169F4E9445A02ADF57868DB97087256776657EBB96C6A5",
+        "canonical_bytes": "SAME"
+      }
+    },
+    "receipt": {
+      "discharged": 12,
+      "opened": 0,
+      "retained": 0
+    },
+    "whole_tick_or_link_identity": "NOT_CLAIMED_DIFFERENT_EXECUTOR_SOURCE",
+    "historical_chain": "Separately hash-verified unchanged; not a new append."
+  },
+  "L4": {
+    "matrix": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\L4_MATRIX_CLOSED.json",
+      "bytes": 7155,
+      "sha256": "872B65873A91FB8EDFC0D53BA5620FADE312BB2D7893715799782A7B2E91A5AB"
+    },
+    "cases": [
+      {
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\L4_CASE_CLOSED.json",
+          "bytes": 11503,
+          "sha256": "2C1C91DF8D85529E228F54E4ABC07B47EA6AA3A850959BDA6A3B1ED9E6714905"
+        },
+        "case_id": "SEPARATED_084_085",
+        "normal_case": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\CASE_CLOSED.json",
+          "bytes": 41245,
+          "sha256": "A255F5BFC5DEEE262D5B925A1A644C8A31684F2D9AA5B13811751D163F2F0312"
+        },
+        "stage_A_partitions": 9,
+        "stage_A_reexecuted": "NO",
+        "reused_stage_A": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\REUSED_STAGE_A.json",
+          "bytes": 12656,
+          "sha256": "DFE32784683C21B201AFFB6986D53C409941163CD7FA8B43EAD258BA79EA2C15"
+        },
+        "raw_members": 4,
+        "effect_classes": 2,
+        "receipt": {
+          "discharged": 22,
+          "opened": 0,
+          "retained": 0
+        },
+        "exact_B": {
+          "semantic": "SAME",
+          "raw_K_by_offer_identity": "SAME",
+          "raw_members": 4,
+          "readback": "SAME"
+        },
+        "reversed_B": {
+          "semantic": "SAME",
+          "raw_K_by_offer_identity": "SAME",
+          "raw_members": 4,
+          "readback": "NOT_SAME"
+        },
+        "reversal_scope": "Flat seed-row enumeration before packing only; no logical K-tree, site, law or Stage-A order reversal.",
+        "elapsed_ms": 758812
+      },
+      {
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\FACE_SITE_ALIASES\\L4_CASE_CLOSED.json",
+          "bytes": 8632,
+          "sha256": "0196F1F7D38A8651AB55C932DACDB06D0369213251C440AEA2BC7BEE587EDBCD"
+        },
+        "case_id": "FACE_SITE_ALIASES",
+        "normal_case": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\FACE_SITE_ALIASES\\normal_A_B\\CASE_CLOSED.json",
+          "bytes": 34476,
+          "sha256": "D0D210BE68DF7F9ECE466A5056735202D5F0EE0FD8C20A31B1CAAAAA90DCA916"
+        },
+        "stage_A_partitions": 9,
+        "stage_A_reexecuted": "NO",
+        "reused_stage_A": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\FACE_SITE_ALIASES\\REUSED_STAGE_A.json",
+          "bytes": 12327,
+          "sha256": "8900F313EB9958610F84E8C7A043F850BFF4B06DEBBDAF59A597DBA79BC231C4"
+        },
+        "raw_members": 2,
+        "effect_classes": 1,
+        "receipt": {
+          "discharged": 12,
+          "opened": 0,
+          "retained": 0
+        },
+        "exact_B": {
+          "semantic": "SAME",
+          "raw_K_by_offer_identity": "SAME",
+          "raw_members": 2,
+          "readback": "SAME"
+        },
+        "reversed_B": {
+          "semantic": "SAME",
+          "raw_K_by_offer_identity": "SAME",
+          "raw_members": 2,
+          "readback": "NOT_SAME"
+        },
+        "reversal_scope": "Flat seed-row enumeration before packing only; no logical K-tree, site, law or Stage-A order reversal.",
+        "elapsed_ms": 881258
+      },
+      {
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\DISJOINT_FACES\\L4_CASE_CLOSED.json",
+          "bytes": 8575,
+          "sha256": "F510CF4AB5919DFCAB113A3D35BF8E47F6ED24A8298853716A45531EA9B374F2"
+        },
+        "case_id": "DISJOINT_FACES",
+        "normal_case": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\DISJOINT_FACES\\normal_A_B\\CASE_CLOSED.json",
+          "bytes": 44309,
+          "sha256": "894EDAF811D35388856A3D2AE609BB30E1680298DDA25FD1C887E6740F7C8EC1"
+        },
+        "stage_A_partitions": 9,
+        "stage_A_reexecuted": "NO",
+        "reused_stage_A": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\DISJOINT_FACES\\REUSED_STAGE_A.json",
+          "bytes": 12240,
+          "sha256": "234C7B07296282B89EB6FF694056EFCD0CCC3E6718FF5F3AA0B8E2ED67C23009"
+        },
+        "raw_members": 2,
+        "effect_classes": 2,
+        "receipt": {
+          "discharged": 48,
+          "opened": 0,
+          "retained": 0
+        },
+        "exact_B": {
+          "semantic": "SAME",
+          "raw_K_by_offer_identity": "SAME",
+          "raw_members": 2,
+          "readback": "SAME"
+        },
+        "reversed_B": {
+          "semantic": "SAME",
+          "raw_K_by_offer_identity": "SAME",
+          "raw_members": 2,
+          "readback": "NOT_SAME"
+        },
+        "reversal_scope": "Flat seed-row enumeration before packing only; no logical K-tree, site, law or Stage-A order reversal.",
+        "elapsed_ms": 888132
+      },
+      {
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\NEXT_TICK_FACE_SOURCE\\L4_CASE_CLOSED.json",
+          "bytes": 8710,
+          "sha256": "5F67879E52C3D72585596C339F12B46053A9715AE280D2DD90D62FE7FBC0301D"
+        },
+        "case_id": "NEXT_TICK_FACE_SOURCE",
+        "normal_case": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\NEXT_TICK_FACE_SOURCE\\normal_A_B\\CASE_CLOSED.json",
+          "bytes": 44308,
+          "sha256": "7D18404C235FC8A84C99DC79B5551B5E5839735C7528C0624EE23CE702FEB251"
+        },
+        "stage_A_partitions": 9,
+        "stage_A_reexecuted": "NO",
+        "reused_stage_A": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\NEXT_TICK_FACE_SOURCE\\REUSED_STAGE_A.json",
+          "bytes": 12443,
+          "sha256": "CC87A9603855D46B83AE51888D390E8DA378F32A9CACE7462D7E5B9D5D04F087"
+        },
+        "raw_members": 3,
+        "effect_classes": 1,
+        "receipt": {
+          "discharged": 10,
+          "opened": 0,
+          "retained": 24
+        },
+        "exact_B": {
+          "semantic": "SAME",
+          "raw_K_by_offer_identity": "SAME",
+          "raw_members": 3,
+          "readback": "SAME"
+        },
+        "reversed_B": {
+          "semantic": "SAME",
+          "raw_K_by_offer_identity": "SAME",
+          "raw_members": 3,
+          "readback": "NOT_SAME"
+        },
+        "reversal_scope": "Flat seed-row enumeration before packing only; no logical K-tree, site, law or Stage-A order reversal.",
+        "elapsed_ms": 1050695
+      }
+    ],
+    "scope": "A+B once per case; exact and reversed B over fixed closed A."
+  },
+  "N6": {
+    "pilot": {
+      "record": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1__p003\\N6_REENTRY_CLOSED.json",
+        "bytes": 12116,
+        "sha256": "F2D94829792FC624001F08C3AA21D3B0A13535009EFF5A6B5ACFDC73CE6C682B"
+      },
+      "subject": "L1_ISOLATED_SITE",
+      "source_case": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__normal005\\CASE_CLOSED.json",
+        "bytes": 10278,
+        "sha256": "C92DA708CBBAF17C0793B60D2C7865F785B598D1FFFA05C70A6DEA63781C2BA6"
+      },
+      "diagnostic_commit": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1__p003\\N6_COMMIT_CLOSED.json",
+        "bytes": 14059,
+        "sha256": "3B73161AD8962A1C9B0987147EE6F433D343C19C242B2651143F227D80182FDB"
+      },
+      "world": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1__p003\\diagnostic.committed.world.json",
+        "bytes": 49268,
+        "sha256": "1FDA8D6C2F04E4B94E29480C751B913BA9EAB7A337C42C47818FD4F52F9F3EC8"
+      },
+      "prev": "ce40c06b3153e6f3cf5e4c73eed0defb1a9c53db848eea71d6698b9aad4b833b",
+      "link": "fc9e0c1b3e9d0f4ec07ceecece247199f55314afdc1c7052cc2f20c9b0801feb",
+      "pair_hash": "87f92dbf395e88d470f4b0bc736aeb35222d2210cdf1ec0f18936ed9ad03c034",
+      "runtime_hash": "65a47623d8db063b9fce77b7b849cc3823db086cfaa68bc8e9b66dc42fdfd73f",
+      "member_provenance_hash": "a22e97f4e336107a73e0661b8981f38b059dafe099795195eb4035b072119787",
+      "hash_rounds": 4,
+      "returned_field": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1__p003\\RETURNED_FIELD_BINDING.json",
+        "bytes": 5563,
+        "sha256": "A0D2C168FB90ACE98F3B4C58D3BBEEAB917D88BB04779BF1152E80BFAF3F15CA"
+      },
+      "renewed_A_partitions": 1,
+      "renewed_B": {
+        "closure": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1__p003\\RETURNED_B_000_execute\\queuegate_attempt\\CLOSED.json",
+          "bytes": 913,
+          "sha256": "F57E45C0C5A5103459B524172DD67FC42AC466385352A1B6106C0E12221D934B"
+        },
+        "observation": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1__p003\\RETURNED_B_000_execute\\prepared\\RETURNED_B_000\\NATIVE_OBSERVATION.json",
+          "bytes": 8139,
+          "sha256": "2650A6BD8BC364D9F865E4992A5E3AC4D3BF42F76D0DFB941A2E742E9B29456E"
+        },
+        "result": "NO_APPEND",
+        "raw_K": 0,
+        "receipt": {
+          "discharged": null,
+          "opened": null,
+          "retained": null
+        }
+      },
+      "renewed_wave_taken": "NO",
+      "validation": {
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\N6_L1_POST_RUN_AUDIT_V2_001.json",
+          "bytes": 15074,
+          "sha256": "E538147F47279A07B1CA6AE6BAD875B08BAA38B89016DD3D72317EEA1C8FB1B8"
+        },
+        "conclusion": "Committed wave returns uniform NO. Renewed PROPOSE consumes that native RETURN, covers the full offered family, derives empty K and NO_APPEND.",
+        "first_receipt": {
+          "discharged": 10,
+          "opened": 0,
+          "retained": 0
+        },
+        "renewed_raw_assignments": 484,
+        "newly_enabled": []
+      }
+    },
+    "reentries": [
+      {
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_J17__p004\\N6_REENTRY_CLOSED.json",
+          "bytes": 22776,
+          "sha256": "60D20E77C7E0C449D3622C50FAE338BD3F232727FB55D6194F8BB3D268B12ADF"
+        },
+        "subject": "J17_G2_DIAGNOSTIC_COPY",
+        "source_case": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\CASE_CLOSED.json",
+          "bytes": 21105,
+          "sha256": "6795803276C539D0629168B580D732950D8C51B45ED8C02CF63C44BC52C94540"
+        },
+        "diagnostic_commit": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_J17__p004\\N6_COMMIT_CLOSED.json",
+          "bytes": 13779,
+          "sha256": "0B867CF7D72101735C2D38B883552119F84A569C3825E26BBD39BCF792E052F4"
+        },
+        "world": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_J17__p004\\diagnostic.committed.world.json",
+          "bytes": 763332,
+          "sha256": "60D272CC58EC0AD7857FD135367888A38185BF796ED547A9BF41185DE31E38E4"
+        },
+        "prev": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+        "link": "3343c68455779ac49fb4ec24b74f0e6ed4b6c339f214424b62929b16424157ea",
+        "pair_hash": "37f5767d3054d094be169f4e9445a02adf57868db97087256776657ebb96c6a5",
+        "runtime_hash": "48a683f3368ec61c8d291e60e5046ca32c1facc5ad829188cc385b5403a8bc87",
+        "member_provenance_hash": "8498d895c192188d26e8239224a532eb8486507c6b49c106dd59a4aebbb328d8",
+        "hash_rounds": 4,
+        "returned_field": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_J17__p004\\RETURNED_FIELD_BINDING.json",
+          "bytes": 10834,
+          "sha256": "6708FBA7EB6AD4134392B6002D964C46B55B442A4EE2970AFFA9781D7967D5BF"
+        },
+        "renewed_A_partitions": 2,
+        "renewed_B": {
+          "closure": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_J17__p004\\RETURNED_B_000_execute\\queuegate_attempt\\CLOSED.json",
+            "bytes": 915,
+            "sha256": "23E813EEF801E1A05F0B7984D08595C629F831FAF1300903CD8C0080820A16C8"
+          },
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_J17__p004\\RETURNED_B_000_execute\\prepared\\RETURNED_B_000\\NATIVE_OBSERVATION.json",
+            "bytes": 8178,
+            "sha256": "924D3A6322FE58FB1F119476F5DFAD6F104CAAE9B2B976A96C645A9FCDF4F5CB"
+          },
+          "result": "NO_APPEND",
+          "raw_K": 0,
+          "receipt": {
+            "discharged": null,
+            "opened": null,
+            "retained": null
+          }
+        },
+        "renewed_wave_taken": "NO",
+        "validation": {
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\N6_J17_POST_RUN_AUDIT_V2_001.json",
+            "bytes": 17647,
+            "sha256": "654937373C1705DC8F5A456F4D41F3EBBDB009ABE9352006EB2D9A25A531F0BA"
+          },
+          "conclusion": "Committed wave returns uniform NO. Renewed PROPOSE consumes that native RETURN, covers the full offered family, derives empty K and NO_APPEND.",
+          "first_receipt": {
+            "discharged": 12,
+            "opened": 0,
+            "retained": 0
+          },
+          "renewed_raw_assignments": 2048,
+          "newly_enabled": []
+        }
+      },
+      {
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_NEXT_FACE__p008\\N6_REENTRY_CLOSED.json",
+          "bytes": 47940,
+          "sha256": "9D0DA9EE98C5436E0CD4440183077068D197D7344AAD48306F97366536FE5098"
+        },
+        "subject": "NEXT_TICK_FACE_SOURCE",
+        "source_case": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\NEXT_TICK_FACE_SOURCE\\normal_A_B\\CASE_CLOSED.json",
+          "bytes": 44308,
+          "sha256": "7D18404C235FC8A84C99DC79B5551B5E5839735C7528C0624EE23CE702FEB251"
+        },
+        "diagnostic_commit": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_NEXT_FACE__p008\\N6_COMMIT_CLOSED.json",
+          "bytes": 14334,
+          "sha256": "3F9CCBFC117814260127122EBC2AC951C060B1ED2BCCCAF4EE228DD1BA531050"
+        },
+        "world": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_NEXT_FACE__p008\\diagnostic.committed.world.json",
+          "bytes": 710955,
+          "sha256": "FFB87EE08DF34035C0395DCBDD6E3E95E08B56639486FDBC48FB3BB5E966B6F8"
+        },
+        "prev": "4db84ee883e991909e7fd0c82ef4e1b72306ca0e1b67fb5700f589c4ffd29e5d",
+        "link": "716a59053ba30838b6eee904f6c716db1546fb4555bce24ef2c253148511e153",
+        "pair_hash": "4075dfa6dbf728bf91e1866fe98893e8476b38b4d4e18c106d5a480579103b1a",
+        "runtime_hash": "8563f8059316daa9b995c3f9e8dbb24535443d193fdb6bd9b3564ac7c92792c7",
+        "member_provenance_hash": "4e164349d3e66ebc5e4296b8929e8f133772781786088bcbff31eb8abbfb42c2",
+        "hash_rounds": 4,
+        "returned_field": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_NEXT_FACE__p008\\RETURNED_FIELD_BINDING.json",
+          "bytes": 26631,
+          "sha256": "8EC5A157F5C05B71D8F3F006F0D088FAC7A1DBEBB70C4484439E8F92EA08F1D3"
+        },
+        "renewed_A_partitions": 9,
+        "renewed_B": {
+          "closure": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_NEXT_FACE__p008\\RETURNED_B_000_execute\\queuegate_attempt\\CLOSED.json",
+            "bytes": 927,
+            "sha256": "C45B5EC037DD7392E84B9B31964B576ED1BE0BF88B4545172F3243D73281A4A0"
+          },
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_NEXT_FACE__p008\\RETURNED_B_000_execute\\prepared\\RETURNED_B_000\\NATIVE_OBSERVATION.json",
+            "bytes": 1173804,
+            "sha256": "BB41CB37F9D7ACB620337DE64C62990DB4097670A0D98BA134B2105CF9FB789D"
+          },
+          "result": "WAVE_READY",
+          "raw_K": 1,
+          "receipt": {
+            "discharged": 24,
+            "opened": 0,
+            "retained": 0
+          }
+        },
+        "renewed_wave_taken": "NO",
+        "validation": {
+          "record": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\N6_NEXT_FACE_P008_POST_RUN_AUDIT_V2_001.json",
+            "bytes": 37018,
+            "sha256": "D18C1CCD7CF5E2021880350BA0902D63A613246734475A96B65DAD4CD7CD8EFD"
+          },
+          "conclusion": "First wave discharges 10 and retains 24. Native RETURN enables an original-face 24/0 effect absent from prior K; its changed set was untouched in the first wave. The renewed wave remains untaken.",
+          "first_receipt": {
+            "discharged": 10,
+            "opened": 0,
+            "retained": 24
+          },
+          "renewed_raw_assignments": 8292,
+          "newly_enabled": [
+            [
+              "OFFER038(A_TRIAD(L1,ID(N0,N0,N1,N5,N6,NC)),READING_NO)",
+              "A_TRIAD(L1,ID(N0,N0,N1,N5,N6,NC))",
+              "READING_NO",
+              "[\"A_TRIAD(L1,ID(N0,N0,N1,N5,N6,NC))\",\"READING_NO\"]"
+            ]
+          ]
+        }
+      }
+    ],
+    "controls": [
+      {
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1_MISSING_PROVENANCE__p007\\N6_CONTROL_CLOSED.json",
+          "bytes": 6694,
+          "sha256": "9A88A7D00E27AD063C873DAAF5AFF9F7F9199E74DE9FAACBCC6120E8A090594A"
+        },
+        "variant": "missing_provenance",
+        "rounds": 2,
+        "result": "COMMIT_WITHHELD",
+        "refusal": {
+          "name": "MISSING_PROVENANCE",
+          "withheld_join": "N6_PROVENANCE_BOUND",
+          "positive_guards": [
+            "P20_C_SOURCE_CHECKED",
+            "N6_RUNTIME_BOUND"
+          ],
+          "downstream_withheld": [
+            "N6_CONTEXT",
+            "P20_C_GUARD"
+          ]
+        },
+        "hash_closure": {
+          "requests": 3,
+          "responses": 3,
+          "pending_requests": [],
+          "reading": "IF_THEN"
+        },
+        "observation": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1_MISSING_PROVENANCE__p007\\N6_01_execute\\prepared\\N6_01\\NATIVE_OBSERVATION.json",
+          "bytes": 630381,
+          "sha256": "86881A5E6D332A839E50CF0F819B5325BA8C7099E9E8D558004389EE360B371F"
+        },
+        "closure": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1_MISSING_PROVENANCE__p007\\N6_01_execute\\queuegate_attempt\\CLOSED.json",
+          "bytes": 933,
+          "sha256": "AF5167EC36B8248D3E1848B00A6AA09089CC006ED2899CDB7771BF4F144A0043"
+        }
+      },
+      {
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1_WRONG_HEAD__p006\\N6_CONTROL_CLOSED.json",
+          "bytes": 6566,
+          "sha256": "85C25AEF3C0B13EF4A9350FCBD589A6482E8482EBD04AFEEA4EEE770F0FB8639"
+        },
+        "variant": "wrong_head",
+        "rounds": 2,
+        "result": "COMMIT_WITHHELD",
+        "refusal": {
+          "name": "WRONG_HEAD",
+          "withheld_join": "P20_C_SOURCE_CHECKED",
+          "positive_guards": [
+            "N6_PROVENANCE_BOUND",
+            "N6_RUNTIME_BOUND"
+          ],
+          "downstream_withheld": [
+            "N6_CONTEXT",
+            "P20_C_GUARD"
+          ]
+        },
+        "hash_closure": {
+          "requests": 4,
+          "responses": 4,
+          "pending_requests": [],
+          "reading": "IF_THEN"
+        },
+        "observation": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1_WRONG_HEAD__p006\\N6_01_execute\\prepared\\N6_01\\NATIVE_OBSERVATION.json",
+          "bytes": 663695,
+          "sha256": "EF72E9FFF5975BDE38B45ECBEBFE5384E52D593333A19A2F0574C0D24D3840EB"
+        },
+        "closure": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\N6_L1_WRONG_HEAD__p006\\N6_01_execute\\queuegate_attempt\\CLOSED.json",
+          "bytes": 917,
+          "sha256": "4E4052C042A97C4D584411CDFFBE1D72DE805683E09B5F48BD4742BE2F94A5E6"
+        }
+      }
+    ],
+    "scope": "Existing commit-contract diagnostic copies; pair_hash, runtime_hash and link remain distinct subjects. Renewed effects are not taken."
+  },
+  "absorption": {
+    "record": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\ABSORPTION_SCOPE_HOST_QUALIFICATION_001.json",
+      "bytes": 1430207,
+      "sha256": "8820C7F84F618DA2CBE20FA47C48BD7FECC6D9FC63BA7C8A41C78714A862D1C1"
+    },
+    "status": "HOST_CONTACT_EXCLUSION_NOT_GPU_POSITIVE_ABSORPTION",
+    "case_counts": {
+      "empty_face_effect": 40,
+      "coenabled_site_face_same_effect": 120,
+      "face_strict_no_enabled_interior_site": 160,
+      "distinct_proper_absorption": 0
+    },
+    "scope": "No distinct proper-absorption positive fixture among current-snapshot strict effects on whole-site fields over the bound (4,0) carrier and recorded full support family."
+  },
+  "obligations": [
+    {
+      "name": "O_DRC_FABRIC_REALIZATION_038",
+      "status": "OPEN",
+      "verdict": "MAYBE",
+      "record": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\DRC_NATIVE_SUBJECT_ASSESSMENT_038.json",
+        "bytes": 8602,
+        "sha256": "CAB21BF9EFEE783E4C0B32A1F716A3B847B47B2BE4EF34F90E85D4BF789A323B"
+      },
+      "operand": "UNSUPPLIED(NATIVE_APPLICATION_TO_EXECUTED_FABRIC_SPEC_CORRESPONDENCE)",
+      "scope": "Bounded read of the actual 038 positive-native source representation against the canonical static fabric and FABEX operand contracts. No claim that the correspondence is absent from the entire corpus."
+    }
+  ],
+  "qualification_not_claimed": [
+    "Canonical eight-condition DRC for the 038 native application",
+    "All obligations discharged",
+    "A general theorem outside the bound levels and whole-site domain",
+    "Distinct proper absorption executed on a positive fixture",
+    "L4_UNIFORM_NO extra suite vector (NOT_RUN; not required here)",
+    "World transition, law promotion or repository sealing"
+  ],
+  "empty_K": {
+    "L1": "Closed q007 plus L1 N6 pilot",
+    "L2": "Actual J17 native RETURN to renewed PROPOSE",
+    "L4": "NOT_RUN_EXTRA_VECTOR_NOT_CLAIMED"
+  },
+  "custody": {
+    "audit": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\CUSTODY_AUDIT_038_004.json",
+      "bytes": 1251642,
+      "sha256": "96B22CF3B4BFAE49453C44CDD1905F916CD8F9CD7CE6A1849828D37C96924330"
+    },
+    "source_review": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\WAVE_SOURCE_REVIEW_038.json",
+      "bytes": 3477,
+      "sha256": "9A5872807E43020DD5F04673EA86FDDD4E8C9B966BC3DAA3F300DBA6E32E9738"
+    },
+    "source_dispositions": [
+      {
+        "name": "Generation-aware census host qualification",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\GENERATION_QUALIFICATION_V1.json",
+          "bytes": 4517,
+          "sha256": "3ACC4C08DA6D1F3B8B46C64810F7BC024F031021BD39736E1AB8A14BDD34392F"
+        },
+        "record_schema": "GenerationCensusQualification038V1"
+      },
+      {
+        "name": "Qualified production census API smoke",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\PRODUCTION_API_SMOKE_V1.json",
+          "bytes": 5587,
+          "sha256": "8FEB5D4879F3D1BEDB85D60B3CE9C52862729FCD74A0DF9D2A24AE55426F27C6"
+        },
+        "record_schema": "GenerationCensusProductionSmoke038V1"
+      },
+      {
+        "name": "Operational source equivalence assessment; versioned transport changes only",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\OPERATIONAL_SOURCE_EQUIVALENCE_001.json",
+          "bytes": 12873,
+          "sha256": "AABDCD41BCC5031E3256BB30EA722B4C920EF361902E7B01CD1944AC7DE9E700"
+        },
+        "record_schema": "SnapshotWaveOperationalSourceEquivalenceAssessment038"
+      },
+      {
+        "name": "Wrong-head p006 independent post-run audit",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\N6_WRONG_HEAD_POST_RUN_AUDIT_001.json",
+          "bytes": 14622,
+          "sha256": "7107DD4979534AD7AB45E680756F0233787E7EF82C5070C808FD830DAB42822F"
+        },
+        "record_schema": "N6WrongHeadPostRunAudit038"
+      },
+      {
+        "name": "Failure006 input coverage and unpreserved prior N6 draft source",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_006\\INPUT_COVERAGE_DIAGNOSIS.json",
+          "bytes": 76372,
+          "sha256": "1B1A33386DC0184E015B58F16CE77EB38C0D0F3240FE739C9DABAF5C7E822CD0"
+        },
+        "record_schema": "SnapshotWaveInputCoverageDiagnosis038"
+      },
+      {
+        "name": "Failure004 native-reader import-cycle disposition; original execution uncounted",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_004\\RECONCILIATION.json",
+          "bytes": 5756,
+          "sha256": "78ABC345B4B9469EAF1F6FD29AA156E37DB3549023B9DBD7C23D6D072293AB93"
+        },
+        "record_schema": "SnapshotWaveFailureReconciliation038"
+      },
+      {
+        "name": "N6 lowerer source restoration disposition",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\N6_LOWER_RESTORATION_001.json",
+          "bytes": 981,
+          "sha256": "80590C09F98F8910026005C180372BC21ED3F1C21E0D02CF8BDD1ADB66545241"
+        },
+        "record_schema": "SourceRestoration038"
+      },
+      {
+        "name": "Native subject DRC implementation-reuse assessment; not discharge",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\DRC_IMPLEMENTATION_REUSE_038.json",
+          "bytes": 15637,
+          "sha256": "CA4F4BC4BEE5DEBE61871C46E3CEDAB9206E73A85F6A692D9748DD306972043B"
+        },
+        "record_schema": "NativeFabricImplementationReuse038"
+      },
+      {
+        "name": "L4 q011 exact-boundary authorization",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\L4_RESUME_AUTHORIZATION_011.json",
+          "bytes": 2358,
+          "sha256": "BC12DB419F9BB5623969947B872F2289A2960881C7ACF1540507834FCF055267"
+        },
+        "record_schema": "SnapshotWaveL4ResumeV2Authorization038"
+      },
+      {
+        "name": "L4 q011 explicit continuation request",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\L4_RESUME_REQUEST_011.json",
+          "bytes": 3504,
+          "sha256": "88F0A865C99765079621FC15D42D42D821ED3452AD41FF6F872542DEA5B52C85"
+        },
+        "record_schema": "SnapshotWaveL4ResumeV2Request038"
+      },
+      {
+        "name": "Baseline native source-contact extraction; partial source custody, not FabricSpec/DRC discharge",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\BASELINE_SOURCE_CONTACT_HOST_001.json",
+          "bytes": 848729,
+          "sha256": "247840BABCF2347E0F07B53C6E07575AE912EB6BA19520041D41502902E6ED92"
+        },
+        "record_schema": "BaselineSourceContactExtraction038"
+      },
+      {
+        "name": "Independent baseline extraction review; bounded scope preserved",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\BASELINE_SOURCE_CONTACT_INDEPENDENT_REVIEW_001.json",
+          "bytes": 7016,
+          "sha256": "71599580094811201FFE548E2FC126703DBE62058EC7E327F1E98697D767694F"
+        },
+        "record_schema": "BaselineSourceContactIndependentReview038"
+      },
+      {
+        "name": "Prior scoped custody audit003 retained",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\CUSTODY_AUDIT_038_003.json",
+          "bytes": 166386,
+          "sha256": "DBDD752CC060CF1429D9773F57F363AC5FA3B56FAF93E351300669521DC45191"
+        },
+        "record_schema": "SnapshotWaveScopedCustodyAudit038"
+      },
+      {
+        "name": "Failure012 exact lane release; original BLOCKED retained and no retry implied",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_012\\disposition_001\\LANE_RELEASE.json",
+          "bytes": 2247,
+          "sha256": "A8433D14005C05ED775322845BB55C5DA1BCE81507FD80AB9ED6639F6162CD3F"
+        },
+        "record_schema": "SnapshotWaveLaneRelease038"
+      },
+      {
+        "name": "Iterative proof and term traversal host qualification; no new native execution credit",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_proof\\HOST_QUALIFICATION_001.json",
+          "bytes": 13805,
+          "sha256": "B7CEB55F9A93E11E9D3600F435DE32D8F4B447A22BA2EFB248925D6213CAF565"
+        },
+        "record_schema": "NativeIterativeProofQualification038"
+      },
+      {
+        "name": "Full iterative N6 observer host correspondence; saved p005 readback remains uncounted",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_proof\\FULL_OBSERVER_HOST_001.json",
+          "bytes": 16954,
+          "sha256": "25EAD43298AE58FB856F191AEE29EB36C177B5F47DA994ED0F59A500B75FBE04"
+        },
+        "record_schema": "FullIterativeN6ObserverHostQualification038"
+      },
+      {
+        "name": "Versioned iterative-reader integration equivalence; native clauses unchanged",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\PROOF_READER_INTEGRATION_EQUIVALENCE_001.json",
+          "bytes": 12395,
+          "sha256": "4E034956AFC6BE4AA6FFB0822C92F860B4B2A8FE0D3805C905BE77505529AD37"
+        },
+        "record_schema": "SnapshotWaveProofReaderIntegrationEquivalence038"
+      },
+      {
+        "name": "Fresh p008 execution binding; distinct from failed p005 and no backfill",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\N6_FRESH_P008_BINDING.json",
+          "bytes": 3591,
+          "sha256": "F5EFF3FE1104D5E3526A4FEE6C6AF71A4184C6B9EB5624DE52B069D347A2088A"
+        },
+        "record_schema": "SnapshotWaveFreshN6ExecutionBinding038"
+      },
+      {
+        "name": "Finalizer v2 refusal controls; absent and pending closure withheld without output",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\FINALIZER_V2_NEGATIVE_CONTROLS_001.json",
+          "bytes": 4704,
+          "sha256": "0F60F5B4DAF8DB3CB2AD38D03ACFE6543BD7336E82532E131383953ED5D6B945"
+        },
+        "record_schema": "SnapshotWaveAggregateFinalizerNegativeQualification038"
+      },
+      {
+        "name": "Host p008 validator v2 recursion failure; native p008 closure remains unchanged",
+        "record": {
+          "sha256": "901748EDDEB76531DA4260B47E7AC4D5939F809567BDF51662502FA87DEB4643",
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\HOST_VALIDATOR_P008_V2_ATTEMPT_001.json",
+          "bytes": 1420
+        },
+        "record_schema": "SnapshotWaveHostValidatorAttempt038"
+      },
+      {
+        "name": "Iterative validator v3 host qualification; historical subject identity and refusal controls",
+        "record": {
+          "sha256": "6A32D01038DB6E5C3CD1764D6672A2B5B0B3D4418E284CF6A0E74AD26DAF7294",
+          "bytes": 6546,
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_review\\N6_VALIDATOR_V3_HOST_QUALIFICATION_001.json"
+        },
+        "record_schema": "N6ReentryValidatorV3HostQualification038"
+      }
+    ],
+    "failed_attempt_dispositions": [
+      {
+        "name": "001 host preparation interruption",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\HOST_PREPARATION_INTERRUPTION_001.json",
+          "bytes": 622,
+          "sha256": "64988F83DC61FD958A8F5E673DD9421939ECF73967615BDD3F33D8CA227741B0"
+        },
+        "record_schema": "SnapshotWaveHostPreparationInterruption038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "002 host preparation interruption",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\HOST_PREPARATION_INTERRUPTION_002.json",
+          "bytes": 938,
+          "sha256": "85AA43B41C3643BBDFCCFD695812972352DDA6F2F2878F2874D99D6DD7F52C8A"
+        },
+        "record_schema": "SnapshotWaveHostPreparationInterruption038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "003 host preparation absence reconciliation; no qualification invocation",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\HOST_PREPARATION_RECONCILIATION_003.json",
+          "bytes": 1298,
+          "sha256": "F24E5465DC2ED86CC15A1EA734C76C1B77C8DCE2ADE7221CCE2E11023F8F34A2"
+        },
+        "record_schema": "SnapshotWaveHostPreparationReconciliation038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "004 recorded failed-attempt disposition",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_004\\RECONCILIATION.json",
+          "bytes": 5756,
+          "sha256": "78ABC345B4B9469EAF1F6FD29AA156E37DB3549023B9DBD7C23D6D072293AB93"
+        },
+        "record_schema": "SnapshotWaveFailureReconciliation038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "005 recorded failed-attempt disposition",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_005\\RECONCILIATION.json",
+          "bytes": 5047,
+          "sha256": "9FA554FA8B1EFB5727D96C9F28EB10746F6E0E5FE52CE5C924B628495F63971A"
+        },
+        "record_schema": "SnapshotWavePrelaunchReconciliation038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "006 recorded failed-attempt disposition",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_006\\RECONCILIATION.json",
+          "bytes": 5284,
+          "sha256": "C5C050CE8DFE251128DBCC2C5ED939CD0D47008369D846C42D32ED5147283598"
+        },
+        "record_schema": "SnapshotWaveCoverageReconciliation038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "007 recorded failed-attempt disposition",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_007\\RECONCILIATION.json",
+          "bytes": 4145,
+          "sha256": "BF878D0C140B9513D0286AF2FAAD55AA27B6430BEE50C73F6F0EE2EAFB66256C"
+        },
+        "record_schema": "SnapshotWavePreflightReconciliation038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "008 recorded failed-attempt disposition",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_008\\RECONCILIATION.json",
+          "bytes": 25550,
+          "sha256": "25E65B2701D4E9CA0E31BE40D62F37821DB6C02C2392FE211AF0B75F80CD394A"
+        },
+        "record_schema": "SnapshotWavePidReuseReconciliation038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "009 recorded failed-attempt disposition",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_009\\RECONCILIATION.json",
+          "bytes": 24590,
+          "sha256": "FBEF6E8083254DD2EED4EDC5D2F09FA66DD7B3E4B9ED63437168EDCFCCD00F17"
+        },
+        "record_schema": "SnapshotWaveObserverAbiReconciliation038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "010 recorded failed-attempt disposition",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_010\\RECONCILIATION.json",
+          "bytes": 41505,
+          "sha256": "F197A7F8DA0EDE81AF9B806B5FE3F9E33805828BF622D08BD57E7CF00A88F87D"
+        },
+        "record_schema": "SnapshotWavePidReuseReconciliation038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "011 recorded failed-attempt disposition",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_011\\RECONCILIATION.json",
+          "bytes": 9006,
+          "sha256": "CB1DA6499175C9797D95EE6BC52148B34CDD40BF9286757F50850F93BFC99007"
+        },
+        "record_schema": "SnapshotWavePreflightGenerationReconciliation038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      },
+      {
+        "name": "012 N6_NEXT_FACE p005 N6_01 observer proof-recursion failure; native exit zero, invocation unclosed",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\failure_reconciliation_012\\disposition_001\\RECONCILIATION.json",
+          "bytes": 29951,
+          "sha256": "F4BA600EF957CCE74657061A606404451BEFF02574197FF90FDCB86FB978929F"
+        },
+        "record_schema": "SnapshotWaveProofRecursionReconciliation038",
+        "counted": 0,
+        "merged": 0,
+        "scope": "Recorded disposition only; contributes no qualification invocation or receipt."
+      }
+    ],
+    "scope": "Explicit named frontier and supplied scoped custody audit. No claim of 901-file or 209 GB transitive re-audit."
+  },
+  "frontier_audit": {
+    "schema": "SnapshotWaveAggregateRead038",
+    "verdict": "IF_THEN",
+    "results": [
+      {
+        "verdict": "IF_THEN",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__normal005\\CASE_CLOSED.json",
+          "bytes": 10278,
+          "sha256": "C92DA708CBBAF17C0793B60D2C7865F785B598D1FFFA05C70A6DEA63781C2BA6"
+        },
+        "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+        "case_id": "L1_ISOLATED_SITE",
+        "version": "normal005",
+        "variant": "normal",
+        "level": "1",
+        "result": "WAVE_READY",
+        "stage_a_invocations": 1,
+        "stage_b": {
+          "closure": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__normal005\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+            "bytes": 927,
+            "sha256": "0C7E5C8B932799AE556D015193AA3CB992322C9CB8DB92DFEF049D3780965F02"
+          },
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__normal005\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+            "bytes": 59615,
+            "sha256": "213B6F229CFC41D2087666402694BCEFAF91A20019999F3595A5CC133BE5BB76"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__normal005\\B_execute_000\\prepared\\B_000\\readback.bin",
+            "bytes": 268435488,
+            "sha256": "A4C11B56766692AC1D695D96039CF8E2DFFD689C6EFE2E3A0641412B19C6D7ED"
+          },
+          "stage": "B",
+          "result": "WAVE_READY",
+          "semantic_sha256": "7868116642C64CF07FCB09018CD1E12FA05716F3AF766F20AEDBFFB502013825",
+          "raw_members": 1,
+          "effect_classes": 1,
+          "receipt": {
+            "discharged": 10,
+            "opened": 0,
+            "retained": 0
+          },
+          "counts": {
+            "facts": 16922,
+            "terms": 25619,
+            "epochs": 78,
+            "proof_facts": 12597
+          }
+        },
+        "comparison": null,
+        "elapsed_ms": 37258
+      },
+      {
+        "verdict": "IF_THEN",
+        "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\pilot__q007\\BATCH_CLOSED.json",
+          "bytes": 2943,
+          "sha256": "8B4E18705FC1E32074FF9F2D2C650AF63F34422882DB836B9DEF92173F66559B"
+        },
+        "mode": "pilot",
+        "version": "q007",
+        "cases": [
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_replay\\CASE_CLOSED.json",
+              "bytes": 12477,
+              "sha256": "FE98E703517B935DAEC25D4752358FAED890FF5BC54E17A9E3649C103C89945E"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "L1_ISOLATED_SITE",
+            "version": "q007_replay",
+            "variant": "replay",
+            "level": "1",
+            "result": "WAVE_READY",
+            "stage_a_invocations": 1,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_replay\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 931,
+                "sha256": "C556A144AE46672F38697663F36A0381438C979A0AAB5539ED0D4A12A4EBD19A"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_replay\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+                "bytes": 59647,
+                "sha256": "1F52CB82FF987DB21F4A245342FAF8440790D0246D3AD27DD8A58BFA44C1455D"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_replay\\B_execute_000\\prepared\\B_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "A4C11B56766692AC1D695D96039CF8E2DFFD689C6EFE2E3A0641412B19C6D7ED"
+              },
+              "stage": "B",
+              "result": "WAVE_READY",
+              "semantic_sha256": "7868116642C64CF07FCB09018CD1E12FA05716F3AF766F20AEDBFFB502013825",
+              "raw_members": 1,
+              "effect_classes": 1,
+              "receipt": {
+                "discharged": 10,
+                "opened": 0,
+                "retained": 0
+              },
+              "counts": {
+                "facts": 16922,
+                "terms": 25619,
+                "epochs": 78,
+                "proof_facts": 12597
+              }
+            },
+            "comparison": {
+              "kind": "replay",
+              "verdict": "IF_THEN",
+              "rows": [
+                {
+                  "stage": "A_0",
+                  "semantic": "SAME",
+                  "readback": "SAME"
+                },
+                {
+                  "stage": "B",
+                  "semantic": "SAME",
+                  "readback": "SAME"
+                }
+              ]
+            },
+            "elapsed_ms": 34166
+          },
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_reversed\\CASE_CLOSED.json",
+              "bytes": 12529,
+              "sha256": "6855B93D42222F2FA48CE618084385DD61869761239241AB321DC2E9CAC9F946"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "L1_ISOLATED_SITE",
+            "version": "q007_reversed",
+            "variant": "reversed",
+            "level": "1",
+            "result": "WAVE_READY",
+            "stage_a_invocations": 1,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_reversed\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 935,
+                "sha256": "F9289B9F4C87D756420D97E26ABCA986D1E37091779AD995C7995B02D3047B34"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_reversed\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+                "bytes": 59691,
+                "sha256": "7D6E694C27FC0A151F795AC9B1716D7BF4E8653AAF48DE153F23E3074AEFB2D9"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_reversed\\B_execute_000\\prepared\\B_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "931CD76C15075A7D2C711C3C730905C90B1BFD151F0B598AC753F33310D40BFE"
+              },
+              "stage": "B",
+              "result": "WAVE_READY",
+              "semantic_sha256": "7868116642C64CF07FCB09018CD1E12FA05716F3AF766F20AEDBFFB502013825",
+              "raw_members": 1,
+              "effect_classes": 1,
+              "receipt": {
+                "discharged": 10,
+                "opened": 0,
+                "retained": 0
+              },
+              "counts": {
+                "facts": 16922,
+                "terms": 25619,
+                "epochs": 78,
+                "proof_facts": 12602
+              }
+            },
+            "comparison": {
+              "kind": "reversed",
+              "verdict": "IF_THEN",
+              "rows": [
+                {
+                  "stage": "A_0",
+                  "semantic": "SAME",
+                  "readback": "NOT_SAME"
+                },
+                {
+                  "stage": "B",
+                  "semantic": "SAME",
+                  "readback": "NOT_SAME"
+                }
+              ]
+            },
+            "elapsed_ms": 38244
+          },
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\SPLIT_SITE_FIVE_FLAG_FORK__q007_normal\\CASE_CLOSED.json",
+              "bytes": 43081,
+              "sha256": "93281F29FF51B61FEC51F4AB826BB4183959FBBB6C63570A9B6E6231A136785C"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "SPLIT_SITE_FIVE_FLAG_FORK",
+            "version": "q007_normal",
+            "variant": "normal",
+            "level": "1",
+            "result": "WITHHELD",
+            "stage_a_invocations": 1,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\SPLIT_SITE_FIVE_FLAG_FORK__q007_normal\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 949,
+                "sha256": "CDE52A1F57530928AC9899A80D6D9CE3E5FFA82C71E4BAEC6034FA19C08F8096"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\SPLIT_SITE_FIVE_FLAG_FORK__q007_normal\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+                "bytes": 52521,
+                "sha256": "D0351BB507C3D98A353D100E6672EDFFB4BFEF41D3E680ABFF463033CA0CD179"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\SPLIT_SITE_FIVE_FLAG_FORK__q007_normal\\B_execute_000\\prepared\\B_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "52E7767D970BF16814CD2D6BDB9AAF4AEAFB3DE6E5C6400D34BBC357781BEFEF"
+              },
+              "stage": "B",
+              "result": "WITHHELD",
+              "semantic_sha256": "6F6731C747153816D9063B03103DC0612E89F8EA180407AB96577AE28EA16AE5",
+              "raw_members": 28,
+              "effect_classes": null,
+              "receipt": null,
+              "counts": {
+                "facts": 17283,
+                "terms": 28081,
+                "epochs": 25,
+                "proof_facts": 5488
+              }
+            },
+            "comparison": null,
+            "elapsed_ms": 37822
+          },
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\OPEN_TRIANGLE__q007_normal\\CASE_CLOSED.json",
+              "bytes": 8465,
+              "sha256": "C9EA5402BFFEDEDC383DD34DB8CE3C1BE1DC45E96DD0E38CCA17D39EB81AF6C3"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "OPEN_TRIANGLE",
+            "version": "q007_normal",
+            "variant": "normal",
+            "level": "OPEN_TRIANGLE_CONTROL",
+            "result": "WITHHELD",
+            "stage_a_invocations": 0,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\OPEN_TRIANGLE__q007_normal\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 925,
+                "sha256": "EA372C966CC03D93E64C91E8043C4CF86A1C5DE95FCD2AA5E2A299927420E34F"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\OPEN_TRIANGLE__q007_normal\\B_execute_000\\prepared\\OPEN_000\\NATIVE_OBSERVATION.json",
+                "bytes": 9061,
+                "sha256": "E3A2FED12DB2558C649D73A30B1F261F80271F3DB8AA9FAAAB0E04CE19A2EC81"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\OPEN_TRIANGLE__q007_normal\\B_execute_000\\prepared\\OPEN_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "5D58140AACCB25D52BB2A56023B0F6392FEF22BF2A01B4F4668326210D707A56"
+              },
+              "stage": "B",
+              "result": "WITHHELD",
+              "semantic_sha256": "A86542B01148E5706ABC117D96E5B20F7AD5917A1926D07B9C9C8FFDEB3B5C6D",
+              "raw_members": null,
+              "effect_classes": null,
+              "receipt": null,
+              "counts": {
+                "facts": 1778,
+                "terms": 3031,
+                "epochs": 20,
+                "proof_facts": 524
+              }
+            },
+            "comparison": null,
+            "elapsed_ms": 12587
+          },
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_origin\\CASE_CLOSED.json",
+              "bytes": 10463,
+              "sha256": "B117CB56C8D26C12B65477085DDAEC259ABE3104A7D85D8D16C8229210061299"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "L1_ISOLATED_SITE",
+            "version": "q007_missing_origin",
+            "variant": "missing_origin",
+            "level": "1",
+            "result": "WITHHELD",
+            "stage_a_invocations": 1,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_origin\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 947,
+                "sha256": "7D1AA9022B8D393AF5FEFBCA4A27B88B9996C5F6C40B11D98CE99FE0365F4C2C"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_origin\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+                "bytes": 9599,
+                "sha256": "859191666D96D34B581178BC9A493B8E0CC1B2A29A2A8892257C9BB9A39634B6"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_origin\\B_execute_000\\prepared\\B_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "D42F7B9831E53ECA72629F8D9251152BC00CC8581F848654CF820BBBC3FD7B2D"
+              },
+              "stage": "B",
+              "result": "WITHHELD",
+              "semantic_sha256": "24686EF9844D0556D63CC4ADB5A0EC7B4372E95A99710E98A0F403ADEA4D0A28",
+              "raw_members": 1,
+              "effect_classes": null,
+              "receipt": null,
+              "counts": {
+                "facts": 13511,
+                "terms": 22204,
+                "epochs": 25,
+                "proof_facts": 5299
+              }
+            },
+            "comparison": null,
+            "elapsed_ms": 37220
+          },
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_k_member\\CASE_CLOSED.json",
+              "bytes": 10501,
+              "sha256": "89C1EDCEF61E8AE29368B6BA3881A1834BBA2AD67122A3E78AE9BE51778CADFE"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "L1_ISOLATED_SITE",
+            "version": "q007_missing_k_member",
+            "variant": "missing_k_member",
+            "level": "1",
+            "result": "WITHHELD",
+            "stage_a_invocations": 1,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_k_member\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 951,
+                "sha256": "D06301170BBC74674F4583C7A57BD0D9B8C332316BDA84CB5876664944891C15"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_k_member\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+                "bytes": 9632,
+                "sha256": "9A512019EBF0FCB3E438AE4E46CF2F8CDBADF11E1289274336F35E611356557C"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_k_member\\B_execute_000\\prepared\\B_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "CBF12BE0A60C8D5FB13391BCB788CFF7D91B829F51D759834C5FAB8CEA6A9FB1"
+              },
+              "stage": "B",
+              "result": "WITHHELD",
+              "semantic_sha256": "24686EF9844D0556D63CC4ADB5A0EC7B4372E95A99710E98A0F403ADEA4D0A28",
+              "raw_members": 1,
+              "effect_classes": null,
+              "receipt": null,
+              "counts": {
+                "facts": 13513,
+                "terms": 22207,
+                "epochs": 26,
+                "proof_facts": 9196
+              }
+            },
+            "comparison": null,
+            "elapsed_ms": 37134
+          },
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_k_root\\CASE_CLOSED.json",
+              "bytes": 10463,
+              "sha256": "B9A2998D258DC08A04475C5624CA7E26DCD897C4290A5C2FEAE51470D2193C4A"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "L1_ISOLATED_SITE",
+            "version": "q007_missing_k_root",
+            "variant": "missing_k_root",
+            "level": "1",
+            "result": "WITHHELD",
+            "stage_a_invocations": 1,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_k_root\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 947,
+                "sha256": "5E80B91A65CC3CC421056861BAB7F38C93A163233C0747648FE96F083886FD61"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_k_root\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+                "bytes": 9582,
+                "sha256": "0EBA7AFD1A4A731DC09B4CB428B6A03580DFF00079AF3DB53E57EE975FE77838"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_ISOLATED_SITE__q007_missing_k_root\\B_execute_000\\prepared\\B_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "D28D334A4786CA94F29FB4CD4F65D7C6B9DFC1FB8E760E40D3ABDD8229DB64CF"
+              },
+              "stage": "B",
+              "result": "WITHHELD",
+              "semantic_sha256": "24686EF9844D0556D63CC4ADB5A0EC7B4372E95A99710E98A0F403ADEA4D0A28",
+              "raw_members": 1,
+              "effect_classes": null,
+              "receipt": null,
+              "counts": {
+                "facts": 14258,
+                "terms": 22952,
+                "epochs": 38,
+                "proof_facts": 9199
+              }
+            },
+            "comparison": null,
+            "elapsed_ms": 37303
+          },
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_UNIFORM_NO__q007_normal\\CASE_CLOSED.json",
+              "bytes": 7687,
+              "sha256": "852554B1F4A842FD5D1D43ABFFF9C779A66C1EF9E8AD07A0B6BD363ED4A88EED"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "L1_UNIFORM_NO",
+            "version": "q007_normal",
+            "variant": "normal",
+            "level": "1",
+            "result": "NO_APPEND",
+            "stage_a_invocations": 1,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_UNIFORM_NO__q007_normal\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 925,
+                "sha256": "8C085D17E3F13FF5FDF0EF28772527CA818E5B5791ABB35F07C0BFEFCBFF0BDC"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_UNIFORM_NO__q007_normal\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+                "bytes": 8106,
+                "sha256": "69FB2358C79298E42BC57E0A0088209D86ABFC11B0C62A16E8D3862877304155"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\L1_UNIFORM_NO__q007_normal\\B_execute_000\\prepared\\B_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "5AA31F776913EBC81B66FECAA76DC415C875F0FC2461E67DB845224384AC1A81"
+              },
+              "stage": "B",
+              "result": "NO_APPEND",
+              "semantic_sha256": "01D89D8AA662E222747D3FC3A51971A979763732D64EE88D28F6F8189CA5EB33",
+              "raw_members": 0,
+              "effect_classes": null,
+              "receipt": null,
+              "counts": {
+                "facts": 13501,
+                "terms": 22190,
+                "epochs": 27,
+                "proof_facts": 9198
+              }
+            },
+            "comparison": null,
+            "elapsed_ms": 36265
+          }
+        ],
+        "elapsed_ms": 275630
+      },
+      {
+        "verdict": "IF_THEN",
+        "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\j17__q008\\BATCH_CLOSED.json",
+          "bytes": 1282,
+          "sha256": "DEF13A5FB5C8684E9A0374C55FDC85172B8B186B6B12CCCB9E6D566439D6E697"
+        },
+        "mode": "j17",
+        "version": "q008",
+        "cases": [
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\CASE_CLOSED.json",
+              "bytes": 21105,
+              "sha256": "6795803276C539D0629168B580D732950D8C51B45ED8C02CF63C44BC52C94540"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "J17_G2_DIAGNOSTIC_COPY",
+            "version": "q008_normal",
+            "variant": "normal",
+            "level": "2",
+            "result": "WAVE_READY",
+            "stage_a_invocations": 2,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 943,
+                "sha256": "2908E25527DF31251C918342BD84A88631FD1F7E4D92833D6722B68AA87E8860"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+                "bytes": 214075,
+                "sha256": "981EDE8FCC2599EAD8070F534933DBA6638290434D3C024E3667E9F862DC8657"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_normal\\B_execute_000\\prepared\\B_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "E3A0FA6EFECA8C9DAFFBC2153BA7A778BDD3C4012691B0F6DE27F3D431FB54C6"
+              },
+              "stage": "B",
+              "result": "WAVE_READY",
+              "semantic_sha256": "D005820FB0B87A398EFB40033D4ED05FE6C4F69324CD6A54DB663A0AAE6CEFCA",
+              "raw_members": 1,
+              "effect_classes": 1,
+              "receipt": {
+                "discharged": 12,
+                "opened": 0,
+                "retained": 0
+              },
+              "counts": {
+                "facts": 65057,
+                "terms": 97556,
+                "epochs": 88,
+                "proof_facts": 50026
+              }
+            },
+            "comparison": null,
+            "elapsed_ms": 156310
+          },
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_replay\\CASE_CLOSED.json",
+              "bytes": 24196,
+              "sha256": "FCD79F2016DA36B441BE5F0C0472EF7079C7CC0A63C164FDFE9DF2A5D75860C4"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "J17_G2_DIAGNOSTIC_COPY",
+            "version": "q008_replay",
+            "variant": "replay",
+            "level": "2",
+            "result": "WAVE_READY",
+            "stage_a_invocations": 2,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_replay\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 943,
+                "sha256": "163187F4A32FB895760561C01860EB15AED064CAAEC6DD0567CC728D7ED4622D"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_replay\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+                "bytes": 214076,
+                "sha256": "C71B1CA56BBDFE916C2107259F7A44C45FEFEF66DDF840546386869595BFB075"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_replay\\B_execute_000\\prepared\\B_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "E3A0FA6EFECA8C9DAFFBC2153BA7A778BDD3C4012691B0F6DE27F3D431FB54C6"
+              },
+              "stage": "B",
+              "result": "WAVE_READY",
+              "semantic_sha256": "D005820FB0B87A398EFB40033D4ED05FE6C4F69324CD6A54DB663A0AAE6CEFCA",
+              "raw_members": 1,
+              "effect_classes": 1,
+              "receipt": {
+                "discharged": 12,
+                "opened": 0,
+                "retained": 0
+              },
+              "counts": {
+                "facts": 65057,
+                "terms": 97556,
+                "epochs": 88,
+                "proof_facts": 50026
+              }
+            },
+            "comparison": {
+              "kind": "replay",
+              "verdict": "IF_THEN",
+              "rows": [
+                {
+                  "stage": "A_0",
+                  "semantic": "SAME",
+                  "readback": "SAME"
+                },
+                {
+                  "stage": "A_1",
+                  "semantic": "SAME",
+                  "readback": "SAME"
+                },
+                {
+                  "stage": "B",
+                  "semantic": "SAME",
+                  "readback": "SAME"
+                }
+              ]
+            },
+            "elapsed_ms": 102639
+          },
+          {
+            "record": {
+              "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_reversed\\CASE_CLOSED.json",
+              "bytes": 24266,
+              "sha256": "6151D914EEC70FF858FF0500536046ED9F621B580402DCDB94ED4FD70D7659DD"
+            },
+            "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+            "case_id": "J17_G2_DIAGNOSTIC_COPY",
+            "version": "q008_reversed",
+            "variant": "reversed",
+            "level": "2",
+            "result": "WAVE_READY",
+            "stage_a_invocations": 2,
+            "stage_b": {
+              "closure": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_reversed\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+                "bytes": 947,
+                "sha256": "636031A49E2FF46598D2B8DE1361B7A7040567D104CFB73AC6DB19229AA8A61E"
+              },
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_reversed\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+                "bytes": 214126,
+                "sha256": "9D94B74BD76DBEE389302339AFEE78E10F920E2058DD676AF086B79D5FD22F3B"
+              },
+              "readback": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_runs\\J17_G2_DIAGNOSTIC_COPY__q008_reversed\\B_execute_000\\prepared\\B_000\\readback.bin",
+                "bytes": 268435488,
+                "sha256": "5070794B838D2DB2677A691C8124961A80208FAB9FA580E44076D8F1CFCB9AFC"
+              },
+              "stage": "B",
+              "result": "WAVE_READY",
+              "semantic_sha256": "D005820FB0B87A398EFB40033D4ED05FE6C4F69324CD6A54DB663A0AAE6CEFCA",
+              "raw_members": 1,
+              "effect_classes": 1,
+              "receipt": {
+                "discharged": 12,
+                "opened": 0,
+                "retained": 0
+              },
+              "counts": {
+                "facts": 65057,
+                "terms": 97556,
+                "epochs": 88,
+                "proof_facts": 50035
+              }
+            },
+            "comparison": {
+              "kind": "reversed",
+              "verdict": "IF_THEN",
+              "rows": [
+                {
+                  "stage": "A_0",
+                  "semantic": "SAME",
+                  "readback": "NOT_SAME"
+                },
+                {
+                  "stage": "A_1",
+                  "semantic": "SAME",
+                  "readback": "NOT_SAME"
+                },
+                {
+                  "stage": "B",
+                  "semantic": "SAME",
+                  "readback": "NOT_SAME"
+                }
+              ]
+            },
+            "elapsed_ms": 118803
+          }
+        ],
+        "elapsed_ms": 385757
+      },
+      {
+        "verdict": "IF_THEN",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\CASE_CLOSED.json",
+          "bytes": 41245,
+          "sha256": "A255F5BFC5DEEE262D5B925A1A644C8A31684F2D9AA5B13811751D163F2F0312"
+        },
+        "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+        "case_id": "SEPARATED_084_085",
+        "version": "q011_normal",
+        "variant": "normal",
+        "level": "4",
+        "result": "WAVE_READY",
+        "stage_a_invocations": 9,
+        "stage_b": {
+          "closure": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\B_NORMAL_execute\\queuegate_attempt\\CLOSED.json",
+            "bytes": 931,
+            "sha256": "5E9BBB0C45576E6EA97EE0D92D18ACF44C75CF41A413775E16D8D99988336A16"
+          },
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\B_NORMAL_execute\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+            "bytes": 1094552,
+            "sha256": "4627DB5F46CF8706DD35EE7224852E5D863FFA584A050BC13F6A9F9470F30FFD"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\B_NORMAL_execute\\prepared\\B_000\\readback.bin",
+            "bytes": 268435488,
+            "sha256": "F721E1D514B93808A9057E6CE5A884E0318ED65434D8BAF5EE3ED04405A9E4C2"
+          },
+          "stage": "B",
+          "result": "WAVE_READY",
+          "semantic_sha256": "BFC5F2E8363A5DCD1BCFD19C1301F8C9CE959F4AF85C359E919F279E67660C16",
+          "raw_members": 4,
+          "effect_classes": 2,
+          "receipt": {
+            "discharged": 22,
+            "opened": 0,
+            "retained": 0
+          },
+          "counts": {
+            "facts": 495417,
+            "terms": 624465,
+            "epochs": 104,
+            "proof_facts": 355693
+          }
+        },
+        "comparison": null,
+        "elapsed_ms": 503048
+      },
+      {
+        "verdict": "IF_THEN",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\FACE_SITE_ALIASES\\normal_A_B\\CASE_CLOSED.json",
+          "bytes": 34476,
+          "sha256": "D0D210BE68DF7F9ECE466A5056735202D5F0EE0FD8C20A31B1CAAAAA90DCA916"
+        },
+        "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+        "case_id": "FACE_SITE_ALIASES",
+        "version": "q011_normal",
+        "variant": "normal",
+        "level": "4",
+        "result": "WAVE_READY",
+        "stage_a_invocations": 9,
+        "stage_b": {
+          "closure": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\FACE_SITE_ALIASES\\normal_A_B\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+            "bytes": 987,
+            "sha256": "B34C1415D8152005505510F434A8EEBADFDFD8D007F2437D54254FFDA86AF3D6"
+          },
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\FACE_SITE_ALIASES\\normal_A_B\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+            "bytes": 1085135,
+            "sha256": "80B51F27F7948A26DC63B2C8C7AC6D357B7DA88D0CB7184D120855EF587FDE29"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\FACE_SITE_ALIASES\\normal_A_B\\B_execute_000\\prepared\\B_000\\readback.bin",
+            "bytes": 268435488,
+            "sha256": "B2C1BA2693B764EF0204BA1C9B340658993558BE998AC564FAF44FCC7EE3BC29"
+          },
+          "stage": "B",
+          "result": "WAVE_READY",
+          "semantic_sha256": "638E30A37801985C92C35D9175E4A37FDA501D3DD9C1E1CDD06FFE0053EE9E8B",
+          "raw_members": 2,
+          "effect_classes": 1,
+          "receipt": {
+            "discharged": 12,
+            "opened": 0,
+            "retained": 0
+          },
+          "counts": {
+            "facts": 314092,
+            "terms": 444487,
+            "epochs": 101,
+            "proof_facts": 241626
+          }
+        },
+        "comparison": null,
+        "elapsed_ms": 693834
+      },
+      {
+        "verdict": "IF_THEN",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\DISJOINT_FACES\\normal_A_B\\CASE_CLOSED.json",
+          "bytes": 44309,
+          "sha256": "894EDAF811D35388856A3D2AE609BB30E1680298DDA25FD1C887E6740F7C8EC1"
+        },
+        "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+        "case_id": "DISJOINT_FACES",
+        "version": "q011_normal",
+        "variant": "normal",
+        "level": "4",
+        "result": "WAVE_READY",
+        "stage_a_invocations": 9,
+        "stage_b": {
+          "closure": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\DISJOINT_FACES\\normal_A_B\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+            "bytes": 981,
+            "sha256": "9C6FA5D3E6A122396A634CDD55A37B9E7D0095ADC79A599C6FFC0D40A7A6D299"
+          },
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\DISJOINT_FACES\\normal_A_B\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+            "bytes": 1070957,
+            "sha256": "DC9865E1CD6A1F42D2D31FF3B83A4B6F29498B2CA45CCCC5933C506445B58505"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\DISJOINT_FACES\\normal_A_B\\B_execute_000\\prepared\\B_000\\readback.bin",
+            "bytes": 268435488,
+            "sha256": "27A641D9CFF35D8ADF941EDFA88CE07BFF6D09DEBE52EE62A90D45ED9BEA152F"
+          },
+          "stage": "B",
+          "result": "WAVE_READY",
+          "semantic_sha256": "96BB5FFDD0D29BD39A95A153355681B04655BDFAA5FC1C08E91D85064AC40681",
+          "raw_members": 2,
+          "effect_classes": 2,
+          "receipt": {
+            "discharged": 48,
+            "opened": 0,
+            "retained": 0
+          },
+          "counts": {
+            "facts": 316447,
+            "terms": 448646,
+            "epochs": 101,
+            "proof_facts": 234117
+          }
+        },
+        "comparison": null,
+        "elapsed_ms": 697053
+      },
+      {
+        "verdict": "IF_THEN",
+        "record": {
+          "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\NEXT_TICK_FACE_SOURCE\\normal_A_B\\CASE_CLOSED.json",
+          "bytes": 44308,
+          "sha256": "7D18404C235FC8A84C99DC79B5551B5E5839735C7528C0624EE23CE702FEB251"
+        },
+        "status": "CLOSED_RECORD_FRONTIER_VERIFIED",
+        "case_id": "NEXT_TICK_FACE_SOURCE",
+        "version": "q011_normal",
+        "variant": "normal",
+        "level": "4",
+        "result": "WAVE_READY",
+        "stage_a_invocations": 9,
+        "stage_b": {
+          "closure": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\NEXT_TICK_FACE_SOURCE\\normal_A_B\\B_execute_000\\queuegate_attempt\\CLOSED.json",
+            "bytes": 995,
+            "sha256": "47370AF7302749CB9AB5160500CAEE822BACDE605E165A7B7474BD37CAF4830D"
+          },
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\NEXT_TICK_FACE_SOURCE\\normal_A_B\\B_execute_000\\prepared\\B_000\\NATIVE_OBSERVATION.json",
+            "bytes": 1108846,
+            "sha256": "7BBC36B031B1D358E2B6A1A8799EA6971F8CFB2A5BFBD7B60FF3745D8344292B"
+          },
+          "readback": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\qualification_batches\\l4_fixed_a__q011_resume\\NEXT_TICK_FACE_SOURCE\\normal_A_B\\B_execute_000\\prepared\\B_000\\readback.bin",
+            "bytes": 268435488,
+            "sha256": "3231123DD49F2EC29517FCC851A2D049967152471227D0D21643F2D88FA11F4D"
+          },
+          "stage": "B",
+          "result": "WAVE_READY",
+          "semantic_sha256": "A0E4ABB43F878745347A63CCEFBC11D2BD6F380424F52B81F7FA35E58D9DC8D6",
+          "raw_members": 3,
+          "effect_classes": 1,
+          "receipt": {
+            "discharged": 10,
+            "opened": 0,
+            "retained": 24
+          },
+          "counts": {
+            "facts": 390189,
+            "terms": 519225,
+            "epochs": 104,
+            "proof_facts": 299555
+          }
+        },
+        "comparison": null,
+        "elapsed_ms": 777170
+      }
+    ],
+    "audit": {
+      "files_hashed": 1513,
+      "bytes_hashed": 25475301298,
+      "byte_budget": 68714757027,
+      "unique_case_records": 16,
+      "unique_native_invocations": 66,
+      "sealed_input_references_not_recursively_rehashed": 5854,
+      "predecessor_references_not_reopened": 66,
+      "elapsed_ms": 295453
+    },
+    "scope": {
+      "world_effect": "NONE",
+      "selection": "NO_MEMBER_TAKEN",
+      "execution": "READ_ONLY",
+      "source_changes": "NONE",
+      "drc": "NOT_ASSESSED_CANDIDATE_FABRIC_SPEC_FOR_038_REALIZATION",
+      "verification": "Direct closed-record references, native output bytes and QueueGate closure frontier only",
+      "not_claimed": [
+        "Transitive genealogy re-audit",
+        "A new QueueGate qualification closure",
+        "Canonical eight-condition DRC",
+        "Completion of absent or partial cases"
+      ]
+    }
+  },
+  "additional_frontier_audit": {
+    "files_hashed_here": 1108,
+    "bytes_hashed_including_reused_frontier": 42365365842,
+    "byte_budget": 68719476736,
+    "extra_native_invocations": 43,
+    "sealed_input_references_not_recursively_rehashed": 4300,
+    "predecessor_references_not_reopened": 43
+  },
+  "elapsed_ms": 483770,
+  "recorded_at": "2026-10-31T03:40:07.551Z",
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN",
+  "live_world_append": "NO",
+  "runtime_launches": 0,
+  "repository_commit": "NOT_PERFORMED",
+  "promotion": "NOT_PERFORMED"
+}

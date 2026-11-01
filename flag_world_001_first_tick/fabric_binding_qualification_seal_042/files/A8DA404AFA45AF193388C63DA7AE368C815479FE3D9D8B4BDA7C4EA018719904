@@ -1,0 +1,69 @@
+// Readback observation only. All DRC conclusions must be native derivations.
+import fs from 'node:fs';
+import {openNative,nativeProof} from '../native_reader_v2_038.mjs';
+import {identity,verify,need,read,sha} from './custody_042.mjs';
+import {serializeProgram,routeHash} from './prepare_drc_v2_042.mjs';
+const conditions=['I','II','III','IV','V','VI','VII','VIII'];
+const same=(a,b,name)=>need(JSON.stringify(a)===JSON.stringify(b),name);
+export async function observe(config,{readback,stdout,stderr,grant}){
+ const expectedRef=verify(config.expected),expected=read(expectedRef.path);
+ need(expected.schema==='CanonicalFabricDrcExpected042','EXPECTED_SCHEMA');
+ for(const ref of[expected.canonical_program,expected.canonical_program_binding,expected.native_body,expected.preparer,...Object.values(expected.law_sources)])verify(ref);
+ const refs={source:verify(config.source),source_map:verify(config.source_map),image:verify(config.image),readback:typeof readback==='string'?identity(readback):verify(readback)};
+ const body=fs.readFileSync(expected.native_body.path,'utf8'),inputRows=[];
+ for(const c of expected.cases){verify(c.program);const p=read(c.program.path);inputRows.push('GOES_WITH(D42_CASE,'+c.id+','+JSON.stringify(p.fabric_id)+','+serializeProgram(p).data+')');}
+ for(let i=0;i<256;i++)inputRows.push('GOES_WITH(D42_BYTE_BITS,B'+i+',BITS('+Array.from({length:8},(_,j)=>(i&(1<<(7-j)))?'O':'Z').join(',')+'))');
+ for(const h of expected.generic_hash_contacts)inputRows.push('GOES_WITH(D42_HASH_RESPONSE,CONNECTION('+h.parts.map(JSON.stringify).join(',')+'),'+JSON.stringify(h.sha256)+')');
+ need(inputRows.length===expected.native_input_rows&&new Set(inputRows).size===inputRows.length,'EXACT_INPUT_ROW_COVERAGE');
+ const sourceText=fs.readFileSync(refs.source.path,'utf8'),expectedText=body+'\n@propose seed D42_INPUTS := {\n'+inputRows.join(',\n')+'\n};\n';
+ need(sourceText===expectedText,'NATIVE_SOURCE_BODY_AND_INPUTS_NOT_SAME');
+ const q=openNative(refs);
+ need(q.map.rules.every(r=>Number.isInteger(r.start)&&Number.isInteger(r.end)&&r.start>=0&&r.end<=body.length),'NATIVE_LAW_PREFIX_SCOPE');
+ const proof=nativeProof(q),rendered=new Map();
+ function render(id){if(rendered.has(id))return rendered.get(id);const n=q.node(id),s=n.s==='TEXT'?JSON.stringify(q.text(id)):n.s+(n.c.length?'('+n.c.map(render).join(',')+')':'');rendered.set(id,s);return s;}
+ const atom=id=>{const n=q.node(id);need(n.c.length===0,'EXPECTED_ATOM');return n.s;};
+ const rows=tag=>q.predicate(tag).map(f=>({f,args:q.node(f.term).c.slice(1)}));
+ function derived(row){need(row.f.rule>=0,'DERIVED_CONCLUSION_REQUIRED');proof.proof(row.f.id);return row.f.id;}
+ const nativeCases=rows('D42_CASE');same(nativeCases.map(r=>atom(r.args[0])).sort(),expected.cases.map(c=>c.id).sort(),'EXACT_CASE_COVERAGE');
+ const checks=rows('D42_CONDITION').filter(r=>r.args.length===3),drcs=rows('D42_DRC'),nos=rows('D42_NO'),covers=rows('D42_CLOSED_COVER'),sorts=rows('D42_SORT_CLOSED');
+ const caseResults=[];
+ for(const c of expected.cases){
+  verify(c.program);const p=read(c.program.path),serialized=serializeProgram(p),input=nativeCases.find(r=>atom(r.args[0])===c.id);
+  same(serialized.counts,c.counts,'SERIALIZED_COUNTS:'+c.id);need(sha(Buffer.from(JSON.stringify(serialized.inventories)))===c.inventory_source_sha256,'SERIALIZATION_IDENTITY:'+c.id);
+  need(sha(Buffer.from(render(input.f.term)))===c.case_source_sha256,'NATIVE_PRIMITIVE_SUBJECT:'+c.id);need(input.f.rule===-1,'CASE_IS_SOURCE_INPUT');proof.proof(input.f.id);
+  // Full domains are transcribed from the native input tree, not sampled.
+  const actualRoots=rows('D42_ROOT').filter(r=>atom(r.args[0])===c.id);same(actualRoots.map(r=>atom(r.args[1])).sort(),Object.keys(serialized.inventories).sort(),'ALL_NATIVE_ROOTS:'+c.id);
+  const rootIds=actualRoots.map(derived);
+  const ownChecks=checks.filter(r=>atom(r.args[0])===c.id),ownDrc=drcs.filter(r=>atom(r.args[0])===c.id),ownNo=nos.filter(r=>atom(r.args[0])===c.id);
+  need(ownChecks.every(r=>conditions.includes(atom(r.args[1]))&&atom(r.args[2])==='IF_THEN'),'CONDITION_DOMAIN:'+c.id);
+  const checkNames=ownChecks.map(r=>atom(r.args[1]));need(new Set(checkNames).size===checkNames.length,'DUPLICATE_CONDITION:'+c.id);
+  const admitted=ownDrc.filter(r=>atom(r.args[1])==='IF_THEN'),excluded=ownDrc.filter(r=>atom(r.args[1])==='NO');
+  if(c.expected==='IF_THEN'){
+   same([...checkNames].sort(),[...conditions].sort(),'EIGHT_CONDITIONS:'+c.id);need(admitted.length===1&&excluded.length===0&&ownNo.length===0,'EXACT_NATIVE_ADMISSION:'+c.id);
+  }else{
+   need(c.expected==='NO'&&conditions.includes(c.failed_condition),'CONTROL_EXPECTATION');need(admitted.length===0&&excluded.length===1,'CONTROL_WITHHOLDS_ADMISSION:'+c.id);
+   need(!checkNames.includes(c.failed_condition),'CONTROL_CONDITION_WITHHELD:'+c.id);need(ownNo.some(r=>atom(r.args[1])===c.failed_condition),'NAMED_NATIVE_REFUSAL:'+c.id);
+  }
+  const conditionFacts=ownChecks.map(r=>({condition:atom(r.args[1]),fact_id:derived(r)})).sort((a,b)=>conditions.indexOf(a.condition)-conditions.indexOf(b.condition));
+  const refusalFacts=ownNo.map(r=>({condition:atom(r.args[1]),reason:render(r.args[2]),fact_id:derived(r)}));
+  const coverFacts=covers.filter(r=>atom(r.args[0])===c.id).map(r=>({condition:atom(r.args[1]),domain:atom(r.args[2]),fact_id:derived(r)}));
+  const sortFacts=sorts.filter(r=>atom(r.args[0])===c.id).map(r=>({domain:atom(r.args[1]),fact_id:derived(r)}));
+  for(const r of ownDrc)derived(r);
+  caseResults.push({native_case:c.id,program:c.program,verdict:c.expected,counts:c.counts,source_case_fact:input.f.id,domain_root_facts:rootIds,condition_facts:conditionFacts,drc_facts:ownDrc.map(r=>({verdict:atom(r.args[1]),fact_id:r.f.id})),refusal_facts:refusalFacts,cover_facts:coverFacts,sort_facts:sortFacts});
+ }
+ // Generic SHA contact is independently recomputed from all four exact UTF8
+ // components. It carries no DRC decision; V must compare it natively.
+ const responses=rows('D42_HASH_RESPONSE'),wanted=new Map();
+ for(const c of expected.cases)for(const r of read(c.program.path).routes){const parts=[r.source_cell_id,r.source_role,r.target_cell_id,r.target_role],h=routeHash(parts);wanted.set(JSON.stringify(parts),h);}
+ need(responses.length===wanted.size,'HASH_RESPONSE_COVERAGE');
+ for(const r of responses){const n=q.node(r.args[0]);need(n.s==='CONNECTION'&&n.c.length===4&&r.f.rule===-1,'HASH_INPUT_SHAPE');const parts=n.c.map(q.text),h=wanted.get(JSON.stringify(parts));need(h&&q.text(r.args[1])===h.sha256,'GENERIC_HASH_CONTACT');proof.proof(r.f.id);}
+ same([...wanted.values()].sort((a,b)=>JSON.stringify(a.parts).localeCompare(JSON.stringify(b.parts))),[...expected.generic_hash_contacts].sort((a,b)=>JSON.stringify(a.parts).localeCompare(JSON.stringify(b.parts))),'HASH_CONTACT_CUSTODY');
+ const bits=rows('D42_BYTE_BITS');need(bits.length===256,'OCTET_DOMAIN');const bytesSeen=new Set();
+ for(const r of bits){const name=atom(r.args[0]);need(/^B(?:0|[1-9][0-9]*)$/.test(name),'OCTET_NAME');const i=+name.slice(1),v=q.node(r.args[1]);need(i<=255&&!bytesSeen.has(i)&&v.s==='BITS'&&v.c.length===8&&r.f.rule===-1,'OCTET_SOURCE');bytesSeen.add(i);same(v.c.map(atom),Array.from({length:8},(_,j)=>(i&(1<<(7-j)))?'O':'Z'),'OCTET_ENCODING');proof.proof(r.f.id);}
+ const canonical=caseResults.find(c=>c.native_case==='P20');need(canonical.program.sha256===expected.canonical_program.sha256,'CANONICAL_PROGRAM_SUBJECT');
+ const joint=rows('D42_ALL_CONDITIONS').filter(r=>atom(r.args[0])==='P20');need(joint.length===1,'CANONICAL_JOINT_CONDITION');derived(joint[0]);
+ const canonical_program_drc={program_sha256:expected.canonical_program.sha256,native_case:'P20',verdict:'IF_THEN',checks:conditions,proof:{drc_fact:canonical.drc_facts.find(f=>f.verdict==='IF_THEN').fact_id,condition_facts:canonical.condition_facts,joint_fact:joint[0].f.id,source_case_fact:canonical.source_case_fact,domain_root_facts:canonical.domain_root_facts,cover_facts:canonical.cover_facts,sort_facts:canonical.sort_facts,...refs}};
+ const result={schema:'CanonicalFabricDrcObservation042',verdict:'IF_THEN',canonical_program_drc,cases:caseResults,case_count:caseResults.length,positive_cases:caseResults.filter(c=>c.verdict==='IF_THEN').length,malformed_controls:caseResults.filter(c=>c.verdict==='NO').length,native:{facts:q.count,terms:q.terms,epochs:q.epochs,proof_facts_checked:proof.seen.size},expected:expectedRef,proof_refs:refs,scope:'Full source-bound P20 primitive program; eight native canonical static DRC conditions; explicit routed and malformed controls. This does not assert execution of the program or general termination on arbitrary malformed programs.',world_effect:'NONE',repository_effect:'NONE'};
+ result.semantic_sha256=sha(Buffer.from(JSON.stringify({canonical_program:expected.canonical_program.sha256,cases:caseResults.map(c=>({id:c.native_case,verdict:c.verdict,counts:c.counts,checks:c.condition_facts.map(f=>f.condition),refusals:c.refusal_facts.map(f=>({condition:f.condition,reason:f.reason})).sort((a,b)=>JSON.stringify(a).localeCompare(JSON.stringify(b)))}))})));
+ return result;
+}

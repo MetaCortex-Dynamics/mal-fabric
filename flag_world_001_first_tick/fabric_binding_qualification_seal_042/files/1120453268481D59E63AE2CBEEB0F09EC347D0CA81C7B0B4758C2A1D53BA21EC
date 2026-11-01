@@ -1,0 +1,77 @@
+// Readback/proof comparison only. No native result or canonical fabric emitted.
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {openNative,nativeProof,verify} from '../native_reader_v2_038.mjs';
+const need=(v,n)=>{if(!v)throw Error(n);};
+const hash=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
+function identity(p){const b=fs.readFileSync(p);return{path:fs.realpathSync.native(p),bytes:b.length,sha256:hash(b)};}
+const sorted=a=>[...new Set(a)].sort();
+function exact(a,b,n){need(JSON.stringify(sorted(a))===JSON.stringify(sorted(b)),n);}
+export async function observe(config,{readback,stdout,stderr,grant}){
+ verify(config.expected);const expected=JSON.parse(fs.readFileSync(config.expected.path));
+ verify(expected.frozen_source);verify(expected.actual_contacts);verify(expected.adapter);
+ need(expected.frozen_source.sha256==='00260D576A1591B4ADD768193EE2403A6032334AD8B0C95E6E5C917754B2227F','FROZEN_SOURCE_NOT_SAME');
+ const q=openNative({...config,readback:identity(readback)}),prove=nativeProof(q);
+ const actual=JSON.parse(fs.readFileSync(expected.actual_contacts.path));
+ const args=f=>q.node(f.term).c.slice(1).map(q.term);
+ const rows=tag=>q.predicate(tag).map(f=>({f,a:args(f),term:q.term(f.term)}));
+ const law=q.map.rules.filter(r=>r.name==='W38_SITE_READING_JOIN');
+ need(law.length===1,'EXACT_SOURCE_CLAUSE_REQUIRED');
+ const body=fs.readFileSync(config.source.path,'utf8').slice(law[0].start,law[0].end);
+ need(body===expected.clause.text&&hash(body)===expected.clause.sha256,'EXACT_SOURCE_CLAUSE_NOT_SAME');
+ const outputs=q.facts.filter(f=>f.origin==='W38_SITE_READING_JOIN');
+ exact(outputs.map(f=>q.term(f.term)),expected.expected_join_terms,'COMPLETE_NATIVE_JOIN_DOMAIN_NOT_SAME');
+ const seeded=q.facts.filter(f=>f.rule<0);
+ const forbiddenSeeds=seeded.filter(f=>{
+  const tag=q.node(q.node(f.term).c[0]).s;
+  return tag.startsWith('F41_')||expected.expected_join_terms.includes(q.term(f.term));
+ });
+ need(forbiddenSeeds.length===0,'DERIVED_OUTPUT_SEEDED');
+ exact(seeded.map(f=>q.term(f.term)),[...actual.seed_terms,...expected.cases.flatMap(c=>c.seeds)],'EXACT_SEED_DOMAIN_NOT_SAME');
+ const covers=rows('SW_COVER_JOIN').filter(x=>x.a[0].startsWith('SITE('));
+ const trees=rows('W38_SITE_READING_TREE');
+ const frames=[];
+ for(const {a:[site,n,a,b]}of covers){
+  const s=site.slice(5,-1);
+  for(const l of trees.filter(x=>x.a[1]===s&&x.a[3]===a))
+   for(const r of trees.filter(x=>x.a[0]===l.a[0]&&x.a[1]===s&&x.a[3]===b))
+    frames.push([l.a[0],s,n,a,b,l.a[2],r.a[2]]);
+ }
+ const term=(tag,a)=>'GOES_WITH('+tag+','+a.join(',')+')';
+ const expectedFrames=frames.map(a=>term('F41_FRAME',a));
+ exact(rows('F41_FRAME').map(x=>x.term),expectedFrames,'FRAME_DOMAIN_NOT_SAME');
+ exact(rows('F41_RESOURCE').map(x=>x.term),covers.map(x=>term('F41_RESOURCE',x.a)),'RESOURCE_DOMAIN_NOT_SAME');
+ const roles=[],readings=[],parents=[],correspondences=[];
+ for(const[t,s,n,a,b,l,r]of frames){
+  roles.push(term('F41_ROLE_CONTACT',[t,s,n,'LEFT',a,`READING_IDENTITY(${t},${s},${l})`]),term('F41_ROLE_CONTACT',[t,s,n,'RIGHT',b,`READING_IDENTITY(${t},${s},${r})`]));
+  need(['READING_THIS','READING_NO'].includes(l)&&['READING_THIS','READING_NO'].includes(r),'READING_OUTSIDE_BOUND_DOMAIN');
+  const reading=l===r?'SAME':'NOT_SAME';readings.push(term('F41_READING',[t,s,n,a,b,reading]));
+  if(reading==='SAME'){
+   const result=term('W38_SITE_READING_TREE',[t,s,l,n]);
+   parents.push(term('F41_PARENT_PAYLOAD',[t,s,n,a,b,result]));
+   need(expected.expected_join_terms.includes(result),'PARENT_WITHOUT_SOURCE_RESULT');
+   correspondences.push(term('F41_SOURCE_CORRESPONDENCE',[t,s,n,l,a,b]));
+  }
+ }
+ exact(rows('F41_ROLE_CONTACT').map(x=>x.term),roles,'ROLE_CONTACT_DOMAIN_NOT_SAME');
+ exact(rows('F41_READING').map(x=>x.term),readings,'READING_DOMAIN_NOT_SAME');
+ exact(rows('F41_PARENT_PAYLOAD').map(x=>x.term),parents,'PARENT_PAYLOAD_DOMAIN_NOT_SAME');
+ exact(rows('F41_SOURCE_CORRESPONDENCE').map(x=>x.term),correspondences,'CORRESPONDENCE_DOMAIN_NOT_SAME');
+ for(const f of [...outputs,...q.facts.filter(f=>f.origin?.startsWith('F41_'))])prove.proof(f.id);
+ const controls=expected.cases.map(c=>{
+  const found=rows('F41_FRAME').filter(x=>x.a[0]===c.snapshot&&x.a[1]===c.site&&x.a[2]===c.parent);
+  need(found.length===(c.frame==='PRESENT'?1:0),'CASE_FRAME_'+c.name);
+  const joined=outputs.filter(f=>{const a=args(f);return a[1]===c.site&&a[3]===c.parent;});
+  exact(joined.map(f=>q.term(f.term)),c.expected_join_terms,'CASE_RESULT_'+c.name);
+  if(c.additional_resource_without_frame)need(!rows('F41_SOURCE_CORRESPONDENCE').some(x=>x.a[1]===c.site&&x.a[5]===c.additional_resource_without_frame),'FALSE_CHILD_PROVENANCE');
+  if(c.additional_snapshot){
+   need(rows('F41_RESOURCE').filter(x=>x.a[0]===`SITE(${c.site})`).length===1,'SNAPSHOT_CHANGED_RESOURCE');
+   need(rows('F41_FRAME').filter(x=>x.a[1]===c.site).length===2,'APPLICATIONS_CONFLATED');
+  }
+  return{name:c.name,verdict:'IF_THEN',frame:c.frame,native_join_outputs:joined.length};
+ });
+ const nativeRows=rows('F41_SOURCE_CORRESPONDENCE');
+ const evidence=nativeRows.map(x=>({term:x.term,fact_id:x.f.id,rule:x.f.origin,support:x.f.support}));
+ need(!q.map.rules.some(r=>/DRC|CELL_DEF|CANONICAL_PROGRAM|STEP_FABRIC_RETURN/.test(r.name)),'UNDECLARED_CANONICAL_CLAIM');
+ return{schema:'SiteJoinOperandResultObservation041',verdict:'IF_THEN',qualification_scope:'NATIVE_SOURCE_OPERAND_RESULT_CORRESPONDENCE_ONLY',expected:config.expected,actual_contacts:expected.actual_contacts,source:config.source,source_map:config.source_map,image:config.image,readback:identity(readback),native:{facts:q.count,terms:q.terms,epochs:q.epochs,error:q.error,proof_facts_checked:prove.seen.size},counts:{native_join_outputs:outputs.length,resources:rows('F41_RESOURCE').length,frames:rows('F41_FRAME').length,reading_contacts:rows('F41_READING').length,parent_payloads:parents.length,source_correspondences:nativeRows.length},controls,evidence,semantic_digest:hash(JSON.stringify({outputs:sorted(outputs.map(f=>q.term(f.term))),resources:sorted(rows('F41_RESOURCE').map(x=>x.term)),frames:sorted(expectedFrames),readings:sorted(readings),correspondences:sorted(correspondences)})),canonical_fabric:'NOT_EMITTED',DRC:{verdict:'MAYBE',execution:'NOT_RUN',reason:'CANONICAL_RESOURCE_PLACEMENT_AND_RUNTIME_CORRESPONDENCE_UNSUPPLIED'},world_transition:'NO',commit:'NO',push:'NO'};
+}

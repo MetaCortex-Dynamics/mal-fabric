@@ -1,0 +1,27 @@
+// Read-only projection of source-owned occurrence contacts; no placement is
+// synthesized and no comparison reading is computed here.
+import path from 'node:path';
+import {openNative,nativeProof} from '../native_reader_v2_038.mjs';
+import {here,home,need,identity,read,save,verify,exact} from './custody_042.mjs';
+const bindingRef=identity(path.join(here,'CANONICAL_PROGRAM_BINDING_042.json')),binding=read(bindingRef.path);
+const transportRef=identity(path.join(home,'qualification_runs/J17_G2_DIAGNOSTIC_COPY__q008_normal/prepare_B/B_000/TRANSPORT.json'));
+const transport=read(transportRef.path),q=openNative(binding.native),prove=nativeProof(q);
+const flags=new Map(q.predicate('P20_SOURCE_FLAG_JSON').map(f=>{const n=q.node(f.term);return[q.term(n.c[1]),{value:q.value(n.c[2]),fact:f}];}));
+const actualByOriginal=new Map(transport.carrier.flags.map(f=>[f.original,f]));
+const program=read(binding.program.path),occurrences=[];
+for(const fact of q.predicate('P20_CELL_HASH')){
+ const n=q.node(fact.term),operator=q.term(n.c[3]),overlap=q.node(n.c[4]);
+ need(operator==='TYPE(SAME_NOT_SAME,WHAT)'&&overlap.s==='OVERLAP','OCCURRENCE_TYPE');
+ const a=flags.get(q.term(overlap.c[0])),b=flags.get(q.term(overlap.c[1]));need(a&&b,'FLAG_CONTACT_UNSUPPLIED');
+ const original_a=JSON.stringify(a.value),original_b=JSON.stringify(b.value),af=actualByOriginal.get(original_a),bf=actualByOriginal.get(original_b);
+ need(af&&bf,'CARRIER_FLAG_CORRESPONDENCE_NOT_SAME');
+ const cell_id=q.value(n.c[2]);
+ prove.proof(fact.id);prove.proof(a.fact.id);prove.proof(b.fact.id);
+ occurrences.push({cell_id,source_occurrence:q.term(n.c[1]),left:af.term,right:bf.term,left_site:af.site,right_site:bf.site,original_left:original_a,original_right:original_b,facts:{cell_hash:fact.id,left_flag:a.fact.id,right_flag:b.fact.id}});
+}
+exact(occurrences.map(x=>x.cell_id),program.cells.map(x=>x.cell_id),'CANONICAL_CELL_DOMAIN_NOT_SAME');
+const pair=(a,b)=>JSON.stringify([a,b].sort());
+exact(occurrences.map(x=>pair(x.left,x.right)),transport.carrier.overlaps.map(x=>pair(x.a,x.b)),'OVERLAP_DOMAIN_NOT_SAME');
+need(occurrences.length===720&&new Set(occurrences.map(x=>x.cell_id)).size===720,'OCCURRENCE_MULTIPLICITY');
+const result={schema:'CanonicalOccurrenceContacts042',verdict:'IF_THEN',binding:bindingRef,transport:transportRef,source_proof_facts_checked:prove.seen.size,occurrences,flags:transport.carrier.flags,sites:transport.carrier.sites,world_effect:'NONE',selection:'NO_MEMBER_TAKEN'};
+console.log(JSON.stringify(save(path.join(here,'OCCURRENCE_CONTACTS_042.json'),result)));
