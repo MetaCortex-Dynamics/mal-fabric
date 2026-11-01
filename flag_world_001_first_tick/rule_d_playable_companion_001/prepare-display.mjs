@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const home=path.dirname(fileURLToPath(import.meta.url));
+const raw=fs.readFileSync(path.join(home,'rule-d-data.json'));
+const binding=JSON.parse(fs.readFileSync(path.join(home,'DATA_BINDING.json')));
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
+if(sha(raw)!==binding.data.sha256)throw Error('NOT_SAME extracted source');
+const data=JSON.parse(raw);
+data.sources=data.sources.map(s=>({name:path.basename(s.path),bytes:s.bytes,sha256:s.sha256}));
+data.extractionSha256=binding.data.sha256;
+fs.writeFileSync(path.join(home,'dist/data.js'),'window.RULE_D_DATA = '+JSON.stringify(data)+';\n');
+fs.writeFileSync(path.join(home,'dist/evidence.json'),JSON.stringify({...binding,sources:data.sources},null,2));
+console.log(JSON.stringify({source:'SAME',displayBytes:fs.statSync(path.join(home,'dist/data.js')).size,receiptReferences:data.checks,obligation038:'PAUSED'}));

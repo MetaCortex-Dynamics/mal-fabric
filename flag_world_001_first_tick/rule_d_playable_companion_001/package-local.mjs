@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const read=p=>fs.readFileSync(p,'utf8');
+let html=read('dist/index.html');
+html=html.replace('<link rel="stylesheet" href="style.css">','<style>'+read('dist/style.css')+'</style>');
+html=html.replace('<script src="data.js"></script>','<script>'+read('dist/data.js')+'</script>');
+const logic=read('dist/model.mjs').replace(/^export /gm,'')+'\n'+read('dist/app.js').replace(/^import .*\n/,'');
+html=html.replace('<script type="module" src="app.js"></script>','<script type="module">'+logic+'</script>');
+html=html.replace('href="evidence.json" target="_blank" rel="noopener noreferrer"','href="data:application/json;base64,'+Buffer.from(read('dist/evidence.json')).toString('base64')+'" download="rule-d-evidence.json"');
+fs.writeFileSync('Play_Contextual_Persistence.html',html);
+const record={schema:'RULE_D_LOCAL_DELIVERY_001',file:'Play_Contextual_Persistence.html',bytes:Buffer.byteLength(html),sha256:crypto.createHash('sha256').update(html).digest('hex').toUpperCase(),format:'Self-contained HTML; optional web fonts have local fallbacks',receiptEvidence:'Same extracted identities as dist/data.js',hosting:'NOT_UPLOADED',obligation038:'PAUSED',worldTransition:'NONE',gpuInvocation:'NONE'};
+fs.writeFileSync('LOCAL_DELIVERY.json',JSON.stringify(record,null,2));
+console.log(JSON.stringify(record));

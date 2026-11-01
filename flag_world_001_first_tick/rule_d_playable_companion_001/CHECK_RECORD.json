@@ -1,0 +1,76 @@
+{
+  "schema": "RULE_D_PLAYABLE_CHECK_001",
+  "verdict": "IF_THEN",
+  "checks": [
+    "carrier counts",
+    "same face and same hole",
+    "hole identity",
+    "contrast only hole reads NO",
+    "nested exact recorded face effect",
+    "nested changed exact identities",
+    "nested discharged exact identities",
+    "nested opened exact identities",
+    "nested retained exact identities",
+    "nested whole-field walls",
+    "nested replay disposition",
+    "nested result wall count",
+    "nested reset",
+    "nested scenario change resets",
+    "contrast exact recorded face effect",
+    "contrast changed exact identities",
+    "contrast discharged exact identities",
+    "contrast opened exact identities",
+    "contrast retained exact identities",
+    "contrast whole-field walls",
+    "contrast replay disposition",
+    "contrast result wall count",
+    "contrast reset",
+    "contrast scenario change resets",
+    "preview separate from held field",
+    "preview return",
+    "execution scope",
+    "display chart respects neighbouring sites",
+    "UI contact field-view",
+    "UI contact try-offer",
+    "UI contact reset",
+    "UI contact show-support",
+    "UI contact phase",
+    "UI contact status-title",
+    "UI contact status-explanation",
+    "UI contact wall-count",
+    "UI contact region-status",
+    "UI contact discharged",
+    "UI contact opened",
+    "UI contact retained",
+    "UI contact changed"
+  ],
+  "files": [
+    {
+      "name": "app.js",
+      "sha256": "0582DCCED924563B980AB39D4DDECA32BA2CE90DC78994C9368AB6EFD7999E38"
+    },
+    {
+      "name": "data.js",
+      "sha256": "B8A7B4F382F72DB0A249B7FF95976100633DB74A3D8FDA1BCF20495AACB7B6EE"
+    },
+    {
+      "name": "evidence.json",
+      "sha256": "B63613D28529EB55F2EF6F14C8C36529905E88FD39713AB746710F746FF6A1E4"
+    },
+    {
+      "name": "index.html",
+      "sha256": "D7CF34DFEB80FEC15978383C680627D5C617828569628BDEABCEBA873423DF99"
+    },
+    {
+      "name": "model.mjs",
+      "sha256": "937C3C30008135E697237F358E097333448A7667629E51D7DFC69F515441853B"
+    },
+    {
+      "name": "style.css",
+      "sha256": "EE5A738E70072FFAA3BA1C92A9FAE0785D8A466F5CA7D776BB3C524EE618F557"
+    }
+  ],
+  "worldTransition": "NONE",
+  "gpuInvocation": "NONE",
+  "obligation038": "PAUSED"
+}

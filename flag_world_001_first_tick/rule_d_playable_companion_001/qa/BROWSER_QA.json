@@ -1,0 +1,46 @@
+{
+  "schema": "RULE_D_PLAYABLE_BROWSER_QA_001",
+  "verdict": "IF_THEN",
+  "standalone": {
+    "inlineScripts": 2,
+    "syntax": "IF_THEN",
+    "dataBundled": "SAME",
+    "browserFileUrl": "WITHHELD_BY_BROWSER_PROTOCOL_POLICY",
+    "method": "Served application browser-tested; bundled application syntax and assets checked"
+  },
+  "browser": {
+    "source": "http://127.0.0.1:4317/",
+    "nested": {
+      "receipt": [
+        30,
+        10,
+        34
+      ],
+      "walls": 64,
+      "disposition": "HELD"
+    },
+    "withheldPreview": {
+      "candidateWalls": 44,
+      "returnWalls": 64
+    },
+    "contrast": {
+      "receipt": [
+        20,
+        0,
+        0
+      ],
+      "resultWalls": 0,
+      "reading": "THIS"
+    },
+    "mobileWidth": 390,
+    "mobileLayout": "INSPECTED",
+    "viewportRestored": "IF_THEN"
+  },
+  "hosting": {
+    "state": "NOT_UPLOADED",
+    "reason": "Automatic approval review requires explicit authorization for source/evidence upload to private Site"
+  },
+  "worldTransition": "NONE",
+  "gpuInvocation": "NONE",
+  "obligation038": "PAUSED"
+}

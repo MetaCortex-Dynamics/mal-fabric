@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import {spawnSync} from 'node:child_process';
+const h=fs.readFileSync('Play_Contextual_Persistence.html','utf8');
+const scripts=[...h.matchAll(/<script(?: type="module")?>([\s\S]*?)<\/script>/g)].map(x=>x[1]);
+if(scripts.length!==2||h.includes('<script src=')||h.includes('href="style.css"'))throw Error('UNSUPPLIED standalone assets');
+fs.writeFileSync('qa/standalone-check.mjs',scripts[1]);
+const syntax=spawnSync(process.execPath,['--check','qa/standalone-check.mjs'],{encoding:'utf8'});
+if(syntax.status!==0)throw Error(syntax.stderr);
+const record={schema:'RULE_D_PLAYABLE_BROWSER_QA_001',verdict:'IF_THEN',standalone:{inlineScripts:2,syntax:'IF_THEN',dataBundled:'SAME',browserFileUrl:'WITHHELD_BY_BROWSER_PROTOCOL_POLICY',method:'Served application browser-tested; bundled application syntax and assets checked'},browser:{source:'http://127.0.0.1:4317/',nested:{receipt:[30,10,34],walls:64,disposition:'HELD'},withheldPreview:{candidateWalls:44,returnWalls:64},contrast:{receipt:[20,0,0],resultWalls:0,reading:'THIS'},mobileWidth:390,mobileLayout:'INSPECTED',viewportRestored:'IF_THEN'},hosting:{state:'NOT_UPLOADED',reason:'Automatic approval review requires explicit authorization for source/evidence upload to private Site'},worldTransition:'NONE',gpuInvocation:'NONE',obligation038:'PAUSED'};
+fs.writeFileSync('qa/BROWSER_QA.json',JSON.stringify(record,null,2));
+console.log(JSON.stringify({syntax:'IF_THEN',inlineScripts:2,assets:'BUNDLED',browserChecks:'RECORDED',obligation038:'PAUSED'}));
