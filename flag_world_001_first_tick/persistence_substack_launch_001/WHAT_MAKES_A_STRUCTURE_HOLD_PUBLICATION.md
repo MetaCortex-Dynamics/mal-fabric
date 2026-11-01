@@ -2,6 +2,8 @@
 
 *The same region dissolves or persists depending on its surroundings. Refinement can remove its only exit. The receipts show why.*
 
+![Persistence from Geometry. The same 24-flag hole has a strict exit with 20 walls discharged and none opened in one surrounding field; in the nested field the offer discharges 30 and opens 10.](https://raw.githubusercontent.com/MetaCortex-Dynamics/mal-fabric/main/flag_world_001_first_tick/persistence_substack_launch_001/images/paper_two_cover_1200x630.png)
+
 I kept the hole exactly where it was. Same flags. Same reading. Same ancestry. Then I changed everything around it.
 
 In one field, the hole dissolved. In the other, it held.
