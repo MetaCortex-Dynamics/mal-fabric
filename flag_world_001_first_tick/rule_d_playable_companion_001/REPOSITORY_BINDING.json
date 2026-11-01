@@ -1,0 +1,345 @@
+{
+  "schema": "RULE_D_PLAYABLE_REPOSITORY_BINDING_001",
+  "verdict": "IF_THEN",
+  "authority": "Devon: Commit and push the playable demonstration and its private-Site publication receipt to mal-fabric, then merge to main. Keep 038 paused. No world transition.",
+  "canonicalHome": "flag_world_001_first_tick/rule_d_playable_companion_001",
+  "baselineMain": "315a920e165c17a232896addf179e0ac0e4a240d",
+  "siteSourceCommit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+  "privateSite": {
+    "url": "https://persistence-context-play.ebonysails.chatgpt.site",
+    "projectId": "appgprj_6ae753afde0c8191a97e0ed013c362a5",
+    "versionId": "appgprj_6ae753afde0c8191a97e0ed013c362a5~appgver_32a0b8ab75608191afb889e4634babb0",
+    "deploymentId": "appgdep_6ae757b746248191a88874972c99da7a",
+    "status": "succeeded",
+    "audience": "OWNER_ONLY"
+  },
+  "preservation": {
+    "siteTrackedFiles": 22,
+    "closureArtifacts": 3,
+    "comparisonToDeliveredLocalBytes": "BYTE_SAME",
+    "siteGitByteSame": 20,
+    "siteGitLineEndingDifferences": 2,
+    "servedFiles": 6,
+    "viewerChecks": 41
+  },
+  "lineEndingCorrespondence": [
+    {
+      "path": "Play_Contextual_Persistence.html",
+      "deliveredBytes": 440347,
+      "deliveredSha256": "CE49D722327D6A3A7773EEF3297CB3E58F2F61714BB0B43592E7A4360D8A2482",
+      "gitBytes": 440346,
+      "gitSha256": "5748F21C4C068378848AEDADB7C75966263A131299CB6E15B7ED89FE224B3C9B",
+      "relation": "CRLF_TO_LF_SAME"
+    },
+    {
+      "path": "dist/style.css",
+      "deliveredBytes": 13787,
+      "deliveredSha256": "EE5A738E70072FFAA3BA1C92A9FAE0785D8A466F5CA7D776BB3C524EE618F557",
+      "gitBytes": 13786,
+      "gitSha256": "2352CF52A327D825F9D96BD51E236A12D0962E7C932063798E7C441C5B17B955",
+      "relation": "CRLF_TO_LF_SAME"
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 42,
+      "sha256": "BF88F1F365FA6056A73812920D44D49552E8EBFF35211CB301B7BADE2EA867B2",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 42,
+        "sha256": "BF88F1F365FA6056A73812920D44D49552E8EBFF35211CB301B7BADE2EA867B2",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": ".openai/hosting.json",
+      "bytes": 106,
+      "sha256": "992A3971E3E6B012257304CBBAE49CEFA60D731382589B608E813B87023D80C3",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 106,
+        "sha256": "992A3971E3E6B012257304CBBAE49CEFA60D731382589B608E813B87023D80C3",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "CHECK_RECORD.json",
+      "bytes": 2268,
+      "sha256": "7DE9837445212FF608949449E59238B62AD4BDFB22A5A4C4769F1F7251BAB527",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 2268,
+        "sha256": "7DE9837445212FF608949449E59238B62AD4BDFB22A5A4C4769F1F7251BAB527",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "DATA_BINDING.json",
+      "bytes": 2536,
+      "sha256": "CC3E78DA2A0E10B4C4B4AF2505BC240D9E07FFD0B29A200589931CEA59B9C7F9",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 2536,
+        "sha256": "CC3E78DA2A0E10B4C4B4AF2505BC240D9E07FFD0B29A200589931CEA59B9C7F9",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "LOCAL_DELIVERY.json",
+      "bytes": 444,
+      "sha256": "A42584696809DBB80E45A554DD1AAE2424B879B0F415AFD4008B5B8B778AE03E",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 444,
+        "sha256": "A42584696809DBB80E45A554DD1AAE2424B879B0F415AFD4008B5B8B778AE03E",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "Play_Contextual_Persistence.html",
+      "bytes": 440347,
+      "sha256": "CE49D722327D6A3A7773EEF3297CB3E58F2F61714BB0B43592E7A4360D8A2482",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 440346,
+        "sha256": "5748F21C4C068378848AEDADB7C75966263A131299CB6E15B7ED89FE224B3C9B",
+        "comparison": "NOT_SAME_BYTES",
+        "normalization": "CRLF_TO_LF_SAME"
+      }
+    },
+    {
+      "path": "README.md",
+      "bytes": 2008,
+      "sha256": "97C1A90A10D2B25290912462573DADC6F279E98C0A11BE7C3513396F5CDFC81F",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 2008,
+        "sha256": "97C1A90A10D2B25290912462573DADC6F279E98C0A11BE7C3513396F5CDFC81F",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "Rule_D_Playable_001.zip",
+      "bytes": 73955,
+      "sha256": "A8286F9E5726C7AD688EB6BF05D260B69CDC4AC7E3C2D89303B4BDFC067E095E",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 73955,
+        "sha256": "A8286F9E5726C7AD688EB6BF05D260B69CDC4AC7E3C2D89303B4BDFC067E095E",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "check.mjs",
+      "bytes": 3600,
+      "sha256": "575C3E7F7178F09C04A211B5B9F65D890BDA081BFA7CD9EFE30BD250110A1B04",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 3600,
+        "sha256": "575C3E7F7178F09C04A211B5B9F65D890BDA081BFA7CD9EFE30BD250110A1B04",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "dist/app.js",
+      "bytes": 7493,
+      "sha256": "0582DCCED924563B980AB39D4DDECA32BA2CE90DC78994C9368AB6EFD7999E38",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 7493,
+        "sha256": "0582DCCED924563B980AB39D4DDECA32BA2CE90DC78994C9368AB6EFD7999E38",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "dist/data.js",
+      "bytes": 407384,
+      "sha256": "B8A7B4F382F72DB0A249B7FF95976100633DB74A3D8FDA1BCF20495AACB7B6EE",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 407384,
+        "sha256": "B8A7B4F382F72DB0A249B7FF95976100633DB74A3D8FDA1BCF20495AACB7B6EE",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "dist/evidence.json",
+      "bytes": 1911,
+      "sha256": "B63613D28529EB55F2EF6F14C8C36529905E88FD39713AB746710F746FF6A1E4",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 1911,
+        "sha256": "B63613D28529EB55F2EF6F14C8C36529905E88FD39713AB746710F746FF6A1E4",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 7900,
+      "sha256": "D7CF34DFEB80FEC15978383C680627D5C617828569628BDEABCEBA873423DF99",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 7900,
+        "sha256": "D7CF34DFEB80FEC15978383C680627D5C617828569628BDEABCEBA873423DF99",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "dist/model.mjs",
+      "bytes": 1355,
+      "sha256": "937C3C30008135E697237F358E097333448A7667629E51D7DFC69F515441853B",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 1355,
+        "sha256": "937C3C30008135E697237F358E097333448A7667629E51D7DFC69F515441853B",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "dist/style.css",
+      "bytes": 13787,
+      "sha256": "EE5A738E70072FFAA3BA1C92A9FAE0785D8A466F5CA7D776BB3C524EE618F557",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 13786,
+        "sha256": "2352CF52A327D825F9D96BD51E236A12D0962E7C932063798E7C441C5B17B955",
+        "comparison": "NOT_SAME_BYTES",
+        "normalization": "CRLF_TO_LF_SAME"
+      }
+    },
+    {
+      "path": "extract-rule-d.mjs",
+      "bytes": 8138,
+      "sha256": "E1656B0815996994EBACC2F46A9072D7A1CBA787F8D01C5BFB26FB0E610DDC54",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 8138,
+        "sha256": "E1656B0815996994EBACC2F46A9072D7A1CBA787F8D01C5BFB26FB0E610DDC54",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "package-local.mjs",
+      "bytes": 1365,
+      "sha256": "E5A3F5B9D1F49F08A0590211DF2F15477E9893556DB9FAFEB4CCDB44B2BF6FBE",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 1365,
+        "sha256": "E5A3F5B9D1F49F08A0590211DF2F15477E9893556DB9FAFEB4CCDB44B2BF6FBE",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "prepare-display.mjs",
+      "bytes": 1028,
+      "sha256": "D475459EC3E00DB879BAF8BFC8CF323285E00142CF7264526F7A32668393711A",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 1028,
+        "sha256": "D475459EC3E00DB879BAF8BFC8CF323285E00142CF7264526F7A32668393711A",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "rule-d-data.js",
+      "bytes": 407922,
+      "sha256": "66D0F0F9537001130EA36CC8618A5021B69D150B21DAA81A8ACE1588300E5088",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 407922,
+        "sha256": "66D0F0F9537001130EA36CC8618A5021B69D150B21DAA81A8ACE1588300E5088",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "rule-d-data.json",
+      "bytes": 407899,
+      "sha256": "22C9A4EB431428DEF9EBA0102B9A2EE025189BB93167E9147CDC3E400281AF86",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 407899,
+        "sha256": "22C9A4EB431428DEF9EBA0102B9A2EE025189BB93167E9147CDC3E400281AF86",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 986,
+      "sha256": "A5171EBAB5BC9287E8774257F578493616BA71DDA65CCDFD5B5D5A0C10611FCA",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 986,
+        "sha256": "A5171EBAB5BC9287E8774257F578493616BA71DDA65CCDFD5B5D5A0C10611FCA",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "verify-local.mjs",
+      "bytes": 1530,
+      "sha256": "B12935ED9866ECA4A808B0DA1D4AA8F5CC74D4C418380A8C71A5F7ACABBE1404",
+      "origin": "PRIVATE_SITE_DELIVERY_SOURCE",
+      "sourceGit": {
+        "commit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+        "bytes": 1530,
+        "sha256": "B12935ED9866ECA4A808B0DA1D4AA8F5CC74D4C418380A8C71A5F7ACABBE1404",
+        "comparison": "BYTE_SAME"
+      }
+    },
+    {
+      "path": "qa/DEPLOYMENT_RECEIPT_001.json",
+      "bytes": 1454,
+      "sha256": "58026026398A260723BDB3EC5614A1416B1B1FC58072B13303A41150B9205812",
+      "origin": "LOCAL_CLOSURE_ARTIFACT"
+    },
+    {
+      "path": "qa/BROWSER_QA.json",
+      "bytes": 1082,
+      "sha256": "8A6D3DF92D7FB8DB7C2906AF76D6A7462B50A4E7C10D215D19B6362479DFA9CD",
+      "origin": "LOCAL_CLOSURE_ARTIFACT"
+    },
+    {
+      "path": "qa/playable-preview.png",
+      "bytes": 113030,
+      "sha256": "31B0F19692E79364F274C75DCD0C26A053BE05BBB0C432FA51CD8AC857AEB5C4",
+      "origin": "LOCAL_CLOSURE_ARTIFACT"
+    },
+    {
+      "path": "REPOSITORY_BINDING.md",
+      "bytes": 2899,
+      "sha256": "F6C7FB3D0A9EE7152CD5138514C618B4C3C8885E7DBAEAE35920A992E5C5A483",
+      "origin": "REPOSITORY_BINDING"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 17,
+      "sha256": "1E1F89388215C331239129347CE584AF3C8872DD9E77C025E8813FE7F430A7F6",
+      "origin": "REPOSITORY_BINDING"
+    }
+  ],
+  "manifestSelfBinding": "This manifest is bound by the repository commit; no self-hash.",
+  "obligation038": "PAUSED",
+  "gpuInvocation": "NONE",
+  "worldTransition": "NONE"
+}

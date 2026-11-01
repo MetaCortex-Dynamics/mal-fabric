@@ -1,0 +1,40 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import vm from 'node:vm';
+import {initialState,update,view} from './dist/model.mjs';
+const ctx={window:{}};vm.runInNewContext(fs.readFileSync('dist/data.js','utf8'),ctx);
+const d=ctx.window.RULE_D_DATA;
+const checks=[];
+function need(x,label){if(!x)throw Error('NOT_SAME '+label);checks.push(label);}
+const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+const g=d.geometry;
+need(equal([g.sites.length,g.edges.length,g.triads.length,g.flags.length,g.overlaps.length],[162,480,320,1920,2880]),'carrier counts');
+need(d.faceSupport.length===96&&d.holeFlags.length===24,'same face and same hole');
+need(d.holeFlags.every(i=>d.fields.nested.readings[i]===0&&d.fields.contrast.readings[i]===0),'hole identity');
+need(d.fields.contrast.readings.filter(x=>x===0).length===24,'contrast only hole reads NO');
+for(const scenario of ['nested','contrast']){
+  const f=d.fields[scenario],support=new Set(d.faceSupport);
+  need(f.readings.every((x,i)=>f.candidateReadings[i]===(support.has(i)?1:x)),scenario+' exact recorded face effect');
+  const before=g.overlaps.flatMap((o,i)=>f.readings[o.a]!==f.readings[o.b]?[i]:[]);
+  const after=g.overlaps.flatMap((o,i)=>f.candidateReadings[o.a]!==f.candidateReadings[o.b]?[i]:[]);
+  const B=new Set(before),A=new Set(after);
+  const computed={changed:f.readings.flatMap((x,i)=>x!==f.candidateReadings[i]?[i]:[]),discharged:before.filter(i=>!A.has(i)),opened:after.filter(i=>!B.has(i)),retained:before.filter(i=>A.has(i))};
+  for(const k of Object.keys(computed))need(equal(computed[k],f.receipt[k]),scenario+' '+k+' exact identities');
+  need(equal(before,f.walls)&&equal(after,f.candidateWalls),scenario+' whole-field walls');
+  const s=update(initialState(scenario),{type:'try'}),v=view(d,s);
+  need(equal(v.readings,scenario==='nested'?f.readings:f.candidateReadings),scenario+' replay disposition');
+  need(v.walls.length===(scenario==='nested'?64:0),scenario+' result wall count');
+  need(equal(view(d,update(s,{type:'reset'})).readings,f.readings),scenario+' reset');
+  need(update(s,{type:'scenario',value:scenario==='nested'?'contrast':'nested'}).attempted===false,scenario+' scenario change resets');
+}
+const held=update(initialState(),{type:'try'}),inspected=update(held,{type:'inspect'});
+need(view(d,held).phase==='HELD'&&view(d,inspected).phase==='WITHHELD_PREVIEW','preview separate from held field');
+need(view(d,inspected).walls.length===44&&view(d,update(inspected,{type:'inspect'})).walls.length===64,'preview return');
+need(d.obligation038==='PAUSED'&&d.worldTransition==='NONE'&&d.gpuInvocation==='NONE','execution scope');
+need(g.edges.every(e=>{const a=g.sites[e.sites[0]].position,b=g.sites[e.sites[1]].position;return Math.hypot(...a.map((x,i)=>x-b[i]))<0.33;}),'display chart respects neighbouring sites');
+const html=fs.readFileSync('dist/index.html','utf8');
+for(const id of ['field-view','try-offer','reset','show-support','phase','status-title','status-explanation','wall-count','region-status','discharged','opened','retained','changed'])need(html.includes('id="'+id+'"'),'UI contact '+id);
+const manifest=fs.readdirSync('dist').sort().map(name=>({name,sha256:crypto.createHash('sha256').update(fs.readFileSync('dist/'+name)).digest('hex').toUpperCase()}));
+const out={schema:'RULE_D_PLAYABLE_CHECK_001',verdict:'IF_THEN',checks,files:manifest,worldTransition:'NONE',gpuInvocation:'NONE',obligation038:'PAUSED'};
+fs.writeFileSync('CHECK_RECORD.json',JSON.stringify(out,null,2));
+console.log(JSON.stringify({verdict:out.verdict,checks:checks.length,scope:out.obligation038}));

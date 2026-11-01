@@ -1,0 +1,69 @@
+{
+  "schema": "RULE_D_PLAYABLE_EXTRACTION_001",
+  "verdict": "IF_THEN",
+  "checks": [
+    {
+      "field": "nested",
+      "receiptSets": "SAME",
+      "receiptHashes": "SAME",
+      "counts": {
+        "changed": 42,
+        "discharged": 30,
+        "opened": 10,
+        "retained": 34,
+        "wallsBefore": 64,
+        "wallsCandidate": 44
+      },
+      "strict": "NO"
+    },
+    {
+      "field": "contrast",
+      "receiptSets": "SAME",
+      "receiptHashes": "SAME",
+      "counts": {
+        "changed": 24,
+        "discharged": 20,
+        "opened": 0,
+        "retained": 0,
+        "wallsBefore": 20,
+        "wallsCandidate": 0
+      },
+      "strict": "IF_THEN"
+    }
+  ],
+  "sources": [
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/sweep/broad_execution_020/targeted_receipt_execution_036/native_inputs/FIXTURE_036.json",
+      "bytes": 4364549,
+      "sha256": "6C30B9EF167CF485454F0F2C7476ACD2DBAA66310F2D495B2D699CF97459FE99"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/paper_two_release_main_20261101/flag_world_001_first_tick/persistence_paper_doi_deposit_v0_1_1_001/companion/evidence/TARGETED_RECEIPTS_CLOSED_036.json",
+      "bytes": 398647,
+      "sha256": "2AACCC0C2DC73D45B92029E49C25ADDF43CA2BE342C1081AC53FEFCB8986F0A9"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/paper_two_release_main_20261101/flag_world_001_first_tick/persistence_paper_doi_deposit_v0_1_1_001/companion/evidence/RUN_RECORD_036.json",
+      "bytes": 202597,
+      "sha256": "FE41196D8008620488CF9A6CC4A89379F4D273A431D9EB4EA83091F4EC6B3F34"
+    },
+    {
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/sweep/level4_001/CATALOG.json",
+      "bytes": 3592995,
+      "sha256": "6D5DACE855B1344CCDE2A7C63D7F586DF330F3FD16957E166258771FA2977085"
+    }
+  ],
+  "data": {
+    "bytes": 407899,
+    "sha256": "22C9A4EB431428DEF9EBA0102B9A2EE025189BB93167E9147CDC3E400281AF86"
+  },
+  "scope": "VIEWER_OF_TWO_RECORDED_DIAGNOSTIC_FIELDS_AND_ONE_RECORDED_OFFER_EACH",
+  "chart": {
+    "purpose": "DISPLAY_ONLY",
+    "description": "Unit-sphere display chart assigned to the recorded HW incidence; inherited sites drawn at normalized midpoint positions. No position is used to decide a receipt.",
+    "metric": "NO_PHYSICAL_SCALE_OR_HANDEDNESS_CLAIM"
+  },
+  "worldTransition": "NONE",
+  "gpuInvocation": "NONE",
+  "obligation038": "PAUSED"
+}

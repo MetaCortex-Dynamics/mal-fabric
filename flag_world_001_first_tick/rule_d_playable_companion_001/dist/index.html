@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#132d31">
+  <meta name="description" content="Play through two witnessed fields from Persistence from Geometry. Keep the same enclosed region and change its surroundings to see why it holds or dissolves.">
+  <title>What Makes a Structure Hold? · MetaCortex Dynamics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="masthead">
+      <a class="wordmark" href="https://metacortexdynamics.substack.com/p/what-makes-a-structure-hold" target="_blank" rel="noopener noreferrer"><span class="triad-mark" aria-hidden="true">∇</span> MetaCortex Dynamics</a>
+      <span class="edition">Paper Two <span aria-hidden="true">/</span> Playable companion</span>
+    </header>
+
+    <main>
+      <section class="introduction" aria-labelledby="page-title">
+        <p class="eyebrow">Persistence from Geometry</p>
+        <h1 id="page-title">What makes a<br>structure hold?</h1>
+        <p class="intro-copy">Same enclosed region. Same proposed change.<br><strong>Change the surroundings. Watch the receipt change.</strong></p>
+      </section>
+
+      <section class="experiment" aria-label="Contextual persistence demonstration">
+        <div class="control-bar">
+          <div class="scenario-control">
+            <span class="control-label" id="scenario-label">Choose the recorded field</span>
+            <div class="segmented" role="group" aria-labelledby="scenario-label">
+              <button type="button" data-scenario="nested" aria-pressed="true"><span class="reading-dot no" aria-hidden="true"></span>Surroundings: NO</button>
+              <button type="button" data-scenario="contrast" aria-pressed="false"><span class="reading-dot this" aria-hidden="true"></span>Surroundings: THIS</button>
+            </div>
+          </div>
+          <p class="constant"><span class="constant-glyph" aria-hidden="true">◇</span> The same <strong>24-flag</strong> enclosed region</p>
+        </div>
+
+        <div class="play-area">
+          <div class="scene">
+            <div class="scene-heading">
+              <p class="scene-label">The field</p>
+              <label class="support-toggle"><input type="checkbox" id="show-support"><span>Show the containing face</span></label>
+            </div>
+            <div class="viewport">
+              <svg id="field-view" viewBox="0 0 680 560" role="img" aria-labelledby="field-title field-description">
+                <title id="field-title">The recorded nested field</title>
+                <desc id="field-description">The same enclosed region is surrounded by a THIS ring. Choose the exterior reading, then inspect the receipt for the same face-to-THIS offer.</desc>
+              </svg>
+            </div>
+            <div class="view-notes"><span id="view-caption">Recorded source field</span><span id="flag-detail" aria-live="polite"></span></div>
+            <div class="scene-footer">
+              <div class="legend" aria-label="Field readings">
+                <span><i class="reading-dot this" aria-hidden="true"></i>THIS</span>
+                <span><i class="reading-dot no" aria-hidden="true"></i>NO</span>
+                <span><i class="wall-key" aria-hidden="true"></i>Wall</span>
+              </div>
+              <span class="wall-readout"><strong id="wall-count">64</strong> <span id="wall-subject">walls in the field</span></span>
+            </div>
+          </div>
+
+          <aside class="receipt-panel" aria-label="Offer and receipt">
+            <p class="eyebrow">One proposed change</p>
+            <h2 class="offer-title">Read the containing<br>face THIS.</h2>
+            <p class="offer-copy">The face contains the hole. Its offer also meets the surrounding field.</p>
+
+            <button type="button" id="try-offer" class="primary-action">Try the same face offer <span aria-hidden="true">↗</span></button>
+            <button type="button" id="inspect-candidate" class="inspect-action" hidden>Inspect withheld candidate</button>
+            <button type="button" id="reset" class="reset-action">Reset this field</button>
+
+            <div class="receipt" aria-label="Receipt from the recorded offer">
+              <div class="receipt-heading"><span>Receipt</span><span class="receipt-note">Separate readings</span></div>
+              <dl class="receipt-values">
+                <div><dt><i class="receipt-key discharged-key" aria-hidden="true"></i>Discharged</dt><dd id="discharged">—</dd></div>
+                <div><dt><i class="receipt-key opened-key" aria-hidden="true"></i>Opened</dt><dd id="opened">—</dd></div>
+                <div><dt><i class="receipt-key retained-key" aria-hidden="true"></i>Retained</dt><dd id="retained">—</dd></div>
+              </dl>
+              <p class="changed-line"><span>Flags changed by the offer</span><strong id="changed">—</strong></p>
+              <p class="verdict-line" id="receipt-verdict">Receipt not yet revealed</p>
+              <p class="receipt-explanation" id="receipt-note">One recorded offer: the containing face reads THIS.</p>
+            </div>
+
+            <div class="outcome" aria-live="polite" aria-atomic="true">
+              <p class="phase" id="phase">Ready to inspect</p>
+              <h2 id="status-title">The region is enclosed.</h2>
+              <p id="status-explanation">Try the offer to reveal what it removes and what it opens.</p>
+              <p class="region-line"><span>Enclosed region</span><strong id="region-status">24 flags · NO</strong></p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="reading-guide" aria-label="How to read the result">
+        <span class="guide-mark" aria-hidden="true">∇</span>
+        <p>A strict change removes at least one wall and opens none.<br><strong>Removing more walls cannot compensate for opening one.</strong></p>
+      </section>
+
+      <details class="evidence" id="evidence">
+        <summary><span>Behind the demonstration</span><span class="summary-aside">Witnessed fields &amp; receipts <span aria-hidden="true">＋</span></span></summary>
+        <div class="evidence-content">
+          <div>
+            <h2>The same hole. Two contexts.</h2>
+            <p>Both fields use the same 24-flag enclosed region and the same containing-face offer. In the nested field, 96 surrounding flags read THIS and the exterior reads NO. In the contrast, everything outside the hole reads THIS.</p>
+            <p>The two displayed receipts are targeted GPU receipts in run 036. The nested field’s empty strict-offer set is supported by the complete recorded computation over the bound incidence.</p>
+          </div>
+          <nav aria-label="Published evidence">
+            <a href="https://doi.org/10.5281/zenodo.23855122" target="_blank" rel="noopener noreferrer">Read Paper Two and companion evidence <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/MetaCortex-Dynamics/mal-fabric/tree/315a920e165c17a232896addf179e0ac0e4a240d/flag_world_001_first_tick/persistence_paper_publication_v0_1_1_001" target="_blank" rel="noopener noreferrer">Inspect the sealed publication <span aria-hidden="true">↗</span></a>
+            <a href="evidence.json" target="_blank" rel="noopener noreferrer">View the receipt identity binding <span aria-hidden="true">↗</span></a>
+            <p>Displayed case: <span id="case-id">TARGET035_080</span></p>
+          </nav>
+        </div>
+      </details>
+    </main>
+    <footer class="page-footer"><span>MetaCortex Dynamics LLC</span><p>Replay of two witnessed diagnostic fields. No world link is written. 038 stays paused.</p></footer>
+  </div>
+  <script src="data.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

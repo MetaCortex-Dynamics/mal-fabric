@@ -1,0 +1,39 @@
+{
+  "schema": "RULE_D_PRIVATE_SITE_PUBLICATION_001",
+  "authority": "Devon explicitly authorized uploading the playable demonstration's source and evidence assets to a private OpenAI Site.",
+  "sourceCommit": "6bebd7fc2ef00fd6d6b1563c49d3a9d6b1daecc5",
+  "deployment": {
+    "id": "appgdep_6ae757b746248191a88874972c99da7a",
+    "project_id": "appgprj_6ae753afde0c8191a97e0ed013c362a5",
+    "title": "What Makes a Structure Hold?",
+    "version_id": "appgprj_6ae753afde0c8191a97e0ed013c362a5~appgver_32a0b8ab75608191afb889e4634babb0",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://persistence-context-play.ebonysails.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ae753afde0c8191a97e0ed013c362a5",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-01T15:16:13.006513+00:00"
+  },
+  "access": {
+    "mode": "custom",
+    "audience": "OWNER_ONLY",
+    "externalVisitors": 0,
+    "editors": 0,
+    "groups": 0,
+    "revision": 1
+  },
+  "servedAssetAudit": {
+    "files": 6,
+    "bytes": 439830,
+    "reading": "SAME",
+    "reference": "CHECK_RECORD.json"
+  },
+  "predecessorLocalStatus": "LOCAL_DELIVERY.json records the earlier NOT_UPLOADED state; this receipt records the subsequent authorized private publication.",
+  "obligation038": "PAUSED",
+  "gpuInvocation": "NONE",
+  "worldTransition": "NONE",
+  "malFabricChange": "NONE"
+}
