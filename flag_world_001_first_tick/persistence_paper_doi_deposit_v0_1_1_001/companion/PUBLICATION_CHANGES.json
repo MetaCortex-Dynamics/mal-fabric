@@ -1,0 +1,82 @@
+{
+  "schema": "PERSISTENCE_PUBLICATION_PRESENTATION_CHANGES_001",
+  "source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\persistence_paper_two_draft_001\\v0_1_1\\PERSISTENCE_FROM_GEOMETRY_v0.1.1.md",
+    "sha256": "690425E860C7CEACA5726A59C8CF5B8BF8090FED51634DFD60F6EFAB358573E1",
+    "bytes": 30830
+  },
+  "publication_source": {
+    "path": "PERSISTENCE_FROM_GEOMETRY_v0.1.1_publication.md",
+    "sha256": "E82DAB5BC2C3EA24C96F8E12E68B75A89221A289B60E6B116D91D0CE00A354F5",
+    "bytes": 34024
+  },
+  "authority": "Devon: publish Paper Two v0.1.1 same way as Paper One; add visuals and graphs.",
+  "scope": "Edition, availability and three evidence-bound illustrations. No equation, scientific claim, result count, frozen source or evidence identity changed.",
+  "promotion_receipt_sha256": "3C2D1A013837328CE909BB0409F477A9ADAC122F1B65D774387287ED12FEC62B",
+  "replacements": [
+    {
+      "from": "Paper two · Version 0.1.1 · 1 November 2026 · Draft for review",
+      "to": "Paper two · Version 0.1.1 · 1 November 2026 · Publication edition",
+      "occurrences": 1
+    },
+    {
+      "from": "Every cited record is identified in the companion evidence ledger by its original path, byte count and SHA-256. Byte-identical copies of the cited small records accompany this draft. Their upstream manifests identify larger source and readback artifacts that are not duplicated in this paper package. The existing paper has a public DOI; the new companion records have not been published as a new deposit. No diagnostic described here adds a committed transition to the original world.",
+      "to": "Every cited record is identified in the companion evidence ledger by its original path, byte count and SHA-256. Byte-identical copies of the 22 compact records accompany this preprint in its companion evidence archive, together with the finding annotations, promotion receipt and predecessor-ledger locator. Their upstream manifests identify larger source and readback artifacts that are not duplicated in this paper package. Paper one has a public DOI; this preprint and its companion evidence are released together. No diagnostic described here adds a committed transition to the original world.",
+      "occurrences": 1
+    },
+    {
+      "from": "*Draft status.* This manuscript is proposed for review. The witnessed results retain the status of their own records. Drafting this paper performs no promotion, repository commit, publication, world transition or additional GPU execution.",
+      "to": "*Publication scope.* This is the illustrated publication rendering of Paper Two v0.1.1, promoted by Devon A. Generally on 1 November 2026. The exact reviewed manuscript and PDF remain frozen under their promotion receipt. This rendering changes presentation and evidence-availability wording only. Findings and execution records retain their own statuses; no additional experiment, law promotion or world transition is introduced. The outstanding implementation obligations remain paused.",
+      "occurrences": 1
+    },
+    {
+      "from": "## References\n\n",
+      "to": "## References\n\nCompanion records named below are supplied in the evidence archive accompanying this preprint. Their complete identities and original locators are recorded in its evidence ledger; the frozen finding review is read with the included predecessor-ledger locator. Figure sources and rendering assets accompany the publication separately.\n\n",
+      "occurrences": 1
+    },
+    {
+      "from": "## 5. Context can protect the same enclosed region",
+      "to": "![A horizontal count bar divides 480 adjacent-pair fields into 60 with a strict face exit and 420 with no strict exit. The full classification is read-only; GPU receipts cover all 60 exits.](figures/figure_1_pair_classification.png)\n\nFigure 1. Adjacent-pair placement at (4,0). Read-only evaluation over the bound incidence classifies all 480 isolated adjacent-pair fields under the recorded native and ancestral offered family: 60 have a strict face exit and 420 have none. Targeted GPU receipts witness all 60 predicted exits, each at 20 walls discharged and none opened. The 420 held cases are a complete read-only classification, not an exhaustive GPU receipt census.\n\n## 5. Context can protect the same enclosed region",
+      "occurrences": 1
+    },
+    {
+      "from": "## 6. Refinement can change what the field is able to keep",
+      "to": "![Grouped bars compare two GPU receipts. Nested field: 30 discharged, 10 opened, 34 retained; contrast: 20 discharged, zero opened, zero retained. The same 24-flag hole is used in both. The respective changed sets contain 42 and 24 flags.](figures/figure_2_context_receipts.png)\n\nFigure 2. Context changes the receipt for the same hole and containing face. In the nested (4,0) field, the face-to-THIS assignment changes 42 flags, discharges 30 walls, opens 10 and retains 34. With every flag outside the same 24-flag hole read THIS, it changes 24 flags, discharges 20 walls, opens none and retains none. Both are targeted GPU receipts. Strictness fails in the nested case BECAUSE ten new walls open; receipt categories are shown separately and are not an additive score.\n\n## 6. Refinement can change what the field is able to keep",
+      "occurrences": 1
+    },
+    {
+      "from": "## 7. Several enabled effects determine one snapshot successor",
+      "to": "![Two panels. A shows a THIS class increasing from 12 to 48 flags while its 12 walls remain; its single strict exit disappears. B compares containing-face receipts 30/10 and 30/20 at levels 4 and 8, with 64 walls and K empty at both levels. The (8,0) result has a closed GPU receipt matching its prediction.](figures/figure_3_refinement_contrasts.png)\n\nFigure 3. Two refinement correspondences with different retention outcomes. A: a diagnostic single-site THIS class grows from 12 flags at (2,0) to 48 at (4,0) under the recorded pullback. Its 12 walls remain, but the strict offer set changes from one exit to empty. This is a read-only carrier-to-carrier computation, not a world refinement. B: the nested configuration retains an empty strict offer set and 64 walls at both (4,0) and (8,0); its class counts change from 24/96/1,800 to 96/384/7,200. The containing-face receipt changes from 30 discharged/10 opened to 30/20. The (8,0) full-family GPU run matches the prior prediction for this configuration. No general invariance claim is made.\n\n## 7. Several enabled effects determine one snapshot successor",
+      "occurrences": 1
+    }
+  ],
+  "figures": [
+    {
+      "figure": 1,
+      "asset": "figures/figure_1_pair_classification.png",
+      "sha256": "1AA7291F957C37BE2C85D65BF1D7E318AC190D943F153678B43EC6D9354497CF",
+      "caption": "Figure 1. Adjacent-pair placement at (4,0). Read-only evaluation over the bound incidence classifies all 480 isolated adjacent-pair fields under the recorded native and ancestral offered family: 60 have a strict face exit and 420 have none. Targeted GPU receipts witness all 60 predicted exits, each at 20 walls discharged and none opened. The 420 held cases are a complete read-only classification, not an exhaustive GPU receipt census.",
+      "alt": "A horizontal count bar divides 480 adjacent-pair fields into 60 with a strict face exit and 420 with no strict exit. The full classification is read-only; GPU receipts cover all 60 exits.",
+      "insert_before": "## 5. Context can protect the same enclosed region"
+    },
+    {
+      "figure": 2,
+      "asset": "figures/figure_2_context_receipts.png",
+      "sha256": "40775F02FD8F1BAACFE3C31497C234DECC3B491B7DD9771FA90F4E892007D8DD",
+      "caption": "Figure 2. Context changes the receipt for the same hole and containing face. In the nested (4,0) field, the face-to-THIS assignment changes 42 flags, discharges 30 walls, opens 10 and retains 34. With every flag outside the same 24-flag hole read THIS, it changes 24 flags, discharges 20 walls, opens none and retains none. Both are targeted GPU receipts. Strictness fails in the nested case BECAUSE ten new walls open; receipt categories are shown separately and are not an additive score.",
+      "alt": "Grouped bars compare two GPU receipts. Nested field: 30 discharged, 10 opened, 34 retained; contrast: 20 discharged, zero opened, zero retained. The same 24-flag hole is used in both. The respective changed sets contain 42 and 24 flags.",
+      "insert_before": "## 6. Refinement can change what the field is able to keep"
+    },
+    {
+      "figure": 3,
+      "asset": "figures/figure_3_refinement_contrasts.png",
+      "sha256": "EFF6613A0B52A2294B3538A3A2051EE2DAC478B89BF913C317FD1E2290E1051E",
+      "caption": "Figure 3. Two refinement correspondences with different retention outcomes. A: a diagnostic single-site THIS class grows from 12 flags at (2,0) to 48 at (4,0) under the recorded pullback. Its 12 walls remain, but the strict offer set changes from one exit to empty. This is a read-only carrier-to-carrier computation, not a world refinement. B: the nested configuration retains an empty strict offer set and 64 walls at both (4,0) and (8,0); its class counts change from 24/96/1,800 to 96/384/7,200. The containing-face receipt changes from 30 discharged/10 opened to 30/20. The (8,0) full-family GPU run matches the prior prediction for this configuration. No general invariance claim is made.",
+      "alt": "Two panels. A shows a THIS class increasing from 12 to 48 flags while its 12 walls remain; its single strict exit disappears. B compares containing-face receipts 30/10 and 30/20 at levels 4 and 8, with 64 walls and K empty at both levels. The (8,0) result has a closed GPU receipt matching its prediction.",
+      "insert_before": "## 7. Several enabled effects determine one snapshot successor"
+    }
+  ],
+  "source_recheck": "SAME",
+  "equations": "SAME",
+  "work_038": "PAUSED"
+}

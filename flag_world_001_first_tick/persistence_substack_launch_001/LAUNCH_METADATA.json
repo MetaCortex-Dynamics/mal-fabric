@@ -1,0 +1,66 @@
+{
+  "status": "STAGING_ONLY_NOT_PUBLISHED",
+  "title": "What Makes a Structure Hold?",
+  "subtitle": "The same region dissolves or persists depending on its surroundings. Refinement can remove its only exit. The receipts show why.",
+  "slug": "what-makes-a-structure-hold",
+  "seo_title": "Persistence from Geometry: What Makes a Structure Hold?",
+  "seo_description": "Persistence from Geometry shows how context protects a region and refinement can remove its only exit, with GPU receipts and bound-incidence computations.",
+  "tags": [
+    "Geometric Computing",
+    "Mathematics as Language",
+    "Computational Geometry",
+    "GPU Computing",
+    "Reproducible Research"
+  ],
+  "license": "Apache License 2.0",
+  "author": "Devon A. Generally",
+  "publication": "MetaCortex Dynamics",
+  "paper_title": "Persistence from Geometry: Context, Refinement and Deterministic Change",
+  "paper_version": "0.1.1",
+  "source_sha256": "690425E860C7CEACA5726A59C8CF5B8BF8090FED51634DFD60F6EFAB358573E1",
+  "social_preview_title": "What Makes a Structure Hold?",
+  "social_preview_description": "Same hole. Same location. Different surroundings. One dissolves; one holds. Paper Two shows how geometry makes persistence contextual.",
+  "social_preview_image": "images/paper_two_cover_1200x630.png",
+  "figures": [
+    {
+      "placeholder": "{{FIGURE_CONTEXT_URL}}",
+      "placement": "After the paragraph beginning The exterior protects the hole",
+      "alt_text": "Same hole and containing face: the nested field discharges 30 walls and opens 10; the contrast discharges 20 and opens none.",
+      "caption": "Same hole, different surroundings. Both rows are GPU receipts. The complete nested-field no-exit result is a separate computation over the bound incidence."
+    },
+    {
+      "placeholder": "{{FIGURE_REFINEMENT_URL}}",
+      "placement": "End of Refinement can remove an exit",
+      "alt_text": "Refinement comparison: a single-site field changes from one strict exit to none in a read-only correspondence; the nested field's 64 walls and 30 discharged, 20 opened prediction match its GPU receipt.",
+      "caption": "Two refinement results, two scopes: the single-site comparison is read-only; the nested prediction is checked by GPU execution on one transported field."
+    },
+    {
+      "placeholder": "{{FIGURE_PAIR_URL}}",
+      "placement": "After the first paragraph of Placement matters, and context reaches further",
+      "alt_text": "Of 480 adjacent pairs, 60 have a strict exit and 420 have none under the recorded offered family. The full classification is computed over bound incidence; GPU receipts witness all 60 exits.",
+      "caption": "Complete classification over bound incidence; targeted GPU receipts for every predicted exit. The 420 retained pairs are not presented as an exhaustive GPU census."
+    }
+  ],
+  "required_release_bindings": [
+    "{{PAPER_TWO_DOI_URL}}",
+    "{{PAPER_TWO_REPOSITORY_URL}}",
+    "{{FIGURE_CONTEXT_URL}}",
+    "{{FIGURE_REFINEMENT_URL}}",
+    "{{FIGURE_PAIR_URL}}"
+  ],
+  "release_conditions": [
+    "Zenodo publication verified before present-tense publication statements are used",
+    "Main repository binding verified before repository link is inserted",
+    "All placeholders replaced from observed identifiers",
+    "Root checks current Substack audience and delivery against user publication scope"
+  ],
+  "preservation": {
+    "work_038": "PAUSED",
+    "gpu_execution": "NOT_RUN",
+    "browser": "NOT_USED",
+    "git": "NOT_USED",
+    "publication": "NOT_RUN"
+  },
+  "delivery": "Public web publication authorized; newsletter email dispatch is not separately requested.",
+  "upload_sequence": "Zenodo, then repository main binding, then Substack. Do not publish placeholder URLs."
+}

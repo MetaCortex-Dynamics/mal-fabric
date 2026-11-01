@@ -1,0 +1,67 @@
+{
+  "schema": "PERSISTENCE_PUBLICATION_REVIEW_001",
+  "status": "IF_THEN",
+  "promoted_source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\persistence_paper_two_draft_001\\v0_1_1\\PERSISTENCE_FROM_GEOMETRY_v0.1.1.md",
+    "sha256": "690425E860C7CEACA5726A59C8CF5B8BF8090FED51634DFD60F6EFAB358573E1",
+    "bytes": 30830
+  },
+  "publication_source": {
+    "path": "PERSISTENCE_FROM_GEOMETRY_v0.1.1_publication.md",
+    "sha256": "E82DAB5BC2C3EA24C96F8E12E68B75A89221A289B60E6B116D91D0CE00A354F5",
+    "bytes": 34024
+  },
+  "pdf": {
+    "path": "output/pdf/Persistence_from_Geometry_v0.1.1_publication.pdf",
+    "bytes": 682526,
+    "sha256": "3196006EC857D79A17B663E4F6E5BAC22BD58DFB42EE7B71C4CC92F9383F41C2",
+    "pages": 13
+  },
+  "checks": {
+    "exact_change_reconstruction": "SAME",
+    "original_source_recheck": "SAME",
+    "math_blocks": 8,
+    "math_contents": "SAME",
+    "tables": 6,
+    "figures": 3,
+    "figure_image_pages": [
+      {
+        "page": 5,
+        "images": 1
+      },
+      {
+        "page": 7,
+        "images": 1
+      },
+      {
+        "page": 9,
+        "images": 1
+      }
+    ],
+    "figure_manifest_sha256": "A27A7A0AE71C10A331118A6A6B81C5D3707E11CA20392A2CC98677FF8E891498",
+    "source_metadata": "SAME",
+    "bounds_findings": [],
+    "visual_review": {
+      "reading": "IF_THEN",
+      "pdf_sha256": "3196006EC857D79A17B663E4F6E5BAC22BD58DFB42EE7B71C4CC92F9383F41C2",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "method": "All rendered pages inspected in two contact sheets; full-size figure pages5,7,9 inspected for chart labels, captions and surrounding text. Numeric data and evidence qualifiers match bound figure sources.",
+      "findings": []
+    }
+  },
+  "scope": "Presentation derivative only; original source and evidence unchanged;038paused; noGPU execution, world transition, publication or Git action by this build."
+}

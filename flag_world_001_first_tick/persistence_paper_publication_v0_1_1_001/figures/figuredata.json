@@ -1,0 +1,162 @@
+{
+  "schema": "PAPER_TWO_FIGURE_DATA_001",
+  "scope": "Publication plotting of recorded counts only; no new execution, law or world transition.",
+  "sources": [
+    {
+      "file": "RUN_RECORD_036.json",
+      "absolute_source": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\persistence_paper_two_draft_001\\v0_1_1\\evidence\\RUN_RECORD_036.json",
+      "bytes": 202597,
+      "sha256": "FE41196D8008620488CF9A6CC4A89379F4D273A431D9EB4EA83091F4EC6B3F34"
+    },
+    {
+      "file": "RUN_RECORD_RULE_D_026.json",
+      "absolute_source": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\persistence_paper_two_draft_001\\v0_1_1\\evidence\\RUN_RECORD_RULE_D_026.json",
+      "bytes": 33800,
+      "sha256": "02234D0482842067C8140A4DCF91ED9CC7FC3AC72F522E65D7B869699ACCCAFB"
+    },
+    {
+      "file": "FINDING_SAND_RELATION_DERIVED_RULE_001_v0.1.6.md",
+      "absolute_source": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\persistence_paper_two_draft_001\\v0_1_1\\evidence\\FINDING_SAND_RELATION_DERIVED_RULE_001_v0.1.6.md",
+      "bytes": 25210,
+      "sha256": "5DF47E3343EF3E0569DBF7C3B726871B9B08BB4CE376927EACB4E0C5C573C81C"
+    }
+  ],
+  "figures": {
+    "figure_1_pair_classification": {
+      "level": [
+        4,
+        0
+      ],
+      "fields": 480,
+      "with_strict_exit": 60,
+      "without_strict_exit": 420,
+      "classification_evidence": "Read-only bound-incidence computation; finding 0.1.6 §3 lines 75-76",
+      "gpu_scope": "RUN_RECORD_036.json /families/INTERIOR_PAIR; all 60 exits, not a 420-case no-exit census"
+    },
+    "figure_2_context_receipts": {
+      "hole_flags": 24,
+      "nested": {
+        "changed": 42,
+        "discharged": 30,
+        "opened": 10,
+        "retained": 34
+      },
+      "contrast": {
+        "changed": 24,
+        "discharged": 20,
+        "opened": 0,
+        "retained": 0
+      },
+      "source_pointers": [
+        "RUN_RECORD_036.json /families/RULE_D",
+        "RUN_RECORD_036.json /families/RULE_D_CONTRAST"
+      ]
+    },
+    "figure_3_refinement_contrasts": {
+      "single_site": {
+        "levels": [
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "class_flags": [
+          12,
+          48
+        ],
+        "exterior_flags": [
+          468,
+          1872
+        ],
+        "walls": [
+          12,
+          12
+        ],
+        "strict_exit_counts": [
+          1,
+          0
+        ],
+        "evidence": "Finding 0.1.6 §4 lines 138-145; read-only, not world transition"
+      },
+      "nested": {
+        "levels": [
+          [
+            4,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "class_flags": [
+          [
+            24,
+            96,
+            1800
+          ],
+          [
+            96,
+            384,
+            7200
+          ]
+        ],
+        "walls": [
+          64,
+          64
+        ],
+        "strict_exit_counts": [
+          0,
+          0
+        ],
+        "diagnostic_receipts": [
+          [
+            30,
+            10
+          ],
+          [
+            30,
+            20
+          ]
+        ],
+        "gpu8_source_pointers": [
+          "RUN_RECORD_RULE_D_026.json /prediction",
+          "RUN_RECORD_RULE_D_026.json /walls_before",
+          "RUN_RECORD_RULE_D_026.json /strict_members",
+          "RUN_RECORD_RULE_D_026.json /W00_THIS"
+        ]
+      }
+    }
+  },
+  "captions_and_alt": {
+    "figure_1_pair_classification": {
+      "caption": "Figure 1. Adjacent-pair placement at (4,0). Read-only evaluation over the bound incidence classifies all 480 isolated adjacent-pair fields under the recorded native and ancestral offered family: 60 have a strict face exit and 420 have none. Targeted GPU receipts witness all 60 predicted exits, each at 20 walls discharged and none opened. The 420 held cases are a complete read-only classification, not an exhaustive GPU receipt census.",
+      "alt": "A horizontal count bar divides 480 adjacent-pair fields into 60 with a strict face exit and 420 with no strict exit. The full classification is read-only; GPU receipts cover all 60 exits."
+    },
+    "figure_2_context_receipts": {
+      "caption": "Figure 2. Context changes the receipt for the same hole and containing face. In the nested (4,0) field, the face-to-THIS assignment changes 42 flags, discharges 30 walls, opens 10 and retains 34. With every flag outside the same 24-flag hole read THIS, it changes 24 flags, discharges 20 walls, opens none and retains none. Both are targeted GPU receipts. Strictness fails in the nested case BECAUSE ten new walls open; receipt categories are shown separately and are not an additive score.",
+      "alt": "Grouped bars compare two GPU receipts. Nested field: 30 discharged, 10 opened, 34 retained; contrast: 20 discharged, zero opened, zero retained. The same 24-flag hole is used in both. The respective changed sets contain 42 and 24 flags."
+    },
+    "figure_3_refinement_contrasts": {
+      "caption": "Figure 3. Two refinement correspondences with different retention outcomes. A: a diagnostic single-site THIS class grows from 12 flags at (2,0) to 48 at (4,0) under the recorded pullback. Its 12 walls remain, but the strict offer set changes from one exit to empty. This is a read-only carrier-to-carrier computation, not a world refinement. B: the nested configuration retains an empty strict offer set and 64 walls at both (4,0) and (8,0); its class counts change from 24/96/1,800 to 96/384/7,200. The containing-face receipt changes from 30 discharged/10 opened to 30/20. The (8,0) full-family GPU run matches the prior prediction for this configuration. No general invariance claim is made.",
+      "alt": "Two panels. A shows a THIS class increasing from 12 to 48 flags while its 12 walls remain; its single strict exit disappears. B compares containing-face receipts 30/10 and 30/20 at levels 4 and 8, with 64 walls and K empty at both levels. The (8,0) result has a closed GPU receipt matching its prediction."
+    },
+    "paper_two_cover_1200x630": {
+      "caption": "The same 24-flag hole, two surrounding fields, two different GPU receipts.",
+      "alt": "Persistence from Geometry. Same region, different surroundings, different outcome. Two cards compare GPU receipts for the same 24-flag hole: 20 discharged and 0 opened when the exterior reads THIS, versus 30 discharged and 10 opened in the nested field."
+    }
+  },
+  "rendering": {
+    "library": "matplotlib",
+    "version": "3.10.6",
+    "python": "3.13.7",
+    "scientific_png_dpi": 300,
+    "web_png_dpi": 180,
+    "vector_format": "SVG",
+    "display_layout": "Chart coordinates encode recorded counts only; not physical spatial placement."
+  }
+}

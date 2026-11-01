@@ -1,0 +1,399 @@
+{
+  "schema": "PersistencePaperTwoEvidenceLedger001",
+  "at": "2026-11-01T06:59:02.359Z",
+  "status": "DRAFT_RECORD_COMPANION",
+  "scope": "Portable copies of the named compact source records; no new execution, promotion, world transition, selection, repository commit or publication. Original bytes unchanged.",
+  "entries": [
+    {
+      "id": "finding_016",
+      "reference_numbers": [
+        2
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/sweep/broad_execution_020/targeted_receipt_execution_036/findings/FINDING_SAND_RELATION_DERIVED_RULE_001_v0.1.6.md",
+      "relative_copy": "evidence/FINDING_SAND_RELATION_DERIVED_RULE_001_v0.1.6.md",
+      "bytes": 25210,
+      "sha256": "5DF47E3343EF3E0569DBF7C3B726871B9B08BB4CE376927EACB4E0C5C573C81C",
+      "scope": "Proposed execution-ledger synthesis. Retains read-only incidence results and independent authoring-support provenance; upgrades only explicitly cited native receipt subjects. Not a promotion.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "targeted_run_036",
+      "reference_numbers": [
+        4
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/sweep/broad_execution_020/targeted_receipt_execution_036/RUN_RECORD_036.json",
+      "relative_copy": "evidence/RUN_RECORD_036.json",
+      "bytes": 202597,
+      "sha256": "FE41196D8008620488CF9A6CC4A89379F4D273A431D9EB4EA83091F4EC6B3F34",
+      "scope": "Exactly89 targeted(4,0) offer receipts:62 reused by exact identity,27 newly executed;86 strict and3 opening. No exhaustive(4,0) K claim; no member taken.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "targeted_closed_receipts_036",
+      "reference_numbers": [
+        4
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/sweep/broad_execution_020/targeted_receipt_execution_036/TARGETED_RECEIPTS_CLOSED_036.json",
+      "relative_copy": "evidence/TARGETED_RECEIPTS_CLOSED_036.json",
+      "bytes": 398647,
+      "sha256": "2AACCC0C2DC73D45B92029E49C25ADDF43CA2BE342C1081AC53FEFCB8986F0A9",
+      "scope": "Closed native remainder package of27 targeted receipts.62 earlier sealed receipts are referenced by the aggregate run and are not counted twice.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "level1_families",
+      "reference_numbers": [
+        3
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/sweep/broad_execution_020/FINAL_LEVEL_1_V20.json",
+      "relative_copy": "evidence/FINAL_LEVEL_1_V20.json",
+      "bytes": 83025,
+      "sha256": "2D30083D7DDAD80295A96E80E88FFE80223F616CC6FA6369D2F6F26D0C2D3406",
+      "scope": "Exhaustive stated configuration families on(1,0):146 fields,484 raw assignments per field,70,664 assignments. Singles,pairs,connected triples,rings,discs; not every possible field.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "level2_families",
+      "reference_numbers": [
+        3
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/sweep/broad_execution_020/FINAL_LEVEL_2_V20.json",
+      "relative_copy": "evidence/FINAL_LEVEL_2_V20.json",
+      "bytes": 369208,
+      "sha256": "C3400445F4BBB2BBFD96E27A0CAF9739B9124B272230CCA614FB507887175E82",
+      "scope": "Exhaustive stated configuration families on(2,0):656 fields,2,048 raw assignments per field,1,343,488 assignments. Raw offer identities stay distinct where successor effects coincide.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "rule_d_level8",
+      "reference_numbers": [
+        5
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/receipt8_retained_001/RUN_RECORD_RULE_D_026.json",
+      "relative_copy": "evidence/RUN_RECORD_RULE_D_026.json",
+      "bytes": 33800,
+      "sha256": "02234D0482842067C8140A4DCF91ED9CC7FC3AC72F522E65D7B869699ACCCAFB",
+      "scope": "One transported Rule D configuration on(8,0):33,256 raw assignments,32,824 distinct assignments;64 walls,Kempty,W00discharged30/opened20/retained34. No general refinement-transport theorem or world transition.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "finding_015_predecessor",
+      "reference_numbers": [
+        2,
+        5
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/sweep/broad_execution_020/targeted_receipt_execution_036/findings/FINDING_SAND_RELATION_DERIVED_RULE_001_v0.1.5.md",
+      "relative_copy": "evidence/FINDING_SAND_RELATION_DERIVED_RULE_001_v0.1.5.md",
+      "bytes": 16770,
+      "sha256": "806032474DA721A8FE58E914EB0DB70A08D9211FD8617252B411744367B6B13F",
+      "scope": "Exact proposed predecessor; preserves the pre-execution Rule D transport prediction and read-only claims as genealogy.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "paper_one_publication_receipt",
+      "reference_numbers": [
+        1
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/genesis_paper_doi_deposit_v0_5_001/ZENODO_PUBLICATION_RECEIPT_001.json",
+      "relative_copy": "evidence/ZENODO_PUBLICATION_RECEIPT_001.json",
+      "bytes": 2702,
+      "sha256": "58FA0B3BAE996BD9D1C7118CEBD69E5F36B9A1656ABA1151BB455889FEDBB819",
+      "scope": "Recorded publication of Genesis on the GPU v0.5; binds DOI10.5281/zenodo.23673872,8 uploaded files and Apache License2.0. This copy does not perform publication or re-check the live service.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "PUBLISHED_PREDECESSOR_BOUND_BY_RECEIPT",
+        "record_url": "https://zenodo.org/records/23673872",
+        "doi_url": "https://doi.org/10.5281/zenodo.23673872",
+        "live_web_check": "NOT_RUN"
+      }
+    },
+    {
+      "id": "rule_d_pullback_transport",
+      "reference_numbers": [
+        5
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/transport/run_001/RUN_RECORD_TRANSPORT_026.json",
+      "relative_copy": "evidence/RUN_RECORD_TRANSPORT_026.json",
+      "bytes": 37891,
+      "sha256": "47DA1971A6A40D4EBFAC2BBA86ADF6DC4CDEBE3ADF34D164E5A1345F5712E16B",
+      "scope": "Native field/pullback correspondence for the specified Rule D transport, with replay/reversal and withholding controls. A carrier correspondence, not a vertical transition of the committed J17 world.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "rule_d_transitive_ancestry",
+      "reference_numbers": [
+        5
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/transport/ancestry_001/RUN_RECORD_ANCESTRY_026.json",
+      "relative_copy": "evidence/RUN_RECORD_ANCESTRY_026.json",
+      "bytes": 21082,
+      "sha256": "56DFD9A5087B2955771B8814BCC4902425E79C5A154D0D367B5EB15679BBD939",
+      "scope": "Native transitive ancestry support record used by the(8,0) full-family receipt. Not an unrestricted transport theorem.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "level8_geometry",
+      "reference_numbers": [
+        5
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/geometry_001/RUN_RECORD_GEOMETRY_026.json",
+      "relative_copy": "evidence/RUN_RECORD_GEOMETRY_026.json",
+      "bytes": 19211,
+      "sha256": "C155E6B75D7684F6231E2AA2C91F48B31152BE23A6F9D64F535B6B17697803AF",
+      "scope": "Native(8,0) incidence/geometry record bound by the Rule D transport; supplied as a compact contact record, not substituted for raw readbacks.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "snapshot_effect_amendment_037",
+      "reference_numbers": [
+        6
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_snapshot_wave_amendment_037/SPEC_J17_WORLD_FOLD_EFFECT_001_AMENDMENT_SNAPSHOT_WAVE_001_v0.1.0.mal",
+      "relative_copy": "evidence/SPEC_J17_WORLD_FOLD_EFFECT_001_AMENDMENT_SNAPSHOT_WAVE_001_v0.1.0.mal",
+      "bytes": 15359,
+      "sha256": "F245D77E96AFB47670F9A05F2A104FD982581B0FB44ECC2593117FA2C448A3A0",
+      "scope": "Promoted scoped snapshot-effect construction N1-N7 and finite-descent derivation D1-D5. Whole-site fields, fixed incidence, strict discharge, bound (1,0), (2,0), (4,0) carriers and recorded offered families. Frozen historical vocabulary is read under the active 040 erratum.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "snapshot_effect_contacts_037",
+      "reference_numbers": [
+        6
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_snapshot_wave_amendment_037/CONTACTS_037.json",
+      "relative_copy": "evidence/CONTACTS_037.json",
+      "bytes": 12632,
+      "sha256": "6D624F75517A179D07FC51E329FC58DF4276DD8CE390605FFF452D22CFB775A6",
+      "scope": "Exact amendment contacts: carrier, ancestry, offered family, source and predecessor identities. Raw aliases remain distinct; no offered-family extension.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "snapshot_effect_promotion_037",
+      "reference_numbers": [
+        6
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_snapshot_wave_amendment_037/PROMOTION_RECEIPT_037.json",
+      "relative_copy": "evidence/PROMOTION_RECEIPT_037.json",
+      "bytes": 5299,
+      "sha256": "66519524BC7696BA10B87D1400552C8946E7B4764AF43FEA9A88032A411E1DFA",
+      "scope": "Existing Devon attestation of the scoped amendment. Copying this receipt performs no promotion; form checks and GPU execution remain distinct subjects.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "snapshot_effect_levels12_contacts",
+      "reference_numbers": [
+        6
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/composite_scope_levels12_001/REPORT.json",
+      "relative_copy": "evidence/SNAPSHOT_EFFECT_LEVELS12_CONTACT_REPORT.json",
+      "bytes": 21540,
+      "sha256": "2AF48F6F3E23C11E13B6287E13C5FBED2A131234480F857F815B4D5262EC9BBD",
+      "scope": "Read-only host contact analysis over bound native level-1 and level-2 incidence. Scoped separated-component decomposition contacts, not a GPU traversal of all lawful histories.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "snapshot_effect_level4_contacts",
+      "reference_numbers": [
+        6
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/composite_scope_001/REPORT.json",
+      "relative_copy": "evidence/SNAPSHOT_EFFECT_LEVEL4_CONTACT_REPORT.json",
+      "bytes": 12876,
+      "sha256": "C358B259A4E3E51E98443D4FDEDED4E272E625278206839E5977A391F9C83972",
+      "scope": "Read-only host contact analysis over bound native level-4 incidence and composite families. These contacts do not substitute for GPU receipts or unrestricted confluence execution.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "snapshot_effect_native_038",
+      "reference_numbers": [
+        7
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_snapshot_wave_realization_038/RUN_RECORD_038_001.json",
+      "relative_copy": "evidence/RUN_RECORD_038_001.json",
+      "bytes": 96792,
+      "sha256": "0BEA0CBBBCDB5DE5B2C1B86228478A1A12C1FDF5BF3571EA4974580BF8EB5908",
+      "scope": "Qualified supplied native joint-application, refusal, replay and diagnostic RETURN vectors; overall application PARTIAL. Historical field, witness, receipt and pair bytes reproduced; whole-link identity is not claimed. Distinct proper absorption has no positive GPU fixture. No live world append.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "canonical_join_binding_042",
+      "reference_numbers": [
+        8
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_snapshot_wave_realization_038/fabric_binding_042/RUN_RECORD_FABRIC_BINDING_042.json",
+      "relative_copy": "evidence/RUN_RECORD_FABRIC_BINDING_042.json",
+      "bytes": 89184,
+      "sha256": "CEF156E945D0A966358E3C63B7338AE133A88344BCED2247A01E7101C2BE3F1A",
+      "scope": "W38_SITE_READING_JOIN only: canonical 720-cell program, eight DRC checks, returned-result-dependent parent construction and five exact-replay controls. Effect comparison and write assembly for the whole 038 application remain open; no world transition.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "snapshot_effect_vocabulary_040",
+      "reference_numbers": [
+        6
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/snapshot_effect_vocabulary_040/inputs/ERRATUM_E_WAVE_001.mal",
+      "relative_copy": "evidence/ERRATUM_E_WAVE_001_v0.1.1.mal",
+      "bytes": 10373,
+      "sha256": "81B5C6AD858624DB1B577524BFA983928F71D3BA19064725DB3706B6E1513E32",
+      "scope": "Active promoted vocabulary mapping: effect set, changed-flag assignment, complete successor field, bound joint candidate, committed link and historical designation remain distinct. No change of law or operation.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "snapshot_effect_vocabulary_promotion_040",
+      "reference_numbers": [
+        6
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/snapshot_effect_vocabulary_040/inputs/RECEIPT_PROMOTE_ERRATUM_E_WAVE_001_v0.1.1.md",
+      "relative_copy": "evidence/RECEIPT_PROMOTE_ERRATUM_E_WAVE_001_v0.1.1.md",
+      "bytes": 3524,
+      "sha256": "72493D5FFFED2921BF9D365F0D96BED5443BE5F32F9D27D6B93873C609A1A579",
+      "scope": "Existing Devon attestation of the active terminology erratum. The retained PROPOSED header is serialization genealogy, not current promotion status.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "snapshot_effect_occurrence_map_040",
+      "reference_numbers": [
+        6
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/snapshot_effect_vocabulary_040/AMENDMENT_OCCURRENCE_MAP_040.json",
+      "relative_copy": "evidence/AMENDMENT_OCCURRENCE_MAP_040.json",
+      "bytes": 11971,
+      "sha256": "61020FA0B95658E7BE0271361E097E02A84B14DE19CFCB62A19CEE71254650F5",
+      "scope": "Bound occurrence-by-occurrence reading of the frozen amendment under the active six-target mapping. Preserves the historical title and fixed identifiers.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    },
+    {
+      "id": "level2_duplicate_supports",
+      "reference_numbers": [
+        3
+      ],
+      "original_path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/sand_refinement_diagnostics_026/composite_scope_levels12_001/LEVEL2_DUPLICATE_SUPPORTS.json",
+      "relative_copy": "evidence/LEVEL2_DUPLICATE_SUPPORTS.json",
+      "bytes": 947,
+      "sha256": "77D8615D19634EFD9126637706FF52DC2C16BFA69CB6345D586C43E2D780B7B4",
+      "scope": "Twelve exact native-site/original-domain support coincidences at (2,0), explaining the two raw strict identities for pentagon-centred single and ring fields.",
+      "copy_comparison": "SAME",
+      "public_availability": {
+        "status": "LOCAL_EVIDENCE_COMPANION_NOT_YET_PUBLISHED",
+        "public_url": null
+      }
+    }
+  ],
+  "summary": {
+    "files": 22,
+    "bytes": 1490640,
+    "source_and_copy_hashes": "SAME"
+  },
+  "reference_plan": {
+    "1": "Previously published paper and DOI receipt",
+    "2": "Finding, predecessor, and read-only results within their recorded scope",
+    "3": "Complete(1,0)/(2,0) stated configuration families",
+    "4": "Targeted89(4,0) receipts",
+    "5": "Rule D(8,0) receipt and its transport/ancestry/geometry contacts",
+    "6": "Promoted amendment, exact contacts, promotion, scoped host contact reports and active terminology mapping with its receipt",
+    "7": "038 bounded native diagnostic record; canonical full-application correspondence remains partial",
+    "8": "042 canonical join-component qualification; no whole-038 closure"
+  },
+  "availability_boundary": "The companion packages compact records, not every raw GPU image/readback or independently reproduces every cited computation. Original absolute locators in copied records remain unchanged. New evidence URLs are not claimed before publication.",
+  "read_only_result_boundary": "No separate compact read-only refinement-counterexample record was located in the bounded directories inspected. Its claim remains bound through the proposed finding and cited original readback/provenance; the three added compact transport records are native records for the specified(8,0) configuration, not a replacement for that separate read-only counterexample.",
+  "preservation": {
+    "original_files": "UNCHANGED",
+    "raw_archive_hashing": "NOT_RUN",
+    "whole_038": "PAUSED",
+    "GPU": "NOT_RUN",
+    "commit": "NOT_RUN"
+  },
+  "extension_037_042": {
+    "at": "2026-11-01T07:02:37.383Z",
+    "predecessor_ledger_sha256": "31FD73BBC048A5DD60D309FF26205D5FBBF9A3132F8B647751FD4E166CF78F8D",
+    "predecessor_entries": 11,
+    "predecessor_entries_preserved": "SAME",
+    "added_entries": 10,
+    "manuscript": "NOT_EDITED_BY_EXTENSION",
+    "GPU": "NOT_RUN",
+    "promotion": "NOT_RUN",
+    "world_transition": "NONE",
+    "commit": "NOT_RUN"
+  }
+}

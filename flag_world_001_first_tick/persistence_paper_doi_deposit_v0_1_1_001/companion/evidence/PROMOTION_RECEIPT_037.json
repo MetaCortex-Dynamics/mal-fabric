@@ -1,0 +1,119 @@
+{
+  "kind": "RECEIPT_PROMOTE_SPEC_J17_WORLD_FOLD_EFFECT_001_AMENDMENT_SNAPSHOT_WAVE_001",
+  "version": "0.1.0",
+  "status": "PROMOTED",
+  "verdict": "IF_THEN",
+  "recorded_at_utc": "2026-10-30T23:07:34Z",
+  "authority": {
+    "holder": "Devon",
+    "action": "PROMOTE",
+    "direct_message": "promote",
+    "attestation": {
+      "relative_path": "ATTESTATION_037.json",
+      "bytes": 1072,
+      "sha256": "4AFED7B07757A756395EA01C0FACD24E50E4379EBDAEEA23FED6DB7086912936"
+    },
+    "antecedent": "The scoped deterministic prior-snapshot wave amendment discussed immediately before the attestation.",
+    "antecedent_quote": "So a link is one prior-snapshot wave. Every effect enabled at qₙ is assembled together: concurrent effects jointly, absorbed effects inside whatever absorbs them.",
+    "serialization_order": "Conversation contract attested first; formal source and its byte identity recorded afterward.",
+    "prior_review_of_serialized_hash": "NOT_CLAIMED",
+    "recorder": "Codex, carrying out Devon's attestation; not a separate promoting authority."
+  },
+  "promoted_source": {
+    "relative_path": "SPEC_J17_WORLD_FOLD_EFFECT_001_AMENDMENT_SNAPSHOT_WAVE_001_v0.1.0.mal",
+    "bytes": 15359,
+    "sha256": "F245D77E96AFB47670F9A05F2A104FD982581B0FB44ECC2593117FA2C448A3A0"
+  },
+  "source_header_disposition": "PROPOSED source header is retained as the serialized proposal; this receipt supplies its promotion, following the parent's source/receipt separation.",
+  "parent": {
+    "sha256": "E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E",
+    "promotion_receipt_sha256": "E674B00C04B0B8119BFFD4596A756467B8054C9A6CF6741E3B2869365B7ECD9A",
+    "disposition": "UNCHANGED; amended only for the scoped multi-member prior-snapshot wave contract."
+  },
+  "contacts": {
+    "relative_path": "CONTACTS_037.json",
+    "bytes": 12632,
+    "sha256": "6D624F75517A179D07FC51E329FC58DF4276DD8CE390605FFF452D22CFB775A6"
+  },
+  "delta": {
+    "scope": [
+      "WHOLE_SITE",
+      "STRICT_FIXED_INCIDENCE",
+      "BOUND_(1,0)_(2,0)_(4,0)",
+      "RECORDED_COMPLETE_OFFERED_FAMILIES"
+    ],
+    "effect_identity": "Complete successor field over the same immutable source, not receipt counts.",
+    "provenance": "Every raw member retained, including equivalent and absorbed members.",
+    "assembly": "Effect classes first; geometric absorption only between distinct classes; every nonabsorbed compatible class contributes without representative priority.",
+    "receipt": "Direct before/after wall-set differences and intersection.",
+    "tick": "One prior-snapshot wave; newly enabled effects wait for renewed PROPOSE after commit.",
+    "history": "No collapse of already committed histories.",
+    "empty_k": "NO_NEW_APPEND_POLICY"
+  },
+  "form_check": {
+    "record": {
+      "relative_path": "form_check_003/CHECK_FORM_PROMOTE.json",
+      "bytes": 4639,
+      "sha256": "CA8EB8533AD63D1F78ECDAEA513796CCE184DA2256DC9DF908B3CFAF5A6AB11A"
+    },
+    "verdict": "IF_THEN",
+    "w1_w8": "IF_THEN",
+    "w9": "IF_THEN",
+    "input_sha256": "F245D77E96AFB47670F9A05F2A104FD982581B0FB44ECC2593117FA2C448A3A0",
+    "source_custody": "SAME",
+    "scope": "Native .mal source-form checks on host; not GPU qualification or behavioral execution of the wave."
+  },
+  "retained_form_attempts": [
+    {
+      "record": {
+        "relative_path": "form_check_001/CHECK_FORM_PROMOTE.json",
+        "bytes": 4628,
+        "sha256": "B709FC8D530E9FFBE3B311082321C90B5D73655642CA2AFF677029447ADD1064"
+      },
+      "input_sha256": "9ED1CD9A156826B31A2D9E0B30EAB8E8313E0B597CBEB1FD2750FE23423AA7F6",
+      "reading": "NO",
+      "disposition": "SUPERSEDED",
+      "repair": "Inherited carrier operators supplied; explanatory line no longer parsed as a second vector. Effect-class absorption wording clarified before final serialization."
+    },
+    {
+      "record": {
+        "relative_path": "form_check_002/CHECK_FORM_PROMOTE.json",
+        "bytes": 4643,
+        "sha256": "3ADA8823817D231F1F7EA5250662C43A736154B463E49B6DF0F32CD9A9DBCEE0"
+      },
+      "input_sha256": "D619A64AE6429CF723417124A75C5F17A58BC51C5B4BA563CDDB3E7371E795BC",
+      "reading": "MAYBE",
+      "disposition": "SUPERSEDED",
+      "repair": "Terminal IF_THEN token made final on the V1 declaration line; trailing punctuation removed for the bound reader."
+    }
+  ],
+  "obligations": [
+    {
+      "name": "O_IMPLEMENT_WAVE",
+      "status": "OPEN",
+      "execution": "NOT_RUN"
+    },
+    {
+      "name": "O_QUALIFY",
+      "status": "OPEN",
+      "execution": "NOT_RUN",
+      "required": "Source-bound fixtures; GPU replay and reversed enumeration; direct joint receipts; DRC; QueueGate closure; absorption/concurrency/alias/newly-enabled-next-tick cases; split-site fork and open-carrier controls."
+    },
+    {
+      "name": "O_REENTRY",
+      "status": "OPEN",
+      "execution": "NOT_RUN",
+      "required": "Diagnostic commit/RETURN/renewed PROPOSE; existing empty-K behavior preserved."
+    }
+  ],
+  "separation": {
+    "new_wave_gpu_run": "NOT_RUN",
+    "world_transition": "NOT_RUN",
+    "live_world": "UNTOUCHED",
+    "finding_0_1_6": "PROPOSED_UNCHANGED",
+    "closed_evidence": "UNCHANGED",
+    "recovery": "NOT_RESUMED",
+    "repository_commit": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED"
+  }
+}

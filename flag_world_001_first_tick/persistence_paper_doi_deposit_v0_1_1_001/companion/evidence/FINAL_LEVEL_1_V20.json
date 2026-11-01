@@ -1,0 +1,2100 @@
+{
+  "schema": "BroadNativeReceiptClosure020",
+  "verdict": "IF_THEN",
+  "level": 1,
+  "controller": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\controller_v20.mjs",
+    "bytes": 24018,
+    "sha256": "544E83A16B8C7CD41E6D70B9494F98AEC2F32B980500FAE1A0E21F34AF09A115"
+  },
+  "inputs": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\REGISTRY_V20.json",
+      "bytes": 22028,
+      "sha256": "A3821E3320F21949FB7055844D8FFD0FE2F428343E2896A1BAF968C5CBB4AA54"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\LEVEL1_PACKING_PLAN_V21.json",
+      "bytes": 46483,
+      "sha256": "146101B3F000BE86DE68E58E65D26E099CCFE5EA13CF84035984F6A132CDEFA3"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\LEVEL1_TERM_CAPACITY_V21.json",
+      "bytes": 4028,
+      "sha256": "4D7E1FEB894D5B761AC54DF626DB00508E8C9DCB1D2F2625D23490C5C48C02B2"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\context\\QUALIFICATION_COMPACT_RANGE_V23.json",
+      "bytes": 6051,
+      "sha256": "A45E20D96B5D67557098E0CF5EDA19F0A864277C68479CAFBD538CE999430BB7"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\context\\ranges\\qual_compact_finalize_v23_CLOSED_RANGE.json",
+      "bytes": 583944,
+      "sha256": "263C27A48CD4B46CA84A3D8345FAB15C1B74274B5866844C238523026A894130"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\context\\DERIVATION_QUALIFICATION_V23.json",
+      "bytes": 4167,
+      "sha256": "426B7D4F15C99245F28EBAFF7FD7A1D3CD57208A9FE655DCECCDAB7010EA55E8"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\closed\\broad20_l1_compact_0000.json",
+      "bytes": 2785,
+      "sha256": "5C2A19EEAF4C250A5E9F91098A512016F5F9B28DCF430D753E00584E31C27A18"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0000\\OBSERVATION_GUARDED_COMPACT_V13.json",
+      "bytes": 36192133,
+      "sha256": "D9D686B6F74295734AA932B84361F18032B011E5914286971D061D34A5863DE0"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\closed\\broad20_l1_compact_0001.json",
+      "bytes": 2785,
+      "sha256": "13E044B408F83FBF7163F4BE315580403D259B958DFFF636A3362F44AB423444"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+      "bytes": 36833004,
+      "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\closed\\broad20_l1_compact_0002.json",
+      "bytes": 2785,
+      "sha256": "2678E35CCDAA904B1730AAB0E44CC55C2B41DAF70E4FCA9FF0C354CF492C5A0D"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0002\\OBSERVATION_GUARDED_COMPACT_V13.json",
+      "bytes": 36966565,
+      "sha256": "0716307E2F6DDA5F70A488108A8700936110EE3FE3816A37FA1D71D461FB203F"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\closed\\broad20_l1_compact_0003.json",
+      "bytes": 2785,
+      "sha256": "3313218CC49F172EACA4857F3AE41837542426FFE672A9DDFB125D0605B047BC"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0003\\OBSERVATION_GUARDED_COMPACT_V13.json",
+      "bytes": 34260763,
+      "sha256": "171286F045051409B6DCBC6922D8AD3843AB8024DD6BF038D4F6A3E4B77BFB25"
+    }
+  ],
+  "coverage": {
+    "fields": 146,
+    "raw_supports": 242,
+    "raw_assignment_cases": 70664,
+    "compact_groups": 10706,
+    "batches": 4
+  },
+  "fields": [
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N4,NA))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N4,NB))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N4,NC))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N4,ND))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N4,NE))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N5,N0))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "DISC(ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NB))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NC))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,ND))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NE))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NC))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N5,N0))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N4,ND))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N0))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N4,NE))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "PAIR_FIELD(ID(N0,N0,N0,N1,N5,N4),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N4,NA))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,NA))",
+          "reading": "READING_THIS",
+          "receipt_fact": 304641,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "6D5039CF35495A865E270DCC651ECC84326EE853ED8CADBCA8FB12AD53D60D27"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "6D5039CF35495A865E270DCC651ECC84326EE853ED8CADBCA8FB12AD53D60D27",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N1,NE)",
+            "ID(N0,N0,N0,N0,N1,NF)",
+            "ID(N0,N0,N0,N0,N2,N0)",
+            "ID(N0,N0,N0,N0,N2,N1)",
+            "ID(N0,N0,N0,N0,N2,N2)",
+            "ID(N0,N0,N0,N0,N2,N3)",
+            "ID(N0,N0,N0,N0,N2,N4)",
+            "ID(N0,N0,N0,N0,N2,N5)",
+            "ID(N0,N0,N0,N0,N2,N6)",
+            "ID(N0,N0,N0,N0,N2,N7)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,NA))",
+              "reading": "READING_THIS",
+              "receipt_fact": 304641,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "6D5039CF35495A865E270DCC651ECC84326EE853ED8CADBCA8FB12AD53D60D27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N4,NB))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,NB))",
+          "reading": "READING_THIS",
+          "receipt_fact": 305276,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "4EF2051407825214EB9828A9F2763364E6C8D6BB679892B5E41FE407F27E8E25"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "4EF2051407825214EB9828A9F2763364E6C8D6BB679892B5E41FE407F27E8E25",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N2,N8)",
+            "ID(N0,N0,N0,N0,N2,N9)",
+            "ID(N0,N0,N0,N0,N2,NA)",
+            "ID(N0,N0,N0,N0,N2,NB)",
+            "ID(N0,N0,N0,N0,N2,NC)",
+            "ID(N0,N0,N0,N0,N2,ND)",
+            "ID(N0,N0,N0,N0,N2,NE)",
+            "ID(N0,N0,N0,N0,N2,NF)",
+            "ID(N0,N0,N0,N0,N3,N0)",
+            "ID(N0,N0,N0,N0,N3,N1)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,NB))",
+              "reading": "READING_THIS",
+              "receipt_fact": 305276,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "4EF2051407825214EB9828A9F2763364E6C8D6BB679892B5E41FE407F27E8E25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N4,NC))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,NC))",
+          "reading": "READING_THIS",
+          "receipt_fact": 304657,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "F556114F32F8721982C236CE5BDDA0405E84DF148A0AC432909EE2FC0EF4A403"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "F556114F32F8721982C236CE5BDDA0405E84DF148A0AC432909EE2FC0EF4A403",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N3,N2)",
+            "ID(N0,N0,N0,N0,N3,N3)",
+            "ID(N0,N0,N0,N0,N3,N4)",
+            "ID(N0,N0,N0,N0,N3,N5)",
+            "ID(N0,N0,N0,N0,N3,N6)",
+            "ID(N0,N0,N0,N0,N3,N7)",
+            "ID(N0,N0,N0,N0,N3,N8)",
+            "ID(N0,N0,N0,N0,N3,N9)",
+            "ID(N0,N0,N0,N0,N3,NA)",
+            "ID(N0,N0,N0,N0,N3,NB)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,NC))",
+              "reading": "READING_THIS",
+              "receipt_fact": 304657,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "F556114F32F8721982C236CE5BDDA0405E84DF148A0AC432909EE2FC0EF4A403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N4,ND))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,ND))",
+          "reading": "READING_THIS",
+          "receipt_fact": 304655,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "68CB0683334A3BAFD4EE67698D85EC0E70A05826523C704BAEE5EAB510B1C44F"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "68CB0683334A3BAFD4EE67698D85EC0E70A05826523C704BAEE5EAB510B1C44F",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N3,NC)",
+            "ID(N0,N0,N0,N0,N3,ND)",
+            "ID(N0,N0,N0,N0,N3,NE)",
+            "ID(N0,N0,N0,N0,N3,NF)",
+            "ID(N0,N0,N0,N0,N4,N0)",
+            "ID(N0,N0,N0,N0,N4,N1)",
+            "ID(N0,N0,N0,N0,N4,N2)",
+            "ID(N0,N0,N0,N0,N4,N3)",
+            "ID(N0,N0,N0,N0,N4,N4)",
+            "ID(N0,N0,N0,N0,N4,N5)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,ND))",
+              "reading": "READING_THIS",
+              "receipt_fact": 304655,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "68CB0683334A3BAFD4EE67698D85EC0E70A05826523C704BAEE5EAB510B1C44F"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N4,NE))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,NE))",
+          "reading": "READING_THIS",
+          "receipt_fact": 305620,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "4515BDC7770281702C34666672D29C1526B62E351902C4306611C98917A889CA"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "4515BDC7770281702C34666672D29C1526B62E351902C4306611C98917A889CA",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N4,N6)",
+            "ID(N0,N0,N0,N0,N4,N7)",
+            "ID(N0,N0,N0,N0,N4,N8)",
+            "ID(N0,N0,N0,N0,N4,N9)",
+            "ID(N0,N0,N0,N0,N4,NA)",
+            "ID(N0,N0,N0,N0,N4,NB)",
+            "ID(N0,N0,N0,N0,N4,NC)",
+            "ID(N0,N0,N0,N0,N4,ND)",
+            "ID(N0,N0,N0,N0,N4,NE)",
+            "ID(N0,N0,N0,N0,N4,NF)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,NE))",
+              "reading": "READING_THIS",
+              "receipt_fact": 305620,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "4515BDC7770281702C34666672D29C1526B62E351902C4306611C98917A889CA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,NF))",
+          "reading": "READING_THIS",
+          "receipt_fact": 305279,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "814C95187F054FBE2C07F272C054EB0265C1188E62F983E4DC5669B18E2EF972"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "814C95187F054FBE2C07F272C054EB0265C1188E62F983E4DC5669B18E2EF972",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N5,N0)",
+            "ID(N0,N0,N0,N0,N5,N1)",
+            "ID(N0,N0,N0,N0,N5,N2)",
+            "ID(N0,N0,N0,N0,N5,N3)",
+            "ID(N0,N0,N0,N0,N5,N4)",
+            "ID(N0,N0,N0,N0,N5,N5)",
+            "ID(N0,N0,N0,N0,N5,N6)",
+            "ID(N0,N0,N0,N0,N5,N7)",
+            "ID(N0,N0,N0,N0,N5,N8)",
+            "ID(N0,N0,N0,N0,N5,N9)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,NF))",
+              "reading": "READING_THIS",
+              "receipt_fact": 305279,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "814C95187F054FBE2C07F272C054EB0265C1188E62F983E4DC5669B18E2EF972"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N5,N0))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N0))",
+          "reading": "READING_THIS",
+          "receipt_fact": 307149,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "6678839E709DDFB68641D050CC316AB74FCA182251D89EC2256A83FF8516A6DE"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "6678839E709DDFB68641D050CC316AB74FCA182251D89EC2256A83FF8516A6DE",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N5,NA)",
+            "ID(N0,N0,N0,N0,N5,NB)",
+            "ID(N0,N0,N0,N0,N5,NC)",
+            "ID(N0,N0,N0,N0,N5,ND)",
+            "ID(N0,N0,N0,N0,N5,NE)",
+            "ID(N0,N0,N0,N0,N5,NF)",
+            "ID(N0,N0,N0,N0,N6,N0)",
+            "ID(N0,N0,N0,N0,N6,N1)",
+            "ID(N0,N0,N0,N0,N6,N2)",
+            "ID(N0,N0,N0,N0,N6,N3)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N0))",
+              "reading": "READING_THIS",
+              "receipt_fact": 307149,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "6678839E709DDFB68641D050CC316AB74FCA182251D89EC2256A83FF8516A6DE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N1))",
+          "reading": "READING_THIS",
+          "receipt_fact": 305623,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "1AEA54F9AA0085545FE730257AB6F307FD65434D1C2A94AADA35AA8472E008DC"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "1AEA54F9AA0085545FE730257AB6F307FD65434D1C2A94AADA35AA8472E008DC",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N6,N4)",
+            "ID(N0,N0,N0,N0,N6,N5)",
+            "ID(N0,N0,N0,N0,N6,N6)",
+            "ID(N0,N0,N0,N0,N6,N7)",
+            "ID(N0,N0,N0,N0,N6,N8)",
+            "ID(N0,N0,N0,N0,N6,N9)",
+            "ID(N0,N0,N0,N0,N6,NA)",
+            "ID(N0,N0,N0,N0,N6,NB)",
+            "ID(N0,N0,N0,N0,N6,NC)",
+            "ID(N0,N0,N0,N0,N6,ND)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N1))",
+              "reading": "READING_THIS",
+              "receipt_fact": 305623,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "1AEA54F9AA0085545FE730257AB6F307FD65434D1C2A94AADA35AA8472E008DC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N2))",
+          "reading": "READING_THIS",
+          "receipt_fact": 305625,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "BFC70F273B92DDC774EE2A38D996832EB50FC8680BAADFBB9511D7C97DECE74D"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "BFC70F273B92DDC774EE2A38D996832EB50FC8680BAADFBB9511D7C97DECE74D",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N6,NE)",
+            "ID(N0,N0,N0,N0,N6,NF)",
+            "ID(N0,N0,N0,N0,N7,N0)",
+            "ID(N0,N0,N0,N0,N7,N1)",
+            "ID(N0,N0,N0,N0,N7,N2)",
+            "ID(N0,N0,N0,N0,N7,N3)",
+            "ID(N0,N0,N0,N0,N7,N4)",
+            "ID(N0,N0,N0,N0,N7,N5)",
+            "ID(N0,N0,N0,N0,N7,N6)",
+            "ID(N0,N0,N0,N0,N7,N7)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N2))",
+              "reading": "READING_THIS",
+              "receipt_fact": 305625,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "BFC70F273B92DDC774EE2A38D996832EB50FC8680BAADFBB9511D7C97DECE74D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N3))",
+          "reading": "READING_THIS",
+          "receipt_fact": 306446,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "7079B0968F238DAED672E7C3CE8BFA6AD841150CCBD35AB6D42F56FDFF436FBF"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "7079B0968F238DAED672E7C3CE8BFA6AD841150CCBD35AB6D42F56FDFF436FBF",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N7,N8)",
+            "ID(N0,N0,N0,N0,N7,N9)",
+            "ID(N0,N0,N0,N0,N7,NA)",
+            "ID(N0,N0,N0,N0,N7,NB)",
+            "ID(N0,N0,N0,N0,N7,NC)",
+            "ID(N0,N0,N0,N0,N7,ND)",
+            "ID(N0,N0,N0,N0,N7,NE)",
+            "ID(N0,N0,N0,N0,N7,NF)",
+            "ID(N0,N0,N0,N0,N8,N0)",
+            "ID(N0,N0,N0,N0,N8,N1)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N3))",
+              "reading": "READING_THIS",
+              "receipt_fact": 306446,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "7079B0968F238DAED672E7C3CE8BFA6AD841150CCBD35AB6D42F56FDFF436FBF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N4))",
+          "reading": "READING_THIS",
+          "receipt_fact": 307150,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "8D1D1F18E7BC63615169C9117D51065EF0B09069D389D1DFC3F91CB19CDFCB22"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "8D1D1F18E7BC63615169C9117D51065EF0B09069D389D1DFC3F91CB19CDFCB22",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N8,N2)",
+            "ID(N0,N0,N0,N0,N8,N3)",
+            "ID(N0,N0,N0,N0,N8,N4)",
+            "ID(N0,N0,N0,N0,N8,N5)",
+            "ID(N0,N0,N0,N0,N8,N6)",
+            "ID(N0,N0,N0,N0,N8,N7)",
+            "ID(N0,N0,N0,N0,N8,N8)",
+            "ID(N0,N0,N0,N0,N8,N9)",
+            "ID(N0,N0,N0,N0,N8,NA)",
+            "ID(N0,N0,N0,N0,N8,NB)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N4))",
+              "reading": "READING_THIS",
+              "receipt_fact": 307150,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "8D1D1F18E7BC63615169C9117D51065EF0B09069D389D1DFC3F91CB19CDFCB22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "RING(ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N5))",
+          "reading": "READING_THIS",
+          "receipt_fact": 306447,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "7728885EA968510AA960B2ED5332D0C45B6008BCC49D0E4A2CB212203C0B472D"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "7728885EA968510AA960B2ED5332D0C45B6008BCC49D0E4A2CB212203C0B472D",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N8,NC)",
+            "ID(N0,N0,N0,N0,N8,ND)",
+            "ID(N0,N0,N0,N0,N8,NE)",
+            "ID(N0,N0,N0,N0,N8,NF)",
+            "ID(N0,N0,N0,N0,N9,N0)",
+            "ID(N0,N0,N0,N0,N9,N1)",
+            "ID(N0,N0,N0,N0,N9,N2)",
+            "ID(N0,N0,N0,N0,N9,N3)",
+            "ID(N0,N0,N0,N0,N9,N4)",
+            "ID(N0,N0,N0,N0,N9,N5)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N5))",
+              "reading": "READING_THIS",
+              "receipt_fact": 306447,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "7728885EA968510AA960B2ED5332D0C45B6008BCC49D0E4A2CB212203C0B472D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N4,NA))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,NA))",
+          "reading": "READING_NO",
+          "receipt_fact": 305588,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "6D5039CF35495A865E270DCC651ECC84326EE853ED8CADBCA8FB12AD53D60D27"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "6D5039CF35495A865E270DCC651ECC84326EE853ED8CADBCA8FB12AD53D60D27",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N1,NE)",
+            "ID(N0,N0,N0,N0,N1,NF)",
+            "ID(N0,N0,N0,N0,N2,N0)",
+            "ID(N0,N0,N0,N0,N2,N1)",
+            "ID(N0,N0,N0,N0,N2,N2)",
+            "ID(N0,N0,N0,N0,N2,N3)",
+            "ID(N0,N0,N0,N0,N2,N4)",
+            "ID(N0,N0,N0,N0,N2,N5)",
+            "ID(N0,N0,N0,N0,N2,N6)",
+            "ID(N0,N0,N0,N0,N2,N7)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,NA))",
+              "reading": "READING_NO",
+              "receipt_fact": 305588,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "6D5039CF35495A865E270DCC651ECC84326EE853ED8CADBCA8FB12AD53D60D27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N4,NB))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,NB))",
+          "reading": "READING_NO",
+          "receipt_fact": 305562,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "4EF2051407825214EB9828A9F2763364E6C8D6BB679892B5E41FE407F27E8E25"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "4EF2051407825214EB9828A9F2763364E6C8D6BB679892B5E41FE407F27E8E25",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N2,N8)",
+            "ID(N0,N0,N0,N0,N2,N9)",
+            "ID(N0,N0,N0,N0,N2,NA)",
+            "ID(N0,N0,N0,N0,N2,NB)",
+            "ID(N0,N0,N0,N0,N2,NC)",
+            "ID(N0,N0,N0,N0,N2,ND)",
+            "ID(N0,N0,N0,N0,N2,NE)",
+            "ID(N0,N0,N0,N0,N2,NF)",
+            "ID(N0,N0,N0,N0,N3,N0)",
+            "ID(N0,N0,N0,N0,N3,N1)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,NB))",
+              "reading": "READING_NO",
+              "receipt_fact": 305562,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "4EF2051407825214EB9828A9F2763364E6C8D6BB679892B5E41FE407F27E8E25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N4,NC))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,NC))",
+          "reading": "READING_NO",
+          "receipt_fact": 306397,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "F556114F32F8721982C236CE5BDDA0405E84DF148A0AC432909EE2FC0EF4A403"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "F556114F32F8721982C236CE5BDDA0405E84DF148A0AC432909EE2FC0EF4A403",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N3,N2)",
+            "ID(N0,N0,N0,N0,N3,N3)",
+            "ID(N0,N0,N0,N0,N3,N4)",
+            "ID(N0,N0,N0,N0,N3,N5)",
+            "ID(N0,N0,N0,N0,N3,N6)",
+            "ID(N0,N0,N0,N0,N3,N7)",
+            "ID(N0,N0,N0,N0,N3,N8)",
+            "ID(N0,N0,N0,N0,N3,N9)",
+            "ID(N0,N0,N0,N0,N3,NA)",
+            "ID(N0,N0,N0,N0,N3,NB)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,NC))",
+              "reading": "READING_NO",
+              "receipt_fact": 306397,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "F556114F32F8721982C236CE5BDDA0405E84DF148A0AC432909EE2FC0EF4A403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N4,ND))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,ND))",
+          "reading": "READING_NO",
+          "receipt_fact": 305549,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "68CB0683334A3BAFD4EE67698D85EC0E70A05826523C704BAEE5EAB510B1C44F"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "68CB0683334A3BAFD4EE67698D85EC0E70A05826523C704BAEE5EAB510B1C44F",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N3,NC)",
+            "ID(N0,N0,N0,N0,N3,ND)",
+            "ID(N0,N0,N0,N0,N3,NE)",
+            "ID(N0,N0,N0,N0,N3,NF)",
+            "ID(N0,N0,N0,N0,N4,N0)",
+            "ID(N0,N0,N0,N0,N4,N1)",
+            "ID(N0,N0,N0,N0,N4,N2)",
+            "ID(N0,N0,N0,N0,N4,N3)",
+            "ID(N0,N0,N0,N0,N4,N4)",
+            "ID(N0,N0,N0,N0,N4,N5)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,ND))",
+              "reading": "READING_NO",
+              "receipt_fact": 305549,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "68CB0683334A3BAFD4EE67698D85EC0E70A05826523C704BAEE5EAB510B1C44F"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N4,NE))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,NE))",
+          "reading": "READING_NO",
+          "receipt_fact": 307078,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "4515BDC7770281702C34666672D29C1526B62E351902C4306611C98917A889CA"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "4515BDC7770281702C34666672D29C1526B62E351902C4306611C98917A889CA",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N4,N6)",
+            "ID(N0,N0,N0,N0,N4,N7)",
+            "ID(N0,N0,N0,N0,N4,N8)",
+            "ID(N0,N0,N0,N0,N4,N9)",
+            "ID(N0,N0,N0,N0,N4,NA)",
+            "ID(N0,N0,N0,N0,N4,NB)",
+            "ID(N0,N0,N0,N0,N4,NC)",
+            "ID(N0,N0,N0,N0,N4,ND)",
+            "ID(N0,N0,N0,N0,N4,NE)",
+            "ID(N0,N0,N0,N0,N4,NF)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,NE))",
+              "reading": "READING_NO",
+              "receipt_fact": 307078,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "4515BDC7770281702C34666672D29C1526B62E351902C4306611C98917A889CA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N4,NF))",
+          "reading": "READING_NO",
+          "receipt_fact": 306390,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "814C95187F054FBE2C07F272C054EB0265C1188E62F983E4DC5669B18E2EF972"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "814C95187F054FBE2C07F272C054EB0265C1188E62F983E4DC5669B18E2EF972",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N5,N0)",
+            "ID(N0,N0,N0,N0,N5,N1)",
+            "ID(N0,N0,N0,N0,N5,N2)",
+            "ID(N0,N0,N0,N0,N5,N3)",
+            "ID(N0,N0,N0,N0,N5,N4)",
+            "ID(N0,N0,N0,N0,N5,N5)",
+            "ID(N0,N0,N0,N0,N5,N6)",
+            "ID(N0,N0,N0,N0,N5,N7)",
+            "ID(N0,N0,N0,N0,N5,N8)",
+            "ID(N0,N0,N0,N0,N5,N9)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N4,NF))",
+              "reading": "READING_NO",
+              "receipt_fact": 306390,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "814C95187F054FBE2C07F272C054EB0265C1188E62F983E4DC5669B18E2EF972"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N5,N0))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N0))",
+          "reading": "READING_NO",
+          "receipt_fact": 307084,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "6678839E709DDFB68641D050CC316AB74FCA182251D89EC2256A83FF8516A6DE"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "6678839E709DDFB68641D050CC316AB74FCA182251D89EC2256A83FF8516A6DE",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N5,NA)",
+            "ID(N0,N0,N0,N0,N5,NB)",
+            "ID(N0,N0,N0,N0,N5,NC)",
+            "ID(N0,N0,N0,N0,N5,ND)",
+            "ID(N0,N0,N0,N0,N5,NE)",
+            "ID(N0,N0,N0,N0,N5,NF)",
+            "ID(N0,N0,N0,N0,N6,N0)",
+            "ID(N0,N0,N0,N0,N6,N1)",
+            "ID(N0,N0,N0,N0,N6,N2)",
+            "ID(N0,N0,N0,N0,N6,N3)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N0))",
+              "reading": "READING_NO",
+              "receipt_fact": 307084,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "6678839E709DDFB68641D050CC316AB74FCA182251D89EC2256A83FF8516A6DE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N1))",
+          "reading": "READING_NO",
+          "receipt_fact": 307071,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "1AEA54F9AA0085545FE730257AB6F307FD65434D1C2A94AADA35AA8472E008DC"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "1AEA54F9AA0085545FE730257AB6F307FD65434D1C2A94AADA35AA8472E008DC",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N6,N4)",
+            "ID(N0,N0,N0,N0,N6,N5)",
+            "ID(N0,N0,N0,N0,N6,N6)",
+            "ID(N0,N0,N0,N0,N6,N7)",
+            "ID(N0,N0,N0,N0,N6,N8)",
+            "ID(N0,N0,N0,N0,N6,N9)",
+            "ID(N0,N0,N0,N0,N6,NA)",
+            "ID(N0,N0,N0,N0,N6,NB)",
+            "ID(N0,N0,N0,N0,N6,NC)",
+            "ID(N0,N0,N0,N0,N6,ND)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N1))",
+              "reading": "READING_NO",
+              "receipt_fact": 307071,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "1AEA54F9AA0085545FE730257AB6F307FD65434D1C2A94AADA35AA8472E008DC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N2))",
+          "reading": "READING_NO",
+          "receipt_fact": 307630,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "BFC70F273B92DDC774EE2A38D996832EB50FC8680BAADFBB9511D7C97DECE74D"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "BFC70F273B92DDC774EE2A38D996832EB50FC8680BAADFBB9511D7C97DECE74D",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N6,NE)",
+            "ID(N0,N0,N0,N0,N6,NF)",
+            "ID(N0,N0,N0,N0,N7,N0)",
+            "ID(N0,N0,N0,N0,N7,N1)",
+            "ID(N0,N0,N0,N0,N7,N2)",
+            "ID(N0,N0,N0,N0,N7,N3)",
+            "ID(N0,N0,N0,N0,N7,N4)",
+            "ID(N0,N0,N0,N0,N7,N5)",
+            "ID(N0,N0,N0,N0,N7,N6)",
+            "ID(N0,N0,N0,N0,N7,N7)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N2))",
+              "reading": "READING_NO",
+              "receipt_fact": 307630,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "BFC70F273B92DDC774EE2A38D996832EB50FC8680BAADFBB9511D7C97DECE74D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N3))",
+          "reading": "READING_NO",
+          "receipt_fact": 308249,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "7079B0968F238DAED672E7C3CE8BFA6AD841150CCBD35AB6D42F56FDFF436FBF"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "7079B0968F238DAED672E7C3CE8BFA6AD841150CCBD35AB6D42F56FDFF436FBF",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N7,N8)",
+            "ID(N0,N0,N0,N0,N7,N9)",
+            "ID(N0,N0,N0,N0,N7,NA)",
+            "ID(N0,N0,N0,N0,N7,NB)",
+            "ID(N0,N0,N0,N0,N7,NC)",
+            "ID(N0,N0,N0,N0,N7,ND)",
+            "ID(N0,N0,N0,N0,N7,NE)",
+            "ID(N0,N0,N0,N0,N7,NF)",
+            "ID(N0,N0,N0,N0,N8,N0)",
+            "ID(N0,N0,N0,N0,N8,N1)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N3))",
+              "reading": "READING_NO",
+              "receipt_fact": 308249,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "7079B0968F238DAED672E7C3CE8BFA6AD841150CCBD35AB6D42F56FDFF436FBF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N4))",
+          "reading": "READING_NO",
+          "receipt_fact": 308232,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "8D1D1F18E7BC63615169C9117D51065EF0B09069D389D1DFC3F91CB19CDFCB22"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "8D1D1F18E7BC63615169C9117D51065EF0B09069D389D1DFC3F91CB19CDFCB22",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N8,N2)",
+            "ID(N0,N0,N0,N0,N8,N3)",
+            "ID(N0,N0,N0,N0,N8,N4)",
+            "ID(N0,N0,N0,N0,N8,N5)",
+            "ID(N0,N0,N0,N0,N8,N6)",
+            "ID(N0,N0,N0,N0,N8,N7)",
+            "ID(N0,N0,N0,N0,N8,N8)",
+            "ID(N0,N0,N0,N0,N8,N9)",
+            "ID(N0,N0,N0,N0,N8,NA)",
+            "ID(N0,N0,N0,N0,N8,NB)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N4))",
+              "reading": "READING_NO",
+              "receipt_fact": 308232,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "8D1D1F18E7BC63615169C9117D51065EF0B09069D389D1DFC3F91CB19CDFCB22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "SINGLE(ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 1,
+      "distinct_effect_K_count": 1,
+      "raw_strict_offers": [
+        {
+          "support": "SITE(ID(N0,N0,N0,N1,N5,N5))",
+          "reading": "READING_NO",
+          "receipt_fact": 308396,
+          "observation": {
+            "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+            "bytes": 36833004,
+            "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+          },
+          "changed_set_sha256": "7728885EA968510AA960B2ED5332D0C45B6008BCC49D0E4A2CB212203C0B472D"
+        }
+      ],
+      "distinct_effects": [
+        {
+          "changed_set_sha256": "7728885EA968510AA960B2ED5332D0C45B6008BCC49D0E4A2CB212203C0B472D",
+          "changed_set": [
+            "ID(N0,N0,N0,N0,N8,NC)",
+            "ID(N0,N0,N0,N0,N8,ND)",
+            "ID(N0,N0,N0,N0,N8,NE)",
+            "ID(N0,N0,N0,N0,N8,NF)",
+            "ID(N0,N0,N0,N0,N9,N0)",
+            "ID(N0,N0,N0,N0,N9,N1)",
+            "ID(N0,N0,N0,N0,N9,N2)",
+            "ID(N0,N0,N0,N0,N9,N3)",
+            "ID(N0,N0,N0,N0,N9,N4)",
+            "ID(N0,N0,N0,N0,N9,N5)"
+          ],
+          "aliases": [
+            {
+              "support": "SITE(ID(N0,N0,N0,N1,N5,N5))",
+              "reading": "READING_NO",
+              "receipt_fact": 308396,
+              "observation": {
+                "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\local_restriction_011\\broad_012\\staged_013\\broad20_l1_compact_0001\\OBSERVATION_GUARDED_COMPACT_V13.json",
+                "bytes": 36833004,
+                "sha256": "22A774B8E12D5542D1AE0BBD1B9C80AD8A9FD3F0C3F1C9C3C5B908FF7A1A0129"
+              },
+              "changed_set_sha256": "7728885EA968510AA960B2ED5332D0C45B6008BCC49D0E4A2CB212203C0B472D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NC))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,ND))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NE))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N5,N0))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N4,ND))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N4,NE))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N0))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N4,NE))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NA),ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N4,ND))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N0))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N0))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NB),ID(N0,N0,N0,N1,N5,N4),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N4,NE))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N0))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NC),ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N4,NF))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N1))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,ND),ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NE),ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N4,NF),ID(N0,N0,N0,N1,N5,N4),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N2))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N0),ID(N0,N0,N0,N1,N5,N4),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N3))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N1),ID(N0,N0,N0,N1,N5,N4),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N4))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N2),ID(N0,N0,N0,N1,N5,N4),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    },
+    {
+      "field": "TRIPLE(ID(N0,N0,N0,N1,N5,N3),ID(N0,N0,N0,N1,N5,N4),ID(N0,N0,N0,N1,N5,N5))",
+      "raw_K_count": 0,
+      "distinct_effect_K_count": 0,
+      "raw_strict_offers": [],
+      "distinct_effects": []
+    }
+  ],
+  "selection": "NO_MEMBER_TAKEN",
+  "alias_rule": "Raw offer identities are retained separately; equal whole changed sets over the same source field identify one successor effect.",
+  "world_effect": "NONE"
+}

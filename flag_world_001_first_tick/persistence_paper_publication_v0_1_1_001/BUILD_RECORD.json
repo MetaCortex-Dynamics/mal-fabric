@@ -1,0 +1,123 @@
+{
+  "schema": "PERSISTENCE_PUBLICATION_BUILD_001",
+  "scope": "Document typesetting only; no experimental execution, promotion or world transition",
+  "status": "PUBLICATION_PRESENTATION_OF_PROMOTED_PAPER",
+  "source": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\persistence_paper_publication_v0_1_1_001\\PERSISTENCE_FROM_GEOMETRY_v0.1.1_publication.md",
+    "sha256": "E82DAB5BC2C3EA24C96F8E12E68B75A89221A289B60E6B116D91D0CE00A354F5",
+    "bytes": 34024
+  },
+  "builder": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\persistence_paper_publication_v0_1_1_001\\build_publication.py",
+    "sha256": "BE06B1B8E7DE0EC5DC0DF6AEE664309A9FA06CE297027DD26ED5D3E7619C9EE8"
+  },
+  "source_metadata_rendered_once_by_builder": [
+    "Devon A. Generally · MetaCortex Dynamics LLC",
+    "ORCID: 0009-0004-8164-2159",
+    "Paper two · Version 0.1.1 · 1 November 2026 · Publication edition"
+  ],
+  "pdf": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\persistence_paper_publication_v0_1_1_001\\output\\pdf\\Persistence_from_Geometry_v0.1.1_publication.pdf",
+    "sha256": "3196006EC857D79A17B663E4F6E5BAC22BD58DFB42EE7B71C4CC92F9383F41C2",
+    "bytes": 682526,
+    "pages": 13
+  },
+  "checks": {
+    "math_blocks": 8,
+    "tables": 6,
+    "code_blocks": 0,
+    "headings": 21,
+    "figures": 3,
+    "missing_glyphs": [],
+    "missing_hashes": [],
+    "missing_uri_annotations": [],
+    "hashes_preserved": 0,
+    "source_metadata_comparison": "SAME",
+    "missing_metadata": [],
+    "page_character_counts": [
+      3102,
+      2527,
+      2489,
+      2769,
+      2323,
+      2546,
+      1879,
+      1855,
+      1441,
+      3413,
+      3154,
+      3222,
+      3007
+    ],
+    "visual_review": {
+      "reading": "IF_THEN",
+      "pdf_sha256": "3196006EC857D79A17B663E4F6E5BAC22BD58DFB42EE7B71C4CC92F9383F41C2",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "method": "All rendered pages inspected in two contact sheets; full-size figure pages5,7,9 inspected for chart labels, captions and surrounding text. Numeric data and evidence qualifiers match bound figure sources.",
+      "findings": []
+    }
+  },
+  "links": [
+    "https://doi.org/10.5281/zenodo.23673872",
+    "https://orcid.org/0009-0004-8164-2159"
+  ],
+  "renderer": {
+    "reportlab": "4.4.9",
+    "fonts": {
+      "Body": {
+        "file": "georgia.ttf",
+        "sha256": "38DFFCAF1FAC89492F7C56C600A14DAF36AE42F7C21985CD4134AE113124A58F",
+        "collection_index": 0
+      },
+      "Body-Bold": {
+        "file": "georgiab.ttf",
+        "sha256": "72A6CD94FAB6C179392075D3FB361E269CDDDFAD41BB7AB385FA22A37E49A900",
+        "collection_index": 0
+      },
+      "Body-Italic": {
+        "file": "georgiai.ttf",
+        "sha256": "D3E4BAD27651D120AC8F2CEA42CF4B4F077264FB243F66B3CAFFCFD35465F49B",
+        "collection_index": 0
+      },
+      "Body-BoldItalic": {
+        "file": "georgiaz.ttf",
+        "sha256": "3F9E512F82EAF6F1B7869B82013FB79F6EAF1A41E75A0E7B96F31F35B1022AE4",
+        "collection_index": 0
+      },
+      "Sans": {
+        "file": "segoeui.ttf",
+        "sha256": "704EADA12961A27FD271F7D3B09E2066520E758390C1776744EFF430FEE30F6E",
+        "collection_index": 0
+      },
+      "Sans-Bold": {
+        "file": "segoeuib.ttf",
+        "sha256": "B169E636719880976A97E94E3B1CB3DBE5F4A38EABC037BF9F2A9165154C3AD2",
+        "collection_index": 0
+      },
+      "Mono": {
+        "file": "consola.ttf",
+        "sha256": "CF00B507B3286870CC5064EBD0633C303F70B491A4AF25EEC2D32DF413DB0179",
+        "collection_index": 0
+      },
+      "Math": {
+        "file": "cambria.ttc",
+        "sha256": "84E70CCC1664482F4A960442C7A166C91A1B2CF98FF88C33CB73F79403F66D7B",
+        "collection_index": 1
+      }
+    }
+  }
+}

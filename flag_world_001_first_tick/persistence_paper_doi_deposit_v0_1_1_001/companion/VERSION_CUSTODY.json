@@ -1,0 +1,44 @@
+{
+  "schema": "PERSISTENCE_PAPER_VERSION_CUSTODY_001",
+  "version": "0.1.1",
+  "status": "DRAFT_NOT_PROMOTED",
+  "predecessor_sequence": [
+    {
+      "role": "Initially reviewed v0.1",
+      "manuscript_sha256": "FD259503123998C8B1481C87CD57BDC80A8F93E506DE5388CAD65535AC7AD5E0",
+      "pdf_sha256": "EAA4A5CFDA5A9177861589CA0EF152455A3592CC5A83FA14D95E17E3537A6459",
+      "archive_sha256": "04B013C654742AE449329308494B86B3C976C6CD2B581E1754DA8B107052EABC"
+    },
+    {
+      "role": "Review 002 revised v0.1",
+      "manuscript_sha256": "F9483D76852694E48204A082A339D94176B4E032012E93D34C65D81E3CCB04A0",
+      "pdf_sha256": "9587DDE10D6535EE6785E4C4AC535D850405112E9D8930F06CDBCFF38B20927C",
+      "archive_sha256": "20D751A4B5830B062C1B35058DC7E8222280191A0400323C5308BACCFF1C032E"
+    }
+  ],
+  "current": {
+    "manuscript": {
+      "file": "PERSISTENCE_FROM_GEOMETRY_v0.1.1.md",
+      "bytes": 30830,
+      "sha256": "690425E860C7CEACA5726A59C8CF5B8BF8090FED51634DFD60F6EFAB358573E1"
+    },
+    "pdf": {
+      "file": "output/pdf/Persistence_from_Geometry_v0.1.1.pdf",
+      "bytes": 212774,
+      "sha256": "7E8C75419FBB51F1DD22F50BE5D6325BF7F00D7A9CAACCF3B8C92D193EFA27C8"
+    }
+  },
+  "delta": "Version designation only relative to review 002 manuscript; body, equations, counts, references and annotations SAME.",
+  "body_comparison": "SAME_AFTER_EXACT_VERSION_SUBSTITUTION",
+  "evidence_copies": 22,
+  "preservation": {
+    "earlier_versions": "UNCHANGED",
+    "finding_016": "UNCHANGED_PROPOSED",
+    "work_038": "PAUSED",
+    "GPU": "NOT_RUN",
+    "promotion": "NOT_RUN",
+    "world_transition": "NOT_RUN",
+    "commit": "NOT_RUN",
+    "push": "NOT_RUN"
+  }
+}

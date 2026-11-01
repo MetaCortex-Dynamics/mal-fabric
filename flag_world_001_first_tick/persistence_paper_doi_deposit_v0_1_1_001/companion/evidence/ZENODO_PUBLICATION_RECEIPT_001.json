@@ -1,0 +1,59 @@
+{
+  "schema": "ZENODO_PUBLICATION_RECEIPT_001",
+  "recorded_at_utc": "2026-10-26T18:56:59Z",
+  "authority": {
+    "request": "publish it",
+    "subject": "The verified eight-file Genesis on the GPU v0.5 Zenodo draft 23673872",
+    "license": "Apache License 2.0"
+  },
+  "status": "PUBLISHED",
+  "record": {
+    "id": "23673872",
+    "url": "https://zenodo.org/records/23673872",
+    "title": "Genesis on the GPU A World That Proposes Its Own Next Step",
+    "version": "0.5",
+    "publication_date": "2026-10-26",
+    "creator": "Generally, Devon A.",
+    "resource_type": "Preprint",
+    "access": "Open",
+    "license": "Apache License 2.0",
+    "version_doi": "10.5281/zenodo.23673872",
+    "version_doi_url": "https://doi.org/10.5281/zenodo.23673872",
+    "concept_doi": "10.5281/zenodo.23673871",
+    "doi_evidence": "Both DOI links are displayed by Zenodo on the published record. Independent DOI-resolver propagation was not tested."
+  },
+  "custody": {
+    "upload_receipt": "ZENODO_DRAFT_UPLOAD_RECEIPT_001.json",
+    "upload_receipt_sha256": "7403E6AA894DC6086EE237C34A84833E2E604BD37B4EC4E206453EBADCAB0C8B",
+    "upload_receipt_commit": "849657ab809eded96f2434127d4df5ca2492152d",
+    "package_commit": "1a581a586a90211f261405a60eab0136ec9d8411",
+    "publication_source_commit": "b57fc09dfd41af65fc5be6eeab8174e61bc22a98",
+    "package_zip_sha256": "D29A3DFB3442A8A2E5A677E0CAB1852E917CF2A39F9ED34FE49ED73FA001F198",
+    "uploaded_files": 8,
+    "uploaded_bytes": 342976
+  },
+  "verification": {
+    "published_record_url": "Preview query absent; canonical record page shown after Publish confirmation.",
+    "published_ui": "Version 0.5; Published October 26, 2026; Open; Edit and New version controls; version DOI in citation and Versions.",
+    "published_file_checksums": "8/8 MD5 values SAME against the committed upload receipt.",
+    "file_details": "Full file names, sizes, local SHA-256 and local/remote MD5 values remain bound by the prior upload receipt.",
+    "pdf_preview_pages": 8,
+    "remote_sha256_readback": "NOT_RUN",
+    "local_integrity_audit": "8/8 file SHA-256, MD5 and sizes SAME; package ZIP and metadata SAME."
+  },
+  "preservation": {
+    "new_experiment": "NOT_RUN",
+    "uploaded_file_changes": "NONE",
+    "metadata_changes_before_publication": "NONE",
+    "earlier_zenodo_record": "23584296_UNTOUCHED",
+    "frozen_evidence_edits": "NONE"
+  },
+  "repository": {
+    "home": "MetaCortex-Dynamics/mal-fabric",
+    "branch": "review/genesis-paper-v0-5-publication-001",
+    "head_at_publication": "849657ab809eded96f2434127d4df5ca2492152d",
+    "publication_receipt_git_commit": "NOT_RUN",
+    "git_push_this_turn": "NOT_RUN",
+    "main_merge": "NOT_RUN"
+  }
+}

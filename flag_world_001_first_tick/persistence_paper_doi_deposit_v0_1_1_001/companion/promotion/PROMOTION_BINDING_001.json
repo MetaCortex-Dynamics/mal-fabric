@@ -1,0 +1,51 @@
+{
+  "schema": "PERSISTENCE_PAPER_PROMOTION_BINDING_001",
+  "status": "PROMOTED",
+  "version": "0.1.1",
+  "title": "Persistence from Geometry: Context, Refinement and Deterministic Change",
+  "authority": "Devon A. Generally",
+  "attestation": "Promote",
+  "attestation_date": "2026-11-01",
+  "attestation_timezone": "America/New_York",
+  "recorded_at_utc": "2026-11-01T07:37:22Z",
+  "receipt": {
+    "path": "RECEIPT_PROMOTE_PERSISTENCE_FROM_GEOMETRY_v0.1.1.md",
+    "bytes": 3398,
+    "sha256": "3C2D1A013837328CE909BB0409F477A9ADAC122F1B65D774387287ED12FEC62B"
+  },
+  "correction": {
+    "path": "PREDECESSOR_LEDGER_LOCATOR_001.json",
+    "bytes": 1592,
+    "sha256": "5D230ADD00A1A59DE6CDFF42B882DDE82B0B1DF3E543A5B50B7541AC90F0F6BE",
+    "verdict": "IF_THEN"
+  },
+  "review_archive": {
+    "path": "review/Persistence_from_Geometry_v0.1.1_review.zip",
+    "bytes": 406541,
+    "sha256": "978F24E16DE6140F54B7C9650EE31E7B567FC8A9E57B9DFE6236BDF936CD458D"
+  },
+  "promoted_subjects": [
+    {
+      "member": "PERSISTENCE_FROM_GEOMETRY_v0.1.1.md",
+      "bytes": 30830,
+      "sha256": "690425E860C7CEACA5726A59C8CF5B8BF8090FED51634DFD60F6EFAB358573E1"
+    },
+    {
+      "member": "output/pdf/Persistence_from_Geometry_v0.1.1.pdf",
+      "bytes": 212774,
+      "sha256": "7E8C75419FBB51F1DD22F50BE5D6325BF7F00D7A9CAACCF3B8C92D193EFA27C8"
+    }
+  ],
+  "finding": {
+    "status": "PROPOSED_UNCHANGED",
+    "sha256": "5DF47E3343EF3E0569DBF7C3B726871B9B08BB4CE376927EACB4E0C5C573C81C"
+  },
+  "scope": {
+    "work_038": "PAUSED",
+    "GPU": "NOT_RUN",
+    "world_transition": "NOT_RUN",
+    "commit": "NOT_RUN",
+    "push": "NOT_RUN",
+    "publication": "NOT_RUN"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "title": "Persistence from Geometry: Context, Refinement and Deterministic Change",
+    "upload_type": "publication",
+    "publication_type": "preprint",
+    "publication_date": "2026-11-01",
+    "version": "0.1.1",
+    "creators": [
+      {
+        "name": "Generally, Devon A.",
+        "affiliation": "MetaCortex Dynamics LLC",
+        "orcid": "0009-0004-8164-2159"
+      }
+    ],
+    "description": "<p>Persistent structure can arise from the relationship between a field and the changes its geometry admits. We study two-valued readings on triangular incidence, with a transition receipt that identifies every disagreement removed or introduced. A strict transition removes at least one disagreement and introduces none. This gives an exact criterion on the entire changed set: its nonempty boundary must lie inside the source wall set. The criterion explains several distinct forms of persistence. Computation over the bound refined incidence classifies 60 of 480 adjacent pairs as dissolving through ancestral face assignments and 420 as held under the recorded family; GPU receipts witness all 60 exits. More strongly, the same enclosed region dissolves in one surrounding field and persists in another: the containing assignment removes 30 walls but opens 10 in the nested field, whereas it removes 20 and opens none in the contrast. Refinement provides another route. A single-site field with one strict exit pulls back to a field with no strict exit, even though each child inherits its parent's reading. A separate nested configuration preserves retention through refinement, with its predicted 64 walls and 30/20 diagnostic receipt reproduced on an RTX 3070. Exhaustive GPU sweeps cover the stated configuration families at two coarser levels; 89 targeted GPU receipts establish the decisive finer-level cases. Finally, within the bound whole-site domain, enabled effects commute or absorb one another. Their joint application determines one successor from one snapshot without selecting an offer. These results make persistence, contextual protection and deterministic change consequences of the same receipt construction.</p>",
+    "access_right": "open",
+    "license": "Apache-2.0",
+    "language": "eng",
+    "keywords": [
+      "geometric computation",
+      "persistent structure",
+      "contextual retention",
+      "refinement",
+      "GPU computation",
+      "strict discharge",
+      "deterministic change",
+      "reproducible research"
+    ],
+    "notes": "Illustrated publication edition of promoted Paper Two v0.1.1. Includes three source-bound figures and companion compact records. Evidence scopes remain as stated in the manuscript. Referenced large raw readbacks and complete execution packages are not bundled. No new experiment or world transition accompanies this deposit.",
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.23673872",
+        "relation": "references",
+        "scheme": "doi"
+      }
+    ]
+  }
+}

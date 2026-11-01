@@ -1,0 +1,191 @@
+// SPEC-J17-WORLD-FOLD-EFFECT-001-AMENDMENT-SNAPSHOT-WAVE-001
+// STATUS: PROPOSED serialization; Devon's promotion is carried by PROMOTION_RECEIPT_037.json.
+// AUTHORITY: Codex PROPOSE; Devon DECIDE / PROMOTE; implementation and qualification are separate EXECUTE obligations.
+// VERSION: 0.1.0
+// DATE: 2026-10-30
+// METHOD: SPEC-MAL-SPECIFICATION-SYSTEM-002; native CHECK_FORM W1-W8 plus promoted W9.
+// PARENT: SPEC_J17_WORLD_FOLD_EFFECT_001_v0.1.0_PROPOSED.mal
+// PARENT_SHA256: E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E
+// ATTESTATION_SUBJECT: the scoped prior-snapshot wave stated immediately before Devon's "promote".
+// This file serializes that contract AFTER the attestation; prior review of these byte identities is not claimed.
+// Parent bytes, parent promotion, committed links and prior diagnostic records remain unchanged.
+//
+// NORMATIVE DELTA
+// N1 SUBJECT. One tick assembles the effects already enabled on ONE immutable committed snapshot.
+//    Scope: whole-site fields; fixed incidence; strict discharge; the bound (1,0), (2,0), (4,0) carriers
+//    and their complete recorded offered families, including their recorded ancestral images.
+//    Whole-site means every flag with the same site coordinate has the same reading.
+//    Exact carrier, ancestry, offer and source identities are in CONTACTS_037.json. No unbound refinement is admitted here.
+//    The inherited domain seat below is specification custody, not a new physical seating.
+//
+// N2 INPUT. Bind source field, overlap witness, carrier incidence, ancestry, complete raw offered family,
+//    prior committed head, admission and genealogy to the SAME source snapshot.
+//    W(q) is the set of unequal-reading overlaps. An offer a supplies its support and uniform reading.
+//    D(a,q) is its ENTIRE changed set. STRICT(a,q) iff boundary(D) is nonempty and boundary(D) is a subset of W(q).
+//    Equivalently its direct receipt has nonempty discharged and empty opened.
+//    K(q) retains EVERY strict raw offer identity, including aliases with the same effect.
+//    This amendment does not extend, shrink or choose the offered family.
+//
+// N3 EFFECT RELATIONS. Derive equivalence, concurrency and absorption from incidence, readings and the bound effects.
+//    Equivalent effects give the SAME complete successor field on this source, not merely equal receipt counts.
+//    Form those effect classes first and keep every raw member reference in its class.
+//    Concurrent effects compose in either order to the SAME field, with contact support for their compatibility.
+//    Absorption applies only between DISTINCT effect classes. Its geometry-derived witness identifies the absorbing
+//    class's OWN prior-snapshot successor: applying its effect after the absorbed effect gives that same successor.
+//    An eventual common terminal is not an absorption witness. Equivalent members cannot remove one another.
+//    Receipt-set containment alone is not absorption. No identifier, serialization position or scalar ranks effects.
+//    Every raw member and every equivalence/absorption contact remains in the wave's provenance.
+//    Coalescing identical writes does not choose a representative offer as the authority.
+//
+// N4 ONE WAVE. For nonempty K(q), retain EVERY nonabsorbed effect class and assemble their concurrent effects.
+//    The compatible, nonabsorbed changed-set assignments determine q_next; unchanged flags retain q.
+//    No absorbed write is re-applied after its absorbing effect. No sequential member selection occurs.
+//    Assembly is order-independent on this scoped construction. A conflicting assignment or absent required relation
+//    withholds assembly and names its exact flags, members and contact; it never supplies a priority.
+//    A combined effect is the wave output, not a newly invented single offered support.
+//
+// N5 RECEIPT. Read directly from q and q_next:
+//       discharged = W(q) set_difference W(q_next)
+//       opened     = W(q_next) set_difference W(q)
+//       retained   = W(q) intersection W(q_next).
+//    Nonempty K in scope requires nonempty discharged and empty opened. Check the joint effect itself.
+//    Do not add individual counts or take the unqualified union of individual receipts.
+//    Preserve carrier incidence, multiset and genealogy under this horizontal step.
+//
+// N6 COMMIT BOUNDARY. Carry the joint candidate, complete member provenance and joint receipt through the
+//    existing authority section and commit mechanism. successor.prev equals the source's prior committed link.
+//    Pair state_hash remains the hash of (field,witness); runtime custody is recorded under its own hash.
+//    One accepted wave is ONE new link. Return (program,state_next) only across that commit.
+//    PROPOSE then re-enters on the RETURNED state; it does not reload the old state or observe current-tick results.
+//    Anything newly enabled by this wave belongs to the NEXT snapshot. This tick does not normalize to the terminal field.
+//    Distinct previously committed histories are not merged, even when their endpoint fields agree.
+//
+// N7 EMPTY K AND TERMINALS. Empty K supplies no new append policy. Preserve existing empty-K/re-entry behavior.
+//    MOVED/HELD remain readings of the parent's defined worldline subject, not of an unrelated runtime coordinate.
+//    Existing REENTRY_NOT_SAME and MULTISET_NOT_PRESERVED remain distinguished outcomes.
+//    A missing assembly contact is named under UNSUPPLIED(name); an incidence or assignment discrepancy is named
+//    NOT_SAME. No partial wave is committed in either case. No existing committed link is reinterpreted.
+//
+// DERIVATION CONTACTS (read-only, not GPU qualification of this amendment)
+// D1 Every site fibre is SAME-connected in a whole-site field. STRICT cannot cut an agreement class, BECAUSE such a
+//    cut opens an overlap. Hence strict fixed-incidence evolution preserves the whole-site domain.
+// D2 On (1,0)/(2,0), only site supports and their recorded aliases contain whole sites. Adjacent sites cannot both be
+//    enabled, BECAUSE their common triad's third site cannot differ from both opposite readings.
+//    Flipping an isolated site cannot enable a neighbour, BECAUSE it agrees with all neighbours after the flip.
+// D3 On (4,0), strict supports additionally include the original-face images. Distinct original faces have disjoint
+//    flag images; their effects commute. The boundary stars of a strict face already have its target reading,
+//    BECAUSE changing only part of a star would open a SAME overlap.
+// D4 Interior enabled-site effects are absorbed by the containing enabled face; boundary sites cannot oppose that
+//    strict face, BECAUSE the bound boundary contacts give a SAME neighbour. Outside effects commute.
+//    Thus current effects commute or are absorbed within this scoped construction.
+// D5 Strict transitions descend through finite proper wall subsets. Induction over those subsets, with D2-D4,
+//    gives one terminal FIELD for the scoped whole-site evolution. It does not identify distinct histories.
+//    N6 derives one prior-snapshot wave, NOT a terminal-normalization tick. No external theorem is imported.
+//
+// CONTACT LOCATORS; full custody is CONTACTS_037.json.
+// FOLD : parent :103, "A step CANNOT observe current-tick results ... re-entry is across the commit only."
+// FABEX: 5BB1497AA3D791150F0416FEDA4E393695A9302B42030ADD0A7D22C08CCBEAC0; sections 2-3.
+// P020 : 1C87166F0D6FE3941FB9625A50913A3ED508C9B6A8400E52424E216ACEB3BD33; returned-state PROPOSE.
+// C020 : B8AEDC68816012AC9819BD5162612C1DDEF0E014D61A4BB40BA87D52E1C3DDED; commit and returned-state custody.
+// R020 : DE8052E6A1DB6F4B47D377D88622202E810D5FF3756BFB85CA17F31490DE1D70; singleton/re-entry witness, not multi-K.
+// ENGINE: B2A3CE4E4639B53EDC10573F54DF8F8CBD0351D67670790F28F1313190ED924C; sections 7-9, history distinction.
+// S12  : 2AF48F6F3E23C11E13B6287E13C5FBED2A131234480F857F815B4D5262EC9BBD; scope read on levels 1/2.
+// S4   : C358B259A4E3E51E98443D4FDEDED4E272E625278206839E5977A391F9C83972; scope read on level 4.
+// R036 : FE41196D8008620488CF9A6CC4A89379F4D273A431D9EB4EA83091F4EC6B3F34; individual receipts, not a joint wave.
+// Proposed finding 0.1.6 is evidence context only; this attestation does not promote that entire finding.
+
+domain J17_WORLD_FOLD_EFFECT on face_11;
+
+@propose seed J17_WORLD_FOLD_EFFECT_SNAPSHOT_WAVE_WALK := {
+  WHAT(THIS),               // One successor wave over one immutable committed whole-site snapshot; N1-N4.
+  HOW(THIS),                // Assemble incidence-derived concurrent and absorbing effects with direct joint receipt; N3-N5.
+  FOR_WHAT(THIS),           // Discharge the multi-member successor operand without choosing a member; N4.
+
+  WHAT(SAME_NOT_SAME),      // Exact complete effect equality, not receipt-count equality; N3.
+  HOW(SAME_NOT_SAME),       // Source custody, joint output and reversed enumeration compared independently; N2, O_QUALIFY.
+  FOR_WHAT(SAME_NOT_SAME),  // Preserve distinct raw offer identities and distinct committed histories; N3, N6.
+
+  WHAT(NO),                 // No identifier order, scalar priority or arbitrary representative; N3-N4.
+  HOW(NO),                  // No current-tick result enters current-tick PROPOSE; N6.
+  FOR_WHAT(NO),             // No promotion of unrelated findings or replay of committed world history; N7.
+
+  WHAT(GOES_WITH),           // Every enabled effect goes with its source snapshot, offer and receipt; N2-N3.
+  HOW(GOES_WITH),            // Source-bound contact witnesses attach concurrency and absorption to member pairs; N3.
+  FOR_WHAT(GOES_WITH),       // One wave carries all provenance through one commit; N6.
+
+  WHAT(TOGETHER_ALONE),      // Together: concurrent effects; absorbed effects remain provenance rather than later writes; N4.
+  HOW(TOGETHER_ALONE),       // Whole-site SAME connectivity and support contacts determine compatibility; D1-D4.
+  FOR_WHAT(TOGETHER_ALONE),  // Exclude member-by-member priority while retaining authority separation; N3-N6.
+
+  WHAT(MANY_ONE),            // Many enabled raw offers determine one compatible wave field; N3-N4.
+  HOW(MANY_ONE),             // Effect equivalence coalesces writes, not offer identities; N3.
+  FOR_WHAT(MANY_ONE),        // One current-snapshot wave is one link, not the entire terminal history; N6.
+
+  WHAT(EVERY_SOME),          // Every strict raw offer is accounted for as active, equivalent or absorbed; N2-N4.
+  HOW(EVERY_SOME),           // Every bound offered member is read on the same prior snapshot; N2.
+  FOR_WHAT(EVERY_SOME),      // No omission and no repeated write treated as another event; N3-N4.
+
+  WHAT(MORE_LESS),           // Strict receipt removes a nonempty wall subset and opens none; N2, N5.
+  HOW(MORE_LESS),            // Direct wall-set differences determine the joint receipt; counts report, never select; N5.
+  FOR_WHAT(MORE_LESS),       // Finite descending wall sets support induction, not an ordering of offers; D5.
+
+  WHAT(CAN_CANNOT),          // Scoped compatible effects can assemble; unresolved conflicting targets cannot be picked; N4.
+  HOW(CAN_CANNOT),           // Bind whole-site, fixed-incidence and exact-family premises before applying this amendment; N1.
+  FOR_WHAT(CAN_CANNOT),      // Do not apply the theorem to split-site fields, open carriers or unbound refinements; N1.
+
+  WHAT(INSIDE_OUTSIDE),      // Inside: bound levels 1/2/4 strict whole-site evolution; outside: governed opening and refinement; N1.
+  HOW(INSIDE_OUTSIDE),       // Parent-domain identity is inherited; no new frame or seating is supplied; N1.
+  FOR_WHAT(INSIDE_OUTSIDE),  // Keep diagnostic qualification distinct from a live world transition; O_QUALIFY, O_REENTRY.
+
+  WHAT(NEAR_FAR),            // Actual shared supports and overlap contacts determine interacting effects; N3.
+  HOW(NEAR_FAR),             // Site, boundary and original-face incidence supply concurrency or absorption; D2-D4.
+  FOR_WHAT(NEAR_FAR),        // No spatial name or count substitutes for a contact witness; N3.
+
+  WHAT(IF_THEN),             // Nonempty K plus discharged scope and compatibility premises yields the one wave; N1-N5.
+  HOW(IF_THEN),              // Commit precedes RETURN, and RETURN precedes renewed PROPOSE; N6.
+  FOR_WHAT(IF_THEN),         // Newly enabled effects wait for the next snapshot; N6.
+
+  WHAT(BECAUSE),             // Whole-site closure BECAUSE strict discharge cannot split a SAME class; D1.
+  HOW(BECAUSE),              // Joint assembly is forced BECAUSE scoped effects commute or are absorbed; D2-D4.
+  FOR_WHAT(BECAUSE),         // One-wave timing BECAUSE the promoted commit boundary excludes current-tick feedback; N6.
+
+  WHAT(MAYBE),               // A missing incidence or effect contact is named, not filled; N4, N7.
+  HOW(MAYBE),                // Keep implementation and GPU qualification NOT_RUN until their own receipts close; O_exec.
+  FOR_WHAT(MAYBE),           // No general theorem for other carriers is inferred from these scoped contacts; N1, D5.
+
+  WHAT(MUST_LET),            // Must retain all raw provenance; let compatible writes assemble without a chosen member; N3-N4.
+  HOW(MUST_LET),             // Must compute the joint receipt and qualify the commit boundary; N5-N6.
+  FOR_WHAT(MUST_LET),        // Preserve prior links and the existing empty-K append policy; N7.
+
+  // Carrier operators for the inherited operator domain; not additional witness cells.
+  THIS, SAME_NOT_SAME, NO, IF_THEN, BECAUSE, INSIDE_OUTSIDE, NEAR_FAR,
+  CAN_CANNOT, MAYBE, MUST_LET, TOGETHER_ALONE, MORE_LESS, GOES_WITH,
+  MANY_ONE, EVERY_SOME
+};
+
+law R1_WHERE := IF WHAT(o) THEN WHERE(o);
+law R1_WHICH := IF WHAT(o) THEN WHICH(o);
+law R1_WHEN := IF HOW(o) THEN WHEN(o);
+law R2_WHENCE := IF WHERE(o), WHICH(o), WHEN(o), FOR_WHAT(o), FOR_WHAT(BECAUSE) THEN WHENCE(o);
+
+// ---------------------------------------------------------------
+// EXPECTED TERMINAL
+// Structural: seed cells 45; derived 60 = WHERE 15 + WHICH 15 + WHEN 15 + WHENCE 15.
+// Total 105 witness cells plus the 15 carrier operators. PENDING seed/derived cells: {}.
+// O_exec = { O_IMPLEMENT_WAVE, O_QUALIFY, O_REENTRY }.
+// O_next = {}.
+// O_IMPLEMENT_WAVE: native .mal realization of N1-N7, including complete raw-member provenance and no chosen member.
+// O_QUALIFY: source-bound fixtures; full direct receipts; replay and reversed enumeration SAME; DRC; final readback;
+//   QueueGate launch/exit closure. Include separated singles, aliases, face absorption, disjoint faces, and a level-4
+//   newly-enabled face that waits until the next tick. Include split-site fork and open-triangle scope controls.
+//   Each control names the exact excluded premise. No expectation is used as a fabricated fixture or GPU receipt.
+// O_REENTRY: qualify commit/RETURN/renewed PROPOSE in a diagnostic chain; preserve the existing empty-K policy.
+// Implementation, GPU qualification and any live world transition: NOT_RUN in this promotion.
+// ---------------------------------------------------------------
+
+// ---------------------------------------------------------------
+// VECTORS
+// V1 CHECK_FORM(this file) expected IF_THEN
+// This is a form vector only. Behavioral qualification remains in O_QUALIFY, NOT_RUN.
+// ---------------------------------------------------------------
+

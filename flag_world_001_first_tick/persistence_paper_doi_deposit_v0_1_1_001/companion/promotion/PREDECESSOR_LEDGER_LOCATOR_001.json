@@ -1,0 +1,33 @@
+{
+  "schema": "FINDING_016_PREDECESSOR_LEDGER_LOCATOR_001",
+  "verdict": "IF_THEN",
+  "recorded_at_utc": "2026-11-01T07:37:22Z",
+  "subject": {
+    "review_archive": "review/Persistence_from_Geometry_v0.1.1_review.zip",
+    "member": "FINDING_016_REVIEW.json",
+    "sha256": "F10FB5EC5C770572B5BBBF3D28620FCFDE0C8831AE19FA81F48614281C614947",
+    "json_pointer": "/ledger",
+    "lines": "14-18"
+  },
+  "resolution": "The hash at /ledger identifies the predecessor ledger, not the current package ledger. This additive locator resolves that historical reference. Frozen review bytes are unchanged.",
+  "predecessor": {
+    "archive": "predecessor/Persistence_from_Geometry_v0.1_review.zip",
+    "archive_bytes": 395148,
+    "archive_sha256": "04B013C654742AE449329308494B86B3C976C6CD2B581E1754DA8B107052EABC",
+    "original_relative_to_paper_root": "predecessor_001/Persistence_from_Geometry_v0.1_review.zip",
+    "member": "EVIDENCE_LEDGER.json",
+    "member_bytes": 20068,
+    "member_sha256": "ADD864CF9C056D736B175B9ED665576234C07B162F0E997AE5C42DFBE194F916",
+    "readback": "SAME"
+  },
+  "current": {
+    "archive": "review/Persistence_from_Geometry_v0.1.1_review.zip",
+    "archive_sha256": "978F24E16DE6140F54B7C9650EE31E7B567FC8A9E57B9DFE6236BDF936CD458D",
+    "member": "EVIDENCE_LEDGER.json",
+    "member_bytes": 20882,
+    "member_sha256": "98A4A269847698EC7581D3EBC701A16D0B505CC5F118CC75D43AE1F7911EC5BD",
+    "distinct_subject": "22-record ledger in current package"
+  },
+  "evidence_mutation": "NONE",
+  "finding_status": "PROPOSED_UNCHANGED"
+}

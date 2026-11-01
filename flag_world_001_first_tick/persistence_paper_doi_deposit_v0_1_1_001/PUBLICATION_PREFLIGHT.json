@@ -1,0 +1,73 @@
+{
+  "schema": "PAPER_TWO_PUBLICATION_PREFLIGHT_001",
+  "status": "PREPARED_EXTERNAL_PUBLICATION_BLOCKED",
+  "browser_error": "failed to write kernel assets: The system cannot find the path specified. (os error 3)",
+  "attempts": [
+    "cua_repl initial entry",
+    "node_repl supported sky initialization",
+    "node_repl reset and one supported initialization retry"
+  ],
+  "external_actions": "NONE",
+  "work_038": "PAUSED",
+  "publication_order": [
+    "Zenodo",
+    "repository binding on main",
+    "Substack"
+  ],
+  "deposit": {
+    "bytes": 2309181,
+    "sha256": "50A3D4216577059AA3883D6D16CF6032AD7B66CC8FD3E555241F488DAF3ED863"
+  },
+  "upload_files": [
+    {
+      "path": "CITATION.bib",
+      "bytes": 342,
+      "sha256": "1CA41D516596CBAE886751901251F2BDF37B42D3FB40DD06BCD3D9104ED9235F"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "C71D239DF91726FC519C6EB72D318EC65820627232B2F796219E87DCF35D0AB4"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 1692,
+      "sha256": "ADB9BE7D7A95DBBE4C732CB105F3BA6DA49C6B5B87A37FE90CC37210A6485784"
+    },
+    {
+      "path": "Persistence_from_Geometry_v0.1.1_companion_evidence.zip",
+      "bytes": 985928,
+      "sha256": "6D423EADA71B2158FB74620079B95E817F452CF858AD1AD46ECAF89B68B7CBE8"
+    },
+    {
+      "path": "Persistence_from_Geometry_v0.1.1_figures.zip",
+      "bytes": 756357,
+      "sha256": "DAAC8AAB70C0DF8ED6EFB258936DC05CB64F40222270765FE8C18ED28A4B4127"
+    },
+    {
+      "path": "PERSISTENCE_FROM_GEOMETRY_v0.1.1_publication.md",
+      "bytes": 34024,
+      "sha256": "E82DAB5BC2C3EA24C96F8E12E68B75A89221A289B60E6B116D91D0CE00A354F5"
+    },
+    {
+      "path": "Persistence_from_Geometry_v0.1.1_publication.pdf",
+      "bytes": 682526,
+      "sha256": "3196006EC857D79A17B663E4F6E5BAC22BD58DFB42EE7B71C4CC92F9383F41C2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1433,
+      "sha256": "1349B0EFC3E8E8482AB81697BC9FE7C3477D59D9E29A1971A8D140E60EC41BE2"
+    }
+  ],
+  "required_before_upload": [
+    "Use actual Zenodo draft/DOI identifiers only.",
+    "Bind CITATION.bib to assigned DOI and refresh MANIFEST/deposit ZIP."
+  ],
+  "required_before_substack": [
+    "Verify Zenodo publication and main binding.",
+    "Replace DOI/repository/image URLs from actual observed records.",
+    "Set cover, inline images, captions, alt text, SEO title/description, slug, tags and social preview.",
+    "Verify live post and its links."
+  ]
+}

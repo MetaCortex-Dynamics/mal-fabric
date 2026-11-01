@@ -1,0 +1,93 @@
+{
+  "schema": "PAPER_TWO_FIGURES_QA_001",
+  "verdict": "IF_THEN",
+  "scope": "Publication figure rendering and recorded counts only; no GPU or world transition.",
+  "visual_review": {
+    "figures": [
+      "figure_1_pair_classification",
+      "figure_2_context_receipts",
+      "figure_3_refinement_contrasts",
+      "paper_two_cover_1200x630"
+    ],
+    "method": "Rendered PNGs inspected for chart labels, scales, category separation, source scopes, clipping and legibility.",
+    "findings": []
+  },
+  "source_hashes": "SAME",
+  "png_checks": [
+    {
+      "file": "figure_1_pair_classification.png",
+      "size_px": [
+        2160,
+        1020
+      ],
+      "bytes": 111646,
+      "sha256": "1AA7291F957C37BE2C85D65BF1D7E318AC190D943F153678B43EC6D9354497CF",
+      "web_under_2MB": true
+    },
+    {
+      "file": "figure_1_pair_classification_web.png",
+      "size_px": [
+        1296,
+        612
+      ],
+      "bytes": 62078,
+      "sha256": "8A08FED9D1E8EF92297EAF131CC8688758D20BD7B9BE512886508B0B6F55B009",
+      "web_under_2MB": true
+    },
+    {
+      "file": "figure_2_context_receipts.png",
+      "size_px": [
+        2160,
+        1200
+      ],
+      "bytes": 126184,
+      "sha256": "40775F02FD8F1BAACFE3C31497C234DECC3B491B7DD9771FA90F4E892007D8DD",
+      "web_under_2MB": true
+    },
+    {
+      "file": "figure_2_context_receipts_web.png",
+      "size_px": [
+        1296,
+        720
+      ],
+      "bytes": 68653,
+      "sha256": "CFCD4F06BC3EF16DA102AB9B44CC12BCDEFCC6087FDD44AF122D7D60F50C36E1",
+      "web_under_2MB": true
+    },
+    {
+      "file": "figure_3_refinement_contrasts.png",
+      "size_px": [
+        2160,
+        1800
+      ],
+      "bytes": 231236,
+      "sha256": "EFF6613A0B52A2294B3538A3A2051EE2DAC478B89BF913C317FD1E2290E1051E",
+      "web_under_2MB": true
+    },
+    {
+      "file": "figure_3_refinement_contrasts_web.png",
+      "size_px": [
+        1296,
+        1080
+      ],
+      "bytes": 124410,
+      "sha256": "F4863F6FFC4B002CFCAE959143C38E1536A770A07E6960EF4F3F4F3E98366A18",
+      "web_under_2MB": true
+    },
+    {
+      "file": "paper_two_cover_1200x630.png",
+      "size_px": [
+        1200,
+        630
+      ],
+      "bytes": 72576,
+      "sha256": "7A3ECB672A48BABB94C24E98684492F76BB9DF66A5561884C6D1AB6BADCD8D31",
+      "web_under_2MB": true
+    }
+  ],
+  "notes": [
+    "Figure 1 complete classification remains read-only; all 60 strict exits separately witnessed by GPU.",
+    "Figure 2 independent wall categories are not an additive score.",
+    "Figure 3 single-site pullback remains a read-only carrier correspondence; nested GPU result is one configuration."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "PERSISTENCE_PAPER_PROMOTION_MANIFEST_001",
+  "status": "PROMOTED",
+  "version": "0.1.1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 997,
+      "sha256": "BEAAD726AB4DD9658393FB97643F3C903C87C20D484D42575AB80D26512FFB37"
+    },
+    {
+      "path": "PREDECESSOR_LEDGER_LOCATOR_001.json",
+      "bytes": 1592,
+      "sha256": "5D230ADD00A1A59DE6CDFF42B882DDE82B0B1DF3E543A5B50B7541AC90F0F6BE"
+    },
+    {
+      "path": "RECEIPT_PROMOTE_PERSISTENCE_FROM_GEOMETRY_v0.1.1.md",
+      "bytes": 3398,
+      "sha256": "3C2D1A013837328CE909BB0409F477A9ADAC122F1B65D774387287ED12FEC62B"
+    },
+    {
+      "path": "PROMOTION_BINDING_001.json",
+      "bytes": 1717,
+      "sha256": "FB1838945EF83166C8D43C0ACEF9F83DED547A86CD6F58E5DE21F5164463BF63"
+    },
+    {
+      "path": "review/Persistence_from_Geometry_v0.1.1_review.zip",
+      "bytes": 406541,
+      "sha256": "978F24E16DE6140F54B7C9650EE31E7B567FC8A9E57B9DFE6236BDF936CD458D"
+    },
+    {
+      "path": "predecessor/Persistence_from_Geometry_v0.1_review.zip",
+      "bytes": 395148,
+      "sha256": "04B013C654742AE449329308494B86B3C976C6CD2B581E1754DA8B107052EABC"
+    }
+  ],
+  "frozen_input_recheck": "SAME",
+  "original_review_manifest_entries_verified": 36,
+  "scope": {
+    "work_038": "PAUSED",
+    "GPU": "NOT_RUN",
+    "world_transition": "NOT_RUN",
+    "commit": "NOT_RUN",
+    "push": "NOT_RUN",
+    "publication": "NOT_RUN"
+  }
+}

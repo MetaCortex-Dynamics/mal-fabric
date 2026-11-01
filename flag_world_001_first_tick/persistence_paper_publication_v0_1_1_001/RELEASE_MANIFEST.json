@@ -1,0 +1,139 @@
+{
+  "schema": "PERSISTENCE_PUBLICATION_RELEASE_001",
+  "status": "PREPARED_PUBLICATION_EDITION",
+  "version": "0.1.1",
+  "scope": "Illustrated presentation of promoted paper; no change to scientific claims, equations, results or frozen evidence. Publication actions recorded separately.",
+  "source_sha256": "690425E860C7CEACA5726A59C8CF5B8BF8090FED51634DFD60F6EFAB358573E1",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 20,
+      "sha256": "251FF980322263DBC12736082467F63F01421C2F9AAC65C91462F74558039049"
+    },
+    {
+      "path": "build_publication.py",
+      "bytes": 19924,
+      "sha256": "BE06B1B8E7DE0EC5DC0DF6AEE664309A9FA06CE297027DD26ED5D3E7619C9EE8"
+    },
+    {
+      "path": "BUILD_RECORD.json",
+      "bytes": 4120,
+      "sha256": "F372AFC8974880F9BDF9787E96187A6A5ED96F687CC16B9F1031B1692DC55672"
+    },
+    {
+      "path": "figures/CAPTIONS_AND_ALT.md",
+      "bytes": 2860,
+      "sha256": "84B80EE5A270C43B0E8EC38ECCB6A212E220ADE1102F6B9E72AE46AE1ED69D4F"
+    },
+    {
+      "path": "figures/figure_1_pair_classification.png",
+      "bytes": 111646,
+      "sha256": "1AA7291F957C37BE2C85D65BF1D7E318AC190D943F153678B43EC6D9354497CF"
+    },
+    {
+      "path": "figures/figure_1_pair_classification.svg",
+      "bytes": 7364,
+      "sha256": "019CB8AC8AEE336B41355BA52644BDB1FF9F858D88BD4EE4C44A93BBD4CF3B4D"
+    },
+    {
+      "path": "figures/figure_1_pair_classification_web.png",
+      "bytes": 62078,
+      "sha256": "8A08FED9D1E8EF92297EAF131CC8688758D20BD7B9BE512886508B0B6F55B009"
+    },
+    {
+      "path": "figures/figure_2_context_receipts.png",
+      "bytes": 126184,
+      "sha256": "40775F02FD8F1BAACFE3C31497C234DECC3B491B7DD9771FA90F4E892007D8DD"
+    },
+    {
+      "path": "figures/figure_2_context_receipts.svg",
+      "bytes": 13131,
+      "sha256": "1AD4E071E70A6EEE5708F3655DBC7A713AD1968640AB864EBFC4FB30A26F5775"
+    },
+    {
+      "path": "figures/figure_2_context_receipts_web.png",
+      "bytes": 68653,
+      "sha256": "CFCD4F06BC3EF16DA102AB9B44CC12BCDEFCC6087FDD44AF122D7D60F50C36E1"
+    },
+    {
+      "path": "figures/figure_3_refinement_contrasts.png",
+      "bytes": 231236,
+      "sha256": "EFF6613A0B52A2294B3538A3A2051EE2DAC478B89BF913C317FD1E2290E1051E"
+    },
+    {
+      "path": "figures/figure_3_refinement_contrasts.svg",
+      "bytes": 13879,
+      "sha256": "EFC83E51D1FE0EB02550F046EB23512BFADFF8483C3C5151739F80CB8BCB42AC"
+    },
+    {
+      "path": "figures/figure_3_refinement_contrasts_web.png",
+      "bytes": 124410,
+      "sha256": "F4863F6FFC4B002CFCAE959143C38E1536A770A07E6960EF4F3F4F3E98366A18"
+    },
+    {
+      "path": "figures/FIGURE_MANIFEST.json",
+      "bytes": 2741,
+      "sha256": "A27A7A0AE71C10A331118A6A6B81C5D3707E11CA20392A2CC98677FF8E891498"
+    },
+    {
+      "path": "figures/FIGURE_QA.json",
+      "bytes": 2734,
+      "sha256": "755E1B275DF56CCF2C24C123813703671A25A43C3E58F61BE6C687D04A6AE863"
+    },
+    {
+      "path": "figures/figuredata.json",
+      "bytes": 7052,
+      "sha256": "65801F61CBD22A4258CD242E60CDF9DF7EA0455323A28E548831FAD87A093C0F"
+    },
+    {
+      "path": "figures/paper_two_cover_1200x630.png",
+      "bytes": 72576,
+      "sha256": "7A3ECB672A48BABB94C24E98684492F76BB9DF66A5561884C6D1AB6BADCD8D31"
+    },
+    {
+      "path": "figures/README.md",
+      "bytes": 877,
+      "sha256": "22AA8CB64C32B5142E19BD767D26E56935B7A5E1A56DAD77EE9A096E65BAA471"
+    },
+    {
+      "path": "figures/render_figures.py",
+      "bytes": 14887,
+      "sha256": "C6AD5BE627E54402DA12B90297686749E1D56E684E9A1FB011906BB76F9707FE"
+    },
+    {
+      "path": "output/pdf/Persistence_from_Geometry_v0.1.1_publication.pdf",
+      "bytes": 682526,
+      "sha256": "3196006EC857D79A17B663E4F6E5BAC22BD58DFB42EE7B71C4CC92F9383F41C2"
+    },
+    {
+      "path": "PDF_QA_RECORD.json",
+      "bytes": 7546,
+      "sha256": "47AAB2021E81055F3CA9FD1DFC0198D4D137DDEE86FA39E7060D2944531E5570"
+    },
+    {
+      "path": "PERSISTENCE_FROM_GEOMETRY_v0.1.1_publication.md",
+      "bytes": 34024,
+      "sha256": "E82DAB5BC2C3EA24C96F8E12E68B75A89221A289B60E6B116D91D0CE00A354F5"
+    },
+    {
+      "path": "PUBLICATION_CHANGES.json",
+      "bytes": 10008,
+      "sha256": "67198CE292A859CE13D88CAF06CC9D2B1941C0DFD009EAB9A83BB3AAC7F3BF01"
+    },
+    {
+      "path": "PUBLICATION_REVIEW.json",
+      "bytes": 2137,
+      "sha256": "188A7CA6B5EEBC8C52A34F680B39B82E2CC74FED87EACBB35A50BF15B4C41DFA"
+    },
+    {
+      "path": "qa_pdf.py",
+      "bytes": 3993,
+      "sha256": "D8E5054EE8506FA32FED42C0DA582F28FAAF4551B69291F495E1153AF770C54E"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2384,
+      "sha256": "B6D97527CA5087C366763B10A578FBA41B31E853EEB9107243D456EE24B50637"
+    }
+  ]
+}
