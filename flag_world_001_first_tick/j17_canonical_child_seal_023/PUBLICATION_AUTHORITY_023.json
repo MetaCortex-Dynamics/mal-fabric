@@ -1,0 +1,36 @@
+{
+  "schema": "J17CanonicalChildPublicationAuthority023",
+  "authority": "Devon",
+  "attestation": "Commit and push the canonical (4,0) J17 child record, run record 023 and promotion receipt to mal-fabric. Keep 038 paused; no world transition.",
+  "recorded_at_utc": "2026-11-02T03:10:13.705Z",
+  "repository": "MetaCortex-Dynamics/mal-fabric",
+  "base_commit": "4f8b01babd1f53c2c1d428c7207cafb3269d7940",
+  "branch": "review/j17-canonical-child-023",
+  "canonical_home": "flag_world_001_first_tick/j17_canonical_child_seal_023",
+  "child": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\J17_CANONICAL_CHILD_4_0.json",
+    "bytes": 769815,
+    "sha256": "16C71F0A471F4AD4A26D5601ED6B0F79F4BB52C589DB2B0E5AB2AAC2EF521F30"
+  },
+  "run_record": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\RUN_RECORD_023.json",
+    "bytes": 29810,
+    "sha256": "ED6549D33B1E6DB7C9344CE278E61186CCB0AB666B171130F79A5C1FD3862581"
+  },
+  "promotion_receipt": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\promotion_001\\RECEIPT_PROMOTE_J17_CANONICAL_CHILD_4_0_023.md",
+    "bytes": 2517,
+    "sha256": "CFE155487C312896E8F45817C0F1AFE99C60160129EFAAB65C3C70326B0343DE"
+  },
+  "prior_promotion_status": "PROMOTED",
+  "scope": {
+    "promoted_subject": "CANONICAL_J17_CHILD_4_0",
+    "qualification": "RUN_RECORD_023",
+    "operation_038": "PAUSED",
+    "world_transition": "NONE",
+    "gpu_rerun": "NONE",
+    "new_promotion": "NONE",
+    "publication": "COMMIT_AND_PUSH_REVIEW_BRANCH",
+    "merge": "NOT_AUTHORIZED_BY_THIS_INVOCATION"
+  }
+}

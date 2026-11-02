@@ -1,0 +1,78 @@
+{
+  "schema": "J17CanonicalChildPromotionVerification023",
+  "verdict": "IF_THEN",
+  "child": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\J17_CANONICAL_CHILD_4_0.json",
+    "bytes": 769815,
+    "sha256": "16C71F0A471F4AD4A26D5601ED6B0F79F4BB52C589DB2B0E5AB2AAC2EF521F30"
+  },
+  "run_record": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\RUN_RECORD_023.json",
+    "bytes": 29810,
+    "sha256": "ED6549D33B1E6DB7C9344CE278E61186CCB0AB666B171130F79A5C1FD3862581"
+  },
+  "manifest": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\MANIFEST_023.json",
+    "bytes": 21738,
+    "sha256": "75397E43228E4BCE58DACE232D9A0D38012C6C301C0E465A42139041366FFAED"
+  },
+  "artifact_count": 95,
+  "artifacts": "SAME",
+  "queuegate_closure": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\queuegate\\CLOSED.json",
+    "bytes": 655,
+    "sha256": "B18BABF38DE8BEA3B6D0632C0098A23C803D37325B7C58A5F902F22BF61F0765"
+  },
+  "replay": {
+    "native_readbacks": "SAME",
+    "child_records": "SAME",
+    "proof_closures": "SAME",
+    "runs": 3,
+    "replays": 2
+  },
+  "world_before": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\committed.genesis.json",
+      "bytes": 382131,
+      "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\committed.world.json",
+      "bytes": 763526,
+      "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88"
+    }
+  ],
+  "world_after": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\review_flag_world_002\\gpu_self_witness_018\\committed.genesis.json",
+      "bytes": 382131,
+      "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_023\\outputs\\committed.world.json",
+      "bytes": 568805,
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_proposer_reentry_020\\run_001\\committed.world.json",
+      "bytes": 763526,
+      "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88"
+    }
+  ],
+  "scope": {
+    "promoted_subject": "Canonical (4,0) J17 child record, version0.1.0",
+    "qualification_binding": "RUN_RECORD_023",
+    "record_bytes": "UNCHANGED",
+    "world_transition": "NONE",
+    "committed_world_head": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+    "operation_038": "PAUSED",
+    "additional_gpu_execution": "NONE",
+    "commit": "NONE",
+    "push": "NONE"
+  }
+}

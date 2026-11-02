@@ -1,0 +1,877 @@
+{
+  "schema": "J17FoldInstanceRead022",
+  "version": "0.1.0",
+  "created_utc": "2026-11-02T02:43:01.281Z",
+  "scope": "SOURCE_BOUND_READ_OF_THE_J17_FOLD_INSTANCE; NOT_A_SUCCESSOR_COMMIT",
+  "restrictions": {
+    "obligation_038": "PAUSED",
+    "world_transition": "NOT_RUN",
+    "gpu_execution": "NOT_RUN",
+    "promotion": "NOT_PERFORMED",
+    "spec_edit": "NONE",
+    "commit": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED",
+    "other_world_state": "NOT_READ_OR_USED"
+  },
+  "source_bindings": [
+    {
+      "id": "EXTRACTS",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/j17_fold_instance_read_022/SOURCE_READS_022.json",
+      "bytes": 59492,
+      "sha256": "EF7F0EF3A7201E8DBA0A6AC6C8D874CCFA0C8E3F4F42F4A6EC0683DFC314B6A6",
+      "comparison": "SAME"
+    },
+    {
+      "id": "CARI",
+      "path": "C:/Users/devon/Desktop/MaL/Constitutive_Association_and_Recursive_Identity.docx",
+      "bytes": 16038,
+      "sha256": "6CD0A126295797F28BF930931713D620AA5A3B644303DAD581E10B6E3B54A60A",
+      "comparison": "SAME"
+    },
+    {
+      "id": "RGP",
+      "path": "C:/Users/devon/Desktop/MaL/The_Recursive_Geometry_of_Projection.docx",
+      "bytes": 16279,
+      "sha256": "D42DB689265410375F0744E5D1D2E139A1814515577DEF8A94CA78FEBC4262E2",
+      "comparison": "SAME"
+    },
+    {
+      "id": "E18",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/07_The_Erratum.md",
+      "bytes": 7908,
+      "sha256": "E097CDA64A92199F11A97DB1EB113C491806FFE1AEC29032E060C9877BD8426C",
+      "comparison": "SAME"
+    },
+    {
+      "id": "PROMOTION_A9_E18",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "bytes": 5665,
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805",
+      "comparison": "SAME"
+    },
+    {
+      "id": "PARENT_REVISION",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/Parent_Revisions_C1-C5.md",
+      "bytes": 9885,
+      "sha256": "44930E360F8D0F697B5899AC6F0756A9AE3A1229ED7B2FDDEDE4A99B57FFF70C",
+      "comparison": "SAME"
+    },
+    {
+      "id": "FOLD_SPEC",
+      "path": "C:/Users/devon/Desktop/MaL/MaLv3/SPEC_J17_WORLD_FOLD_EFFECT_001_v0.1.0_PROPOSED.mal",
+      "bytes": 19195,
+      "sha256": "E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E",
+      "comparison": "SAME"
+    },
+    {
+      "id": "FOLD_PROMOTION",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/RECEIPT_PROMOTE_SPEC_J17_WORLD_FOLD_EFFECT_001_v0.1.0.md",
+      "bytes": 2634,
+      "sha256": "E674B00C04B0B8119BFFD4596A756467B8054C9A6CF6741E3B2869365B7ECD9A",
+      "comparison": "SAME"
+    },
+    {
+      "id": "UNIVERSE_SPEC",
+      "path": "C:/Users/devon/Desktop/MaL/SPECS/SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001_v0.1.0.md",
+      "bytes": 30926,
+      "sha256": "8A9986EB5E4B12A834AF4A8A2DB78D5DF42230CF06057E93E3C6223AA642252C",
+      "comparison": "SAME"
+    },
+    {
+      "id": "UNIVERSE_PROMOTION",
+      "path": "C:/Users/devon/Desktop/MaL/JSON/PROMOTION_RECORD_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001.json",
+      "bytes": 2144,
+      "sha256": "EC445D2BF151A6AF009EB94DA36AF92186DF58E295541C956F164476038C7F00",
+      "comparison": "SAME"
+    },
+    {
+      "id": "TRACE",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/TRACE_FOLD_PRODUCT_PROJECTION_RECORD_001_2026-10-23.md",
+      "bytes": 95039,
+      "sha256": "B81586C40C1D58AB94E3967E76CB75B46A6B56E71E10A1AAE70348104C4A7880",
+      "comparison": "SAME"
+    },
+    {
+      "id": "READ020",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/grl_refinement_read_020/READ_RECORD_020_v0.1.1.json",
+      "bytes": 63749,
+      "sha256": "7048205C92B131A65B7B4AB11D6FEC078953869FB4C7FECEBCF3C53CB9A2DDF2",
+      "comparison": "SAME"
+    },
+    {
+      "id": "READ021",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/refinement_invocation_read_021/READ_RECORD_021.json",
+      "bytes": 35275,
+      "sha256": "ABA42232EA8ED4AB638EA6331DAD72947A6D5A8D01391C6FEF89298238537842",
+      "comparison": "SAME"
+    },
+    {
+      "id": "G3",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/committed.world.json",
+      "bytes": 763526,
+      "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88",
+      "comparison": "SAME"
+    },
+    {
+      "id": "NATIVE_T",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/T/run_001/RUN_RECORD_T.json",
+      "bytes": 39982,
+      "sha256": "01886C677970FC586BBE084C74A92F6227FADA9100EC0E6520A4F3310B384ECC",
+      "comparison": "SAME"
+    },
+    {
+      "id": "T_CONSTRUCTOR",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/T/source/incidence_reused.mal",
+      "bytes": 3655,
+      "sha256": "2970889E111349F42AAEDE24A2496627D0B1C1DE10B3B9AE90836F044F2A4ACF",
+      "comparison": "SAME"
+    },
+    {
+      "id": "T_CUSTODY",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_t_r2_r1_diagnostics_019/T/source/custody.mal",
+      "bytes": 3652,
+      "sha256": "ED268914ABEDBC8952D9E8E94A070F59E2BA6E96AFD14E22498E92E154C2ADD6",
+      "comparison": "SAME"
+    },
+    {
+      "id": "CARI_PARAGRAPH_TEXT",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/j17_fold_instance_read_022/Constitutive_Association_and_Recursive_Identity.paragraphs.txt",
+      "bytes": 15306,
+      "sha256": "D45B0B032B99653BFBD5F0CE16C984761AFE73D64B216DF9CCC2F73B28988993",
+      "comparison": "IDENTITY_RECORDED"
+    },
+    {
+      "id": "RGP_PARAGRAPH_TEXT",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/j17_fold_instance_read_022/The_Recursive_Geometry_of_Projection.paragraphs.txt",
+      "bytes": 19739,
+      "sha256": "A84DB039C6525F1965315FF5411BE85F1E79B76D168FDC0396D172BD2A09E6BE",
+      "comparison": "IDENTITY_RECORDED"
+    }
+  ],
+  "read_first": {
+    "fold_clauses": [
+      {
+        "source": "CARI",
+        "paragraph": 227,
+        "text": "FOLDₙ := □G_whole,n  IF_THEN  □S_internal,n  IF_THEN  □G_parts,n+1"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 228,
+        "text": "□G_parts,n+1 = □G_whole,n+1"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 229,
+        "text": "EVERY n : FOLDₙ : HOLDS"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 232,
+        "text": "FOLD supplies (Fₙ, Fₙ₊₁, □G)  —  ONE genealogical identity"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 233,
+        "text": "Fₙ₊₁ = UNFOLDING_□G(Fₙ)  —  NOT-SAME second individual"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 245,
+        "text": "  EVERY n [THIS_qua-fold(Fₙ) IF_THEN □G(Fₙ, Fₙ₊₁)]"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 246,
+        "text": "  EVERY n [NO(□G(Fₙ, Fₙ₊₁)) IF_THEN NO(THIS_qua-fold(Fₙ₊₁))]"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 248,
+        "text": "SAME(FOLD) ∧ NOT-SAME(REALIZATIONₙ, REALIZATIONₙ₊₁)"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 250,
+        "text": "FOLD = INVARIANT(UNFOLDING(□G))"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 251,
+        "text": "NO(UNFOLDING) IF_THEN NO(THIS_qua-fold)"
+      }
+    ],
+    "distinctions": [
+      {
+        "source": "CARI",
+        "paragraph": 35,
+        "text": "Uₛ : Zₛ × Aₛ → Zₛ  —  update law"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 36,
+        "text": "Zₛ,g⁺ := Uₛ(Zₛ,g, Aₛ)"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 37,
+        "text": "Wₛ := Γₛᴳ := UNFOLD_g(Zₛ,g, Uₛ, Aₛ)"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 42,
+        "text": "NOT-SAME(Uₛ, Wₛ)  —  update law NOT-SAME genealogical unfolding"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 43,
+        "text": "NOT-SAME(Wₛ, πw(Wₛ))  —  unfolding NOT-SAME witness record of unfolding"
+      },
+      {
+        "source": "CARI",
+        "paragraph": 44,
+        "text": "NOT-SAME(Zₛ, Zₛ,g)  —  configuration type NOT-SAME realized assignment"
+      }
+    ],
+    "E18": {
+      "clause": {
+        "source": "E18",
+        "lines": [
+          71,
+          71
+        ],
+        "text": "| E18 | Constitutive Association; Constructive Substrate | State that the genealogical and geometric Fold are one object, with continuity, topology, and deficit kept as distinct tests | stands |"
+      },
+      "promotion": {
+        "source": "PROMOTION_A9_E18",
+        "lines": [
+          39,
+          39
+        ],
+        "text": "| C5 | **PROMOTED** (2026-09-24) | The session's queued erratum items E1–E23. |"
+      },
+      "reading": "One Fold, distinct continuity/topology/deficit tests. One test does not automatically discharge another."
+    },
+    "E12": {
+      "clause": {
+        "source": "E18",
+        "lines": [
+          65,
+          65
+        ],
+        "text": "| E12 | Corpus-wide | Axiom 0: time is the unfolding of □G. The PROMOTE chain is its record (NOT-SAME the unfolding); tick index is the record's length; ∇τ is a diagnostic, not time; decisions advance nothing unless promoted. No reconciliation required. | stands |"
+      },
+      "reading": "The continuity record and its length are distinguished from unfolding; no identity between link number and recursive depth is inferred."
+    },
+    "recursion_scope": {
+      "clauses": [
+        {
+          "source": "RGP",
+          "paragraph": 19,
+          "text": "D0.3 (Carrier Recursion). CARRIER(n) := the depth-n object in the pentagonal carrier recursion over regular convex polytopes, defined by CELL(CARRIER(n+1)) ≅ CARRIER(n). The recursion is defined only over regular convex polytopes satisfying this cell-identity condition."
+        },
+        {
+          "source": "RGP",
+          "paragraph": 47,
+          "text": "The triangle is not the dual of the pentagon. It enters the architecture as the TRIAD seed: the irreducible unit carrying three mutually-constraining modalities (Axiom 1, Constructive Substrate §2.1). The icosahedral faces are 20 triangles, each an instance of the TRIAD (□G, □S, □F). The 600-cell’s cells are 600 tetrahedra, each a self-dual 3-polytope with μ = 0. The TRIAD seed (triangle) and the dual recursion (pentagon → icosahedron → 600-cell) are distinct structures that converge at depth 2 where 20 TRIAD instances tile the icosahedral action topology."
+        },
+        {
+          "source": "RGP",
+          "paragraph": 85,
+          "text": "The pentagonal carrier recursion has depth 3 (Theorem 1.1). The TRIAD has three irreducible modalities: □G (genealogical), □S (structural), □F (functional). These cardinalities are identical."
+        },
+        {
+          "source": "RGP",
+          "paragraph": 89,
+          "text": "Whether the identity of recursion depth and TRIAD cardinality admits a common-root derivation is an open problem. If the depth-3 termination is derivable from the constitutive conditions of projection (i.e., from the same premises that yield Axiom 1), then Axiom 1 would be a theorem rather than an axiom: the irreducibility of three modalities would follow from the geometry of the carrier recursion. The converse derivation (Axiom 1 implying depth-3 termination) would require a bridge theorem connecting the constitutive conditions of projection to the Coxeter classification. Neither derivation is available. The correspondence is established; the common root remains open."
+        }
+      ],
+      "reading": "This document defines a carrier-recursion depth; it does not identify that depth with ProjectionShell(m,n), CARI genealogy index, or committed-link index."
+    },
+    "A9": {
+      "clause": {
+        "source": "PROMOTION_A9_E18",
+        "lines": [
+          20,
+          20
+        ],
+        "text": "| A9 | **Triadic refinement as the world-scaling law.** The label \"Goldberg–Coxeter\" is retired; the shape is unchanged. The 12 domains are the only degree-5 sites at every level. | triadic_refinement `16deb904…d622` | (m,0) only. Chiral (m,n), n ≠ 0: OPEN. |"
+      },
+      "scope": "(m,0)",
+      "native_transport": [
+        {
+          "domain": "HW_00",
+          "parent_site": "THIS(HW_00)",
+          "child_site": "THIS(THIS(HW_00))",
+          "parent_fact": 969,
+          "child_fact": 15828,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1021,
+            2335
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_01",
+          "parent_site": "THIS(HW_01)",
+          "child_site": "THIS(THIS(HW_01))",
+          "parent_fact": 970,
+          "child_fact": 15817,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1022,
+            2324
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_02",
+          "parent_site": "THIS(HW_02)",
+          "child_site": "THIS(THIS(HW_02))",
+          "parent_fact": 971,
+          "child_fact": 15818,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1023,
+            2325
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_03",
+          "parent_site": "THIS(HW_03)",
+          "child_site": "THIS(THIS(HW_03))",
+          "parent_fact": 972,
+          "child_fact": 15819,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1024,
+            2326
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_04",
+          "parent_site": "THIS(HW_04)",
+          "child_site": "THIS(THIS(HW_04))",
+          "parent_fact": 973,
+          "child_fact": 15820,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1025,
+            2327
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_05",
+          "parent_site": "THIS(HW_05)",
+          "child_site": "THIS(THIS(HW_05))",
+          "parent_fact": 974,
+          "child_fact": 15822,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1026,
+            2329
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_06",
+          "parent_site": "THIS(HW_06)",
+          "child_site": "THIS(THIS(HW_06))",
+          "parent_fact": 975,
+          "child_fact": 15821,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1027,
+            2328
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_07",
+          "parent_site": "THIS(HW_07)",
+          "child_site": "THIS(THIS(HW_07))",
+          "parent_fact": 976,
+          "child_fact": 15823,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1028,
+            2330
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_08",
+          "parent_site": "THIS(HW_08)",
+          "child_site": "THIS(THIS(HW_08))",
+          "parent_fact": 977,
+          "child_fact": 15824,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1029,
+            2331
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_09",
+          "parent_site": "THIS(HW_09)",
+          "child_site": "THIS(THIS(HW_09))",
+          "parent_fact": 978,
+          "child_fact": 15825,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1030,
+            2332
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_10",
+          "parent_site": "THIS(HW_10)",
+          "child_site": "THIS(THIS(HW_10))",
+          "parent_fact": 979,
+          "child_fact": 15826,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1031,
+            2333
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_11",
+          "parent_site": "THIS(HW_11)",
+          "child_site": "THIS(THIS(HW_11))",
+          "parent_fact": 980,
+          "child_fact": 15827,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1032,
+            2334
+          ],
+          "verdict": "IF_THEN"
+        }
+      ]
+    },
+    "existing_J17_fold_binding": {
+      "receipt": {
+        "source": "FOLD_PROMOTION",
+        "lines": [
+          23,
+          35
+        ],
+        "text": "\nA REALIZATION specification: the promoted post-genesis fold (SPEC_QUEUEGATE_CONSTRUCTED_UNIVERSE_GENESIS_001 v0.1.0\n8A9986EB…42252C §14, §24.4; promotion EC445D2B…) realized on the J17 world at g₂ with its predecessor chain, under the named\nterminal T_FOLD_EFFECT ∈ {MOVED, HELD, REENTRY_NOT_SAME, MULTISET_NOT_PRESERVED, UNSUPPLIED(name)}.\n\nIt adds no law. It re-admits nothing (J17's admission is DECISION_RECORD_GPU_SELF_WITNESS_001 2CBBA4AD… + eight-condition DRC).\nIt selects nothing (ONE admissible path := the fold). Hand := the seating. No digital-shell field is read or filled.\n\n## Supersedes\n\n```text\nnone. First realization spec of the fold on the hardware world. SPEC-FOLD-REENTRY-001 v0.1.0 (1E5499BC…) remains PROPOSED;\nits R1 is discharged at the fold level by the located recursion (TRACE_REENTRY_CONTACTS_001; TRACE_FOLD_PRODUCT_PROJECTION_RECORD_001)."
+      },
+      "spec_contact": {
+        "source": "FOLD_SPEC",
+        "lines": [
+          37,
+          43
+        ],
+        "text": "//          (run 023); runtime_step.mal:29 (program DRC AND committed genesis) satisfied. Custody: 901 frozen files SAME.\n// CARR  := carrier 82E388FD…15BDB, derivation RECTIFICATION_OF_DODECAHEDRAL_ICOSAHEDRAL_DUAL_PAIR; (2,0) by A9/B3;\n//          ElementBasis types F3 563F99BA…3D93; M = 1D+1I an atom (GRL §9; platonic_stoichiometry.jsx AAF00A72…, replayed SAME).\n// HAND  := the seating (stabilizer {id}; RECORD_SEATING_STABILIZER_WITNESS_001 19F8E159…). No digital-shell field\n//          (orientation_proper, RIGHT_HANDED) is read, required or filled. QG-003 pairs are UNORDERED by contract (90D31BC3…).\n// FOLD  := First_Person_Physics §6 Fold Accounting (MANY → ONE + carriers + δ; q₁,q₂,q₃); T2 FOLD→RADIATE→PROPAGATE one\n//          transition; T6 MUST fold / LET shed; T7 prior folds. CARI §7–8 FOLDₙ; Fₙ₊₁ = UNFOLDING_□G(Fₙ); FOLD = INVARIANT."
+      },
+      "reading": "The J17 realization already cites CARI7/8 and the promoted recursive Fold. That fold-level connection and dischargedR1 are retained, not reopened."
+    },
+    "universe_fold": {
+      "clauses": [
+        {
+          "source": "UNIVERSE_SPEC",
+          "lines": [
+            127,
+            169
+          ],
+          "text": "## 6 One Fold\n\nThe fold law is:\n\n    FOLD_n :=\n      G_whole,n\n      IF_THEN\n      S_internal,n\n      IF_THEN\n      G_parts,n+1\n\nwith:\n\n    G_parts,n+1 = G_whole,n+1\n\nFor every n:\n\n    THIS_qua_fold(F_n)\n      IF_THEN\n    G(F_n, F_n+1)\n\n    NO(G(F_n, F_n+1))\n      IF_THEN\n    NO(THIS_qua_fold(F_n+1))\n\nand:\n\n    SAME(FOLD)\n    AND\n    NOT_SAME(REALIZATION_n, REALIZATION_n+1)\n\nThe fold operator is unary:\n\n    arity(FOLD) := 1\n\nThe fold is executed once at genesis as one recursive computation:\n\n    one invocation\n    one law\n    several internal unfoldings\n    one terminal element basis\n\nNo scale-specific fold functions are admissible."
+        },
+        {
+          "source": "UNIVERSE_SPEC",
+          "lines": [
+            171,
+            188
+          ],
+          "text": "## 7 Fold Realizations\n\nThe governed realization chain is:\n\n    F_0 := triangle\n    F_1 := hexagonal constructive cell\n    F_2 := carrier\n    F_3 := element-polyhedra basis\n\nEvery transition uses the SAME fold:\n\n    FOLD(F_0) -> F_1\n    FOLD(F_1) -> F_2\n    FOLD(F_2) -> F_3\n\nThe realizations are NOT_SAME. The fold law remains SAME.\n\nThe chain terminates only when intrinsic elemental closure is witnessed."
+        },
+        {
+          "source": "UNIVERSE_SPEC",
+          "lines": [
+            332,
+            355
+          ],
+          "text": "## 14 Reaction and Time\n\nThe fold genealogy is:\n\n    triangle -> cell -> carrier -> ElementBasis\n\nPost-element Universe time is the unfolding of admitted configuration genealogy:\n\n    Universe_w\n      -> admitted reaction\n      -> Universe_w+1\n\nHorizontal reaction:\n\n    rearranges active relations\n    preserves the exact element multiset\n    preserves K_id_min\n\nVertical reaction:\n\n    changes a governed multiset relation\n    preserves K_id_min\n    supplies a specific governed vertical witness\n    admits the target configuration"
+        }
+      ],
+      "reading": "One Fold includes the recursive genesis construction and post-genesis admitted configuration genealogy. These stated realization subjects are retained; no carrier-scale doubling is silently substituted for every transition."
+    },
+    "reported_2026_10_08_ruling": {
+      "status": "REPORTED_SOURCE_CUSTODY_NOT_BOUND_IN_THIS_READ",
+      "statement": "recursion is architecture; self-reference is not a defect",
+      "inspected_locations": "DesktopMaL text corpus, retained contact packet and bounded canonical-source locations",
+      "effect": "No withdrawal, no contradiction and no new execution gate. CARI/E18 and existing J17 promotion independently supply the Fold clauses used here."
+    }
+  },
+  "instance": {
+    "world": "J17",
+    "genealogical_subject_count": 1,
+    "indices": {
+      "genealogy": "n (symbolic current Fold-realization index)",
+      "parent_shell": [
+        2,
+        0
+      ],
+      "candidate_child_shell": [
+        4,
+        0
+      ],
+      "committed_link_count": 3,
+      "reading": "The three quantities are recorded separately, never equated."
+    },
+    "G_whole_n": {
+      "status": "BOUND_COMMITTED_PARENT",
+      "source": {
+        "id": "G3",
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/committed.world.json",
+        "bytes": 763526,
+        "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88",
+        "comparison": "SAME"
+      },
+      "head_link": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+      "head_prev": "173e0fa1d318de52472e31e3acf064bf92d9b313bdb4e52d2f4593ddd3631386",
+      "field_sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3",
+      "witness_sha256": "BE4EC32289E6F4C6EF50817203C89061D664735F7166CBB37C55F6D1A1E4AFA3",
+      "pair_sha256": "37F5767D3054D094BE169F4E9445A02ADF57868DB97087256776657EBB96C6A5",
+      "field_rows": 480,
+      "witness_rows": 720,
+      "field_reading": "UNIFORM_NO",
+      "walls": 0
+    },
+    "S_internal_n": {
+      "status": "PROPOSED_CONCRETE_CORRESPONDENCE; CONSTRUCTION_CONTACTS_BOUND",
+      "candidate": "The retained012 incidence and four-child refinement constructors, with inherited seating/domain identities and genealogy.",
+      "recorded_obligations": [
+        {
+          "pointer": "/read_4/obligations/0",
+          "id": "PARENT_SITE_PERSISTENCE",
+          "verdict": "IF_THEN",
+          "disposition": "DISCHARGED_IN_RETAINED_NATIVE_CONSTRUCTION",
+          "operand": null
+        },
+        {
+          "pointer": "/read_4/obligations/1",
+          "id": "ONE_NEW_SITE_PER_PARENT_EDGE",
+          "verdict": "IF_THEN",
+          "disposition": "DISCHARGED_IN_RETAINED_NATIVE_CONSTRUCTION",
+          "operand": null
+        },
+        {
+          "pointer": "/read_4/obligations/2",
+          "id": "FOUR_CHILDREN_PER_PARENT_FACE",
+          "verdict": "IF_THEN",
+          "disposition": "DISCHARGED_IN_RETAINED_NATIVE_CONSTRUCTION",
+          "operand": null
+        },
+        {
+          "pointer": "/read_4/obligations/3",
+          "id": "SEATED_ORIENTATION_IN_CANONICAL_CHILD_RECORD",
+          "verdict": "MAYBE",
+          "disposition": "MAYBE",
+          "operand": "O_CANONICAL_REFINEMENT_RECORD_020"
+        },
+        {
+          "pointer": "/read_4/obligations/4",
+          "id": "TWELVE_KAPPA_BOUND_DOMAIN_IDENTITIES_TRANSPORT",
+          "verdict": "IF_THEN",
+          "disposition": "DISCHARGED_FOR_RECORDED_DOMAIN_RELATION",
+          "operand": null
+        },
+        {
+          "pointer": "/read_4/obligations/5",
+          "id": "COMPLETE_CANONICAL_CHILD_RECORD",
+          "verdict": "MAYBE",
+          "disposition": "MAYBE",
+          "operand": "O_CANONICAL_REFINEMENT_RECORD_020"
+        },
+        {
+          "pointer": "/read_4/obligations/6",
+          "id": "GENEALOGY",
+          "verdict": "IF_THEN",
+          "disposition": "DISCHARGED_FOR_RECORDED_PARENT_AND_ORIGINAL_FACE_CHAIN",
+          "operand": null
+        }
+      ],
+      "correspondence_operand": "O_J17_FOLD_INTERNAL_REALIZATION_022",
+      "canonical_record_operand": "O_CANONICAL_REFINEMENT_RECORD_020",
+      "reason": "BECAUSE 020 supplies the construction output but retains the complete canonical child-record correspondence as MAYBE. Its nativeT packet consumes carrier geometry and has no g3 successor execution; the identification of this particular constructor with the next S_internal application is not certified by the generic Fold formula alone."
+    },
+    "G_parts_next_equals_G_whole_next": {
+      "law": "IF_THEN",
+      "source": "CARI paragraphs228,232-233",
+      "concrete_child_world": "NOT_RUN",
+      "candidate_carrier": {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_t_r2_r1_diagnostics_019\\T\\run_001\\normal\\stage\\readback.bin",
+        "bytes": 170917920,
+        "sha256": "5D697DB893C5AD473FBF347C3DC0E00D737B3E168B1C8F9D85A0BB5A59928500"
+      },
+      "carrier_counts": {
+        "SITE": 162,
+        "EDGE": 480,
+        "TRIAD": 320,
+        "FLAG": 1920,
+        "PAIR": 2880
+      },
+      "genealogical_parent_link": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+      "record_role": "READ_ONLY_INSTANCE_REFERENCE_NOT_WORLD_APPEND",
+      "reading": "If this is realized as the next Fold application, its output carries the same J17 genealogy; it is not a second individual."
+    },
+    "field_transport": {
+      "scope": "CONDITIONAL_ON_TOTAL_READING_PRESERVING_PARENT_MAP",
+      "reading": "UNIFORM_NO",
+      "walls": 0,
+      "strict_K": "EMPTY",
+      "source": "READ020#/read_4/field_transport",
+      "execution": "NOT_RUN"
+    },
+    "invariant": {
+      "native_domain_identity_transport": "IF_THEN_12_OF_12",
+      "domain_contacts": [
+        {
+          "domain": "HW_00",
+          "parent_site": "THIS(HW_00)",
+          "child_site": "THIS(THIS(HW_00))",
+          "parent_fact": 969,
+          "child_fact": 15828,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1021,
+            2335
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_01",
+          "parent_site": "THIS(HW_01)",
+          "child_site": "THIS(THIS(HW_01))",
+          "parent_fact": 970,
+          "child_fact": 15817,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1022,
+            2324
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_02",
+          "parent_site": "THIS(HW_02)",
+          "child_site": "THIS(THIS(HW_02))",
+          "parent_fact": 971,
+          "child_fact": 15818,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1023,
+            2325
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_03",
+          "parent_site": "THIS(HW_03)",
+          "child_site": "THIS(THIS(HW_03))",
+          "parent_fact": 972,
+          "child_fact": 15819,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1024,
+            2326
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_04",
+          "parent_site": "THIS(HW_04)",
+          "child_site": "THIS(THIS(HW_04))",
+          "parent_fact": 973,
+          "child_fact": 15820,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1025,
+            2327
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_05",
+          "parent_site": "THIS(HW_05)",
+          "child_site": "THIS(THIS(HW_05))",
+          "parent_fact": 974,
+          "child_fact": 15822,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1026,
+            2329
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_06",
+          "parent_site": "THIS(HW_06)",
+          "child_site": "THIS(THIS(HW_06))",
+          "parent_fact": 975,
+          "child_fact": 15821,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1027,
+            2328
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_07",
+          "parent_site": "THIS(HW_07)",
+          "child_site": "THIS(THIS(HW_07))",
+          "parent_fact": 976,
+          "child_fact": 15823,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1028,
+            2330
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_08",
+          "parent_site": "THIS(HW_08)",
+          "child_site": "THIS(THIS(HW_08))",
+          "parent_fact": 977,
+          "child_fact": 15824,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1029,
+            2331
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_09",
+          "parent_site": "THIS(HW_09)",
+          "child_site": "THIS(THIS(HW_09))",
+          "parent_fact": 978,
+          "child_fact": 15825,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1030,
+            2332
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_10",
+          "parent_site": "THIS(HW_10)",
+          "child_site": "THIS(THIS(HW_10))",
+          "parent_fact": 979,
+          "child_fact": 15826,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1031,
+            2333
+          ],
+          "verdict": "IF_THEN"
+        },
+        {
+          "domain": "HW_11",
+          "parent_site": "THIS(HW_11)",
+          "child_site": "THIS(THIS(HW_11))",
+          "parent_fact": 980,
+          "child_fact": 15827,
+          "origin": "T_INHERITED_DOMAIN",
+          "support": [
+            1032,
+            2334
+          ],
+          "verdict": "IF_THEN"
+        }
+      ],
+      "fold_identity": "SAME_FOLD_ACROSS_REALIZATIONS_BY_CARI_E18",
+      "boundary": "The twelve-domain invariant is a witnessed structural invariant; it does not alone substitute for complete Fold continuity or canonical record correspondence."
+    },
+    "custody": {
+      "across_steps_parent": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+      "within_step_self_hash": "NONE",
+      "child_commit_hash": "ABSENT_NOT_RUN",
+      "other_world_bindings": "NONE"
+    }
+  },
+  "every_n_answer": {
+    "verdict": "IF_THEN",
+    "subject": "UNIVERSAL_SCOPE_OVER_REALIZATIONS_OF_THE_SAME_FOLD",
+    "g1_g2": "Included as earlier J17 Fold realizations; no K-empty or exhaustion exception is stated.",
+    "mandatory_refinement_at_each_link": {
+      "verdict": "MAYBE",
+      "reason": "The universal quantifier binds genealogical Fold realizations. No cited clause equates each recorded link with a resolution doubling. CARI42-44 and E12 distinguish the update, unfolding and its record."
+    },
+    "historical_failure": "NONE_ESTABLISHED_BY_THIS_READ",
+    "historical_rewrite": "NONE",
+    "g1_g2_pair_identity": "Does not by itself establish equality of complete realizations, BECAUSE a pair reading and its recorded history have distinct subjects."
+  },
+  "reconciliation": {
+    "six_discharged_claim": {
+      "verdict": "NOT_SAME",
+      "reason": "The bound020 record has five discharged entries and two MAYBE entries sharing one canonical-record operand; it does not say oriented child-record correspondence and complete record are discharged."
+    },
+    "exhaustion_as_prerequisite": {
+      "verdict": "NO",
+      "reason": "CARI7/8 does not require exhaustion before a qua-fold continuation. Full A_M exhaustion is not imposed on this Fold read."
+    },
+    "standalone_invocation_gate": {
+      "disposition": "NOT_IMPOSED",
+      "reason": "The remaining issue is the concrete S_internal substitution, not a separate trigger added beside Fold."
+    },
+    "O5_only_promotion_claim": {
+      "verdict": "MAYBE",
+      "reason": "O5 names a canonical record/materializer binding, not only attestation. The next-step substitution into CARI227 remains to be witnessed as that binding is constructed. The current record cannot certify that a promotion alone supplies it."
+    }
+  },
+  "clause_level_disposition": {
+    "clause": {
+      "source": "CARI",
+      "paragraph": 227,
+      "text": "FOLDₙ := □G_whole,n  IF_THEN  □S_internal,n  IF_THEN  □G_parts,n+1"
+    },
+    "supported": "The whole is bound by its committed identity; the proposed internal construction and its output incidence are bound by retained native witnesses.",
+    "exact_unresolved_substitution": "S_internal,n of this J17 Fold application := the retained012-to(4,0) constructor plus complete canonical child-record transport.",
+    "supporting_record_loci": [
+      "READ020#/read_4/obligations/3",
+      "READ020#/read_4/obligations/5",
+      "NATIVE_T#/runs/0/world_effect",
+      "NATIVE_T#/admission"
+    ],
+    "status": "MAYBE",
+    "clause_failure": "NO_FAILURE_WITNESS_PRODUCED; an incomplete instance binding is not an observed failure of the Fold law."
+  },
+  "open_operands": [
+    {
+      "id": "O_CANONICAL_REFINEMENT_RECORD_020",
+      "scope": "O5: complete canonical child record, retaining admitted seating, domain identities and genealogy"
+    },
+    {
+      "id": "O_J17_FOLD_INTERNAL_REALIZATION_022",
+      "scope": "Concrete substitution at CARI227; refinement constructor as this J17 S_internal realization",
+      "relation_to_previous": "Re-expresses the unresolved concrete-realization portion of020; no independent exhaustion or clock trigger is requested."
+    }
+  ],
+  "verdict": "MAYBE",
+  "verdict_subject": "COMPLETE_J17_G3_TO_4_0_FOLD_INSTANCE",
+  "positive_result": "The law, one-subject genealogy, committed parent, constructor, domain invariants and recorded obligation dispositions are bound. No world successor is asserted.",
+  "checker": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\bind_j17_fold_instance_022.mjs",
+    "bytes": 14318,
+    "sha256": "7545A1167639D15FCF5E50F862EEE58341B71EA1AC61CDD6961637A7DD3BB14D"
+  },
+  "extractor": {
+    "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/read_j17_fold_sources_022.ps1",
+    "bytes": 1953,
+    "sha256": "D6C8AC79AFAB3CFCD1EAEB24CEC7F006F831F6B48B74A2C5DC787E7CAAA2184F"
+  }
+}

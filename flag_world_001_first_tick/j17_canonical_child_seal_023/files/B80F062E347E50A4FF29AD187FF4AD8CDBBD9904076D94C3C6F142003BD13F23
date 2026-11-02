@@ -1,0 +1,94 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import {observeOrientation} from './orientation_observer.mjs';
+
+const self=fileURLToPath(import.meta.url),local=path.dirname(self);
+const R='D:/Dev/Codex/2026-10-04/new-chat',home=R+'/j17_canonical_child_023';
+const F=R+'/mal_fabric_flag_world_001/flag_world_001_first_tick',H=R+'/review_flag_world_002/hardware_carrier_012';
+const T=F+'/j17_t_r2_r1_diagnostics_019/T',old=JSON.parse(fs.readFileSync(R+'/reaction_remainder_incidence_017/CONFIG.json'));
+const p={...old.paths,read020:R+'/grl_refinement_read_020/READ_RECORD_020_v0.1.1.json',read022:R+'/j17_fold_instance_read_022/FOLD_INSTANCE_READ_022.json',custody:T+'/run_001/INPUT_CUSTODY.json',baseline:T+'/run_001/normal/stage',seat:H+'/parents/qg003-carrier.mcbf',seating_source:H+'/source/junction_identity.mal',orientation_source:local+'/orientation_transport.mal',orientation_observer:local+'/orientation_observer.mjs'};
+const read=f=>JSON.parse(fs.readFileSync(f,'utf8'));
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
+function ident(f){const h=crypto.createHash('sha256'),fd=fs.openSync(f,'r'),buf=Buffer.alloc(1024*1024);let bytes=0;try{for(;;){const n=fs.readSync(fd,buf,0,buf.length,null);if(!n)break;bytes+=n;h.update(buf.subarray(0,n));}}finally{fs.closeSync(fd);}return{path:path.resolve(f),bytes,sha256:h.digest('hex').toUpperCase()};}
+const same=x=>{const y=ident(x.path);assert.equal(y.sha256,x.sha256,'NOT_SAME '+x.path);assert.equal(y.bytes,x.bytes);return y;};
+const save=(f,v)=>{fs.writeFileSync(f,JSON.stringify(v,null,2)+'\n',{flag:'wx'});return ident(f);};
+const canonical=x=>Array.isArray(x)?'['+x.map(canonical).join(',')+']':x&&typeof x==='object'?'{'+Object.keys(x).sort().map(k=>JSON.stringify(k)+':'+canonical(x[k])).join(',')+'}':JSON.stringify(x);
+function invoke(exe,args,cwd,log,timeout=600000){save(log+'.START.json',{executable:ident(exe),argv:args,cwd,timeout_ms:timeout,at:new Date().toISOString()});const start=Date.now();const r=spawnSync(exe,args,{cwd,shell:false,windowsHide:true,encoding:null,timeout,maxBuffer:8*1024*1024});fs.writeFileSync(log+'.stdout.log',r.stdout??Buffer.alloc(0),{flag:'wx'});fs.writeFileSync(log+'.stderr.log',r.stderr??Buffer.alloc(0),{flag:'wx'});const exit={status:r.status,signal:r.signal,error:r.error?String(r.error):null,elapsed_ms:Date.now()-start,stdout:ident(log+'.stdout.log'),stderr:ident(log+'.stderr.log')};save(log+'.EXIT.json',exit);assert.ok(r.status===0&&!r.signal&&!r.error,'INVOCATION_UNCLOSED '+log);return exit;}
+function view(r){const memo=new Map();function term(id){if(memo.has(id))return memo.get(id);const n=r.node(id),s=n.s==='TEXT'?JSON.stringify(r.text(id)):n.s+(n.c.length?'('+n.c.map(term).join(',')+')':'');memo.set(id,s);return s;}const rows=tag=>r.predicate(tag).map(f=>({f,args:r.node(f.term).c.map(term),ids:r.node(f.term).c}));return{term,rows};}
+const nativeFiles=['incidence_reused.mal','moves_reused.mal','custody.mal'].map(n=>T+'/source/'+n);
+const expected={BASE_TRIAD:80,REFINED_TRIAD:320,SITE:162,EDGE:480,TRIAD:320,FLAG:1920,PAIR:2880,DELTA:1920,GAMMA:1920,TAU:1920,T_CHILD_PARENT:320,T_CHILD_FACE:320,T_FLAG_PARENT:1920,T_FLAG_FACE:1920,T_DOMAIN:12};
+async function prepare(){
+ assert.ok(!fs.existsSync(home),'FRESH_PACKET_REQUIRED');fs.mkdirSync(home);const start=Date.now();
+ const refs=new Map(),bind=f=>{const x=ident(f);refs.set(x.path,x);return x;};
+ const pin=(f,h)=>{const x=bind(f);assert.equal(x.sha256,h,'BOUND_IDENTITY '+f);return x;};
+ pin(p.g3,'946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88');
+ pin(p.read020,'7048205C92B131A65B7B4AB11D6FEC078953869FB4C7FECEBCF3C53CB9A2DDF2');
+ pin(p.read022,'16533B3B88E6FD42786C08000987083506DA018A84358E0A8D11163BD81083DF');
+ pin(p.custody,'3E50A6E83363EEC475F826CEF752CE034A7A0595B5980C96063960CF7AC90141');
+ pin(p.baseline+'/readback.bin','5D697DB893C5AD473FBF347C3DC0E00D737B3E168B1C8F9D85A0BB5A59928500');
+ pin(p.runtime,'9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06');
+ pin(p.lower,'05CE980CBC68707070837001819A90DF532A730569BA1112367C07BC017BD45B');
+ pin(p.queue,'2065C77ADC827238C6AFB22C5B9A7C753F9AA286206CEC2ADD1579E39209501D');
+ pin(p.census,'A2DC8B5D905402A9FA9F4B6B7C6C69A93EBCA1CB8F805F9244A56136E84AC4C3');
+ pin(p.seat,'82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB');
+ pin(p.seating_source,'E4CF9C4D9F3CE2B231DE67C7FFD45B82DE79FFD9DD403F7BAFD097D8939B3ACD');
+ const hashes=['2970889E111349F42AAEDE24A2496627D0B1C1DE10B3B9AE90836F044F2A4ACF','F91894FF1B28F12CCB64468482794FAE540814E0EA6703797543CE8AF3F7E888','ED268914ABEDBC8952D9E8E94A070F59E2BA6E96AFD14E22498E92E154C2ADD6'];nativeFiles.forEach((f,i)=>pin(f,hashes[i]));
+ const basis=read(p.read022);basis.source_bindings.forEach(x=>{same(x);bind(x.path);});
+ [self,p.orientation_source,p.orientation_observer,p.occurrence,p.readback,p.runtimeQualification,p.absence,p.baseline+'/source.mal',p.baseline+'/source-map.json',p.baseline+'/image.bin',H+'/gpu/readback.bin',H+'/gpu/source-map.json',H+'/gpu/source.mal',process.execPath,'C:/Windows/System32/nvidia-smi.exe',R+'/reaction_remainder_incidence_017/CONFIG.json'].forEach(bind);
+ const census=await import(pathToFileURL(p.census));census.generationBinding().identities.forEach(x=>{same(x);bind(x.path);});assert.equal(read(p.runtimeQualification).qualification,'SAME');
+ const world=read(p.g3),head=world.chain.at(-1);assert.equal(head.link,'501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c');assert.equal(world.chain.length,3);assert.equal(sha(canonical(head.record)).toLowerCase(),head.link);assert.equal(sha(canonical({field:world.field,witness:world.witness})).toLowerCase(),head.record.pair_hash);
+ const parent={world:ident(p.g3),head:head.link,predecessor:head.record.prev,pair_hash:head.record.pair_hash,field_sha256:sha(canonical(world.field)),witness_sha256:sha(canonical(world.witness)),coordinates:{m:2,n:0},seated_frame:{carrier:ident(p.seat),incidence_source:ident(H+'/gpu/source.mal'),incidence_readback:ident(H+'/gpu/readback.bin'),domain_junction_seating:ident(p.seating_source),standing_binding:ident(p.read022)}};
+ const custody=read(p.custody),rows=custody.rows.map(x=>x.row);assert.equal(rows.length,1033);assert.equal(new Set(rows).size,1033);
+ const input=nativeFiles.map(f=>fs.readFileSync(f,'utf8')).join('\n')+'\n'+fs.readFileSync(p.orientation_source,'utf8')+'\n@propose seed T_BOUND_PARENT_INPUTS := {\n'+rows.map(x=>'  '+x).join(',\n')+'\n};\n';
+ fs.writeFileSync(home+'/input.mal',input,{flag:'wx'});bind(home+'/input.mal');
+ invoke(process.execPath,[p.lower,home+'/input.mal',home+'/build'],home,home+'/lower');
+ const stages=['normal','replay_1','replay_2'].map(n=>home+'/'+n);for(const s of stages){fs.mkdirSync(s);for(const f of ['source.mal','source-map.json','source-occurrence-custody.json','image.bin']){fs.copyFileSync(home+'/build/'+f,s+'/'+f,fs.constants.COPYFILE_EXCL);bind(s+'/'+f);}}
+ for(const f of ['source.mal','source-map.json','source-occurrence-custody.json','image.bin'])bind(home+'/build/'+f);
+ const map=read(home+'/build/source-map.json');assert.equal(map.source_sha256,ident(home+'/input.mal').sha256);assert.equal(map.lowerer_sha256,ident(p.lower).sha256);assert.equal(map.image_sha256,ident(home+'/build/image.bin').sha256);assert.equal(map.imports.length,0);assert.equal(map.seeds.length,1033);
+ const expectation=save(home+'/EXPECTED.json',{schema:'CanonicalChildExpectation023',coordinates:{m:4,n:0},counts:expected,parent_sites:42,edge_sites:120,domains:12,orientation_parents:80,orientation_children:320,boundary_preservation:'IF_THEN',internal_edge_cancellation:'IF_THEN',baseline_incidence:'SAME',native_replays:2,canonical_record_replays:2,world_effect:'NONE'});bind(expectation.path);
+ const cfg={schema:'CanonicalChildBuildConfig023',paths:p,parent,source_bindings:[...refs.values()],world_watch:[p.g1,p.g2,p.g3].map(bind),stages,absence:old.absence,required_absent:old.required_absent,fact_capacity:65536,native_timeout_ms:600000,preparation_ms:Date.now()-start,expected:expectation};save(home+'/CONFIG.json',cfg);bind(home+'/CONFIG.json');
+ const plan={schema:'QueueGateBoundExecution027',lane:p.lane,inputs:[...refs.values()],predecessors:[],steps:[{id:'construct_and_replay_child_023',executable:process.execPath,argv:[self,'worker'],cwd:home,sources:[self,p.orientation_source,p.orientation_observer,home+'/input.mal'],outputs:[{path:home+'/OBSERVATION.json',equals:{verdict:'IF_THEN',replay:'SAME',world_effect:'NONE'}}]}],world_effect:'NONE',selection:'NO_MEMBER_TAKEN'};save(home+'/QUEUE_PLAN.json',plan);
+ console.log(JSON.stringify({prepared:home,source:ident(home+'/input.mal'),rules:map.rules.length,seeds:map.seeds.length,stages:3,preparation_ms:cfg.preparation_ms}));
+}
+async function observe(stage,cfg){
+ const {openReadback}=await import(pathToFileURL(p.readback)),r=openReadback(stage),v=view(r),baseline=openReadback(p.baseline),bv=view(baseline),parentR=openReadback(H+'/gpu'),pv=view(parentR);
+ assert.equal(r.error,0,'NATIVE_ERROR');for(const f of r.facts){assert.ok(f.support.every(i=>i>=0&&i<f.id),'PROOF_PRECEDENCE');assert.equal(f.support.length,f.rule<0?0:r.map.rules[f.rule].ants.length,'PROOF_ARITY');}for(let i=0;i<r.terms;i++)assert.ok(r.node(i).c.every(c=>c<i),'TERM_PRECEDENCE');
+ const seedRows=read(p.custody).rows.map(x=>x.row).sort();assert.deepEqual(r.facts.filter(f=>f.rule<0).map(f=>v.term(f.term)).sort(),seedRows,'EXACT_BOUND_SEEDS');
+ const tag=f=>r.node(r.node(f.term).c[0]).s;
+ const base=r.facts.filter(f=>!tag(f).startsWith('CT23_')).map(f=>v.term(f.term)).sort();assert.deepEqual(base,baseline.facts.map(f=>bv.term(f.term)).sort(),'BASELINE_CONSTRUCTOR_NOT_SAME');
+ const counts=Object.fromEntries(Object.keys(expected).map(t=>[t,v.rows(t).length]));assert.deepEqual(counts,expected);
+ const sites=new Set(v.rows('SITE').map(x=>x.args[1]));const parentSites=pv.rows('SITE').map(x=>x.args[1]),parentEdges=pv.rows('EDGE').map(x=>x.args[1]);assert.ok(parentSites.every(s=>sites.has('THIS('+s+')'))&&parentEdges.every(s=>sites.has(s)),'PARENT_PERSISTENCE');assert.equal(new Set([...parentSites.map(s=>'THIS('+s+')'),...parentEdges]).size,162);
+ const orientation=observeOrientation(r,v.term);save(stage+'/ORIENTATION_TRANSPORT.json',orientation);
+ const domains=v.rows('T_DOMAIN').map(x=>({domain:x.args[4],parent_site:x.args[3],child_site:x.args[2],native_fact:x.f})).sort((a,b)=>a.domain.localeCompare(b.domain));assert.equal(domains.length,12);assert.equal(new Set(domains.map(d=>d.domain)).size,12);for(const d of domains)assert.equal(d.child_site,'THIS('+d.parent_site+')');
+ const parentDomain=pv.rows('WORLD_DOMAIN_SITE').map(x=>[x.args[2],x.args[1]]).sort();assert.deepEqual(domains.map(d=>[d.domain,d.parent_site]).sort(),parentDomain);
+ const roots=[...r.predicate('CT23_ORIENTATION'),...r.predicate('CT23_PERMUTATION'),...r.predicate('T_CHILD_PARENT'),...r.predicate('T_CHILD_FACE'),...r.predicate('T_DOMAIN')].map(f=>f.id),support=new Set();function visit(id){if(support.has(id))return;support.add(id);r.facts[id].support.forEach(visit);}roots.forEach(visit);
+ const proofs={schema:'CanonicalChildNativeProofClosure023',roots,facts:[...support].sort((a,b)=>a-b).map(id=>({...r.facts[id],term_text:v.term(r.facts[id].term)}))};save(stage+'/PROOFS.json',proofs);
+ const native={source_sha256:ident(stage+'/source.mal').sha256,source_map_sha256:ident(stage+'/source-map.json').sha256,image_sha256:ident(stage+'/image.bin').sha256,readback_sha256:ident(stage+'/readback.bin').sha256,proof_closure_sha256:ident(stage+'/PROOFS.json').sha256,counts,baseline_semantic_sha256:sha(base.join('\n')+'\n')};
+ const record={schema:'J17CanonicalProjectionShellChild023',version:'0.1.0',subject:'J17',status:'PREPARED_FOR_DEVON_PROMOTE',m:4,n:0,multiset:{D:1,I:1},orientation:{kind:'INHERITED_SEATED_FRAME_TRANSPORT',parent_frame:cfg.parent.seated_frame,transport_source:ident(p.orientation_source),transport:orientation,interpretation:'Relative transport of the seated parent orientation. Canonical tuple permutations are serialization witnesses, not selections of a new hand.'},chirality:{kind:'INHERITED_SEATED_HANDEDNESS',parent_frame:cfg.parent.seated_frame,transport:'ORIENTATION_PRESERVING_ONE_TO_FOUR',reversal:'NONE'},kappa:{kind:'TWELVE_INHERITED_DOMAIN_IDENTITIES',entries:domains},refinement_law:{kind:'RECORDED_NATIVE_ONE_TO_FOUR',sources:nativeFiles.map(ident),binding_020:ident(p.read020),parent_sites_persist:42,one_new_site_per_parent_edge:120,parents:80,children_per_parent:4,child_triads:320,canonical_incidence:native},genealogy:{parent:cfg.parent,fold_instance:ident(p.read022),constructor_prior_readback:ident(p.baseline+'/readback.bin'),parent_input_custody:ident(p.custody),relation:'CHILD_OF_COMMITTED_G3',within_record_self_hash:'NONE'},realization:{native:'Pinned RTX3070 runtime constructs incidence, domain transport and oriented child correspondences from bound parent facts.',serialization:'Deterministic host export of native facts and pinned parent-record references. Hashes are custody identities, not a new world commit.'}};
+ const recordFile=save(stage+'/CHILD_RECORD.json',record);const progressFile=stage+'/readback.bin.progress.jsonl';const progress=fs.readFileSync(progressFile,'utf8').trim().split(/\r?\n/).map(JSON.parse).at(-1);
+ const observation={schema:'CanonicalChildNativeObservation023',verdict:'IF_THEN',native,orientation:ident(stage+'/ORIENTATION_TRANSPORT.json'),record:recordFile,proofs:ident(stage+'/PROOFS.json'),facts:r.count,terms:r.terms,epochs:r.epochs,error:r.error,progress,world_effect:'NONE'};save(stage+'/OBSERVATION.json',observation);return observation;
+}
+async function worker(){
+ const cfg=read(home+'/CONFIG.json'),owner=read(p.lane+'/ACTIVE/OWNER.json');same(owner.plan);assert.equal(owner.plan.sha256,ident(home+'/QUEUE_PLAN.json').sha256);const plan=read(owner.plan.path);plan.inputs.forEach(same);cfg.world_watch.forEach(same);
+ const census=await import(pathToFileURL(p.census)),results=[],start=Date.now();
+ for(let i=0;i<cfg.stages.length;i++){
+  const c=census.checkCurrentProcesses(cfg.absence,cfg.required_absent,[ident(p.runtime)],{outputDirectory:home+'/census'});save(home+'/CENSUS_'+i+'.json',c);assert.equal(c.verdict,'IF_THEN');assert.equal(c.native_exclusivity,'NO_NATIVE_EXECUTABLE_PRESENT');
+  const gpu=invoke('C:/Windows/System32/nvidia-smi.exe',['--query-gpu=name,memory.free','--format=csv,noheader,nounits'],home,home+'/gpu_'+i,15000);const lines=fs.readFileSync(gpu.stdout.path,'utf8').trim().split(/\r?\n/);assert.equal(lines.length,1);assert.ok(lines[0].includes('RTX 3070')&&Number(lines[0].split(',').at(-1))>=1536,'GPU_CARRIER_OR_MEMORY_UNAVAILABLE');
+  console.log(JSON.stringify({start:['normal','replay_1','replay_2'][i],at:new Date().toISOString()}));
+  const s=cfg.stages[i],execution=invoke(p.runtime,[s+'/image.bin',s+'/readback.bin','--fact-capacity',String(cfg.fact_capacity)],home,home+'/native_'+i,cfg.native_timeout_ms);const observation=await observe(s,cfg);results.push({execution,observation});console.log(JSON.stringify({closed:i,native_ms:execution.elapsed_ms,readback:observation.native.readback_sha256,record:observation.record.sha256}));
+ }
+ const first=results[0].observation;for(const x of results.slice(1)){assert.equal(x.observation.native.readback_sha256,first.native.readback_sha256,'READBACK_REPLAY_NOT_SAME');assert.equal(x.observation.record.sha256,first.record.sha256,'RECORD_REPLAY_NOT_SAME');assert.equal(x.observation.proofs.sha256,first.proofs.sha256,'PROOF_REPLAY_NOT_SAME');}
+ plan.inputs.forEach(same);cfg.world_watch.forEach(same);save(home+'/OBSERVATION.json',{schema:'CanonicalChildQualification023',verdict:'IF_THEN',replay:'SAME',results,elapsed_ms:Date.now()-start,world_effect:'NONE',operation_038:'PAUSED'});
+}
+async function finalize(){
+ const {inspect}=await import(pathToFileURL(p.queue)),q=inspect(home+'/queuegate');assert.equal(q.queue_status,'EMPTY','QUEUE_NOT_CLOSED');const cfg=read(home+'/CONFIG.json'),obs=read(home+'/OBSERVATION.json');assert.equal(obs.verdict,'IF_THEN');assert.equal(obs.results.length,3);cfg.source_bindings.forEach(same);cfg.world_watch.forEach(same);
+ fs.copyFileSync(home+'/normal/CHILD_RECORD.json',home+'/J17_CANONICAL_CHILD_4_0.json',fs.constants.COPYFILE_EXCL);const child=ident(home+'/J17_CANONICAL_CHILD_4_0.json');assert.equal(child.sha256,obs.results[0].observation.record.sha256);
+ const run={schema:'J17CanonicalChildRun023',verdict:'IF_THEN',authority:'Devon 2026-11-01: implement canonical4,0 child from witnessed parts; normal plus two RTX3070 replays; deliver for PROMOTE.',child,source_bindings:cfg.source_bindings,queuegate:q,qualification:ident(home+'/OBSERVATION.json'),results:obs.results,replay:{native_readbacks:'SAME',child_records:'SAME',proof_closures:'SAME',runs:3,replays:2},timing:{preparation_ms:cfg.preparation_ms,guarded_worker_ms:obs.elapsed_ms,native_ms:obs.results.map(x=>x.execution.elapsed_ms)},scope:{geometry:'Native construction reproduces all baseline T facts; new native orientation transport carries the inherited seated frame.',orientation:'New transport checks; not attributed retrospectively to020. No absolute hand or re-seating selected.',canonicalization:'Host serializes observed native terms and bound parent metadata; native output and record each replay byteSAME.',promotion:'FOR_DEVON',world_transition:'NONE',operation_038:'PAUSED',commit:'NONE',push:'NONE'},world_after:cfg.world_watch.map(same)};
+ const rr=save(home+'/RUN_RECORD_023.json',run);fs.mkdirSync(home+'/authoring_tools');for(const f of [self,p.orientation_source,p.orientation_observer])fs.copyFileSync(f,home+'/authoring_tools/'+path.basename(f),fs.constants.COPYFILE_EXCL);
+ const artifacts=[];function scan(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const f=path.join(d,e.name);if(e.isDirectory())scan(f);else artifacts.push(ident(f));}}scan(home);const manifest=save(home+'/MANIFEST_023.json',{schema:'CanonicalChildManifest023',child,run_record:rr,artifacts});artifacts.forEach(same);console.log(JSON.stringify({child,run_record:rr,manifest,artifacts:artifacts.length,replay:'SAME',world_effect:'NONE'}));
+}
+const mode=process.argv[2];if(mode==='prepare')await prepare();else if(mode==='worker')await worker();else if(mode==='finalize')await finalize();else throw Error('MODE_REQUIRED');

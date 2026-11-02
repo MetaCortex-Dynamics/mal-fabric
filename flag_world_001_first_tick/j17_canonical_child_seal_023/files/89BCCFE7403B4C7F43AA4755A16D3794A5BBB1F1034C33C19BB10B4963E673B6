@@ -1,0 +1,3228 @@
+{
+  "schema": "NativeProcessSnapshot031",
+  "phase": "AFTER_EXHAUSTIVE_STOP035",
+  "coverage": "ALL_HOST_PROCESSES",
+  "at": "2026-10-30T21:14:14.049Z",
+  "processes": [
+    {
+      "pid": 0,
+      "parent_pid": 0,
+      "executable_path": null,
+      "name": "[System Process]"
+    },
+    {
+      "pid": 4,
+      "parent_pid": 0,
+      "executable_path": null,
+      "name": "System"
+    },
+    {
+      "pid": 336,
+      "parent_pid": 4,
+      "executable_path": null,
+      "name": "Secure System"
+    },
+    {
+      "pid": 376,
+      "parent_pid": 4,
+      "executable_path": null,
+      "name": "Registry"
+    },
+    {
+      "pid": 1128,
+      "parent_pid": 4,
+      "executable_path": null,
+      "name": "smss.exe"
+    },
+    {
+      "pid": 1568,
+      "parent_pid": 1400,
+      "executable_path": null,
+      "name": "csrss.exe"
+    },
+    {
+      "pid": 1668,
+      "parent_pid": 1400,
+      "executable_path": null,
+      "name": "wininit.exe"
+    },
+    {
+      "pid": 1676,
+      "parent_pid": 1660,
+      "executable_path": null,
+      "name": "csrss.exe"
+    },
+    {
+      "pid": 1752,
+      "parent_pid": 1668,
+      "executable_path": null,
+      "name": "services.exe"
+    },
+    {
+      "pid": 1772,
+      "parent_pid": 1668,
+      "executable_path": null,
+      "name": "LsaIso.exe"
+    },
+    {
+      "pid": 1804,
+      "parent_pid": 1668,
+      "executable_path": null,
+      "name": "lsass.exe"
+    },
+    {
+      "pid": 1816,
+      "parent_pid": 1660,
+      "executable_path": null,
+      "name": "winlogon.exe"
+    },
+    {
+      "pid": 1984,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2016,
+      "parent_pid": 1668,
+      "executable_path": null,
+      "name": "fontdrvhost.exe"
+    },
+    {
+      "pid": 2024,
+      "parent_pid": 1816,
+      "executable_path": null,
+      "name": "fontdrvhost.exe"
+    },
+    {
+      "pid": 1572,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 1824,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2096,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2140,
+      "parent_pid": 1816,
+      "executable_path": null,
+      "name": "dwm.exe"
+    },
+    {
+      "pid": 2232,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2272,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2328,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2404,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2468,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2516,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "NVDisplay.Container.exe"
+    },
+    {
+      "pid": 2556,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2648,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2708,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2740,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "AsusCertService.exe"
+    },
+    {
+      "pid": 2904,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2912,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2928,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2936,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2316,
+      "parent_pid": 4,
+      "executable_path": null,
+      "name": "Memory Compression"
+    },
+    {
+      "pid": 3096,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3128,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3168,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3180,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3188,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3248,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3372,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3420,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "atkexComSvc.exe"
+    },
+    {
+      "pid": 3480,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3556,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3736,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 2772,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 4204,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 4276,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 4576,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 4932,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5044,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 4300,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 4636,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "WUDFHost.exe"
+    },
+    {
+      "pid": 2788,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "WUDFHost.exe"
+    },
+    {
+      "pid": 5164,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "WUDFHost.exe"
+    },
+    {
+      "pid": 5292,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5444,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5452,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5576,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5604,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5612,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "AsusOptimization.exe"
+    },
+    {
+      "pid": 5796,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "spoolsv.exe"
+    },
+    {
+      "pid": 5868,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 6036,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 6068,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "ArmouryCrateControlInterface.exe"
+    },
+    {
+      "pid": 6076,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "AsusAppService.exe"
+    },
+    {
+      "pid": 6088,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 6096,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "AsusSystemDiagnosis.exe"
+    },
+    {
+      "pid": 6112,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "ArmouryCrate.Service.exe"
+    },
+    {
+      "pid": 6120,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "AsusSystemAnalysis.exe"
+    },
+    {
+      "pid": 6128,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "AsusSwitch.exe"
+    },
+    {
+      "pid": 6136,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5032,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "AsusSoftwareManager.exe"
+    },
+    {
+      "pid": 3464,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3440,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5488,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5752,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5744,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "GameSDK.exe"
+    },
+    {
+      "pid": 6168,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "DAX3API.exe"
+    },
+    {
+      "pid": 6248,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "RtkAudUService64.exe"
+    },
+    {
+      "pid": 6280,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "wslservice.exe"
+    },
+    {
+      "pid": 6328,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "ROGLiveService.exe"
+    },
+    {
+      "pid": 6336,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "RstMwService.exe"
+    },
+    {
+      "pid": 6360,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "WMIRegistrationService.exe"
+    },
+    {
+      "pid": 6640,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "ipfsvc.exe"
+    },
+    {
+      "pid": 7124,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 7036,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "jhi_service.exe"
+    },
+    {
+      "pid": 7324,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "ipf_uf.exe"
+    },
+    {
+      "pid": 7684,
+      "parent_pid": 5576,
+      "executable_path": null,
+      "name": "wlanext.exe"
+    },
+    {
+      "pid": 7988,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 8180,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "Intel_PIE_Service.exe"
+    },
+    {
+      "pid": 7592,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 8740,
+      "parent_pid": 6088,
+      "executable_path": null,
+      "name": "AggregatorHost.exe"
+    },
+    {
+      "pid": 6012,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5996,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 7952,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 10744,
+      "parent_pid": 7952,
+      "executable_path": null,
+      "name": "NgcIso.exe"
+    },
+    {
+      "pid": 9704,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5496,
+      "parent_pid": 2516,
+      "executable_path": null,
+      "name": "NVDisplay.Container.exe"
+    },
+    {
+      "pid": 4940,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 6612,
+      "parent_pid": 10888,
+      "executable_path": null,
+      "name": "AVGBrowserUpdate.exe"
+    },
+    {
+      "pid": 5316,
+      "parent_pid": 1984,
+      "executable_path": null,
+      "name": "unsecapp.exe"
+    },
+    {
+      "pid": 6844,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 6356,
+      "parent_pid": 5960,
+      "executable_path": null,
+      "name": "BraveCrashHandler.exe"
+    },
+    {
+      "pid": 8016,
+      "parent_pid": 5960,
+      "executable_path": null,
+      "name": "BraveCrashHandler64.exe"
+    },
+    {
+      "pid": 5636,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3500,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3236,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 7160,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 7712,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 8412,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 4752,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5808,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5052,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 8716,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3536,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "SecurityHealthService.exe"
+    },
+    {
+      "pid": 6940,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 6780,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 7924,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 8060,
+      "parent_pid": 7324,
+      "executable_path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\ipf_cpu.inf_amd64_cf5beef3831571d4\\ipf_helper.exe",
+      "name": "ipf_helper.exe"
+    },
+    {
+      "pid": 8108,
+      "parent_pid": 6168,
+      "executable_path": null,
+      "name": "DAX3API.exe"
+    },
+    {
+      "pid": 2964,
+      "parent_pid": 3480,
+      "executable_path": "C:\\Windows\\System32\\sihost.exe",
+      "name": "sihost.exe"
+    },
+    {
+      "pid": 4708,
+      "parent_pid": 5612,
+      "executable_path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\asussci2.inf_amd64_197d319fab43e0fe\\ASUSOptimization\\AsusOptimizationStartupTask.exe",
+      "name": "AsusOptimizationStartupTask.exe"
+    },
+    {
+      "pid": 7100,
+      "parent_pid": 1752,
+      "executable_path": "C:\\Windows\\System32\\svchost.exe",
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 5672,
+      "parent_pid": 1752,
+      "executable_path": "C:\\Windows\\System32\\svchost.exe",
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 3628,
+      "parent_pid": 1752,
+      "executable_path": "C:\\Windows\\System32\\svchost.exe",
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 4596,
+      "parent_pid": 3168,
+      "executable_path": "C:\\Windows\\System32\\taskhostw.exe",
+      "name": "taskhostw.exe"
+    },
+    {
+      "pid": 11416,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 12136,
+      "parent_pid": 6112,
+      "executable_path": "C:\\Program Files\\ASUS\\Armoury Crate Service\\ArmouryCrate.UserSessionHelper.exe",
+      "name": "ArmouryCrate.UserSessionHelper.exe"
+    },
+    {
+      "pid": 12180,
+      "parent_pid": 12136,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 11440,
+      "parent_pid": 2964,
+      "executable_path": "C:\\Windows\\System32\\ShellHost.exe",
+      "name": "ShellHost.exe"
+    },
+    {
+      "pid": 11428,
+      "parent_pid": 11516,
+      "executable_path": "C:\\Windows\\explorer.exe",
+      "name": "explorer.exe"
+    },
+    {
+      "pid": 11368,
+      "parent_pid": 2964,
+      "executable_path": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe",
+      "name": "CrossDeviceResume.exe"
+    },
+    {
+      "pid": 13600,
+      "parent_pid": 12136,
+      "executable_path": "C:\\Program Files\\ASUS\\Armoury Crate Service\\DenoiseAIPlugin\\ArmouryCrate.DenoiseAI.exe",
+      "name": "ArmouryCrate.DenoiseAI.exe"
+    },
+    {
+      "pid": 13656,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\realtekservice.inf_amd64_2d0366e4f3ea0eab\\RtkAudUService64.exe",
+      "name": "RtkAudUService64.exe"
+    },
+    {
+      "pid": 14164,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\\CrossDeviceService.exe",
+      "name": "CrossDeviceService.exe"
+    },
+    {
+      "pid": 15232,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 15460,
+      "parent_pid": 1752,
+      "executable_path": "C:\\Windows\\System32\\svchost.exe",
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 16188,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 16416,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe",
+      "name": "SearchHost.exe"
+    },
+    {
+      "pid": 16516,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.Client.WebExperience_526.21100.40.0_x64__cw5n1h2txyewy\\WidgetBoard.exe",
+      "name": "WidgetBoard.exe"
+    },
+    {
+      "pid": 16548,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe",
+      "name": "StartMenuExperienceHost.exe"
+    },
+    {
+      "pid": 16676,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 16900,
+      "parent_pid": 1752,
+      "executable_path": "C:\\Windows\\System32\\svchost.exe",
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 17152,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Program Files\\WindowsApps\\Microsoft.WidgetsPlatformRuntime_1.6.19.0_x64__8wekyb3d8bbwe\\WidgetService\\WidgetService.exe",
+      "name": "WidgetService.exe"
+    },
+    {
+      "pid": 17632,
+      "parent_pid": 16416,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 17772,
+      "parent_pid": 17632,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 18056,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.5.14.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe",
+      "name": "ArmouryCrate.exe"
+    },
+    {
+      "pid": 19000,
+      "parent_pid": 17632,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 19028,
+      "parent_pid": 17632,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 19412,
+      "parent_pid": 17632,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 18572,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\oobe\\UserOOBEBroker.exe",
+      "name": "UserOOBEBroker.exe"
+    },
+    {
+      "pid": 20024,
+      "parent_pid": 17632,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 20544,
+      "parent_pid": 5292,
+      "executable_path": "C:\\Windows\\System32\\ctfmon.exe",
+      "name": "ctfmon.exe"
+    },
+    {
+      "pid": 20764,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe",
+      "name": "PhoneExperienceHost.exe"
+    },
+    {
+      "pid": 5508,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe",
+      "name": "TextInputHost.exe"
+    },
+    {
+      "pid": 13336,
+      "parent_pid": 11428,
+      "executable_path": "C:\\Windows\\System32\\SecurityHealthSystray.exe",
+      "name": "SecurityHealthSystray.exe"
+    },
+    {
+      "pid": 2752,
+      "parent_pid": 11428,
+      "executable_path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\realtekservice.inf_amd64_2d0366e4f3ea0eab\\RtkAudUService64.exe",
+      "name": "RtkAudUService64.exe"
+    },
+    {
+      "pid": 24452,
+      "parent_pid": 11428,
+      "executable_path": "C:\\Program Files\\WindowsApps\\MSTeams_26260.1701.5139.3736_x64__8wekyb3d8bbwe\\ms-teams.exe",
+      "name": "ms-teams.exe"
+    },
+    {
+      "pid": 12256,
+      "parent_pid": 24452,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 13928,
+      "parent_pid": 12256,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 23888,
+      "parent_pid": 12256,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 23912,
+      "parent_pid": 12256,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 2128,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 23804,
+      "parent_pid": 12256,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 24276,
+      "parent_pid": 12256,
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.45\\msedgewebview2.exe",
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 24716,
+      "parent_pid": 2964,
+      "executable_path": "C:\\Program Files\\WindowsApps\\Microsoft.SurfaceWirelessDisplayAdapter_4.232.137.0_x64__8wekyb3d8bbwe\\Desktop\\WDADesktopService.exe",
+      "name": "WDADesktopService.exe"
+    },
+    {
+      "pid": 21688,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe",
+      "name": "ShellExperienceHost.exe"
+    },
+    {
+      "pid": 23548,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 22196,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Program Files\\WindowsApps\\Microsoft.StartExperiencesApp_1.398.2.0_x64__8wekyb3d8bbwe\\MicrosoftStartFeedProvider\\MicrosoftStartFeedProvider.exe",
+      "name": "MicrosoftStartFeedProvider.exe"
+    },
+    {
+      "pid": 21968,
+      "parent_pid": 22884,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 24152,
+      "parent_pid": 22756,
+      "executable_path": "C:\\Program Files (x86)\\ExpressVPN\\expressvpn-ui\\ExpressVPNNotificationService.exe",
+      "name": "ExpressVPNNotificationService.exe"
+    },
+    {
+      "pid": 18200,
+      "parent_pid": 25852,
+      "executable_path": "C:\\Program Files\\WindowsApps\\B9ECED6F.ASUSPCAssistant_4.0.77.0_x64__qmba6cd70vzyy\\HwAdjustPage\\ATK Package\\AsusOSD.exe",
+      "name": "AsusOSD.exe"
+    },
+    {
+      "pid": 23064,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 11824,
+      "parent_pid": 1752,
+      "executable_path": "C:\\Windows\\System32\\svchost.exe",
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 28420,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 31080,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\dllhost.exe",
+      "name": "dllhost.exe"
+    },
+    {
+      "pid": 12452,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\SysWOW64\\dllhost.exe",
+      "name": "dllhost.exe"
+    },
+    {
+      "pid": 27204,
+      "parent_pid": 21964,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 16156,
+      "parent_pid": 27204,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\Programs\\Ollama\\ollama app.exe",
+      "name": "ollama app.exe"
+    },
+    {
+      "pid": 3056,
+      "parent_pid": 16156,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+      "name": "ollama.exe"
+    },
+    {
+      "pid": 29412,
+      "parent_pid": 3056,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 11928,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "logioptionsplus_updater.exe"
+    },
+    {
+      "pid": 28268,
+      "parent_pid": 13488,
+      "executable_path": "C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_agent.exe",
+      "name": "logioptionsplus_agent.exe"
+    },
+    {
+      "pid": 14240,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\AppActions.exe",
+      "name": "AppActions.exe"
+    },
+    {
+      "pid": 22100,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\wbem\\unsecapp.exe",
+      "name": "unsecapp.exe"
+    },
+    {
+      "pid": 28836,
+      "parent_pid": 28268,
+      "executable_path": "C:\\Program Files\\LogiOptionsPlus\\logioptionsplus_appbroker.exe",
+      "name": "logioptionsplus_appbroker.exe"
+    },
+    {
+      "pid": 18736,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\ApplicationFrameHost.exe",
+      "name": "ApplicationFrameHost.exe"
+    },
+    {
+      "pid": 27848,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 19700,
+      "parent_pid": 1752,
+      "executable_path": "C:\\Windows\\System32\\svchost.exe",
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 9092,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 21572,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 12572,
+      "parent_pid": 5032,
+      "executable_path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\asussci2.inf_amd64_197d319fab43e0fe\\ASUSSoftwareManager\\AsusSoftwareManagerAgent.exe",
+      "name": "AsusSoftwareManagerAgent.exe"
+    },
+    {
+      "pid": 15612,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "vmcompute.exe"
+    },
+    {
+      "pid": 28960,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 7716,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 32464,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 71220,
+      "parent_pid": 3168,
+      "executable_path": "C:\\Windows\\System32\\taskhostw.exe",
+      "name": "taskhostw.exe"
+    },
+    {
+      "pid": 28384,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 71240,
+      "parent_pid": 1752,
+      "executable_path": "C:\\Windows\\System32\\svchost.exe",
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 207428,
+      "parent_pid": 1984,
+      "executable_path": null,
+      "name": "WmiPrvSE.exe"
+    },
+    {
+      "pid": 208620,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 207884,
+      "parent_pid": 1984,
+      "executable_path": null,
+      "name": "WmiPrvSE.exe"
+    },
+    {
+      "pid": 150812,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\dllhost.exe",
+      "name": "dllhost.exe"
+    },
+    {
+      "pid": 77900,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\dllhost.exe",
+      "name": "dllhost.exe"
+    },
+    {
+      "pid": 62220,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "LightingService.exe"
+    },
+    {
+      "pid": 191340,
+      "parent_pid": 205852,
+      "executable_path": "C:\\Program Files (x86)\\Western Digital\\Discovery\\Current\\WD Discovery.exe",
+      "name": "WD Discovery.exe"
+    },
+    {
+      "pid": 13436,
+      "parent_pid": 191340,
+      "executable_path": "C:\\Program Files (x86)\\Western Digital\\Discovery\\Current\\WD Discovery.exe",
+      "name": "WD Discovery.exe"
+    },
+    {
+      "pid": 8004,
+      "parent_pid": 191340,
+      "executable_path": "C:\\Program Files (x86)\\Western Digital\\Discovery\\Current\\WD Discovery.exe",
+      "name": "WD Discovery.exe"
+    },
+    {
+      "pid": 167708,
+      "parent_pid": 120180,
+      "executable_path": "C:\\Program Files (x86)\\Western Digital\\Discovery\\Current\\WDDiscoveryMonitor.exe",
+      "name": "WDDiscoveryMonitor.exe"
+    },
+    {
+      "pid": 52252,
+      "parent_pid": 191340,
+      "executable_path": "C:\\Program Files (x86)\\Western Digital\\Discovery\\Current\\WD Discovery.exe",
+      "name": "WD Discovery.exe"
+    },
+    {
+      "pid": 168276,
+      "parent_pid": 191340,
+      "executable_path": "C:\\Program Files (x86)\\Western Digital\\Discovery\\Current\\WD Discovery.exe",
+      "name": "WD Discovery.exe"
+    },
+    {
+      "pid": 160320,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 130572,
+      "parent_pid": 11428,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 7260,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 71000,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 178648,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 35816,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 211388,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 65776,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 37324,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 139780,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 78316,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 60916,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 188544,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 167156,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 210560,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 158676,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 155600,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 130204,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 133108,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe",
+      "name": "SystemSettings.exe"
+    },
+    {
+      "pid": 178100,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "OfficeClickToRun.exe"
+    },
+    {
+      "pid": 191644,
+      "parent_pid": 178100,
+      "executable_path": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\AppVShNotify.exe",
+      "name": "AppVShNotify.exe"
+    },
+    {
+      "pid": 176080,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "SearchIndexer.exe"
+    },
+    {
+      "pid": 182060,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 169136,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "ExpressVPN.SystemService.exe"
+    },
+    {
+      "pid": 107304,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "ExpressVPN.VpnService.exe"
+    },
+    {
+      "pid": 154048,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "ExpressVPN.AppService.exe"
+    },
+    {
+      "pid": 65172,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 210644,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 155408,
+      "parent_pid": 210644,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 186416,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 71936,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 207948,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 158016,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\bin\\9614f1d9b40d9c4f\\codex.exe",
+      "name": "codex.exe"
+    },
+    {
+      "pid": 175376,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 31620,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 207736,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe",
+      "name": "codex-computer-use-swift.exe"
+    },
+    {
+      "pid": 162144,
+      "parent_pid": 207736,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 114016,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 103944,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 138648,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 17440,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\bin\\9614f1d9b40d9c4f\\codex-code-mode-host.exe",
+      "name": "codex-code-mode-host.exe"
+    },
+    {
+      "pid": 69124,
+      "parent_pid": 17440,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 57104,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 133764,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 150384,
+      "parent_pid": 57104,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 76056,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 158520,
+      "parent_pid": 133764,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 113220,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 74988,
+      "parent_pid": 76056,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 181628,
+      "parent_pid": 113220,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 95384,
+      "parent_pid": 76056,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 180012,
+      "parent_pid": 113220,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 30120,
+      "parent_pid": 57104,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 63800,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 200728,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 152012,
+      "parent_pid": 200728,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 203820,
+      "parent_pid": 200728,
+      "executable_path": "C:\\Users\\devon\\.codex\\plugins\\cache\\openai-bundled\\chrome\\26.1007.71326\\extension-host\\windows\\x64\\extension-host.exe",
+      "name": "extension-host.exe"
+    },
+    {
+      "pid": 202996,
+      "parent_pid": 149576,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe",
+      "name": "OneDrive.exe"
+    },
+    {
+      "pid": 180572,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 160820,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 7560,
+      "parent_pid": 160820,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 140824,
+      "parent_pid": 160820,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 206128,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 173936,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 167148,
+      "parent_pid": 206128,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 205556,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 18680,
+      "parent_pid": 173936,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 25376,
+      "parent_pid": 205556,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 81944,
+      "parent_pid": 205556,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 128440,
+      "parent_pid": 206128,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 158700,
+      "parent_pid": 3168,
+      "executable_path": "C:\\Program Files (x86)\\Western Digital\\Discovery\\Current\\WD Device Agent.exe",
+      "name": "WD Device Agent.exe"
+    },
+    {
+      "pid": 69852,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "vds.exe"
+    },
+    {
+      "pid": 109608,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "MsMpEng.exe"
+    },
+    {
+      "pid": 39704,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "MpDefenderCoreService.exe"
+    },
+    {
+      "pid": 154560,
+      "parent_pid": 109608,
+      "executable_path": null,
+      "name": "DefenderAiPlatformHost.exe"
+    },
+    {
+      "pid": 46268,
+      "parent_pid": 109608,
+      "executable_path": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\DefenderSessionHelper.exe",
+      "name": "DefenderSessionHelper.exe"
+    },
+    {
+      "pid": 89272,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "NisSrv.exe"
+    },
+    {
+      "pid": 65988,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 7956,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 210316,
+      "parent_pid": 65988,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 123768,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 147816,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 165456,
+      "parent_pid": 7956,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 97612,
+      "parent_pid": 147816,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 108880,
+      "parent_pid": 123768,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 175256,
+      "parent_pid": 147816,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 840,
+      "parent_pid": 123768,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 136792,
+      "parent_pid": 7956,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 30304,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 172616,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 90060,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 127336,
+      "parent_pid": 30304,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 182868,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 21676,
+      "parent_pid": 182868,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 204820,
+      "parent_pid": 172616,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 191968,
+      "parent_pid": 90060,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 83672,
+      "parent_pid": 182868,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 56732,
+      "parent_pid": 90060,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 124696,
+      "parent_pid": 172616,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 145496,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 18704,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 124360,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 149916,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\bin\\9614f1d9b40d9c4f\\codex.exe",
+      "name": "codex.exe"
+    },
+    {
+      "pid": 16588,
+      "parent_pid": 149916,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 7696,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 3240,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 52768,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 129540,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 1008,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 151972,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\Microsoft\\OneDrive\\26.195.1006.0007\\FileCoAuth.exe",
+      "name": "FileCoAuth.exe"
+    },
+    {
+      "pid": 202268,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 11048,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 40232,
+      "parent_pid": 202268,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 175896,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 93812,
+      "parent_pid": 11048,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 124820,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 112028,
+      "parent_pid": 175896,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 209048,
+      "parent_pid": 124820,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 38572,
+      "parent_pid": 175896,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 94420,
+      "parent_pid": 124820,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 215272,
+      "parent_pid": 202268,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 27068,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 142280,
+      "parent_pid": 27068,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 151988,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 81948,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 157808,
+      "parent_pid": 151988,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 43844,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 134472,
+      "parent_pid": 81948,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 122324,
+      "parent_pid": 43844,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 113044,
+      "parent_pid": 81948,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 184704,
+      "parent_pid": 43844,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 148940,
+      "parent_pid": 151988,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 67840,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 107028,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 150600,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 190920,
+      "parent_pid": 107028,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 149000,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 153760,
+      "parent_pid": 150600,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 34760,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 36948,
+      "parent_pid": 149000,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 112400,
+      "parent_pid": 34760,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 70636,
+      "parent_pid": 149000,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 83360,
+      "parent_pid": 34760,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 21556,
+      "parent_pid": 107028,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 109436,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 61224,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 120848,
+      "parent_pid": 109436,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 34016,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 37768,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 150836,
+      "parent_pid": 61224,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 67560,
+      "parent_pid": 37768,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 127492,
+      "parent_pid": 34016,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 94676,
+      "parent_pid": 37768,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 184972,
+      "parent_pid": 34016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 34532,
+      "parent_pid": 61224,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 85304,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 132804,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 209260,
+      "parent_pid": 85304,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 178428,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 208592,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 48084,
+      "parent_pid": 132804,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 140724,
+      "parent_pid": 178428,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 108048,
+      "parent_pid": 208592,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 27340,
+      "parent_pid": 208592,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 10604,
+      "parent_pid": 178428,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 60632,
+      "parent_pid": 132804,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 80244,
+      "parent_pid": 132380,
+      "executable_path": "C:\\Windows\\UUS\\amd64\\MoNotificationUx.exe",
+      "name": "MoNotificationUx.exe"
+    },
+    {
+      "pid": 138328,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 175816,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 207840,
+      "parent_pid": 138328,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 65468,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 41504,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 84572,
+      "parent_pid": 175816,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 183908,
+      "parent_pid": 65468,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 120272,
+      "parent_pid": 41504,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 6808,
+      "parent_pid": 65468,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 209144,
+      "parent_pid": 41504,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 210008,
+      "parent_pid": 175816,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 181508,
+      "parent_pid": 3168,
+      "executable_path": "C:\\Program Files (x86)\\Western Digital\\Discovery\\Current\\Service\\WDDiscoveryService.exe",
+      "name": "WDDiscoveryService.exe"
+    },
+    {
+      "pid": 90452,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 67720,
+      "parent_pid": 90452,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 108656,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 193832,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 112120,
+      "parent_pid": 108656,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 166472,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 160120,
+      "parent_pid": 193832,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 157560,
+      "parent_pid": 166472,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 67276,
+      "parent_pid": 193832,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 182764,
+      "parent_pid": 166472,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 87592,
+      "parent_pid": 108656,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 67808,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 124260,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 57920,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 119104,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "name": "pwsh.exe"
+    },
+    {
+      "pid": 136428,
+      "parent_pid": 119104,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 89592,
+      "parent_pid": 119104,
+      "executable_path": "C:\\Program Files\\nodejs\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 19428,
+      "parent_pid": 176080,
+      "executable_path": null,
+      "name": "SearchProtocolHost.exe"
+    },
+    {
+      "pid": 748,
+      "parent_pid": 15612,
+      "executable_path": null,
+      "name": "vmwp.exe"
+    },
+    {
+      "pid": 151140,
+      "parent_pid": 748,
+      "executable_path": null,
+      "name": "vmmemWSL"
+    },
+    {
+      "pid": 95032,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\dllhost.exe",
+      "name": "dllhost.exe"
+    },
+    {
+      "pid": 132632,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\dllhost.exe",
+      "name": "dllhost.exe"
+    },
+    {
+      "pid": 186260,
+      "parent_pid": 6280,
+      "executable_path": "C:\\Program Files\\WSL\\wslrelay.exe",
+      "name": "wslrelay.exe"
+    },
+    {
+      "pid": 98700,
+      "parent_pid": 6280,
+      "executable_path": "C:\\Program Files\\WSL\\wslhost.exe",
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 76520,
+      "parent_pid": 98700,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 196312,
+      "parent_pid": 98700,
+      "executable_path": "C:\\Program Files\\WSL\\msrdc.exe",
+      "name": "msrdc.exe"
+    },
+    {
+      "pid": 143596,
+      "parent_pid": 6280,
+      "executable_path": "C:\\Program Files\\WSL\\wslhost.exe",
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 36812,
+      "parent_pid": 143596,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 51556,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 102160,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 118588,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 41140,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 54016,
+      "parent_pid": 51556,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 27160,
+      "parent_pid": 102160,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 59704,
+      "parent_pid": 41140,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 61152,
+      "parent_pid": 118588,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 48532,
+      "parent_pid": 41140,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 177000,
+      "parent_pid": 118588,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 153344,
+      "parent_pid": 51556,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 148216,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 180816,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 187516,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 120700,
+      "parent_pid": 148216,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 77932,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 190604,
+      "parent_pid": 180816,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 130492,
+      "parent_pid": 77932,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 57500,
+      "parent_pid": 187516,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 205624,
+      "parent_pid": 77932,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 81192,
+      "parent_pid": 187516,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 183712,
+      "parent_pid": 148216,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 61412,
+      "parent_pid": 176080,
+      "executable_path": null,
+      "name": "SearchFilterHost.exe"
+    },
+    {
+      "pid": 161052,
+      "parent_pid": 186840,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\Microsoft\\OneDrive\\26.195.1006.0007\\OneDrive.Sync.Service.exe",
+      "name": "OneDrive.Sync.Service.exe"
+    },
+    {
+      "pid": 34228,
+      "parent_pid": 176080,
+      "executable_path": null,
+      "name": "SearchFilterHost.exe"
+    },
+    {
+      "pid": 149464,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\backgroundTaskHost.exe",
+      "name": "backgroundTaskHost.exe"
+    },
+    {
+      "pid": 85700,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 82648,
+      "parent_pid": 11428,
+      "executable_path": "C:\\Program Files\\Docker\\Docker\\Docker Desktop.exe",
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 134400,
+      "parent_pid": 82648,
+      "executable_path": "C:\\Program Files\\Docker\\Docker\\resources\\com.docker.backend.exe",
+      "name": "com.docker.backend.exe"
+    },
+    {
+      "pid": 166208,
+      "parent_pid": 134400,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 154240,
+      "parent_pid": 134400,
+      "executable_path": "C:\\Program Files\\Docker\\Docker\\resources\\com.docker.backend.exe",
+      "name": "com.docker.backend.exe"
+    },
+    {
+      "pid": 52676,
+      "parent_pid": 154240,
+      "executable_path": "C:\\Program Files\\Docker\\Docker\\resources\\com.docker.build.exe",
+      "name": "com.docker.build.exe"
+    },
+    {
+      "pid": 175712,
+      "parent_pid": 154240,
+      "executable_path": "C:\\Program Files\\Docker\\Docker\\frontend\\Docker Desktop.exe",
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 56848,
+      "parent_pid": 154240,
+      "executable_path": "C:\\Program Files\\Docker\\cli-plugins\\docker-sandbox.exe",
+      "name": "docker-sandbox.exe"
+    },
+    {
+      "pid": 179100,
+      "parent_pid": 154240,
+      "executable_path": "C:\\Windows\\System32\\wsl.exe",
+      "name": "wsl.exe"
+    },
+    {
+      "pid": 158964,
+      "parent_pid": 154240,
+      "executable_path": "C:\\Windows\\System32\\wsl.exe",
+      "name": "wsl.exe"
+    },
+    {
+      "pid": 152904,
+      "parent_pid": 158964,
+      "executable_path": "C:\\Program Files\\WSL\\wsl.exe",
+      "name": "wsl.exe"
+    },
+    {
+      "pid": 89412,
+      "parent_pid": 179100,
+      "executable_path": "C:\\Program Files\\WSL\\wsl.exe",
+      "name": "wsl.exe"
+    },
+    {
+      "pid": 28932,
+      "parent_pid": 6280,
+      "executable_path": "C:\\Program Files\\WSL\\wslhost.exe",
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 584,
+      "parent_pid": 28932,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 126600,
+      "parent_pid": 6280,
+      "executable_path": "C:\\Program Files\\WSL\\wslhost.exe",
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 40648,
+      "parent_pid": 152904,
+      "executable_path": "C:\\Program Files\\WSL\\wslhost.exe",
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 169216,
+      "parent_pid": 126600,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 19920,
+      "parent_pid": 40648,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 137400,
+      "parent_pid": 89412,
+      "executable_path": "C:\\Program Files\\WSL\\wslhost.exe",
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 90776,
+      "parent_pid": 137400,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 60664,
+      "parent_pid": 28932,
+      "executable_path": "C:\\Program Files\\WSL\\msrdc.exe",
+      "name": "msrdc.exe"
+    },
+    {
+      "pid": 4748,
+      "parent_pid": 175712,
+      "executable_path": "C:\\Program Files\\Docker\\Docker\\frontend\\Docker Desktop.exe",
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 59612,
+      "parent_pid": 175712,
+      "executable_path": "C:\\Program Files\\Docker\\Docker\\frontend\\Docker Desktop.exe",
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 29864,
+      "parent_pid": 175712,
+      "executable_path": "C:\\Program Files\\Docker\\Docker\\frontend\\Docker Desktop.exe",
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 166492,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 46232,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 48480,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 103056,
+      "parent_pid": 166492,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 20292,
+      "parent_pid": 46232,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 158224,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 108952,
+      "parent_pid": 48480,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 172044,
+      "parent_pid": 158224,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 107652,
+      "parent_pid": 48480,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 40524,
+      "parent_pid": 158224,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 189004,
+      "parent_pid": 166492,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 202656,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 192340,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 115056,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 82256,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Windows\\System32\\cmd.exe",
+      "name": "cmd.exe"
+    },
+    {
+      "pid": 98200,
+      "parent_pid": 192340,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 185180,
+      "parent_pid": 202656,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 69772,
+      "parent_pid": 82256,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 180204,
+      "parent_pid": 115056,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 106952,
+      "parent_pid": 115056,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 201480,
+      "parent_pid": 82256,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 183200,
+      "parent_pid": 202656,
+      "executable_path": "C:\\Users\\devon\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\a9ba6825a525118c\\bin\\node_repl.exe",
+      "name": "node_repl.exe"
+    },
+    {
+      "pid": 138312,
+      "parent_pid": 65172,
+      "executable_path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe"
+    },
+    {
+      "pid": 182796,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "codex-windows-sandbox-service.exe"
+    },
+    {
+      "pid": 51852,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 88240,
+      "parent_pid": 1752,
+      "executable_path": null,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 137928,
+      "parent_pid": 89592,
+      "executable_path": "C:\\Program Files\\nodejs\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 95196,
+      "parent_pid": 137928,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 195936,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\backgroundTaskHost.exe",
+      "name": "backgroundTaskHost.exe"
+    },
+    {
+      "pid": 39448,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 83424,
+      "parent_pid": 1984,
+      "executable_path": "C:\\Windows\\System32\\backgroundTaskHost.exe",
+      "name": "backgroundTaskHost.exe"
+    },
+    {
+      "pid": 38188,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 69520,
+      "parent_pid": 130572,
+      "executable_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "name": "brave.exe"
+    },
+    {
+      "pid": 137316,
+      "parent_pid": 158016,
+      "executable_path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "name": "pwsh.exe"
+    },
+    {
+      "pid": 43204,
+      "parent_pid": 137316,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 122240,
+      "parent_pid": 137316,
+      "executable_path": "C:\\Program Files\\nodejs\\node.exe",
+      "name": "node.exe"
+    },
+    {
+      "pid": 134436,
+      "parent_pid": 137928,
+      "executable_path": "C:\\Windows\\System32\\wsl.exe",
+      "name": "wsl.exe"
+    },
+    {
+      "pid": 22236,
+      "parent_pid": 134436,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 132420,
+      "parent_pid": 134436,
+      "executable_path": "C:\\Program Files\\WSL\\wsl.exe",
+      "name": "wsl.exe"
+    },
+    {
+      "pid": 49208,
+      "parent_pid": 132420,
+      "executable_path": "C:\\Program Files\\WSL\\wslhost.exe",
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 39060,
+      "parent_pid": 49208,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 170284,
+      "parent_pid": 122240,
+      "executable_path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\census_repair_033\\supplier_sources\\HostProcessCensus033.exe",
+      "name": "HostProcessCensus033.exe"
+    },
+    {
+      "pid": 109668,
+      "parent_pid": 170284,
+      "executable_path": "C:\\Windows\\System32\\conhost.exe",
+      "name": "conhost.exe"
+    }
+  ],
+  "required_absent": [
+    1016,
+    12208,
+    19128,
+    25824,
+    28892,
+    30528,
+    34640,
+    40784,
+    41376,
+    42652,
+    48236,
+    49040,
+    50032,
+    52348,
+    53520,
+    54932,
+    55256,
+    56224,
+    59072,
+    65616,
+    65768,
+    65868,
+    67556,
+    73220,
+    74224,
+    77116,
+    84852,
+    85948,
+    92912,
+    92940,
+    93604,
+    93904,
+    96452,
+    100528,
+    102604,
+    104256,
+    108096,
+    109200,
+    111588,
+    118976,
+    121008,
+    122620,
+    124212,
+    125984,
+    127300,
+    137044,
+    137920,
+    139400,
+    143020,
+    143160,
+    144960,
+    151652,
+    157868,
+    158116,
+    159356,
+    160568,
+    160804,
+    160812,
+    163032,
+    163264,
+    163500,
+    164476,
+    165264,
+    167172,
+    168424,
+    173792,
+    176380,
+    182304,
+    182900,
+    183596,
+    184812,
+    185172,
+    186596,
+    187044,
+    189512,
+    192560,
+    194184,
+    198156,
+    203908,
+    204228
+  ],
+  "supplier": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\census_repair_033\\supplier_sources\\census_supplier_v33.mjs",
+    "bytes": 7764,
+    "sha256": "4249E64060B00D50D2E1C6C661F82C11C9B2D0C04D4726033B66CC359E74E340"
+  },
+  "supplier_qualification": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\census_repair_033\\supplier_sources\\SUPPLIER_QUALIFICATION_033.json",
+    "bytes": 19138,
+    "sha256": "F545C1CB78A3C854ACF7258D6E6F7771BF8E019BECB41661C26AAD93C420F7A7"
+  },
+  "dependencies": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\census_repair_033\\supplier_sources\\SUPPLIER_BINDING_033.json",
+      "bytes": 2831,
+      "sha256": "3BE9E0EA827D4C2CB0BF5D8679CDC3E4C206454AB9862FC5F43A9658007DBC6C"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\census_repair_033\\supplier_sources\\census_supplier_v33.mjs",
+      "bytes": 7764,
+      "sha256": "4249E64060B00D50D2E1C6C661F82C11C9B2D0C04D4726033B66CC359E74E340"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\census_repair_033\\supplier_sources\\HostProcessCensus033.cs",
+      "bytes": 8467,
+      "sha256": "CE130C0BE8D19A0901A4FC5A61A52E351D4FBA726059ADB785CD9E11E77885BC"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\census_repair_033\\supplier_sources\\HostProcessCensus033.exe",
+      "bytes": 9216,
+      "sha256": "A132AD692F43D9DC537E0AE1A93ECDAED7A57234C203AE21C1ED9EEA5F7EACF9"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\census_repair_033\\supplier_sources\\build_supplier_v33.mjs",
+      "bytes": 3017,
+      "sha256": "BF958EEB4BEB8E22D3DA183FC8702615F158BF72DADC6A3D32F5C3B2CA22F3BF"
+    },
+    {
+      "path": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+      "bytes": 2569832,
+      "sha256": "46809206887326D2D24DB1EFF1F3064DE972C3451ABE766B49111450A5E08E00"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\census_repair_033\\supplier_sources\\BUILD_033.json",
+      "bytes": 1931,
+      "sha256": "5A1A1EC6AB34CFA28CEF7722082E83477BD8A896C1257D25F0F6E54119F9789A"
+    }
+  ],
+  "prior_snapshots": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\scaling_measurement_034\\conditional_resume_034r_002\\RECOVERY_PROCESS_SNAPSHOT_R34.json",
+      "bytes": 136246,
+      "sha256": "A6A2131F3264FA43441C6FB5CC5F752B6AA627BADFD1BC6EE1B51A2EC9EADEBF"
+    },
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\targeted_receipt_proposal_035\\BEFORE_INTERRUPTION_035.json",
+      "bytes": 90774,
+      "sha256": "A4238C918F2891CA59704374A2D2DB2939E5BE170A06202EE3934DA26395C1B2"
+    }
+  ],
+  "interruption": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\targeted_receipt_proposal_035\\INTERRUPTION_RESULT_035.json",
+    "bytes": 90642,
+    "sha256": "444F012BABED558EC6F709BF896B1FBB1CE113B8724754D10D38BCF6700DF3D5"
+  },
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN"
+}

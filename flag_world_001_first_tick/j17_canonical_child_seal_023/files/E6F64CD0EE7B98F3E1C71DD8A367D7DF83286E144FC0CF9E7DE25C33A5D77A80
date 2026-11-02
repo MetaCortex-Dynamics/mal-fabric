@@ -1,0 +1,11 @@
+// Second host-only compilation, preserving the initial ABI-equivalent build.
+import fs from 'node:fs';import path from 'node:path';import {spawnSync} from 'node:child_process';import {fileURLToPath} from 'node:url';import {identity} from './generation_census_v1.mjs';
+const own=fileURLToPath(import.meta.url),home=path.dirname(own),exe=path.join(home,'generation_census_v2.exe'),output=path.join(home,'GENERATION_BUILD_V2.json');
+for(const p of[exe,output])if(fs.existsSync(p))throw Error('FRESH_BUILD_REQUIRED:'+p);
+const refs={source:identity(path.join(home,'generation_census_v1.cs')),module:identity(path.join(home,'generation_census_v1.mjs')),guard:identity(path.join(home,'generation_guard_v1.mjs')),builder:identity(own),compiler:identity(path.join(process.env.SystemRoot,'Microsoft.NET/Framework64/v4.0.30319/csc.exe'))};
+const argv=['/nologo','/target:exe','/platform:anycpu','/optimize+','/debug-','/warn:4','/out:generation_census_v2.exe','generation_census_v1.cs'];
+const started=new Date().toISOString(),r=spawnSync(refs.compiler.path,argv,{cwd:home,shell:false,windowsHide:true,encoding:'utf8',timeout:60000,maxBuffer:8388608});
+for(const ref of Object.values(refs))if(JSON.stringify(identity(ref.path))!==JSON.stringify(ref))throw Error('BUILD_INPUT_CHANGED');
+const value={schema:'GenerationCensusBuild038V1',verdict:r.status===0&&!r.error&&r.signal===null?'IF_THEN':'MAYBE',started,ended:new Date().toISOString(),...refs,executable:fs.existsSync(exe)?identity(exe):null,argv,status:r.status,signal:r.signal,error:r.error?String(r.error):null,stdout:r.stdout,stderr:r.stderr,prior_build:identity(path.join(home,'GENERATION_BUILD_V1.json')),gpu_execution:'NONE',process_execution:'COMPILER_ONLY'};
+fs.writeFileSync(output,JSON.stringify(value,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify(identity(output)));if(value.verdict!=='IF_THEN')process.exitCode=1;
+

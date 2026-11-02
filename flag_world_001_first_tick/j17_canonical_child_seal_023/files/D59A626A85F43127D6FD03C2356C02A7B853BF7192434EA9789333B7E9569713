@@ -1,0 +1,65 @@
+{
+  "schema": "CanonicalChildNativeObservation023",
+  "verdict": "IF_THEN",
+  "native": {
+    "source_sha256": "214A939BA5236C8804D1CE94DE6CBAE93364EA5E07D499FACF753346AE4A62D6",
+    "source_map_sha256": "77F1F5A961F86D3CE1627DD1BF09C8E0B5D7C78A402B8808EA044814DE3E25B7",
+    "image_sha256": "71970A871B65589C3B0BCB23A2574FB0728B5D6E8AC48E10D73CE564B903AAAA",
+    "readback_sha256": "F7F6F5737F4F7B06A5DF20E673B3A968143EBD43099098698EE93BA3B5AC0D50",
+    "proof_closure_sha256": "9F82351287DC2290690177C7AE6C77715D69B446F9F7DFB5C54333AC5CB2D96A",
+    "counts": {
+      "BASE_TRIAD": 80,
+      "REFINED_TRIAD": 320,
+      "SITE": 162,
+      "EDGE": 480,
+      "TRIAD": 320,
+      "FLAG": 1920,
+      "PAIR": 2880,
+      "DELTA": 1920,
+      "GAMMA": 1920,
+      "TAU": 1920,
+      "T_CHILD_PARENT": 320,
+      "T_CHILD_FACE": 320,
+      "T_FLAG_PARENT": 1920,
+      "T_FLAG_FACE": 1920,
+      "T_DOMAIN": 12
+    },
+    "baseline_semantic_sha256": "C6CC99B8A09A94806E8362ECC05A7C887C3AC821EF9A3D26E48BA24EDA756997"
+  },
+  "orientation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\replay_1\\ORIENTATION_TRANSPORT.json",
+    "bytes": 697790,
+    "sha256": "A0343CEC48A74DC1C30A332237CCA94CABEB40C6DA0B361C1DB475D92C32BD7E"
+  },
+  "record": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\replay_1\\CHILD_RECORD.json",
+    "bytes": 769815,
+    "sha256": "16C71F0A471F4AD4A26D5601ED6B0F79F4BB52C589DB2B0E5AB2AAC2EF521F30"
+  },
+  "proofs": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\replay_1\\PROOFS.json",
+    "bytes": 1804204,
+    "sha256": "9F82351287DC2290690177C7AE6C77715D69B446F9F7DFB5C54333AC5CB2D96A"
+  },
+  "facts": 34709,
+  "terms": 38189,
+  "epochs": 10,
+  "error": 0,
+  "progress": {
+    "kind": "progress",
+    "sample": "latest",
+    "elapsed_ms": 4496,
+    "sequence": 44406,
+    "epoch": 10,
+    "facts": 34709,
+    "terms": 38189,
+    "error": 0,
+    "phase": 9,
+    "rule": -1,
+    "pivot": -1,
+    "chunk": -1,
+    "candidates": 0,
+    "serial_candidate": -1
+  },
+  "world_effect": "NONE"
+}

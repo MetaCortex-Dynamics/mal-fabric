@@ -1,0 +1,21 @@
+{
+  "schema": "QueueGateStart027",
+  "queue_status": "ACTIVE",
+  "at": "2026-11-02T02:58:45.482Z",
+  "owner": {
+    "pid": 20716,
+    "started_observation": "2026-11-02T02:58:45.482Z"
+  },
+  "plan": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\QUEUE_PLAN.json",
+    "bytes": 19862,
+    "sha256": "D0084F653DBD2A639E989F13C055642DE29E92D6DA41CDB8EEE18C1856437781"
+  },
+  "implementation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\queuegate_027\\queuegate_runner.mjs",
+    "bytes": 16256,
+    "sha256": "2065C77ADC827238C6AFB22C5B9A7C753F9AA286206CEC2ADD1579E39209501D"
+  },
+  "world_effect": "NONE",
+  "selection": "NO_MEMBER_TAKEN"
+}

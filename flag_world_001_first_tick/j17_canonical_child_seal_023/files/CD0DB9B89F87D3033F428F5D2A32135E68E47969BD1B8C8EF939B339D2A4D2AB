@@ -1,0 +1,28 @@
+# Session contact packet
+
+Start with [the current v0.1.1 terminology binding](PROMOTION_BINDINGS_040.json), then [the predecessor terminology binding](PROMOTION_BINDINGS_039.json) and [the earlier promotion binding](PROMOTION_BINDINGS_024.json). The original MANIFEST.json, READOUT.json, VERIFICATION.json and contacts remain unchanged historical evidence.
+
+ERRATUM_E_WAVE_001 v0.1.1 is PROMOTED by Devon's explicit attestation:
+
+- Erratum: `81B5C6AD858624DB1B577524BFA983928F71D3BA19064725DB3706B6E1513E32` (10,373 bytes).
+- Receipt: `72493D5FFFED2921BF9D365F0D96BED5443BE5F32F9D27D6B93873C609A1A579`.
+- [Current occurrence map](../snapshot_effect_vocabulary_040/AMENDMENT_OCCURRENCE_MAP_040.json): all 19 occurrences accounted for; nine prior mapping operands discharged; L040 remains T1.
+- T2 joint assignment, T3 successor field and T4 joint candidate remain distinct. T4 carries all N2/N6 bindings and defines no replacement schema. T6 includes historical designations as well as identifiers.
+- W9's parser/component rule and W1–W8 are unchanged. O_DRC_FABRIC_REALIZATION_038 remains open. No source rename or world transition.
+
+The v0.1.0 entry below is retained genealogy; its unresolved-target status belongs to 039 before v0.1.1.
+
+ERRATUM_E_WAVE_001 v0.1.0 is promoted by Devon's receipt:
+
+- Erratum: `70C2D09347DB5F44A6A9F126A735A1FC4A04D695E2FE1EC566289D32E7998735` (6,622 bytes).
+- Receipt: `2D2144EB778C3DB2C37E1BF5BF86C1F3D4A6746A8F8E663B4093E1458729EFEF`.
+- Use SNAPSHOT_EFFECT_SET, JOINT_APPLICATION and LINK for their named subjects. The retired word and its underscore-delimited components are excluded in parsed law positions; historical identifiers remain genealogy.
+- [Occurrence mapping and binding](../snapshot_effect_vocabulary_039/README.md): unresolved targets are named by line, not silently replaced. The original amendment and DRC obligation remain unchanged.
+
+ERRATUM_E_FIRST_SHAPE_NO_PIECES_001 v0.1.3 is promoted by Devon's receipt:
+
+- Erratum: `E93318BCB508733174FB5D4D7622BF8F1ABFD80A8D6F6CC79FF4DA0C6E337BCC` (7,906 bytes).
+- Receipt: `19AD057BD1C3F3EF27480F8D292A54EC6E5FAE518BBFF0AAB17BE0E4C8D17B65`.
+- W9 is an additional parsed-position promotion check; W1–W8 are unchanged. Historical wording remains genealogy, not an edit target.
+
+Before promotion use [CHECK_FORM_PROMOTE.ps1](../CHECK_FORM_PROMOTE.ps1). [The integration record](../erratum_first_shape_promotion_024/README.md) identifies its native sources, tested scope and authority boundary. This entry-point binding performs no repository seal, commit or push.

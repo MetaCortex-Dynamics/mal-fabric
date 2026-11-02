@@ -1,0 +1,52 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+
+const self=fileURLToPath(import.meta.url);
+const root='D:/Dev/Codex/2026-10-04/new-chat';
+const home=root+'/j17_canonical_child_023',out=home+'/promotion_001';
+const contact=root+'/mal_fabric_flag_world_001/flag_world_001_first_tick/world_transition_contacts_007';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+function identity(p){const fd=fs.openSync(p,'r'),h=crypto.createHash('sha256'),buf=Buffer.alloc(1024*1024);let bytes=0;try{for(;;){const n=fs.readSync(fd,buf,0,buf.length,null);if(!n)break;bytes+=n;h.update(buf.subarray(0,n));}}finally{fs.closeSync(fd);}return{path:path.resolve(p),bytes,sha256:h.digest('hex').toUpperCase()};}
+function same(x){const y=identity(x.path);assert.equal(y.sha256,x.sha256,'NOT_SAME '+x.path);assert.equal(y.bytes,x.bytes);return y;}
+function pin(p,h){const x=identity(p);assert.equal(x.sha256,h,'PROMOTION_SUBJECT_NOT_SAME '+p);return x;}
+function write(p,text){fs.writeFileSync(p,text,{flag:'wx'});return identity(p);}
+function save(p,obj){return write(p,JSON.stringify(obj,null,2)+'\n');}
+
+assert.ok(!fs.existsSync(out),'PRESERVE_EXISTING_PROMOTION');
+assert.ok(!fs.existsSync(home+'/README.md'),'PRESERVE_EXISTING_ENTRY');
+assert.ok(!fs.existsSync(contact+'/PROMOTION_BINDING_J17_CHILD_023.json'),'PRESERVE_EXISTING_CONTACT_BINDING');
+const child=pin(home+'/J17_CANONICAL_CHILD_4_0.json','16C71F0A471F4AD4A26D5601ED6B0F79F4BB52C589DB2B0E5AB2AAC2EF521F30');
+const run=pin(home+'/RUN_RECORD_023.json','ED6549D33B1E6DB7C9344CE278E61186CCB0AB666B171130F79A5C1FD3862581');
+const manifest=pin(home+'/MANIFEST_023.json','75397E43228E4BCE58DACE232D9A0D38012C6C301C0E465A42139041366FFAED');
+const rr=read(run.path),cr=read(child.path),mm=read(manifest.path);
+assert.equal(mm.artifacts.length,95);mm.artifacts.forEach(same);
+same(rr.child);same(mm.child);same(mm.run_record);same(rr.qualification);same(rr.queuegate.closure);
+assert.equal(rr.verdict,'IF_THEN');assert.equal(rr.queuegate.queue_status,'EMPTY');assert.equal(rr.queuegate.artifact_gate,'PASSED');
+assert.deepEqual(rr.replay,{native_readbacks:'SAME',child_records:'SAME',proof_closures:'SAME',runs:3,replays:2});
+assert.equal(rr.scope.world_transition,'NONE');assert.equal(rr.scope.operation_038,'PAUSED');
+assert.equal(cr.m,4);assert.equal(cr.n,0);assert.equal(cr.kappa.entries.length,12);
+assert.equal(cr.genealogy.parent.head,'501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c');
+assert.equal(cr.genealogy.within_record_self_hash,'NONE');
+const before=rr.world_after.map(same),entryBefore=identity(contact+'/README.md');
+const entryBytes=fs.readFileSync(entryBefore.path);
+const recorded=new Date().toISOString();
+const attestation='Promote the canonical (4,0) J17 child record, bound to run record 023. Keep 038 paused; no world transition, commit or push.';
+const scope={promoted_subject:'Canonical (4,0) J17 child record, version0.1.0',qualification_binding:'RUN_RECORD_023',record_bytes:'UNCHANGED',world_transition:'NONE',committed_world_head:cr.genealogy.parent.head,operation_038:'PAUSED',additional_gpu_execution:'NONE',commit:'NONE',push:'NONE'};
+fs.mkdirSync(out);fs.copyFileSync(self,out+'/promote_023.mjs',fs.constants.COPYFILE_EXCL);
+const receipt=write(out+'/RECEIPT_PROMOTE_J17_CANONICAL_CHILD_4_0_023.md',`# Promotion receipt — canonical (4,0) J17 child record\n\nACT := PROMOTE\nAUTHORITY := Devon\nATTESTATION := ${JSON.stringify(attestation)}\nRECORDED_AT_UTC := ${recorded}\nRECORDER := Codex, EXECUTE of Devon's explicit attestation\nSTATUS := PROMOTED\n\nThe promoted subject is the exact canonical child record below, bound to run record 023. The receipt records Devon's act; it does not alter the frozen child or execution evidence.\n\n| Subject | Bytes | SHA-256 |\n|---|---:|---|\n| J17_CANONICAL_CHILD_4_0.json | ${child.bytes} | ${child.sha256} |\n| RUN_RECORD_023.json | ${run.bytes} | ${run.sha256} |\n| MANIFEST_023.json | ${manifest.bytes} | ${manifest.sha256} |\n\nThe files reside in the parent directory of this receipt. All 95 entries of MANIFEST_023.json were re-read SAME by size and hash before recording this promotion. QueueGate is EMPTY with its artifact gate PASSED; closure SHA-256 ${rr.queuegate.closure.sha256}. Construction and two replays have byte-SAME native readbacks, exported child records and proof closures.\n\n## Bound construction\n\n- Coordinates: (4,0), constructed from the recorded (2,0) parent.\n- Orientation and chirality: inherited 012 seated frame, with native relative oriented child transport. Sorted tuple permutations remain serialization witnesses.\n- κ: all twelve inherited domain identities.\n- Refinement law: the exact recorded native one-to-four recipe and custody sources named in the child record.\n- Genealogy: parent g₃ head ${cr.genealogy.parent.head}; predecessor, pair, field and witness identities remain separately bound. No within-record self-hash.\n\nThe child's frozen PREPARED_FOR_DEVON_PROMOTE status and the run's FOR_DEVON wording record the earlier preparation. The present authority status is PROMOTED through this receipt; those historical bytes remain unchanged.\n\n## Scope\n\nPromotion binds this canonical child record to run023. It does not append the child to the J17 worldline, enact refinement, change a committed field or witness, resume038, or independently promote a general successor trigger. The J17 committed head remains g₃. All three watched committed world files were re-read SAME. No additional GPU execution, repository commit or push is performed.\n`);
+const binding=save(out+'/PROMOTION_BINDING_023.json',{schema:'J17CanonicalChildPromotionBinding023',status:'PROMOTED',authority:'Devon',attestation,recorded_at_utc:recorded,receipt,child,run_record:run,execution_manifest:manifest,queuegate:rr.queuegate,scope});
+const verification=save(out+'/PROMOTION_VERIFICATION_023.json',{schema:'J17CanonicalChildPromotionVerification023',verdict:'IF_THEN',child:same(child),run_record:same(run),manifest:same(manifest),artifact_count:mm.artifacts.length,artifacts:'SAME',queuegate_closure:same(rr.queuegate.closure),replay:rr.replay,world_before:before,world_after:before.map(same),scope});
+const readme=write(home+'/README.md',`# Canonical (4,0) J17 child — PROMOTED\n\nDevon promoted [J17_CANONICAL_CHILD_4_0.json](J17_CANONICAL_CHILD_4_0.json), SHA-256 \`${child.sha256}\`, bound to [RUN_RECORD_023.json](RUN_RECORD_023.json), SHA-256 \`${run.sha256}\`.\n\nRead the [promotion receipt](promotion_001/RECEIPT_PROMOTE_J17_CANONICAL_CHILD_4_0_023.md) and [binding](promotion_001/PROMOTION_BINDING_023.json). The frozen preparation metadata is genealogy; the receipt carries the present promotion.\n\nConstruction plus two RTX3070 replays are byte-SAME; QueueGate is closed. [MANIFEST_023.json](MANIFEST_023.json) retains all 95 execution artifact identities.\n\nThe record carries inherited orientation and chirality, all twelve κ identities, the recorded refinement recipe and g₃'s full parent head. J17 remains at that committed head. 038 stays paused; no world transition, commit or push.\n`);
+const packetBinding=save(contact+'/PROMOTION_BINDING_J17_CHILD_023.json',{schema:'J17CanonicalChildSessionBinding023',status:'PROMOTED',promotion:binding,receipt,child,run_record:run,execution_manifest:manifest,local_entry:readme,scope});
+same(entryBefore);fs.copyFileSync(entryBefore.path,out+'/CONTACT_README_PREDECESSOR.md',fs.constants.COPYFILE_EXCL);
+const addition=`\n## Canonical J17 child record — promoted\n\n[Canonical (4,0) child promotion](PROMOTION_BINDING_J17_CHILD_023.json): Devon promoted child \`${child.sha256}\`, bound to run023 \`${run.sha256}\`. Receipt: \`${receipt.sha256}\`. The preparation bytes and execution evidence are unchanged. This is a record promotion: J17's committed head remains g₃, 038 stays PAUSED, and no world transition, commit or push is performed.\n`;
+fs.writeFileSync(entryBefore.path,Buffer.concat([entryBytes,Buffer.from(addition)]));
+const entryAfter=identity(entryBefore.path);
+const entries=save(out+'/ENTRY_BINDINGS_023.json',{schema:'J17ChildEntryBindings023',local_entry:readme,session_binding:packetBinding,session_readme_before:entryBefore,session_readme_after:entryAfter,predecessor_copy:identity(out+'/CONTACT_README_PREDECESSOR.md'),change:'APPENDED_PROMOTION_LOCATOR_ONLY'});
+mm.artifacts.forEach(same);before.forEach(same);same(child);same(run);same(manifest);
+const outputs=[receipt,binding,verification,readme,packetBinding,entryAfter,entries,identity(out+'/CONTACT_README_PREDECESSOR.md'),identity(out+'/promote_023.mjs')];
+const promotionManifest=save(out+'/PROMOTION_MANIFEST_023.json',{schema:'J17CanonicalChildPromotionManifest023',status:'PROMOTED',recorded_at_utc:recorded,subjects:{child,run_record:run,execution_manifest:manifest},outputs,execution_artifacts_verified:95,world:'SAME',scope});outputs.forEach(same);
+console.log(JSON.stringify({verdict:'IF_THEN',status:'PROMOTED',child,run_record:run,receipt,binding,promotion_manifest:promotionManifest,world:'SAME',operation_038:'PAUSED',commit:'NONE',push:'NONE'}));

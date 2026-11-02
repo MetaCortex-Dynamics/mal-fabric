@@ -1,0 +1,45 @@
+{
+  "schema": "J17CanonicalChildSessionBinding023",
+  "status": "PROMOTED",
+  "promotion": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\promotion_001\\PROMOTION_BINDING_023.json",
+    "bytes": 1957,
+    "sha256": "482130946897E876EE6E9B2DDEF2B3862521BF101D86AFE3C5B4DEAE4391D0DD"
+  },
+  "receipt": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\promotion_001\\RECEIPT_PROMOTE_J17_CANONICAL_CHILD_4_0_023.md",
+    "bytes": 2517,
+    "sha256": "CFE155487C312896E8F45817C0F1AFE99C60160129EFAAB65C3C70326B0343DE"
+  },
+  "child": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\J17_CANONICAL_CHILD_4_0.json",
+    "bytes": 769815,
+    "sha256": "16C71F0A471F4AD4A26D5601ED6B0F79F4BB52C589DB2B0E5AB2AAC2EF521F30"
+  },
+  "run_record": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\RUN_RECORD_023.json",
+    "bytes": 29810,
+    "sha256": "ED6549D33B1E6DB7C9344CE278E61186CCB0AB666B171130F79A5C1FD3862581"
+  },
+  "execution_manifest": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\MANIFEST_023.json",
+    "bytes": 21738,
+    "sha256": "75397E43228E4BCE58DACE232D9A0D38012C6C301C0E465A42139041366FFAED"
+  },
+  "local_entry": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\README.md",
+    "bytes": 956,
+    "sha256": "41796C68EEB338D0BFB284E2A10DB96AF13080298D0240305E98C02ABEF5813F"
+  },
+  "scope": {
+    "promoted_subject": "Canonical (4,0) J17 child record, version0.1.0",
+    "qualification_binding": "RUN_RECORD_023",
+    "record_bytes": "UNCHANGED",
+    "world_transition": "NONE",
+    "committed_world_head": "501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c",
+    "operation_038": "PAUSED",
+    "additional_gpu_execution": "NONE",
+    "commit": "NONE",
+    "push": "NONE"
+  }
+}

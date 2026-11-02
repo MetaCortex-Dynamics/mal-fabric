@@ -1,0 +1,60 @@
+// Versioned operational census only. Import has no process/file side effects.
+// generationBinding() verifies the completed host qualification on every call.
+// checkCurrentProcesses() emits a fresh complete census and keeps all diagnostics.
+// No GPU, lock mutation, native-engine work, guard wiring, fallback or retry.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+import {TextDecoder} from 'node:util';
+import {validateSnapshot,evaluateGenerations,cutoffFiletime,descendants} from './generation_guard_v1.mjs';
+const own=fileURLToPath(import.meta.url),home=path.dirname(own);
+const need=(x,m)=>{if(!x)throw Error(m);},sha=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
+export const LIMIT_MS=15000,MAX_BUFFER=8388608;
+export function identity(p){const q=fs.realpathSync.native(p),b=fs.readFileSync(q);return{path:q,bytes:b.length,sha256:sha(b)};}
+const eq=(a,b)=>a&&b&&path.resolve(a.path).toLowerCase()===path.resolve(b.path).toLowerCase()&&a.bytes===b.bytes&&a.sha256===b.sha256;
+const verify=r=>{need(eq(identity(r.path),r),'GENERATION_INPUT_NOT_SAME:'+r.path);return r;};
+function read(r){verify(r);const b=fs.readFileSync(r.path);need(b.length===r.bytes&&sha(b)===r.sha256,'GENERATION_READ_NOT_SAME');return JSON.parse(b);}
+function save(p,v){const b=Buffer.from(JSON.stringify(v,null,2)+'\n'),fd=fs.openSync(p,'wx');try{fs.writeFileSync(fd,b);fs.fsyncSync(fd);}finally{fs.closeSync(fd);}need(fs.readFileSync(p).equals(b),'GENERATION_RECORD_READBACK_NOT_SAME');return identity(p);}
+export function generationBinding(){
+ const qualification=identity(path.join(home,'GENERATION_QUALIFICATION_V1.json')),q=read(qualification);
+ need(q.schema==='GenerationCensusQualification038V1'&&q.verdict==='IF_THEN'&&q.gpu_execution==='NONE'&&q.guard_wiring==='NOT_PERFORMED','GENERATION_QUALIFICATION_NOT_SAME');
+ const build=read(q.build);
+ need(build.schema==='GenerationCensusBuild038V1'&&build.verdict==='IF_THEN'&&eq(build.module,identity(own)),'GENERATION_BUILD_NOT_SAME');
+ for(const r of[build.module,build.guard,build.source,build.builder,build.compiler,build.executable,q.qualifier])verify(r);
+ const identities=[qualification,q.build,build.module,build.guard,build.source,build.builder,build.compiler,build.executable,q.qualifier];
+ return{module:build.module,guard:build.guard,helper_source:build.source,helper_executable:build.executable,qualification,build:q.build,identities};
+}
+export function validateAbsence(absenceRef,requiredAbsent){
+ const old=read(absenceRef);
+ need(old.coverage==='ALL_HOST_PROCESSES'&&Array.isArray(old.processes)&&old.processes.length>0&&Array.isArray(old.required_absent)&&old.required_absent.length>0,'ABSENCE_DOMAIN_UNSUPPLIED');
+ const canon=a=>[...new Set(a)].sort((x,y)=>x-y);
+ need(JSON.stringify(canon(requiredAbsent))===JSON.stringify(canon(old.required_absent)),'ABSENCE_REQUIRED_DOMAIN_NOT_SAME');
+ need(requiredAbsent.every(p=>Number.isSafeInteger(p)&&p>0),'ABSENCE_PID_SHAPE');
+ const implicated=descendants(old.processes,old.required_absent);
+ need(!old.processes.some(r=>implicated.has(r.pid)),'ABSENCE_CONTAINS_PROTECTED_GENERATION');
+ return{at:old.at,cutoff_filetime:cutoffFiletime(old.at),required_absent:canon(requiredAbsent)};
+}
+export function checkCurrentProcesses(absenceRef,requiredAbsent,nativeExecutables,options={}){
+ const binding=generationBinding(),absence=validateAbsence(absenceRef,requiredAbsent);
+ for(const r of nativeExecutables)verify(r);
+ const root=options.outputDirectory??path.join(home,'invocations');fs.mkdirSync(root,{recursive:true});
+ need(path.resolve(fs.realpathSync.native(root)).toLowerCase()===path.resolve(root).toLowerCase(),'GENERATION_DIAGNOSTIC_ALIAS');
+ const dir=fs.mkdtempSync(path.join(root,'call_'));
+ const start=save(path.join(dir,'START.json'),{schema:'GenerationCensusStart038V1',at:new Date().toISOString(),caller_pid:process.pid,parent_pid:process.ppid,binding,absence:absenceRef,required_absent:requiredAbsent,native_executables:nativeExecutables,timeout_ms:LIMIT_MS,argv:[],retry:'NONE',gpu_execution:'NONE'});
+ let r;try{r=spawnSync(binding.helper_executable.path,[],{shell:false,windowsHide:true,encoding:null,timeout:LIMIT_MS,maxBuffer:MAX_BUFFER});}catch(e){r={status:null,signal:null,error:e,pid:0,stdout:Buffer.alloc(0),stderr:Buffer.alloc(0)};}
+ const out=Buffer.isBuffer(r.stdout)?r.stdout:Buffer.from(r.stdout??''),err=Buffer.isBuffer(r.stderr)?r.stderr:Buffer.from(r.stderr??'');
+ let result=null,rows=null,condition=null;
+ try{
+  need(r.status===0&&r.signal===null&&!r.error&&err.length===0&&out.length>0&&out.length<=MAX_BUFFER,'GENERATION_CENSUS_UNCLOSED');
+  const envelope=JSON.parse(new TextDecoder('utf8',{fatal:true}).decode(out));
+  rows=validateSnapshot(envelope,{callerPid:process.pid,parentPid:process.ppid,helperPid:r.pid});
+  result=evaluateGenerations(rows,requiredAbsent,absence.cutoff_filetime,nativeExecutables);
+  for(const x of binding.identities)verify(x);verify(absenceRef);for(const x of nativeExecutables)verify(x);
+ }catch(e){condition=e.message;}
+ const diagnostic=save(path.join(dir,'DIAGNOSTIC.json'),{schema:'GenerationCensusDiagnostic038V1',verdict:condition?'MAYBE':'IF_THEN',start,at:new Date().toISOString(),helper_pid:r.pid??null,status:r.status??null,signal:r.signal??null,error:r.error?{name:r.error.name,message:r.error.message,code:r.error.code??null}:null,stdout:{bytes:out.length,sha256:sha(out),utf8:out.toString('utf8')},stderr:{bytes:err.length,sha256:sha(err),utf8:err.toString('utf8')},condition,result,rows,absence:absenceRef,absence_cutoff_filetime:absence.cutoff_filetime,retry:'NONE',fallback:'NONE',gpu_execution:'NONE',world_effect:'NONE'});
+ if(condition){const e=Error(condition);e.diagnostic=diagnostic;throw e;}
+ return{...result,at:new Date().toISOString(),rows,diagnostic,absence:absenceRef,binding};
+}
+

@@ -1,0 +1,24 @@
+{
+  "schema": "FabricBindingSealBuildClosed023",
+  "manifest": {
+    "sha256": "0F5490058FDBCA157F361946A6A0301FFDB4FE5CC25841513DAE66C562B0CB2E",
+    "bytes": 224425
+  },
+  "source_entries": 160,
+  "unique_content": 126,
+  "source_inventory": {
+    "path": "SOURCE_INVENTORY.json",
+    "sha256": "6FF38417674FF7E44B4EA4AB55E300E0567C416F46D0CEBD1E152A2848DC0D75",
+    "bytes": 66355
+  },
+  "scope": {
+    "promoted_subject": "CANONICAL_J17_CHILD_4_0",
+    "qualification": "RUN_RECORD_023",
+    "operation_038": "PAUSED",
+    "world_transition": "NONE",
+    "gpu_rerun": "NONE",
+    "new_promotion": "NONE",
+    "publication": "COMMIT_AND_PUSH_REVIEW_BRANCH",
+    "merge": "NOT_AUTHORIZED_BY_THIS_INVOCATION"
+  }
+}

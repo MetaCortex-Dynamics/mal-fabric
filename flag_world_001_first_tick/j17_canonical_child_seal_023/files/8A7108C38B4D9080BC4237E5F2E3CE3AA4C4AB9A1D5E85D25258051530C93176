@@ -1,0 +1,164 @@
+// Observes emitted native witnesses only. No carrier generation or field update.
+// The parent seating reference is supplied by the enclosing custody record.
+const slots = ['CENTRE', 'CORNER_A', 'CORNER_B', 'CORNER_C'];
+const originFor = { CORNER_A: 'CT23_ORIENT_A', CORNER_B: 'CT23_ORIENT_B', CORNER_C: 'CT23_ORIENT_C', CENTRE: 'CT23_ORIENT_CENTRE' };
+const permutations = {
+  PERM_ABC: { order: [0, 1, 2], parity: 'EVEN' },
+  PERM_ACB: { order: [0, 2, 1], parity: 'ODD' },
+  PERM_BAC: { order: [1, 0, 2], parity: 'ODD' },
+  PERM_BCA: { order: [1, 2, 0], parity: 'EVEN' },
+  PERM_CAB: { order: [2, 0, 1], parity: 'EVEN' },
+  PERM_CBA: { order: [2, 1, 0], parity: 'ODD' }
+};
+const need = (condition, name) => { if (!condition) throw new Error('NOT_SAME CT23 ' + name); };
+const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+const key = (...parts) => JSON.stringify(parts);
+const undirected = (a, b) => key(...[a, b].sort());
+const directed = (a, b) => key(a, b);
+const pair = (a, b) => `TOGETHER_ALONE(${a},${b})`;
+const inherited = a => `THIS(${a})`;
+const orderRows = rows => rows.sort((a, b) => {
+  const x = key(a.context, a.parent, a.slot, a.child), y = key(b.context, b.parent, b.slot, b.child);
+  return x < y ? -1 : x > y ? 1 : 0;
+});
+
+export function observeOrientation(r, term) {
+  need(typeof term === 'function' && typeof r.node === 'function' && typeof r.predicate === 'function', 'DECODER_INTERFACE');
+  const facts = new Map(r.facts.map(f => [f.id, f]));
+  need(facts.size === r.facts.length, 'FACT_ID_UNIQUENESS');
+  function rows(tag, wrapper, arity) {
+    return r.predicate(tag).map(f => {
+      const n = r.node(f.term);
+      need(n.s === wrapper && n.c.length === arity && term(n.c[0]) === tag, tag + '_SHAPE');
+      return { f, ids: n.c.slice(1), values: n.c.slice(1).map(term) };
+    });
+  }
+  function triple(id, label) {
+    const n = r.node(id);
+    need(n.s === 'TOGETHER_ALONE' && n.c.length === 3, label + '_TRIPLE');
+    const values = n.c.map(term);
+    need(new Set(values).size === 3, label + '_DISTINCT_VERTICES');
+    return values;
+  }
+  function proof(f, expectedOrigin, expectedParents) {
+    need(f.origin === expectedOrigin, 'ORIGIN_' + f.id);
+    need(Array.isArray(f.support) && f.support.length === expectedParents.length, 'SUPPORT_ARITY_' + f.id);
+    need(same(f.support.slice().sort((a, b) => a - b), expectedParents.slice().sort((a, b) => a - b)), 'SUPPORT_IDENTITY_' + f.id);
+    for (const id of f.support) need(facts.has(id), 'SUPPORT_PRESENT_' + f.id);
+  }
+  const parentRows = rows('T_PARENT_TRIAD', 'GOES_WITH', 3);
+  const childRows = rows('T_CHILD_PARENT', 'GOES_WITH', 5);
+  const orientationRows = rows('CT23_ORIENTATION', 'GOES_WITH', 6);
+  const permutationRows = rows('CT23_PERMUTATION', 'GOES_WITH', 7);
+  const triadRows = rows('TRIAD', 'THIS', 2);
+  const siteRows = rows('SITE', 'THIS', 2);
+  need(parentRows.length === 80 && childRows.length === 320 && triadRows.length === 320, 'BOUND_012_TO_4_0_COUNTS');
+  need(orientationRows.length === 320 && permutationRows.length === 320, 'TOTAL_ORIENTATION_AND_PERMUTATION');
+  const parentMap = new Map(), childMap = new Map(), triadMap = new Map(), orientationMap = new Map(), permutationMap = new Map();
+  for (const row of parentRows) {
+    const [context, parent] = row.values, k = key(context, parent);
+    need(!parentMap.has(k), 'DUPLICATE_PARENT');
+    parentMap.set(k, { row, context, parent, vertices: triple(row.ids[1], 'PARENT'), children: [] });
+  }
+  need(new Set(parentRows.map(row => row.values[0])).size === 1, 'ONE_PARENT_CONTEXT');
+  for (const row of triadRows) {
+    need(!triadMap.has(row.values[0]), 'DUPLICATE_NATIVE_TRIAD');
+    triadMap.set(row.values[0], row);
+  }
+  const nativeSites = new Set(siteRows.map(row => row.values[0]));
+  need(nativeSites.size === 162 && siteRows.length === 162, 'NATIVE_SITE_INVENTORY');
+  for (const row of childRows) {
+    const [context, child, parent, slot] = row.values, k = key(context, child);
+    need(!childMap.has(k) && parentMap.has(key(context, parent)) && triadMap.has(child) && slots.includes(slot), 'CHILD_CORRESPONDENCE');
+    childMap.set(k, row);
+    parentMap.get(key(context, parent)).children.push(row);
+  }
+  for (const row of orientationRows) {
+    const [context, child, parent, slot] = row.values, k = key(context, child);
+    need(!orientationMap.has(k), 'DUPLICATE_ORIENTATION');
+    const cr = childMap.get(k), pr = parentMap.get(key(context, parent));
+    need(cr && pr && same(cr.values, [context, child, parent, slot]), 'ORIENTATION_CORRESPONDENCE');
+    proof(row.f, originFor[slot], [cr.f.id, pr.row.f.id]);
+    const [a, b, c] = pr.vertices, A = inherited(a), B = inherited(b), C = inherited(c);
+    const ab = pair(a, b), ac = pair(a, c), bc = pair(b, c);
+    const expected = { CORNER_A: [A, ab, ac], CORNER_B: [ab, B, bc], CORNER_C: [ac, bc, C], CENTRE: [ab, bc, ac] }[slot];
+    const oriented = triple(row.ids[4], 'ORIENTED_CHILD'), canonical = triple(cr.ids[1], 'CANONICAL_CHILD');
+    need(same(oriented, expected), 'RELATIVE_RECIPE_' + slot);
+    need(same(oriented.slice().sort(), canonical.slice().sort()), 'ORIENTED_NATIVE_CHILD_IDENTITY');
+    for (const vertex of oriented) need(nativeSites.has(vertex), 'ORIENTED_SITE_PRESENT');
+    orientationMap.set(k, { row, oriented, canonical });
+  }
+  const permutationCensus = Object.fromEntries(Object.keys(permutations).map(k => [k, 0]));
+  for (const row of permutationRows) {
+    const [context, child, parent, slot, name, parity] = row.values, k = key(context, child), o = orientationMap.get(k), p = permutations[name];
+    need(!permutationMap.has(k) && o && p, 'PERMUTATION_CORRESPONDENCE');
+    need(same(o.row.values.slice(0, 4), [context, child, parent, slot]), 'PERMUTATION_SUBJECT');
+    proof(row.f, 'CT23_' + name, [o.row.f.id, triadMap.get(child).f.id]);
+    need(parity === p.parity && same(o.oriented, p.order.map(i => o.canonical[i])), 'PERMUTATION_READING');
+    permutationCensus[name]++;
+    permutationMap.set(k, row);
+  }
+  need(orientationMap.size === childMap.size && permutationMap.size === childMap.size, 'NO_OMITTED_CHILD');
+  const parentBoundaries = [], sharedEdges = new Map();
+  for (const p of parentMap.values()) {
+    need(same(p.children.map(row => row.values[3]).sort(), slots), 'FOUR_DISTINCT_SLOTS');
+    const edges = new Map();
+    for (const row of p.children) {
+      const o = orientationMap.get(key(p.context, row.values[1]));
+      for (let i = 0; i < 3; i++) {
+        const a = o.oriented[i], b = o.oriented[(i + 1) % 3], k = undirected(a, b);
+        if (!edges.has(k)) edges.set(k, []);
+        edges.get(k).push([a, b]);
+      }
+    }
+    const boundary = [], internal = [];
+    for (const occurrences of edges.values()) {
+      if (occurrences.length === 1) boundary.push(occurrences[0]);
+      else {
+        need(occurrences.length === 2 && occurrences[0][0] === occurrences[1][1] && occurrences[0][1] === occurrences[1][0], 'INTERNAL_DIRECTED_CANCELLATION');
+        internal.push(occurrences);
+      }
+    }
+    const [a, b, c] = p.vertices, ab = pair(a, b), bc = pair(b, c), ac = pair(a, c);
+    const segments = [[a, b, ab], [b, c, bc], [c, a, ac]];
+    const expectedBoundary = segments.flatMap(([u, v, m]) => [[inherited(u), m], [m, inherited(v)]]);
+    need(internal.length === 3 && boundary.length === 6 && edges.size === 9, 'FOUR_CHILD_BOUNDARY_COUNTS');
+    need(same(boundary.map(e => directed(...e)).sort(), expectedBoundary.map(e => directed(...e)).sort()), 'PARENT_SUBDIVIDED_BOUNDARY');
+    for (const [u, v, midpoint] of segments) {
+      const k = undirected(u, v);
+      if (!sharedEdges.has(k)) sharedEdges.set(k, []);
+      sharedEdges.get(k).push({ parent: p.parent, direction: [u, v], midpoint, child_path: [inherited(u), midpoint, inherited(v)] });
+    }
+    parentBoundaries.push({ context: p.context, parent: p.parent, parent_fact: p.row.f.id, children: p.children.map(row => row.values[1]).sort(), internal_edges_cancelled: 3, subdivided_boundary: expectedBoundary, verdict: 'IF_THEN' });
+  }
+  need(sharedEdges.size === 120, 'PARENT_EDGE_COVERAGE');
+  const sharedEdgeRows = [];
+  for (const [edge, occurrences] of sharedEdges) {
+    need(occurrences.length === 2 && occurrences[0].parent !== occurrences[1].parent, 'TWO_PARENT_EDGE_INCIDENCES');
+    const [a, b] = occurrences;
+    need(a.midpoint === b.midpoint, 'SHARED_MIDPOINT_IDENTITY');
+    const sameDirection = same(a.direction, b.direction);
+    need(sameDirection || same(a.direction, b.direction.slice().reverse()), 'PARENT_EDGE_DIRECTIONS');
+    need(same(a.child_path, sameDirection ? b.child_path : b.child_path.slice().reverse()), 'SHARED_EDGE_RELATIVE_TRANSPORT');
+    sharedEdgeRows.push({ parent_edge: JSON.parse(edge), incidences: occurrences.sort((x, y) => x.parent < y.parent ? -1 : x.parent > y.parent ? 1 : 0), comparison: 'SAME_RELATIVE_TO_EACH_PARENT', verdict: 'IF_THEN' });
+  }
+  const contacts = orderRows([...orientationMap.values()].map(o => {
+    const [context, child, parent, slot, oriented] = o.row.values, pm = permutationMap.get(key(context, child));
+    return { context, parent, child, slot, oriented, orientation_fact: o.row.f.id, orientation_origin: o.row.f.origin, orientation_support: o.row.f.support, permutation: pm.values[4], parity: pm.values[5], permutation_fact: pm.f.id, permutation_origin: pm.f.origin, permutation_support: pm.f.support, verdict: 'IF_THEN' };
+  }));
+  return {
+    schema: 'RelativeOrientationObservation023', verdict: 'IF_THEN',
+    subject: 'RELATIVE_PARENT_FRAME_TRANSPORT_ON_NATIVE_012_TO_4_0_CHILDREN',
+    source_parent_context: parentRows[0].values[0],
+    parent_count: parentMap.size, child_count: childMap.size, orientation_count: orientationMap.size, permutation_count: permutationMap.size,
+    parent_edge_count: sharedEdges.size, internal_edges_cancelled: 240, preserved_parent_boundary_segments: 480,
+    permutation_census: permutationCensus,
+    seating: 'INHERITED_PARENT_REFERENCE_BOUND_BY_ENCLOSING_RECORD; NO_GLOBAL_HAND_SELECTED',
+    qualification_scope: 'NEW_NATIVE_WITNESSES_AND_OBSERVATION; NOT_A_CHECK_ATTRIBUTED_TO_020',
+    representation_scope: 'Parent canonical tuples supply relative references. Permutation parity records serialization, not geometric reversal. Compatibility is relative to the existing parent orientation; no independent orientation is assigned across parents.',
+    world_transition: 'NOT_RUN',
+    contacts,
+    parent_boundaries: parentBoundaries.sort((a, b) => a.parent < b.parent ? -1 : a.parent > b.parent ? 1 : 0),
+    shared_edge_transport: sharedEdgeRows.sort((a, b) => key(...a.parent_edge) < key(...b.parent_edge) ? -1 : key(...a.parent_edge) > key(...b.parent_edge) ? 1 : 0)
+  };
+}

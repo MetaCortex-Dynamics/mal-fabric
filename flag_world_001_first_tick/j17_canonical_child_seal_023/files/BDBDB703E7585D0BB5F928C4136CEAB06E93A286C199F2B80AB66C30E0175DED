@@ -1,0 +1,183 @@
+{
+  "schema": "GenerationCensusStart038V1",
+  "at": "2026-11-02T02:58:57.789Z",
+  "caller_pid": 33028,
+  "parent_pid": 20716,
+  "binding": {
+    "module": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\generation_census_v1.mjs",
+      "bytes": 5929,
+      "sha256": "A2DC8B5D905402A9FA9F4B6B7C6C69A93EBCA1CB8F805F9244A56136E84AC4C3"
+    },
+    "guard": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\generation_guard_v1.mjs",
+      "bytes": 5347,
+      "sha256": "ED6CEC89A7B0F708484278036BF1DAC0E5F7632F2E4B64375AFE35A9B77F8499"
+    },
+    "helper_source": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\generation_census_v1.cs",
+      "bytes": 7366,
+      "sha256": "C82A910C36D0237FD32EFA1EA74FD83C9B2FB978E9C9BADB24D65D21EE9C1E5B"
+    },
+    "helper_executable": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\generation_census_v2.exe",
+      "bytes": 10752,
+      "sha256": "59543497F7FB3F647073C5BD02471805A4C2038B6AB0C98EA73E2308403EB2DF"
+    },
+    "qualification": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\GENERATION_QUALIFICATION_V1.json",
+      "bytes": 4517,
+      "sha256": "3ACC4C08DA6D1F3B8B46C64810F7BC024F031021BD39736E1AB8A14BDD34392F"
+    },
+    "build": {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\GENERATION_BUILD_V2.json",
+      "bytes": 2507,
+      "sha256": "D78FED1C635AA6AC19D9FDD234E55B73A7F9BE53BAEE16AA66C24104A4085F63"
+    },
+    "identities": [
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\GENERATION_QUALIFICATION_V1.json",
+        "bytes": 4517,
+        "sha256": "3ACC4C08DA6D1F3B8B46C64810F7BC024F031021BD39736E1AB8A14BDD34392F"
+      },
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\GENERATION_BUILD_V2.json",
+        "bytes": 2507,
+        "sha256": "D78FED1C635AA6AC19D9FDD234E55B73A7F9BE53BAEE16AA66C24104A4085F63"
+      },
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\generation_census_v1.mjs",
+        "bytes": 5929,
+        "sha256": "A2DC8B5D905402A9FA9F4B6B7C6C69A93EBCA1CB8F805F9244A56136E84AC4C3"
+      },
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\generation_guard_v1.mjs",
+        "bytes": 5347,
+        "sha256": "ED6CEC89A7B0F708484278036BF1DAC0E5F7632F2E4B64375AFE35A9B77F8499"
+      },
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\generation_census_v1.cs",
+        "bytes": 7366,
+        "sha256": "C82A910C36D0237FD32EFA1EA74FD83C9B2FB978E9C9BADB24D65D21EE9C1E5B"
+      },
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\build_generation_v2.mjs",
+        "bytes": 1881,
+        "sha256": "E6F64CD0EE7B98F3E1C71DD8A367D7DF83286E144FC0CF9E7DE25C33A5D77A80"
+      },
+      {
+        "path": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+        "bytes": 2569832,
+        "sha256": "46809206887326D2D24DB1EFF1F3064DE972C3451ABE766B49111450A5E08E00"
+      },
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\generation_census_v2.exe",
+        "bytes": 10752,
+        "sha256": "59543497F7FB3F647073C5BD02471805A4C2038B6AB0C98EA73E2308403EB2DF"
+      },
+      {
+        "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_snapshot_wave_realization_038\\staging_census\\qualify_generation_v1.mjs",
+        "bytes": 8678,
+        "sha256": "606FC9F5E66F72DF338407714ECB9EB8E3AC84E0C5D8EF1EE9AACE4B5ED0ECD0"
+      }
+    ]
+  },
+  "absence": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\targeted_receipt_proposal_035\\reconciliation_001\\PROCESS_RECONCILIATION_035.json",
+    "bytes": 89718,
+    "sha256": "89BCCFE7403B4C7F43AA4755A16D3794A5BBB1F1034C33C19BB10B4963E673B6"
+  },
+  "required_absent": [
+    1016,
+    12208,
+    19128,
+    25824,
+    28892,
+    30528,
+    34640,
+    40784,
+    41376,
+    42652,
+    48236,
+    49040,
+    50032,
+    52348,
+    53520,
+    54932,
+    55256,
+    56224,
+    59072,
+    65616,
+    65768,
+    65868,
+    67556,
+    73220,
+    74224,
+    77116,
+    84852,
+    85948,
+    92912,
+    92940,
+    93604,
+    93904,
+    96452,
+    100528,
+    102604,
+    104256,
+    108096,
+    109200,
+    111588,
+    118976,
+    121008,
+    122620,
+    124212,
+    125984,
+    127300,
+    137044,
+    137920,
+    139400,
+    143020,
+    143160,
+    144960,
+    151652,
+    157868,
+    158116,
+    159356,
+    160568,
+    160804,
+    160812,
+    163032,
+    163264,
+    163500,
+    164476,
+    165264,
+    167172,
+    168424,
+    173792,
+    176380,
+    182304,
+    182900,
+    183596,
+    184812,
+    185172,
+    186596,
+    187044,
+    189512,
+    192560,
+    194184,
+    198156,
+    203908,
+    204228
+  ],
+  "native_executables": [
+    {
+      "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+      "bytes": 521216,
+      "sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06"
+    }
+  ],
+  "timeout_ms": 15000,
+  "argv": [],
+  "retry": "NONE",
+  "gpu_execution": "NONE"
+}

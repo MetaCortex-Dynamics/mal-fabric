@@ -1,0 +1,35 @@
+{
+  "schema": "CanonicalChildExpectation023",
+  "coordinates": {
+    "m": 4,
+    "n": 0
+  },
+  "counts": {
+    "BASE_TRIAD": 80,
+    "REFINED_TRIAD": 320,
+    "SITE": 162,
+    "EDGE": 480,
+    "TRIAD": 320,
+    "FLAG": 1920,
+    "PAIR": 2880,
+    "DELTA": 1920,
+    "GAMMA": 1920,
+    "TAU": 1920,
+    "T_CHILD_PARENT": 320,
+    "T_CHILD_FACE": 320,
+    "T_FLAG_PARENT": 1920,
+    "T_FLAG_FACE": 1920,
+    "T_DOMAIN": 12
+  },
+  "parent_sites": 42,
+  "edge_sites": 120,
+  "domains": 12,
+  "orientation_parents": 80,
+  "orientation_children": 320,
+  "boundary_preservation": "IF_THEN",
+  "internal_edge_cancellation": "IF_THEN",
+  "baseline_incidence": "SAME",
+  "native_replays": 2,
+  "canonical_record_replays": 2,
+  "world_effect": "NONE"
+}

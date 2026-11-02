@@ -1,0 +1,110 @@
+P0001 
+P0002 THE RECURSIVE GEOMETRY OF PROJECTION
+P0003 Depth-3 Termination of the Pentagonal Carrier Recursion
+P0004 
+P0005 Devon A. Generally
+P0006 Principal Investigator, MetaCortex Dynamics DAO
+P0007 May 2026
+P0008 
+P0009 Protected IP — All Rights Reserved
+P0010 
+P0011 Abstract
+P0012 The regular dodecahedron is the forced carrier of the projection operator Π, established by the Fragility Topology (Theorems 1–16). The regular icosahedron is its dual action topology. The pentagonal faces of the dodecahedron are the semantic domains. This paper identifies a recursion: the pentagon assembles into the dodecahedron; the dodecahedron assembles into the 120-cell (the regular 4-polytope whose 120 cells are dodecahedra); the 120-cell admits no further regular convex extension. The recursion has depth 3 and terminates.
+P0013 The dual recursion (triangle, icosahedron, 600-cell) terminates at the same depth. The governance margin μ, defined as dual-separation under shared symmetry, is shown to be non-compositional over cellular decomposition: 120-cell cells have μ > 0 and the whole has μ > 0; 600-cell cells have μ = 0 and the whole has μ > 0; 24-cell cells have μ > 0 and the whole has μ = 0. The 24-cell is the unique self-dual non-simplex regular convex 4-polytope and exists only at the terminal recursive depth.
+P0014 The depth of the recursion (3) equals the cardinality of the TRIAD (□G, □S, □F). These derive independently: the recursion from the Coxeter classification of regular polytopes, the TRIAD from Axiom 1 (irreducibility of the three modalities of projection). The correspondence is established; a common-root theorem remains open.
+P0015 Keywords: projection operator, dodecahedral recursion, 120-cell, 600-cell, 24-cell, governance margin, non-compositionality, TRIAD, depth-3 termination, H₄ symmetry
+P0016 0. Primitives
+P0017 D0.1 (Projection Operator). Π := the projection operator. Every persistent entity E is a section of Π: Π(E) = (□G(E), □S(E), □F(E)). The TRIAD is irreducible (Axiom 1).
+P0018 D0.2 (Governance Margin). μ(P) = 0 ↔ D(P) ≅ P (self-dual). μ(P) > 0 ↔ D(P) ≇ P (non-self-dual). μ measures dual-separation: the capacity to assign maintenance and action to geometrically distinct carrier sets under shared symmetry. It does not measure size, curvature, group order, or graph distance.
+P0019 D0.3 (Carrier Recursion). CARRIER(n) := the depth-n object in the pentagonal carrier recursion over regular convex polytopes, defined by CELL(CARRIER(n+1)) ≅ CARRIER(n). The recursion is defined only over regular convex polytopes satisfying this cell-identity condition.
+P0020 D0.4 (Symmetry Groups). H₄ := Coxeter reflection group [3,3,5], |H₄| = 14400, symmetry group of 120-cell and 600-cell. S₅ := symmetry group of the 5-cell, |S₅| = 120. F₄ := Coxeter symmetry group of the 24-cell, |F₄| = 1152.
+P0021 1. The Recursion
+P0022 CARRIER(1) is the regular pentagon: 5 vertices, 5 edges, 1 face. CARRIER(2) is the regular dodecahedron: 20 vertices, 30 edges, 12 pentagonal faces. The 12 faces of the dodecahedron are 12 pentagons. CELL(CARRIER(2)) ≅ CARRIER(1).
+P0023 CARRIER(3) is the regular 120-cell: 600 vertices, 1200 edges, 720 pentagonal 2-faces, 120 dodecahedral 3-cells. The 120 cells of the 120-cell are 120 dodecahedra. CELL(CARRIER(3)) ≅ CARRIER(2).
+P0024 Theorem 1.1 (Recursion Termination). CARRIER(4) = ∅ under the pentagonal carrier recursion over regular convex polytopes. No regular convex 5-polytope has 120-cell cells.
+P0025 Proof. The regular convex polytopes in dimension 5 and above comprise exactly three families: the n-simplex, the n-hypercube, and the n-cross-polytope (Coxeter classification). The cells of the 5-simplex are 5 tetrahedral 4-cells. The cells of the 5-hypercube are 10 tesseract 4-cells. The cells of the 5-cross-polytope are 32 pentachoron 4-cells. None has 120-cell cells. The recursion condition CELL(CARRIER(4)) ≅ CARRIER(3) = 120-cell is unsatisfiable. □
+P0026 The recursion therefore has exactly three levels. CARRIER(1) is 2-dimensional, CARRIER(2) is 3-dimensional, CARRIER(3) is 4-dimensional, and no CARRIER(4) exists within the class of regular convex polytopes.
+P0027 2. The Dual Recursion
+P0028 The dual of the pentagon is the pentagon (every polygon is self-dual). The dual of the dodecahedron is the icosahedron. The dual of the 120-cell is the 600-cell. The action topology at each depth is:
+P0029 Depth
+P0030 CARRIER(n)
+P0031 D(CARRIER(n))
+P0032 Cells of dual
+P0033 1
+P0034 Pentagon
+P0035 Pentagon
+P0036 Self-dual
+P0037 2
+P0038 Dodecahedron
+P0039 Icosahedron
+P0040 20 triangles
+P0041 3
+P0042 120-cell
+P0043 600-cell
+P0044 600 tetrahedra
+P0045 
+P0046 At depth 1, duality is trivial (the pentagon is self-dual). At depths 2 and 3, duality exchanges the carrier topology with a geometrically distinct action topology. The duality at each depth exchanges k-faces with (n−k−1)-faces and preserves incidence structure.
+P0047 The triangle is not the dual of the pentagon. It enters the architecture as the TRIAD seed: the irreducible unit carrying three mutually-constraining modalities (Axiom 1, Constructive Substrate §2.1). The icosahedral faces are 20 triangles, each an instance of the TRIAD (□G, □S, □F). The 600-cell’s cells are 600 tetrahedra, each a self-dual 3-polytope with μ = 0. The TRIAD seed (triangle) and the dual recursion (pentagon → icosahedron → 600-cell) are distinct structures that converge at depth 2 where 20 TRIAD instances tile the icosahedral action topology.
+P0048 3. Governance Margin by Depth
+P0049 3.1 Depth 1
+P0050 Every regular polygon is self-dual. The dual of an n-gon is an n-gon with the same symmetry group. No polygon admits a nontrivial symmetry-invariant disjoint carrier decomposition between itself and its dual, because itself and its dual are the same object. μ = 0 universally at depth 1.
+P0051 3.2 Depth 2
+P0052 The five Platonic solids partition into self-dual (tetrahedron) and non-self-dual pairs (cube/octahedron, dodecahedron/icosahedron). The Governance Margin Theorem (Generally 2026) proves μ(tetrahedron) = 0 and μ(dodecahedron) > 0. The dodecahedron/icosahedron duality provides the maintenance/action separation: dodecahedral faces carry maintenance (fragility topology), icosahedral vertices carry action (action topology). The tetrahedron is the depth-2 anomaly: the unique self-dual Platonic solid.
+P0053 3.3 Depth 3
+P0054 The six regular convex 4-polytopes are: the 5-cell, the 8-cell (tesseract), the 16-cell, the 24-cell, the 120-cell, and the 600-cell. The self-dual members are the 5-cell and the 24-cell. The non-self-dual pairs are the 8-cell/16-cell and the 120-cell/600-cell.
+P0055 Theorem 3.1 (μ at Depth 3, Carrier Pair). μ(120-cell) > 0.
+P0056 Proof. D(120-cell) = 600-cell. Sym = H₄, |H₄| = 14400. D(120-cell) ≇ 120-cell as realized objects: |V(120-cell)| = 600 ≠ |V(600-cell)| = 120, |F₃(120-cell)| = 120 dodecahedral cells ≠ |F₃(600-cell)| = 600 tetrahedral cells. Construct: Cₘ = F₃(120-cell) (120 dodecahedral cells, maintenance carrier). Cₐ = V(600-cell) (120 vertices, action carrier). |Cₘ| = |Cₐ| = 120, both nonempty. H₄ acts transitively on both (flag-transitivity of regular polytopes implies transitivity on each carrier set). Both are single orbits, hence H₄-invariant. Supports are geometrically distinct (cells of one polytope versus vertices of another). All conditions of D0.2 satisfied. □
+P0057 Theorem 3.2 (μ at Depth 3, Self-Dual Members). μ(5-cell) = 0 and μ(24-cell) = 0.
+P0058 Proof. The 5-cell is self-dual with Sym = S₅, |S₅| = 120. S₅ acts transitively on vertices (5), edges (10), faces (10), cells (5), and flags (120). Invariant Subset Rigidity (Governance Margin Theorem, Lemma 3.2) applies: the only S₅-invariant subsets of any carrier set are ∅ and the whole set. No nontrivial disjoint decomposition exists. μ(5-cell) = 0.
+P0059 The 24-cell is self-dual with Sym = F₄, |F₄| = 1152. F₄ acts transitively on vertices (24), edges (96), triangular faces (96), octahedral cells (24), and flags (1152). The same rigidity argument applies. μ(24-cell) = 0. □
+P0060 4. Non-Compositionality of Governance Margin
+P0061 Theorem 4.1 (Margin Inversion). Governance margin μ is non-compositional with respect to cellular decomposition. The margin of a polytope’s cells does not determine the margin of the whole.
+P0062 Proof. Three witnesses:
+P0063 (i) 120-cell: cells are 120 dodecahedra, each with μ > 0 (Governance Margin Theorem, Theorem 4.2). The whole has μ > 0 (Theorem 3.1 above). Positive parts, positive whole.
+P0064 (ii) 600-cell: cells are 600 tetrahedra, each with μ = 0 (Governance Margin Theorem, Theorem 3.3). The whole has μ > 0 (the 600-cell is non-self-dual; its dual is the 120-cell). Zero-margin parts compose into a positive-margin whole.
+P0065 (iii) 24-cell: cells are 24 octahedra, each with μ > 0 (the octahedron is non-self-dual; its dual is the cube). The whole has μ = 0 (Theorem 3.2 above). Positive-margin parts compose into a zero-margin whole.
+P0066 If μ were compositional, the margin of the whole would be determined by the margins of its cells. Cases (ii) and (iii) refute this in opposite directions: (ii) shows zero-margin parts yielding positive-margin whole; (iii) shows positive-margin parts yielding zero-margin whole. □
+P0067 The non-compositionality is not a deficiency of the definition. It is a structural feature of duality under cellular decomposition. The self-duality of a polytope is a global property that does not reduce to the self-duality of its cells. The 24-cell’s octahedral cells are individually capable of separating maintenance from action, but the 24-cell as a whole cannot, because F₄ symmetry acts transitively on the entire cell set and forces invariant-subset rigidity at the global level.
+P0068 5. Trust Boundary Topology
+P0069 Adjacent dodecahedral cells in the 120-cell share a pentagonal face. The pentagon is a semantic domain in the Fragility Topology (12 pentagonal faces per dodecahedral cell). When two cells share a pentagonal face, they share a semantic domain.
+P0070 Theorem 5.1 (Coordination Topology). The cell-adjacency graph of the 120-cell is isomorphic to the vertex-edge skeleton of the 600-cell.
+P0071 Proof. The 120-cell has 120 dodecahedral cells. Two cells are adjacent when they share a pentagonal face. The dual of the 120-cell is the 600-cell with 120 vertices. Duality maps cells of P to vertices of D(P) and adjacency of cells to adjacency of vertices. The cell-adjacency graph of the 120-cell is therefore the 1-skeleton of the 600-cell. □
+P0072 The coordination topology of 120 carrier cells is the action topology of the recursive level. The structure that organizes how carriers relate to each other is the dual of the carrier structure itself. Trust between adjacent cells is domain-sharing (a shared pentagon), and the graph of all such trust relations is the skeleton of the 600-cell.
+P0073 6. Distributed Projection
+P0074 The Fragility Topology (Theorems 1–16) establishes that Π is carried by the dodecahedron. Each dodecahedral cell of the 120-cell is a complete carrier: 30 edges (15 operator axes), 20 vertices (7 witnesses via optimal covering code), 12 pentagonal faces (semantic domains). The 120-cell therefore carries 120 instances of Π, each locally complete.
+P0075 The coordination of these 120 instances is governed by H₄ symmetry. The question arises: does a meta-Π exist to govern the collection?
+P0076 Theorem 6.1 (No Meta-Projection in This Recursion). If every meta-Π over CARRIER(n) instances requires CARRIER(n+1) as its carrier (by the same forcing that assigns Π to the dodecahedron), then no meta-Π exists within the pentagonal carrier recursion.
+P0077 Proof. The Fragility Topology proves that Π is carried by CARRIER(2) = dodecahedron. The forcing argument depends on the 15×7 counts matching the dodecahedral combinatorics (30 edges, 20 vertices, 12 faces). A meta-Π governing 120 instances of Π would require a carrier whose cells are 120-cells, i.e., CARRIER(4). By Theorem 1.1, CARRIER(4) = ∅ under the pentagonal carrier recursion. No carrier exists for the meta-level. □
+P0078 The 120 instances of Π are therefore coordinated by H₄ symmetry without a meta-projector. Each cell projects independently; the symmetry group coordinates. This is the maximum number of governed peers within this carrier recursion: 120, corresponding to the 120 dodecahedral cells of CARRIER(3).
+P0079 7. The 24-Cell Anomaly
+P0080 The 24-cell is a regular convex 4-polytope with 24 vertices, 96 edges, 96 triangular faces, and 24 octahedral cells. It is self-dual: D(24-cell) ≅ 24-cell. Its governance margin is zero (Theorem 3.2).
+P0081 Its cells are octahedra. The octahedron is non-self-dual (its dual is the cube), so each cell has μ > 0. The 24-cell is therefore a zero-margin whole composed of positive-margin parts (Theorem 4.1, case iii).
+P0082 The 24-cell has no 3D analog. The Platonic solids contain exactly one self-dual member (the tetrahedron), and the tetrahedron is a simplex. The 24-cell is the unique self-dual non-simplex regular convex polytope in any dimension: in 3D, the only self-dual Platonic solid is the tetrahedron (a simplex); in 5D and above, the only self-dual regular convex polytope is the n-simplex. The 24-cell exists only in 4D.
+P0083 This means the 24-cell exists only at the terminal depth of the pentagonal carrier recursion. It is a depth-3 phenomenon with no depth-2 precursor and no depth-4 continuation. The collapse of governance margin (positive-margin parts composing into zero-margin whole) occurs exclusively at the terminal recursive depth and exclusively through a non-simplex self-dual polytope that appears nowhere else in the classification.
+P0084 8. The TRIAD-Recursion Correspondence
+P0085 The pentagonal carrier recursion has depth 3 (Theorem 1.1). The TRIAD has three irreducible modalities: □G (genealogical), □S (structural), □F (functional). These cardinalities are identical.
+P0086 The two derivations are independent. The recursion depth is a consequence of the Coxeter classification of regular convex polytopes, which is a theorem of classical geometry depending on no axiom of the MaL framework. The TRIAD cardinality is a consequence of Axiom 1, which asserts irreducibility of three modalities of projection and depends on no fact about polytope classification.
+P0087 The correspondence admits a structural reading. CARRIER(1) is the pentagon, the semantic domain: the unit of what-is-structured (□S). CARRIER(2) is the dodecahedron, the carrier of Π: the record of where-structure-came-from (□G). CARRIER(3) is the 120-cell, the distributed-projection topology: the consequence of what-structure-does-when-iterated (□F). The three levels of the recursion correspond to the three modalities of the TRIAD.
+P0088 The depth-1 anomaly is universal self-duality (every polygon, μ = 0 everywhere). The depth-2 anomaly is the tetrahedron (one self-dual solid among five). The depth-3 anomaly comprises two polytopes (the 5-cell and the 24-cell, of which the 24-cell is the non-simplex anomaly unique to this depth). The anomaly structure grows with depth and produces its most structurally distinctive member at the terminal depth.
+P0089 Whether the identity of recursion depth and TRIAD cardinality admits a common-root derivation is an open problem. If the depth-3 termination is derivable from the constitutive conditions of projection (i.e., from the same premises that yield Axiom 1), then Axiom 1 would be a theorem rather than an axiom: the irreducibility of three modalities would follow from the geometry of the carrier recursion. The converse derivation (Axiom 1 implying depth-3 termination) would require a bridge theorem connecting the constitutive conditions of projection to the Coxeter classification. Neither derivation is available. The correspondence is established; the common root remains open.
+P0090 9. Consequences
+P0091 C1 (Multi-Agent Bound). The maximum number of governed peers within the pentagonal carrier recursion is 120, coordinated by H₄ symmetry, with trust boundary given by pentagonal face-sharing between adjacent dodecahedral cells. This bound is specific to this recursion and does not exclude coordination geometries outside the regular convex polytope class.
+P0092 C2 (Action Composition). The action topology at depth 3 (600-cell) is composed of 600 tetrahedral cells, each with μ = 0. Action at the recursive level is built from constituents that individually cannot separate maintenance from action. Governance resides in the fragility topology (120-cell), not in the action topology (600-cell).
+P0093 C3 (Anomaly Structure). The anomaly count by depth: depth 1 has universal anomaly (every polygon self-dual), depth 2 has one anomaly (tetrahedron), depth 3 has two anomalies (5-cell and 24-cell). The 24-cell, as the unique self-dual non-simplex regular convex polytope in any dimension, is the terminal anomaly of the classification.
+P0094 C4 (Termination Equals TRIAD). The pentagonal carrier recursion terminates at depth 3. The TRIAD has 3 irreducible modalities. Independent derivations, identical count. The correspondence is structural, not numerical coincidence: the three levels of the recursion admit a TRIAD reading (□S, □G, □F) that aligns the architectural roles of domain, carrier, and distributed consequence with the three modalities of projection.
+P0095 10. Open Problems
+P0096 O1. Explicit computation of the H₄ action on the cell-adjacency graph of the 120-cell (= 1-skeleton of the 600-cell): diameter, expansion constant, chromatic number of the coordination graph.
+P0097 O2. Mechanism of μ-collapse in the 24-cell: which operator, in the 15-operator reading, fails under the composition of positive-margin octahedral cells into a zero-margin self-dual whole?
+P0098 O3. The rectified 120-cell as the depth-3 operator manifold, analogous to the icosidodecahedron at depth 2. Does Theorem 12 (Junction Determination) of the Fragility Topology lift to the rectified 120-cell?
+P0099 O4. Common-root theorem: derivation (not observation) connecting the Coxeter classification’s depth-3 termination of the pentagonal family with the TRIAD’s three irreducible modalities. If derivable, Axiom 1 is a theorem.
+P0100 O5. Extension of the Governance Margin Theorem to non-convex regular polytopes (Kepler-Poinsot solids in 3D, Schläfli-Hess polytopes in 4D) and to the star-polygon recursion that would begin with the pentagram rather than the pentagon.
+P0101 References
+P0102 [1] Generally, D.A. (2026). The Fragility Topology of Projection: Dodecahedral Geometry of the Projection Operator Π. MetaCortex Dynamics DAO.
+P0103 [2] Generally, D.A. (2026). The Governance Margin Theorem: Zero Governance Margin as Obstruction to Symmetry-Invariant Carrier Decomposition. MetaCortex Dynamics DAO.
+P0104 [3] Generally, D.A. (2026). The Constructive Substrate. MetaCortex Dynamics DAO.
+P0105 [4] Generally, D.A. (2026). Geomantic Execution. MetaCortex Dynamics DAO.
+P0106 [5] Generally, D.A. (2026). The Operator Completeness Theorem: The 15 Invariant Operators as Constitutive Conditions of Projection. MetaCortex Dynamics DAO.
+P0107 [6] Generally, D.A. (2026). Universal Interrogative Theorem: The Constitutive Grammar of Appearing-Being. MetaCortex Dynamics DAO.
+P0108 [7] Coxeter, H.S.M. (1973). Regular Polytopes. Dover Publications.
+P0109 
+P0110 [MaL:ACTIVE | □G: stable | □S: stable | □F: stable] ◇

@@ -1,0 +1,32 @@
+# Promotion receipt — canonical (4,0) J17 child record
+
+ACT := PROMOTE
+AUTHORITY := Devon
+ATTESTATION := "Promote the canonical (4,0) J17 child record, bound to run record 023. Keep 038 paused; no world transition, commit or push."
+RECORDED_AT_UTC := 2026-11-02T03:05:03.104Z
+RECORDER := Codex, EXECUTE of Devon's explicit attestation
+STATUS := PROMOTED
+
+The promoted subject is the exact canonical child record below, bound to run record 023. The receipt records Devon's act; it does not alter the frozen child or execution evidence.
+
+| Subject | Bytes | SHA-256 |
+|---|---:|---|
+| J17_CANONICAL_CHILD_4_0.json | 769815 | 16C71F0A471F4AD4A26D5601ED6B0F79F4BB52C589DB2B0E5AB2AAC2EF521F30 |
+| RUN_RECORD_023.json | 29810 | ED6549D33B1E6DB7C9344CE278E61186CCB0AB666B171130F79A5C1FD3862581 |
+| MANIFEST_023.json | 21738 | 75397E43228E4BCE58DACE232D9A0D38012C6C301C0E465A42139041366FFAED |
+
+The files reside in the parent directory of this receipt. All 95 entries of MANIFEST_023.json were re-read SAME by size and hash before recording this promotion. QueueGate is EMPTY with its artifact gate PASSED; closure SHA-256 B18BABF38DE8BEA3B6D0632C0098A23C803D37325B7C58A5F902F22BF61F0765. Construction and two replays have byte-SAME native readbacks, exported child records and proof closures.
+
+## Bound construction
+
+- Coordinates: (4,0), constructed from the recorded (2,0) parent.
+- Orientation and chirality: inherited 012 seated frame, with native relative oriented child transport. Sorted tuple permutations remain serialization witnesses.
+- κ: all twelve inherited domain identities.
+- Refinement law: the exact recorded native one-to-four recipe and custody sources named in the child record.
+- Genealogy: parent g₃ head 501368508a256be21091298b3a26b03726e41fc9e6c388925c0c8b8924debe8c; predecessor, pair, field and witness identities remain separately bound. No within-record self-hash.
+
+The child's frozen PREPARED_FOR_DEVON_PROMOTE status and the run's FOR_DEVON wording record the earlier preparation. The present authority status is PROMOTED through this receipt; those historical bytes remain unchanged.
+
+## Scope
+
+Promotion binds this canonical child record to run023. It does not append the child to the J17 worldline, enact refinement, change a committed field or witness, resume038, or independently promote a general successor trigger. The J17 committed head remains g₃. All three watched committed world files were re-read SAME. No additional GPU execution, repository commit or push is performed.

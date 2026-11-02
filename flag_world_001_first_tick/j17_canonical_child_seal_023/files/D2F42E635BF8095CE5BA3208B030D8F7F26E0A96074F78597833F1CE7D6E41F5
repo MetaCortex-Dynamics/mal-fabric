@@ -1,0 +1,618 @@
+{
+  "scope": "GENERIC_RUNTIME_SIZED_FACT_STORAGE; NOT_WORLD_CONFORM",
+  "qualification": "SAME",
+  "preparation": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\PREPARATION.json",
+    "bytes": 10998,
+    "sha256": "DC8F85ED1CD9445E7A68F4E43E469C704E829D4EA3B7AE664D17437BC2CEF0A2"
+  },
+  "compaction": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\COMPACTION.jsonl",
+    "bytes": 14412,
+    "sha256": "8D84D7DB55F468D380A93E66C96ACADD8F6D15DEE483BFC18D07AE2DF793C912"
+  },
+  "prior_stop": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\STOP.json",
+    "bytes": 127,
+    "sha256": "4C8333A26023C51B0733F58328C76F9567F61536FD6FB156858E5A186271681E"
+  },
+  "prior_stop_scope": "HOST_DISK_OUTPUT_REFUSAL; FAILED_OUTPUT_PRESERVED; NOT_CHECKPOINT",
+  "runtime": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.exe",
+    "bytes": 521216,
+    "sha256": "9634C205A4641AB99898F58189722979884CA7818DA84085498D845F5C56CA06"
+  },
+  "source": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\block_iterative_runtime.cu",
+    "bytes": 38563,
+    "sha256": "F055FFCE4AA8F536CE9BC7AEA7B1235887371D2855C9312F420FB5FEFB1D5ECE"
+  },
+  "guard": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\prefill_guard_runtime.mjs",
+    "bytes": 11686,
+    "sha256": "1AC89C5A0256953279B0A772210721E1D7B8BCB894B4616A4DE6BC0B2FA9DA70"
+  },
+  "driver": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\finish_qualification.mjs",
+    "bytes": 8874,
+    "sha256": "228F91369B2EBB132FCE6C3B539DD3D387361D20FE4F8BFB14A0EC263F2D5074"
+  },
+  "cases": [
+    {
+      "label": "carrier_2097152",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\carrier_2097152.bin.ECED361A61D4D9FA514DE0E6E2EE3ECFFC975F2BFE4C68D960DEED2E3BE08D8B.gz",
+          "encoding": "gzip",
+          "bytes": 268435488,
+          "sha256": "ECED361A61D4D9FA514DE0E6E2EE3ECFFC975F2BFE4C68D960DEED2E3BE08D8B",
+          "storage": {
+            "sha256": "152026C0F01A50554F6518D74BF65ED16D611CD06BDD8ECE1DDD4C8C06251E9C",
+            "bytes": 317817
+          }
+        },
+        "error": 0,
+        "terms": 6170,
+        "facts": 5282,
+        "epochs": 14,
+        "term_capacity": 4194304,
+        "fact_capacity": 2097152,
+        "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+        "used_facts": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39"
+      }
+    },
+    {
+      "label": "carrier_16384",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\carrier_16384.bin.F59DA3F12811593768A3D672D2DD2C27ED72321A22CA009F7C31FCF552A8802A.gz",
+          "encoding": "gzip",
+          "bytes": 168558624,
+          "sha256": "F59DA3F12811593768A3D672D2DD2C27ED72321A22CA009F7C31FCF552A8802A",
+          "storage": {
+            "sha256": "4FF7FAC1A6D3EA339627E0762BFA6C4F375A001ED34DC927A363D47F4E0ECC57",
+            "bytes": 220537
+          }
+        },
+        "error": 0,
+        "terms": 6170,
+        "facts": 5282,
+        "epochs": 14,
+        "term_capacity": 4194304,
+        "fact_capacity": 16384,
+        "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+        "used_facts": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39"
+      }
+    },
+    {
+      "label": "carrier_4194304",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\carrier_4194304.bin.B28672F57CBE92C42B95B59FA80503D60C9292D04310B8051FDCDB6001A15FEB.gz",
+          "encoding": "gzip",
+          "bytes": 369098784,
+          "sha256": "B28672F57CBE92C42B95B59FA80503D60C9292D04310B8051FDCDB6001A15FEB",
+          "storage": {
+            "sha256": "DFE0B900443F141BB092D25D28045ED276F245B71D2DF66F02E79A6E91320CA6",
+            "bytes": 415657
+          }
+        },
+        "error": 0,
+        "terms": 6170,
+        "facts": 5282,
+        "epochs": 14,
+        "term_capacity": 4194304,
+        "fact_capacity": 4194304,
+        "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+        "used_facts": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39"
+      }
+    },
+    {
+      "label": "this_2097152",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\this_2097152.bin.5CF040374F4D6E917C866B838F1F475240DBD370AE78C09A035E394F2FD46087.gz",
+          "encoding": "gzip",
+          "bytes": 268435488,
+          "sha256": "5CF040374F4D6E917C866B838F1F475240DBD370AE78C09A035E394F2FD46087",
+          "storage": {
+            "sha256": "DBCFC3CE4320963133E0AAED7F473E83D567814270C58279C64F815FC5997011",
+            "bytes": 330530
+          }
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 14,
+        "term_capacity": 4194304,
+        "fact_capacity": 2097152,
+        "used_terms": "AC13EB2FB7DCC768DA47828611CCA68E0CDF51C72FC20777D0348F3C3156EF00",
+        "used_facts": "B0EEE24B665A4F6AA500AFB0FC3221620E650C79E8E323D8887881B20CF1753B"
+      }
+    },
+    {
+      "label": "this_16384",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\this_16384.bin.4CCA34A1B403BE1E35137FF45457FA3759A8061B2D5EE2CB593414657DE7C071.gz",
+          "encoding": "gzip",
+          "bytes": 168558624,
+          "sha256": "4CCA34A1B403BE1E35137FF45457FA3759A8061B2D5EE2CB593414657DE7C071",
+          "storage": {
+            "sha256": "D56CE7AD5380DCC1BC73EE16C1EA435EAEE536B8EF0EFFFE17B41D3F03FAEED3",
+            "bytes": 233095
+          }
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 14,
+        "term_capacity": 4194304,
+        "fact_capacity": 16384,
+        "used_terms": "AC13EB2FB7DCC768DA47828611CCA68E0CDF51C72FC20777D0348F3C3156EF00",
+        "used_facts": "B0EEE24B665A4F6AA500AFB0FC3221620E650C79E8E323D8887881B20CF1753B"
+      }
+    },
+    {
+      "label": "this_4194304",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\this_4194304.bin.5BDFA5BB088C41590CEBFCA939CB33A0EEF60307D083D36B83FCBFCACAB981FE.gz",
+          "encoding": "gzip",
+          "bytes": 369098784,
+          "sha256": "5BDFA5BB088C41590CEBFCA939CB33A0EEF60307D083D36B83FCBFCACAB981FE",
+          "storage": {
+            "sha256": "20AD5172CE12A36AE5AF0768444F134B9BA5AE57B163E30D89A43B959BD834E5",
+            "bytes": 428364
+          }
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 14,
+        "term_capacity": 4194304,
+        "fact_capacity": 4194304,
+        "used_terms": "AC13EB2FB7DCC768DA47828611CCA68E0CDF51C72FC20777D0348F3C3156EF00",
+        "used_facts": "B0EEE24B665A4F6AA500AFB0FC3221620E650C79E8E323D8887881B20CF1753B"
+      }
+    },
+    {
+      "label": "no_2097152",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\no_2097152.bin.C7F3057C02B732A4664947D7592D34F4187C2F8E3708913ECBD32CD10485A8D4.gz",
+          "encoding": "gzip",
+          "bytes": 268435488,
+          "sha256": "C7F3057C02B732A4664947D7592D34F4187C2F8E3708913ECBD32CD10485A8D4",
+          "storage": {
+            "sha256": "4FEA49E74C94C1E888C41F7218B3B22A6CFFEF76D83FD3DA2A8C179F2FEC93BE",
+            "bytes": 330527
+          }
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 14,
+        "term_capacity": 4194304,
+        "fact_capacity": 2097152,
+        "used_terms": "3B5BCA1C594051E515295DBE51BB382A0D5368EC1337CCA7DC5DC63D007D644C",
+        "used_facts": "6181CD3D4FF69EED5D7D4016AC1D4C62B5C9BC7225BD6C45551DD169300FAF19"
+      }
+    },
+    {
+      "label": "no_16384",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\no_16384.bin.6FDE30E5F3E204B7981778DE2D3EC62DBF2E21D32652309C27209E16AFFDB48B.gz",
+          "encoding": "gzip",
+          "bytes": 168558624,
+          "sha256": "6FDE30E5F3E204B7981778DE2D3EC62DBF2E21D32652309C27209E16AFFDB48B",
+          "storage": {
+            "sha256": "EE11A566421CC2F96CC3C69C081DF41A67648423FE369D93028E6806D9417920",
+            "bytes": 233092
+          }
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 14,
+        "term_capacity": 4194304,
+        "fact_capacity": 16384,
+        "used_terms": "3B5BCA1C594051E515295DBE51BB382A0D5368EC1337CCA7DC5DC63D007D644C",
+        "used_facts": "6181CD3D4FF69EED5D7D4016AC1D4C62B5C9BC7225BD6C45551DD169300FAF19"
+      }
+    },
+    {
+      "label": "no_4194304",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\no_4194304.bin.BA1D21F34FFA7883C25A8467224E1F3427D4166A8E1B6A0924A527ED0B521BDB.gz",
+          "encoding": "gzip",
+          "bytes": 369098784,
+          "sha256": "BA1D21F34FFA7883C25A8467224E1F3427D4166A8E1B6A0924A527ED0B521BDB",
+          "storage": {
+            "sha256": "E08201286F97E7D4151658063A2B06C0C585371E4D6FBDD9DD4F453BB0D3D272",
+            "bytes": 428361
+          }
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 14,
+        "term_capacity": 4194304,
+        "fact_capacity": 4194304,
+        "used_terms": "3B5BCA1C594051E515295DBE51BB382A0D5368EC1337CCA7DC5DC63D007D644C",
+        "used_facts": "6181CD3D4FF69EED5D7D4016AC1D4C62B5C9BC7225BD6C45551DD169300FAF19"
+      }
+    },
+    {
+      "label": "this_prefilled_2097152",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\this_prefilled_2097152.bin.E4636D7CE125AC61360274727B1D6BF7F99059AA8FBA79470D92E903E29F460D.gz",
+          "encoding": "gzip",
+          "bytes": 268435488,
+          "sha256": "E4636D7CE125AC61360274727B1D6BF7F99059AA8FBA79470D92E903E29F460D",
+          "storage": {
+            "sha256": "CF23CF6A2BF2B043B8BD8E19B89FF1C934CA797DE0CDBE54285FD216E09050D7",
+            "bytes": 330044
+          }
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 18,
+        "term_capacity": 4194304,
+        "fact_capacity": 2097152,
+        "used_terms": "0AAB8BC3C374A2504D2409E1AF5D9FEC67ECAEBCBA75B23715FE378540DD9802",
+        "used_facts": "69378EC69D8720DF9212BE6E92EDC405AF3FE0DCE258EF5377255D29A4CFB4E7"
+      },
+      "guard": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\this_prefilled_2097152.guard.json",
+        "bytes": 1330,
+        "sha256": "30A7E23DB5B17E6AAC1D1D70CDCEDB5B6E09FAA45B27FA5DB6C990936A6FB928"
+      }
+    },
+    {
+      "label": "this_prefilled_16384",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\this_prefilled_16384.bin.7B03DAAF91EC3829B821CFE9EBE26D8307ACFEDB9DAE39011562C3723CB6E13E.gz",
+          "encoding": "gzip",
+          "bytes": 168558624,
+          "sha256": "7B03DAAF91EC3829B821CFE9EBE26D8307ACFEDB9DAE39011562C3723CB6E13E",
+          "storage": {
+            "sha256": "62F696073D89627D8C662E4D3C8CEC2430EEADC62B53957AE5DA8BACF1274FB3",
+            "bytes": 232631
+          }
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 18,
+        "term_capacity": 4194304,
+        "fact_capacity": 16384,
+        "used_terms": "0AAB8BC3C374A2504D2409E1AF5D9FEC67ECAEBCBA75B23715FE378540DD9802",
+        "used_facts": "69378EC69D8720DF9212BE6E92EDC405AF3FE0DCE258EF5377255D29A4CFB4E7"
+      },
+      "guard": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\this_prefilled_16384.guard.json",
+        "bytes": 1328,
+        "sha256": "D63B6A2C1666E25A3BF690025D3AE486B3BA512500895AAB47896C289E144C08"
+      }
+    },
+    {
+      "label": "no_prefilled_2097152",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\no_prefilled_2097152.bin.2A44926838119094E016BAC344A24C3EDAD829A7BB86A70036929D8CAC457AD7.gz",
+          "encoding": "gzip",
+          "bytes": 268435488,
+          "sha256": "2A44926838119094E016BAC344A24C3EDAD829A7BB86A70036929D8CAC457AD7",
+          "storage": {
+            "sha256": "A29ED32F048D9EA09EBD181EAD6DC9A9D9766BF3D9571928559498999614037D",
+            "bytes": 330051
+          }
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 18,
+        "term_capacity": 4194304,
+        "fact_capacity": 2097152,
+        "used_terms": "C319C86C42AFF0EE791E28175D60BBF9CEF3EA81A6950CF6EA14E302D1CFE701",
+        "used_facts": "8371217FB0DC4CF3511D54AC8A793462EB2091ED6F5E6841C74C6A4CB7C44BA5"
+      },
+      "guard": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\no_prefilled_2097152.guard.json",
+        "bytes": 1330,
+        "sha256": "F81EFAC574C3567374EDE2D4E928265325DA62A5A45E51369D967D77318D1F32"
+      }
+    },
+    {
+      "label": "no_prefilled_16384",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\no_prefilled_16384.bin.A6C5E608DD5C2D22CA31F9CF7BB2DF5E92EAF335232DFBB6D4422FEB5C485EC9.gz",
+          "encoding": "gzip",
+          "bytes": 168558624,
+          "sha256": "A6C5E608DD5C2D22CA31F9CF7BB2DF5E92EAF335232DFBB6D4422FEB5C485EC9",
+          "storage": {
+            "sha256": "98FA3094860C08FCF6C5317DED531EB5FB6EFFAB2928DDE898030787ED07CB72",
+            "bytes": 232633
+          }
+        },
+        "error": 0,
+        "terms": 7395,
+        "facts": 6484,
+        "epochs": 18,
+        "term_capacity": 4194304,
+        "fact_capacity": 16384,
+        "used_terms": "C319C86C42AFF0EE791E28175D60BBF9CEF3EA81A6950CF6EA14E302D1CFE701",
+        "used_facts": "8371217FB0DC4CF3511D54AC8A793462EB2091ED6F5E6841C74C6A4CB7C44BA5"
+      },
+      "guard": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\no_prefilled_16384.guard.json",
+        "bytes": 1328,
+        "sha256": "99D96E2D5C8047F42126A1D725242C802506CA5B07228A557B47E52CF0273E32"
+      }
+    },
+    {
+      "label": "regression_overflow",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\regression_overflow.bin.4DDA602B4EED0FDA18A3B45239DC9FC3EBB22E4BD387F242E4BB8091A53EE3D7.gz",
+          "encoding": "gzip",
+          "bytes": 268435488,
+          "sha256": "4DDA602B4EED0FDA18A3B45239DC9FC3EBB22E4BD387F242E4BB8091A53EE3D7",
+          "storage": {
+            "sha256": "ACBFC28AE32E1672079301CD25531A7491B338DFE18D85211FF3C0A72209AEE2",
+            "bytes": 274049
+          }
+        },
+        "error": 0,
+        "terms": 1808,
+        "facts": 1502,
+        "epochs": 3,
+        "term_capacity": 4194304,
+        "fact_capacity": 2097152,
+        "used_terms": "8F15B8CB02485D39B3FC0D95C16E97E8AB3E227FBAAC076CAF51D156AE079711",
+        "used_facts": "C49F8F9EA1A4F16476B18C999232B67EDFD5637A24C770015C976CEB963EDD73"
+      }
+    },
+    {
+      "label": "regression_deep_antecedent",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\regression_deep_antecedent.bin.E4A6D694DD9E4758F7459254EE41C71EC23A202CDC31656C08FDF7B908E214C5.gz",
+          "encoding": "gzip",
+          "bytes": 268435488,
+          "sha256": "E4A6D694DD9E4758F7459254EE41C71EC23A202CDC31656C08FDF7B908E214C5",
+          "storage": {
+            "sha256": "287AD57B4E5235DBC84475FC3FEA09D49ECAA51F8129F5FF42B8E5FA1C61307F",
+            "bytes": 261118
+          }
+        },
+        "error": 2,
+        "terms": 42,
+        "facts": 3,
+        "epochs": 1,
+        "term_capacity": 4194304,
+        "fact_capacity": 2097152,
+        "used_terms": "0B2C98880492B511E5ADE4C8EA3802B0C3E57759CEC9431CD1BEB69A9F0EB7CC",
+        "used_facts": "157C140877831D0BE9EC645634F0F55B93E34FB1276E2672FF4779F9EF7556E0"
+      }
+    },
+    {
+      "label": "regression_deep_consequent",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\regression_deep_consequent.bin.9FB80C0DD9600FF6B0109F7FD608DE36524C8878644F0112D7A587CFFFE59FA7.gz",
+          "encoding": "gzip",
+          "bytes": 268435488,
+          "sha256": "9FB80C0DD9600FF6B0109F7FD608DE36524C8878644F0112D7A587CFFFE59FA7",
+          "storage": {
+            "sha256": "3EFF37EDF7A5131195AF72933EAA54CDE271212B6200433923DE132299F9C3D1",
+            "bytes": 261006
+          }
+        },
+        "error": 2,
+        "terms": 8,
+        "facts": 2,
+        "epochs": 1,
+        "term_capacity": 4194304,
+        "fact_capacity": 2097152,
+        "used_terms": "2EDA81764F51F0986455AA70B522F2B9350A8CFB47B33F7693BEC39548CBB182",
+        "used_facts": "57B07CF50787BFED7EC88684E557D0BB77BB9FD46A2CA91093CFC17993037E45"
+      }
+    },
+    {
+      "label": "fact_boundary_5282",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\fact_boundary_5282.bin.470677F587B16A8541CC04C7A45E7DEC706908AF8C79512EF195840F561F695A.gz",
+          "encoding": "gzip",
+          "bytes": 168025728,
+          "sha256": "470677F587B16A8541CC04C7A45E7DEC706908AF8C79512EF195840F561F695A",
+          "storage": {
+            "sha256": "24D8D1B72F0076C0251E3B0962FD5FD8C7C000EB649E53E84C0D82594EA81A09",
+            "bytes": 218593
+          }
+        },
+        "error": 0,
+        "terms": 6170,
+        "facts": 5282,
+        "epochs": 14,
+        "term_capacity": 4194304,
+        "fact_capacity": 5282,
+        "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+        "used_facts": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39"
+      }
+    },
+    {
+      "label": "fact_boundary_5281",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\fact_boundary_5281.bin.C574111A5CC086AC91EB19293BE9D4196708E79038D18087A93C0542DDD169DE.gz",
+          "encoding": "gzip",
+          "bytes": 168025680,
+          "sha256": "C574111A5CC086AC91EB19293BE9D4196708E79038D18087A93C0542DDD169DE",
+          "storage": {
+            "sha256": "BA865E471BB3428C77FAB9CE37DFF798FA351BD74561BDE7223CDCF9FB02BD4B",
+            "bytes": 218583
+          }
+        },
+        "error": 4,
+        "terms": 6170,
+        "facts": 5281,
+        "epochs": 13,
+        "term_capacity": 4194304,
+        "fact_capacity": 5281,
+        "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+        "used_facts": "21075733DE6A08D89B8D4A5742B08FCCA4ADA6E23B460A375C62F0646F9252CA"
+      }
+    },
+    {
+      "label": "closed_shrink",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\closed_shrink.bin.CD91B737558597BCD01BE717DAC38BF225AA7802B4EE85828363DB99D5ECF031.gz",
+          "encoding": "gzip",
+          "bytes": 168558624,
+          "sha256": "CD91B737558597BCD01BE717DAC38BF225AA7802B4EE85828363DB99D5ECF031",
+          "storage": {
+            "sha256": "73EECE7EE70710D0CFD9B42C45627FE3F4B6328ACB576BA4EB8D413F54F05204",
+            "bytes": 220538
+          }
+        },
+        "error": 0,
+        "terms": 6170,
+        "facts": 5282,
+        "epochs": 15,
+        "term_capacity": 4194304,
+        "fact_capacity": 16384,
+        "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+        "used_facts": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39"
+      },
+      "guard": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\closed_shrink.guard.json",
+        "bytes": 1328,
+        "sha256": "B3C79DD099D53ECBDDBD7B6CBAFA4224906C7C8C688DE5E49A14D669EFAF2A0C"
+      }
+    },
+    {
+      "label": "closed_grow",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_002\\closed_grow.bin",
+          "bytes": 369098784,
+          "sha256": "56F6F49890FDE81171815AED25CA8BC57507F2E28987931EEB0AA285B76DA0A8"
+        },
+        "error": 0,
+        "terms": 6170,
+        "facts": 5282,
+        "epochs": 15,
+        "term_capacity": 4194304,
+        "fact_capacity": 4194304,
+        "used_terms": "D2F884F1ECBB3A7AF18BA2BBE3C463C0FCA8ECACCE974A76C675B92D03171138",
+        "used_facts": "7B71C1A2221600A1D8947B5E025031D5FF88E638A851F5B281A5626B90171C39"
+      },
+      "guard": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_002\\closed_grow.guard.json",
+        "bytes": 1330,
+        "sha256": "216E94A4B0DC2864D01075ED8F32CB870C4FC0731A3B36D4E3B0BB1FBD4222E0"
+      }
+    },
+    {
+      "label": "j17_default",
+      "comparison": "SAME",
+      "observed": {
+        "identity": {
+          "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_002\\j17_default.bin",
+          "bytes": 268435488,
+          "sha256": "159567EEB9DB979FE75B3C69DA7749DDA3D7B4AD714F87A5FF1A73242F12A7D4"
+        },
+        "error": 0,
+        "terms": 105262,
+        "facts": 86507,
+        "epochs": 1131,
+        "term_capacity": 4194304,
+        "fact_capacity": 2097152,
+        "used_terms": "5B072888E2C17868A34F742F115BA96A4F8F9D9DD2B1F8E12E6BEB0895502BB8",
+        "used_facts": "AF0035E602D5FBDDDEAEE9B264158B5D711533302F6A86C5E8961CBE92485461"
+      },
+      "reference": {
+        "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\j17_step_021\\preflight\\readback.bin",
+        "bytes": 268435488,
+        "sha256": "159567EEB9DB979FE75B3C69DA7749DDA3D7B4AD714F87A5FF1A73242F12A7D4"
+      }
+    }
+  ],
+  "refusal_cases": [
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\cli_zero.execution.json",
+      "bytes": 482,
+      "sha256": "8B560E13B824B6004487D747F364E517F5E498DDBD833ABC06444FF5AD686C99"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\cli_negative.execution.json",
+      "bytes": 487,
+      "sha256": "159E29CDD65AD8848C23D102F05AEC220949AF08D6DA93F72A693E1C6CB37990"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\cli_overflow.execution.json",
+      "bytes": 503,
+      "sha256": "81B5F11A4B0CB99E9E201444666FE37EEC7376DA3E620D5FE1339A4DB157CDF8"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\cli_nondecimal.execution.json",
+      "bytes": 489,
+      "sha256": "1874F4DD7DD66B4A7BF65914392C4A4FA44D2979D65EBC259D991BD43A67D56E"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\cli_above_terms.execution.json",
+      "bytes": 495,
+      "sha256": "D10ACF2EF8BAD52A4F9B9A51F291C976C60F4524B482D42841E5AD89BE268DAE"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\failed_checkpoint_guard.execution.json",
+      "bytes": 2479,
+      "sha256": "7578CD04B403B0B1DD5F57BCB2B4206DA8875B40723FF0F478AA611F25CB3210"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\resume_target_too_small.execution.json",
+      "bytes": 1052,
+      "sha256": "41FC3000369ED6BE569DD194352206D7F44CE446DF195671BC7DA92EC1A268AE"
+    },
+    {
+      "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\runtime_021\\qualification_001\\outputs\\truncated_checkpoint.execution.json",
+      "bytes": 1002,
+      "sha256": "55EF6F0EDCD7886AAA2C7C8499396736AE74916B00BE697ED91399527D59E955"
+    }
+  ],
+  "source_laws": "UNCHANGED",
+  "default_readback_ABI": "SAME",
+  "schedule": "SAME_ORDERED_USED_BYTES",
+  "resource_refusal": "SAME",
+  "production_run": "NOT_RUN"
+}

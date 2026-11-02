@@ -1,0 +1,39 @@
+{
+  "at": "2026-11-02T02:58:46.326Z",
+  "command": {
+    "id": "construct_and_replay_child_023",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "argv": [
+      "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\run_023.mjs",
+      "worker"
+    ],
+    "cwd": "D:/Dev/Codex/2026-10-04/new-chat/j17_canonical_child_023",
+    "sources": [
+      "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\run_023.mjs",
+      "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023/orientation_transport.mal",
+      "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023/orientation_observer.mjs",
+      "D:/Dev/Codex/2026-10-04/new-chat/j17_canonical_child_023/input.mal"
+    ],
+    "outputs": [
+      {
+        "path": "D:/Dev/Codex/2026-10-04/new-chat/j17_canonical_child_023/OBSERVATION.json",
+        "equals": {
+          "verdict": "IF_THEN",
+          "replay": "SAME",
+          "world_effect": "NONE"
+        }
+      }
+    ]
+  },
+  "implementation": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\mal_fabric_flag_world_001\\flag_world_001_first_tick\\sand_refinement_diagnostics_026\\sweep\\broad_execution_020\\queuegate_027\\queuegate_runner.mjs",
+    "bytes": 16256,
+    "sha256": "2065C77ADC827238C6AFB22C5B9A7C753F9AA286206CEC2ADD1579E39209501D"
+  },
+  "plan": {
+    "path": "D:\\Dev\\Codex\\2026-10-04\\new-chat\\j17_canonical_child_023\\QUEUE_PLAN.json",
+    "bytes": 19862,
+    "sha256": "D0084F653DBD2A639E989F13C055642DE29E92D6DA41CDB8EEE18C1856437781"
+  },
+  "world_effect": "NONE"
+}

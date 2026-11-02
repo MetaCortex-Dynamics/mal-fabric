@@ -1,0 +1,14 @@
+{
+  "executable": {
+    "path": "C:\\Windows\\System32\\nvidia-smi.exe",
+    "bytes": 1624808,
+    "sha256": "9B3DA28A74C5BFBF33B147B4B73C105E55B1F74B474E63EC7762843E5F2B635D"
+  },
+  "argv": [
+    "--query-gpu=name,memory.free",
+    "--format=csv,noheader,nounits"
+  ],
+  "cwd": "D:/Dev/Codex/2026-10-04/new-chat/j17_canonical_child_023",
+  "timeout_ms": 15000,
+  "at": "2026-11-02T02:58:46.936Z"
+}

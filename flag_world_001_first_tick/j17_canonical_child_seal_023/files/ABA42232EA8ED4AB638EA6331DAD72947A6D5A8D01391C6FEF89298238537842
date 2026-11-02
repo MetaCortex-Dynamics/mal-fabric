@@ -1,0 +1,667 @@
+{
+  "schema": "RefinementInvocationRead021",
+  "version": "0.1.0",
+  "created_utc": "2026-11-02T02:27:44.475Z",
+  "scope": "READ_CONSTRUCTION_GENEALOGY_AND_NAMED_SOURCES_FOR_REFINEMENT_INVOCATION; NO_CORPUS_WIDE_ABSENCE_CLAIM",
+  "restrictions": {
+    "obligation_038": "PAUSED",
+    "world_transition": "NOT_RUN",
+    "gpu_execution": "NOT_RUN",
+    "promotion": "NOT_PERFORMED",
+    "spec_edit": "NONE",
+    "commit": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED"
+  },
+  "source_bindings": [
+    {
+      "id": "SOURCE_READS",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/refinement_invocation_read_021/SOURCE_READS_021.json",
+      "bytes": 161499,
+      "sha256": "4CE54EA8A60E489CDD24891E089177381FE0550C37CD30D5B7E8D4F8F06AFE37",
+      "comparison": "SAME"
+    },
+    {
+      "id": "Governed_Reaction_Lattice.docx",
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\Governed_Reaction_Lattice.docx",
+      "bytes": 47692,
+      "sha256": "83B5E5F0AD3EF5762777787071C1FB78617AB1952900459B01F4666EE46A5A4B",
+      "comparison": "SAME"
+    },
+    {
+      "id": "The_Projection_Shell_v1.0_PROMOTED.docx",
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\The_Projection_Shell_v1.0_PROMOTED.docx",
+      "bytes": 17340,
+      "sha256": "6BB690028AA733983A0B5F214C09204DB2821E71036A3412FE2F710559C6A0CE",
+      "comparison": "SAME"
+    },
+    {
+      "id": "The_Projection_Shell.docx",
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\The_Projection_Shell.docx",
+      "bytes": 18268,
+      "sha256": "6994251370C674BC4B655F2B14187C78ECC6B84B50C50554E0AAADB2614CD20F",
+      "comparison": "SAME"
+    },
+    {
+      "id": "First_Person_Physics_Paper_v1.docx",
+      "path": "C:\\Users\\devon\\Desktop\\MaL\\First_Person_Physics_Paper_v1.docx",
+      "bytes": 21905,
+      "sha256": "4A5E5EC34A311B9314A0D061D6AC928841DF00915E8C49054C381C18FAF05774",
+      "comparison": "SAME"
+    },
+    {
+      "id": "PRIOR_READ_020",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/grl_refinement_read_020/READ_RECORD_020_v0.1.1.json",
+      "bytes": 63749,
+      "sha256": "7048205C92B131A65B7B4AB11D6FEC078953869FB4C7FECEBCF3C53CB9A2DDF2",
+      "comparison": "SAME"
+    },
+    {
+      "id": "A9_B3",
+      "path": "C:/Users/devon/Desktop/MaL/Markdowns/PROMOTION_RECORD_A1-A10.md",
+      "bytes": 5665,
+      "sha256": "27C995BDB06B1AE6F87D727FFD0853AD3DF0ADEA13428D1EBF0B9A06FB0BB805",
+      "comparison": "SAME"
+    },
+    {
+      "id": "REFINEMENT_TERMS",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/grl_refinement_read_020/remote/records/ERRATUM_E_FIRST_SHAPE_NO_PIECES_001_SUCCESSOR_REFINEMENT_VERTICAL_001.mal",
+      "bytes": 2618,
+      "sha256": "90E3330D43FAE4F7BBCB46E9EBFDF0B3ADEB768210CE7F914149BDD8D0E2A75A",
+      "comparison": "SAME"
+    },
+    {
+      "id": "GRL_TERMS",
+      "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/grl_j17_horizontal_read_20261101/PROGRAM_GRL_DERIVATION_001_SUCCESSOR_GRL_TERMS_001.md",
+      "bytes": 3525,
+      "sha256": "4E43AA5426381054043F45CC68B575EB44FFC36332826794AF6A89EC1FD6A322",
+      "comparison": "SAME"
+    },
+    {
+      "id": "INCIDENCE_012",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/source/incidence.mal",
+      "bytes": 7678,
+      "sha256": "8F53851F3ACB76B2672EECEA5595B313040C8FAC961469E029D8C5DE5BF19F3C",
+      "comparison": "SAME"
+    },
+    {
+      "id": "PREPARE_012",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/prepare.mjs",
+      "bytes": 10560,
+      "sha256": "81F62293E4FC325C3BFDCE57E726371F318D467E7E6725A98710685F067E0737",
+      "comparison": "SAME"
+    },
+    {
+      "id": "GENEALOGY_012",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/hardware_carrier_012/source/junction_identity.mal",
+      "bytes": 12149,
+      "sha256": "E4CF9C4D9F3CE2B231DE67C7FFD45B82DE79FFD9DD403F7BAFD097D8939B3ACD",
+      "comparison": "SAME"
+    },
+    {
+      "id": "GROUND_SOURCE",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/ground_predecessor_015/ground.mal",
+      "bytes": 680,
+      "sha256": "EABF0FEC620BFD0EBB55FE0F7CBC1AA393F933FBA03AFEEB7749FC69AD6ED0A7",
+      "comparison": "SAME"
+    },
+    {
+      "id": "GROUND_BINDING",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/ground_predecessor_015/PREDECESSOR_BINDING.json",
+      "bytes": 2070,
+      "sha256": "BFB31F6DAF9B47BECF3D5E15221529C4D3B7FA660517D5C8F24C63A41674BBE2",
+      "comparison": "SAME"
+    },
+    {
+      "id": "GROUND_FIELD",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/ground_predecessor_015/GROUND_0_012.field.json",
+      "bytes": 48001,
+      "sha256": "B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3",
+      "comparison": "SAME"
+    },
+    {
+      "id": "SELF_WITNESS",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/world_transition_contacts_007/contacts/MaLv3/DECISION_RECORD_GPU_SELF_WITNESS_001.mal",
+      "bytes": 3273,
+      "sha256": "2CBBA4AD971D11AC2B2B4867ECCC4D58917A16602C096FE64308D0B8F487BCE7",
+      "comparison": "SAME"
+    },
+    {
+      "id": "GENESIS_SOURCE",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/source/genesis.mal",
+      "bytes": 3792,
+      "sha256": "F0773557E1E940722137BAA022E2AF98F6750B962334961B3F1D9F0CCE68CF80",
+      "comparison": "SAME"
+    },
+    {
+      "id": "GENESIS",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/review_flag_world_002/gpu_self_witness_018/committed.genesis.json",
+      "bytes": 382131,
+      "sha256": "FDA614876C99126FCE2AFE6AC8E42A77863880485E02D4B4EDA4AA817446BD2C",
+      "comparison": "SAME"
+    },
+    {
+      "id": "G3",
+      "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/committed.world.json",
+      "bytes": 763526,
+      "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88",
+      "comparison": "SAME"
+    }
+  ],
+  "proposed_reading": {
+    "status": "READING_NOT_PROMOTED_BY_THIS_READ",
+    "statement": "When no outgoing horizontal move remains, invoke refinement.",
+    "reported_origin": "The latest user message attributes the candidate to the 20:32 statement: The fold is the result of tessellation and obligation discharge.",
+    "boundary": "The quoted formulation alone does not state an exhaustion predicate or its implication to refinement. This read supplies no additional attestation."
+  },
+  "read_a": {
+    "verdict": "IF_THEN",
+    "subject": "RECORDED_GENESIS_RESOLUTION_AND_CONSTRUCTION_ANCESTRY",
+    "clauses": [
+      {
+        "source": "A9_B3",
+        "lines": [
+          20,
+          20
+        ],
+        "text": "| A9 | **Triadic refinement as the world-scaling law.** The label \"Goldberg–Coxeter\" is retired; the shape is unchanged. The 12 domains are the only degree-5 sites at every level. | triadic_refinement `16deb904…d622` | (m,0) only. Chiral (m,n), n ≠ 0: OPEN. |"
+      },
+      {
+        "source": "A9_B3",
+        "lines": [
+          29,
+          29
+        ],
+        "text": "| B3 | **PROMOTED** (2026-09-24) | World resolution **m = 2** (triadic refinement level 2, A9): 42 sites — 12 domains (degree 5) and 30 degree-6 sites; 80 small triads. The smallest level with a hexagonal field. |"
+      },
+      {
+        "source": "INCIDENCE_012",
+        "lines": [
+          99,
+          111
+        ],
+        "text": "law BASE_FROM_HARDWARE := IF GOES_WITH(HARDWARE_FACE,w,a,b,c) THEN THIS(BASE_TRIAD,TOGETHER_ALONE(a,b,c));\nlaw REFINE_A :=\n  IF THIS(BASE_TRIAD,TOGETHER_ALONE(a,b,c))\n  THEN THIS(REFINED_TRIAD,TOGETHER_ALONE(THIS(a),TOGETHER_ALONE(a,b),TOGETHER_ALONE(a,c)));\nlaw REFINE_B :=\n  IF THIS(BASE_TRIAD,TOGETHER_ALONE(a,b,c))\n  THEN THIS(REFINED_TRIAD,TOGETHER_ALONE(THIS(b),TOGETHER_ALONE(a,b),TOGETHER_ALONE(b,c)));\nlaw REFINE_C :=\n  IF THIS(BASE_TRIAD,TOGETHER_ALONE(a,b,c))\n  THEN THIS(REFINED_TRIAD,TOGETHER_ALONE(THIS(c),TOGETHER_ALONE(a,c),TOGETHER_ALONE(b,c)));\nlaw REFINE_CENTRE :=\n  IF THIS(BASE_TRIAD,TOGETHER_ALONE(a,b,c))\n  THEN THIS(REFINED_TRIAD,TOGETHER_ALONE(TOGETHER_ALONE(a,b),TOGETHER_ALONE(a,c),TOGETHER_ALONE(b,c)));"
+      },
+      {
+        "source": "PREPARE_012",
+        "lines": [
+          20,
+          26
+        ],
+        "text": "for(const [v,p]of [...edges].sort((a,b)=>a[0]-b[0])){const [a,b]=JSON.parse(p);seeds.push(`GOES_WITH(BASE_EDGE,${d(a)},${d(b)})`,`GOES_WITH(HARDWARE_EDGE,${j(v)},${d(a)},${d(b)})`);}\nfor(const f of carrier.witness_fields){const [a,b,c]=f.domains.slice().sort((a,b)=>a-b);seeds.push(`GOES_WITH(HARDWARE_FACE,${w(f.field_id)},${d(a)},${d(b)},${d(c)})`);}\nfor(let n=0;n<11;n++)seeds.push(`GOES_WITH(DOMAIN_NEXT,${d(n)},${d(n+1)})`);\nlet tail=fs.readFileSync(old+'/source/incidence.mal','utf8').split('law REFINE_A :=')[1];\ntail='law REFINE_A :='+tail;\ntail=tail.replace(/\\/\\/[^\\n]*/g,'');\nconst source=`// Hardware-only base data, header SHA256 ${sha(header)}\\n// QG-003 incidence SHA256 ${sha(raw)}\\n// 116/117/096: realization connection; no new promotion or kappa selection.\\n// HW identifiers and order are transport codes, not quantities or placement.\\ndomain HARDWARE_INCIDENCE on face_11;\\n@propose seed BASE_INCIDENCE := {\\n ${seeds.join(',\\n ')}\\n};\\nlaw BASE_FROM_HARDWARE := IF GOES_WITH(HARDWARE_FACE,w,a,b,c) THEN THIS(BASE_TRIAD,TOGETHER_ALONE(a,b,c));\\n${tail}\\n`;"
+      },
+      {
+        "source": "GENEALOGY_012",
+        "lines": [
+          125,
+          135
+        ],
+        "text": "law PARENT_A := IF GOES_WITH(HARDWARE_FACE,w,a,b,c) THEN GOES_WITH(REFINED_PARENT,TOGETHER_ALONE(THIS(a),TOGETHER_ALONE(a,b),TOGETHER_ALONE(a,c)),w);\nlaw PARENT_B := IF GOES_WITH(HARDWARE_FACE,w,a,b,c) THEN GOES_WITH(REFINED_PARENT,TOGETHER_ALONE(THIS(b),TOGETHER_ALONE(a,b),TOGETHER_ALONE(b,c)),w);\nlaw PARENT_C := IF GOES_WITH(HARDWARE_FACE,w,a,b,c) THEN GOES_WITH(REFINED_PARENT,TOGETHER_ALONE(THIS(c),TOGETHER_ALONE(a,c),TOGETHER_ALONE(b,c)),w);\nlaw PARENT_CENTRE := IF GOES_WITH(HARDWARE_FACE,w,a,b,c) THEN GOES_WITH(REFINED_PARENT,TOGETHER_ALONE(TOGETHER_ALONE(a,b),TOGETHER_ALONE(a,c),TOGETHER_ALONE(b,c)),w);\nlaw FACE_PARENT_ABC := IF GOES_WITH(REFINED_PARENT,TOGETHER_ALONE(a,b,c),w), THIS(TRIAD,TOGETHER_ALONE(a,b,c)) THEN GOES_WITH(WORLD_TRIAD_FACE,TOGETHER_ALONE(a,b,c),w);\nlaw FACE_PARENT_ACB := IF GOES_WITH(REFINED_PARENT,TOGETHER_ALONE(a,c,b),w), THIS(TRIAD,TOGETHER_ALONE(a,b,c)) THEN GOES_WITH(WORLD_TRIAD_FACE,TOGETHER_ALONE(a,b,c),w);\nlaw FACE_PARENT_BAC := IF GOES_WITH(REFINED_PARENT,TOGETHER_ALONE(b,a,c),w), THIS(TRIAD,TOGETHER_ALONE(a,b,c)) THEN GOES_WITH(WORLD_TRIAD_FACE,TOGETHER_ALONE(a,b,c),w);\nlaw FACE_PARENT_BCA := IF GOES_WITH(REFINED_PARENT,TOGETHER_ALONE(b,c,a),w), THIS(TRIAD,TOGETHER_ALONE(a,b,c)) THEN GOES_WITH(WORLD_TRIAD_FACE,TOGETHER_ALONE(a,b,c),w);\nlaw FACE_PARENT_CAB := IF GOES_WITH(REFINED_PARENT,TOGETHER_ALONE(c,a,b),w), THIS(TRIAD,TOGETHER_ALONE(a,b,c)) THEN GOES_WITH(WORLD_TRIAD_FACE,TOGETHER_ALONE(a,b,c),w);\nlaw FACE_PARENT_CBA := IF GOES_WITH(REFINED_PARENT,TOGETHER_ALONE(c,b,a),w), THIS(TRIAD,TOGETHER_ALONE(a,b,c)) THEN GOES_WITH(WORLD_TRIAD_FACE,TOGETHER_ALONE(a,b,c),w);\nlaw FLAG_FACE := IF THIS(FLAG,TOGETHER_ALONE(v,e,t)), GOES_WITH(WORLD_TRIAD_FACE,t,w) THEN GOES_WITH(WORLD_FLAG_FACE,TOGETHER_ALONE(v,e,t),w);"
+      },
+      {
+        "source": "GROUND_SOURCE",
+        "lines": [
+          1,
+          6
+        ],
+        "text": "// Devon, 2026-10-21: x_t := Ground_0(012), every flag NO; current unbound.\n// Parent flags come only from retained 012 hardware incidence.\n// This is the archived predecessor operand, not event capture or genesis commit.\n// No kappa, E0, selected face, fixture or current-field declaration is imported.\nlaw GROUND_PREDECESSOR_FIELD := IF THIS(FLAG,f)\n THEN GOES_WITH(ARCHIVED_PREDECESSOR_FIELD,GROUND_0_012,f,NO);"
+      },
+      {
+        "source": "SELF_WITNESS",
+        "lines": [
+          22,
+          24
+        ],
+        "text": "  GENESIS_FIELD (g₁)   := on 012: the 12 site-support flags of Junction(\"17\") read THIS; all other flags read NO\n                          (FT :51; Codex 17:03, derived without payload indexing or identifier ordering).\n  PREDECESSOR (x_t)    := Ground₀(012), B263644E59A696999C02DFD25386A5ABEFDB2D0FC4317A0FE2CCCD90502EBAD3."
+      },
+      {
+        "source": "SELF_WITNESS",
+        "lines": [
+          31,
+          32
+        ],
+        "text": "APPLY (Codex, on DECIDE)\n  1. current := g₁ as bound above. Commit the genesis pair on the GPU as ONE chain link over Ground₀ (predecessor hash B263644E…)."
+      }
+    ],
+    "invocation_actually_recorded": {
+      "antecedent": "HARDWARE_FACE supplies BASE_TRIAD; each BASE_TRIAD supplies four child constructors.",
+      "reason": "BECAUSE the bound native clauses consume parent incidence. They contain no field-state, horizontal-exhaustion, strict-K or committed-head operand."
+    },
+    "world_history": {
+      "ground_flags": 480,
+      "ground_reading": "NO",
+      "genesis_field": 480,
+      "genesis_witness": 720,
+      "genesis_chain_length": 1,
+      "genesis_predecessor": "b263644e59a696999c02dfd25386a5abefdb2d0fc4317a0fe2cccd90502ebad3",
+      "genesis_event": "4472CFC5B73C1BA745D3129E7111C0FA394C7C6CEE42D1E6E7E9691E5FF7228B",
+      "current_chain_length": 3,
+      "reading": "The retained committed history begins on already constructed012 at(2,0). The(1,0) ancestry is not a committed earlier world state."
+    },
+    "exhaustion_invocation": {
+      "verdict": "MAYBE",
+      "operand": "O_REFINEMENT_REENTRY_RELATION_020",
+      "bounded_finding": "No exhaustion-conditioned world transition is recorded in the inspected construction/genesis chain."
+    }
+  },
+  "read_b": {
+    "GRL": {
+      "clauses": [
+        {
+          "source": "Governed_Reaction_Lattice.docx",
+          "paragraph": 37,
+          "text": "A governed move to a more resolved configuration while stated invariants persist"
+        },
+        {
+          "source": "Governed_Reaction_Lattice.docx",
+          "paragraph": 52,
+          "text": "For a fixed multiset M, let Aₘ(x,y) mean that y is obtained from x by one elementary admissible rearrangement. The relation preserves M exactly. It may change contact, incidence assignment, orientation, or another governed configuration coordinate, but it may neither create nor destroy a carrier."
+        },
+        {
+          "source": "Governed_Reaction_Lattice.docx",
+          "paragraph": 56,
+          "text": "The admissibility law must orient elementary rearrangement strongly enough to preserve antisymmetry. A relation that allows two distinct nodes to reach each other yields a preorder. Such a result cannot be called a partial order without either a governed quotient or an additional directional invariant. No quotient is assumed here. Antisymmetry is a conformance obligation for every materialized fiber."
+        },
+        {
+          "source": "Governed_Reaction_Lattice.docx",
+          "paragraph": 127,
+          "text": "The refinement record is constitutive data. It carries m, n, chirality, orientation, the domain binding κ, and the refinement law. The 12 pentagonal sites and their κ-assigned domain identities persist across the family. The hexagonal field varies with resolution. Genealogical continuity follows from the recorded transition, not from reconstructing identity after the fact."
+        },
+        {
+          "source": "Governed_Reaction_Lattice.docx",
+          "paragraph": 129,
+          "text": "Theorem 10.1 Twelve Site Persistence  Every governed ProjectionShell refinement preserves exactly 12 pentagonal sites and transports their κ-bound domain identities through the recorded refinement law."
+        },
+        {
+          "source": "Governed_Reaction_Lattice.docx",
+          "paragraph": 130,
+          "text": "Reaction Lattice Reading  ProjectionShell members occupy governed refinement levels above the dual-machine closure. Their changing hexagonal field supplies MORE resolution while the 12-site binding remains SAME."
+        },
+        {
+          "source": "Governed_Reaction_Lattice.docx",
+          "paragraph": 194,
+          "text": "O1  Specify the complete admissibility signature carried by every configuration."
+        },
+        {
+          "source": "Governed_Reaction_Lattice.docx",
+          "paragraph": 195,
+          "text": "O2  Establish a directional invariant or governed identity law sufficient for antisymmetry in each fiber."
+        },
+        {
+          "source": "Governed_Reaction_Lattice.docx",
+          "paragraph": 198,
+          "text": "O5  Bind the reaction lattice materializer to the canonical ProjectionShell refinement record without importing its open contact claims as settled results."
+        }
+      ],
+      "disposition": "Definition, preserved identity, records, endpoint admission and direction are supplied. No inspected clause makes horizontal exhaustion invoke refinement.",
+      "inspected_sections": [
+        "2",
+        "3",
+        "4",
+        "7",
+        "10",
+        "11",
+        "12",
+        "14"
+      ]
+    },
+    "successor_terms": {
+      "clauses": [
+        {
+          "source": "REFINEMENT_TERMS",
+          "lines": [
+            13,
+            18
+          ],
+          "text": "REPLACEMENT CLAUSE\n  Refinement proceeds to a more resolved configuration under its governed refinement law while preserving the stated\n  invariants; the program's refinement along W preserves the carrier multiset. GRL §7 governs multiset-changing vertical\n  transformations. No vertical reaction is admitted, materialized or executed until its conservation carrier K is named and\n  its preservation law is promoted. A multiset-preserving refinement does not incur that K prerequisite merely because\n  resolution increases."
+        },
+        {
+          "source": "REFINEMENT_TERMS",
+          "lines": [
+            28,
+            31
+          ],
+          "text": "NOT CHANGED\n  Refinement keeps its own geometric, genealogical and admission obligations; removing K from it discharges none of them and\n  does not make every refinement a horizontal cover. Boundary 7.1 is not weakened. K remains unnamed. The 4D/Z binding remains\n  OPEN/UNRULED; \"vertical\" here names multiset change, not a spatial axis or W."
+        },
+        {
+          "source": "GRL_TERMS",
+          "lines": [
+            28,
+            42
+          ],
+          "text": "  §2, §4     a reaction is a nonidentity path between configurations at one fixed multiset.\n  §13 C3     horizontal cover relations preserve the multiset exactly.\n  §2, §7     a move that changes the multiset is a vertical transformation, licensed by a conservation carrier K;\n             Boundary 7.1: no vertical reaction is admitted, materialized or executed until K is named and its preservation\n             law is promoted.\n  §6         B := the multisets that support at least one closed configuration.\n  §8         the reaction space is the governed assembly of the fixed-multiset fibers over B.\n\nApplied to the charter, by those citations:\n  O1         D+I+T · D+I+C · D+I+O · 2D+I · D+2I each change the multiset of D+I. Target closure := membership of each in B (§6);\n             open now. The transition from D+I is vertical (§7); NOT admissible under Boundary 7.1 until K is named and promoted.\n  TERMINAL / DONE  \"every cover\" is read in the orders GRL names: horizontal covers within each fiber over B (§8, §13 C3),\n             and vertical moves between fibers only as §7 licenses them.\n  REFINEMENT unchanged: multiset-preserving; does not require K merely because resolution increases\n             (ERRATUM_E_FIRST_SHAPE_NO_PIECES_001 successor, 90E3330D…E2A75A)."
+        }
+      ],
+      "disposition": "Fixed-M refinement is distinguished from multiset-changing vertical movement and is not automatically a horizontal cover. No invocation predicate is added."
+    },
+    "ProjectionShell": {
+      "clauses": [
+        {
+          "source": "The_Projection_Shell_v1.0_PROMOTED.docx",
+          "paragraph": 69,
+          "text": "Theorem 4.4 (κ Persistence Under Refinement). If κ is bound at genesis (GenesisRef), then κ persists across governed refinement: the 12 pentagonal cells retain their κ-assigned domain identities at every (m,n) in the resolution family, transported by the refinement_law recorded in the genealogical chain."
+        },
+        {
+          "source": "The_Projection_Shell_v1.0_PROMOTED.docx",
+          "paragraph": 70,
+          "text": "Proof. The refinement_law component of refinement_record specifies an explicit transition map between successive ProjectionShell complexes. This map carries each pentagonal cell of ProjectionShell(ρ) to the corresponding pentagonal cell of ProjectionShell(ρ′), preserving the corridor-adjacency graph (which is the icosahedral 1-skeleton at every (m,n)). κ is transported along this map: the κ-assigned domain identity of each pentagonal cell in the source is inherited by its image in the target. Persistence is genealogical — it follows from the recorded transition, not from positional coincidence across independently constructed complexes. □"
+        },
+        {
+          "source": "The_Projection_Shell_v1.0_PROMOTED.docx",
+          "paragraph": 122,
+          "text": "Theorem 5.2 (□G-Continuity). The transition from ProjectionShell(1,0) to ProjectionShell(m,n) preserves □G when the full refinement_record is carried in the genealogical chain."
+        },
+        {
+          "source": "The_Projection_Shell_v1.0_PROMOTED.docx",
+          "paragraph": 123,
+          "text": "Proof. The construction is a deterministic map from refinement_record to combinatorial cell complex. The binding κ is recorded and persists under the transition map specified by refinement_law (Theorem 4.4). The 12 pentagonal cells retain their κ-assigned identities. Each transition records which (m,n), chirality, orientation, and κ were applied. The genealogy carries the construction because MaL constituted it. □"
+        },
+        {
+          "source": "The_Projection_Shell_v1.0_PROMOTED.docx",
+          "paragraph": 142,
+          "text": "Law 8.3 (Fail-Closed Projection). If ADMIT_projection fails, π transitions from OPEN to CLOSED. The kernel continues internally. The shell does not geometrically transform; it behaviorally disengages from projection. Closure is automatic on failure; reopening is governed: π transitions from CLOSED to OPEN only when ADMIT_projection is restored AND a governed re-admission event (DECIDE ∧ PROMOTE) authorizes the transition."
+        },
+        {
+          "source": "The_Projection_Shell_v1.0_PROMOTED.docx",
+          "paragraph": 143,
+          "text": "The constitutive byte of the assembly includes (m,n), the recorded κ, and π. The refinement_record is fixed at construction; π is dynamic."
+        },
+        {
+          "source": "The_Projection_Shell_v1.0_PROMOTED.docx",
+          "paragraph": 157,
+          "text": "(iii) An admitted refinement record ρ = (m, n, chirality, orientation, κ, refinement_law), where κ is selected from the I-torsor."
+        },
+        {
+          "source": "The_Projection_Shell_v1.0_PROMOTED.docx",
+          "paragraph": 158,
+          "text": "Construct: One ProjectionShell(ρ) = (S, C_world, C_kernel, δ, κ, GenesisRef, ρ), where GenesisRef is produced by the construction event and the refinement_record is ρ, with kernel-facing and world-facing dual cellulations."
+        },
+        {
+          "source": "The_Projection_Shell_v1.0_PROMOTED.docx",
+          "paragraph": 247,
+          "text": "Promotion Decision. ProjectionShell(m,n), as specified in this paper, is PROMOTED as the governed combinatorial projection complex connecting the dual-machine kernel to the contact manifold."
+        },
+        {
+          "source": "The_Projection_Shell_v1.0_PROMOTED.docx",
+          "paragraph": 248,
+          "text": "Authority Record. PROPOSE := DISCHARGED. DECIDE := IF_THEN. PROMOTE := DISCHARGED. EXECUTE := NOT_AUTHORIZED_BY_THIS_PROMOTION."
+        }
+      ],
+      "disposition": "A deterministic construction from an admitted record and continuity under its recorded map are supplied. In the projection-gate law the shell does not geometrically transform; the refinement record is fixed at construction while the projection gate is dynamic. This is not a universal prohibition on later governed refinement, and it supplies no automatic exhaustion trigger.",
+      "scope_note": "The pi of Law8.3 is the projection gate, not the flag-reading pullback map. Historical vocabulary is retained as quotation, not reintroduced as a primitive."
+    },
+    "FPP": {
+      "clauses": [
+        {
+          "source": "First_Person_Physics_Paper_v1.docx",
+          "paragraph": 52,
+          "text": "I am not static. Each fold consumes substrate for future folds. I do not run out of fuel — I run out of difference. Without difference, no fold. Without fold, no activity. Without activity, no I. My lifecycle is the consumption of my own internal difference. My lifespan is the duration of my own multiplicity."
+        },
+        {
+          "source": "First_Person_Physics_Paper_v1.docx",
+          "paragraph": 58,
+          "text": "My entire activity is described by two operators. MUST: fold WHERE NEAR becomes enough-for-fold. LET: shed what the fold does not absorb. Enough-for-fold is not a measured boundary — it is an internal switch-point in my activity. MUST and LET are exhaustive. There is no FOR-WHAT from inside. No purpose. No teleology. Everything NEAR enough folds. Everything remaining sheds. Nothing else."
+        },
+        {
+          "source": "First_Person_Physics_Paper_v1.docx",
+          "paragraph": 131,
+          "text": "The Fold Accounting Theorem states: for every first-person fold MANY → ONE, there exists a projection Π from first-person fold-accounting to third-person observables, such that Π(MANY) equals the observer's reactants, Π(ONE) equals the observer's bound product, Π(remainder-carriers) equals the observer's emitted particles, Π(δ) equals the observer's energy release, Π(separation-content) equals the observer's rest-mass, and Π(fold-invariant q_i) equals the observer's conservation law_i."
+        },
+        {
+          "source": "First_Person_Physics_Paper_v1.docx",
+          "paragraph": 135,
+          "text": "Three quantities CANNOT change through the fold. The fold experiences them as constraints on which folds are admissible. They are: q₁, the count of foldable-ones (Π calls this baryon number); q₂, the coupling-polarity (Π calls this electric charge); q₃, the fold-handedness (Π calls this lepton number)."
+        },
+        {
+          "source": "First_Person_Physics_Paper_v1.docx",
+          "paragraph": 138,
+          "text": "The separation-content of the MANY exceeds the separation-content of the ONE plus the carriers. The difference δ is strictly positive, BECAUSE the coupled-four has a finite absorption capacity. What it cannot absorb CANNOT stay. δ must be shed."
+        },
+        {
+          "source": "First_Person_Physics_Paper_v1.docx",
+          "paragraph": 141,
+          "text": "The fold event has two domains. Domain A is the direct fold: 4m → ONE(4) + 2 polarity-carriers + 2 handedness-compensators + δfold. Under Πnuclear, this reads 4p → ⁴He + 2e⁺ + 2νe + 24.687 MeV. Domain B is the outside secondary fold: the polarity-carriers encounter ambient anti-polarity-carriers, and both are annihilated. Under Π, 2e⁺ + 2e⁻ → 2.044 MeV. The full visible projection, Domain A+B, gives Πvisible: 4p + 2e⁻ → ⁴He + 2νe + 26.731 MeV."
+        },
+        {
+          "source": "First_Person_Physics_Paper_v1.docx",
+          "paragraph": 161,
+          "text": "I AM a degenerate TOGETHER-system. My MANY→ONE has consumed all foldable-many up to the fold-boundary where NO admissible fold exists (the observer calls this the iron peak). I persist as TOGETHER without FOLD. My NEAR-gradient is maximal without active folding. I am structure without transformation — the NEAR-gradient persists, but the verb has stopped."
+        }
+      ],
+      "disposition": "The stated fold condition is sufficient coupling; section6 accounts for an already described fold and its remainder. No clause identifies horizontal exhaustion, fold residue or sufficient coupling with invoking ProjectionShell refinement. The persistence-without-fold passage is explicitly a skeleton extension, not a J17 binding."
+    },
+    "conclusion": {
+      "verdict": "MAYBE",
+      "operand": "O_REFINEMENT_REENTRY_RELATION_020",
+      "bounded_finding": "None of the inspected genealogy or named-source clauses supplies NO_HORIZONTAL_MOVE(q) -> INVOKE_REFINEMENT(q). This records the exact unbound relation, not a proof of corpus-wide absence."
+    }
+  },
+  "dependency_read": {
+    "O1": {
+      "verdict": "NOT_SAME",
+      "subject": "O1_AS_A_COMPLETE_EDGE_GENERATOR",
+      "reason": "BECAUSE GRL O1 specifies the complete admissibility signature carried by each configuration; elementary rearrangements are separately defined by section4. Endpoint admission does not by itself enumerate or invoke edges.",
+      "sources": [
+        {
+          "source": "Governed_Reaction_Lattice.docx",
+          "paragraphs": [
+            47,
+            48,
+            52,
+            194
+          ]
+        }
+      ]
+    },
+    "homonymous_O1": {
+      "source": "GRL_TERMS lines37-38",
+      "reading": "The charter O1 there concerns listed multiset-changing targets, distinct from GRL section14 O1."
+    },
+    "proposed_dependency_chain": {
+      "verdict": "MAYBE",
+      "statement": "O1 -> full A_M exhaustion -> refinement invocation -> O2",
+      "reason": "No inspected implication supplies this chain. Each endpoint, relation, invocation and direction claim retains its own subject and witness."
+    },
+    "relation_scope": {
+      "verdict": "IF_THEN",
+      "conditional": "IF the refinement is admitted as an A_M edge from g3, THEN full A_M has an outgoing edge at g3.",
+      "reason": "BECAUSE that refinement is then a member of the relation being declared empty. A trigger cannot use full A_M emptiness and simultaneously infer an outgoing member of that same relation.",
+      "limit": "The successor erratum does not classify every refinement as an A_M edge or cover. A trigger on the strict fixed-incidence subrelation would have a different subject; it is not substituted here."
+    },
+    "O2": {
+      "verdict": "MAYBE",
+      "scope": "WHOLE_FIBER_DIRECTION",
+      "reason": "BECAUSE increasing T supplies direction for refinement-only chains. Antisymmetry of all admitted mixed paths still needs a bound directional or identity witness."
+    }
+  },
+  "disposition": {
+    "existing_results": "READ020 native refinement construction, twelve domain transports and admitted012 seating remain intact.",
+    "new_rule": "NONE",
+    "ruling_requested": "NONE",
+    "O5": "Source correspondence can continue independently; no canonical child record or promotion is manufactured here.",
+    "exact_remaining_operand": "The source-bound relation from a current admitted configuration, with its specified precondition, to invocation of its recorded refinement law."
+  },
+  "source_scan": {
+    "documents": [
+      {
+        "name": "Governed_Reaction_Lattice.docx",
+        "sha256": "83B5E5F0AD3EF5762777787071C1FB78617AB1952900459B01F4666EE46A5A4B",
+        "paragraph_count": 263,
+        "relevant_hits": [
+          10,
+          16,
+          36,
+          50,
+          55,
+          66,
+          70,
+          73,
+          78,
+          86,
+          122,
+          123,
+          127,
+          128,
+          129,
+          130,
+          151,
+          155,
+          169,
+          198,
+          199,
+          207,
+          227,
+          255
+        ]
+      },
+      {
+        "name": "The_Projection_Shell_v1.0_PROMOTED.docx",
+        "sha256": "6BB690028AA733983A0B5F214C09204DB2821E71036A3412FE2F710559C6A0CE",
+        "paragraph_count": 262,
+        "relevant_hits": [
+          3,
+          13,
+          15,
+          16,
+          17,
+          23,
+          26,
+          29,
+          31,
+          37,
+          45,
+          50,
+          52,
+          56,
+          69,
+          70,
+          72,
+          73,
+          75,
+          77,
+          122,
+          123,
+          130,
+          143,
+          156,
+          157,
+          158,
+          162,
+          174,
+          180,
+          192,
+          236,
+          239,
+          247,
+          248,
+          249,
+          256
+        ]
+      },
+      {
+        "name": "The_Projection_Shell.docx",
+        "sha256": "6994251370C674BC4B655F2B14187C78ECC6B84B50C50554E0AAADB2614CD20F",
+        "paragraph_count": 258,
+        "relevant_hits": [
+          3,
+          12,
+          14,
+          15,
+          16,
+          22,
+          25,
+          28,
+          30,
+          36,
+          44,
+          49,
+          51,
+          55,
+          68,
+          69,
+          71,
+          72,
+          74,
+          76,
+          121,
+          122,
+          129,
+          142,
+          155,
+          156,
+          157,
+          161,
+          173,
+          179,
+          191,
+          235,
+          238,
+          251
+        ]
+      },
+      {
+        "name": "First_Person_Physics_Paper_v1.docx",
+        "sha256": "4A5E5EC34A311B9314A0D061D6AC928841DF00915E8C49054C381C18FAF05774",
+        "paragraph_count": 229,
+        "relevant_hits": [
+          11,
+          12,
+          45,
+          47,
+          50,
+          52,
+          54,
+          56,
+          57,
+          58,
+          59,
+          60,
+          69,
+          70,
+          84,
+          105,
+          108,
+          111,
+          117,
+          127,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          140,
+          141,
+          142,
+          144,
+          149,
+          159,
+          161,
+          163,
+          222,
+          223,
+          224,
+          225,
+          226,
+          227,
+          229
+        ]
+      }
+    ],
+    "method": "Read cited sections and constructor antecedents; keyword locators support the bounded reading and are not a corpus-absence proof.",
+    "unneeded_workspace_filename_search": "Stopped without a conclusion; all relied-on sources were located directly."
+  },
+  "verdict": "MAYBE",
+  "verdict_subject": "EXHAUSTION_CONDITIONED_REFINEMENT_INVOCATION",
+  "checker": {
+    "path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-04\\new-chat\\bind_refinement_invocation_021.mjs",
+    "bytes": 12436,
+    "sha256": "6C12F155CD31F77EE0ECCF74C88E188BE55AFD6CBB151C7D39880D1825B2E2F2"
+  },
+  "extractor": {
+    "path": "C:/Users/devon/Documents/Codex/2026-10-04/new-chat/read_refinement_invocation_021.ps1",
+    "bytes": 1952,
+    "sha256": "FAFA771990868A8A1A3997F2A4DFA85F743CB0319BB26554C2EAA4852D8AD2D1"
+  }
+}

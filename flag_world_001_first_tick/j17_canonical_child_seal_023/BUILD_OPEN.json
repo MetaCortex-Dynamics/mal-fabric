@@ -1,0 +1,25 @@
+{
+  "schema": "FabricBindingSealBuildOpen023",
+  "at": "2026-11-02T03:10:20.625Z",
+  "publication": {
+    "base_commit": "4f8b01babd1f53c2c1d428c7207cafb3269d7940",
+    "branch": "review/j17-canonical-child-023"
+  },
+  "scope": {
+    "promoted_subject": "CANONICAL_J17_CHILD_4_0",
+    "qualification": "RUN_RECORD_023",
+    "operation_038": "PAUSED",
+    "world_transition": "NONE",
+    "gpu_rerun": "NONE",
+    "new_promotion": "NONE",
+    "publication": "COMMIT_AND_PUSH_REVIEW_BRANCH",
+    "merge": "NOT_AUTHORIZED_BY_THIS_INVOCATION"
+  },
+  "input_inventory": {
+    "path": "SOURCE_INVENTORY.json",
+    "sha256": "6FF38417674FF7E44B4EA4AB55E300E0567C416F46D0CEBD1E152A2848DC0D75",
+    "bytes": 66355
+  },
+  "source_entries": 160,
+  "automatic_resume": "NO"
+}
