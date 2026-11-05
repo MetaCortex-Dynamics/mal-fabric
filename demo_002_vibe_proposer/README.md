@@ -21,20 +21,22 @@ submits its canonical edits through the imported authority path.
 
 ## Run the demo
 
-From the governance repository root:
+From the `mal-fabric` repository root:
 
-```powershell
-python -B v3/software_fpga/demo_002_vibe_proposer/demo_server.py
+```text
+python -B demo_002_vibe_proposer/demo_server.py
 ```
 
 Open [http://127.0.0.1:8766](http://127.0.0.1:8766). No dependency install,
-API key, network service, or external model is required.
+API key, network service, or external model is required. Use Python 3.11 or later.
+
+Keep the terminal open while using the demo; press Ctrl+C to stop the server.
+If your system names Python 3 `python3`, use `python3` in these commands.
 
 ## Run conformance
 
-```powershell
-python -B v3/software_fpga/demo_002_vibe_proposer/run_conformance.py `
-  --output v3/software_fpga/demo_002_vibe_proposer/evidence
+```text
+python -B demo_002_vibe_proposer/run_conformance.py --output demo_002_vibe_proposer/evidence
 ```
 
 The frozen census is:
