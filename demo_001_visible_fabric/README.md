@@ -6,15 +6,18 @@ A runnable vertical slice of the product thesis:
 
 ## Run the demo
 
-From the repository root:
+From the `mal-fabric` repository root:
 
-```powershell
-python v3/software_fpga/demo_001_visible_fabric/demo_server.py
+```text
+python demo_001_visible_fabric/demo_server.py
 ```
 
 Open [http://127.0.0.1:8765](http://127.0.0.1:8765).
 
 No package installation, build step, API key, network service, or LLM is required. Python 3.11 or later is sufficient.
+
+Keep the terminal open while using the demo; press Ctrl+C to stop the server.
+If your system names Python 3 `python3`, use `python3` in these commands.
 
 ## Demo path
 
@@ -30,14 +33,14 @@ The complete scripted fixture is in `fixture.json`.
 
 ## Run D01–D18
 
-```powershell
-python v3/software_fpga/demo_001_visible_fabric/run_acceptance.py
+```text
+python demo_001_visible_fabric/run_acceptance.py
 ```
 
 To write the deterministic result as JSON:
 
-```powershell
-python v3/software_fpga/demo_001_visible_fabric/run_acceptance.py --json v3/software_fpga/demo_001_visible_fabric/acceptance-summary.json
+```text
+python demo_001_visible_fabric/run_acceptance.py --json demo_001_visible_fabric/acceptance-summary.json
 ```
 
 ## Contract
