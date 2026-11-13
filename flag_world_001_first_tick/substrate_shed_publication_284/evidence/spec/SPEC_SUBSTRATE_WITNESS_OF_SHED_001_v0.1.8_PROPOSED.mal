@@ -1,0 +1,397 @@
+// SPEC-SUBSTRATE-WITNESS-OF-SHED-001
+// STATUS: PROPOSED
+// AUTHORITY: Devon A. Generally (DECIDE / PROMOTE). Drafted under PROPOSE (Claude).
+// VERSION: 0.1.8
+// DATE: 2026-11-13
+// SUPERSEDES: none promoted. The unpromoted drafts v0.1.0 (5D1E4F3FEE0AF9EAE3E5F1804C5FBE81EFDED9C52C027EDFED9E9E8D07606C3D), v0.1.1
+//            (D934DEE553EDB01D1CFE835D4749F4AD8DF0907E04F63B5EAE8BDF80346D0A3B), v0.1.2
+//            (A54652492CE00B7D5463B0348F4EBFD1BC7460B82583E3FF17C87B0C6A59F505), v0.1.3
+//            (10439C11FAD58DA3500A378D0E09E5A4903565017BFAF3320F1414C0D4B3658D), v0.1.4
+//            (302FB9B0F0441B959F6D63B2F870C205D1EE7755C8E3984198080AB6DD07BE67), v0.1.5
+//            (6DADD9BA7D90393FE3E8F103D99F19AB41B5FD6EC18257E142D2074D880053EA), v0.1.6
+//            (176DA9FDBBE8C4FBFF3AED814B4D8AA015D151F4D036F4CAE304C2C0D0704286) and v0.1.7
+//            (6661F911D2CBCA26E2AB65D7EB9198998B268C4EB5D37861D42EEA6E8DCDDDB1) are kept as genealogy. VERSION, SUPERSEDES and the label of
+//            the previous CHANGE note change with each version.
+// CHANGE 0.1.8: Independent check of v0.1.7 (RUN_RECORD 9B4AD065…0881): CHECK_FORM no NO; one NOT_SAME: CHANGE 0.1.7 did
+//            not say that v0.1.7 re-wrapped the lines of FOR_WHAT(MUST_LET), nor that in the R_RECORD reading the comma
+//            after "(R272 L16, L19)" became a semicolon and the last sentence was re-wrapped. Every change of this version,
+//            in file order; no line is re-wrapped, and each changed line is changed only by the words quoted:
+//            (1) VERSION; SUPERSEDES names v0.1.7 (its three lines); this note; the label of CHANGE 0.1.7;
+//            (2) the held list names PRIOR_v0.1.7.mal and PRIOR_RUN_RECORD_V017.md in place of the v0.1.6 names;
+//            (3) WHAT(MAYBE): "holds an effect naming v that" became "holds a field effect naming v that";
+//            (4) WHAT(MAYBE): "junctions its flag is incident to." became "junctions its flag is incident to (MUST, R_ENVELOPE).";
+//            (5) R_ENVELOPE: "names all its incident junctions with" became "names all its incident junctions and no other, with";
+//            (6) REQUIRED: "executed on its two columns." became "executed on its two columns and reading IF_THEN.".
+//            The seed's cells are the same 31; the terminal, the encoding block and every vector do not change.
+// CHANGE 0.1.7 (unpromoted): Independent check of v0.1.6 (RUN_RECORD C58068C3…426D): CHECK_FORM no NO; one NOT_SAME: CHANGE 0.1.6 did
+//            not name four additions of v0.1.6: REQUIRED gained "on the bound card" and "it stays MAYBE until a bound clause
+//            carries it, and this obligation stays PENDING with it"; the R_SHED_CLASS reading gained its last sentence ("The
+//            comparison reads ASSIGN events … is this restriction."); WHAT(NO) gained "at least one". Every change of this
+//            version, in file order:
+//            (1) VERSION; SUPERSEDES names v0.1.6; this note; the label of CHANGE 0.1.6;
+//            (2) ORIGIN: "(R268 L7–L8)" became "(R268 L7–L8, its first two sentences)";
+//            (3) the held list names PRIOR_v0.1.6.mal and PRIOR_RUN_RECORD_V016.md in place of the v0.1.5 names;
+//            (4) WHAT(IF_THEN): "SUBSTRATE(v) so read is this specification's own statement; it replaces R264 L53–L54's
+//            MOVED-against-HELD reading, which R271 L16 removes." became "Both readings of SUBSTRATE(v), THIS here and NO in
+//            WHAT(NO), are this specification's own statement; they replace R264 L53–L54's MOVED-against-HELD reading, whose
+//            matched arms R271 L16 removes."; its lines are re-wrapped;
+//            (5) HOW(IF_THEN): "to the witness verdict" became "to the comparison's verdict, which is not the obligation's
+//            discharge"; its lines are re-wrapped;
+//            (6) HOW(BECAUSE): the quotation "the events are its record" with its attribution is removed, and "R264 L19–L21"
+//            leaves the BECAUSE line; its lines are re-wrapped;
+//            (7) WHAT(MAYBE): a condition is added for a captured effect that is neither ASSIGN nor RETAIN_SITE, and a
+//            sentence saying an envelope names exactly the junctions its flag is incident to; "L18" joins R271 L17 and "R270
+//            L14" joins the BECAUSE line; its lines are re-wrapped;
+//            (8) FOR_WHAT(MUST_LET): "Shown so far on offline replay of the fact-commit routines only; on a card execution it
+//            is to be witnessed." became "The first is shown so far on offline replay of the fact-commit routines only; both
+//            are to be witnessed on a card execution.";
+//            (9) HOW(MORE_LESS): "an execution's capture does" became "an execution's capture MUST";
+//            (10) R_RECORD reading: "not the per-junction counts" became "R272 does not report the per-junction counts",
+//            with the sentence break moved.
+//            The seed's cells are the same 31; the obligation block, the terminal, the encoding block and every vector do
+//            not change.
+// CHANGE 0.1.6 (unpromoted): Independent check of v0.1.5 (RUN_RECORD 47AF01C0…2C7F): CHECK_FORM no NO; two NOT_SAME.
+//            First: CHANGE 0.1.5 did not name these changes of v0.1.5: the obligation line gained "on the bound card"; the
+//            restriction-readings header's list became "R264, R265, R271, R272"; the held list replaced PRIOR_v0.1.3.mal and
+//            PRIOR_RUN_RECORD_V013.md by the v0.1.4 names (the note said "extended"); the attribution sentence for R265, R270,
+//            R271 and R272 changed; the BECAUSE lines of the six cells of its members (a) to (c) changed; HOW(BECAUSE) gained
+//            "An edit is realized by a native ASSIGN field effect; the heat is what that discharge causes." Its member (e)
+//            "to the same effect" meant the restatement of (a) to (d), not the cells' v0.1.4 content, which those cells no
+//            longer carry. Second: the R_SHED_CLASS reading cited R264 L35–L43 for the ASSIGN identification, which those
+//            lines do not name. Changed here:
+//            (a) R_SHED_CLASS reading and WHAT(NEAR_FAR): the candidate is cited at R270 L43–L45 (Claude, PROPOSE), and the
+//            reading says which sentence of R264 is not relied on;
+//            (b) WHAT(NO) gains the bound-card condition WHAT(IF_THEN) has and reads NO only where the effect of every
+//            incident flag is captured; WHAT(IF_THEN) marks the SUBSTRATE reading as this specification's own, replacing
+//            R264 L53–L54's; WHAT(MAYBE) states the not-observed rule per junction;
+//            (c) HOW(BECAUSE): one sentence added on the standing of the retained ASSIGN facts;
+//            (d) HOW(MUST_LET), FOR_WHAT(MUST_LET), HOW(MORE_LESS): stated as MUST, with the offline scope; the run record's
+//            list is R272 L32–L33's in full;
+//            (e) the obligation line places R_CUSTODY under the binding to the tick; R_EVENTS, R_ENVELOPE and R_CUSTODY carry
+//            the items of R271 L16, L18 and R272 L32–L33 they omitted; REQUIRED names the four restrictions a run record
+//            carries and says R_SHED_CLASS is not one of them;
+//            (f) restriction readings: the header's list; R_RECORD (what the offline capture reproduces); R_ENVELOPE (one
+//            sentence added); R_SHED_CLASS as in (a);
+//            (g) the BECAUSE lines of WHAT(NEAR_FAR), WHAT(IF_THEN), WHAT(MAYBE), HOW(BECAUSE), FOR_WHAT(MUST_LET) and
+//            HOW(MORE_LESS); those of WHAT(NO) and HOW(MUST_LET) keep their words and move to a line of their own;
+//            (h) contact R268 added for Devon's 10:27 statement, with ORIGIN's pointer to it, the held list (R268; the
+//            v0.1.5 names replace the v0.1.4 names) and the attribution sentence.
+//            The seed's cells are the same 31; the terminal, the encoding block and every vector do not change.
+// CHANGE 0.1.5 (unpromoted): The witness is restated from a reader's column to the fold's native events on the bound card. Sources: Codex's reads of
+//            the runtime (R270, R271), its offline implementation (R272), and Devon 2026-11-13 11:02 "The measure isnt the
+//            thing the thing causes the heat" (R272 L10). v0.1.4's independent check (RUN_RECORD 3EEFCA8A…711C) had no NO and no
+//            NOT_SAME; this version changes the object, not a defect of form. Changed: (a) SUBSTRATE(v) is now read from
+//            captured ASSIGN / RETAIN_SITE field effects through their junction envelopes, on an execution bound to the card
+//            (WHAT(NO), WHAT(IF_THEN), the encoding block); (b) a measurement is never the witness (FOR_WHAT(THIS), HOW(NO)
+//            route (c), WHAT(MUST_LET)); (c) HOW(BECAUSE) no longer says the substrate changes a stored reading: the runtime
+//            appends and overwrites nothing; (d) the restrictions R_CONTROL, R_ACCOUNT, R_RESOLUTION and R_RUN_RECORD are
+//            replaced by R_EVENTS, R_ENVELOPE, R_CUSTODY and R_SHED_CLASS, with their readings; R_RECORD's reading is
+//            extended; (e) the cells WHAT(THIS), HOW(THIS), WHAT(INSIDE_OUTSIDE), WHAT(NEAR_FAR), HOW(CAN_CANNOT),
+//            WHAT(MAYBE), HOW(MUST_LET), FOR_WHAT(MUST_LET), HOW(MORE_LESS), WHAT(GOES_WITH) and HOW(GOES_WITH) are reworded
+//            to the same effect, with their BECAUSE lines; (f) ORIGIN, three contacts (R270, R271, R272) and the held list
+//            are extended. The seed's cells are the same 31; the terminal and every vector's expected output do not change.
+// CHANGE 0.1.4 (unpromoted): Independent check of v0.1.3 (RUN_RECORD F6C740FD…FC9E): CHECK_FORM no NO; one NOT_SAME: CHANGE 0.1.3 did not say that
+//            the words "from the ledger" stand again in the second-vector sentence of the encoding block (v0.1.3 restored
+//            them). Changed here: (a) each of the second to sixth vectors carries its byte values on a line inside its own
+//            declaration; (b) the SUPERSEDES line names v0.1.3; (c) the held list names PRIOR_v0.1.3.mal and
+//            PRIOR_RUN_RECORD_V013.md. No vector's expected output changes.
+// CHANGE 0.1.3 (unpromoted): Independent check of v0.1.2 (RUN_RECORD B817B893…4A62): CHECK_FORM no NO; one NOT_SAME: CHANGE 0.1.2 did not name two
+//            changes of v0.1.2: HOW(IF_THEN) dropped "the verdict text does not", and the vector notes replaced "are not an
+//            input of the comparison and get no verdict" by "a realization MUST refuse them and emit no verdict text",
+//            re-ordered their explanation and dropped "from the ledger". Changed here: (a) HOW(IF_THEN) says again that the
+//            verdict text carries the verdict word only, and a sixth vector fixes the output for a partly unobserved input;
+//            (b) the block before the vectors is headed as the encoding of the vectors' bytes, is explanation throughout, and
+//            no longer obliges a refusal: other byte strings are outside this specification; (c) that block says the column
+//            order 0..29 is this specification's and is to be confirmed against LEDGER, and no longer says which file carries
+//            the numbering; (d) FOR_WHAT(IF_THEN) cites R264 L52–L54 for its first clause; (e) the held list names
+//            PRIOR_v0.1.2.mal and PRIOR_RUN_RECORD_V012.md. The expected outputs of the first five vectors do not change.
+// CHANGE 0.1.2 (unpromoted): Independent check of v0.1.1 (RUN_RECORD B69C6576…E71B): CHECK_FORM no NO; seven NOT_SAME. Corrected: (a) the thermal
+//            citation no longer names a cell no held line names; (b) the precedence is W10D L35, and the cell says this
+//            specification applies it to the witness verdict; (c) HOW(NO) route (e) cites R264 L30–L31 for "tick and
+//            junctions"; (d) R_RESOLUTION quotes R264 L68 on the fold-level reading; (e) CHANGE 0.1.1 did not name these
+//            changes of v0.1.1: the FE / DG promotion sentence, "(PROPOSE)" for R264, "Claude's record of Codex's report" for
+//            R265, "LEDGER is named" in the restriction-readings header, and nine doubled blank lines inside the seed block
+//            (removed here); it said "all on readings and locators" though three prior items were on layout and the
+//            vector rule; and it placed the R_RESOLUTION change under restriction readings though the changed line is the
+//            restriction's text. Also from the same check: HOW(THIS) no longer says what identifies the fold; WHAT(INSIDE_OUTSIDE)
+//            cites R264 L35–L41; the obligation line says how its five restrictions carry R215's two conditions;
+//            FOR_WHAT(IF_THEN) and FOR_WHAT(MUST_LET) quote their lines; the junction numbering is given as R265's report of
+//            it; HOW(SAME_NOT_SAME) carries the not-observed case and the vector notes are binding for the vectors; the held
+//            list names the prior draft and run record. No vector's expected output changes.
+// CHANGE 0.1.1 (unpromoted): Independent check of v0.1.0 (RUN_RECORD 5D9ABBCA…ADD7): CHECK_FORM no NO; nine NOT_SAME and fifteen MAYBE not resting
+//            on unheld bytes, all on readings and locators. Corrected: (a) attributions: R215 is Devon's corrections; the FE
+//            locator is R264's, the thermal line locator is dropped; (b) cells that said more than their cited lines: HOW(THIS),
+//            HOW(MUST_LET), HOW(GOES_WITH), FOR_WHAT(THIS), FOR_WHAT(IF_THEN), FOR_WHAT(MUST_LET), FOR_WHAT(BECAUSE),
+//            HOW(CAN_CANNOT), HOW(MORE_LESS), WHAT(TOGETHER_ALONE), HOW(NO) route (e), and R_RUN_RECORD with them;
+//            (c) WHAT(BECAUSE), WHAT(SAME_NOT_SAME) and WHAT(INSIDE_OUTSIDE) now say that the held / not-held reading is
+//            R264's composition (PROPOSE) and which source carries which half; "INSIDE the ONE" is removed; (d) WHAT(MORE_LESS)
+//            quotes FE as R264 quotes it; (e) HOW(IF_THEN) cites the method's precedence and says where unobserved junctions
+//            are named; (f) restriction readings: R_RECORD is MAYBE here until the second vector is executed; R_CONTROL uses
+//            R265's words; R_ACCOUNT no longer cites a status no record holds; R_RESOLUTION gives the fold-level reading no
+//            place in the verdict; (g) vectors: junction order is LEDGER's numbering (no carrier is bound); the comparison's
+//            input kind is stated; input_path lines have the example's two fields; a blank line precedes the vector block.
+//            Contact W10D added. TARGET no longer names Metis; SCOPE uses "038 untouched". No vector's expected output changes.
+// TARGET: the shed of one fold of one world, read on that world's own substrate. J17 first (link 2 → 3, the fold of record 265).
+// METHOD: SPEC-MAL-SPECIFICATION-SYSTEM-002 v0.3.1 with W10 (delta 01105ECC…29C2; promoted 2026-11-02 16:47, receipt
+//         3D53564CC368F099E10FB3CDF2817AE3E06912D968553516692C898941FCA658, located by Codex; not held here).
+// SUBJECT: the witness that a fold's unabsorbed content went to the substrate; not a world transition and not a run.
+// SCOPE: folds on which every flag identity persists (the d_G domain). Folds that form new parts are outside this version
+//        (R264 L58–L63). 038 untouched; no device or world execution, append, commit or push follows from these bytes.
+// ORIGIN: Devon 2026-11-09 00:51 "The shedding is constitutive therefore it must come from the substrate unfolding.";
+//         2026-11-13 09:00 "Isnt this supposed to be the substrate?"; 09:04 "Codex continues to put this project in proof loops
+//         for things that need to be built or derived or inferred from prior derivation."; 10:27 "the 3070 IS the substrate. We
+//         build what we need from the physical substrate to the software." (R268 L7–L8, its first two sentences); 11:02 "The measure isnt the thing the thing causes
+//         the heat"
+// CONTACTS (exact bytes; registry 66DDE362…1B60 projections for clause locators):
+// FPP: contacts/FPP.txt; sha256 897AB3D712DBECC7FA1C2792FFEFFEF37AD59B35FC67D2B2747C436BEE4DA344
+// DSUB: contacts/DSUB.md; sha256 D0603C9EB37732B2C4A237C4A41CDCF2CA18210F86A4F7E21BD24B43275F8EAE
+// FE: contacts/FE.mal; sha256 E2A87BDC3E5A7AAC7B246F3CBBAF77F141689FCF6270D537ACC059F9E6BB9E9E
+// DG: contacts/DG.mal; sha256 3419D528150A8616AF0DCF0446FC59FAD0FF83F1C872C93A0BC8CC70BF0A8718
+// THERMAL_V014: contacts/THERMAL_V014.mal; sha256 AF2069CC3BCF1E46C6EC9881E5B2B78BF2BFAE4440D05A536C49644660A5985A
+// SAY: contacts/SAY.md; sha256 04A62AFA0B5544C21B1E27A972286DD5BAA96A5EDC3AABFC2BB27DB688C8CD4B
+// R215: contacts/R215.md; sha256 10BF6EE1129A05531ECF18B62AE1681555D8714EF9C3C51CADEA303AEE254855
+// R264: contacts/R264.md; sha256 9FC10164B571CDE7C405D9CDCB93BB12BEB458DB687B7F8A3423B47827615D8E
+// R265: contacts/R265.md; sha256 0174F5D3AE3D21EA9F78E3427648032C98EF429C1FCC7E7DF4EEAB417AF14589
+// R268: contacts/R268.md; sha256 9683CD22DA0DF7310C77A23089E4EBF51009F1CEF52E21DBE919EB5D1392A5DF
+// R270: contacts/R270.md; sha256 D19A8715B181A7C0627498BB11FD356135E5D7CC980FEB20870EC57E3F341B5E
+// R271: contacts/R271.md; sha256 1B468078D013EE072A2CC4C8E202355C587FFFB46C848E4FB9978F11D3C9FC61
+// R272: contacts/R272.md; sha256 D7A563AAE84865D45AB0BF7A5C802EE492E19DA7832F42C0E7B048692C9C4D67
+// LEDGER: contacts/READING.json; sha256 27BF7FD6913F812DAAF96BF4C7851DECC0180CD3CD169374CFEB217EF6D44AA7
+// W10D: contacts/W10D.md; sha256 01105ECC6D60D44C0BF960B27F746E67DB4E1E9B86F2B728FFF4A49AF91829C2
+// FE is SPEC-J17-WORLD-FOLD-EFFECT-001 and DG is DECISION_RECORD_FLAG_WORLD_D_G_001; both are promoted per R264 L23, L26
+// (their receipts are not held here; DG's own header reads "PROPOSED for DECIDE").
+// Held in this package: DSUB, DG, R215, R264, R265, R268, R270, R271, R272, W10D, and as genealogy only (not contacts)
+// PRIOR_v0.1.7.mal and PRIOR_RUN_RECORD_V017.md. Not held by Claude: FPP, FE, THERMAL_V014, SAY, LEDGER (LEDGER per
+// R265 L7–L9). DSUB is Claude's record of Devon's statement; R215 is Claude's record of Devon's corrections; R264 is Claude's
+// construction (PROPOSE); R265, R270, R271 and R272 are Claude's records of Codex's reports (R272 also carries Devon's 11:02 statement); R268 is Claude's forward note, cited for Devon's 10:27 statement only. FE's line locator L126–L128 is the one at R264 L23;
+// THERMAL_V014 is cited as R264 L19–L21 quotes it. No obligation's LAW_CLAUSE cites a contact other than FPP.
+// SAY rows: S12 ("The obligation discharge (computation) generates heat").
+
+domain SUBSTRATE_WITNESS_OF_SHED;
+
+@propose seed SUBSTRATE_WITNESS_OF_SHED := {
+  WHAT(THIS),            // The object is ONE witness: the fold's own native events as executed on the bound card, read against
+                         // the record's edit set, for ONE fold of ONE world (J17, link 2 → 3). BECAUSE DSUB L5, R271 L16–L17.
+  HOW(THIS),             // LEDGER holds every flag's identity and its before / after reading; the run record carries the card
+                         // identity, the executing context and the chain link of the fold. BECAUSE R265 L7–L8, R271 L17.
+  FOR_WHAT(THIS),        // "The measure isnt the thing the thing causes the heat": the witness is the event on the substrate;
+                         // a measurement is recorded beside it and no verdict depends on it. BECAUSE R272 L10, R271 L16.
+
+  WHAT(SAME_NOT_SAME),   // EDIT := ONE flag entry whose reading is NOT_SAME its reading in the predecessor field (DG L15–L18).
+                         // HELD := the readings SAME across the fold; NOT HELD := the predecessor readings at the edits: R264's
+                         // composition (PROPOSE). BECAUSE DG L15–L18, R264 L35–L40.
+  HOW(SAME_NOT_SAME),    // Per junction v the comparison is SUBSTRATE(v) SAME RECORD(v); both are readings THIS / NO, compared
+                         // as exact bytes; a junction not observed has no SUBSTRATE reading and is MAYBE, by name.
+                         // BECAUSE R264 L52–L55, DG L23–L24.
+  FOR_WHAT(SAME_NOT_SAME), // An observed junction whose two readings are NOT_SAME refutes the witness for that fold. BECAUSE R264 L52–L55.
+
+  WHAT(NO),              // RECORD(v) := NO where no edit is incident to v; SUBSTRATE(v) := NO where the bound card's execution
+                         // of the fold captures the field effect of every flag incident to v, at least one, and each is a
+                         // RETAIN_SITE effect. NO is a reading; a junction not observed carries no NO.
+                         // BECAUSE DG L20–L21, R271 L14, L18, R265 L16, L29.
+  HOW(NO),               // Non-discharging routes: (a) reading the fold's records again for the shed, which records do not
+                         // hold; (b) taking every discharge event at a junction for the shed; (c) taking a measurement (a
+                         // cycle count, a temperature) for the witness; (d) reading a junction that was not observed as NO;
+                         // (e) treating the separately checked binding to the fold's tick and junctions and distinction of
+                         // shed from discharge activity as the witness without their joint satisfaction on the SAME fold
+                         // cannot discharge that joint requirement (FPP :131–138 is a joint accounting clause; its shed is
+                         // :138). BECAUSE DSUB L12, R215 L15–L17, R264 L30–L31, R272 L10, R265 L29, FPP.
+
+  WHAT(IF_THEN),         // IF an edit is incident to v THEN RECORD(v) := THIS. IF the bound card's execution of the fold
+                         // captures an ASSIGN field effect whose envelope names v THEN SUBSTRATE(v) := THIS. Both readings of
+                         // SUBSTRATE(v), THIS here and NO in WHAT(NO), are this specification's own statement; they replace
+                         // R264 L53–L54's MOVED-against-HELD reading, whose matched arms R271 L16 removes. R264 L52–L55 is
+                         // cited in this file for the THIS / NO form, the comparison and the not-observed case only.
+                         // BECAUSE DG L20–L21, R271 L14, L16, L18.
+  HOW(IF_THEN),          // IF SOME observed junction has SUBSTRATE(v) NOT_SAME RECORD(v) THEN the verdict is NO; otherwise IF
+                         // SOME junction is not observed THEN MAYBE; otherwise IF_THEN. This specification applies the method's
+                         // precedence (NO, then MAYBE, then IF_THEN) to the comparison's verdict, which is not the
+                         // obligation's discharge. The verdict text carries the verdict word only; the run record names the
+                         // junctions not observed. BECAUSE R264 L52–L55, W10D L35.
+  FOR_WHAT(IF_THEN),     // The two columns are readings THIS / NO; the count behind RECORD takes "no weights, no costs".
+                         // BECAUSE R264 L52–L54, DG L23–L24.
+
+  WHAT(BECAUSE),         // "What it cannot absorb CANNOT stay" (FPP :138, as R264 L29 quotes it). The fold-effect commitment
+                         // reads δ > 0 as what MOVED reports per junction and reads HELD as 0 (FE L126–L128, as R264 L23–L25
+                         // quotes it). Composed by R264 (PROPOSE): what does not stay across the fold is the predecessor
+                         // reading at each edit. BECAUSE R264 L35–L40, DG L15–L18.
+  HOW(BECAUSE),          // The runtime overwrites nothing: it appends the successor's facts and retains the predecessor's.
+                         // An edit is realized by a native ASSIGN field effect; the heat is what that discharge causes.
+                         // The retained ASSIGN facts are the record of those events; the witness is their execution on the
+                         // bound card, which no retained byte binds (this specification's reading of DSUB L12 for those
+                         // facts). BECAUSE R270 L14, L16, DSUB L5, L12, SAY S12, R272 L10, L31.
+  FOR_WHAT(BECAUSE),     // Reason this object exists: the shed is constitutive and is not written into records, so FPP's δ has
+                         // no witness until a substrate observation is bound to the same tick and junctions and distinguishes
+                         // the shed from discharge activity. BECAUSE DSUB L5, L12, R215 L15–L16, R264 L30–L31.
+
+  WHAT(INSIDE_OUTSIDE),  // On link 2 → 3: the 468 retained readings (NO → NO) are INSIDE the successor field as they were; the
+                         // 12 predecessor readings THIS at the edits are OUTSIDE it, kept only among the predecessor's facts.
+                         // BECAUSE R264 L35–L41, R265 L13, R270 L16, R272 L16.
+  HOW(INSIDE_OUTSIDE),   // Incidence := the flags whose site, edge or triad contains v. BECAUSE DG L21.
+
+  WHAT(NEAR_FAR),        // Discharge activity at a location is every native discharge event there. The candidate shed is the
+                         // ASSIGN class: twelve events on link 2 → 3 (Claude, PROPOSE, R270 L43–L45; the rules give the
+                         // partition and do not force that identification).
+                         // BECAUSE THERMAL_V014 as R264 L19–L21 quotes it, R264 L44–L47, R270 L43–L45, R271 L15.
+
+  WHAT(CAN_CANNOT),      // The record CANNOT witness the shed; the substrate CAN. BECAUSE DSUB L12.
+  HOW(CAN_CANNOT),       // An offline replay CAN qualify the capture against retained bytes and CANNOT bind an execution to
+                         // the card; a re-execution whose record carries the binding CAN. BECAUSE R272 L27–L28, L31–L33, R271 L17.
+
+  WHAT(MAYBE),           // A junction not observed is MAYBE, by name. This specification's rule: v is not observed IF the
+                         // execution is not bound to the card (then EVERY junction); or IF the capture holds no ASSIGN effect
+                         // naming v and does not hold the field effect of every flag incident to v (capture recorded
+                         // incomplete); or IF the capture holds no ASSIGN effect naming v and holds a field effect naming v that
+                         // is neither ASSIGN nor RETAIN_SITE; or IF no flag is incident to v. An envelope names exactly the
+                         // junctions its flag is incident to (MUST, R_ENVELOPE).
+                         // BECAUSE R264 L55, R270 L14, R271 L17, L18, R272 L31, L38.
+
+  WHAT(MUST_LET),        // MUST: the expected RECORD bytes are fixed from the ledger before any execution. LET: measurements
+                         // (cycle-counter samples) recorded beside the capture. BECAUSE R264 L78–L79, R265 L16, R272 L15, R271 L16.
+  HOW(MUST_LET),         // MUST: ONE run record carries the same-run UUID / PCI / VBIOS / configuration binding of the card,
+                         // ordinal / context, launch / resume identities, driver / runtime / boot context, allocation map,
+                         // actual event-time capture / completion, the source / binary hashes, the input and returned
+                         // states, the chain link, the event capture and the envelopes. LET: realization language.
+                         // BECAUSE R271 L17, R272 L32–L33.
+  FOR_WHAT(MUST_LET),    // MUST: the observer changes no native byte and nothing is subtracted from the capture. The first is
+                         // shown so far on offline replay of the fact-commit routines only; both are to be witnessed on a
+                         // card execution.
+                         // BECAUSE R272 L24–L28, R271 L16.
+
+  WHAT(TOGETHER_ALONE),  // The binding to the same tick and junctions and the distinction of shed from discharge activity hold
+                         // TOGETHER on ONE fold, in ONE record; neither is the witness ALONE. BECAUSE R215 L15–L16, R264 L30–L31, L69–L70.
+
+  WHAT(MORE_LESS),       // "The MANY's separation-content is MORE than the ONE's: δ > 0 (FPP Step 3)", done as "MOVED reports
+                         // d_G(g₂, g₃) per junction … and which faces' ties break; HELD reports 0." BECAUSE FE L126–L128 as
+                         // R264 L23–L25 quotes it.
+  HOW(MORE_LESS),        // MORE by inclusion: the capture MUST hold every native event of the fold as executed, the ASSIGN
+                         // effects among them (twelve on link 2 → 3), separately typed; no magnitude is read. Retained facts
+                         // do not hold failed-match and interner attempts; an execution's capture MUST.
+                         // BECAUSE R271 L16, R272 L16, L36–L37.
+
+  WHAT(GOES_WITH),       // Each edit GOES_WITH every junction its flag is incident to; on link 2 → 3 the 12 distinct edits go
+                         // with junction 17 (all twelve) and with junctions 15, 16, 18, 25 (four each): 28 junction references.
+                         // BECAUSE DG L20–L21, R265 L14–L15, R271 L18.
+  HOW(GOES_WITH),        // The run record GOES_WITH the card identity and the chain link of the fold. BECAUSE R271 L17.
+
+  WHAT(MANY_ONE),        // MANY edits, ONE fold; MANY junctions, ONE comparison, ONE verdict. BECAUSE R264 L52–L55.
+
+  WHAT(EVERY_SOME),      // EVERY junction of the product (30) carries a RECORD reading; SOME read THIS (five on link 2 → 3).
+                         // BECAUSE R265 L14–L16.
+  HOW(EVERY_SOME),       // EVERY junction is observed or is named MAYBE; none is dropped. BECAUSE R264 L55.
+
+  THIS, SAME_NOT_SAME, NO, IF_THEN, BECAUSE, INSIDE_OUTSIDE, NEAR_FAR, CAN_CANNOT, MAYBE, MUST_LET,
+  TOGETHER_ALONE, MORE_LESS, GOES_WITH, MANY_ONE, EVERY_SOME
+};
+
+law R1_WHERE :=
+  IF WHAT(o)
+  THEN WHERE(o);
+
+law R1_WHICH :=
+  IF WHAT(o)
+  THEN WHICH(o);
+
+law R1_WHEN :=
+  IF HOW(o)
+  THEN WHEN(o);
+
+law R2_WHENCE :=
+  IF WHERE(o), WHICH(o), WHEN(o), FOR_WHAT(o), FOR_WHAT(BECAUSE)
+  THEN WHENCE(o);
+
+// OBLIGATION WITNESSES (readings of this one object, not additional laws).
+// O_SUBSTRATE_WITNESS_OF_SHED: the shed of ONE fold read on its own substrate against the record's edit set, as ONE joint witness. Each restriction below is a restriction of that one witness on the SAME fold, not a stage: R_RECORD and R_ENVELOPE bind the observation to the same junctions; R_CUSTODY binds it to the same tick (the chain link) and to the card, in ONE record; R_EVENTS and R_SHED_CLASS distinguish the shed from discharge activity.
+// R_RECORD: RECORD(v) for every junction of the product, from the edit ledger by flag identity.
+// R_EVENTS: the capture of every native event of the fold as executed, each with its identity, ordered supports, actual commit / parallel-work ordering and buffer identities, separately typed, with nothing subtracted; the observer changes no native byte.
+// R_ENVELOPE: every field effect names all its incident junctions and no other, with their exact rows of the junction binding and incidence role; SUBSTRATE(v) is read from the ASSIGN and RETAIN_SITE effects whose envelopes name v.
+// R_CUSTODY: ONE run record binding the execution to the card (same-run UUID / PCI / VBIOS / configuration binding, ordinal / context, launch / resume identities, driver / runtime / boot context, allocation map, actual event-time capture / completion), with the source / binary hashes, the input and returned states, the chain link, the event capture and the envelopes.
+// R_SHED_CLASS: the shed of the fold is its ASSIGN class of field effects.
+// REQUIRED: One run record on the bound card carrying R_RECORD, R_EVENTS, R_ENVELOPE and R_CUSTODY on the SAME fold, with the comparison of HOW(IF_THEN) executed on its two columns and reading IF_THEN. R_SHED_CLASS is an identification and not a content of a run record: it stays MAYBE until a bound clause carries it, and this obligation stays PENDING with it.
+// STATUS: PENDING
+// SUBJECT: SHED_ON_SUBSTRATE
+// LAW_CLAUSE: FPP#L138-L138; FPP#L131-L138
+
+// RESTRICTION READINGS (findings within their witnessed scope, recorded 2026-11-13; not discharge; records cited below: R264, R265, R270, R271, R272; LEDGER is named)
+// R_RECORD        MAYBE here: Codex reports it built for link 2 → 3 (480 flag identities persist; 12 readings THIS → NO, 468
+//                 SAME; junction 17 twelve edits, junctions 15, 16, 18, 25 four each, the other 25 none: R265 L13–L16). Its
+//                 offline capture reproduces the 12 / 468 split and the junction set 15, 16, 17, 18, 25 (R272 L16, L19);
+//                 R272 does not report the per-junction counts. It is read in this file when the second vector is
+//                 executed on LEDGER.
+// R_EVENTS        MAYBE. Built and qualified offline: 480 field effects with ordered supports SAME; 821,959 native facts
+//                 byte-SAME with the observer attached and absent (R272 L16–L17, L24–L26). "Full CUDA matching, scheduling
+//                 and resource effects remain MAYBE, BECAUSE no device or world execution occurred" (R272 L27–L28).
+// R_ENVELOPE      MAYBE. Built and SAME offline: 480 envelopes, 1,080 junction references, 28 on the twelve assignments,
+//                 ASSIGN junctions 15, 16, 17, 18, 25 only (R272 L18–L19; R271 L18). Not yet on a card execution.
+//                 Whether EVERY one of the 30 junctions is named by at least one envelope is to be read from the
+//                 envelope rows, which are not held here.
+// R_CUSTODY       MAYBE. The retained execution's log names an RTX 3070 and does not bind that invocation to the card
+//                 (R271 L17); the offline run record carries every device field as NOT_BOUND_OFFLINE (R272 L31).
+// R_SHED_CLASS    MAYBE. The rules force 12 ASSIGN and 468 RETAIN_SITE effects; they do not force the identification
+//                 (R271 L15). That the shed is the ASSIGN class is Claude's candidate (PROPOSE; R270 L43–L45), which
+//                 R271 L15 places under 264's reading. R264 L42–L43 name "the substrate activity that realizes the
+//                 EDITs"; the sentence before it, on an "act of changing that reading", is NOT_SAME the runtime (R270
+//                 L30–L32) and is not relied on. The comparison reads ASSIGN events per junction against the edit set
+//                 whatever this restriction reads; whether those events are the shed is this restriction.
+
+// EXPECTED TERMINAL
+// seed cells 31; derived 46 (41 layer-1 + 5 WHENCE); total 77; 15 carrier identifiers.
+// PENDING: FOR_WHAT(NO), WHENCE(NO), FOR_WHAT(INSIDE_OUTSIDE), WHENCE(INSIDE_OUTSIDE), HOW(NEAR_FAR), WHEN(NEAR_FAR),
+//          FOR_WHAT(NEAR_FAR), WHENCE(NEAR_FAR), FOR_WHAT(CAN_CANNOT), WHENCE(CAN_CANNOT), HOW(MAYBE), WHEN(MAYBE),
+//          FOR_WHAT(MAYBE), WHENCE(MAYBE), HOW(TOGETHER_ALONE), WHEN(TOGETHER_ALONE), FOR_WHAT(TOGETHER_ALONE),
+//          WHENCE(TOGETHER_ALONE), FOR_WHAT(MORE_LESS), WHENCE(MORE_LESS), FOR_WHAT(GOES_WITH), WHENCE(GOES_WITH),
+//          HOW(MANY_ONE), WHEN(MANY_ONE), FOR_WHAT(MANY_ONE), WHENCE(MANY_ONE), FOR_WHAT(EVERY_SOME), WHENCE(EVERY_SOME).
+// O_exec = empty
+// O_next = { O_SUBSTRATE_WITNESS_OF_SHED }
+// This terminal closes normalization of the specification, not its obligation.
+
+// ENCODING OF THE VECTORS' BYTES (explanation; not part of any declaration)
+//   One byte per junction. Column order 0..29 is this specification's; R265 L14–L16 reports junctions by number, and the order is
+//   to be confirmed against LEDGER when the second vector is executed. Byte 0x01 := THIS; byte 0x00 := NO; byte 0xFF := not
+//   observed (SUBSTRATE column only). Encodings, not numbers.
+//   The comparison is HOW(IF_THEN) alone, on exactly 60 bytes: a RECORD column (30 bytes, each 0x00 or 0x01) then a SUBSTRATE
+//   column (30 bytes, each 0x00, 0x01 or 0xFF). Other byte strings are outside this specification.
+//   The second vector fixes the RECORD column of link 2 → 3 from the ledger: THIS at junctions 15, 16, 17, 18, 25. How a
+//   SUBSTRATE column is produced is governed by R_EVENTS, R_ENVELOPE and R_CUSTODY, not by the comparison. The four
+//   comparison vectors observe no device; their SUBSTRATE columns are constructed: SAME the record; NO at junction 17 where the
+//   record reads THIS; not observed at every junction; not observed at junction 0 only. They witness the rule and nothing about
+//   a substrate.
+
+// VECTORS
+// V1 CHECK_FORM(this file)
+// expected IF_THEN
+// Scope: native structural form; not independent reading review.
+// V2 EDIT_RECORD(LEDGER)
+// argument_1 LEDGER sha256 27BF7FD6913F812DAAF96BF4C7851DECC0180CD3CD169374CFEB217EF6D44AA7
+// expected_type JUNCTION_READING_COLUMN; 30 bytes, junction order 0..29 by junction number as in R265 L14
+// expected_bytes [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0]
+// expected_sha256 E872406E7D5E440FB866C0B8357913FC101C3C0A5507F8520B56AA413FA41179
+// Byte 0x01 := THIS; byte 0x00 := NO. Encodings, not numbers.
+// V3 WITNESS_COMPARE(inputs/compare_same.bin)
+// sha256 042621DF710AB4115029A530843E6AB343D8C529ADD21FA80EB268C72EE96AF7
+// input_path inputs/compare_same.bin; 60 bytes; RECORD column then SUBSTRATE column, 30 bytes each, SUBSTRATE column SAME the RECORD column
+// expected_type VERDICT_TEXT; UTF-8; no terminal newline; 7 bytes
+// expected_bytes [73,70,95,84,72,69,78]
+// expected_sha256 1B3D5E375B5004EFA0DF9D5B6308D90FC14D11BC49BE8FF9C25EE857914BD879
+// Byte 0x01 := THIS; byte 0x00 := NO; byte 0xFF := not observed (SUBSTRATE column only). Encodings, not numbers.
+// V4 WITNESS_COMPARE(inputs/compare_not_same.bin)
+// sha256 B58745636740C520C9B6B40673C462DBDB07DA20D68103245D754E91A4B57E35
+// input_path inputs/compare_not_same.bin; 60 bytes; RECORD column then SUBSTRATE column, 30 bytes each, SUBSTRATE column NO at junction 17
+// expected_type VERDICT_TEXT; UTF-8; no terminal newline; 2 bytes
+// expected_bytes [78,79]
+// expected_sha256 23794D91C53AE875C8E247D72561E35D9D06EE07C70C9E0DBCC977A6D161504A
+// Byte 0x01 := THIS; byte 0x00 := NO; byte 0xFF := not observed (SUBSTRATE column only). Encodings, not numbers.
+// V5 WITNESS_COMPARE(inputs/compare_unobserved.bin)
+// sha256 F2E2BB5E79F2B05ECA4010932E508938E4AE2B41001789692F34099CFA7EC3CD
+// input_path inputs/compare_unobserved.bin; 60 bytes; RECORD column then SUBSTRATE column, 30 bytes each, SUBSTRATE column not observed at every junction
+// expected_type VERDICT_TEXT; UTF-8; no terminal newline; 5 bytes
+// expected_bytes [77,65,89,66,69]
+// expected_sha256 6C4FE922DDBB3BD39D22DE494B149CDFF8F11473C10DC0B680780A3AD1630AF1
+// Byte 0x01 := THIS; byte 0x00 := NO; byte 0xFF := not observed (SUBSTRATE column only). Encodings, not numbers.
+// V6 WITNESS_COMPARE(inputs/compare_partly_unobserved.bin)
+// sha256 33DFC865F76CA989CD21893F8FD72E1790740CED3FD1CBD9D99B353CC332B83D
+// input_path inputs/compare_partly_unobserved.bin; 60 bytes; RECORD column then SUBSTRATE column, 30 bytes each, SUBSTRATE column not observed at junction 0 only
+// expected_type VERDICT_TEXT; UTF-8; no terminal newline; 5 bytes
+// expected_bytes [77,65,89,66,69]
+// expected_sha256 6C4FE922DDBB3BD39D22DE494B149CDFF8F11473C10DC0B680780A3AD1630AF1
+// Byte 0x01 := THIS; byte 0x00 := NO; byte 0xFF := not observed (SUBSTRATE column only). Encodings, not numbers.

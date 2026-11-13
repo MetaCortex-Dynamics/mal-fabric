@@ -1,0 +1,806 @@
+{
+  "mode": "EXECUTION",
+  "evidence_scope": "ACTUAL_EXECUTION",
+  "run_id": "7a895b15-9271-4fcf-bd7c-17dad45597e0",
+  "created": "2026-11-13T20:31:09.971Z",
+  "invocation": {
+    "process_id": 8632,
+    "process_scope": "First launch; all resumed process/context identities separately bound",
+    "launcher": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/execute_once.mjs",
+      "sha256": "8381503A1D561A2F7E09079E7F060BA5DC98DE8A4B8F425001ECEC401D15A28F",
+      "bytes": 5356
+    }
+  },
+  "authorization": {
+    "receipt_prefix": "DB873DD7...02D4",
+    "direct_instruction": "Current user message authorizes this one execution",
+    "consumption": "CONSUMED",
+    "attempts": 1,
+    "world_appends": 0
+  },
+  "device": {
+    "uuid": "GPU-ae8cdd6b-4a26-f2a9-bf2a-c3d4f7bcd86c",
+    "pci_bdf": "0000:01:00.0",
+    "vendor_device": "0x248810DE",
+    "subsystem": "0x88371043",
+    "vbios": "94.04.46.40.e9",
+    "ordinal": 0,
+    "ordinal_to_device": {
+      "uuid": "GPU-ae8cdd6b-4a26-f2a9-bf2a-c3d4f7bcd86c",
+      "pci_bdf": "0000:01:00.0",
+      "ordinal": 0
+    },
+    "context": 1748916674000,
+    "raw_query": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/initial/capture.custody.json",
+      "sha256": "E6676CE4805D15647DC4850DF27CC1AB271D356CB972B66AEAEDE1708C460BE5"
+    },
+    "query_reader": "same-process CUDA+NVML",
+    "query_time": 134390748035157780,
+    "configuration_binding": {
+      "kind": "WINDOWS_CONFIGURATION_BINDING",
+      "host": "CAPTAIN",
+      "os_version": "10.0.26200",
+      "os_build": "26200",
+      "run_id": "7a895b15-9271-4fcf-bd7c-17dad45597e0",
+      "boot_id": "2026-11-11T07:33:59.5000000Z",
+      "uuid": "GPU-ae8cdd6b-4a26-f2a9-bf2a-c3d4f7bcd86c",
+      "pci_bdf": "0000:01:00.0",
+      "vendor_device": "0x248810DE",
+      "subsystem": "0x88371043",
+      "vbios": "94.04.46.40.e9",
+      "driver_version": "596.49",
+      "reader": "nvidia-smi + Windows CIM/PnP",
+      "reader_path": "C:\\Windows\\system32\\nvidia-smi.exe",
+      "reader_sha256": "5B24B4E5AE0A11C12DA292A49A4652AB9D965D98C5C7A38003C9FE66D05F9C4C",
+      "query_time": "2026-11-13T20:20:01.4437423Z",
+      "completed": "2026-11-13T20:20:02.3170333Z",
+      "process_id": 4308,
+      "fields": {
+        "pnp_instance_id": "PCI\\VEN_10DE&DEV_2488&SUBSYS_88371043&REV_A1\\4&1C4F9F98&0&0008",
+        "windows_driver_version": "32.0.15.9649",
+        "properties": [
+          {
+            "KeyName": "DEVPKEY_Device_HardwareIds",
+            "Type": 8210,
+            "Data": [
+              "PCI\\VEN_10DE&DEV_2488&SUBSYS_88371043&REV_A1",
+              "PCI\\VEN_10DE&DEV_2488&SUBSYS_88371043",
+              "PCI\\VEN_10DE&DEV_2488&CC_030000",
+              "PCI\\VEN_10DE&DEV_2488&CC_0300"
+            ]
+          },
+          {
+            "KeyName": "DEVPKEY_Device_CompatibleIds",
+            "Type": 8210,
+            "Data": [
+              "PCI\\VEN_10DE&DEV_2488&REV_A1",
+              "PCI\\VEN_10DE&DEV_2488",
+              "PCI\\VEN_10DE&CC_030000",
+              "PCI\\VEN_10DE&CC_0300",
+              "PCI\\VEN_10DE",
+              "PCI\\CC_030000&DT_1",
+              "PCI\\CC_030000",
+              "PCI\\CC_0300&DT_1",
+              "PCI\\CC_0300"
+            ]
+          },
+          {
+            "KeyName": "DEVPKEY_Device_LocationInfo",
+            "Type": 18,
+            "Data": "PCI bus 1, device 0, function 0"
+          },
+          {
+            "KeyName": "DEVPKEY_Device_BusNumber",
+            "Type": 7,
+            "Data": 1
+          },
+          {
+            "KeyName": "DEVPKEY_Device_Address",
+            "Type": 7,
+            "Data": 0
+          },
+          {
+            "KeyName": "DEVPKEY_Device_InstanceId",
+            "Type": 18,
+            "Data": "PCI\\VEN_10DE&DEV_2488&SUBSYS_88371043&REV_A1\\4&1C4F9F98&0&0008"
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_DeviceType",
+            "Type": 7,
+            "Data": 3
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_BaseClass",
+            "Type": 7,
+            "Data": 3
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_SubClass",
+            "Type": 7,
+            "Data": 0
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_ProgIf",
+            "Type": 7,
+            "Data": 0
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_CurrentPayloadSize",
+            "Type": 7,
+            "Data": 1
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_MaxPayloadSize",
+            "Type": 7,
+            "Data": 1
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_MaxReadRequestSize",
+            "Type": 7,
+            "Data": 2
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_CurrentLinkSpeed",
+            "Type": 7,
+            "Data": 4
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_CurrentLinkWidth",
+            "Type": 7,
+            "Data": 16
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_MaxLinkSpeed",
+            "Type": 7,
+            "Data": 4
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_MaxLinkWidth",
+            "Type": 7,
+            "Data": 16
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_ExpressSpecVersion",
+            "Type": 7,
+            "Data": 2
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_InterruptSupport",
+            "Type": 7,
+            "Data": 3
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_InterruptMessageMaximum",
+            "Type": 7,
+            "Data": 1
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_BarTypes",
+            "Type": 7,
+            "Data": 16843009
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_AERCapabilityPresent",
+            "Type": 17,
+            "Data": true
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_FirmwareErrorHandling",
+            "Type": 17,
+            "Data": false
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_Uncorrectable_Error_Mask",
+            "Type": 7,
+            "Data": 0
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_Uncorrectable_Error_Severity",
+            "Type": 7,
+            "Data": 4595760
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_Correctable_Error_Mask",
+            "Type": 7,
+            "Data": 0
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_ECRC_Errors",
+            "Type": 7,
+            "Data": 0
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_Error_Reporting",
+            "Type": 7,
+            "Data": 7
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_S0WakeupSupported",
+            "Type": 17,
+            "Data": true
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_AcsSupport",
+            "Type": 7,
+            "Data": 2
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_AriSupport",
+            "Type": 17,
+            "Data": false
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_AcsCompatibleUpHierarchy",
+            "Type": 7,
+            "Data": 3
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_AcsCapabilityRegister",
+            "Type": 7,
+            "Data": 0
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_AtsSupport",
+            "Type": 17,
+            "Data": false
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_RequiresReservedMemoryRegion",
+            "Type": 17,
+            "Data": false
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_AtomicsSupported",
+            "Type": 17,
+            "Data": false
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_SupportedLinkSubState",
+            "Type": 7,
+            "Data": 15
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_OnPostPath",
+            "Type": 17,
+            "Data": true
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_D3ColdSupport",
+            "Type": 7,
+            "Data": 258
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_VirtualChannelControlRegisters",
+            "Type": 4103,
+            "Data": [
+              2147483903,
+              0,
+              0,
+              0,
+              16,
+              405,
+              491809,
+              98306
+            ]
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_UsbComponentRelation",
+            "Type": 17,
+            "Data": false
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_SupportsDmwrOnEntireDeviceTree",
+            "Type": 17,
+            "Data": false
+          },
+          {
+            "KeyName": "DEVPKEY_PciDevice_IsTunneledDevice",
+            "Type": 17,
+            "Data": false
+          },
+          {
+            "KeyName": "DEVPKEY_Device_LocationPaths",
+            "Type": 8210,
+            "Data": [
+              "PCIROOT(0)#PCI(0100)#PCI(0000)",
+              "ACPI(_SB_)#ACPI(PC00)#ACPI(PEG1)#ACPI(PEGP)"
+            ]
+          },
+          {
+            "KeyName": "DEVPKEY_Device_DriverVersion",
+            "Type": 18,
+            "Data": "32.0.15.9649"
+          }
+        ]
+      },
+      "raw_identity_output": "GPU-ae8cdd6b-4a26-f2a9-bf2a-c3d4f7bcd86c, 00000000:01:00.0, 0x248810DE, 0x88371043, 94.04.46.40.e9, 596.49",
+      "full_register_block": {
+        "status": "NOT_READABLE_ON_THIS_OS",
+        "os": "Windows",
+        "reason": "No available supported user-mode reader for the full PCI register block; not required by R_CUSTODY"
+      },
+      "device_execution": "NONE",
+      "world_execution": "NONE",
+      "source": {
+        "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/identity/WINDOWS_CONFIGURATION_BINDING.json",
+        "sha256": "7466C3917A2EB0E0A8D15EDB72D18C5ADC66B526BB5104FEEC7FE9B03B08B0F2"
+      }
+    },
+    "full_register_block": {
+      "status": "NOT_READABLE_ON_THIS_OS",
+      "os": "Windows"
+    }
+  },
+  "runtime": {
+    "host_boot_id": "2026-11-11T07:33:59.5000000Z",
+    "driver_version": "596.49",
+    "cuda_runtime_version": 13020,
+    "visibility_remapping": {
+      "CUDA_VISIBLE_DEVICES": "UNSET",
+      "basis": "Inherited launcher environment; actual ordinal checked against CUDA and NVML UUID"
+    },
+    "device_launches": [
+      {
+        "run_id": "7a895b15-9271-4fcf-bd7c-17dad45597e0",
+        "uuid": "GPU-ae8cdd6b-4a26-f2a9-bf2a-c3d4f7bcd86c",
+        "context": 1748916674000,
+        "ordinal": 0,
+        "process_id": 8632,
+        "input_sha256": "4C422561F0D41879F2E47C6F332012DBE642DF376F9C3C541BB5293620B319DA",
+        "output_sha256": "E59824FD4078C4238D1269AB5E96BBC4B9901B00A622D0B39F9130A577250867",
+        "invocation": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/initial/process.invocation.json",
+          "sha256": "C53A393041E89C2F0BAE414351566A54BC39AE45322C4E7668FFFAC1FDBF7250",
+          "bytes": 676
+        },
+        "native_custody": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/initial/capture.custody.json",
+          "sha256": "E6676CE4805D15647DC4850DF27CC1AB271D356CB972B66AEAEDE1708C460BE5",
+          "bytes": 642
+        },
+        "completion": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/initial/capture.completion.json",
+          "sha256": "EA7C5E3A62B70C1C55C2A3D2BDBC6849C2BECD31ABD36E9952DB3B0CC320F0CD",
+          "bytes": 113
+        },
+        "input_image": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_initial/stage/image.bin",
+          "bytes": 41992208,
+          "sha256": "4C422561F0D41879F2E47C6F332012DBE642DF376F9C3C541BB5293620B319DA"
+        },
+        "output": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/initial/readback.bin",
+          "sha256": "E59824FD4078C4238D1269AB5E96BBC4B9901B00A622D0B39F9130A577250867",
+          "bytes": 369098784
+        },
+        "started": "2026-11-13T20:20:02.405Z",
+        "completed": "2026-11-13T20:26:49.077Z"
+      }
+    ],
+    "device_resumes": [
+      {
+        "run_id": "7a895b15-9271-4fcf-bd7c-17dad45597e0",
+        "uuid": "GPU-ae8cdd6b-4a26-f2a9-bf2a-c3d4f7bcd86c",
+        "context": 2820317982672,
+        "ordinal": 0,
+        "process_id": 34152,
+        "input_sha256": "9127CB301C08DD8F531D0443E6667C7FFC957BD9352D2BA580269CA2EB693CDE",
+        "output_sha256": "5491FCE67CDE429B2E4C24FBF443B09B4CD8CD794B651603814185AC75C41C68",
+        "invocation": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_00/process.invocation.json",
+          "sha256": "B6C931825CB2E23A1862E36500EE4FD00319C3CFECC25CFFCF0596839D28F5FE",
+          "bytes": 800
+        },
+        "native_custody": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_00/capture.custody.json",
+          "sha256": "0FE6D32C7AC3EAB7630880377C879601576C5065F6ECD7EF674F6A1AD62C15AE",
+          "bytes": 643
+        },
+        "completion": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_00/capture.completion.json",
+          "sha256": "612A05F62C721A7D76D83ED207AAAD96D8D08915136F484AD1558411CAE38C3B",
+          "bytes": 114
+        },
+        "input_image": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_00/stage/image.bin",
+          "bytes": 41992208,
+          "sha256": "9127CB301C08DD8F531D0443E6667C7FFC957BD9352D2BA580269CA2EB693CDE"
+        },
+        "output": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_00/readback.bin",
+          "sha256": "5491FCE67CDE429B2E4C24FBF443B09B4CD8CD794B651603814185AC75C41C68",
+          "bytes": 369098784
+        },
+        "started": "2026-11-13T20:26:49.577Z",
+        "completed": "2026-11-13T20:29:45.755Z",
+        "predecessor_actual": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/initial/readback.bin",
+          "sha256": "E59824FD4078C4238D1269AB5E96BBC4B9901B00A622D0B39F9130A577250867",
+          "bytes": 369098784
+        },
+        "retained_resume_guard": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_00/stage/GUARD.json",
+          "sha256": "65FEC1F80F09690BCF6B41BD5B539F639C121AE82191FB8F73321FA6A777D335",
+          "bytes": 1140
+        }
+      },
+      {
+        "run_id": "7a895b15-9271-4fcf-bd7c-17dad45597e0",
+        "uuid": "GPU-ae8cdd6b-4a26-f2a9-bf2a-c3d4f7bcd86c",
+        "context": 2243151474496,
+        "ordinal": 0,
+        "process_id": 13156,
+        "input_sha256": "545A260DDBCCE143DC995237421006C885D2EECE1F0B7B9BF2706759AE28F0B5",
+        "output_sha256": "85372105CA847756D7B840D778C55D68D2489B860BA6ADCEFA13FF56134510F6",
+        "invocation": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_01/process.invocation.json",
+          "sha256": "85F70B3F4069107A5767289B271D10DE789DEB3920C8A597886E485C126C04BA",
+          "bytes": 808
+        },
+        "native_custody": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_01/capture.custody.json",
+          "sha256": "B97A337DB96D2CE8C111FEF25BA99E8C31B6E6002205AFBC3C9AFD6623ABDF24",
+          "bytes": 643
+        },
+        "completion": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_01/capture.completion.json",
+          "sha256": "96FE23B4E6BC572167A805A1B75E80138B62AF5700085AE216AFFFC2C6F55BA6",
+          "bytes": 114
+        },
+        "input_image": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_01/stage/image.bin",
+          "bytes": 41992208,
+          "sha256": "545A260DDBCCE143DC995237421006C885D2EECE1F0B7B9BF2706759AE28F0B5"
+        },
+        "output": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_01/readback.bin",
+          "sha256": "85372105CA847756D7B840D778C55D68D2489B860BA6ADCEFA13FF56134510F6",
+          "bytes": 369098784
+        },
+        "started": "2026-11-13T20:29:46.242Z",
+        "completed": "2026-11-13T20:30:03.999Z",
+        "predecessor_actual": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_00/readback.bin",
+          "sha256": "5491FCE67CDE429B2E4C24FBF443B09B4CD8CD794B651603814185AC75C41C68",
+          "bytes": 369098784
+        },
+        "retained_resume_guard": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_01/stage/GUARD.json",
+          "sha256": "F95101929E5AFE205F39E9C6DF01F5AA3871B4F6648DAE2B47944B5C5EF032EA",
+          "bytes": 1140
+        }
+      },
+      {
+        "run_id": "7a895b15-9271-4fcf-bd7c-17dad45597e0",
+        "uuid": "GPU-ae8cdd6b-4a26-f2a9-bf2a-c3d4f7bcd86c",
+        "context": 2636957233040,
+        "ordinal": 0,
+        "process_id": 32772,
+        "input_sha256": "DEB8BC33CBDCC2241E5D741D40465B8A84FA0B617E6806F735BEE82AF1D45A6F",
+        "output_sha256": "00BA1A2996D0B0D74BF5B1FCC3C32F5C4786CF9FF35B2CAB0D8AEEE41706DA90",
+        "invocation": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_02/process.invocation.json",
+          "sha256": "D1D5C5736175641C9AA17CAF1DE400A4D6A8F9DBF3DA7C71DB9AE56F94FC8732",
+          "bytes": 808
+        },
+        "native_custody": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_02/capture.custody.json",
+          "sha256": "0EBD71337EC08DA9ECB2F28DAFD71D25388188939BCC12C4EB7A1A4036FC398B",
+          "bytes": 643
+        },
+        "completion": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_02/capture.completion.json",
+          "sha256": "A426C867F1EBB7C84CC4C36F282BED1DA56D6CF54CCA27FF7C612716C206659C",
+          "bytes": 114
+        },
+        "input_image": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_02/stage/image.bin",
+          "bytes": 41992208,
+          "sha256": "DEB8BC33CBDCC2241E5D741D40465B8A84FA0B617E6806F735BEE82AF1D45A6F"
+        },
+        "output": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_02/readback.bin",
+          "sha256": "00BA1A2996D0B0D74BF5B1FCC3C32F5C4786CF9FF35B2CAB0D8AEEE41706DA90",
+          "bytes": 369098784
+        },
+        "started": "2026-11-13T20:30:04.513Z",
+        "completed": "2026-11-13T20:30:47.672Z",
+        "predecessor_actual": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_01/readback.bin",
+          "sha256": "85372105CA847756D7B840D778C55D68D2489B860BA6ADCEFA13FF56134510F6",
+          "bytes": 369098784
+        },
+        "retained_resume_guard": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_02/stage/GUARD.json",
+          "sha256": "DE85965C01F5B179DEAC77ADE58E7D38CC45C798BB8F3A834EFF75FD698D7899",
+          "bytes": 1140
+        }
+      }
+    ],
+    "allocation_map": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/ALLOCATION_AND_TRANSFER_MAP.json",
+      "sha256": "F2906562B8ABD647263D01C4C1CF514F838A26E9260AA3C707F2E35D53C96C66",
+      "bytes": 8591
+    },
+    "event_time_work_trace": [
+      {
+        "launch": "initial",
+        "progress": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/initial/readback.bin.progress.jsonl",
+          "sha256": "D7D26B6D1DAA691508E70443281950671E2405BCE1982ADFE490F5158DDC5E39",
+          "bytes": 77160
+        },
+        "epochs": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/initial/readback.bin.epochs.jsonl",
+          "sha256": "212A1E511782FF995F33AEF438C63A86B2DA9012F05647C48CFD2C7EA7EF9D94",
+          "bytes": 567950
+        },
+        "stdout": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/initial/process.stdout.txt",
+          "sha256": "F25973B92FAD1AE476B87F0D3FF63FBEE37A4C216D5E0D2AF471ED68EFFB4650",
+          "bytes": 73
+        },
+        "stderr": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/initial/process.stderr.txt",
+          "sha256": "3AA7FEA6733D6D0ECDCC50982894D955B50FD5345D6BD386EB141DB8AB6A6D03",
+          "bytes": 56088
+        }
+      },
+      {
+        "launch": "normal_round_00",
+        "progress": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_00/readback.bin.progress.jsonl",
+          "sha256": "F5E62CA187892AAC7ED5B14FA72F125FCBF8388EAB37C436B3E7AB8ED9F15BB3",
+          "bytes": 31177
+        },
+        "epochs": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_00/readback.bin.epochs.jsonl",
+          "sha256": "308118542BFFAC4B63C0857E3A143B14D67FA3664187F87287253F39B996DDCB",
+          "bytes": 10409245
+        },
+        "stdout": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_00/process.stdout.txt",
+          "sha256": "256761FCAE67475CA624767C183B44FB3DA553E7DFFB35263D161630D0C2D255",
+          "bytes": 75
+        },
+        "stderr": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_00/process.stderr.txt",
+          "sha256": "B44821A6D02975BFD3718DB0CAE8241A4FF3E9F03CA5BE2CC7C4601D1EF82A5C",
+          "bytes": 22884
+        }
+      },
+      {
+        "launch": "normal_round_01",
+        "progress": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_01/readback.bin.progress.jsonl",
+          "sha256": "668B18DE2B000E93328FD0EDC135049EBAB204189D695AD234466A3B2889DE35",
+          "bytes": 1415
+        },
+        "epochs": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_01/readback.bin.epochs.jsonl",
+          "sha256": "CBF980ECCD61D2ADA7DEC9E51D07477E4DF347F9FF78E2FE011418DE5B179426",
+          "bytes": 53433
+        },
+        "stdout": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_01/process.stdout.txt",
+          "sha256": "2727CFE526B40B1DCBA831EC1DA05681A84DC02D45E9ACD1B487BEC178581E6C",
+          "bytes": 75
+        },
+        "stderr": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_01/process.stderr.txt",
+          "sha256": "F5B20EEFA5435209D97B1F1BC4F043AB7FDC33891A5398D49F0F08C787E5A577",
+          "bytes": 1001
+        }
+      },
+      {
+        "launch": "normal_round_02",
+        "progress": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_02/readback.bin.progress.jsonl",
+          "sha256": "10F06FD6A2DAD0D399FFC37F27D75603831159DCA89D04BD5433BE0410C82990",
+          "bytes": 6570
+        },
+        "epochs": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_02/readback.bin.epochs.jsonl",
+          "sha256": "30888D247C880D77BC8F29BF32B1946FC32EE7C36F0F31961E90D9AB9E55E325",
+          "bytes": 279809
+        },
+        "stdout": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_02/process.stdout.txt",
+          "sha256": "0B10E17A94CBB662E8CB52A4D1915AD23996420DDF2964128BFAD09FB8CAE3FD",
+          "bytes": 75
+        },
+        "stderr": {
+          "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_02/process.stderr.txt",
+          "sha256": "1B0F68BB93F2F3E89ED43871DA33DA185DA551B1DA76B52672A41A617E4A9A4C",
+          "bytes": 4801
+        }
+      }
+    ],
+    "event_capture_completion": {
+      "footer": "COMPLETE",
+      "produced": 2579941689,
+      "recorded": 2579941689,
+      "dropped": 0,
+      "represented_by_sealed_digest": 2579941689,
+      "stored_in_deviation": 0,
+      "field_events_full": 480,
+      "chunks": 2531,
+      "same_chunks": 2531,
+      "not_same_chunks": 0,
+      "per_kind": [
+        0,
+        2266610248,
+        821959,
+        1712497,
+        210949,
+        0,
+        284054080,
+        23063136,
+        1499328,
+        1969492
+      ],
+      "completion_basis": "Source-enforced native finish + successful process completion + all retained chunk logs; overwritten structured footer explicitly accounted",
+      "evidence": {
+        "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/EVENT_CAPTURE_COMPLETION.json",
+        "sha256": "B78BB4CFD305DD1BB1414A031ED02701745DFFE20B4BABED638237A0A7EF8651",
+        "bytes": 69897
+      }
+    }
+  },
+  "sources": {
+    "specification": {
+      "path": "C:/Users/devon/Desktop/MaL/MaLv3/SPEC_SUBSTRATE_WITNESS_OF_SHED_001_v0.1.8_PROPOSED.mal",
+      "bytes": 39217,
+      "sha256": "9F2A87E31C942FF6A3042D5D3EE061725238DF42959D2559FF1B02540D604DCA"
+    },
+    "binary": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_observer_successor_270_r1/build/runtime_structured278.exe",
+      "sha256": "3671B157F727C083083DA3EB84D0CE51BECD2B5CCAC7C31ACBFAC9C00E296A34",
+      "bytes": 2311168
+    },
+    "implementation": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_observer_successor_270_r1/structured_capture_278/FINAL_IMPLEMENTATION_BINDINGS.json",
+      "sha256": "6B2C0FE3D96B559F903EC6A2CCA99B0F4C5EA41E03EC4B4EE3C3B2B799BBE129",
+      "bytes": 6695
+    },
+    "input_images": [
+      {
+        "image": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_initial/stage/image.bin",
+          "bytes": 41992208,
+          "sha256": "4C422561F0D41879F2E47C6F332012DBE642DF376F9C3C541BB5293620B319DA"
+        },
+        "checkpoint": null
+      },
+      {
+        "image": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_00/stage/image.bin",
+          "bytes": 41992208,
+          "sha256": "9127CB301C08DD8F531D0443E6667C7FFC957BD9352D2BA580269CA2EB693CDE"
+        },
+        "checkpoint": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_initial/stage/readback.bin",
+          "bytes": 369098784,
+          "sha256": "E59824FD4078C4238D1269AB5E96BBC4B9901B00A622D0B39F9130A577250867"
+        }
+      },
+      {
+        "image": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_01/stage/image.bin",
+          "bytes": 41992208,
+          "sha256": "545A260DDBCCE143DC995237421006C885D2EECE1F0B7B9BF2706759AE28F0B5"
+        },
+        "checkpoint": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_00/stage/readback.bin",
+          "bytes": 369098784,
+          "sha256": "5491FCE67CDE429B2E4C24FBF443B09B4CD8CD794B651603814185AC75C41C68"
+        }
+      },
+      {
+        "image": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_02/stage/image.bin",
+          "bytes": 41992208,
+          "sha256": "DEB8BC33CBDCC2241E5D741D40465B8A84FA0B617E6806F735BEE82AF1D45A6F"
+        },
+        "checkpoint": {
+          "path": "D:/Dev/Codex/2026-10-04/new-chat/mal_fabric_flag_world_001/flag_world_001_first_tick/j17_proposer_reentry_020/run_001/normal_round_01/stage/readback.bin",
+          "bytes": 369098784,
+          "sha256": "85372105CA847756D7B840D778C55D68D2489B860BA6ADCEFA13FF56134510F6"
+        }
+      }
+    ],
+    "source_maps": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_observer_implementation_270/fixtures/source-map.json",
+      "sha256": "F4FD27451F184BC9F79090DC31D59CE61DF6DD3B9DE8B1C00202E25DEA8B6CFF"
+    },
+    "carrier": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_observer_implementation_270/fixtures/carrier.mcbf",
+      "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB"
+    }
+  },
+  "fold": {
+    "input_state": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_observer_implementation_270/fixtures/before.world.json",
+      "sha256": "E44759E517D2A381342003C74FFB3C8369C4B0A3167E92A4842D8553A27DD059"
+    },
+    "returned_state": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_observer_implementation_270/fixtures/after.world.json",
+      "sha256": "946BADF27E6AA0EBDA090DB61DCE28BC93726BC0DB2153D927DC6F8AE9DB9A88",
+      "basis": "Actual final native readback SAME retained whole and its bound projection; no world append",
+      "native_readback": {
+        "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/normal_round_02/readback.bin",
+        "sha256": "00BA1A2996D0B0D74BF5B1FCC3C32F5C4786CF9FF35B2CAB0D8AEEE41706DA90",
+        "bytes": 369098784
+      }
+    },
+    "chain_link": "501368508A256BE21091298B3A26B03726E41FC9E6C388925C0C8B8924DEBE8C"
+  },
+  "observations": {
+    "native_events": {
+      "chunk_comparison": {
+        "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/CHUNK_COMPARISON.json",
+        "sha256": "FAB95028B5576D859E078401C3320B930C913F3DBC52781FE6C5BA70B0CFC6EC",
+        "bytes": 4673270
+      },
+      "expected_manifest": {
+        "path": "D:/Dev/Codex/2026-11-13/substrate_observer_successor_270_r1/structured_capture_278/EXPECTED_CHUNKS.json",
+        "sha256": "05981C47187A910215196BF28B4C55E4553765EBFC9431EF6DCDA8489FA0ADDA",
+        "bytes": 49488
+      },
+      "completion": {
+        "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/EVENT_CAPTURE_COMPLETION.json",
+        "sha256": "B78BB4CFD305DD1BB1414A031ED02701745DFFE20B4BABED638237A0A7EF8651",
+        "bytes": 69897
+      },
+      "projection": {
+        "path": "D:/Dev/Codex/2026-11-13/substrate_observer_successor_270_r1/structured_capture_278/EVENT_PROJECTION.json",
+        "sha256": "5A621D42C87D376BB4C4F70FF546E6322ECB5AE7F6162D99052B607DBDD8825F",
+        "bytes": 2034
+      }
+    },
+    "field_events": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/captured_fields/FIELD_EVENTS.json",
+      "sha256": "05AD48F35803F91403A7F8A9B7EEB3E3852B71B1D3D41E9E1C034568AEE61BD9",
+      "bytes": 466997
+    },
+    "junction_envelopes": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/captured_fields/JUNCTION_ENVELOPES.json",
+      "sha256": "B46F9F825D2628DEB946A9F18C643CEE3814BC2356FABC4E09C3E16CFF4759F6",
+      "bytes": 812068
+    }
+  },
+  "results": {
+    "native_bytes": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/NATIVE_BYTE_COMPARISON.json",
+      "sha256": "91824917EF4F750F97FE364ACE7918A7CEFD1BEA1DC876B5E24F26AB1812F120",
+      "bytes": 3022
+    },
+    "field_capture": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/captured_fields/FIELD_CAPTURE_SUMMARY.json",
+      "sha256": "5CA3AABCC87438E509050743A4A8C4A4EB62AF21DC7241A601F4067B658855E6",
+      "bytes": 543
+    },
+    "per_junction": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/PER_JUNCTION_COUNTS.json",
+      "sha256": "3133C440784B6206474AC47F2878EFCE6D968CF56658348D78A4CF3360DD6FBA",
+      "bytes": 2394
+    },
+    "comparison": {
+      "path": "D:/Dev/Codex/2026-11-13/substrate_execution_278_authorized_host_r1/COLUMN_COMPARISON.json",
+      "sha256": "7A5974DF1F0F143A1CFEEC8897EA19468CE5E9C05020F02135AEC7F61F7EDA8E",
+      "bytes": 2101
+    },
+    "verdict": "IF_THEN"
+  },
+  "findings": [
+    "Structured completion footer is overwritten by native completion in the sealed executable; the retained completion proof is explicitly reconstructed from source-enforced finish and actual logs."
+  ],
+  "no_rtl_change": "NONE",
+  "no_status_change": "NONE",
+  "kind": "SUBSTRATE_EXECUTION_RUN_RECORD",
+  "hold_038": "UNTOUCHED",
+  "world_append": "NONE",
+  "status_change": "NONE"
+}
