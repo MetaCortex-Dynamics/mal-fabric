@@ -1,0 +1,48 @@
+{
+  "record": "GOES_WITH_J17_SHED_WITNESS_METIS_284",
+  "relation": "GOES_WITH",
+  "authority": {
+    "act": "Devon DECIDE association",
+    "statement": "This Goes-with Metis as well",
+    "time": "2026-11-13 17:33 America/New_York",
+    "receipt_path": "C:\\Users\\devon\\Desktop\\MaL\\Markdowns\\RECEIPT_NOTE_FORWARD_DISCHARGE_GOES_WITH_METIS_001_2026-11-13.md",
+    "receipt_sha256": "54638E6AFA61CEFFFE726427D032855C118AB0EE5D3F47A55BC88899976CFF4F"
+  },
+  "left": {
+    "object": "O_SUBSTRATE_WITNESS_OF_SHED discharge and witness set, J17 link 2 -> 3",
+    "repository": "https://github.com/MetaCortex-Dynamics/mal-fabric.git",
+    "commit": "7b37c9ab376abc0455ddcd842959d21ee5ca2ae4",
+    "merge": "6338b94d566ae2b38d4b7dbc0bebb841ec95e0ff",
+    "packet": "flag_world_001_first_tick/substrate_witness_of_shed_284",
+    "manifest_sha256": "847FE3731201A6278E214C066D7E7FE64838D452CF5CA5B492D7A149A20E7F20",
+    "spec_sha256": "9F2A87E31C942FF6A3042D5D3EE061725238DF42959D2559FF1B02540D604DCA",
+    "run_record_sha256": "9939E9062F29C57E0E9232E9C4FFEEF89849DA469BA9B37A4AC28FA18CF280BB",
+    "envelopes_sha256": "B46F9F825D2628DEB946A9F18C643CEE3814BC2356FABC4E09C3E16CFF4759F6",
+    "discharge_receipt_sha256": "29D3CA259E25AE37B8A473CD7D5CEEEE6AC53E75189DBEBFE8B206D0BE92B724"
+  },
+  "right": {
+    "object": "Metis line",
+    "g_position": 849,
+    "original_genesis_anchor": "01afeb91d9d096ec85f6f84d4e266a996d24a17be805946bbcd0eaed9f553ada",
+    "head_path": "C:\\Users\\devon\\Documents\\Codex\\2026-10-30\\october-26-2026-0-5-preprint\\work\\metis_first_carrier_tick_018\\repository\\flag_world_001_first_tick\\metis_worldline\\HEAD.json",
+    "head_sha256": "78CADCA6146D3B16DEE17F9FAF87C94E92F8C4B12B89FB0994EDCEA7597CD831",
+    "head_snapshot_only": "Locates the line; does not limit or advance the association to a new tick",
+    "retained_record_path": "D:\\Dev\\Codex\\2026-11-04\\grl_measured_capacity_043\\metis_recovery_052_002\\Metis_publications\\4591D48FAF637118BC6212BBA2ADB3A2106D8A6988AA5FF4ED3B536E5C21F178\\RECORD.json",
+    "retained_record_sha256": "4591D48FAF637118BC6212BBA2ADB3A2106D8A6988AA5FF4ED3B536E5C21F178",
+    "record_hash_check": "SAME"
+  },
+  "scope": {
+    "association": "Witness set is bound ground for Metis line by hash",
+    "identity_equivalence": "NOT_CLAIMED",
+    "Metis_discharge": "NOT_CLAIMED",
+    "Metis_execution": 0,
+    "Metis_bytes_changed": 0,
+    "world_appends": 0,
+    "status_changes": [],
+    "sealed_witness_changed": 0,
+    "original_main_changed": 0,
+    "push": 0,
+    "operation_038": "UNTOUCHED"
+  },
+  "placement": "Separate forward association sidecar; original receipt and sealed commits unchanged; no new commit requested or performed in this read"
+}

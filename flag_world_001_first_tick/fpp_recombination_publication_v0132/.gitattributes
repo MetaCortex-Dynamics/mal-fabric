@@ -1,0 +1,8 @@
+* -text
+# Exact-hash historical payloads: retain their whitespace; do not normalize evidence.
+contacts/CRJA.md -whitespace
+native_form/finalize.mjs -whitespace
+native_form/header_audit.mjs -whitespace
+native_form/run.mjs -whitespace
+native_form/supplement.mjs -whitespace
+readings/ENOUGH_FOR_FOLD_REPORT.md -whitespace

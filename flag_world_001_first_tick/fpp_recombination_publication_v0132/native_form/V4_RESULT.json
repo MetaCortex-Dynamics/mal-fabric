@@ -1,0 +1,133 @@
+{
+  "inputs": [
+    {
+      "ordinal": 1,
+      "id": "CRJA",
+      "path": "D:/Dev/Codex/2026-11-14/fpp_v0132_native_form/packet/contacts/CRJA.md",
+      "sha256": "776E31CD3ED277D628EEC3C62F9DA3002A2F2EDEEEEA5618F4833AF5AE06BD60",
+      "bytes": 5038,
+      "verdict": "SAME"
+    },
+    {
+      "ordinal": 2,
+      "id": "C1725",
+      "path": "D:/Dev/Codex/2026-11-14/fpp_v0132_native_form/packet/contacts/C1725.md",
+      "sha256": "1BB0B4E9886AC4D9B8BD4C2170DC40E566C8431757328B3E812053D06C7B2FA1",
+      "bytes": 3605,
+      "verdict": "SAME"
+    },
+    {
+      "ordinal": 3,
+      "id": "C1727",
+      "path": "D:/Dev/Codex/2026-11-14/fpp_v0132_native_form/packet/contacts/C1727.md",
+      "sha256": "485A9D31B75205461D61C58B8881C5C72287D3B7862A0395E69F03545D586C4B",
+      "bytes": 1519,
+      "verdict": "SAME"
+    },
+    {
+      "ordinal": 4,
+      "id": "ROOTS",
+      "path": "D:/Dev/Codex/2026-11-14/fpp_v0132_native_form/packet/contacts/ROOT_2_FACES.json",
+      "sha256": "AC145E161E92133193589F185D8147EC6F318A81F00109D4BD10609AA33A8F37",
+      "bytes": 45027,
+      "verdict": "SAME"
+    },
+    {
+      "ordinal": 5,
+      "id": "CARRIER",
+      "path": "D:/Dev/Codex/2026-11-14/fpp_v0132_native_form/packet/contacts/CARRIER_QG003 (QG-JUNCTION-PROTO-003 carrier binding)",
+      "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB",
+      "bytes": 12048,
+      "verdict": "SAME"
+    },
+    {
+      "ordinal": 6,
+      "id": "TRH",
+      "path": "D:/Dev/Codex/2026-11-14/fpp_v0132_native_form/packet/contacts/TRH.md",
+      "sha256": "204D9EF88AE04C7A4F20AAF5A55893DF09174BBAED34988FC9D501C920235150",
+      "bytes": 3944,
+      "verdict": "SAME"
+    },
+    {
+      "ordinal": 7,
+      "id": "RDISCH",
+      "path": "D:/Dev/Codex/2026-11-14/fpp_v0132_native_form/packet/contacts/RDISCH.md",
+      "sha256": "29D3CA259E25AE37B8A473CD7D5CEEEE6AC53E75189DBEBFE8B206D0BE92B724",
+      "bytes": 4405,
+      "verdict": "SAME"
+    },
+    {
+      "ordinal": 8,
+      "id": "CEFF",
+      "path": "D:/Dev/Codex/2026-11-14/fpp_v0132_native_form/packet/contacts/CEFF.md",
+      "sha256": "E0AFE098DF5754B24096B76B1F9C55C2B44127EFCA5F66735FAE6ACAF2C9E873",
+      "bytes": 2028,
+      "verdict": "SAME"
+    }
+  ],
+  "readings": [
+    {
+      "restriction": "R_REC_ROOTS",
+      "verdict": "IF_THEN",
+      "locators": "CRJA:L1-L12; ROOTS:/roots; CARRIER:/vertices/17",
+      "because": "The held carrier row and unique domain/witness lift give roots 48,52,50,54; CRJA carries preservation of their six flag identities.",
+      "authority": "Contacted reading of eight held inputs under V4 L677-L679; no promotion or status change"
+    },
+    {
+      "restriction": "R_REC_MANY",
+      "verdict": "IF_THEN",
+      "locators": "CRJA:L16,L37; TRH:L24; RDISCH:L42",
+      "because": "The bound recombination MANY is the foldable whole with its input anti-polarity carrier. The four CCD roots remain constituents of that whole, not four reactants.",
+      "authority": "Contacted reading of eight held inputs under V4 L677-L679; no promotion or status change"
+    },
+    {
+      "restriction": "R_REC_ONE",
+      "verdict": "IF_THEN",
+      "locators": "CRJA:L17,L39,L41; C1725:L45; TRH:L31-L35",
+      "because": "The preserved coupled configuration in the uniform-NO successor is ONE. The worked nuclear stability ladder is outside this trace's scope.",
+      "authority": "Contacted reading of eight held inputs under V4 L677-L679; no promotion or status change"
+    },
+    {
+      "restriction": "R_REC_Q1",
+      "verdict": "IF_THEN",
+      "locators": "CRJA:L25,L38; CARRIER:/vertices/17; ROOTS:/roots",
+      "because": "The foldable whole and its CCD identities persist; the input defect is not an additional foldable-one.",
+      "authority": "Contacted reading of eight held inputs under V4 L677-L679; no promotion or status change"
+    },
+    {
+      "restriction": "R_REC_Q2",
+      "verdict": "IF_THEN",
+      "locators": "CRJA:L26; TRH:L24-L26; C1725:L1-L11",
+      "because": "Carry the bound whole recombination SAME reading. This contacted vector carries the opposed whole/input-carrier account without assigning signs to roots or recomputing sums.",
+      "authority": "Contacted reading of eight held inputs under V4 L677-L679; no promotion or status change"
+    },
+    {
+      "restriction": "R_REC_DELTA",
+      "verdict": "IF_THEN",
+      "locators": "CRJA:L18,L27; C1727:L1-L19; RDISCH:L4-L13,L34",
+      "because": "The exhaustive held/departing whole account identifies the twelve-flag THIS section and its captured ASSIGN realization, discharged for this fold.",
+      "authority": "Contacted reading of eight held inputs under V4 L677-L679; no promotion or status change"
+    },
+    {
+      "restriction": "R_REC_NO_REMAINDER",
+      "verdict": "IF_THEN",
+      "locators": "CRJA:L19; C1725:L1-L11; C1727:L12; TRH:L25-L26",
+      "because": "The anti-polarity carrier is an input. No output remainder-carrier belongs to this recombination; delta carries no q_i in the bound trace.",
+      "authority": "Contacted reading of eight held inputs under V4 L677-L679; no promotion or status change"
+    },
+    {
+      "restriction": "R_REC_TRANSITION",
+      "verdict": "IF_THEN",
+      "locators": "CRJA:L21,L40,L42; C1725:L13-L41; C1727:L15-L17; CEFF:L5-L26",
+      "because": "BECAUSE the complete twelve-flag coupling has twelve DELTA overlaps NOT_SAME to SAME and six GAMMA plus six TAU overlaps SAME to SAME, with all three kinds per member, no opened disagreement and none remaining, R1_STRICT 582029 (ordered supports 580038,210262,579648,561071) enters admission premise 623237 and effect 623321 without selection. L558 carries CEFF, including enough-for-fold/MUST, without a refinement stability test or numerical threshold.",
+      "authority": "Contacted reading of eight held inputs under V4 L677-L679; no promotion or status change"
+    }
+  ],
+  "output": "R_REC_ROOTS IF_THEN\nR_REC_MANY IF_THEN\nR_REC_ONE IF_THEN\nR_REC_Q1 IF_THEN\nR_REC_Q2 IF_THEN\nR_REC_DELTA IF_THEN\nR_REC_NO_REMAINDER IF_THEN\nR_REC_TRANSITION IF_THEN\nJOINT IF_THEN",
+  "joint": "IF_THEN",
+  "actual_sha256": "C2E97218EF487FEC447CD26883AB93BFE8F5CC9C1705EE3A7B091F65830EBEA9",
+  "expected_sha256": "C2E97218EF487FEC447CD26883AB93BFE8F5CC9C1705EE3A7B091F65830EBEA9",
+  "bytes": 176,
+  "comparison": "SAME",
+  "scope": "Eight source inputs read by contacted reader; native w10_meet computes the meet. Not a standalone native JOINT_WITNESS evaluator and not a device/world run."
+}
