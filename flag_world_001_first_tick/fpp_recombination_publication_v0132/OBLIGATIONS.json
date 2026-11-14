@@ -1,0 +1,46 @@
+{
+  "authority": "authority/RECEIPT_DECIDE_DISCHARGE_O_FPP_RECOMBINATION_ACCOUNTING_LINK_2_3_001_2026-11-14.md",
+  "receipt_sha256": "FE5E157EB30CA711B16676563497C975EDD318A6301759D1C05C2FF50F145190",
+  "recorded_discharge": {
+    "id": "O_FPP_RECOMBINATION_ACCOUNTING",
+    "subject": "J17 link 2 -> 3 only",
+    "status": "DISCHARGED"
+  },
+  "recorded_promotion": {
+    "spec_sha256": "29AEEED5D7FB74B43AA916F8D09C7417E6F381A19CBEC43A3AD1419AAB425A4A",
+    "promotion_receipt_sha256": "1B35DEC865497C116FCCE02925B9A8A0D39ED54CF09EAA42F066C31246113B14",
+    "map_obligation": "O_GRL_RELATION_KINDS_NO_FPP_MAP",
+    "disposition": "Met by promotion for these bytes"
+  },
+  "continuing": [
+    {
+      "id": "O_FPP_FOLD_ACCOUNTING",
+      "status": "PENDING",
+      "scope": "Refinement links 6 -> 7 and 7 -> 8; includes shed on folds forming new parts"
+    }
+  ],
+  "receipt_followups": [
+    {
+      "id": "O_FPP_RECOMBINATION_ON_OTHER_FIXED_CARRIER_FOLDS",
+      "wording_authority": "PROPOSE per accompanying user record",
+      "standing": "OPEN FOLLOW-UP; no new promotion or retroactive qualification of the discharged fold"
+    },
+    {
+      "id": "O_NATIVE_JOINT_WITNESS",
+      "wording_authority": "PROPOSE per accompanying user record",
+      "standing": "OPEN FOLLOW-UP; no new promotion or retroactive qualification of the discharged fold"
+    },
+    {
+      "id": "O_NATIVE_W10_4_RECOGNIZER",
+      "wording_authority": "PROPOSE per accompanying user record",
+      "standing": "OPEN FOLLOW-UP; no new promotion or retroactive qualification of the discharged fold"
+    },
+    {
+      "subject": "Relation between CRJA q2 account and R198 member-by-identity reading",
+      "wording_authority": "PROPOSE per accompanying user record",
+      "standing": "OPEN FOLLOW-UP; no new promotion or retroactive qualification of the discharged fold"
+    }
+  ],
+  "operation_038": "UNTOUCHED",
+  "Metis_changes": 0
+}

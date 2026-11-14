@@ -1,0 +1,553 @@
+{
+  "schema": "FPP_RECOMBINATION_PUBLIC_EVIDENCE_V0132_001",
+  "subject": "Devon discharge of O_FPP_RECOMBINATION_ACCOUNTING, J17 link 2 -> 3",
+  "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+  "source_manifest_sha256": "34EFAFF867086FF6A727ED346AEBE8A120557051A727D77AC07F8A0701E4FE2B",
+  "publication_base": "f5d6a57c046523daded252b632977e5c8ee44965",
+  "authority": {
+    "statement": "Commit and publish the FPP recombination discharge for J17 link 2 -> 3",
+    "scope": "Current Devon instruction: filtered export and new public branch; no public main merge, DOI or Substack; sealed commits not pushed",
+    "promotion_receipt_sha256": "1B35DEC865497C116FCCE02925B9A8A0D39ED54CF09EAA42F066C31246113B14",
+    "discharge_receipt_sha256": "FE5E157EB30CA711B16676563497C975EDD318A6301759D1C05C2FF50F145190"
+  },
+  "form_precedent": {
+    "commit": "c7ba659be18d0b5cbbc3d81346262f8de053fcde",
+    "path": "flag_world_001_first_tick/genesis_paper_publication_v0_5_001/PUBLIC_EVIDENCE_MANIFEST.json"
+  },
+  "previous_publication": {
+    "commit": "f5d6a57c046523daded252b632977e5c8ee44965",
+    "path": "flag_world_001_first_tick/substrate_shed_publication_284/PUBLIC_EVIDENCE_MANIFEST.json"
+  },
+  "scope": "Exact-byte text evidence and V4 text output; full private set referenced by hash. No source code, harness, executable binary, native support payload, carrier/root payload or package archive added. Historical local paths and receipt device identifiers remain as previously authorized. J17 and Metis remain separate.",
+  "checksum_scope": "SHA256SUMS is preserved from the sealed set and includes hash-only files. files[] is the distributed inventory; the manifest itself is not self-hashed. V4_VERDICT_LINES.txt is the exact 176-byte text output, renamed from V4.actual.bin without content change.",
+  "files": [
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/.gitattributes",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 319,
+      "sha256": "6AB51A4EFF37CDC9A18BC5D8BB3C39B4AD857EB4DC1BE07D6E42F29DBE791580",
+      "path": ".gitattributes"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/authority/RECEIPT_DECIDE_DISCHARGE_O_FPP_RECOMBINATION_ACCOUNTING_LINK_2_3_001_2026-11-14.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 4503,
+      "sha256": "FE5E157EB30CA711B16676563497C975EDD318A6301759D1C05C2FF50F145190",
+      "path": "authority/RECEIPT_DECIDE_DISCHARGE_O_FPP_RECOMBINATION_ACCOUNTING_LINK_2_3_001_2026-11-14.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/authority/RECEIPT_PROMOTE_SPEC_FPP_GRL_CORRESPONDENCE_001_v0.1.32.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 2772,
+      "sha256": "1B35DEC865497C116FCCE02925B9A8A0D39ED54CF09EAA42F066C31246113B14",
+      "path": "authority/RECEIPT_PROMOTE_SPEC_FPP_GRL_CORRESPONDENCE_001_v0.1.32.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/checks/RUN_RECORD_INDEPENDENT_CHECK_FPP_V0132.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 27703,
+      "sha256": "D915F8ECAC1A7C0879492F74E0E2CEDF2349B469EDEB086D524C63EBDFDC0D47",
+      "path": "checks/RUN_RECORD_INDEPENDENT_CHECK_FPP_V0132.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/contacts/C1725.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 3605,
+      "sha256": "1BB0B4E9886AC4D9B8BD4C2170DC40E566C8431757328B3E812053D06C7B2FA1",
+      "path": "contacts/C1725.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/contacts/C1727.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1519,
+      "sha256": "485A9D31B75205461D61C58B8881C5C72287D3B7862A0395E69F03545D586C4B",
+      "path": "contacts/C1727.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/contacts/CEFF.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 2028,
+      "sha256": "E0AFE098DF5754B24096B76B1F9C55C2B44127EFCA5F66735FAE6ACAF2C9E873",
+      "path": "contacts/CEFF.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/contacts/CRJA.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 5038,
+      "sha256": "776E31CD3ED277D628EEC3C62F9DA3002A2F2EDEEEEA5618F4833AF5AE06BD60",
+      "path": "contacts/CRJA.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/contacts/RDISCH.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 4405,
+      "sha256": "29D3CA259E25AE37B8A473CD7D5CEEEE6AC53E75189DBEBFE8B206D0BE92B724",
+      "path": "contacts/RDISCH.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/contacts/TRH.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 3944,
+      "sha256": "204D9EF88AE04C7A4F20AAF5A55893DF09174BBAED34988FC9D501C920235150",
+      "path": "contacts/TRH.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/CONTACTED_READER_MAPPING.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 8109,
+      "sha256": "446608B630C36720B7A5FB6D3320DB95105043068B23CAC6C51F962A60C58A77",
+      "path": "native_form/CONTACTED_READER_MAPPING.json"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/REPORT.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 7966,
+      "sha256": "E6C3356B92A064A8BBD7E225943845A17AD1388A1EAA8A3D14296FB372ABAE18",
+      "path": "native_form/REPORT.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/V4_RESULT.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 6510,
+      "sha256": "477C4F741497728191BED108C202BE0399CA26733D1AA4E92D5522C5090BC3C7",
+      "path": "native_form/V4_RESULT.json"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/V4.actual.bin",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 176,
+      "sha256": "C2E97218EF487FEC447CD26883AB93BFE8F5CC9C1705EE3A7B091F65830EBEA9",
+      "path": "native_form/V4_VERDICT_LINES.txt"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/OBLIGATIONS.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1920,
+      "sha256": "57FBCB2E1218C7DB7334D2EE40E7BEC9112D7066897332ED74C1829B9EE9CECD",
+      "path": "OBLIGATIONS.json"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/readings/ENOUGH_FOR_FOLD_REPORT.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 8040,
+      "sha256": "E77B5F462DE7D4D705A17ED634C7057DFD7FEB324E33D771776AFC0540CD1F98",
+      "path": "readings/ENOUGH_FOR_FOLD_REPORT.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/README.md",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1428,
+      "sha256": "08703B2DB258124E0D6512A7814F12F810DA31A483B36B7AA74653C545E1A04F",
+      "path": "README.md"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/spec/SPEC_FPP_GRL_CORRESPONDENCE_001_v0.1.32_PROPOSED.mal",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 79032,
+      "sha256": "29AEEED5D7FB74B43AA916F8D09C7417E6F381A19CBEC43A3AD1419AAB425A4A",
+      "path": "spec/SPEC_FPP_GRL_CORRESPONDENCE_001_v0.1.32_PROPOSED.mal"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/WITNESS_284_BINDING.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 2015,
+      "sha256": "1BC67E3B7CEF184FAEA5726DEED35EA0837FA003E3D0F5B5642ABBC892B1DEF5",
+      "path": "WITNESS_284_BINDING.json"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/SHA256SUMS",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 7311,
+      "sha256": "34EFAFF867086FF6A727ED346AEBE8A120557051A727D77AC07F8A0701E4FE2B",
+      "path": "SHA256SUMS"
+    }
+  ],
+  "hash_only": [
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/ARTIFACT_CUSTODY.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 20573,
+      "sha256": "1102770CA180046DBC4B194E6ED46E76535BE4E515A9D3AFAA6D6B17C00047F7",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/contacts/CARRIER_QG003 (QG-JUNCTION-PROTO-003 carrier binding)",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 12048,
+      "sha256": "82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/contacts/ROOT_2_FACES.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 45027,
+      "sha256": "AC145E161E92133193589F185D8147EC6F318A81F00109D4BD10609AA33A8F37",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/BYTE_ORDER_BINDING.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 2389,
+      "sha256": "D09BEBCAC519385603CEDD9FF7EA9ADE813E38321312796FB91734A38F011DCF",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/CHECK_FORM.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 4107,
+      "sha256": "949B573D252C94A4138ACB5CC8B1A024C5F6C721A7886578350BA77238A87EAF",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/column_harness.execution.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1184,
+      "sha256": "A8F45BAF8CB15815EBC3396FE89A9718C1D276A877417A67BEC15BBE4C207A55",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/column_harness.mal",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 33215,
+      "sha256": "8DFD647C601BDAD340F13844A71BF45403E4029193DD5425484E2319EEFD8A91",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/column_harness.stderr.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/column_harness.stdout.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 242,
+      "sha256": "F88495EE75E54E39CD15F740DDA1F94E9A23F4F530480CBAFE1EE5F1FFCDCE24",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/column.actual.bin",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 105,
+      "sha256": "679CCCE3E567C61F24D600FBBB0F826CDCA84F3A4172583CB0DE4E90B012E2F3",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/column.expected.bin",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 105,
+      "sha256": "679CCCE3E567C61F24D600FBBB0F826CDCA84F3A4172583CB0DE4E90B012E2F3",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/COLUMN.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 3479,
+      "sha256": "2B23A101A72F10268CEEC74C5CA683BDBA14E884E981218EB352EE33BAD96D79",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/CONTACT_CUSTODY.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 16576,
+      "sha256": "0DE45555DB3CA9ED88EE0483CDEA9EC04B46F1EDC715FCC6AA2B9127FA5C0556",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/CONTACTED_READER_MAPPING.sha256",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 96,
+      "sha256": "38E2879105409F28FEC74EFC10F811C4F79998CF131078223B3C3431DDB8FBEE",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/finalize.mjs",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 9527,
+      "sha256": "218EDA542AFAA762A850C98DC1DF7AE14B5E2EC7C5724E762D2ADB947E4598F9",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/form_harness.execution.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1182,
+      "sha256": "3CF6E249CD4BE9EE24E9549D6A1CDEF59E3CF38A702BCA53203C500CF2EE2E97",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/form_harness.mal",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 269907,
+      "sha256": "A863E9FC9BDD57C193763C85F77F997B305C3AD051622D8144BE218323F3B249",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/form_harness.stderr.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/form_harness.stdout.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1132,
+      "sha256": "5C545151C2A6BA687148F52CA1282FD3909F3CDDC22B5A5B000FE12B0EA1D6F0",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/HEADER_AUDIT.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 4095,
+      "sha256": "DFFA0DEADCF495F22887EF620D7AA6009EB91A361930A7491ED49D92A4A4C389",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/header_audit.mjs",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 3601,
+      "sha256": "A48BDEBD5DDC64257340C98FA0FF9E648252CDDF6798F8DFA10872BA02936150",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/header_probes.execution.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1179,
+      "sha256": "D8E0969C7730B942FC7640B774AD121E3ED989CF9A4252D4D196118040426FE6",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/header_probes.mal",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 799974,
+      "sha256": "1F7905A22A6FAFA802FC3988C9CEDEAB5CF700991495804C2F13833CF345B3C0",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/header_probes.stderr.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/header_probes.stdout.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 231,
+      "sha256": "55DA6A07777F27BE02B7EC3E6457F9A6EEB6163CC94CC69C52A6BA9ED3B61D12",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/L558_FIDELITY.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 3791,
+      "sha256": "81E94ED98BC39723DD697E0F52A557C6ACB6E3C4077E8C87A80E28EF52AA1F5E",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/LEXICAL_OBLIGATIONS.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 2211,
+      "sha256": "D77DB25AB171E1E58B4D777C3B315574A5F9FE0CD879D1BFBCE5CA6C06B606FF",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/MANIFEST_VERIFICATION.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 6879,
+      "sha256": "1E33C6A0181CF2673D840F85E207D819CD0F81B07A7BA764337D8033C93916E9",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/POST_READ_CUSTODY.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 27519,
+      "sha256": "FDE991F8FEE1E5904CCE2EF4E10088D4A30A34C3037B0268F5190EB4E674F552",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/RESULT.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 8963,
+      "sha256": "08F41A5B2092B43B97999278CDD8C6E27B42333805EF373408E136F295FA99F2",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/RESULTS.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 9781,
+      "sha256": "8E141B6553EF207FC28792AA50FCE23EE914A774C2CDD3B539B4D1C46B7BA214",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/run.mjs",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 11956,
+      "sha256": "E575C892A1477FDFB32F6D694BAFF6D536404D867218AB5A641F0F65E0676294",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/RUNTIME_BINDING.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 4079,
+      "sha256": "F1EB0DAC5225F2D9AFEEC5CCCDF99522D7AA5D4B8548B2A2F9340F63954BC7F5",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/SHA256SUMS",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 4613,
+      "sha256": "7003D7D1589DDF25633DEDA28DEBC4F4B5C4602984F7E83E4962C6CB32F0E6BE",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/supplement.mjs",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 11345,
+      "sha256": "3883538B3E39EBB92BA771DDB2AA196211C4B71E80DC08092B31138B9F017E16",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/V4_CARRIER_ROOT_READ.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1180,
+      "sha256": "D5E40348A32037EA894DC88B4623BD1F0D57DD013C9947996482381441F81F1F",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/V4_INPUTS.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 2095,
+      "sha256": "DC4AED4E398B58314D166A82487808238BE28246F7B7AED58BB5F2CD3BFB9D41",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/v4_meet.execution.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1282,
+      "sha256": "6EF28E5026F4B9098AC3A3DA4C5E4C9C668D1F1B39777A66D40F56A814B0CE16",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/v4_meet.mal",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 899,
+      "sha256": "21CB7F591183C3AF059373280D785C594C601BF94AE45BB0B28B4DD41AF34215",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/v4_meet.stderr.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/v4_meet.stdout.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 177,
+      "sha256": "5D51711F5A46B3BAA8EC30C154867FF8BD89302524C1D55E6875BADCE45E6F5A",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/V4_RESTRICTION_READINGS.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 3531,
+      "sha256": "088EA7581DBB8A0A1C890D51F07F960A2EB120F666FE824E425867AA4384304C",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/V4.expected.bin",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 176,
+      "sha256": "C2E97218EF487FEC447CD26883AB93BFE8F5CC9C1705EE3A7B091F65830EBEA9",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/W10_2_SUBJECT_READ.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 685,
+      "sha256": "2E25AFAD756A56A260BBE7ADF28085277C576A61E40F528412DEF402A45A84BE",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/w10_harness.execution.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1290,
+      "sha256": "79F6ACF146435999371BEE067D98BB37CE16956B312B30E5C62EE805854C79A0",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/w10_harness.mal",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 301409,
+      "sha256": "53ABE5095101EBD7B887DF1058BA9C86DA14776D263C7B1B578FE9725FF834C1",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/w10_harness.stderr.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/w10_harness.stdout.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 410,
+      "sha256": "54EB29A42203CC6BB77ECE2275FB1E1E1250E63FF87C773429E7D53CB129442D",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/W10_RESULT.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 4009,
+      "sha256": "AE33D298A2E0749C17561DF1C7E2C9BEB3D94DC7570CDAC3275FEDBD5DA9AC95",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/w10_subject_pairs.execution.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1292,
+      "sha256": "AFE5DCBE9C0B5CC94B32D2186C96B14317B5038DBFD49435514341C070534938",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/w10_subject_pairs.mal",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 7836,
+      "sha256": "15A99925CD5E3A268AF36556D021DDB48BA06DFD4D0B6B9CB10D89090B25FBAA",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/w10_subject_pairs.stderr.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/native_form/w10_subject_pairs.stdout.txt",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 194,
+      "sha256": "4D6F65B82E5366C989116ECE900A3E0238E1298216ABC04602A475AEB131F746",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/package/PKG_FPP_v0.1.32.tgz",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 144584,
+      "sha256": "B4FF0CE1618CE685A883FC5B0D6BDDFF40A0154A022891C25F0176EA688D6AB3",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    },
+    {
+      "source": "flag_world_001_first_tick/fpp_recombination_discharge_v0132/readings/ADMISSION_SUPPORT_READ.json",
+      "source_commit": "ed285554a83863e288aa3247ced3991705097b4c",
+      "bytes": 1125459,
+      "sha256": "EB44F48B81BEF883E0BC2BA3C85185D7103AB5ABB50F015CA9FBE3E64F442A45",
+      "disposition": "HASH_ONLY_NOT_DISTRIBUTED"
+    }
+  ],
+  "operation_038": "UNTOUCHED"
+}

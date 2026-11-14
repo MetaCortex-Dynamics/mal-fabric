@@ -1,0 +1,81 @@
+{
+  "kind": "CONTACTED_READER_MAPPING",
+  "spec": {
+    "path": "D:\\Dev\\Codex\\2026-11-14\\fpp_v0132_native_form/packet/SPEC_FPP_GRL_CORRESPONDENCE_001_v0.1.32_PROPOSED.mal",
+    "sha256": "29AEEED5D7FB74B43AA916F8D09C7417E6F381A19CBEC43A3AD1419AAB425A4A"
+  },
+  "permission": {
+    "path": "C:/Dev/mal_kernel_lab_repo/v3/grl_primitive_reaction_derivation_001_v014/bound-law-016/native/w10.mal",
+    "sha256": "22BA3B507C2CFFF75A3E6CE5569AB1B1F6DD2184DDC597CB08F48617B61EC927",
+    "locator": "L87-L88"
+  },
+  "seed": {
+    "path": "D:\\Dev\\Codex\\2026-11-14\\fpp_v0132_native_form/packet/SPEC_FPP_GRL_CORRESPONDENCE_001_v0.1.32_PROPOSED.mal",
+    "sha256": "29AEEED5D7FB74B43AA916F8D09C7417E6F381A19CBEC43A3AD1419AAB425A4A",
+    "locator": "L448-L455",
+    "quotation": "  HOW(NO),               // Non-discharging routes: (a) counting images as q₁; (b) equating BORN with shed; (c) inserting a\n                         // structure from outside the world; (d) identifying MANY, ONE and carriers one term at a time —\n                         // FPP :131–138 is a joint accounting clause; (e) summing or subtracting q-readings, which are\n                         // operator readings (1 := THIS, 0 := NO), not quantities; (f) taking a refinement four for a coupled\n                         // four; (g) treating separately checked face, edge, vertex, dual, boundary and genealogical\n                         // conditions as constitutive admission without their joint satisfaction on the SAME candidate c\n                         // cannot discharge that joint requirement (CGRL_TEXT L48). BECAUSE FPP, JUNCTIONS, TRACE, SAY S07,\n                         // W10D W10.4, R198, R195, CGRL_TEXT.\n"
+  },
+  "mappings": [
+    {
+      "route": "d",
+      "span": {
+        "path": "D:\\Dev\\Codex\\2026-11-14\\fpp_v0132_native_form/packet/SPEC_FPP_GRL_CORRESPONDENCE_001_v0.1.32_PROPOSED.mal",
+        "sha256": "29AEEED5D7FB74B43AA916F8D09C7417E6F381A19CBEC43A3AD1419AAB425A4A",
+        "locator": "L449-L451",
+        "quotation": "                         // structure from outside the world; (d) identifying MANY, ONE and carriers one term at a time —\n                         // FPP :131–138 is a joint accounting clause; (e) summing or subtracting q-readings, which are\n                         // operator readings (1 := THIS, 0 := NO), not quantities; (f) taking a refinement four for a coupled\n"
+      },
+      "clauses": [
+        {
+          "contact": "FPP",
+          "sha256": "897AB3D712DBECC7FA1C2792FFEFFEF37AD59B35FC67D2B2747C436BEE4DA344",
+          "locator": "L131-L138",
+          "quotation": "The Fold Accounting Theorem states: for every first-person fold MANY → ONE, there exists a projection Π from first-person fold-accounting to third-person observables, such that Π(MANY) equals the observer's reactants, Π(ONE) equals the observer's bound product, Π(remainder-carriers) equals the observer's emitted particles, Π(δ) equals the observer's energy release, Π(separation-content) equals the observer's rest-mass, and Π(fold-invariant q_i) equals the observer's conservation law_i.\nStep 1: Minimal Foldable MANY\nThe fold asks: WHICH MANY? The answer is determined by stability. The smallest multiplicity that yields a stable ONE is the minimal fold-arity. Coupled-2 is weakly stable (a shallow minimum). Coupled-3 is stable (a local minimum). Coupled-4 is maximally stable (a deep closed-shell minimum). The minimal-preferred fold-arity is n = 4, BECAUSE coupled-4 is the first deep-closed-shell stability. The observer calls four foldable-ones \"four protons\" and the coupled-four \"helium-4.\" These are Π-names for fold objects.\nStep 2: Fold Invariants\nThree quantities CANNOT change through the fold. The fold experiences them as constraints on which folds are admissible. They are: q₁, the count of foldable-ones (Π calls this baryon number); q₂, the coupling-polarity (Π calls this electric charge); q₃, the fold-handedness (Π calls this lepton number).\nThe MANY (4m) has q₁ = 4, q₂ = +4, q₃ = 0. The ONE(4) has q₁ = 4, q₂ = +2, q₃ = 0. The coupled-four retains two polarity-retaining roles and two polarity-neutralized roles. The remainder must carry q₂ = +2 and q₃ = 0. The only way to satisfy this is two polarity-carriers (each q₂ = +1, q₃ = −1) and two handedness-compensators (each q₂ = 0, q₃ = +1). The observer calls these positrons and electron neutrinos. The products are not assumed. They are derived from the fold-invariant accounting.\nStep 3: Unabsorbable Difference\nThe separation-content of the MANY exceeds the separation-content of the ONE plus the carriers. The difference δ is strictly positive, BECAUSE the coupled-four has a finite absorption capacity. What it cannot absorb CANNOT stay. δ must be shed.\n"
+        },
+        {
+          "contact": "FPP",
+          "sha256": "897AB3D712DBECC7FA1C2792FFEFFEF37AD59B35FC67D2B2747C436BEE4DA344",
+          "locator": "L138-L138",
+          "quotation": "The separation-content of the MANY exceeds the separation-content of the ONE plus the carriers. The difference δ is strictly positive, BECAUSE the coupled-four has a finite absorption capacity. What it cannot absorb CANNOT stay. δ must be shed.\n"
+        },
+        {
+          "contact": "FPP",
+          "sha256": "897AB3D712DBECC7FA1C2792FFEFFEF37AD59B35FC67D2B2747C436BEE4DA344",
+          "locator": "L58-L58",
+          "quotation": "My entire activity is described by two operators. MUST: fold WHERE NEAR becomes enough-for-fold. LET: shed what the fold does not absorb. Enough-for-fold is not a measured boundary — it is an internal switch-point in my activity. MUST and LET are exhaustive. There is no FOR-WHAT from inside. No purpose. No teleology. Everything NEAR enough folds. Everything remaining sheds. Nothing else.\n"
+        }
+      ],
+      "obligations": [
+        "O_FPP_FOLD_ACCOUNTING",
+        "O_FPP_RECOMBINATION_ACCOUNTING"
+      ],
+      "reading": "IF_THEN",
+      "because": "BECAUSE route (d) excludes identifying MANY, ONE and carriers one term at a time under FPP joint accounting, without limiting the exclusion to refinement. L550,L558-L559 require recombination admission/MUST and shed/LET in one transition; FPP58 is an exhaustive joint activity, not a staged admission. Route (d) therefore reaches link 2 to 3 and its expanded LAW_CLAUSE."
+    },
+    {
+      "route": "g",
+      "span": {
+        "path": "D:\\Dev\\Codex\\2026-11-14\\fpp_v0132_native_form/packet/SPEC_FPP_GRL_CORRESPONDENCE_001_v0.1.32_PROPOSED.mal",
+        "sha256": "29AEEED5D7FB74B43AA916F8D09C7417E6F381A19CBEC43A3AD1419AAB425A4A",
+        "locator": "L452-L455",
+        "quotation": "                         // four; (g) treating separately checked face, edge, vertex, dual, boundary and genealogical\n                         // conditions as constitutive admission without their joint satisfaction on the SAME candidate c\n                         // cannot discharge that joint requirement (CGRL_TEXT L48). BECAUSE FPP, JUNCTIONS, TRACE, SAY S07,\n                         // W10D W10.4, R198, R195, CGRL_TEXT.\n"
+      },
+      "clauses": [
+        {
+          "contact": "CGRL_TEXT",
+          "sha256": "4A4A2DF1963A029DF0D8E6CCF7AFDD544BB028D4C0DF37F8D85C82ADB3125F6B",
+          "locator": "L48-L48",
+          "quotation": "Definition 3.1 Constitutive Admission  Admₘ(c) holds only when every required face relation, edge relation, vertex resolution, dual relation, boundary condition, and genealogical condition imposed on c is satisfied.\n"
+        }
+      ],
+      "obligations": [
+        "O_GRL_RELATION_KINDS_NO_FPP_MAP"
+      ],
+      "reading": "IF_THEN",
+      "because": "BECAUSE the route expressly excludes separately satisfied face/edge/vertex/dual/boundary/genealogical conditions in place of joint admission on the same candidate."
+    }
+  ],
+  "native_W10_4": "MAYBE",
+  "contacted_W10_4": "IF_THEN",
+  "native_meet": "MAYBE",
+  "scope": "The contacted reading is beside the native result; it does not replace it or promote the spec."
+}

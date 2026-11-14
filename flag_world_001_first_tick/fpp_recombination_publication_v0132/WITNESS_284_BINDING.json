@@ -1,0 +1,39 @@
+{
+  "schema": "FPP_RECOMBINATION_TO_SUBSTRATE_WITNESS_001",
+  "relation": "FPP recombination account uses the already discharged substrate witness for the SAME J17 link 2 -> 3",
+  "link_sha256": "501368508A256BE21091298B3A26B03726E41FC9E6C388925C0C8B8924DEBE8C",
+  "sealed_source_commit": "dfbbffe03fc97796ee78c7eb6eaec93a70196c6a",
+  "previous_witness": [
+    {
+      "path": "flag_world_001_first_tick/substrate_witness_of_shed_284/SHA256SUMS",
+      "sha256": "847FE3731201A6278E214C066D7E7FE64838D452CF5CA5B492D7A149A20E7F20",
+      "bytes": 72022,
+      "git_blob": "845c0272f3fd7e4c0df8f182f3a610eedb7f1af8"
+    },
+    {
+      "path": "flag_world_001_first_tick/substrate_witness_of_shed_284/run/RUN_RECORD.json",
+      "sha256": "9939E9062F29C57E0E9232E9C4FFEEF89849DA469BA9B37A4AC28FA18CF280BB",
+      "bytes": 33244,
+      "git_blob": "717dfbb7598c70f3619e263161de4edd823f8779"
+    },
+    {
+      "path": "flag_world_001_first_tick/substrate_witness_of_shed_284/run/captured_fields/JUNCTION_ENVELOPES.json",
+      "sha256": "B46F9F825D2628DEB946A9F18C643CEE3814BC2356FABC4E09C3E16CFF4759F6",
+      "bytes": 812068,
+      "git_blob": "26727b3f5cfb9c40db43d209a3b3ca8fd6ce9c8f"
+    },
+    {
+      "path": "flag_world_001_first_tick/substrate_witness_of_shed_284/authority/RECEIPT_DECIDE_DISCHARGE_O_SUBSTRATE_WITNESS_OF_SHED_LINK_2_3_001_2026-11-13.md",
+      "sha256": "29D3CA259E25AE37B8A473CD7D5CEEEE6AC53E75189DBEBFE8B206D0BE92B724",
+      "bytes": 4405,
+      "git_blob": "a0023045f6a2695e3644c5727a7df84c868bd152"
+    }
+  ],
+  "public_predecessor": {
+    "branch": "codex/j17-shed-284-filtered-publication",
+    "commit": "f5d6a57c046523daded252b632977e5c8ee44965",
+    "manifest_sha256": "20F1C1226EC9DBA2846147734065E87C56A6C821836D817287F0432DB68E938E"
+  },
+  "scope": "Hash binding only. No existing witness byte is changed. Historical 284 wording remains historical; the later receipts bind this FPP discharge. No Metis equivalence or association is introduced.",
+  "operation_038": "UNTOUCHED"
+}

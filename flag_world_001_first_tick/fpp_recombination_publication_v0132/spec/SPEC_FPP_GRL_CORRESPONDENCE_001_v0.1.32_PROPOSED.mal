@@ -1,0 +1,727 @@
+// SPEC-FPP-GRL-CORRESPONDENCE-001
+// STATUS: PROPOSED
+// AUTHORITY: Devon A. Generally (DECIDE / PROMOTE). Drafted under PROPOSE (Claude).
+// VERSION: 0.1.32
+// DATE: 2026-11-14
+// SUPERSEDES (only on promotion by Devon's receipt): SPEC-FPP-GRL-CORRESPONDENCE-001 v0.1.19, PROMOTED (receipt RV0119); sha256 0446F2DF6FAF5ACFC46C6769CA956265E58EDAF49CF16AD1BDCC0B6EE4CC14E9; predecessor preserved (contact V0119).
+// CHANGE 0.1.32: Independent check of the unpromoted v0.1.31 draft (A4C92426…15B7; RUN_RECORD 8742454C…7FE9): no NO; ONE NOT_SAME,
+//            corrected in (2). Every change of this version:
+//            (1) VERSION; this note; the label of CHANGE 0.1.31.
+//            (2) CONTACTS, in the lines on CEFF: "Rested on by: the CHANGE notes from 0.1.28 on, the last
+//            three" becomes "Rested on, outside the CHANGE notes, by: the last three". The list no longer speaks of
+//            the CHANGE notes.
+//            Unchanged, byte for byte: everything else.
+// CHANGE 0.1.31 (unpromoted): Independent check of the unpromoted v0.1.30 draft (14255FBB…928B; RUN_RECORD 6F080F8C…7E75): no NO; ONE NOT_SAME,
+//            the sentence removed in (2). Every change of this version:
+//            (1) VERSION; this note; the label of CHANGE 0.1.30.
+//            (2) The CHANGE 0.1.30 note, item (2): its last sentence, which began "Item (2) of the CHANGE 0.1.29 note" and
+//            ended "and is kept.", is removed.
+//            Unchanged, byte for byte: everything else.
+// CHANGE 0.1.30 (unpromoted): Independent check of the unpromoted v0.1.29 draft (AC258D75…A634; RUN_RECORD EB2E65A3…7F1B): no NO; ONE NOT_SAME,
+//            corrected in (2). v0.1.28 and v0.1.29 have no native check. Every change of this version:
+//            (1) VERSION; this note; the label of CHANGE 0.1.29.
+//            (2) The CHANGE 0.1.28 note, its third line: after "by R_REC_TRANSITION." the words up to and including "the reply
+//            is" are replaced by "A reading of it is now held (CEFF); it is". The removed words called a paraphrase "CRJA
+//            L42's words".
+//            (3) R_REC_TRANSITION: "that same extent's root 210262, no opened disagreement over it 579648" becomes "that same
+//            member extent's root 210262, no opened disagreement over that extent 579648" (CEFF L18, L19).
+//            (4) CONTACTS, the CEFF line "Rested on by:": "the CHANGE 0.1.28 and 0.1.29 notes," becomes "the CHANGE notes from
+//            0.1.28 on,", BECAUSE this note also cites CEFF. Listed here out of file order: (4) stands before (3) in the file.
+//            Unchanged, byte for byte: everything else.
+// CHANGE 0.1.29 (unpromoted): Independent check of the unpromoted v0.1.28 draft (16E05578…118B; RUN_RECORD 148C5A4E…7976): CHECK_FORM no NO;
+//            two NOT_SAME, both of wording and both corrected in (2) and (3). Every change of this version, in file order:
+//            (1) VERSION; this note; the label of CHANGE 0.1.28.
+//            (2) The CHANGE 0.1.28 note, second and third lines: "was read by" with "no restriction. Devon asked Codex to
+//            read it from the bound admission and its supports (CRJA L42);" becomes "was not read" with "by R_REC_TRANSITION.
+//            It has since been read from the bound admission and its supports (CRJA L42's words);". v0.1.27 said it of that
+//            ONE restriction, and no held file carries the asking.
+//            (3) CONTACTS, the last two lines on CEFF: the list after "Rested on by:" now begins with the CHANGE 0.1.28 and
+//            0.1.29 notes; its other five members are the same places, reworded so that no line begins with a header's words.
+//            (4) R_REC_TRANSITION: "(CEFF L9–L13)" becomes "(CEFF L7–L13, L24)"; "That strict move, 582029, is carried"
+//            becomes "The strict move R1_STRICT 582029, whose ordered supports are" the four CEFF L17–L20 names, ", is carried";
+//            "(CEFF L5, L15, L22)" becomes "(CEFF L5, L15–L22)"; "It imports" becomes "The reading imports".
+//            (5) LAW_CLAUSE of the second obligation gains "; FPP#L58-L58", the clause of enough-for-fold that the first
+//            obligation already cites (CEFF L24 names FPP L58), BECAUSE R_REC_TRANSITION now reads that term.
+//            Unchanged, byte for byte: everything else, including DATE, the seed block, the four laws, the first obligation, the
+//            terminal, both readings blocks and all four declarations at the end of the file.
+// CHANGE 0.1.28 (unpromoted): Independent check of the unpromoted v0.1.27 draft (FAAD4155…578B; RUN_RECORD 02FDADA3…6B9F): CHECK_FORM no NO; no
+//            NOT_SAME; it has no native check held here. v0.1.27 stated that enough-for-fold, the recombination's MUST, was not read
+//            by R_REC_TRANSITION. A reading of it is now held (CEFF); it is
+//            IF_THEN on link 2 → 3 (CEFF L1) and is carried here inside R_REC_TRANSITION. Every change of this version, in
+//            file order:
+//            (1) VERSION; DATE (2026-11-13 becomes 2026-11-14); this note; the label of CHANGE 0.1.27.
+//            (2) CONTACTS: CEFF is added after CN0125 with its sha256, and four lines stating what it is, what of it is not
+//            held and where this file rests on it are added after the three lines on CN0125.
+//            (3) R_REC_TRANSITION: its last sentence (from "Enough-for-fold, the reaction's MUST (TRH L25), is not read by this
+//            restriction:" to "(CN0125 L47).") is replaced by three sentences: the coupling-operand reading (CEFF L9–L13), its
+//            carriage to the effect (CEFF L5, L15, L22), and what is not imported (CEFF L26; CRJA L42; CN0125 L47).
+//            (4) REQUIRED of the second obligation: "ROOTS and the discharged" becomes "ROOTS, CEFF and the discharged".
+//            (5) Recombination readings, header: "R198, CN0125; U :=" becomes "R198, CN0125, CEFF; U :=".
+//            (6) Same block, R_REC_TRANSITION: after "no verdict word of its own." the line continues "For enough-for-fold the
+//            contact's word is IF_THEN:" and three lines quoting CEFF L1 and L24 follow.
+//            (7) NOTES FOR VECTOR 4: the inputs sentence gains "; CEFF = Codex's reading of enough-for-fold on this fold";
+//            "for δ and for the joint account only" with "(CRJA L27, L31)" becomes "for δ, for the joint account and for
+//            enough-for-fold only" with "(CRJA L27, L31; CEFF L1)".
+//            (8) The fourth vector takes CEFF as an eighth argument (its header line and a new argument_8 line). Its expected
+//            type, bytes and sha256 are unchanged; it has not been executed with eight arguments.
+//            Unchanged, byte for byte: SUPERSEDES, TARGET, the seed block, the four laws, the first obligation with its readings,
+//            the other seven R_REC texts, STATUS, SUBJECT and LAW_CLAUSE of the second obligation, the other eight lines of its
+//            readings, SOURCE USE, the terminal, NOTES FOR VECTOR 3 and the first three declarations at the end of the file.
+// CHANGE 0.1.27 (unpromoted): Independent check of the unpromoted v0.1.26 draft (2EBD22E5…5372; RUN_RECORD 51230045…9339): CHECK_FORM no NO;
+//            ONE NOT_SAME: the CONTACTS line on CN0125 said it supports two places "only" while the CHANGE 0.1.26 note also
+//            cites it. Every change of this version, in file order:
+//            (1) VERSION; this note; the label of CHANGE 0.1.26.
+//            (2) CONTACTS: the two lines on CN0125 that v0.1.26 added are replaced by three lines. They name all three places
+//            that cite CN0125, say that its authorship, relay and time are Claude's record and not in its bytes, and no line
+//            of them begins with the words of a block header.
+//            (3) R_REC_TRANSITION, last sentence: ", and no held record reads it on this reaction: CPLR L15 holds it MAYBE on
+//            the four-root product of the first obligation's R_ADMISSION, which is another operand (CN0125 L47)." becomes
+//            ": CPLR L15 holds it MAYBE on the four-root product of the first obligation's R_ADMISSION, and that citation
+//            "does not establish a new recombination MAYBE" (CN0125 L47).".
+//            Unchanged, byte for byte: everything else, including the seed block, the four laws, the terminal and all four
+//            vectors.
+// CHANGE 0.1.26 (unpromoted): Codex's native CHECK_FORM of the unpromoted v0.1.25 draft (7DA1043C…718D; reply CN0125): W6 NO, hence meet NO
+//            (CN0125 L12, L17). Cause (CN0125 L19): item (6) of the retained note of 0.1.23 carried the two capitalised words of
+//            the terminal header, and the native checker opens its terminal section at the first place those words stand
+//            together. This version removes them there; they now stand together ONE time in this file, at the terminal header.
+//            Every change of this version, in file order:
+//            (1) VERSION; this note; the label of CHANGE 0.1.25.
+//            (2) Retained note of 0.1.23, item (6): its first two words (the terminal header's words) become "The terminal
+//            block"; the rest of the item, ": O_next names the new obligation.", is unchanged.
+//            (3) CONTACTS: CN0125 is added after R292 with its sha256, and two lines stating what it is and what it supports
+//            are added after the line that ends "(RDISCH L17, L21).".
+//            (4) R_REC_TRANSITION, last sentence: "is not read by this restriction: it is held MAYBE on this fold (CPLR L15)."
+//            becomes "is not read by this restriction, and no held record reads it on this reaction: CPLR L15 holds it MAYBE
+//            on the four-root product of the first obligation's R_ADMISSION, which is another operand (CN0125 L47).".
+//            (5) RESTRICTION READINGS, RECOMBINATION, header: "TRH, RDISCH; U :=" becomes "TRH, RDISCH, R198, CN0125; U :=".
+//            (6) Same block, R_REC_Q2: "Open beside it:" and the two lines after it (TRH L24 against HOW(NO) route (e); "no
+//            held line says") are replaced by "Beside it:" and four lines quoting R198 L20–L21 and CN0125 L43.
+//            Unchanged, byte for byte: SUPERSEDES, DATE, TARGET, the seed block, the four laws, both obligations except the one
+//            sentence of (4), the first obligation's RESTRICTION READINGS, the other eight lines of the second block, SOURCE USE,
+//            the terminal, NOTES FOR VECTOR 3 and 4, and all four vectors.
+// CHANGE 0.1.25 (unpromoted): Independent check of the unpromoted v0.1.24 draft (FD77723A…FFF7; RUN_RECORD 6B0B6382…EF87): CHECK_FORM no NO; no
+//            NOT_SAME. Two sentences v0.1.24 added said more than the held contacts carry and are withdrawn; four wordings are
+//            made exact. Every change of this version, in file order:
+//            (1) VERSION; this note; the label of CHANGE 0.1.24.
+//            (2) ORIGIN: "(R292 L11; the second obligation)." becomes "(R292 L11, whose next sentences ask for the joint account
+//            and for the restriction texts that need a successor).".
+//            (3) O_FPP_RECOMBINATION_ACCOUNTING: "Its subject is NOT_SAME the subject of O_FPP_FOLD_ACCOUNTING:" becomes "Its
+//            subject is proposed as NOT_SAME the subject of O_FPP_FOLD_ACCOUNTING (SOURCE USE (two subjects)):", and "(CPLR
+//            L18)." becomes "(CPLR L1, L18)." (the words "preserves its carrier configuration" are CPLR L1's; the retained
+//            note of 0.1.23 cites L18 for them).
+//            (4) R_REC_Q2 now ends at "is required (CRJA L26).": the citation of TRH L25 and the two clauses v0.1.24 added
+//            (CPLR L14; TRH L24 "is not used") are removed.
+//            (5) R_REC_TRANSITION: the last sentence v0.1.24 added (the MUST read as the admitted effect; CRJA L42) is replaced
+//            by "Enough-for-fold, the reaction's MUST (TRH L25), is not read by this restriction: it is held MAYBE on this fold
+//            (CPLR L15).".
+//            (6) SOURCE USE (two subjects), three places: "Codex names another form:" becomes "Devon asked which restriction
+//            texts need a successor (R292 L11); Codex names that form:"; "none of the eight texts," becomes "none of the
+//            eight texts as v0.1.22 has them,"; and the scope of the seed's readings is restated ("of ONE, MANY and δ are of
+//            the junction product under the unfolding (TARGET: link 7 → link 8)" becomes "are of the first obligation's
+//            subject, the junction product and the refinement on links 6 → 7 and 7 → 8, except where a cell names link 2 → 3").
+//            (7) RESTRICTION READINGS, RECOMBINATION: the R_REC_Q2 line gains an open operand (TRH L24 against HOW(NO) route
+//            (e)), on two further lines.
+//            Unchanged, byte for byte: SUPERSEDES, DATE, TARGET, the seed block, the four laws, the first obligation with its
+//            RESTRICTION READINGS, the other six R_REC texts and REQUIRED, STATUS, SUBJECT, LAW_CLAUSE of the second obligation,
+//            the other eight lines of its readings block, the terminal, NOTES FOR VECTOR 3 and 4, and all four vectors.
+// CHANGE 0.1.24 (unpromoted): Independent check of the unpromoted v0.1.23 draft (2914E77B…55D4; RUN_RECORD 11AF08CA…6E6E): CHECK_FORM no NO; one
+//            NOT_SAME: the header of RESTRICTION READINGS, RECOMBINATION listed RDISCH, which no line of that block cited. Every
+//            change of this version, in file order:
+//            (1) VERSION; this note; the label of CHANGE 0.1.23.
+//            (2) TARGET: "(link 7 → link 8)" becomes "(link 7 → link 8 for O_FPP_FOLD_ACCOUNTING; link 2 → link 3 for
+//            O_FPP_RECOMBINATION_ACCOUNTING)".
+//            (3) The first two authority lines for the new contacts are reworded so that each description stands with its name;
+//            their second line keeps its ROOTS sentence and what follows it.
+//            (4) Seed, FOR_WHAT(INSIDE_OUTSIDE): "δ stays MAYBE." becomes "on the junction product δ stays MAYBE (link 2 → 3:
+//            R_REC_DELTA).". No cell is added or removed.
+//            (5) R_REC_ONE gains "FPP's general clause is applied to this fold, which the paper does not work (TRH L31–L32);"
+//            and "The coupled-two" becomes "the coupled-two".
+//            (6) R_REC_Q2: "(CRJA L26; TRH L24–L25)." becomes "(CRJA L26; TRH L25)." and two clauses follow it (CPLR L14; TRH L24
+//            is not used).
+//            (7) R_REC_TRANSITION gains a last sentence on the reaction's MUST (TRH L25; CRJA L42).
+//            (8) The two lines headed "SOURCE USE (two subjects)" are replaced by seven lines: the form drafted here is Claude's
+//            proposal and is not the form CRJA L33–L46 names; which stands is Devon's to decide at promotion; and the scope of
+//            the first obligation's lines is stated.
+//            (9) RESTRICTION READINGS, RECOMBINATION: after RDISCH the header gains the definition of U, as read under the fourth vector's rule
+//            (RDISCH stays in the list and is now cited by the R_REC_DELTA line); each of the nine lines is reworded to say
+//            whether the verdict word is the contact's own or U; the R_REC_MANY line gains four held statements beside it.
+//            (10) NOTES FOR VECTOR 4: one sentence is added after the rule.
+//            (11) The second vector: its input changes with (4), so its sha256 line and the byte count in its input_path line
+//            change (7619 → 7671; 7DBBE259…932B); its expected column does not.
+//            Unchanged, byte for byte: SUPERSEDES, DATE, the four laws, the eight restriction texts of O_FPP_FOLD_ACCOUNTING with
+//            REQUIRED and their RESTRICTION READINGS, the other five R_REC lines' texts (R_REC_ROOTS, R_REC_MANY, R_REC_Q1,
+//            R_REC_DELTA, R_REC_NO_REMAINDER) and REQUIRED, STATUS, SUBJECT, LAW_CLAUSE of the second obligation, the terminal,
+//            and the first, third and fourth vectors.
+// CHANGE 0.1.23 (unpromoted): A second obligation is added for a second subject; nothing of the first is changed. Sources: Codex read the eight
+//            restrictions of O_FPP_FOLD_ACCOUNTING on J17 link 2 → 3 after the shed's discharge (RDISCH): R_DELTA IF_THEN, six
+//            MAYBE, and R_DIRECTION "NO, as written for this tick", joint NO (CPLR L1, L16, L18, L20); that tick preserves its
+//            carrier configuration and is NOT_SAME the refinement (CPLR L18). Devon 2026-11-13 20:45: "The spec is forcing the
+//            refinement onto the recombination again." (R292 L11). Codex then derived the joint account from the recombination
+//            itself: IF_THEN on link 2 → 3 (CRJA L31). v0.1.22 is unpromoted; its independent check was clean (RUN_RECORD
+//            23F0A8A6…012A) and it has no native check. Every change of this version, in file order:
+//            (1) VERSION; this note; the label of CHANGE 0.1.22.
+//            (2) ORIGIN: "(this successor)" at the end of the 02:25 entry becomes "(the whole / parts wording of v0.1.20 to
+//            v0.1.22)"; one line is added for Devon's 20:45 statement.
+//            (3) CONTACTS: eleven lines are added after R259 (CRJA, C1725, C1727, CPLR, ROOTS, TRH, TRHP, RDISCH, RV018S, SWS,
+//            R292), and six lines on their authority after the line ending "REQUIRED name them.".
+//            (4) OBLIGATION WITNESSES: the obligation O_FPP_RECOMBINATION_ACCOUNTING is inserted before
+//            O_GRL_RELATION_KINDS_NO_FPP_MAP, with eight restrictions (R_REC_ROOTS, R_REC_MANY, R_REC_ONE, R_REC_Q1, R_REC_Q2,
+//            R_REC_DELTA, R_REC_NO_REMAINDER, R_REC_TRANSITION), REQUIRED, STATUS, SUBJECT and LAW_CLAUSE; two lines headed
+//            "SOURCE USE (two subjects)" are added after the SOURCE USE lines.
+//            (5) A block "RESTRICTION READINGS, RECOMBINATION" is inserted before RECORDED READINGS.
+//            (6) The terminal block: O_next names the new obligation.
+//            (7) A block "NOTES FOR VECTOR 4" is inserted before the vectors, and a fourth vector is appended.
+//            Unchanged, byte for byte: SUPERSEDES, DATE, TARGET, the seed block, the four laws, the eight restriction texts of
+//            O_FPP_FOLD_ACCOUNTING with REQUIRED and their RESTRICTION READINGS, and the first three vectors (V2's input is
+//            the same 7619 bytes, 75A354FA…E3B4). TARGET names link 7 → link 8 for the first obligation; the new obligation's
+//            fold is link 2 → 3 and is named in its own lines.
+// CHANGE 0.1.22 (unpromoted): Independent check of the unpromoted v0.1.21 draft (FF27AB08…AC3A; RUN_RECORD 6B54CD8B…C4AD): CHECK_FORM no NO; two
+//            NOT_SAME, both corrected: the NOTES FOR VECTOR 3 line gave R240's term to R239 (R239 L20 says "the quotient
+//            ONE"); the RESTRICTION READINGS header did not list V0119, RV0119 and R258, which the R_DIRECTION reading
+//            cites. Also: R_MANY's CCD citation no longer rests on R259 L33 (a PROPOSE line); the authority line for V0111 no
+//            longer begins like a vector header. V2 is unchanged from v0.1.21 (seed 7619 bytes, 75A354FA…E3B4). Nothing
+//            else changes.
+// CHANGE 0.1.21 (unpromoted): Independent check of the unpromoted v0.1.20 draft (569E9860…1E59; RUN_RECORD D62ECF76…595C): CHECK_FORM no NO; one
+//            NOT_SAME: CHANGE 0.1.20 said six lines were reworded and a seventh was (the R_DIRECTION reading, V0119 L350:
+//            "its parent → four children shape" → "its ONE → four shape"; R258 lists six). That is stated here. Seven
+//            corrections from the same check: "which are the next whole" is removed from WHAT(MANY_ONE) and R_DIRECTION (its
+//            source is not a held contact); the R_DIRECTION reading no longer says Devon's decision was made on R243 (RV0119
+//            names no basis) and cites where the sentence was proposed; the NOTES FOR VECTOR 3 line quotes R240's own
+//            term; "bytes on Devon's machine" becomes R259's "bytes not held by Claude"; the CCD locators in R_MANY and
+//            REQUIRED are made exact; the authority line says which lines name DR345, R258, R259; and the authority line
+//            for V0119 no longer begins like a vector header. The seed changes, so V2's input hash and byte count change;
+//            its expected column does not. Nothing else changes.
+// CHANGE 0.1.20 (unpromoted): Wording and one bound ground; no reading changes. (1) Devon 2026-11-13 02:22, 02:25: "parent / children" is tree
+//            wording, not the bound labels (R258). Six governing lines are reworded to whole / parts (the parts are the
+//            next whole): the WHAT(MANY_ONE) reading; R_FOLDABLE_ONES ("child wholes"); R_ARITY ("one parent face to four
+//            children"); R_DIRECTION's first sentence, which keeps D202's words in quotation; the R_FOLDABLE_ONES reading
+//            ("four-child"); and one line of NOTES FOR VECTOR 3 ("parent quotient"). R_MANY names its four ▽ roots as CCD
+//            triads (DR345 L17). (2) REQUIRED: for the 60 CCD triads G := D by type and is not a conditional root-G case
+//            (DR345 L23; Codex's reading of the retained promotion receipt, R259 L18–L19). The seed changes, so V2's input
+//            hash changes; its byte count changes (7619 → 7645); its expected column does not.
+//            (3) Statements made stale by receipt RV0119 are updated: the R_DIRECTION reading (its second sentence is decided; the first sentence's rewording is Devon's to decide), the
+//            DISCHARGE line of O_GRL_RELATION_KINDS_NO_FPP_MAP (v0.1.19 added) and the description of V0111.
+//            (4) Header and custody: VERSION, DATE, SUPERSEDES (now v0.1.19, PROMOTED); CHANGE 0.1.19's label; ORIGIN's 2026-11-13
+//            entry; five contacts added with their authority lines (V0119, RV0119, DR345, R258, R259). Nothing else changes.
+// CHANGE 0.1.19 (PROMOTED 2026-11-12 23:37, receipt RV0119): Independent check of the unpromoted v0.1.18 draft (48BED371…C07D; RUN_RECORD FBDB1FBA…1C20): clean, with
+//            one parser risk: the notes header "// V3 NOTES" begins like a vector header, and its table rows end in a
+//            verdict word. The header is renamed "// NOTES FOR VECTOR 3". Nothing else changes.
+// CHANGE 0.1.18 (unpromoted): Independent check of the unpromoted v0.1.17 draft (D522B679…A562; RUN_RECORD F0005379…528A): CHECK_FORM
+//            no NO; one NOT_SAME: CHANGE 0.1.17 says the verdict table moved into V3 NOTES, but v0.1.17 replaced it with a
+//            description. The nine-line verdict table is restored in V3 NOTES (before VECTORS, as Codex's repair L84
+//            advises), with "R239 and R240 … carry unchanged to the junction product". Nothing else changes.
+// CHANGE 0.1.17 (unpromoted): Codex native CHECK_FORM -010 on v0.1.16 (367BF0CE…AC7D; Codex fpp_v0116_form/REPORT.md, 2026-11-12 ~23:10):
+//            W7 NO, meet NO, from V3's declaration only: its input_N lines are not -010's argument_N associations, and
+//            its bare verdict lines read as reading-byte claims colliding with the text digest. V3 is replaced by the
+//            syntax Codex gave from -010 L24–31 (argument_N; expected_bytes of the 139-byte text; expected_sha256),
+//            with the same seven inputs and the same output (sha256 CAF305E8…2F86). V3's explanatory lines (input
+//            labels, note, rule, verdict table, scope) move before VECTORS as V3 NOTES. W10.4 for CGRL L48 (a joint
+//            clause): HOW(NO) gains route (g), the clause-specific stage-wise route, in Codex's wording; the native
+//            recognizer needs the contacted-reader mapping that w10.mal L87–88 permits to read it. Seed changes, so V2's
+//            input hash and byte count change; its expected column does not.
+// CHANGE 0.1.16 (unpromoted): Independent check of the unpromoted v0.1.15 draft (7E931E9A…C427; RUN_RECORD 8A4D3DCA…29ED): the
+//            DISCHARGED section is MAYBE under the method: an obligation leaves O_next only by discharge inside the bytes,
+//            and discharge by receipt keeps the obligation in the terminal for a later receipt (method L28–L29, L77;
+//            R210 L18–L19). So O_GRL_RELATION_KINDS_NO_FPP_MAP returns to OBLIGATION WITNESSES and O_next, with
+//            REQUIRED, STATUS, SUBJECT and LAW_CLAUSE as in v0.1.11, plus one DISCHARGE line: met by the promotion of
+//            these bytes; the earlier maps' promotions (RV015, RV0111; R210) met it for those maps. The DISCHARGED section
+//            is removed. The readings header also names CARRIER. Seed, laws and vectors are v0.1.15's bytes; the terminal's
+//            O_next line returns to v0.1.11's.
+// CHANGE 0.1.15 (unpromoted): Independent check of the unpromoted v0.1.14 draft (61D3AA4F…49C0; RUN_RECORD FBEBDBD6…54E9): no reading
+//            NOT_SAME; three items corrected. (a) Named: v0.1.14 changed V3's Scope line from "seven" to "eight MAYBE"
+//            (follows from CHANGE 0.1.14 (c)). (b) The RESTRICTION READINGS header names the records its lines cite:
+//            R201, R238, R243, R244, D202, R199, R155, DSUB, R098, R195 (R239 and R240 are cited by V3, not by this block).
+//            (c) DISCHARGED states why no in-force state leaves the obligation open: its REQUIRED is the promotion of this
+//            map, and that same act is what puts these bytes in force. Seed, laws, terminal and vectors are v0.1.14's bytes.
+// CHANGE 0.1.14 (unpromoted): Independent check of the unpromoted v0.1.13 draft (9358143D…92BF; RUN_RECORD 5CE92CAC…7C52): no W-test NO;
+//            corrected here. (a) Lines v0.1.13 changed without naming them, now named: the label "CHANGE 0.1.11 (promoted,
+//            receipt RV0111)"; ORIGIN's 22:43 and 22:50 entries; the authority lines for added contacts; R_DIRECTION's first
+//            sentence gained "(Devon, D202), witnessed as the recursive construction (R238)". (b) Clauses still using the
+//            old MANY/ONE sense are restated to the junction: seed FOR_WHAT(GOES_WITH), HOW(MANY_ONE), WHAT(MORE_LESS)
+//            ("more than one image", the operator sense, not FPP's MANY), FOR_WHAT(BECAUSE), WHAT(MAYBE); restriction text
+//            R_FOLDABLE_ONES ("enter the next tick's MANY" → carried within their child wholes into the next construction).
+//            (c) R_POLARITY on the junction product is MAYBE: R199 is SAME within the junction's members, not its four ▽
+//            roots; V3's R_POLARITY line becomes MAYBE, R199 is added as V3's input, and V3 states that R239 and R240 read
+//            on the parent quotient and carry MAYBE. V3's expected lines and sha256 change; JOINT stays MAYBE. (d) Locators:
+//            R_DIRECTION cites R238 L22–L23 and D202 L11; the RESTRICTION READINGS header cites R201 for the family readings
+//            and R239, R240, R243, R244 for the junction readings. (e) METHOD names the W10 delta's promotion receipt.
+//            (f) DISCHARGED is scoped: the promotions RV015 and RV0111 discharged the obligation for those maps; for this map
+//            it is discharged by the promotion of these bytes, which is its REQUIRED. Seed changes, so V2's input hash and
+//            byte count change; its expected column does not.
+// CHANGE 0.1.13 (unpromoted): Two changes on Devon's 22:50 "yes". (1) O_GRL_RELATION_KINDS_NO_FPP_MAP is DISCHARGED: its REQUIRED is
+//            "Promotion of this map", met by RV015 (v0.1.5) and RV0111 (v0.1.11) (R210 L9–L13). It moves from OBLIGATION
+//            WITNESSES to a DISCHARGED section; O_next becomes { O_FPP_FOLD_ACCOUNTING }. (2) The joint witness is a vector:
+//            V3 JOINT_WITNESS takes the witness records by full hash and states the exact per-restriction and joint verdict
+//            lines; today's expected output is JOINT MAYBE. Consistency with the junction readings: R_FOLDABLE_ONES on the
+//            junction product is MAYBE (R155's SAME stays within refinement families) and R_POLARITY on the junction
+//            product is IF_THEN within R199's scope; the RESTRICTION READINGS for those two and the seed reading
+//            WHAT(MAYBE) state this, so seed_36.mal and V2's input hash and byte count change (its expected column does
+//            not). Contacts added: R210, R239, R240, JOINT_APP. v0.1.12 (8D9F4FAB…0F2F) was never checked; its check was
+//            stopped on Devon's 22:49 question.
+// CHANGE 0.1.12 (unpromoted): R_ONE and R_MANY move from the refinement four to the coupling four. The coupled whole is the bound
+//            junction of the 2026-07-31 binding (CARRIER; QG-003 row, vertex_id), and its MANY are the four whole ▽ roots
+//            uniquely lifted from that junction's domain–witness pairs (R243 L12, L18; R244 L19–L23). The refinement four
+//            (ONE parent → four children, D202) stays as the witnessed recursion (R238). Settled findings keep their
+//            original scopes; a family-quotient witness is not transferred to the junction product.
+//            Consistency: every clause that assumed ONE := the parent quotient is changed and named here:
+//            R_ONE, R_MANY (restriction texts); R_DIRECTION's second sentence (D202 text; the change is Devon's to decide
+//            at promotion: its first sentence is kept); seed readings WHAT(SAME_NOT_SAME), WHAT(MANY_ONE),
+//            FOR_WHAT(MANY_ONE); RESTRICTION READINGS for R_ONE, R_MANY, R_ARITY, R_DIRECTION, and scope notes on
+//            R_FOLDABLE_ONES and R_POLARITY. Not assuming ONE := parent quotient, and kept: HOW(MANY_ONE) and
+//            FOR_WHAT(GOES_WITH) (v0.1.5 identity-coverage wording), the other five restriction texts, REQUIRED,
+//            LAW_CLAUSE, O_GRL_RELATION_KINDS_NO_FPP_MAP, the terminal, V1 and V2's expected column.
+//            NEAR: contact THERMAL_V012 is replaced by THERMAL_V014 (promoted 2026-11-08 19:26, superseding v0.1.12)
+//            in the contact list, the registry note and WHAT(NEAR_FAR), HOW(NEAR_FAR); the v0.1.5 bytes (V015) keep theirs.
+//            Contacts added: V0111, RV0111, R238, R243, R244, CARRIER, CERT, THERMAL_V014. The changed seed readings change
+//            seed_36.mal, so V2's input hash and byte count change; its expected column does not. No obligation is
+//            discharged; the joint verdict stays MAYBE. The hardware witness (R244 L14) supports the realized junction
+//            only; it supplies none of stability, enough-for-fold or δ. The six-fan's two △ remain incidence identities.
+// CHANGE 0.1.11 (promoted, receipt RV0111): Independent check of the unpromoted v0.1.10 draft (611CCCC8…2432; RUN_RECORD FB0ABF66…30F4): no reading
+//            NOT_SAME; one changed line was unnamed. Named here: when a successor is drafted, the label of each earlier
+//            CHANGE note gains "(unpromoted)" (CHANGE 0.1.9 in v0.1.10; CHANGE 0.1.10 here). Everything else is v0.1.10's text.
+// CHANGE 0.1.10 (unpromoted): Independent check of the unpromoted v0.1.9 draft (449A42D3…3C79; RUN_RECORD D04673E7…9041): the
+//            R_DIRECTION reading said "Stated by Devon"; D202 L10–L12 is Claude's proposal and Devon's word on it is "yes"
+//            (D202 L6). It now says decided, and carries the verdict MAYBE that WHAT(MAYBE) counts (decided text, no joint
+//            witness; D202 L16–L17 carries the text, not a discharge). The seed readings FOR_WHAT(GOES_WITH) and HOW(MANY_ONE)
+//            keep v0.1.5's wording (identity coverage of link 7 → 8, FRAME, INV); they are not restated here. Seed, laws,
+//            terminal and vectors are v0.1.9's bytes.
+// CHANGE 0.1.9 (unpromoted): By Devon's decision D202 (2026-11-11 23:52 "inward is folk"; 23:54 "the tick is the unfolding"; 23:55
+//            "yes"), three promoted restriction texts are reworded: R_DIRECTION states that the tick is the unfolding (ONE
+//            parent → MANY children) and that FPP's fold corresponds to its MANY children → ONE parent relation; R_ONE and
+//            R_MANY name the parent and its four children. The candidate seed readings WHAT(SAME_NOT_SAME), WHAT(MANY_ONE)
+//            and FOR_WHAT(MANY_ONE) move to the same terms, so seed_36.mal and V2's input hash change (the PENDING set and
+//            V2's expected column do not). The RESTRICTION READINGS for R_ONE, R_MANY and R_DIRECTION are restated; R_ONE and
+//            R_MANY stay MAYBE (to be read on bytes). Contact D202 is added. "inward" and "forward" no longer occur.
+//            The other five restriction texts and both obligation blocks are carried unchanged. v0.1.8 (F42E8F19…FA7C) was
+//            never checked; its check was stopped on Devon's 23:52 word.
+// CHANGE 0.1.8 (unpromoted): Independent check of the unpromoted v0.1.7 draft (B9261AA4…0A30; RUN_RECORD D704FA3F…E8E8): four
+//            locators in RESTRICTION READINGS are corrected to the contact lines that carry the claim (R155 L1, L7, L11–L16
+//            for R_ONE; R155 L13–L16, L20 for R_FOLDABLE_ONES' q₁ scope, with R155 L18 cited only for the centre-of-centre ▽
+//            return; DSUB L12–L21; R201 L25 for the new-incidence limit); R_DIRECTION's reading attributes the quotient reading to R201.
+//            The header lines VERSION, DATE and SUPERSEDES change with each version (0.1.6 onward: DATE 2026-11-11 and
+//            SUPERSEDES v0.1.5, PROMOTED). Everything else is v0.1.7's text.
+// CHANGE 0.1.7 (unpromoted): Independent check of the unpromoted v0.1.6 draft (B202749E…5397; RUN_RECORD 0C7D4F65…69CF): (a) the
+//            R_ONE reading cited R155 L1–L20 for a reading of ONE that R155 does not state; it now says that reading is
+//            Claude's (R201 L21); (b) R162's and R199's scope limits (2,720 families / 30 junctions, root-G cases separate)
+//            are carried; (c) the promotion receipt of v0.1.5 is bound as contact RV015; (d) the change note now names every
+//            changed line class. Everything else is v0.1.6's text.
+// CHANGE 0.1.6 (unpromoted): Carries the witnesses recorded 2026-11-11 against the eight restrictions of O_FPP_FOLD_ACCOUNTING, each
+//            within its witnessed scope, without reopening them and without adding a requirement (R201):
+//            R_FOLDABLE_ONES SAME within R155's scope; R_POLARITY SAME within R199's scope (member identity and inherited
+//            junction membership through the bound dual-machine junction, R195; operator reading 1 := THIS, 0 := NO, R198);
+//            whole formula composition SAME (R162). R_DELTA: the record-level observation of R098 is retained and its NO is
+//            superseded by DSUB (constitutive shedding; the witness is the substrate unfolding); R_DELTA is MAYBE. R_ONE,
+//            R_MANY, R_ADMISSION, R_ARITY and R_DIRECTION stay MAYBE. The eight restriction texts are carried verbatim. The
+//            joint obligation stays PENDING; O_next is unchanged. Three seed readings are updated to these records
+//            (FOR_WHAT(BECAUSE), FOR_WHAT(INSIDE_OUTSIDE), WHAT(MAYBE)) and HOW(NO) names two further non-discharging routes.
+//            No cell is added or removed. Also changed: ORIGIN gains Devon 2026-11-11 23:36 "now"; contacts V015, RV015,
+//            R098, DSUB, R155, R162, R195, R198, R199 and R201 are added with their authority line; V2 is rebound to
+//            inputs/seed_36.mal with its new sha256 and byte count, because the changed seed readings change that input;
+//            V2's expected column is unchanged.
+// CHANGE 0.1.5: Codex 087: v0.1.4 W1–W9 IF_THEN, W10 NO at W10.2 (eleven shared-clause pairs). v0.1.4's own SOURCE USE
+//            named its first eight obligations restrictions of one joint witness (FPP L131–138) yet exported them as eight
+//            obligations: the stage split W10 forbids. They are now one obligation, O_FPP_FOLD_ACCOUNTING, with eight named
+//            restrictions. O_GRL_RELATION_KINDS_NO_FPP_MAP stays separate (its own clause). W10.4: this spec's route is named
+//            in HOW(NO), in its own words; a recognizer MAYBE is reported for a contacted-reader mapping, not met by copying
+//            the promoted WHAT(NO) wording.
+// CHANGE 0.1.4: (a) Terminal in the grammar the unrepaired checker (B4865E92…) accepts; v0.1.3 stated counts only by V1.
+//            (b) Vectors bound to exact bytes. (c) Every obligation cites registry-086 clauses (972BF35D…B94C); obligation
+//            names O_[A-Z_]+. (d) Contacts not located are named absent operands, never cited: Devon 11-06 "the reaction IS
+//            the Tick…"; Devon 11-06 "Hydrogen is a label…"; the 11:21 chat report as message bytes; Codex reviews 11:27 and
+//            11:29 (kept as change history, not contacts). (e) FOR_WHAT(NO) rested only on the unlocated "Hydrogen is a
+//            label" statement and is PENDING. (f) Prior vectors V2–V3 were not exact-bound; their content is kept below as
+//            RECORDED READINGS, not vectors. (g) C7 rebound to the promoted thermal identity bytes; its CHECK_FORM NO is
+//            recorded in NOTE_FORWARD_RECEIPT_THERMAL_v0.1.12_CHECK_FORM_NO_001. Change history 0.1.0–0.1.3 is carried in
+//            the predecessor bytes.
+// TARGET: FPP §6 fold accounting read on a world's own tick. J17 first (link 7 → link 8 for O_FPP_FOLD_ACCOUNTING; link 2 → link 3 for O_FPP_RECOMBINATION_ACCOUNTING); Metis separately; never shared.
+// METHOD: SPEC-MAL-SPECIFICATION-SYSTEM-002 v0.3.1 with W10 (delta 01105ECC…29C2; promoted 2026-11-02 16:47, receipt
+//         3D53564CC368F099E10FB3CDF2817AE3E06912D968553516692C898941FCA658, located by Codex; not held here).
+// SUBJECT: the correspondence between FPP fold-accounting terms and native objects of one world's tick; not a world transition.
+// SCOPE: 038 paused; no world execution, append, commit or push.
+// ORIGIN: Devon 2026-11-08 11:16 "must keep FPP moving as well"; 11:23 "yes" (draft this correspondence); 2026-11-11 23:36 "now"
+//         (draft this successor); 2026-11-12 22:43 (Codex's support, pasted by Devon: "That supports drafting PROPOSED v0.1.12");
+//         2026-11-12 22:50 "yes" (discharge O_GRL_RELATION_KINDS_NO_FPP_MAP; bind the joint witness as a vector);
+//         2026-11-13 02:22 "Why not the geomantic execution labels?"; 02:25 "I do think thos has costed me" (the whole / parts wording of v0.1.20 to v0.1.22).
+//         2026-11-13 20:45 "The spec is forcing the refinement onto the recombination again." (R292 L11, whose next sentences ask for the joint account and for the restriction texts that need a successor).
+// CONTACTS (exact bytes; registry 66DDE362…1B60 projections for clause locators):
+// FPP: contacts/FPP.txt; sha256 897AB3D712DBECC7FA1C2792FFEFFEF37AD59B35FC67D2B2747C436BEE4DA344
+// SKEL: contacts/SKEL.txt; sha256 3C24243D65611B480870C4F4A064E00E3E34E7742975016D294E1D7CCF2A4A09
+// FRAME: contacts/FRAME.mal; sha256 46576780F4B3740ABFFB27EDF158ED495DAB8655D7F49439CBED71143C1B54E3
+// JUNCTIONS: contacts/JUNCTIONS.mal; sha256 759613C9547797EB1F81666A48A457744F40881E18DE1017D1401E4CC829B630
+// INV: contacts/INV.json; sha256 029C71C8A4B62706AA52F946DFAFBD665A760A5FC85495AD7CD05CF1B21EA780
+// PROOF: contacts/PROOF.json; sha256 71702E553E5CE1E474D37EF911EBFF60BC52437E79AB8DE53188719DB04CE27E
+// TICK: contacts/TICK.md; sha256 EAAECC12440CF8ADF0D72E1594ABA8A4224C61FBB90F65B03D584F8752060B21
+// TRACE: contacts/TRACE.md; sha256 B81586C40C1D58AB94E3967E76CB75B46A6B56E71E10A1AAE70348104C4A7880
+// BIND: contacts/BIND.md; sha256 7EC6FA1367422019A7B3E215E94081496CE43E3F706B332C115AB14D919CCC72
+// GROUND: contacts/GROUND.md; sha256 C0BD91DE489A095D1AAA567AAAB42CD81704781295716A32EFE1639A118CEFD4
+// CGRL_TEXT: contacts/CGRL_TEXT.txt; sha256 4A4A2DF1963A029DF0D8E6CCF7AFDD544BB028D4C0DF37F8D85C82ADB3125F6B
+// SAY: contacts/SAY.md; sha256 04A62AFA0B5544C21B1E27A972286DD5BAA96A5EDC3AABFC2BB27DB688C8CD4B
+// THERMAL_V014: contacts/THERMAL_V014.mal; sha256 AF2069CC3BCF1E46C6EC9881E5B2B78BF2BFAE4440D05A536C49644660A5985A
+// HAND: contacts/HAND.md; sha256 534EDB15B50AED7E8763AFD8F89EA42AD29AA2F3C0836FBC76E6BB379A3CD043
+// N6: contacts/N6.md; sha256 D924BA925855A219100A396BBABCA3150E3AD885BAF6F4A25D4D59C00CF1E10B
+// W10D: contacts/W10D.md; sha256 01105ECC6D60D44C0BF960B27F746E67DB4E1E9B86F2B728FFF4A49AF91829C2
+// V015: contacts/V015.mal; sha256 833A72CF7767755422DA3AA1B677E5F73BBC279F843EB5DFFB1D464359AC70EE
+// D202: contacts/D202.md; sha256 F34B9F127939FA1BCB908882A89EDF4B659F68975A30D3DB4C4581CBEE99E1D8
+// RV015: contacts/RV015.md; sha256 D81FD4325B07BCBE3D87C0E9C858F56B1011D0AD75F880F616E144F3ED971ABB
+// R098: contacts/R098.md; sha256 9AE5B9FC115DB21F5D8E52DC6026CD77F885322FF5BA3529702A0990289BA466
+// DSUB: contacts/DSUB.md; sha256 D0603C9EB37732B2C4A237C4A41CDCF2CA18210F86A4F7E21BD24B43275F8EAE
+// R155: contacts/R155.md; sha256 E2623B50B9D41B6B85730F8B06DF2D3346D040D3B8604667890B5171A7DFE90B
+// R162: contacts/R162.md; sha256 C0F17D722AE3561C2AEA04F70A8B93AE07138CC4CA4F4B9A6F7D83A288B4B342
+// R195: contacts/R195.md; sha256 7CC9E9E8F8B135820746755CE0FBD457E8D33626629EC9D5DEF90B91E37E7EB9
+// R198: contacts/R198.md; sha256 20F7291901098C6DCD85AF6D644644954BBC1363E315945DB7E5AEBDA89379AA
+// R199: contacts/R199.md; sha256 EC6113AB6F7E3B9ECDFD9E2D935AFB2C91BF0656CC43319FEBE8D08BF833AFFC
+// R201: contacts/R201.md; sha256 B1D33C1F1F548DFF8BCDD16F68CC6A9479179750E05DE41CD05D254C0380AECA
+// V0111: contacts/V0111.mal; sha256 4CF2D5702CEC89B9C552135C01510E78FCE52254FDFAD82F48562C339358B334
+// RV0111: contacts/RV0111.md; sha256 367C44F71B088C87F0BF9816E7430FAA07872813BC0D7D1DCE631880324D8B74
+// R238: contacts/R238.md; sha256 A252D7E6A46F737741948F4C78C6FF3C0AEA3B1935CEAB73D498327423A4AE29
+// R243: contacts/R243.md; sha256 8E6B0EC90E7902438E9D344200C3F44CE8819EB03A0531E657267282958B3CE9
+// R244: contacts/R244.md; sha256 C6B069AAC2CAC0AAACE1266F31D2324CA8AA843AB2E5BA1224E50B67E413B870
+// CARRIER: contacts/CARRIER_QG003 (QG-JUNCTION-PROTO-003 carrier binding); sha256 82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB
+// CERT: contacts/JOINT_CERTIFICATE.json; sha256 D38EF80F75E26E5B6C5E60B300E215A778C9AB28AD66285377F2A7E5B3FE8CD4
+// JOINT_APP: contacts/JOINT_APPLICATION.json; sha256 B9E76395AE4A021A78E9FF69F6BD277FDB2EEF5BFB2899C654DCB8D3BA7C9452
+// R210: contacts/R210.md; sha256 BF6DC2FE8EB7AA5281E73FD5B3A028754E7643CCF20E194A1C8EE995F6CB622D
+// R239: contacts/R239.md; sha256 D13EF3011D8FD9E581B659B609CD8AFFBBA38EF0F238B2FC6B7C0031AB4CD32E
+// R240: contacts/R240.md; sha256 F66BB268571E2DF16BAEC60FD58E039A5AB80179CA5959D87796E8BD93DB382E
+// V0119: contacts/V0119.mal; sha256 0446F2DF6FAF5ACFC46C6769CA956265E58EDAF49CF16AD1BDCC0B6EE4CC14E9
+// RV0119: contacts/RV0119.md; sha256 16764E2FE52AD8FFE18A20430BF1E30D42CCD2F4E184423E994DAA5E8BE74649
+// DR345: contacts/DR345.mal; sha256 8A1BF8D4D028D979DF6B8A056E344E508945A58E90446EC4AD275E928CDFDF9D
+// R258: contacts/R258.md; sha256 3B087E6D5FD3F9A8F54ED4B58697989B22BA5FA4F0F07B82E5EC45E3DDC180E9
+// R259: contacts/R259.md; sha256 44235A0D5CB0DC04FE3E30E5A438B113CC0BB409F35B9E661F2F87D817D96F3D
+// CRJA: contacts/CRJA.md; sha256 776E31CD3ED277D628EEC3C62F9DA3002A2F2EDEEEEA5618F4833AF5AE06BD60
+// C1725: contacts/C1725.md; sha256 1BB0B4E9886AC4D9B8BD4C2170DC40E566C8431757328B3E812053D06C7B2FA1
+// C1727: contacts/C1727.md; sha256 485A9D31B75205461D61C58B8881C5C72287D3B7862A0395E69F03545D586C4B
+// CPLR: contacts/CPLR.md; sha256 5C2E3AD69BAEBF439F70136BD03A55E8F51CCA407A1F8367698D75F15637CD8B
+// ROOTS: contacts/ROOT_2_FACES.json; sha256 AC145E161E92133193589F185D8147EC6F318A81F00109D4BD10609AA33A8F37
+// TRH: contacts/TRH.md; sha256 204D9EF88AE04C7A4F20AAF5A55893DF09174BBAED34988FC9D501C920235150
+// TRHP: contacts/TRHP.md; sha256 F9736B260EE127DC68F3D6B355B682C8039E6707693D6B759787F813C971DF1B
+// RDISCH: contacts/RDISCH.md; sha256 29D3CA259E25AE37B8A473CD7D5CEEEE6AC53E75189DBEBFE8B206D0BE92B724
+// RV018S: contacts/RV018S.md; sha256 DB873DD7D064F6A91174A251408AFC4F5E5BD22905B166888D0A8D86150202D4
+// SWS: contacts/SWS.mal; sha256 9F2A87E31C942FF6A3042D5D3EE061725238DF42959D2559FF1B02540D604DCA
+// R292: contacts/R292.md; sha256 1E92DC831D63FECB6156483F4302796E7BDC9FD8DBE9447E0ECBF4D0FCF7B931
+// CN0125: contacts/CN0125.md; sha256 917373749B15F3FA68D38E792297AE8A9090E65E5A27876F0144BAC7AAC5E62C
+// CEFF: contacts/CEFF.md; sha256 E0AFE098DF5754B24096B76B1F9C55C2B44127EFCA5F66735FAE6ACAF2C9E873
+// D202 is Claude's record of Devon's decision of 2026-11-11 23:52–23:55. RV015 is Claude's record of Devon's promotion of V015 (Devon 2026-11-08 19:26 "promote"). The R-contacts are Claude's
+// records of Codex readings (R155, R162, R098, R199) and Claude's notes (R195, R198, R201, DSUB);
+// each states its own authority and scope. They support seed readings and RESTRICTION READINGS only; no obligation cites them.
+// Earlier promoted version: V0111, with RV0111, Claude's record of Devon's promotion of it (2026-11-12 08:07 "Promote").
+// R238 is Claude's record of Devon's DECIDE (2026-11-12 21:53 "Record"); R243 records a Codex reading; R244 is Claude's
+// locator. CARRIER is the 2026-07-31 binding (Devon DECIDE); CERT is the certificate R238 binds (bytes on Devon's machine).
+// JOINT_APP is Codex's family joint application (record 214's object; bytes on Devon's machine). R210 is Claude's note of
+// the discharge by promotion; R239, R240 record Codex readings.
+// Promoted predecessor: V0119, with RV0119, Claude's record of Devon's promotion of it (2026-11-12 23:37 "promote both").
+// DR345 is the 2026-10-21 decision record (Devon's ruling at its L4); R259 records Codex's reading of its retained authority
+// (the promotion receipt 2B56DA72…B7BA and its spec; bytes not held by Claude, R259 L9–L12); R258 is Claude's note. No obligation's LAW_CLAUSE cites them;
+// R_MANY, R_DIRECTION and REQUIRED name them.
+// C1725 and C1727 are Codex's readings of 2026-11-13 17:25 and 17:27; CPLR is its reading of the predecessor's restrictions on link
+// 2 → 3; CRJA is its joint recombination account; all four as exported by Codex. ROOTS is Codex's root ledger of 2026-11-10. TRH is the
+// recombination trace of 2026-10-23 (Claude's read-only binding) in the bytes the discharge witness used; TRHP is the MaL project's
+// copy of it, which is TRH with eight lines inserted after L28 (cited here by TRH's locators only). RDISCH is Claude's record of
+// Devon's DECIDE of 2026-11-13 17:28; RV018S is Claude's record of Devon's promotion of SWS (2026-11-13 13:12); R292 is Claude's record of
+// Devon's statements. Named and not held by Claude: the run record 9939E906…80BB and the envelopes B46F9F82…59F6 (RDISCH L17, L21).
+// CN0125 is the native CHECK_FORM reply on the unpromoted v0.1.25 draft; that it is Codex's, relayed by Devon 2026-11-13 23:42, is
+// Claude's record and is not in its bytes. Cited by: the CHANGE 0.1.26 note, R_REC_TRANSITION's last sentence and the R_REC_Q2
+// line of the recombination readings. No obligation's LAW_CLAUSE cites it.
+// CEFF is the reading of enough-for-fold on link 2 → 3 that Devon relayed 2026-11-14 00:15; that it is Codex's and that time are
+// Claude's record and are not in its bytes. Its report E77B5F46…1F98 and the native bytes it names are not held by Claude (CEFF L3,
+// L28). Rested on, outside the CHANGE notes, by: the last three sentences of R_REC_TRANSITION, its line of the recombination
+// readings, the second obligation's REQUIRED, the notes for the fourth vector and that vector. No obligation's LAW_CLAUSE cites it.
+// SAY rows: S07 L19 ("…a structure the fabric universe needs").
+// Registry 086 holds no clause for SAY S07, THERMAL_V014, HAND, N6 or W10D; they support seed readings only and are cited
+// by no obligation.
+
+domain FPP_GRL_CORRESPONDENCE;
+
+@propose seed FPP_GRL_CORRESPONDENCE := {
+  WHAT(THIS),            // The object is the correspondence between FPP §6 fold-accounting terms and native GRL objects of
+                         // one world's tick; THIS := that world's root ▽ (J17 first). BECAUSE FPP :131–138, PROOF, TICK.
+  HOW(THIS),             // Referents are read as native identities in the world's own records; no label supplies one.
+                         // BECAUSE JUNCTIONS, FRAME.
+  FOR_WHAT(THIS),        // So FPP accounting can be checked inside the world that unfolds. BECAUSE SAY S07, TICK.
+
+  WHAT(SAME_NOT_SAME),   // Candidate (R_ONE of O_FPP_FOLD_ACCOUNTING): ONE SAME the coupled whole of a bound junction (CARRIER,
+                         // vertex_id), whose four domain–witness positions lift to four whole ▽ roots. The candidate does not
+                         // by itself discharge FPP's accounting restrictions. BECAUSE FPP :133, CARRIER, R243, R244.
+  HOW(SAME_NOT_SAME),    // By identity: source_obligation lineage from predecessor openings to successor images. BECAUSE JUNCTIONS.
+  FOR_WHAT(SAME_NOT_SAME), // Correspondence is by identity, never by count. BECAUSE SKEL (q₁ is about foldable-ones), JUNCTIONS.
+
+  WHAT(NO),              // The externally seeded fixture is NO as a referent for MANY or ONE. BECAUSE N6, SAY S07.
+  HOW(NO),               // Non-discharging routes: (a) counting images as q₁; (b) equating BORN with shed; (c) inserting a
+                         // structure from outside the world; (d) identifying MANY, ONE and carriers one term at a time —
+                         // FPP :131–138 is a joint accounting clause; (e) summing or subtracting q-readings, which are
+                         // operator readings (1 := THIS, 0 := NO), not quantities; (f) taking a refinement four for a coupled
+                         // four; (g) treating separately checked face, edge, vertex, dual, boundary and genealogical
+                         // conditions as constitutive admission without their joint satisfaction on the SAME candidate c
+                         // cannot discharge that joint requirement (CGRL_TEXT L48). BECAUSE FPP, JUNCTIONS, TRACE, SAY S07,
+                         // W10D W10.4, R198, R195, CGRL_TEXT.
+
+  WHAT(IF_THEN),         // IF the tick admits THEN FPP's fold of that tick is admitted (enough-for-fold), as an obligation to
+                         // discharge by SAME, not a measurement. BECAUSE FPP :58, TICK.
+  HOW(IF_THEN),          // The admission is the native F25_ADMIT → F25_EFFECT pair of the tick. BECAUSE PROOF.
+  FOR_WHAT(IF_THEN),     // Enough-for-fold is a verdict, not a threshold. BECAUSE FPP :58.
+
+  WHAT(BECAUSE),         // Every correspondence row carries the clause that grounds it. BECAUSE W10D, TICK.
+  HOW(BECAUSE),          // The native BECAUSE is the source_obligation chain. BECAUSE JUNCTIONS.
+  FOR_WHAT(BECAUSE),     // Reason this object exists: FPP §6 terms have no bound native referents; the native evidence of
+                         // J17's fold is complete while the joint FPP identification on the junction product reads MAYBE on all
+                         // eight restrictions (q₂ SAME within the junction's members, q₁ within refinement families); FPP is to be
+                         // read inside the fabric universe. BECAUSE FPP, PROOF, JUNCTIONS, SAY S07, R199, R155, R243.
+
+  WHAT(INSIDE_OUTSIDE),  // Openings BORN this fold are INSIDE the admitted successor's F (carried), not shed. BECAUSE JUNCTIONS.
+  HOW(INSIDE_OUTSIDE),   // receipt_class BORN within the successor F. BECAUSE JUNCTIONS, INV.
+  FOR_WHAT(INSIDE_OUTSIDE), // δ is shed OUTSIDE; no identity-bound shed is found in the inspected records (R098 L9–L11), and that
+                         // absence does not falsify constitutive shedding, whose witness is the substrate unfolding (DSUB
+                         // L12–L18); on the junction product δ stays MAYBE (link 2 → 3: R_REC_DELTA). BECAUSE FPP :138, R098, DSUB.
+
+  WHAT(NEAR_FAR),        // The fold's coupling is the tick's discharge activity. BECAUSE THERMAL_V014, FPP :47.
+  HOW(NEAR_FAR),         // Read per location as native discharge events. BECAUSE THERMAL_V014, JUNCTIONS.
+  FOR_WHAT(NEAR_FAR),    // Supplies FPP's NEAR from inside; Π has no inverse. BECAUSE FPP :74–83.
+
+  WHAT(CAN_CANNOT),      // The externally seeded fixture CANNOT supply MANY or ONE; only the world's own fold CAN.
+                         // BECAUSE N6, SAY S07.
+
+  WHAT(MAYBE),           // On the junction product, δ (R_DELTA) and seven further restrictions are carried MAYBE with their exact
+                         // operands; q₂ is SAME within R199's scope (the junction's members) and q₁ within R155's (refinement
+                         // families); neither transfers to the product. BECAUSE FPP :138, R199, R155, DSUB, R201, R243.
+  HOW(MAYBE),            // Each open operand is stored once. BECAUSE JUNCTIONS.
+  FOR_WHAT(MAYBE),       // Never selected. BECAUSE FPP §7.
+
+  WHAT(MUST_LET),        // MUST: every FPP term binds to native identities of the world's own tick. LET: none.
+                         // BECAUSE SAY S07, TICK.
+
+  WHAT(TOGETHER_ALONE),  // Each world's correspondence stands ALONE; J17 and Metis are never joined. BECAUSE TICK (each world
+                         // appends by its own admission on its own inputs).
+
+  WHAT(MORE_LESS),       // Each consumed opening has more than one image (T1 three, T2–T4 two); identity is preserved while
+                         // images are more than one. BECAUSE FRAME, INV.
+  HOW(MORE_LESS),        // Read through lineage, not by tally. BECAUSE JUNCTIONS.
+  FOR_WHAT(MORE_LESS),   // q₁ conservation is identity coverage of foldable-ones. BECAUSE SKEL.
+
+  WHAT(GOES_WITH),       // Each image goes with its source obligation. BECAUSE FRAME (J39_IMAGE).
+  HOW(GOES_WITH),        // J39_IMAGE relations, identity-bound. BECAUSE FRAME, JUNCTIONS.
+  FOR_WHAT(GOES_WITH),   // The four ▽ roots go with the junction's coupled whole through the domain–witness incidence lift.
+                         // BECAUSE FPP :133, CARRIER, R243.
+
+  WHAT(MANY_ONE),        // Candidate definitions (R_ONE, R_MANY of O_FPP_FOLD_ACCOUNTING): MANY := the four whole ▽ roots lifted
+                         // from a bound junction's domain–witness pairs; ONE := that junction's coupled whole. The refinement
+                         // (ONE whole → its four parts) is the witnessed recursion, NOT_SAME the coupling. BECAUSE FPP :133,
+                         // CARRIER, R243, R238, R195.
+  HOW(MANY_ONE),         // Identity coverage on the junction: each of the four positions lifts to exactly one whole ▽ root
+                         // (120 positions over 30 junctions). BECAUSE CARRIER, R243.
+  FOR_WHAT(MANY_ONE),    // Candidate: FPP's MANY → ONE read as the four ▽ roots → the junction's coupled whole, inside the
+                         // recursion the refinement witnesses, to be witnessed by one joint record. BECAUSE FPP :131–138,
+                         // R243, R238.
+
+  WHAT(EVERY_SOME),      // Every predecessor opening is consumed; none remains unimaged. BECAUSE INV.
+
+  THIS, SAME_NOT_SAME, NO, IF_THEN, BECAUSE, INSIDE_OUTSIDE, NEAR_FAR, CAN_CANNOT, MAYBE, MUST_LET,
+  TOGETHER_ALONE, MORE_LESS, GOES_WITH, MANY_ONE, EVERY_SOME
+};
+
+law R1_WHERE :=
+  IF WHAT(o)
+  THEN WHERE(o);
+
+law R1_WHICH :=
+  IF WHAT(o)
+  THEN WHICH(o);
+
+law R1_WHEN :=
+  IF HOW(o)
+  THEN WHEN(o);
+
+law R2_WHENCE :=
+  IF WHERE(o), WHICH(o), WHEN(o), FOR_WHAT(o), FOR_WHAT(BECAUSE)
+  THEN WHENCE(o);
+
+// OBLIGATION WITNESSES (readings of this one object, not additional laws).
+// O_FPP_FOLD_ACCOUNTING: FPP's fold accounting (MANY, ONE, foldable-ones, coupled product, carriers, separation-content, δ shed) read on one world's tick as one joint witness. Each restriction below is part of that witness; none is a separate stage.
+// R_ONE: FPP ONE (stable coupled product) is SAME the coupled whole of a bound junction, identified by carrier hash (CARRIER) and vertex_id, with its complete domain/witness incidence (two domains × two witness triangles).
+// R_MANY: FPP foldable-ones are SAME the four whole ▽ roots (CCD triads by type, corridor–corridor–domain: DR345 L17; named CCD roots at R259 L19) uniquely lifted from that junction's domain–witness pairs, R(d0,t0), R(d0,t1), R(d1,t0), R(d1,t1).
+// R_ADMISSION: Enough-for-fold: FPP's internal MUST condition is SAME the tick's admission (site AGREE and typed AGREE).
+// R_FOLDABLE_ONES: q₁ defined consistently at source and product: predecessor identities preserved (each once, not by image multiplicity) and the product's BORN openings, which are carried within the part wholes that hold them into the next construction (R243 L14). Open operand FPP_PRODUCT_FOLDABLE_ONE_MEMBERSHIP_AND_Q1_CONTRIBUTION: which product entries, including BORN and multiple source images, contribute to the same foldable-one accounting; whether BORN are product constituents, carriers or remainder.
+// R_POLARITY: q₂ coupling polarity. No typed record field binds coupling-polarity roles; candidate: operator poles (operations). Not selected.
+// R_DELTA: Separation-content the product cannot absorb, shed and receipted. Births are carried inside F; no shed receipt is located.
+// R_ARITY: The Skeleton's minimal-preferred fold-arity four (stability): state whether this correspondence tests FPP's general accounting form, the minimal stable construction, or both. Refinement relates one whole face to its four parts; refinement and coupling are NOT_SAME as direct constructions, so matching arity supplies neither membership nor stability. MAYBE.
+// R_DIRECTION: The tick is the unfolding: ONE whole → MANY parts (four) (Devon, D202: "ONE parent → MANY children (four)"; labels per R258), witnessed as the recursive construction (R238). FPP's fold relates MANY → ONE at the bound junction: the four whole ▽ roots → the junction's coupled whole; it is NOT_SAME the refinement relation (R195).
+// REQUIRED: One correspondence record carrying all eight restrictions with source clauses and native identities; root-G conditional cases carried through it, never collapsed; for the 60 CCD triads G := D by type and is not a conditional case (DR345 L16–L17, L23; R259 L18–L19). A record supplying R_ONE and R_MANY without R_FOLDABLE_ONES, R_DELTA and R_DIRECTION is a finding, not partial discharge. Absent operand, named and not supplied: Devon's 2026-11-06 "the reaction IS the Tick" as original message bytes.
+// STATUS: PENDING
+// SUBJECT: FPP_FOLD_ON_TICK
+// LAW_CLAUSE: FPP#L131-L138; FPP#L133-L133; FPP#L135-L136; FPP#L138-L138; FPP#L58-L58; SKEL#L345-L359; SKEL#L337-L342; FRAME#L42-L46; FRAME#L24-L27; JUNCTIONS#L23-L37; JUNCTIONS#L24-L30; JUNCTIONS#L38-L45; INV#/inventory; INV#/O8; PROOF#/parts/ADMIT/fact; PROOF#/effect/fact; TICK#L12-L23; TRACE#L643-L645; BIND#L53-L64; GROUND#L18-L34
+// O_FPP_RECOMBINATION_ACCOUNTING: FPP's fold accounting (MANY, ONE, q₁, q₂, carriers, δ shed) read on ONE recombination of one world, J17 link 2 → 3, as one joint witness. Each restriction below is part of that witness; none is a separate stage. Its subject is proposed as NOT_SAME the subject of O_FPP_FOLD_ACCOUNTING (SOURCE USE (two subjects)): this tick preserves its carrier configuration and performs no refinement (CPLR L1, L18).
+// R_REC_ROOTS: Junction 17 (CARRIER /vertices/17, signature [0,3,4,9]: witness labels {0,3}, domains {4,9}) has the four CCD roots 48, 52, 50 and 54 (ROOTS); they are the four roots R_MANY names for that junction, and each retains all six of its flag identities before and after (CRJA L1–L12).
+// R_REC_MANY: MANY := the foldable whole together with the twelve-flag THIS defect as its input anti-polarity carrier (CRJA L16; TRH L24). The four CCD roots are constituents of the coupled whole and are not this reaction's MANY (CRJA L37).
+// R_REC_ONE: ONE := the preserved carrier configuration, read at junction 17 with its same four CCD roots and complete incidence, now carrying the uniform-NO field (CRJA L17). FPP's general clause is applied to this fold, which the paper does not work (TRH L31–L32); the coupled-two and coupled-four stability arguments are not used for this reaction (TRH L34; CRJA L39, L41).
+// R_REC_Q1: q₁ is SAME before and after: the foldable whole persists and the input defect is a carrier, not an additional foldable-one (CRJA L25). BORN openings and image multiplicity belong to folds that form new parts (CRJA L38).
+// R_REC_Q2: q₂ is SAME under the bound recombination account: the opposed foldable-one and carrier contributions of MANY are retained in the product's neutral account, and no output polarity-carrier is required (CRJA L26).
+// R_REC_DELTA: δ := the departing twelve-flag THIS section, realized by the twelve captured ASSIGN effects, facts 623402–623413 (CRJA L18, L27; C1727 L15–L17). Its substrate witness is discharged for this fold (RDISCH L4–L13).
+// R_REC_NO_REMAINDER: The reaction has no output remainder-carrier; γ is Π(δ) and carries no q_i (CRJA L19; C1725 L1–L11; TRH L25–L26).
+// R_REC_TRANSITION: MANY, ONE and δ belong to ONE transition supported by the one admitted effect 623321: predecessor coupled state → successor coupled state + δ (CRJA L21, L40). The references at junctions 15, 16, 18 and 25 locate shared incidence and introduce no reactant or remainder-carrier (CRJA L21; C1725 L41). Enough-for-fold, the reaction's MUST (TRH L25), is read from this reaction's own coupling operands: over the complete twelve-flag section 12 DELTA overlaps go NOT_SAME → SAME and 6 GAMMA and 6 TAU overlaps stay SAME, every member has all three overlap-kind witnesses, no new disagreement opens and none remains (CEFF L7–L13, L24). The strict move R1_STRICT 582029, whose ordered supports are the complete coupling read 580038, that same member extent's root 210262, no opened disagreement over that extent 579648 and a witnessed discharged disagreement 561071, is carried into the admission premise 623237 and from it to the effect 623321, and no selection intervenes (CEFF L5, L15–L22). The reading imports no four-root stability test, refinement admission or numerical coupling threshold (CEFF L26; CRJA L42); CPLR L15's MAYBE on the four-root product of the first obligation's R_ADMISSION is another operand (CN0125 L47).
+// REQUIRED: One correspondence record carrying all eight restrictions with source lines and native identities on link 2 → 3. Offered: CRJA with C1725, C1727, ROOTS, CEFF and the discharged shed witness (RDISCH). Whether that record discharges this obligation is Devon's DECIDE; these bytes do not discharge it.
+// STATUS: PENDING
+// SUBJECT: FPP_RECOMBINATION_ON_LINK_2_3
+// LAW_CLAUSE: FPP#L131-L138; FPP#L138-L138; FPP#L58-L58
+// O_GRL_RELATION_KINDS_NO_FPP_MAP: GRL relation kinds supply no FPP map; this specification is that map, pending promotion.
+// REQUIRED: Promotion of this map, or a bound FPP map in GRL.
+// STATUS: PENDING
+// SUBJECT: FPP_FOLD_ON_TICK
+// LAW_CLAUSE: CGRL_TEXT#L48-L48
+// DISCHARGE: met by the promotion of these bytes, recorded by its receipt. The promotions of v0.1.5, v0.1.11 and v0.1.19 met it for
+// those maps: RV015 L4–L12, RV0111 L4–L12, RV0119 L4–L12 and L35–L36; reading R210 L9–L13.
+// SOURCE USE: FPP :131–138 accounts MANY, ONE, q-carriers and δ together; hence one obligation. Partial correspondence
+// findings may stand alone as findings; they are not discharge.
+// SOURCE USE (two subjects): Claude's proposal, not a held decision. Devon asked which restriction texts need a successor (R292 L11); Codex names that form: scoped changes to the eight restriction
+// texts of the first obligation, and a third vector bound to the joint witness (CRJA L33–L46). This file instead adds a second
+// obligation and a fourth vector and changes none of the eight texts as v0.1.22 has them, BECAUSE the two readings are of "NOT_SAME constructions"
+// (CPLR L18) and rewriting the eight texts for link 2 → 3 would remove the reading D202 and R238 carry on the unfolding. Which form
+// stands is Devon's to decide at promotion. As drafted, the first obligation's lines, its RESTRICTION READINGS, the third vector
+// and the seed's readings are of the first obligation's subject, the junction product and the refinement on links 6 → 7 and 7 → 8, except where a cell names link 2 → 3; where
+// they say "no shed receipt is located", "not yet bound" or MAYBE, that is of that subject and says nothing of link 2 → 3.
+// q₃ := the seated hand (HAND): settled, not an obligation here.
+
+// RESTRICTION READINGS (findings within their witnessed scope, recorded 2026-11-11 and 2026-11-12; not discharge; refinement-family
+// readings R201 L17–L35; records and contacts cited below: R238, R243, R244, D202, R199, R155, DSUB, R098, R195, CARRIER, V0119, RV0119, R258)
+// R_ONE           MAYBE. ONE is the bound junction's coupled whole (R244 L19–L23; CARRIER). Its identity and incidence are
+//                 bound; what it cannot absorb is MAYBE (R243 L16); its stability and enough-for-fold are not yet read on it.
+// R_MANY          MAYBE. The four whole ▽ roots per junction are identified: 120 positions over 30 junctions, each unique
+//                 (R243 L12, L18). As the MANY of one identified FPP product: MAYBE (R243 L15).
+// R_ADMISSION     MAYBE. No record reads FPP's internal MUST against the tick's admission.
+// R_FOLDABLE_ONES SAME within scope: four-part quotient families on links 6→7 and 7→8, each counted once by ancestry
+//                 (5,120 families at 6→7, 20,480 at 7→8, and through both refinements: R155 L13–L16, L20); the
+//                 centre-of-centre ▽ return is witnessed for 2,720 families with all 8,160 root-G cases carried separately
+//                 (R155 L18). The open operand FPP_PRODUCT_FOLDABLE_ONE_MEMBERSHIP_AND_Q1_CONTRIBUTION is narrowed,
+//                 not removed. Scope: refinement families; not transferred to the junction product. On the junction
+//                 product: MAYBE (R243 L15).
+// R_POLARITY      SAME within scope: each member's identity and inherited junction membership in the bound dual-machine
+//                 junction (R195 L8–L18) reads THIS → THIS (domain members) and NO → NO (witness members) on both links;
+//                 no NOT_SAME member, over all 30 junctions with root-G cases separate (R199 L8–L16). Refinement creates new incidence; that new
+//                 incidence is not covered (R201 L25). Scope: the junction's domain and witness members, not its four ▽ roots.
+//                 On the junction product: MAYBE (the four ▽ roots' q₂ is not read).
+// R_DELTA         MAYBE. Retained: no identity-bound shed found in the inspected records of link 7→8 (R098 L9–L11). Its
+//                 joint NO (R098 L11–L13) is superseded: absence in records does not falsify constitutive shedding; the
+//                 witness is the substrate unfolding, not yet bound (DSUB L12–L21).
+// R_ARITY         MAYBE. The bound junction 2 × 2 supplies a four that is not a refinement four (R195 L13–L27); this
+//                 correspondence now reads the coupled four on the junction. Its stability is not read; the closed six-fan at
+//                 the junction midpoint (four ▽ roots + two △) is an untested candidate (R243 L22–L23, L33–L35).
+// R_DIRECTION     MAYBE. First sentence decided by Devon ("yes", D202 L6) on Claude's proposal (D202 L10–L12), witnessed as
+//                 the recursion (R238 L22–L23); its ONE → four shape is D202's (D202 L11). Second sentence, proposed in v0.1.19 on R243 L27–L32 (V0119 L350), was decided by Devon at the promotion of v0.1.19 (RV0119 L26–L29); it replaces D202's
+//                 "corresponds to the MANY children → ONE parent relation". The first sentence's rewording to whole / parts in this successor (R258) is Devon's to decide at promotion.
+
+// RESTRICTION READINGS, RECOMBINATION (findings within their witnessed scope, recorded 2026-11-13; not discharge; scope J17 link 2 → 3;
+// Codex's reads as exported, with the run bytes not held by Claude; records and contacts cited below: CRJA, C1725, C1727, CPLR, ROOTS, TRH, RDISCH, R198, CN0125, CEFF; U := "as read under the fourth vector's rule")
+// R_REC_ROOTS        IF_THEN (U); the contact's word is SAME: "SAME: the four CCD positions in the 17:25 account are exactly the four roots L303 names for
+//                    junction 17" (CRJA L1); roots 48, 52, 50, 54 with domains 4, 4, 9, 9 and witness faces 12, 13, 12, 13
+//                    (CRJA L7–L10; ROOTS); "No root selection or new geometric correspondence is needed" (CRJA L12).
+// R_REC_MANY         IF_THEN (U); CRJA L16 states it inside the joint account with no verdict word of its own. The trace has
+//                    "MANY = {foldable-one, anti-polarity-carrier}" (TRH L24). Held beside it: the located source records the
+//                    identification of the twelve-flag defect with that carrier as "Interpretation, not a count." (C1725
+//                    L50–L54); the paper does not work this fold (TRH L31–L32); the trace lists "FPP fold ↔ the J17 world's
+//                    transition" as not located (TRH L43); the trace's standing is carried as stated (RDISCH L42).
+// R_REC_ONE          IF_THEN (U); CRJA L17 carries no verdict word of its own. Held: "the carrier configuration, junction identities and incidence, with the
+//                    successor’s uniform-NO field" (C1725 L45).
+// R_REC_Q1           IF_THEN (U); the contact's word is "SAME" (CRJA L25).
+// R_REC_Q2           IF_THEN (U); the contact's words are "SAME under the bound recombination account" (CRJA L26). Beside it:
+//                    "q₂ as an invariant := SAME of the polarity reading across the fold, member by member and by identity. It is not
+//                    equality of sums." (R198 L20–L21, a PROPOSE note written for links 6 → 7 and 7 → 8). Codex reads it on link 2 → 3:
+//                    "On the preserved coupled whole, domains 4/9 remain THIS→THIS and witness members 0/3 remain NO→NO. The twelve
+//                    changing flag readings are a different operand. No arithmetic balancing or per-root signs are needed." (CN0125 L43).
+// R_REC_DELTA        IF_THEN, in the contacts' own word (CRJA L27; C1727 L15, L17; CPLR L16); discharged witness RDISCH L4–L13.
+// R_REC_NO_REMAINDER IF_THEN (U); CRJA L19 and C1727 L12 carry no verdict word of their own.
+// R_REC_TRANSITION   IF_THEN (U); CRJA L21 carries no verdict word of its own. For enough-for-fold the contact's word is IF_THEN:
+//                    "IF_THEN on link 2 → 3." (CEFF L1); "That supplies MUST BECAUSE the reaction’s own coupling operands satisfy
+//                    its internal switch into folding." (CEFF L24); "Neither the occurrence of the effect alone nor the count of
+//                    twelve edits supplies this conclusion." (CEFF L24).
+// JOINT              IF_THEN, in the contact's own word: "Joint recombination account: IF_THEN on link 2 → 3." "This does not change the promoted
+//                    obligation’s status." (CRJA L31). "This does not identify ASSIGN with shed on other folds." (C1727 L19).
+
+// RECORDED READINGS (genealogy carried from v0.1.3; not vectors, not discharge)
+// RR1 J17 link 7 → 8 identity coverage (Codex reads 11:21, 14:33), frames 85e9f6e3…96ade5c → 40a31175…fb6ca5, per type
+//     (predecessor / TRANSPORTED images / BORN): T1 9,920 / 29,760 / 10,560; T2 29,760 / 59,520 / 61,440; T3 29,760 /
+//     59,520 / 61,440; T4 29,760 / 59,520 / 61,440. Totals 99,200 / 208,320 / 194,880; successor typed entries 403,200;
+//     no unmatched source identity; F25_ADMIT 15594984; F25_EFFECT 15594985 (PROOF). Scope: this fold only.
+// RR2 fixture negative (N6): fixture 7bc1b3de…44de293 N6 return: MANY/ONE referent NO (externally seeded); coupling
+//     record = 30 interface discharge events; K = ∅; W38_NO_APPEND.
+
+// EXPECTED TERMINAL
+// seed cells 36; derived 51 (41 layer-1 + 10 WHENCE); total 87; 15 carrier identifiers.
+// PENDING: FOR_WHAT(NO), WHENCE(NO), WHEN(CAN_CANNOT), FOR_WHAT(CAN_CANNOT), HOW(CAN_CANNOT), WHENCE(CAN_CANNOT),
+//          WHEN(MUST_LET), FOR_WHAT(MUST_LET), HOW(MUST_LET), WHENCE(MUST_LET), WHEN(TOGETHER_ALONE), FOR_WHAT(TOGETHER_ALONE),
+//          HOW(TOGETHER_ALONE), WHENCE(TOGETHER_ALONE), WHEN(EVERY_SOME), FOR_WHAT(EVERY_SOME), HOW(EVERY_SOME), WHENCE(EVERY_SOME).
+// O_exec = empty
+// O_next = { O_FPP_FOLD_ACCOUNTING, O_FPP_RECOMBINATION_ACCOUNTING, O_GRL_RELATION_KINDS_NO_FPP_MAP }
+// This terminal closes normalization of the specification, not its obligations.
+
+// NOTES FOR VECTOR 3 (explanation; not part of any declaration)
+//   inputs: CERT = recursive fold (2,0) → (4,0), R238; JOINT_APP = family joint application; CARRIER = junction rows,
+//   vertex_id; R243 = four ▽ roots per junction; R239 = FPP on the recursive fold; R240 = absorption restriction;
+//   R199 = q₂ on the junction's members. R239 reads on "the quotient ONE" (R239 L20) and R240 on "the parent quotient" (R240 L10); their MAYBE verdicts carry unchanged
+//   to the junction product.
+//   rule: each restriction's verdict is what its witness records support under this file's restriction texts, read on
+//   the junction product; JOINT := meet (NO > NOT_SAME > MAYBE > IF_THEN).
+//   verdict table (V3's expected text, one line each, in this order):
+//     R_ONE MAYBE
+//     R_MANY MAYBE
+//     R_ADMISSION MAYBE
+//     R_FOLDABLE_ONES MAYBE
+//     R_POLARITY MAYBE
+//     R_DELTA MAYBE
+//     R_ARITY MAYBE
+//     R_DIRECTION MAYBE
+//     JOINT MAYBE
+//   scope: JOINT IF_THEN needs witness records, by full hash, closing all eight on the junction product; a successor
+//   binds them as arguments and V3's expected bytes follow.
+
+// NOTES FOR VECTOR 4 (explanation; not part of any declaration)
+//   inputs: CRJA = Codex's joint recombination account; C1725, C1727 = Codex's joint absorption account and its derivation
+//   by exhaustion; ROOTS = root ledger; CARRIER = junction rows; TRH = recombination trace; RDISCH = Devon's discharge of the
+//   shed witness for this fold; CEFF = Codex's reading of enough-for-fold on this fold.
+//   rule: each restriction's verdict is what those records support under this file's R_REC texts, read on J17 link 2 → 3;
+//   JOINT := meet (NO > NOT_SAME > MAYBE > IF_THEN). The contacts carry the word IF_THEN for δ, for the joint account and for
+//   enough-for-fold only (CRJA L27, L31; CEFF L1); the other seven lines are the reader's verdicts under this rule.
+//   verdict table (the fourth vector's expected text, one line each, in this order):
+//     R_REC_ROOTS IF_THEN
+//     R_REC_MANY IF_THEN
+//     R_REC_ONE IF_THEN
+//     R_REC_Q1 IF_THEN
+//     R_REC_Q2 IF_THEN
+//     R_REC_DELTA IF_THEN
+//     R_REC_NO_REMAINDER IF_THEN
+//     R_REC_TRANSITION IF_THEN
+//     JOINT IF_THEN
+//   scope: link 2 → 3 only. The fourth vector says nothing of O_FPP_FOLD_ACCOUNTING, whose joint verdict is the third vector's.
+
+// VECTORS
+// V1 CHECK_FORM(this file)
+// expected IF_THEN
+// Scope: native structural form; not independent reading review.
+// V2 ENGINE_COLUMN(inputs/seed_36.mal)
+// sha256 7DBBE2590D45FF58A639AF7E99302CDFE6A728269A5BB1C5E90B55438DED932B
+// input_path inputs/seed_36.mal; 7671 bytes; the domain line, seed block and four laws of this file, byte for byte
+// expected_type OBLIGATION_STATUS_COLUMN; 105 bytes, E1 axis order and ABI 2a witness order
+// expected_sha256 679CCCE3E567C61F24D600FBBB0F826CDCA84F3A4172583CB0DE4E90B012E2F3
+// expected_bytes [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1]
+// expected_count_THIS 87; expected_count_NO 18
+// Byte 0x01 := THIS (REALIZED); byte 0x00 := NO (PENDING). Encodings, not numbers.
+// Scope: fixed-law normalization only; no fold is performed.
+// V3 JOINT_WITNESS(CERT, JOINT_APP, CARRIER, R243, R239, R240, R199)
+// argument_1 CERT sha256 D38EF80F75E26E5B6C5E60B300E215A778C9AB28AD66285377F2A7E5B3FE8CD4
+// argument_2 JOINT_APP sha256 B9E76395AE4A021A78E9FF69F6BD277FDB2EEF5BFB2899C654DCB8D3BA7C9452
+// argument_3 CARRIER sha256 82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB
+// argument_4 R243 sha256 8E6B0EC90E7902438E9D344200C3F44CE8819EB03A0531E657267282958B3CE9
+// argument_5 R239 sha256 D13EF3011D8FD9E581B659B609CD8AFFBBA38EF0F238B2FC6B7C0031AB4CD32E
+// argument_6 R240 sha256 F66BB268571E2DF16BAEC60FD58E039A5AB80179CA5959D87796E8BD93DB382E
+// argument_7 R199 sha256 EC6113AB6F7E3B9ECDFD9E2D935AFB2C91BF0656CC43319FEBE8D08BF833AFFC
+// expected_type JOINT_VERDICT_LINES; UTF-8; LF separators; no terminal newline; 139 bytes
+// expected_bytes [82,95,79,78,69,32,77,65,89,66,69,10,82,95,77,65,78,89,32,77,65,89,66,69,10,82,95,65,68,77,73,83,83,73,79,78,32,77,65,89,66,69,10,82,95,70,79,76,68,65,66,76,69,95,79,78,69,83,32,77,65,89,66,69,10,82,95,80,79,76,65,82,73,84,89,32,77,65,89,66,69,10,82,95,68,69,76,84,65,32,77,65,89,66,69,10,82,95,65,82,73,84,89,32,77,65,89,66,69,10,82,95,68,73,82,69,67,84,73,79,78,32,77,65,89,66,69,10,74,79,73,78,84,32,77,65,89,66,69]
+// expected_sha256 CAF305E868603CD95AD8B83DE54610BCB6C07B0B225C801919EF36831ADD2F86
+// V4 JOINT_WITNESS(CRJA, C1725, C1727, ROOTS, CARRIER, TRH, RDISCH, CEFF)
+// argument_1 CRJA sha256 776E31CD3ED277D628EEC3C62F9DA3002A2F2EDEEEEA5618F4833AF5AE06BD60
+// argument_2 C1725 sha256 1BB0B4E9886AC4D9B8BD4C2170DC40E566C8431757328B3E812053D06C7B2FA1
+// argument_3 C1727 sha256 485A9D31B75205461D61C58B8881C5C72287D3B7862A0395E69F03545D586C4B
+// argument_4 ROOTS sha256 AC145E161E92133193589F185D8147EC6F318A81F00109D4BD10609AA33A8F37
+// argument_5 CARRIER sha256 82E388FD7F12E77D97E248DBF243E5B7D55F8EE56AFAED137BB37DD315F15BDB
+// argument_6 TRH sha256 204D9EF88AE04C7A4F20AAF5A55893DF09174BBAED34988FC9D501C920235150
+// argument_7 RDISCH sha256 29D3CA259E25AE37B8A473CD7D5CEEEE6AC53E75189DBEBFE8B206D0BE92B724
+// argument_8 CEFF sha256 E0AFE098DF5754B24096B76B1F9C55C2B44127EFCA5F66735FAE6ACAF2C9E873
+// expected_type JOINT_VERDICT_LINES; UTF-8; LF separators; no terminal newline; 176 bytes
+// expected_bytes [82,95,82,69,67,95,82,79,79,84,83,32,73,70,95,84,72,69,78,10,82,95,82,69,67,95,77,65,78,89,32,73,70,95,84,72,69,78,10,82,95,82,69,67,95,79,78,69,32,73,70,95,84,72,69,78,10,82,95,82,69,67,95,81,49,32,73,70,95,84,72,69,78,10,82,95,82,69,67,95,81,50,32,73,70,95,84,72,69,78,10,82,95,82,69,67,95,68,69,76,84,65,32,73,70,95,84,72,69,78,10,82,95,82,69,67,95,78,79,95,82,69,77,65,73,78,68,69,82,32,73,70,95,84,72,69,78,10,82,95,82,69,67,95,84,82,65,78,83,73,84,73,79,78,32,73,70,95,84,72,69,78,10,74,79,73,78,84,32,73,70,95,84,72,69,78]
+// expected_sha256 C2E97218EF487FEC447CD26883AB93BFE8F5CC9C1705EE3A7B091F65830EBEA9
